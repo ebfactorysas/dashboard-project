@@ -1,6 +1,25 @@
 .container {
     max-width: 100%;
 }
+
+section.big-numbers {
+    color: #FFFFFF;
+    background-color: #1156A1;
+    height: 100vh;
+}
+
+section.big-numbers h4 {
+    font-size: 18px;
+}
+
+section.big-numbers h1{
+    font-size: 72px;
+}
+
+section.big-numbers p{
+    font-size: 12px;
+}
+
 #downloads {
     min-width: 300px;
     max-width: 100%;
@@ -10,7 +29,7 @@
 
 
 #downloads rect {
-    
+
     stroke: #d1415a;
 }
 
@@ -48,7 +67,8 @@
     color: #AA0206;
     font-size: .8rem;
 }
-#downloads{
+
+#downloads {
     padding-bottom: 1rem;
 }
 

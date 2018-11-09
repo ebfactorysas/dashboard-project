@@ -189,30 +189,39 @@ var bubbleData = [{
 
     }
 ]
-
-var svg = d3.select('#publications')
+var marginBubble = {
+    top: 10,
+    right: 20,
+    bottom: 30,
+    left: 30
+};
+var widthBubble = 350 + marginBubble.left + marginBubble.right;
+var heightBubble = 565 + marginBubble.top + marginBubble.bottom;
+var svgBubble = d3.select('#publications')
     .append('svg')
-    .attr('width', 400)
-    .attr('height', 400)
+    .attr('width', widthBubble + marginBubble.left + marginBubble.right)
+    .attr('height', heightBubble + marginBubble.top + marginBubble.bottom)
     //.call(responsivefy)
-    .append('g');
+    .append('g')
+    .attr('transform', 'translate(' + marginBubble.left + ' ' + marginBubble.top + ' ' + marginBubble.right + ' ' + marginBubble.bottom + ')');
 
 
 
 var yScale = d3.scaleLinear()
-    .domain([0, 100])
+    .domain(d3.extent(bubbleData, d => d.PublishedDays))
     .range([400, 0])
     .nice();
 
 var yAxis = d3.axisLeft(yScale);
-svg.call(yAxis);
+svgBubble.call(yAxis);
 
 var xScale = d3.scaleLinear()
-    .domain([0, 100])
+    .domain(d3.extent(bubbleData, d => d.downloads))
     .range([0, 400])
     .nice();
 
 var xAxis = d3.axisBottom(xScale)
     .ticks(5);
-svg.append('g')
-    .attr('transform', )
+svgBubble.append('g')
+    .attr('transform', `translate(0,400)`)
+    .call(xAxis);
