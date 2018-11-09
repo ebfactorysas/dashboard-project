@@ -1,9 +1,13 @@
+.container {
+    max-width: 100%;
+}
 #downloads {
     min-width: 300px;
     max-width: 100%;
     margin: 0 auto;
 
 }
+
 
 #downloads rect {
     
@@ -44,7 +48,9 @@
     color: #AA0206;
     font-size: .8rem;
 }
-
+#downloads{
+    padding-bottom: 1rem;
+}
 
 .d-border-left {
     border-left: solid 1.5px #b4b4b4;
@@ -54,8 +60,9 @@
     border-bottom: solid 1.5px #b4b4b4;
 }
 
-.container {
-    max-width: 95%;
+.red-title {
+    font-size: 1rem;
+    color: #d1415a;
 }
 
 .red-background {
@@ -67,3 +74,5 @@
     margin: 0 auto;
     height: 300px;
 }
+
+/** red-section***/
