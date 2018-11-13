@@ -107,9 +107,6 @@ body {
     font-family: 'Gotham-Bold';
 }
 
-
-
-
 .container {
     max-width: 100%;
 }
@@ -150,6 +147,84 @@ section.menu-one ul {
     margin: 0;
 }
 
+section.menu-two {
+    font-family: 'Gotham-Bold';
+    color: #b4b4b4;
+}
+
+section.menu-two .active {
+    color: #FA2E00;
+}
+
+section.menu-two ul {
+    margin: 0;
+}
+
+section.publications {
+    font-family: 'Gotham-Bold';
+}
+
+section.publications .row div:nth-child(2),
+section.publications .row div:nth-child(3) {
+    background-color: #f5f5f5;
+}
+
+section.publications p {
+    font-size: 18px;
+    font-family: 'Gotham-Bold';
+    color: #d1415a;
+}
+
+section.publications .d-border-left p{
+    font-size: 11px;
+    font-family: 'Gotham-Book';
+    color: #555555;
+}
+
+section.publications .d-border-left p span{
+    text-decoration: underline;
+}
+
+section.publications #kic p{
+    font-family: 'Gotham-Book';
+    color: #555555;
+}
+
+section.publications h4 {
+    font-size: 12px;
+    font-family: 'Gotham-Bold';
+    color: #d1415a;
+}
+
+section.publications .down-zone span {
+    font-size: 10px;
+}
+
+section.publications .down-zone .special span:nth-child(1) {
+
+    border-right: 1px solid #d1415a;
+    color: #d1415a;
+}
+
+section.publications .down-zone .special span:nth-child(2) {
+    border-right: 1px solid #b4b4b4;
+    color: #b4b4b4;
+}
+section.publications .down-zone .special span:nth-child(3) {
+    color: #b4b4b4;
+}
+
+
+section.publications .down-zone h4 span {
+    font-size: 12px;
+    text-decoration: underline;
+    border-right: none;
+}
+
+#timelines{
+    height: 400px;
+}
+
 #downloads {
     min-width: 300px;
     max-width: 100%;
@@ -174,7 +249,7 @@ section.menu-one ul {
 
 .funds-allocated-meter text.percent-complete {
     font-family: "Roboto Condensed", sans-serif;
-    font-size: 55px;
+    font-size: 48px;
     fill: #FFF;
     letter-spacing: -0.03em;
 }
@@ -184,18 +259,18 @@ section.menu-one ul {
 }
 
 #left-bar h4 {
-    font-size: 1rem;
+    font-size: 12px;
     color: white;
 }
 
 #left-bar span:nth-child(2n) {
     color: white;
-    font-size: .8rem;
+    font-size: 10px;
 }
 
 #left-bar span:nth-child(2n+1) {
     color: #AA0206;
-    font-size: .8rem;
+    font-size: 10px;
 }
 
 #downloads {
@@ -222,7 +297,7 @@ section.menu-one ul {
 
 [id^="gauge"] {
     margin: 0 auto;
-    height: 300px;
+    height: 250px;
 }
 
 /** red-section***/
