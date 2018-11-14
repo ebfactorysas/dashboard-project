@@ -134,30 +134,66 @@ section.big-numbers p {
     font-size: 12px;
 }
 
-section.menu-one {
+section.menu {
     font-family: 'Gotham-Bold';
     color: #b4b4b4;
 }
 
-section.menu-one .active {
+section.menu ul {
+    margin: 0;
+}
+
+.red {
     color: #d1415a;
 }
 
-section.menu-one ul {
-    margin: 0;
-}
-
-section.menu-two {
-    font-family: 'Gotham-Bold';
-    color: #b4b4b4;
-}
-
-section.menu-two .active {
+.orange {
     color: #FA2E00;
 }
 
-section.menu-two ul {
-    margin: 0;
+.green {
+    color: #518A81;
+}
+
+.yellow {
+    color: #EEAE00;
+}
+
+.purple {
+    color: #424488;
+}
+
+.black {
+    color: #555555;
+}
+
+.gray {
+    color: #b4b4b4;
+}
+
+.white {
+    color: #ffffff;
+}
+
+
+
+section.publications .left-bar {
+    text-align: center;
+}
+
+section.publications .left-bar h4 {
+    font-size: 12px;
+    color: white;
+}
+
+section.publications .left-bar span:nth-child(2n) {
+    color: white;
+    font-size: 10px;
+}
+
+section.publications .left-bar span:nth-child(2n+1) {
+    color: #AA0206;
+    font-size: 10px;
 }
 
 section.publications {
@@ -175,17 +211,17 @@ section.publications p {
     color: #d1415a;
 }
 
-section.publications .d-border-left p{
+section.publications .d-border-left p {
     font-size: 11px;
     font-family: 'Gotham-Book';
     color: #555555;
 }
 
-section.publications .d-border-left p span{
+section.publications .d-border-left p span {
     text-decoration: underline;
 }
 
-section.publications #kic p{
+section.publications #kic p {
     font-family: 'Gotham-Book';
     color: #555555;
 }
@@ -210,6 +246,7 @@ section.publications .down-zone .special span:nth-child(2) {
     border-right: 1px solid #b4b4b4;
     color: #b4b4b4;
 }
+
 section.publications .down-zone .special span:nth-child(3) {
     color: #b4b4b4;
 }
@@ -221,8 +258,97 @@ section.publications .down-zone h4 span {
     border-right: none;
 }
 
-#timelines{
+
+section.moocs .left-bar {
+    text-align: center;
+}
+
+section.moocs .left-bar h4 {
+    font-size: 12px;
+    color: white;
+}
+
+section.moocs .left-bar span:nth-child(2n) {
+    color: white;
+    font-size: 10px;
+}
+
+section.moocs .left-bar span:nth-child(2n+1) {
+    color: #AB3018;
+    font-size: 10px;
+}
+
+
+
+section.moocs p {
+    font-size: 18px;
+    font-family: 'Gotham-Bold';
+    color: #FA2E00;
+}
+
+section.moocs h4 {
+    font-size: 12px;
+    font-family: 'Gotham-Bold';
+}
+
+section.moocs h3 {
+    font-size: 10px;
+    font-family: 'Gotham-Bold';
+}
+
+section.moocs h1 {
+    font-size: 48px;
+}
+
+section.moocs .vertical-text {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    text-orientation: sideways;
+    text-align: center;
+    text-orientation: sideways;
+    margin: 1rem;
+    font-size: 12px;
+    font-family: 'Gotham-Book';
+}
+
+section.moocs .down-zone span {
+    font-size: 10px;
+
+}
+
+section.moocs .down-zone .special span:nth-child(1) {
+    border-right: 1px solid #b4b4b4;
+
+}
+
+section.moocs .down-zone .special span {
+
+    font-family: 'Gotham-Bold';
+}
+
+section.moocs .small-letter{
+    font-size: 10px;
+    font-family: 'Gotham-Bold';
+}
+
+#timelines {
     height: 400px;
+}
+
+#demographics {
+    height: 250px;
+}
+
+#gender {
+    height: 250px;
+}
+
+#registrations {
+    height: 250px;
+}
+
+#distribution {
+    height: 250px;
 }
 
 #downloads {
@@ -230,6 +356,10 @@ section.publications .down-zone h4 span {
     max-width: 100%;
     margin: 0 auto;
 
+}
+
+#moocs {
+    height: 245px;
 }
 
 
@@ -254,24 +384,7 @@ section.publications .down-zone h4 span {
     letter-spacing: -0.03em;
 }
 
-#left-bar {
-    text-align: center;
-}
 
-#left-bar h4 {
-    font-size: 12px;
-    color: white;
-}
-
-#left-bar span:nth-child(2n) {
-    color: white;
-    font-size: 10px;
-}
-
-#left-bar span:nth-child(2n+1) {
-    color: #AA0206;
-    font-size: 10px;
-}
 
 #downloads {
     padding-bottom: 1rem;
@@ -295,9 +408,35 @@ section.publications .down-zone h4 span {
 
 }
 
+.orange-background {
+    background-color: #FA2E00;
+}
+
+.lightorange-background {
+    background-color: #eea08d;
+}
+
+.gray-background {
+    background-color: #f1edec;
+}
+
+.lightgray-background {
+    background-color: #f1f1f1;
+}
+
+.grayr-background {
+    background-color: #f5f5f5;
+}
+
+
 [id^="gauge"] {
     margin: 0 auto;
     height: 250px;
 }
+
+[id^="student"] {
+    height: 100px;
+}
+
 
 /** red-section***/

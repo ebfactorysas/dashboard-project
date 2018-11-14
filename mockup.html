@@ -104,10 +104,10 @@
             </div>
         </div>
     </section>
-    <section class="menu-one">
+    <section class="menu">
         <div class="col-md-12">
             <ul class="list-inline d-flex align-items-center justify-content-around pt-2 pb-2">
-                <li class="list-inline-item active">PUBLICATIONS</li>
+                <li class="list-inline-item red">PUBLICATIONS</li>
                 <li class="list-inline-item">MOOCS</li>
                 <li class="list-inline-item">DATASETS</li>
                 <li class="list-inline-item">CODE</li>
@@ -120,7 +120,7 @@
     <section class="publications">
         <div class="col-sm-12">
             <div class="row">
-                <div id="left-bar" class="col-sm-2 pt-4 red-background">
+                <div class="left-bar col-sm-2 pt-4 red-background">
                     <h4>PUBLICATIONS</h4>
                     <span><i class="fas fa-circle fa-xs"></i>Total from SCL</span>
                     <span><i class="fas fa-circle fa-xs"></i>Rest of IDB</span>
@@ -189,12 +189,118 @@
             </div>
         </div>
     </section>
-    <section class="menu-two">
+    <section class="menu">
         <div class="col-md-12">
             <ul class="list-inline d-flex align-items-center justify-content-around pt-2 pb-2">
                 <li class="list-inline-item ">PUBLICATIONS</li>
-                <li class="list-inline-item active">MOOCS</li>
+                <li class="list-inline-item orange">MOOCS</li>
                 <li class="list-inline-item">DATASETS</li>
+                <li class="list-inline-item">CODE</li>
+                <li class="list-inline-item">SUSCRIBERS</li>
+                <li class="list-inline-item">MAP</li>
+            </ul>
+        </div>
+    </section>
+    <section class="moocs">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-2 pt-4 orange-background left-bar">
+                    <h4>PUBLICATIONS</h4>
+                    <span><i class="fas fa-circle fa-xs"></i>Total from SCL</span>
+                    <span><i class="fas fa-circle fa-xs"></i>Rest of IDB</span>
+                    <div class="gauge" id="gauge1"></div>
+                    <h4>DOWNLOADS</h4>
+                    <span><i class="fas fa-circle fa-xs"></i>Total from SCL</span>
+                    <span><i class="fas fa-circle fa-xs"></i>Rest of IDB</span>
+                    <div class="gauge" id="gauge2"></div>
+                    <h4>DOWNLOADS FROM LAC</h4>
+                    <span><i class="fas fa-circle fa-xs"></i>From LAC</span>
+                    <span><i class="fas fa-circle fa-xs"></i>Rest of World</span>
+                    <div id="gauge3" class="text-center gauge"></div>
+                </div>
+                <div class="col grayr-background">
+                    <div class="row m-2 pb-2 ">
+                        <div class="col-md-12 ">
+                            <p class="text-right"> <i class="far fa-circle fa-xs"></i> ALL THE TIME &nbsp; <i class="far fa-dot-circle"></i>
+                                2018 DATA</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="col-sm-12 pt-4  d-border-bottom">
+                                <h4 class=" text-center orange">REGISTRATIONS TIMELINE</h4>
+                                <div id="registrations"></div>
+                            </div>
+                            <div class="col-sm-12 down-zone d-border-bottom">
+                                <div class="row pt-2">
+                                    <div class="col-sm-6">
+                                        <h4 class="orange">TOP 5 SCL MOOCS BY REGISTRATIONS</h4>
+                                    </div>
+
+                                    <div class="col special  d-flex align-items-start justify-content-end"><span class="pr-2 orange">TOP
+                                            5 MOOCS</span>
+                                        <span class="pl-2 gray">&nbsp;UPCOMING MOOCS</span> </div>
+                                </div>
+                                <div id="moocs"></div>
+
+                            </div>
+                            <div class="col-sm-12 pt-4 ">
+                                <h4 class=" text-center orange">REGISTRATIONS TIMELINE</h4>
+                                <div class="row pt-4 text-center">
+                                    <div class="col white orange-background mr-4 pt-2">
+                                        <h3>REGISTRATIONS</h3>
+                                        <h1>55K</h1><span class="small-letter">2018</span>
+                                        <div id="student1"></div>
+                                    </div>
+                                    <div class="col mr-4  pt-2 lightorange-background">
+                                        <h3>PARTICIPANTS</h3>
+                                        <h1>23K</h1><span class="small-letter">2018</span>
+                                        <div id="student2"></div>
+                                    </div>
+                                    <div class="col mr-4 pt-2 gray-background">
+                                        <h3>COMPLETED</h3>
+                                        <h1>2K</h1><span class="small-letter">2018</span>
+                                        <div id="student3"></div>
+                                    </div>
+                                    <div class="col pt-2  lightgray-background">
+                                        <h3>CERTIFIED</h3>
+                                        <h1>1K</h1><span class="small-letter">2018</span>
+                                        <div id="student4"></div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                        <div class="col-sm-6 pt-4  d-border-left">
+                            <div class="col-sm-12 d-flex align-items-center d-border-bottom">
+                                <div class="vertical-text orange"> GENDER</div>
+                                <div class="d-flex flex-column w-100">
+                                    <h4 class=" text-center orange">DEMOGRAPHICS</h4>
+                                    <div id="demographics"></div>
+                                </div>
+
+                            </div>
+                            <div class=" m-0 d-flex align-items-center col-sm-12 pt-4 d-border-bottom">
+                                <div class="vertical-text orange"> AGE DISTRIBUTION</div>
+                                <div id="gender"></div>
+                            </div>
+                            <div class=" m-0 d-flex align-items-center col-sm-12 pt-4">
+                                <div class="vertical-text orange ">EDUCATION LEVEL</div>
+                                <div id="distribution"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="menu">
+        <div class="col-md-12">
+            <ul class="list-inline d-flex align-items-center justify-content-around pt-2 pb-2">
+                <li class="list-inline-item ">PUBLICATIONS</li>
+                <li class="list-inline-item">MOOCS</li>
+                <li class="list-inline-item purple">DATASETS</li>
                 <li class="list-inline-item">CODE</li>
                 <li class="list-inline-item">SUSCRIBERS</li>
                 <li class="list-inline-item">MAP</li>
@@ -202,10 +308,48 @@
         </div>
 
     </section>
-    <section class="moocs"></section>
     <section class="datasets"></section>
+    <section class="menu">
+        <div class="col-md-12">
+            <ul class="list-inline d-flex align-items-center justify-content-around pt-2 pb-2">
+                <li class="list-inline-item">PUBLICATIONS</li>
+                <li class="list-inline-item">MOOCS</li>
+                <li class="list-inline-item">DATASETS</li>
+                <li class="list-inline-item yellow">CODE</li>
+                <li class="list-inline-item">SUSCRIBERS</li>
+                <li class="list-inline-item">MAP</li>
+            </ul>
+        </div>
+
+    </section>
     <section class="code"></section>
+    <section class="menu">
+        <div class="col-md-12">
+            <ul class="list-inline d-flex align-items-center justify-content-around pt-2 pb-2">
+                <li class="list-inline-item">PUBLICATIONS</li>
+                <li class="list-inline-item">MOOCS</li>
+                <li class="list-inline-item">DATASETS</li>
+                <li class="list-inline-item">CODE</li>
+                <li class="list-inline-item green">SUSCRIBERS</li>
+                <li class="list-inline-item">MAP</li>
+            </ul>
+        </div>
+
+    </section>
     <section class="suscribers"></section>
+    <section class="menu">
+        <div class="col-md-12">
+            <ul class="list-inline d-flex align-items-center justify-content-around pt-2 pb-2">
+                <li class="list-inline-item">PUBLICATIONS</li>
+                <li class="list-inline-item">MOOCS</li>
+                <li class="list-inline-item">DATASETS</li>
+                <li class="list-inline-item">CODE</li>
+                <li class="list-inline-item">SUSCRIBERS</li>
+                <li class="list-inline-item black">MAP</li>
+            </ul>
+        </div>
+
+    </section>
     <section class="map"></section>
 </body>
 <script src="main.js"></script>
