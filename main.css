@@ -331,6 +331,103 @@ section.moocs .small-letter{
     font-family: 'Gotham-Bold';
 }
 
+section.datasets {
+    font-family: 'Gotham-Bold';
+}
+
+section.datasets .left-bar {
+    text-align: center;
+}
+
+section.datasets .left-bar h4 {
+    font-size: 12px;
+    color: white;
+}
+
+section.datasets .left-bar span:nth-child(2n) {
+    color: white;
+    font-size: 10px;
+}
+
+section.datasets .left-bar span:nth-child(2n+1) {
+    color: #2E305F;
+    font-size: 10px;
+}
+
+section.datasets .funds-allocated-meter .background {
+    fill: #2E305F;
+}
+
+
+section.datasets p {
+    font-size: 18px;
+    font-family: 'Gotham-Bold';
+    color: #424488;
+}
+
+section.datasets h4 {
+    font-size: 12px;
+    font-family: 'Gotham-Bold';
+    color: #424488;
+}
+section.datasets h4 span{
+    font-size: 12px;
+    font-family: 'Gotham-Bold';
+}
+
+section.datasets h4 span:nth-child(1){
+    text-decoration: underline;
+    
+}
+
+.purple-border-right{
+    border-right: solid 1px #2E305F;
+}
+
+
+section.datasets #publications{
+    height: 325px;
+}
+
+section.datasets .small-letter{
+    font-size: 12px;
+    font-family: 'Gotham-Bold';
+    color: #b4b4b4;
+}
+
+section.datasets .small-letter span{
+    text-decoration: underline;
+}
+
+section.code .funds-allocated-meter .background {
+    fill: #A17603;
+}
+
+section.code .left-bar {
+    text-align: center;
+}
+
+section.code .left-bar h4 {
+    font-size: 12px;
+    color: white;
+}
+
+section.code .left-bar span:nth-child(2n) {
+    color: white;
+    font-size: 10px;
+}
+
+section.code .left-bar span:nth-child(2n+1) {
+    color: #A17603;
+    font-size: 10px;
+}
+
+section.code h4 {
+    font-size: 12px;
+    font-family: 'Gotham-Bold';
+}
+
+
 #timelines {
     height: 400px;
 }
@@ -410,6 +507,14 @@ section.moocs .small-letter{
 
 .orange-background {
     background-color: #FA2E00;
+}
+
+.purple-background{
+    background-color: #424488;
+}
+
+.yellow-background{
+    background-color: #EEAE00;
 }
 
 .lightorange-background {
