@@ -326,7 +326,7 @@ section.moocs .down-zone .special span {
     font-family: 'Gotham-Bold';
 }
 
-section.moocs .small-letter{
+section.moocs .small-letter {
     font-size: 10px;
     font-family: 'Gotham-Bold';
 }
@@ -370,32 +370,33 @@ section.datasets h4 {
     font-family: 'Gotham-Bold';
     color: #424488;
 }
-section.datasets h4 span{
+
+section.datasets h4 span {
     font-size: 12px;
     font-family: 'Gotham-Bold';
 }
 
-section.datasets h4 span:nth-child(1){
+section.datasets h4 span:nth-child(1) {
     text-decoration: underline;
-    
+
 }
 
-.purple-border-right{
+.purple-border-right {
     border-right: solid 1px #2E305F;
 }
 
 
-section.datasets #publications{
+section.datasets #publications {
     height: 325px;
 }
 
-section.datasets .small-letter{
+section.datasets .small-letter {
     font-size: 12px;
     font-family: 'Gotham-Bold';
     color: #b4b4b4;
 }
 
-section.datasets .small-letter span{
+section.datasets .small-letter span {
     text-decoration: underline;
 }
 
@@ -427,6 +428,68 @@ section.code h4 {
     font-family: 'Gotham-Bold';
 }
 
+section.code .small-letter {
+    font-size: 12px;
+    font-family: 'Gotham-Bold';
+    color: #b4b4b4;
+}
+
+section.code .small-letter span {
+    text-decoration: underline;
+}
+
+section.code #publications {
+    height: 325px;
+}
+
+
+section.suscribers .vertical-text {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    text-orientation: sideways;
+    text-align: center;
+    text-orientation: sideways;
+    margin: 1rem;
+    font-size: 12px;
+    font-family: 'Gotham-Book';
+}
+
+section.suscribers .left-bar {
+    text-align: center;
+}
+
+section.suscribers .left-bar h4 {
+    font-size: 12px;
+    color: white;
+}
+
+section.suscribers .left-bar span:nth-child(2n) {
+    color: white;
+    font-size: 10px;
+}
+
+section.suscribers .left-bar span:nth-child(2n+1) {
+    color: #027B8E;
+    font-size: 10px;
+}
+
+section.suscribers .funds-allocated-meter .background {
+    fill: #027B8E;
+}
+
+section.suscribers h4 {
+    font-size: 12px;
+    font-family: 'Gotham-Bold';
+}
+
+section.suscribers #demographics {
+    height: 397px;
+}
+
+section.suscribers #gender {
+    height: 379px;
+}
+
 
 #timelines {
     height: 400px;
@@ -454,6 +517,7 @@ section.code h4 {
     margin: 0 auto;
 
 }
+
 
 #moocs {
     height: 245px;
@@ -509,12 +573,16 @@ section.code h4 {
     background-color: #FA2E00;
 }
 
-.purple-background{
+.purple-background {
     background-color: #424488;
 }
 
-.yellow-background{
+.yellow-background {
     background-color: #EEAE00;
+}
+
+.green-background {
+    background-color: #518A81;
 }
 
 .lightorange-background {
