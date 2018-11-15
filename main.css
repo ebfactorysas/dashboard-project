@@ -331,6 +331,18 @@ section.moocs .small-letter {
     font-family: 'Gotham-Bold';
 }
 
+section.moocs .distribution-chart path{
+    display: none;
+}
+section.moocs .distribution-chart .tick line{
+    display: none;
+}
+
+section.moocs .distribution-chart .tick text{
+    width: 10px;
+}
+
+
 section.datasets {
     font-family: 'Gotham-Bold';
 }

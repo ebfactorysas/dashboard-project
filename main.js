@@ -109,7 +109,6 @@ test.append('text')
         return d.x0 + 20;
     })
     .text(function (d) {
-        console.log(d)
         return d.data.name;
     })
 test.append('rect')
@@ -203,7 +202,7 @@ var svgBubble = d3.select('#publications')
     .attr('height', heightBubble + marginBubble.top + marginBubble.bottom)
     //.call(responsivefy)
     .append('g')
-    .attr('transform', 'translate(' + marginBubble.left + ' ' + marginBubble.top + ' ' + marginBubble.right + ' ' + marginBubble.bottom + ')');
+//.attr('transform', 'translate(' + marginBubble.left + ' ' + marginBubble.top + ' ' + marginBubble.right + ' ' + marginBubble.bottom + ')');
 
 
 
@@ -225,3 +224,128 @@ var xAxis = d3.axisBottom(xScale)
 svgBubble.append('g')
     .attr('transform', `translate(0,300)`)
     .call(xAxis);
+
+var marginDistribution = {
+    top: 50,
+    right: 50,
+    bottom: 50,
+    left: 50
+}
+
+var widthDistribution = 540 - marginDistribution.left - marginDistribution.right;
+var heightDistribution = 280 - marginDistribution.top - marginDistribution.bottom;
+var dataDistribution = [{
+    "name": "Other/Not Reported",
+    "value": 20
+}, {
+    "name": "Elementary",
+    "value": 0
+}, {
+    "name": "High School",
+    "value": 3
+}, {
+    "name": "Associate",
+    "value": 4
+}, {
+    "name": "Bachelor",
+    "value": 14
+}, {
+    "name": "Master",
+    "value": 9
+}, {
+    "name": "Doctorate",
+    "value": 1
+}]
+var svgDistribution = d3.select('#distribution').append("svg")
+    .attr("width", widthDistribution + marginDistribution.left + marginDistribution.right)
+    .attr("height", heightDistribution + marginDistribution.top + marginDistribution.bottom)
+    .append("g")
+    .attr("transform", "translate(" + 30+ "," + marginDistribution.top + ")");
+
+var xDistribution = d3.scaleBand()
+    .range([0, widthDistribution]);
+var yDistribution = d3.scaleLinear()
+    .range([heightDistribution, 0]);
+
+xDistribution.domain(dataDistribution.map(function (d) {
+    return d.name
+}));
+yDistribution.domain([0, d3.max(dataDistribution, function (d) {
+    return d.value
+})]);
+
+svgDistribution.selectAll(".bar")
+    .data(dataDistribution)
+    .enter().append("rect")
+    .attr("class", "bar")
+    .attr("x", function (d) {
+        return xDistribution(d.name);
+    })
+    .attr("width", xDistribution.bandwidth() - 25)
+    .attr("rx", 25)
+    .attr("ry", 25)
+    .attr("y", function (d) {
+        return yDistribution(d.value + 3);
+    })
+    .attr("x", function (d, i) {
+        return i * xDistribution.bandwidth() + 15; //Bar width of 20 plus 1 for padding
+    })
+    .attr("fill", "#eea08d")
+    .attr("height", function (d) {
+        return heightDistribution - yDistribution(d.value + 3);
+    });
+
+svgDistribution.selectAll("text")
+    .data(dataDistribution)
+    .enter()
+    .append("text")
+    .text(function (d) {
+
+        return d.value + "K";
+    })
+    .attr("y", function (d) {
+        return yDistribution(1);
+    })
+    .attr("x", function (d, i) {
+        return i * xDistribution.bandwidth() + 21; //Bar width of 20 plus 1 for padding
+    })
+    .attr("font-family", "Gotham-Bold")
+    .attr("font-size", "12px");
+
+svgDistribution.append("g")
+    .attr("transform", "translate(0," + heightDistribution + ")")
+    .attr("class", "distribution-chart")
+    .call(d3.axisBottom(xDistribution));
+
+svgDistribution.selectAll(".tick text")
+    .call(wrap, xDistribution.bandwidth())
+    .attr("font-family", "Gotham-Book")
+    .attr("font-size", "10px");
+
+
+
+
+
+function wrap(text, width) {
+    text.each(function () {
+        var text = d3.select(this),
+            words = text.text().split(/\s+/).reverse(),
+            word,
+            line = [],
+            lineNumber = 0,
+            lineHeight = 1.1, // ems
+            y = text.attr("y"),
+            dy = parseFloat(text.attr("dy")),
+            tspan = text.text(null).append("tspan").attr("x", 0).attr("y", y).attr("dy", dy + "em")
+        while (word = words.pop()) {
+            line.push(word)
+            tspan.text(line.join(" "))
+            if (tspan.node().getComputedTextLength() > width) {
+                line.pop()
+                tspan.text(line.join(" "))
+                line = [word]
+                tspan = text.append("tspan").attr("x", 0).attr("y", y).attr("dy", `${++lineNumber * lineHeight + dy}em`).text(word)
+            }
+        }
+    })
+}
