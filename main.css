@@ -416,6 +416,18 @@ section.datasets .small-letter span {
     text-decoration: underline;
 }
 
+section.datasets #data-trend .y-data {
+    font-family: 'Gotham-Bold';
+    font-size: 11px;
+}
+
+section.datasets #data-trend .text-inside {
+    color: #8a858d
+}
+
+section.datasets #data-trend .y-data .domain {
+    display: none;
+}
 section.code .funds-allocated-meter .background {
     fill: #A17603;
 }
@@ -424,6 +436,18 @@ section.code .left-bar {
     text-align: center;
 }
 
+section.code #code-trend .y-code {
+    font-family: 'Gotham-Bold';
+    font-size: 11px;
+}
+
+section.code #code-trend .text-inside {
+    color: #8a858d
+}
+
+section.code #code-trend .y-code .domain {
+    display: none;
+}
 section.code .left-bar h4 {
     font-size: 12px;
     color: white;
