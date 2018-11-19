@@ -616,6 +616,480 @@ barsDataTrend.append("text")
 svgDataTrend.selectAll(".tick text")
     .attr("width", "248")
     .attr("x", -290)
-    .attr("y",-5)
+    .attr("y", -5)
     .attr("text-anchor", "start")
     .call(wrapData);
+
+var dataPublicationTrend = [{
+        "name": "Profesión: Profesor en América Latina ¿Por qué se perdió el prestigio docente y cómo rec",
+        "value": 26.2,
+    },
+    {
+        "name": "Social Services for Digital Citizens: Opportunities for Latin America and the Caribbean",
+        "value": 23.6,
+    },
+    {
+        "name": "La priorización en salud paso a paso: Cómo articulan sus procesos México, Brasil y Colomb",
+        "value": 15.9,
+    },
+    {
+        "name": "Datos asociados al 'Panorama de enevejeciemiento y depenedencia en América La...",
+        "value": 12.7,
+    },
+    {
+        "name": "Suriname Survey of Living Conditions: 2016-2017",
+        "value": 8.6,
+    },
+    {
+        "name": "Standarized Public Debt Database",
+        "value": 7.6,
+    },
+    {
+        "name": "Primary Healthcare Access, Experience, and Coordination in Latin America and the Caribb...",
+        "value": 3.9,
+    }, {
+        "name": "Barbados Survey of Living Conditions:2016",
+        "value": 3.0,
+    }, {
+        "name": "Guyana Labor Force Survey: Fourth Quater 2017",
+        "value": .7,
+    },
+    {
+        "name": "Should I Stay or Should I Go?",
+        "value": .6,
+    }
+];
+
+dataPublicationTrend = dataPublicationTrend.sort(function (a, b) {
+    return d3.ascending(a.value, b.value);
+})
+
+var marginPublicationTrend = {
+    top: 15,
+    right: 25,
+    bottom: 15,
+    left: 40
+};
+
+var widthPublicationTrend = 560 - marginPublicationTrend.left - marginPublicationTrend.right,
+    heightPublicationTrend = 400 - marginPublicationTrend.top - marginPublicationTrend.bottom;
+
+
+var svgPublicationTrend = d3.select("#publication-trend").append("svg")
+    .attr("width", widthPublicationTrend + marginPublicationTrend.left + marginPublicationTrend.right)
+    .attr("height", heightPublicationTrend + marginPublicationTrend.top + marginPublicationTrend.bottom)
+    .append("g")
+    .attr("transform", "translate(" + marginPublicationTrend.left + "," + marginPublicationTrend.top + ")");
+
+var xPublicationTrend = d3.scaleLinear()
+    .range([0, widthPublicationTrend])
+    .domain([0, d3.max(dataPublicationTrend, function (d) {
+        return d.value;
+    })]);
+
+var yPublicationTrend = d3.scaleBand()
+
+    .rangeRound([heightPublicationTrend, 0], .1)
+    .domain(dataPublicationTrend.map(function (d) {
+        return d.value;
+    }));
+
+var yAxisPublicationTrend = d3.axisLeft(yPublicationTrend)
+    //no tick marks
+    .tickPadding(40)
+    .tickSize(0);
+
+var gyPublicationTrend = svgPublicationTrend.append("g")
+    .style("text-anchor", "start")
+    .style("color", "#555555")
+    .attr("class", "y-data")
+
+    .call(yAxisPublicationTrend)
+
+var barsPublicationTrend = svgPublicationTrend.selectAll(".bar")
+    .data(dataPublicationTrend)
+    .enter()
+    .append("g")
+
+barsPublicationTrend.append("rect")
+    .attr("class", "bar")
+    .attr("y", function (d) {
+        return yPublicationTrend(d.value);
+    })
+    .attr("rx", 25)
+    .attr("ry", 25)
+    .attr("fill", "#dea6b0")
+    .attr("height", yPublicationTrend.bandwidth() - 2)
+    .attr("x", 8)
+    .attr("width", function (d) {
+        return xPublicationTrend(d.value);
+    });
+
+barsPublicationTrend.append("text")
+    .attr("class", "label")
+    //y position of the label is halfway down the bar
+    .attr("y", function (d) {
+        return yPublicationTrend(d.value) + yPublicationTrend.bandwidth() / 2 + 4;
+    })
+    //x position is 3 pixels to the right of the bar
+    .attr("x", function (d) {
+        return 12;
+    })
+    .attr("class", "text-inside")
+    .attr("font-family", "Gotham-Bold")
+    .attr("font-size", "12px")
+    .text(function (d) {
+        return d.name;
+    });
+
+var dataMoocs = [{
+        "name": "La realidad del desarrollo social latinoamericano (2ed.)",
+        "value": 15.9,
+    },
+    {
+        "name": "Políticas efectivas del desarrollo infantil (5ed.)",
+        "value": 9.7,
+    },
+    {
+        "name": "La realidad del desarrollo social latinoamericano (1ed.)",
+        "value": 2.3,
+    },
+    {
+        "name": "Políticas efectivas del desarrollo infantil (1ed.)",
+        "value": 0.1,
+    },
+    {
+        "name": "Asociaciones Publico Privadas: Implementando Soluciones en Latinoamérica y el Caribe (2ed.)",
+        "value": 0.0,
+    }
+];
+
+dataMoocs = dataMoocs.sort(function (a, b) {
+    return d3.ascending(a.value, b.value);
+})
+
+var marginMoocs = {
+    top: 15,
+    right: 25,
+    bottom: 15,
+    left: 55
+};
+
+var widthMoocs = 560 - marginMoocs.left - marginMoocs.right,
+    heightMoocs = 200 - marginMoocs.top - marginMoocs.bottom;
+
+
+var svgMoocs = d3.select("#moocs").append("svg")
+    .attr("width", widthMoocs + marginMoocs.left + marginMoocs.right)
+    .attr("height", heightMoocs + marginMoocs.top + marginMoocs.bottom)
+    .append("g")
+    .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")");
+
+var xMoocs = d3.scaleLinear()
+    .range([0, widthMoocs])
+    .domain([0, d3.max(dataMoocs, function (d) {
+        return d.value;
+    })]);
+
+var yMoocs = d3.scaleBand()
+
+    .rangeRound([heightMoocs, 0], .1)
+    .domain(dataMoocs.map(function (d) {
+        return d.value;
+    }));
+
+var yAxisMoocs = d3.axisLeft(yMoocs)
+    //no tick marks
+    .tickPadding(55)
+    .tickSize(0);
+
+var gyMoocs = svgMoocs.append("g")
+    .style("text-anchor", "start")
+    .style("color", "#555555")
+    .attr("class", "y-data")
+
+    .call(yAxisMoocs)
+
+var barsMoocs = svgMoocs.selectAll(".bar")
+    .data(dataMoocs)
+    .enter()
+    .append("g")
+
+barsMoocs.append("rect")
+    .attr("class", "bar")
+    .attr("y", function (d) {
+        return yMoocs(d.value);
+    })
+    .attr("rx", 25)
+    .attr("ry", 25)
+    .attr("fill", "#dea692")
+    .attr("height", yMoocs.bandwidth() - 2)
+    .attr("x", 8)
+    .attr("width", function (d) {
+        return xMoocs(d.value);
+    });
+
+barsMoocs.append("text")
+    .attr("class", "label")
+    //y position of the label is halfway down the bar
+    .attr("y", function (d) {
+        return yMoocs(d.value) + yMoocs.bandwidth() / 2 + 4;
+    })
+    //x position is 3 pixels to the right of the bar
+    .attr("x", function (d) {
+        return 12;
+    })
+    .attr("class", "text-inside")
+    .attr("font-family", "Gotham-Bold")
+    .attr("font-size", "12px")
+    .text(function (d) {
+        return d.name;
+    });
+
+
+//Institutions suscribers
+var marginInstitution = {
+    top: 50,
+    right: 50,
+    bottom: 50,
+    left: 50
+}
+
+var widthInstitution = 650 - marginInstitution.left - marginInstitution.right;
+var heightInstitution = 400 - marginInstitution.top - marginInstitution.bottom;
+var dataInstitution = [{
+    "name": "Not Reported",
+    "value": 40.3
+}, {
+    "name": "Government",
+    "value": 19.5
+}, {
+    "name": "Academia",
+    "value": 17.4
+}, {
+    "name": "Private Sector",
+    "value": 17.2
+}, {
+    "name": "General Public",
+    "value": 16.1
+}, {
+    "name": "Civil Society",
+    "value": 10.1
+}, {
+    "name": "Research Center",
+    "value": 2.6
+}, {
+    "name": "Multilateral Organization",
+    "value": 2.3
+}, {
+    "name": "Media",
+    "value": 1.2
+}];
+
+var dataInstitutionSum = d3.sum(dataInstitution, function (d) {
+    return d.value;
+});
+var svgInstitution = d3.select('#institution-suscribers').append("svg")
+    .attr("width", widthInstitution + marginInstitution.left + marginInstitution.right)
+    .attr("height", heightInstitution + marginInstitution.top + marginInstitution.bottom)
+    .append("g")
+    .attr("transform", "translate(" + 30 + "," + marginInstitution.top + ")");
+
+var xInstitution = d3.scaleBand()
+    .range([0, widthInstitution]);
+var yInstitution = d3.scaleLinear()
+    .range([heightInstitution, 0]);
+
+xInstitution.domain(dataInstitution.map(function (d) {
+    return d.name
+}));
+yInstitution.domain([0, d3.max(dataInstitution, function (d) {
+    return d.value
+})]);
+
+svgInstitution.selectAll(".bar")
+    .data(dataInstitution)
+    .enter().append("rect")
+    .attr("class", "bar")
+    .attr("x", function (d) {
+        return xInstitution(d.name);
+    })
+    .attr("width", xInstitution.bandwidth() - 15)
+    .attr("y", function (d) {
+        return yInstitution(d.value + 3);
+    })
+    .attr("x", function (d, i) {
+        return i * xInstitution.bandwidth() + 10; //Bar width of 20 plus 1 for padding
+    })
+    .attr("fill", "#9ebbc2")
+    .attr("stroke-width", 1)
+    .attr("stroke", "#337384")
+    .attr("height", function (d) {
+        return heightInstitution - yInstitution(d.value + 3);
+    });
+
+svgInstitution.selectAll("text")
+    .data(dataInstitution)
+    .enter()
+    .append("text")
+    .text(null)
+    .attr("y", function (d) {
+        console.log(d)
+        return yInstitution(d.value + 5);
+    })
+    .attr("x", function (d, i) {
+        return i * xInstitution.bandwidth() + 12; //Bar width of 20 plus 1 for padding
+    })
+    .attr("fill", "#336577")
+    .attr("font-family", "Gotham-Bold")
+    .attr("font-size", "12px")
+    .append("tspan")
+    .attr("x", function (d, i) {
+        return i * xInstitution.bandwidth() + 12; //Bar width of 20 plus 1 for padding
+    })
+    .text(function (d) {
+
+        return d.value + "K";
+    })
+    .append("tspan")
+    .attr("x", function (d, i) {
+        return i * xInstitution.bandwidth() + 12; //Bar width of 20 plus 1 for padding
+    })
+    .attr("dy", "1.2em")
+    .attr("font-family", "Gotham-Book")
+    .attr("font-size", "10px")
+    .text(function (d) {
+        return parseFloat(Math.round(d.value * 100 / dataInstitutionSum * 100) / 100).toFixed(1) +
+            "%";
+    });
+
+svgInstitution.append("g")
+    .attr("transform", "translate(0," + heightInstitution + ")")
+    .attr("class", "institution-chart")
+    .call(d3.axisBottom(xInstitution));
+
+svgInstitution.selectAll(".tick text")
+    .call(wrap, xInstitution.bandwidth())
+    .attr("font-family", "Gotham-Book")
+    .attr("font-size", "9px")
+    .attr("fill", "#336577");
+
+//Institutions suscribers
+var marginAgeSuscribers = {
+    top: 50,
+    right: 50,
+    bottom: 50,
+    left: 50
+}
+
+var widthAgeSuscribers = 550 - marginAgeSuscribers.left - marginAgeSuscribers.right;
+var heightAgeSuscribers = 400 - marginAgeSuscribers.top - marginAgeSuscribers.bottom;
+var dataAgeSuscribers = [{
+    "name": "0-19",
+    "value": 2.7
+}, {
+    "name": "20-39",
+    "value": 29.3
+}, {
+    "name": "40-59",
+    "value": 22.4
+}, {
+    "name": "60-79",
+    "value": 2.5
+}, {
+    "name": "80-99",
+    "value": 0
+}, {
+    "name": "100-119",
+    "value": 2.1
+}, {
+    "name": "Not Reported",
+    "value": 67.5
+}];
+
+var sumDataAgeSuscribers = d3.sum(dataAgeSuscribers, function (d) {
+    return d.value;
+});
+var svgAgeSuscribers = d3.select('#age-suscribers').append("svg")
+    .attr("width", widthAgeSuscribers + marginAgeSuscribers.left + marginAgeSuscribers.right)
+    .attr("height", heightAgeSuscribers + marginAgeSuscribers.top + marginAgeSuscribers.bottom)
+    .append("g")
+    .attr("transform", "translate(" + 30 + "," + marginAgeSuscribers.top + ")");
+
+var xAgeSuscribers = d3.scaleBand()
+    .range([0, widthAgeSuscribers]);
+var yAgeSuscribers = d3.scaleLinear()
+    .range([heightAgeSuscribers, 0]);
+
+xAgeSuscribers.domain(dataAgeSuscribers.map(function (d) {
+    return d.name
+}));
+yAgeSuscribers.domain([0, d3.max(dataAgeSuscribers, function (d) {
+    return d.value
+})]);
+
+svgAgeSuscribers.selectAll(".bar")
+    .data(dataAgeSuscribers)
+    .enter().append("rect")
+    .attr("class", "bar")
+    .attr("x", function (d) {
+        return xAgeSuscribers(d.name);
+    })
+    .attr("width", xAgeSuscribers.bandwidth() - 15)
+    .attr("y", function (d) {
+        return yAgeSuscribers(d.value + 3);
+    })
+    .attr("x", function (d, i) {
+        return i * xAgeSuscribers.bandwidth() + 10; //Bar width of 20 plus 1 for padding
+    })
+    .attr("fill", "#9ebbc2")
+    .attr("stroke-width", 1)
+    .attr("stroke", "#337384")
+    .attr("height", function (d) {
+        return heightAgeSuscribers - yAgeSuscribers(d.value + 3);
+    });
+
+svgAgeSuscribers.selectAll("text")
+    .data(dataAgeSuscribers)
+    .enter()
+    .append("text")
+    .text(null)
+    .attr("y", function (d) {
+        return yAgeSuscribers(d.value + 7);
+    })
+    .attr("x", function (d, i) {
+        return i * xAgeSuscribers.bandwidth() + 20; //Bar width of 20 plus 1 for padding
+    })
+    .attr("fill", "#336577")
+    .attr("font-family", "Gotham-Bold")
+    .attr("font-size", "12px")
+    .append("tspan")
+    .attr("x", function (d, i) {
+        return i * xAgeSuscribers.bandwidth() + 20; //Bar width of 20 plus 1 for padding
+    })
+    .text(function (d) {
+
+        return d.value + "K";
+    })
+    .append("tspan")
+    .attr("x", function (d, i) {
+        return i * xAgeSuscribers.bandwidth() + 20; //Bar width of 20 plus 1 for padding
+    })
+    .attr("dy", "1.2em")
+    .attr("font-family", "Gotham-Book")
+    .attr("font-size", "10px")
+    .text(function (d) {
+        return parseFloat(Math.round((d.value * 100 / sumDataAgeSuscribers) * 100) / 100).toFixed(2) +
+            "%";
+    });
+
+svgAgeSuscribers.append("g")
+    .attr("transform", "translate(0," + heightAgeSuscribers + ")")
+    .attr("class", "suscriber-AgeChart")
+    .call(d3.axisBottom(xAgeSuscribers));
+
+svgAgeSuscribers.selectAll(".tick text")
+    .call(wrap, xAgeSuscribers.bandwidth())
+    .attr("font-family", "Gotham-Book")
+    .attr("font-size", "9px")
+    .attr("fill", "#336577");

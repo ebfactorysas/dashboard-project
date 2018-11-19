@@ -154,7 +154,7 @@ section.menu ul {
 }
 
 .green {
-    color: #518A81 !important;
+    color: #336577 !important;
 }
 
 .yellow {
@@ -260,7 +260,18 @@ section.publications .down-zone h4 span {
     border-right: none;
 }
 
+section.publications #publication-trend .y-data {
+    font-family: 'Gotham-Bold';
+    font-size: 11px;
+}
 
+section.publications #publication-trend .text-inside {
+    color: #8a858d
+}
+
+section.publications #publication-trend .y-data .domain {
+    display: none;
+}
 section.moocs .left-bar {
     text-align: center;
 }
@@ -346,6 +357,18 @@ section.moocs .distribution-chart .tick text {
     width: 10px;
 }
 
+section.moocs #moocs .y-data {
+    font-family: 'Gotham-Bold';
+    font-size: 12px;
+}
+
+section.moocs #moocs .text-inside {
+    color: #8a858d
+}
+
+section.moocs #moocs .y-data .domain {
+    display: none;
+}
 
 section.datasets {
     font-family: 'Gotham-Bold';
@@ -531,6 +554,13 @@ section.suscribers #gender {
     height: 379px;
 }
 
+section.suscribers .institution-chart .tick line{
+    display: none;
+}
+
+section.suscribers .suscriber-AgeChart .tick line{
+    display: none;
+}
 
 #timelines {
     height: 400px;
