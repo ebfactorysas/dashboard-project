@@ -82,7 +82,7 @@
                                 <h4>PUBLICATIONS</h4>
                                 <h1 class="pt-4 pb-4">66</h1>
                                 <p>13% OF 2018 PUBLICATIONS <br> -93 COMPARED TO 2017</p>
-                                <img class="pt-4 pb-4" src="/sites/VPS/KIC/SiteAssets/Mockup/img/arrow-down.png" alt="arrow-down">
+                                <img class="pt-4 pb-4" src="img/arrow-down.png" alt="arrow-down">
                                 <h4>DOWNLOADS</h4>
                                 <h1 class="pt-4 pb-4">113K</h1>
                                 <p>16% OF 2018 DOWNLOADS <br> 76% FROM LAC</p>
@@ -93,7 +93,7 @@
                                 <h4>MOOCS</h4>
                                 <h1 class="pt-4 pb-4">6</h1>
                                 <p>33% OF 2018 MOOCS <br> -3 COMPARED TO 2017</p>
-                                <img class="pt-4 pb-4" src="/sites/VPS/KIC/SiteAssets/Mockup/img/arrow-down.png" alt="arrow-down">
+                                <img class="pt-4 pb-4" src="img/arrow-down.png" alt="arrow-down">
                                 <h4>REGISTRATIONS</h4>
                                 <h1 class="pt-4 pb-4">52K</h1>
                                 <p>23% OF 2018 REGISTRATIONS <br> 88% FROM LAC</p>
@@ -104,7 +104,7 @@
                                 <h4>DATASETS</h4>
                                 <h1 class="pt-4 pb-4">2</h1>
                                 <p>100% OF 2018 DATASETS <br> -13 COMPARED TO 2017</p>
-                                <img class="pt-4 pb-4" src="/sites/VPS/KIC/SiteAssets/Mockup/img/arrow-down.png" alt="arrow-down">
+                                <img class="pt-4 pb-4" src="img/arrow-down.png" alt="arrow-down">
                                 <h4>DOWNLOADS</h4>
                                 <h1 class="pt-4 pb-4">2K</h1>
                                 <p>8% OF 2018 DOWNLOADS <br> 56% FROM LAC</p>
@@ -115,7 +115,7 @@
                                 <h4>CODE</h4>
                                 <h1 class="pt-4 pb-4">0</h1>
                                 <p>0% OF 2018 CODE <br> -1 COMPARED TO 2017</p>
-                                <img class="pt-4 pb-4" src="/sites/VPS/KIC/SiteAssets/Mockup/img/arrow-down.png" alt="arrow-down">
+                                <img class="pt-4 pb-4" src="img/arrow-down.png" alt="arrow-down">
                                 <h4>PAGEVIEWS</h4>
                                 <h1 class="pt-4 pb-4">0</h1>
                                 <p>0% OF 2018 PAGEVIEWS <br> 0% FROM LAC</p>
@@ -139,7 +139,7 @@
     </section>
     <section class="menu">
         <div class="col-md-12">
-            <ul class="list-inline d-flex align-items-center justify-content-around pt-2 pb-2">
+            <ul class="list-inline d-flex align-items-center justify-content-around pt-3 pb-3">
                 <li class="list-inline-item red">PUBLICATIONS</li>
                 <li class="list-inline-item">MOOCS</li>
                 <li class="list-inline-item">DATASETS</li>
@@ -153,32 +153,36 @@
     <section class="publications">
         <div class="col-sm-12">
             <div class="row">
-                <div class="left-bar col-sm-2 pt-4 red-background">
-                    <h4>PUBLICATIONS</h4>
-                    <span><i class="fas fa-circle fa-xs"></i>Total from SCL</span>
-                    <span><i class="fas fa-circle fa-xs"></i>Rest of IDB</span>
-                    <div class="gauge" id="gauge1"></div>
-                    <h4>DOWNLOADS</h4>
-                    <span><i class="fas fa-circle fa-xs"></i>Total from SCL</span>
-                    <span><i class="fas fa-circle fa-xs"></i>Rest of IDB</span>
-                    <div class="gauge-k" id="gauge2"></div>
-                    <h4>DOWNLOADS FROM LAC</h4>
-                    <span><i class="fas fa-circle fa-xs"></i>LAC</span>
-                    <span><i class="fas fa-circle fa-xs"></i>Rest of World</span>
-                    <div id="gauge3" class="text-center gauge-p"></div>
+                <div class="left-bar  red-background">
+                    <div class="gauge-1 ">
+                        <h4>PUBLICATIONS</h4>
+                        <span><i class="fas fa-circle fa-xs"></i>Total from SCL</span>
+                        <span><i class="fas fa-circle fa-xs"></i>Rest of IDB</span>
+                        <div class="gauge" id="gauge1"></div>
+                    </div>
+                    <div class="gauge-2">
+                        <h4>DOWNLOADS</h4>
+                        <span><i class="fas fa-circle fa-xs"></i>Total from SCL</span>
+                        <span><i class="fas fa-circle fa-xs"></i>Rest of IDB</span>
+                        <div class="gauge-k" id="gauge2"></div>
+                    </div>
+                    <div class="gauge-3">
+                        <h4>DOWNLOADS FROM LAC</h4>
+                        <span><i class="fas fa-circle fa-xs"></i>LAC</span>
+                        <span><i class="fas fa-circle fa-xs"></i>Rest of World</span>
+                        <div id="gauge3" class="text-center gauge-p"></div>
+                    </div>
                 </div>
-                <div class="col ">
+                <div class="col right-bar grayr-background">
                     <div class="row m-2 pb-2 d-border-bottom">
                         <div class="col-md-12 ">
                             <p class="text-right"> <i class="far fa-circle fa-xs"></i> ALL THE TIME &nbsp; <i class="far fa-dot-circle"></i>
                                 2018 DATA</p>
                         </div>
-                        <div class="col-sm-7">
-                            <div class="col-sm-12 pt-4  d-border-bottom">
+                        <div class="left-zone pb-4 pr-4">
+                            <div class="col-sm-12 top-zone d-border-bottom">
                                 <h4 class=" text-center">WHERE ARE DOWNLOADS COMING FROM?</h4>
-                                <svg id="downloads" width="100%" height="400">
-                                    <g></g>
-                                </svg>
+                                <div id="downloads"></div>
                             </div>
                             <div class="col-sm-12 down-zone">
                                 <div class="row pt-2">
@@ -199,8 +203,8 @@
                             </div>
 
                         </div>
-                        <div class="col-sm-5 pt-4  d-border-left">
-                            <div class="col-sm-12  d-border-bottom">
+                        <div class="right-zone pl-4 d-border-left">
+                            <div class="col-sm-12 top-zone d-border-bottom">
                                 <h4 class=" text-center">DOWNLOADS TIMELINE</h4>
                                 <div id="timelines"></div>
                             </div>
@@ -223,7 +227,7 @@
     </section>
     <section class="menu">
         <div class="col-md-12">
-            <ul class="list-inline d-flex align-items-center justify-content-around pt-2 pb-2">
+            <ul class="list-inline d-flex align-items-center justify-content-around pt-3 pb-3">
                 <li class="list-inline-item ">PUBLICATIONS</li>
                 <li class="list-inline-item orange">MOOCS</li>
                 <li class="list-inline-item">DATASETS</li>
@@ -250,7 +254,7 @@
                     <span><i class="fas fa-circle fa-xs"></i>Rest of World</span>
                     <div id="gauge3" class="text-center gauge-p"></div>
                 </div>
-                <div class="col grayr-background">
+                <div class="col right-bar grayr-background">
                     <div class="row m-2 pb-2 ">
                         <div class="col-md-12 ">
                             <p class="text-right"> <i class="far fa-circle fa-xs"></i> ALL THE TIME &nbsp; <i class="far fa-dot-circle"></i>
@@ -329,7 +333,7 @@
     </section>
     <section class="menu">
         <div class="col-md-12">
-            <ul class="list-inline d-flex align-items-center justify-content-around pt-2 pb-2">
+            <ul class="list-inline d-flex align-items-center justify-content-around pt-3 pb-3">
                 <li class="list-inline-item ">PUBLICATIONS</li>
                 <li class="list-inline-item">MOOCS</li>
                 <li class="list-inline-item purple">DATASETS</li>
@@ -357,7 +361,7 @@
                     <span><i class="fas fa-circle fa-xs"></i>Rest of World</span>
                     <div id="gauge3" class="text-center gauge-p"></div>
                 </div>
-                <div class="col grayr-background">
+                <div class="col right-bar grayr-background">
                     <div class="row m-2 pb-2 ">
                         <div class="col-md-12 ">
                             <p class="text-right"> <i class="far fa-circle fa-xs"></i> ALL THE TIME &nbsp; <i class="far fa-dot-circle"></i>
@@ -408,7 +412,7 @@
     </section>
     <section class="menu">
         <div class="col-md-12">
-            <ul class="list-inline d-flex align-items-center justify-content-around pt-2 pb-2">
+            <ul class="list-inline d-flex align-items-center justify-content-around pt-3 pb-3">
                 <li class="list-inline-item">PUBLICATIONS</li>
                 <li class="list-inline-item">MOOCS</li>
                 <li class="list-inline-item">DATASETS</li>
@@ -436,7 +440,7 @@
                     <span><i class="fas fa-circle fa-xs"></i>Rest of World</span>
                     <div id="gauge3" class="text-center gauge-p"></div>
                 </div>
-                <div class="col grayr-background">
+                <div class="col right-bar grayr-background">
                     <div class="row m-2 pb-2 ">
                         <div class="col-md-12 ">
                             <p class="text-right yellow"> <i class="far fa-circle fa-xs"></i> ALL THE TIME &nbsp; <i
@@ -488,7 +492,7 @@
     </section>
     <section class="menu">
         <div class="col-md-12">
-            <ul class="list-inline d-flex align-items-center justify-content-around pt-2 pb-2">
+            <ul class="list-inline d-flex align-items-center justify-content-around pt-3 pb-3">
                 <li class="list-inline-item">PUBLICATIONS</li>
                 <li class="list-inline-item">MOOCS</li>
                 <li class="list-inline-item">DATASETS</li>
@@ -516,7 +520,7 @@
                     <span><i class="fas fa-circle fa-xs"></i>Rest of World</span>
                     <div id="gauge3" class="text-center gauge-p"></div>
                 </div>
-                <div class="col grayr-background">
+                <div class="col right-bar grayr-background">
                     <div class="row m-2 pb-2 ">
                         <div class="col-md-12 ">
                             <p class="text-right green"> <i class="far fa-circle fa-xs"></i> ALL THE TIME &nbsp; <i
@@ -558,7 +562,7 @@
     </section>
     <section class="menu">
         <div class="col-md-12">
-            <ul class="list-inline d-flex align-items-center justify-content-around pt-2 pb-2">
+            <ul class="list-inline d-flex align-items-center justify-content-around pt-3 pb-3">
                 <li class="list-inline-item">PUBLICATIONS</li>
                 <li class="list-inline-item">MOOCS</li>
                 <li class="list-inline-item">DATASETS</li>

@@ -111,50 +111,6 @@ body {
     max-width: 100%;
 }
 
-section.big-numbers {
-    color: #FFFFFF;
-    background-color: #1156A1;
-    font-family: 'Gotham-Bold';
-	height: 750px;
-}
-
-section.big-numbers h4 {
-    font-size: 24px;
-    color: #ffffff;
-}
-
-section.big-numbers h1 {
-    font-size: 120px;
-    font-family: 'Gotham-Book';
-    color: #ffffff;
-}
-
-section.big-numbers .border-right-dash {
-    border-right: 2px solid #0f5095;
-}
-
-section.big-numbers p {
-    font-size: 15px;
-}
-
-section.big-numbers img{
-    max-width: 55px;
-}
-
-section.menu {
-    font-family: 'Gotham-Bold';
-    color: #b4b4b4;
-}
-
-section.menu ul {
-    margin: 0;
-}
-
-section.menu ul li{
-    margin: 0;
-}
-
-
 .red {
     color: #d1415a !important;
 }
@@ -204,7 +160,7 @@ section.menu ul li{
 
 #nav-title .navbar-nav .active {
     color: #5a5a5d !important;
-	border-bottom: solid 6px #006ab4;
+    border-bottom: solid 6px #006ab4;
 }
 
 #nav-title .navbar-nav .nav-item {
@@ -222,8 +178,62 @@ section.menu ul li{
     font-family: 'Gotham-Bold';
 }
 
+section.big-numbers {
+    color: #FFFFFF;
+    background-color: #1156A1;
+    font-family: 'Gotham-Bold';
+    height: 750px;
+}
+
+section.big-numbers h4 {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+section.big-numbers h1 {
+    font-size: 120px;
+    font-family: 'Gotham-Book';
+    color: #ffffff;
+}
+
+section.big-numbers .border-right-dash {
+    border-right: 2px solid #0f5095;
+}
+
+section.big-numbers p {
+    font-size: 15px;
+}
+
+section.big-numbers img {
+    max-width: 55px;
+}
+
+section.menu {
+    font-family: 'Gotham-Bold';
+    color: #b4b4b4;
+    font-size: 20px;
+}
+
+section.menu ul {
+    margin: 0;
+}
+
+section.menu ul li {
+    margin: 0;
+}
+
+section.publications {
+    font-family: 'Gotham-Bold';
+    height: 930px;
+}
+
+section.publications .right-bar {
+    height: 930px;
+}
+
 section.publications .left-bar {
     text-align: center;
+    height: 930px;
 }
 
 section.publications .left-bar h4 {
@@ -239,10 +249,6 @@ section.publications .left-bar span:nth-child(2n) {
 section.publications .left-bar span:nth-child(2n+1) {
     color: #AA0206;
     font-size: 10px;
-}
-
-section.publications {
-    font-family: 'Gotham-Bold';
 }
 
 section.publications .row div:nth-child(2),
@@ -296,7 +302,6 @@ section.publications .down-zone .special span:nth-child(3) {
     color: #b4b4b4;
 }
 
-
 section.publications .down-zone h4 span {
     font-size: 12px;
     text-decoration: underline;
@@ -315,8 +320,18 @@ section.publications #publication-trend .text-inside {
 section.publications #publication-trend .y-data .domain {
     display: none;
 }
+
+section.moocs {
+    height: 930px;
+}
+
+section.moocs .right-bar {
+    height: 930px;
+}
+
 section.moocs .left-bar {
     text-align: center;
+    height: 930px;
 }
 
 section.moocs .left-bar h4 {
@@ -413,21 +428,27 @@ section.moocs #moocs .y-data .domain {
     display: none;
 }
 
-section.moocs [id^="student"]  .y-data path{
+section.moocs [id^="student"] .y-data path {
     display: none;
 }
 
-section.moocs [id^="student"]  .y-data{
+section.moocs [id^="student"] .y-data {
     font-size: 10px;
     font-family: 'Gotham-Bold'
 }
 
 section.datasets {
     font-family: 'Gotham-Bold';
+    height: 930px;
+}
+
+section.datasets .right-bar {
+    height: 930px;
 }
 
 section.datasets .left-bar {
     text-align: center;
+    height: 930px;
 }
 
 section.datasets .left-bar h4 {
@@ -472,7 +493,7 @@ section.datasets h4 span:nth-child(1) {
 
 }
 
-.purple-border-right {
+section.datasets .purple-border-right {
     border-right: solid 1px #2E305F;
 }
 
@@ -504,14 +525,22 @@ section.datasets #data-trend .y-data .domain {
     display: none;
 }
 
-section.code .funds-allocated-meter .background {
-    fill: #A17603;
+section.code {
+    height: 930px;
+}
+
+section.code .right-bar {
+    height: 930px;
 }
 
 section.code .left-bar {
     text-align: center;
+	height: 930px;
 }
 
+section.code .funds-allocated-meter .background {
+    fill: #A17603;
+}
 section.code #code-trend .y-code {
     font-family: 'Gotham-Bold';
     font-size: 11px;
@@ -559,6 +588,18 @@ section.code #publications {
     height: 325px;
 }
 
+section.suscribers {
+    height: 930px;
+}
+
+section.suscribers .right-bar {
+    height: 930px;
+}
+
+section.suscribers .left-bar {
+    text-align: center;
+    height: 930px;
+}
 
 section.suscribers .vertical-text {
     writing-mode: vertical-lr;
@@ -570,10 +611,6 @@ section.suscribers .vertical-text {
     font-size: 12px;
     font-family: 'Gotham-Book';
     height: 100px;
-}
-
-section.suscribers .left-bar {
-    text-align: center;
 }
 
 section.suscribers .left-bar h4 {
@@ -608,17 +645,17 @@ section.suscribers #gender {
     height: 379px;
 }
 
-section.suscribers .institution-chart .tick line{
+section.suscribers .institution-chart .tick line {
     display: none;
 }
 
-section.suscribers .suscriber-AgeChart .tick line{
+section.suscribers .suscriber-AgeChart .tick line {
     display: none;
 }
 
 
 #timelines {
-     height: 220px;
+    height: 220px;
 }
 
 #demographics {
@@ -641,7 +678,7 @@ section.suscribers .suscriber-AgeChart .tick line{
     min-width: 300px;
     max-width: 100%;
     margin: 0 auto;
- height: 220px;
+    height: 220px;
 }
 
 
@@ -718,6 +755,7 @@ section.suscribers .suscriber-AgeChart .tick line{
 .gray-background {
     background-color: #f1edec;
 }
+
 .dropdown-bg {
     background-color: #f5f5f5;
     margin: auto 0;
@@ -725,7 +763,7 @@ section.suscribers .suscriber-AgeChart .tick line{
     font-family: "Gotham-Bold";
 }
 
-#dropdownMenuButton{
+#dropdownMenuButton {
     padding-left: 0;
 }
 

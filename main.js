@@ -1,5 +1,5 @@
-var width = 200,
-    height = 200,
+var width = 150,
+    height = 150,
 
     progress = 0,
     progress3 = 0,
@@ -15,8 +15,8 @@ const twoPi = 2 * Math.PI;
 
 var arc = d3.arc()
     .startAngle(0)
-    .innerRadius(58)
-    .outerRadius(66);
+    .innerRadius(70)
+    .outerRadius(64);
 
 var svg = d3.selectAll(".gauge").append("svg")
     .attr("width", width)
@@ -46,8 +46,8 @@ var i = d3.interpolate(progress, allocated / total);
 
 var arc2 = d3.arc()
     .startAngle(0)
-    .innerRadius(58)
-    .outerRadius(66);
+    .innerRadius(70)
+    .outerRadius(64);
 
 var svg2 = d3.selectAll(".gauge-k").append("svg")
     .attr("width", width)
@@ -71,17 +71,17 @@ var percentComplete2 = meter2.append("text")
     .attr("dy", "0.3em");
 
 
-var i2 = d3.interpolate(progress2, allocated2/ total2);
+var i2 = d3.interpolate(progress2, allocated2 / total2);
 
 d3.transition().duration(1000).tween("progress", function () {
     return function (t) {
         progress = i(t);
         foreground.attr("d", arc.endAngle(twoPi * progress));
-        percentComplete.text((progress*100).toFixed(0));
+        percentComplete.text((progress * 100).toFixed(0));
         progress2 = i2(t);
         foreground2.attr("d", arc.endAngle(twoPi * progress2));
-        percentComplete2.text((progress2*1000).toFixed(0)+"K");
-        
+        percentComplete2.text((progress2 * 1000).toFixed(0) + "K");
+
     };
 });
 
@@ -90,8 +90,8 @@ d3.transition().duration(1000).tween("progress", function () {
 
 var arc3 = d3.arc()
     .startAngle(0)
-    .innerRadius(58)
-    .outerRadius(66);
+    .innerRadius(70)
+    .outerRadius(64);
 
 var svg3 = d3.selectAll(".gauge-p").append("svg")
     .attr("width", width)
@@ -121,80 +121,80 @@ d3.transition().duration(1000).tween("progress", function () {
     return function (t) {
         progress = i(t);
         foreground.attr("d", arc.endAngle(twoPi * progress));
-        percentComplete.text((progress*100).toFixed(0));
+        percentComplete.text((progress * 100).toFixed(0));
         progress2 = i2(t);
         foreground2.attr("d", arc2.endAngle(twoPi * progress2));
-        percentComplete2.text((progress2*1000).toFixed(0)+"K");
+        percentComplete2.text((progress2 * 1000).toFixed(0) + "K");
         progress3 = i3(t);
         foreground3.attr("d", arc3.endAngle(twoPi * progress3));
-        percentComplete3.text((progress3*100).toFixed(0)+"%");
-        
+        percentComplete3.text((progress3 * 100).toFixed(0) + "%");
+
     };
 });
 
 
-var data = {
-    "name": "Max",
-    "value": 100,
-    "children": [{
-        "name": "Sylvia",
-        "value": 100,
-        "children": [{
-                "name": "Craig",
-                "value": 100
-            },
-            {
-                "name": "Robin",
-                "value": 100
-            },
-            {
-                "name": "Anna",
-                "value": 100
-            }
-        ]
-    }]
-};
+// var data = {
+//     "name": "Max",
+//     "value": 100,
+//     "children": [{
+//         "name": "Sylvia",
+//         "value": 100,
+//         "children": [{
+//                 "name": "Craig",
+//                 "value": 100
+//             },
+//             {
+//                 "name": "Robin",
+//                 "value": 100
+//             },
+//             {
+//                 "name": "Anna",
+//                 "value": 100
+//             }
+//         ]
+//     }]
+// };
 
-var partitionLayout = d3.partition()
-    .size([200, 600]);
+// var partitionLayout = d3.partition()
+//     .size([200, 935]);
 
-var rootNode = d3.hierarchy(data)
+// var rootNode = d3.hierarchy(data)
 
-rootNode.sum(function (d) {
-    return d.value;
-});
+// rootNode.sum(function (d) {
+//     return d.value;
+// });
 
-partitionLayout(rootNode);
-var test = d3.select('#downloads')
-    .selectAll('rect')
-    .data(rootNode.descendants())
-    .enter();
-test.append('text')
-    .attr('x', function (d) {
-        return d.y0 + 10;
-    })
-    .attr('y', function (d) {
-        return d.x0 + 20;
-    })
-    .text(function (d) {
-        return d.data.name;
-    })
-test.append('rect')
-    .attr('x', function (d) {
-        return d.y0;
-    })
-    .attr('y', function (d) {
-        return d.x0;
-    })
-    .attr('width', function (d) {
-        return d.y1 - d.y0;
-    })
-    .attr('height', function (d) {
-        return d.x1 - d.x0;
-    })
-    .style("fill", function (d) {
-        return 'rgba(209,65,90,0.' + d.depth + 3 + ')'
-    });
+// partitionLayout(rootNode);
+// var test = d3.select('#downloads')
+//     .selectAll('rect')
+//     .data(rootNode.descendants())
+//     .enter();
+// test.append('text')
+//     .attr('x', function (d) {
+//         return d.y0 + 10;
+//     })
+//     .attr('y', function (d) {
+//         return d.x0 + 20;
+//     })
+//     .text(function (d) {
+//         return d.data.name + d.data.value;
+//     })
+// test.append('rect')
+//     .attr('x', function (d) {
+//         return d.y0;
+//     })
+//     .attr('y', function (d) {
+//         return d.x0;
+//     })
+//     .attr('width', function (d) {
+//         return d.y1 - d.y0;
+//     })
+//     .attr('height', function (d) {
+//         return d.x1 - d.x0;
+//     })
+//     .style("fill", function (d) {
+//         return 'rgba(209,65,90,0.' + d.depth + 3 + ')'
+//     });
 
 //Bubbles
 var bubbleData = [{
@@ -1484,3 +1484,119 @@ barsStudent4.append("text")
     .text(function (d) {
         return d.value + "K";
     });
+
+//treeMap
+
+const marginTree = {
+        top: 40,
+        right: 10,
+        bottom: 10,
+        left: 10
+    },
+    widthTree = 935 - marginTree.left - marginTree.right,
+    heightTree = 200 - marginTree.top - marginTree.bottom,
+    colorTree = d3.scaleOrdinal().range(["#d1415a", "#e8bcc3", "#eedfe2", "#f0e9eb", "#f1eff0", "#f1f0f0"]);
+
+const treemap = d3.treemap().size([widthTree, heightTree]);
+
+const divTree = d3.select("#downloads").append("div")
+    .style("position", "relative")
+    .style("width", (widthTree + marginTree.left + marginTree.right) + "px")
+    .style("height", (heightTree + marginTree.top + marginTree.bottom) + "px")
+    .style("left", marginTree.left + "px")
+    .style("top", marginTree.top + "px");
+
+var dataTree = {
+    "name": "flare",
+    "children": [{
+        "name": "analytics",
+        "children": [{
+                "name": "graph",
+                "children": [{
+                    "name": "Google",
+                    "size": 66
+                }]
+            },
+            {
+                "name": "optimization",
+                "children": [{
+                    "name": "IDB Publications",
+                    "size": 18
+                }]
+            },
+            {
+                "name": "optimization",
+                "children": [{
+                    "name": "AspectRatioBanker",
+                    "children": [{
+                        "children": [{
+                            "name": "Others",
+                            "size": 6
+                        }, {
+                            "name": "",
+                            "size": 3
+                        }],
+                        "name": "Others"
+                    }, {
+                        "children": [{
+                            "name": "IDB Blogs",
+                            "size": 3
+                        }, {
+                            "name": "",
+                            "size": 1
+                        }, {
+                            "name": "",
+                            "size": 1
+                        }, {
+                            "name": "",
+                            "size": 1
+                        }, {
+                            "name": "",
+                            "size": 1
+                        }, {
+                            "name": "",
+                            "size": 1
+                        }],
+                        "name": "IDB Blogs"
+                    }]
+                }]
+            }
+        ]
+    }]
+}
+const root = d3.hierarchy(dataTree, (d) => d.children)
+    .sum((d) => d.size);
+
+const tree = treemap(root);
+
+const node = divTree.datum(root).selectAll(".node")
+    .data(tree.leaves())
+    .enter().append("div")
+    .attr("class", "node")
+    .style("left", (d) => d.x0 + "px")
+    .style("top", (d) => d.y0 + "px")
+    .style("width", (d) => Math.max(0, d.x1 - d.x0  ) + "px")
+    .style("height", (d) => Math.max(0, d.y1 - d.y0 ) + "px")
+    .style("background", (d) => colorTree(d.parent.data.name))
+    .text((d) => d.data.name);
+
+d3.selectAll("input").on("change", function change() {
+    const value = this.value === "count" ?
+        (d) => {
+            return d.size ? 1 : 0;
+        } :
+        (d) => {
+            return d.size;
+        };
+
+    const newRoot = d3.hierarchy(dataTree, (d) => d.children)
+        .sum(value);
+
+    node.data(treemap(newRoot).leaves())
+        .transition()
+        .duration(1500)
+        .style("left", (d) => d.x0 + "px")
+        .style("top", (d) => d.y0 + "px")
+        .style("width", (d) => Math.max(0, d.x1 - d.x0 - 1) + "px")
+        .style("height", (d) => Math.max(0, d.y1 - d.y0 - 1) + "px")
+});
