@@ -2,14 +2,14 @@ var width = 200,
     height = 200,
 
     progress = 0,
-    progress1 = 0,
+    progress3 = 0,
     progress2 = 0,
     allocated = 76,
     total = 100,
-    allocated1 = 76,
-    total1 = 100,
-    allocated2 = 76,
-    total2 = 100,
+    allocated3 = 9,
+    total3 = 100,
+    allocated2 = 113,
+    total2 = 1000,
     formatPercent = d3.format(".0%");
 const twoPi = 2 * Math.PI;
 
@@ -42,19 +42,103 @@ var percentComplete = meter.append("text")
 
 var i = d3.interpolate(progress, allocated / total);
 
+//gauge K
+
+var arc2 = d3.arc()
+    .startAngle(0)
+    .innerRadius(58)
+    .outerRadius(66);
+
+var svg2 = d3.selectAll(".gauge-k").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+    .append("g")
+    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+var meter2 = svg2.append("g")
+    .attr("class", "funds-allocated-meter");
+
+meter2.append("path")
+    .attr("class", "background")
+    .attr("d", arc2.endAngle(twoPi));
+
+var foreground2 = meter2.append("path")
+    .attr("class", "foreground");
+
+var percentComplete2 = meter2.append("text")
+    .attr("text-anchor", "middle")
+    .attr("class", "percent-complete")
+    .attr("dy", "0.3em");
+
+
+var i2 = d3.interpolate(progress2, allocated2/ total2);
+
 d3.transition().duration(1000).tween("progress", function () {
     return function (t) {
         progress = i(t);
         foreground.attr("d", arc.endAngle(twoPi * progress));
-        percentComplete.text(formatPercent(progress));
+        percentComplete.text((progress*100).toFixed(0));
+        progress2 = i2(t);
+        foreground2.attr("d", arc.endAngle(twoPi * progress2));
+        percentComplete2.text((progress2*1000).toFixed(0)+"K");
+        
     };
 });
+
+
+//gauge %
+
+var arc3 = d3.arc()
+    .startAngle(0)
+    .innerRadius(58)
+    .outerRadius(66);
+
+var svg3 = d3.selectAll(".gauge-p").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+    .append("g")
+    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+var meter3 = svg3.append("g")
+    .attr("class", "funds-allocated-meter");
+
+meter3.append("path")
+    .attr("class", "background")
+    .attr("d", arc3.endAngle(twoPi));
+
+var foreground3 = meter3.append("path")
+    .attr("class", "foreground");
+
+var percentComplete3 = meter3.append("text")
+    .attr("text-anchor", "middle")
+    .attr("class", "percent-complete")
+    .attr("dy", "0.3em");
+
+
+var i3 = d3.interpolate(progress3, allocated3 / total3);
+
+d3.transition().duration(1000).tween("progress", function () {
+    return function (t) {
+        progress = i(t);
+        foreground.attr("d", arc.endAngle(twoPi * progress));
+        percentComplete.text((progress*100).toFixed(0));
+        progress2 = i2(t);
+        foreground2.attr("d", arc2.endAngle(twoPi * progress2));
+        percentComplete2.text((progress2*1000).toFixed(0)+"K");
+        progress3 = i3(t);
+        foreground3.attr("d", arc3.endAngle(twoPi * progress3));
+        percentComplete3.text((progress3*100).toFixed(0)+"%");
+        
+    };
+});
+
+
 var data = {
     "name": "Max",
     "value": 100,
     "children": [{
         "name": "Sylvia",
-        "value": 75,
+        "value": 100,
         "children": [{
                 "name": "Craig",
                 "value": 100
@@ -68,27 +152,11 @@ var data = {
                 "value": 100
             }
         ]
-    }, {
-        "name": "David",
-        "value": 75,
-        "children": [{
-                "name": "Jeff",
-                "value": 100
-            },
-            {
-                "name": "buffy",
-                "value": 100
-            }
-        ]
-    }, {
-        "name": "Mr X",
-        "value": 100,
-
     }]
 };
 
 var partitionLayout = d3.partition()
-    .size([350, 350]);
+    .size([200, 600]);
 
 var rootNode = d3.hierarchy(data)
 
@@ -207,7 +275,9 @@ var svgBubble = d3.select('#publications')
 
 
 var yScale = d3.scaleLinear()
-    .domain(d3.extent(bubbleData, d => d.PublishedDays))
+    .domain(d3.extent(bubbleData, function (d) {
+        return d.PublishedDays;
+    }))
     .range([300, 0])
     .nice();
 
@@ -215,14 +285,16 @@ var yAxis = d3.axisLeft(yScale);
 svgBubble.call(yAxis);
 
 var xScale = d3.scaleLinear()
-    .domain(d3.extent(bubbleData, d => d.downloads))
+    .domain(d3.extent(bubbleData, function (d) {
+        return d.downloads;
+    }))
     .range([0, 300])
     .nice();
 
 var xAxis = d3.axisBottom(xScale)
     .ticks(5);
 svgBubble.append('g')
-    .attr('transform', `translate(0,300)`)
+    .attr('transform', 'translate(0,300)')
     .call(xAxis);
 
 var marginDistribution = {
@@ -344,7 +416,8 @@ function wrap(text, width) {
                 line.pop()
                 tspan.text(line.join(" "))
                 line = [word]
-                tspan = text.append("tspan").attr("x", 0).attr("y", y).attr("dy", `${++lineNumber * lineHeight + dy}em`).text(word)
+                var number = ++lineNumber * lineHeight + dy;
+                tspan = text.append("tspan").attr("x", 0).attr("y", y).attr("dy", number + "em").text(word)
             }
         }
     })
@@ -982,7 +1055,7 @@ var marginAgeSuscribers = {
     left: 50
 }
 
-var widthAgeSuscribers = 550 - marginAgeSuscribers.left - marginAgeSuscribers.right;
+var widthAgeSuscribers = 450 - marginAgeSuscribers.left - marginAgeSuscribers.right;
 var heightAgeSuscribers = 400 - marginAgeSuscribers.top - marginAgeSuscribers.bottom;
 var dataAgeSuscribers = [{
     "name": "0-19",
@@ -1093,3 +1166,321 @@ svgAgeSuscribers.selectAll(".tick text")
     .attr("font-family", "Gotham-Book")
     .attr("font-size", "9px")
     .attr("fill", "#336577");
+
+//Moocs students flow
+
+var dataStudents = {
+    registrations: {
+        years: [{
+            name: "2016",
+            value: 25.6
+        }, {
+            name: "2017",
+            value: 68.3
+        }, {
+            name: "2018",
+            value: 55
+        }],
+        value: 55
+    },
+    participants: {
+        years: [{
+            name: "2016",
+            value: 13
+        }, {
+            name: "2017",
+            value: 32
+        }, {
+            name: "2018",
+            value: 23
+        }],
+        value: 23
+    },
+    completed: {
+        years: [{
+            name: "2016",
+            value: 2.4
+        }, {
+            name: "2017",
+            value: 5.8
+        }, {
+            name: "2018",
+            value: 2.3
+        }],
+        value: 2
+    },
+    certified: {
+        years: [{
+            name: "2016",
+            value: 1.32
+        }, {
+            name: "2017",
+            value: 3.25
+        }, {
+            name: "2018",
+            value: .92
+        }],
+        value: 1
+    }
+};
+
+
+
+var marginStudents = {
+    top: 2,
+    right: 20,
+    bottom: 2,
+    left: 20
+};
+
+var widthStudents = 80 - marginStudents.left - marginStudents.right,
+    heightStudents = 80 - marginStudents.top - marginStudents.bottom;
+
+
+var svgStudent1 = d3.select("#student1").append("svg")
+    .attr("width", widthStudents + marginStudents.left + marginStudents.right)
+    .attr("height", heightStudents + marginStudents.top + marginStudents.bottom)
+    .append("g")
+    .attr("transform", "translate(" + marginStudents.left + "," + marginStudents.top + ")");
+
+var svgStudent2 = d3.select("#student2").append("svg")
+    .attr("width", widthStudents + marginStudents.left + marginStudents.right)
+    .attr("height", heightStudents + marginStudents.top + marginStudents.bottom)
+    .append("g")
+    .attr("transform", "translate(" + marginStudents.left + "," + marginStudents.top + ")");
+
+var svgStudent3 = d3.select("#student3").append("svg")
+    .attr("width", widthStudents + marginStudents.left + marginStudents.right)
+    .attr("height", heightStudents + marginStudents.top + marginStudents.bottom)
+    .append("g")
+    .attr("transform", "translate(" + marginStudents.left + "," + marginStudents.top + ")");
+
+var svgStudent4 = d3.select("#student4").append("svg")
+    .attr("width", widthStudents + marginStudents.left + marginStudents.right)
+    .attr("height", heightStudents + marginStudents.top + marginStudents.bottom)
+    .append("g")
+    .attr("transform", "translate(" + marginStudents.left + "," + marginStudents.top + ")");
+
+var xStudent1 = d3.scaleLinear()
+    .range([0, widthStudents])
+    .domain([0, d3.max(dataStudents.registrations.years, function (d) {
+        return d.value;
+    })]);
+
+var yStudent1 = d3.scaleBand()
+    .rangeRound([heightStudents, 0], .1)
+    .domain(dataStudents.registrations.years.map(function (d) {
+        return d.name;
+    }));
+
+var xStudent2 = d3.scaleLinear()
+    .range([0, widthStudents])
+    .domain([0, d3.max(dataStudents.participants.years, function (d) {
+        return d.value;
+    })]);
+
+var yStudent2 = d3.scaleBand()
+    .rangeRound([heightStudents, 0], .1)
+    .domain(dataStudents.participants.years.map(function (d) {
+        return d.name;
+    }));
+
+var xStudent3 = d3.scaleLinear()
+    .range([0, widthStudents])
+    .domain([0, d3.max(dataStudents.completed.years, function (d) {
+        return d.value;
+    })]);
+
+var yStudent3 = d3.scaleBand()
+    .rangeRound([heightStudents, 0], .1)
+    .domain(dataStudents.completed.years.map(function (d) {
+        return d.name;
+    }));
+
+var xStudent4 = d3.scaleLinear()
+    .range([0, widthStudents])
+    .domain([0, d3.max(dataStudents.certified.years, function (d) {
+        return d.value;
+    })]);
+
+var yStudent4 = d3.scaleBand()
+    .rangeRound([heightStudents, 0], .1)
+    .domain(dataStudents.certified.years.map(function (d) {
+        return d.name;
+    }));
+
+var yAxisStudent1 = d3.axisLeft(yStudent1)
+    .tickPadding(20)
+    .tickSize(0);
+
+var yAxisStudent2 = d3.axisLeft(yStudent2)
+    .tickPadding(20)
+    .tickSize(0);
+
+var yAxisStudent3 = d3.axisLeft(yStudent3)
+    .tickPadding(20)
+    .tickSize(0);
+
+var yAxisStudent4 = d3.axisLeft(yStudent4)
+    .tickPadding(20)
+    .tickSize(0);
+
+var gyStudent1 = svgStudent1.append("g")
+    .style("text-anchor", "start")
+    .style("color", "#000")
+    .attr("class", "y-data")
+    .call(yAxisStudent1)
+
+var gyStudent2 = svgStudent2.append("g")
+    .style("text-anchor", "start")
+    .style("color", "#000")
+    .attr("class", "y-data")
+    .call(yAxisStudent2)
+
+var gyStudent3 = svgStudent3.append("g")
+    .style("text-anchor", "start")
+    .style("color", "#000")
+    .attr("class", "y-data")
+    .call(yAxisStudent3)
+
+var gyStudent4 = svgStudent4.append("g")
+    .style("text-anchor", "start")
+    .style("color", "#000")
+    .attr("class", "y-data")
+    .call(yAxisStudent4)
+
+var barsStudent1 = svgStudent1.selectAll(".bar")
+    .data(dataStudents.registrations.years)
+    .enter()
+    .append("g")
+
+barsStudent1.append("rect")
+    .attr("class", "bar")
+    .attr("y", function (d) {
+        return yStudent1(d.name);
+    })
+    .attr("fill", "#fff")
+    .attr("height", yStudent1.bandwidth() - 8)
+    .attr("x", 8)
+    .attr("width", function (d) {
+        return xStudent1(d.value);
+    });
+
+barsStudent1.append("text")
+    .attr("class", "label")
+    //y position of the label is halfway down the bar
+    .attr("y", function (d) {
+        return yStudent1(d.name) + yStudent1.bandwidth() / 2;
+    })
+    //x position is 3 pixels to the right of the bar
+    .attr("x", function (d) {
+        return xStudent1(d.value) - 6;
+    })
+    .attr("class", "text-inside")
+    .attr("font-family", "Gotham-Book")
+    .attr("font-size", "10px")
+    .text(function (d) {
+        return d.value + "K";
+    });
+
+var barsStudent2 = svgStudent2.selectAll(".bar")
+    .data(dataStudents.participants.years)
+    .enter()
+    .append("g")
+
+barsStudent2.append("rect")
+    .attr("class", "bar")
+    .attr("y", function (d) {
+        return yStudent2(d.name);
+    })
+    .attr("fill", "#fff")
+    .attr("height", yStudent2.bandwidth() - 8)
+    .attr("x", 8)
+    .attr("width", function (d) {
+        return xStudent2(d.value);
+    });
+
+barsStudent2.append("text")
+    .attr("class", "label")
+    //y position of the label is halfway down the bar
+    .attr("y", function (d) {
+        return yStudent2(d.name) + yStudent2.bandwidth() / 2;
+    })
+    //x position is 3 pixels to the right of the bar
+    .attr("x", function (d) {
+        return xStudent2(d.value) - 6;
+    })
+    .attr("class", "text-inside")
+    .attr("font-family", "Gotham-Book")
+    .attr("font-size", "10px")
+    .text(function (d) {
+        return d.value + "K";
+    });
+
+var barsStudent3 = svgStudent3.selectAll(".bar")
+    .data(dataStudents.completed.years)
+    .enter()
+    .append("g")
+
+barsStudent3.append("rect")
+    .attr("class", "bar")
+    .attr("y", function (d) {
+        return yStudent3(d.name);
+    })
+    .attr("fill", "#fff")
+    .attr("height", yStudent3.bandwidth() - 8)
+    .attr("x", 8)
+    .attr("width", function (d) {
+        return xStudent3(d.value);
+    });
+
+barsStudent3.append("text")
+    .attr("class", "label")
+    //y position of the label is halfway down the bar
+    .attr("y", function (d) {
+        return yStudent3(d.name) + yStudent3.bandwidth() / 2;
+    })
+    //x position is 3 pixels to the right of the bar
+    .attr("x", function (d) {
+        return xStudent3(d.value) - 6;
+    })
+    .attr("class", "text-inside")
+    .attr("font-family", "Gotham-Book")
+    .attr("font-size", "10px")
+    .text(function (d) {
+        return d.value + "K";
+    });
+
+var barsStudent4 = svgStudent4.selectAll(".bar")
+    .data(dataStudents.certified.years)
+    .enter()
+    .append("g")
+
+barsStudent4.append("rect")
+    .attr("class", "bar")
+    .attr("y", function (d) {
+        return yStudent4(d.name);
+    })
+    .attr("fill", "#fff")
+    .attr("height", yStudent4.bandwidth() - 8)
+    .attr("x", 8)
+    .attr("width", function (d) {
+        return xStudent4(d.value);
+    });
+
+barsStudent4.append("text")
+    .attr("class", "label")
+    //y position of the label is halfway down the bar
+    .attr("y", function (d) {
+        return yStudent4(d.name) + yStudent4.bandwidth() / 2;
+    })
+    //x position is 3 pixels to the right of the bar
+    .attr("x", function (d) {
+        return xStudent4(d.value) - 6;
+    })
+    .attr("class", "text-inside")
+    .attr("font-family", "Gotham-Book")
+    .attr("font-size", "10px")
+    .text(function (d) {
+        return d.value + "K";
+    });

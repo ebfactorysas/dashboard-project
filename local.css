@@ -115,15 +115,16 @@ section.big-numbers {
     color: #FFFFFF;
     background-color: #1156A1;
     font-family: 'Gotham-Bold';
+    height: 750px;
 }
 
 section.big-numbers h4 {
-    font-size: 18px;
+    font-size: 24px;
     color: #ffffff;
 }
 
 section.big-numbers h1 {
-    font-size: 72px;
+    font-size: 120px;
     font-family: 'Gotham-Book';
     color: #ffffff;
 }
@@ -133,7 +134,11 @@ section.big-numbers .border-right-dash {
 }
 
 section.big-numbers p {
-    font-size: 12px;
+    font-size: 16px;
+}
+
+section.big-numbers img {
+    max-width: 100%;
 }
 
 section.menu {
@@ -144,7 +149,9 @@ section.menu {
 section.menu ul {
     margin: 0;
 }
-
+section.menu ul li{
+    margin: 0;
+}
 .red {
     color: #d1415a !important;
 }
@@ -177,6 +184,40 @@ section.menu ul {
     color: #ffffff !important;
 }
 
+.title-text h1 {
+    font-family: "Gotham-Book";
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.left-text-drop {
+    color: #1658a1;
+    font-family: "Gotham-Bold";
+    margin: auto 0;
+    padding-right: 0;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+#nav-title .navbar-nav .active {
+    color: #5a5a5d !important;
+    border-bottom: solid 6px #006ab4;
+}
+
+#nav-title .navbar-nav .nav-item {
+    color: #3396cf;
+}
+
+#nav-title {
+    width: 100%;
+}
+
+#nav-title .navbar-nav {
+    width: 100%;
+    font-size: .65rem;
+    text-align: center;
+    font-family: 'Gotham-Bold';
+}
 
 
 section.publications .left-bar {
@@ -272,6 +313,7 @@ section.publications #publication-trend .text-inside {
 section.publications #publication-trend .y-data .domain {
     display: none;
 }
+
 section.moocs .left-bar {
     text-align: center;
 }
@@ -368,6 +410,15 @@ section.moocs #moocs .text-inside {
 
 section.moocs #moocs .y-data .domain {
     display: none;
+}
+
+section.moocs [id^="student"] .y-data path {
+    display: none;
+}
+
+section.moocs [id^="student"] .y-data {
+    font-size: 10px;
+    font-family: 'Gotham-Bold'
 }
 
 section.datasets {
@@ -556,17 +607,17 @@ section.suscribers #gender {
     height: 379px;
 }
 
-section.suscribers .institution-chart .tick line{
+section.suscribers .institution-chart .tick line {
     display: none;
 }
 
-section.suscribers .suscriber-AgeChart .tick line{
+section.suscribers .suscriber-AgeChart .tick line {
     display: none;
 }
 
 
 #timelines {
-    height: 400px;
+    height: 220px;
 }
 
 #demographics {
@@ -589,7 +640,7 @@ section.suscribers .suscriber-AgeChart .tick line{
     min-width: 300px;
     max-width: 100%;
     margin: 0 auto;
-
+    height: 220px;
 }
 
 
@@ -666,6 +717,14 @@ section.suscribers .suscriber-AgeChart .tick line{
 .gray-background {
     background-color: #f1edec;
 }
+
+.dropdown-bg {
+    background-color: #f5f5f5;
+    margin: auto 0;
+    padding-left: 0;
+    font-family: "Gotham-Bold";
+}
+
 
 .lightgray-background {
     background-color: #f1f1f1;
