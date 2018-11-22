@@ -158,6 +158,11 @@ body {
     padding-bottom: .5rem;
 }
 
+.left-text-drop select{
+    border: none;
+    background-color:transparent; 
+}
+
 #nav-title .navbar-nav .active {
     color: #5a5a5d !important;
     border-bottom: solid 6px #006ab4;
