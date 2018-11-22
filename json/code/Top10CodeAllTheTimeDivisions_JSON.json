@@ -1,0 +1,102 @@
+[
+	{
+		"value" : 512,
+		"name" : "Massive change detection",
+		"divisionCodes" : "FMM"
+	},
+	{
+		"value" : 360,
+		"name" : "AP-LATAM",
+		"divisionCodes" : "FMM"
+	},
+	{
+		"value" : 1105,
+		"name" : "SIMPLE-LAT",
+		"divisionCodes" : "ICS"
+	},
+	{
+		"value" : 875,
+		"name" : "R Library Numbers for Development",
+		"divisionCodes" : "ISU"
+	},
+	{
+		"value" : 838,
+		"name" : "IDBx Data Engine",
+		"divisionCodes" : "KIC"
+	},
+	{
+		"value" : 3633,
+		"name" : "MapMap",
+		"divisionCodes" : "KLD"
+	},
+	{
+		"value" : 2726,
+		"name" : "Consul",
+		"divisionCodes" : "KLD"
+	},
+	{
+		"value" : 861,
+		"name" : "Tabula",
+		"divisionCodes" : "KLD"
+	},
+	{
+		"value" : 813,
+		"name" : "Gobierto",
+		"divisionCodes" : "KLD"
+	},
+	{
+		"value" : 738,
+		"name" : "AEDES Detector",
+		"divisionCodes" : "KLD"
+	},
+	{
+		"value" : 691,
+		"name" : "Vota Inteligente",
+		"divisionCodes" : "KLD"
+	},
+	{
+		"value" : 593,
+		"name" : "Textar",
+		"divisionCodes" : "KLD"
+	},
+	{
+		"value" : 559,
+		"name" : "Gmapsdistance",
+		"divisionCodes" : "KLD"
+	},
+	{
+		"value" : 344,
+		"name" : "Pydatajson",
+		"divisionCodes" : "KLD"
+	},
+	{
+		"value" : 1120,
+		"name" : "SmartMap",
+		"divisionCodes" : "MIF"
+	},
+	{
+		"value" : 1051,
+		"name" : "Nexso",
+		"divisionCodes" : "MIF"
+	},
+	{
+		"value" : 3881,
+		"name" : "Indicator aggregator",
+		"divisionCodes" : "SPD"
+	},
+	{
+		"value" : 381,
+		"name" : "Clasificador de Datos Atípicos",
+		"divisionCodes" : "SPH"
+	},
+	{
+		"value" : 4616,
+		"name" : "Hydro-BID",
+		"divisionCodes" : "WSA"
+	},
+	{
+		"value" : 3280,
+		"name" : "Evaluación de Reciclaje Inclusivo",
+		"divisionCodes" : "WSA"
+	}
+]

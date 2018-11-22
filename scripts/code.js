@@ -1,86 +1,242 @@
 /**
  * Start code-trend
  *  */
-/*d3.json("json/code/Top10CodeAllTheTimeIDB_JSON.json").then(function (codeTrend) {
-    drawChartCodeTrend(codeTrend);
-});*/
 
-codeTrendAllTime = [
-	{
-		"json_featuretype" : "Sheet 1",
-		"Rank" : "1",
-		"name" : "Hydro-BID",
-		"value" : 4616,
-		"xlsx_row_id" : 2
-	},
-	{
-		"json_featuretype" : "Sheet 1",
-		"Rank" : "2",
-		"name" : "Indicator aggregator",
-		"value" : 3881,
-		"xlsx_row_id" : 3
-	},
-	{
-		"json_featuretype" : "Sheet 1",
-		"Rank" : "3",
-		"name" : "MapMap",
-		"value" : 3633,
-		"xlsx_row_id" : 4
-	},
-	{
-		"json_featuretype" : "Sheet 1",
-		"Rank" : "4",
-		"name" : "Evaluación de Reciclaje Inclusivo",
-		"value" : 3280,
-		"xlsx_row_id" : 5
-	},
-	{
-		"json_featuretype" : "Sheet 1",
-		"Rank" : "5",
-		"name" : "Consul",
-		"value" : 2726,
-		"xlsx_row_id" : 6
-	},
-	{
-		"json_featuretype" : "Sheet 1",
-		"Rank" : "6",
-		"name" : "SmartMap",
-		"value" : 1120,
-		"xlsx_row_id" : 7
-	},
-	{
-		"json_featuretype" : "Sheet 1",
-		"Rank" : "7",
-		"name" : "SIMPLE-LAT",
-		"value" : 1105,
-		"xlsx_row_id" : 8
-	},
-	{
-		"json_featuretype" : "Sheet 1",
-		"Rank" : "8",
-		"name" : "Nexso",
-		"value" : 1051,
-		"xlsx_row_id" : 9
-	},
-	{
-		"json_featuretype" : "Sheet 1",
-		"Rank" : "9",
-		"name" : "R Library Numbers for Development",
-		"value" : 875,
-		"xlsx_row_id" : 10
-	},
-	{
-		"json_featuretype" : "Sheet 1",
-		"Rank" : "10",
-		"name" : "Tabula",
-		"value" : 861,
-		"xlsx_row_id" : 11
-	}
-]
-drawChartCodeTrend(codeTrendAllTime);
+codetrendArrays = {
+    codeTrendIADBAllTime: [{
+            "name": "Hydro-BID",
+            "value": 461
+        },
+        {
+            "name": "Indicator aggregator",
+            "value": 3881
+        },
+        {
+            "name": "MapMap",
+            "value": 3633
+        },
+        {
+            "name": "Evaluación de Reciclaje Inclusivo",
+            "value": 3280
+        },
+        {
+            "name": "Consul",
+            "value": 2726
+        },
+        {
+            "name": "SmartMap",
+            "value": 1120
+        },
+        {
+            "name": "SIMPLE-LAT",
+            "value": 1105
+        },
+        {
+            "name": "Nexso",
+            "value": 1051
+        },
+        {
+            "name": "R Library Numbers for Development",
+            "value": 875
+        },
+        {
+            "name": "Tabula",
+            "value": 861
+        }
+    ],
+    codeTrendIADBA2018: [{
+            "name": "Gobierto",
+            "value": 801
+        },
+        {
+            "name": "Gmapsdistance",
+            "value": 531
+        },
+        {
+            "name": "Massive change detection",
+            "value": 495
+        },
+        {
+            "name": "Clasificador de Datos Atípicos",
+            "value": 376
+        },
+        {
+            "name": "AP-LATAM",
+            "value": 350
+        },
+        {
+            "name": "AEDES Detector",
+            "value": 0
+        },
+        {
+            "name": "Consul",
+            "value": 0
+        },
+        {
+            "name": "Evaluación de Reciclaje Inclusivo",
+            "value": 0
+        },
+        {
+            "name": "Hydro-BID",
+            "value": 0
+        },
+        {
+            "name": "IDBx Data Engine",
+            "value": 0
+        },
+        {
+            "name": "Indicator aggregator",
+            "value": 0
+        },
+        {
+            "name": "MapMap",
+            "value": 0
+        },
+        {
+            "name": "Nexso",
+            "value": 0
+        },
+        {
+            "name": "Pydatajson",
+            "value": 0
+        },
+        {
+            "name": "R Library Numbers for Development",
+            "value": 0
+        },
+        {
+            "name": "SIMPLE-LAT",
+            "value": 0
+        },
+        {
+            "name": "SmartMap",
+            "value": 0
+        },
+        {
+            "name": "Tabula",
+            "value": 0
+        },
+        {
+            "name": "Textar",
+            "value": 0
+        },
+        {
+            "name": "Vota Inteligente",
+            "value": 0
+        }
+    ],
+    codeTrendAllTimeDivision:[
+        {
+            "value" : 512,
+            "name" : "Massive change detection",
+            "divisionCodes" : "FMM"
+        },
+        {
+            "value" : 360,
+            "name" : "AP-LATAM",
+            "divisionCodes" : "FMM"
+        },
+        {
+            "value" : 1105,
+            "name" : "SIMPLE-LAT",
+            "divisionCodes" : "ICS"
+        },
+        {
+            "value" : 875,
+            "name" : "R Library Numbers for Development",
+            "divisionCodes" : "ISU"
+        },
+        {
+            "value" : 838,
+            "name" : "IDBx Data Engine",
+            "divisionCodes" : "KIC"
+        },
+        {
+            "value" : 3633,
+            "name" : "MapMap",
+            "divisionCodes" : "KLD"
+        },
+        {
+            "value" : 2726,
+            "name" : "Consul",
+            "divisionCodes" : "KLD"
+        },
+        {
+            "value" : 861,
+            "name" : "Tabula",
+            "divisionCodes" : "KLD"
+        },
+        {
+            "value" : 813,
+            "name" : "Gobierto",
+            "divisionCodes" : "KLD"
+        },
+        {
+            "value" : 738,
+            "name" : "AEDES Detector",
+            "divisionCodes" : "KLD"
+        },
+        {
+            "value" : 691,
+            "name" : "Vota Inteligente",
+            "divisionCodes" : "KLD"
+        },
+        {
+            "value" : 593,
+            "name" : "Textar",
+            "divisionCodes" : "KLD"
+        },
+        {
+            "value" : 559,
+            "name" : "Gmapsdistance",
+            "divisionCodes" : "KLD"
+        },
+        {
+            "value" : 344,
+            "name" : "Pydatajson",
+            "divisionCodes" : "KLD"
+        },
+        {
+            "value" : 1120,
+            "name" : "SmartMap",
+            "divisionCodes" : "MIF"
+        },
+        {
+            "value" : 1051,
+            "name" : "Nexso",
+            "divisionCodes" : "MIF"
+        },
+        {
+            "value" : 3881,
+            "name" : "Indicator aggregator",
+            "divisionCodes" : "SPD"
+        },
+        {
+            "value" : 381,
+            "name" : "Clasificador de Datos Atípicos",
+            "divisionCodes" : "SPH"
+        },
+        {
+            "value" : 4616,
+            "name" : "Hydro-BID",
+            "divisionCodes" : "WSA"
+        },
+        {
+            "value" : 3280,
+            "name" : "Evaluación de Reciclaje Inclusivo",
+            "divisionCodes" : "WSA"
+        }
+    ]
+}
+
+//init
+drawChartCodeTrend(codetrendArrays.codeTrendIADBAllTime);
 
 //click radiobutton drawChart(id del click)
-$( "input[name^='news']" ).val( "news here!" );
+$("input[name*='codeTrend']").click(function () {
+    d3.select("#code-trend svg").remove();
+    drawChartCodeTrend(codetrendArrays[this.id]);
+});
 
 function drawChartCodeTrend(codeTrend) {
 
@@ -159,7 +315,7 @@ function drawChartCodeTrend(codeTrend) {
         .attr("font-family", "Gotham-Bold")
         .attr("font-size", "12px")
         .text(function (d) {
-            return (d.value/1000) + "K";
+            return (d.value / 1000) + "K";
         });
 }
 
