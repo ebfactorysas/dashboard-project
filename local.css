@@ -178,6 +178,23 @@ body {
     font-family: 'Gotham-Bold';
 }
 
+.title-text select{
+    border:none;
+}
+
+.title-text select:focus {
+    border:none;
+}
+
+.title-text select:visited {
+    border:none;
+}
+
+.title-text select:active {
+    border:none;
+}
+
+
 section.big-numbers {
     color: #FFFFFF;
     background-color: #1156A1;
