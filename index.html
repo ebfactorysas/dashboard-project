@@ -43,21 +43,34 @@
             </nav>
 
             <div class="col-md-7 pt-4 pb-4 title-text">
-                <h1>WELCOME <b>RODRIGO</b> TO <b>SCL</b> KP INSIGHTS</h1>
+                <h1>WELCOME <b>RODRIGO</b> TO <b><select>
+                            <option value="CSC">CSC</option>
+                            <option value="CSD">CSD</option>
+                            <option value="IFD">IFD</option>
+                            <option value="INE">INE</option>
+                            <option value="KNL">KNL</option>
+                            <option value="SCL">SCL</option>
+                        </select></b> KP INSIGHTS</h1>
             </div>
             <div class="col-md-5 pt-4 pb-4">
                 <div class="row">
                     <div class="col-md-4 text-right dropdown-bg pt-2 left-text-drop">now showing data for</div>
-                    <div class="dropdown dropdown-bg col-md-3">
-                        <button class="btn dropdown-bg dropdown-toggle" type="button" id="dropdownMenuButton"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown button
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Action1</a>
-                            <a class="dropdown-item" href="#">Action2</a>
-                            <a class="dropdown-item" href="#">Action3</a>
-                        </div>
+                    <div class="dropdown-bg col-md-3">
+                        <select>
+                            <option value="CBD">CBD</option>
+                            <option value="EDU">EDU</option>
+                            <option value="FHL">FHL</option>
+                            <option value="FMM">FMM</option>
+                            <option value="ICS">ICS</option>
+                            <option value="IFD">IFD</option>
+                            <option value="KNM">KNM</option>
+                            <option value="LMK">LMK</option>
+                            <option value="RND">RND</option>
+                            <option value="SDI">SDI</option>
+                            <option value="SPH">SPH</option>
+                            <option value="TSP">TSP</option>
+                            <option value="WSA">WSA</option>
+                        </select>
                     </div>
                 </div>
             </div>
@@ -206,7 +219,7 @@
                         <div class="right-zone pl-4 d-border-left">
                             <div class="col-sm-12 top-zone d-border-bottom">
                                 <h4 class=" text-center">DOWNLOADS TIMELINE</h4>
-                                <div id="timelines"></div>
+                                <div id="timeline-publication"></div>
                             </div>
                             <div class="col-sm-12 pt-4">
                                 <h4>PUBLICATIONS THAT NEED YOUR ATTENTION</h4>
@@ -586,5 +599,6 @@
 </body>
 <script src="main.js"></script>
 <script src="scripts/code.js"></script>
+<script src="scripts/publications.js"></script>
 
 </html>
