@@ -2,14 +2,15 @@
  * Start code-trend
  *  */
 d3.json("json/code/Top10CodeAllTheTimeIDB_JSON.json").then(function (codeTrend) {
+    drawChartCodeTrend(codeTrend);
+});
+
+function drawChartCodeTrend(codeTrend) {
 
     dataCodeTrend = codeTrend.sort(function (a, b) {
         return d3.ascending(a.value, b.value);
     });
-    drawChartCodeTrend(dataCodeTrend);
-});
 
-function drawChartCodeTrend(dataCodeTrend) {
     var marginCodeTrend = {
         top: 15,
         right: 25,
