@@ -363,6 +363,7 @@ section.publications #publication-trend .y-data {
     font-size: 11px;
 }
 
+
 section.publications #publication-trend .text-inside {
     color: #8a858d
 }
@@ -370,6 +371,34 @@ section.publications #publication-trend .text-inside {
 section.publications #publication-trend .y-data .domain {
     display: none;
 }
+
+section.publications #timeline-publication {
+    font-family: 'Gotham-Bold';
+}
+
+section.publications #timeline-publication .line {
+    fill: none;
+    stroke: #d96d80;
+    stroke-width: 2px;
+}
+
+section.publications #timeline-publication .area {
+    fill: #df8897;
+}
+
+section.publications #timeline-publication .x-axis .tick {
+    stroke-width:1px;
+}
+
+section.publications #timeline-publication .y-axis path {
+    display: none;
+}
+
+section.publications #timeline-publication .y-axis .tick line {
+    display: none;
+}
+
+
 
 section.moocs {
     height: 930px;
@@ -702,9 +731,7 @@ section.suscribers .suscriber-AgeChart .tick line {
 }
 
 
-#timelines {
-    height: 220px;
-}
+
 
 #demographics {
     height: 250px;
