@@ -1,162 +1,121 @@
 [
 	{
-		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "IFD",
-		"Rank" : "1",
-		"D" : 1105,
-		"Code" : "SIMPLE-LAT",
-		"xlsx_row_id" : 2
+		"name" : "SIMPLE-LAT",
+		"departmentCodes" : "IFD",
+		"values" : 1105
 	},
 	{
+		"name" : "Massive change detection",
 		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "IFD",
-		"Rank" : "2",
-		"D" : 512,
-		"Code" : "Massive change detection",
-		"xlsx_row_id" : 3
+		"departmentCodes" : "IFD",
+		"D" : 512
 	},
 	{
+		"name" : "AP-LATAM",
 		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "IFD",
-		"Rank" : "3",
-		"D" : 360,
-		"Code" : "AP-LATAM",
-		"xlsx_row_id" : 4
+		"departmentCodes" : "IFD",
+		"D" : 360
 	},
 	{
+		"name" : "Hydro-BID",
 		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "INE",
-		"Rank" : "1",
-		"D" : 4616,
-		"Code" : "Hydro-BID",
-		"xlsx_row_id" : 5
+		"departmentCodes" : "INE",
+		"D" : 4616
 	},
 	{
+		"name" : "Evaluación de Reciclaje Inclusivo",
 		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "INE",
-		"Rank" : "2",
-		"D" : 3280,
-		"Code" : "Evaluación de Reciclaje Inclusivo",
-		"xlsx_row_id" : 6
+		"departmentCodes" : "INE",
+		"D" : 3280
 	},
 	{
+		"name" : "MapMap",
 		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "KIC",
-		"Rank" : "1",
-		"D" : 3633,
-		"Code" : "MapMap",
-		"xlsx_row_id" : 7
+		"departmentCodes" : "KIC",
+		"D" : 3633
 	},
 	{
+		"name" : "Consul",
 		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "KIC",
-		"Rank" : "2",
-		"D" : 2726,
-		"Code" : "Consul",
-		"xlsx_row_id" : 8
+		"departmentCodes" : "KIC",
+		"D" : 2726
 	},
 	{
+		"name" : "R Library Numbers for Development",
 		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "KIC",
-		"Rank" : "3",
-		"D" : 875,
-		"Code" : "R Library Numbers for Development",
-		"xlsx_row_id" : 9
+		"departmentCodes" : "KIC",
+		"D" : 875
 	},
 	{
+		"name" : "Tabula",
 		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "KIC",
-		"Rank" : "4",
-		"D" : 861,
-		"Code" : "Tabula",
-		"xlsx_row_id" : 10
+		"departmentCodes" : "KIC",
+		"D" : 861
 	},
 	{
+		"name" : "IDBx Data Engine",
 		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "KIC",
-		"Rank" : "5",
-		"D" : 838,
-		"Code" : "IDBx Data Engine",
-		"xlsx_row_id" : 11
+		"departmentCodes" : "KIC",
+		"D" : 838
 	},
 	{
+		"name" : "Gobierto",
 		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "KIC",
-		"Rank" : "6",
-		"D" : 813,
-		"Code" : "Gobierto",
-		"xlsx_row_id" : 12
+		"departmentCodes" : "KIC",
+		"D" : 813
 	},
 	{
+		"name" : "AEDES Detector",
 		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "KIC",
-		"Rank" : "7",
-		"D" : 738,
-		"Code" : "AEDES Detector",
-		"xlsx_row_id" : 13
+		"departmentCodes" : "KIC",
+		"D" : 738
 	},
 	{
+		"name" : "Vota Inteligente",
 		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "KIC",
-		"Rank" : "8",
-		"D" : 691,
-		"Code" : "Vota Inteligente",
-		"xlsx_row_id" : 14
+		"departmentCodes" : "KIC",
+		"D" : 691
 	},
 	{
+		"name" : "Textar",
 		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "KIC",
-		"Rank" : "9",
-		"D" : 593,
-		"Code" : "Textar",
-		"xlsx_row_id" : 15
+		"departmentCodes" : "KIC",
+		"D" : 593
 	},
 	{
+		"name" : "Gmapsdistance",
 		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "KIC",
-		"Rank" : "10",
-		"D" : 559,
-		"Code" : "Gmapsdistance",
-		"xlsx_row_id" : 16
+		"departmentCodes" : "KIC",
+		"D" : 559
 	},
 	{
+		"name" : "Pydatajson",
 		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "KIC",
-		"Rank" : "11",
-		"D" : 344,
-		"Code" : "Pydatajson",
-		"xlsx_row_id" : 17
+		"departmentCodes" : "KIC",
+		"D" : 344
 	},
 	{
+		"name" : "SmartMap",
 		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "MIF",
-		"Rank" : "1",
-		"D" : 1120,
-		"Code" : "SmartMap",
-		"xlsx_row_id" : 18
+		"departmentCodes" : "MIF",
+		"D" : 1120
 	},
 	{
+		"name" : "Nexso",
 		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "MIF",
-		"Rank" : "2",
-		"D" : 1051,
-		"Code" : "Nexso",
-		"xlsx_row_id" : 19
+		"departmentCodes" : "MIF",
+		"D" : 1051
 	},
 	{
+		"name" : "Clasificador de Datos Atípicos",
 		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "SCL",
-		"Rank" : "1",
-		"D" : 381,
-		"Code" : "Clasificador de Datos Atípicos",
-		"xlsx_row_id" : 20
+		"departmentCodes" : "SCL",
+		"D" : 381
 	},
 	{
+		"name" : "Indicator aggregator",
 		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "SPD",
-		"Rank" : "1",
-		"D" : 3881,
-		"Code" : "Indicator aggregator",
-		"xlsx_row_id" : 21
+		"departmentCodes" : "SPD",
+		"D" : 3881
 	}
 ]

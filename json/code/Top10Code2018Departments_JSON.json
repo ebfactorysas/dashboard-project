@@ -1,162 +1,102 @@
 [
 	{
-		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "IFD",
-		"Code" : "Massive change detection",
-		"2018 Rank" : 1,
-		"2018 Downloads" : 495,
-		"xlsx_row_id" : 2
+		"name" : "Massive change detection",
+		"departmentCodes" : "IFD",
+		"values" : 495
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "IFD",
-		"Code" : "AP-LATAM",
-		"2018 Rank" : 2,
-		"2018 Downloads" : 350,
-		"xlsx_row_id" : 3
+		"name" : "AP-LATAM",
+		"departmentCodes" : "IFD",
+		"values" : 350
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "IFD",
-		"Code" : "SIMPLE-LAT",
-		"2018 Rank" : 3,
-		"2018 Downloads" : 0,
-		"xlsx_row_id" : 4
+		"name" : "SIMPLE-LAT",
+		"departmentCodes" : "IFD",
+		"values" : 0
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "INE",
-		"Code" : "Evaluación de Reciclaje Inclusivo",
-		"2018 Rank" : 1,
-		"2018 Downloads" : 0,
-		"xlsx_row_id" : 5
+		"name" : "Evaluación de Reciclaje Inclusivo",
+		"departmentCodes" : "INE",
+		"values" : 0
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "INE",
-		"Code" : "Hydro-BID",
-		"2018 Rank" : 1,
-		"2018 Downloads" : 0,
-		"xlsx_row_id" : 6
+		"name" : "Hydro-BID",
+		"departmentCodes" : "INE",
+		"values" : 0
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "KIC",
-		"Code" : "Gobierto",
-		"2018 Rank" : 1,
-		"2018 Downloads" : 801,
-		"xlsx_row_id" : 7
+		"name" : "Gobierto",
+		"departmentCodes" : "KIC",
+		"values" : 801
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "KIC",
-		"Code" : "Gmapsdistance",
-		"2018 Rank" : 2,
-		"2018 Downloads" : 531,
-		"xlsx_row_id" : 8
+		"name" : "Gmapsdistance",
+		"departmentCodes" : "KIC",
+		"values" : 531
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "KIC",
-		"Code" : "AEDES Detector",
-		"2018 Rank" : 3,
-		"2018 Downloads" : 0,
-		"xlsx_row_id" : 9
+		"name" : "AEDES Detector",
+		"departmentCodes" : "KIC",
+		"values" : 0
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "KIC",
-		"Code" : "Consul",
-		"2018 Rank" : 3,
-		"2018 Downloads" : 0,
-		"xlsx_row_id" : 10
+		"name" : "Consul",
+		"departmentCodes" : "KIC",
+		"values" : 0
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "KIC",
-		"Code" : "IDBx Data Engine",
-		"2018 Rank" : 3,
-		"2018 Downloads" : 0,
-		"xlsx_row_id" : 11
+		"name" : "IDBx Data Engine",
+		"departmentCodes" : "KIC",
+		"values" : 0
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "KIC",
-		"Code" : "MapMap",
-		"2018 Rank" : 3,
-		"2018 Downloads" : 0,
-		"xlsx_row_id" : 12
+		"name" : "MapMap",
+		"departmentCodes" : "KIC",
+		"values" : 0
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "KIC",
-		"Code" : "Pydatajson",
-		"2018 Rank" : 3,
-		"2018 Downloads" : 0,
-		"xlsx_row_id" : 13
+		"name" : "Pydatajson",
+		"departmentCodes" : "KIC",
+		"values" : 0
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "KIC",
-		"Code" : "R Library Numbers for Development",
-		"2018 Rank" : 3,
-		"2018 Downloads" : 0,
-		"xlsx_row_id" : 14
+		"name" : "R Library Numbers for Development",
+		"departmentCodes" : "KIC",
+		"values" : 0
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "KIC",
-		"Code" : "Tabula",
-		"2018 Rank" : 3,
-		"2018 Downloads" : 0,
-		"xlsx_row_id" : 15
+		"name" : "Tabula",
+		"departmentCodes" : "KIC",
+		"values" : 0
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "KIC",
-		"Code" : "Textar",
-		"2018 Rank" : 3,
-		"2018 Downloads" : 0,
-		"xlsx_row_id" : 16
+		"name" : "Textar",
+		"departmentCodes" : "KIC",
+		"values" : 0
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "KIC",
-		"Code" : "Vota Inteligente",
-		"2018 Rank" : 3,
-		"2018 Downloads" : 0,
-		"xlsx_row_id" : 17
+		"name" : "Vota Inteligente",
+		"departmentCodes" : "KIC",
+		"values" : 0
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "MIF",
-		"Code" : "Nexso",
-		"2018 Rank" : 1,
-		"2018 Downloads" : 0,
-		"xlsx_row_id" : 18
+		"name" : "Nexso",
+		"departmentCodes" : "MIF",
+		"values" : 0
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "MIF",
-		"Code" : "SmartMap",
-		"2018 Rank" : 1,
-		"2018 Downloads" : 0,
-		"xlsx_row_id" : 19
+		"name" : "SmartMap",
+		"departmentCodes" : "MIF",
+		"values" : 0
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "SCL",
-		"Code" : "Clasificador de Datos Atípicos",
-		"2018 Rank" : 1,
-		"2018 Downloads" : 376,
-		"xlsx_row_id" : 20
+		"name" : "Clasificador de Datos Atípicos",
+		"departmentCodes" : "SCL",
+		"values" : 376
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Department Codes" : "SPD",
-		"Code" : "Indicator aggregator",
-		"2018 Rank" : 1,
-		"2018 Downloads" : 0,
-		"xlsx_row_id" : 21
+		"name" : "Indicator aggregator",
+		"departmentCodes" : "SPD",
+		"values" : 0
 	}
 ]

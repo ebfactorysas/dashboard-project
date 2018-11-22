@@ -1,162 +1,102 @@
 [
 	{
-		"json_featuretype" : "Sheet 1",
-		"Code" : "Massive change detection",
-		"Division Codes" : "FMM",
-		"2018 Rank" : 1,
-		"2018 Downloads" : 495,
-		"xlsx_row_id" : 2
+		"name" : "Massive change detection",
+		"divisionCodes" : "FMM",
+		"value" : 495
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Code" : "AP-LATAM",
-		"Division Codes" : "FMM",
-		"2018 Rank" : 2,
-		"2018 Downloads" : 350,
-		"xlsx_row_id" : 3
+		"name" : "AP-LATAM",
+		"divisionCodes" : "FMM",
+		"value" : 350
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Code" : "SIMPLE-LAT",
-		"Division Codes" : "ICS",
-		"2018 Rank" : 1,
-		"2018 Downloads" : 0,
-		"xlsx_row_id" : 4
+		"name" : "SIMPLE-LAT",
+		"divisionCodes" : "ICS",
+		"value" : 0
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Code" : "R Library Numbers for Development",
-		"Division Codes" : "ISU",
-		"2018 Rank" : 1,
-		"2018 Downloads" : 0,
-		"xlsx_row_id" : 5
+		"name" : "R Library Numbers for Development",
+		"divisionCodes" : "ISU",
+		"value" : 0
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Code" : "IDBx Data Engine",
-		"Division Codes" : "KIC",
-		"2018 Rank" : 1,
-		"2018 Downloads" : 0,
-		"xlsx_row_id" : 6
+		"name" : "IDBx Data Engine",
+		"divisionCodes" : "KIC",
+		"value" : 0
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Code" : "Gobierto",
-		"Division Codes" : "KLD",
-		"2018 Rank" : 1,
-		"2018 Downloads" : 801,
-		"xlsx_row_id" : 7
+		"name" : "Gobierto",
+		"divisionCodes" : "KLD",
+		"value" : 801
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Code" : "Gmapsdistance",
-		"Division Codes" : "KLD",
-		"2018 Rank" : 2,
-		"2018 Downloads" : 531,
-		"xlsx_row_id" : 8
+		"name" : "Gmapsdistance",
+		"divisionCodes" : "KLD",
+		"value" : 531
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Code" : "AEDES Detector",
-		"Division Codes" : "KLD",
-		"2018 Rank" : 3,
-		"2018 Downloads" : 0,
-		"xlsx_row_id" : 9
+		"name" : "AEDES Detector",
+		"divisionCodes" : "KLD",
+		"value" : 0
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Code" : "Consul",
-		"Division Codes" : "KLD",
-		"2018 Rank" : 3,
-		"2018 Downloads" : 0,
-		"xlsx_row_id" : 10
+		"name" : "Consul",
+		"divisionCodes" : "KLD",
+		"value" : 0
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Code" : "MapMap",
-		"Division Codes" : "KLD",
-		"2018 Rank" : 3,
-		"2018 Downloads" : 0,
-		"xlsx_row_id" : 11
+		"name" : "MapMap",
+		"divisionCodes" : "KLD",
+		"value" : 0
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Code" : "Pydatajson",
-		"Division Codes" : "KLD",
-		"2018 Rank" : 3,
-		"2018 Downloads" : 0,
-		"xlsx_row_id" : 12
+		"name" : "Pydatajson",
+		"divisionCodes" : "KLD",
+		"value" : 0
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Code" : "Tabula",
-		"Division Codes" : "KLD",
-		"2018 Rank" : 3,
-		"2018 Downloads" : 0,
-		"xlsx_row_id" : 13
+		"name" : "Tabula",
+		"divisionCodes" : "KLD",
+		"value" : 0
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Code" : "Textar",
-		"Division Codes" : "KLD",
-		"2018 Rank" : 3,
-		"2018 Downloads" : 0,
-		"xlsx_row_id" : 14
+		"name" : "Textar",
+		"divisionCodes" : "KLD",
+		"value" : 0
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Code" : "Vota Inteligente",
-		"Division Codes" : "KLD",
-		"2018 Rank" : 3,
-		"2018 Downloads" : 0,
-		"xlsx_row_id" : 15
+		"name" : "Vota Inteligente",
+		"divisionCodes" : "KLD",
+		"value" : 0
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Code" : "Nexso",
-		"Division Codes" : "MIF",
-		"2018 Rank" : 1,
-		"2018 Downloads" : 0,
-		"xlsx_row_id" : 16
+		"name" : "Nexso",
+		"divisionCodes" : "MIF",
+		"value" : 0
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Code" : "SmartMap",
-		"Division Codes" : "MIF",
-		"2018 Rank" : 1,
-		"2018 Downloads" : 0,
-		"xlsx_row_id" : 17
+		"name" : "SmartMap",
+		"divisionCodes" : "MIF",
+		"value" : 0
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Code" : "Indicator aggregator",
-		"Division Codes" : "SPD",
-		"2018 Rank" : 1,
-		"2018 Downloads" : 0,
-		"xlsx_row_id" : 18
+		"name" : "Indicator aggregator",
+		"divisionCodes" : "SPD",
+		"value" : 0
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Code" : "Clasificador de Datos Atípicos",
-		"Division Codes" : "SPH",
-		"2018 Rank" : 1,
-		"2018 Downloads" : 376,
-		"xlsx_row_id" : 19
+		"name" : "Clasificador de Datos Atípicos",
+		"divisionCodes" : "SPH",
+		"value" : 376
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Code" : "Evaluación de Reciclaje Inclusivo",
-		"Division Codes" : "WSA",
-		"2018 Rank" : 1,
-		"2018 Downloads" : 0,
-		"xlsx_row_id" : 20
+		"name" : "Evaluación de Reciclaje Inclusivo",
+		"divisionCodes" : "WSA",
+		"value" : 0
 	},
 	{
-		"json_featuretype" : "Sheet 1",
-		"Code" : "Hydro-BID",
-		"Division Codes" : "WSA",
-		"2018 Rank" : 1,
-		"2018 Downloads" : 0,
-		"xlsx_row_id" : 21
+		"name" : "Hydro-BID",
+		"divisionCodes" : "WSA",
+		"value" : 0
 	}
 ]
