@@ -333,7 +333,7 @@ section.publications .d-border-left p span {
 }
 
 
-section.publications #downloads .node {
+section.publications #downloads-publications .node {
     border: solid .5px #d1415a;
     font: 18px;
     font-family: 'Gotham-Bold';
@@ -771,7 +771,7 @@ section.suscribers .suscriber-AgeChart .tick line {
     height: 250px;
 }
 
-#downloads {
+#downloads-publications {
     min-width: 300px;
     max-width: 100%;
     margin: 0 auto;
@@ -784,7 +784,7 @@ section.suscribers .suscriber-AgeChart .tick line {
 }
 
 
-#downloads rect {
+#downloads-publications rect {
 
     stroke: #d1415a;
 }
@@ -807,7 +807,7 @@ section.suscribers .suscriber-AgeChart .tick line {
 
 
 
-#downloads {
+#downloads-publications {
     padding-bottom: 1rem;
 }
 

@@ -1384,7 +1384,7 @@ const marginTree = {
 
 const treemap = d3.treemap().size([widthTree, heightTree]);
 
-const divTree = d3.select("#downloads").append("div")
+const divTree = d3.select("#downloads-publications").append("div")
     .style("position", "relative")
     .style("width", (widthTree + marginTree.left + marginTree.right) + "px")
     .style("height", (heightTree + marginTree.top + marginTree.bottom) + "px")
