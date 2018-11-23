@@ -527,6 +527,32 @@ section.moocs #moocs-registrations .y-data .domain {
     display: none;
 }
 
+section.moocs #timeline-moocs {
+    font-family: 'Gotham-Bold';
+}
+
+section.moocs #timeline-moocs .line {
+    fill: none;
+    stroke: #ef8166;
+    stroke-width: 2px;
+}
+
+section.moocs #timeline-moocs .area {
+    fill: #f1a592;
+}
+
+section.moocs #timeline-moocs .x-axis .tick {
+    stroke-width:1px;
+}
+
+section.moocs #timeline-moocs .y-axis path {
+    display: none;
+}
+
+section.moocs #timeline-moocs .y-axis .tick line {
+    display: none;
+}
+
 section.moocs [id^="student"] .y-data path {
     display: none;
 }
@@ -620,6 +646,50 @@ section.datasets #data-trend .text-inside {
 }
 
 section.datasets #data-trend .y-data .domain {
+    display: none;
+}
+
+section.datasets #downloads-dataset .node {
+    border: solid .5px #424488;
+    font: 18px;
+    font-family: 'Gotham-Bold';
+    line-height: 24px;
+    overflow: hidden;
+    position: absolute;
+    text-indent: 9px;
+}
+
+section.datasets #downloads-dataset {
+    min-width: 300px;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 220px;
+}
+
+
+section.datasets #timeline-dataset {
+    font-family: 'Gotham-Bold';
+}
+
+section.datasets #timeline-dataset .line {
+    fill: none;
+    stroke: #62649c;
+    stroke-width: 2px;
+}
+
+section.datasets #timeline-dataset .area {
+    fill: #8889b3;
+}
+
+section.datasets #timeline-dataset .x-axis .tick {
+    stroke-width:1px;
+}
+
+section.datasets #timeline-dataset .y-axis path {
+    display: none;
+}
+
+section.datasets #timeline-dataset .y-axis .tick line {
     display: none;
 }
 
@@ -811,6 +881,15 @@ section.suscribers .suscriber-AgeChart .tick line {
     display: none;
 }
 
+section.suscribers #demographics-suscribers .node {
+    border: solid .5px #518a81;
+    font: 18px;
+    font-family: 'Gotham-Bold';
+    line-height: 24px;
+    overflow: hidden;
+    position: absolute;
+    text-indent: 9px;
+}
 
 
 

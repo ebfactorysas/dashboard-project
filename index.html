@@ -46,8 +46,8 @@
 
             <div class="col-md-7 pt-4 pb-4 title-text">
                 <h1>
-                    <a id="idbLink" href="#" class="active">IDB</a>
-                    WELCOME <b>RODRIGO</b> TO <b><select>
+                    <a id="idbLink" href="#" class="activeFilter">IDB</a>
+                    WELCOME <b>RODRIGO</b> TO <b><select id="deparmentSelect">
                             <option value=""></option>
                             <option value="CSC">CSC</option>
                             <option value="CSD">CSD</option>
@@ -59,7 +59,7 @@
             </div>
             <div class="col-md-4 pt-4 pb-4">
                 <div class="row">
-                    <div class="col-md-6 text-center dropdown-bg pt-2 left-text-drop">now showing data for <select>
+                    <div class="col-md-6 text-center dropdown-bg pt-2 left-text-drop">now showing data for <select id="divisionSelect">
                             <option value=""></option>
                             <option value="CBD">CBD</option>
                             <option value="EDU">EDU</option>
@@ -97,11 +97,11 @@
                         <div class="col-sm">
                             <div class="col-12 border-right-dash d-flex justify-content-center align-items-center flex-column">
                                 <h4>PUBLICATIONS</h4>
-                                <h1 class="pt-4 pb-4">66</h1>
+                                <h1 class="pt-4 pb-4 valuepublications">66</h1>
                                 <p>13% OF 2018 PUBLICATIONS <br> -93 COMPARED TO 2017</p>
                                 <img class="pt-4 pb-4" src="img/arrow-down.png" alt="arrow-down">
                                 <h4>DOWNLOADS</h4>
-                                <h1 class="pt-4 pb-4">113K</h1>
+                                <h1 class="pt-4 pb-4 downloadpublications">113K</h1>
                                 <p>16% OF 2018 DOWNLOADS <br> 76% FROM LAC</p>
                             </div>
                         </div>
@@ -289,7 +289,7 @@
                         <div class="col-sm-6">
                             <div class="col-sm-12 pt-4  d-border-bottom">
                                 <h4 class=" text-center orange">REGISTRATIONS TIMELINE</h4>
-                                <div id="registrations"></div>
+                                <div id="timeline-moocs"></div>
                             </div>
                             <div class="col-sm-12 down-zone d-border-bottom">
                                 <div class="row pt-2">
@@ -396,9 +396,7 @@
                         <div class="col-sm-7">
                             <div class="col-sm-12 pt-4  d-border-bottom">
                                 <h4 class=" text-center">WHERE ARE DOWNLOADS COMING FROM?</h4>
-                                <svg id="downloads" width="100%" height="400">
-                                    <g></g>
-                                </svg>
+                                <div id="downloads-dataset"></div>
                             </div>
                             <div class="col-sm-12 down-zone">
                                 <div class="row pt-2">
@@ -421,7 +419,7 @@
                         <div class="col-sm-5 pt-4  d-border-left">
                             <div class="col-sm-12  d-border-bottom">
                                 <h4 class=" text-center">DOWNLOADS TIMELINE</h4>
-                                <div id="timelines"></div>
+                                <div id="timeline-dataset"></div>
                             </div>
                             <div class="col-sm-12 pt-4 ">
                                 <h4>HOW ARE <span>SCL</span>' DATASETS COMPARED TO <span class="gray">OTHER
@@ -477,14 +475,13 @@
                             <!-- <p class="text-right yellow"> <i class="far fa-circle fa-xs"></i> ALL THE TIME &nbsp; <i
                                     class="far fa-dot-circle"></i>
                                 2018 DATA</p> -->
-                            <div class="col-xs-6 text-right yellow">
-                                <input type="radio" id="codeTrendIADBAllTime" name="codeTrend" value="AllTheTime"
-                                    checked>
+                            <div class="col-6 text-right yellow">
+                                <input type="radio" class="AllTime" id="codeAllTime" name="codeTrend" value="AllTheTime" checked>
                                 <label for="allTheTime">All The Time</label>
                             </div>
 
-                            <div class="col-xs-6 text-right yellow">
-                                <input type="radio" id="codeTrendIADBA2018" name="codeTrend" value="2018Data">
+                            <div class="col-6 text-right yellow">
+                                <input type="radio" class="2018" id="code2018" name="codeTrend" value="2018Data">
                                 <label for="2018Data">2018 Data</label>
                             </div>
                         </div>
@@ -583,7 +580,7 @@
                                 <div class="vertical-text green"> GENDER</div>
                                 <div class="d-flex flex-column w-100">
                                     <h4 class=" text-center green">DEMOGRAPHICS</h4>
-                                    <div id="demographics"></div>
+                                    <div id="demographics-suscribers"></div>
                                 </div>
 
                             </div>
@@ -612,10 +609,17 @@
     </section>
     <section class="map"></section>
 </body>
+<script src="json/moocs/moocs_top.js"></script>
+<script src="json/code/code_top10.js"></script>
+<script src="json/code/code_pageviews_source.js"></script>
+<script src="json/code/code_pageviews_timeline.js"></script>
+<script src="json/bignumberData.js"></script>
 <script src="main.js"></script>
+<script src="scripts/bignumber.js"></script>
 <script src="scripts/code.js"></script>
 <script src="scripts/publications.js"></script>
 <script src="scripts/moocs.js"></script>
 <script src="scripts/datasets.js"></script>
 <script src="scripts/suscribers.js"></script>
+
 </html>
