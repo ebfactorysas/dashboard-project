@@ -46,8 +46,8 @@
 
             <div class="col-md-7 pt-4 pb-4 title-text">
                 <h1>
-                    <a id="idbLink" href="#" class="active">IDB</a>
-                    WELCOME <b>RODRIGO</b> TO <b><select>
+                    <a id="idbLink" href="#" class="activeFilter">IDB</a>
+                    WELCOME <b>RODRIGO</b> TO <b><select id="deparmentSelect">
                             <option value=""></option>
                             <option value="CSC">CSC</option>
                             <option value="CSD">CSD</option>
@@ -59,7 +59,7 @@
             </div>
             <div class="col-md-4 pt-4 pb-4">
                 <div class="row">
-                    <div class="col-md-6 text-center dropdown-bg pt-2 left-text-drop">now showing data for <select>
+                    <div class="col-md-6 text-center dropdown-bg pt-2 left-text-drop">now showing data for <select id="divisionSelect">
                             <option value=""></option>
                             <option value="CBD">CBD</option>
                             <option value="EDU">EDU</option>
@@ -478,13 +478,12 @@
                                     class="far fa-dot-circle"></i>
                                 2018 DATA</p> -->
                             <div class="col-xs-6 text-right yellow">
-                                <input type="radio" id="codeTrendIADBAllTime" name="codeTrend" value="AllTheTime"
-                                    checked>
+                                <input type="radio" class="AllTime" id="codeAllTime" name="codeTrend" value="AllTheTime" checked>
                                 <label for="allTheTime">All The Time</label>
                             </div>
 
                             <div class="col-xs-6 text-right yellow">
-                                <input type="radio" id="codeTrendIADBA2018" name="codeTrend" value="2018Data">
+                                <input type="radio" class="2018" id="code2018" name="codeTrend" value="2018Data">
                                 <label for="2018Data">2018 Data</label>
                             </div>
                         </div>
@@ -618,4 +617,5 @@
 <script src="scripts/moocs.js"></script>
 <script src="scripts/datasets.js"></script>
 <script src="scripts/suscribers.js"></script>
+
 </html>

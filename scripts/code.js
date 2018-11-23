@@ -3,7 +3,7 @@
  *  */
 
 codetrendArrays = {
-    codeTrendIADBAllTime: [{
+    codeTrendAllTimeIDB: [{
             "name": "Hydro-BID",
             "value": 461
         },
@@ -44,7 +44,7 @@ codetrendArrays = {
             "value": 861
         }
     ],
-    codeTrendIADBA2018: [
+    codeTrend2018IDB: [
         {
             "name": "Gobierto",
             "value": 801
@@ -126,7 +126,8 @@ codetrendArrays = {
             "value": 0
         }
     ],
-    codeTrendAllTimeDivisions: [{
+    codeTrendAllTimeDivisions: [
+        {
             "value": 512,
             "name": "Massive change detection",
             "divisionCodes": "FMM"
@@ -227,7 +228,8 @@ codetrendArrays = {
             "divisionCodes": "WSA"
         }
     ],
-    codeTrend2018Divisions: [{
+    codeTrend2018Divisions: [
+        {
             "name": "Massive change detection",
             "divisionCodes": "FMM",
             "value": 495
@@ -328,7 +330,8 @@ codetrendArrays = {
             "value": 0
         }
     ],
-    codeTrendAllTimeDepartments: [{
+    codeTrendAllTimeDepartments: [
+        {
             "name": "SIMPLE-LAT",
             "departmentCodes": "IFD",
             "value": 1105
@@ -448,7 +451,8 @@ codetrendArrays = {
             "D": 3881
         }
     ],
-    codeTrend2018Departments: [{
+    codeTrend2018Departments: [
+        {
             "name": "Massive change detection",
             "departmentCodes": "IFD",
             "value": 495
@@ -552,7 +556,8 @@ codetrendArrays = {
 }
 
 pageViewsTimeLine = {
-    dataTimelineAllTime: [{
+    dataTimelineAllTimeIDB: [
+        {
             "date": "1-Apr-17",
             "close": 868
         },
@@ -631,7 +636,8 @@ pageViewsTimeLine = {
             "close": 570
         }
     ],
-    dataTimeline2018: [{
+    dataTimeline2018IDB: [
+        {
             "date": "1-Jan-18",
             "close": 792
         },
@@ -1081,13 +1087,26 @@ function createChartTimeline(data) {
  *  */
 
 //init
-drawChartCodeTrend(codetrendArrays.codeTrendIADBAllTime);
+drawChartCodeTrend(codetrendArrays.codeTrendAllTimeIDB);
 createChartTimeline(pageViewsTimeLine.dataTimelineAllTime);
+
+
 //click radiobutton drawChart(id del click)
 $("input[name*='codeTrend']").click(function () {
+    
+    //graph #3
     d3.select("#code-trend svg").remove();
+    //name -> codeTrend -> 2018 ->
+    /*if(active dpto o division){
+        value de ese select
+        data.filter(value)
+    }else{
+        codetrend2018 o all time "IDB";
+    }*/
     drawChartCodeTrend(codetrendArrays[this.id]);
 
+    //graph #4
     d3.select("#timeline-code svg").remove();
-    createChartTimeline(pageViewsTimeLine.dataTimeline2018);
+    createChartTimeline(pageViewsTimeLine[this.id]);
+
 });
