@@ -640,6 +640,33 @@ section.datasets #downloads-dataset {
     height: 220px;
 }
 
+
+section.datasets #timeline-dataset {
+    font-family: 'Gotham-Bold';
+}
+
+section.datasets #timeline-dataset .line {
+    fill: none;
+    stroke: #62649c;
+    stroke-width: 2px;
+}
+
+section.datasets #timeline-dataset .area {
+    fill: #8889b3;
+}
+
+section.datasets #timeline-dataset .x-axis .tick {
+    stroke-width:1px;
+}
+
+section.datasets #timeline-dataset .y-axis path {
+    display: none;
+}
+
+section.datasets #timeline-dataset .y-axis .tick line {
+    display: none;
+}
+
 section.code {
     height: 930px;
 }
