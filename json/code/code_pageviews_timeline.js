@@ -1,6 +1,5 @@
 var codePageviewsTimelineArrays = {
-    pageviewTimelineDepartments: [
-        {
+    pageviewTimelineDepartments: [{
             "json_featuretype": "Sheet 1",
             "Department Codes": "IFD",
             "September 2017": "69",
@@ -130,8 +129,7 @@ var codePageviewsTimelineArrays = {
             "xlsx_row_id": 7
         }
     ],
-    pageviewTimelineDivisions: [
-        {
+    pageviewTimelineDivisions: [{
             "json_featuretype": "Sheet 1",
             "November 2018": 39,
             "August 2018": 411,
@@ -317,29 +315,82 @@ var codePageviewsTimelineArrays = {
             "xlsx_row_id": 10
         }
     ],
-    pageviewTimelineIDB: [
+    pageviewTimelineIDB: [{
+            "date": "1-Apr-17",
+            "close": 868
+        },
         {
-        "json_featuretype": "Sheet 1",
-        "September 2017": "1615",
-        "June 2017": 354,
-        "October 2017": "2107",
-        "November 2018": 570,
-        "May 2018": 2805,
-        "April 2017": 868,
-        "July 2017": 426,
-        "August 2018": 6667,
-        "February 2018": "1729",
-        "August 2017": 978,
-        "May 2017": 826,
-        "November 2017": 705,
-        "October 2018": "2529",
-        "January 2018": 792,
-        "March 2018": "1498",
-        "June 2018": 2798,
-        "April 2018": 2825,
-        "December 2017": 940,
-        "July 2018": "1352",
-        "September 2018": "2233",
-        "xlsx_row_id": 2
-    }]
+            "date": "1-May-17",
+            "close": 826
+        },
+        {
+            "date": "1-Jun-17",
+            "close": 354
+        },
+        {
+            "date": "1-Jul-17",
+            "close": 426
+        },
+        {
+            "date": "1-Aug-17",
+            "close": 978
+        },
+        {
+            "date": "1-Sep-17",
+            "close": 1615
+        }, {
+            "date": "1-Oct-17",
+            "close": 2107
+        },
+        {
+            "date": "1-Nov-17",
+            "close": 705
+        },
+        {
+            "date": "1-Dec-17",
+            "close": 940
+        }, {
+            "date": "1-Jan-18",
+            "close": 792
+        },
+        {
+            "date": "1-Feb-18",
+            "close": 1729
+        },
+        {
+            "date": "1-Mar-18",
+            "close": 1498
+        },
+        {
+            "date": "1-Apr-18",
+            "close": 2825
+        },
+        {
+            "date": "1-May-18",
+            "close": 2805
+        },
+        {
+            "date": "1-Jun-18",
+            "close": 2798
+        }, {
+            "date": "1-Jul-18",
+            "close": 1352
+        },
+        {
+            "date": "1-Aug-18",
+            "close": 6667
+        },
+        {
+            "date": "1-Sep-18",
+            "close": 2233
+        },
+        {
+            "date": "1-Oct-18",
+            "close": 2529
+        },
+        {
+            "date": "1-Nov-18",
+            "close": 570
+        }
+    ]
 };

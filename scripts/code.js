@@ -1,12 +1,3 @@
-/**
- * Start code-trend
- *  */
-
-
-
-//init
-drawChartCodeTrend(codetrendArrays.codeTrendIADBAllTime);
-
 function drawChartCodeTrend(codeTrend) {
 
     dataCodeTrend = codeTrend.sort(function (a, b) {
@@ -87,15 +78,6 @@ function drawChartCodeTrend(codeTrend) {
             return (d.value / 1000) + "K";
         });
 }
-
-/**
- * End code-trend
- *  
- * */
-
-/**
- * Start tree
- *  */
 
 var dataTree = {
     "name": "flare",
@@ -227,13 +209,6 @@ function drawTree(dataTree) {
             .style("height", (d) => Math.max(0, d.y1 - d.y0 - 1) + "px")
     });
 }
-/**
- * End tree
- *  */
-
-/**
- * Start timelines
- *  */
 
 function createChartTimeline(data) {
     var margin = {
@@ -406,13 +381,9 @@ function createChartTimeline(data) {
             .tickFormat(d3.format(".2s")));
 }
 
-/**
- * End timelines
- *  */
-
 //init
-drawChartCodeTrend(codetrendArrays.codeTrendAllTimeIDB);
-createChartTimeline(pageViewsTimeLine.dataTimelineAllTime);
+drawChartCodeTrend(codeTopArrays.codeTrendIADBAllTime);
+createChartTimeline(codePageviewsTimelineArrays.pageviewTimelineIDB);
 
 
 //click radiobutton drawChart(id del click)
