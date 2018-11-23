@@ -167,3 +167,142 @@ function wrapData(text) {
 /**
  * End data-trend
  *  */
+
+
+ /**
+ * Start tree
+ *  */
+
+var dataTree = {
+    "name": "flare",
+    "children": [{
+        "name": "analytics",
+        "children": [{
+                "name": "graph",
+                "children": [{
+                    "name": "Google",
+                    "size": 66
+                }]
+            },
+            {
+                "name": "optimization",
+                "children": [{
+                    "name": "IDB Publications",
+                    "size": 18
+                }]
+            },{
+                "name": "graph",
+                "children": [{
+                    "name": "Google",
+                    "size": 66
+                }]
+            },
+            {
+                "name": "optimization",
+                "children": [{
+                    "name": "IDB Publications",
+                    "size": 18
+                }]
+            },
+            {
+                "name": "optimization",
+                "children": [{
+                    "name": "AspectRatioBanker",
+                    "children": [{
+                        "children": [{
+                            "name": "Others",
+                            "size": 6
+                        }, {
+                            "name": "",
+                            "size": 3
+                        }],
+                        "name": "Others"
+                    }, {
+                        "children": [{
+                            "name": "IDB Blogs",
+                            "size": 3
+                        }, {
+                            "name": "",
+                            "size": 1
+                        }, {
+                            "name": "",
+                            "size": 1
+                        }, {
+                            "name": "",
+                            "size": 1
+                        }, {
+                            "name": "",
+                            "size": 1
+                        }, {
+                            "name": "",
+                            "size": 1
+                        }],
+                        "name": "IDB Blogs"
+                    }]
+                }]
+            }
+        ]
+    }]
+}
+
+drawTree(dataTree);
+
+function drawTree(dataTree) {
+    const marginTree = {
+            top: 40,
+            right: 10,
+            bottom: 10,
+            left: 10
+        },
+        widthTree = 935 - marginTree.left - marginTree.right,
+        heightTree = 200 - marginTree.top - marginTree.bottom,
+        colorTree = d3.scaleOrdinal().range(["#424488", "#726ea5", "#a19cc3", "#cfcce1", "#f1f1f1"]);
+
+    const treemap = d3.treemap().size([widthTree, heightTree]);
+
+    const divTree = d3.select("#downloads-dataset").append("div")
+        .style("position", "relative")
+        .style("width", (widthTree + marginTree.left + marginTree.right) + "px")
+        .style("height", (heightTree + marginTree.top + marginTree.bottom) + "px")
+        .style("left", marginTree.left + "px")
+        .style("top", marginTree.top + "px");
+    const root = d3.hierarchy(dataTree, (d) => d.children)
+        .sum((d) => d.size);
+
+    const tree = treemap(root);
+
+    const node = divTree.datum(root).selectAll(".node")
+        .data(tree.leaves())
+        .enter().append("div")
+        .attr("class", "node")
+        .style("left", (d) => d.x0 + "px")
+        .style("top", (d) => d.y0 + "px")
+        .style("width", (d) => Math.max(0, d.x1 - d.x0) + "px")
+        .style("height", (d) => Math.max(0, d.y1 - d.y0) + "px")
+        .style("background", (d) => colorTree(d.parent.data.name))
+        .text((d) => d.data.name);
+
+    d3.selectAll("input").on("change", function change() {
+        const value = this.value === "count" ?
+            (d) => {
+                return d.size ? 1 : 0;
+            } :
+            (d) => {
+                return d.size;
+            };
+
+        const newRoot = d3.hierarchy(dataTree, (d) => d.children)
+            .sum(value);
+
+        node.data(treemap(newRoot).leaves())
+            .transition()
+            .duration(1500)
+            .style("left", (d) => d.x0 + "px")
+            .style("top", (d) => d.y0 + "px")
+            .style("width", (d) => Math.max(0, d.x1 - d.x0 - 1) + "px")
+            .style("height", (d) => Math.max(0, d.y1 - d.y0 - 1) + "px")
+    });
+}
+/**
+ * End tree
+ *  */

@@ -898,4 +898,36 @@ section.suscribers .suscriber-AgeChart .tick line {
 }
 
 
-/** red-section***/
+.section.big-numbers .col {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  section.publications .left-bar {
+    font-size: 0;
+  }
+  section.publications .left-bar .gauge-1,
+  section.publications .left-bar .gauge-2,
+  section.publications .left-bar .gauge-3 {
+    width: 50%;
+    padding-top: 4rem;
+    display: inline-block;
+    vertical-align: top;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+  }
+  section.big-numbers .border-right-dash {
+    border-right: 2px solid #0f5095;
+  }
+  section.big-numbers .col-sm:nth-child(even) .border-right-dash {
+    border-right: 0;
+  }
+}
+@media (min-width: 720px) {
+  section.publications .left-bar .gauge-1,
+  section.publications .left-bar .gauge-2,
+  section.publications .left-bar .gauge-3 {
+    width: 33.3333%;
+  }
+}

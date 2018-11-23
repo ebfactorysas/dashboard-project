@@ -204,7 +204,7 @@ section.big-numbers {
     color: #FFFFFF;
     background-color: #1156A1;
     font-family: 'Gotham-Bold';
-    height: 750px;
+    min-height: 750px;
 }
 
 section.big-numbers h4 {
@@ -621,6 +621,23 @@ section.datasets #data-trend .text-inside {
 
 section.datasets #data-trend .y-data .domain {
     display: none;
+}
+
+section.datasets #downloads-dataset .node {
+    border: solid .5px #424488;
+    font: 18px;
+    font-family: 'Gotham-Bold';
+    line-height: 24px;
+    overflow: hidden;
+    position: absolute;
+    text-indent: 9px;
+}
+
+section.datasets #downloads-dataset {
+    min-width: 300px;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 220px;
 }
 
 section.code {
