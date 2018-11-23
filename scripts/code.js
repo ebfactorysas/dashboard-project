@@ -3,8 +3,7 @@
  *  */
 
 codetrendArrays = {
-    codeTrendIADBAllTime: [
-        {
+    codeTrendIADBAllTime: [{
             "name": "Hydro-BID",
             "value": 461
         },
@@ -127,443 +126,556 @@ codetrendArrays = {
             "value": 0
         }
     ],
-    codeTrendAllTimeDivisions:[
-        {
-            "value" : 512,
-            "name" : "Massive change detection",
-            "divisionCodes" : "FMM"
+    codeTrendAllTimeDivisions: [{
+            "value": 512,
+            "name": "Massive change detection",
+            "divisionCodes": "FMM"
         },
         {
-            "value" : 360,
-            "name" : "AP-LATAM",
-            "divisionCodes" : "FMM"
+            "value": 360,
+            "name": "AP-LATAM",
+            "divisionCodes": "FMM"
         },
         {
-            "value" : 1105,
-            "name" : "SIMPLE-LAT",
-            "divisionCodes" : "ICS"
+            "value": 1105,
+            "name": "SIMPLE-LAT",
+            "divisionCodes": "ICS"
         },
         {
-            "value" : 875,
-            "name" : "R Library Numbers for Development",
-            "divisionCodes" : "ISU"
+            "value": 875,
+            "name": "R Library Numbers for Development",
+            "divisionCodes": "ISU"
         },
         {
-            "value" : 838,
-            "name" : "IDBx Data Engine",
-            "divisionCodes" : "KIC"
+            "value": 838,
+            "name": "IDBx Data Engine",
+            "divisionCodes": "KIC"
         },
         {
-            "value" : 3633,
-            "name" : "MapMap",
-            "divisionCodes" : "KLD"
+            "value": 3633,
+            "name": "MapMap",
+            "divisionCodes": "KLD"
         },
         {
-            "value" : 2726,
-            "name" : "Consul",
-            "divisionCodes" : "KLD"
+            "value": 2726,
+            "name": "Consul",
+            "divisionCodes": "KLD"
         },
         {
-            "value" : 861,
-            "name" : "Tabula",
-            "divisionCodes" : "KLD"
+            "value": 861,
+            "name": "Tabula",
+            "divisionCodes": "KLD"
         },
         {
-            "value" : 813,
-            "name" : "Gobierto",
-            "divisionCodes" : "KLD"
+            "value": 813,
+            "name": "Gobierto",
+            "divisionCodes": "KLD"
         },
         {
-            "value" : 738,
-            "name" : "AEDES Detector",
-            "divisionCodes" : "KLD"
+            "value": 738,
+            "name": "AEDES Detector",
+            "divisionCodes": "KLD"
         },
         {
-            "value" : 691,
-            "name" : "Vota Inteligente",
-            "divisionCodes" : "KLD"
+            "value": 691,
+            "name": "Vota Inteligente",
+            "divisionCodes": "KLD"
         },
         {
-            "value" : 593,
-            "name" : "Textar",
-            "divisionCodes" : "KLD"
+            "value": 593,
+            "name": "Textar",
+            "divisionCodes": "KLD"
         },
         {
-            "value" : 559,
-            "name" : "Gmapsdistance",
-            "divisionCodes" : "KLD"
+            "value": 559,
+            "name": "Gmapsdistance",
+            "divisionCodes": "KLD"
         },
         {
-            "value" : 344,
-            "name" : "Pydatajson",
-            "divisionCodes" : "KLD"
+            "value": 344,
+            "name": "Pydatajson",
+            "divisionCodes": "KLD"
         },
         {
-            "value" : 1120,
-            "name" : "SmartMap",
-            "divisionCodes" : "MIF"
+            "value": 1120,
+            "name": "SmartMap",
+            "divisionCodes": "MIF"
         },
         {
-            "value" : 1051,
-            "name" : "Nexso",
-            "divisionCodes" : "MIF"
+            "value": 1051,
+            "name": "Nexso",
+            "divisionCodes": "MIF"
         },
         {
-            "value" : 3881,
-            "name" : "Indicator aggregator",
-            "divisionCodes" : "SPD"
+            "value": 3881,
+            "name": "Indicator aggregator",
+            "divisionCodes": "SPD"
         },
         {
-            "value" : 381,
-            "name" : "Clasificador de Datos Atípicos",
-            "divisionCodes" : "SPH"
+            "value": 381,
+            "name": "Clasificador de Datos Atípicos",
+            "divisionCodes": "SPH"
         },
         {
-            "value" : 4616,
-            "name" : "Hydro-BID",
-            "divisionCodes" : "WSA"
+            "value": 4616,
+            "name": "Hydro-BID",
+            "divisionCodes": "WSA"
         },
         {
-            "value" : 3280,
-            "name" : "Evaluación de Reciclaje Inclusivo",
-            "divisionCodes" : "WSA"
+            "value": 3280,
+            "name": "Evaluación de Reciclaje Inclusivo",
+            "divisionCodes": "WSA"
         }
     ],
-    codeTrend2018Divisions:[
-        {
-            "name" : "Massive change detection",
-            "divisionCodes" : "FMM",
-            "value" : 495
+    codeTrend2018Divisions: [{
+            "name": "Massive change detection",
+            "divisionCodes": "FMM",
+            "value": 495
         },
         {
-            "name" : "AP-LATAM",
-            "divisionCodes" : "FMM",
-            "value" : 350
+            "name": "AP-LATAM",
+            "divisionCodes": "FMM",
+            "value": 350
         },
         {
-            "name" : "SIMPLE-LAT",
-            "divisionCodes" : "ICS",
-            "value" : 0
+            "name": "SIMPLE-LAT",
+            "divisionCodes": "ICS",
+            "value": 0
         },
         {
-            "name" : "R Library Numbers for Development",
-            "divisionCodes" : "ISU",
-            "value" : 0
+            "name": "R Library Numbers for Development",
+            "divisionCodes": "ISU",
+            "value": 0
         },
         {
-            "name" : "IDBx Data Engine",
-            "divisionCodes" : "KIC",
-            "value" : 0
+            "name": "IDBx Data Engine",
+            "divisionCodes": "KIC",
+            "value": 0
         },
         {
-            "name" : "Gobierto",
-            "divisionCodes" : "KLD",
-            "value" : 801
+            "name": "Gobierto",
+            "divisionCodes": "KLD",
+            "value": 801
         },
         {
-            "name" : "Gmapsdistance",
-            "divisionCodes" : "KLD",
-            "value" : 531
+            "name": "Gmapsdistance",
+            "divisionCodes": "KLD",
+            "value": 531
         },
         {
-            "name" : "AEDES Detector",
-            "divisionCodes" : "KLD",
-            "value" : 0
+            "name": "AEDES Detector",
+            "divisionCodes": "KLD",
+            "value": 0
         },
         {
-            "name" : "Consul",
-            "divisionCodes" : "KLD",
-            "value" : 0
+            "name": "Consul",
+            "divisionCodes": "KLD",
+            "value": 0
         },
         {
-            "name" : "MapMap",
-            "divisionCodes" : "KLD",
-            "value" : 0
+            "name": "MapMap",
+            "divisionCodes": "KLD",
+            "value": 0
         },
         {
-            "name" : "Pydatajson",
-            "divisionCodes" : "KLD",
-            "value" : 0
+            "name": "Pydatajson",
+            "divisionCodes": "KLD",
+            "value": 0
         },
         {
-            "name" : "Tabula",
-            "divisionCodes" : "KLD",
-            "value" : 0
+            "name": "Tabula",
+            "divisionCodes": "KLD",
+            "value": 0
         },
         {
-            "name" : "Textar",
-            "divisionCodes" : "KLD",
-            "value" : 0
+            "name": "Textar",
+            "divisionCodes": "KLD",
+            "value": 0
         },
         {
-            "name" : "Vota Inteligente",
-            "divisionCodes" : "KLD",
-            "value" : 0
+            "name": "Vota Inteligente",
+            "divisionCodes": "KLD",
+            "value": 0
         },
         {
-            "name" : "Nexso",
-            "divisionCodes" : "MIF",
-            "value" : 0
+            "name": "Nexso",
+            "divisionCodes": "MIF",
+            "value": 0
         },
         {
-            "name" : "SmartMap",
-            "divisionCodes" : "MIF",
-            "value" : 0
+            "name": "SmartMap",
+            "divisionCodes": "MIF",
+            "value": 0
         },
         {
-            "name" : "Indicator aggregator",
-            "divisionCodes" : "SPD",
-            "value" : 0
+            "name": "Indicator aggregator",
+            "divisionCodes": "SPD",
+            "value": 0
         },
         {
-            "name" : "Clasificador de Datos Atípicos",
-            "divisionCodes" : "SPH",
-            "value" : 376
+            "name": "Clasificador de Datos Atípicos",
+            "divisionCodes": "SPH",
+            "value": 376
         },
         {
-            "name" : "Evaluación de Reciclaje Inclusivo",
-            "divisionCodes" : "WSA",
-            "value" : 0
+            "name": "Evaluación de Reciclaje Inclusivo",
+            "divisionCodes": "WSA",
+            "value": 0
         },
         {
-            "name" : "Hydro-BID",
-            "divisionCodes" : "WSA",
-            "value" : 0
+            "name": "Hydro-BID",
+            "divisionCodes": "WSA",
+            "value": 0
         }
     ],
-    codeTrendAllTimeDepartments:[
-        {
-            "name" : "SIMPLE-LAT",
-            "departmentCodes" : "IFD",
-            "value" : 1105
+    codeTrendAllTimeDepartments: [{
+            "name": "SIMPLE-LAT",
+            "departmentCodes": "IFD",
+            "value": 1105
         },
         {
-            "name" : "Massive change detection",
-            "json_featuretype" : "Sheet 1",
-            "departmentCodes" : "IFD",
-            "D" : 512
+            "name": "Massive change detection",
+            "json_featuretype": "Sheet 1",
+            "departmentCodes": "IFD",
+            "D": 512
         },
         {
-            "name" : "AP-LATAM",
-            "json_featuretype" : "Sheet 1",
-            "departmentCodes" : "IFD",
-            "D" : 360
+            "name": "AP-LATAM",
+            "json_featuretype": "Sheet 1",
+            "departmentCodes": "IFD",
+            "D": 360
         },
         {
-            "name" : "Hydro-BID",
-            "json_featuretype" : "Sheet 1",
-            "departmentCodes" : "INE",
-            "D" : 4616
+            "name": "Hydro-BID",
+            "json_featuretype": "Sheet 1",
+            "departmentCodes": "INE",
+            "D": 4616
         },
         {
-            "name" : "Evaluación de Reciclaje Inclusivo",
-            "json_featuretype" : "Sheet 1",
-            "departmentCodes" : "INE",
-            "D" : 3280
+            "name": "Evaluación de Reciclaje Inclusivo",
+            "json_featuretype": "Sheet 1",
+            "departmentCodes": "INE",
+            "D": 3280
         },
         {
-            "name" : "MapMap",
-            "json_featuretype" : "Sheet 1",
-            "departmentCodes" : "KIC",
-            "D" : 3633
+            "name": "MapMap",
+            "json_featuretype": "Sheet 1",
+            "departmentCodes": "KIC",
+            "D": 3633
         },
         {
-            "name" : "Consul",
-            "json_featuretype" : "Sheet 1",
-            "departmentCodes" : "KIC",
-            "D" : 2726
+            "name": "Consul",
+            "json_featuretype": "Sheet 1",
+            "departmentCodes": "KIC",
+            "D": 2726
         },
         {
-            "name" : "R Library Numbers for Development",
-            "json_featuretype" : "Sheet 1",
-            "departmentCodes" : "KIC",
-            "D" : 875
+            "name": "R Library Numbers for Development",
+            "json_featuretype": "Sheet 1",
+            "departmentCodes": "KIC",
+            "D": 875
         },
         {
-            "name" : "Tabula",
-            "json_featuretype" : "Sheet 1",
-            "departmentCodes" : "KIC",
-            "D" : 861
+            "name": "Tabula",
+            "json_featuretype": "Sheet 1",
+            "departmentCodes": "KIC",
+            "D": 861
         },
         {
-            "name" : "IDBx Data Engine",
-            "json_featuretype" : "Sheet 1",
-            "departmentCodes" : "KIC",
-            "D" : 838
+            "name": "IDBx Data Engine",
+            "json_featuretype": "Sheet 1",
+            "departmentCodes": "KIC",
+            "D": 838
         },
         {
-            "name" : "Gobierto",
-            "json_featuretype" : "Sheet 1",
-            "departmentCodes" : "KIC",
-            "D" : 813
+            "name": "Gobierto",
+            "json_featuretype": "Sheet 1",
+            "departmentCodes": "KIC",
+            "D": 813
         },
         {
-            "name" : "AEDES Detector",
-            "json_featuretype" : "Sheet 1",
-            "departmentCodes" : "KIC",
-            "D" : 738
+            "name": "AEDES Detector",
+            "json_featuretype": "Sheet 1",
+            "departmentCodes": "KIC",
+            "D": 738
         },
         {
-            "name" : "Vota Inteligente",
-            "json_featuretype" : "Sheet 1",
-            "departmentCodes" : "KIC",
-            "D" : 691
+            "name": "Vota Inteligente",
+            "json_featuretype": "Sheet 1",
+            "departmentCodes": "KIC",
+            "D": 691
         },
         {
-            "name" : "Textar",
-            "json_featuretype" : "Sheet 1",
-            "departmentCodes" : "KIC",
-            "D" : 593
+            "name": "Textar",
+            "json_featuretype": "Sheet 1",
+            "departmentCodes": "KIC",
+            "D": 593
         },
         {
-            "name" : "Gmapsdistance",
-            "json_featuretype" : "Sheet 1",
-            "departmentCodes" : "KIC",
-            "D" : 559
+            "name": "Gmapsdistance",
+            "json_featuretype": "Sheet 1",
+            "departmentCodes": "KIC",
+            "D": 559
         },
         {
-            "name" : "Pydatajson",
-            "json_featuretype" : "Sheet 1",
-            "departmentCodes" : "KIC",
-            "D" : 344
+            "name": "Pydatajson",
+            "json_featuretype": "Sheet 1",
+            "departmentCodes": "KIC",
+            "D": 344
         },
         {
-            "name" : "SmartMap",
-            "json_featuretype" : "Sheet 1",
-            "departmentCodes" : "MIF",
-            "D" : 1120
+            "name": "SmartMap",
+            "json_featuretype": "Sheet 1",
+            "departmentCodes": "MIF",
+            "D": 1120
         },
         {
-            "name" : "Nexso",
-            "json_featuretype" : "Sheet 1",
-            "departmentCodes" : "MIF",
-            "D" : 1051
+            "name": "Nexso",
+            "json_featuretype": "Sheet 1",
+            "departmentCodes": "MIF",
+            "D": 1051
         },
         {
-            "name" : "Clasificador de Datos Atípicos",
-            "json_featuretype" : "Sheet 1",
-            "departmentCodes" : "SCL",
-            "D" : 381
+            "name": "Clasificador de Datos Atípicos",
+            "json_featuretype": "Sheet 1",
+            "departmentCodes": "SCL",
+            "D": 381
         },
         {
-            "name" : "Indicator aggregator",
-            "json_featuretype" : "Sheet 1",
-            "departmentCodes" : "SPD",
-            "D" : 3881
+            "name": "Indicator aggregator",
+            "json_featuretype": "Sheet 1",
+            "departmentCodes": "SPD",
+            "D": 3881
         }
     ],
-    codeTrend2018Departments:[
-        {
-            "name" : "Massive change detection",
-            "departmentCodes" : "IFD",
-            "value" : 495
+    codeTrend2018Departments: [{
+            "name": "Massive change detection",
+            "departmentCodes": "IFD",
+            "value": 495
         },
         {
-            "name" : "AP-LATAM",
-            "departmentCodes" : "IFD",
-            "value" : 350
+            "name": "AP-LATAM",
+            "departmentCodes": "IFD",
+            "value": 350
         },
         {
-            "name" : "SIMPLE-LAT",
-            "departmentCodes" : "IFD",
-            "value" : 0
+            "name": "SIMPLE-LAT",
+            "departmentCodes": "IFD",
+            "value": 0
         },
         {
-            "name" : "Evaluación de Reciclaje Inclusivo",
-            "departmentCodes" : "INE",
-            "value" : 0
+            "name": "Evaluación de Reciclaje Inclusivo",
+            "departmentCodes": "INE",
+            "value": 0
         },
         {
-            "name" : "Hydro-BID",
-            "departmentCodes" : "INE",
-            "value" : 0
+            "name": "Hydro-BID",
+            "departmentCodes": "INE",
+            "value": 0
         },
         {
-            "name" : "Gobierto",
-            "departmentCodes" : "KIC",
-            "value" : 801
+            "name": "Gobierto",
+            "departmentCodes": "KIC",
+            "value": 801
         },
         {
-            "name" : "Gmapsdistance",
-            "departmentCodes" : "KIC",
-            "value" : 531
+            "name": "Gmapsdistance",
+            "departmentCodes": "KIC",
+            "value": 531
         },
         {
-            "name" : "AEDES Detector",
-            "departmentCodes" : "KIC",
-            "value" : 0
+            "name": "AEDES Detector",
+            "departmentCodes": "KIC",
+            "value": 0
         },
         {
-            "name" : "Consul",
-            "departmentCodes" : "KIC",
-            "value" : 0
+            "name": "Consul",
+            "departmentCodes": "KIC",
+            "value": 0
         },
         {
-            "name" : "IDBx Data Engine",
-            "departmentCodes" : "KIC",
-            "value" : 0
+            "name": "IDBx Data Engine",
+            "departmentCodes": "KIC",
+            "value": 0
         },
         {
-            "name" : "MapMap",
-            "departmentCodes" : "KIC",
-            "value" : 0
+            "name": "MapMap",
+            "departmentCodes": "KIC",
+            "value": 0
         },
         {
-            "name" : "Pydatajson",
-            "departmentCodes" : "KIC",
-            "value" : 0
+            "name": "Pydatajson",
+            "departmentCodes": "KIC",
+            "value": 0
         },
         {
-            "name" : "R Library Numbers for Development",
-            "departmentCodes" : "KIC",
-            "value" : 0
+            "name": "R Library Numbers for Development",
+            "departmentCodes": "KIC",
+            "value": 0
         },
         {
-            "name" : "Tabula",
-            "departmentCodes" : "KIC",
-            "value" : 0
+            "name": "Tabula",
+            "departmentCodes": "KIC",
+            "value": 0
         },
         {
-            "name" : "Textar",
-            "departmentCodes" : "KIC",
-            "value" : 0
+            "name": "Textar",
+            "departmentCodes": "KIC",
+            "value": 0
         },
         {
-            "name" : "Vota Inteligente",
-            "departmentCodes" : "KIC",
-            "value" : 0
+            "name": "Vota Inteligente",
+            "departmentCodes": "KIC",
+            "value": 0
         },
         {
-            "name" : "Nexso",
-            "departmentCodes" : "MIF",
-            "value" : 0
+            "name": "Nexso",
+            "departmentCodes": "MIF",
+            "value": 0
         },
         {
-            "name" : "SmartMap",
-            "departmentCodes" : "MIF",
-            "value" : 0
+            "name": "SmartMap",
+            "departmentCodes": "MIF",
+            "value": 0
         },
         {
-            "name" : "Clasificador de Datos Atípicos",
-            "departmentCodes" : "SCL",
-            "value" : 376
+            "name": "Clasificador de Datos Atípicos",
+            "departmentCodes": "SCL",
+            "value": 376
         },
         {
-            "name" : "Indicator aggregator",
-            "departmentCodes" : "SPD",
-            "value" : 0
+            "name": "Indicator aggregator",
+            "departmentCodes": "SPD",
+            "value": 0
         }
     ]
 }
 
-//init
-drawChartCodeTrend(codetrendArrays.codeTrendIADBAllTime);
-
-//click radiobutton drawChart(id del click)
-$("input[name*='codeTrend']").click(function () {
-    d3.select("#code-trend svg").remove();
-    drawChartCodeTrend(codetrendArrays[this.id]);
-});
+pageViewsTimeLine = {
+    dataTimelineAllTime: [{
+            "date": "1-Apr-17",
+            "close": 868
+        },
+        {
+            "date": "1-May-17",
+            "close": 826
+        },
+        {
+            "date": "1-Jun-17",
+            "close": 354
+        },
+        {
+            "date": "1-Jul-17",
+            "close": 426
+        },
+        {
+            "date": "1-Aug-17",
+            "close": 978
+        },
+        {
+            "date": "1-Sep-17",
+            "close": 1615
+        }, {
+            "date": "1-Oct-17",
+            "close": 2107
+        },
+        {
+            "date": "1-Nov-17",
+            "close": 705
+        },
+        {
+            "date": "1-Dec-17",
+            "close": 940
+        },
+        {
+            "date": "1-Jan-18",
+            "close": 792
+        },
+        {
+            "date": "1-Feb-18",
+            "close": 1729
+        },
+        {
+            "date": "1-Mar-18",
+            "close": 1498
+        },
+        {
+            "date": "1-Apr-18",
+            "close": 2825
+        },
+        {
+            "date": "1-May-18",
+            "close": 2805
+        },
+        {
+            "date": "1-Jun-18",
+            "close": 2798
+        }, {
+            "date": "1-Jul-18",
+            "close": 1352
+        },
+        {
+            "date": "1-Aug-18",
+            "close": 6667
+        },
+        {
+            "date": "1-Sep-18",
+            "close": 2233
+        },
+        {
+            "date": "1-Oct-18",
+            "close": 2529
+        },
+        {
+            "date": "1-Nov-18",
+            "close": 570
+        }
+    ],
+    dataTimeline2018: [{
+            "date": "1-Jan-18",
+            "close": 792
+        },
+        {
+            "date": "1-Feb-18",
+            "close": 1729
+        },
+        {
+            "date": "1-Mar-18",
+            "close": 1498
+        },
+        {
+            "date": "1-Apr-18",
+            "close": 2825
+        },
+        {
+            "date": "1-May-18",
+            "close": 2805
+        },
+        {
+            "date": "1-Jun-18",
+            "close": 2798
+        }, {
+            "date": "1-Jul-18",
+            "close": 1352
+        },
+        {
+            "date": "1-Aug-18",
+            "close": 6667
+        },
+        {
+            "date": "1-Sep-18",
+            "close": 2233
+        },
+        {
+            "date": "1-Oct-18",
+            "close": 2529
+        },
+        {
+            "date": "1-Nov-18",
+            "close": 570
+        }
+    ]
+}
 
 function drawChartCodeTrend(codeTrend) {
 
@@ -672,7 +784,7 @@ var dataTree = {
                     "name": "IDB Publications",
                     "size": 18
                 }]
-            },{
+            }, {
                 "name": "graph",
                 "children": [{
                     "name": "Google",
@@ -789,208 +901,193 @@ function drawTree(dataTree) {
  * End tree
  *  */
 
- /**
+/**
  * Start timelines
  *  */
-var dataTimeline = [{
-    "date": "1-Apr-17",
-    "close": 868
-},
-{
-    "date": "1-May-17",
-    "close": 826
-},
-{
-    "date": "1-Jun-17",
-    "close": 354
-},
-{
-    "date": "1-Jul-17",
-    "close": 426
-},
-{
-    "date": "1-Aug-17",
-    "close": 978
-},
-{
-    "date": "1-Sep-17",
-    "close": 1615
-}, {
-    "date": "1-Oct-17",
-    "close": 2107
-},
-{
-    "date": "1-Nov-17",
-    "close": 705
-},
-{
-    "date": "1-Dec-17",
-    "close": 940
-},{
-    "date": "1-Jan-18",
-    "close": 792
-},
-{
-    "date": "1-Feb-18",
-    "close": 1729
-},
-{
-    "date": "1-Mar-18",
-    "close": 1498
-},
-{
-    "date": "1-Apr-18",
-    "close": 2825
-},
-{
-    "date": "1-May-18",
-    "close": 2805
-},
-{
-    "date": "1-Jun-18",
-    "close": 2798
-}, {
-    "date": "1-Jul-18",
-    "close": 1352
-},
-{
-    "date": "1-Aug-18",
-    "close": 6667
-},
-{
-    "date": "1-Sep-18",
-    "close": 2233
-},
-{
-    "date": "1-Oct-18",
-    "close": 2529
-},
-{
-    "date": "1-Nov-18",
-    "close": 570
-}
-]
-
-createChartTimeline(dataTimeline);
 
 function createChartTimeline(data) {
-var margin = {
-        top: 20,
-        right: 20,
-        bottom: 30,
-        left: 50
-    },
-    width = 520 - margin.left - margin.right,
-    height = 240 - margin.top - margin.bottom;
+    var margin = {
+            top: 20,
+            right: 20,
+            bottom: 30,
+            left: 50
+        },
+        width = 520 - margin.left - margin.right,
+        height = 240 - margin.top - margin.bottom;
 
-// parse the date / time
-var parseTime = d3.timeParse("%d-%b-%y");
+    // parse the date / time
+    var parseTime = d3.timeParse("%d-%b-%y");
 
-// set the ranges
-var x = d3.scaleTime().range([0, width]);
-var y = d3.scaleLinear().range([height, 0]);
+    // set the ranges
+    var x = d3.scaleTime().range([0, width]);
+    var y = d3.scaleLinear().range([height, 0]);
 
-// define the area
-var area = d3.area()
-    .x(function (d) {
-        return x(d.date);
-    })
-    .y0(height)
-    .y1(function (d) {
-        return y(d.close);
+    // define the area
+    var area = d3.area()
+        .x(function (d) {
+            return x(d.date);
+        })
+        .y0(height)
+        .y1(function (d) {
+            return y(d.close);
+        });
+
+    // define the line
+    var valueline = d3.line()
+        .x(function (d) {
+            return x(d.date);
+        })
+        .y(function (d) {
+            return y(d.close);
+        });
+
+    // append the svg obgect to the body of the page
+    // appends a 'group' element to 'svg'
+    // moves the 'group' element to the top left margin
+    var svg = d3.select("#timeline-code").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    var totalAmount = 0;
+    // format the data
+    data.forEach(function (d) {
+        d.date = parseTime(d.date);
     });
 
-// define the line
-var valueline = d3.line()
-    .x(function (d) {
-        return x(d.date);
-    })
-    .y(function (d) {
-        return y(d.close);
-    });
-
-// append the svg obgect to the body of the page
-// appends a 'group' element to 'svg'
-// moves the 'group' element to the top left margin
-var svg = d3.select("#timeline-code").append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-    .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-var totalAmount = 0;
-// format the data
-data.forEach(function (d) {
-    d.date = parseTime(d.date);
-});
-
-for (var i = 0; i < data.length; i++) {
-    data[i].close = +data[i].close;
-    totalAmount += data[i].close;
-    if (i > 0) {
-        data[i]['CumulativeAmount'] = data[i].close + data[i - 1].close;
-    } else {
-        data[i]['CumulativeAmount'] = data[i].close;
+    for (var i = 0; i < data.length; i++) {
+        data[i].close = +data[i].close;
+        totalAmount += data[i].close;
+        if (i > 0) {
+            data[i]['CumulativeAmount'] = data[i].close + data[i - 1].close;
+        } else {
+            data[i]['CumulativeAmount'] = data[i].close;
+        }
     }
-}
-//now calculate cumulative % from the cumulative amounts & total, round %
-for (var i = 0; i < data.length; i++) {
-    data[i]['CumulativePercentage'] = (data[i]['CumulativeAmount'] / totalAmount);
-    data[i]['CumulativePercentage'] = parseFloat(data[i]['CumulativePercentage'].toFixed(2));
-}
+    //now calculate cumulative % from the cumulative amounts & total, round %
+    for (var i = 0; i < data.length; i++) {
+        data[i]['CumulativePercentage'] = (data[i]['CumulativeAmount'] / totalAmount);
+        data[i]['CumulativePercentage'] = parseFloat(data[i]['CumulativePercentage'].toFixed(2));
+    }
 
-var lineGen = d3.line()
-    .x(function (d) {
-        return x(d.date);
-    })
-    .y(function (d) {
-        return y(d.CumulativeAmount); //review function
-    });
+    var lineGen = d3.line()
+        .x(function (d) {
+            return x(d.date);
+        })
+        .y(function (d) {
+            return y(d.CumulativeAmount); //review function
+        });
 
-// scale the range of the data
-x.domain(d3.extent(data, function (d) {
-    return d.date;
-}));
-y.domain([0, d3.max(data, function (d) {
-    return d.close;
-})]);
+    // scale the range of the data
+    x.domain(d3.extent(data, function (d) {
+        return d.date;
+    }));
 
-// add the area
-svg.append("path")
-    .data([data])
-    .attr("class", "area")
-    .attr("d", area);
+    y.domain([0, d3.max(data, function (d) {
+        return d.close;
+    })]);
 
-// add the valueline path.
-svg.append("path")
-    .data([data])
-    .attr("class", "line")
-    .attr("d", valueline);
-//
-svg.append('svg:path')
-    .attr('d', lineGen(data))
-    .attr('stroke', '#c3c3c3')
-    .attr("stroke-dasharray", "4")
-    .attr('stroke-width', 2)
-    .attr('fill', 'none');
+    // add the area
+    svg.append("path")
+        .data([data])
+        .attr("class", "area")
+        .attr("d", area);
 
-// add the X Axis
-svg.append("g")
-    .attr("transform", "translate(0," + height + ")")
-    .attr("class", "x-axis")
-    .style('stroke-width', '3px')
-    .style("font-family", "Gotham-Book")
-    .style("font-size", "13px")
-    .call(d3.axisBottom(x));
+    // add the valueline path.
+    svg.append("path")
+        .data([data])
+        .attr("class", "line")
+        .attr("d", valueline);
+    //
+    svg.append('svg:path')
+        .attr('d', lineGen(data))
+        .attr('stroke', '#c3c3c3')
+        .attr("stroke-dasharray", "4")
+        .attr('stroke-width', 2)
+        .attr('fill', 'none');
 
-// add the Y Axis
-svg.append("g")
-    .attr("class", "y-axis")
-    .style("font-family", "Gotham-Book")
-    .style("font-size", "13px")
-    .call(d3.axisLeft(y)
-        .tickFormat(d3.format(".2s")));
+    // add the X Axis
+    svg.append("g")
+        .attr("transform", "translate(0," + height + ")")
+        .attr("class", "x-axis")
+        .style('stroke-width', '3px')
+        .style("font-family", "Gotham-Book")
+        .style("font-size", "13px")
+        //.call(d3.axisBottom(x))
+        .call(d3.axisBottom(x)
+            .ticks(d3.timeDay.filter(d => d3.timeDay.count(0, d) % 100 === 0))
+            .tickFormat(function (x) {
+                // get the milliseconds since Epoch for the date
+                var milli = (x.getTime() - 10000);
+
+                // calculate new date 10 seconds earlier. Could be one second, 
+                // but I like a little buffer for my neuroses
+                var vanilli = new Date(milli);
+
+                // calculate the month (0-11) based on the new date
+                var mon = vanilli.getMonth();
+                var yr = vanilli.getFullYear();
+
+                // return appropriate quarter for that month
+                if (mon <= 2) {
+                    return "Q1 " + yr;
+                } else if (mon <= 5) {
+                    return "Q2 " + yr;
+                } else if (mon <= 8) {
+                    return "Q3 " + yr;
+                } else {
+                    return "Q4 " + yr;
+                }
+            })
+            .tickSizeOuter(0)
+        )
+
+
+    // .tickFormat(function(x){
+    //     // get the milliseconds since Epoch for the date
+    //     var milli = (x.getTime() - 10000);
+
+    //     // calculate new date 10 seconds earlier. Could be one second, 
+    //     // but I like a little buffer for my neuroses
+    //     var vanilli = new Date(milli);
+
+    //     // calculate the month (0-11) based on the new date
+    //     var mon = vanilli.getMonth();
+    //     var yr = vanilli.getFullYear();
+
+    //     // return appropriate quarter for that month
+    //     if ( mon <= 2 ) {
+    //         return  "Q1 " + yr;
+    //     } else if ( mon <= 5 ) {
+    //         return  "Q2 " + yr;
+    //     } else if ( mon <= 8 ) {
+    //         return  "Q3 " + yr;
+    //     } else {
+    //         return "Q4 " + yr;
+    //     }
+    // });
+
+    // add the Y Axis
+    svg.append("g")
+        .attr("class", "y-axis")
+        .style("font-family", "Gotham-Book")
+        .style("font-size", "13px")
+        .call(d3.axisLeft(y)
+            .tickFormat(d3.format(".2s")));
 }
 
 /**
-* End timelines
-*  */
+ * End timelines
+ *  */
+
+//init
+drawChartCodeTrend(codetrendArrays.codeTrendIADBAllTime);
+createChartTimeline(pageViewsTimeLine.dataTimelineAllTime);
+//click radiobutton drawChart(id del click)
+$("input[name*='codeTrend']").click(function () {
+    d3.select("#code-trend svg").remove();
+    drawChartCodeTrend(codetrendArrays[this.id]);
+
+    d3.select("#timeline-code svg").remove();
+    createChartTimeline(pageViewsTimeLine.dataTimeline2018);
+});
