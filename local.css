@@ -881,6 +881,15 @@ section.suscribers .suscriber-AgeChart .tick line {
     display: none;
 }
 
+section.suscribers #demographics-suscribers .node {
+    border: solid .5px #518a81;
+    font: 18px;
+    font-family: 'Gotham-Bold';
+    line-height: 24px;
+    overflow: hidden;
+    position: absolute;
+    text-indent: 9px;
+}
 
 
 
