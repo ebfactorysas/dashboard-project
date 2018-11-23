@@ -440,19 +440,25 @@
     <section class="code">
         <div class="col-sm-12">
             <div class="row">
-                <div class="col-sm-2 pt-4 yellow-background left-bar">
-                    <h4>CODE</h4>
-                    <span><i class="fas fa-circle fa-xs"></i>Total from SCL</span>
-                    <span><i class="fas fa-circle fa-xs"></i>Rest of IDB</span>
-                    <div class="gauge" id="gauge1"></div>
-                    <h4>PAGEVIEWS</h4>
-                    <span><i class="fas fa-circle fa-xs"></i>Total from SCL</span>
-                    <span><i class="fas fa-circle fa-xs"></i>Rest of IDB</span>
-                    <div class="gauge-k" id="gauge2"></div>
-                    <h4>PAGEVIEWS FROM LAC</h4>
-                    <span><i class="fas fa-circle fa-xs"></i>From LAC</span>
-                    <span><i class="fas fa-circle fa-xs"></i>Rest of World</span>
-                    <div id="gauge3" class="text-center gauge-p"></div>
+                <div class=" yellow-background left-bar">
+                    <div class="gauge-1">
+                        <h4>CODE</h4>
+                        <span><i class="fas fa-circle fa-xs"></i>Total from SCL</span>
+                        <span><i class="fas fa-circle fa-xs"></i>Rest of IDB</span>
+                        <div class="gauge" id="code-gauge-1"></div>
+                    </div>
+                    <div class="gauge-2">
+                        <h4>PAGEVIEWS</h4>
+                        <span><i class="fas fa-circle fa-xs"></i>Total from SCL</span>
+                        <span><i class="fas fa-circle fa-xs"></i>Rest of IDB</span>
+                        <div class="gauge-k" id="code-gauge-2"></div>
+                    </div>
+                    <div class="gauge-3">
+                        <h4>PAGEVIEWS FROM LAC</h4>
+                        <span><i class="fas fa-circle fa-xs"></i>From LAC</span>
+                        <span><i class="fas fa-circle fa-xs"></i>Rest of World</span>
+                        <div id="code-gauge-3" class="text-center gauge-p"></div>
+                    </div>
                 </div>
                 <div class="col right-bar grayr-background">
                     <div class="row m-2 pb-2 ">
@@ -472,7 +478,7 @@
                             </div>
                         </div>
                         <div class="left-zone pb-4 pr-4">
-                            <div class="col-sm-12  d-border-bottom">
+                            <div class="col-sm-12 top-zone d-border-bottom">
                                 <h4 class=" text-center yellow">WHERE ARE PAGEVIEWS COMING FROM?</h4>
                                 <div id="downloads-code"> </div>
                             </div>
@@ -495,8 +501,8 @@
                             </div>
 
                         </div>
-                        <div class="col-sm-5 pt-4  d-border-left">
-                            <div class="col-sm-12  d-border-bottom">
+                        <div class="right-zone pl-4 d-border-left">
+                            <div class="col-sm-12 top-zone d-border-bottom">
                                 <h4 class=" text-center yellow">DOWNLOADS TIMELINE</h4>
                                 <div id="timelines"></div>
                             </div>

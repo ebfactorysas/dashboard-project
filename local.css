@@ -627,6 +627,19 @@ section.code {
     height: 930px;
 }
 
+section.code .left-bar .gauge-1 {
+    height: 330px;
+    padding-top: 4rem;
+}
+
+section.code .left-bar .gauge-2 {
+    height: 300px;
+}
+
+section.code .left-bar .gauge-3 {
+    height: 300px;
+}
+
 section.code .right-bar {
     height: 930px;
 }
