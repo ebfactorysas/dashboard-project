@@ -793,39 +793,81 @@ function drawTree(dataTree) {
  * Start timelines
  *  */
 var dataTimeline = [{
-    "date": "1-Jul-18",
-    "close": 60000
+    "date": "1-Apr-17",
+    "close": 868
 },
 {
-    "date": "30-Apr-18",
-    "close": 50000
+    "date": "1-May-17",
+    "close": 826
 },
 {
-    "date": "27-Jan-18",
-    "close": 45000
+    "date": "1-Jun-17",
+    "close": 354
 },
 {
-    "date": "26-Dec-17",
-    "close": 35000
+    "date": "1-Jul-17",
+    "close": 426
 },
 {
-    "date": "24-Jul-17",
-    "close": 20000
+    "date": "1-Aug-17",
+    "close": 978
 },
 {
-    "date": "20-Dec-16",
-    "close": 30000
+    "date": "1-Sep-17",
+    "close": 1615
 }, {
-    "date": "16-Jul-16",
-    "close": 25000
+    "date": "1-Oct-17",
+    "close": 2107
 },
 {
-    "date": "27-Mar-14",
-    "close": 12000
+    "date": "1-Nov-17",
+    "close": 705
 },
 {
-    "date": "26-Jan-13",
-    "close": 5000
+    "date": "1-Dec-17",
+    "close": 940
+},{
+    "date": "1-Jan-18",
+    "close": 792
+},
+{
+    "date": "1-Feb-18",
+    "close": 1729
+},
+{
+    "date": "1-Mar-18",
+    "close": 1498
+},
+{
+    "date": "1-Apr-18",
+    "close": 2825
+},
+{
+    "date": "1-May-18",
+    "close": 2805
+},
+{
+    "date": "1-Jun-18",
+    "close": 2798
+}, {
+    "date": "1-Jul-18",
+    "close": 1352
+},
+{
+    "date": "1-Aug-18",
+    "close": 6667
+},
+{
+    "date": "1-Sep-18",
+    "close": 2233
+},
+{
+    "date": "1-Oct-18",
+    "close": 2529
+},
+{
+    "date": "1-Nov-18",
+    "close": 570
 }
 ]
 
@@ -901,7 +943,7 @@ var lineGen = d3.line()
         return x(d.date);
     })
     .y(function (d) {
-        return y(d.CumulativeAmount);
+        return y(d.CumulativeAmount); //review function
     });
 
 // scale the range of the data
