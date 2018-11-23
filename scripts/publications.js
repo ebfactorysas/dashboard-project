@@ -286,3 +286,139 @@ function drawTree(dataTree) {
 /**
  * End tree
  *  */
+
+/**
+ *  Start trend
+ */
+
+var dataPublicationTrend = [{
+        "name": "Profesión: Profesor en América Latina ¿Por qué se perdió el prestigio docente y cómo rec",
+        "value": 26.2,
+    },
+    {
+        "name": "Social Services for Digital Citizens: Opportunities for Latin America and the Caribbean",
+        "value": 23.6,
+    },
+    {
+        "name": "La priorización en salud paso a paso: Cómo articulan sus procesos México, Brasil y Colomb",
+        "value": 15.9,
+    },
+    {
+        "name": "Datos asociados al 'Panorama de enevejeciemiento y depenedencia en América La...",
+        "value": 12.7,
+    },
+    {
+        "name": "Suriname Survey of Living Conditions: 2016-2017",
+        "value": 8.6,
+    },
+    {
+        "name": "Standarized Public Debt Database",
+        "value": 7.6,
+    },
+    {
+        "name": "Primary Healthcare Access, Experience, and Coordination in Latin America and the Caribb...",
+        "value": 3.9,
+    }, {
+        "name": "Barbados Survey of Living Conditions:2016",
+        "value": 3.0,
+    }, {
+        "name": "Guyana Labor Force Survey: Fourth Quater 2017",
+        "value": .7,
+    },
+    {
+        "name": "Should I Stay or Should I Go?",
+        "value": .6,
+    }
+];
+
+dataPublicationTrend = dataPublicationTrend.sort(function (a, b) {
+    return d3.ascending(a.value, b.value);
+})
+
+drawTrendPublicationChart(dataPublicationTrend);
+
+function drawTrendPublicationChart(dataPublicationTrend) {
+    var marginPublicationTrend = {
+        top: 15,
+        right: 25,
+        bottom: 15,
+        left: 40
+    };
+
+    var widthPublicationTrend = 560 - marginPublicationTrend.left - marginPublicationTrend.right,
+        heightPublicationTrend = 400 - marginPublicationTrend.top - marginPublicationTrend.bottom;
+
+
+    var svgPublicationTrend = d3.select("#publication-trend").append("svg")
+        .attr("width", widthPublicationTrend + marginPublicationTrend.left + marginPublicationTrend.right)
+        .attr("height", heightPublicationTrend + marginPublicationTrend.top + marginPublicationTrend.bottom)
+        .append("g")
+        .attr("transform", "translate(" + marginPublicationTrend.left + "," + marginPublicationTrend.top + ")");
+
+    var xPublicationTrend = d3.scaleLinear()
+        .range([0, widthPublicationTrend])
+        .domain([0, d3.max(dataPublicationTrend, function (d) {
+            return d.value;
+        })]);
+
+    var yPublicationTrend = d3.scaleBand()
+
+        .rangeRound([heightPublicationTrend, 0], .1)
+        .domain(dataPublicationTrend.map(function (d) {
+            return d.value;
+        }));
+
+    var yAxisPublicationTrend = d3.axisLeft(yPublicationTrend)
+        //no tick marks
+        .tickPadding(40)
+        .tickSize(0);
+
+    var gyPublicationTrend = svgPublicationTrend.append("g")
+        .style("text-anchor", "start")
+        .style("color", "#555555")
+        .attr("class", "y-data")
+
+        .call(yAxisPublicationTrend)
+
+    var barsPublicationTrend = svgPublicationTrend.selectAll(".bar")
+        .data(dataPublicationTrend)
+        .enter()
+        .append("g")
+
+    barsPublicationTrend.append("rect")
+        .attr("class", "bar")
+        .attr("y", function (d) {
+            return yPublicationTrend(d.value);
+        })
+        .attr("rx", 25)
+        .attr("ry", 25)
+        .attr("fill", "#dea6b0")
+        .attr("height", yPublicationTrend.bandwidth() - 2)
+        .attr("x", 8)
+        .attr("width", function (d) {
+            return xPublicationTrend(d.value);
+        });
+
+    barsPublicationTrend.append("text")
+        .attr("class", "label")
+        //y position of the label is halfway down the bar
+        .attr("y", function (d) {
+            return yPublicationTrend(d.value) + yPublicationTrend.bandwidth() / 2 + 4;
+        })
+        //x position is 3 pixels to the right of the bar
+        .attr("x", function (d) {
+            return 12;
+        })
+        .attr("class", "text-inside")
+        .attr("font-family", "Gotham-Bold")
+        .attr("font-size", "12px")
+        .text(function (d) {
+            return d.name;
+        });
+}
+
+
+
+/**
+ * End trend
+ */

@@ -514,16 +514,16 @@ section.moocs .distribution-chart .tick text {
     width: 10px;
 }
 
-section.moocs #moocs .y-data {
+section.moocs #moocs-registrations .y-data {
     font-family: 'Gotham-Bold';
     font-size: 12px;
 }
 
-section.moocs #moocs .text-inside {
+section.moocs #moocs-registrations .text-inside {
     color: #8a858d
 }
 
-section.moocs #moocs .y-data .domain {
+section.moocs #moocs-registrations .y-data .domain {
     display: none;
 }
 
@@ -720,6 +720,32 @@ section.code #downloads-code .node {
     text-indent: 9px;
 }
 
+section.code #timeline-code {
+    font-family: 'Gotham-Bold';
+}
+
+section.code #timeline-code .line {
+    fill: none;
+    stroke: #efbd34;
+    stroke-width: 2px;
+}
+
+section.code #timeline-code .area {
+    fill: #f1ca60;
+}
+
+section.code #timeline-code .x-axis .tick {
+    stroke-width:1px;
+}
+
+section.code #timeline-code .y-axis path {
+    display: none;
+}
+
+section.code #timeline-code .y-axis .tick line {
+    display: none;
+}
+
 section.suscribers {
     height: 930px;
 }
@@ -800,7 +826,7 @@ section.suscribers .suscriber-AgeChart .tick line {
     height: 250px;
 }
 
-#distribution {
+#distribution-moocs {
     height: 250px;
 }
 
@@ -816,7 +842,7 @@ section.suscribers .suscriber-AgeChart .tick line {
     stroke: #d1415a;
 }
 
-#moocs {
+#moocs-registrations {
     height: 245px;
 }
 
