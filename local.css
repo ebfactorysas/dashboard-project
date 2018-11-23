@@ -204,7 +204,7 @@ section.big-numbers {
     color: #FFFFFF;
     background-color: #1156A1;
     font-family: 'Gotham-Bold';
-    height: 750px;
+    min-height: 750px;
 }
 
 section.big-numbers h4 {
