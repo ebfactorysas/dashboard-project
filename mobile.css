@@ -204,7 +204,7 @@ section.big-numbers {
     color: #FFFFFF;
     background-color: #1156A1;
     font-family: 'Gotham-Bold';
-    min-height: 750px;
+
 }
 
 section.big-numbers h4 {
@@ -216,10 +216,6 @@ section.big-numbers h1 {
     font-size: 120px;
     font-family: 'Gotham-Book';
     color: #ffffff;
-}
-
-section.big-numbers .border-right-dash {
-    border-right: 2px solid #0f5095;
 }
 
 section.big-numbers p {
@@ -246,11 +242,6 @@ section.menu ul li {
 
 section.publications {
     font-family: 'Gotham-Bold';
-    height: 930px;
-}
-
-section.publications .right-bar {
-    height: 930px;
 }
 
 section.publications .right-bar .left-zone {
@@ -290,8 +281,7 @@ section.publications .left-bar .gauge-3 {
 
 section.publications .left-bar {
     text-align: center;
-    height: 930px;
-    width: 250px;
+    width: 100%;
 }
 
 section.publications .left-bar h4 {
@@ -421,18 +411,8 @@ section.publications #timeline-publication .y-axis .tick line {
 }
 
 
-
-section.moocs {
-    height: 930px;
-}
-
-section.moocs .right-bar {
-    height: 930px;
-}
-
 section.moocs .left-bar {
     text-align: center;
-    height: 930px;
 }
 
 section.moocs .left-bar h4 {
@@ -538,16 +518,10 @@ section.moocs [id^="student"] .y-data {
 
 section.datasets {
     font-family: 'Gotham-Bold';
-    height: 930px;
-}
-
-section.datasets .right-bar {
-    height: 930px;
 }
 
 section.datasets .left-bar {
     text-align: center;
-    height: 930px;
 }
 
 section.datasets .left-bar h4 {
@@ -623,27 +597,6 @@ section.datasets #data-trend .y-data .domain {
     display: none;
 }
 
-section.datasets #downloads-dataset .node {
-    border: solid .5px #424488;
-    font: 18px;
-    font-family: 'Gotham-Bold';
-    line-height: 24px;
-    overflow: hidden;
-    position: absolute;
-    text-indent: 9px;
-}
-
-section.datasets #downloads-dataset {
-    min-width: 300px;
-    max-width: 100%;
-    margin: 0 auto;
-    height: 220px;
-}
-
-section.code {
-    height: 930px;
-}
-
 section.code .left-bar .gauge-1 {
     height: 330px;
     padding-top: 4rem;
@@ -657,14 +610,10 @@ section.code .left-bar .gauge-3 {
     height: 300px;
 }
 
-section.code .right-bar {
-    height: 930px;
-}
 
 section.code .left-bar {
     text-align: center;
-    height: 930px;
-    width: 250px;
+    width: 100%;
 }
 
 section.code .funds-allocated-meter .background {
@@ -763,17 +712,8 @@ section.code #timeline-code .y-axis .tick line {
     display: none;
 }
 
-section.suscribers {
-    height: 930px;
-}
-
-section.suscribers .right-bar {
-    height: 930px;
-}
-
 section.suscribers .left-bar {
     text-align: center;
-    height: 930px;
 }
 
 section.suscribers .vertical-text {
@@ -948,14 +888,46 @@ section.suscribers .suscriber-AgeChart .tick line {
 }
 
 
-/* [id^="gauge"] {
-    margin: 0 auto;
-    height: 250px;
-} */
+[id^="gauge"] {
+  margin: 0 auto;
+  height: 250px;
+}
 
 [id^="student"] {
-    height: 100px;
+  height: 100px;
 }
 
 
-/** red-section***/
+.section.big-numbers .col {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  section.publications .left-bar {
+    font-size: 0;
+  }
+  section.publications .left-bar .gauge-1,
+  section.publications .left-bar .gauge-2,
+  section.publications .left-bar .gauge-3 {
+    width: 50%;
+    padding-top: 4rem;
+    display: inline-block;
+    vertical-align: top;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+  }
+  section.big-numbers .border-right-dash {
+    border-right: 2px solid #0f5095;
+  }
+  section.big-numbers .col-sm:nth-child(even) .border-right-dash {
+    border-right: 0;
+  }
+}
+@media (min-width: 720px) {
+  section.publications .left-bar .gauge-1,
+  section.publications .left-bar .gauge-2,
+  section.publications .left-bar .gauge-3 {
+    width: 33.3333%;
+  }
+}
