@@ -274,3 +274,98 @@ function drawAgeSuscribersChart(dataAgeSuscribers) {
 /**
  * End age-suscribers
  *  */
+
+
+  /**
+ * Start tree
+ *  */
+
+var dataTree = {
+    "name": "flare",
+    "children": [{
+        "name": "analytics",
+        "children": [{
+                "name": "graph",
+                "children": [{
+                    "name": "Not Reported",
+                    "size": 66
+                }]
+            },
+            {
+                "name": "optimization",
+                "children": [{
+                    "name": "Male",
+                    "size": 18
+                }]
+            },{
+                "name": "graph",
+                "children": [{
+                    "name": "Female",
+                    "size": 66
+                }]
+            }
+        ]
+    }]
+}
+
+drawTree(dataTree);
+
+function drawTree(dataTree) {
+    const marginTree = {
+            top: 40,
+            right: 10,
+            bottom: 10,
+            left: 10
+        },
+        widthTree = 500 - marginTree.left - marginTree.right,
+        heightTree = 200 - marginTree.top - marginTree.bottom,
+        colorTree = d3.scaleOrdinal().range(["#518a81", "#9abfba", "#aeccc7"]);
+
+    const treemap = d3.treemap().size([widthTree, heightTree]);
+
+    const divTree = d3.select("#demographics-suscribers").append("div")
+        .style("position", "relative")
+        .style("width", (widthTree + marginTree.left + marginTree.right) + "px")
+        .style("height", (heightTree + marginTree.top + marginTree.bottom) + "px")
+        .style("left", marginTree.left + "px")
+        .style("top", marginTree.top + "px");
+    const root = d3.hierarchy(dataTree, (d) => d.children)
+        .sum((d) => d.size);
+
+    const tree = treemap(root);
+
+    const node = divTree.datum(root).selectAll(".node")
+        .data(tree.leaves())
+        .enter().append("div")
+        .attr("class", "node")
+        .style("left", (d) => d.x0 + "px")
+        .style("top", (d) => d.y0 + "px")
+        .style("width", (d) => Math.max(0, d.x1 - d.x0) + "px")
+        .style("height", (d) => Math.max(0, d.y1 - d.y0) + "px")
+        .style("background", (d) => colorTree(d.parent.data.name))
+        .text((d) => d.data.name);
+
+    d3.selectAll("input").on("change", function change() {
+        const value = this.value === "count" ?
+            (d) => {
+                return d.size ? 1 : 0;
+            } :
+            (d) => {
+                return d.size;
+            };
+
+        const newRoot = d3.hierarchy(dataTree, (d) => d.children)
+            .sum(value);
+
+        node.data(treemap(newRoot).leaves())
+            .transition()
+            .duration(1500)
+            .style("left", (d) => d.x0 + "px")
+            .style("top", (d) => d.y0 + "px")
+            .style("width", (d) => Math.max(0, d.x1 - d.x0 - 1) + "px")
+            .style("height", (d) => Math.max(0, d.y1 - d.y0 - 1) + "px")
+    });
+}
+/**
+ * End tree
+ *  */
