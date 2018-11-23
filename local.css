@@ -634,6 +634,7 @@ section.code .right-bar {
 section.code .left-bar {
     text-align: center;
     height: 930px;
+    width: 250px;
 }
 
 section.code .funds-allocated-meter .background {
@@ -668,6 +669,15 @@ section.code .left-bar span:nth-child(2n+1) {
     font-size: 10px;
 }
 
+section.code .right-bar .left-zone {
+    width: 1000px;
+}
+
+section.code .right-bar .left-zone .top-zone {
+    height: 265px;
+    padding-top: 1rem;
+}
+
 section.code h4 {
     font-size: 12px;
     font-family: 'Gotham-Bold';
@@ -685,6 +695,16 @@ section.code .small-letter span {
 
 section.code #publications {
     height: 325px;
+}
+
+section.code #downloads-code .node {
+    border: solid .5px #ebb203;
+    font: 18px;
+    font-family: 'Gotham-Bold';
+    line-height: 24px;
+    overflow: hidden;
+    position: absolute;
+    text-indent: 9px;
 }
 
 section.suscribers {
@@ -778,16 +798,15 @@ section.suscribers .suscriber-AgeChart .tick line {
     height: 220px;
 }
 
+#downloads-publications rect {
+
+    stroke: #d1415a;
+}
 
 #moocs {
     height: 245px;
 }
 
-
-#downloads-publications rect {
-
-    stroke: #d1415a;
-}
 
 /***gauges ***/
 .funds-allocated-meter .background {
