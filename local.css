@@ -931,10 +931,10 @@ section.suscribers .suscriber-AgeChart .tick line {
 }
 
 
-[id^="gauge"] {
+/* [id^="gauge"] {
     margin: 0 auto;
     height: 250px;
-}
+} */
 
 [id^="student"] {
     height: 100px;
