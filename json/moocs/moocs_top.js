@@ -366,40 +366,45 @@ var moocsTopArrays = {
     divisions2018: [],
     IDBAlltime: [
         {
-            "json_featuretype": "NewFeatureType",
-            "MOOC": "Gestión de Proyectos de Desarrollo (7ed.)",
-            "Rank": "1",
-            "Registrations": 43771,
-            "xlsx_row_id": 2
+            "name": "Gestión de Proyectos de Desarrollo (7ed.)",
+            "value": 43771,
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "MOOC": "La realidad del desarollo social latinoamericano (2ed.)",
-            "Rank": "2",
-            "Registrations": 21368,
-            "xlsx_row_id": 3
+            "name": "La realidad del desarollo social latinoamericano (2ed.)",
+            "value": 21368,
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "MOOC": "Gestão de Projetos de Desenvolvimento (2ed.)",
-            "Rank": "3",
-            "Registrations": 18030,
-            "xlsx_row_id": 4
+            "name": "Gestão de Projetos de Desenvolvimento (2ed.)",
+            "value": 18030,
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "MOOC": "Project Management Techniques for Development Professionals (4ed.)",
-            "Rank": "4",
-            "Registrations": 14245,
-            "xlsx_row_id": 5
+            "name": "Project Management Techniques for Development Professionals (4ed.)",
+            "value": 14245,
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "MOOC": "Administración pública y fiscal: cómo se gestiona un gobierno (1ed.)",
-            "Rank": "5",
-            "Registrations": 12871,
-            "xlsx_row_id": 6
+            "name": "Administración pública y fiscal: cómo se gestiona un gobierno (1ed.)",
+            "value": 12871,
         }
     ],
-    IDB2018: []
+    IDB2018: [{
+                "name": "La realidad del desarrollo social latinoamericano (2ed.)",
+                "value": 15.9,
+            },
+            {
+                "name": "Políticas efectivas del desarrollo infantil (5ed.)",
+                "value": 9.7,
+            },
+            {
+                "name": "La realidad del desarrollo social latinoamericano (1ed.)",
+                "value": 2.3,
+            },
+            {
+                "name": "Políticas efectivas del desarrollo infantil (1ed.)",
+                "value": 0.1,
+            },
+            {
+                "name": "Asociaciones Publico Privadas: Implementando Soluciones en Latinoamérica y el Caribe (2ed.)",
+                "value": 0.0,
+            }
+        ]
 };

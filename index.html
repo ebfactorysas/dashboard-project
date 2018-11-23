@@ -282,9 +282,18 @@
                 </div>
                 <div class="col right-bar grayr-background">
                     <div class="row m-2 pb-2 ">
-                        <div class="col-12 ">
-                            <p class="text-right"> <i class="far fa-circle fa-xs"></i> ALL THE TIME &nbsp; <i class="far fa-dot-circle"></i>
-                                2018 DATA</p>
+                        <div class="col-12 text-right">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input orange" type="radio" name="moocsTrend" id="allTimeRadio"
+                                    value="all" checked>
+                                <label class="form-check-label orange font-weight-bold" for="allTimeRadio">ALL THE TIME</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input orange" type="radio" name="moocsTrend" id="2018Radio"
+                                    value="2018">
+                                <label class="form-check-label orange font-weight-bold" for="2018Radio">2018 DATA</label>
+                            </div>
+
                         </div>
                         <div class="col-sm-6">
                             <div class="col-sm-12 pt-4  d-border-bottom">
@@ -476,7 +485,8 @@
                                     class="far fa-dot-circle"></i>
                                 2018 DATA</p> -->
                             <div class="col-xs-6 text-right yellow">
-                                <input type="radio" class="AllTime" id="codeAllTime" name="codeTrend" value="AllTheTime" checked>
+                                <input type="radio" class="AllTime" id="codeAllTime" name="codeTrend" value="AllTheTime"
+                                    checked>
                                 <label for="allTheTime">All The Time</label>
                             </div>
 
