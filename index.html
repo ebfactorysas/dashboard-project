@@ -87,8 +87,17 @@
                 <div class="col-12">
                     <div class="row pt-2">
                         <div class="col-12 ">
-                            <p class="text-right"> <i class="far fa-circle fa-xs"></i> ALL THE TIME &nbsp; <i class="far fa-dot-circle"></i>
-                                2018 DATA</p>
+                            <!--<p class="text-right"> <i class="far fa-circle fa-xs"></i> ALL THE TIME &nbsp; <i class="far fa-dot-circle"></i>
+                                2018 DATA</p>-->
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="AllTime form-check-input blue" id="blueAllTime" name="blueTrend" value="AllTheTime"
+                                        checked>
+                                    <label class="form-check-label blue font-weight-bold" for="allTheTime">All The Time</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="2018" id="blue2018" name="blueTrend" value="2018Data">
+                                    <label class="form-check-label blue font-weight-bold" for="2018Data">2018 Data</label>
+                                </div>
                         </div>
 
                     </div>
@@ -97,12 +106,12 @@
                         <div class="col-sm">
                             <div class="col-12 border-right-dash d-flex justify-content-center align-items-center flex-column">
                                 <h4>PUBLICATIONS</h4>
-                                <h1 class="pt-4 pb-4 valuepublications">66</h1>
-                                <p>13% OF 2018 PUBLICATIONS <br> -93 COMPARED TO 2017</p>
+                                <h1 class="pt-4 pb-4 valuepublications">0</h1>
+                                <p><span id="publications_porcent">13%</span> OF 2018 PUBLICATIONS <br> <span id="publications_compare_2017"></span> COMPARED TO 2017</p>
                                 <img class="pt-4 pb-4" src="img/arrow-down.png" alt="arrow-down">
                                 <h4>DOWNLOADS</h4>
-                                <h1 class="pt-4 pb-4 downloadpublications">113K</h1>
-                                <p>16% OF 2018 DOWNLOADS <br> 76% FROM LAC</p>
+                                <h1 class="pt-4 pb-4 publications_downloads">113K</h1>
+                                <p><span id="publications_downloads_porcent">16%</span> OF 2018 DOWNLOADS <br> <span id="publications_downloads_lac">76%</span> FROM LAC</p>
                             </div>
                         </div>
                         <div class="col-sm">
