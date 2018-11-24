@@ -151,7 +151,6 @@ var dataTree = {
     }]
 }
 
-drawTree(dataTree);
 
 function drawTree(dataTree) {
     const marginTree = {
@@ -211,6 +210,10 @@ function drawTree(dataTree) {
 }
 
 function createChartTimeline(data) {
+    if ($("#code2018").prop("checked")) {
+        data = data.filter(data => data.date.indexOf("-18") > -1);
+    }
+
     var margin = {
             top: 20,
             right: 20,
@@ -334,15 +337,29 @@ function createChartTimeline(data) {
                 var yr = vanilli.getFullYear();
 
                 // return appropriate quarter for that month
-                if (mon <= 2) {
-                    return "Q1 " + yr;
-                } else if (mon <= 5) {
-                    return "Q2 " + yr;
-                } else if (mon <= 8) {
-                    return "Q3 " + yr;
+                if ($("#code2018").prop("checked")) {
+                    if (mon <= 2 && yr == 2018) {
+                        return "Q1 " + yr;
+                    } else if (mon <= 5 && yr == 2018) {
+                        return "Q2 " + yr;
+                    } else if (mon <= 8 && yr == 2018) {
+                        return "Q3 " + yr;
+                    } else if (yr == 2018) {
+                        return "Q4 " + yr;
+                    }
                 } else {
-                    return "Q4 " + yr;
+                    if (mon <= 2) {
+                        return "Q1 " + yr;
+                    } else if (mon <= 5) {
+                        return "Q2 " + yr;
+                    } else if (mon <= 8) {
+                        return "Q3 " + yr;
+                    } else {
+                        return "Q4 " + yr;
+                    }
                 }
+
+
             })
             .tickSizeOuter(0)
         )
@@ -382,26 +399,37 @@ function createChartTimeline(data) {
 }
 
 //init
-drawChartCodeTrend(codeTopArrays.codeTrendIADBAllTime);
-createChartTimeline(codePageviewsTimelineArrays.pageviewTimelineIDB);
+var ObjectTopIdbAllTime = $.extend(true, [], codeTopArrays.codeTrendIADBAllTime);
+var ObjectPageViewsTimeLineAllTime = $.extend(true, [], codePageviewsTimelineArrays.pageviewTimelineIDB);
+
+
+drawTree(dataTree);
+drawChartCodeTrend(ObjectTopIdbAllTime);
+createChartTimeline(ObjectPageViewsTimeLineAllTime);
 
 
 //click radiobutton drawChart(id del click)
 $("input[name*='codeTrend']").click(function () {
-    
-    //graph #3
+    var ObjectTopIdbAllTime = $.extend(true, [], codeTopArrays.codeTrendIADBAllTime);
+    var ObjectPageViewsTimeLineAllTime = $.extend(true, [], codePageviewsTimelineArrays.pageviewTimelineIDB);
+    var ObjectTopIdb2018 = $.extend(true, [], codeTopArrays.codeTrendIADBA2018);
+
     d3.select("#code-trend svg").remove();
-    //name -> codeTrend -> 2018 ->
-    /*if(active dpto o division){
-        value de ese select
-        data.filter(value)
-    }else{
-        codetrend2018 o all time "IDB";
-    }*/
-    drawChartCodeTrend(codetrendArrays[this.id]);
+    d3.select("#timeline-code svg").remove();
+
+
+    if (this.id == "codeAllTime") {
+        drawChartCodeTrend(ObjectTopIdbAllTime);
+        createChartTimeline(ObjectPageViewsTimeLineAllTime);
+
+    } else {
+        drawChartCodeTrend(ObjectTopIdb2018);
+        createChartTimeline(ObjectPageViewsTimeLineAllTime);
+    }
+
+    //drawChartCodeTrend(codetrendArrays[this.id]);
 
     //graph #4
-    d3.select("#timeline-code svg").remove();
-    createChartTimeline(pageViewsTimeLine[this.id]);
+    //createChartTimeline(pageViewsTimeLine[this.id]);
 
 });

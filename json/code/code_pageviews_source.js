@@ -1490,114 +1490,94 @@ var codePageviewsSourceArrays = {
         }
     ],
     pageviewSourceIDB: [{
-            "json_featuretype": "Sheet 1",
             "All the time pageviews": 51,
             "2018 pageviews": "2",
             "2018 % total pageviews": "0.000783392087739914",
             "All the time pageviews % of total": "0.00147326458098622",
             "All the time pageviews": 51,
             "All the time pageviews": "51",
-            "Pageview Source": "Bing",
-            "xlsx_row_id": 2
+            "Pageview Source": "Bing"
         },
         {
-            "json_featuretype": "Sheet 1",
             "All the time pageviews": 16508,
             "2018 pageviews": "1307",
             "2018 % total pageviews": "0.511946729338034",
             "All the time pageviews % of total": "0.476875523586677",
             "All the time pageviews": 16508,
             "All the time pageviews": "16508",
-            "Pageview Source": "Code Website",
-            "xlsx_row_id": 3
+            "Pageview Source": "Code Website"
         },
         {
-            "json_featuretype": "Sheet 1",
             "All the time pageviews": 4260,
             "2018 pageviews": "162",
             "2018 % total pageviews": "0.063454759106933",
             "All the time pageviews % of total": "0.123060923823555",
             "All the time pageviews": 4260,
             "All the time pageviews": "4260",
-            "Pageview Source": "Facebook",
-            "xlsx_row_id": 4
+            "Pageview Source": "Facebook"
         },
         {
-            "json_featuretype": "Sheet 1",
             "All the time pageviews": 5136,
             "2018 pageviews": "496",
             "2018 % total pageviews": "0.194281237759499",
             "All the time pageviews % of total": "0.148366409567554",
             "All the time pageviews": 5136,
             "All the time pageviews": "5136",
-            "Pageview Source": "Google",
-            "xlsx_row_id": 5
+            "Pageview Source": "Google"
         },
         {
-            "json_featuretype": "Sheet 1",
             "All the time pageviews": 6,
             "2018 pageviews": "0",
             "2018 % total pageviews": "0",
             "All the time pageviews % of total": "0.000173325244821908",
             "All the time pageviews": 6,
             "All the time pageviews": "6",
-            "Pageview Source": "IDB Blogs",
-            "xlsx_row_id": 6
+            "Pageview Source": "IDB Blogs"
         },
         {
-            "json_featuretype": "Sheet 1",
             "All the time pageviews": 6,
             "2018 pageviews": "0",
             "2018 % total pageviews": "0",
             "All the time pageviews % of total": "0.000173325244821908",
             "All the time pageviews": 6,
             "All the time pageviews": "6",
-            "Pageview Source": "IDB Publications",
-            "xlsx_row_id": 7
+            "Pageview Source": "IDB Publications"
         },
         {
-            "json_featuretype": "Sheet 1",
             "All the time pageviews": 26,
             "2018 pageviews": "3",
             "2018 % total pageviews": "0.00117508813160987",
             "All the time pageviews % of total": "0.000751076060894936",
             "All the time pageviews": 26,
             "All the time pageviews": "26",
-            "Pageview Source": "LinkedIn",
-            "xlsx_row_id": 8
+            "Pageview Source": "LinkedIn"
         },
         {
-            "json_featuretype": "Sheet 1",
             "All the time pageviews": 5651,
             "2018 pageviews": "346",
             "2018 % total pageviews": "0.135526831179005",
             "All the time pageviews % of total": "0.163243493081434",
             "All the time pageviews": 5651,
             "All the time pageviews": "5651",
-            "Pageview Source": "Others",
-            "xlsx_row_id": 9
+            "Pageview Source": "Others"
         },
         {
-            "json_featuretype": "Sheet 1",
             "All the time pageviews": 2971,
             "2018 pageviews": "235",
             "2018 % total pageviews": "0.0920485703094399",
             "All the time pageviews % of total": "0.0858248837276483",
             "All the time pageviews": 2971,
             "All the time pageviews": "2971",
-            "Pageview Source": "Twitter",
-            "xlsx_row_id": 10
+            "Pageview Source": "Twitter"
         },
         {
-            "json_featuretype": "Sheet 1",
             "All the time pageviews": 2,
             "2018 pageviews": "2",
             "2018 % total pageviews": "0.000783392087739914",
             "All the time pageviews % of total": "5.77750816073028e-5",
             "All the time pageviews": 2,
             "All the time pageviews": "2",
-            "Pageview Source": "Yahoo",
-            "xlsx_row_id": 11
+            "Pageview Source": "Yahoo"
         }
     ]
 };
