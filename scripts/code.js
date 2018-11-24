@@ -152,6 +152,7 @@ var dataTree = {
 }
 
 function drawTree(dataTree) {
+    dataTree = dataTree[0];
     const marginTree = {
             top: 40,
             right: 10,
@@ -477,8 +478,9 @@ var ObjectTopIdbAllTime = $.extend(true, [], codeTopArrays.codeTrendIADBAllTime)
 var ObjectPageViewsTimeLineAllTime = $.extend(true, [], codePageviewsTimelineArrays.pageviewTimelineIDB);
 var ObjectcodeScatterploArrays = $.extend(true, [], codeScatterploArrays);
 
-
-drawTree(dataTree);
+//aca
+drawTree(codePageviewsSourceArrays.pageviewSourceIDB);
+//aca
 drawPlotChart(ObjectcodeScatterploArrays);
 drawChartCodeTrend(ObjectTopIdbAllTime);
 createChartTimeline(ObjectPageViewsTimeLineAllTime);
