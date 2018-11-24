@@ -3,30 +3,31 @@
  *  */
 
 
-var dataDistribution = [{
-    "name": "Other/Not Reported",
-    "value": 20
-}, {
-    "name": "Elementary",
-    "value": 0
-}, {
-    "name": "High School",
-    "value": 3
-}, {
-    "name": "Associate",
-    "value": 4
-}, {
-    "name": "Bachelor",
-    "value": 14
-}, {
-    "name": "Master",
-    "value": 9
-}, {
-    "name": "Doctorate",
-    "value": 1
-}];
+// var dataDistribution = [{
+//     "name": "Other/Not Reported",
+//     "value": 20
+// }, {
+//     "name": "Elementary",
+//     "value": 0
+// }, {
+//     "name": "High School",
+//     "value": 3
+// }, {
+//     "name": "Associate",
+//     "value": 4
+// }, {
+//     "name": "Bachelor",
+//     "value": 14
+// }, {
+//     "name": "Master",
+//     "value": 9
+// }, {
+//     "name": "Doctorate",
+//     "value": 1
+// }];
 
-drawDistributionChart(dataDistribution);
+// drawDistributionChart(dataDistribution);
+drawDistributionChart(moocsEducationArrays.educationLevelIDB);
 
 function wrap(text, width) {
     text.each(function () {
@@ -88,9 +89,9 @@ function drawDistributionChart(dataDistribution) {
         .attr("x", function (d) {
             return xDistribution(d.name);
         })
-        .attr("width", xDistribution.bandwidth() - 25)
-        .attr("rx", 25)
-        .attr("ry", 25)
+        .attr("width", xDistribution.bandwidth() - 15)
+        .attr("rx", 15)
+        .attr("ry", 15)
         .attr("y", function (d) {
             return yDistribution(d.value + 3);
         })
@@ -108,7 +109,7 @@ function drawDistributionChart(dataDistribution) {
         .append("text")
         .text(function (d) {
 
-            return d.value + "K";
+            return (Math.round(d.value / 1000).toFixed(0)) + "K";
         })
         .attr("y", function (d) {
             return yDistribution(1);
@@ -117,6 +118,7 @@ function drawDistributionChart(dataDistribution) {
             return i * xDistribution.bandwidth() + 21; //Bar width of 20 plus 1 for padding
         })
         .attr("font-family", "Gotham-Bold")
+        .attr("padding-bottom", "10px")
         .attr("font-size", "12px");
 
     svgDistribution.append("g")
@@ -676,11 +678,11 @@ function drawStudentCertifiedsChart(dataStudents) {
 
 function sortByDateAscending(a, b) {
     // Dates will be cast to numbers automagically:
-    console.log(new Date(b.date));
     return new Date(b.date) - new Date(a.date);
 }
+var registrationTimelineIDB = $.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB);
 
-createChart(moocsRegistrationTimeline.registrationTimelineIDB);
+createChart(registrationTimelineIDB);
 
 function createChart(data) {
     var margin = {
@@ -793,7 +795,7 @@ function createChart(data) {
         .style("font-size", "13px")
         // .call(d3.axisBottom(x));
         .call(d3.axisBottom(x)
-            .ticks(d3.timeDay.filter(d => d3.timeDay.count(0, d) % 400 === 0))
+            .ticks(d3.timeDay.filter(d => d3.timeDay.count(0, d) % 300 === 0))
             .tickFormat(function (x) {
                 // get the milliseconds since Epoch for the date
                 var milli = (x.getTime() - 10000);
@@ -849,17 +851,20 @@ function createChart(data) {
 //click radiobutton drawChart(id del click)
 $("input[name*='moocsTrend']").click(function () {
 
+    var test = $.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB);
+
+
     d3.select("#moocs-registrations svg").remove();
     d3.select("#timeline-moocs svg").remove();
 
     if ($(this).val() === 'all') {
         drawMoocsRegistrationsChart(orderTopMoocs(moocsTopArrays.IDBAlltime));
 
-    } else if ($(this).val() === '2018') {
+    } else {
         drawMoocsRegistrationsChart(orderTopMoocs(moocsTopArrays.IDB2018));
 
     }
-    createChart(moocsRegistrationTimeline.registrationTimelineIDB);
+    createChart(test);
 
     //name -> codeTrend -> 2018 ->
     /*if(active dpto o division){
