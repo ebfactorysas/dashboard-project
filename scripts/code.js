@@ -381,14 +381,296 @@ function createChartTimeline(data) {
             .tickFormat(d3.format(".2s")));
 }
 
+var data = [{
+
+        "departmentCode": "IFD",
+        "pageviews": 1000,
+        "Code": "AP-LATAM",
+        "daysPublished": 119,
+        "publishedDate": "07/23/2018"
+
+    },
+    {
+
+        "departmentCode": "IFD",
+        "pageviews": 4.33898305084746,
+        "Code": "Massive change detection",
+        "daysPublished": 117,
+        "publishedDate": "07/25/2018"
+
+    },
+    {
+
+        "departmentCode": "IFD",
+        "pageviews": 1.84782608695652,
+        "Code": "SIMPLE-LAT",
+        "daysPublished": 597,
+        "publishedDate": "04/01/2017"
+
+    },
+    {
+
+        "departmentCode": "INE",
+        "pageviews": 6.17702448210923,
+        "Code": "Evaluación de Reciclaje Inclusivo",
+        "daysPublished": 530,
+        "publishedDate": "06/07/2017"
+
+    },
+    {
+
+        "departmentCode": "INE",
+        "pageviews": 7.74496644295302,
+        "Code": "Hydro-BID",
+        "daysPublished": 595,
+        "publishedDate": "04/03/2017"
+
+    },
+    {
+
+        "departmentCode": "KIC",
+        "pageviews": 1.56025369978858,
+        "Code": "AEDES Detector",
+        "daysPublished": 472,
+        "publishedDate": "08/04/2017"
+
+    },
+    {
+
+        "departmentCode": "KIC",
+        "pageviews": 7.78857142857143,
+        "Code": "Consul",
+        "daysPublished": 349,
+        "publishedDate": "12/05/2017"
+
+    },
+    {
+
+        "departmentCode": "KIC",
+        "pageviews": 1.82084690553746,
+        "Code": "Gmapsdistance",
+        "daysPublished": 306,
+        "publishedDate": "01/17/2018"
+
+    },
+    {
+
+        "departmentCode": "KIC",
+        "pageviews": 4.3475935828877,
+        "Code": "Gobierto",
+        "daysPublished": 186,
+        "publishedDate": "05/17/2018"
+
+    },
+    {
+
+        "departmentCode": "KIC",
+        "pageviews": 1.41315345699831,
+        "Code": "IDBx Data Engine",
+        "daysPublished": 592,
+        "publishedDate": "04/06/2017"
+
+    },
+    {
+
+        "departmentCode": "KIC",
+        "pageviews": 10.38,
+        "Code": "MapMap",
+        "daysPublished": 349,
+        "publishedDate": "12/05/2017"
+
+    },
+    {
+
+        "departmentCode": "KIC",
+        "pageviews": 0.727272727272727,
+        "Code": "Pydatajson",
+        "daysPublished": 472,
+        "publishedDate": "08/04/2017"
+
+    },
+    {
+
+        "departmentCode": "KIC",
+        "pageviews": 1.47306397306397,
+        "Code": "R Library Numbers for Development",
+        "daysPublished": 593,
+        "publishedDate": "04/05/2017"
+
+    },
+    {
+
+        "departmentCode": "KIC",
+        "pageviews": 1.80882352941176,
+        "Code": "Tabula",
+        "daysPublished": 475,
+        "publishedDate": "08/01/2017"
+
+    },
+    {
+
+        "departmentCode": "KIC",
+        "pageviews": 1.25369978858351,
+        "Code": "Textar",
+        "daysPublished": 472,
+        "publishedDate": "08/04/2017"
+
+    },
+    {
+
+        "departmentCode": "KIC",
+        "pageviews": 1.97428571428571,
+        "Code": "Vota Inteligente",
+        "daysPublished": 349,
+        "publishedDate": "12/05/2017"
+
+    },
+    {
+
+        "departmentCode": "MIF",
+        "pageviews": 1.77234401349073,
+        "Code": "Nexso",
+        "daysPublished": 592,
+        "publishedDate": "04/06/2017"
+
+    },
+    {
+
+        "departmentCode": "MIF",
+        "pageviews": 1.88870151770658,
+        "Code": "SmartMap",
+        "daysPublished": 592,
+        "publishedDate": "04/06/2017"
+
+    },
+    {
+
+        "departmentCode": "SCL",
+        "pageviews": 2.45806451612903,
+        "Code": "Clasificador de Datos Atípicos",
+        "daysPublished": 154,
+        "publishedDate": "06/18/2018"
+
+    },
+    {
+
+        "departmentCode": "SPD",
+        "pageviews": 10.4327956989247,
+        "Code": "Indicator aggregator",
+        "daysPublished": 371,
+        "publishedDate": "11/13/2017"
+
+    }
+]
+
+function drawPlotChart(data) {
+    data.forEach(d => {
+        d.daysPublished = +d.daysPublished;
+        d.departmentCode = +d.departmentCode;
+        d.Code = +d.Code;
+        d.publishedDate = +d.publishedDate;
+    });
+
+
+    const width = 350;
+    const height = 300;
+
+
+
+    const xValue = d => d.pageviews;
+    const xAxisLabel = 'Total Days Published';
+
+    const yValue = d => d.daysPublished;
+    const circleRadius = 10;
+    const yAxisLabel = 'PageViews';
+
+    const margin = {
+        top: 30,
+        right: 30,
+        bottom: 50,
+        left: 50
+    };
+    const innerWidth = width - margin.left - margin.right;
+    const innerHeight = height - margin.top - margin.bottom;
+    const svg = d3.select("#code-plot").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    const xScale = d3.scaleLinear()
+        .domain(d3.extent(data, xValue))
+        .range([0, innerWidth])
+        .nice();
+
+    const yScale = d3.scaleLinear()
+        .domain(d3.extent(data, yValue))
+        .range([innerHeight, 0])
+        .nice();
+
+    const g = svg.append('g')
+        .attr('transform', `translate(${margin.left},${margin.top})`);
+
+    const xAxis = d3.axisBottom(xScale)
+        .scale(xScale)
+        .tickSize(0)
+        .tickPadding(30);
+
+    const yAxis = d3.axisLeft(yScale)
+        .scale(yScale)
+        .tickSize(0)
+        .tickPadding(30);
+
+    const yAxisG = g.append('g').call(yAxis);
+
+
+    yAxisG.selectAll('.domain').remove();
+
+    yAxisG.append('text')
+        .attr('class', 'axis-label')
+        .attr('y', -93)
+        .attr('x', -innerHeight / 2)
+        .attr('fill', 'black')
+        .attr('transform', `rotate(-90)`)
+        .attr('text-anchor', 'middle')
+        .text(yAxisLabel);
+
+    const xAxisG = g.append('g').call(xAxis)
+        .attr('transform', `translate(0,${innerHeight})`);
+
+    xAxisG.select('.domain').remove();
+
+    xAxisG.append('text')
+        .attr('class', 'axis-label')
+        .attr('y', 75)
+        .attr('x', innerWidth / 2)
+        .attr('fill', 'black')
+        .text(xAxisLabel);
+
+    g.selectAll('circle').data(data)
+        .enter().append('circle')
+        .attr('cy', d => yScale(yValue(d)))
+        .attr('cx', d => xScale(xValue(d)))
+        .attr('r', circleRadius)
+        .attr('fill', function (d) {
+            if (d.daysPublished >= 200 && d.pageviews >= 1000) {
+                return 'yellow'
+            } else {
+                return 'gray'
+            }
+        });
+
+
+
+}
+
 //init
 drawChartCodeTrend(codeTopArrays.codeTrendIADBAllTime);
 createChartTimeline(codePageviewsTimelineArrays.pageviewTimelineIDB);
-
+drawPlotChart(data);
 
 //click radiobutton drawChart(id del click)
 $("input[name*='codeTrend']").click(function () {
-    
+
     //graph #3
     d3.select("#code-trend svg").remove();
     //name -> codeTrend -> 2018 ->
