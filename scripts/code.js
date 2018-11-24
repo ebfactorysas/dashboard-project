@@ -151,8 +151,9 @@ var dataTree = {
     }]
 }
 
-function drawTree(dataTree) {
-    dataTree = dataTree[0];
+function drawTree(data) {
+    data = data[0];
+
     const marginTree = {
             top: 40,
             right: 10,
@@ -171,8 +172,8 @@ function drawTree(dataTree) {
         .style("height", (heightTree + marginTree.top + marginTree.bottom) + "px")
         .style("left", marginTree.left + "px")
         .style("top", marginTree.top + "px");
-    const root = d3.hierarchy(dataTree, (d) => d.children)
-        .sum((d) => d.size);
+    const root = d3.hierarchy(data, (d) => d.children)
+        .sum((d) => d.data2018);
 
     const tree = treemap(root);
 
@@ -190,13 +191,13 @@ function drawTree(dataTree) {
     d3.selectAll("input").on("change", function change() {
         const value = this.value === "count" ?
             (d) => {
-                return d.size ? 1 : 0;
+                return d.data2018 ? 1 : 0;
             } :
             (d) => {
-                return d.size;
+                return d.data2018;
             };
 
-        const newRoot = d3.hierarchy(dataTree, (d) => d.children)
+        const newRoot = d3.hierarchy(data, (d) => d.children)
             .sum(value);
 
         node.data(treemap(newRoot).leaves())
@@ -373,7 +374,8 @@ function createChartTimeline(data) {
             .tickFormat(d3.format(".2s")));
 }
 
-var data = [{
+var data = [
+    {
 
         "departmentCode": "IFD",
         "pageviews": 1000,
@@ -787,6 +789,238 @@ function drawGaugeChart(dataGauge) {
 }
 
 
+var dataLines = [{
+        "date": 201801,
+        "Paul Productive Code": 4.1 + 10,
+        "Paul Raw Code": 3.2 + 20,
+        "Michelle Productive Code": 2.2 + 30,
+        "Michelle Raw Code": 1.9 + 40,
+        "mario pro code": 7 + 50,
+        "mario raw code": 3 + 60
+    },
+    {
+        "date": 201802,
+        "Paul Productive Code": 6 + 10,
+        "Paul Raw Code": 3.5 + 20,
+        "Michelle Productive Code": 3.4 + 30,
+        "Michelle Raw Code": 1.9 + 40,
+        "mario pro code": 2 + 50,
+        "mario raw code": 3 + 60
+    },
+    {
+        "date": 201803,
+        "Paul Productive Code": 0 + 10,
+        "Paul Raw Code": 3.1 + 20,
+        "Michelle Productive Code": 3.1 + 30,
+        "Michelle Raw Code": 1.9 + 40,
+        "mario pro code": 2 + 50,
+        "mario raw code": 9 + 60
+    },
+    {
+        "date": 201804,
+        "Paul Productive Code": 7 + 10,
+        "Paul Raw Code": 3.8 + 20,
+        "Michelle Productive Code": 3.2 + 30,
+        "Michelle Raw Code": 2.3 + 40,
+        "mario pro code": 9 + 50,
+        "mario raw code": 0 + 60
+    },
+    {
+        "date": 201805,
+        "Paul Productive Code": 4 + 10,
+        "Paul Raw Code": 4.7 + 20,
+        "Michelle Productive Code": 3.7 + 30,
+        "Michelle Raw Code": 2.7 + 40,
+        "mario pro code": 5 + 50,
+        "mario raw code": 4 + 60
+    },
+    {
+        "date": 201806,
+        "Paul Productive Code": 9 + 10,
+        "Paul Raw Code": 5.5 + 20,
+        "Michelle Productive Code": 3.2 + 30,
+        "Michelle Raw Code": 2.2 + 40,
+        "mario pro code": 6 + 50,
+        "mario raw code": 2 + 60
+    }
+];
+drawLinesChart(dataLines);
+
+function drawLinesChart(data) {
+    var svg = d3.select("svg"),
+        margin = {
+            top: 20,
+            right: 0,
+            bottom: 0,
+            left: 0
+        },
+        margin2 = {
+            top: 0,
+            right: 20,
+            bottom: 30,
+            left: 0
+        },
+        width = +svg.attr("width") - margin.left - margin.right,
+        height = +svg.attr("height") - margin.top - margin.bottom,
+        height2 = +svg.attr("height") - margin2.top - margin2.bottom;
+
+
+    svg.append("rect")
+        .attr("width", "100%")
+        .attr("height", "100%")
+        .attr("fill", "transparent")
+
+    var parseTime = d3.timeParse("%Y%m");
+
+    var x = d3.scaleTime().range([0, width]),
+        x2 = d3.scaleTime().range([0, width]),
+        y = d3.scaleLinear().range([height, 0]),
+        y2 = d3.scaleLinear().range([height2, 0]),
+        z = d3.scaleOrdinal(d3.schemeCategory10);
+
+    var xAxis = d3.axisBottom(x),
+        xAxis2 = d3.axisBottom(x2),
+        yAxis = d3.axisLeft(y);
+
+    var brush = d3.brushX()
+        .extent([
+            [0, 0],
+            [width, height2]
+        ])
+        .on("brush end", brushed);
+
+
+    var line = d3.line()
+        .x(function (d) {
+            return x(new Date(d.date));
+        })
+        .y(function (d) {
+            return y(d.hours);
+        });
+
+    var line2 = d3.line()
+        .x(function (d) {
+            return x2(new Date(d.date));
+        })
+        .y(function (d) {
+            return y2(d.hours);
+        })
+
+    var clip = svg.append("defs").append("svg:clipPath")
+        .attr("id", "clip")
+        .append("svg:rect")
+        .attr("width", width)
+        .attr("height", height)
+        .attr("x", 0)
+        .attr("y", 0);
+
+
+    var focus = svg.append("g")
+        .attr("class", "focus")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
+
+
+    var colors = [];
+    for (var i = 0; i < 50; i++) {
+        var xx = "#e4e4e4";
+        colors.push(xx);
+        colors.push(xx);
+    }
+
+
+
+
+    // gridlines in y axis function
+    function make_y_gridlines() {
+        return d3.axisLeft(y)
+            .ticks()
+    }
+
+    z.domain(d3.keys(data[0]).filter(function (key) {
+        return key !== "date";
+    }));
+
+    data.forEach(function (d) {
+        d.date = parseTime(d.date);
+    });
+
+    var employees = z.domain().map(function (id) {
+        return {
+            id: id,
+            values: data.map(function (d) {
+                return {
+                    date: d.date,
+                    hours: +d[id]
+                };
+            })
+        };
+    });
+
+
+    var o1 = 0;
+    var o2 = 0;
+
+    x.domain(d3.extent(data, function (d) {
+        return d.date;
+    }));
+
+    y.domain([
+        0,
+        d3.max(employees, function (c) {
+            return d3.max(c.values, function (d) {
+                return d.hours;
+            });
+        })
+    ]);
+    x2.domain(x.domain());
+    y2.domain(y.domain());
+    z.domain(employees.map(function (c) {
+        return c.id;
+    }));
+
+    var focuslineGroups = focus.selectAll("g")
+        .data(employees)
+        .enter().append("g");
+
+    var focuslines = focuslineGroups.append("path")
+        .attr("class", "line")
+        .attr("d", function (d) {
+            return line(d.values);
+        })
+        .style("stroke", function (d) {
+            return colors[o1++]
+        })
+        .attr("clip-path", "url(#clip)");
+
+    // focus.append("g")
+    //     .attr("class", "grid")
+    //     .call(make_y_gridlines()
+    //         .tickSize(-width)
+    //         .tickFormat("")
+    //     )
+
+
+    function brushed() {
+        var extent = d3.event.selection;
+        var s = extent.map(x2.invert, x2);
+        x.domain(s);
+        focuslines.attr("d", function (d) {
+            return line(d.values)
+        });
+        focus.select(".axis--x").call(xAxis);
+        focus.select(".axis--y").call(yAxis);
+    }
+}
 
 
 //init
@@ -795,7 +1029,7 @@ var ObjectPageViewsTimeLineAllTime = $.extend(true, [], codePageviewsTimelineArr
 var ObjectcodeScatterploArrays = $.extend(true, [], codeScatterploArrays);
 
 //aca
-//drawTree(codePageviewsSourceArrays.pageviewSourceIDB);
+drawTree(codePageviewsSourceArrays.pageviewSourceIDB);
 //aca
 drawGaugeChart(dataGauge);
 drawPlotChart(ObjectcodeScatterploArrays);
