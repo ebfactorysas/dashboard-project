@@ -792,11 +792,12 @@ function drawGaugeChart(dataGauge) {
 //init
 var ObjectTopIdbAllTime = $.extend(true, [], codeTopArrays.codeTrendIADBAllTime);
 var ObjectPageViewsTimeLineAllTime = $.extend(true, [], codePageviewsTimelineArrays.pageviewTimelineIDB);
-drawGaugeChart(dataGauge);
+var ObjectcodeScatterploArrays = $.extend(true, [], codeScatterploArrays);
 
 //aca
-drawTree(codePageviewsSourceArrays.pageviewSourceIDB);
+//drawTree(codePageviewsSourceArrays.pageviewSourceIDB);
 //aca
+drawGaugeChart(dataGauge);
 drawPlotChart(ObjectcodeScatterploArrays);
 drawChartCodeTrend(ObjectTopIdbAllTime);
 createChartTimeline(ObjectPageViewsTimeLineAllTime);
