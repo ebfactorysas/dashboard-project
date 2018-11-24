@@ -373,10 +373,192 @@ function createChartTimeline(data) {
             .tickFormat(d3.format(".2s")));
 }
 
+var data = [{
+
+        "departmentCode": "IFD",
+        "pageviews": 1000,
+        "Code": "AP-LATAM",
+        "daysPublished": 119,
+        "publishedDate": "07/23/2018"
+
+    },
+    {
+
+        "departmentCode": "IFD",
+        "pageviews": 4.33898305084746,
+        "Code": "Massive change detection",
+        "daysPublished": 117,
+        "publishedDate": "07/25/2018"
+
+    },
+    {
+
+        "departmentCode": "IFD",
+        "pageviews": 1.84782608695652,
+        "Code": "SIMPLE-LAT",
+        "daysPublished": 597,
+        "publishedDate": "04/01/2017"
+
+    },
+    {
+
+        "departmentCode": "INE",
+        "pageviews": 6.17702448210923,
+        "Code": "Evaluación de Reciclaje Inclusivo",
+        "daysPublished": 530,
+        "publishedDate": "06/07/2017"
+
+    },
+    {
+
+        "departmentCode": "INE",
+        "pageviews": 7.74496644295302,
+        "Code": "Hydro-BID",
+        "daysPublished": 595,
+        "publishedDate": "04/03/2017"
+
+    },
+    {
+
+        "departmentCode": "KIC",
+        "pageviews": 1.56025369978858,
+        "Code": "AEDES Detector",
+        "daysPublished": 472,
+        "publishedDate": "08/04/2017"
+
+    },
+    {
+
+        "departmentCode": "KIC",
+        "pageviews": 7.78857142857143,
+        "Code": "Consul",
+        "daysPublished": 349,
+        "publishedDate": "12/05/2017"
+
+    },
+    {
+
+        "departmentCode": "KIC",
+        "pageviews": 1.82084690553746,
+        "Code": "Gmapsdistance",
+        "daysPublished": 306,
+        "publishedDate": "01/17/2018"
+
+    },
+    {
+
+        "departmentCode": "KIC",
+        "pageviews": 4.3475935828877,
+        "Code": "Gobierto",
+        "daysPublished": 186,
+        "publishedDate": "05/17/2018"
+
+    },
+    {
+
+        "departmentCode": "KIC",
+        "pageviews": 1.41315345699831,
+        "Code": "IDBx Data Engine",
+        "daysPublished": 592,
+        "publishedDate": "04/06/2017"
+
+    },
+    {
+
+        "departmentCode": "KIC",
+        "pageviews": 10.38,
+        "Code": "MapMap",
+        "daysPublished": 349,
+        "publishedDate": "12/05/2017"
+
+    },
+    {
+
+        "departmentCode": "KIC",
+        "pageviews": 0.727272727272727,
+        "Code": "Pydatajson",
+        "daysPublished": 472,
+        "publishedDate": "08/04/2017"
+
+    },
+    {
+
+        "departmentCode": "KIC",
+        "pageviews": 1.47306397306397,
+        "Code": "R Library Numbers for Development",
+        "daysPublished": 593,
+        "publishedDate": "04/05/2017"
+
+    },
+    {
+
+        "departmentCode": "KIC",
+        "pageviews": 1.80882352941176,
+        "Code": "Tabula",
+        "daysPublished": 475,
+        "publishedDate": "08/01/2017"
+
+    },
+    {
+
+        "departmentCode": "KIC",
+        "pageviews": 1.25369978858351,
+        "Code": "Textar",
+        "daysPublished": 472,
+        "publishedDate": "08/04/2017"
+
+    },
+    {
+
+        "departmentCode": "KIC",
+        "pageviews": 1.97428571428571,
+        "Code": "Vota Inteligente",
+        "daysPublished": 349,
+        "publishedDate": "12/05/2017"
+
+    },
+    {
+
+        "departmentCode": "MIF",
+        "pageviews": 1.77234401349073,
+        "Code": "Nexso",
+        "daysPublished": 592,
+        "publishedDate": "04/06/2017"
+
+    },
+    {
+
+        "departmentCode": "MIF",
+        "pageviews": 1.88870151770658,
+        "Code": "SmartMap",
+        "daysPublished": 592,
+        "publishedDate": "04/06/2017"
+
+    },
+    {
+
+        "departmentCode": "SCL",
+        "pageviews": 2.45806451612903,
+        "Code": "Clasificador de Datos Atípicos",
+        "daysPublished": 154,
+        "publishedDate": "06/18/2018"
+
+    },
+    {
+
+        "departmentCode": "SPD",
+        "pageviews": 10.4327956989247,
+        "Code": "Indicator aggregator",
+        "daysPublished": 371,
+        "publishedDate": "11/13/2017"
+
+    }
+]
+
 function drawPlotChart(data) {
     if ($("#code2018").prop("checked")) {
         data = data.filter(data => data.publishedDate.indexOf("-18") > -1);
-    } 
+    }
     data.forEach(d => {
         d.daysPublished = +d.daysPublished;
         d.departmentCode = +d.departmentCode;
@@ -473,10 +655,144 @@ function drawPlotChart(data) {
         });
 }
 
+var dataGauge = {
+    "code": {
+        "total": 100,
+        "allocated": 76
+    },
+    "pageview": {
+        "total": 1000,
+        "allocated": 113
+    },
+    "lac": {
+        "total": 100,
+        "allocated": 9
+    }
+}
+
+function drawGaugeChart(dataGauge) {
+    var width = 150,
+        height = 150,
+        progress = 0,
+        progress3 = 0,
+        progress2 = 0,
+        formatPercent = d3.format(".0%");
+    const twoPi = 2 * Math.PI;
+
+    var arc = d3.arc()
+        .startAngle(0)
+        .innerRadius(70)
+        .outerRadius(64);
+
+    var svg = d3.selectAll("#gauge-code").append("svg")
+        .attr("width", width)
+        .attr("height", height)
+        .append("g")
+        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+    var meter = svg.append("g")
+        .attr("class", "funds-allocated-meter");
+
+    meter.append("path")
+        .attr("class", "background")
+        .attr("d", arc.endAngle(twoPi));
+
+    var foreground = meter.append("path")
+        .attr("class", "foreground");
+
+    var percentComplete = meter.append("text")
+        .attr("text-anchor", "middle")
+        .attr("class", "percent-complete")
+        .attr("dy", "0.3em");
+
+
+    var i = d3.interpolate(progress, dataGauge.code.allocated / dataGauge.code.total);
+
+    //gauge K
+
+    var arc2 = d3.arc()
+        .startAngle(0)
+        .innerRadius(70)
+        .outerRadius(64);
+
+    var svg2 = d3.selectAll("#gauge-pageview").append("svg")
+        .attr("width", width)
+        .attr("height", height)
+        .append("g")
+        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+    var meter2 = svg2.append("g")
+        .attr("class", "funds-allocated-meter");
+
+    meter2.append("path")
+        .attr("class", "background")
+        .attr("d", arc2.endAngle(twoPi));
+
+    var foreground2 = meter2.append("path")
+        .attr("class", "foreground");
+
+    var percentComplete2 = meter2.append("text")
+        .attr("text-anchor", "middle")
+        .attr("class", "percent-complete")
+        .attr("dy", "0.3em");
+
+
+    var i2 = d3.interpolate(progress2, dataGauge.pageview.allocated / dataGauge.pageview.total);
+
+    //gauge %
+
+    var arc3 = d3.arc()
+        .startAngle(0)
+        .innerRadius(70)
+        .outerRadius(64);
+
+    var svg3 = d3.selectAll("#gauge-lac").append("svg")
+        .attr("width", width)
+        .attr("height", height)
+        .append("g")
+        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+    var meter3 = svg3.append("g")
+        .attr("class", "funds-allocated-meter");
+
+    meter3.append("path")
+        .attr("class", "background")
+        .attr("d", arc3.endAngle(twoPi));
+
+    var foreground3 = meter3.append("path")
+        .attr("class", "foreground");
+
+    var percentComplete3 = meter3.append("text")
+        .attr("text-anchor", "middle")
+        .attr("class", "percent-complete")
+        .attr("dy", "0.3em");
+
+
+    var i3 = d3.interpolate(progress3, dataGauge.lac.allocated / dataGauge.lac.total);
+
+    d3.transition().duration(1000).tween("progress", function () {
+        return function (t) {
+            progress = i(t);
+            foreground.attr("d", arc.endAngle(twoPi * progress));
+            percentComplete.text((progress * 100).toFixed(0));
+            progress2 = i2(t);
+            foreground2.attr("d", arc2.endAngle(twoPi * progress2));
+            percentComplete2.text((progress2 * 1000).toFixed(0) + "K");
+            progress3 = i3(t);
+            foreground3.attr("d", arc3.endAngle(twoPi * progress3));
+            percentComplete3.text((progress3 * 100).toFixed(0) + "%");
+
+        };
+    });
+}
+
+
+
+
 //init
 var ObjectTopIdbAllTime = $.extend(true, [], codeTopArrays.codeTrendIADBAllTime);
 var ObjectPageViewsTimeLineAllTime = $.extend(true, [], codePageviewsTimelineArrays.pageviewTimelineIDB);
-var ObjectcodeScatterploArrays = $.extend(true, [], codeScatterploArrays);
+drawGaugeChart(dataGauge);
 
 //aca
 drawTree(codePageviewsSourceArrays.pageviewSourceIDB);
@@ -491,7 +807,7 @@ $("input[name*='codeTrend']").click(function () {
     var ObjectPageViewsTimeLineAllTime = $.extend(true, [], codePageviewsTimelineArrays.pageviewTimelineIDB);
     var ObjectTopIdb2018 = $.extend(true, [], codeTopArrays.codeTrendIADBA2018);
     var ObjectcodeScatterploArrays = $.extend(true, [], codeScatterploArrays);
-    
+
     d3.select("#code-trend svg").remove();
     d3.select("#timeline-code svg").remove();
     d3.select("#code-plot svg").remove();
