@@ -151,8 +151,9 @@ var dataTree = {
     }]
 }
 
-function drawTree(dataTree) {
-    dataTree = dataTree[0];
+function drawTree(data) {
+    data = data[0];
+
     const marginTree = {
             top: 40,
             right: 10,
@@ -171,8 +172,8 @@ function drawTree(dataTree) {
         .style("height", (heightTree + marginTree.top + marginTree.bottom) + "px")
         .style("left", marginTree.left + "px")
         .style("top", marginTree.top + "px");
-    const root = d3.hierarchy(dataTree, (d) => d.children)
-        .sum((d) => d.size);
+    const root = d3.hierarchy(data, (d) => d.children)
+        .sum((d) => d.data2018);
 
     const tree = treemap(root);
 
@@ -190,13 +191,13 @@ function drawTree(dataTree) {
     d3.selectAll("input").on("change", function change() {
         const value = this.value === "count" ?
             (d) => {
-                return d.size ? 1 : 0;
+                return d.data2018 ? 1 : 0;
             } :
             (d) => {
-                return d.size;
+                return d.data2018;
             };
 
-        const newRoot = d3.hierarchy(dataTree, (d) => d.children)
+        const newRoot = d3.hierarchy(data, (d) => d.children)
             .sum(value);
 
         node.data(treemap(newRoot).leaves())
@@ -373,7 +374,8 @@ function createChartTimeline(data) {
             .tickFormat(d3.format(".2s")));
 }
 
-var data = [{
+var data = [
+    {
 
         "departmentCode": "IFD",
         "pageviews": 1000,
@@ -795,7 +797,7 @@ var ObjectPageViewsTimeLineAllTime = $.extend(true, [], codePageviewsTimelineArr
 var ObjectcodeScatterploArrays = $.extend(true, [], codeScatterploArrays);
 
 //aca
-//drawTree(codePageviewsSourceArrays.pageviewSourceIDB);
+drawTree(codePageviewsSourceArrays.pageviewSourceIDB);
 //aca
 drawGaugeChart(dataGauge);
 drawPlotChart(ObjectcodeScatterploArrays);

@@ -1,7 +1,7 @@
 var codePageviewsSourceArrays = {
     pageviewSourceDepartments: [{
             "json_featuretype": "Sheet 1",
-            "Department Codes": "",
+            "Department Codes": "NA",
             "All the time pageviews": 15,
             "2018 pageviews": "0",
             "2018 % total pageviews": "0",
@@ -13,7 +13,7 @@ var codePageviewsSourceArrays = {
         },
         {
             "json_featuretype": "Sheet 1",
-            "Department Codes": "",
+            "Department Codes": "NA",
             "All the time pageviews": 3643,
             "2018 pageviews": "0",
             "2018 % total pageviews": "0",
@@ -25,7 +25,7 @@ var codePageviewsSourceArrays = {
         },
         {
             "json_featuretype": "Sheet 1",
-            "Department Codes": "",
+            "Department Codes": "NA",
             "All the time pageviews": 234,
             "2018 pageviews": "0",
             "2018 % total pageviews": "0",
@@ -37,7 +37,7 @@ var codePageviewsSourceArrays = {
         },
         {
             "json_featuretype": "Sheet 1",
-            "Department Codes": "",
+            "Department Codes": "NA",
             "All the time pageviews": 704,
             "2018 pageviews": "0",
             "2018 % total pageviews": "0",
@@ -49,7 +49,7 @@ var codePageviewsSourceArrays = {
         },
         {
             "json_featuretype": "Sheet 1",
-            "Department Codes": "",
+            "Department Codes": "NA",
             "All the time pageviews": 1,
             "2018 pageviews": "0",
             "2018 % total pageviews": "0",
@@ -61,7 +61,7 @@ var codePageviewsSourceArrays = {
         },
         {
             "json_featuretype": "Sheet 1",
-            "Department Codes": "",
+            "Department Codes": "NA",
             "All the time pageviews": 1,
             "2018 pageviews": "0",
             "2018 % total pageviews": "0",
@@ -73,7 +73,7 @@ var codePageviewsSourceArrays = {
         },
         {
             "json_featuretype": "Sheet 1",
-            "Department Codes": "",
+            "Department Codes": "NA",
             "All the time pageviews": 977,
             "2018 pageviews": "0",
             "2018 % total pageviews": "0",
@@ -85,7 +85,7 @@ var codePageviewsSourceArrays = {
         },
         {
             "json_featuretype": "Sheet 1",
-            "Department Codes": "",
+            "Department Codes": "NA",
             "All the time pageviews": 65,
             "2018 pageviews": "0",
             "2018 % total pageviews": "0",
@@ -636,12 +636,13 @@ var codePageviewsSourceArrays = {
             "xlsx_row_id": 54
         }
     ],
-    pageviewSourceDivisions: [{
+    pageviewSourceDivisions: [
+        {
             "json_featuretype": "Sheet 1",
             "All the time pageviews": 15,
             "2018 pageviews": "0",
             "2018 % total pageviews": "0",
-            "Division Codes": "",
+            "Division Codes": "NA",
             "All the time pageviews": 15,
             "% of Total Pageviews along Division Codes": "0.294117647058824",
             "All the time pageviews": "15",
@@ -653,7 +654,7 @@ var codePageviewsSourceArrays = {
             "All the time pageviews": 3643,
             "2018 pageviews": "0",
             "2018 % total pageviews": "0",
-            "Division Codes": "",
+            "Division Codes": "NA",
             "All the time pageviews": 3643,
             "% of Total Pageviews along Division Codes": "0.220680881996608",
             "All the time pageviews": "3643",
@@ -665,7 +666,7 @@ var codePageviewsSourceArrays = {
             "All the time pageviews": 234,
             "2018 pageviews": "0",
             "2018 % total pageviews": "0",
-            "Division Codes": "",
+            "Division Codes": "NA",
             "All the time pageviews": 234,
             "% of Total Pageviews along Division Codes": "0.0549295774647887",
             "All the time pageviews": "234",
@@ -677,7 +678,7 @@ var codePageviewsSourceArrays = {
             "All the time pageviews": 704,
             "2018 pageviews": "0",
             "2018 % total pageviews": "0",
-            "Division Codes": "",
+            "Division Codes": "NA",
             "All the time pageviews": 704,
             "% of Total Pageviews along Division Codes": "0.137071651090343",
             "All the time pageviews": "704",
@@ -689,7 +690,7 @@ var codePageviewsSourceArrays = {
             "All the time pageviews": 1,
             "2018 pageviews": "0",
             "2018 % total pageviews": "0",
-            "Division Codes": "",
+            "Division Codes": "NA",
             "All the time pageviews": 1,
             "% of Total Pageviews along Division Codes": "0.166666666666667",
             "All the time pageviews": "1",
@@ -701,7 +702,7 @@ var codePageviewsSourceArrays = {
             "All the time pageviews": 1,
             "2018 pageviews": "0",
             "2018 % total pageviews": "0",
-            "Division Codes": "",
+            "Division Codes": "NA",
             "All the time pageviews": 1,
             "% of Total Pageviews along Division Codes": "0.0384615384615385",
             "All the time pageviews": "1",
@@ -713,7 +714,7 @@ var codePageviewsSourceArrays = {
             "All the time pageviews": 977,
             "2018 pageviews": "0",
             "2018 % total pageviews": "0",
-            "Division Codes": "",
+            "Division Codes": "NA",
             "All the time pageviews": 977,
             "% of Total Pageviews along Division Codes": "0.172889754025836",
             "All the time pageviews": "977",
@@ -725,7 +726,7 @@ var codePageviewsSourceArrays = {
             "All the time pageviews": 65,
             "2018 pageviews": "0",
             "2018 % total pageviews": "0",
-            "Division Codes": "",
+            "Division Codes": "NA",
             "All the time pageviews": 65,
             "% of Total Pageviews along Division Codes": "0.0218781555031976",
             "All the time pageviews": "65",
@@ -1489,95 +1490,93 @@ var codePageviewsSourceArrays = {
             "xlsx_row_id": 72
         }
     ],
-    pageviewSourceIDB: [{
-            "All the time pageviews": 51,
-            "2018 pageviews": "2",
-            "2018 % total pageviews": "0.000783392087739914",
-            "All the time pageviews % of total": "0.00147326458098622",
-            "All the time pageviews": 51,
-            "All the time pageviews": "51",
-            "Pageview Source": "Bing"
-        },
+    pageviewSourceIDB: [
         {
-            "All the time pageviews": 16508,
-            "2018 pageviews": "1307",
-            "2018 % total pageviews": "0.511946729338034",
-            "All the time pageviews % of total": "0.476875523586677",
-            "All the time pageviews": 16508,
-            "All the time pageviews": "16508",
-            "Pageview Source": "Code Website"
-        },
-        {
-            "All the time pageviews": 4260,
-            "2018 pageviews": "162",
-            "2018 % total pageviews": "0.063454759106933",
-            "All the time pageviews % of total": "0.123060923823555",
-            "All the time pageviews": 4260,
-            "All the time pageviews": "4260",
-            "Pageview Source": "Facebook"
-        },
-        {
-            "All the time pageviews": 5136,
-            "2018 pageviews": "496",
-            "2018 % total pageviews": "0.194281237759499",
-            "All the time pageviews % of total": "0.148366409567554",
-            "All the time pageviews": 5136,
-            "All the time pageviews": "5136",
-            "Pageview Source": "Google"
-        },
-        {
-            "All the time pageviews": 6,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "All the time pageviews % of total": "0.000173325244821908",
-            "All the time pageviews": 6,
-            "All the time pageviews": "6",
-            "Pageview Source": "IDB Blogs"
-        },
-        {
-            "All the time pageviews": 6,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "All the time pageviews % of total": "0.000173325244821908",
-            "All the time pageviews": 6,
-            "All the time pageviews": "6",
-            "Pageview Source": "IDB Publications"
-        },
-        {
-            "All the time pageviews": 26,
-            "2018 pageviews": "3",
-            "2018 % total pageviews": "0.00117508813160987",
-            "All the time pageviews % of total": "0.000751076060894936",
-            "All the time pageviews": 26,
-            "All the time pageviews": "26",
-            "Pageview Source": "LinkedIn"
-        },
-        {
-            "All the time pageviews": 5651,
-            "2018 pageviews": "346",
-            "2018 % total pageviews": "0.135526831179005",
-            "All the time pageviews % of total": "0.163243493081434",
-            "All the time pageviews": 5651,
-            "All the time pageviews": "5651",
-            "Pageview Source": "Others"
-        },
-        {
-            "All the time pageviews": 2971,
-            "2018 pageviews": "235",
-            "2018 % total pageviews": "0.0920485703094399",
-            "All the time pageviews % of total": "0.0858248837276483",
-            "All the time pageviews": 2971,
-            "All the time pageviews": "2971",
-            "Pageview Source": "Twitter"
-        },
-        {
-            "All the time pageviews": 2,
-            "2018 pageviews": "2",
-            "2018 % total pageviews": "0.000783392087739914",
-            "All the time pageviews % of total": "5.77750816073028e-5",
-            "All the time pageviews": 2,
-            "All the time pageviews": "2",
-            "Pageview Source": "Yahoo"
-        }
-    ]
+        "name": "flare",
+        "children": [{
+            "name": "analytics",
+            "children": [
+                {
+                    "name": "optimization",
+                    "children": [{
+                        "name": "Bing",
+                        "data2018": 0.000783392087739914*100,
+                        "AllTheTime": 0.00147326458098622*100
+                    }]
+                },
+                {
+                    "name": "optimization",
+                    "children": [{
+                        "name": "Code Website",
+                        "data2018": 0.511946729338034*100,
+                        "AllTheTime": 0.476875523586677*100
+                    }]
+                },
+                {
+                    "name": "optimization",
+                    "children": [{
+                        "name": "Facebook",
+                        "data2018": 0.063454759106933*100,
+                        "AllTheTime": 0.123060923823555*100
+                    }]
+                },
+                {
+                    "name": "optimization",
+                    "children": [{
+                        "name": "Google",
+                        "data2018": 0.194281237759499*100,
+                        "AllTheTime": 0.148366409567554*100
+                    }]
+                },
+                {
+                    "name": "optimization",
+                    "children": [{
+                        "name": "IDB Blogs",
+                        "data2018": 0*100,
+                        "AllTheTime": 0.000173325244821908*100
+                    }]
+                },
+                {
+                    "name": "optimization",
+                    "children": [{
+                        "name": "IDB Publications",
+                        "data2018": 0*100,
+                        "AllTheTime": 0.000173325244821908*100
+                    }]
+                },
+                {
+                    "name": "optimization",
+                    "children": [{
+                        "name": "LinkedIn",
+                        "data2018": 0.00117508813160987*100,
+                        "AllTheTime": 0.000751076060894936*100
+                    }]
+                },
+                {
+                    "name": "optimization",
+                    "children": [{
+                        "name": "Others",
+                        "data2018": 0.135526831179005*100,
+                        "AllTheTime": 0.163243493081434*100
+                    }]
+                },
+                {
+                    "name": "optimization",
+                    "children": [{
+                        "name": "Twitter",
+                        "data2018": 0.0920485703094399*100,
+                        "AllTheTime": 0.0858248837276483*100
+                    }]
+                },
+                {
+                    "name": "optimization",
+                    "children": [{
+                        "name": "Yahoo",
+                        "data2018": 0.000783392087739914*100,
+                        "AllTheTime": 5.77750816073028e-5*100
+                    }]
+                }
+            ]
+        }]
+    }]
 };
