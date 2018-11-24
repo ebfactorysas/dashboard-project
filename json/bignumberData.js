@@ -461,7 +461,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "0",
             "2018_porcent_total_downloads": "0",
             "2018_porcent_total_LAC_downloads": "0",
-            "Division Codes": "ATI",
+            "division_codes": "ATI",
             "xlsx_row_id": 2
         },
         {
@@ -475,7 +475,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "0",
             "2018_porcent_total_downloads": "0",
             "2018_porcent_total_LAC_downloads": "0",
-            "Division Codes": "AUG",
+            "division_codes": "AUG",
             "xlsx_row_id": 3
         },
         {
@@ -489,7 +489,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "0",
             "2018_porcent_total_downloads": "0",
             "2018_porcent_total_LAC_downloads": "0",
-            "Division Codes": "BOG",
+            "division_codes": "BOG",
             "xlsx_row_id": 4
         },
         {
@@ -503,7 +503,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "27966",
             "2018_porcent_total_downloads": "0.0320945092980648",
             "2018_porcent_total_LAC_downloads": "0.752020310376886",
-            "Division Codes": "CAN",
+            "division_codes": "CAN",
             "xlsx_row_id": 5
         },
         {
@@ -517,7 +517,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "0",
             "2018_porcent_total_downloads": "0",
             "2018_porcent_total_LAC_downloads": "0",
-            "Division Codes": "CAR",
+            "division_codes": "CAR",
             "xlsx_row_id": 6
         },
         {
@@ -531,7 +531,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "0",
             "2018_porcent_total_downloads": "0",
             "2018_porcent_total_LAC_downloads": "0",
-            "Division Codes": "CBH",
+            "division_codes": "CBH",
             "xlsx_row_id": 7
         },
         {
@@ -545,7 +545,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "0",
             "2018_porcent_total_downloads": "0",
             "2018_porcent_total_LAC_downloads": "0",
-            "Division Codes": "CBL",
+            "division_codes": "CBL",
             "xlsx_row_id": 8
         },
         {
@@ -559,7 +559,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "448",
             "2018_porcent_total_downloads": "0.000514136457324379",
             "2018_porcent_total_LAC_downloads": "0.517857142857143",
-            "Division Codes": "CBO",
+            "division_codes": "CBO",
             "xlsx_row_id": 9
         },
         {
@@ -573,7 +573,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "0",
             "2018_porcent_total_downloads": "0",
             "2018_porcent_total_LAC_downloads": "0",
-            "Division Codes": "CBR",
+            "division_codes": "CBR",
             "xlsx_row_id": 10
         },
         {
@@ -587,7 +587,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "11466",
             "2018_porcent_total_downloads": "0.0131586799546458",
             "2018_porcent_total_LAC_downloads": "0.457526600383743",
-            "Division Codes": "CCB",
+            "division_codes": "CCB",
             "xlsx_row_id": 11
         },
         {
@@ -601,7 +601,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "0",
             "2018_porcent_total_downloads": "0",
             "2018_porcent_total_LAC_downloads": "0",
-            "Division Codes": "CCH",
+            "division_codes": "CCH",
             "xlsx_row_id": 12
         },
         {
@@ -615,7 +615,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "0",
             "2018_porcent_total_downloads": "0",
             "2018_porcent_total_LAC_downloads": "0",
-            "Division Codes": "CCO",
+            "division_codes": "CCO",
             "xlsx_row_id": 13
         },
         {
@@ -629,7 +629,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "17207",
             "2018_porcent_total_downloads": "0.0197472009401349",
             "2018_porcent_total_LAC_downloads": "0.712791305863893",
-            "Division Codes": "CCS",
+            "division_codes": "CCS",
             "xlsx_row_id": 14
         },
         {
@@ -643,7 +643,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "0",
             "2018_porcent_total_downloads": "0",
             "2018_porcent_total_LAC_downloads": "0",
-            "Division Codes": "CDR",
+            "division_codes": "CDR",
             "xlsx_row_id": 15
         },
         {
@@ -657,7 +657,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "0",
             "2018_porcent_total_downloads": "0",
             "2018_porcent_total_LAC_downloads": "0",
-            "Division Codes": "CGY",
+            "division_codes": "CGY",
             "xlsx_row_id": 16
         },
         {
@@ -671,7 +671,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "0",
             "2018_porcent_total_downloads": "0",
             "2018_porcent_total_LAC_downloads": "0",
-            "Division Codes": "CHO",
+            "division_codes": "CHO",
             "xlsx_row_id": 17
         },
         {
@@ -685,7 +685,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "16357",
             "2018_porcent_total_downloads": "0.0187717188224436",
             "2018_porcent_total_LAC_downloads": "0.808644616983554",
-            "Division Codes": "CID",
+            "division_codes": "CID",
             "xlsx_row_id": 18
         },
         {
@@ -699,7 +699,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "0",
             "2018_porcent_total_downloads": "0",
             "2018_porcent_total_LAC_downloads": "0",
-            "Division Codes": "CJA",
+            "division_codes": "CJA",
             "xlsx_row_id": 19
         },
         {
@@ -713,7 +713,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "164",
             "2018_porcent_total_downloads": "0.000188210667413389",
             "2018_porcent_total_LAC_downloads": "0.652439024390244",
-            "Division Codes": "CME",
+            "division_codes": "CME",
             "xlsx_row_id": 20
         },
         {
@@ -727,7 +727,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "16872",
             "2018_porcent_total_downloads": "0.0193627462231624",
             "2018_porcent_total_LAC_downloads": "0.648767188240872",
-            "Division Codes": "CMF",
+            "division_codes": "CMF",
             "xlsx_row_id": 21
         },
         {
@@ -741,7 +741,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "8717",
             "2018_porcent_total_downloads": "0.01000385602343",
             "2018_porcent_total_LAC_downloads": "0.896982906963405",
-            "Division Codes": "CMG",
+            "division_codes": "CMG",
             "xlsx_row_id": 22
         },
         {
@@ -755,7 +755,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "0",
             "2018_porcent_total_downloads": "0",
             "2018_porcent_total_LAC_downloads": "0",
-            "Division Codes": "CNI",
+            "division_codes": "CNI",
             "xlsx_row_id": 23
         },
         {
@@ -769,7 +769,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "0",
             "2018_porcent_total_downloads": "0",
             "2018_porcent_total_LAC_downloads": "0",
-            "Division Codes": "CPE",
+            "division_codes": "CPE",
             "xlsx_row_id": 24
         },
         {
@@ -783,7 +783,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "121",
             "2018_porcent_total_downloads": "0.000138862748518415",
             "2018_porcent_total_LAC_downloads": "0.380165289256198",
-            "Division Codes": "CPR",
+            "division_codes": "CPR",
             "xlsx_row_id": 25
         },
         {
@@ -797,7 +797,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "2171",
             "2018_porcent_total_downloads": "0.00249149609118578",
             "2018_porcent_total_LAC_downloads": "0.526946107784431",
-            "Division Codes": "CSC",
+            "division_codes": "CSC",
             "xlsx_row_id": 26
         },
         {
@@ -811,7 +811,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "16616",
             "2018_porcent_total_downloads": "0.0190689539618342",
             "2018_porcent_total_LAC_downloads": "0.878731343283582",
-            "Division Codes": "CSD",
+            "division_codes": "CSD",
             "xlsx_row_id": 27
         },
         {
@@ -825,7 +825,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "0",
             "2018_porcent_total_downloads": "0",
             "2018_porcent_total_LAC_downloads": "0",
-            "Division Codes": "CSO",
+            "division_codes": "CSO",
             "xlsx_row_id": 28
         },
         {
@@ -839,7 +839,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "6753",
             "2018_porcent_total_downloads": "0.0077499185185525",
             "2018_porcent_total_LAC_downloads": "0.755516066933215",
-            "Division Codes": "CTI",
+            "division_codes": "CTI",
             "xlsx_row_id": 29
         },
         {
@@ -853,7 +853,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "23",
             "2018_porcent_total_downloads": "2.63953984787069e-5",
             "2018_porcent_total_LAC_downloads": "0.695652173913044",
-            "Division Codes": "CUR",
+            "division_codes": "CUR",
             "xlsx_row_id": 30
         },
         {
@@ -867,7 +867,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "4788",
             "2018_porcent_total_downloads": "0.00549483338765429",
             "2018_porcent_total_LAC_downloads": "0.47702589807853",
-            "Division Codes": "Discontinued Divisions",
+            "division_codes": "Discontinued Divisions",
             "xlsx_row_id": 31
         },
         {
@@ -881,7 +881,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "41637",
             "2018_porcent_total_downloads": "0.047783704628603",
             "2018_porcent_total_LAC_downloads": "0.902178350985902",
-            "Division Codes": "EDU",
+            "division_codes": "EDU",
             "xlsx_row_id": 32
         },
         {
@@ -895,7 +895,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "10922",
             "2018_porcent_total_downloads": "0.0125343713993234",
             "2018_porcent_total_LAC_downloads": "0.883995605200513",
-            "Division Codes": "ENE",
+            "division_codes": "ENE",
             "xlsx_row_id": 33
         },
         {
@@ -909,7 +909,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "19097",
             "2018_porcent_total_downloads": "0.0219162141194719",
             "2018_porcent_total_LAC_downloads": "0.867675551133686",
-            "Division Codes": "ESG",
+            "division_codes": "ESG",
             "xlsx_row_id": 34
         },
         {
@@ -923,7 +923,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "0",
             "2018_porcent_total_downloads": "0",
             "2018_porcent_total_LAC_downloads": "0",
-            "Division Codes": "EUR",
+            "division_codes": "EUR",
             "xlsx_row_id": 35
         },
         {
@@ -937,7 +937,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "0",
             "2018_porcent_total_downloads": "0",
             "2018_porcent_total_LAC_downloads": "0",
-            "Division Codes": "FHL",
+            "division_codes": "FHL",
             "xlsx_row_id": 36
         },
         {
@@ -951,7 +951,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "26281",
             "2018_porcent_total_downloads": "0.0301607594529944",
             "2018_porcent_total_LAC_downloads": "0.668848217343328",
-            "Division Codes": "FMM",
+            "division_codes": "FMM",
             "xlsx_row_id": 37
         },
         {
@@ -965,7 +965,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "171",
             "2018_porcent_total_downloads": "0.000196244049559082",
             "2018_porcent_total_LAC_downloads": "0.374269005847953",
-            "Division Codes": "FMP",
+            "division_codes": "FMP",
             "xlsx_row_id": 38
         },
         {
@@ -979,7 +979,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "0",
             "2018_porcent_total_downloads": "0",
             "2018_porcent_total_LAC_downloads": "0",
-            "Division Codes": "GCM",
+            "division_codes": "GCM",
             "xlsx_row_id": 39
         },
         {
@@ -993,7 +993,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "1343",
             "2018_porcent_total_downloads": "0.00154126174595233",
             "2018_porcent_total_LAC_downloads": "0.426656738644825",
-            "Division Codes": "GDI",
+            "division_codes": "GDI",
             "xlsx_row_id": 40
         },
         {
@@ -1007,7 +1007,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "0",
             "2018_porcent_total_downloads": "0",
             "2018_porcent_total_LAC_downloads": "0",
-            "Division Codes": "HRD",
+            "division_codes": "HRD",
             "xlsx_row_id": 41
         },
         {
@@ -1021,7 +1021,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "14727",
             "2018_porcent_total_downloads": "0.0169010884085179",
             "2018_porcent_total_LAC_downloads": "0.829496842534121",
-            "Division Codes": "HUD",
+            "division_codes": "HUD",
             "xlsx_row_id": 42
         },
         {
@@ -1035,7 +1035,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "3958",
             "2018_porcent_total_downloads": "0.0045423037903792",
             "2018_porcent_total_LAC_downloads": "0.897170288024255",
-            "Division Codes": "ICD",
+            "division_codes": "ICD",
             "xlsx_row_id": 43
         },
         {
@@ -1049,7 +1049,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "78873",
             "2018_porcent_total_downloads": "0.0905167071396058",
             "2018_porcent_total_LAC_downloads": "0.774079849885259",
-            "Division Codes": "ICS",
+            "division_codes": "ICS",
             "xlsx_row_id": 44
         },
         {
@@ -1063,7 +1063,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "55",
             "2018_porcent_total_downloads": "6.3119431144734e-5",
             "2018_porcent_total_LAC_downloads": "0.272727272727273",
-            "Division Codes": "IFD",
+            "division_codes": "IFD",
             "xlsx_row_id": 45
         },
         {
@@ -1077,7 +1077,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "6524",
             "2018_porcent_total_downloads": "0.00748711215978624",
             "2018_porcent_total_LAC_downloads": "0.597486204782342",
-            "Division Codes": "INE",
+            "division_codes": "INE",
             "xlsx_row_id": 46
         },
         {
@@ -1091,7 +1091,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "84218",
             "2018_porcent_total_downloads": "0.0966507682208527",
             "2018_porcent_total_LAC_downloads": "0.910969151487806",
-            "Division Codes": "INL",
+            "division_codes": "INL",
             "xlsx_row_id": 47
         },
         {
@@ -1105,7 +1105,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "27615",
             "2018_porcent_total_downloads": "0.0316916925647593",
             "2018_porcent_total_LAC_downloads": "0.531196813326091",
-            "Division Codes": "INT",
+            "division_codes": "INT",
             "xlsx_row_id": 48
         },
         {
@@ -1119,7 +1119,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "6956",
             "2018_porcent_total_downloads": "0.00798288660077762",
             "2018_porcent_total_LAC_downloads": "0.738067855089132",
-            "Division Codes": "ITE",
+            "division_codes": "ITE",
             "xlsx_row_id": 49
         },
         {
@@ -1133,7 +1133,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "36208",
             "2018_porcent_total_downloads": "0.0415532429616077",
             "2018_porcent_total_LAC_downloads": "0.14761931064958",
-            "Division Codes": "KIC",
+            "division_codes": "KIC",
             "xlsx_row_id": 50
         },
         {
@@ -1147,7 +1147,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "0",
             "2018_porcent_total_downloads": "0",
             "2018_porcent_total_LAC_downloads": "0",
-            "Division Codes": "KNM",
+            "division_codes": "KNM",
             "xlsx_row_id": 51
         },
         {
@@ -1161,7 +1161,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "37896",
             "2018_porcent_total_downloads": "0.0434904356847405",
             "2018_porcent_total_LAC_downloads": "0.817869959890226",
-            "Division Codes": "LMK",
+            "division_codes": "LMK",
             "xlsx_row_id": 52
         },
         {
@@ -1175,7 +1175,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "0",
             "2018_porcent_total_downloads": "0",
             "2018_porcent_total_LAC_downloads": "0",
-            "Division Codes": "MICI",
+            "division_codes": "MICI",
             "xlsx_row_id": 53
         },
         {
@@ -1189,7 +1189,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "3369",
             "2018_porcent_total_downloads": "0.00386635206412015",
             "2018_porcent_total_LAC_downloads": "0.400118729593351",
-            "Division Codes": "MIF",
+            "division_codes": "MIF",
             "xlsx_row_id": 54
         },
         {
@@ -1203,7 +1203,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "0",
             "2018_porcent_total_downloads": "0",
             "2018_porcent_total_LAC_downloads": "0",
-            "Division Codes": "OII",
+            "division_codes": "OII",
             "xlsx_row_id": 55
         },
         {
@@ -1217,7 +1217,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "2599",
             "2018_porcent_total_downloads": "0.00298268002809389",
             "2018_porcent_total_LAC_downloads": "0.611388995767603",
-            "Division Codes": "ORP",
+            "division_codes": "ORP",
             "xlsx_row_id": 56
         },
         {
@@ -1231,7 +1231,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "11479",
             "2018_porcent_total_downloads": "0.0131735990929164",
             "2018_porcent_total_LAC_downloads": "0.650666434358394",
-            "Division Codes": "OVE",
+            "division_codes": "OVE",
             "xlsx_row_id": 57
         },
         {
@@ -1245,7 +1245,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "0",
             "2018_porcent_total_downloads": "0",
             "2018_porcent_total_LAC_downloads": "0",
-            "Division Codes": "PCY",
+            "division_codes": "PCY",
             "xlsx_row_id": 58
         },
         {
@@ -1259,7 +1259,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "0",
             "2018_porcent_total_downloads": "0",
             "2018_porcent_total_LAC_downloads": "0",
-            "Division Codes": "PRE",
+            "division_codes": "PRE",
             "xlsx_row_id": 59
         },
         {
@@ -1273,7 +1273,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "0",
             "2018_porcent_total_downloads": "0",
             "2018_porcent_total_LAC_downloads": "0",
-            "Division Codes": "PRO",
+            "division_codes": "PRO",
             "xlsx_row_id": 60
         },
         {
@@ -1287,7 +1287,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "68093",
             "2018_porcent_total_downloads": "0.0781452986352387",
             "2018_porcent_total_LAC_downloads": "0.735508789449723",
-            "Division Codes": "RES",
+            "division_codes": "RES",
             "xlsx_row_id": 61
         },
         {
@@ -1301,7 +1301,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "0",
             "2018_porcent_total_downloads": "0",
             "2018_porcent_total_LAC_downloads": "0",
-            "Division Codes": "RMG",
+            "division_codes": "RMG",
             "xlsx_row_id": 62
         },
         {
@@ -1315,7 +1315,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "16700",
             "2018_porcent_total_downloads": "0.0191653545475823",
             "2018_porcent_total_LAC_downloads": "0.806347305389222",
-            "Division Codes": "RND",
+            "division_codes": "RND",
             "xlsx_row_id": 63
         },
         {
@@ -1329,7 +1329,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "36924",
             "2018_porcent_total_downloads": "0.04237494319251",
             "2018_porcent_total_LAC_downloads": "0.84305600693316",
-            "Division Codes": "SCL",
+            "division_codes": "SCL",
             "xlsx_row_id": 64
         },
         {
@@ -1343,7 +1343,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "0",
             "2018_porcent_total_downloads": "0",
             "2018_porcent_total_LAC_downloads": "0",
-            "Division Codes": "SDI",
+            "division_codes": "SDI",
             "xlsx_row_id": 65
         },
         {
@@ -1357,7 +1357,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "0",
             "2018_porcent_total_downloads": "0",
             "2018_porcent_total_LAC_downloads": "0",
-            "Division Codes": "SDV",
+            "division_codes": "SDV",
             "xlsx_row_id": 66
         },
         {
@@ -1371,7 +1371,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "0",
             "2018_porcent_total_downloads": "0",
             "2018_porcent_total_LAC_downloads": "0",
-            "Division Codes": "SEC",
+            "division_codes": "SEC",
             "xlsx_row_id": 67
         },
         {
@@ -1385,7 +1385,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "0",
             "2018_porcent_total_downloads": "0",
             "2018_porcent_total_LAC_downloads": "0",
-            "Division Codes": "SMO",
+            "division_codes": "SMO",
             "xlsx_row_id": 68
         },
         {
@@ -1399,7 +1399,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "20669",
             "2018_porcent_total_downloads": "0.0237202822241901",
             "2018_porcent_total_LAC_downloads": "0.576515554695438",
-            "Division Codes": "SPD",
+            "division_codes": "SPD",
             "xlsx_row_id": 69
         },
         {
@@ -1413,7 +1413,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "49274",
             "2018_porcent_total_downloads": "0.0565481245495539",
             "2018_porcent_total_LAC_downloads": "0.691297641758331",
-            "Division Codes": "SPH",
+            "division_codes": "SPH",
             "xlsx_row_id": 70
         },
         {
@@ -1427,7 +1427,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "0",
             "2018_porcent_total_downloads": "0",
             "2018_porcent_total_LAC_downloads": "0",
-            "Division Codes": "Strategic Core",
+            "division_codes": "Strategic Core",
             "xlsx_row_id": 71
         },
         {
@@ -1441,7 +1441,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "9711",
             "2018_porcent_total_downloads": "0.0111445962881184",
             "2018_porcent_total_LAC_downloads": "0.713520749665328",
-            "Division Codes": "TSP",
+            "division_codes": "TSP",
             "xlsx_row_id": 72
         },
         {
@@ -1455,7 +1455,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "23811",
             "2018_porcent_total_downloads": "0.0273261231815856",
             "2018_porcent_total_LAC_downloads": "0.942841543824283",
-            "Division Codes": "UCC",
+            "division_codes": "UCC",
             "xlsx_row_id": 73
         },
         {
@@ -1469,7 +1469,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "448",
             "2018_porcent_total_downloads": "0.000514136457324379",
             "2018_porcent_total_LAC_downloads": "0.575892857142857",
-            "Division Codes": "VPC",
+            "division_codes": "VPC",
             "xlsx_row_id": 74
         },
         {
@@ -1483,7 +1483,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "44640",
             "2018_porcent_total_downloads": "0.0512300255691052",
             "2018_porcent_total_LAC_downloads": "0.82002688172043",
-            "Division Codes": "VPS",
+            "division_codes": "VPS",
             "xlsx_row_id": 75
         },
         {
@@ -1497,7 +1497,7 @@ var bnPublicationsArrays = {
             "2018_downloads": "57377",
             "2018_porcent_total_downloads": "0.0658473381962038",
             "2018_porcent_total_LAC_downloads": "0.876832180141869",
-            "Division Codes": "WSA",
+            "division_codes": "WSA",
             "xlsx_row_id": 76
         }
     ],
