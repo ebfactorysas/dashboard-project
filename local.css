@@ -158,9 +158,9 @@ body {
     padding-bottom: .5rem;
 }
 
-.left-text-drop select{
+.left-text-drop select {
     border: none;
-    background-color:transparent;
+    background-color: transparent;
 }
 
 #nav-title .navbar-nav .active {
@@ -183,20 +183,20 @@ body {
     font-family: 'Gotham-Bold';
 }
 
-.title-text select{
-    border:none;
+.title-text select {
+    border: none;
 }
 
 .title-text select:focus {
-    border:none;
+    border: none;
 }
 
 .title-text select:visited {
-    border:none;
+    border: none;
 }
 
 .title-text select:active {
-    border:none;
+    border: none;
 }
 
 
@@ -409,7 +409,7 @@ section.publications #timeline-publication .area {
 }
 
 section.publications #timeline-publication .x-axis .tick {
-    stroke-width:1px;
+    stroke-width: 1px;
 }
 
 section.publications #timeline-publication .y-axis path {
@@ -542,7 +542,7 @@ section.moocs #timeline-moocs .area {
 }
 
 section.moocs #timeline-moocs .x-axis .tick {
-    stroke-width:1px;
+    stroke-width: 1px;
 }
 
 section.moocs #timeline-moocs .y-axis path {
@@ -682,7 +682,7 @@ section.datasets #timeline-dataset .area {
 }
 
 section.datasets #timeline-dataset .x-axis .tick {
-    stroke-width:1px;
+    stroke-width: 1px;
 }
 
 section.datasets #timeline-dataset .y-axis path {
@@ -805,7 +805,7 @@ section.code #timeline-code .area {
 }
 
 section.code #timeline-code .x-axis .tick {
-    stroke-width:1px;
+    stroke-width: 1px;
 }
 
 section.code #timeline-code .y-axis path {
@@ -814,6 +814,29 @@ section.code #timeline-code .y-axis path {
 
 section.code #timeline-code .y-axis .tick line {
     display: none;
+}
+
+section.code .axis--x path {
+    display: none;
+}
+
+section.code .axis--y path {
+    display: none;
+}
+
+section.code .line {
+    fill: none;
+    stroke-width: 1.5px;
+}
+
+section.code .grid line {
+    stroke: lightgrey;
+    stroke-opacity: 0.7;
+    shape-rendering: crispEdges;
+}
+
+section.code .grid path {
+    stroke-width: 0;
 }
 
 section.suscribers {
