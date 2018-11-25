@@ -454,11 +454,11 @@ function drawGaugePublicationChart(dataGauge) {
         .attr("text-anchor", "middle")
         .attr("class", "percent-complete")
         .attr("dy", "0.3em")
-        .text(dataGauge.publication.allocated + "k");
+        .text(dataGauge.publication.allocated );
 
 
     var i4 = d3.interpolate(progress4, dataGauge.publication.allocated / dataGauge.publication.total);
-
+    foreground4.attr("d", arc4.endAngle(twoPi * i4(1)));
     //gauge K
 
     var arc2 = d3.arc()
@@ -490,7 +490,7 @@ function drawGaugePublicationChart(dataGauge) {
 
 
     var i2 = d3.interpolate(progress2, dataGauge.download.allocated / dataGauge.download.total);
-
+    foreground2.attr("d", arc2.endAngle(twoPi * i2(1)));
     //gauge %
 
     var arc3 = d3.arc()
@@ -522,7 +522,7 @@ function drawGaugePublicationChart(dataGauge) {
 
 
     var i3 = d3.interpolate(progress3, dataGauge.lac.allocated / dataGauge.lac.total);
-
+    foreground3.attr("d", arc3.endAngle(twoPi * i3(1)));
     // d3.transition().duration(1000).tween("progress", function () {
     //     return function (t) {
     //         progress4 = i4(t);
