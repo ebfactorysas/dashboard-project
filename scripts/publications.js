@@ -1,45 +1,8 @@
 /**
  * Start timelines
  *  */
-var dataTimeline = [{
-    "date": "1-Jul-18",
-    "close": 60000
-},
-{
-    "date": "30-Apr-18",
-    "close": 50000
-},
-{
-    "date": "27-Jan-18",
-    "close": 45000
-},
-{
-    "date": "26-Dec-17",
-    "close": 35000
-},
-{
-    "date": "24-Jul-17",
-    "close": 20000
-},
-{
-    "date": "20-Dec-16",
-    "close": 30000
-}, {
-    "date": "16-Jul-16",
-    "close": 25000
-},
-{
-    "date": "27-Mar-14",
-    "close": 12000
-},
-{
-    "date": "26-Jan-13",
-    "close": 5000
-}
-]
 
 createChart(publicationsDownloadTimelineArray.downloadTimelineIDB);
-//createChart(dataTimeline);
 
 function sortByDateAscending(a, b) {
 // Dates will be cast to numbers automagically:
@@ -159,7 +122,7 @@ svg.append("g")
     .style("font-size", "13px")
     //.call(d3.axisBottom(x));
     .call(d3.axisBottom(x)
-        .ticks(d3.timeDay.filter(d => d3.timeDay.count(0, d) % 12 === 0))
+        .ticks(d3.timeDay.filter(d => d3.timeDay.count(0, d) % 300 === 0))
         .tickFormat(function (x) {
             // get the milliseconds since Epoch for the date
             var milli = (x.getTime() - 10000);
@@ -174,7 +137,7 @@ svg.append("g")
 
             // return appropriate quarter for that month
             // if ($("#code2018").prop("checked")) {
-            if (1==1) {
+            if ($("#publication2018").prop("checked")) {
                 if (mon <= 2 && yr == 2018) {
                     return "Q1 " + yr;
                 } else if (mon <= 5 && yr == 2018) {
@@ -384,7 +347,7 @@ var dataPublicationTrend = [{
 ];
 
 dataPublicationTrend = dataPublicationTrend.sort(function (a, b) {
-return d3.ascending(a.value, b.value);
+    return d3.ascending(a.value, b.value);
 })
 
 drawTrendPublicationChart(dataPublicationTrend);
@@ -474,3 +437,5 @@ barsPublicationTrend.append("text")
 /**
 * End trend
 */
+
+//init
