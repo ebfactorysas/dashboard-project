@@ -311,11 +311,6 @@ section.publications .left-bar span:nth-child(2n+1) {
 }
 
 
-/* section.publications .row div:nth-child(2),
-section.publications .row div:nth-child(3) {
-    background-color: #f5f5f5;
-} */
-
 section.publications p {
     font-size: 18px;
     font-family: 'Gotham-Bold';
@@ -420,7 +415,28 @@ section.publications #timeline-publication .y-axis .tick line {
     display: none;
 }
 
+section.publications .axis--x path {
+    display: none;
+}
 
+section.publications .axis--y path {
+    display: none;
+}
+
+section.publications .line {
+    fill: none;
+    stroke-width: 1.5px;
+}
+
+section.publications .grid line {
+    stroke: lightgrey;
+    stroke-opacity: 0.7;
+    shape-rendering: crispEdges;
+}
+
+section.publications .grid path {
+    stroke-width: 0;
+}
 
 section.moocs {
     height: 930px;
@@ -574,21 +590,38 @@ section.datasets .right-bar {
 section.datasets .left-bar {
     text-align: center;
     height: 930px;
+    width: 250px;
 }
 
 section.datasets .left-bar h4 {
-    font-size: 12px;
+    font-size: 18px;
     color: white;
+    margin-bottom: 0;
+}
+
+section.datasets .left-bar .gauge-1 {
+    height: 330px;
+    padding-top: 4rem;
+}
+
+section.datasets .left-bar .gauge-2 {
+    height: 300px;
+}
+
+section.datasets .left-bar .gauge-3 {
+    height: 300px;
 }
 
 section.datasets .left-bar span:nth-child(2n) {
     color: white;
     font-size: 10px;
+    font-family: 'Gotham-Bold';
 }
 
 section.datasets .left-bar span:nth-child(2n+1) {
     color: #2E305F;
     font-size: 10px;
+    font-family: 'Gotham-Bold';
 }
 
 section.datasets .funds-allocated-meter .background {
@@ -850,6 +883,38 @@ section.suscribers .right-bar {
 section.suscribers .left-bar {
     text-align: center;
     height: 930px;
+    width: 250px;
+}
+
+section.suscribers .left-bar .gauge-1 {
+    height: 330px;
+    padding-top: 4rem;
+}
+
+section.suscribers .left-bar .gauge-2 {
+    height: 300px;
+}
+
+section.suscribers .left-bar .gauge-3 {
+    height: 300px;
+}
+
+section.suscribers .left-bar h4 {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 0;
+}
+
+section.suscribers .left-bar span:nth-child(2n) {
+    color: white;
+    font-size: 10px;
+    font-family: 'Gotham-Bold';
+}
+
+section.suscribers .left-bar span:nth-child(2n+1) {
+    color: #027B8E;
+    font-size: 10px;
+    font-family: 'Gotham-Bold';
 }
 
 section.suscribers .vertical-text {
@@ -862,21 +927,6 @@ section.suscribers .vertical-text {
     font-size: 12px;
     font-family: 'Gotham-Book';
     height: 100px;
-}
-
-section.suscribers .left-bar h4 {
-    font-size: 12px;
-    color: white;
-}
-
-section.suscribers .left-bar span:nth-child(2n) {
-    color: white;
-    font-size: 10px;
-}
-
-section.suscribers .left-bar span:nth-child(2n+1) {
-    color: #027B8E;
-    font-size: 10px;
 }
 
 section.suscribers .funds-allocated-meter .background {

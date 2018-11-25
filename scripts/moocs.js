@@ -1,30 +1,6 @@
 /**
  * Start distribution-moocs
- *  */
-
-
-// var dataDistribution = [{
-//     "name": "Other/Not Reported",
-//     "value": 20
-// }, {
-//     "name": "Elementary",
-//     "value": 0
-// }, {
-//     "name": "High School",
-//     "value": 3
-// }, {
-//     "name": "Associate",
-//     "value": 4
-// }, {
-//     "name": "Bachelor",
-//     "value": 14
-// }, {
-//     "name": "Master",
-//     "value": 9
-// }, {
-//     "name": "Doctorate",
-//     "value": 1
-// }];
+ **/
 
 // drawDistributionChart(dataDistribution);
 drawDistributionChart(moocsEducationArrays.educationLevelIDB);
@@ -143,36 +119,12 @@ function drawDistributionChart(dataDistribution) {
  * Start registration-moocs
  */
 
-// var dataMoocs = [{
-//         "name": "La realidad del desarrollo social latinoamericano (2ed.)",
-//         "value": 15.9,
-//     },
-//     {
-//         "name": "Políticas efectivas del desarrollo infantil (5ed.)",
-//         "value": 9.7,
-//     },
-//     {
-//         "name": "La realidad del desarrollo social latinoamericano (1ed.)",
-//         "value": 2.3,
-//     },
-//     {
-//         "name": "Políticas efectivas del desarrollo infantil (1ed.)",
-//         "value": 0.1,
-//     },
-//     {
-//         "name": "Asociaciones Publico Privadas: Implementando Soluciones en Latinoamérica y el Caribe (2ed.)",
-//         "value": 0.0,
-//     }
-// ];
-
 function orderTopMoocs(data) {
     var dataMoocs = data.sort(function (a, b) {
         return d3.ascending(a.value, b.value);
     });
     return dataMoocs;
 }
-
-
 
 
 drawMoocsRegistrationsChart(orderTopMoocs(moocsTopArrays.IDBAlltime));
@@ -552,8 +504,6 @@ function drawStudentCompletedsChart(dataStudents) {
         });
 }
 
-
-
 /**
  * End student-completed-moocs
  */
@@ -631,7 +581,6 @@ function drawStudentCertifiedsChart(dataStudents) {
 }
 
 
-
 /**
  * End student-certified-moocs
  */
@@ -639,50 +588,16 @@ function drawStudentCertifiedsChart(dataStudents) {
 /**
  * Start timelines
  *  */
-// var dataTimeline = [{
-//         "date": "1-Jul-18",
-//         "close": 60000
-//     },
-//     {
-//         "date": "30-Apr-18",
-//         "close": 50000
-//     },
-//     {
-//         "date": "27-Jan-18",
-//         "close": 45000
-//     },
-//     {
-//         "date": "26-Dec-17",
-//         "close": 35000
-//     },
-//     {
-//         "date": "24-Jul-17",
-//         "close": 20000
-//     },
-//     {
-//         "date": "20-Dec-16",
-//         "close": 30000
-//     }, {
-//         "date": "16-Jul-16",
-//         "close": 25000
-//     },
-//     {
-//         "date": "27-Mar-14",
-//         "close": 12000
-//     },
-//     {
-//         "date": "26-Jan-13",
-//         "close": 5000
-//     }
-// ]
 
 function sortByDateAscending(a, b) {
     // Dates will be cast to numbers automagically:
     return new Date(b.date) - new Date(a.date);
 }
-var registrationTimelineIDB = $.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB);
+var TimeLineIDB = $.extend([], moocsRegistrationTimeline.registrationTimelineIDB);
+console.log("Carga inicial=> ", moocsRegistrationTimeline.registrationTimelineIDB);
+console.log("Carga inicial con extend=> ", TimeLineIDB);
 
-createChart(registrationTimelineIDB);
+createChart(moocsRegistrationTimeline.registrationTimelineIDB);
 
 function createChart(data) {
     var margin = {
@@ -723,11 +638,24 @@ function createChart(data) {
     // append the svg obgect to the body of the page
     // appends a 'group' element to 'svg'
     // moves the 'group' element to the top left margin
-    var svg = d3.select("#timeline-moocs").append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
-        .append("g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    // var svg = d3.select("#timeline-moocs")
+    //     .append("svg")
+    //     .attr("width", width + margin.left + margin.right)
+    //     .attr("height", height + margin.top + margin.bottom)
+    //     .append("g")
+    //     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+    var svg = d3.select("#timeline-moocs")
+        .append("div")
+        .classed("svg-container", true) //container class to make it responsive
+        .append("svg")
+        //responsive SVG needs these 2 attributes and no width and height attr
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "0 0 600 400")
+        //class to make it responsive
+        .classed("svg-content-responsive", true);
     var totalAmount = 0;
     // format the data
     data.forEach(function (d) {
@@ -851,7 +779,7 @@ function createChart(data) {
 //click radiobutton drawChart(id del click)
 $("input[name*='moocsTrend']").click(function () {
 
-    var test = $.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB);
+    var timeLineIDB = $.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB);
 
 
     d3.select("#moocs-registrations svg").remove();
@@ -864,7 +792,8 @@ $("input[name*='moocsTrend']").click(function () {
         drawMoocsRegistrationsChart(orderTopMoocs(moocsTopArrays.IDB2018));
 
     }
-    createChart(test);
+    console.log("Carga de nuevo con el click=> ", moocsRegistrationTimeline.registrationTimelineIDB);
+    createChart(timeLineIDB);
 
     //name -> codeTrend -> 2018 ->
     /*if(active dpto o division){
@@ -880,3 +809,149 @@ $("input[name*='moocsTrend']").click(function () {
     // createChartTimeline(pageViewsTimeLine[this.id]);
 
 });
+
+
+/** 
+ * Start Gauges
+ */
+
+var dataGauge = {
+    "code": {
+        "total": 100,
+        "allocated": 76
+    },
+    "pageview": {
+        "total": 1000,
+        "allocated": 113
+    },
+    "lac": {
+        "total": 100,
+        "allocated": 9
+    }
+}
+
+drawGaugeMoocsChart(dataGauge)
+
+function drawGaugeMoocsChart(dataGauge) {
+    var width = 150,
+        height = 150,
+        progress = 0,
+        progress3 = 0,
+        progress2 = 0,
+        formatPercent = d3.format(".0%");
+    const twoPi = 2 * Math.PI;
+
+    var arc = d3.arc()
+        .startAngle(0)
+        .innerRadius(70)
+        .outerRadius(64);
+
+    var svg = d3.selectAll("#gauge-moocs").append("svg")
+        .attr("width", width)
+        .attr("height", height)
+        .append("g")
+        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+    var meter = svg.append("g")
+        .attr("class", "funds-allocated-meter");
+
+    meter.append("path")
+        .attr("class", "background")
+        .attr("d", arc.endAngle(twoPi));
+
+    var foreground = meter.append("path")
+        .attr("class", "foreground");
+
+    var percentComplete = meter.append("text")
+        .attr("text-anchor", "middle")
+        .attr("class", "percent-complete")
+        .attr("dy", "0.3em")
+        .text((dataGauge.code.allocated));;
+
+
+    var i = d3.interpolate(progress, dataGauge.code.allocated / dataGauge.code.total);
+
+    //gauge K
+
+    var arc2 = d3.arc()
+        .startAngle(0)
+        .innerRadius(70)
+        .outerRadius(64);
+
+    var svg2 = d3.selectAll("#gauge-registrations-m").append("svg")
+        .attr("width", width)
+        .attr("height", height)
+        .append("g")
+        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+    var meter2 = svg2.append("g")
+        .attr("class", "funds-allocated-meter");
+
+    meter2.append("path")
+        .attr("class", "background")
+        .attr("d", arc2.endAngle(twoPi));
+
+    var foreground2 = meter2.append("path")
+        .attr("class", "foreground");
+
+    var percentComplete2 = meter2.append("text")
+        .attr("text-anchor", "middle")
+        .attr("class", "percent-complete")
+        .attr("dy", "0.3em")
+        .text((dataGauge.pageview.allocated + "k"));
+
+
+    var i2 = d3.interpolate(progress2, dataGauge.pageview.allocated / dataGauge.pageview.total);
+
+    //gauge %
+
+    var arc3 = d3.arc()
+        .startAngle(0)
+        .innerRadius(70)
+        .outerRadius(64);
+
+    var svg3 = d3.selectAll("#gauge-lac-m").append("svg")
+        .attr("width", width)
+        .attr("height", height)
+        .append("g")
+        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+    var meter3 = svg3.append("g")
+        .attr("class", "funds-allocated-meter");
+
+    meter3.append("path")
+        .attr("class", "background")
+        .attr("d", arc3.endAngle(twoPi));
+
+    var foreground3 = meter3.append("path")
+        .attr("class", "foreground");
+
+    var percentComplete3 = meter3.append("text")
+        .attr("text-anchor", "middle")
+        .attr("class", "percent-complete")
+        .attr("dy", "0.3em")
+        percentComplete3.text((dataGauge.lac.allocated + "%"));
+
+
+    var i3 = d3.interpolate(progress3, dataGauge.lac.allocated / dataGauge.lac.total);
+
+    // d3.transition().duration(1000).tween("progress", function () {
+    //     return function (t) {
+    //         progress = i(t);
+    //         foreground.attr("d", arc.endAngle(twoPi * progress));
+    //         percentComplete.text((progress * 100).toFixed(0));
+    //         progress2 = i2(t);
+    //         foreground2.attr("d", arc2.endAngle(twoPi * progress2));
+    //         percentComplete2.text((progress2 * 1000).toFixed(0) + "K");
+    //         progress3 = i3(t);
+    //         foreground3.attr("d", arc3.endAngle(twoPi * progress3));
+    //         percentComplete3.text((progress3 * 100).toFixed(0) + "%");
+
+    //     };
+    // });
+}
+
+
+ /**
+  * End Gauges
+  */

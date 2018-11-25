@@ -1,5 +1,6 @@
 var publicationsTopArrays = {
-    topDepartmentsAllTime: [{
+    topDepartmentsAllTime: [
+        {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "AUG",
             "E": "139",
@@ -2106,7 +2107,8 @@ var publicationsTopArrays = {
             "xlsx_row_id": 235
         }
     ],
-    topDepartments2018: [{
+    topDepartments2018: [
+        {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "CAN",
             "Downloads": "18099",
@@ -3323,7 +3325,8 @@ var publicationsTopArrays = {
             "xlsx_row_id": 153
         }
     ],
-    topDivisionsAllTime: [{
+    topDivisionsAllTime: [
+        {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 1,
             "D": "4359",
@@ -7292,7 +7295,8 @@ var publicationsTopArrays = {
             "xlsx_row_id": 497
         }
     ],
-    topDivisions2018: [{
+    topDivisions2018: [
+        {
             "json_featuretype": "NewFeatureType",
             "Downloads": "18099",
             "Division Codes": "CAN",
@@ -9446,166 +9450,108 @@ var publicationsTopArrays = {
             "xlsx_row_id": 271
         }
     ],
-    topIDBAllTime: [{
-            "json_featuretype": "NewFeatureType",
+    topIDBAllTime: [
+        {
             "Department": "Office of External Relations",
-            "E": "400481",
-            "Title": "The Orange Economy: An Infinite Opportunity",
-            "Published Date": "10/04/2013",
-            "Rank of Downloads": 1,
-            "xlsx_row_id": 2
+            "value": 400481,
+            "name": "The Orange Economy: An Infinite Opportunity",
+            "date": "10-04-2013"
         },
         {
-            "json_featuretype": "NewFeatureType",
             "Department": "Knowledge and Learning Sector",
-            "E": "197188",
-            "Title": "Pautas para la elaboración de estudios de caso",
-            "Published Date": "05/31/2011",
-            "Rank of Downloads": 2,
-            "xlsx_row_id": 3
+            "value": 197188,
+            "name": "Pautas para la elaboración de estudios de caso",
+            "date": "05-31-2011"
         },
         {
-            "json_featuretype": "NewFeatureType",
             "Department": "Education Division",
-            "E": "191125",
-            "Title": "How to Select an Instrument for Assessing Student Learning",
-            "Published Date": "01/06/2015",
-            "Rank of Downloads": 3,
-            "xlsx_row_id": 4
+            "value": 191125,
+            "name": "How to Select an Instrument for Assessing Student Learning",
+            "date": "01-06-2015"
         },
         {
-            "json_featuretype": "NewFeatureType",
             "Department": "Fiscal and Municipal Management Division",
-            "E": "103402",
-            "Title": "Panorama de las Administraciones Públicas: América Latina y el Caribe 2017",
-            "Published Date": "12/01/2016",
-            "Rank of Downloads": 4,
-            "xlsx_row_id": 5
+            "value": 103402,
+            "name": "Panorama de las Administraciones Públicas: América Latina y el Caribe 2017",
+            "date": "12-01-2016"
         },
         {
-            "json_featuretype": "NewFeatureType",
             "Department": "Housing and Urban Development Division",
-            "E": "96094",
-            "Title": "The Road toward Smart Cities: Migrating from Traditional City Management to the Smart City",
-            "Published Date": "07/07/2016",
-            "Rank of Downloads": 5,
-            "xlsx_row_id": 6
+            "value": 96094,
+            "name": "The Road toward Smart Cities: Migrating from Traditional City Management to the Smart City",
+            "date": "07-07-2016"
         },
         {
-            "json_featuretype": "NewFeatureType",
             "Department": "Cultural, Solidarity and Creativity Affairs Division",
-            "E": "91600",
-            "Title": "Orange Economy: Innovations you may not know were from Latin America and the Caribbean",
-            "Published Date": "06/27/2017",
-            "Rank of Downloads": 6,
-            "xlsx_row_id": 7
+            "value": 91600,
+            "name": "Orange Economy: Innovations you may not know were from Latin America and the Caribbean",
+            "date": "06-27-2017"
         },
         {
-            "json_featuretype": "NewFeatureType",
             "Department": "Department of Research and Chief Economist",
-            "E": "91340",
-            "Title": "The Early Years: Child Well-being and the Role of Public Policy",
-            "Published Date": "10/26/2015",
-            "Rank of Downloads": 7,
-            "xlsx_row_id": 8
+            "value": 91340,
+            "name": "The Early Years: Child Well-being and the Role of Public Policy",
+            "date": "10-26-2015"
         },
         {
-            "json_featuretype": "NewFeatureType",
             "Department": "Social Protection and Health Division",
-            "E": "77935",
-            "Title": "A Toolkit for the Measurement of Youth Risk Behavior",
-            "Published Date": "12/26/2013",
-            "Rank of Downloads": 8,
-            "xlsx_row_id": 9
+            "value": 77935,
+            "name": "A Toolkit for the Measurement of Youth Risk Behavior",
+            "date": "12-26-2013"
         },
         {
-            "json_featuretype": "NewFeatureType",
             "Department": "Office of Outreach and Partnerships; Environment, Rural Development Disaster Risk Management Division; Office of the Multilateral Investment Fund; Integration and Trade Sector",
-            "E": "76956",
-            "Title": "The Next Global Breadbasket: How Latin America Can Feed the World: A Call to Action for Addressing Challenges & Developing Solutions",
-            "Published Date": "04/11/2014",
-            "Rank of Downloads": 9,
-            "xlsx_row_id": 10
+            "value": 76956,
+            "name": "The Next Global Breadbasket: How Latin America Can Feed the World: A Call to Action for Addressing Challenges & Developing Solutions",
+            "date": "04-11-2014"
         },
         {
-            "json_featuretype": "NewFeatureType",
             "Department": "Department of Research and Chief Economist",
-            "E": "74158",
-            "Title": "Learning Better: Public Policy for Skills Development",
-            "Published Date": "08/28/2017",
-            "Rank of Downloads": 10,
-            "xlsx_row_id": 11
+            "value": 74158,
+            "name": "Learning Better: Public Policy for Skills Development",
+            "date": "08-28-2017"
         }
     ],
-    topIDB2018: [{
-            "json_featuretype": "NewFeatureType",
-            "Downloads": "40104",
-            "Title": "Profesión: Profesor en América Latina ¿Por qué se perdió el prestigio docente y cómo recuperarlo?",
-            "Rank": 1,
-            "xlsx_row_id": 2
+    topIDB2018: [
+        {
+            "value": 40104,
+            "name": "Profesión: Profesor en América Latina ¿Por qué se perdió el prestigio docente y cómo recuperarlo?"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Downloads": "38279",
-            "Title": "Industria 4.0: Fabricando el Futuro",
-            "Rank": 2,
-            "xlsx_row_id": 3
+            "value": 38279,
+            "name": "Industria 4.0: Fabricando el Futuro"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Downloads": "36208",
-            "Title": "Inter-American Development Bank Annual Report 2017: The Year in Review",
-            "Rank": 3,
-            "xlsx_row_id": 4
+            "value": 36208,
+            "name": "Inter-American Development Bank Annual Report 2017: The Year in Review"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Downloads": "35691",
-            "Title": "Social Services for Digital Citizens: Opportunities for Latin America and the Caribbean",
-            "Rank": 4,
-            "xlsx_row_id": 5
+            "value": 35691,
+            "name": "Social Services for Digital Citizens: Opportunities for Latin America and the Caribbean"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Downloads": "33862",
-            "Title": "Integration and Trade Journal: Volume 22: No. 44: July, 2018: Planet Algorithm: Artificial Intelligence for a Predictive and Inclusive form of Integration in Latin America",
-            "Rank": 5,
-            "xlsx_row_id": 6
+            "value": 33862,
+            "name": "Integration and Trade Journal: Volume 22: No. 44: July, 2018: Planet Algorithm: Artificial Intelligence for a Predictive and Inclusive form of Integration in Latin America"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Downloads": "32347",
-            "Title": "2018 Latin American and Caribbean Macroeconomic Report: A Mandate to Grow",
-            "Rank": 6,
-            "xlsx_row_id": 7
+            "value": 32347,
+            "name": "2018 Latin American and Caribbean Macroeconomic Report: A Mandate to Grow"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Downloads": "26637",
-            "Title": "Better Spending for Better Lives: How Latin America and the Caribbean Can Do More with Less",
-            "Rank": 7,
-            "xlsx_row_id": 8
+            "value": 26637,
+            "name": "Better Spending for Better Lives: How Latin America and the Caribbean Can Do More with Less"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Downloads": "26446",
-            "Title": "Wait No More: Citizens, Red Tape, and Digital Government",
-            "Rank": 8,
-            "xlsx_row_id": 9
+            "value": 26446,
+            "name": "Wait No More: Citizens, Red Tape, and Digital Government"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Downloads": "26410",
-            "Title": "The Future of Work: Regional Perspectives",
-            "Rank": 9,
-            "xlsx_row_id": 10
+            "value": 26410,
+            "name": "The Future of Work: Regional Perspectives"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Downloads": "26151",
-            "Title": "Water in the Time of Drought: Lessons from Five Droughts around the World",
-            "Rank": 10,
-            "xlsx_row_id": 11
+            "value": 26151,
+            "name": "Water in the Time of Drought: Lessons from Five Droughts around the World"
         }
     ]
 };
