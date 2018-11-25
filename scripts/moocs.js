@@ -3,30 +3,31 @@
  *  */
 
 
-var dataDistribution = [{
-    "name": "Other/Not Reported",
-    "value": 20
-}, {
-    "name": "Elementary",
-    "value": 0
-}, {
-    "name": "High School",
-    "value": 3
-}, {
-    "name": "Associate",
-    "value": 4
-}, {
-    "name": "Bachelor",
-    "value": 14
-}, {
-    "name": "Master",
-    "value": 9
-}, {
-    "name": "Doctorate",
-    "value": 1
-}];
+// var dataDistribution = [{
+//     "name": "Other/Not Reported",
+//     "value": 20
+// }, {
+//     "name": "Elementary",
+//     "value": 0
+// }, {
+//     "name": "High School",
+//     "value": 3
+// }, {
+//     "name": "Associate",
+//     "value": 4
+// }, {
+//     "name": "Bachelor",
+//     "value": 14
+// }, {
+//     "name": "Master",
+//     "value": 9
+// }, {
+//     "name": "Doctorate",
+//     "value": 1
+// }];
 
-drawDistributionChart(dataDistribution);
+// drawDistributionChart(dataDistribution);
+drawDistributionChart(moocsEducationArrays.educationLevelIDB);
 
 function wrap(text, width) {
     text.each(function () {
@@ -88,9 +89,9 @@ function drawDistributionChart(dataDistribution) {
         .attr("x", function (d) {
             return xDistribution(d.name);
         })
-        .attr("width", xDistribution.bandwidth() - 25)
-        .attr("rx", 25)
-        .attr("ry", 25)
+        .attr("width", xDistribution.bandwidth() - 15)
+        .attr("rx", 15)
+        .attr("ry", 15)
         .attr("y", function (d) {
             return yDistribution(d.value + 3);
         })
@@ -108,7 +109,7 @@ function drawDistributionChart(dataDistribution) {
         .append("text")
         .text(function (d) {
 
-            return d.value + "K";
+            return (Math.round(d.value / 1000).toFixed(0)) + "K";
         })
         .attr("y", function (d) {
             return yDistribution(1);
@@ -117,6 +118,7 @@ function drawDistributionChart(dataDistribution) {
             return i * xDistribution.bandwidth() + 21; //Bar width of 20 plus 1 for padding
         })
         .attr("font-family", "Gotham-Bold")
+        .attr("padding-bottom", "10px")
         .attr("font-size", "12px");
 
     svgDistribution.append("g")
@@ -169,6 +171,8 @@ function orderTopMoocs(data) {
     });
     return dataMoocs;
 }
+
+
 
 
 drawMoocsRegistrationsChart(orderTopMoocs(moocsTopArrays.IDBAlltime));
@@ -635,44 +639,50 @@ function drawStudentCertifiedsChart(dataStudents) {
 /**
  * Start timelines
  *  */
-var dataTimeline = [{
-        "date": "1-Jul-18",
-        "close": 60000
-    },
-    {
-        "date": "30-Apr-18",
-        "close": 50000
-    },
-    {
-        "date": "27-Jan-18",
-        "close": 45000
-    },
-    {
-        "date": "26-Dec-17",
-        "close": 35000
-    },
-    {
-        "date": "24-Jul-17",
-        "close": 20000
-    },
-    {
-        "date": "20-Dec-16",
-        "close": 30000
-    }, {
-        "date": "16-Jul-16",
-        "close": 25000
-    },
-    {
-        "date": "27-Mar-14",
-        "close": 12000
-    },
-    {
-        "date": "26-Jan-13",
-        "close": 5000
-    }
-]
+// var dataTimeline = [{
+//         "date": "1-Jul-18",
+//         "close": 60000
+//     },
+//     {
+//         "date": "30-Apr-18",
+//         "close": 50000
+//     },
+//     {
+//         "date": "27-Jan-18",
+//         "close": 45000
+//     },
+//     {
+//         "date": "26-Dec-17",
+//         "close": 35000
+//     },
+//     {
+//         "date": "24-Jul-17",
+//         "close": 20000
+//     },
+//     {
+//         "date": "20-Dec-16",
+//         "close": 30000
+//     }, {
+//         "date": "16-Jul-16",
+//         "close": 25000
+//     },
+//     {
+//         "date": "27-Mar-14",
+//         "close": 12000
+//     },
+//     {
+//         "date": "26-Jan-13",
+//         "close": 5000
+//     }
+// ]
 
-createChart(dataTimeline);
+function sortByDateAscending(a, b) {
+    // Dates will be cast to numbers automagically:
+    return new Date(b.date) - new Date(a.date);
+}
+var registrationTimelineIDB = $.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB);
+
+createChart(registrationTimelineIDB);
 
 function createChart(data) {
     var margin = {
@@ -723,6 +733,8 @@ function createChart(data) {
     data.forEach(function (d) {
         d.date = parseTime(d.date);
     });
+
+    data = data.sort(sortByDateAscending);
 
     for (var i = 0; i < data.length; i++) {
         data[i].close = +data[i].close;
@@ -781,8 +793,48 @@ function createChart(data) {
         .style('stroke-width', '3px')
         .style("font-family", "Gotham-Book")
         .style("font-size", "13px")
-        .call(d3.axisBottom(x));
+        // .call(d3.axisBottom(x));
+        .call(d3.axisBottom(x)
+            .ticks(d3.timeDay.filter(d => d3.timeDay.count(0, d) % 300 === 0))
+            .tickFormat(function (x) {
+                // get the milliseconds since Epoch for the date
+                var milli = (x.getTime() - 10000);
 
+                // calculate new date 10 seconds earlier. Could be one second,
+                // but I like a little buffer for my neuroses
+                var vanilli = new Date(milli);
+
+                // calculate the month (0-11) based on the new date
+                var mon = vanilli.getMonth();
+                var yr = vanilli.getFullYear();
+
+                // return appropriate quarter for that month
+                if ($("#2018Radio").prop("checked")) {
+                    if (mon <= 2 && yr == 2018) {
+                        return yr;
+                    } else if (mon <= 5 && yr == 2018) {
+                        return yr;
+                    } else if (mon <= 8 && yr == 2018) {
+                        return yr;
+                    } else if (yr == 2018) {
+                        return yr;
+                    }
+                } else {
+                    if (mon <= 2) {
+                        return yr;
+                    } else if (mon <= 5) {
+                        return yr;
+                    } else if (mon <= 8) {
+                        return yr;
+                    } else {
+                        return yr;
+                    }
+                }
+
+
+            })
+            .tickSizeOuter(0)
+        );
     // add the Y Axis
     svg.append("g")
         .attr("class", "y-axis")
@@ -799,15 +851,21 @@ function createChart(data) {
 //click radiobutton drawChart(id del click)
 $("input[name*='moocsTrend']").click(function () {
 
+    var test = $.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB);
+
+
     d3.select("#moocs-registrations svg").remove();
+    d3.select("#timeline-moocs svg").remove();
 
     if ($(this).val() === 'all') {
         drawMoocsRegistrationsChart(orderTopMoocs(moocsTopArrays.IDBAlltime));
 
-    } else if ($(this).val() === '2018') {
+    } else {
         drawMoocsRegistrationsChart(orderTopMoocs(moocsTopArrays.IDB2018));
 
     }
+    createChart(test);
+
     //name -> codeTrend -> 2018 ->
     /*if(active dpto o division){
         value de ese select
