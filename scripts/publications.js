@@ -9,7 +9,7 @@ function sortByDateAscending(a, b) {
     return a.date - b.date;
 }
 
-function createChartTimeline(data) {
+function createChartTimelinePublication(data) {
     if ($("#publication2018").prop("checked")) {
         data = data.filter(data => data.date.indexOf("-18") > -1);
     }
@@ -63,9 +63,6 @@ function createChartTimeline(data) {
     });
 
     data = data.sort(sortByDateAscending);
-
-    console.log("publication",data);
-
 
     for (var i = 0; i < data.length; i++) {
         data[i].close = +data[i].close;
@@ -457,11 +454,11 @@ function drawGaugePublicationChart(dataGauge) {
         .attr("text-anchor", "middle")
         .attr("class", "percent-complete")
         .attr("dy", "0.3em")
-        .text(dataGauge.publication.allocated + "k");
+        .text(dataGauge.publication.allocated );
 
 
     var i4 = d3.interpolate(progress4, dataGauge.publication.allocated / dataGauge.publication.total);
-
+    foreground4.attr("d", arc4.endAngle(twoPi * i4(1)));
     //gauge K
 
     var arc2 = d3.arc()
@@ -493,7 +490,7 @@ function drawGaugePublicationChart(dataGauge) {
 
 
     var i2 = d3.interpolate(progress2, dataGauge.download.allocated / dataGauge.download.total);
-
+    foreground2.attr("d", arc2.endAngle(twoPi * i2(1)));
     //gauge %
 
     var arc3 = d3.arc()
@@ -525,7 +522,7 @@ function drawGaugePublicationChart(dataGauge) {
 
 
     var i3 = d3.interpolate(progress3, dataGauge.lac.allocated / dataGauge.lac.total);
-
+    foreground3.attr("d", arc3.endAngle(twoPi * i3(1)));
     // d3.transition().duration(1000).tween("progress", function () {
     //     return function (t) {
     //         progress4 = i4(t);
@@ -972,11 +969,14 @@ function drawLinesChartPublication(data) {
 
     }
 ]
-drawPlotChartPublication(dataPlotPublication);
 function drawPlotChartPublication(data) {
-    // if ($("#code2018").prop("checked")) {
-    //     data = data.filter(data => data.publishedDate.indexOf("-18") > -1);
-    // }
+    console.log(data)
+    if ($("#publication2018").prop("checked")) {
+          //data = data.filter(data => data.publishedDate.indexOf("-18") > -1);
+          data.filter(function( data ) {
+            return data.publishedDate.indexOf("-18")
+          })
+    }
     data.forEach(d => {
         d.daysPublished = +d.daysPublished;
         d.departmentCode = +d.departmentCode;
@@ -1079,23 +1079,28 @@ function drawPlotChartPublication(data) {
 
 //init
 var downloadTimelineIDB = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineIDB);
+var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
 
-
-createChartTimeline(downloadTimelineIDB);
+createChartTimelinePublication(downloadTimelineIDB);
 drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
+drawPlotChartPublication(ObjectpublicationsAttention);
 
 //click radiobutton drawChart(id del click)
 $("input[name*='publicationTrend']").click(function () {
     var downloadTimelineIDBTEST = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineIDB);
+    var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
 
     d3.select("#timeline-publication svg").remove();
     d3.select("#publication-trend svg").remove();
-
+    d3.select("#publications-plot svg").remove();
+    
     if (this.id == "publicationAllTime") {
-        createChartTimeline(downloadTimelineIDBTEST);        
+        createChartTimelinePublication(downloadTimelineIDBTEST);        
         drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
+        drawPlotChartPublication(ObjectpublicationsAttention);
     } else {
-        createChartTimeline(downloadTimelineIDBTEST);
+        createChartTimelinePublication(downloadTimelineIDBTEST);
         drawTrendPublicationChart(publicationsTopArrays.topIDB2018);
+        drawPlotChartPublication(ObjectpublicationsAttention);
     }
 });

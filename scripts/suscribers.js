@@ -276,7 +276,7 @@ function drawAgeSuscribersChart(dataAgeSuscribers) {
  *  */
 
 
-  /**
+/**
  * Start tree
  *  */
 
@@ -297,7 +297,7 @@ var dataTree = {
                     "name": "Male",
                     "size": 18
                 }]
-            },{
+            }, {
                 "name": "graph",
                 "children": [{
                     "name": "Female",
@@ -370,7 +370,7 @@ function drawTree(dataTree) {
  * End tree
  *  */
 
- /** 
+/** 
  * Start Gauges
  */
 
@@ -429,7 +429,7 @@ function drawGaugeDatasetChart(dataGauge) {
 
 
     var i = d3.interpolate(progress, dataGauge.code.allocated / dataGauge.code.total);
-
+    foreground.attr("d", arc.endAngle(twoPi * i(1)));
     //gauge K
 
     var arc2 = d3.arc()
@@ -461,7 +461,7 @@ function drawGaugeDatasetChart(dataGauge) {
 
 
     var i2 = d3.interpolate(progress2, dataGauge.pageview.allocated / dataGauge.pageview.total);
-
+    foreground2.attr("d", arc2.endAngle(twoPi * i2(1)));
     //gauge %
 
     var arc3 = d3.arc()
@@ -493,24 +493,144 @@ function drawGaugeDatasetChart(dataGauge) {
 
 
     var i3 = d3.interpolate(progress3, dataGauge.lac.allocated / dataGauge.lac.total);
-
-    // d3.transition().duration(1000).tween("progress", function () {
-    //     return function (t) {
-    //         progress = i(t);
-    //         foreground.attr("d", arc.endAngle(twoPi * progress));
-    //         percentComplete.text((progress * 100).toFixed(0));
-    //         progress2 = i2(t);
-    //         foreground2.attr("d", arc2.endAngle(twoPi * progress2));
-    //         percentComplete2.text((progress2 * 1000).toFixed(0) + "K");
-    //         progress3 = i3(t);
-    //         foreground3.attr("d", arc3.endAngle(twoPi * progress3));
-    //         percentComplete3.text((progress3 * 100).toFixed(0) + "%");
-
-    //     };
-    // });
+    foreground3.attr("d", arc3.endAngle(twoPi * i3(1)));
 }
 
 
- /**
-  * End Gauges
-  */
+/**
+ * End Gauges
+ */
+
+/**
+ * Start suscribers-interested
+ */
+
+var testData = [{
+        "name": "Education",
+        "value": 75000,
+    },
+    {
+        "name": "Early Childhood Development",
+        "value": 60300,
+    },
+    {
+        "name": "Social Protection and Poverty",
+        "value": 58700,
+    },
+    {
+        "name": "Labor and Pensions",
+        "value": 41700,
+    },
+    {
+        "name": "Health",
+        "value": 41200,
+    },
+    {
+        "name": "Gender and diversity",
+        "value": 36900,
+    }
+];
+
+function orderTopDataSuscribers(data) {
+    var dataSet = data.sort(function (a, b) {
+        return d3.ascending(a.value, b.value);
+    });
+    return dataSet;
+}
+
+
+drawSuscribersChart(orderTopDataSuscribers(testData));
+
+function drawSuscribersChart(dataSet) {
+
+    var marginSuscriber = {
+        top: 15,
+        right: 50,
+        bottom: 15,
+        left: 15
+    };
+
+    var widthSuscriber = 560 - marginSuscriber.left - marginSuscriber.right,
+        heightSuscriber = 200 - marginSuscriber.top - marginSuscriber.bottom;
+
+
+    var svgSuscribers = d3.select("#suscribers-interested").append("svg")
+        .attr("width", widthSuscriber + marginSuscriber.left + marginSuscriber.right)
+        .attr("height", heightSuscriber + marginSuscriber.top + marginSuscriber.bottom)
+        .append("g")
+        .attr("transform", "translate(" + marginSuscriber.left + "," + marginSuscriber.top + ")");
+
+    var xSuscribers = d3.scaleLinear()
+        .range([0, widthSuscriber])
+        .domain([0, d3.max(dataSet, function (d) {
+            return d.value;
+        })]);
+
+    var ySuscribers = d3.scaleBand()
+
+        .rangeRound([heightSuscriber, 0], .1)
+        .domain(dataSet.map(function (d) {
+            return d.value;
+        }));
+
+    var yAxisSuscribers = d3.axisLeft(ySuscribers)
+        //no tick marks
+        .tickPadding(55)
+        .tickSize(0);
+
+    var barsSuscribers = svgSuscribers.selectAll(".bar")
+        .data(dataSet)
+        .enter()
+        .append("g")
+
+    barsSuscribers.append("rect")
+        .attr("class", "bar")
+        .attr("y", function (d) {
+            return ySuscribers(d.value);
+        })
+        .attr("fill", "#9ebbc2")
+        .attr("stroke-width", 1)
+        .attr("stroke", "#337384")
+        .attr("height", ySuscribers.bandwidth() - 5)
+        .attr("x", 8)
+        .attr("width", function (d) {
+            return xSuscribers(d.value);
+        });
+
+    barsSuscribers.append("text")
+        .attr("class", "label")
+        //y position of the label is halfway down the bar
+        .attr("y", function (d) {
+            return ySuscribers(d.value) + ySuscribers.bandwidth() / 2 + 4;
+        })
+        //x position is 3 pixels to the right of the bar
+        .attr("x", function (d) {
+            return 12;
+        })
+        .attr("class", "text-inside")
+        .attr("font-family", "Gotham-Bold")
+        .attr("font-size", "12px")
+        .text(function (d) {
+            return d.name;
+        });
+    barsSuscribers.append("text")
+        .attr("class", "label")
+        //y position of the label is halfway down the bar
+        .attr("y", function (d) {
+            return ySuscribers(d.value) + ySuscribers.bandwidth() / 2 + 4;
+        })
+        //x position is 3 pixels to the right of the bar
+        .attr("x", function (d) {
+            return xSuscribers(d.value) + 10;
+        })
+        .attr("font-family", "Gotham-Bold")
+        .attr("font-size", "12px")
+        .text(function (d) {
+            return d.value/1000+"K";
+        });
+}
+
+
+/**
+ * End suscribers-interested
+ */

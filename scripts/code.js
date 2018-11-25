@@ -324,7 +324,8 @@ function createChartTimeline(data) {
         .style("font-size", "13px")
         .call(d3.axisBottom(x))
         .call(d3.axisBottom(x)
-            .ticks(d3.timeDay.filter(d => d3.timeDay.count(0, d) % 100 === 0))
+            //.ticks(d3.timeDay.filter(d => d3.timeDay.count(0, d) % 100 === 0))
+            .ticks(d3.timeDay.filter(d => $("#code2018").prop("checked") ? d3.timeDay.count(0, d) % 60 === 0 : d3.timeDay.count(0, d) % 100 === 0))
             .tickFormat(function (x) {
                 // get the milliseconds since Epoch for the date
                 var milli = (x.getTime() - 10000);
@@ -710,7 +711,7 @@ function drawGaugeCodeChart(dataGauge) {
 
 
     var i = d3.interpolate(progress, dataGauge.code.allocated / dataGauge.code.total);
-
+    foreground.attr("d", arc.endAngle(twoPi * i(1)));
     //gauge K
 
     var arc2 = d3.arc()
@@ -742,7 +743,7 @@ function drawGaugeCodeChart(dataGauge) {
 
 
     var i2 = d3.interpolate(progress2, dataGauge.pageview.allocated / dataGauge.pageview.total);
-
+    foreground2.attr("d", arc2.endAngle(twoPi * i2(1)));
     //gauge %
 
     var arc3 = d3.arc()
@@ -773,7 +774,7 @@ function drawGaugeCodeChart(dataGauge) {
         .text(dataGauge.lac.allocated + "%");
 
     var i3 = d3.interpolate(progress3, dataGauge.lac.allocated / dataGauge.lac.total);
-
+    foreground3.attr("d", arc3.endAngle(twoPi * i3(1)));
     // d3.transition().duration(1000).tween("progress", function () {
     //     return function (t) {
     //         progress = i(t);
