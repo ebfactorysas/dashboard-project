@@ -880,3 +880,146 @@ $("input[name*='moocsTrend']").click(function () {
     // createChartTimeline(pageViewsTimeLine[this.id]);
 
 });
+
+
+/** 
+ * Start Gauges
+ */
+
+var dataGauge = {
+    "code": {
+        "total": 100,
+        "allocated": 76
+    },
+    "pageview": {
+        "total": 1000,
+        "allocated": 113
+    },
+    "lac": {
+        "total": 100,
+        "allocated": 9
+    }
+}
+
+drawGaugeChart(dataGauge)
+
+function drawGaugeChart(dataGauge) {
+    var width = 150,
+        height = 150,
+        progress = 0,
+        progress3 = 0,
+        progress2 = 0,
+        formatPercent = d3.format(".0%");
+    const twoPi = 2 * Math.PI;
+
+    var arc = d3.arc()
+        .startAngle(0)
+        .innerRadius(70)
+        .outerRadius(64);
+
+    var svg = d3.selectAll("#gauge-moocs").append("svg")
+        .attr("width", width)
+        .attr("height", height)
+        .append("g")
+        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+    var meter = svg.append("g")
+        .attr("class", "funds-allocated-meter");
+
+    meter.append("path")
+        .attr("class", "background")
+        .attr("d", arc.endAngle(twoPi));
+
+    var foreground = meter.append("path")
+        .attr("class", "foreground");
+
+    var percentComplete = meter.append("text")
+        .attr("text-anchor", "middle")
+        .attr("class", "percent-complete")
+        .attr("dy", "0.3em");
+
+
+    var i = d3.interpolate(progress, dataGauge.code.allocated / dataGauge.code.total);
+
+    //gauge K
+
+    var arc2 = d3.arc()
+        .startAngle(0)
+        .innerRadius(70)
+        .outerRadius(64);
+
+    var svg2 = d3.selectAll("#gauge-registrations-m").append("svg")
+        .attr("width", width)
+        .attr("height", height)
+        .append("g")
+        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+    var meter2 = svg2.append("g")
+        .attr("class", "funds-allocated-meter");
+
+    meter2.append("path")
+        .attr("class", "background")
+        .attr("d", arc2.endAngle(twoPi));
+
+    var foreground2 = meter2.append("path")
+        .attr("class", "foreground");
+
+    var percentComplete2 = meter2.append("text")
+        .attr("text-anchor", "middle")
+        .attr("class", "percent-complete")
+        .attr("dy", "0.3em");
+
+
+    var i2 = d3.interpolate(progress2, dataGauge.pageview.allocated / dataGauge.pageview.total);
+
+    //gauge %
+
+    var arc3 = d3.arc()
+        .startAngle(0)
+        .innerRadius(70)
+        .outerRadius(64);
+
+    var svg3 = d3.selectAll("#gauge-lac-m").append("svg")
+        .attr("width", width)
+        .attr("height", height)
+        .append("g")
+        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+    var meter3 = svg3.append("g")
+        .attr("class", "funds-allocated-meter");
+
+    meter3.append("path")
+        .attr("class", "background")
+        .attr("d", arc3.endAngle(twoPi));
+
+    var foreground3 = meter3.append("path")
+        .attr("class", "foreground");
+
+    var percentComplete3 = meter3.append("text")
+        .attr("text-anchor", "middle")
+        .attr("class", "percent-complete")
+        .attr("dy", "0.3em");
+
+
+    var i3 = d3.interpolate(progress3, dataGauge.lac.allocated / dataGauge.lac.total);
+
+    d3.transition().duration(1000).tween("progress", function () {
+        return function (t) {
+            progress = i(t);
+            foreground.attr("d", arc.endAngle(twoPi * progress));
+            percentComplete.text((progress * 100).toFixed(0));
+            progress2 = i2(t);
+            foreground2.attr("d", arc2.endAngle(twoPi * progress2));
+            percentComplete2.text((progress2 * 1000).toFixed(0) + "K");
+            progress3 = i3(t);
+            foreground3.attr("d", arc3.endAngle(twoPi * progress3));
+            percentComplete3.text((progress3 * 100).toFixed(0) + "%");
+
+        };
+    });
+}
+
+
+ /**
+  * End Gauges
+  */
