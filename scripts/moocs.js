@@ -1,3 +1,13 @@
+function orderTopMoocs(data) {
+    var dataMoocs = data.sort(function (a, b) {
+        return d3.ascending(a.value, b.value);
+    });
+    return dataMoocs;
+}
+
+var topAllMoocs = orderTopMoocs(moocsTopArrays.IDBAlltime)
+var top2018Moocs = orderTopMoocs(moocsTopArrays.IDB2018)
+
 /**
  * Start distribution-moocs
  **/
@@ -119,15 +129,11 @@ function drawDistributionChart(dataDistribution) {
  * Start registration-moocs
  */
 
-function orderTopMoocs(data) {
-    var dataMoocs = data.sort(function (a, b) {
-        return d3.ascending(a.value, b.value);
-    });
-    return dataMoocs;
-}
 
 
-drawMoocsRegistrationsChart(orderTopMoocs(moocsTopArrays.IDBAlltime));
+
+
+drawMoocsRegistrationsChart(topAllMoocs);
 
 function drawMoocsRegistrationsChart(dataMoocs) {
 
@@ -777,38 +783,7 @@ function createChart(data) {
  *  */
 
 //click radiobutton drawChart(id del click)
-$("input[name*='moocsTrend']").click(function () {
 
-    var timeLineIDB = $.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB);
-
-
-    d3.select("#moocs-registrations svg").remove();
-    d3.select("#timeline-moocs svg").remove();
-
-    if ($(this).val() === 'all') {
-        drawMoocsRegistrationsChart(orderTopMoocs(moocsTopArrays.IDBAlltime));
-
-    } else {
-        drawMoocsRegistrationsChart(orderTopMoocs(moocsTopArrays.IDB2018));
-
-    }
-    console.log("Carga de nuevo con el click=> ", moocsRegistrationTimeline.registrationTimelineIDB);
-    createChart(timeLineIDB);
-
-    //name -> codeTrend -> 2018 ->
-    /*if(active dpto o division){
-        value de ese select
-        data.filter(value)
-    }else{
-        codetrend2018 o all time "IDB";
-    }*/
-    // drawChartCodeTrend(codetrendArrays[this.id]);
-
-    //graph #4
-    // d3.select("#timeline-code svg").remove();
-    // createChartTimeline(pageViewsTimeLine[this.id]);
-
-});
 
 
 /** 
@@ -930,7 +905,7 @@ function drawGaugeMoocsChart(dataGauge) {
         .attr("text-anchor", "middle")
         .attr("class", "percent-complete")
         .attr("dy", "0.3em")
-        percentComplete3.text((dataGauge.lac.allocated + "%"));
+    percentComplete3.text((dataGauge.lac.allocated + "%"));
 
 
     var i3 = d3.interpolate(progress3, dataGauge.lac.allocated / dataGauge.lac.total);
@@ -952,6 +927,104 @@ function drawGaugeMoocsChart(dataGauge) {
 }
 
 
- /**
-  * End Gauges
-  */
+/**
+ * End Gauges
+ */
+
+
+
+/**
+ * Start Filters
+ */
+function removeMoocsSvg() {
+    d3.select("#moocs-registrations svg").remove();
+}
+
+function divisionFilter(moocsJson, filterBy) {
+    return moocsJson.filter(function (entry) {
+        return entry.code === filterBy;
+    });
+}
+
+function departmentFilter(moocsJson, filterBy) {
+    return moocsJson.filter(function (entry) {
+        return entry.code === filterBy;
+    });
+}
+
+function moocsFilter() {
+    removeMoocsSvg();
+    //Load the json
+    switch ($("input[name*='moocsTrend']:checked").val()) {
+        case 'all':
+
+            //top registration chart
+            if ($("select[id*='divisionSelect']").val().length > 0) {
+                drawMoocsRegistrationsChart(orderTopMoocs(divisionFilter(moocsTopArrays.divisionsAlltime, $("select[id*='divisionSelect']").val())));
+            } else if ($("select[id*='deparmentSelect']").val().length > 0) {
+                drawMoocsRegistrationsChart(orderTopMoocs(departmentFilter(moocsTopArrays.departmentsAllTime, $("select[id*='deparmentSelect']").val())));
+            } else {
+                drawMoocsRegistrationsChart(topAllMoocs);
+            }
+
+            break;
+
+        default:
+            //top registration chart
+            if ($("select[id*='divisionSelect']").val().length > 0) {
+                drawMoocsRegistrationsChart(orderTopMoocs(divisionFilter(moocsTopArrays.divisions2018, $("select[id*='divisionSelect']").val())));
+            } else if ($("select[id*='deparmentSelect']").val().length > 0) {
+                drawMoocsRegistrationsChart(orderTopMoocs(departmentFilter(moocsTopArrays.departments2018, $("select[id*='deparmentSelect']").val())));
+            } else {
+                drawMoocsRegistrationsChart(top2018Moocs);
+            }
+            break;
+    }
+}
+// Divisions select filter
+$("select[id*='divisionSelect']").change(function () {
+    $("select[id*='deparmentSelect']").val("");
+    moocsFilter();
+});
+
+// Deparment select filter
+$("select[id*='deparmentSelect']").change(function () {
+    $("select[id*='divisionSelect']").val("");
+    moocsFilter();
+});
+
+$("#idbLink").click(function () {
+    $("select[id*='deparmentSelect']").val("");
+    $("select[id*='divisionSelect']").val("");
+    moocsFilter();
+});
+
+
+
+$("input[name*='moocsTrend']").click(function () {
+    moocsFilter();
+
+    // removeSvg();
+
+    // var timeLineIDB = $.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB);
+
+
+    // d3.select("#moocs-registrations svg").remove();
+
+    // if ($(this).val() === 'all') {
+    //     drawMoocsRegistrationsChart(orderTopMoocs(moocsTopArrays.IDBAlltime));
+
+    // } else {
+    //     drawMoocsRegistrationsChart(orderTopMoocs(moocsTopArrays.IDB2018));
+
+    // }
+    // console.log("Carga de nuevo con el click=> ", moocsRegistrationTimeline.registrationTimelineIDB);
+    // createChart(timeLineIDB);
+
+
+});
+
+
+/**
+ * End Filters
+ */
