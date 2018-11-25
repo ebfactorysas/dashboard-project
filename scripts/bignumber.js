@@ -103,6 +103,7 @@ function publicationsIndicator2018(jsondata){
 
 function setDataPublications(dataResults) {
     optionsUpdated = optionsAnimation;
+    console.log(dataResults.downloadsValue);
     if (parseFloat(dataResults.publicationsValue) > 1000) {
         dataResults.publicationsValue = dataResults.publicationsValue/1000;
         optionsUpdated.suffix = "K"
@@ -115,9 +116,13 @@ function setDataPublications(dataResults) {
     }
 
     optionsUpdated = optionsAnimation;
-    if (parseFloat(dataResults.downloadsValue) > 1000) {
+    if (parseFloat(dataResults.downloadsValue) > 1000 && parseFloat(dataResults.downloadsValue) < 1000000) {
         dataResults.downloadsValue = dataResults.downloadsValue/1000;
         optionsUpdated.suffix = "K"
+    }
+    else if(parseFloat(dataResults.downloadsValue) > 1000000){
+        dataResults.downloadsValue = dataResults.downloadsValue / 1000000;
+        optionsUpdated.suffix = "M"
     }
     
     var publications_downloads = new CountUp('publications_downloads', 0, dataResults.downloadsValue, 0, 1.5, optionsUpdated);
@@ -298,6 +303,7 @@ function codeIndicator2018(jsondata) {
 }
 
 function setCode(dataResults) {
+    console.log(dataResults.codeValue);
     optionsUpdated = optionsAnimation;
     if (parseFloat(dataResults.codeValue) > 1000) {
         dataResults.codeValue = dataResults.codeValue / 1000;
