@@ -64,9 +64,6 @@ function createChartTimeline(data) {
 
     data = data.sort(sortByDateAscending);
 
-    console.log("publication",data);
-
-
     for (var i = 0; i < data.length; i++) {
         data[i].close = +data[i].close;
         totalAmount += data[i].close;
@@ -972,11 +969,14 @@ function drawLinesChartPublication(data) {
 
     }
 ]
-drawPlotChartPublication(dataPlotPublication);
 function drawPlotChartPublication(data) {
-    // if ($("#code2018").prop("checked")) {
-    //     data = data.filter(data => data.publishedDate.indexOf("-18") > -1);
-    // }
+    console.log(data)
+    if ($("#publication2018").prop("checked")) {
+          //data = data.filter(data => data.publishedDate.indexOf("-18") > -1);
+          data.filter(function( data ) {
+            return data.publishedDate.indexOf("-18")
+          })
+    }
     data.forEach(d => {
         d.daysPublished = +d.daysPublished;
         d.departmentCode = +d.departmentCode;
@@ -1079,23 +1079,28 @@ function drawPlotChartPublication(data) {
 
 //init
 var downloadTimelineIDB = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineIDB);
-
+var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
 
 createChartTimeline(downloadTimelineIDB);
 drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
+drawPlotChartPublication(ObjectpublicationsAttention);
 
 //click radiobutton drawChart(id del click)
 $("input[name*='publicationTrend']").click(function () {
     var downloadTimelineIDBTEST = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineIDB);
+    var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
 
     d3.select("#timeline-publication svg").remove();
     d3.select("#publication-trend svg").remove();
-
+    d3.select("#publications-plot svg").remove();
+    
     if (this.id == "publicationAllTime") {
         createChartTimeline(downloadTimelineIDBTEST);        
         drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
+        drawPlotChartPublication(ObjectpublicationsAttention);
     } else {
         createChartTimeline(downloadTimelineIDBTEST);
         drawTrendPublicationChart(publicationsTopArrays.topIDB2018);
+        drawPlotChartPublication(ObjectpublicationsAttention);
     }
 });
