@@ -308,51 +308,14 @@ function drawTree(dataTree) {
  *  Start trend
  */
 
-var dataPublicationTrend = [{
-        "name": "Profesión: Profesor en América Latina ¿Por qué se perdió el prestigio docente y cómo rec",
-        "value": 26.2,
-    },
-    {
-        "name": "Social Services for Digital Citizens: Opportunities for Latin America and the Caribbean",
-        "value": 23.6,
-    },
-    {
-        "name": "La priorización en salud paso a paso: Cómo articulan sus procesos México, Brasil y Colomb",
-        "value": 15.9,
-    },
-    {
-        "name": "Datos asociados al 'Panorama de enevejeciemiento y depenedencia en América La...",
-        "value": 12.7,
-    },
-    {
-        "name": "Suriname Survey of Living Conditions: 2016-2017",
-        "value": 8.6,
-    },
-    {
-        "name": "Standarized Public Debt Database",
-        "value": 7.6,
-    },
-    {
-        "name": "Primary Healthcare Access, Experience, and Coordination in Latin America and the Caribb...",
-        "value": 3.9,
-    }, {
-        "name": "Barbados Survey of Living Conditions:2016",
-        "value": 3.0,
-    }, {
-        "name": "Guyana Labor Force Survey: Fourth Quater 2017",
-        "value": .7,
-    },
-    {
-        "name": "Should I Stay or Should I Go?",
-        "value": .6,
-    }
-];
 
-dataPublicationTrend = dataPublicationTrend.sort(function (a, b) {
-    return d3.ascending(a.value, b.value);
-})
 
 function drawTrendPublicationChart(dataPublicationTrend) {
+    
+    dataPublicationTrend = dataPublicationTrend.sort(function (a, b) {
+        return d3.ascending(a.value, b.value);
+    });
+
     var marginPublicationTrend = {
         top: 15,
         right: 25,
@@ -1119,17 +1082,20 @@ var downloadTimelineIDB = $.extend(true, [], publicationsDownloadTimelineArray.d
 
 
 createChartTimeline(downloadTimelineIDB);
-drawTrendPublicationChart(dataPublicationTrend);
+drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
 
 //click radiobutton drawChart(id del click)
 $("input[name*='publicationTrend']").click(function () {
     var downloadTimelineIDBTEST = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineIDB);
 
     d3.select("#timeline-publication svg").remove();
+    d3.select("#publication-trend svg").remove();
 
     if (this.id == "publicationAllTime") {
         createChartTimeline(downloadTimelineIDBTEST);        
+        drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
     } else {
         createChartTimeline(downloadTimelineIDBTEST);
+        drawTrendPublicationChart(publicationsTopArrays.topIDB2018);
     }
 });
