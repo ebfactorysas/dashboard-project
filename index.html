@@ -149,11 +149,13 @@
                             <div class="col-12 border-right-dash d-flex justify-content-center align-items-center flex-column">
                                 <h4>DATASETS</h4>
                                 <h1 class="pt-4 pb-4 valuedatasets">2</h1>
-                                <p><span id="datasets_porcent">100%</span> OF 2018 DATASETS <br> <span id="datasets_compare_2017">-13</span> COMPARED TO 2017</p>
+                                <p><span id="datasets_porcent">100%</span> OF 2018 DATASETS <br> <span id="datasets_compare_2017">-13</span>
+                                    COMPARED TO 2017</p>
                                 <img class="pt-4 pb-4" src="img/arrow-down.png" alt="arrow-down">
                                 <h4>DOWNLOADS</h4>
                                 <h1 class="pt-4 pb-4 datasets_downloads">2K</h1>
-                                <p><span id="datasets_downloads_porcent">8%</span> OF 2018 DOWNLOADS <br> <span id="datsets_downloads_lac">56%</span> FROM LAC</p>
+                                <p><span id="datasets_downloads_porcent">8%</span> OF 2018 DOWNLOADS <br> <span id="datsets_downloads_lac">56%</span>
+                                    FROM LAC</p>
                             </div>
                         </div>
                         <div class="col-sm">
@@ -221,9 +223,16 @@
                 </div>
                 <div class="col right-bar grayr-background">
                     <div class="row m-2 pb-2 d-border-bottom">
-                        <div class="col-12 ">
-                            <p class="text-right"> <i class="far fa-circle fa-xs"></i> ALL THE TIME &nbsp; <i class="far fa-dot-circle"></i>
-                                2018 DATA</p>
+                        <div class="col-12 text-right">
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="AllTime form-check-input yellow" id="publicationAllTime"
+                                    name="publicationTrend" value="AllTheTime" checked>
+                                <label class="form-check-label red font-weight-bold" for="allTheTime">All The Time</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="2018" id="publication2018" name="publicationTrend" value="2018Data">
+                                <label class="form-check-label red font-weight-bold" for="2018Data">2018 Data</label>
+                            </div>
                         </div>
                         <div class="left-zone pb-4 pr-4">
                             <div class="col-sm-12 top-zone d-border-bottom">
@@ -253,7 +262,7 @@
                                         <span class="pr-2">&nbsp;LAST 30 DAYS</span> <span>&nbsp;LAST WEEK</span></div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-2"><svg id="lines-publications" width="120" height="400"></svg></div>
                                     <div id="publication-trend" class="col-sm-10"></div>
                                 </div>
 
@@ -266,7 +275,7 @@
                                 <h4>PUBLICATIONS THAT NEED YOUR ATTENTION</h4>
                                 <p>red circles below represent the <span>SCL</span> publications that are published for
                                     least 200 days and that reached less than 1000 downloads</p>
-                                <div id="publications"></div>
+                                <div id="publications-plot"></div>
                             </div>
                         </div>
 
@@ -519,7 +528,6 @@
                                 <input type="radio" class="2018" id="code2018" name="codeTrend" value="2018Data">
                                 <label class="form-check-label yellow font-weight-bold" for="2018Data">2018 Data</label>
                             </div>
-
                         </div>
                         <div class="left-zone pb-4 pr-4">
                             <div class="col-sm-12 top-zone d-border-bottom">

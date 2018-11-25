@@ -849,7 +849,7 @@ var dataLines = [{
 drawLinesChart(dataLines);
 
 function drawLinesChart(data) {
-    var svg = d3.select("svg"),
+    var svg = d3.select("#lines-code"),
         margin = {
             top: 20,
             right: 0,
