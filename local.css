@@ -449,21 +449,38 @@ section.moocs .right-bar {
 section.moocs .left-bar {
     text-align: center;
     height: 930px;
+    width: 250px;
+}
+
+section.moocs .left-bar .gauge-1 {
+    height: 330px;
+    padding-top: 4rem;
+}
+
+section.moocs .left-bar .gauge-2 {
+    height: 300px;
+}
+
+section.moocs .left-bar .gauge-3 {
+    height: 300px;
 }
 
 section.moocs .left-bar h4 {
-    font-size: 12px;
+    font-size: 18px;
     color: white;
+    margin-bottom: 0;
 }
 
 section.moocs .left-bar span:nth-child(2n) {
     color: white;
     font-size: 10px;
+    font-family: 'Gotham-Bold';
 }
 
 section.moocs .left-bar span:nth-child(2n+1) {
     color: #AB3018;
     font-size: 10px;
+    font-family: 'Gotham-Bold';
 }
 
 section.moocs p {

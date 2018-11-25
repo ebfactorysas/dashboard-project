@@ -710,7 +710,7 @@ function drawGaugeCodeChart(dataGauge) {
 
 
     var i = d3.interpolate(progress, dataGauge.code.allocated / dataGauge.code.total);
-
+    foreground.attr("d", arc.endAngle(twoPi * i(1)));
     //gauge K
 
     var arc2 = d3.arc()
@@ -742,7 +742,7 @@ function drawGaugeCodeChart(dataGauge) {
 
 
     var i2 = d3.interpolate(progress2, dataGauge.pageview.allocated / dataGauge.pageview.total);
-
+    foreground2.attr("d", arc2.endAngle(twoPi * i2(1)));
     //gauge %
 
     var arc3 = d3.arc()
@@ -773,7 +773,7 @@ function drawGaugeCodeChart(dataGauge) {
         .text(dataGauge.lac.allocated + "%");
 
     var i3 = d3.interpolate(progress3, dataGauge.lac.allocated / dataGauge.lac.total);
-
+    foreground3.attr("d", arc3.endAngle(twoPi * i3(1)));
     // d3.transition().duration(1000).tween("progress", function () {
     //     return function (t) {
     //         progress = i(t);
