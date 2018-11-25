@@ -1,66 +1,56 @@
 .container_radio {
-  display: block;
-  position: relative;
-  padding-left: 27px;
-  margin-bottom: 5px;
-  padding-top: 0;
-  cursor: pointer;
-  font-size: 16px;
-  @include inline-block();
-
-  .checkmark {
-    position: absolute;
-    top: 2px;
-    left: 0;
-    height: 20px;
-    width: 20px;
-    background: $white;
-    border: 1px solid $white;
-    @include border-radius(50%);
-
-    &:after {
-      box-sizing: unset;
-      content: '';
-      position: absolute;
-      display: none;
-      left: 6px;
-      top: 6px;
-      height: 6px;
-      width: 6px;
-      background: $white;
-      @include border-radius(50%);
+  &.blue {
+    @include radioStyle($blue, $white);
+    .checkmark {
+      background: $blue;
+      border: 1px solid $white;
+      &:after {
+        background: $white;
+      }
+    }
+    &:hover input ~ .checkmark {
+      background: #1865b9;
+    }
+    input {
+      &:checked ~ .checkmark {
+        background: $blue;
+      }
+      &:checked:focus ~ .checkmark {
+        background: $blue;
+      }
+      &:disabled ~ .checkmark {
+        background: $white;
+      }
     }
   }
-
-  input {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
-
-    &:focus ~ .checkmark {
-      background: $gray;
+  &.red {
+    @include radioStyle($red, $white);
+    @include breakpoint($desk) {
+      color: $red;
     }
-
-    &:checked ~ .checkmark {
-      background: $blue;
+  }
+  &.orange {
+    @include radioStyle($orange, $white);
+    @include breakpoint($desk) {
+      color: $orange;
     }
-
-    &:checked:focus ~ .checkmark {
-      background: #1169c5;
+  }
+  &.purple {
+    @include radioStyle($purple, $white);
+    @include breakpoint($desk) {
+      color: $purple;
     }
-
-    &:disabled ~ .checkmark {
-      background: $white;
-      opacity: 0.6;
-      pointer-events: none;
+  }
+  &.yellow {
+    @include radioStyle($yellow, $white);
+    @include breakpoint($desk) {
+      color: $yellow;
     }
-
-    &:checked ~ .checkmark:after {
-      display: block;
-    }
-
-    &:disabled ~ .checkmark:after {
-      background: #7b7b7b;
+  }
+  &.green {
+    @include radioStyle($green, $white);
+    @include breakpoint($desk) {
+      color: $green;
     }
   }
 }
