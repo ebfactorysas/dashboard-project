@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" media="(max-width: 992px)" href="mobile.css" />
     <link rel="stylesheet" media="(min-width: 992px)" href="local.css" />
 
@@ -88,20 +89,18 @@
             <div class="row">
                 <div class="col-12">
                     <div class="row pt-2">
-                        <div class="col-12 ">
-                            <!--<p class="text-right"> <i class="far fa-circle fa-xs"></i> ALL THE TIME &nbsp; <i class="far fa-dot-circle"></i>
-                                2018 DATA</p>-->
-                            <div class="form-check form-check-inline container_radio container_radio">
-                                <input type="radio" class="AllTime form-check-input blue" id="blueAllTime" name="blueTrend"
-                                    value="AllTheTime" checked>
-                                <label class="form-check-label blue font-weight-bold" for="allTheTime">All The Time</label>
-                            </div>
-                            <div class="form-check form-check-inline container_radio container_radio">
-                                <input type="radio" class="2018" id="blue2018" name="blueTrend" value="2018Data">
-                                <label class="form-check-label blue font-weight-bold" for="2018Data">2018 Data</label>
-                            </div>
-                        </div>
-
+                      <div class="col-12 ">
+                        <label class="container_radio blue">
+                          All The Time
+                          <input type="radio" class="AllTime form-check-input" id="blueAllTime" name="blueTrend" value="AllTheTime" checked>
+                          <span class="checkmark"></span>
+                        </label>
+                        <label class="container_radio blue">
+                          2018 Data
+                          <input type="radio" class="2018" id="blue2018" name="blueTrend" value="2018Data">
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
                     </div>
 
                     <div class="row">
@@ -213,15 +212,16 @@
                 <div class="col right-bar grayr-background">
                     <div class="row m-2 pb-2 ">
                         <div class="col-12 text-right">
-                            <div class="form-check form-check-inline container_radio">
-                                <input type="radio" class="AllTime form-check-input yellow" id="publicationAllTime"
-                                    name="publicationTrend" value="AllTheTime" checked>
-                                <label class="form-check-label red font-weight-bold" for="allTheTime">All The Time</label>
-                            </div>
-                            <div class="form-check form-check-inline container_radio">
-                                <input type="radio" class="2018" id="publication2018" name="publicationTrend" value="2018Data">
-                                <label class="form-check-label red font-weight-bold" for="2018Data">2018 Data</label>
-                            </div>
+                          <label class="container_radio red">
+                            All The Time
+                            <input type="radio" class="AllTime form-check-input yellow" id="publicationAllTime" name="publicationTrend" value="AllTheTime" checked>
+                            <span class="checkmark"></span>
+                          </label>
+                          <label class="container_radio red">
+                            2018 Data
+                            <input type="radio" class="2018" id="publication2018" name="publicationTrend" value="2018Data">
+                            <span class="checkmark"></span>
+                          </label>
                         </div>
                         <div class="left-zone pb-4 pr-4">
                             <div class="col-sm-12 top-zone d-border-bottom">
@@ -316,17 +316,16 @@
                 <div class="col right-bar grayr-background">
                     <div class="row m-2 pb-2 ">
                         <div class="col-12 text-right">
-                            <div class="form-check form-check-inline container_radio">
-                                <input class="form-check-input orange" type="radio" name="moocsTrend" id="allTimeRadio"
-                                    value="all" checked>
-                                <label class="form-check-label orange font-weight-bold" for="allTimeRadio">ALL THE TIME</label>
-                            </div>
-                            <div class="form-check form-check-inline container_radio">
-                                <input class="form-check-input orange" type="radio" name="moocsTrend" id="2018Radio"
-                                    value="2018">
-                                <label class="form-check-label orange font-weight-bold" for="2018Radio">2018 DATA</label>
-                            </div>
-
+                          <label class="container_radio orange">
+                            All The Time
+                            <input class="form-check-input orange" type="radio" name="moocsTrend" id="allTimeRadio" value="all" checked>
+                            <span class="checkmark"></span>
+                          </label>
+                          <label class="container_radio orange">
+                            2018 Data
+                            <input class="form-check-input orange" type="radio" name="moocsTrend" id="2018Radio" value="2018">
+                            <span class="checkmark"></span>
+                          </label>
                         </div>
                         <div class="col-sm-6">
                             <div class="col-sm-12 pt-4  d-border-bottom">
@@ -439,15 +438,17 @@
                 <div class="col right-bar grayr-background">
                     <div class="row m-2 pb-2 ">
                         <div class="col-12 text-right">
-                            <div class="form-check form-check-inline">
-                                <input type="radio" class="AllTime form-check-input blue" id="dataSetAllTime" name="dataSetTrend"
-                                    value="AllTheTime" checked>
-                                <label class="form-check-label blue font-weight-bold" for="allTheTime">All The Time</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input type="radio" class="2018 form-check-input blue" id="dataSet2018" name="dataSetTrend" value="2018Data">
-                                <label class="form-check-label blue font-weight-bold" for="2018Data">2018 Data</label>
-                            </div>
+
+                          <label class="container_radio purple">
+                            All The Time
+                            <input type="radio" class="AllTime form-check-input blue" id="dataSetAllTime" name="dataSetTrend" value="AllTheTime" checked>
+                            <span class="checkmark"></span>
+                          </label>
+                          <label class="container_radio purple">
+                            2018 Data
+                            <input type="radio" class="2018 form-check-input blue" id="dataSet2018" name="dataSetTrend" value="2018Data">
+                            <span class="checkmark"></span>
+                          </label>
                         </div>
                         <div class="col-sm-7">
                             <div class="col-sm-12 pt-4  d-border-bottom">
@@ -528,15 +529,17 @@
                 <div class="col right-bar grayr-background">
                     <div class="row m-2 pb-2 ">
                         <div class="col-12 text-right">
-                            <div class="form-check form-check-inline container_radio">
-                                <input type="radio" class="AllTime form-check-input yellow" id="codeAllTime" name="codeTrend"
-                                    value="AllTheTime" checked>
-                                <label class="form-check-label yellow font-weight-bold" for="allTheTime">All The Time</label>
-                            </div>
-                            <div class="form-check form-check-inline container_radio">
-                                <input type="radio" class="2018" id="code2018" name="codeTrend" value="2018Data">
-                                <label class="form-check-label yellow font-weight-bold" for="2018Data">2018 Data</label>
-                            </div>
+
+                          <label class="container_radio yellow">
+                            All The Time
+                            <input type="radio" class="AllTime form-check-input yellow" id="codeAllTime" name="codeTrend" value="AllTheTime" checked>
+                            <span class="checkmark"></span>
+                          </label>
+                          <label class="container_radio yellow">
+                            2018 Data
+                            <input type="radio" class="2018" id="code2018" name="codeTrend" value="2018Data">
+                            <span class="checkmark"></span>
+                          </label>
                         </div>
                         <div class="left-zone pb-4 pr-4">
                             <div class="col-sm-12 top-zone d-border-bottom">
@@ -619,15 +622,18 @@
                 <div class="col right-bar grayr-background">
                     <div class="row m-2 pb-2 ">
                         <div class="col-12 text-right">
-                            <div class="form-check form-check-inline">
-                                <input type="radio" class="AllTime form-check-input yellow" id="suscribersAllTime" name="suscribersTrend"
-                                    value="AllTheTime" checked>
-                                <label class="form-check-label green font-weight-bold" for="allTheTime">All The Time</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input type="radio" class="2018" id="suscribers2018" name="suscribersTrend" value="2018Data">
-                                <label class="form-check-label green  font-weight-bold" for="2018Data">2018 Data</label>
-                            </div>
+
+                          <label class="container_radio green">
+                            All The Time
+                            <input type="radio" class="AllTime form-check-input yellow" id="suscribersAllTime" name="suscribersTrend" value="AllTheTime" checked>
+                            <span class="checkmark"></span>
+                          </label>
+                          <label class="container_radio green">
+                            2018 Data
+                            <input type="radio" class="2018" id="suscribers2018" name="suscribersTrend" value="2018Data">
+                            <span class="checkmark"></span>
+                          </label>
+
                         </div>
                         <div class="left-zone pb-4 pr-4">
                             <div class="col-sm-12 top-zone d-border-bottom">

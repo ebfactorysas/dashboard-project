@@ -1636,7 +1636,8 @@ var datasetsTopArrays = {
             "xlsx_row_id": 111
         }
     ],
-    topDivisions2018: [{
+    topDivisions2018: [
+        {
             "json_featuretype": "NewFeatureType",
             "Downloads": 289,
             "Division Codes": "CCB",
@@ -1758,165 +1759,115 @@ var datasetsTopArrays = {
         }
     ],
     topIDBAllTime: [{
-            "json_featuretype": "NewFeatureType",
             "Department": "Department of Research and Chief Economist",
-            "E": 9109,
+            "value": 9109,
             "Rank of Downloads by Department": 1,
-            "Title": "The Database of Political Institutions 2015 (DPI2015)",
-            "Publication Date": "01/29/2016",
-            "xlsx_row_id": 2
+            "name": "The Database of Political Institutions 2015 (DPI2015)",
+            "Publication Date": "01/29/2016"
         },
         {
-            "json_featuretype": "NewFeatureType",
             "Department": "Department of Research and Chief Economist",
-            "E": 4564,
+            "value": 4564,
             "Rank of Downloads by Department": 2,
-            "Title": "The Database of Political Institutions 2017 (DPI2017)",
-            "Publication Date": "02/01/2018",
-            "xlsx_row_id": 3
+            "name": "The Database of Political Institutions 2017 (DPI2017)",
+            "Publication Date": "02/01/2018"
         },
         {
-            "json_featuretype": "NewFeatureType",
             "Department": "Transport Division",
-            "E": 4522,
+            "value": 4522,
             "Rank of Downloads by Department": 3,
-            "Title": "Freight Transport and Logistics Statistics Yearbook",
-            "Publication Date": "04/10/2015",
-            "xlsx_row_id": 4
+            "name": "Freight Transport and Logistics Statistics Yearbook",
+            "Publication Date": "04/10/2015"
         },
         {
-            "json_featuretype": "NewFeatureType",
             "Department": "Labor Markets Division",
-            "E": 2002,
+            "value": 2002,
             "Rank of Downloads by Department": 4,
-            "Title": "2017 Índice de Mejores Trabajos Base de Datos",
-            "Publication Date": "10/01/2017",
-            "xlsx_row_id": 5
+            "name": "2017 Índice de Mejores Trabajos Base de Datos",
+            "Publication Date": "10/01/2017"
         },
         {
-            "json_featuretype": "NewFeatureType",
             "Department": "Office of the Multilateral Investment Fund",
-            "E": 1845,
+            "value": 1845,
             "Rank of Downloads by Department": 5,
-            "Title": "2010 InfraScope Index for Latin America and the Caribbean",
-            "Publication Date": "11/08/2010",
-            "xlsx_row_id": 6
+            "name": "2010 InfraScope Index for Latin America and the Caribbean",
+            "Publication Date": "11/08/2010"
         },
         {
-            "json_featuretype": "NewFeatureType",
             "Department": "Fiscal and Municipal Management Division",
-            "E": 1769,
+            "value": 1769,
             "Rank of Downloads by Department": 6,
-            "Title": "Panorama de las Administraciones Públicas: ALC2017 indicadores",
-            "Publication Date": "12/06/2016",
-            "xlsx_row_id": 7
+            "name": "Panorama de las Administraciones Públicas: ALC2017 indicadores",
+            "Publication Date": "12/06/2016"
         },
         {
-            "json_featuretype": "NewFeatureType",
             "Department": "Department of Research and Chief Economist",
-            "E": 1327,
+            "value": 1327,
             "Rank of Downloads by Department": 7,
-            "Title": "Latin Macro Watch: Annual",
-            "Publication Date": "11/15/2017",
-            "xlsx_row_id": 8
+            "name": "Latin Macro Watch: Annual",
+            "Publication Date": "11/15/2017"
         },
         {
-            "json_featuretype": "NewFeatureType",
             "Department": "Capital Markets and Financial Institutions Division",
-            "E": 1317,
+            "value": 1317,
             "Rank of Downloads by Department": 8,
-            "Title": "Standardized Public Debt Database",
-            "Publication Date": "07/12/2018",
-            "xlsx_row_id": 9
+            "name": "Standardized Public Debt Database",
+            "Publication Date": "07/12/2018"
         },
         {
-            "json_featuretype": "NewFeatureType",
             "Department": "Housing and Urban Development Division (VPS/CSD/HUD)",
-            "E": 1312,
+            "value": 1312,
             "Rank of Downloads by Department": 9,
-            "Title": "Emerging and Sustainable Cities Initiative: Surveys Answers",
-            "Publication Date": "04/27/2015",
-            "xlsx_row_id": 10
+            "name": "Emerging and Sustainable Cities Initiative: Surveys Answers",
+            "Publication Date": "04/27/2015"
         },
         {
-            "json_featuretype": "NewFeatureType",
             "Department": "Fiscal Management Division",
-            "E": 1296,
+            "value": 1296,
             "Rank of Downloads by Department": 10,
-            "Title": "Latin America and the Caribbean Fiscal Burden Database",
-            "Publication Date": "11/01/2017",
-            "xlsx_row_id": 11
+            "name": "Latin America and the Caribbean Fiscal Burden Database",
+            "Publication Date": "11/01/2017"
         }
     ],
     topIDB2018: [{
-            "json_featuretype": "NewFeatureType",
-            "Downloads": 4370,
-            "Title": "The Database of Political Institutions 2017 (DPI2017)",
-            "Rank": "1",
-            "xlsx_row_id": 2
+            "value": 4370,
+            "name": "The Database of Political Institutions 2017 (DPI2017)",
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Downloads": 746,
-            "Title": "FINLAC Data: Datos de desempeño e inclusión financiera de América Latina y el Caribe",
-            "Rank": "2",
-            "xlsx_row_id": 3
+            "value": 746,
+            "name": "FINLAC Data: Datos de desempeño e inclusión financiera de América Latina y el Caribe",
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Downloads": 578,
-            "Title": "National Women's Health Survey for Trinidad and Tobago",
-            "Rank": "3",
-            "xlsx_row_id": 4
+            "value": 578,
+            "name": "National Women's Health Survey for Trinidad and Tobago",
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Downloads": 254,
-            "Title": "Datos asociados al \"Panorama de envejecimiento y dependencia en América Latina y el Caribe\"",
-            "Rank": "4",
-            "xlsx_row_id": 5
+            "value": 254,
+            "name": "Datos asociados al \"Panorama de envejecimiento y dependencia en América Latina y el Caribe\"",
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Downloads": 180,
-            "Title": "Standardized Public Debt Database",
-            "Rank": "5",
-            "xlsx_row_id": 6
+            "value": 180,
+            "name": "Standardized Public Debt Database",
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Downloads": 166,
-            "Title": "Suriname Survey of Living Conditions: 2016-2017",
-            "Rank": "6",
-            "xlsx_row_id": 7
+            "value": 166,
+            "name": "Suriname Survey of Living Conditions: 2016-2017",
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Downloads": 109,
-            "Title": "Primary Healthcare Access, Experience, and Coordination in Latin America and the Caribbean 2013 (PRIMLAC)",
-            "Rank": "7",
-            "xlsx_row_id": 8
+            "value": 109,
+            "name": "Primary Healthcare Access, Experience, and Coordination in Latin America and the Caribbean 2013 (PRIMLAC)",
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Downloads": 79,
-            "Title": "Barbados Survey of Living Conditions: 2016",
-            "Rank": "8",
-            "xlsx_row_id": 9
+            "value": 79,
+            "name": "Barbados Survey of Living Conditions: 2016",
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Downloads": 72,
-            "Title": "Women’s Health Survey for Jamaica: Dataset",
-            "Rank": "9",
-            "xlsx_row_id": 10
+            "value": 72,
+            "name": "Women’s Health Survey for Jamaica: Dataset",
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Downloads": 62,
-            "Title": "Guyana Labor Force Survey: Fourth Quarter 2017",
-            "Rank": "10",
-            "xlsx_row_id": 11
+            "value": 62,
+            "name": "Guyana Labor Force Survey: Fourth Quarter 2017",
         }
     ]
 };

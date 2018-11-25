@@ -1,0 +1,73 @@
+@mixin radioStyle($background, $text_color) {
+  display: block;
+  position: relative;
+  padding-left: 16px;
+  margin: 10px;
+  padding-top: 0;
+  cursor: pointer;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: Gotham-Bold;
+  color: $text_color;
+  @include inline-block();
+
+  .checkmark {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    height: 14px;
+    width: 14px;
+    background: $white;
+    border: 1px solid $background;
+    @include border-radius(50%);
+
+    &:after {
+      box-sizing: unset;
+      content: '';
+      position: absolute;
+      display: none;
+      left: 2px;
+      top: 2px;
+      height: 8px;
+      width: 8px;
+      background: $background;
+      @include border-radius(50%);
+    }
+  }
+
+  &:hover input ~ .checkmark {
+    background: #f5f5f5;
+  }
+
+  input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+
+    &:focus ~ .checkmark {
+      background: #f5f5f5;
+    }
+
+    &:checked ~ .checkmark {
+      background: $white;
+    }
+
+    &:checked:focus ~ .checkmark {
+      background: $white;
+    }
+
+    &:disabled ~ .checkmark {
+      background: $background;
+      opacity: 0.6;
+      pointer-events: none;
+    }
+
+    &:checked ~ .checkmark:after {
+      display: block;
+    }
+
+    &:disabled ~ .checkmark:after {
+      background: #f5f5f5;
+    }
+  }
+}
