@@ -938,6 +938,8 @@ function drawGaugeMoocsChart(dataGauge) {
  */
 function removeMoocsSvg() {
     d3.select("#moocs-registrations svg").remove();
+    d3.select("#distribution-moocs svg").remove();
+    console.log('entro');
 }
 
 function divisionFilter(moocsJson, filterBy) {
@@ -961,10 +963,13 @@ function moocsFilter() {
             //top registration chart
             if ($("select[id*='divisionSelect']").val().length > 0) {
                 drawMoocsRegistrationsChart(orderTopMoocs(divisionFilter(moocsTopArrays.divisionsAlltime, $("select[id*='divisionSelect']").val())));
+                drawDistributionChart(orderTopMoocs(divisionFilter(moocsEducationArrays.educationLevelDivisions, $("select[id*='divisionSelect']").val())));
             } else if ($("select[id*='deparmentSelect']").val().length > 0) {
                 drawMoocsRegistrationsChart(orderTopMoocs(departmentFilter(moocsTopArrays.departmentsAllTime, $("select[id*='deparmentSelect']").val())));
+                drawDistributionChart(orderTopMoocs(departmentFilter(moocsEducationArrays.educationLevelDepartments, $("select[id*='deparmentSelect']").val())));
             } else {
                 drawMoocsRegistrationsChart(topAllMoocs);
+                drawDistributionChart(moocsEducationArrays.educationLevelIDB);
             }
 
             break;
@@ -973,10 +978,13 @@ function moocsFilter() {
             //top registration chart
             if ($("select[id*='divisionSelect']").val().length > 0) {
                 drawMoocsRegistrationsChart(orderTopMoocs(divisionFilter(moocsTopArrays.divisions2018, $("select[id*='divisionSelect']").val())));
+                drawDistributionChart(orderTopMoocs(divisionFilter(moocsEducationArrays.educationLevelDivisions, $("select[id*='divisionSelect']").val())));
             } else if ($("select[id*='deparmentSelect']").val().length > 0) {
                 drawMoocsRegistrationsChart(orderTopMoocs(departmentFilter(moocsTopArrays.departments2018, $("select[id*='deparmentSelect']").val())));
+                drawDistributionChart(orderTopMoocs(departmentFilter(moocsEducationArrays.educationLevelDepartments, $("select[id*='deparmentSelect']").val())));
             } else {
                 drawMoocsRegistrationsChart(top2018Moocs);
+                drawDistributionChart(moocsEducationArrays.educationLevelIDB);
             }
             break;
     }
