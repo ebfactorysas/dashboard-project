@@ -2,53 +2,10 @@
  * Start data-trend
  *  */
 
-var dataDataTrend = [{
-        "name": "The Database of Political Institutions 2017(DPI2017)",
-        "value": 2.6,
-    },
-    {
-        "name": "FINLAC Data:Datos de desempeño e insclusión financiera de América Latina y el Ca...",
-        "value": .3,
-    },
-    {
-        "name": "National Women's Health Survey for Trinidad and Tobago",
-        "value": .3,
-    },
-    {
-        "name": "Datos asociados al 'Panorama de enevejeciemiento y depenedencia en América La...",
-        "value": .2,
-    },
-    {
-        "name": "Suriname Survey of Living Conditions: 2016-2017",
-        "value": .2,
-    },
-    {
-        "name": "Standarized Public Debt Database",
-        "value": .2,
-    },
-    {
-        "name": "Primary Healthcare Access, Experience, and Coordination in Latin America and the Caribb...",
-        "value": .1,
-    }, {
-        "name": "Barbados Survey of Living Conditions:2016",
-        "value": .1,
-    }, {
-        "name": "Guyana Labor Force Survey: Fourth Quater 2017",
-        "value": .1,
-    },
-    {
-        "name": "Guyana Labor Force Survey: Third Quater 2017",
-        "value": .1,
-    }
-];
-
-dataDataTrend = dataDataTrend.sort(function (a, b) {
-    return d3.ascending(a.value, b.value);
-})
-
-drawDataTrendChart(dataDataTrend);
-
 function drawDataTrendChart(dataDataTrend) {
+    dataDataTrend = dataDataTrend.sort(function (a, b) {
+        return d3.ascending(a.value, b.value);
+    })
     var marginDataTrend = {
         top: 15,
         right: 25,
@@ -308,42 +265,7 @@ function drawTree(dataTree) {
 /**
  * Start timelines
  *  */
-var dataTimeline = [{
-        "date": "1-Jul-18",
-        "close": 60000
-    },
-    {
-        "date": "30-Apr-18",
-        "close": 50000
-    },
-    {
-        "date": "27-Jan-18",
-        "close": 45000
-    },
-    {
-        "date": "26-Dec-17",
-        "close": 35000
-    },
-    {
-        "date": "24-Jul-17",
-        "close": 20000
-    },
-    {
-        "date": "20-Dec-16",
-        "close": 30000
-    }, {
-        "date": "16-Jul-16",
-        "close": 25000
-    },
-    {
-        "date": "27-Mar-14",
-        "close": 12000
-    },
-    {
-        "date": "26-Jan-13",
-        "close": 5000
-    }
-]
+
 
 
 
@@ -654,12 +576,20 @@ function drawGaugeDatasetChart(dataGauge) {
 var ObjectTimeLineDataSet = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
 
 createChartTimeLineDataSet(ObjectTimeLineDataSet);
-
+drawDataTrendChart(datasetsTopArrays.topIDBAllTime);
 
 //click radiobutton drawChart(id del click)
 $("input[name*='dataSetTrend']").click(function () {
     var ObjectTimeLineDataSet = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
     d3.select("#timeline-dataset svg").remove();
+    d3.select("#data-trend svg").remove();
+    
 
-    createChartTimeLineDataSet(ObjectTimeLineDataSet);
+    if (this.id == "dataSetAllTime") {
+        createChartTimeLineDataSet(ObjectTimeLineDataSet);
+        drawDataTrendChart(datasetsTopArrays.topIDBAllTime);
+    } else {
+        createChartTimeLineDataSet(ObjectTimeLineDataSet);
+        drawDataTrendChart(datasetsTopArrays.topIDB2018);
+    }
 });
