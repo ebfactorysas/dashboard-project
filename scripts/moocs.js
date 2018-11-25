@@ -1,30 +1,6 @@
 /**
  * Start distribution-moocs
- *  */
-
-
-// var dataDistribution = [{
-//     "name": "Other/Not Reported",
-//     "value": 20
-// }, {
-//     "name": "Elementary",
-//     "value": 0
-// }, {
-//     "name": "High School",
-//     "value": 3
-// }, {
-//     "name": "Associate",
-//     "value": 4
-// }, {
-//     "name": "Bachelor",
-//     "value": 14
-// }, {
-//     "name": "Master",
-//     "value": 9
-// }, {
-//     "name": "Doctorate",
-//     "value": 1
-// }];
+ **/
 
 // drawDistributionChart(dataDistribution);
 drawDistributionChart(moocsEducationArrays.educationLevelIDB);
@@ -143,36 +119,12 @@ function drawDistributionChart(dataDistribution) {
  * Start registration-moocs
  */
 
-// var dataMoocs = [{
-//         "name": "La realidad del desarrollo social latinoamericano (2ed.)",
-//         "value": 15.9,
-//     },
-//     {
-//         "name": "Políticas efectivas del desarrollo infantil (5ed.)",
-//         "value": 9.7,
-//     },
-//     {
-//         "name": "La realidad del desarrollo social latinoamericano (1ed.)",
-//         "value": 2.3,
-//     },
-//     {
-//         "name": "Políticas efectivas del desarrollo infantil (1ed.)",
-//         "value": 0.1,
-//     },
-//     {
-//         "name": "Asociaciones Publico Privadas: Implementando Soluciones en Latinoamérica y el Caribe (2ed.)",
-//         "value": 0.0,
-//     }
-// ];
-
 function orderTopMoocs(data) {
     var dataMoocs = data.sort(function (a, b) {
         return d3.ascending(a.value, b.value);
     });
     return dataMoocs;
 }
-
-
 
 
 drawMoocsRegistrationsChart(orderTopMoocs(moocsTopArrays.IDBAlltime));
@@ -552,8 +504,6 @@ function drawStudentCompletedsChart(dataStudents) {
         });
 }
 
-
-
 /**
  * End student-completed-moocs
  */
@@ -631,7 +581,6 @@ function drawStudentCertifiedsChart(dataStudents) {
 }
 
 
-
 /**
  * End student-certified-moocs
  */
@@ -639,50 +588,16 @@ function drawStudentCertifiedsChart(dataStudents) {
 /**
  * Start timelines
  *  */
-// var dataTimeline = [{
-//         "date": "1-Jul-18",
-//         "close": 60000
-//     },
-//     {
-//         "date": "30-Apr-18",
-//         "close": 50000
-//     },
-//     {
-//         "date": "27-Jan-18",
-//         "close": 45000
-//     },
-//     {
-//         "date": "26-Dec-17",
-//         "close": 35000
-//     },
-//     {
-//         "date": "24-Jul-17",
-//         "close": 20000
-//     },
-//     {
-//         "date": "20-Dec-16",
-//         "close": 30000
-//     }, {
-//         "date": "16-Jul-16",
-//         "close": 25000
-//     },
-//     {
-//         "date": "27-Mar-14",
-//         "close": 12000
-//     },
-//     {
-//         "date": "26-Jan-13",
-//         "close": 5000
-//     }
-// ]
 
 function sortByDateAscending(a, b) {
     // Dates will be cast to numbers automagically:
     return new Date(b.date) - new Date(a.date);
 }
-var registrationTimelineIDB = $.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB);
+var TimeLineIDB = $.extend([], moocsRegistrationTimeline.registrationTimelineIDB);
+console.log("Carga inicial=> ", moocsRegistrationTimeline.registrationTimelineIDB);
+console.log("Carga inicial con extend=> ", TimeLineIDB);
 
-createChart(registrationTimelineIDB);
+createChart(moocsRegistrationTimeline.registrationTimelineIDB);
 
 function createChart(data) {
     var margin = {
@@ -857,32 +772,14 @@ function createChart(data) {
             .tickFormat(d3.format(".2s")));
 }
 
-
-// var chart = $("#timeline-moocs"),
-//     aspect = chart.width() / chart.height(),
-//     container = chart.parent();
-// $(window).on("resize", function() {
-//     var targetWidth = container.width();
-//     chart.attr("width", targetWidth);
-//     chart.attr("height", Math.round(targetWidth / aspect));
-// }).trigger("resize");
 /**
  * End timelines
  *  */
 
-var aspect = width / height,
-    chart = d3.select('#timeline-moocs svg');
-d3.select(window)
-    .on("resize", function () {
-        var targetWidth = chart.node().getBoundingClientRect().width;
-        chart.attr("width", targetWidth);
-        chart.attr("height", targetWidth / aspect);
-    });
-
 //click radiobutton drawChart(id del click)
 $("input[name*='moocsTrend']").click(function () {
 
-    var test = $.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB);
+    var timeLineIDB = $.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB);
 
 
     d3.select("#moocs-registrations svg").remove();
@@ -895,8 +792,8 @@ $("input[name*='moocsTrend']").click(function () {
         drawMoocsRegistrationsChart(orderTopMoocs(moocsTopArrays.IDB2018));
 
     }
-    console.log("change ", test);
-    createChart(test);
+    console.log("Carga de nuevo con el click=> ", moocsRegistrationTimeline.registrationTimelineIDB);
+    createChart(timeLineIDB);
 
     //name -> codeTrend -> 2018 ->
     /*if(active dpto o division){
