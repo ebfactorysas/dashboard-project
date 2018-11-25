@@ -2,14 +2,17 @@
  * Start timelines
  *  */
 
-createChart(publicationsDownloadTimelineArray.downloadTimelineIDB);
+
 
 function sortByDateAscending(a, b) {
     // Dates will be cast to numbers automagically:
     return a.date - b.date;
 }
 
-function createChart(data) {
+function createChartTimeline(data) {
+    if ($("#publication2018").prop("checked")) {
+        data = data.filter(data => data.date.indexOf("-18") > -1);
+    }
     var margin = {
             top: 20,
             right: 20,
@@ -59,9 +62,10 @@ function createChart(data) {
         d.date = parseTime(d.date);
     });
 
-    console.log(data);
-
     data = data.sort(sortByDateAscending);
+
+    console.log("publication",data);
+
 
     for (var i = 0; i < data.length; i++) {
         data[i].close = +data[i].close;
@@ -122,7 +126,7 @@ svg.append("g")
     .style("font-size", "13px")
     //.call(d3.axisBottom(x));
     .call(d3.axisBottom(x)
-        .ticks(d3.timeDay.filter(d => d3.timeDay.count(0, d) % 300 === 0))
+        .ticks(d3.timeDay.filter(d => $("#publication2018").prop("checked") ? d3.timeDay.count(0, d) % 60 === 0 : d3.timeDay.count(0, d) % 300 === 0))
         .tickFormat(function (x) {
             // get the milliseconds since Epoch for the date
             var milli = (x.getTime() - 10000);
@@ -155,19 +159,10 @@ svg.append("g")
                 } else if (mon <= 8) {
                     return yr;
                 } else {
-                    if (mon <= 2) {
-                        return yr;
-                    } else if (mon <= 5) {
-                        return yr;
-                    } else if (mon <= 8) {
-                        return yr;
-                    } else {
-                        return yr;
-                    }
+                    return yr;
                 }
-
-
-            }})
+            }
+        })
             .tickSizeOuter(0)
         )
 
@@ -356,8 +351,6 @@ var dataPublicationTrend = [{
 dataPublicationTrend = dataPublicationTrend.sort(function (a, b) {
     return d3.ascending(a.value, b.value);
 })
-
-drawTrendPublicationChart(dataPublicationTrend);
 
 function drawTrendPublicationChart(dataPublicationTrend) {
     var marginPublicationTrend = {
@@ -1120,3 +1113,23 @@ function drawPlotChartPublication(data) {
   /**
    * End Plot Chart
    */
+
+//init
+var downloadTimelineIDB = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineIDB);
+
+
+createChartTimeline(downloadTimelineIDB);
+drawTrendPublicationChart(dataPublicationTrend);
+
+//click radiobutton drawChart(id del click)
+$("input[name*='publicationTrend']").click(function () {
+    var downloadTimelineIDBTEST = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineIDB);
+
+    d3.select("#timeline-publication svg").remove();
+
+    if (this.id == "publicationAllTime") {
+        createChartTimeline(downloadTimelineIDBTEST);        
+    } else {
+        createChartTimeline(downloadTimelineIDBTEST);
+    }
+});
