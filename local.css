@@ -891,10 +891,32 @@ section.code .grid path {
 
 section.suscribers {
     height: 930px;
+    font-family: 'Gotham-Bold';
 }
 
 section.suscribers .right-bar {
     height: 930px;
+}
+
+section.suscribers .right-bar .left-zone {
+    width: 940px;
+}
+
+section.suscribers .right-bar .left-zone .top-zone {
+    height: 285px;
+}
+
+section.suscribers .right-bar .left-zone .down-zone {
+    height: 540px;
+}
+
+section.suscribers .right-bar .right-zone {
+    width: 665px;
+}
+
+section.suscribers .right-bar .right-zone .top-zone {
+    height: 285px;
+    padding-top: 1rem;
 }
 
 section.suscribers .left-bar {
