@@ -2,38 +2,38 @@
 var filter = "departments";
 // var valueFilter = "AUG"
 var valueFilter = "IFD"
-var optionsAnimation = {
-    useEasing: false,
-    useGrouping: false,
-    separator: '',
-    decimal: '',
-};
+
 // var jsondata = "";
 if (filter == "departments"){
     jsondataPublications = bnPublicationsArrays.publicationsDepartments.filter(data => data.department_codes == valueFilter);
     jsondataMoocs = moocsIndicatorsArray.indicatorsDepartments.filter(data => data.department_codes == valueFilter);
     jsondataDatasets = datasetsIndicatorsArray.indicatorsDepartments.filter(data => data.department_codes == valueFilter);
     jsondataCode = codeIndicatorsArrays.indicatorsDepartments.filter(data => data.department_codes == valueFilter);
+    jsondataSubscriber = subscribersArray.subscribersDepartments.filter(data => data.department == valueFilter);
 }
 else if(filter == "divisions"){
     jsondataPublications = bnPublicationsArrays.publicationsDivisions.filter(data => data.division_codes == valueFilter);
     jsondataMoocs = moocsIndicatorsArray.indicatorsDivisions.filter(data => data.division_codes == valueFilter);
     jsondataDatasets = datasetsIndicatorsArray.indicatorsDivisions.filter(data => data.division_codes == valueFilter);
     jsondataCode = codeIndicatorsArrays.indicatorsDivisions.filter(data => data.division_codes == valueFilter);
+    jsondataSubscriber = subscribersArray.subscribersDivisions.filter(data => data.divisions == valueFilter);
 }
 else {
     jsondataPublications = bnPublicationsArrays.publicationsIDB;
     jsondataMoocs = moocsIndicatorsArray.indicatorsIDB;
     jsondataDatasets = datasetsIndicatorsArray.indicatorsIDB;
     jsondataCode = codeIndicatorsArrays.indicatorsIDB;
+    jsondataSubscriber = subscribersArray.subscribersIDB;
 }
-console.log(jsondataMoocs);
+
 var dataPublicationsResults = publicationsIndicatorAlltime(jsondataPublications);
 var dataMoocsResults = moocsIndicatorAlltime(jsondataMoocs);
 var dataDatasetsResults = datasetsIndicatorAlltime(jsondataDatasets);
 var dataCodeResults = codeIndicatorAlltime(jsondataCode);
-
-setDataMain(dataPublicationsResults, dataMoocsResults, dataDatasetsResults, dataCodeResults);
+var dataSubscribersResults = subscriberIndicatorAlltime(jsondataSubscriber);
+console.log(jsondataSubscriber);
+console.log(dataSubscribersResults);
+setDataMain(dataPublicationsResults, dataMoocsResults, dataDatasetsResults, dataCodeResults, dataSubscribersResults);
 $("input[name*='blueTrend']").click(function () {
     // console.log(jsondata);
     
@@ -41,22 +41,33 @@ $("input[name*='blueTrend']").click(function () {
         dataResultsPublications = publicationsIndicatorAlltime(jsondataPublications);
         dataResultsMoocs = moocsIndicatorAlltime(jsondataMoocs);
         dataResultsDatasets = datasetsIndicatorAlltime(jsondataDatasets);
-        dataResultsCode = codeIndicatorAlltime(jsondataDatasets);
+        dataResultsCode = codeIndicatorAlltime(jsondataCode);
+        dataResultsSubscriber = subscriberIndicatorAlltime(jsondataSubscriber);
     } else {
         dataResultsPublications = publicationsIndicator2018(jsondataPublications);
         dataResultsMoocs = moocsIndicator2018(jsondataMoocs);
         dataResultsDatasets = datasetsIndicator2018(jsondataDatasets);
-        dataResultsCode = codeIndicator2018(jsondataDatasets);
+        dataResultsCode = codeIndicator2018(jsondataCode);
+        dataResultsSubscriber = subscriberIndicator2018(jsondataSubscriber);
     }
-    setDataMain(dataResultsPublications, dataResultsMoocs, dataResultsDatasets, dataResultsCode);
+    setDataMain(dataResultsPublications, dataResultsMoocs, dataResultsDatasets, dataResultsCode, dataResultsSubscriber);
 });
 
 // publicationsValue = (jsondata.length > 0) ? jsondata[0].all_the_time_publications : '';
-function setDataMain(dataResultsPublications, dataResultsMoocs, dataResultsDatasets) {
+function setDataMain(dataResultsPublications, dataResultsMoocs, dataResultsDatasets, dataResultsCode, dataResultsSubscriber) {
+    mainReset();
     setDataPublications(dataResultsPublications);
     setDataMoocs(dataResultsMoocs);
     setDataDatasets(dataResultsDatasets);
-    setCode(dataResultsDatasets);
+    setCode(dataResultsCode);
+    setSubscriber(dataResultsSubscriber);
+}
+
+function mainReset() {
+    var valuepublications = new CountUp('valuepublications', 0, 0, 0, 1.5, optionsAnimation);
+    valuepublications.reset();
+    var publications_downloads = new CountUp('publications_downloads', 0, 0, 0, 1.5, optionsAnimation);
+    publications_downloads.reset();
 }
 
 
@@ -64,15 +75,23 @@ function setDataMain(dataResultsPublications, dataResultsMoocs, dataResultsDatas
 
 
 
+var optionsAnimation = {
+    useEasing: false,
+    useGrouping: false,
+    separator: '',
+    decimal: '',
+};
 
-
-
-
-
-
-
-
-
+function optionsAnimated(suffixValue){
+    var optionsAnimation = {
+        useEasing: false,
+        useGrouping: false,
+        separator: '',
+        decimal: '',
+        suffix: suffixValue,
+    };
+    return optionsAnimation;
+}
 
 /**
  * Columna de indicadores de Publications 
@@ -102,31 +121,31 @@ function publicationsIndicator2018(jsondata){
 }
 
 function setDataPublications(dataResults) {
-    optionsUpdated = optionsAnimation;
-    console.log(dataResults.downloadsValue);
+    optionsUpdated = optionsAnimated("");
     if (parseFloat(dataResults.publicationsValue) > 1000) {
         dataResults.publicationsValue = dataResults.publicationsValue/1000;
-        optionsUpdated.suffix = "K"
+        optionsUpdated = optionsAnimated("K");
     }
     var valuepublications = new CountUp('valuepublications', 0, dataResults.publicationsValue, 0, 1.5, optionsUpdated);
+    
     if (!valuepublications.error) {
         valuepublications.start();
     } else {
         console.error(valuepublications.error);
     }
 
-    optionsUpdated = optionsAnimation;
+    optionsUpdated = optionsAnimated("");
     if (parseFloat(dataResults.downloadsValue) > 1000 && parseFloat(dataResults.downloadsValue) < 1000000) {
         dataResults.downloadsValue = dataResults.downloadsValue/1000;
-        optionsUpdated.suffix = "K"
+        optionsUpdated = optionsAnimated("K");
     }
     else if(parseFloat(dataResults.downloadsValue) > 1000000){
         dataResults.downloadsValue = dataResults.downloadsValue / 1000000;
-        optionsUpdated.suffix = "M"
+        optionsUpdated = optionsAnimated("M");
     }
     
     var publications_downloads = new CountUp('publications_downloads', 0, dataResults.downloadsValue, 0, 1.5, optionsUpdated);
-
+    
     if (!publications_downloads.error) {
         publications_downloads.start();
     } else {
@@ -173,19 +192,17 @@ function moocsIndicator2018(jsondata) {
 
 function setDataMoocs(dataResults) {
     
-    optionsUpdated = optionsAnimation;
+    optionsUpdated = optionsAnimated("");
     if (parseFloat(dataResults.moocsValue) > 1000) {
         dataResults.moocsValue = dataResults.moocsValue / 1000;
-        optionsUpdated.suffix = "K"
-        console.log(parseFloat("HOOOOLA"));
+        optionsUpdated = optionsAnimated("K");
     }
     var valuepublications = new CountUp('valuemoocs', 0, dataResults.moocsValue, 0, 1.5, optionsUpdated);
     
-
-    optionsUpdated = optionsAnimation;
+    optionsUpdated = optionsAnimated("");
     if (parseFloat(dataResults.downloadsValue) > 1000) {
         dataResults.downloadsValue = dataResults.downloadsValue / 1000;
-        optionsUpdated.suffix = "K"
+        optionsUpdated = optionsAnimated("K");
     }
     var publications_downloads = new CountUp('moocs_downloads', 0, dataResults.downloadsValue, 0, 1.5, optionsUpdated);
     
@@ -238,26 +255,28 @@ function datasetsIndicator2018(jsondata) {
 }
 
 function setDataDatasets(dataResults) {
-    optionsUpdated = optionsAnimation;
+    optionsUpdated = optionsAnimated("");
     if (parseFloat(dataResults.datasetsValue) > 1000) {
         dataResults.datasetsValue = dataResults.datasetsValue / 1000;
-        optionsUpdated.suffix = "K"
+        optionsUpdated = optionsAnimated("K");
     }
-    console.log(optionsAnimation);
+    
     var valuepublications = new CountUp('valuedatasets', 0, dataResults.datasetsValue, 0, 1.5, optionsAnimation);
+    
     if (!valuepublications.error) {
         valuepublications.start();
     } else {
         console.error(valuepublications.error);
     }
 
-    optionsUpdated = optionsAnimation;
+    optionsUpdated = optionsAnimated("");
     if (parseFloat(dataResults.downloadsValue) > 1000) {
         dataResults.downloadsValue = dataResults.downloadsValue / 1000;
-        optionsUpdated.suffix = "K"
+        optionsUpdated = optionsAnimated("K");
     }
-    console.log(optionsAnimation);
+    
     var publications_downloads = new CountUp('datasets_downloads', 0, dataResults.downloadsValue, 0, 1.5, optionsAnimation);
+    
     if (!publications_downloads.error) {
         publications_downloads.start();
     } else {
@@ -277,12 +296,13 @@ function setDataDatasets(dataResults) {
  * Columna de indicadores de CODE 
  */
 function codeIndicatorAlltime(jsondata) {
+    // console.log(jsondata);
     var results = {
         codeValue: (jsondata.length > 0) ? jsondata[0].all_the_time_code : '0',
         porcent_total_publications: (jsondata.length > 0) ? jsondata[0].porcent_total_code : '0',
         compare2017_2018_publications: 'Missing',
         downloadsValue: (jsondata.length > 0) ? jsondata[0]['all_the_time_pageviews'] : '0',
-        porcent_total_downloads: (jsondata.length > 0) ? jsondata[0].all_the_time_porcent_total_pageviews : '0',
+        porcent_total_downloads: (jsondata.length > 0) ? (jsondata[0].all_the_time_porcent_total_pageviews * 100).toFixed(1) : '0',
         porcent_downloads_lac: (jsondata.length > 0) ? (jsondata[0]['porcent_total_lac'] * 100).toFixed(1) + '%' : ''
     }
     // console.log(results);
@@ -303,27 +323,29 @@ function codeIndicator2018(jsondata) {
 }
 
 function setCode(dataResults) {
-    console.log(dataResults.codeValue);
-    optionsUpdated = optionsAnimation;
+    // console.log(dataResults);
+    optionsUpdated = optionsAnimated("");
     if (parseFloat(dataResults.codeValue) > 1000) {
         dataResults.codeValue = dataResults.codeValue / 1000;
-        optionsUpdated.suffix = "K"
+        optionsUpdated = optionsAnimated("K");
     }
-    console.log(optionsAnimation);
+    // console.log(optionsAnimation);
     var valuepublications = new CountUp('valuecode', 0, dataResults.codeValue, 0, 1.5, optionsAnimation);
+    
     if (!valuepublications.error) {
         valuepublications.start();
     } else {
         console.error(valuepublications.error);
     }
 
-    optionsUpdated = optionsAnimation;
+    optionsUpdated = optionsAnimated("");
     if (parseFloat(dataResults.downloadsValue) > 1000) {
         dataResults.downloadsValue = dataResults.downloadsValue / 1000;
-        optionsUpdated.suffix = "K"
+        optionsUpdated = optionsAnimated("K");
     }
-    console.log(optionsAnimation);
+    // console.log(optionsAnimation);
     var publications_downloads = new CountUp('code_downloads', 0, dataResults.downloadsValue, 0, 1.5, optionsAnimation);
+    
     if (!publications_downloads.error) {
         publications_downloads.start();
     } else {
@@ -336,4 +358,52 @@ function setCode(dataResults) {
     // $('.datasets_downloads').text(dataResults.downloadsValue);
     $('#code_downloads_porcent').text(dataResults.porcent_total_downloads);
     $('#code_downloads_lac').text(dataResults.porcent_downloads_lac);
+}
+
+
+/**
+ * Columna de indicadores de SUBSCRIBER 
+ */
+function subscriberIndicatorAlltime(jsondata) {
+    // console.log(jsondata);
+    var results = {
+        codeValue: (jsondata.length > 0) ? jsondata[0].subscribers : '0',
+        porcent_total_subscriber: (jsondata.length > 0) ? (jsondata[0].porcent_total_subscribers * 100).toFixed(1) + '%': '',
+        porcent_total_subscriber_2018: 'missing',
+        porcent_subscriber_lac: (jsondata.length > 0) ? (jsondata[0]['porcent_total_from_lac'] * 100).toFixed(1) + '%' : ''
+    }
+    // console.log(results);
+    return results;
+}
+
+function subscriberIndicator2018(jsondata) {
+    var results = {
+        codeValue: (jsondata.length > 0) ? jsondata[0].subscribers : '0',
+        porcent_total_subscriber: (jsondata.length > 0) ? (jsondata[0].porcent_total_subscribers * 100).toFixed(1) + '%': '0',
+        porcent_total_subscriber_2018: 'missing',
+        porcent_subscriber_lac: (jsondata.length > 0) ? (jsondata[0]['porcent_total_from_lac'] * 100).toFixed(1) + '%' : ''
+    }
+    // console.log(results);
+    return results;
+}
+
+function setSubscriber(dataResults) {
+    // console.log(dataResults);
+    optionsUpdated = optionsAnimated("");
+    if (parseFloat(dataResults.codeValue) > 1000) {
+        dataResults.codeValue = dataResults.codeValue / 1000;
+        optionsUpdated = optionsAnimated("K");
+    }
+    // console.log(optionsAnimation);
+    var valuepublications = new CountUp('total_subscriber', 0, dataResults.codeValue, 0, 1.5, optionsAnimation);
+    
+    if (!valuepublications.error) {
+        valuepublications.start();
+    } else {
+        console.error(valuepublications.error);
+    }
+
+    $('#porcent_subscriber').text(dataResults.porcent_total_subscriber);
+    $('#porcent_subscriber_2018').text(dataResults.porcent_total_subscriber_2018);
+    $('#porcent_lac').text(dataResults.porcent_subscriber_lac);
 }
