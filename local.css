@@ -420,6 +420,29 @@ section.publications #timeline-publication .y-axis .tick line {
     display: none;
 }
 
+section.publications .axis--x path {
+    display: none;
+}
+
+section.publications .axis--y path {
+    display: none;
+}
+
+section.publications .line {
+    fill: none;
+    stroke-width: 1.5px;
+}
+
+section.publications .grid line {
+    stroke: lightgrey;
+    stroke-opacity: 0.7;
+    shape-rendering: crispEdges;
+}
+
+section.publications .grid path {
+    stroke-width: 0;
+}
+
 
 
 section.moocs {
