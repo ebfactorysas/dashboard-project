@@ -6768,78 +6768,288 @@ var publicationsDownloadTimelineArray = {
         }
     ],
     downloadTimelineIDB: [{
-        "json_featuretype": "NewFeatureType",
-        "July 2013": 47352,
-        "April 2014": 75875,
-        "April 2018": "426631",
-        "March 2013": "28409",
-        "August 2013": 48744,
-        "August 2018": "526439",
-        "February 2016": "132112",
-        "January 2018": "254352",
-        "June 2013": 49811,
-        "March 2017": "294916",
-        "September 2013": "45348",
-        "April 2015": "113846",
-        "December 2016": "180143",
-        "May 2013": 53930,
-        "August 2017": "302473",
-        "November 2018": "365692",
-        "May 2018": "475915",
-        "June 2018": "426712",
-        "May 2017": "325515",
-        "June 2015": "114228",
-        "November 2013": 68573,
-        "February 2015": "100328",
-        "June 2014": 80768,
-        "August 2015": "172556",
-        "October 2015": "129061",
-        "April 2017": "300736",
-        "July 2015": "120828",
-        "June 2016": "128388",
-        "November 2014": 89722,
-        "August 2014": 88175,
-        "June 2017": "325930",
-        "July 2014": 82182,
-        "September 2015": "110944",
-        "February 2013": "17530",
-        "February 2017": "242784",
-        "October 2013": 71988,
-        "May 2016": "144212",
-        "May 2014": 79394,
-        "November 2016": "204153",
-        "July 2016": "149188",
-        "January 2013": "11730",
-        "December 2013": 65033,
-        "May 2015": "126990",
-        "February 2018": "303252",
-        "October 2016": "244718",
-        "October 2017": "351898",
-        "February 2014": "111489",
-        "October 2018": "586481",
-        "March 2018": "372702",
-        "September 2017": "332437",
-        "April 2016": "141239",
-        "March 2015": "116641",
-        "September 2018": "540158",
-        "December 2017": "266734",
-        "January 2017": "163305",
-        "November 2015": "144792",
-        "December 2014": 91872,
-        "November 2017": "413353",
-        "September 2014": "109836",
-        "January 2016": "109206",
-        "April 2013": "43052",
-        "October 2014": "101192",
-        "July 2018": "435891",
-        "September 2016": "180675",
-        "December 2015": "116089",
-        "March 2016": "137483",
-        "January 2015": 72495,
-        "July 2017": "289135",
-        "March 2014": 68847,
-        "August 2016": "177192",
-        "January 2014": 66505,
-        "xlsx_row_id": 2
-    }]
+            "date": "1-Jul-13",
+            "close": 47352
+        },
+        {
+            "date": "1-Apr-14",
+            "close": 75875
+        },
+        {
+            "date": "1-Apr-18",
+            "close": 426631
+        },
+        {
+            "date": "1-Mar-13",
+            "close": 28409
+        },
+        {
+            "date": "1-Aug-13",
+            "close": 48744
+        },
+        {
+            "date": "1-Aug-18",
+            "close": 526439
+        },
+        {
+            "date": "1-Feb-16",
+            "close": 132112
+        },
+        {
+            "date": "1-Jan-18",
+            "close": 254352
+        },
+        {
+            "date": "1-Jun-13",
+            "close": 49811
+        },
+        {
+            "date": "1-Mar-17",
+            "close": 294916
+        },
+        {
+            "date": "1-Sep-13",
+            "close": 45348
+        },
+        {
+            "date": "1-Apr-15",
+            "close": 113846
+        },
+        {
+            "date": "1-Dec-16",
+            "close": 180143
+        },
+        {
+            "date": "1-May-13",
+            "close": 53930
+        },
+        {
+            "date": "1-Aug-17",
+            "close": 302473
+        },
+        {
+            "date": "1-Nov-18",
+            "close": 365692
+        },
+        {
+            "date": "1-May-18",
+            "close": 475915
+        },
+        {
+            "date": "1-Jun-18",
+            "close": 426712
+        },
+        {
+            "date": "1-May-17",
+            "close": 325515
+        },
+        {
+            "date": "1-Jun-15",
+            "close": 114228
+        },
+        {
+            "date": "1-Nov-13",
+            "close": 68573
+        },
+        {
+            "date": "1-Feb-15",
+            "close": 100328
+        },
+        {
+            "date": "1-Jun-14",
+            "close": 80768
+        },
+        {
+            "date": "1-Aug-15",
+            "close": 172556
+        },
+        {
+            "date": "1-Oct-15",
+            "close": 129061
+        },
+        {
+            "date": "1-Apr-17",
+            "close": 300736
+        },
+        {
+            "date": "1-Jul-15",
+            "close": 120828
+        },
+        {
+            "date": "1-Jun-16",
+            "close": 128388
+        },
+        {
+            "date": "1-Nov-14",
+            "close": 89722
+        },
+        {
+            "date": "1-Aug-14",
+            "close": 88175
+        },
+        {
+            "date": "1-Jun-17",
+            "close": 325930
+        },
+        {
+            "date": "1-Jul-14",
+            "close": 82182
+        },
+        {
+            "date": "1-Sep-15",
+            "close": 110944
+        },
+        {
+            "date": "1-Feb-13",
+            "close": 17530
+        },
+        {
+            "date": "1-Feb-17",
+            "close": 242784
+        },
+        {
+            "date": "1-Oct-13",
+            "close": 71988
+        },
+        {
+            "date": "1-May-16",
+            "close": 144212
+        },
+        {
+            "date": "1-May-14",
+            "close": 79394
+        },
+        {
+            "date": "1-Nov-16",
+            "close": 204153
+        },
+        {
+            "date": "1-Jul-16",
+            "close": 149188
+        },
+        {
+            "date": "1-Jan-13",
+            "close": 11730
+        },
+        {
+            "date": "1-Dec-13",
+            "close": 65033
+        },
+        {
+            "date": "1-May-15",
+            "close": 126990
+        },
+        {
+            "date": "1-Feb-18",
+            "close": 303252
+        },
+        {
+            "date": "1-Oct-16",
+            "close": 244718
+        },
+        {
+            "date": "1-Oct-17",
+            "close": 351898
+        },
+        {
+            "date": "1-Feb-14",
+            "close": 111489
+        },
+        {
+            "date": "1-Oct-18",
+            "close": 586481
+        },
+        {
+            "date": "1-Mar-18",
+            "close": 372702
+        },
+        {
+            "date": "1-Sep-17",
+            "close": 332437
+        },
+        {
+            "date": "1-Apr-16",
+            "close": 141239
+        },
+        {
+            "date": "1-Mar-15",
+            "close": 116641
+        },
+        {
+            "date": "1-Sep-18",
+            "close": 540158
+        },
+        {
+            "date": "1-Dec-17",
+            "close": 266734
+        },
+        {
+            "date": "1-Jan-17",
+            "close": 163305
+        },
+        {
+            "date": "1-Nov-15",
+            "close": 144792
+        },
+        {
+            "date": "1-Dec-14",
+            "close": 91872
+        },
+        {
+            "date": "1-Nov-17",
+            "close": 413353
+        },
+        {
+            "date": "1-Sep-14",
+            "close": 109836
+        },
+        {
+            "date": "1-Jan-16",
+            "close": 109206
+        },
+        {
+            "date": "1-Apr-13",
+            "close": 43052
+        },
+        {
+            "date": "1-Oct-14",
+            "close": 101192
+        },
+        {
+            "date": "1-Jul-18",
+            "close": 435891
+        },
+        {
+            "date": "1-Sep-16",
+            "close": 180675
+        },
+        {
+            "date": "1-Dec-15",
+            "close": 116089
+        },
+        {
+            "date": "1-Mar-16",
+            "close": 137483
+        },
+        {
+            "date": "1-Jan-15",
+            "close": 72495
+        },
+        {
+            "date": "1-Jul-17",
+            "close": 289135
+        },
+        {
+            "date": "1-Mar-14",
+            "close": 68847
+        },
+        {
+            "date": "1-Aug-16",
+            "close": 177192
+        },
+        {
+            "date": "1-Jan-14",
+            "close": 66505
+        }
+    ]
 };

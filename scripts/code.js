@@ -322,7 +322,7 @@ function createChartTimeline(data) {
         .style('stroke-width', '3px')
         .style("font-family", "Gotham-Book")
         .style("font-size", "13px")
-        //.call(d3.axisBottom(x))
+        .call(d3.axisBottom(x))
         .call(d3.axisBottom(x)
             .ticks(d3.timeDay.filter(d => d3.timeDay.count(0, d) % 100 === 0))
             .tickFormat(function (x) {
@@ -363,7 +363,7 @@ function createChartTimeline(data) {
 
             })
             .tickSizeOuter(0)
-        )
+        );
 
     // add the Y Axis
     svg.append("g")
