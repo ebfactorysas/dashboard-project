@@ -1,7 +1,13 @@
 // console.log(bnPublicationsArrays.publicationsDepartments);
 var filter = "departments";
 // var valueFilter = "AUG"
-var valueFilter = "CCB"
+var valueFilter = "CSD"
+var options = {
+    useEasing: true,
+    useGrouping: true,
+    separator: '',
+    decimal: '',
+};
 // var jsondata = "";
 if (filter == "departments"){
     jsondataPublications = bnPublicationsArrays.publicationsDepartments.filter(data => data.department_codes == valueFilter);
@@ -30,13 +36,13 @@ $("input[name*='blueTrend']").click(function () {
     if (this.id == "blueAllTime") {
         dataResultsPublications = publicationsIndicatorAlltime(jsondataPublications);
         dataResultsMoocs = moocsIndicatorAlltime(jsondataMoocs);
-        dataResultsDatasets = moocsIndicatorAlltime(jsondataDatasets);
+        dataResultsDatasets = datasetsIndicatorAlltime(jsondataDatasets);
     } else {
         dataResultsPublications = publicationsIndicator2018(jsondataPublications);
         dataResultsMoocs = moocsIndicator2018(jsondataMoocs);
-        dataResultsDatasets = moocsIndicator2018(jsondataDatasets);
+        dataResultsDatasets = datasetsIndicator2018(jsondataDatasets);
     }
-    setDataMain(dataResultsPublications, dataResultsMoocs, dataDatasetsResults);
+    setDataMain(dataResultsPublications, dataResultsMoocs, dataResultsDatasets);
 });
 
 // publicationsValue = (jsondata.length > 0) ? jsondata[0].all_the_time_publications : '';
@@ -89,10 +95,23 @@ function publicationsIndicator2018(jsondata){
 }
 
 function setDataPublications(dataResults) {
-    $('.valuepublications').text(dataResults.publicationsValue);
+    // $('.valuepublications').text(dataResults.publicationsValue);
+    var valuepublications = new CountUp('valuepublications', 0, dataResults.publicationsValue, 0, 1.5, options);
+    var publications_downloads = new CountUp('publications_downloads', 0, (dataResults.downloadsValue.endsWith("K") ? dataResults.downloadsValue.replace("K","") : dataResults.downloadsValue), 0, 1.5, options);
+    if (!valuepublications.error) {
+        valuepublications.start();
+    } else {
+        console.error(valuepublications.error);
+    }
+    if (!publications_downloads.error) {
+        publications_downloads.start();
+    } else {
+        console.error(publications_downloads.error);
+    }
+    
     $('#publications_porcent').text(dataResults.porcent_total_publications);
     $('#publications_compare_2017').text(dataResults.compare2017_2018_publications);
-    $('.publications_downloads').text(dataResults.downloadsValue);
+    // $('.publications_downloads').text(dataResults.downloadsValue);
     $('#publications_downloads_porcent').text(dataResults.porcent_total_downloads);
     $('#publications_downloads_lac').text(dataResults.porcent_downloads_lac);
 }
@@ -129,10 +148,22 @@ function moocsIndicator2018(jsondata) {
 }
 
 function setDataMoocs(dataResults) {
-    $('.valuemoocs').text(dataResults.moocsValue);
+    var valuepublications = new CountUp('valuemoocs', 0, dataResults.moocsValue, 0, 1.5, options);
+    var publications_downloads = new CountUp('moocs_downloads', 0, (dataResults.downloadsValue.endsWith("K") ? dataResults.downloadsValue.replace("K", "") : dataResults.downloadsValue), 0, 1.5, options);
+    if (!valuepublications.error) {
+        valuepublications.start();
+    } else {
+        console.error(valuepublications.error);
+    }
+    if (!publications_downloads.error) {
+        publications_downloads.start();
+    } else {
+        console.error(publications_downloads.error);
+    }
+    // $('.valuemoocs').text(dataResults.moocsValue);
     $('#moocs_porcent').text(dataResults.porcent_total_publications);
     $('#moocs_compare_2017').text(dataResults.compare2017_2018_publications);
-    $('.moocs_downloads').text(dataResults.downloadsValue);
+    // $('.moocs_downloads').text(dataResults.downloadsValue);
     $('#moocs_downloads_porcent').text(dataResults.porcent_total_downloads);
     $('#moocs_downloads_lac').text(dataResults.porcent_downloads_lac);
 }
@@ -146,9 +177,9 @@ function datasetsIndicatorAlltime(jsondata) {
         datasetsValue: (jsondata.length > 0) ? jsondata[0].all_the_time_datasets : '',
         porcent_total_publications: "missing",
         compare2017_2018_publications: (jsondata.length > 0) ? jsondata[0]['2017_2018_datasets'] : '',
-        downloadsValue: (jsondata.length > 0) ? jsondata[0].all_the_time_downloads : '',
-        porcent_total_downloads: (jsondata.length > 0) ? jsondata[0].all_the_time_datasets : '',
-        porcent_downloads_lac: (jsondata.length > 0) ? jsondata[0].all_the_time_percent_total_lac_downloads : ''
+        downloadsValue: (jsondata.length > 0) ? ((jsondata[0]['all_the_time_downloads'] > 1000) ? ((jsondata[0]['all_the_time_downloads'] / 1000).toFixed(0) + 'K') : jsondata[0]['all_the_time_downloads']) : '',
+        porcent_total_downloads: "missing",
+        porcent_downloads_lac: (jsondata.length > 0) ? (jsondata[0]['all_the_time_percent_total_lac_downloads'] * 100).toFixed(1) + '%' : ''
     }
     console.log(results);
     return results;
@@ -168,10 +199,23 @@ function datasetsIndicator2018(jsondata) {
 }
 
 function setDataDatasets(dataResults) {
-    $('.valuedatasets').text(dataResults.datasetsValue);
+    var valuepublications = new CountUp('valuedatasets', 0, dataResults.datasetsValue, 0, 1.5, options);
+    var publications_downloads = new CountUp('datasets_downloads', 0, ((dataResults.downloadsValue.endsWith("K")) ? dataResults.downloadsValue.replace("K", "") : dataResults.downloadsValue), 0, 1.5, options);
+    if (!valuepublications.error) {
+        valuepublications.start();
+    } else {
+        console.error(valuepublications.error);
+    }
+    if (!publications_downloads.error) {
+        publications_downloads.start();
+    } else {
+        console.error(publications_downloads.error);
+    }
+    console.log(dataResults.downloadsValue.endsWith("K"));
+    // $('.valuedatasets').text(dataResults.datasetsValue);
     $('#datasets_porcent').text(dataResults.porcent_total_publications);
     $('#datasets_compare_2017').text(dataResults.compare2017_2018_publications);
-    $('.datasets_downloads').text(dataResults.downloadsValue);
+    // $('.datasets_downloads').text(dataResults.downloadsValue);
     $('#datasets_downloads_porcent').text(dataResults.porcent_total_downloads);
     $('#datasets_downloads_lac').text(dataResults.porcent_downloads_lac);
 }
