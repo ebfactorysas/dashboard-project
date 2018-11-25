@@ -492,9 +492,9 @@ var dataGauge = {
     }
 }
 
-drawGaugeChart(dataGauge)
+drawGaugeDatasetChart(dataGauge)
 
-function drawGaugeChart(dataGauge) {
+function drawGaugeDatasetChart(dataGauge) {
     var width = 150,
         height = 150,
         progress = 0,
@@ -527,7 +527,8 @@ function drawGaugeChart(dataGauge) {
     var percentComplete = meter.append("text")
         .attr("text-anchor", "middle")
         .attr("class", "percent-complete")
-        .attr("dy", "0.3em");
+        .attr("dy", "0.3em")
+        .text(dataGauge.code.allocated);;
 
 
     var i = d3.interpolate(progress, dataGauge.code.allocated / dataGauge.code.total);
@@ -558,7 +559,8 @@ function drawGaugeChart(dataGauge) {
     var percentComplete2 = meter2.append("text")
         .attr("text-anchor", "middle")
         .attr("class", "percent-complete")
-        .attr("dy", "0.3em");
+        .attr("dy", "0.3em")
+        .text(dataGauge.pageview.allocated + "k");;
 
 
     var i2 = d3.interpolate(progress2, dataGauge.pageview.allocated / dataGauge.pageview.total);
@@ -589,25 +591,26 @@ function drawGaugeChart(dataGauge) {
     var percentComplete3 = meter3.append("text")
         .attr("text-anchor", "middle")
         .attr("class", "percent-complete")
-        .attr("dy", "0.3em");
+        .attr("dy", "0.3em")
+        .text(dataGauge.lac.allocated + "%");
 
 
     var i3 = d3.interpolate(progress3, dataGauge.lac.allocated / dataGauge.lac.total);
 
-    d3.transition().duration(1000).tween("progress", function () {
-        return function (t) {
-            progress = i(t);
-            foreground.attr("d", arc.endAngle(twoPi * progress));
-            percentComplete.text((progress * 100).toFixed(0));
-            progress2 = i2(t);
-            foreground2.attr("d", arc2.endAngle(twoPi * progress2));
-            percentComplete2.text((progress2 * 1000).toFixed(0) + "K");
-            progress3 = i3(t);
-            foreground3.attr("d", arc3.endAngle(twoPi * progress3));
-            percentComplete3.text((progress3 * 100).toFixed(0) + "%");
+    // d3.transition().duration(1000).tween("progress", function () {
+    //     return function (t) {
+    //         progress = i(t);
+    //         foreground.attr("d", arc.endAngle(twoPi * progress));
+    //         percentComplete.text((progress * 100).toFixed(0));
+    //         progress2 = i2(t);
+    //         foreground2.attr("d", arc2.endAngle(twoPi * progress2));
+    //         percentComplete2.text((progress2 * 1000).toFixed(0) + "K");
+    //         progress3 = i3(t);
+    //         foreground3.attr("d", arc3.endAngle(twoPi * progress3));
+    //         percentComplete3.text((progress3 * 100).toFixed(0) + "%");
 
-        };
-    });
+    //     };
+    // });
 }
 
 

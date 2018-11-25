@@ -480,12 +480,12 @@ barsPublicationTrend.append("text")
  * Start Gauges
  */
 
-var dataGauge = {
-    "code": {
+var dataPublicationGauge = {
+    "publication": {
         "total": 100,
         "allocated": 76
     },
-    "pageview": {
+    "download": {
         "total": 1000,
         "allocated": 113
     },
@@ -495,45 +495,46 @@ var dataGauge = {
     }
 }
 
-drawGaugeChart(dataGauge)
+drawGaugePublicationChart(dataPublicationGauge)
 
-function drawGaugeChart(dataGauge) {
+function drawGaugePublicationChart(dataGauge) {
     var width = 150,
         height = 150,
-        progress = 0,
+        progress4 = 0,
         progress3 = 0,
         progress2 = 0,
         formatPercent = d3.format(".0%");
     const twoPi = 2 * Math.PI;
 
-    var arc = d3.arc()
+    var arc4 = d3.arc()
         .startAngle(0)
         .innerRadius(70)
         .outerRadius(64);
 
-    var svg = d3.selectAll("#gauge-publications").append("svg")
+    var svg4 = d3.selectAll("#gauge-publications").append("svg")
         .attr("width", width)
         .attr("height", height)
         .append("g")
         .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-    var meter = svg.append("g")
+    var meter4 = svg4.append("g")
         .attr("class", "funds-allocated-meter");
 
-    meter.append("path")
+    meter4.append("path")
         .attr("class", "background")
-        .attr("d", arc.endAngle(twoPi));
+        .attr("d", arc4.endAngle(twoPi));
 
-    var foreground = meter.append("path")
+    var foreground4 = meter4.append("path")
         .attr("class", "foreground");
 
-    var percentComplete = meter.append("text")
+    var percentComplete4 = meter4.append("text")
         .attr("text-anchor", "middle")
         .attr("class", "percent-complete")
-        .attr("dy", "0.3em");
+        .attr("dy", "0.3em")
+        .text( dataGauge.publication.allocated+ "k");
 
 
-    var i = d3.interpolate(progress, dataGauge.code.allocated / dataGauge.code.total);
+    var i4 = d3.interpolate(progress4, dataGauge.publication.allocated / dataGauge.publication.total);
 
     //gauge K
 
@@ -561,10 +562,11 @@ function drawGaugeChart(dataGauge) {
     var percentComplete2 = meter2.append("text")
         .attr("text-anchor", "middle")
         .attr("class", "percent-complete")
-        .attr("dy", "0.3em");
+        .attr("dy", "0.3em")
+        .text( dataGauge.download.allocated+ "k");
 
 
-    var i2 = d3.interpolate(progress2, dataGauge.pageview.allocated / dataGauge.pageview.total);
+    var i2 = d3.interpolate(progress2, dataGauge.download.allocated / dataGauge.download.total);
 
     //gauge %
 
@@ -592,25 +594,26 @@ function drawGaugeChart(dataGauge) {
     var percentComplete3 = meter3.append("text")
         .attr("text-anchor", "middle")
         .attr("class", "percent-complete")
-        .attr("dy", "0.3em");
+        .attr("dy", "0.3em")
+        .text( dataGauge.lac.allocated+ "%");
 
 
     var i3 = d3.interpolate(progress3, dataGauge.lac.allocated / dataGauge.lac.total);
 
-    d3.transition().duration(1000).tween("progress", function () {
-        return function (t) {
-            progress = i(t);
-            foreground.attr("d", arc.endAngle(twoPi * progress));
-            percentComplete.text((progress * 100).toFixed(0));
-            progress2 = i2(t);
-            foreground2.attr("d", arc2.endAngle(twoPi * progress2));
-            percentComplete2.text((progress2 * 1000).toFixed(0) + "K");
-            progress3 = i3(t);
-            foreground3.attr("d", arc3.endAngle(twoPi * progress3));
-            percentComplete3.text((progress3 * 100).toFixed(0) + "%");
+    // d3.transition().duration(1000).tween("progress", function () {
+    //     return function (t) {
+    //         progress4 = i4(t);
+    //         foreground4.attr("d", arc4.endAngle(twoPi * progress4));
+    //         percentComplete4.text((progress4 * 100).toFixed(0));
+    //         progress2 = i2(t);
+    //         foreground2.attr("d", arc2.endAngle(twoPi * progress2));
+    //         percentComplete2.text((progress2 * 1000).toFixed(0) + "K");
+    //         progress3 = i3(t);
+    //         foreground3.attr("d", arc3.endAngle(twoPi * progress3));
+    //         percentComplete3.text((progress3 * 100).toFixed(0) + "%");
 
-        };
-    });
+    //     };
+    // });
 }
 
 
