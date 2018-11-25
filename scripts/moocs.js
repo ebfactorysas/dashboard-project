@@ -723,11 +723,24 @@ function createChart(data) {
     // append the svg obgect to the body of the page
     // appends a 'group' element to 'svg'
     // moves the 'group' element to the top left margin
-    var svg = d3.select("#timeline-moocs").append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
-        .append("g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    // var svg = d3.select("#timeline-moocs")
+    //     .append("svg")
+    //     .attr("width", width + margin.left + margin.right)
+    //     .attr("height", height + margin.top + margin.bottom)
+    //     .append("g")
+    //     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+    var svg = d3.select("#timeline-moocs")
+        .append("div")
+        .classed("svg-container", true) //container class to make it responsive
+        .append("svg")
+        //responsive SVG needs these 2 attributes and no width and height attr
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "0 0 600 400")
+        //class to make it responsive
+        .classed("svg-content-responsive", true);
     var totalAmount = 0;
     // format the data
     data.forEach(function (d) {
@@ -844,9 +857,27 @@ function createChart(data) {
             .tickFormat(d3.format(".2s")));
 }
 
+
+// var chart = $("#timeline-moocs"),
+//     aspect = chart.width() / chart.height(),
+//     container = chart.parent();
+// $(window).on("resize", function() {
+//     var targetWidth = container.width();
+//     chart.attr("width", targetWidth);
+//     chart.attr("height", Math.round(targetWidth / aspect));
+// }).trigger("resize");
 /**
  * End timelines
  *  */
+
+var aspect = width / height,
+    chart = d3.select('#timeline-moocs svg');
+d3.select(window)
+    .on("resize", function () {
+        var targetWidth = chart.node().getBoundingClientRect().width;
+        chart.attr("width", targetWidth);
+        chart.attr("height", targetWidth / aspect);
+    });
 
 //click radiobutton drawChart(id del click)
 $("input[name*='moocsTrend']").click(function () {
@@ -864,6 +895,7 @@ $("input[name*='moocsTrend']").click(function () {
         drawMoocsRegistrationsChart(orderTopMoocs(moocsTopArrays.IDB2018));
 
     }
+    console.log("change ", test);
     createChart(test);
 
     //name -> codeTrend -> 2018 ->

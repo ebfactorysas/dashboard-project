@@ -21,6 +21,22 @@
     <script src="https://d3js.org/d3.v5.min.js"></script>
 
     <title>Mockup</title>
+    <style>
+        .svg-container {
+            display: inline-block;
+            position: relative;
+            width: 100%;
+            padding-bottom: 100%; /* aspect ratio */
+            vertical-align: top;
+            overflow: hidden;
+        }
+        .svg-content-responsive {
+            display: inline-block;
+            position: absolute;
+            top: 10px;
+            left: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -89,15 +105,15 @@
                         <div class="col-12 ">
                             <!--<p class="text-right"> <i class="far fa-circle fa-xs"></i> ALL THE TIME &nbsp; <i class="far fa-dot-circle"></i>
                                 2018 DATA</p>-->
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" class="AllTime form-check-input blue" id="blueAllTime" name="blueTrend" value="AllTheTime"
-                                        checked>
-                                    <label class="form-check-label blue font-weight-bold" for="allTheTime">All The Time</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" class="2018" id="blue2018" name="blueTrend" value="2018Data">
-                                    <label class="form-check-label blue font-weight-bold" for="2018Data">2018 Data</label>
-                                </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="AllTime form-check-input blue" id="blueAllTime" name="blueTrend"
+                                    value="AllTheTime" checked>
+                                <label class="form-check-label blue font-weight-bold" for="allTheTime">All The Time</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="2018" id="blue2018" name="blueTrend" value="2018Data">
+                                <label class="form-check-label blue font-weight-bold" for="2018Data">2018 Data</label>
+                            </div>
                         </div>
 
                     </div>
@@ -107,22 +123,26 @@
                             <div class="col-12 border-right-dash d-flex justify-content-center align-items-center flex-column">
                                 <h4>PUBLICATIONS</h4>
                                 <h1 class="pt-4 pb-4 valuepublications">0</h1>
-                                <p><span id="publications_porcent">13%</span> OF 2018 PUBLICATIONS <br> <span id="publications_compare_2017"></span> COMPARED TO 2017</p>
+                                <p><span id="publications_porcent">13%</span> OF 2018 PUBLICATIONS <br> <span id="publications_compare_2017"></span>
+                                    COMPARED TO 2017</p>
                                 <img class="pt-4 pb-4" src="img/arrow-down.png" alt="arrow-down">
                                 <h4>DOWNLOADS</h4>
                                 <h1 class="pt-4 pb-4 publications_downloads">113K</h1>
-                                <p><span id="publications_downloads_porcent">16%</span> OF 2018 DOWNLOADS <br> <span id="publications_downloads_lac">76%</span> FROM LAC</p>
+                                <p><span id="publications_downloads_porcent">16%</span> OF 2018 DOWNLOADS <br> <span id="publications_downloads_lac">76%</span>
+                                    FROM LAC</p>
                             </div>
                         </div>
                         <div class="col-sm">
                             <div class="col-12 border-right-dash d-flex justify-content-center align-items-center flex-column">
                                 <h4>MOOCS</h4>
                                 <h1 class="pt-4 pb-4 valuemoocs">6</h1>
-                                <p><span id="moocs_porcent">33%</span> OF 2018 MOOCS <br> <span id="moocs_compare_2017">-3</span> COMPARED TO 2017</p>
+                                <p><span id="moocs_porcent">33%</span> OF 2018 MOOCS <br> <span id="moocs_compare_2017">-3</span>
+                                    COMPARED TO 2017</p>
                                 <img class="pt-4 pb-4" src="img/arrow-down.png" alt="arrow-down">
                                 <h4>REGISTRATIONS</h4>
                                 <h1 class="pt-4 pb-4 moocs_downloads">52K</h1>
-                                <p><span id="moocs_downloads_porcent">23%</span> OF 2018 REGISTRATIONS <br> <span id="moocs_downloads_lac">88%</span> FROM LAC</p>
+                                <p><span id="moocs_downloads_porcent">23%</span> OF 2018 REGISTRATIONS <br> <span id="moocs_downloads_lac">88%</span>
+                                    FROM LAC</p>
                             </div>
                         </div>
                         <div class="col-sm">
@@ -472,7 +492,7 @@
                         <h4>CODE</h4>
                         <span><i class="fas fa-circle fa-xs"></i>Total from SCL</span>
                         <span><i class="fas fa-circle fa-xs"></i>Rest of IDB</span>
-                        <div id="gauge-code" class="gauge" ></div>
+                        <div id="gauge-code" class="gauge"></div>
                     </div>
                     <div class="gauge-2">
                         <h4>PAGEVIEWS</h4>
@@ -491,8 +511,8 @@
                     <div class="row m-2 pb-2 ">
                         <div class="col-12 text-right">
                             <div class="form-check form-check-inline">
-                                <input type="radio" class="AllTime form-check-input yellow" id="codeAllTime" name="codeTrend" value="AllTheTime"
-                                    checked>
+                                <input type="radio" class="AllTime form-check-input yellow" id="codeAllTime" name="codeTrend"
+                                    value="AllTheTime" checked>
                                 <label class="form-check-label yellow font-weight-bold" for="allTheTime">All The Time</label>
                             </div>
                             <div class="form-check form-check-inline">
@@ -510,7 +530,7 @@
                                 <div class="row pt-2">
                                     <div class="col-sm-2">
                                         <h4 class="yellow">30 DAYS TREND</h4>
-                                        
+
                                     </div>
                                     <div class="col">
                                         <h4 class="yellow">TOP 10 IDB CODE - <span class="pr-2">SCL CODE</span>&nbsp;
