@@ -167,7 +167,7 @@ svg.append("g")
                 }
 
 
-            })
+            }})
             .tickSizeOuter(0)
         )
 
