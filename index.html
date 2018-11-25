@@ -21,6 +21,22 @@
     <script src="https://d3js.org/d3.v5.min.js"></script>
 
     <title>Mockup</title>
+    <style>
+        .svg-container {
+            display: inline-block;
+            position: relative;
+            width: 100%;
+            padding-bottom: 100%; /* aspect ratio */
+            vertical-align: top;
+            overflow: hidden;
+        }
+        .svg-content-responsive {
+            display: inline-block;
+            position: absolute;
+            top: 10px;
+            left: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -190,19 +206,19 @@
                         <h4>PUBLICATIONS</h4>
                         <span><i class="fas fa-circle fa-xs"></i>Total from SCL</span>
                         <span><i class="fas fa-circle fa-xs"></i>Rest of IDB</span>
-                        <div class="gauge" id="gauge1"></div>
+                        <div class="gauge" id="gauge-publications"></div>
                     </div>
                     <div class="gauge-2">
                         <h4>DOWNLOADS</h4>
                         <span><i class="fas fa-circle fa-xs"></i>Total from SCL</span>
                         <span><i class="fas fa-circle fa-xs"></i>Rest of IDB</span>
-                        <div class="gauge-k" id="gauge2"></div>
+                        <div class="gauge-k" id="gauge-download-p"></div>
                     </div>
                     <div class="gauge-3">
                         <h4>DOWNLOADS FROM LAC</h4>
                         <span><i class="fas fa-circle fa-xs"></i>LAC</span>
                         <span><i class="fas fa-circle fa-xs"></i>Rest of World</span>
-                        <div id="gauge3" class="text-center gauge-p"></div>
+                        <div id="gauge-lac-p" class="text-center gauge-p"></div>
                     </div>
                 </div>
                 <div class="col right-bar grayr-background">
@@ -292,15 +308,15 @@
                     <h4>MOOCS</h4>
                     <span><i class="fas fa-circle fa-xs"></i>Total from SCL</span>
                     <span><i class="fas fa-circle fa-xs"></i>Rest of IDB</span>
-                    <div class="gauge" id="gauge1"></div>
+                    <div class="gauge" id="gauge-moocs"></div>
                     <h4>REGISTRATIONS</h4>
                     <span><i class="fas fa-circle fa-xs"></i>Total from SCL</span>
                     <span><i class="fas fa-circle fa-xs"></i>Rest of IDB</span>
-                    <div class="gauge-k" id="gauge2"></div>
+                    <div class="gauge-k" id="gauge-registrations-m"></div>
                     <h4>REGISTRATIONS FROM LAC</h4>
                     <span><i class="fas fa-circle fa-xs"></i>From LAC</span>
                     <span><i class="fas fa-circle fa-xs"></i>Rest of World</span>
-                    <div id="gauge3" class="text-center gauge-p"></div>
+                    <div id="gauge-lac-m" class="text-center gauge-p"></div>
                 </div>
                 <div class="col right-bar grayr-background">
                     <div class="row m-2 pb-2 ">
@@ -408,15 +424,15 @@
                     <h4>DATASETS</h4>
                     <span><i class="fas fa-circle fa-xs"></i>Total from SCL</span>
                     <span><i class="fas fa-circle fa-xs"></i>Rest of IDB</span>
-                    <div class="gauge" id="gauge1"></div>
+                    <div class="gauge" id="gauge-datasets"></div>
                     <h4>DOWNLOADS</h4>
                     <span><i class="fas fa-circle fa-xs"></i>Total from SCL</span>
                     <span><i class="fas fa-circle fa-xs"></i>Rest of IDB</span>
-                    <div class="gauge-k" id="gauge2"></div>
+                    <div class="gauge-k" id="gauge-download-d"></div>
                     <h4>DOWNLOADS FROM LAC</h4>
                     <span><i class="fas fa-circle fa-xs"></i>From LAC</span>
                     <span><i class="fas fa-circle fa-xs"></i>Rest of World</span>
-                    <div id="gauge3" class="text-center gauge-p"></div>
+                    <div id="gauge-lac-d" class="text-center gauge-p"></div>
                 </div>
                 <div class="col right-bar grayr-background">
                     <div class="row m-2 pb-2 ">
@@ -575,15 +591,15 @@
                     <h4>SUSCRIBERS</h4>
                     <span><i class="fas fa-circle fa-xs"></i>Total from SCL</span>
                     <span><i class="fas fa-circle fa-xs"></i>Rest of IDB</span>
-                    <div class="gauge" id="gauge1"></div>
+                    <div class="gauge" id="gauge-suscribers"></div>
                     <h4>SUSCRIBERS FROM LAC</h4>
                     <span><i class="fas fa-circle fa-xs"></i>Total from SCL</span>
                     <span><i class="fas fa-circle fa-xs"></i>Rest of IDB</span>
-                    <div class="gauge-k" id="gauge2"></div>
+                    <div class="gauge-k" id="gauge-lac-s"></div>
                     <h4>2018 NEW SUSCRIBERS</h4>
                     <span><i class="fas fa-circle fa-xs"></i>From LAC</span>
                     <span><i class="fas fa-circle fa-xs"></i>Rest of World</span>
-                    <div id="gauge3" class="text-center gauge-p"></div>
+                    <div id="gauge-2018" class="text-center gauge-p"></div>
                 </div>
                 <div class="col right-bar grayr-background">
                     <div class="row m-2 pb-2 ">
