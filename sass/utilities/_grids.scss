@@ -1,0 +1,13 @@
+$wide_mobile: 480px;
+$tab: 768px;
+$desk: 990px;
+$wide: 1280px;
+$plus_wide: 1600px;
+$ultra_wide: 1900px;
+
+$max_wide_obile: max-width $wide_mobile;
+$max_tab: max-width $tab;
+$max_desk: max-width $desk;
+$max_wide: max-width $wide;
+$max_plus_wide: max-width $plus_wide;
+$max_ultra_wide: max-width $ultra_wide;

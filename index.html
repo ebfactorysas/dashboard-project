@@ -22,6 +22,7 @@
     <script src="countUp.min.js"></script>
 
     <title>Mockup</title>
+
 </head>
 
 <body>
@@ -90,12 +91,12 @@
                         <div class="col-12 ">
                             <!--<p class="text-right"> <i class="far fa-circle fa-xs"></i> ALL THE TIME &nbsp; <i class="far fa-dot-circle"></i>
                                 2018 DATA</p>-->
-                            <div class="form-check form-check-inline">
+                            <div class="form-check form-check-inline container_radio container_radio">
                                 <input type="radio" class="AllTime form-check-input blue" id="blueAllTime" name="blueTrend"
                                     value="AllTheTime" checked>
                                 <label class="form-check-label blue font-weight-bold" for="allTheTime">All The Time</label>
                             </div>
-                            <div class="form-check form-check-inline">
+                            <div class="form-check form-check-inline container_radio container_radio">
                                 <input type="radio" class="2018" id="blue2018" name="blueTrend" value="2018Data">
                                 <label class="form-check-label blue font-weight-bold" for="2018Data">2018 Data</label>
                             </div>
@@ -209,14 +210,14 @@
                     </div>
                 </div>
                 <div class="col right-bar grayr-background">
-                    <div class="row m-2 pb-2 d-border-bottom">
+                    <div class="row m-2 pb-2 ">
                         <div class="col-12 text-right">
-                            <div class="form-check form-check-inline">
+                            <div class="form-check form-check-inline container_radio">
                                 <input type="radio" class="AllTime form-check-input yellow" id="publicationAllTime"
                                     name="publicationTrend" value="AllTheTime" checked>
                                 <label class="form-check-label red font-weight-bold" for="allTheTime">All The Time</label>
                             </div>
-                            <div class="form-check form-check-inline">
+                            <div class="form-check form-check-inline container_radio">
                                 <input type="radio" class="2018" id="publication2018" name="publicationTrend" value="2018Data">
                                 <label class="form-check-label red font-weight-bold" for="2018Data">2018 Data</label>
                             </div>
@@ -314,12 +315,12 @@
                 <div class="col right-bar grayr-background">
                     <div class="row m-2 pb-2 ">
                         <div class="col-12 text-right">
-                            <div class="form-check form-check-inline">
+                            <div class="form-check form-check-inline container_radio">
                                 <input class="form-check-input orange" type="radio" name="moocsTrend" id="allTimeRadio"
                                     value="all" checked>
                                 <label class="form-check-label orange font-weight-bold" for="allTimeRadio">ALL THE TIME</label>
                             </div>
-                            <div class="form-check form-check-inline">
+                            <div class="form-check form-check-inline container_radio">
                                 <input class="form-check-input orange" type="radio" name="moocsTrend" id="2018Radio"
                                     value="2018">
                                 <label class="form-check-label orange font-weight-bold" for="2018Radio">2018 DATA</label>
@@ -526,12 +527,12 @@
                 <div class="col right-bar grayr-background">
                     <div class="row m-2 pb-2 ">
                         <div class="col-12 text-right">
-                            <div class="form-check form-check-inline">
+                            <div class="form-check form-check-inline container_radio">
                                 <input type="radio" class="AllTime form-check-input yellow" id="codeAllTime" name="codeTrend"
                                     value="AllTheTime" checked>
                                 <label class="form-check-label yellow font-weight-bold" for="allTheTime">All The Time</label>
                             </div>
-                            <div class="form-check form-check-inline">
+                            <div class="form-check form-check-inline container_radio">
                                 <input type="radio" class="2018" id="code2018" name="codeTrend" value="2018Data">
                                 <label class="form-check-label yellow font-weight-bold" for="2018Data">2018 Data</label>
                             </div>
@@ -616,38 +617,49 @@
                 </div>
                 <div class="col right-bar grayr-background">
                     <div class="row m-2 pb-2 ">
-                        <div class="col-12 ">
-                            <p class="text-right green"> <i class="far fa-circle fa-xs"></i> ALL THE TIME &nbsp; <i
-                                    class="far fa-dot-circle"></i>
-                                2018 DATA</p>
+                        <div class="col-12 text-right">
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="AllTime form-check-input yellow" id="suscribersAllTime" name="suscribersTrend"
+                                    value="AllTheTime" checked>
+                                <label class="form-check-label green font-weight-bold" for="allTheTime">All The Time</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="2018" id="suscribers2018" name="suscribersTrend" value="2018Data">
+                                <label class="form-check-label green  font-weight-bold" for="2018Data">2018 Data</label>
+                            </div>
                         </div>
-                        <div class="col-sm-7">
-                            <div class="col-sm-12 pt-4  d-border-bottom">
+                        <div class="left-zone pb-4 pr-4">
+                            <div class="col-sm-12 top-zone d-border-bottom">
                                 <h4 class=" text-center green">WHAT ARE SCL SUSCRIBERS INTERESTED ON?</h4>
                                 <div id="suscribers-interested"></div>
                             </div>
-                            <div class="col-sm-12 pt-4 text-center ">
-                                <h4 class="green">FOR WHICH KIND OF INSTITUTION DO THEY WORK FOR?</h4>
-                                <div class="col-sm-12 " id="institution-suscribers"></div>
-                            </div>
                         </div>
-                        <div class="col-sm-5 pt-4  d-border-left">
-                            <div class="col-sm-12 d-flex align-items-center d-border-bottom">
+                        <div class="pl-4 right-zone d-border-left">
+                            <div class="col-sm-12 top-zone d-flex align-items-center d-border-bottom">
                                 <div class="vertical-text green"> GENDER</div>
                                 <div class="d-flex flex-column w-100">
                                     <h4 class=" text-center green">DEMOGRAPHICS</h4>
                                     <div id="demographics-suscribers"></div>
                                 </div>
-
                             </div>
+                        </div>
+                        <div class="left-zone pb-4 pr-4">
+                            <div class="down-zone col-sm-12 pt-4 text-center ">
+                                <h4 class="green">FOR WHICH KIND OF INSTITUTION DO THEY WORK FOR?</h4>
+                                <div class="col-sm-12 " id="institution-suscribers"></div>
+                            </div>
+                        </div>
+                        <div class="pl-4 right-zone d-border-left">
                             <div class=" m-0 d-flex align-items-center col-sm-12 pt-4 ">
                                 <div class="vertical-text green"> AGE GROUPS</div>
                                 <div id="age-suscribers" class="pt-4"></div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
     <section class="menu">
