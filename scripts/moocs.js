@@ -148,11 +148,21 @@ function drawMoocsRegistrationsChart(dataMoocs) {
         heightMoocs = 200 - marginMoocs.top - marginMoocs.bottom;
 
 
-    var svgMoocs = d3.select("#moocs-registrations").append("svg")
-        .attr("width", widthMoocs + marginMoocs.left + marginMoocs.right)
-        .attr("height", heightMoocs + marginMoocs.top + marginMoocs.bottom)
+    var svgMoocs = d3.select("#moocs-registrations")
+    .append("svg")
+        //responsive SVG needs these 2 attributes and no width and height attr
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-55 -25 700 200")
         .append("g")
-        .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")");
+        // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
+
+        //class to make it responsive
+        .classed("svg-content-responsive", true);
+        // .append("svg")
+        // .attr("width", widthMoocs + marginMoocs.left + marginMoocs.right)
+        // .attr("height", heightMoocs + marginMoocs.top + marginMoocs.bottom)
+        // .append("g")
+        // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")");
 
     var xMoocs = d3.scaleLinear()
         .range([0, widthMoocs])
@@ -659,7 +669,7 @@ function createChart(data) {
         .append("svg")
         //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "0 0 600 400")
+        .attr("viewBox", "0 0 500 200")
         //class to make it responsive
         .classed("svg-content-responsive", true);
     var totalAmount = 0;
