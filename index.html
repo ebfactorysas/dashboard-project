@@ -21,22 +21,6 @@
     <script src="https://d3js.org/d3.v5.min.js"></script>
 
     <title>Mockup</title>
-    <style>
-        .svg-container {
-            display: inline-block;
-            position: relative;
-            width: 100%;
-            padding-bottom: 40%; /* aspect ratio */
-            vertical-align: top;
-            overflow: hidden;
-        }
-        .svg-content-responsive {
-            display: inline-block;
-            position: absolute;
-            top: 10px;
-            left: 0;
-        }
-    </style>
 </head>
 
 <body>
@@ -223,16 +207,9 @@
                 </div>
                 <div class="col right-bar grayr-background">
                     <div class="row m-2 pb-2 d-border-bottom">
-                        <div class="col-12 text-right">
-                            <div class="form-check form-check-inline">
-                                <input type="radio" class="AllTime form-check-input yellow" id="publicationAllTime"
-                                    name="publicationTrend" value="AllTheTime" checked>
-                                <label class="form-check-label red font-weight-bold" for="allTheTime">All The Time</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input type="radio" class="2018" id="publication2018" name="publicationTrend" value="2018Data">
-                                <label class="form-check-label red font-weight-bold" for="2018Data">2018 Data</label>
-                            </div>
+                        <div class="col-12 ">
+                            <p class="text-right"> <i class="far fa-circle fa-xs"></i> ALL THE TIME &nbsp; <i class="far fa-dot-circle"></i>
+                                2018 DATA</p>
                         </div>
                         <div class="left-zone pb-4 pr-4">
                             <div class="col-sm-12 top-zone d-border-bottom">
@@ -420,19 +397,26 @@
     <section class="datasets">
         <div class="col-sm-12">
             <div class="row">
-                <div class="col-lg-2 pt-4 purple-background left-bar">
-                    <h4>DATASETS</h4>
-                    <span><i class="fas fa-circle fa-xs"></i>Total from SCL</span>
-                    <span><i class="fas fa-circle fa-xs"></i>Rest of IDB</span>
-                    <div class="gauge" id="gauge-datasets"></div>
-                    <h4>DOWNLOADS</h4>
-                    <span><i class="fas fa-circle fa-xs"></i>Total from SCL</span>
-                    <span><i class="fas fa-circle fa-xs"></i>Rest of IDB</span>
-                    <div class="gauge-k" id="gauge-download-d"></div>
-                    <h4>DOWNLOADS FROM LAC</h4>
-                    <span><i class="fas fa-circle fa-xs"></i>From LAC</span>
-                    <span><i class="fas fa-circle fa-xs"></i>Rest of World</span>
-                    <div id="gauge-lac-d" class="text-center gauge-p"></div>
+                <div class="purple-background left-bar">
+                    <div class="gauge-1">
+                        <h4>DATASETS</h4>
+                        <span><i class="fas fa-circle fa-xs"></i>Total from SCL</span>
+                        <span><i class="fas fa-circle fa-xs"></i>Rest of IDB</span>
+                        <div class="gauge" id="gauge-datasets"></div>
+                    </div>
+                    <div class="gauge-2">
+                        <h4>DOWNLOADS</h4>
+                        <span><i class="fas fa-circle fa-xs"></i>Total from SCL</span>
+                        <span><i class="fas fa-circle fa-xs"></i>Rest of IDB</span>
+                        <div class="gauge-k" id="gauge-download-d"></div>
+                    </div>
+                    <div class="gauge-3">
+                        <h4>DOWNLOADS FROM LAC</h4>
+                        <span><i class="fas fa-circle fa-xs"></i>From LAC</span>
+                        <span><i class="fas fa-circle fa-xs"></i>Rest of World</span>
+                        <div id="gauge-lac-d" class="text-center gauge-p"></div>
+                    </div>
+
                 </div>
                 <div class="col right-bar grayr-background">
                     <div class="row m-2 pb-2 ">
@@ -528,6 +512,7 @@
                                 <input type="radio" class="2018" id="code2018" name="codeTrend" value="2018Data">
                                 <label class="form-check-label yellow font-weight-bold" for="2018Data">2018 Data</label>
                             </div>
+
                         </div>
                         <div class="left-zone pb-4 pr-4">
                             <div class="col-sm-12 top-zone d-border-bottom">
@@ -587,19 +572,25 @@
     <section class="suscribers">
         <div class="col-sm-12">
             <div class="row">
-                <div class="col-lg-2 pt-4 green-background left-bar">
-                    <h4>SUSCRIBERS</h4>
-                    <span><i class="fas fa-circle fa-xs"></i>Total from SCL</span>
-                    <span><i class="fas fa-circle fa-xs"></i>Rest of IDB</span>
-                    <div class="gauge" id="gauge-suscribers"></div>
-                    <h4>SUSCRIBERS FROM LAC</h4>
-                    <span><i class="fas fa-circle fa-xs"></i>Total from SCL</span>
-                    <span><i class="fas fa-circle fa-xs"></i>Rest of IDB</span>
-                    <div class="gauge-k" id="gauge-lac-s"></div>
-                    <h4>2018 NEW SUSCRIBERS</h4>
-                    <span><i class="fas fa-circle fa-xs"></i>From LAC</span>
-                    <span><i class="fas fa-circle fa-xs"></i>Rest of World</span>
-                    <div id="gauge-2018" class="text-center gauge-p"></div>
+                <div class="green-background left-bar">
+                    <div class="gauge-1 ">
+                        <h4>SUSCRIBERS</h4>
+                        <span><i class="fas fa-circle fa-xs"></i>Total from SCL</span>
+                        <span><i class="fas fa-circle fa-xs"></i>Rest of IDB</span>
+                        <div class="gauge" id="gauge-suscribers"></div>
+                    </div>
+                    <div class="gauge-2">
+                        <h4>SUSCRIBERS FROM LAC</h4>
+                        <span><i class="fas fa-circle fa-xs"></i>Total from SCL</span>
+                        <span><i class="fas fa-circle fa-xs"></i>Rest of IDB</span>
+                        <div class="gauge-k" id="gauge-lac-s"></div>
+                    </div>
+                    <div class="gauge-3">
+                        <h4>2018 NEW SUSCRIBERS</h4>
+                        <span><i class="fas fa-circle fa-xs"></i>From LAC</span>
+                        <span><i class="fas fa-circle fa-xs"></i>Rest of World</span>
+                        <div id="gauge-2018" class="text-center gauge-p"></div>
+                    </div>
                 </div>
                 <div class="col right-bar grayr-background">
                     <div class="row m-2 pb-2 ">
