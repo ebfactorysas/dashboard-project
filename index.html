@@ -19,6 +19,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="countUp.min.js"></script>
 
     <title>Mockup</title>
 </head>
@@ -106,40 +107,34 @@
                         <div class="col-sm">
                             <div class="col-12 border-right-dash d-flex justify-content-center align-items-center flex-column">
                                 <h4>PUBLICATIONS</h4>
-                                <h1 class="pt-4 pb-4 valuepublications">0</h1>
-                                <p><span id="publications_porcent">13%</span> OF 2018 PUBLICATIONS <br> <span id="publications_compare_2017"></span>
-                                    COMPARED TO 2017</p>
+                                <h1 class="pt-4 pb-4 valuepublications"><span id="valuepublications">0</span></h1>
+                                <p><span id="publications_porcent">13%</span> OF 2018 PUBLICATIONS <br> <span id="publications_compare_2017"></span> COMPARED TO 2017</p>
                                 <img class="pt-4 pb-4" src="img/arrow-down.png" alt="arrow-down">
                                 <h4>DOWNLOADS</h4>
-                                <h1 class="pt-4 pb-4 publications_downloads">113K</h1>
-                                <p><span id="publications_downloads_porcent">16%</span> OF 2018 DOWNLOADS <br> <span id="publications_downloads_lac">76%</span>
-                                    FROM LAC</p>
+                                <h1 class="pt-4 pb-4 publications_downloads"><span id="publications_downloads">0</span></h1>
+                                <p><span id="publications_downloads_porcent">16%</span> OF 2018 DOWNLOADS <br> <span id="publications_downloads_lac">76%</span> FROM LAC</p>
                             </div>
                         </div>
                         <div class="col-sm">
                             <div class="col-12 border-right-dash d-flex justify-content-center align-items-center flex-column">
                                 <h4>MOOCS</h4>
-                                <h1 class="pt-4 pb-4 valuemoocs">6</h1>
-                                <p><span id="moocs_porcent">33%</span> OF 2018 MOOCS <br> <span id="moocs_compare_2017">-3</span>
-                                    COMPARED TO 2017</p>
+                                <h1 class="pt-4 pb-4 valuemoocs" id="valuemoocs">6</h1>
+                                <p><span id="moocs_porcent">33%</span> OF 2018 MOOCS <br> <span id="moocs_compare_2017">-3</span> COMPARED TO 2017</p>
                                 <img class="pt-4 pb-4" src="img/arrow-down.png" alt="arrow-down">
                                 <h4>REGISTRATIONS</h4>
-                                <h1 class="pt-4 pb-4 moocs_downloads">52K</h1>
-                                <p><span id="moocs_downloads_porcent">23%</span> OF 2018 REGISTRATIONS <br> <span id="moocs_downloads_lac">88%</span>
-                                    FROM LAC</p>
+                                <h1 class="pt-4 pb-4 moocs_downloads" id="moocs_downloads">52K</h1>
+                                <p><span id="moocs_downloads_porcent">23%</span> OF 2018 REGISTRATIONS <br> <span id="moocs_downloads_lac">88%</span> FROM LAC</p>
                             </div>
                         </div>
                         <div class="col-sm">
                             <div class="col-12 border-right-dash d-flex justify-content-center align-items-center flex-column">
                                 <h4>DATASETS</h4>
-                                <h1 class="pt-4 pb-4 valuedatasets">2</h1>
-                                <p><span id="datasets_porcent">100%</span> OF 2018 DATASETS <br> <span id="datasets_compare_2017">-13</span>
-                                    COMPARED TO 2017</p>
+                                <h1 class="pt-4 pb-4 valuedatasets" id="valuedatasets">2</h1>
+                                <p><span id="datasets_porcent">100%</span> OF 2018 DATASETS <br> <span id="datasets_compare_2017">-13</span> COMPARED TO 2017</p>
                                 <img class="pt-4 pb-4" src="img/arrow-down.png" alt="arrow-down">
                                 <h4>DOWNLOADS</h4>
-                                <h1 class="pt-4 pb-4 datasets_downloads">2K</h1>
-                                <p><span id="datasets_downloads_porcent">8%</span> OF 2018 DOWNLOADS <br> <span id="datsets_downloads_lac">56%</span>
-                                    FROM LAC</p>
+                                <h1 class="pt-4 pb-4 datasets_downloads" id="datasets_downloads">2K</h1>
+                                <p><span id="datasets_downloads_porcent">8%</span> OF 2018 DOWNLOADS <br> <span id="datsets_downloads_lac">56%</span> FROM LAC</p>
                             </div>
                         </div>
                         <div class="col-sm">
@@ -207,9 +202,16 @@
                 </div>
                 <div class="col right-bar grayr-background">
                     <div class="row m-2 pb-2 d-border-bottom">
-                        <div class="col-12 ">
-                            <p class="text-right"> <i class="far fa-circle fa-xs"></i> ALL THE TIME &nbsp; <i class="far fa-dot-circle"></i>
-                                2018 DATA</p>
+                        <div class="col-12 text-right">
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="AllTime form-check-input yellow" id="publicationAllTime"
+                                    name="publicationTrend" value="AllTheTime" checked>
+                                <label class="form-check-label red font-weight-bold" for="allTheTime">All The Time</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="2018" id="publication2018" name="publicationTrend" value="2018Data">
+                                <label class="form-check-label red font-weight-bold" for="2018Data">2018 Data</label>
+                            </div>
                         </div>
                         <div class="left-zone pb-4 pr-4">
                             <div class="col-sm-12 top-zone d-border-bottom">
@@ -678,6 +680,7 @@
 <script src="json/code/code_pageviews_timeline.js"></script>
 
 <script src="json/subscribers/subscribers.js"></script>
+
 
 <script src="json/bignumberData.js"></script>
 <script src="main.js"></script>
