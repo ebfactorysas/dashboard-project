@@ -1,7 +1,7 @@
 var moocsEducationArrays = {
     educationLevelDepartments: [{
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
+            "code": "CSC",
             "value": "307",
             "% of 2018 registrations ": "0.0340543538546866",
             "name": "Associate",
@@ -9,7 +9,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
+            "code": "CSC",
             "value": "7",
             "% of 2018 registrations ": "0.000776483638380477",
             "name": "Elementary",
@@ -17,7 +17,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
+            "code": "CSC",
             "value": "632",
             "% of 2018 registrations ": "0.0701053799223516",
             "name": "High School",
@@ -25,7 +25,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
+            "code": "CSC",
             "value": "2607",
             "% of 2018 registrations ": "0.289184692179701",
             "name": "Bachelor",
@@ -33,7 +33,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
+            "code": "CSC",
             "value": "1580",
             "% of 2018 registrations ": "0.175263449805879",
             "name": "Master",
@@ -41,7 +41,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
+            "code": "CSC",
             "value": "164",
             "% of 2018 registrations ": "0.018191902384914",
             "name": "Doctorate",
@@ -49,7 +49,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
+            "code": "CSC",
             "value": "125",
             "% of 2018 registrations ": "0.0138657792567942",
             "name": "Other",
@@ -57,7 +57,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
+            "code": "CSC",
             "value": "12",
             "% of 2018 registrations ": "0.00133111480865225",
             "name": "None",
@@ -65,7 +65,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
+            "code": "CSC",
             "value": "3581",
             "% of 2018 registrations ": "0.397226844148641",
             "name": "Not Available",
@@ -73,7 +73,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
+            "code": "CSD",
             "value": "992",
             "% of 2018 registrations ": "0.103387180823346",
             "name": "Associate",
@@ -81,7 +81,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
+            "code": "CSD",
             "value": "6",
             "% of 2018 registrations ": "0.000625325690463783",
             "name": "Elementary",
@@ -89,7 +89,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
+            "code": "CSD",
             "value": "525",
             "% of 2018 registrations ": "0.054715997915581",
             "name": "High School",
@@ -97,7 +97,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
+            "code": "CSD",
             "value": "2768",
             "% of 2018 registrations ": "0.288483585200625",
             "name": "Bachelor",
@@ -105,7 +105,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
+            "code": "CSD",
             "value": "2053",
             "% of 2018 registrations ": "0.213965607087025",
             "name": "Master",
@@ -113,7 +113,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
+            "code": "CSD",
             "value": "225",
             "% of 2018 registrations ": "0.0234497133923919",
             "name": "Doctorate",
@@ -121,7 +121,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
+            "code": "CSD",
             "value": "121",
             "% of 2018 registrations ": "0.0126107347576863",
             "name": "Other",
@@ -129,7 +129,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
+            "code": "CSD",
             "value": "4",
             "% of 2018 registrations ": "0.000416883793642522",
             "name": "None",
@@ -137,7 +137,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
+            "code": "CSD",
             "value": "2901",
             "% of 2018 registrations ": "0.302344971339239",
             "name": "Not Available",
@@ -145,7 +145,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
+            "code": "IFD",
             "value": "2982",
             "% of 2018 registrations ": "0.0922591423798032",
             "name": "Associate",
@@ -153,7 +153,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
+            "code": "IFD",
             "value": "22",
             "% of 2018 registrations ": "0.000680650949817462",
             "name": "Elementary",
@@ -161,7 +161,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
+            "code": "IFD",
             "value": "2164",
             "% of 2018 registrations ": "0.0669513025184085",
             "name": "High School",
@@ -169,7 +169,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
+            "code": "IFD",
             "value": "9834",
             "% of 2018 registrations ": "0.304250974568405",
             "name": "Bachelor",
@@ -177,7 +177,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
+            "code": "IFD",
             "value": "6859",
             "% of 2018 registrations ": "0.212208402945362",
             "name": "Master",
@@ -185,7 +185,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
+            "code": "IFD",
             "value": "498",
             "% of 2018 registrations ": "0.0154074624095044",
             "name": "Doctorate",
@@ -193,7 +193,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
+            "code": "IFD",
             "value": "444",
             "% of 2018 registrations ": "0.0137367737144979",
             "name": "Other",
@@ -201,7 +201,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
+            "code": "IFD",
             "value": "18",
             "% of 2018 registrations ": "0.000556896231668832",
             "name": "None",
@@ -209,7 +209,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
+            "code": "IFD",
             "value": "9501",
             "% of 2018 registrations ": "0.293948394282532",
             "name": "Not Available",
@@ -217,7 +217,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
+            "code": "INE",
             "value": "1152",
             "% of 2018 registrations ": "0.113789016199131",
             "name": "Associate",
@@ -225,7 +225,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
+            "code": "INE",
             "value": "8",
             "% of 2018 registrations ": "0.000790201501382853",
             "name": "Elementary",
@@ -233,7 +233,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
+            "code": "INE",
             "value": "921",
             "% of 2018 registrations ": "0.0909719478467009",
             "name": "High School",
@@ -241,7 +241,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
+            "code": "INE",
             "value": "2675",
             "% of 2018 registrations ": "0.264223627024891",
             "name": "Bachelor",
@@ -249,7 +249,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
+            "code": "INE",
             "value": "1740",
             "% of 2018 registrations ": "0.17186882655077",
             "name": "Master",
@@ -257,7 +257,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
+            "code": "INE",
             "value": "123",
             "% of 2018 registrations ": "0.0121493480837614",
             "name": "Doctorate",
@@ -265,7 +265,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
+            "code": "INE",
             "value": "137",
             "% of 2018 registrations ": "0.0135322007111814",
             "name": "Other",
@@ -273,7 +273,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
+            "code": "INE",
             "value": "5",
             "% of 2018 registrations ": "0.000493875938364283",
             "name": "None",
@@ -281,7 +281,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
+            "code": "INE",
             "value": "3363",
             "% of 2018 registrations ": "0.332180956143817",
             "name": "Not Available",
@@ -289,7 +289,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "KNL",
+            "code": "KNL",
             "value": "7098",
             "% of 2018 registrations ": "0.0733325068187454",
             "name": "Associate",
@@ -297,7 +297,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "KNL",
+            "code": "KNL",
             "value": "58",
             "% of 2018 registrations ": "0.000599223076287296",
             "name": "Elementary",
@@ -305,7 +305,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "KNL",
+            "code": "KNL",
             "value": "6354",
             "% of 2018 registrations ": "0.0656459211505083",
             "name": "High School",
@@ -313,7 +313,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "KNL",
+            "code": "KNL",
             "value": "28506",
             "% of 2018 registrations ": "0.294507810562856",
             "name": "Bachelor",
@@ -321,7 +321,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "KNL",
+            "code": "KNL",
             "value": "20500",
             "% of 2018 registrations ": "0.21179436317051",
             "name": "Master",
@@ -329,7 +329,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "KNL",
+            "code": "KNL",
             "value": "1553",
             "% of 2018 registrations ": "0.0160447144392099",
             "name": "Doctorate",
@@ -337,7 +337,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "KNL",
+            "code": "KNL",
             "value": "1243",
             "% of 2018 registrations ": "0.0128419704107778",
             "name": "Other",
@@ -345,7 +345,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "KNL",
+            "code": "KNL",
             "value": "81",
             "% of 2018 registrations ": "0.000836846020332259",
             "name": "None",
@@ -353,7 +353,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "KNL",
+            "code": "KNL",
             "value": "31399",
             "% of 2018 registrations ": "0.324396644350773",
             "name": "Not Available",
@@ -361,7 +361,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
+            "code": "SCL",
             "value": "4004",
             "% of 2018 registrations ": "0.0785144224170049",
             "name": "Associate",
@@ -369,7 +369,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
+            "code": "SCL",
             "value": "136",
             "% of 2018 registrations ": "0.00266682353863953",
             "name": "Elementary",
@@ -377,7 +377,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
+            "code": "SCL",
             "value": "3408",
             "% of 2018 registrations ": "0.0668274604388494",
             "name": "High School",
@@ -385,7 +385,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
+            "code": "SCL",
             "value": "13852",
             "% of 2018 registrations ": "0.271623821009079",
             "name": "Bachelor",
@@ -393,7 +393,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
+            "code": "SCL",
             "value": "8826",
             "% of 2018 registrations ": "0.173069004059062",
             "name": "Master",
@@ -401,7 +401,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
+            "code": "SCL",
             "value": "878",
             "% of 2018 registrations ": "0.0172166990215111",
             "name": "Doctorate",
@@ -409,7 +409,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
+            "code": "SCL",
             "value": "709",
             "% of 2018 registrations ": "0.0139027785948193",
             "name": "Other",
@@ -417,7 +417,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
+            "code": "SCL",
             "value": "43",
             "% of 2018 registrations ": "0.000843186854128674",
             "name": "None",
@@ -425,7 +425,7 @@ var moocsEducationArrays = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
+            "code": "SCL",
             "value": "19141",
             "% of 2018 registrations ": "0.375335804066906",
             "name": "Not Available",
