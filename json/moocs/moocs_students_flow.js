@@ -346,21 +346,58 @@ var moocsStudentsFlowArrays = {
             "xlsx_row_id": 17
         }
     ],
-    studentsFlowIDB: [
-        {
-        "json_featuretype": "NewFeatureType",
-        "2018 registrations": "208845",
-        "2018 completed": "12497",
-        "2017 participants": "141390",
-        "2017 completed": 27074,
-        "2017 registrations": "307123",
-        "2017 certified": "17279",
-        "2016 participants": "103691",
-        "2018 participants": 99145,
-        "2016 registrations": "190376",
-        "2018 certified": 6406,
-        "2016 certified": "11558",
-        "2016 completed": 20719,
-        "xlsx_row_id": 2
-    }]
+    studentsFlowIDB: {
+        registrations: {
+            years: [{
+                name: "2016",
+                value: 190376
+            }, {
+                name: "2017",
+                value: 307123
+            }, {
+                name: "2018",
+                value: 208845
+            }],
+            value: 706344
+        },
+        participants: {
+            years: [{
+                name: "2016",
+                value: 103691
+            }, {
+                name: "2017",
+                value: 141390
+            }, {
+                name: "2018",
+                value: 99145
+            }],
+            value: 344226
+        },
+        completed: {
+            years: [{
+                name: "2016",
+                value: 20719
+            }, {
+                name: "2017",
+                value: 27074
+            }, {
+                name: "2018",
+                value: 12497
+            }],
+            value: 60290
+        },
+        certified: {
+            years: [{
+                name: "2016",
+                value: 11558
+            }, {
+                name: "2017",
+                value: 17279
+            }, {
+                name: "2018",
+                value: 6406
+            }],
+            value: 35243
+        }
+    }
 };
