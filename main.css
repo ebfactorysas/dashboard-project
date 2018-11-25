@@ -535,12 +535,13 @@ section.code .right-bar {
 
 section.code .left-bar {
     text-align: center;
-	height: 930px;
+    height: 930px;
 }
 
 section.code .funds-allocated-meter .background {
     fill: #A17603;
 }
+
 section.code #code-trend .y-code {
     font-family: 'Gotham-Bold';
     font-size: 11px;
@@ -787,3 +788,7 @@ section.suscribers .suscriber-AgeChart .tick line {
 
 
 /** red-section***/
+
+
+/* SVG responsive
+ */
