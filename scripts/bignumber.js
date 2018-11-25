@@ -1,13 +1,13 @@
 // console.log(bnPublicationsArrays.publicationsDepartments);
-var filter = "";
+var filterselect = "";
 // var valueFilter = "AUG"
 var valueFilter = ""
-initIndicators(filter, valueFilter);
+initIndicators(filterselect, valueFilter);
 
 $("#deparmentSelect").on('change', function () {
     // console.log(this.value);
     mainReset();
-    initIndicators('deparments', this.value);
+    initIndicators('departments', this.value);
     $("#divisionSelect").value = "";
 });
 $("#divisionSelect").on('change', function () {
@@ -16,18 +16,22 @@ $("#divisionSelect").on('change', function () {
     mainReset();
     initIndicators('divisions', this.value);
 });
+$('#idbLink').click(function (){
+    $("#deparmentSelect").value = "";
+    $("#divisionSelect").value = "";
+    initIndicators('IDB', 'IDB');
+});
 
-
-function initIndicators(filter, valueFilter) {
+function initIndicators(filterselect, valueFilter) {
     // var jsondata = "";
-    if (filter == "departments"){
+    if (filterselect == "departments") {
         jsondataPublications = bnPublicationsArrays.publicationsDepartments.filter(data => data.department_codes == valueFilter);
         jsondataMoocs = moocsIndicatorsArray.indicatorsDepartments.filter(data => data.department_codes == valueFilter);
         jsondataDatasets = datasetsIndicatorsArray.indicatorsDepartments.filter(data => data.department_codes == valueFilter);
         jsondataCode = codeIndicatorsArrays.indicatorsDepartments.filter(data => data.department_codes == valueFilter);
         jsondataSubscriber = subscribersArray.subscribersDepartments.filter(data => data.department == valueFilter);
     }
-    else if(filter == "divisions"){
+    else if (filterselect == "divisions") {
         jsondataPublications = bnPublicationsArrays.publicationsDivisions.filter(data => data.division_codes == valueFilter);
         jsondataMoocs = moocsIndicatorsArray.indicatorsDivisions.filter(data => data.division_codes == valueFilter);
         jsondataDatasets = datasetsIndicatorsArray.indicatorsDivisions.filter(data => data.division_codes == valueFilter);
@@ -47,7 +51,7 @@ function initIndicators(filter, valueFilter) {
     var dataDatasetsResults = datasetsIndicatorAlltime(jsondataDatasets);
     var dataCodeResults = codeIndicatorAlltime(jsondataCode);
     var dataSubscribersResults = subscriberIndicatorAlltime(jsondataSubscriber);
-    console.log(filter);
+    console.log(filterselect);
     console.log(valueFilter);
     console.log(jsondataPublications);
     console.log(dataPublicationsResults);
