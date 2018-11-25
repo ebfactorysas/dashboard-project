@@ -9,7 +9,7 @@ function sortByDateAscending(a, b) {
     return a.date - b.date;
 }
 
-function createChartTimeline(data) {
+function createChartTimelinePublication(data) {
     if ($("#publication2018").prop("checked")) {
         data = data.filter(data => data.date.indexOf("-18") > -1);
     }
@@ -1081,7 +1081,7 @@ function drawPlotChartPublication(data) {
 var downloadTimelineIDB = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineIDB);
 var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
 
-createChartTimeline(downloadTimelineIDB);
+createChartTimelinePublication(downloadTimelineIDB);
 drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
 drawPlotChartPublication(ObjectpublicationsAttention);
 
@@ -1095,11 +1095,11 @@ $("input[name*='publicationTrend']").click(function () {
     d3.select("#publications-plot svg").remove();
     
     if (this.id == "publicationAllTime") {
-        createChartTimeline(downloadTimelineIDBTEST);        
+        createChartTimelinePublication(downloadTimelineIDBTEST);        
         drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
         drawPlotChartPublication(ObjectpublicationsAttention);
     } else {
-        createChartTimeline(downloadTimelineIDBTEST);
+        createChartTimelinePublication(downloadTimelineIDBTEST);
         drawTrendPublicationChart(publicationsTopArrays.topIDB2018);
         drawPlotChartPublication(ObjectpublicationsAttention);
     }

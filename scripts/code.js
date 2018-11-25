@@ -324,7 +324,8 @@ function createChartTimeline(data) {
         .style("font-size", "13px")
         .call(d3.axisBottom(x))
         .call(d3.axisBottom(x)
-            .ticks(d3.timeDay.filter(d => d3.timeDay.count(0, d) % 100 === 0))
+            //.ticks(d3.timeDay.filter(d => d3.timeDay.count(0, d) % 100 === 0))
+            .ticks(d3.timeDay.filter(d => $("#code2018").prop("checked") ? d3.timeDay.count(0, d) % 60 === 0 : d3.timeDay.count(0, d) % 100 === 0))
             .tickFormat(function (x) {
                 // get the milliseconds since Epoch for the date
                 var milli = (x.getTime() - 10000);
