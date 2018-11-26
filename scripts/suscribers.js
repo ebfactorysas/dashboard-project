@@ -364,24 +364,38 @@ function drawTree(dataTree) {
  * Start Gauges
  */
 
-var dataGauge = {
+// var dataGauge = {
+//     "code": {
+//         "total": 100,
+//         "allocated": 76
+//     },
+//     "pageview": {
+//         "total": 1000,
+//         "allocated": 113
+//     },
+//     "lac": {
+//         "total": 100,
+//         "allocated": 9
+//     }
+// }
+var dataGaugeSubscribers = {
     "code": {
-        "total": 100,
-        "allocated": 76
+        "total": (subscribersAllTotalGlobal > 0) ? ((subscribersAllTotalGlobal > 100) ? 1000 : 100) : 100,
+        "allocated": subscribersAllTotalGlobal
     },
     "pageview": {
-        "total": 1000,
-        "allocated": 113
+        "total": (subscribersAllDownloads > 0) ? ((subscribersAllDownloads > 100) ? 1000 : 100) : 100,
+        "allocated": subscribersAllDownloads
     },
     "lac": {
-        "total": 100,
-        "allocated": 9
+        "total": (subscribersAllDownloadsLac > 0) ? ((subscribersAllDownloadsLac > 100) ? 1000 : 100) : 100,
+        "allocated": subscribersAllDownloadsLac
     }
 }
+drawGaugeSubscribersChart(dataGaugeSubscribers);
 
-drawGaugeDatasetChart(dataGauge)
 
-function drawGaugeDatasetChart(dataGauge) {
+function drawGaugeSubscribersChart(dataGauge) {
     var width = 150,
         height = 150,
         progress = 0,
