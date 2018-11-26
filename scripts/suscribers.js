@@ -504,7 +504,14 @@ function orderTopDataSuscribers(data) {
 
 
 
-function drawSuscribersChart(dataSet) {
+function drawSuscribersChart(data) {
+
+
+    dataSet = data.sort(function (a, b) {
+        return d3.ascending(a.value, b.value);
+    });
+
+    dataSet = dataSet.slice(0,6);
 
     var marginSuscriber = {
         top: 15,
@@ -514,8 +521,7 @@ function drawSuscribersChart(dataSet) {
     };
 
     var widthSuscriber = 560 - marginSuscriber.left - marginSuscriber.right,
-        heightSuscriber = 400 - marginSuscriber.top - marginSuscriber.bottom;
-
+        heightSuscriber = 250 - marginSuscriber.top - marginSuscriber.bottom;
 
     var svgSuscribers = d3.select("#suscribers-interested").append("svg")
         .attr("width", widthSuscriber + marginSuscriber.left + marginSuscriber.right)
