@@ -515,7 +515,7 @@ function drawSuscribersChart(dataSet) {
     };
 
     var widthSuscriber = 560 - marginSuscriber.left - marginSuscriber.right,
-        heightSuscriber = 200 - marginSuscriber.top - marginSuscriber.bottom;
+        heightSuscriber = 400 - marginSuscriber.top - marginSuscriber.bottom;
 
 
     var svgSuscribers = d3.select("#suscribers-interested").append("svg")
@@ -601,6 +601,6 @@ function drawSuscribersChart(dataSet) {
 
 //init
 
-drawSuscribersChart(orderTopDataSuscribers(testData));
+drawSuscribersChart(orderTopDataSuscribers(subscribersTopics));
 drawTree(dataTree);
 drawInstitutionsChart(subscribersInstitution.institutionIDB);
