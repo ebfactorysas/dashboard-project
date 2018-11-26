@@ -882,26 +882,22 @@ var subscribersGender = {
         {
             "json_featuretype": "NewFeatureType",
             "Subscribers": "392796",
-            "Gender": "Not Reported",
-            "_IDB_": "IDB"
+            "Gender": "Not Reported"
         },
         {
             "json_featuretype": "NewFeatureType",
             "Subscribers": "97994",
-            "Gender": "Female",
-            "_IDB_": "IDB"
+            "Gender": "Female"
         },
         {
             "json_featuretype": "NewFeatureType",
             "Subscribers": "108488",
-            "Gender": "Male",
-            "_IDB_": "IDB"
+            "Gender": "Male"
         },
         {
             "json_featuretype": "NewFeatureType",
             "Subscribers": "59",
-            "Gender": "Other",
-            "_IDB_": "IDB"
+            "Gender": "Other"
         }
     ]
 };

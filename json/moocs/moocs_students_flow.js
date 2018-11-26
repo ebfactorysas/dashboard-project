@@ -1,349 +1,1125 @@
 var moocsStudentsFlowArrays = {
-    studentsFlowDepartments: [
-        {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "CID",
-            "2017 participants": "2599",
-            "2017 completed": 542,
-            "2017 registrations": "4411",
-            "2017 certified": "396",
-            "2016 participants": "5678",
-            "2016 registrations": "7718",
-            "2016 certified": "1421",
-            "2016 completed": 1781,
-            "xlsx_row_id": 2
+    studentsFlowDepartments: [{
+            registrations: {
+                years: [{
+                    name: "2016",
+                    value: 7718
+                }, {
+                    name: "2017",
+                    value: 4411
+                }],
+                value: 12129
+            },
+            participants: {
+                years: [{
+                    name: "2016",
+                    value: 5678
+                }, {
+                    name: "2017",
+                    value: 2599
+                }],
+                value: 8277
+            },
+            completed: {
+                years: [{
+                    name: "2016",
+                    value: 1781
+                }, {
+                    name: "2017",
+                    value: 542
+                }],
+                value: 2323
+            },
+            certified: {
+                years: [{
+                    name: "2016",
+                    value: 1421
+                }, {
+                    name: "2017",
+                    value: 396
+                }],
+                value: 1817
+            },
+            code: "CID"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
-            "2018 registrations": "9015",
-            "2018 completed": "690",
-            "2017 participants": "7828",
-            "2017 completed": 2028,
-            "2017 registrations": "16600",
-            "2017 certified": "1211",
-            "2018 participants": 3835,
-            "2018 certified": 180,
-            "xlsx_row_id": 3
+            registrations: {
+                years: [{
+                    name: "2017",
+                    value: 16600
+                }, {
+                    name: "2018",
+                    value: 9015
+                }],
+                value: 25615
+            },
+            participants: {
+                years: [{
+                    name: "2017",
+                    value: 7828
+                }, {
+                    name: "2018",
+                    value: 3835
+                }],
+                value: 11663
+            },
+            completed: {
+                years: [{
+                    name: "2017",
+                    value: 2028
+                }, {
+                    name: "2018",
+                    value: 690
+                }],
+                value: 2718
+            },
+            certified: {
+                years: [{
+                    name: "2017",
+                    value: 1211
+                }, {
+                    name: "2018",
+                    value: 180
+                }],
+                value: 1391
+            },
+            code: "CSC"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
-            "2018 registrations": "9595",
-            "2018 completed": "317",
-            "2017 participants": "12140",
-            "2017 completed": 1542,
-            "2017 registrations": "28323",
-            "2017 certified": "866",
-            "2016 participants": "20523",
-            "2018 participants": 2680,
-            "2016 registrations": "40854",
-            "2018 certified": 188,
-            "2016 certified": "1481",
-            "2016 completed": 2901,
-            "xlsx_row_id": 4
+            registrations: {
+                years: [{
+                    name: "2016",
+                    value: 40854
+                }, {
+                    name: "2017",
+                    value: 28323
+                }, {
+                    name: "2018",
+                    value: 9595
+                }],
+                value: 78772
+            },
+            participants: {
+                years: [{
+                    name: "2016",
+                    value: 20523
+                }, {
+                    name: "2017",
+                    value: 12140
+                }, {
+                    name: "2018",
+                    value: 2680
+                }],
+                value: 35343
+            },
+            completed: {
+                years: [{
+                    name: "2016",
+                    value: 2901
+                }, {
+                    name: "2017",
+                    value: 1542
+                }, {
+                    name: "2018",
+                    value: 317
+                }],
+                value: 4760
+            },
+            certified: {
+                years: [{
+                    name: "2016",
+                    value: 1481
+                }, {
+                    name: "2017",
+                    value: 866
+                }, {
+                    name: "2018",
+                    value: 188
+                }],
+                value: 2535
+            },
+            code: "CSD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
-            "2018 registrations": "32322",
-            "2018 completed": "2002",
-            "2017 participants": "11926",
-            "2017 completed": 3263,
-            "2017 registrations": "25293",
-            "2017 certified": "2115",
-            "2016 participants": "10747",
-            "2018 participants": 15502,
-            "2016 registrations": "20177",
-            "2018 certified": 1221,
-            "2016 certified": "1142",
-            "2016 completed": 2328,
-            "xlsx_row_id": 5
+            registrations: {
+                years: [{
+                    name: "2016",
+                    value: 20177
+                }, {
+                    name: "2017",
+                    value: 25293
+                }, {
+                    name: "2018",
+                    value: 32322
+                }],
+                value: 77792
+            },
+            participants: {
+                years: [{
+                    name: "2016",
+                    value: 10747
+                }, {
+                    name: "2017",
+                    value: 11926
+                }, {
+                    name: "2018",
+                    value: 15502
+                }],
+                value: 38175
+            },
+            completed: {
+                years: [{
+                    name: "2016",
+                    value: 2328
+                }, {
+                    name: "2017",
+                    value: 3263
+                }, {
+                    name: "2018",
+                    value: 2002
+                }],
+                value: 7593
+            },
+            certified: {
+                years: [{
+                    name: "2016",
+                    value: 1142
+                }, {
+                    name: "2017",
+                    value: 2115
+                }, {
+                    name: "2018",
+                    value: 1221
+                }],
+                value: 4478
+            },
+            code: "IFD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
-            "2018 registrations": "10124",
-            "2018 completed": "808",
-            "2017 participants": "6288",
-            "2017 completed": 1291,
-            "2017 registrations": "12131",
-            "2017 certified": "765",
-            "2016 participants": "3713",
-            "2018 participants": 5539,
-            "2016 registrations": "6872",
-            "2018 certified": 402,
-            "2016 certified": "138",
-            "2016 completed": 426,
-            "xlsx_row_id": 6
+            registrations: {
+                years: [{
+                    name: "2016",
+                    value: 6872
+                }, {
+                    name: "2017",
+                    value: 12131
+                }, {
+                    name: "2018",
+                    value: 10124
+                }],
+                value: 29127
+            },
+            participants: {
+                years: [{
+                    name: "2016",
+                    value: 3713
+                }, {
+                    name: "2017",
+                    value: 6288
+                }, {
+                    name: "2018",
+                    value: 5539
+                }],
+                value: 15540
+            },
+            completed: {
+                years: [{
+                    name: "2016",
+                    value: 426
+                }, {
+                    name: "2017",
+                    value: 1291
+                }, {
+                    name: "2018",
+                    value: 808
+                }],
+                value: 2525
+            },
+            certified: {
+                years: [{
+                    name: "2016",
+                    value: 138
+                }, {
+                    name: "2017",
+                    value: 765
+                }, {
+                    name: "2018",
+                    value: 402
+                }],
+                value: 1305
+            },
+            code: "INE"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "KNL",
-            "2018 registrations": "96792",
-            "2018 completed": "6107",
-            "2017 participants": "70129",
-            "2017 completed": 12743,
-            "2017 registrations": "155860",
-            "2017 certified": "8723",
-            "2016 participants": "51228",
-            "2018 participants": 49854,
-            "2016 registrations": "92376",
-            "2018 certified": 3295,
-            "2016 certified": "6061",
-            "2016 completed": 10866,
-            "xlsx_row_id": 7
+            registrations: {
+                years: [{
+                    name: "2016",
+                    value: 92376
+                }, {
+                    name: "2017",
+                    value: 155860
+                }, {
+                    name: "2018",
+                    value: 96792
+                }],
+                value: 345028
+            },
+            participants: {
+                years: [{
+                    name: "2016",
+                    value: 51228
+                }, {
+                    name: "2017",
+                    value: 70129
+                }, {
+                    name: "2018",
+                    value: 49854
+                }],
+                value: 171211
+            },
+            completed: {
+                years: [{
+                    name: "2016",
+                    value: 10866
+                }, {
+                    name: "2017",
+                    value: 12743
+                }, {
+                    name: "2018",
+                    value: 6107
+                }],
+                value: 29716
+            },
+            certified: {
+                years: [{
+                    name: "2016",
+                    value: 6061
+                }, {
+                    name: "2017",
+                    value: 8723
+                }, {
+                    name: "2018",
+                    value: 3295
+                }],
+                value: 18079
+            },
+            code: "KNL"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
-            "2018 registrations": "50997",
-            "2018 completed": "2573",
-            "2017 participants": "30480",
-            "2017 completed": 5665,
-            "2017 registrations": "64505",
-            "2017 certified": "3203",
-            "2016 participants": "11802",
-            "2018 participants": 21735,
-            "2016 registrations": "22379",
-            "2018 certified": 1120,
-            "2016 certified": "1315",
-            "2016 completed": 2417,
-            "xlsx_row_id": 8
-        }
+            registrations: {
+                years: [{
+                    name: "2016",
+                    value: 22379
+                }, {
+                    name: "2017",
+                    value: 64505
+                }, {
+                    name: "2018",
+                    value: 50997
+                }],
+                value: 137881
+            },
+            participants: {
+                years: [{
+                    name: "2016",
+                    value: 11802
+                }, {
+                    name: "2017",
+                    value: 30480
+                }, {
+                    name: "2018",
+                    value: 21735
+                }],
+                value: 64017
+            },
+            completed: {
+                years: [{
+                    name: "2016",
+                    value: 2417
+                }, {
+                    name: "2017",
+                    value: 5665
+                }, {
+                    name: "2018",
+                    value: 2573
+                }],
+                value: 10655
+            },
+            certified: {
+                years: [{
+                    name: "2016",
+                    value: 1315
+                }, {
+                    name: "2017",
+                    value: 3203
+                }, {
+                    name: "2018",
+                    value: 1120
+                }],
+                value: 5638
+            },
+            code: "SCL"
+        },
     ],
-    studentsFlowDivisions: [
-        {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "9015",
-            "2018 completed": "690",
-            "2017 participants": "3781",
-            "2017 completed": 872,
-            "2017 registrations": "8819",
-            "2017 certified": "564",
-            "Division Codes": "CBD",
-            "2018 participants": 3835,
-            "2018 certified": 180,
-            "xlsx_row_id": 2
+    studentsFlowDivisions: [{
+            registrations: {
+                years: [{
+                    name: "2017",
+                    value: 8819
+                }, {
+                    name: "2018",
+                    value: 9015
+                }],
+                value: 17834
+            },
+            participants: {
+                years: [{
+                    name: "2017",
+                    value: 3781
+                }, {
+                    name: "2018",
+                    value: 3835
+                }],
+                value: 7616
+            },
+            completed: {
+                years: [{
+                    name: "2017",
+                    value: 872
+                }, {
+                    name: "2018",
+                    value: 690
+                }],
+                value: 1562
+            },
+            certified: {
+                years: [{
+                    name: "2017",
+                    value: 564
+                }, {
+                    name: "2018",
+                    value: 180
+                }],
+                value: 744
+            },
+            code: "CBD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2017 participants": "4047",
-            "2017 completed": 1156,
-            "2017 registrations": "7781",
-            "2017 certified": "647",
-            "Division Codes": "CBR",
-            "xlsx_row_id": 3
+            registrations: {
+                years: [{
+                    name: "2017",
+                    value: 7781
+                }],
+                value: 7781
+            },
+            participants: {
+                years: [{
+                    name: "2017",
+                    value: 4047
+                }],
+                value: 4047
+            },
+            completed: {
+                years: [{
+                    name: "2017",
+                    value: 1156
+                }],
+                value: 1156
+            },
+            certified: {
+                years: [{
+                    name: "2017",
+                    value: 647
+                }],
+                value: 647
+            },
+            code: "CBR"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2017 participants": "2599",
-            "2017 completed": 542,
-            "2017 registrations": "4411",
-            "2017 certified": "396",
-            "2016 participants": "5678",
-            "Division Codes": "CHA",
-            "2016 registrations": "7718",
-            "2016 certified": "1421",
-            "2016 completed": 1781,
-            "xlsx_row_id": 4
+            registrations: {
+                years: [{
+                    name: "2016",
+                    value: 7718
+                }, {
+                    name: "2017",
+                    value: 4411
+                }],
+                value: 12129
+            },
+            participants: {
+                years: [{
+                    name: "2016",
+                    value: 5678
+                }, {
+                    name: "2017",
+                    value: 2599
+                }],
+                value: 8277
+            },
+            completed: {
+                years: [{
+                    name: "2016",
+                    value: 1781
+                }, {
+                    name: "2017",
+                    value: 542
+                }],
+                value: 2323
+            },
+            certified: {
+                years: [{
+                    name: "2016",
+                    value: 1421
+                }, {
+                    name: "2017",
+                    value: 396
+                }],
+                value: 1817
+            },
+            code: "CHA"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "21787",
-            "2018 completed": "881",
-            "2017 participants": "7253",
-            "2017 completed": 751,
-            "2017 registrations": "15398",
-            "2017 certified": "366",
-            "Division Codes": "EDU",
-            "2018 participants": 9393,
-            "2018 certified": 377,
-            "xlsx_row_id": 5
+            registrations: {
+                years: [{
+                    name: "2017",
+                    value: 15398
+                }, {
+                    name: "2018",
+                    value: 21787
+                }],
+                value: 37185
+            },
+            participants: {
+                years: [{
+                    name: "2017",
+                    value: 7253
+                }, {
+                    name: "2018",
+                    value: 9393
+                }],
+                value: 16646
+            },
+            completed: {
+                years: [{
+                    name: "2017",
+                    value: 751
+                }, {
+                    name: "2018",
+                    value: 881
+                }],
+                value: 1632
+            },
+            certified: {
+                years: [{
+                    name: "2017",
+                    value: 366
+                }, {
+                    name: "2018",
+                    value: 377
+                }],
+                value: 743
+            },
+            code: "EDU"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "16626",
-            "2018 completed": "969",
-            "2017 participants": "11177",
-            "2017 completed": 1771,
-            "2017 registrations": "24309",
-            "2017 certified": "1217",
-            "2016 participants": "4117",
-            "Division Codes": "FHL",
-            "2018 participants": 8629,
-            "2016 registrations": "7357",
-            "2018 certified": 655,
-            "2016 certified": "177",
-            "2016 completed": 379,
-            "xlsx_row_id": 6
+            registrations: {
+                years: [{
+                    name: "2016",
+                    value: 7357
+                }, {
+                    name: "2017",
+                    value: 24309
+                }, {
+                    name: "2018",
+                    value: 16626
+                }],
+                value: 39672
+            },
+            participants: {
+                years: [{
+                    name: "2016",
+                    value: 4117
+                }, {
+                    name: "2017",
+                    value: 11177
+                }, {
+                    name: "2018",
+                    value: 8629
+                }],
+                value: 23923
+            },
+            completed: {
+                years: [{
+                    name: "2016",
+                    value: 379
+                }, {
+                    name: "2017",
+                    value: 1771
+                }, {
+                    name: "2018",
+                    value: 969
+                }],
+                value: 3119
+            },
+            certified: {
+                years: [{
+                    name: "2016",
+                    value: 177
+                }, {
+                    name: "2017",
+                    value: 1217
+                }, {
+                    name: "2018",
+                    value: 655
+                }],
+                value: 2049
+            },
+            code: "FHL"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "12905",
-            "2018 completed": "642",
-            "2017 participants": "8427",
-            "2017 completed": 2206,
-            "2017 registrations": "17727",
-            "2017 certified": "1348",
-            "2016 participants": "4838",
-            "Division Codes": "FMM",
-            "2018 participants": 6135,
-            "2016 registrations": "9040",
-            "2018 certified": 415,
-            "2016 certified": "567",
-            "2016 completed": 1126,
-            "xlsx_row_id": 7
+            registrations: {
+                years: [{
+                    name: "2016",
+                    value: 9040
+                }, {
+                    name: "2017",
+                    value: 17727
+                }, {
+                    name: "2018",
+                    value: 12905
+                }],
+                value: 39672
+            },
+            participants: {
+                years: [{
+                    name: "2016",
+                    value: 4838
+                }, {
+                    name: "2017",
+                    value: 8427
+                }, {
+                    name: "2018",
+                    value: 6135
+                }],
+                value: 19400
+            },
+            completed: {
+                years: [{
+                    name: "2016",
+                    value: 1126
+                }, {
+                    name: "2017",
+                    value: 2206
+                }, {
+                    name: "2018",
+                    value: 642
+                }],
+                value: 3974
+            },
+            certified: {
+                years: [{
+                    name: "2016",
+                    value: 567
+                }, {
+                    name: "2017",
+                    value: 1348
+                }, {
+                    name: "2018",
+                    value: 415
+                }],
+                value: 2330
+            },
+            code: "FMM"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2017 participants": "8020",
-            "2017 completed": 1001,
-            "2017 registrations": "19118",
-            "2017 certified": "594",
-            "2016 participants": "12960",
-            "Division Codes": "HUD",
-            "2016 registrations": "26640",
-            "2016 certified": "924",
-            "2016 completed": 1694,
-            "xlsx_row_id": 8
+            registrations: {
+                years: [{
+                    name: "2016",
+                    value: 26640
+                }, {
+                    name: "2017",
+                    value: 19118
+                }],
+                value: 45758
+            },
+            participants: {
+                years: [{
+                    name: "2016",
+                    value: 12960
+                }, {
+                    name: "2017",
+                    value: 8020
+                }],
+                value: 20980
+            },
+            completed: {
+                years: [{
+                    name: "2016",
+                    value: 1694
+                }, {
+                    name: "2017",
+                    value: 1001
+                }],
+                value: 2695
+            },
+            certified: {
+                years: [{
+                    name: "2016",
+                    value: 924
+                }, {
+                    name: "2017",
+                    value: 594
+                }],
+                value: 1518
+            },
+            code: "HUD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "8279",
-            "2018 completed": "750",
-            "2017 participants": "3499",
-            "2017 completed": 1057,
-            "2017 registrations": "7566",
-            "2017 certified": "767",
-            "2016 participants": "5909",
-            "Division Codes": "ICS",
-            "2018 participants": 4105,
-            "2016 registrations": "11137",
-            "2018 certified": 566,
-            "2016 certified": "575",
-            "2016 completed": 1202,
-            "xlsx_row_id": 9
+            registrations: {
+                years: [{
+                    name: "2016",
+                    value: 11137
+                }, {
+                    name: "2017",
+                    value: 7566
+                }, {
+                    name: "2018",
+                    value: 8279
+                }],
+                value: 26982
+            },
+            participants: {
+                years: [{
+                    name: "2016",
+                    value: 5909
+                }, {
+                    name: "2017",
+                    value: 3499
+                }, {
+                    name: "2018",
+                    value: 4105
+                }],
+                value: 13513
+            },
+            completed: {
+                years: [{
+                    name: "2016",
+                    value: 1202
+                }, {
+                    name: "2017",
+                    value: 1057
+                }, {
+                    name: "2018",
+                    value: 750
+                }],
+                value: 3009
+            },
+            certified: {
+                years: [{
+                    name: "2016",
+                    value: 575
+                }, {
+                    name: "2017",
+                    value: 767
+                }, {
+                    name: "2018",
+                    value: 566
+                }],
+                value: 1908
+            },
+            code: "ICS"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "11138",
-            "2018 completed": "610",
-            "Division Codes": "IFD",
-            "2018 participants": 5262,
-            "2018 certified": 240,
-            "xlsx_row_id": 10
+            registrations: {
+                years: [{
+                    name: "2018",
+                    value: 11138
+                }],
+                value: 11138
+            },
+            participants: {
+                years: [{
+                    name: "2018",
+                    value: 5262
+                }],
+                value: 5262
+            },
+            completed: {
+                years: [{
+                    name: "2018",
+                    value: 610
+                }],
+                value: 610
+            },
+            certified: {
+                years: [{
+                    name: "2018",
+                    value: 240
+                }],
+                value: 240
+            },
+            code: "IFD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "5342",
-            "2018 completed": "275",
-            "2017 participants": "3344",
-            "2017 completed": 495,
-            "2017 registrations": "7518",
-            "2017 certified": "275",
-            "Division Codes": "KNM",
-            "2018 participants": 2937,
-            "2018 certified": 103,
-            "xlsx_row_id": 11
+            registrations: {
+                years: [{
+                    name: "2017",
+                    value: 7518
+                }, {
+                    name: "2018",
+                    value: 5342
+                }],
+                value: 12860
+            },
+            participants: {
+                years: [{
+                    name: "2017",
+                    value: 3344
+                }, {
+                    name: "2018",
+                    value: 2937
+                }],
+                value: 6281
+            },
+            completed: {
+                years: [{
+                    name: "2017",
+                    value: 495
+                }, {
+                    name: "2018",
+                    value: 275
+                }],
+                value: 770
+            },
+            certified: {
+                years: [{
+                    name: "2017",
+                    value: 275
+                }, {
+                    name: "2018",
+                    value: 103
+                }],
+                value: 378
+            },
+            code: "KNM"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "5342",
-            "2018 completed": "275",
-            "2017 participants": "4118",
-            "2017 completed": 629,
-            "2017 registrations": "9166",
-            "2017 certified": "347",
-            "2016 participants": "1598",
-            "Division Codes": "LMK",
-            "2018 participants": 2937,
-            "2016 registrations": "3269",
-            "2018 certified": 103,
-            "2016 certified": "129",
-            "2016 completed": 233,
-            "xlsx_row_id": 12
+            registrations: {
+                years: [{
+                    name: "2016",
+                    value: 3269
+                }, {
+                    name: "2017",
+                    value: 9166
+                }, {
+                    name: "2018",
+                    value: 5342
+                }],
+                value: 17777
+            },
+            participants: {
+                years: [{
+                    name: "2016",
+                    value: 1598
+                }, {
+                    name: "2017",
+                    value: 4118
+                }, {
+                    name: "2018",
+                    value: 2937
+                }],
+                value: 8653
+            },
+            completed: {
+                years: [{
+                    name: "2016",
+                    value: 233
+                }, {
+                    name: "2017",
+                    value: 629
+                }, {
+                    name: "2018",
+                    value: 275
+                }],
+                value: 1137
+            },
+            certified: {
+                years: [{
+                    name: "2016",
+                    value: 129
+                }, {
+                    name: "2017",
+                    value: 347
+                }, {
+                    name: "2018",
+                    value: 103
+                }],
+                value: 579
+            },
+            code: "LMK"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "9595",
-            "2018 completed": "317",
-            "2017 participants": "4120",
-            "2017 completed": 541,
-            "2017 registrations": "9205",
-            "2017 certified": "272",
-            "2016 participants": "7563",
-            "Division Codes": "RND",
-            "2018 participants": 2680,
-            "2016 registrations": "14214",
-            "2018 certified": 188,
-            "2016 certified": "557",
-            "2016 completed": 1207,
-            "xlsx_row_id": 13
+            registrations: {
+                years: [{
+                    name: "2016",
+                    value: 14214
+                }, {
+                    name: "2017",
+                    value: 9205
+                }, {
+                    name: "2018",
+                    value: 9595
+                }],
+                value: 283876
+            },
+            participants: {
+                years: [{
+                    name: "2016",
+                    value: 7563
+                }, {
+                    name: "2017",
+                    value: 4120
+                }, {
+                    name: "2018",
+                    value: 2680
+                }],
+                value: 14363
+            },
+            completed: {
+                years: [{
+                    name: "2016",
+                    value: 1207
+                }, {
+                    name: "2017",
+                    value: 541
+                }, {
+                    name: "2018",
+                    value: 317
+                }],
+                value: 2065
+            },
+            certified: {
+                years: [{
+                    name: "2016",
+                    value: 557
+                }, {
+                    name: "2017",
+                    value: 272
+                }, {
+                    name: "2018",
+                    value: 188
+                }],
+                value: 1017
+            },
+            code: "RND"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "74824",
-            "2018 completed": "4863",
-            "2017 participants": "55608",
-            "2017 completed": 10477,
-            "2017 registrations": "124033",
-            "2017 certified": "7231",
-            "2016 participants": "47111",
-            "Division Codes": "SDI",
-            "2018 participants": 38288,
-            "2016 registrations": "85019",
-            "2018 certified": 2537,
-            "2016 certified": "5884",
-            "2016 completed": 10487,
-            "xlsx_row_id": 14
+            registrations: {
+                years: [{
+                    name: "2016",
+                    value: 85019
+                }, {
+                    name: "2017",
+                    value: 124033
+                }, {
+                    name: "2018",
+                    value: 74824
+                }],
+                value: 283876
+            },
+            participants: {
+                years: [{
+                    name: "2016",
+                    value: 47111
+                }, {
+                    name: "2017",
+                    value: 55608
+                }, {
+                    name: "2018",
+                    value: 38288
+                }],
+                value: 141007
+            },
+            completed: {
+                years: [{
+                    name: "2016",
+                    value: 10487
+                }, {
+                    name: "2017",
+                    value: 10477
+                }, {
+                    name: "2018",
+                    value: 4863
+                }],
+                value: 25827
+            },
+            certified: {
+                years: [{
+                    name: "2016",
+                    value: 5884
+                }, {
+                    name: "2017",
+                    value: 7231
+                }, {
+                    name: "2018",
+                    value: 2537
+                }],
+                value: 15652
+            },
+            code: "SDI"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "23868",
-            "2018 completed": "1417",
-            "2017 participants": "19109",
-            "2017 completed": 4285,
-            "2017 registrations": "39941",
-            "2017 certified": "2490",
-            "2016 participants": "10204",
-            "Division Codes": "SPH",
-            "2018 participants": 9405,
-            "2016 registrations": "19110",
-            "2018 certified": 640,
-            "2016 certified": "1186",
-            "2016 completed": 2184,
-            "xlsx_row_id": 15
+            registrations: {
+                years: [{
+                    name: "2016",
+                    value: 19110
+                }, {
+                    name: "2017",
+                    value: 39941
+                }, {
+                    name: "2018",
+                    value: 23868
+                }],
+                value: 82919
+            },
+            participants: {
+                years: [{
+                    name: "2016",
+                    value: 10204
+                }, {
+                    name: "2017",
+                    value: 19109
+                }, {
+                    name: "2018",
+                    value: 9405
+                }],
+                value: 38718
+            },
+            completed: {
+                years: [{
+                    name: "2016",
+                    value: 2184
+                }, {
+                    name: "2017",
+                    value: 4285
+                }, {
+                    name: "2018",
+                    value: 1417
+                }],
+                value: 7886
+            },
+            certified: {
+                years: [{
+                    name: "2016",
+                    value: 1186
+                }, {
+                    name: "2017",
+                    value: 2490
+                }, {
+                    name: "2018",
+                    value: 640
+                }],
+                value: 4316
+            },
+            code: "SPH"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "5142",
-            "2018 completed": "416",
-            "2017 participants": "2802",
-            "2017 completed": 899,
-            "2017 registrations": "5112",
-            "2017 certified": "583",
-            "Division Codes": "TSP",
-            "2018 participants": 2938,
-            "2018 certified": 258,
-            "xlsx_row_id": 16
+            registrations: {
+                years: [{
+                    name: "2017",
+                    value: 5112
+                }, {
+                    name: "2018",
+                    value: 5142
+                }],
+                value: 10252
+            },
+            participants: {
+                years: [{
+                    name: "2017",
+                    value: 2802
+                }, {
+                    name: "2018",
+                    value: 2938
+                }],
+                value: 5740
+            },
+            completed: {
+                years: [{
+                    name: "2017",
+                    value: 899
+                }, {
+                    name: "2018",
+                    value: 416
+                }],
+                value: 1210
+            },
+            certified: {
+                years: [{
+                    name: "2017",
+                    value: 583
+                }, {
+                    name: "2018",
+                    value: 258
+                }],
+                value: 841
+            },
+            code: "TSP"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "4982",
-            "2018 completed": "392",
-            "2017 participants": "3486",
-            "2017 completed": 392,
-            "2017 registrations": "7019",
-            "2017 certified": "182",
-            "2016 participants": "3713",
-            "Division Codes": "WSA",
-            "2018 participants": 2601,
-            "2016 registrations": "6872",
-            "2018 certified": 144,
-            "2016 certified": "138",
-            "2016 completed": 426,
-            "xlsx_row_id": 17
+            registrations: {
+                years: [{
+                    name: "2016",
+                    value: 6872
+                }, {
+                    name: "2017",
+                    value: 7019
+                }, {
+                    name: "2018",
+                    value: 4982
+                }],
+                value: 18873
+            },
+            participants: {
+                years: [{
+                    name: "2016",
+                    value: 3713
+                }, {
+                    name: "2017",
+                    value: 3486
+                }, {
+                    name: "2018",
+                    value: 2601
+                }],
+                value: 9800
+            },
+            completed: {
+                years: [{
+                    name: "2016",
+                    value: 426
+                }, {
+                    name: "2017",
+                    value: 392
+                }, {
+                    name: "2018",
+                    value: 392
+                }],
+                value: 1210
+            },
+            certified: {
+                years: [{
+                    name: "2016",
+                    value: 138
+                }, {
+                    name: "2017",
+                    value: 182
+                }, {
+                    name: "2018",
+                    value: 144
+                }],
+                value: 464
+            },
+            code: "WSA"
         }
     ],
     studentsFlowIDB: {

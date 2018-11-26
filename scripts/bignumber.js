@@ -69,10 +69,10 @@ function initIndicators(filterselect, valueFilter) {
     var dataDatasetsResults = datasetsIndicatorAlltime(jsondataDatasets);
     var dataCodeResults = codeIndicatorAlltime(jsondataCode);
     var dataSubscribersResults = subscriberIndicatorAlltime(jsondataSubscriber);
-    console.log(filterselect);
-    console.log(valueFilter);
-    console.log(jsondataPublications);
-    console.log(dataPublicationsResults);
+    // console.log(filterselect);
+    // console.log(valueFilter);
+    // console.log(jsondataPublications);
+    // console.log(dataPublicationsResults);
     setDataMain(dataPublicationsResults, dataMoocsResults, dataDatasetsResults, dataCodeResults, dataSubscribersResults);
 }
 $("input[name*='blueTrend']").click(function () {

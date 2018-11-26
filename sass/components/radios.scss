@@ -25,32 +25,17 @@
   }
   &.red {
     @include radioStyle($red, $white);
-    @include breakpoint($desk) {
-      color: $red;
-    }
   }
   &.orange {
     @include radioStyle($orange, $white);
-    @include breakpoint($desk) {
-      color: $orange;
-    }
   }
   &.purple {
     @include radioStyle($purple, $white);
-    @include breakpoint($desk) {
-      color: $purple;
-    }
   }
   &.yellow {
     @include radioStyle($yellow, $white);
-    @include breakpoint($desk) {
-      color: $yellow;
-    }
   }
   &.green {
     @include radioStyle($green, $white);
-    @include breakpoint($desk) {
-      color: $green;
-    }
   }
 }

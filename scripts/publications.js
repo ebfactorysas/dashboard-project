@@ -768,7 +768,7 @@ function drawLinesChartPublication(data) {
 }
 
 function drawPlotChartPublication(data) {
-    console.log(data)
+    //console.log(data)
     if ($("#publication2018").prop("checked")) {
         //data = data.filter(data {return } data.publishedDate.indexOf("-18") > -1);
         data.filter(function (data) {
@@ -895,12 +895,14 @@ function publicationFilter() {
         downloadTimelineDepartment = downloadTimelineDepartment.filter(function (downloadTimelineDepartment) {
             return downloadTimelineDepartment.departmentCode == $("#deparmentSelect").val()
         })
-        downloadTimelineDepartment = downloadTimelineDepartment[0].data;
+        //downloadTimelineDepartment = downloadTimelineDepartment[0].data;
         createChartTimelinePublication(downloadTimelineDepartment);
     } else {
         init();
     }
 }
+
+//revisar bien la lógica de filtrado
 
 //init
 init();
@@ -923,30 +925,34 @@ $("input[name*='publicationTrend']").click(function () {
     var downloadTimelineIDBTEST = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineIDB);
     var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
 
-    //get chart timeline by department
-    var downloadTimelineDepartment = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineDepartments);
-    downloadTimelineDepartment = downloadTimelineDepartment.filter(function (downloadTimelineDepartment) {
-        return downloadTimelineDepartment.departmentCode == $("#deparmentSelect").val()
-    })
-    downloadTimelineDepartment = downloadTimelineDepartment[0].data;
-
     removePublicationsSvg();
 
-    if (this.id == "publicationAllTime") {
-        createChartTimelinePublication(downloadTimelineIDBTEST);
-        drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
-        drawPlotChartPublication(ObjectpublicationsAttention);
+    if ($("select[id*='divisionSelect']").val().length > 0) {
+
+    } else if ($("select[id*='deparmentSelect']").val().length > 0) {
+        var downloadTimelineDepartment = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineDepartments);
+        downloadTimelineDepartment = downloadTimelineDepartment.filter(function (downloadTimelineDepartment) {
+            return downloadTimelineDepartment.departmentCode == $("#deparmentSelect").val()
+        })
+        downloadTimelineDepartment = downloadTimelineDepartment[0].data;
+        createChartTimelinePublication(downloadTimelineDepartment);
     } else {
-        createChartTimelinePublication(downloadTimelineIDBTEST);
-        drawTrendPublicationChart(publicationsTopArrays.topIDB2018);
-        drawPlotChartPublication(ObjectpublicationsAttention);
+        if (this.id == "publicationAllTime") {
+            createChartTimelinePublication(downloadTimelineIDBTEST);
+            drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
+            drawPlotChartPublication(ObjectpublicationsAttention);
+        } else {
+            createChartTimelinePublication(downloadTimelineIDBTEST);
+            drawTrendPublicationChart(publicationsTopArrays.topIDB2018);
+            drawPlotChartPublication(ObjectpublicationsAttention);
+        }
     }
 });
 
 //department filter
 $("#deparmentSelect").change(function () {
     $("select[id*='divisionSelect']").val("");
-    console.log($("#deparmentSelect").val());
+    //console.log($("#deparmentSelect").val());
     publicationFilter();
 });
 
