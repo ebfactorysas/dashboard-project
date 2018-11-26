@@ -220,8 +220,8 @@ function drawTree(dataTree) {
         .style("height", (heightTree + marginTree.top + marginTree.bottom) + "px")
         .style("left", marginTree.left + "px")
         .style("top", marginTree.top + "px");
-    const root = d3.hierarchy(dataTree, (d) => d.children)
-        .sum((d) => d.size);
+    const root = d3.hierarchy(dataTree, function(d) {return d.children} )
+        .sum(function(d) {return d.size} );
 
     const tree = treemap(root);
 
@@ -229,32 +229,31 @@ function drawTree(dataTree) {
         .data(tree.leaves())
         .enter().append("div")
         .attr("class", "node")
-        .style("left", (d) => d.x0 + "px")
-        .style("top", (d) => d.y0 + "px")
-        .style("width", (d) => Math.max(0, d.x1 - d.x0) + "px")
-        .style("height", (d) => Math.max(0, d.y1 - d.y0) + "px")
-        .style("background", (d) => colorTree(d.parent.data.name))
-        .text((d) => d.data.name);
+        .style("left", function(d) {return  d.x0 + "px"})
+        .style("top", function(d) {return d.y0 + "px"} )
+        .style("width", function(d) {return Math.max(0, d.x1 - d.x0) + "px"} )
+        .style("height", function(d) {return Math.max(0, d.y1 - d.y0) + "px"} )
+        .style("background", function(d) {return colorTree(d.parent.data.name)} )
+        .text(function(d) {return d.data.name} );
 
     d3.selectAll("input").on("change", function change() {
         const value = this.value === "count" ?
-            (d) => {
-                return d.size ? 1 : 0;
+            function(d) {return d.size ? 1 : 0;
             } :
-            (d) => {
+            function(d) {
                 return d.size;
             };
 
-        const newRoot = d3.hierarchy(dataTree, (d) => d.children)
+        const newRoot = d3.hierarchy(dataTree, function(d) {return  d.children})
             .sum(value);
 
         node.data(treemap(newRoot).leaves())
             .transition()
             .duration(1500)
-            .style("left", (d) => d.x0 + "px")
-            .style("top", (d) => d.y0 + "px")
-            .style("width", (d) => Math.max(0, d.x1 - d.x0 - 1) + "px")
-            .style("height", (d) => Math.max(0, d.y1 - d.y0 - 1) + "px")
+            .style("left", function(d) {return d.x0 + "px"} )
+            .style("top", function(d) {return d.y0 + "px"} )
+            .style("width", function(d) {return Math.max(0, d.x1 - d.x0 - 1) + "px"} )
+            .style("height", function(d) {return Math.max(0, d.y1 - d.y0 - 1) + "px" } )
     });
 }
 /**
@@ -271,7 +270,7 @@ function drawTree(dataTree) {
 
 function createChartTimeLineDataSet(data) {
     if ($("#dataSet2018").prop("checked")) {
-        data = data.filter(data => data.date.indexOf("-18") > -1);
+        data = data.filter(function(data) {return data.date.indexOf("-18") > -1} );
     }
 
     var margin = {
@@ -383,8 +382,8 @@ function createChartTimeLineDataSet(data) {
         .style("font-family", "Gotham-Book")
         .style("font-size", "13px")
         .call(d3.axisBottom(x)
-            //.ticks(d3.timeDay.filter(d => d3.timeDay.count(0, d) % 100 === 0))
-            .ticks(d3.timeDay.filter(d => $("#dataSet2018").prop("checked") ? d3.timeDay.count(0, d) % 60 === 0 : d3.timeDay.count(0, d) % 300 === 0))
+            //.ticks(d3.timeDay.filter(d {return } d3.timeDay.count(0, d) % 100 === 0))
+            .ticks(d3.timeDay.filter(function(d) {return $("#dataSet2018").prop("checked") ? d3.timeDay.count(0, d) % 60 === 0 : d3.timeDay.count(0, d) % 300 === 0} ))
             .tickFormat(function (x) {
                 // get the milliseconds since Epoch for the date
                 var milli = (x.getTime() - 10000);

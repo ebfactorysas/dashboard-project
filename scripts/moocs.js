@@ -149,7 +149,7 @@ function drawMoocsRegistrationsChart(dataMoocs) {
 
 
     var svgMoocs = d3.select("#moocs-registrations")
-    .append("svg")
+        .append("svg")
         //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
         .attr("viewBox", "-55 -25 700 200")
@@ -158,11 +158,11 @@ function drawMoocsRegistrationsChart(dataMoocs) {
 
         //class to make it responsive
         .classed("svg-content-responsive", true);
-        // .append("svg")
-        // .attr("width", widthMoocs + marginMoocs.left + marginMoocs.right)
-        // .attr("height", heightMoocs + marginMoocs.top + marginMoocs.bottom)
-        // .append("g")
-        // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")");
+    // .append("svg")
+    // .attr("width", widthMoocs + marginMoocs.left + marginMoocs.right)
+    // .attr("height", heightMoocs + marginMoocs.top + marginMoocs.bottom)
+    // .append("g")
+    // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")");
 
     var xMoocs = d3.scaleLinear()
         .range([0, widthMoocs])
@@ -743,7 +743,9 @@ function createChart(data) {
         .style("font-size", "13px")
         // .call(d3.axisBottom(x));
         .call(d3.axisBottom(x)
-            .ticks(d3.timeDay.filter(d => d3.timeDay.count(0, d) % 300 === 0))
+            .ticks(d3.timeDay.filter(function (d) {
+                return d3.timeDay.count(0, d) % 300 === 0
+            }))
             .tickFormat(function (x) {
                 // get the milliseconds since Epoch for the date
                 var milli = (x.getTime() - 10000);

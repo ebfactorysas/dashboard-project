@@ -85,8 +85,7 @@ var dataGauge = {
     }
 }
 
-var dataLines = [
-    {
+var dataLines = [{
         "date": 201801,
         "Paul Productive Code": 4.1 + 10,
         "Paul Raw Code": 3.2 + 20,
@@ -245,8 +244,12 @@ function drawTree(data) {
         .style("height", (heightTree + marginTree.top + marginTree.bottom) + "px")
         .style("left", marginTree.left + "px")
         .style("top", marginTree.top + "px");
-    const root = d3.hierarchy(data, (d) => d.children)
-        .sum((d) => d.data2018);
+    const root = d3.hierarchy(data, function (d) {
+            return d.children
+        })
+        .sum(function (d) {
+            return d.data2018
+        });
 
     const tree = treemap(root);
 
@@ -254,38 +257,62 @@ function drawTree(data) {
         .data(tree.leaves())
         .enter().append("div")
         .attr("class", "node")
-        .style("left", (d) => d.x0 + "px")
-        .style("top", (d) => d.y0 + "px")
-        .style("width", (d) => Math.max(0, d.x1 - d.x0) + "px")
-        .style("height", (d) => Math.max(0, d.y1 - d.y0) + "px")
-        .style("background", (d) => colorTree(d.parent.data.name))
-        .text((d) => d.data.name);
+        .style("left", function (d) {
+            return d.x0 + "px"
+        })
+        .style("top", function (d) {
+            return d.y0 + "px"
+        })
+        .style("width", function (d) {
+            return Math.max(0, d.x1 - d.x0) + "px"
+        })
+        .style("height", function (d) {
+            return Math.max(0, d.y1 - d.y0) + "px"
+        })
+        .style("background", function (d) {
+            return colorTree(d.parent.data.name)
+        })
+        .text(function (d) {
+            return d.data.name
+        });
 
     d3.selectAll("input").on("change", function change() {
         const value = this.value === "count" ?
-            (d) => {
+            function (d) {
                 return d.data2018 ? 1 : 0;
             } :
-            (d) => {
+            function (d) {
                 return d.data2018;
             };
 
-        const newRoot = d3.hierarchy(data, (d) => d.children)
+        const newRoot = d3.hierarchy(data, function (d) {
+                return d.children
+            })
             .sum(value);
 
         node.data(treemap(newRoot).leaves())
             .transition()
             .duration(1500)
-            .style("left", (d) => d.x0 + "px")
-            .style("top", (d) => d.y0 + "px")
-            .style("width", (d) => Math.max(0, d.x1 - d.x0 - 1) + "px")
-            .style("height", (d) => Math.max(0, d.y1 - d.y0 - 1) + "px")
+            .style("left", function (d) {
+                return d.x0 + "px"
+            })
+            .style("top", function (d) {
+                return d.y0 + "px"
+            })
+            .style("width", function (d) {
+                return Math.max(0, d.x1 - d.x0 - 1) + "px"
+            })
+            .style("height", function (d) {
+                return Math.max(0, d.y1 - d.y0 - 1) + "px"
+            })
     });
 }
 
 function createChartTimeline(data) {
     if ($("#code2018").prop("checked")) {
-        data = data.filter(data => data.date.indexOf("-18") > -1);
+        data = data.filter(function (data) {
+            return data.date.indexOf("-18") > -1
+        });
     }
 
     var margin = {
@@ -398,7 +425,9 @@ function createChartTimeline(data) {
         //.call(d3.axisBottom(x))
         .call(d3.axisBottom(x)
             //.ticks(d3.timeDay.filter(d => d3.timeDay.count(0, d) % 100 === 0))
-            .ticks(d3.timeDay.filter(d => $("#code2018").prop("checked") ? d3.timeDay.count(0, d) % 60 === 0 : d3.timeDay.count(0, d) % 100 === 0))
+            .ticks(d3.timeDay.filter(function (d) {
+                return $("#code2018").prop("checked") ? d3.timeDay.count(0, d) % 60 === 0 : d3.timeDay.count(0, d) % 100 === 0;
+            }))
             .tickFormat(function (x) {
                 // get the milliseconds since Epoch for the date
                 var milli = (x.getTime() - 10000);
@@ -450,9 +479,11 @@ function createChartTimeline(data) {
 
 function drawPlotChart(data) {
     if ($("#code2018").prop("checked")) {
-        data = data.filter(data => data.publishedDate.indexOf("-18") > -1);
+        data = data.filter(function (data) {
+            return data.publishedDate.indexOf("-18") > -1
+        });
     }
-    data.forEach(d => {
+    data.forEach(function (d) {
         d.daysPublished = +d.daysPublished;
         d.departmentCode = +d.departmentCode;
         d.Code = +d.Code;
@@ -465,10 +496,14 @@ function drawPlotChart(data) {
 
 
 
-    const xValue = d => d.pageviews;
+    const xValue = function (d) {
+        d.pageviews
+    };
     const xAxisLabel = 'Total Days Published';
 
-    const yValue = d => d.daysPublished;
+    const yValue = function (d) {
+        d.daysPublished
+    };
     const circleRadius = 10;
     const yAxisLabel = 'PageViews';
 
@@ -496,7 +531,7 @@ function drawPlotChart(data) {
         .nice();
 
     const g = svg.append('g')
-        .attr('transform', `translate(${margin.left},${margin.top})`);
+        .attr('transform', "translate(" + margin.left + "," + margin.top + ")");
 
     const xAxis = d3.axisBottom(xScale)
         .scale(xScale)
@@ -518,12 +553,12 @@ function drawPlotChart(data) {
         .attr('y', -93)
         .attr('x', -innerHeight / 2)
         .attr('fill', 'black')
-        .attr('transform', `rotate(-90)`)
+        .attr('transform', "rotate(-90)")
         .attr('text-anchor', 'middle')
         .text(yAxisLabel);
 
     const xAxisG = g.append('g').call(xAxis)
-        .attr('transform', `translate(0,${innerHeight})`);
+        .attr('transform', "translate(0," + innerHeight + ")");
 
     xAxisG.select('.domain').remove();
 
@@ -536,8 +571,12 @@ function drawPlotChart(data) {
 
     g.selectAll('circle').data(data)
         .enter().append('circle')
-        .attr('cy', d => yScale(yValue(d)))
-        .attr('cx', d => xScale(xValue(d)))
+        .attr('cy', function (d) {
+            yScale(yValue(d))
+        })
+        .attr('cx', function (d) {
+            xScale(xValue(d))
+        })
         .attr('r', circleRadius)
         .attr('fill', function (d) {
             if (d.daysPublished >= 200 && d.pageviews >= 1000) {
@@ -582,7 +621,7 @@ function drawGaugeCodeChart(dataGauge) {
         .attr("text-anchor", "middle")
         .attr("class", "percent-complete")
         .attr("dy", "0.3em")
-        .text(dataGauge.code.allocated );
+        .text(dataGauge.code.allocated);
 
 
     var i = d3.interpolate(progress, dataGauge.code.allocated / dataGauge.code.total);

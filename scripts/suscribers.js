@@ -329,8 +329,12 @@ function drawTree(dataTree) {
         .style("height", (heightTree + marginTree.top + marginTree.bottom) + "px")
         .style("left", marginTree.left + "px")
         .style("top", marginTree.top + "px");
-    const root = d3.hierarchy(dataTree, (d) => d.children)
-        .sum((d) => d.size);
+    const root = d3.hierarchy(dataTree, function (d) {
+            return d.children
+        })
+        .sum(function (d) {
+            return d.size
+        });
 
     const tree = treemap(root);
 
@@ -338,32 +342,54 @@ function drawTree(dataTree) {
         .data(tree.leaves())
         .enter().append("div")
         .attr("class", "node")
-        .style("left", (d) => d.x0 + "px")
-        .style("top", (d) => d.y0 + "px")
-        .style("width", (d) => Math.max(0, d.x1 - d.x0) + "px")
-        .style("height", (d) => Math.max(0, d.y1 - d.y0) + "px")
-        .style("background", (d) => colorTree(d.parent.data.name))
-        .text((d) => d.data.name);
+        .style("left", function (d) {
+            return d.x0 + "px"
+        })
+        .style("top", function (d) {
+            return d.y0 + "px"
+        })
+        .style("width", function (d) {
+            return Math.max(0, d.x1 - d.x0) + "px"
+        })
+        .style("height", function (d) {
+            return Math.max(0, d.y1 - d.y0) + "px"
+        })
+        .style("background", function (d) {
+            return colorTree(d.parent.data.name)
+        })
+        .text(function (d) {
+            return d.data.name
+        });
 
     d3.selectAll("input").on("change", function change() {
         const value = this.value === "count" ?
-            (d) => {
+            function (d) {
                 return d.size ? 1 : 0;
             } :
-            (d) => {
-                return d.size;
+            function (d) {
+                return d.size
             };
 
-        const newRoot = d3.hierarchy(dataTree, (d) => d.children)
+        const newRoot = d3.hierarchy(dataTree, function (d) {
+                return d.children
+            })
             .sum(value);
 
         node.data(treemap(newRoot).leaves())
             .transition()
             .duration(1500)
-            .style("left", (d) => d.x0 + "px")
-            .style("top", (d) => d.y0 + "px")
-            .style("width", (d) => Math.max(0, d.x1 - d.x0 - 1) + "px")
-            .style("height", (d) => Math.max(0, d.y1 - d.y0 - 1) + "px")
+            .style("left", function (d) {
+                return d.x0 + "px"
+            })
+            .style("top", function (d) {
+                return d.y0 + "px"
+            })
+            .style("width", function (d) {
+                return Math.max(0, d.x1 - d.x0 - 1) + "px"
+            })
+            .style("height", function (d) {
+                return Math.max(0, d.y1 - d.y0 - 1) + "px"
+            })
     });
 }
 /**
@@ -626,7 +652,7 @@ function drawSuscribersChart(dataSet) {
         .attr("font-family", "Gotham-Bold")
         .attr("font-size", "12px")
         .text(function (d) {
-            return d.value/1000+"K";
+            return d.value / 1000 + "K";
         });
 }
 

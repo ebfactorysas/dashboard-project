@@ -139,7 +139,9 @@ function sortByDateAscending(a, b) {
 
 function createChartTimelinePublication(data) {
     if ($("#publication2018").prop("checked")) {
-        data = data.filter(data => data.date.indexOf("-18") > -1);
+        data = data.filter(function (data) {
+            return data.date.indexOf("-18") > -1
+        });
     }
     var margin = {
             top: 20,
@@ -251,7 +253,9 @@ function createChartTimelinePublication(data) {
         .style("font-size", "13px")
         //.call(d3.axisBottom(x));
         .call(d3.axisBottom(x)
-            .ticks(d3.timeDay.filter(d => $("#publication2018").prop("checked") ? d3.timeDay.count(0, d) % 60 === 0 : d3.timeDay.count(0, d) % 300 === 0))
+            .ticks(d3.timeDay.filter(function (d) {
+                return $("#publication2018").prop("checked") ? d3.timeDay.count(0, d) % 60 === 0 : d3.timeDay.count(0, d) % 300 === 0
+            }))
             .tickFormat(function (x) {
                 // get the milliseconds since Epoch for the date
                 var milli = (x.getTime() - 10000);
@@ -319,8 +323,12 @@ function drawTree(dataTree) {
         .style("height", (heightTree + marginTree.top + marginTree.bottom) + "px")
         .style("left", marginTree.left + "px")
         .style("top", marginTree.top + "px");
-    const root = d3.hierarchy(dataTree, (d) => d.children)
-        .sum((d) => d.size);
+    const root = d3.hierarchy(dataTree, function (d) {
+            return d.children
+        })
+        .sum(function (d) {
+            return d.size
+        });
 
     const tree = treemap(root);
 
@@ -328,32 +336,54 @@ function drawTree(dataTree) {
         .data(tree.leaves())
         .enter().append("div")
         .attr("class", "node")
-        .style("left", (d) => d.x0 + "px")
-        .style("top", (d) => d.y0 + "px")
-        .style("width", (d) => Math.max(0, d.x1 - d.x0) + "px")
-        .style("height", (d) => Math.max(0, d.y1 - d.y0) + "px")
-        .style("background", (d) => colorTree(d.parent.data.name))
-        .text((d) => d.data.name);
+        .style("left", function (d) {
+            return d.x0 + "px"
+        })
+        .style("top", function (d) {
+            return d.y0 + "px"
+        })
+        .style("width", function (d) {
+            return Math.max(0, d.x1 - d.x0) + "px"
+        })
+        .style("height", function (d) {
+            return Math.max(0, d.y1 - d.y0) + "px"
+        })
+        .style("background", function (d) {
+            return colorTree(d.parent.data.name)
+        })
+        .text(function (d) {
+            return d.data.name
+        });
 
     d3.selectAll("input").on("change", function change() {
         const value = this.value === "count" ?
-            (d) => {
+            function (d) {
                 return d.size ? 1 : 0;
             } :
-            (d) => {
+            function (d) {
                 return d.size;
             };
 
-        const newRoot = d3.hierarchy(dataTree, (d) => d.children)
+        const newRoot = d3.hierarchy(dataTree, function (d) {
+                return d.children
+            })
             .sum(value);
 
         node.data(treemap(newRoot).leaves())
             .transition()
             .duration(1500)
-            .style("left", (d) => d.x0 + "px")
-            .style("top", (d) => d.y0 + "px")
-            .style("width", (d) => Math.max(0, d.x1 - d.x0 - 1) + "px")
-            .style("height", (d) => Math.max(0, d.y1 - d.y0 - 1) + "px")
+            .style("left", function (d) {
+                return d.x0 + "px"
+            })
+            .style("top", function (d) {
+                return d.y0 + "px"
+            })
+            .style("width", function (d) {
+                return Math.max(0, d.x1 - d.x0 - 1) + "px"
+            })
+            .style("height", function (d) {
+                return Math.max(0, d.y1 - d.y0 - 1) + "px"
+            })
     });
 }
 
@@ -740,12 +770,12 @@ function drawLinesChartPublication(data) {
 function drawPlotChartPublication(data) {
     console.log(data)
     if ($("#publication2018").prop("checked")) {
-        //data = data.filter(data => data.publishedDate.indexOf("-18") > -1);
+        //data = data.filter(data {return } data.publishedDate.indexOf("-18") > -1);
         data.filter(function (data) {
             return data.publishedDate.indexOf("-18")
         })
     }
-    data.forEach(d => {
+    data.forEach(function (d) {
         d.daysPublished = +d.daysPublished;
         d.departmentCode = +d.departmentCode;
         d.Code = +d.Code;
@@ -758,10 +788,14 @@ function drawPlotChartPublication(data) {
 
 
 
-    const xValue = d => d.pageviews;
+    const xValue = function (d) {
+        d.pageviews
+    };
     const xAxisLabel = 'Total Days Published';
 
-    const yValue = d => d.daysPublished;
+    const yValue = function (d) {
+        d.daysPublished
+    };
     const circleRadius = 10;
     const yAxisLabel = 'PageViews';
 
@@ -789,7 +823,7 @@ function drawPlotChartPublication(data) {
         .nice();
 
     const g = svg.append('g')
-        .attr('transform', `translate(${margin.left},${margin.top})`);
+        .attr('transform', "translate(" + margin.left + "," + margin.top + ")");
 
     const xAxis = d3.axisBottom(xScale)
         .scale(xScale)
@@ -811,12 +845,12 @@ function drawPlotChartPublication(data) {
         .attr('y', -93)
         .attr('x', -innerHeight / 2)
         .attr('fill', 'black')
-        .attr('transform', `rotate(-90)`)
+        .attr('transform', "rotate(-90)")
         .attr('text-anchor', 'middle')
         .text(yAxisLabel);
 
     const xAxisG = g.append('g').call(xAxis)
-        .attr('transform', `translate(0,${innerHeight})`);
+        .attr('transform', "translate(0," + innerHeight + ")");
 
     xAxisG.select('.domain').remove();
 
@@ -829,8 +863,12 @@ function drawPlotChartPublication(data) {
 
     g.selectAll('circle').data(data)
         .enter().append('circle')
-        .attr('cy', d => yScale(yValue(d)))
-        .attr('cx', d => xScale(xValue(d)))
+        .attr('cy', function (d) {
+            return yScale(yValue(d))
+        })
+        .attr('cx', function (d) {
+            return xScale(xValue(d))
+        })
         .attr('r', circleRadius)
         .attr('fill', function (d) {
             if (d.daysPublished >= 200 && d.pageviews >= 1000) {
@@ -851,10 +889,12 @@ function publicationFilter() {
     removePublicationsSvg();
 
     if ($("select[id*='divisionSelect']").val().length > 0) {
-        
+
     } else if ($("select[id*='deparmentSelect']").val().length > 0) {
         var downloadTimelineDepartment = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineDepartments);
-        downloadTimelineDepartment = downloadTimelineDepartment.filter(downloadTimelineDepartment => downloadTimelineDepartment.departmentCode == $("#deparmentSelect").val())
+        downloadTimelineDepartment = downloadTimelineDepartment.filter(function (downloadTimelineDepartment) {
+            return downloadTimelineDepartment.departmentCode == $("#deparmentSelect").val()
+        })
         downloadTimelineDepartment = downloadTimelineDepartment[0].data;
         createChartTimelinePublication(downloadTimelineDepartment);
     } else {
@@ -885,7 +925,9 @@ $("input[name*='publicationTrend']").click(function () {
 
     //get chart timeline by department
     var downloadTimelineDepartment = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineDepartments);
-    downloadTimelineDepartment = downloadTimelineDepartment.filter(downloadTimelineDepartment => downloadTimelineDepartment.departmentCode == $("#deparmentSelect").val())
+    downloadTimelineDepartment = downloadTimelineDepartment.filter(function (downloadTimelineDepartment) {
+        return downloadTimelineDepartment.departmentCode == $("#deparmentSelect").val()
+    })
     downloadTimelineDepartment = downloadTimelineDepartment[0].data;
 
     removePublicationsSvg();
