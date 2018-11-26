@@ -738,7 +738,7 @@ function drawLinesChartPublication(data) {
 }
 
 function drawPlotChartPublication(data) {
-    console.log(data)
+    //console.log(data)
     if ($("#publication2018").prop("checked")) {
         //data = data.filter(data => data.publishedDate.indexOf("-18") > -1);
         data.filter(function (data) {
@@ -913,7 +913,7 @@ $("input[name*='publicationTrend']").click(function () {
 //department filter
 $("#deparmentSelect").change(function () {
     $("select[id*='divisionSelect']").val("");
-    console.log($("#deparmentSelect").val());
+    //console.log($("#deparmentSelect").val());
     publicationFilter();
 });
 

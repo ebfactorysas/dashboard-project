@@ -61,7 +61,6 @@ function drawInstitutionsChart(dataInstitution) {
         .append("text")
         .text(null)
         .attr("y", function (d) {
-            console.log(d)
             return yInstitution(d.value + 5);
         })
         .attr("x", function (d, i) {
