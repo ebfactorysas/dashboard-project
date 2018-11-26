@@ -897,11 +897,11 @@ section.suscribers .right-bar .left-zone {
 }
 
 section.suscribers .right-bar .left-zone .top-zone {
-    height: 285px;
+    /* height: 285px; */
 }
 
 section.suscribers .right-bar .left-zone .down-zone {
-    height: 540px;
+    /* height: 540px; */
 }
 
 section.suscribers .right-bar .right-zone {
@@ -909,7 +909,7 @@ section.suscribers .right-bar .right-zone {
 }
 
 section.suscribers .right-bar .right-zone .top-zone {
-    height: 285px;
+    /* height: 285px; */
     padding-top: 1rem;
 }
 
