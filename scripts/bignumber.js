@@ -341,15 +341,15 @@ function updateGaugesPublications(){
  */
 function moocsIndicatorAlltime(jsondata) {
     moocsAllTotalGlobal = 0;
-    moocsAllDownloads = (jsondata.length > 0) ? jsondata[0].all_the_time_downloads : '0';
+    moocsAllDownloads = 0;
     moocsAllDownloads = setSettingsNumber(moocsAllDownloads).valueNumber;
-    moocsAllDownloadsLac = (jsondata.length > 0) ? (jsondata[0].all_the_time_porcent_total_LAC_downloads * 100).toFixed(0) : '0';
+    moocsAllDownloadsLac = 0;
     var results = {
         moocsValue: 0,
-        porcent_total_publications: 0, // no se enviaron en los datos para el porcentaje total de publicaciones filtrado por all time
+        porcent_total_publications: "100%", /*missing, rodrigo dice que si falta el dato que pongamos 100% para all the time*/
         compare2017_2018_publications: 0,
         downloadsValue: 0,
-        porcent_total_downloads: 0, // no se enviaron en los datos para el porcentaje total de downloads filtrado por all time
+        porcent_total_downloads: "100%", /*missing, rodrigo dice que si falta el dato que pongamos 100% para all the time*/
         porcent_downloads_lac: 0
     }
     // console.log(results);
@@ -430,14 +430,14 @@ function datasetsIndicatorAlltime(jsondata) {
     datasetsAllTotalGlobal = (jsondata.length > 0) ? jsondata[0].all_the_time_datasets : '0';
     datasetsAllDownloads = (jsondata.length > 0) ? jsondata[0].all_the_time_downloads : '0';
     datasetsAllDownloads = setSettingsNumber(datasetsAllDownloads).valueNumber;
-    datasetsAllDownloadsLac = (jsondata.length > 0) ? (jsondata[0].all_the_time_percent_total_lac_downloads * 100).toFixed(0) : '0';
+    datasetsAllDownloadsLac = (jsondata.length > 0) ? (jsondata[0].all_the_time_porcent_total_lac_downloads * 100).toFixed(0) : '0';
     var results = {
         datasetsValue: (jsondata.length > 0) ? jsondata[0].all_the_time_datasets : '0',
-        porcent_total_publications: "missing",
+        porcent_total_publications: "100%", /*missing, rodrigo dice que si falta el dato que pongamos 100% para all the time*/
         compare2017_2018_publications: (jsondata.length > 0) ? jsondata[0]['2017_2018_datasets'] : '',
         downloadsValue: (jsondata.length > 0) ? jsondata[0]['all_the_time_downloads'] : '0',
-        porcent_total_downloads: "missing",
-        porcent_downloads_lac: (jsondata.length > 0) ? (jsondata[0]['all_the_time_percent_total_lac_downloads'] * 100).toFixed(1) + '%' : ''
+        porcent_total_downloads: "100%", /*missing, rodrigo dice que si falta el dato que pongamos 100% para all the time*/
+        porcent_downloads_lac: (jsondata.length > 0) ? (jsondata[0]['all_the_time_porcent_total_lac_downloads'] * 100).toFixed(1) + '%' : ''
     }
     // console.log(results);
     return results;
@@ -681,7 +681,7 @@ function setSettingsNumber(valueNumber){
         valueNumber = (valueNumber/1000).toFixed(0);
         suffixNumber = "K";
     }
-    else if (valueNumber > 100000) {
+    else if (valueNumber > 1000000) {
         valueNumber = (valueNumber / 1000000).toFixed(0);
         suffixNumber = "M";
     }
