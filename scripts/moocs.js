@@ -50,11 +50,16 @@ function drawDistributionChart(dataDistribution) {
 
     var widthDistribution = 520 - marginDistribution.left - marginDistribution.right;
     var heightDistribution = 280 - marginDistribution.top - marginDistribution.bottom;
-    var svgDistribution = d3.select('#distribution-moocs').append("svg")
-        .attr("width", widthDistribution + marginDistribution.left + marginDistribution.right)
-        .attr("height", heightDistribution + marginDistribution.top + marginDistribution.bottom)
+    var svgDistribution = d3.select('#distribution-moocs')
+        .append("svg")
+        //responsive SVG needs these 2 attributes and no width and height attr
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "0 0 500 200")
         .append("g")
-        .attr("transform", "translate(" + 30 + "," + marginDistribution.top + ")");
+        // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
+
+        //class to make it responsive
+        .classed("svg-content-responsive", true);
 
     var xDistribution = d3.scaleBand()
         .range([0, widthDistribution]);
@@ -231,62 +236,6 @@ function drawMoocsRegistrationsChart(dataMoocs) {
  * End registration-moocs
  */
 
-
-var dataStudents = {
-    registrations: {
-        years: [{
-            name: "2016",
-            value: 25.6
-        }, {
-            name: "2017",
-            value: 68.3
-        }, {
-            name: "2018",
-            value: 55
-        }],
-        value: 55
-    },
-    participants: {
-        years: [{
-            name: "2016",
-            value: 13
-        }, {
-            name: "2017",
-            value: 32
-        }, {
-            name: "2018",
-            value: 23
-        }],
-        value: 23
-    },
-    completed: {
-        years: [{
-            name: "2016",
-            value: 2.4
-        }, {
-            name: "2017",
-            value: 5.8
-        }, {
-            name: "2018",
-            value: 2.3
-        }],
-        value: 2
-    },
-    certified: {
-        years: [{
-            name: "2016",
-            value: 1.32
-        }, {
-            name: "2017",
-            value: 3.25
-        }, {
-            name: "2018",
-            value: .92
-        }],
-        value: 1
-    }
-};
-
 var marginStudents = {
     top: 2,
     right: 20,
@@ -304,7 +253,10 @@ var widthStudents = 80 - marginStudents.left - marginStudents.right,
 drawStudentRegistrationsChart(moocsStudentsFlowArrays.studentsFlowIDB);
 
 function drawStudentRegistrationsChart(dataStudents) {
-    if(typeof dataStudents == "undefined") return;
+    if (typeof dataStudents == "undefined") {
+        $('#student1-title').html("0");
+        return
+    };
     $('#student1-title').html(dataStudents.registrations.value < 1000 ? dataStudents.registrations.value : (Math.round(dataStudents.registrations.value / 1000).toFixed(0)) + "K");
     var svgStudent1 = d3.select("#student1").append("svg")
         .attr("width", widthStudents + marginStudents.left + marginStudents.right)
@@ -383,7 +335,10 @@ function drawStudentRegistrationsChart(dataStudents) {
 drawStudentParticipantsChart(moocsStudentsFlowArrays.studentsFlowIDB);
 
 function drawStudentParticipantsChart(dataStudents) {
-    if(typeof dataStudents == "undefined") return;
+    if (typeof dataStudents == "undefined") {
+        $('#student2-title').html("0");
+        return
+    };
     $('#student2-title').html(dataStudents.participants.value < 1000 ? dataStudents.participants.value : (Math.round(dataStudents.participants.value / 1000).toFixed(0)) + "K");
     var svgStudent2 = d3.select("#student2").append("svg")
         .attr("width", widthStudents + marginStudents.left + marginStudents.right)
@@ -461,8 +416,11 @@ function drawStudentParticipantsChart(dataStudents) {
 drawStudentCompletedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
 
 function drawStudentCompletedsChart(dataStudents) {
-    if(typeof dataStudents == "undefined") return;
-    $('#student3-title').html(dataStudents.completed.value <1000 ? dataStudents.completed.value : (Math.round(dataStudents.completed.value / 1000).toFixed(0)) + "K");
+    if (typeof dataStudents == "undefined") {
+        $('#student3-title').html("0");
+        return
+    };
+    $('#student3-title').html(dataStudents.completed.value < 1000 ? dataStudents.completed.value : (Math.round(dataStudents.completed.value / 1000).toFixed(0)) + "K");
     var svgStudent3 = d3.select("#student3").append("svg")
         .attr("width", widthStudents + marginStudents.left + marginStudents.right)
         .attr("height", heightStudents + marginStudents.top + marginStudents.bottom)
@@ -538,7 +496,10 @@ function drawStudentCompletedsChart(dataStudents) {
 drawStudentCertifiedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
 
 function drawStudentCertifiedsChart(dataStudents) {
-    if(typeof dataStudents == "undefined") return;
+    if (typeof dataStudents == "undefined") {
+        $('#student4-title').html("0");
+        return
+    };
     $('#student4-title').html(dataStudents.certified.value < 1000 ? dataStudents.certified.value : (Math.round(dataStudents.certified.value / 1000).toFixed(0)) + "K");
     var svgStudent4 = d3.select("#student4").append("svg")
         .attr("width", widthStudents + marginStudents.left + marginStudents.right)
@@ -992,7 +953,7 @@ function moocsFilter() {
             } else if ($("select[id*='deparmentSelect']").val().length > 0) {
                 drawMoocsRegistrationsChart(orderTopMoocs(departmentFilter(moocsTopArrays.departmentsAllTime, $("select[id*='deparmentSelect']").val())));
                 drawDistributionChart(orderTopMoocs(departmentFilter(moocsEducationArrays.educationLevelDepartments, $("select[id*='deparmentSelect']").val())));
-            
+
                 var students = divisionFilter(moocsStudentsFlowArrays.studentsFlowDepartments, $("select[id*='deparmentSelect']").val());
                 drawStudentRegistrationsChart(students[0]);
                 drawStudentParticipantsChart(students[0]);
@@ -1016,7 +977,7 @@ function moocsFilter() {
             if ($("select[id*='divisionSelect']").val().length > 0) {
                 drawMoocsRegistrationsChart(orderTopMoocs(divisionFilter(moocsTopArrays.divisions2018, $("select[id*='divisionSelect']").val())));
                 drawDistributionChart(orderTopMoocs(divisionFilter(moocsEducationArrays.educationLevelDivisions, $("select[id*='divisionSelect']").val())));
-                
+
                 var students = divisionFilter(moocsStudentsFlowArrays.studentsFlowDivisions, $("select[id*='divisionSelect']").val());
                 drawStudentRegistrationsChart(students[0]);
                 drawStudentParticipantsChart(students[0]);
@@ -1025,7 +986,7 @@ function moocsFilter() {
             } else if ($("select[id*='deparmentSelect']").val().length > 0) {
                 drawMoocsRegistrationsChart(orderTopMoocs(departmentFilter(moocsTopArrays.departments2018, $("select[id*='deparmentSelect']").val())));
                 drawDistributionChart(orderTopMoocs(departmentFilter(moocsEducationArrays.educationLevelDepartments, $("select[id*='deparmentSelect']").val())));
-            
+
                 var students = divisionFilter(moocsStudentsFlowArrays.studentsFlowDepartments, $("select[id*='deparmentSelect']").val());
                 drawStudentRegistrationsChart(students[0]);
                 drawStudentParticipantsChart(students[0]);
