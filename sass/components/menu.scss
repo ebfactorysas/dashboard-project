@@ -1,0 +1,58 @@
+.menu {
+  ul {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+
+    @include breakpoint($desk) {
+      display: -ms-flexbox !important;
+      display: flex !important;
+    }
+
+    li {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      width: 100%;
+      @include inline-block();
+      position: relative;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+      padding: 10px;
+      border-bottom: 1px solid #f1f1f1;
+      display: none;
+      @include breakpoint($desk) {
+        display: inline-block;
+      }
+
+      &:first-child {
+        display: inline-block;
+        &:after {
+          content: "";
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 13px 8px 0 8px;
+          border-color: #000 transparent transparent transparent;
+          position: absolute;
+          right: 10px;
+          top: 18px;
+          @include breakpoint($desk) {
+            display: none;
+          }
+        }
+      }
+
+      &:hover {
+        background: #f1f1f1;
+      }
+
+      @include breakpoint($desk) {
+        border: 0;
+        -ms-flex: auto;
+        flex: auto;
+      }
+    }
+  }
+}

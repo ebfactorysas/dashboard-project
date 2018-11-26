@@ -1,0 +1,17 @@
+.right-bar {
+
+}
+
+
+@include breakpoint($desk) {
+  .right-bar {
+    width: 75%;
+    min-height: 930px;
+  }
+}
+
+@include breakpoint($wide) {
+  .right-bar {
+    width: auto;
+  }
+}

@@ -75,7 +75,7 @@ function drawInstitutionsChart(dataInstitution) {
         })
         .text(function (d) {
 
-            return d.value + "K";
+            return d.value < 1000 ? d.value : (Math.round(d.value / 1000).toFixed(0)) + "K";
         })
         .append("tspan")
         .attr("x", function (d, i) {
@@ -293,8 +293,12 @@ function drawTree(dataTree) {
         .style("height", (heightTree + marginTree.top + marginTree.bottom) + "px")
         .style("left", marginTree.left + "px")
         .style("top", marginTree.top + "px");
-    const root = d3.hierarchy(dataTree, (d) => d.children)
-        .sum((d) => d.size);
+    const root = d3.hierarchy(dataTree, function (d) {
+            return d.children
+        })
+        .sum(function (d) {
+            return d.size
+        });
 
     const tree = treemap(root);
 
@@ -302,32 +306,54 @@ function drawTree(dataTree) {
         .data(tree.leaves())
         .enter().append("div")
         .attr("class", "node")
-        .style("left", (d) => d.x0 + "px")
-        .style("top", (d) => d.y0 + "px")
-        .style("width", (d) => Math.max(0, d.x1 - d.x0) + "px")
-        .style("height", (d) => Math.max(0, d.y1 - d.y0) + "px")
-        .style("background", (d) => colorTree(d.parent.data.name))
-        .text((d) => d.data.name);
+        .style("left", function (d) {
+            return d.x0 + "px"
+        })
+        .style("top", function (d) {
+            return d.y0 + "px"
+        })
+        .style("width", function (d) {
+            return Math.max(0, d.x1 - d.x0) + "px"
+        })
+        .style("height", function (d) {
+            return Math.max(0, d.y1 - d.y0) + "px"
+        })
+        .style("background", function (d) {
+            return colorTree(d.parent.data.name)
+        })
+        .text(function (d) {
+            return d.data.name
+        });
 
     d3.selectAll("input").on("change", function change() {
         const value = this.value === "count" ?
-            (d) => {
+            function (d) {
                 return d.size ? 1 : 0;
             } :
-            (d) => {
-                return d.size;
+            function (d) {
+                return d.size
             };
 
-        const newRoot = d3.hierarchy(dataTree, (d) => d.children)
+        const newRoot = d3.hierarchy(dataTree, function (d) {
+                return d.children
+            })
             .sum(value);
 
         node.data(treemap(newRoot).leaves())
             .transition()
             .duration(1500)
-            .style("left", (d) => d.x0 + "px")
-            .style("top", (d) => d.y0 + "px")
-            .style("width", (d) => Math.max(0, d.x1 - d.x0 - 1) + "px")
-            .style("height", (d) => Math.max(0, d.y1 - d.y0 - 1) + "px")
+            .style("left", function (d) {
+                return d.x0 + "px"
+            })
+            .style("top", function (d) {
+                return d.y0 + "px"
+            })
+            .style("width", function (d) {
+                return Math.max(0, d.x1 - d.x0 - 1) + "px"
+            })
+            .style("height", function (d) {
+                return Math.max(0, d.y1 - d.y0 - 1) + "px"
+            })
     });
 }
 /**
@@ -595,7 +621,7 @@ function drawSuscribersChart(data) {
         .attr("font-family", "Gotham-Bold")
         .attr("font-size", "12px")
         .text(function (d) {
-            return d.value/1000+"K";
+            return d.value / 1000 + "K";
         });
 }
 
@@ -609,3 +635,136 @@ function drawSuscribersChart(data) {
 drawSuscribersChart(orderTopDataSuscribers(subscribersTopics));
 drawTree(dataTree);
 drawInstitutionsChart(subscribersInstitution.institutionIDB);
+
+
+// Filters
+function removeSubscribersSvg() {
+    d3.select("#institution-suscribers svg").remove();
+    d3.select("#age-suscribers svg").remove();
+    
+}
+
+function divisionSubscriberFilter(moocsJson, filterBy) {
+    return moocsJson.filter(function (entry) {
+        entry.value = Number(entry.value);
+        return entry.code.indexOf(filterBy) > 0;
+    });
+}
+
+// function departmentFilter(moocsJson, filterBy) {
+//     return moocsJson.filter(function (entry) {
+//         return entry.code === filterBy;
+//     });
+// }
+
+function subscribersFilter() {
+    removeSubscribersSvg();
+    //Load the json
+    switch ($("input[name*='suscribersTrend']:checked").val()) {
+        case 'all':
+
+            //top registration chart
+            if ($("select[id*='divisionSelect']").val().length > 0) {
+
+                console.log("division subscriber=> ", divisionSubscriberFilter(subscribersInstitution.institutionDivisions, $("select[id*='divisionSelect']").val()))
+                drawInstitutionsChart(divisionSubscriberFilter(subscribersInstitution.institutionDivisions, $("select[id*='divisionSelect']").val()));
+
+                // drawMoocsRegistrationsChart(orderTopMoocs(divisionFilter(moocsTopArrays.divisionsAlltime, $("select[id*='divisionSelect']").val())));
+                // drawDistributionChart(orderTopMoocs(divisionFilter(moocsEducationArrays.educationLevelDivisions, $("select[id*='divisionSelect']").val())));
+
+                // var students = divisionFilter(moocsStudentsFlowArrays.studentsFlowDivisions, $("select[id*='divisionSelect']").val());
+                // drawStudentRegistrationsChart(students[0]);
+                // drawStudentParticipantsChart(students[0]);
+                // drawStudentCompletedsChart(students[0]);
+                // drawStudentCertifiedsChart(students[0]);
+            } else if ($("select[id*='deparmentSelect']").val().length > 0) {
+                drawInstitutionsChart(divisionSubscriberFilter(subscribersInstitution.institutionDepartments, $("select[id*='deparmentSelect']").val()));
+
+                // drawMoocsRegistrationsChart(orderTopMoocs(departmentFilter(moocsTopArrays.departmentsAllTime, $("select[id*='deparmentSelect']").val())));
+                // drawDistributionChart(orderTopMoocs(departmentFilter(moocsEducationArrays.educationLevelDepartments, $("select[id*='deparmentSelect']").val())));
+
+                // var students = divisionFilter(moocsStudentsFlowArrays.studentsFlowDepartments, $("select[id*='deparmentSelect']").val());
+                // drawStudentRegistrationsChart(students[0]);
+                // drawStudentParticipantsChart(students[0]);
+                // drawStudentCompletedsChart(students[0]);
+                // drawStudentCertifiedsChart(students[0]);
+            } else {
+                // drawMoocsRegistrationsChart(topAllMoocs);
+                // drawDistributionChart(moocsEducationArrays.educationLevelIDB);
+                // // same data for all and 2018
+                // drawStudentRegistrationsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+                // drawStudentParticipantsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+                // drawStudentCompletedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+                // drawStudentCertifiedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+                console.log("ffdf");
+                drawInstitutionsChart(subscribersInstitution.institutionIDB);
+
+            }
+
+
+            break;
+
+        default:
+            //top registration chart
+            if ($("select[id*='divisionSelect']").val().length > 0) {
+                drawInstitutionsChart(divisionSubscriberFilter(subscribersInstitution.institutionDivisions, $("select[id*='divisionSelect']").val()));
+
+                // drawMoocsRegistrationsChart(orderTopMoocs(divisionFilter(moocsTopArrays.divisions2018, $("select[id*='divisionSelect']").val())));
+                // drawDistributionChart(orderTopMoocs(divisionFilter(moocsEducationArrays.educationLevelDivisions, $("select[id*='divisionSelect']").val())));
+
+                // var students = divisionFilter(moocsStudentsFlowArrays.studentsFlowDivisions, $("select[id*='divisionSelect']").val());
+                // drawStudentRegistrationsChart(students[0]);
+                // drawStudentParticipantsChart(students[0]);
+                // drawStudentCompletedsChart(students[0]);
+                // drawStudentCertifiedsChart(students[0]);
+            } else if ($("select[id*='deparmentSelect']").val().length > 0) {
+                drawInstitutionsChart(divisionSubscriberFilter(subscribersInstitution.institutionDepartments, $("select[id*='deparmentSelect']").val()));
+
+                // drawMoocsRegistrationsChart(orderTopMoocs(departmentFilter(moocsTopArrays.departments2018, $("select[id*='deparmentSelect']").val())));
+                // drawDistributionChart(orderTopMoocs(departmentFilter(moocsEducationArrays.educationLevelDepartments, $("select[id*='deparmentSelect']").val())));
+
+                // var students = divisionFilter(moocsStudentsFlowArrays.studentsFlowDepartments, $("select[id*='deparmentSelect']").val());
+                // drawStudentRegistrationsChart(students[0]);
+                // drawStudentParticipantsChart(students[0]);
+                // drawStudentCompletedsChart(students[0]);
+                // drawStudentCertifiedsChart(students[0]);
+            } else {
+                // drawMoocsRegistrationsChart(top2018Moocs);
+                // drawDistributionChart(moocsEducationArrays.educationLevelIDB);
+                // // same data for all and 2018
+                // drawStudentRegistrationsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+                // drawStudentParticipantsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+                // drawStudentCompletedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+                // drawStudentCertifiedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+                drawInstitutionsChart(subscribersInstitution.institutionIDB);
+
+            }
+            break;
+    }
+
+
+
+}
+// Divisions select filter
+$("select[id*='divisionSelect']").change(function () {
+    $("select[id*='deparmentSelect']").val("");
+    subscribersFilter();
+});
+
+// Deparment select filter
+$("select[id*='deparmentSelect']").change(function () {
+    $("select[id*='divisionSelect']").val("");
+    subscribersFilter();
+});
+
+$("#idbLink").click(function () {
+    $("select[id*='deparmentSelect']").val("");
+    $("select[id*='divisionSelect']").val("");
+    subscribersFilter();
+});
+
+
+
+$("input[name*='suscribersTrend']").click(function () {
+    subscribersFilter();
+});
