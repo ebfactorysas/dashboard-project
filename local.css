@@ -290,8 +290,6 @@ section.publications .left-bar .gauge-3 {
 
 section.publications .left-bar {
     text-align: center;
-    height: 930px;
-    width: 250px;
 }
 
 section.publications .left-bar h4 {
@@ -448,8 +446,6 @@ section.moocs .right-bar {
 
 section.moocs .left-bar {
     text-align: center;
-    height: 930px;
-    width: 250px;
 }
 
 section.moocs .left-bar .gauge-1 {
@@ -606,8 +602,6 @@ section.datasets .right-bar {
 
 section.datasets .left-bar {
     text-align: center;
-    height: 930px;
-    width: 250px;
 }
 
 section.datasets .left-bar h4 {
@@ -766,8 +760,6 @@ section.code .right-bar {
 
 section.code .left-bar {
     text-align: center;
-    height: 930px;
-    width: 250px;
 }
 
 section.code .funds-allocated-meter .background {
@@ -921,8 +913,6 @@ section.suscribers .right-bar .right-zone .top-zone {
 
 section.suscribers .left-bar {
     text-align: center;
-    height: 930px;
-    width: 250px;
 }
 
 section.suscribers .left-bar .gauge-1 {
