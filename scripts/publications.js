@@ -58,16 +58,16 @@ var dataTree = {
 }
 var dataPublicationGauge = {
     "publication": {
-        "total": 100,
-        "allocated": 76
+        "total": (publicationsAllTotalGlobal > 100) ? 1000: 100,
+        "allocated": publicationsAllTotalGlobal
     },
     "download": {
-        "total": 1000,
-        "allocated": 113
+        "total": (publicationsAllDownloads > 100) ? 1000: 100,
+        "allocated": publicationsAllDownloads
     },
     "lac": {
-        "total": 100,
-        "allocated": 9
+        "total": (publicationsAllDownloads > 100) ? 1000: 100,
+        "allocated": publicationsAllDownloadsLac
     }
 }
 
@@ -941,10 +941,12 @@ $("input[name*='publicationTrend']").click(function () {
             createChartTimelinePublication(downloadTimelineIDBTEST);
             drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
             drawPlotChartPublication(ObjectpublicationsAttention);
+            drawGaugePublicationChart(dataPublicationGauge);
         } else {
             createChartTimelinePublication(downloadTimelineIDBTEST);
             drawTrendPublicationChart(publicationsTopArrays.topIDB2018);
             drawPlotChartPublication(ObjectpublicationsAttention);
+            drawGaugePublicationChart(dataPublicationGauge);
         }
     }
 });

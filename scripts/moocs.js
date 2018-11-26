@@ -123,8 +123,6 @@ function drawDistributionChart(dataDistribution) {
         .attr("font-size", "10px");
 
 }
-
-
 /**
  * End distribution-moocs
  *  */
@@ -133,11 +131,6 @@ function drawDistributionChart(dataDistribution) {
 /**
  * Start registration-moocs
  */
-
-
-
-
-
 drawMoocsRegistrationsChart(topAllMoocs);
 
 function drawMoocsRegistrationsChart(dataMoocs) {
@@ -230,8 +223,6 @@ function drawMoocsRegistrationsChart(dataMoocs) {
             return d.name;
         });
 }
-
-
 /**
  * End registration-moocs
  */
@@ -249,7 +240,6 @@ var widthStudents = 80 - marginStudents.left - marginStudents.right,
 /**
  * Start student-registrations-moocs
  */
-
 drawStudentRegistrationsChart(moocsStudentsFlowArrays.studentsFlowIDB);
 
 function drawStudentRegistrationsChart(dataStudents) {
@@ -321,8 +311,6 @@ function drawStudentRegistrationsChart(dataStudents) {
             return d.value < 1000 ? d.value : (Math.round(d.value / 1000).toFixed(0)) + "K";
         });
 }
-
-
 /**
  * End student-registrations-moocs
  */
@@ -402,8 +390,6 @@ function drawStudentParticipantsChart(dataStudents) {
             return d.value < 1000 ? d.value : (Math.round(d.value / 1000).toFixed(0)) + "K";
         });
 }
-
-
 /**
  * End student-participants-moocs
  */
@@ -564,8 +550,6 @@ function drawStudentCertifiedsChart(dataStudents) {
             return d.value < 1000 ? d.value : (Math.round(d.value / 1000).toFixed(0)) + "K";
         });
 }
-
-
 /**
  * End student-certified-moocs
  */
@@ -631,7 +615,6 @@ function createChart(data) {
 
 
     var svg = d3.select("#timeline-moocs")
-        .append("div")
         .classed("svg-container", true) //container class to make it responsive
         .append("svg")
         //responsive SVG needs these 2 attributes and no width and height attr
@@ -769,22 +752,36 @@ function createChart(data) {
  * Start Gauges
  */
 
-var dataGauge = {
+// var dataGaugeMoocs = {
+//     "code": {
+//         "total": 100,
+//         "allocated": 76
+//     },
+//     "pageview": {
+//         "total": 1000,
+//         "allocated": 113
+//     },
+//     "lac": {
+//         "total": 100,
+//         "allocated": 9
+//     }
+// }
+var dataGaugeMoocs = {
     "code": {
-        "total": 100,
-        "allocated": 76
+        "total": (moocsAllTotalGlobal > 0) ? ((moocsAllTotalGlobal > 100) ? 1000 : 100) : 100,
+        "allocated": moocsAllTotalGlobal
     },
     "pageview": {
-        "total": 1000,
-        "allocated": 113
+        "total": (moocsAllDownloads > 0) ? ((moocsAllDownloads > 100) ? 1000 : 100) : 100,
+        "allocated": moocsAllDownloads
     },
     "lac": {
         "total": 100,
-        "allocated": 9
+        "allocated": moocsAllDownloadsLac
     }
 }
 
-drawGaugeMoocsChart(dataGauge)
+drawGaugeMoocsChart(dataGaugeMoocs)
 
 function drawGaugeMoocsChart(dataGauge) {
     var width = 150,
@@ -820,7 +817,7 @@ function drawGaugeMoocsChart(dataGauge) {
         .attr("text-anchor", "middle")
         .attr("class", "percent-complete")
         .attr("dy", "0.3em")
-        .text((dataGauge.code.allocated));;
+        .text((dataGauge.code.allocated));
 
 
     var i = d3.interpolate(progress, dataGauge.code.allocated / dataGauge.code.total);

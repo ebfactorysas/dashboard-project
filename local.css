@@ -437,15 +437,17 @@ section.publications .grid path {
 }
 
 section.moocs {
-    height: 930px;
+    /* height: 930px; */
 }
 
 section.moocs .right-bar {
-    height: 930px;
+    /* height: 930px; */
 }
 
 section.moocs .left-bar {
     text-align: center;
+    /* height: 930px; */
+    width: 250px;
 }
 
 section.moocs .left-bar .gauge-1 {
@@ -593,11 +595,11 @@ section.moocs [id^="student"] .y-data {
 
 section.datasets {
     font-family: 'Gotham-Bold';
-    height: 930px;
+    /* height: 930px; */
 }
 
 section.datasets .right-bar {
-    height: 930px;
+     height: 930px;
 }
 
 section.datasets .left-bar {
@@ -882,12 +884,12 @@ section.code .grid path {
 }
 
 section.suscribers {
-    height: 930px;
+    /* height: 930px; */
     font-family: 'Gotham-Bold';
 }
 
 section.suscribers .right-bar {
-    height: 930px;
+    /* height: 930px; */
 }
 
 section.suscribers .right-bar .left-zone {
@@ -895,11 +897,11 @@ section.suscribers .right-bar .left-zone {
 }
 
 section.suscribers .right-bar .left-zone .top-zone {
-    height: 285px;
+    /* height: 285px; */
 }
 
 section.suscribers .right-bar .left-zone .down-zone {
-    height: 540px;
+    /* height: 540px; */
 }
 
 section.suscribers .right-bar .right-zone {
@@ -907,7 +909,7 @@ section.suscribers .right-bar .right-zone {
 }
 
 section.suscribers .right-bar .right-zone .top-zone {
-    height: 285px;
+    /* height: 285px; */
     padding-top: 1rem;
 }
 
