@@ -618,8 +618,6 @@ function sortByDateAscending(a, b) {
     return new Date(b.date) - new Date(a.date);
 }
 var TimeLineIDB = $.extend([], moocsRegistrationTimeline.registrationTimelineIDB);
-// console.log("Carga inicial=> ", moocsRegistrationTimeline.registrationTimelineIDB);
-// console.log("Carga inicial con extend=> ", TimeLineIDB);
 
 createChart(moocsRegistrationTimeline.registrationTimelineIDB);
 
@@ -961,7 +959,6 @@ function removeMoocsSvg() {
     d3.select("#student2 svg").remove();
     d3.select("#student3 svg").remove();
     d3.select("#student4 svg").remove();
-    //console.log('entro');
 }
 
 function divisionFilter(moocsJson, filterBy) {
