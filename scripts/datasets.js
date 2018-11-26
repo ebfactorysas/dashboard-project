@@ -474,22 +474,36 @@ function createChartTimeLineDataSet(data) {
  * Start Gauges
  */
 
-var dataGauge = {
+// var dataGauge = {
+//     "code": {
+//         "total": 100,
+//         "allocated": 76
+//     },
+//     "pageview": {
+//         "total": 1000,
+//         "allocated": 113
+//     },
+//     "lac": {
+//         "total": 100,
+//         "allocated": 9
+//     }
+// }
+var dataGaugeDatasets = {
     "code": {
-        "total": 100,
-        "allocated": 76
+        "total": (datasetsAllTotalGlobal > 0) ? ((datasetsAllTotalGlobal > 100) ? 1000 : 100) : 100,
+        "allocated": datasetsAllTotalGlobal
     },
     "pageview": {
-        "total": 1000,
-        "allocated": 113
+        "total": (datasetsAllDownloads > 0) ? ((datasetsAllDownloads > 100) ? 1000 : 100) : 100,
+        "allocated": datasetsAllDownloads
     },
     "lac": {
-        "total": 100,
-        "allocated": 9
+        "total": (datasetsAllDownloadsLac > 0) ? ((datasetsAllDownloadsLac > 100) ? 1000 : 100) : 100,
+        "allocated": datasetsAllDownloadsLac
     }
 }
 
-drawGaugeDatasetChart(dataGauge)
+drawGaugeDatasetChart(dataGaugeDatasets)
 
 function drawGaugeDatasetChart(dataGauge) {
     var width = 150,

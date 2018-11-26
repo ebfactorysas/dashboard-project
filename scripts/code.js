@@ -70,18 +70,32 @@ var dataTree = {
     }]
 }
 
-var dataGauge = {
+// var dataGauge = {
+//     "code": {
+//         "total": 100,
+//         "allocated": 76
+//     },
+//     "pageview": {
+//         "total": 1000,
+//         "allocated": 113
+//     },
+//     "lac": {
+//         "total": 100,
+//         "allocated": 9
+//     }
+// }
+var dataGaugeCode = {
     "code": {
-        "total": 100,
-        "allocated": 76
+        "total": (codeAllTotalGlobal > 0) ? ((codeAllTotalGlobal > 100) ? 1000 : 100) : 100,
+        "allocated": codeAllTotalGlobal
     },
     "pageview": {
-        "total": 1000,
-        "allocated": 113
+        "total": (codeAllDownloads > 0) ? ((codeAllDownloads > 100) ? 1000 : 100) : 100,
+        "allocated": codeAllDownloads
     },
     "lac": {
-        "total": 100,
-        "allocated": 9
+        "total": (codeAllDownloadsLac > 0) ? ((codeAllDownloadsLac > 100) ? 1000 : 100) : 100,
+        "allocated": codeAllDownloadsLac
     }
 }
 
@@ -893,7 +907,7 @@ var ObjectcodeScatterploArrays = $.extend(true, [], codeScatterploArrays);
 drawTree(codePageviewsSourceArrays.pageviewSourceIDB);
 //aca
 
-drawGaugeCodeChart(dataGauge);
+drawGaugeCodeChart(dataGaugeCode);
 drawPlotChart(ObjectcodeScatterploArrays);
 drawChartCodeTrend(ObjectTopIdbAllTime);
 createChartTimeline(ObjectPageViewsTimeLineAllTime);

@@ -25,7 +25,8 @@
 
 @include breakpoint($desk) {
   .left-bar {
-    width: auto;
+    width: 25%;
+    min-height: 930px;
   }
   .left-bar .gauge-1,
   .left-bar .gauge-2,
@@ -35,5 +36,11 @@
 
   section.publications .left-bar .gauge-1 {
     padding-top: 4rem;
+  }
+}
+
+@include breakpoint($wide) {
+  .left-bar {
+    width: 250px;
   }
 }

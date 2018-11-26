@@ -75,7 +75,7 @@ function drawInstitutionsChart(dataInstitution) {
         })
         .text(function (d) {
 
-            return d.value + "K";
+            return d.value < 1000 ? d.value : (Math.round(d.value / 1000).toFixed(0)) + "K";
         })
         .append("tspan")
         .attr("x", function (d, i) {
@@ -364,24 +364,38 @@ function drawTree(dataTree) {
  * Start Gauges
  */
 
-var dataGauge = {
+// var dataGauge = {
+//     "code": {
+//         "total": 100,
+//         "allocated": 76
+//     },
+//     "pageview": {
+//         "total": 1000,
+//         "allocated": 113
+//     },
+//     "lac": {
+//         "total": 100,
+//         "allocated": 9
+//     }
+// }
+var dataGaugeSubscribers = {
     "code": {
-        "total": 100,
-        "allocated": 76
+        "total": (subscribersAllTotalGlobal > 0) ? ((subscribersAllTotalGlobal > 100) ? 1000 : 100) : 100,
+        "allocated": subscribersAllTotalGlobal
     },
     "pageview": {
-        "total": 1000,
-        "allocated": 113
+        "total": (subscribersAllDownloads > 0) ? ((subscribersAllDownloads > 100) ? 1000 : 100) : 100,
+        "allocated": subscribersAllDownloads
     },
     "lac": {
-        "total": 100,
-        "allocated": 9
+        "total": (subscribersAllDownloadsLac > 0) ? ((subscribersAllDownloadsLac > 100) ? 1000 : 100) : 100,
+        "allocated": subscribersAllDownloadsLac
     }
 }
+drawGaugeSubscribersChart(dataGaugeSubscribers);
 
-drawGaugeDatasetChart(dataGauge)
 
-function drawGaugeDatasetChart(dataGauge) {
+function drawGaugeSubscribersChart(dataGauge) {
     var width = 150,
         height = 150,
         progress = 0,
@@ -530,7 +544,14 @@ function orderTopDataSuscribers(data) {
 
 
 
-function drawSuscribersChart(dataSet) {
+function drawSuscribersChart(data) {
+
+
+    dataSet = data.sort(function (a, b) {
+        return d3.ascending(a.value, b.value);
+    });
+
+    dataSet = dataSet.slice(0,6);
 
     var marginSuscriber = {
         top: 15,
@@ -540,8 +561,7 @@ function drawSuscribersChart(dataSet) {
     };
 
     var widthSuscriber = 560 - marginSuscriber.left - marginSuscriber.right,
-        heightSuscriber = 400 - marginSuscriber.top - marginSuscriber.bottom;
-
+        heightSuscriber = 250 - marginSuscriber.top - marginSuscriber.bottom;
 
     var svgSuscribers = d3.select("#suscribers-interested").append("svg")
         .attr("width", widthSuscriber + marginSuscriber.left + marginSuscriber.right)
@@ -629,3 +649,136 @@ function drawSuscribersChart(dataSet) {
 drawSuscribersChart(orderTopDataSuscribers(subscribersTopics));
 drawTree(dataTree);
 drawInstitutionsChart(subscribersInstitution.institutionIDB);
+
+
+// Filters
+function removeSubscribersSvg() {
+    d3.select("#institution-suscribers svg").remove();
+    d3.select("#age-suscribers svg").remove();
+    
+}
+
+function divisionSubscriberFilter(moocsJson, filterBy) {
+    return moocsJson.filter(function (entry) {
+        entry.value = Number(entry.value);
+        return entry.code.indexOf(filterBy) > 0;
+    });
+}
+
+// function departmentFilter(moocsJson, filterBy) {
+//     return moocsJson.filter(function (entry) {
+//         return entry.code === filterBy;
+//     });
+// }
+
+function subscribersFilter() {
+    removeSubscribersSvg();
+    //Load the json
+    switch ($("input[name*='suscribersTrend']:checked").val()) {
+        case 'all':
+
+            //top registration chart
+            if ($("select[id*='divisionSelect']").val().length > 0) {
+
+                console.log("division subscriber=> ", divisionSubscriberFilter(subscribersInstitution.institutionDivisions, $("select[id*='divisionSelect']").val()))
+                drawInstitutionsChart(divisionSubscriberFilter(subscribersInstitution.institutionDivisions, $("select[id*='divisionSelect']").val()));
+
+                // drawMoocsRegistrationsChart(orderTopMoocs(divisionFilter(moocsTopArrays.divisionsAlltime, $("select[id*='divisionSelect']").val())));
+                // drawDistributionChart(orderTopMoocs(divisionFilter(moocsEducationArrays.educationLevelDivisions, $("select[id*='divisionSelect']").val())));
+
+                // var students = divisionFilter(moocsStudentsFlowArrays.studentsFlowDivisions, $("select[id*='divisionSelect']").val());
+                // drawStudentRegistrationsChart(students[0]);
+                // drawStudentParticipantsChart(students[0]);
+                // drawStudentCompletedsChart(students[0]);
+                // drawStudentCertifiedsChart(students[0]);
+            } else if ($("select[id*='deparmentSelect']").val().length > 0) {
+                drawInstitutionsChart(divisionSubscriberFilter(subscribersInstitution.institutionDepartments, $("select[id*='deparmentSelect']").val()));
+
+                // drawMoocsRegistrationsChart(orderTopMoocs(departmentFilter(moocsTopArrays.departmentsAllTime, $("select[id*='deparmentSelect']").val())));
+                // drawDistributionChart(orderTopMoocs(departmentFilter(moocsEducationArrays.educationLevelDepartments, $("select[id*='deparmentSelect']").val())));
+
+                // var students = divisionFilter(moocsStudentsFlowArrays.studentsFlowDepartments, $("select[id*='deparmentSelect']").val());
+                // drawStudentRegistrationsChart(students[0]);
+                // drawStudentParticipantsChart(students[0]);
+                // drawStudentCompletedsChart(students[0]);
+                // drawStudentCertifiedsChart(students[0]);
+            } else {
+                // drawMoocsRegistrationsChart(topAllMoocs);
+                // drawDistributionChart(moocsEducationArrays.educationLevelIDB);
+                // // same data for all and 2018
+                // drawStudentRegistrationsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+                // drawStudentParticipantsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+                // drawStudentCompletedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+                // drawStudentCertifiedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+                console.log("ffdf");
+                drawInstitutionsChart(subscribersInstitution.institutionIDB);
+
+            }
+
+
+            break;
+
+        default:
+            //top registration chart
+            if ($("select[id*='divisionSelect']").val().length > 0) {
+                drawInstitutionsChart(divisionSubscriberFilter(subscribersInstitution.institutionDivisions, $("select[id*='divisionSelect']").val()));
+
+                // drawMoocsRegistrationsChart(orderTopMoocs(divisionFilter(moocsTopArrays.divisions2018, $("select[id*='divisionSelect']").val())));
+                // drawDistributionChart(orderTopMoocs(divisionFilter(moocsEducationArrays.educationLevelDivisions, $("select[id*='divisionSelect']").val())));
+
+                // var students = divisionFilter(moocsStudentsFlowArrays.studentsFlowDivisions, $("select[id*='divisionSelect']").val());
+                // drawStudentRegistrationsChart(students[0]);
+                // drawStudentParticipantsChart(students[0]);
+                // drawStudentCompletedsChart(students[0]);
+                // drawStudentCertifiedsChart(students[0]);
+            } else if ($("select[id*='deparmentSelect']").val().length > 0) {
+                drawInstitutionsChart(divisionSubscriberFilter(subscribersInstitution.institutionDepartments, $("select[id*='deparmentSelect']").val()));
+
+                // drawMoocsRegistrationsChart(orderTopMoocs(departmentFilter(moocsTopArrays.departments2018, $("select[id*='deparmentSelect']").val())));
+                // drawDistributionChart(orderTopMoocs(departmentFilter(moocsEducationArrays.educationLevelDepartments, $("select[id*='deparmentSelect']").val())));
+
+                // var students = divisionFilter(moocsStudentsFlowArrays.studentsFlowDepartments, $("select[id*='deparmentSelect']").val());
+                // drawStudentRegistrationsChart(students[0]);
+                // drawStudentParticipantsChart(students[0]);
+                // drawStudentCompletedsChart(students[0]);
+                // drawStudentCertifiedsChart(students[0]);
+            } else {
+                // drawMoocsRegistrationsChart(top2018Moocs);
+                // drawDistributionChart(moocsEducationArrays.educationLevelIDB);
+                // // same data for all and 2018
+                // drawStudentRegistrationsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+                // drawStudentParticipantsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+                // drawStudentCompletedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+                // drawStudentCertifiedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+                drawInstitutionsChart(subscribersInstitution.institutionIDB);
+
+            }
+            break;
+    }
+
+
+
+}
+// Divisions select filter
+$("select[id*='divisionSelect']").change(function () {
+    $("select[id*='deparmentSelect']").val("");
+    subscribersFilter();
+});
+
+// Deparment select filter
+$("select[id*='deparmentSelect']").change(function () {
+    $("select[id*='divisionSelect']").val("");
+    subscribersFilter();
+});
+
+$("#idbLink").click(function () {
+    $("select[id*='deparmentSelect']").val("");
+    $("select[id*='divisionSelect']").val("");
+    subscribersFilter();
+});
+
+
+
+$("input[name*='suscribersTrend']").click(function () {
+    subscribersFilter();
+});
