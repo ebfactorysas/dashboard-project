@@ -2,37 +2,6 @@
  * Start institution-suscribers
  *  */
 
-var dataInstitution = [{
-    "name": "Not Reported",
-    "value": 40.3
-}, {
-    "name": "Government",
-    "value": 19.5
-}, {
-    "name": "Academia",
-    "value": 17.4
-}, {
-    "name": "Private Sector",
-    "value": 17.2
-}, {
-    "name": "General Public",
-    "value": 16.1
-}, {
-    "name": "Civil Society",
-    "value": 10.1
-}, {
-    "name": "Research Center",
-    "value": 2.6
-}, {
-    "name": "Multilateral Organization",
-    "value": 2.3
-}, {
-    "name": "Media",
-    "value": 1.2
-}];
-
-drawInstitutionsChart(dataInstitution);
-
 function drawInstitutionsChart(dataInstitution) {
     var dataInstitutionSum = d3.sum(dataInstitution, function (d) {
         return d.value;
@@ -133,8 +102,6 @@ function drawInstitutionsChart(dataInstitution) {
         .attr("fill", "#336577");
 
 }
-
-
 
 /**
  * End institution-suscribers
@@ -307,8 +274,6 @@ var dataTree = {
         ]
     }]
 }
-
-drawTree(dataTree);
 
 function drawTree(dataTree) {
     const marginTree = {
@@ -539,7 +504,6 @@ function orderTopDataSuscribers(data) {
 }
 
 
-drawSuscribersChart(orderTopDataSuscribers(testData));
 
 function drawSuscribersChart(dataSet) {
 
@@ -634,3 +598,9 @@ function drawSuscribersChart(dataSet) {
 /**
  * End suscribers-interested
  */
+
+//init
+
+drawSuscribersChart(orderTopDataSuscribers(testData));
+drawTree(dataTree);
+drawInstitutionsChart(subscribersInstitution.institutionIDB);

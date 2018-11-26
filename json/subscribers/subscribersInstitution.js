@@ -681,7 +681,8 @@ var subscribersInstitution = {
             "Institution Type": "Research Center"
         }
     ],
-    institutionDivisions: [{
+    institutionDivisions: [
+        {
             "json_featuretype": "NewFeatureType",
             "Subscribers": "17628",
             "deparment_code": "CSD/CCS",
@@ -1962,59 +1963,42 @@ var subscribersInstitution = {
             "Institution Type": "Research Center"
         }
     ],
-    institutionIDB: [{
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "385303",
-            "_IDB_": "IDB",
-            "Institution Type": "Not Reported"
+    institutionIDB: [
+        {
+            "value": 385303,
+            "name": "Not Reported"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "41502",
-            "_IDB_": "IDB",
-            "Institution Type": "Academia"
+            "value": 41502,
+            "name": "Academia"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "23124",
-            "_IDB_": "IDB",
-            "Institution Type": "Civil Society"
+            "value": 23124,
+            "name": "Civil Society"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "41077",
-            "_IDB_": "IDB",
-            "Institution Type": "General"
+            "value": 41077,
+            "name": "General"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "45551",
-            "_IDB_": "IDB",
-            "Institution Type": "Government"
+            "value": 45551,
+            "name": "Government"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "3581",
-            "_IDB_": "IDB",
-            "Institution Type": "Media"
+            "value": 3581,
+            "name": "Media"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "6955",
-            "_IDB_": "IDB",
-            "Institution Type": "Multilateral Organization"
+            "value": 6955,
+            "name": "Multilateral Organization"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "46050",
-            "_IDB_": "IDB",
-            "Institution Type": "Private Sector"
+            "value": 46050,
+            "name": "Private Sector"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "6194",
-            "_IDB_": "IDB",
-            "Institution Type": "Research Center"
+            "value": 6194,
+            "name": "Research Center"
         }
     ]
 };
