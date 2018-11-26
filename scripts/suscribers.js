@@ -16,11 +16,15 @@ function drawInstitutionsChart(dataInstitution) {
 
     var widthInstitution = 650 - marginInstitution.left - marginInstitution.right;
     var heightInstitution = 400 - marginInstitution.top - marginInstitution.bottom;
-    var svgInstitution = d3.select('#institution-suscribers').append("svg")
-        .attr("width", widthInstitution + marginInstitution.left + marginInstitution.right)
-        .attr("height", heightInstitution + marginInstitution.top + marginInstitution.bottom)
-        .append("g")
-        .attr("transform", "translate(" + 30 + "," + marginInstitution.top + ")");
+    var svgInstitution = d3.select('#institution-suscribers')
+        .append("div")
+        .classed("svg-container", true) //container class to make it responsive
+        .append("svg")
+        //responsive SVG needs these 2 attributes and no width and height attr
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "0 0 600 400")
+        //class to make it responsive
+        .classed("svg-content-responsive", true);
 
     var xInstitution = d3.scaleBand()
         .range([0, widthInstitution]);
@@ -150,11 +154,15 @@ function drawAgeSuscribersChart(dataAgeSuscribers) {
     var sumDataAgeSuscribers = d3.sum(dataAgeSuscribers, function (d) {
         return d.value;
     });
-    var svgAgeSuscribers = d3.select('#age-suscribers').append("svg")
-        .attr("width", widthAgeSuscribers + marginAgeSuscribers.left + marginAgeSuscribers.right)
-        .attr("height", heightAgeSuscribers + marginAgeSuscribers.top + marginAgeSuscribers.bottom)
-        .append("g")
-        .attr("transform", "translate(" + 30 + "," + marginAgeSuscribers.top + ")");
+    var svgAgeSuscribers = d3.select('#age-suscribers')
+        .append("div")
+        .classed("svg-container", true) //container class to make it responsive
+        .append("svg")
+        //responsive SVG needs these 2 attributes and no width and height attr
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "0 0 400 700")
+        //class to make it responsive
+        .classed("svg-content-responsive", true);
 
     var xAgeSuscribers = d3.scaleBand()
         .range([0, widthAgeSuscribers]);
@@ -395,7 +403,8 @@ function drawGaugeDatasetChart(dataGauge) {
         .innerRadius(70)
         .outerRadius(64);
 
-    var svg = d3.selectAll("#gauge-suscribers").append("svg")
+    var svg = d3.selectAll("#gauge-suscribers")
+        .append("svg")
         .attr("width", width)
         .attr("height", height)
         .append("g")
@@ -543,11 +552,15 @@ function drawSuscribersChart(dataSet) {
         heightSuscriber = 400 - marginSuscriber.top - marginSuscriber.bottom;
 
 
-    var svgSuscribers = d3.select("#suscribers-interested").append("svg")
-        .attr("width", widthSuscriber + marginSuscriber.left + marginSuscriber.right)
-        .attr("height", heightSuscriber + marginSuscriber.top + marginSuscriber.bottom)
-        .append("g")
-        .attr("transform", "translate(" + marginSuscriber.left + "," + marginSuscriber.top + ")");
+    var svgSuscribers = d3.select("#suscribers-interested")
+        .append("div")
+        .classed("svg-container", true) //container class to make it responsive
+        .append("svg")
+        //responsive SVG needs these 2 attributes and no width and height attr
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "0 0 900 700")
+        //class to make it responsive
+        .classed("svg-content-responsive", true);
 
     var xSuscribers = d3.scaleLinear()
         .range([0, widthSuscriber])
