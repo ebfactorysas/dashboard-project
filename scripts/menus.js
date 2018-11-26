@@ -6,10 +6,12 @@ $(function() {
 
 
   $(".menu ul li").click(function () {
-    var section = $(this).data('section');
-    $('html,body').animate({
-      scrollTop: $("section." + section).offset().top - 64
-    }, 'fast');
+    if( !$(this).hasClass('first') ) {
+      var section = $(this).data('section');
+      $('html,body').animate({
+        scrollTop: $("section." + section).offset().top - 64
+      }, 'fast');
+    }
   });
 
 });
