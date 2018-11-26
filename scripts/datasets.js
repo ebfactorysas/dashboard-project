@@ -424,7 +424,7 @@ function createChartTimeLineDataSet(data) {
             })
             .tickSizeOuter(0)
         )
-        //.call(d3.axisBottom(x));
+    //.call(d3.axisBottom(x));
 
     // add the Y Axis
     svg.append("g")
@@ -567,6 +567,106 @@ function drawGaugeDatasetChart(dataGauge) {
     foreground3.attr("d", arc3.endAngle(twoPi * i3(1)));
 }
 
+function drawPlotChartDataset(data) {
+    if ($("#dataSet2018").prop("checked")) {
+        data = data.filter(data => data.publishedDate.indexOf("-18") > -1);
+    }
+    data.forEach(d => {
+        d.daysPublished = +d.daysPublished;
+        d.departmentCode = +d.departmentCode;
+        d.Code = +d.Code;
+        d.publishedDate = +d.publishedDate;
+    });
+
+
+    const width = 350;
+    const height = 300;
+
+
+
+    const xValue = d => d.downloadsByDepartment;
+    const xAxisLabel = 'Published days';
+
+    const yValue = d => d.daysPublished;
+    const circleRadius = 10;
+    const yAxisLabel = 'Download by departmens';
+
+    const margin = {
+        top: 30,
+        right: 30,
+        bottom: 50,
+        left: 50
+    };
+    const innerWidth = width - margin.left - margin.right;
+    const innerHeight = height - margin.top - margin.bottom;
+    const svg = d3.select("#dataset-publications-plot").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    const xScale = d3.scaleLinear()
+        .domain(d3.extent(data, xValue))
+        .range([0, innerWidth])
+        .nice();
+
+    const yScale = d3.scaleLinear()
+        .domain(d3.extent(data, yValue))
+        .range([innerHeight, 0])
+        .nice();
+
+    const g = svg.append('g')
+        .attr('transform', `translate(${margin.left},${margin.top})`);
+
+    const xAxis = d3.axisBottom(xScale)
+        .scale(xScale)
+        .tickSize(0)
+        .tickPadding(30);
+
+    const yAxis = d3.axisLeft(yScale)
+        .scale(yScale)
+        .tickSize(0)
+        .tickPadding(30);
+
+    const yAxisG = g.append('g').call(yAxis);
+
+
+    yAxisG.selectAll('.domain').remove();
+
+    yAxisG.append('text')
+        .attr('class', 'axis-label')
+        .attr('y', -93)
+        .attr('x', -innerHeight / 2)
+        .attr('fill', 'black')
+        .attr('transform', `rotate(-90)`)
+        .attr('text-anchor', 'middle')
+        .text(yAxisLabel);
+
+    const xAxisG = g.append('g').call(xAxis)
+        .attr('transform', `translate(0,${innerHeight})`);
+
+    xAxisG.select('.domain').remove();
+
+    xAxisG.append('text')
+        .attr('class', 'axis-label')
+        .attr('y', 75)
+        .attr('x', innerWidth / 2)
+        .attr('fill', 'black')
+        .text(xAxisLabel);
+
+    g.selectAll('circle').data(data)
+        .enter().append('circle')
+        .attr('cy', d => yScale(yValue(d)))
+        .attr('cx', d => xScale(xValue(d)))
+        .attr('r', circleRadius)
+        .attr('fill', function (d) {
+            if (d.daysPublished >= 200 && d.downloadsByDepartment >= 1000) {
+                return '#8889b3'
+            } else {
+                return '#d8d8d8'
+            }
+        });
+}
+
 
 /**
  * End Gauges
@@ -574,22 +674,27 @@ function drawGaugeDatasetChart(dataGauge) {
 
 //init
 var ObjectTimeLineDataSet = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
+var ObjectDataSetPlot = $.extend(true, [], datasetsScatterplotArrays);
 
 createChartTimeLineDataSet(ObjectTimeLineDataSet);
 drawDataTrendChart(datasetsTopArrays.topIDBAllTime);
-
+drawPlotChartDataset(ObjectDataSetPlot);
 //click radiobutton drawChart(id del click)
 $("input[name*='dataSetTrend']").click(function () {
     var ObjectTimeLineDataSet = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
+    var ObjectDataSetPlot = $.extend(true, [], datasetsScatterplotArrays);
+
     d3.select("#timeline-dataset svg").remove();
     d3.select("#data-trend svg").remove();
-    
+    d3.select("#dataset-publications-plot svg").remove();
 
     if (this.id == "dataSetAllTime") {
         createChartTimeLineDataSet(ObjectTimeLineDataSet);
         drawDataTrendChart(datasetsTopArrays.topIDBAllTime);
+        drawPlotChartDataset(ObjectDataSetPlot);
     } else {
         createChartTimeLineDataSet(ObjectTimeLineDataSet);
         drawDataTrendChart(datasetsTopArrays.topIDB2018);
+        drawPlotChartDataset(ObjectDataSetPlot);
     }
 });

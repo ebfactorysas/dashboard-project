@@ -854,8 +854,8 @@ function publicationFilter() {
         
     } else if ($("select[id*='deparmentSelect']").val().length > 0) {
         var downloadTimelineDepartment = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineDepartments);
-        downloadTimelineDepartment = downloadTimelineDepartment.filter(downloadTimelineDepartment => downloadTimelineDepartment.departmentCode == $("#deparmentSelect").val())
-        downloadTimelineDepartment = downloadTimelineDepartment[0].data;
+        downloadTimelineDepartment = downloadTimelineDepartment.filter(downloadTimelineDepartment => downloadTimelineDepartment.departmentCode == $("#deparmentSelect").val()[0].data)
+        //downloadTimelineDepartment = downloadTimelineDepartment[0].data;
         createChartTimelinePublication(downloadTimelineDepartment);
     } else {
         init();
@@ -905,9 +905,6 @@ $("input[name*='publicationTrend']").click(function () {
             drawPlotChartPublication(ObjectpublicationsAttention);
         }
     }
-
-
-
 });
 
 //department filter
