@@ -220,8 +220,12 @@ function drawTree(dataTree) {
         .style("height", (heightTree + marginTree.top + marginTree.bottom) + "px")
         .style("left", marginTree.left + "px")
         .style("top", marginTree.top + "px");
-    const root = d3.hierarchy(dataTree, (d) => d.children)
-        .sum((d) => d.size);
+    const root = d3.hierarchy(dataTree, function (d) {
+            return d.children
+        })
+        .sum(function (d) {
+            return d.size
+        });
 
     const tree = treemap(root);
 
@@ -229,32 +233,54 @@ function drawTree(dataTree) {
         .data(tree.leaves())
         .enter().append("div")
         .attr("class", "node")
-        .style("left", (d) => d.x0 + "px")
-        .style("top", (d) => d.y0 + "px")
-        .style("width", (d) => Math.max(0, d.x1 - d.x0) + "px")
-        .style("height", (d) => Math.max(0, d.y1 - d.y0) + "px")
-        .style("background", (d) => colorTree(d.parent.data.name))
-        .text((d) => d.data.name);
+        .style("left", function (d) {
+            return d.x0 + "px"
+        })
+        .style("top", function (d) {
+            return d.y0 + "px"
+        })
+        .style("width", function (d) {
+            return Math.max(0, d.x1 - d.x0) + "px"
+        })
+        .style("height", function (d) {
+            return Math.max(0, d.y1 - d.y0) + "px"
+        })
+        .style("background", function (d) {
+            return colorTree(d.parent.data.name)
+        })
+        .text(function (d) {
+            return d.data.name
+        });
 
     d3.selectAll("input").on("change", function change() {
         const value = this.value === "count" ?
-            (d) => {
+            function (d) {
                 return d.size ? 1 : 0;
             } :
-            (d) => {
+            function (d) {
                 return d.size;
             };
 
-        const newRoot = d3.hierarchy(dataTree, (d) => d.children)
+        const newRoot = d3.hierarchy(dataTree, function (d) {
+                return d.children
+            })
             .sum(value);
 
         node.data(treemap(newRoot).leaves())
             .transition()
             .duration(1500)
-            .style("left", (d) => d.x0 + "px")
-            .style("top", (d) => d.y0 + "px")
-            .style("width", (d) => Math.max(0, d.x1 - d.x0 - 1) + "px")
-            .style("height", (d) => Math.max(0, d.y1 - d.y0 - 1) + "px")
+            .style("left", function (d) {
+                return d.x0 + "px"
+            })
+            .style("top", function (d) {
+                return d.y0 + "px"
+            })
+            .style("width", function (d) {
+                return Math.max(0, d.x1 - d.x0 - 1) + "px"
+            })
+            .style("height", function (d) {
+                return Math.max(0, d.y1 - d.y0 - 1) + "px"
+            })
     });
 }
 /**
@@ -271,7 +297,9 @@ function drawTree(dataTree) {
 
 function createChartTimeLineDataSet(data) {
     if ($("#dataSet2018").prop("checked")) {
-        data = data.filter(data => data.date.indexOf("-18") > -1);
+        data = data.filter(function (data) {
+            return data.date.indexOf("-18") > -1
+        });
     }
 
     var margin = {
@@ -383,8 +411,10 @@ function createChartTimeLineDataSet(data) {
         .style("font-family", "Gotham-Book")
         .style("font-size", "13px")
         .call(d3.axisBottom(x)
-            //.ticks(d3.timeDay.filter(d => d3.timeDay.count(0, d) % 100 === 0))
-            .ticks(d3.timeDay.filter(d => $("#dataSet2018").prop("checked") ? d3.timeDay.count(0, d) % 60 === 0 : d3.timeDay.count(0, d) % 300 === 0))
+            //.ticks(d3.timeDay.filter(d {return } d3.timeDay.count(0, d) % 100 === 0))
+            .ticks(d3.timeDay.filter(function (d) {
+                return $("#dataSet2018").prop("checked") ? d3.timeDay.count(0, d) % 60 === 0 : d3.timeDay.count(0, d) % 300 === 0
+            }))
             .tickFormat(function (x) {
                 // get the milliseconds since Epoch for the date
                 var milli = (x.getTime() - 10000);
@@ -424,7 +454,7 @@ function createChartTimeLineDataSet(data) {
             })
             .tickSizeOuter(0)
         )
-        //.call(d3.axisBottom(x));
+    //.call(d3.axisBottom(x));
 
     // add the Y Axis
     svg.append("g")
@@ -567,6 +597,116 @@ function drawGaugeDatasetChart(dataGauge) {
     foreground3.attr("d", arc3.endAngle(twoPi * i3(1)));
 }
 
+function drawPlotChartDataset(data) {
+    if ($("#dataSet2018").prop("checked")) {
+        data = data.filter(function (data) {
+            return data.publishedDate.indexOf("-18") > -1
+        });
+    }
+    data.forEach(function (d) {
+        d.daysPublished = +d.daysPublished;
+        d.departmentCode = +d.departmentCode;
+        d.Code = +d.Code;
+        d.publishedDate = +d.publishedDate;
+    });
+
+
+    const width = 350;
+    const height = 300;
+
+
+
+    const xValue = function (d) {
+        return d.downloadsByDepartment
+    };
+    const xAxisLabel = 'Published days';
+
+    const yValue = function (d) {
+        d.daysPublished
+    };
+    const circleRadius = 10;
+    const yAxisLabel = 'Download by departmens';
+
+    const margin = {
+        top: 30,
+        right: 30,
+        bottom: 50,
+        left: 50
+    };
+    const innerWidth = width - margin.left - margin.right;
+    const innerHeight = height - margin.top - margin.bottom;
+    const svg = d3.select("#dataset-publications-plot").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    const xScale = d3.scaleLinear()
+        .domain(d3.extent(data, xValue))
+        .range([0, innerWidth])
+        .nice();
+
+    const yScale = d3.scaleLinear()
+        .domain(d3.extent(data, yValue))
+        .range([innerHeight, 0])
+        .nice();
+
+    const g = svg.append('g')
+        .attr('transform', "translate(" + margin.left + "," + margin.top + ")");
+
+    const xAxis = d3.axisBottom(xScale)
+        .scale(xScale)
+        .tickSize(0)
+        .tickPadding(30);
+
+    const yAxis = d3.axisLeft(yScale)
+        .scale(yScale)
+        .tickSize(0)
+        .tickPadding(30);
+
+    const yAxisG = g.append('g').call(yAxis);
+
+
+    yAxisG.selectAll('.domain').remove();
+
+    yAxisG.append('text')
+        .attr('class', 'axis-label')
+        .attr('y', -93)
+        .attr('x', -innerHeight / 2)
+        .attr('fill', 'black')
+        .attr('transform', "rotate(-90)")
+        .attr('text-anchor', 'middle')
+        .text(yAxisLabel);
+
+    const xAxisG = g.append('g').call(xAxis)
+        .attr('transform', "translate(0," + innerHeight + ")");
+
+    xAxisG.select('.domain').remove();
+
+    xAxisG.append('text')
+        .attr('class', 'axis-label')
+        .attr('y', 75)
+        .attr('x', innerWidth / 2)
+        .attr('fill', 'black')
+        .text(xAxisLabel);
+
+    g.selectAll('circle').data(data)
+        .enter().append('circle')
+        .attr('cy', function (d) {
+            return yScale(yValue(d))
+        })
+        .attr('cx', function (d) {
+            return xScale(xValue(d))
+        })
+        .attr('r', circleRadius)
+        .attr('fill', function (d) {
+            if (d.daysPublished >= 200 && d.downloadsByDepartment >= 1000) {
+                return '#8889b3'
+            } else {
+                return '#d8d8d8'
+            }
+        });
+}
+
 
 /**
  * End Gauges
@@ -574,22 +714,27 @@ function drawGaugeDatasetChart(dataGauge) {
 
 //init
 var ObjectTimeLineDataSet = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
+var ObjectDataSetPlot = $.extend(true, [], datasetsScatterplotArrays);
 
 createChartTimeLineDataSet(ObjectTimeLineDataSet);
 drawDataTrendChart(datasetsTopArrays.topIDBAllTime);
-
+drawPlotChartDataset(ObjectDataSetPlot);
 //click radiobutton drawChart(id del click)
 $("input[name*='dataSetTrend']").click(function () {
     var ObjectTimeLineDataSet = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
+    var ObjectDataSetPlot = $.extend(true, [], datasetsScatterplotArrays);
+
     d3.select("#timeline-dataset svg").remove();
     d3.select("#data-trend svg").remove();
-    
+    d3.select("#dataset-publications-plot svg").remove();
 
     if (this.id == "dataSetAllTime") {
         createChartTimeLineDataSet(ObjectTimeLineDataSet);
         drawDataTrendChart(datasetsTopArrays.topIDBAllTime);
+        drawPlotChartDataset(ObjectDataSetPlot);
     } else {
         createChartTimeLineDataSet(ObjectTimeLineDataSet);
         drawDataTrendChart(datasetsTopArrays.topIDB2018);
+        drawPlotChartDataset(ObjectDataSetPlot);
     }
 });

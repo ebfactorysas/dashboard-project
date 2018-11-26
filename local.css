@@ -1118,7 +1118,7 @@ section.suscribers #demographics-suscribers .node {
 } */
 
 [id^="student"] {
-    height: 100px;
+    margin-bottom: 10px;
 }
 
 
