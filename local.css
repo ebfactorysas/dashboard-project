@@ -439,16 +439,16 @@ section.publications .grid path {
 }
 
 section.moocs {
-    height: 930px;
+    /* height: 930px; */
 }
 
 section.moocs .right-bar {
-    height: 930px;
+    /* height: 930px; */
 }
 
 section.moocs .left-bar {
     text-align: center;
-    height: 930px;
+    /* height: 930px; */
     width: 250px;
 }
 
@@ -597,11 +597,11 @@ section.moocs [id^="student"] .y-data {
 
 section.datasets {
     font-family: 'Gotham-Bold';
-    height: 930px;
+    /* height: 930px; */
 }
 
 section.datasets .right-bar {
-    height: 930px;
+     height: 930px;
 }
 
 section.datasets .left-bar {
