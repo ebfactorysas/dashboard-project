@@ -156,6 +156,7 @@ body {
     padding-right: 0;
     padding-top: .5rem;
     padding-bottom: .5rem;
+    font-size: 19px;
 }
 
 .left-text-drop select {
@@ -174,13 +175,26 @@ body {
 
 #nav-title {
     width: 100%;
+    border-bottom: none;
 }
 
 #nav-title .navbar-nav {
     width: 100%;
-    font-size: .65rem;
+    font-size: 13px;
     text-align: center;
     font-family: 'Gotham-Bold';
+}
+
+#nav-title .navbar-nav a {
+    font-size: 13px;
+
+}
+
+#deparmentSelect option {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 40px;
 }
 
 .title-text select {
