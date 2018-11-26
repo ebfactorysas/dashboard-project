@@ -2,6 +2,12 @@
   text-align: center;
   width: 100%;
 }
+.left-bar .gauge-1,
+.left-bar .gauge-2,
+.left-bar .gauge-3 {
+  padding: 20px 0;
+}
+
 @include breakpoint($small) {
   .left-bar {
     font-size: 0;
@@ -32,6 +38,7 @@
   .left-bar .gauge-2,
   .left-bar .gauge-3 {
     width: 100%;
+    padding: 0;
   }
 
   section.publications .left-bar .gauge-1 {

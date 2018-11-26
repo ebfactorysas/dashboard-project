@@ -226,20 +226,6 @@ section.big-numbers img {
     max-width: 55px;
 }
 
-section.menu {
-    font-family: 'Gotham-Bold';
-    color: #b4b4b4;
-    font-size: 20px;
-}
-
-section.menu ul {
-    margin: 0;
-}
-
-section.menu ul li {
-    margin: 0;
-}
-
 section.publications {
     font-family: 'Gotham-Bold';
 }

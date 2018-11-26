@@ -360,7 +360,7 @@ function drawTree(dataTree) {
  * End tree
  *  */
 
-/** 
+/**
  * Start Gauges
  */
 
@@ -655,7 +655,7 @@ drawInstitutionsChart(subscribersInstitution.institutionIDB);
 function removeSubscribersSvg() {
     d3.select("#institution-suscribers svg").remove();
     d3.select("#age-suscribers svg").remove();
-    
+
 }
 
 function divisionSubscriberFilter(moocsJson, filterBy) {
