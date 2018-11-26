@@ -9,19 +9,28 @@
     <link rel="stylesheet" media="(max-width: 960px)" href="mobile.css" />
     <link rel="stylesheet" media="(min-width: 960px)" href="local.css" />
 
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
+    <link href="https://refreshless.com/nouislider/distribute/nouislider.css?v=1210" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="countUp.min.js"></script>
-
+    <!-- BARS GRAPH -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <!-- SLIDERS -->
+    <script src="https://refreshless.com/nouislider/distribute/nouislider.js?v=1210"></script>
+    <script src="https://refreshless.com/nouislider/documentation/assets/wNumb.js"></script>
+    <!-- MOMENT -->
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/es.js"></script>
+    <script src="https://momentjs.com/downloads/moment-timezone-with-data.min.js"></script>
     <title>Mockup</title>
 
 </head>
@@ -50,7 +59,7 @@
             <div class="col-md-7 pt-4 pb-4 title-text">
                 <h1>
                     <a id="idbLink" href="#" class="activeFilter">IDB</a>
-                    WELCOME <b>RODRIGO</b> TO <b><select id="deparmentSelect">
+                    WELCOME <b>RODRIGO</b> TO <b><select id="deparmentSelect" size="1">
                             <option value=""></option>
                             <!--<option value="CSC">CSC</option>
                             <option value="CSD">CSD</option>
@@ -65,7 +74,7 @@
                             <option value="CID">CID</option>
                             <option value="CSC">CSC</option>
                             <option value="CSD">CSD</option>
-                            <option value="Discontinued Departments">Discontinued Departments</option>
+                            <option value="Discontinued Departments">Discontinu...</option>
                             <option value="ESG">ESG</option>
                             <option value="FMP">FMP</option>
                             <option value="HRD">HRD</option>
@@ -90,7 +99,7 @@
                             <option value="VPS">VPS</option>
                         </select></b> KP INSIGHTS</h1>
             </div>
-            <div class="col-md-4 pt-4 pb-4">
+            <div class="col-md-5 pt-4 pb-4">
                 <div class="row">
                     <div class="col-md-6 text-center dropdown-bg pt-2 left-text-drop">now showing data for <select id="divisionSelect">
                             <option value=""></option>
@@ -136,7 +145,7 @@
                             <option value="CSO">CSO</option>
                             <option value="CTI">CTI</option>
                             <option value="CUR">CUR</option>
-                            <option value="Discontinued Divisions">Discontinued Divisions</option>
+                            <option value="Discontinued Divisions">Discont...</option>
                             <option value="EDU">EDU</option>
                             <option value="ENE">ENE</option>
                             <option value="ESG">ESG</option>
@@ -285,12 +294,12 @@
     <section class="menu">
         <div class="col-12">
             <ul class="list-inline align-items-center justify-content-around pt-3 pb-3">
-                <li class="list-inline-item red">PUBLICATIONS</li>
-                <li class="list-inline-item">MOOCS</li>
-                <li class="list-inline-item">DATASETS</li>
-                <li class="list-inline-item">CODE</li>
-                <li class="list-inline-item">SUSCRIBERS</li>
-                <li class="list-inline-item">MAP</li>
+                <li class="list-inline-item red first" data-section="publications">PUBLICATIONS</li>
+                <li class="list-inline-item" data-section="moocs">MOOCS</li>
+                <li class="list-inline-item" data-section="datasets">DATASETS</li>
+                <li class="list-inline-item" data-section="code">CODE</li>
+                <li class="list-inline-item" data-section="suscribers">SUSCRIBERS</li>
+                <li class="list-inline-item" data-section="map">MAP</li>
             </ul>
         </div>
 
@@ -391,12 +400,12 @@
     <section class="menu">
         <div class="col-12">
             <ul class="list-inline align-items-center justify-content-around pt-3 pb-3">
-                <li class="list-inline-item ">PUBLICATIONS</li>
-                <li class="list-inline-item orange">MOOCS</li>
-                <li class="list-inline-item">DATASETS</li>
-                <li class="list-inline-item">CODE</li>
-                <li class="list-inline-item">SUSCRIBERS</li>
-                <li class="list-inline-item">MAP</li>
+                <li class="list-inline-item" data-section="publications">PUBLICATIONS</li>
+                <li class="list-inline-item orange first" data-section="moocs">MOOCS</li>
+                <li class="list-inline-item" data-section="datasets">DATASETS</li>
+                <li class="list-inline-item" data-section="code">CODE</li>
+                <li class="list-inline-item" data-section="suscribers">SUSCRIBERS</li>
+                <li class="list-inline-item" data-section="map">MAP</li>
             </ul>
         </div>
     </section>
@@ -513,12 +522,12 @@
     <section class="menu">
         <div class="col-12">
             <ul class="list-inline align-items-center justify-content-around pt-3 pb-3">
-                <li class="list-inline-item ">PUBLICATIONS</li>
-                <li class="list-inline-item">MOOCS</li>
-                <li class="list-inline-item purple">DATASETS</li>
-                <li class="list-inline-item">CODE</li>
-                <li class="list-inline-item">SUSCRIBERS</li>
-                <li class="list-inline-item">MAP</li>
+                <li class="list-inline-item" data-section="publications">PUBLICATIONS</li>
+                <li class="list-inline-item" data-section="moocs">MOOCS</li>
+                <li class="list-inline-item purple first" data-section="datasets">DATASETS</li>
+                <li class="list-inline-item" data-section="code">CODE</li>
+                <li class="list-inline-item" data-section="suscribers">SUSCRIBERS</li>
+                <li class="list-inline-item" data-section="map">MAP</li>
             </ul>
         </div>
 
@@ -607,12 +616,12 @@
     <section class="menu">
         <div class="col-12">
             <ul class="list-inline align-items-center justify-content-around pt-3 pb-3">
-                <li class="list-inline-item">PUBLICATIONS</li>
-                <li class="list-inline-item">MOOCS</li>
-                <li class="list-inline-item">DATASETS</li>
-                <li class="list-inline-item yellow">CODE</li>
-                <li class="list-inline-item">SUSCRIBERS</li>
-                <li class="list-inline-item">MAP</li>
+              <li class="list-inline-item" data-section="publications">PUBLICATIONS</li>
+              <li class="list-inline-item" data-section="moocs">MOOCS</li>
+              <li class="list-inline-item" data-section="datasets">DATASETS</li>
+              <li class="list-inline-item yellow first" data-section="code">CODE</li>
+              <li class="list-inline-item" data-section="suscribers">SUSCRIBERS</li>
+              <li class="list-inline-item" data-section="map">MAP</li>
             </ul>
         </div>
 
@@ -701,12 +710,12 @@
     <section class="menu">
         <div class="col-12">
             <ul class="list-inline align-items-center justify-content-around pt-3 pb-3">
-                <li class="list-inline-item">PUBLICATIONS</li>
-                <li class="list-inline-item">MOOCS</li>
-                <li class="list-inline-item">DATASETS</li>
-                <li class="list-inline-item">CODE</li>
-                <li class="list-inline-item green">SUSCRIBERS</li>
-                <li class="list-inline-item">MAP</li>
+                <li class="list-inline-item" data-section="publications">PUBLICATIONS</li>
+                <li class="list-inline-item" data-section="moocs">MOOCS</li>
+                <li class="list-inline-item" data-section="datasets">DATASETS</li>
+                <li class="list-inline-item" data-section="code">CODE</li>
+                <li class="list-inline-item green first" data-section="suscribers">SUSCRIBERS</li>
+                <li class="list-inline-item" data-section="map">MAP</li>
             </ul>
         </div>
 
@@ -786,18 +795,113 @@
     </section>
     <section class="menu">
         <div class="col-12">
-          <ul class="list-inline align-items-center justify-content-around pt-3 pb-3">
-            <li class="list-inline-item">PUBLICATIONS</li>
-            <li class="list-inline-item">MOOCS</li>
-            <li class="list-inline-item">DATASETS</li>
-            <li class="list-inline-item">CODE</li>
-            <li class="list-inline-item">SUSCRIBERS</li>
-            <li class="list-inline-item black">MAP</li>
-          </ul>
+            <ul class="list-inline align-items-center justify-content-around pt-3 pb-3">
+                <li class="list-inline-item">PUBLICATIONS</li>
+                <li class="list-inline-item">MOOCS</li>
+                <li class="list-inline-item">DATASETS</li>
+                <li class="list-inline-item">CODE</li>
+                <li class="list-inline-item">SUSCRIBERS</li>
+                <li class="list-inline-item black">MAP</li>
+            </ul>
         </div>
 
     </section>
-    <section class="map"></section>
+    <section class="map">
+        <div class="col-12">
+            <div class="row no-pad-marg">
+                <div class="col-2 no-pad-marg">
+
+                    <div class="side-filter">
+                        PICK A PRODUCT<br>
+                        <select class="form-control" id="drop-products" name="drop-products" data-control-type="select"
+                            required="" tabindex="4">
+                            <option value="Publications">PUBLICATIONS</option>
+                        </select>
+                    </div>
+                    <div class="side-filter">
+                        <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <i class="fa fa-search"></i> -->
+
+                        <div class="input-group stylish-input-group">
+                            <input id="search" type="search" class="form-control" placeholder="SEARCH">
+                            <span class="input-group-addon">
+                                <button type="submit">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="side-filter">
+                        METRIC SELECTED<br>
+                        <select class="form-control" id="drop-downloads" name="drop-downloads" data-control-type="select"
+                            required="" tabindex="4">
+                            <option value="Downloads">DOWNLOADS</option>
+                        </select>
+                    </div>
+                    <div class="side-filter">
+                        <select class="form-control" id="drop-departments" name="drop-departments" data-control-type="select"
+                            required="" tabindex="4">
+                            <option value="all">DEPARTMENT: ALL</option>
+                        </select>
+
+                    </div>
+                    <div class="side-filter">
+                        <select class="form-control" id="drop-materials" name="drop-materials" data-control-type="select"
+                            required="" tabindex="4">
+                            <option value="all">MATERIAL TYPE: ALL</option>
+                        </select>
+                    </div>
+                    <div class="side-filter row no-pad-marg">
+                        <span class="col-12">DOWNLOAD DATE</span>
+                        <div class="col-12" id="slider-download-date"></div>
+                        <div class="col-6 slider-date" id="event-download-start"></div>
+                        <div class="col-6 slider-date" id="event-download-end"></div>
+                    </div>
+                    <div class="side-filter row no-pad-marg">
+                        <span class="col-12">PUBLICATION DATE</span>
+                        <div class="col-12" id="slider-creation-date"></div>
+                        <div class="col-6 slider-date" id="event-creation-start"></div>
+                        <div class="col-6 slider-date" id="event-creation-end"></div>
+                    </div>
+                    <div class="side-filter text-left">
+                        <input class="lac-checkbox" id="lac-checkbox" name="lac-checkbox" type="checkbox">
+                        <label for="lac-checkbox">LAC ONLY</label>
+                    </div>
+                    <div class="side-filter">
+                        <span>DOWNLOADS ON MAP</span>
+                        <div id="totales"></div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+                <div class="col-8">
+
+                    <div id="graph-container" style="height: 600px;"></div>
+                    <!-- <div id="graph-container" style="height: 500px; min-width: 310px; max-width: 800px; margin: 0 auto"></div> -->
+
+                </div>
+
+                <div class="col-2">
+
+                    <div id="bar-graph-countries" style="height: 300px;"></div>
+                    <!-- <div id="bar-graph" style="min-width: 300px; height: 400px; margin: 0 auto"></div> -->
+
+                    <div id="bar-graph-sources" style="height: 300px;"></div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
 </body>
 <script src="json/bignumberData.js"></script>
 
@@ -835,6 +939,8 @@
 <script src="json/code/code_pageviews_source.js"></script>
 <script src="json/code/code_pageviews_timeline.js"></script>
 
+<script src="json/map/baseData.js"></script>
+
 <script src="scripts/bignumber.js"></script>
 <script src="main.js"></script>
 <script src="scripts/moocs.js"></script>
@@ -842,7 +948,11 @@
 <script src="scripts/publications.js"></script>
 <script src="scripts/datasets.js"></script>
 <script src="scripts/suscribers.js"></script>
+<script src="scripts/menus.js"></script>
+<script src="d32.js"></script>
+<script src="worl32.js"></script>
 
+<script src="scripts/map.js"></script>
 
 
 </html>

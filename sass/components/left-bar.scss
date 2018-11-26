@@ -1,46 +1,40 @@
 .left-bar {
-  text-align: center;
+  float: left;
   width: 100%;
-}
-@include breakpoint($small) {
-  .left-bar {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  @include breakpoint($small) {
     font-size: 0;
   }
-  .left-bar .gauge-1,
-  .left-bar .gauge-2,
-  .left-bar .gauge-3 {
-    width: 50%;
-    padding-top: 2rem;
-    @include inline-block(top);
-    font-size: 12px;
-  }
-}
-@include breakpoint($tab) {
-  .left-bar .gauge-1,
-  .left-bar .gauge-2,
-  .left-bar .gauge-3 {
-    width: 33.3333%;
-  }
-}
-
-@include breakpoint($desk) {
-  .left-bar {
+  @include breakpoint($desk) {
     width: 25%;
     min-height: 930px;
   }
-  .left-bar .gauge-1,
-  .left-bar .gauge-2,
-  .left-bar .gauge-3 {
-    width: 100%;
-  }
-
-  section.publications .left-bar .gauge-1 {
-    padding-top: 4rem;
-  }
-}
-
-@include breakpoint($wide) {
-  .left-bar {
+  @include breakpoint($wide) {
     width: 250px;
+  }
+
+  .gauge-1,
+  .gauge-2,
+  .gauge-3 {
+    padding: 20px 0;
+    @include breakpoint($small) {
+      width: 50%;
+      padding-top: 2rem;
+      font-size: 12px;
+      @include inline-block(top);
+    }
+    @include breakpoint($tab) {
+      width: 33.3333%;
+    }
+    @include breakpoint($desk) {
+      width: 100%;
+      padding: 0;
+
+      &.gauge-1 {
+        padding-top: 4rem;
+      }
+    }
   }
 }
