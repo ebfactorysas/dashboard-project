@@ -301,7 +301,8 @@ var widthStudents = 80 - marginStudents.left - marginStudents.right,
  * Start student-registrations-moocs
  */
 
-drawStudentRegistrationsChart(dataStudents);
+drawStudentRegistrationsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+$('#student1-title').html((Math.round(moocsStudentsFlowArrays.studentsFlowIDB.registrations.value / 1000).toFixed(0)) + "K");
 
 function drawStudentRegistrationsChart(dataStudents) {
     var svgStudent1 = d3.select("#student1").append("svg")
@@ -364,7 +365,7 @@ function drawStudentRegistrationsChart(dataStudents) {
         .attr("font-family", "Gotham-Book")
         .attr("font-size", "10px")
         .text(function (d) {
-            return d.value + "K";
+            return (Math.round(d.value / 1000).toFixed(0)) + "K";
         });
 }
 
@@ -378,7 +379,8 @@ function drawStudentRegistrationsChart(dataStudents) {
  * Start student-participants-moocs
  */
 
-drawStudentParticipantsChart(dataStudents);
+drawStudentParticipantsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+$('#student2-title').html((Math.round(moocsStudentsFlowArrays.studentsFlowIDB.participants.value / 1000).toFixed(0)) + "K");
 
 function drawStudentParticipantsChart(dataStudents) {
     var svgStudent2 = d3.select("#student2").append("svg")
@@ -440,7 +442,7 @@ function drawStudentParticipantsChart(dataStudents) {
         .attr("font-family", "Gotham-Book")
         .attr("font-size", "10px")
         .text(function (d) {
-            return d.value + "K";
+            return (Math.round(d.value / 1000).toFixed(0)) + "K";
         });
 }
 
@@ -454,7 +456,8 @@ function drawStudentParticipantsChart(dataStudents) {
  * Start student-completed-moocs
  */
 
-drawStudentCompletedsChart(dataStudents);
+drawStudentCompletedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+$('#student3-title').html((Math.round(moocsStudentsFlowArrays.studentsFlowIDB.completed.value / 1000).toFixed(0)) + "K");
 
 function drawStudentCompletedsChart(dataStudents) {
     var svgStudent3 = d3.select("#student3").append("svg")
@@ -516,7 +519,7 @@ function drawStudentCompletedsChart(dataStudents) {
         .attr("font-family", "Gotham-Book")
         .attr("font-size", "10px")
         .text(function (d) {
-            return d.value + "K";
+            return (Math.round(d.value / 1000).toFixed(0)) + "K";
         });
 }
 
@@ -529,7 +532,8 @@ function drawStudentCompletedsChart(dataStudents) {
  * Start student-certified-moocs 
  */
 
-drawStudentCertifiedsChart(dataStudents);
+drawStudentCertifiedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+$('#student4-title').html((Math.round(moocsStudentsFlowArrays.studentsFlowIDB.certified.value / 1000).toFixed(0)) + "K");
 
 function drawStudentCertifiedsChart(dataStudents) {
     var svgStudent4 = d3.select("#student4").append("svg")
@@ -592,7 +596,7 @@ function drawStudentCertifiedsChart(dataStudents) {
         .attr("font-family", "Gotham-Book")
         .attr("font-size", "10px")
         .text(function (d) {
-            return d.value + "K";
+            return (Math.round(d.value / 1000).toFixed(0)) + "K";
         });
 }
 
@@ -1021,25 +1025,6 @@ $("#idbLink").click(function () {
 
 $("input[name*='moocsTrend']").click(function () {
     moocsFilter();
-
-    // removeSvg();
-
-    // var timeLineIDB = $.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB);
-
-
-    // d3.select("#moocs-registrations svg").remove();
-
-    // if ($(this).val() === 'all') {
-    //     drawMoocsRegistrationsChart(orderTopMoocs(moocsTopArrays.IDBAlltime));
-
-    // } else {
-    //     drawMoocsRegistrationsChart(orderTopMoocs(moocsTopArrays.IDB2018));
-
-    // }
-    // console.log("Carga de nuevo con el click=> ", moocsRegistrationTimeline.registrationTimelineIDB);
-    // createChart(timeLineIDB);
-
-
 });
 
 
