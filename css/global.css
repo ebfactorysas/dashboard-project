@@ -1,3 +1,39 @@
+.left-bar {
+  text-align: center;
+  width: 100%; }
+
+@media (min-width: 540px) {
+  .left-bar {
+    font-size: 0; }
+  .left-bar .gauge-1,
+  .left-bar .gauge-2,
+  .left-bar .gauge-3 {
+    width: 50%;
+    padding-top: 2rem;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    font-size: 12px; } }
+
+@media (min-width: 720px) {
+  .left-bar .gauge-1,
+  .left-bar .gauge-2,
+  .left-bar .gauge-3 {
+    width: 33.3333%; } }
+
+@media (min-width: 960px) {
+  .left-bar {
+    width: auto; }
+  .left-bar .gauge-1,
+  .left-bar .gauge-2,
+  .left-bar .gauge-3 {
+    width: 100%; }
+  section.publications .left-bar .gauge-1 {
+    padding-top: 4rem; } }
+
 .container_radio.blue {
   display: block;
   position: relative;
@@ -126,9 +162,6 @@
       display: block; }
     .container_radio.red input:disabled ~ .checkmark:after {
       background: #f5f5f5; }
-  @media (min-width: 990px) {
-    .container_radio.red {
-      color: #D1415A; } }
 
 .container_radio.orange {
   display: block;
@@ -187,9 +220,6 @@
       display: block; }
     .container_radio.orange input:disabled ~ .checkmark:after {
       background: #f5f5f5; }
-  @media (min-width: 990px) {
-    .container_radio.orange {
-      color: #FA2E00; } }
 
 .container_radio.purple {
   display: block;
@@ -248,9 +278,6 @@
       display: block; }
     .container_radio.purple input:disabled ~ .checkmark:after {
       background: #f5f5f5; }
-  @media (min-width: 990px) {
-    .container_radio.purple {
-      color: #424488; } }
 
 .container_radio.yellow {
   display: block;
@@ -309,9 +336,6 @@
       display: block; }
     .container_radio.yellow input:disabled ~ .checkmark:after {
       background: #f5f5f5; }
-  @media (min-width: 990px) {
-    .container_radio.yellow {
-      color: #EEAE00; } }
 
 .container_radio.green {
   display: block;
@@ -370,8 +394,5 @@
       display: block; }
     .container_radio.green input:disabled ~ .checkmark:after {
       background: #f5f5f5; }
-  @media (min-width: 990px) {
-    .container_radio.green {
-      color: #518A81; } }
 
 /*# sourceMappingURL=global.css.map */
