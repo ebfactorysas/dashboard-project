@@ -1,0 +1,39 @@
+.left-bar {
+  text-align: center;
+  width: 100%;
+}
+@include breakpoint($small) {
+  .left-bar {
+    font-size: 0;
+  }
+  .left-bar .gauge-1,
+  .left-bar .gauge-2,
+  .left-bar .gauge-3 {
+    width: 50%;
+    padding-top: 2rem;
+    @include inline-block(top);
+    font-size: 12px;
+  }
+}
+@include breakpoint($tab) {
+  .left-bar .gauge-1,
+  .left-bar .gauge-2,
+  .left-bar .gauge-3 {
+    width: 33.3333%;
+  }
+}
+
+@include breakpoint($desk) {
+  .left-bar {
+    width: auto;
+  }
+  .left-bar .gauge-1,
+  .left-bar .gauge-2,
+  .left-bar .gauge-3 {
+    width: 100%;
+  }
+
+  section.publications .left-bar .gauge-1 {
+    padding-top: 4rem;
+  }
+}
