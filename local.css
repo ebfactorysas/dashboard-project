@@ -290,8 +290,6 @@ section.publications .left-bar .gauge-3 {
 
 section.publications .left-bar {
     text-align: center;
-    height: 930px;
-    width: 250px;
 }
 
 section.publications .left-bar h4 {
@@ -439,16 +437,16 @@ section.publications .grid path {
 }
 
 section.moocs {
-    height: 930px;
+    /* height: 930px; */
 }
 
 section.moocs .right-bar {
-    height: 930px;
+    /* height: 930px; */
 }
 
 section.moocs .left-bar {
     text-align: center;
-    height: 930px;
+    /* height: 930px; */
     width: 250px;
 }
 
@@ -597,17 +595,15 @@ section.moocs [id^="student"] .y-data {
 
 section.datasets {
     font-family: 'Gotham-Bold';
-    height: 930px;
+    /* height: 930px; */
 }
 
 section.datasets .right-bar {
-    height: 930px;
+     height: 930px;
 }
 
 section.datasets .left-bar {
     text-align: center;
-    height: 930px;
-    width: 250px;
 }
 
 section.datasets .left-bar h4 {
@@ -766,8 +762,6 @@ section.code .right-bar {
 
 section.code .left-bar {
     text-align: center;
-    height: 930px;
-    width: 250px;
 }
 
 section.code .funds-allocated-meter .background {
@@ -890,12 +884,12 @@ section.code .grid path {
 }
 
 section.suscribers {
-    height: 930px;
+    /* height: 930px; */
     font-family: 'Gotham-Bold';
 }
 
 section.suscribers .right-bar {
-    height: 930px;
+    /* height: 930px; */
 }
 
 section.suscribers .right-bar .left-zone {
@@ -921,8 +915,6 @@ section.suscribers .right-bar .right-zone .top-zone {
 
 section.suscribers .left-bar {
     text-align: center;
-    height: 930px;
-    width: 250px;
 }
 
 section.suscribers .left-bar .gauge-1 {
