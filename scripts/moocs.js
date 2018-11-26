@@ -50,11 +50,16 @@ function drawDistributionChart(dataDistribution) {
 
     var widthDistribution = 520 - marginDistribution.left - marginDistribution.right;
     var heightDistribution = 280 - marginDistribution.top - marginDistribution.bottom;
-    var svgDistribution = d3.select('#distribution-moocs').append("svg")
-        .attr("width", widthDistribution + marginDistribution.left + marginDistribution.right)
-        .attr("height", heightDistribution + marginDistribution.top + marginDistribution.bottom)
+    var svgDistribution = d3.select('#distribution-moocs')
+        .append("svg")
+        //responsive SVG needs these 2 attributes and no width and height attr
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "0 0 500 200")
         .append("g")
-        .attr("transform", "translate(" + 30 + "," + marginDistribution.top + ")");
+        // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
+
+        //class to make it responsive
+        .classed("svg-content-responsive", true);
 
     var xDistribution = d3.scaleBand()
         .range([0, widthDistribution]);
@@ -149,7 +154,7 @@ function drawMoocsRegistrationsChart(dataMoocs) {
 
 
     var svgMoocs = d3.select("#moocs-registrations")
-    .append("svg")
+        .append("svg")
         //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
         .attr("viewBox", "-55 -25 700 200")
@@ -158,11 +163,11 @@ function drawMoocsRegistrationsChart(dataMoocs) {
 
         //class to make it responsive
         .classed("svg-content-responsive", true);
-        // .append("svg")
-        // .attr("width", widthMoocs + marginMoocs.left + marginMoocs.right)
-        // .attr("height", heightMoocs + marginMoocs.top + marginMoocs.bottom)
-        // .append("g")
-        // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")");
+    // .append("svg")
+    // .attr("width", widthMoocs + marginMoocs.left + marginMoocs.right)
+    // .attr("height", heightMoocs + marginMoocs.top + marginMoocs.bottom)
+    // .append("g")
+    // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")");
 
     var xMoocs = d3.scaleLinear()
         .range([0, widthMoocs])
@@ -231,62 +236,6 @@ function drawMoocsRegistrationsChart(dataMoocs) {
  * End registration-moocs
  */
 
-
-var dataStudents = {
-    registrations: {
-        years: [{
-            name: "2016",
-            value: 25.6
-        }, {
-            name: "2017",
-            value: 68.3
-        }, {
-            name: "2018",
-            value: 55
-        }],
-        value: 55
-    },
-    participants: {
-        years: [{
-            name: "2016",
-            value: 13
-        }, {
-            name: "2017",
-            value: 32
-        }, {
-            name: "2018",
-            value: 23
-        }],
-        value: 23
-    },
-    completed: {
-        years: [{
-            name: "2016",
-            value: 2.4
-        }, {
-            name: "2017",
-            value: 5.8
-        }, {
-            name: "2018",
-            value: 2.3
-        }],
-        value: 2
-    },
-    certified: {
-        years: [{
-            name: "2016",
-            value: 1.32
-        }, {
-            name: "2017",
-            value: 3.25
-        }, {
-            name: "2018",
-            value: .92
-        }],
-        value: 1
-    }
-};
-
 var marginStudents = {
     top: 2,
     right: 20,
@@ -302,9 +251,13 @@ var widthStudents = 80 - marginStudents.left - marginStudents.right,
  */
 
 drawStudentRegistrationsChart(moocsStudentsFlowArrays.studentsFlowIDB);
-$('#student1-title').html((Math.round(moocsStudentsFlowArrays.studentsFlowIDB.registrations.value / 1000).toFixed(0)) + "K");
 
 function drawStudentRegistrationsChart(dataStudents) {
+    if (typeof dataStudents == "undefined") {
+        $('#student1-title').html("0");
+        return
+    };
+    $('#student1-title').html(dataStudents.registrations.value < 1000 ? dataStudents.registrations.value : (Math.round(dataStudents.registrations.value / 1000).toFixed(0)) + "K");
     var svgStudent1 = d3.select("#student1").append("svg")
         .attr("width", widthStudents + marginStudents.left + marginStudents.right)
         .attr("height", heightStudents + marginStudents.top + marginStudents.bottom)
@@ -365,7 +318,7 @@ function drawStudentRegistrationsChart(dataStudents) {
         .attr("font-family", "Gotham-Book")
         .attr("font-size", "10px")
         .text(function (d) {
-            return (Math.round(d.value / 1000).toFixed(0)) + "K";
+            return d.value < 1000 ? d.value : (Math.round(d.value / 1000).toFixed(0)) + "K";
         });
 }
 
@@ -380,9 +333,13 @@ function drawStudentRegistrationsChart(dataStudents) {
  */
 
 drawStudentParticipantsChart(moocsStudentsFlowArrays.studentsFlowIDB);
-$('#student2-title').html((Math.round(moocsStudentsFlowArrays.studentsFlowIDB.participants.value / 1000).toFixed(0)) + "K");
 
 function drawStudentParticipantsChart(dataStudents) {
+    if (typeof dataStudents == "undefined") {
+        $('#student2-title').html("0");
+        return
+    };
+    $('#student2-title').html(dataStudents.participants.value < 1000 ? dataStudents.participants.value : (Math.round(dataStudents.participants.value / 1000).toFixed(0)) + "K");
     var svgStudent2 = d3.select("#student2").append("svg")
         .attr("width", widthStudents + marginStudents.left + marginStudents.right)
         .attr("height", heightStudents + marginStudents.top + marginStudents.bottom)
@@ -442,7 +399,7 @@ function drawStudentParticipantsChart(dataStudents) {
         .attr("font-family", "Gotham-Book")
         .attr("font-size", "10px")
         .text(function (d) {
-            return (Math.round(d.value / 1000).toFixed(0)) + "K";
+            return d.value < 1000 ? d.value : (Math.round(d.value / 1000).toFixed(0)) + "K";
         });
 }
 
@@ -457,9 +414,13 @@ function drawStudentParticipantsChart(dataStudents) {
  */
 
 drawStudentCompletedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
-$('#student3-title').html((Math.round(moocsStudentsFlowArrays.studentsFlowIDB.completed.value / 1000).toFixed(0)) + "K");
 
 function drawStudentCompletedsChart(dataStudents) {
+    if (typeof dataStudents == "undefined") {
+        $('#student3-title').html("0");
+        return
+    };
+    $('#student3-title').html(dataStudents.completed.value < 1000 ? dataStudents.completed.value : (Math.round(dataStudents.completed.value / 1000).toFixed(0)) + "K");
     var svgStudent3 = d3.select("#student3").append("svg")
         .attr("width", widthStudents + marginStudents.left + marginStudents.right)
         .attr("height", heightStudents + marginStudents.top + marginStudents.bottom)
@@ -519,7 +480,7 @@ function drawStudentCompletedsChart(dataStudents) {
         .attr("font-family", "Gotham-Book")
         .attr("font-size", "10px")
         .text(function (d) {
-            return (Math.round(d.value / 1000).toFixed(0)) + "K";
+            return d.value < 1000 ? d.value : (Math.round(d.value / 1000).toFixed(0)) + "K";
         });
 }
 
@@ -533,9 +494,13 @@ function drawStudentCompletedsChart(dataStudents) {
  */
 
 drawStudentCertifiedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
-$('#student4-title').html((Math.round(moocsStudentsFlowArrays.studentsFlowIDB.certified.value / 1000).toFixed(0)) + "K");
 
 function drawStudentCertifiedsChart(dataStudents) {
+    if (typeof dataStudents == "undefined") {
+        $('#student4-title').html("0");
+        return
+    };
+    $('#student4-title').html(dataStudents.certified.value < 1000 ? dataStudents.certified.value : (Math.round(dataStudents.certified.value / 1000).toFixed(0)) + "K");
     var svgStudent4 = d3.select("#student4").append("svg")
         .attr("width", widthStudents + marginStudents.left + marginStudents.right)
         .attr("height", heightStudents + marginStudents.top + marginStudents.bottom)
@@ -596,7 +561,7 @@ function drawStudentCertifiedsChart(dataStudents) {
         .attr("font-family", "Gotham-Book")
         .attr("font-size", "10px")
         .text(function (d) {
-            return (Math.round(d.value / 1000).toFixed(0)) + "K";
+            return d.value < 1000 ? d.value : (Math.round(d.value / 1000).toFixed(0)) + "K";
         });
 }
 
@@ -614,8 +579,6 @@ function sortByDateAscending(a, b) {
     return new Date(b.date) - new Date(a.date);
 }
 var TimeLineIDB = $.extend([], moocsRegistrationTimeline.registrationTimelineIDB);
-console.log("Carga inicial=> ", moocsRegistrationTimeline.registrationTimelineIDB);
-console.log("Carga inicial con extend=> ", TimeLineIDB);
 
 createChart(moocsRegistrationTimeline.registrationTimelineIDB);
 
@@ -743,7 +706,9 @@ function createChart(data) {
         .style("font-size", "13px")
         // .call(d3.axisBottom(x));
         .call(d3.axisBottom(x)
-            .ticks(d3.timeDay.filter(d => d3.timeDay.count(0, d) % 300 === 0))
+            .ticks(d3.timeDay.filter(function (d) {
+                return d3.timeDay.count(0, d) % 300 === 0
+            }))
             .tickFormat(function (x) {
                 // get the milliseconds since Epoch for the date
                 var milli = (x.getTime() - 10000);
@@ -804,22 +769,36 @@ function createChart(data) {
  * Start Gauges
  */
 
-var dataGauge = {
+// var dataGaugeMoocs = {
+//     "code": {
+//         "total": 100,
+//         "allocated": 76
+//     },
+//     "pageview": {
+//         "total": 1000,
+//         "allocated": 113
+//     },
+//     "lac": {
+//         "total": 100,
+//         "allocated": 9
+//     }
+// }
+var dataGaugeMoocs = {
     "code": {
-        "total": 100,
-        "allocated": 76
+        "total": (moocsAllTotalGlobal > 0) ? ((moocsAllTotalGlobal > 100) ? 1000 : 100) : 100,
+        "allocated": moocsAllTotalGlobal
     },
     "pageview": {
-        "total": 1000,
-        "allocated": 113
+        "total": (moocsAllDownloads > 0) ? ((moocsAllDownloads > 100) ? 1000 : 100) : 100,
+        "allocated": moocsAllDownloads
     },
     "lac": {
         "total": 100,
-        "allocated": 9
+        "allocated": moocsAllDownloadsLac
     }
 }
 
-drawGaugeMoocsChart(dataGauge)
+drawGaugeMoocsChart(dataGaugeMoocs)
 
 function drawGaugeMoocsChart(dataGauge) {
     var width = 150,
@@ -855,7 +834,7 @@ function drawGaugeMoocsChart(dataGauge) {
         .attr("text-anchor", "middle")
         .attr("class", "percent-complete")
         .attr("dy", "0.3em")
-        .text((dataGauge.code.allocated));;
+        .text((dataGauge.code.allocated));
 
 
     var i = d3.interpolate(progress, dataGauge.code.allocated / dataGauge.code.total);
@@ -953,7 +932,10 @@ function drawGaugeMoocsChart(dataGauge) {
 function removeMoocsSvg() {
     d3.select("#moocs-registrations svg").remove();
     d3.select("#distribution-moocs svg").remove();
-    console.log('entro');
+    d3.select("#student1 svg").remove();
+    d3.select("#student2 svg").remove();
+    d3.select("#student3 svg").remove();
+    d3.select("#student4 svg").remove();
 }
 
 function divisionFilter(moocsJson, filterBy) {
@@ -978,13 +960,31 @@ function moocsFilter() {
             if ($("select[id*='divisionSelect']").val().length > 0) {
                 drawMoocsRegistrationsChart(orderTopMoocs(divisionFilter(moocsTopArrays.divisionsAlltime, $("select[id*='divisionSelect']").val())));
                 drawDistributionChart(orderTopMoocs(divisionFilter(moocsEducationArrays.educationLevelDivisions, $("select[id*='divisionSelect']").val())));
+
+                var students = divisionFilter(moocsStudentsFlowArrays.studentsFlowDivisions, $("select[id*='divisionSelect']").val());
+                drawStudentRegistrationsChart(students[0]);
+                drawStudentParticipantsChart(students[0]);
+                drawStudentCompletedsChart(students[0]);
+                drawStudentCertifiedsChart(students[0]);
             } else if ($("select[id*='deparmentSelect']").val().length > 0) {
                 drawMoocsRegistrationsChart(orderTopMoocs(departmentFilter(moocsTopArrays.departmentsAllTime, $("select[id*='deparmentSelect']").val())));
                 drawDistributionChart(orderTopMoocs(departmentFilter(moocsEducationArrays.educationLevelDepartments, $("select[id*='deparmentSelect']").val())));
+
+                var students = divisionFilter(moocsStudentsFlowArrays.studentsFlowDepartments, $("select[id*='deparmentSelect']").val());
+                drawStudentRegistrationsChart(students[0]);
+                drawStudentParticipantsChart(students[0]);
+                drawStudentCompletedsChart(students[0]);
+                drawStudentCertifiedsChart(students[0]);
             } else {
                 drawMoocsRegistrationsChart(topAllMoocs);
                 drawDistributionChart(moocsEducationArrays.educationLevelIDB);
+                // same data for all and 2018
+                drawStudentRegistrationsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+                drawStudentParticipantsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+                drawStudentCompletedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+                drawStudentCertifiedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
             }
+
 
             break;
 
@@ -993,15 +993,35 @@ function moocsFilter() {
             if ($("select[id*='divisionSelect']").val().length > 0) {
                 drawMoocsRegistrationsChart(orderTopMoocs(divisionFilter(moocsTopArrays.divisions2018, $("select[id*='divisionSelect']").val())));
                 drawDistributionChart(orderTopMoocs(divisionFilter(moocsEducationArrays.educationLevelDivisions, $("select[id*='divisionSelect']").val())));
+
+                var students = divisionFilter(moocsStudentsFlowArrays.studentsFlowDivisions, $("select[id*='divisionSelect']").val());
+                drawStudentRegistrationsChart(students[0]);
+                drawStudentParticipantsChart(students[0]);
+                drawStudentCompletedsChart(students[0]);
+                drawStudentCertifiedsChart(students[0]);
             } else if ($("select[id*='deparmentSelect']").val().length > 0) {
                 drawMoocsRegistrationsChart(orderTopMoocs(departmentFilter(moocsTopArrays.departments2018, $("select[id*='deparmentSelect']").val())));
                 drawDistributionChart(orderTopMoocs(departmentFilter(moocsEducationArrays.educationLevelDepartments, $("select[id*='deparmentSelect']").val())));
+
+                var students = divisionFilter(moocsStudentsFlowArrays.studentsFlowDepartments, $("select[id*='deparmentSelect']").val());
+                drawStudentRegistrationsChart(students[0]);
+                drawStudentParticipantsChart(students[0]);
+                drawStudentCompletedsChart(students[0]);
+                drawStudentCertifiedsChart(students[0]);
             } else {
                 drawMoocsRegistrationsChart(top2018Moocs);
                 drawDistributionChart(moocsEducationArrays.educationLevelIDB);
+                // same data for all and 2018
+                drawStudentRegistrationsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+                drawStudentParticipantsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+                drawStudentCompletedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+                drawStudentCertifiedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
             }
             break;
     }
+
+
+
 }
 // Divisions select filter
 $("select[id*='divisionSelect']").change(function () {

@@ -2,37 +2,6 @@
  * Start institution-suscribers
  *  */
 
-var dataInstitution = [{
-    "name": "Not Reported",
-    "value": 40.3
-}, {
-    "name": "Government",
-    "value": 19.5
-}, {
-    "name": "Academia",
-    "value": 17.4
-}, {
-    "name": "Private Sector",
-    "value": 17.2
-}, {
-    "name": "General Public",
-    "value": 16.1
-}, {
-    "name": "Civil Society",
-    "value": 10.1
-}, {
-    "name": "Research Center",
-    "value": 2.6
-}, {
-    "name": "Multilateral Organization",
-    "value": 2.3
-}, {
-    "name": "Media",
-    "value": 1.2
-}];
-
-drawInstitutionsChart(dataInstitution);
-
 function drawInstitutionsChart(dataInstitution) {
     var dataInstitutionSum = d3.sum(dataInstitution, function (d) {
         return d.value;
@@ -92,7 +61,6 @@ function drawInstitutionsChart(dataInstitution) {
         .append("text")
         .text(null)
         .attr("y", function (d) {
-            console.log(d)
             return yInstitution(d.value + 5);
         })
         .attr("x", function (d, i) {
@@ -133,8 +101,6 @@ function drawInstitutionsChart(dataInstitution) {
         .attr("fill", "#336577");
 
 }
-
-
 
 /**
  * End institution-suscribers
@@ -308,8 +274,6 @@ var dataTree = {
     }]
 }
 
-drawTree(dataTree);
-
 function drawTree(dataTree) {
     const marginTree = {
             top: 40,
@@ -329,8 +293,12 @@ function drawTree(dataTree) {
         .style("height", (heightTree + marginTree.top + marginTree.bottom) + "px")
         .style("left", marginTree.left + "px")
         .style("top", marginTree.top + "px");
-    const root = d3.hierarchy(dataTree, (d) => d.children)
-        .sum((d) => d.size);
+    const root = d3.hierarchy(dataTree, function (d) {
+            return d.children
+        })
+        .sum(function (d) {
+            return d.size
+        });
 
     const tree = treemap(root);
 
@@ -338,32 +306,54 @@ function drawTree(dataTree) {
         .data(tree.leaves())
         .enter().append("div")
         .attr("class", "node")
-        .style("left", (d) => d.x0 + "px")
-        .style("top", (d) => d.y0 + "px")
-        .style("width", (d) => Math.max(0, d.x1 - d.x0) + "px")
-        .style("height", (d) => Math.max(0, d.y1 - d.y0) + "px")
-        .style("background", (d) => colorTree(d.parent.data.name))
-        .text((d) => d.data.name);
+        .style("left", function (d) {
+            return d.x0 + "px"
+        })
+        .style("top", function (d) {
+            return d.y0 + "px"
+        })
+        .style("width", function (d) {
+            return Math.max(0, d.x1 - d.x0) + "px"
+        })
+        .style("height", function (d) {
+            return Math.max(0, d.y1 - d.y0) + "px"
+        })
+        .style("background", function (d) {
+            return colorTree(d.parent.data.name)
+        })
+        .text(function (d) {
+            return d.data.name
+        });
 
     d3.selectAll("input").on("change", function change() {
         const value = this.value === "count" ?
-            (d) => {
+            function (d) {
                 return d.size ? 1 : 0;
             } :
-            (d) => {
-                return d.size;
+            function (d) {
+                return d.size
             };
 
-        const newRoot = d3.hierarchy(dataTree, (d) => d.children)
+        const newRoot = d3.hierarchy(dataTree, function (d) {
+                return d.children
+            })
             .sum(value);
 
         node.data(treemap(newRoot).leaves())
             .transition()
             .duration(1500)
-            .style("left", (d) => d.x0 + "px")
-            .style("top", (d) => d.y0 + "px")
-            .style("width", (d) => Math.max(0, d.x1 - d.x0 - 1) + "px")
-            .style("height", (d) => Math.max(0, d.y1 - d.y0 - 1) + "px")
+            .style("left", function (d) {
+                return d.x0 + "px"
+            })
+            .style("top", function (d) {
+                return d.y0 + "px"
+            })
+            .style("width", function (d) {
+                return Math.max(0, d.x1 - d.x0 - 1) + "px"
+            })
+            .style("height", function (d) {
+                return Math.max(0, d.y1 - d.y0 - 1) + "px"
+            })
     });
 }
 /**
@@ -539,7 +529,6 @@ function orderTopDataSuscribers(data) {
 }
 
 
-drawSuscribersChart(orderTopDataSuscribers(testData));
 
 function drawSuscribersChart(dataSet) {
 
@@ -551,7 +540,7 @@ function drawSuscribersChart(dataSet) {
     };
 
     var widthSuscriber = 560 - marginSuscriber.left - marginSuscriber.right,
-        heightSuscriber = 200 - marginSuscriber.top - marginSuscriber.bottom;
+        heightSuscriber = 400 - marginSuscriber.top - marginSuscriber.bottom;
 
 
     var svgSuscribers = d3.select("#suscribers-interested").append("svg")
@@ -626,7 +615,7 @@ function drawSuscribersChart(dataSet) {
         .attr("font-family", "Gotham-Bold")
         .attr("font-size", "12px")
         .text(function (d) {
-            return d.value/1000+"K";
+            return d.value / 1000 + "K";
         });
 }
 
@@ -634,3 +623,9 @@ function drawSuscribersChart(dataSet) {
 /**
  * End suscribers-interested
  */
+
+//init
+
+drawSuscribersChart(orderTopDataSuscribers(subscribersTopics));
+drawTree(dataTree);
+drawInstitutionsChart(subscribersInstitution.institutionIDB);

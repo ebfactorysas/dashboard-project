@@ -87,7 +87,7 @@ $("#divisionSelect").on('change', function () {
     updateGaugesMoocs();
     
 });
-$('#idbLink').click(function (){
+$('#idbLink').click(function () {
     $("#deparmentSelect").value = "";
     $("#divisionSelect").value = "";
     initIndicators('IDB', 'IDB');
@@ -119,20 +119,38 @@ $('#idbLink').click(function (){
 function initIndicators(filterselect, valueFilter) {
     // var jsondata = "";
     if (filterselect == "departments") {
-        jsondataPublications = bnPublicationsArrays.publicationsDepartments.filter(data => data.department_codes == valueFilter);
-        jsondataMoocs = moocsIndicatorsArray.indicatorsDepartments.filter(data => data.department_codes == valueFilter);
-        jsondataDatasets = datasetsIndicatorsArray.indicatorsDepartments.filter(data => data.department_codes == valueFilter);
-        jsondataCode = codeIndicatorsArrays.indicatorsDepartments.filter(data => data.department_codes == valueFilter);
-        jsondataSubscriber = subscribersArray.subscribersDepartments.filter(data => data.department == valueFilter);
-    }
-    else if (filterselect == "divisions") {
-        jsondataPublications = bnPublicationsArrays.publicationsDivisions.filter(data => data.division_codes == valueFilter);
-        jsondataMoocs = moocsIndicatorsArray.indicatorsDivisions.filter(data => data.division_codes == valueFilter);
-        jsondataDatasets = datasetsIndicatorsArray.indicatorsDivisions.filter(data => data.division_codes == valueFilter);
-        jsondataCode = codeIndicatorsArrays.indicatorsDivisions.filter(data => data.division_codes == valueFilter);
-        jsondataSubscriber = subscribersArray.subscribersDivisions.filter(data => data.divisions == valueFilter);
-    }
-    else {
+        jsondataPublications = bnPublicationsArrays.publicationsDepartments.filter(function (data) {
+            return data.department_codes == valueFilter
+        });
+        jsondataMoocs = moocsIndicatorsArray.indicatorsDepartments.filter(function (data) {
+            return data.department_codes == valueFilter
+        });
+        jsondataDatasets = datasetsIndicatorsArray.indicatorsDepartments.filter(function (data) {
+            return data.department_codes == valueFilter
+        });
+        jsondataCode = codeIndicatorsArrays.indicatorsDepartments.filter(function (data) {
+            return data.department_codes == valueFilter
+        });
+        jsondataSubscriber = subscribersArray.subscribersDepartments.filter(function (data) {
+            return  data.department == valueFilter
+        });
+    } else if (filterselect == "divisions") {
+        jsondataPublications = bnPublicationsArrays.publicationsDivisions.filter(function (data) {
+            return  data.division_codes == valueFilter
+        });
+        jsondataMoocs = moocsIndicatorsArray.indicatorsDivisions.filter(function (data) {
+            return  data.division_codes == valueFilter
+        });
+        jsondataDatasets = datasetsIndicatorsArray.indicatorsDivisions.filter(function (data) {
+            return  data.division_codes == valueFilter
+        });
+        jsondataCode = codeIndicatorsArrays.indicatorsDivisions.filter(function (data) {
+            return  data.division_codes == valueFilter
+        });
+        jsondataSubscriber = subscribersArray.subscribersDivisions.filter(function (data) {
+            return  data.divisions == valueFilter
+        });
+    } else {
         jsondataPublications = bnPublicationsArrays.publicationsIDB;
         jsondataMoocs = moocsIndicatorsArray.indicatorsIDB;
         jsondataDatasets = datasetsIndicatorsArray.indicatorsIDB;
@@ -154,7 +172,7 @@ function initIndicators(filterselect, valueFilter) {
 }
 $("input[name*='blueTrend']").click(function () {
     // console.log(jsondata);
-    
+
     if (this.id == "blueAllTime") {
         dataResultsPublications = publicationsIndicatorAlltime(jsondataPublications);
         dataResultsMoocs = moocsIndicatorAlltime(jsondataMoocs);
@@ -203,7 +221,7 @@ var optionsAnimation = {
     decimal: '',
 };
 
-function optionsAnimated(suffixValue){
+function optionsAnimated(suffixValue) {
     var optionsAnimation = {
         useEasing: false,
         useGrouping: false,
@@ -256,11 +274,11 @@ function publicationsIndicator2018(jsondata){
 function setDataPublications(dataResults) {
     optionsUpdated = optionsAnimated("");
     if (parseFloat(dataResults.publicationsValue) > 1000) {
-        dataResults.publicationsValue = dataResults.publicationsValue/1000;
+        dataResults.publicationsValue = dataResults.publicationsValue / 1000;
         optionsUpdated = optionsAnimated("K");
     }
     var valuepublications = new CountUp('valuepublications', 0, dataResults.publicationsValue, 0, 1.0, optionsUpdated);
-    
+
     if (!valuepublications.error) {
         valuepublications.start();
     } else {
@@ -269,16 +287,15 @@ function setDataPublications(dataResults) {
 
     optionsUpdated = optionsAnimated("");
     if (parseFloat(dataResults.downloadsValue) > 1000 && parseFloat(dataResults.downloadsValue) < 1000000) {
-        dataResults.downloadsValue = dataResults.downloadsValue/1000;
+        dataResults.downloadsValue = dataResults.downloadsValue / 1000;
         optionsUpdated = optionsAnimated("K");
-    }
-    else if(parseFloat(dataResults.downloadsValue) > 1000000){
+    } else if (parseFloat(dataResults.downloadsValue) > 1000000) {
         dataResults.downloadsValue = dataResults.downloadsValue / 1000000;
         optionsUpdated = optionsAnimated("M");
     }
-    
+
     var publications_downloads = new CountUp('publications_downloads', 0, dataResults.downloadsValue, 0, 1.0, optionsUpdated);
-    
+
     if (!publications_downloads.error) {
         publications_downloads.start();
     } else {
@@ -321,12 +338,12 @@ function moocsIndicatorAlltime(jsondata) {
     moocsAllDownloads = setSettingsNumber(moocsAllDownloads).valueNumber;
     moocsAllDownloadsLac = (jsondata.length > 0) ? (jsondata[0].all_the_time_porcent_total_LAC_downloads * 100).toFixed(0) : '0';
     var results = {
-        moocsValue: '0',
-        porcent_total_publications: '0%', // no se enviaron en los datos para el porcentaje total de publicaciones filtrado por all time
-        compare2017_2018_publications: '0',
-        downloadsValue: '0',
-        porcent_total_downloads: '0%', // no se enviaron en los datos para el porcentaje total de downloads filtrado por all time
-        porcent_downloads_lac: '0%'
+        moocsValue: 0,
+        porcent_total_publications: 0, // no se enviaron en los datos para el porcentaje total de publicaciones filtrado por all time
+        compare2017_2018_publications: 0,
+        downloadsValue: 0,
+        porcent_total_downloads: 0, // no se enviaron en los datos para el porcentaje total de downloads filtrado por all time
+        porcent_downloads_lac: 0
     }
     // console.log(results);
     return results;
@@ -339,7 +356,7 @@ function moocsIndicator2018(jsondata) {
         porcent_total_publications: (jsondata.length > 0) ? (jsondata[0]['porcent_total_courses'] * 100).toFixed(1) + '%': '',
         compare2017_2018_publications: (jsondata.length > 0) ? jsondata[0]['2017_2018_courses'] : '',
         downloadsValue: (jsondata.length > 0) ? jsondata[0]['2018_registrations'] : '0',
-        porcent_total_downloads: (jsondata.length > 0) ? (jsondata[0]['porcent_total_registrations'] * 100).toFixed(1) + '%': '', // no se enviaron en los datos para el porcentaje total de downloads filtrado por all time
+        porcent_total_downloads: (jsondata.length > 0) ? (jsondata[0]['porcent_total_registrations'] * 100).toFixed(1) + '%' : '', // no se enviaron en los datos para el porcentaje total de downloads filtrado por all time
         porcent_downloads_lac: (jsondata.length > 0) ? (jsondata[0]['porcent_total_lac'] * 100).toFixed(1) + '%' : ''
     }
     // console.log(results);
@@ -347,21 +364,21 @@ function moocsIndicator2018(jsondata) {
 }
 
 function setDataMoocs(dataResults) {
-    
+
     optionsUpdated = optionsAnimated("");
     if (parseFloat(dataResults.moocsValue) > 1000) {
         dataResults.moocsValue = dataResults.moocsValue / 1000;
         optionsUpdated = optionsAnimated("K");
     }
     var valuepublications = new CountUp('valuemoocs', 0, dataResults.moocsValue, 0, 1.0, optionsUpdated);
-    
+
     optionsUpdated = optionsAnimated("");
     if (parseFloat(dataResults.downloadsValue) > 1000) {
         dataResults.downloadsValue = dataResults.downloadsValue / 1000;
         optionsUpdated = optionsAnimated("K");
     }
     var publications_downloads = new CountUp('moocs_downloads', 0, dataResults.downloadsValue, 0, 1.0, optionsUpdated);
-    
+
     if (!valuepublications.error) {
         valuepublications.start();
     } else {
@@ -380,30 +397,35 @@ function setDataMoocs(dataResults) {
     $('#moocs_downloads_lac').text(dataResults.porcent_downloads_lac);
 }
 function updateGaugesMoocs() {
-    var dataPublicationGauge1 = {
-        "publication": {
-            "total": (moocsAllTotalGlobal > 100) ? 1000 : 100,
+    var dataGaugeMoocs = {
+        "code": {
+            "total": (moocsAllTotalGlobal > 0) ? ((moocsAllTotalGlobal > 100) ? 1000 : 100) : 100,
             "allocated": moocsAllTotalGlobal
         },
-        "download": {
-            "total": (moocsAllDownloads > 100) ? 1000 : 100,
+        "pageview": {
+            "total": (moocsAllDownloads > 0) ? ((moocsAllDownloads > 100) ? 1000 : 100) : 100,
             "allocated": moocsAllDownloads
         },
         "lac": {
-            "total": (moocsAllDownloads > 100) ? 1000 : 100,
+            "total": (moocsAllDownloadsLac > 0) ? ((moocsAllDownloadsLac > 100) ? 1000 : 100) : 100,
             "allocated": moocsAllDownloadsLac
         }
     }
-    drawGaugeMoocsChart(dataPublicationGauge1);
+    drawGaugeMoocsChart(dataGaugeMoocs);
 }
+
 
 /**
  * Columna de indicadores de DATASETS 
  */
 function datasetsIndicatorAlltime(jsondata) {
+    
     datasetsAllTotalGlobal = (jsondata.length > 0) ? jsondata[0].all_the_time_datasets : '0';
+    datasetsAllDownloads = (jsondata.length > 0) ? jsondata[0].all_the_time_downloads : '0';
+    datasetsAllDownloads = setSettingsNumber(datasetsAllDownloads).valueNumber;
+    datasetsAllDownloadsLac = (jsondata.length > 0) ? (jsondata[0].all_the_time_percent_total_lac_downloads * 100).toFixed(0) : '0';
     var results = {
-        datasetsValue: datasetsAllTotalGlobal,
+        datasetsValue: (jsondata.length > 0) ? jsondata[0].all_the_time_datasets : '0',
         porcent_total_publications: "missing",
         compare2017_2018_publications: (jsondata.length > 0) ? jsondata[0]['2017_2018_datasets'] : '',
         downloadsValue: (jsondata.length > 0) ? jsondata[0]['all_the_time_downloads'] : '0',
@@ -434,9 +456,9 @@ function setDataDatasets(dataResults) {
         dataResults.datasetsValue = dataResults.datasetsValue / 1000;
         optionsUpdated = optionsAnimated("K");
     }
-    
+
     var valuepublications = new CountUp('valuedatasets', 0, dataResults.datasetsValue, 0, 1.0, optionsAnimation);
-    
+
     if (!valuepublications.error) {
         valuepublications.start();
     } else {
@@ -448,9 +470,9 @@ function setDataDatasets(dataResults) {
         dataResults.downloadsValue = dataResults.downloadsValue / 1000;
         optionsUpdated = optionsAnimated("K");
     }
-    
+
     var publications_downloads = new CountUp('datasets_downloads', 0, dataResults.downloadsValue, 0, 1.0, optionsAnimation);
-    
+
     if (!publications_downloads.error) {
         publications_downloads.start();
     } else {
@@ -464,6 +486,25 @@ function setDataDatasets(dataResults) {
     $('#datasets_downloads_porcent').text(dataResults.porcent_total_downloads);
     $('#datasets_downloads_lac').text(dataResults.porcent_downloads_lac);
 }
+function updateGaugesDatasets() {
+    var dataGaugeDatasets = {
+        "code": {
+            "total": (datasetsAllTotalGlobal > 0) ? ((datasetsdatasetsAllTotalGlobalAllDownloads > 100) ? 1000 : 100) : 100,
+            "allocated": datasetsAllTotalGlobal
+        },
+        "pageview": {
+            "total": (datasetsAllDownloads > 0) ? ((datasetsAllDownloads > 100) ? 1000 : 100) : 100,
+            "allocated": datasetsAllDownloads
+        },
+        "lac": {
+            "total": (datasetsAllDownloadsLac > 0) ? ((datasetsAllDownloadsLac > 100) ? 1000 : 100) : 100,
+            "allocated": datasetsAllDownloadsLac
+        }
+    }
+    drawGaugeDatasetChart(dataGaugeDatasets);
+}
+
+
 
 
 /**
@@ -507,7 +548,7 @@ function setCode(dataResults) {
     }
     // console.log(optionsAnimation);
     var valuepublications = new CountUp('valuecode', 0, dataResults.codeValue, 0, 1.0, optionsAnimation);
-    
+
     if (!valuepublications.error) {
         valuepublications.start();
     } else {
@@ -521,7 +562,7 @@ function setCode(dataResults) {
     }
     // console.log(optionsAnimation);
     var publications_downloads = new CountUp('code_downloads', 0, dataResults.downloadsValue, 0, 1.0, optionsAnimation);
-    
+
     if (!publications_downloads.error) {
         publications_downloads.start();
     } else {
@@ -544,7 +585,7 @@ function subscriberIndicatorAlltime(jsondata) {
     // console.log(jsondata);
     var results = {
         subscriberValue: (jsondata.length > 0) ? jsondata[0].subscribers : '0',
-        porcent_total_subscriber: (jsondata.length > 0) ? (jsondata[0].porcent_total_subscribers * 100).toFixed(1) + '%': '',
+        porcent_total_subscriber: (jsondata.length > 0) ? (jsondata[0].porcent_total_subscribers * 100).toFixed(1) + '%' : '',
         porcent_total_subscriber_2018: 'missing',
         porcent_subscriber_lac: (jsondata.length > 0) ? (jsondata[0]['porcent_total_from_lac'] * 100).toFixed(1) + '%' : ''
     }
@@ -555,7 +596,7 @@ function subscriberIndicatorAlltime(jsondata) {
 function subscriberIndicator2018(jsondata) {
     var results = {
         subscriberValue: (jsondata.length > 0) ? jsondata[0].subscribers : '0',
-        porcent_total_subscriber: (jsondata.length > 0) ? (jsondata[0].porcent_total_subscribers * 100).toFixed(1) + '%': '0',
+        porcent_total_subscriber: (jsondata.length > 0) ? (jsondata[0].porcent_total_subscribers * 100).toFixed(1) + '%' : '0',
         porcent_total_subscriber_2018: 'missing',
         porcent_subscriber_lac: (jsondata.length > 0) ? (jsondata[0]['porcent_total_from_lac'] * 100).toFixed(1) + '%' : ''
     }
@@ -572,7 +613,7 @@ function setSubscriber(dataResults) {
     }
     // console.log(optionsAnimation);
     var valuepublications = new CountUp('total_subscriber', 0, dataResults.subscriberValue, 0, 1.0, optionsAnimation);
-    
+
     if (!valuepublications.error) {
         valuepublications.start();
     } else {
@@ -591,7 +632,7 @@ function setSettingsNumber(valueNumber){
         suffixNumber = "K";
     }
     else if (valueNumber > 1000000) {
-        valueNumber = (valueNumber / 1000).toFixed(0);
+        valueNumber = (valueNumber / 1000000).toFixed(0);
         suffixNumber = "M";
     }
     results = {
