@@ -1,39 +1,62 @@
 // console.log(bnPublicationsArrays.publicationsDepartments);
-var filter = "departments";
+var filterselect = "";
 // var valueFilter = "AUG"
-var valueFilter = "IFD"
+var valueFilter = ""
+initIndicators(filterselect, valueFilter);
 
-// var jsondata = "";
-if (filter == "departments"){
-    jsondataPublications = bnPublicationsArrays.publicationsDepartments.filter(data => data.department_codes == valueFilter);
-    jsondataMoocs = moocsIndicatorsArray.indicatorsDepartments.filter(data => data.department_codes == valueFilter);
-    jsondataDatasets = datasetsIndicatorsArray.indicatorsDepartments.filter(data => data.department_codes == valueFilter);
-    jsondataCode = codeIndicatorsArrays.indicatorsDepartments.filter(data => data.department_codes == valueFilter);
-    jsondataSubscriber = subscribersArray.subscribersDepartments.filter(data => data.department == valueFilter);
-}
-else if(filter == "divisions"){
-    jsondataPublications = bnPublicationsArrays.publicationsDivisions.filter(data => data.division_codes == valueFilter);
-    jsondataMoocs = moocsIndicatorsArray.indicatorsDivisions.filter(data => data.division_codes == valueFilter);
-    jsondataDatasets = datasetsIndicatorsArray.indicatorsDivisions.filter(data => data.division_codes == valueFilter);
-    jsondataCode = codeIndicatorsArrays.indicatorsDivisions.filter(data => data.division_codes == valueFilter);
-    jsondataSubscriber = subscribersArray.subscribersDivisions.filter(data => data.divisions == valueFilter);
-}
-else {
-    jsondataPublications = bnPublicationsArrays.publicationsIDB;
-    jsondataMoocs = moocsIndicatorsArray.indicatorsIDB;
-    jsondataDatasets = datasetsIndicatorsArray.indicatorsIDB;
-    jsondataCode = codeIndicatorsArrays.indicatorsIDB;
-    jsondataSubscriber = subscribersArray.subscribersIDB;
-}
+$("#deparmentSelect").on('change', function () {
+    // console.log(this.value);
+    mainReset();
+    initIndicators('departments', this.value);
+    $("#divisionSelect").value = "";
+});
+$("#divisionSelect").on('change', function () {
+    // console.log(this.value);
+    $("#deparmentSelect").value = "";
+    mainReset();
+    initIndicators('divisions', this.value);
+});
+$('#idbLink').click(function (){
+    $("#deparmentSelect").value = "";
+    $("#divisionSelect").value = "";
+    initIndicators('IDB', 'IDB');
+});
 
-var dataPublicationsResults = publicationsIndicatorAlltime(jsondataPublications);
-var dataMoocsResults = moocsIndicatorAlltime(jsondataMoocs);
-var dataDatasetsResults = datasetsIndicatorAlltime(jsondataDatasets);
-var dataCodeResults = codeIndicatorAlltime(jsondataCode);
-var dataSubscribersResults = subscriberIndicatorAlltime(jsondataSubscriber);
-console.log(jsondataSubscriber);
-console.log(dataSubscribersResults);
-setDataMain(dataPublicationsResults, dataMoocsResults, dataDatasetsResults, dataCodeResults, dataSubscribersResults);
+function initIndicators(filterselect, valueFilter) {
+    // var jsondata = "";
+    if (filterselect == "departments") {
+        jsondataPublications = bnPublicationsArrays.publicationsDepartments.filter(data => data.department_codes == valueFilter);
+        jsondataMoocs = moocsIndicatorsArray.indicatorsDepartments.filter(data => data.department_codes == valueFilter);
+        jsondataDatasets = datasetsIndicatorsArray.indicatorsDepartments.filter(data => data.department_codes == valueFilter);
+        jsondataCode = codeIndicatorsArrays.indicatorsDepartments.filter(data => data.department_codes == valueFilter);
+        jsondataSubscriber = subscribersArray.subscribersDepartments.filter(data => data.department == valueFilter);
+    }
+    else if (filterselect == "divisions") {
+        jsondataPublications = bnPublicationsArrays.publicationsDivisions.filter(data => data.division_codes == valueFilter);
+        jsondataMoocs = moocsIndicatorsArray.indicatorsDivisions.filter(data => data.division_codes == valueFilter);
+        jsondataDatasets = datasetsIndicatorsArray.indicatorsDivisions.filter(data => data.division_codes == valueFilter);
+        jsondataCode = codeIndicatorsArrays.indicatorsDivisions.filter(data => data.division_codes == valueFilter);
+        jsondataSubscriber = subscribersArray.subscribersDivisions.filter(data => data.divisions == valueFilter);
+    }
+    else {
+        jsondataPublications = bnPublicationsArrays.publicationsIDB;
+        jsondataMoocs = moocsIndicatorsArray.indicatorsIDB;
+        jsondataDatasets = datasetsIndicatorsArray.indicatorsIDB;
+        jsondataCode = codeIndicatorsArrays.indicatorsIDB;
+        jsondataSubscriber = subscribersArray.subscribersIDB;
+    }
+
+    var dataPublicationsResults = publicationsIndicatorAlltime(jsondataPublications);
+    var dataMoocsResults = moocsIndicatorAlltime(jsondataMoocs);
+    var dataDatasetsResults = datasetsIndicatorAlltime(jsondataDatasets);
+    var dataCodeResults = codeIndicatorAlltime(jsondataCode);
+    var dataSubscribersResults = subscriberIndicatorAlltime(jsondataSubscriber);
+    console.log(filterselect);
+    console.log(valueFilter);
+    console.log(jsondataPublications);
+    console.log(dataPublicationsResults);
+    setDataMain(dataPublicationsResults, dataMoocsResults, dataDatasetsResults, dataCodeResults, dataSubscribersResults);
+}
 $("input[name*='blueTrend']").click(function () {
     // console.log(jsondata);
     
@@ -64,9 +87,9 @@ function setDataMain(dataResultsPublications, dataResultsMoocs, dataResultsDatas
 }
 
 function mainReset() {
-    var valuepublications = new CountUp('valuepublications', 0, 0, 0, 1.5, optionsAnimation);
+    var valuepublications = new CountUp('valuepublications', 0, 0, 0, 1.0, optionsAnimation);
     valuepublications.reset();
-    var publications_downloads = new CountUp('publications_downloads', 0, 0, 0, 1.5, optionsAnimation);
+    var publications_downloads = new CountUp('publications_downloads', 0, 0, 0, 1.0, optionsAnimation);
     publications_downloads.reset();
 }
 
@@ -126,7 +149,7 @@ function setDataPublications(dataResults) {
         dataResults.publicationsValue = dataResults.publicationsValue/1000;
         optionsUpdated = optionsAnimated("K");
     }
-    var valuepublications = new CountUp('valuepublications', 0, dataResults.publicationsValue, 0, 1.5, optionsUpdated);
+    var valuepublications = new CountUp('valuepublications', 0, dataResults.publicationsValue, 0, 1.0, optionsUpdated);
     
     if (!valuepublications.error) {
         valuepublications.start();
@@ -144,7 +167,7 @@ function setDataPublications(dataResults) {
         optionsUpdated = optionsAnimated("M");
     }
     
-    var publications_downloads = new CountUp('publications_downloads', 0, dataResults.downloadsValue, 0, 1.5, optionsUpdated);
+    var publications_downloads = new CountUp('publications_downloads', 0, dataResults.downloadsValue, 0, 1.0, optionsUpdated);
     
     if (!publications_downloads.error) {
         publications_downloads.start();
@@ -197,14 +220,14 @@ function setDataMoocs(dataResults) {
         dataResults.moocsValue = dataResults.moocsValue / 1000;
         optionsUpdated = optionsAnimated("K");
     }
-    var valuepublications = new CountUp('valuemoocs', 0, dataResults.moocsValue, 0, 1.5, optionsUpdated);
+    var valuepublications = new CountUp('valuemoocs', 0, dataResults.moocsValue, 0, 1.0, optionsUpdated);
     
     optionsUpdated = optionsAnimated("");
     if (parseFloat(dataResults.downloadsValue) > 1000) {
         dataResults.downloadsValue = dataResults.downloadsValue / 1000;
         optionsUpdated = optionsAnimated("K");
     }
-    var publications_downloads = new CountUp('moocs_downloads', 0, dataResults.downloadsValue, 0, 1.5, optionsUpdated);
+    var publications_downloads = new CountUp('moocs_downloads', 0, dataResults.downloadsValue, 0, 1.0, optionsUpdated);
     
     if (!valuepublications.error) {
         valuepublications.start();
@@ -261,7 +284,7 @@ function setDataDatasets(dataResults) {
         optionsUpdated = optionsAnimated("K");
     }
     
-    var valuepublications = new CountUp('valuedatasets', 0, dataResults.datasetsValue, 0, 1.5, optionsAnimation);
+    var valuepublications = new CountUp('valuedatasets', 0, dataResults.datasetsValue, 0, 1.0, optionsAnimation);
     
     if (!valuepublications.error) {
         valuepublications.start();
@@ -275,7 +298,7 @@ function setDataDatasets(dataResults) {
         optionsUpdated = optionsAnimated("K");
     }
     
-    var publications_downloads = new CountUp('datasets_downloads', 0, dataResults.downloadsValue, 0, 1.5, optionsAnimation);
+    var publications_downloads = new CountUp('datasets_downloads', 0, dataResults.downloadsValue, 0, 1.0, optionsAnimation);
     
     if (!publications_downloads.error) {
         publications_downloads.start();
@@ -330,7 +353,7 @@ function setCode(dataResults) {
         optionsUpdated = optionsAnimated("K");
     }
     // console.log(optionsAnimation);
-    var valuepublications = new CountUp('valuecode', 0, dataResults.codeValue, 0, 1.5, optionsAnimation);
+    var valuepublications = new CountUp('valuecode', 0, dataResults.codeValue, 0, 1.0, optionsAnimation);
     
     if (!valuepublications.error) {
         valuepublications.start();
@@ -344,7 +367,7 @@ function setCode(dataResults) {
         optionsUpdated = optionsAnimated("K");
     }
     // console.log(optionsAnimation);
-    var publications_downloads = new CountUp('code_downloads', 0, dataResults.downloadsValue, 0, 1.5, optionsAnimation);
+    var publications_downloads = new CountUp('code_downloads', 0, dataResults.downloadsValue, 0, 1.0, optionsAnimation);
     
     if (!publications_downloads.error) {
         publications_downloads.start();
@@ -367,7 +390,7 @@ function setCode(dataResults) {
 function subscriberIndicatorAlltime(jsondata) {
     // console.log(jsondata);
     var results = {
-        codeValue: (jsondata.length > 0) ? jsondata[0].subscribers : '0',
+        subscriberValue: (jsondata.length > 0) ? jsondata[0].subscribers : '0',
         porcent_total_subscriber: (jsondata.length > 0) ? (jsondata[0].porcent_total_subscribers * 100).toFixed(1) + '%': '',
         porcent_total_subscriber_2018: 'missing',
         porcent_subscriber_lac: (jsondata.length > 0) ? (jsondata[0]['porcent_total_from_lac'] * 100).toFixed(1) + '%' : ''
@@ -378,7 +401,7 @@ function subscriberIndicatorAlltime(jsondata) {
 
 function subscriberIndicator2018(jsondata) {
     var results = {
-        codeValue: (jsondata.length > 0) ? jsondata[0].subscribers : '0',
+        subscriberValue: (jsondata.length > 0) ? jsondata[0].subscribers : '0',
         porcent_total_subscriber: (jsondata.length > 0) ? (jsondata[0].porcent_total_subscribers * 100).toFixed(1) + '%': '0',
         porcent_total_subscriber_2018: 'missing',
         porcent_subscriber_lac: (jsondata.length > 0) ? (jsondata[0]['porcent_total_from_lac'] * 100).toFixed(1) + '%' : ''
@@ -390,12 +413,12 @@ function subscriberIndicator2018(jsondata) {
 function setSubscriber(dataResults) {
     // console.log(dataResults);
     optionsUpdated = optionsAnimated("");
-    if (parseFloat(dataResults.codeValue) > 1000) {
-        dataResults.codeValue = dataResults.codeValue / 1000;
+    if (parseFloat(dataResults.subscriberValue) > 1000) {
+        dataResults.subscriberValue = dataResults.subscriberValue / 1000;
         optionsUpdated = optionsAnimated("K");
     }
     // console.log(optionsAnimation);
-    var valuepublications = new CountUp('total_subscriber', 0, dataResults.codeValue, 0, 1.5, optionsAnimation);
+    var valuepublications = new CountUp('total_subscriber', 0, dataResults.subscriberValue, 0, 1.0, optionsAnimation);
     
     if (!valuepublications.error) {
         valuepublications.start();
