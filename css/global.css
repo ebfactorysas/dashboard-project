@@ -1,3 +1,27 @@
+.red {
+  color: #D1415A !important; }
+
+.orange {
+  color: #FA2E00 !important; }
+
+.green {
+  color: #518A81 !important; }
+
+.yellow {
+  color: #EEAE00 !important; }
+
+.purple {
+  color: #424488 !important; }
+
+.black {
+  color: #555555 !important; }
+
+.gray {
+  color: #b4b4b4 !important; }
+
+.white {
+  color: #FFF !important; }
+
 .left-bar {
   float: left;
   width: 100%;
@@ -41,11 +65,13 @@
       .left-bar .gauge-2,
       .left-bar .gauge-3 {
         width: 100%;
-        padding: 0; }
+        padding: 0;
+        min-height: 300px; }
         .left-bar .gauge-1.gauge-1,
         .left-bar .gauge-2.gauge-1,
         .left-bar .gauge-3.gauge-1 {
-          padding-top: 4rem; } }
+          padding-top: 4rem;
+          min-height: 330px; } }
 
 .menu ul {
   margin: 0;
@@ -505,5 +531,8 @@ section {
   float: left;
   width: 100%;
   position: relative; }
+  @media (min-width: 960px) {
+    section.publications, section.moocs, section.datasets, section.code, section.suscribers, section.map {
+      min-height: 960px; } }
 
 /*# sourceMappingURL=global.css.map */
