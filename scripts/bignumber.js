@@ -51,10 +51,10 @@ function initIndicators(filterselect, valueFilter) {
     var dataDatasetsResults = datasetsIndicatorAlltime(jsondataDatasets);
     var dataCodeResults = codeIndicatorAlltime(jsondataCode);
     var dataSubscribersResults = subscriberIndicatorAlltime(jsondataSubscriber);
-    console.log(filterselect);
-    console.log(valueFilter);
-    console.log(jsondataPublications);
-    console.log(dataPublicationsResults);
+    // console.log(filterselect);
+    // console.log(valueFilter);
+    // console.log(jsondataPublications);
+    // console.log(dataPublicationsResults);
     setDataMain(dataPublicationsResults, dataMoocsResults, dataDatasetsResults, dataCodeResults, dataSubscribersResults);
 }
 $("input[name*='blueTrend']").click(function () {
@@ -73,6 +73,9 @@ $("input[name*='blueTrend']").click(function () {
         dataResultsCode = codeIndicator2018(jsondataCode);
         dataResultsSubscriber = subscriberIndicator2018(jsondataSubscriber);
     }
+    
+    console.log(jsondataPublications);
+    console.log(dataResultsPublications);
     setDataMain(dataResultsPublications, dataResultsMoocs, dataResultsDatasets, dataResultsCode, dataResultsSubscriber);
 });
 
@@ -126,7 +129,7 @@ function publicationsIndicatorAlltime(jsondata){
         compare2017_2018_publications : (jsondata.length > 0) ? jsondata[0]['2017_2018_publications'] : '',
         downloadsValue: (jsondata.length > 0) ? jsondata[0]['all_the_time_downloads'] : '0',
         porcent_total_downloads : "Missing", // no se enviaron en los datos para el porcentaje total de downloads filtrado por all time
-        porcent_downloads_lac : (jsondata.length > 0) ? (jsondata[0].all_the_time_porcent_total_LAC_downloads * 100).toFixed(1) + '%' : ''
+        porcent_downloads_lac: (jsondata.length > 0) ? ((jsondata[0].all_the_time_porcent_total_LAC_downloads != "missing") ? (jsondata[0].all_the_time_porcent_total_LAC_downloads * 100).toFixed(1) + '%' : jsondata[0].all_the_time_porcent_total_LAC_downloads) : ''
     }
     return results;
 }
@@ -135,7 +138,7 @@ function publicationsIndicator2018(jsondata){
         publicationsValue: (jsondata.length > 0) ? jsondata[0]['2018_publications'] : '0',
         porcent_total_publications: (jsondata.length > 0) ? (jsondata[0]['2018_porcent_total_publications'] * 100).toFixed(1) + '%': '',
         compare2017_2018_publications : (jsondata.length > 0) ? jsondata[0]['2017_2018_publications'] : '',
-        downloadsValue: (jsondata.length > 0) ? jsondata[0]['all_the_time_downloads'] : '0',
+        downloadsValue: (jsondata.length > 0) ? jsondata[0]['2018_downloads'] : '0',
         porcent_total_downloads: (jsondata.length > 0) ? (jsondata[0]['2018_porcent_total_downloads'] * 100).toFixed(1) + '%': '', // no se enviaron en los datos para el porcentaje total de downloads filtrado por all time
         porcent_downloads_lac: (jsondata.length > 0) ? (jsondata[0]['2018_porcent_total_LAC_downloads'] * 100).toFixed(1) + '%' : ''
     }
