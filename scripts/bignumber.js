@@ -224,16 +224,16 @@ function mainReset() {
 var optionsAnimation = {
     useEasing: false,
     useGrouping: false,
-    separator: '',
-    decimal: '',
+    separator: ',',
+    decimal: '.',
 };
 
 function optionsAnimated(suffixValue) {
     var optionsAnimation = {
         useEasing: false,
         useGrouping: false,
-        separator: '',
-        decimal: '',
+        separator: ',',
+        decimal: '.',
         suffix: suffixValue,
     };
     return optionsAnimation;
@@ -280,11 +280,10 @@ function publicationsIndicator2018(jsondata){
 
 function setDataPublications(dataResults) {
     optionsUpdated = optionsAnimated("");
-    if (parseFloat(dataResults.publicationsValue) > 1000) {
-        dataResults.publicationsValue = dataResults.publicationsValue / 1000;
-        optionsUpdated = optionsAnimated("K");
-    }
-    var valuepublications = new CountUp('valuepublications', 0, dataResults.publicationsValue, 0, 1.0, optionsUpdated);
+    optionsUpdated = optionsAnimated(setSettingsNumber(dataResults.publicationsValue).suffixNumber);
+    dataPublicationsNumber = setSettingsNumber(dataResults.publicationsValue).valueNumber;
+    decimalCount = setSettingsNumber(dataResults.publicationsValue).decimalNumber;
+    var valuepublications = new CountUp('valuepublications', 0, dataPublicationsNumber, decimalCount, 1.0, optionsUpdated);
 
     if (!valuepublications.error) {
         valuepublications.start();
@@ -293,15 +292,10 @@ function setDataPublications(dataResults) {
     }
 
     optionsUpdated = optionsAnimated("");
-    if (parseFloat(dataResults.downloadsValue) > 1000 && parseFloat(dataResults.downloadsValue) < 1000000) {
-        dataResults.downloadsValue = dataResults.downloadsValue / 1000;
-        optionsUpdated = optionsAnimated("K");
-    } else if (parseFloat(dataResults.downloadsValue) > 1000000) {
-        dataResults.downloadsValue = dataResults.downloadsValue / 1000000;
-        optionsUpdated = optionsAnimated("M");
-    }
-
-    var publications_downloads = new CountUp('publications_downloads', 0, dataResults.downloadsValue, 0, 1.0, optionsUpdated);
+    optionsUpdated = optionsAnimated(setSettingsNumber(dataResults.downloadsValue).suffixNumber);
+    dataPublicationsNumber = setSettingsNumber(dataResults.downloadsValue).valueNumber;
+    decimalCount = setSettingsNumber(dataResults.downloadsValue).decimalNumber;
+    var publications_downloads = new CountUp('publications_downloads', 0, dataPublicationsNumber, decimalCount, 1.0, optionsUpdated);
 
     if (!publications_downloads.error) {
         publications_downloads.start();
@@ -372,19 +366,22 @@ function moocsIndicator2018(jsondata) {
 
 function setDataMoocs(dataResults) {
 
+    // optionsUpdated = optionsAnimated("");
+    // if (parseFloat(dataResults.moocsValue) > 1000) {
+    //     dataResults.moocsValue = dataResults.moocsValue / 1000;
+    //     optionsUpdated = optionsAnimated("K");
+    // }
     optionsUpdated = optionsAnimated("");
-    if (parseFloat(dataResults.moocsValue) > 1000) {
-        dataResults.moocsValue = dataResults.moocsValue / 1000;
-        optionsUpdated = optionsAnimated("K");
-    }
-    var valuepublications = new CountUp('valuemoocs', 0, dataResults.moocsValue, 0, 1.0, optionsUpdated);
+    optionsUpdated = optionsAnimated(setSettingsNumber(dataResults.moocsValue).suffixNumber);
+    dataPublicationsNumber = setSettingsNumber(dataResults.moocsValue).valueNumber;
+    decimalCount = setSettingsNumber(dataResults.moocsValue).decimalNumber;
+    var valuepublications = new CountUp('valuemoocs', 0, dataPublicationsNumber, decimalCount, 1.0, optionsUpdated);
 
     optionsUpdated = optionsAnimated("");
-    if (parseFloat(dataResults.downloadsValue) > 1000) {
-        dataResults.downloadsValue = dataResults.downloadsValue / 1000;
-        optionsUpdated = optionsAnimated("K");
-    }
-    var publications_downloads = new CountUp('moocs_downloads', 0, dataResults.downloadsValue, 0, 1.0, optionsUpdated);
+    optionsUpdated = optionsAnimated(setSettingsNumber(dataResults.downloadsValue).suffixNumber);
+    dataPublicationsNumber = setSettingsNumber(dataResults.downloadsValue).valueNumber;
+    decimalCount = setSettingsNumber(dataResults.downloadsValue).decimalNumber;
+    var publications_downloads = new CountUp('moocs_downloads', 0, dataPublicationsNumber, decimalCount, 1.0, optionsUpdated);
 
     if (!valuepublications.error) {
         valuepublications.start();
@@ -458,13 +455,16 @@ function datasetsIndicator2018(jsondata) {
 }
 
 function setDataDatasets(dataResults) {
+    // optionsUpdated = optionsAnimated("");
+    // if (parseFloat(dataResults.datasetsValue) > 1000) {
+    //     dataResults.datasetsValue = dataResults.datasetsValue / 1000;
+    //     optionsUpdated = optionsAnimated("K");
+    // }
     optionsUpdated = optionsAnimated("");
-    if (parseFloat(dataResults.datasetsValue) > 1000) {
-        dataResults.datasetsValue = dataResults.datasetsValue / 1000;
-        optionsUpdated = optionsAnimated("K");
-    }
-
-    var valuepublications = new CountUp('valuedatasets', 0, dataResults.datasetsValue, 0, 1.0, optionsAnimation);
+    optionsUpdated = optionsAnimated(setSettingsNumber(dataResults.datasetsValue).suffixNumber);
+    dataPublicationsNumber = setSettingsNumber(dataResults.datasetsValue).valueNumber;
+    decimalCount = setSettingsNumber(dataResults.datasetsValue).decimalNumber;
+    var valuepublications = new CountUp('valuedatasets', 0, dataPublicationsNumber, decimalCount, 1.0, optionsUpdated);
 
     if (!valuepublications.error) {
         valuepublications.start();
@@ -472,13 +472,16 @@ function setDataDatasets(dataResults) {
         console.error(valuepublications.error);
     }
 
+    // optionsUpdated = optionsAnimated("");
+    // if (parseFloat(dataResults.downloadsValue) > 1000) {
+    //     dataResults.downloadsValue = dataResults.downloadsValue / 1000;
+    //     optionsUpdated = optionsAnimated("K");
+    // }
     optionsUpdated = optionsAnimated("");
-    if (parseFloat(dataResults.downloadsValue) > 1000) {
-        dataResults.downloadsValue = dataResults.downloadsValue / 1000;
-        optionsUpdated = optionsAnimated("K");
-    }
-
-    var publications_downloads = new CountUp('datasets_downloads', 0, dataResults.downloadsValue, 0, 1.0, optionsAnimation);
+    optionsUpdated = optionsAnimated(setSettingsNumber(dataResults.downloadsValue).suffixNumber);
+    dataPublicationsNumber = setSettingsNumber(dataResults.downloadsValue).valueNumber;
+    decimalCount = setSettingsNumber(dataResults.downloadsValue).decimalNumber;
+    var publications_downloads = new CountUp('datasets_downloads', 0, dataPublicationsNumber, decimalCount, 1.0, optionsUpdated);
 
     if (!publications_downloads.error) {
         publications_downloads.start();
@@ -551,14 +554,12 @@ function codeIndicator2018(jsondata) {
 }
 
 function setCode(dataResults) {
-    // console.log(dataResults);
+    
     optionsUpdated = optionsAnimated("");
-    if (parseFloat(dataResults.codeValue) > 1000) {
-        dataResults.codeValue = dataResults.codeValue / 1000;
-        optionsUpdated = optionsAnimated("K");
-    }
-    // console.log(optionsAnimation);
-    var valuepublications = new CountUp('valuecode', 0, dataResults.codeValue, 0, 1.0, optionsAnimation);
+    optionsUpdated = optionsAnimated(setSettingsNumber(dataResults.codeValue).suffixNumber);
+    dataPublicationsNumber = setSettingsNumber(dataResults.codeValue).valueNumber;
+    decimalCount = setSettingsNumber(dataResults.codeValue).decimalNumber;
+    var valuepublications = new CountUp('valuecode', 0, dataPublicationsNumber, decimalCount, 1.0, optionsUpdated);
 
     if (!valuepublications.error) {
         valuepublications.start();
@@ -566,13 +567,12 @@ function setCode(dataResults) {
         console.error(valuepublications.error);
     }
 
+    
     optionsUpdated = optionsAnimated("");
-    if (parseFloat(dataResults.downloadsValue) > 1000) {
-        dataResults.downloadsValue = dataResults.downloadsValue / 1000;
-        optionsUpdated = optionsAnimated("K");
-    }
-    // console.log(optionsAnimation);
-    var publications_downloads = new CountUp('code_downloads', 0, dataResults.downloadsValue, 0, 1.0, optionsAnimation);
+    optionsUpdated = optionsAnimated(setSettingsNumber(dataResults.downloadsValue).suffixNumber);
+    dataPublicationsNumber = setSettingsNumber(dataResults.downloadsValue).valueNumber;
+    decimalCount = setSettingsNumber(dataResults.downloadsValue).decimalNumber;
+    var publications_downloads = new CountUp('code_downloads', 0, dataPublicationsNumber, decimalCount, 1.0, optionsUpdated);
 
     if (!publications_downloads.error) {
         publications_downloads.start();
@@ -616,9 +616,9 @@ function subscriberIndicatorAlltime(jsondata) {
     subscribersAllDownloads = setSettingsNumber(subscribersAllDownloads).valueNumber;
     subscribersAllDownloadsLac = (jsondata.length > 0) ? (jsondata[0].porcent_total_from_lac * 100).toFixed(0) : '0';
     var results = {
-        subscriberValue: (jsondata.length > 0) ? setSettingsNumber(jsondata[0].subscribers).valueNumber : '0',
+        subscriberValue: (jsondata.length > 0) ? jsondata[0].subscribers : '0',
         porcent_total_subscriber: (jsondata.length > 0) ? (jsondata[0].porcent_total_subscribers * 100).toFixed(1) + '%' : '',
-        porcent_total_subscriber_2018: 'missing',
+        porcent_total_subscriber_2018: '100%', /** missing, se pone 100% por orden de rodrigo */
         porcent_subscriber_lac: (jsondata.length > 0) ? (jsondata[0]['porcent_total_from_lac'] * 100).toFixed(1) + '%' : ''
     }
     // console.log(results);
@@ -629,7 +629,7 @@ function subscriberIndicator2018(jsondata) {
     var results = {
         subscriberValue: (jsondata.length > 0) ? jsondata[0].subscribers : '0',
         porcent_total_subscriber: (jsondata.length > 0) ? (jsondata[0].porcent_total_subscribers * 100).toFixed(1) + '%' : '0',
-        porcent_total_subscriber_2018: 'missing',
+        porcent_total_subscriber_2018: '100%', /** missing, se pone 100% por orden de rodrigo */
         porcent_subscriber_lac: (jsondata.length > 0) ? (jsondata[0]['porcent_total_from_lac'] * 100).toFixed(1) + '%' : ''
     }
     // console.log(results);
@@ -638,13 +638,17 @@ function subscriberIndicator2018(jsondata) {
 
 function setSubscriber(dataResults) {
     // console.log(dataResults);
-    optionsUpdated = optionsAnimated("");
-    if (parseFloat(dataResults.subscriberValue) > 1000) {
-        dataResults.subscriberValue = dataResults.subscriberValue / 1000;
-        optionsUpdated = optionsAnimated("K");
-    }
+    // optionsUpdated = optionsAnimated("");
+    // if (parseFloat(dataResults.subscriberValue) > 1000) {
+    //     dataResults.subscriberValue = dataResults.subscriberValue / 1000;
+    //     optionsUpdated = optionsAnimated("K");
+    // }
     // console.log(optionsAnimation);
-    var valuepublications = new CountUp('total_subscriber', 0, dataResults.subscriberValue, 0, 1.0, optionsAnimation);
+    optionsUpdated = optionsAnimated("");
+    optionsUpdated = optionsAnimated(setSettingsNumber(dataResults.subscriberValue).suffixNumber);
+    dataPublicationsNumber = setSettingsNumber(dataResults.subscriberValue).valueNumber;
+    decimalCount = setSettingsNumber(dataResults.subscriberValue).decimalNumber;
+    var valuepublications = new CountUp('total_subscriber', 0, dataPublicationsNumber, decimalCount, 1.0, optionsUpdated);
 
     if (!valuepublications.error) {
         valuepublications.start();
@@ -677,17 +681,43 @@ function updateGaugesSubscribers() {
 
 
 function setSettingsNumber(valueNumber){
-    if (valueNumber > 1000 && valueNumber < 999999) {
-        valueNumber = (valueNumber/1000).toFixed(0);
-        suffixNumber = "K";
+    /********
+    1 - 999
+    1000 = < 99999 = 1.1 K o 99.9 K
+    100000 = < 999999 = 100 K o 999 K
+    1000000 = < 9999999 = 1.00 M o 9.99 M
+    10000000 => 10.1 M
+    *********/
+   decimalNumber = 0;
+   suffixNumber = "";
+    if (valueNumber > 0 && valueNumber <= 999) {
+        valueNumber = valueNumber;
+        suffixNumber = "";
     }
-    else if (valueNumber > 1000000) {
-        valueNumber = (valueNumber / 1000000).toFixed(0);
+    else if (valueNumber > 1000 && valueNumber <= 99999) {
+        valueNumber = (valueNumber / 1000).toFixed(1);
+        suffixNumber = "K";
+        decimalNumber = 1;
+    }
+    else if (valueNumber >= 100000 && valueNumber <= 999999) {
+        valueNumber = (valueNumber / 1000).toFixed(0);
+        suffixNumber = "K";
+        decimalNumber = "";
+    }
+    else if (valueNumber >= 1000000 && valueNumber <= 9999999) {
+        valueNumber = (valueNumber / 1000000).toFixed(2);
         suffixNumber = "M";
+        decimalNumber = 2;
+    }
+    else if (valueNumber >= 10000000) {
+        valueNumber = (valueNumber / 1000000).toFixed(1);
+        suffixNumber = "M";
+        decimalNumber = 1;
     }
     results = {
         valueNumber: valueNumber,
-        suffixNumber: suffixNumber
+        suffixNumber: suffixNumber,
+        decimalNumber: decimalNumber
     }
     return results;
 }
