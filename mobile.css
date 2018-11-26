@@ -111,38 +111,6 @@ body {
     max-width: 100%;
 }
 
-.red {
-    color: #d1415a !important;
-}
-
-.orange {
-    color: #FA2E00 !important;
-}
-
-.green {
-    color: #336577 !important;
-}
-
-.yellow {
-    color: #EEAE00 !important;
-}
-
-.purple {
-    color: #424488 !important;
-}
-
-.black {
-    color: #555555 !important;
-}
-
-.gray {
-    color: #b4b4b4 !important;
-}
-
-.white {
-    color: #ffffff !important;
-}
-
 .title-text h1 {
     font-family: "Gotham-Book";
     font-size: 2.2rem;
@@ -230,32 +198,29 @@ section.publications {
     font-family: 'Gotham-Bold';
 }
 
-section.publications .right-bar .left-zone {
-    width: 1000px;
-}
 
 section.publications .right-bar .left-zone .top-zone {
-    height: 265px;
-    padding-top: 1rem;
+  height: 265px;
+  padding-top: 1rem;
 }
 
 section.publications .right-bar .left-zone .down-zone {
-    height: 530px;
+  height: 530px;
 }
 
 section.publications .right-bar .right-zone {
-    width: 590px;
+  width: 590px;
 }
 
 section.publications .right-bar .right-zone .top-zone {
-    height: 265px;
-    padding-top: 1rem;
+  height: 265px;
+  padding-top: 1rem;
 }
 
 section.publications .left-bar h4 {
-    font-size: 18px;
-    color: white;
-    margin-bottom: 0;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 0;
 }
 
 section.publications .left-bar span:nth-child(2n) {

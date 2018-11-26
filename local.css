@@ -111,38 +111,6 @@ body {
     max-width: 100%;
 }
 
-.red {
-    color: #d1415a !important;
-}
-
-.orange {
-    color: #FA2E00 !important;
-}
-
-.green {
-    color: #336577 !important;
-}
-
-.yellow {
-    color: #EEAE00 !important;
-}
-
-.purple {
-    color: #424488 !important;
-}
-
-.black {
-    color: #555555 !important;
-}
-
-.gray {
-    color: #b4b4b4 !important;
-}
-
-.white {
-    color: #ffffff !important;
-}
-
 .title-text h1 {
     font-family: "Gotham-Book";
     font-size: 2.2rem;
@@ -246,46 +214,12 @@ section.big-numbers img {
 
 section.publications {
     font-family: 'Gotham-Bold';
-    height: 930px;
 }
 
-section.publications .right-bar {
-    height: 930px;
-}
-
-section.publications .right-bar .left-zone {
-    width: 1000px;
-}
-
-section.publications .right-bar .left-zone .top-zone {
-    height: 265px;
-    padding-top: 1rem;
-}
-
-section.publications .right-bar .left-zone .down-zone {
-    height: 530px;
-}
-
-section.publications .right-bar .right-zone {
-    width: 590px;
-}
-
-section.publications .right-bar .right-zone .top-zone {
-    height: 265px;
-    padding-top: 1rem;
-}
 
 section.publications .left-bar .gauge-1 {
-    height: 330px;
+
     padding-top: 4rem;
-}
-
-section.publications .left-bar .gauge-2 {
-    height: 300px;
-}
-
-section.publications .left-bar .gauge-3 {
-    height: 300px;
 }
 
 section.publications .left-bar {
@@ -436,31 +370,6 @@ section.publications .grid path {
     stroke-width: 0;
 }
 
-section.moocs {
-    /* height: 930px; */
-}
-
-section.moocs .right-bar {
-    /* height: 930px; */
-}
-
-section.moocs .left-bar {
-    text-align: center;
-}
-
-section.moocs .left-bar .gauge-1 {
-    height: 330px;
-    padding-top: 4rem;
-}
-
-section.moocs .left-bar .gauge-2 {
-    height: 300px;
-}
-
-section.moocs .left-bar .gauge-3 {
-    height: 300px;
-}
-
 section.moocs .left-bar h4 {
     font-size: 18px;
     color: white;
@@ -593,34 +502,12 @@ section.moocs [id^="student"] .y-data {
 
 section.datasets {
     font-family: 'Gotham-Bold';
-    /* height: 930px; */
-}
-
-section.datasets .right-bar {
-    height: 930px;
-}
-
-section.datasets .left-bar {
-    text-align: center;
 }
 
 section.datasets .left-bar h4 {
     font-size: 18px;
     color: white;
     margin-bottom: 0;
-}
-
-section.datasets .left-bar .gauge-1 {
-    height: 330px;
-    padding-top: 4rem;
-}
-
-section.datasets .left-bar .gauge-2 {
-    height: 300px;
-}
-
-section.datasets .left-bar .gauge-3 {
-    height: 300px;
 }
 
 section.datasets .left-bar span:nth-child(2n) {
@@ -737,31 +624,6 @@ section.datasets #timeline-dataset .y-axis .tick line {
     display: none;
 }
 
-section.code {
-    height: 930px;
-}
-
-section.code .left-bar .gauge-1 {
-    height: 330px;
-    padding-top: 4rem;
-}
-
-section.code .left-bar .gauge-2 {
-    height: 300px;
-}
-
-section.code .left-bar .gauge-3 {
-    height: 300px;
-}
-
-section.code .right-bar {
-    height: 930px;
-}
-
-section.code .left-bar {
-    text-align: center;
-}
-
 section.code .funds-allocated-meter .background {
     fill: #A17603;
 }
@@ -792,10 +654,6 @@ section.code .left-bar span:nth-child(2n) {
 section.code .left-bar span:nth-child(2n+1) {
     color: #A17603;
     font-size: 10px;
-}
-
-section.code .right-bar .left-zone {
-    width: 1000px;
 }
 
 section.code .right-bar .left-zone .top-zone {
@@ -872,34 +730,21 @@ section.code .line {
 }
 
 section.code .grid line {
-    stroke: lightgrey;
-    stroke-opacity: 0.7;
-    shape-rendering: crispEdges;
+  stroke: lightgrey;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges;
 }
 
 section.code .grid path {
-    stroke-width: 0;
+  stroke-width: 0;
 }
 
 section.suscribers {
-    /* height: 930px; */
-    font-family: 'Gotham-Bold';
-}
-
-section.suscribers .right-bar {
-    /* height: 930px; */
+  font-family: 'Gotham-Bold';
 }
 
 section.suscribers .right-bar .left-zone {
-    width: 940px;
-}
-
-section.suscribers .right-bar .left-zone .top-zone {
-    /* height: 285px; */
-}
-
-section.suscribers .right-bar .left-zone .down-zone {
-    /* height: 540px; */
+  width: 940px;
 }
 
 section.suscribers .right-bar .right-zone {
@@ -907,26 +752,17 @@ section.suscribers .right-bar .right-zone {
 }
 
 section.suscribers .right-bar .right-zone .top-zone {
-    /* height: 285px; */
     padding-top: 1rem;
 }
 
 section.suscribers .left-bar {
-    text-align: center;
+  text-align: center;
 }
 
 section.suscribers .left-bar .gauge-1 {
-    height: 330px;
-    padding-top: 4rem;
+  padding-top: 4rem;
 }
 
-section.suscribers .left-bar .gauge-2 {
-    height: 300px;
-}
-
-section.suscribers .left-bar .gauge-3 {
-    height: 300px;
-}
 
 section.suscribers .left-bar h4 {
     font-size: 18px;
@@ -1023,8 +859,6 @@ section.map .stylish-input-group button {
 
 section.map .side-filter {
     width: 100%;
-    /*height: 60px;*/
-    /*background-color: antiquewhite;*/
     border-bottom: 2px solid #000;
     margin-bottom: 10px;
     padding: 5px;
@@ -1035,7 +869,6 @@ section.map .side-filter {
 
 section.map #drop-products {
     color: #c42a48;
-    /*color: rgb(173, 53, 75);*/
 }
 
 section.map #totales {
@@ -1089,7 +922,6 @@ section.map html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 section.map select.form-control:not([size]):not([multiple]) {
-    /*height: calc(1.80rem + 2px);*/
     -webkit-appearance: none;
     -moz-appearance: none;
     background-position: right 50%;
