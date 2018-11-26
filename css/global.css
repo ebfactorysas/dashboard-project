@@ -2,6 +2,11 @@
   text-align: center;
   width: 100%; }
 
+.left-bar .gauge-1,
+.left-bar .gauge-2,
+.left-bar .gauge-3 {
+  padding: 20px 0; }
+
 @media (min-width: 540px) {
   .left-bar {
     font-size: 0; }
@@ -31,7 +36,8 @@
   .left-bar .gauge-1,
   .left-bar .gauge-2,
   .left-bar .gauge-3 {
-    width: 100%; }
+    width: 100%;
+    padding: 0; }
   section.publications .left-bar .gauge-1 {
     padding-top: 4rem; } }
 
@@ -41,12 +47,20 @@
 
 .menu ul {
   margin: 0;
-  padding: 0;
-  font-size: 0; }
+  padding: 10px 0 !important;
+  font-size: 0;
+  position: relative;
+  padding-top: 55px !important;
+  min-height: 45px;
+  font-family: 'Gotham-Bold';
+  color: #b4b4b4;
+  font-size: 20px;
+  z-index: 2; }
   @media (min-width: 960px) {
     .menu ul {
       display: -ms-flexbox !important;
-      display: flex !important; } }
+      display: flex !important;
+      padding: 10px 0 !important; } }
   .menu ul li {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -67,10 +81,22 @@
     display: none; }
     @media (min-width: 960px) {
       .menu ul li {
-        display: inline-block; } }
-    .menu ul li:first-child {
-      display: inline-block; }
-      .menu ul li:first-child:after {
+        display: inline-block;
+        border: 0;
+        -ms-flex: auto;
+        flex: auto; } }
+    .menu ul li.first {
+      position: absolute;
+      top: 10px;
+      left: 0;
+      display: inline-block;
+      border: 0; }
+      @media (min-width: 960px) {
+        .menu ul li.first {
+          position: relative;
+          top: inherit;
+          left: inherit; } }
+      .menu ul li.first:after {
         content: "";
         width: 0;
         height: 0;
@@ -81,15 +107,18 @@
         right: 10px;
         top: 18px; }
         @media (min-width: 960px) {
-          .menu ul li:first-child:after {
+          .menu ul li.first:after {
             display: none; } }
-    .menu ul li:hover {
-      background: #f1f1f1; }
-    @media (min-width: 960px) {
-      .menu ul li {
-        border: 0;
-        -ms-flex: auto;
-        flex: auto; } }
+  .menu ul.open li {
+    display: inline-block; }
+    .menu ul.open li.first {
+      border-bottom: 1px solid #f1f1f1; }
+      @media (min-width: 960px) {
+        .menu ul.open li.first {
+          border: 0; } }
+      .menu ul.open li.first:after {
+        border-width: 0 8px 13px 8px;
+        border-color: transparent transparent #000 transparent; }
 
 .container_radio.blue {
   display: block;

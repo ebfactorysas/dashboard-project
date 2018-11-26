@@ -230,20 +230,6 @@ section.big-numbers img {
     max-width: 55px;
 }
 
-section.menu {
-    font-family: 'Gotham-Bold';
-    color: #b4b4b4;
-    font-size: 20px;
-}
-
-section.menu ul {
-    margin: 0;
-}
-
-section.menu ul li {
-    margin: 0;
-}
-
 section.publications {
     font-family: 'Gotham-Bold';
     height: 930px;
@@ -446,8 +432,6 @@ section.moocs .right-bar {
 
 section.moocs .left-bar {
     text-align: center;
-    /* height: 930px; */
-    width: 250px;
 }
 
 section.moocs .left-bar .gauge-1 {
