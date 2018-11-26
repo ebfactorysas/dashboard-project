@@ -57,6 +57,9 @@ $("#deparmentSelect").on('change', function () {
     d3.select("#gauge-2018 svg").remove();
     updateGaugesPublications();
     updateGaugesMoocs();
+    updateGaugesDatasets();
+    updateGaugesCode();
+    updateGaugesSubscribers();
 });
 $("#divisionSelect").on('change', function () {
     // console.log(this.value);
@@ -85,7 +88,9 @@ $("#divisionSelect").on('change', function () {
     d3.select("#gauge-2018 svg").remove();
     updateGaugesPublications();
     updateGaugesMoocs();
-    
+    updateGaugesDatasets();
+    updateGaugesCode();
+    updateGaugesSubscribers();
 });
 $('#idbLink').click(function () {
     $("#deparmentSelect").value = "";
@@ -113,7 +118,9 @@ $('#idbLink').click(function () {
     d3.select("#gauge-2018 svg").remove();
     updateGaugesPublications();
     updateGaugesMoocs();
-    
+    updateGaugesDatasets();
+    updateGaugesCode();
+    updateGaugesSubscribers();
 });
 
 function initIndicators(filterselect, valueFilter) {
@@ -489,7 +496,7 @@ function setDataDatasets(dataResults) {
 function updateGaugesDatasets() {
     var dataGaugeDatasets = {
         "code": {
-            "total": (datasetsAllTotalGlobal > 0) ? ((datasetsdatasetsAllTotalGlobalAllDownloads > 100) ? 1000 : 100) : 100,
+            "total": (datasetsAllTotalGlobal > 0) ? ((datasetsAllTotalGlobal > 100) ? 1000 : 100) : 100,
             "allocated": datasetsAllTotalGlobal
         },
         "pageview": {
@@ -512,10 +519,14 @@ function updateGaugesDatasets() {
  */
 function codeIndicatorAlltime(jsondata) {
     codeAllTotalGlobal = (jsondata.length > 0) ? jsondata[0].all_the_time_code : '0';
+    codeAllDownloads = (jsondata.length > 0) ? jsondata[0].all_the_time_pageviews : '0';
+    codeAllDownloads = setSettingsNumber(codeAllDownloads).valueNumber;
+    codeAllDownloadsLac = (jsondata.length > 0) ? (jsondata[0].porcent_total_lac * 100).toFixed(0) : '0';
+    // codeAllTotalGlobal = (jsondata.length > 0) ? jsondata[0].all_the_time_code : '0';
     // console.log(jsondata);
     var results = {
-        codeValue: codeAllTotalGlobal,
-        porcent_total_publications: (jsondata.length > 0) ? jsondata[0].porcent_total_code : '0',
+        codeValue: (jsondata.length > 0) ? jsondata[0].all_the_time_code : '0',
+        porcent_total_publications: (jsondata.length > 0) ? (jsondata[0]['porcent_total_code'] * 100).toFixed(1) + '%' : '',
         compare2017_2018_publications: 'Missing',
         downloadsValue: (jsondata.length > 0) ? jsondata[0]['all_the_time_pageviews'] : '0',
         porcent_total_downloads: (jsondata.length > 0) ? (jsondata[0].all_the_time_porcent_total_pageviews * 100).toFixed(1) : '0',
@@ -576,6 +587,23 @@ function setCode(dataResults) {
     $('#code_downloads_porcent').text(dataResults.porcent_total_downloads);
     $('#code_downloads_lac').text(dataResults.porcent_downloads_lac);
 }
+function updateGaugesCode() {
+    var dataGaugeCode = {
+        "code": {
+            "total": (codeAllTotalGlobal > 0) ? ((codeAllTotalGlobal > 100) ? 1000 : 100) : 100,
+            "allocated": codeAllTotalGlobal
+        },
+        "pageview": {
+            "total": (codeAllDownloads > 0) ? ((codeAllDownloads > 100) ? 1000 : 100) : 100,
+            "allocated": codeAllDownloads
+        },
+        "lac": {
+            "total": (codeAllDownloadsLac > 0) ? ((codeAllDownloadsLac > 100) ? 1000 : 100) : 100,
+            "allocated": codeAllDownloadsLac
+        }
+    }
+    drawGaugeCodeChart(dataGaugeCode);
+}
 
 
 /**
@@ -583,8 +611,12 @@ function setCode(dataResults) {
  */
 function subscriberIndicatorAlltime(jsondata) {
     // console.log(jsondata);
+    subscribersAllTotalGlobal = (jsondata.length > 0) ? setSettingsNumber(jsondata[0].subscribers).valueNumber : '0';
+    subscribersAllDownloads = (jsondata.length > 0) ? jsondata[0].lac_subscribers : '0';
+    subscribersAllDownloads = setSettingsNumber(subscribersAllDownloads).valueNumber;
+    subscribersAllDownloadsLac = (jsondata.length > 0) ? (jsondata[0].porcent_total_from_lac * 100).toFixed(0) : '0';
     var results = {
-        subscriberValue: (jsondata.length > 0) ? jsondata[0].subscribers : '0',
+        subscriberValue: (jsondata.length > 0) ? setSettingsNumber(jsondata[0].subscribers).valueNumber : '0',
         porcent_total_subscriber: (jsondata.length > 0) ? (jsondata[0].porcent_total_subscribers * 100).toFixed(1) + '%' : '',
         porcent_total_subscriber_2018: 'missing',
         porcent_subscriber_lac: (jsondata.length > 0) ? (jsondata[0]['porcent_total_from_lac'] * 100).toFixed(1) + '%' : ''
@@ -625,13 +657,31 @@ function setSubscriber(dataResults) {
     $('#porcent_lac').text(dataResults.porcent_subscriber_lac);
 }
 
+function updateGaugesSubscribers() {
+    var dataGaugeSubscribers = {
+        "code": {
+            "total": (subscribersAllTotalGlobal > 0) ? ((subscribersAllTotalGlobal > 100) ? 1000 : 100) : 100,
+            "allocated": subscribersAllTotalGlobal
+        },
+        "pageview": {
+            "total": (subscribersAllDownloads > 0) ? ((subscribersAllDownloads > 100) ? 1000 : 100) : 100,
+            "allocated": subscribersAllDownloads
+        },
+        "lac": {
+            "total": (subscribersAllDownloadsLac > 0) ? ((subscribersAllDownloadsLac > 100) ? 1000 : 100) : 100,
+            "allocated": subscribersAllDownloadsLac
+        }
+    }
+    drawGaugeSubscribersChart(dataGaugeSubscribers);
+}
+
 
 function setSettingsNumber(valueNumber){
-    if (valueNumber > 1000 && valueNumber < 100000) {
+    if (valueNumber > 1000 && valueNumber < 999999) {
         valueNumber = (valueNumber/1000).toFixed(0);
         suffixNumber = "K";
     }
-    else if (valueNumber > 1000000) {
+    else if (valueNumber > 100000) {
         valueNumber = (valueNumber / 1000000).toFixed(0);
         suffixNumber = "M";
     }

@@ -364,24 +364,38 @@ function drawTree(dataTree) {
  * Start Gauges
  */
 
-var dataGauge = {
+// var dataGauge = {
+//     "code": {
+//         "total": 100,
+//         "allocated": 76
+//     },
+//     "pageview": {
+//         "total": 1000,
+//         "allocated": 113
+//     },
+//     "lac": {
+//         "total": 100,
+//         "allocated": 9
+//     }
+// }
+var dataGaugeSubscribers = {
     "code": {
-        "total": 100,
-        "allocated": 76
+        "total": (subscribersAllTotalGlobal > 0) ? ((subscribersAllTotalGlobal > 100) ? 1000 : 100) : 100,
+        "allocated": subscribersAllTotalGlobal
     },
     "pageview": {
-        "total": 1000,
-        "allocated": 113
+        "total": (subscribersAllDownloads > 0) ? ((subscribersAllDownloads > 100) ? 1000 : 100) : 100,
+        "allocated": subscribersAllDownloads
     },
     "lac": {
-        "total": 100,
-        "allocated": 9
+        "total": (subscribersAllDownloadsLac > 0) ? ((subscribersAllDownloadsLac > 100) ? 1000 : 100) : 100,
+        "allocated": subscribersAllDownloadsLac
     }
 }
+drawGaugeSubscribersChart(dataGaugeSubscribers);
 
-drawGaugeDatasetChart(dataGauge)
 
-function drawGaugeDatasetChart(dataGauge) {
+function drawGaugeSubscribersChart(dataGauge) {
     var width = 150,
         height = 150,
         progress = 0,
@@ -530,7 +544,14 @@ function orderTopDataSuscribers(data) {
 
 
 
-function drawSuscribersChart(dataSet) {
+function drawSuscribersChart(data) {
+
+
+    dataSet = data.sort(function (a, b) {
+        return d3.ascending(a.value, b.value);
+    });
+
+    dataSet = dataSet.slice(0,6);
 
     var marginSuscriber = {
         top: 15,
@@ -540,8 +561,7 @@ function drawSuscribersChart(dataSet) {
     };
 
     var widthSuscriber = 560 - marginSuscriber.left - marginSuscriber.right,
-        heightSuscriber = 400 - marginSuscriber.top - marginSuscriber.bottom;
-
+        heightSuscriber = 250 - marginSuscriber.top - marginSuscriber.bottom;
 
     var svgSuscribers = d3.select("#suscribers-interested").append("svg")
         .attr("width", widthSuscriber + marginSuscriber.left + marginSuscriber.right)

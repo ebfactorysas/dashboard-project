@@ -490,7 +490,7 @@ function createChartTimeLineDataSet(data) {
 // }
 var dataGaugeDatasets = {
     "code": {
-        "total": (datasetsAllTotalGlobal > 0) ? ((datasetsdatasetsAllTotalGlobalAllDownloads > 100) ? 1000 : 100) : 100,
+        "total": (datasetsAllTotalGlobal > 0) ? ((datasetsAllTotalGlobal > 100) ? 1000 : 100) : 100,
         "allocated": datasetsAllTotalGlobal
     },
     "pageview": {
