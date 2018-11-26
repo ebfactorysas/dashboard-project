@@ -123,8 +123,6 @@ function drawDistributionChart(dataDistribution) {
         .attr("font-size", "10px");
 
 }
-
-
 /**
  * End distribution-moocs
  *  */
@@ -133,11 +131,6 @@ function drawDistributionChart(dataDistribution) {
 /**
  * Start registration-moocs
  */
-
-
-
-
-
 drawMoocsRegistrationsChart(topAllMoocs);
 
 function drawMoocsRegistrationsChart(dataMoocs) {
@@ -230,8 +223,6 @@ function drawMoocsRegistrationsChart(dataMoocs) {
             return d.name;
         });
 }
-
-
 /**
  * End registration-moocs
  */
@@ -249,7 +240,6 @@ var widthStudents = 80 - marginStudents.left - marginStudents.right,
 /**
  * Start student-registrations-moocs
  */
-
 drawStudentRegistrationsChart(moocsStudentsFlowArrays.studentsFlowIDB);
 
 function drawStudentRegistrationsChart(dataStudents) {
@@ -321,8 +311,6 @@ function drawStudentRegistrationsChart(dataStudents) {
             return d.value < 1000 ? d.value : (Math.round(d.value / 1000).toFixed(0)) + "K";
         });
 }
-
-
 /**
  * End student-registrations-moocs
  */
@@ -402,8 +390,6 @@ function drawStudentParticipantsChart(dataStudents) {
             return d.value < 1000 ? d.value : (Math.round(d.value / 1000).toFixed(0)) + "K";
         });
 }
-
-
 /**
  * End student-participants-moocs
  */
@@ -564,8 +550,6 @@ function drawStudentCertifiedsChart(dataStudents) {
             return d.value < 1000 ? d.value : (Math.round(d.value / 1000).toFixed(0)) + "K";
         });
 }
-
-
 /**
  * End student-certified-moocs
  */

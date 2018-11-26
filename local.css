@@ -884,12 +884,12 @@ section.code .grid path {
 }
 
 section.suscribers {
-    height: 930px;
+    /* height: 930px; */
     font-family: 'Gotham-Bold';
 }
 
 section.suscribers .right-bar {
-    height: 930px;
+    /* height: 930px; */
 }
 
 section.suscribers .right-bar .left-zone {
