@@ -70,7 +70,7 @@ var dataTree = {
     }]
 }
 
-// var dataGauge = {
+// var dataGaugeCode = {
 //     "code": {
 //         "total": 100,
 //         "allocated": 76
@@ -84,17 +84,19 @@ var dataTree = {
 //         "allocated": 9
 //     }
 // }
+
+
 var dataGaugeCode = {
     "code": {
-        "total": (codeAllTotalGlobal > 0) ? ((codeAllTotalGlobal > 100) ? 1000 : 100) : 100,
+        "total": getPercentageTotal(codeAllTotalGlobal),
         "allocated": codeAllTotalGlobal
     },
     "pageview": {
-        "total": (codeAllDownloads > 0) ? ((codeAllDownloads > 100) ? 1000 : 100) : 100,
+        "total": getPercentageTotal(codeAllDownloads),
         "allocated": codeAllDownloads
     },
     "lac": {
-        "total": (codeAllDownloadsLac > 0) ? ((codeAllDownloadsLac > 100) ? 1000 : 100) : 100,
+        "total": 100,
         "allocated": codeAllDownloadsLac
     }
 }
@@ -635,7 +637,7 @@ function drawGaugeCodeChart(dataGauge) {
         .attr("text-anchor", "middle")
         .attr("class", "percent-complete")
         .attr("dy", "0.3em")
-        .text(dataGauge.code.allocated);
+        .text(setSettingsNumber(dataGauge.code.allocated).valueNumber + setSettingsNumber(dataGauge.code.allocated).suffixNumber);
 
 
     var i = d3.interpolate(progress, dataGauge.code.allocated / dataGauge.code.total);
@@ -667,7 +669,7 @@ function drawGaugeCodeChart(dataGauge) {
         .attr("text-anchor", "middle")
         .attr("class", "percent-complete")
         .attr("dy", "0.3em")
-        .text(dataGauge.pageview.allocated + "k");
+        .text(setSettingsNumber(dataGauge.pageview.allocated).valueNumber + setSettingsNumber(dataGauge.pageview.allocated).suffixNumber);
 
 
     var i2 = d3.interpolate(progress2, dataGauge.pageview.allocated / dataGauge.pageview.total);

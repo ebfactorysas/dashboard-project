@@ -766,13 +766,14 @@ function createChart(data) {
 //         "allocated": 9
 //     }
 // }
+
 var dataGaugeMoocs = {
     "code": {
-        "total": (moocsAllTotalGlobal > 0) ? ((moocsAllTotalGlobal > 100) ? 1000 : 100) : 100,
+        "total": getPercentageTotal(moocsAllTotalGlobal),
         "allocated": moocsAllTotalGlobal
     },
     "pageview": {
-        "total": (moocsAllDownloads > 0) ? ((moocsAllDownloads > 100) ? 1000 : 100) : 100,
+        "total": getPercentageTotal(moocsAllDownloads),
         "allocated": moocsAllDownloads
     },
     "lac": {
@@ -817,7 +818,7 @@ function drawGaugeMoocsChart(dataGauge) {
         .attr("text-anchor", "middle")
         .attr("class", "percent-complete")
         .attr("dy", "0.3em")
-        .text((dataGauge.code.allocated));
+        .text(setSettingsNumber(dataGauge.code.allocated).valueNumber + setSettingsNumber(dataGauge.code.allocated).suffixNumber);
 
 
     var i = d3.interpolate(progress, dataGauge.code.allocated / dataGauge.code.total);
@@ -849,7 +850,7 @@ function drawGaugeMoocsChart(dataGauge) {
         .attr("text-anchor", "middle")
         .attr("class", "percent-complete")
         .attr("dy", "0.3em")
-        .text((dataGauge.pageview.allocated + "k"));
+        .text(setSettingsNumber(dataGauge.pageview.allocated).valueNumber + setSettingsNumber(dataGauge.pageview.allocated).suffixNumber);
 
 
     var i2 = d3.interpolate(progress2, dataGauge.pageview.allocated / dataGauge.pageview.total);
@@ -881,7 +882,8 @@ function drawGaugeMoocsChart(dataGauge) {
         .attr("text-anchor", "middle")
         .attr("class", "percent-complete")
         .attr("dy", "0.3em")
-    percentComplete3.text((dataGauge.lac.allocated + "%"));
+    /*percentComplete3.text((dataGauge.lac.allocated + "%"));*/
+    .text(setSettingsNumber(dataGauge.lac.allocated).valueNumber + setSettingsNumber(dataGauge.lac.allocated).suffixNumber);
 
 
     var i3 = d3.interpolate(progress3, dataGauge.lac.allocated / dataGauge.lac.total);

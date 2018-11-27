@@ -488,21 +488,21 @@ function createChartTimeLineDataSet(data) {
 //         "allocated": 9
 //     }
 // }
+
 var dataGaugeDatasets = {
     "code": {
-        "total": (datasetsAllTotalGlobal > 0) ? ((datasetsAllTotalGlobal > 100) ? 1000 : 100) : 100,
+        "total": getPercentageTotal(datasetsAllTotalGlobal),
         "allocated": datasetsAllTotalGlobal
     },
     "pageview": {
-        "total": (datasetsAllDownloads > 0) ? ((datasetsAllDownloads > 100) ? 1000 : 100) : 100,
+        "total": getPercentageTotal(datasetsAllDownloads),
         "allocated": datasetsAllDownloads
     },
     "lac": {
-        "total": (datasetsAllDownloadsLac > 0) ? ((datasetsAllDownloadsLac > 100) ? 1000 : 100) : 100,
+        "total": 100,
         "allocated": datasetsAllDownloadsLac
     }
 }
-
 drawGaugeDatasetChart(dataGaugeDatasets)
 
 function drawGaugeDatasetChart(dataGauge) {
@@ -539,7 +539,8 @@ function drawGaugeDatasetChart(dataGauge) {
         .attr("text-anchor", "middle")
         .attr("class", "percent-complete")
         .attr("dy", "0.3em")
-        .text(dataGauge.code.allocated);;
+        .text(setSettingsNumber(dataGauge.code.allocated).valueNumber + setSettingsNumber(dataGauge.code.allocated).suffixNumber);
+        
 
 
     var i = d3.interpolate(progress, dataGauge.code.allocated / dataGauge.code.total);
@@ -571,7 +572,7 @@ function drawGaugeDatasetChart(dataGauge) {
         .attr("text-anchor", "middle")
         .attr("class", "percent-complete")
         .attr("dy", "0.3em")
-        .text(dataGauge.pageview.allocated + "k");;
+        .text(setSettingsNumber(dataGauge.pageview.allocated).valueNumber + setSettingsNumber(dataGauge.pageview.allocated).suffixNumber);
 
 
     var i2 = d3.interpolate(progress2, dataGauge.pageview.allocated / dataGauge.pageview.total);

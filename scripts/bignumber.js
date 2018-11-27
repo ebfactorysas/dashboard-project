@@ -32,7 +32,7 @@ initIndicators(filterselect, valueFilter);
 
 $("#deparmentSelect").on('change', function () {
     // console.log(this.value);
-    mainReset();
+    // mainReset();
     initIndicators('departments', this.value);
     $("#divisionSelect").value = "";
     $('#blueAllTime').click();
@@ -64,7 +64,7 @@ $("#deparmentSelect").on('change', function () {
 $("#divisionSelect").on('change', function () {
     // console.log(this.value);
     $("#deparmentSelect").value = "";
-    mainReset();
+    // mainReset();
     initIndicators('divisions', this.value);
     $('#blueAllTime').click();
     d3.select("#gauge-publications svg").remove();
@@ -139,7 +139,7 @@ function initIndicators(filterselect, valueFilter) {
             return data.department_codes == valueFilter
         });
         jsondataSubscriber = subscribersArray.subscribersDepartments.filter(function (data) {
-            return  data.department == valueFilter
+            return data.deparment_code == valueFilter
         });
     } else if (filterselect == "divisions") {
         jsondataPublications = bnPublicationsArrays.publicationsDivisions.filter(function (data) {
@@ -155,7 +155,7 @@ function initIndicators(filterselect, valueFilter) {
             return  data.division_codes == valueFilter
         });
         jsondataSubscriber = subscribersArray.subscribersDivisions.filter(function (data) {
-            return  data.divisions == valueFilter
+            return data.Divisions == valueFilter
         });
     } else {
         jsondataPublications = bnPublicationsArrays.publicationsIDB;
@@ -194,14 +194,14 @@ $("input[name*='blueTrend']").click(function () {
         dataResultsSubscriber = subscriberIndicator2018(jsondataSubscriber);
     }
     
-    console.log(jsondataPublications);
-    console.log(dataResultsPublications);
+    // console.log(jsondataPublications);
+    // console.log(dataResultsPublications);
     setDataMain(dataResultsPublications, dataResultsMoocs, dataResultsDatasets, dataResultsCode, dataResultsSubscriber);
 });
 
 // publicationsValue = (jsondata.length > 0) ? jsondata[0].all_the_time_publications : '';
 function setDataMain(dataResultsPublications, dataResultsMoocs, dataResultsDatasets, dataResultsCode, dataResultsSubscriber) {
-    mainReset();
+    // mainReset();
     setDataPublications(dataResultsPublications);
     setDataMoocs(dataResultsMoocs);
     setDataDatasets(dataResultsDatasets);
@@ -209,12 +209,12 @@ function setDataMain(dataResultsPublications, dataResultsMoocs, dataResultsDatas
     setSubscriber(dataResultsSubscriber);
 }
 
-function mainReset() {
-    var valuepublications = new CountUp('valuepublications', 0, 0, 0, 1.0, optionsAnimation);
-    valuepublications.reset();
-    var publications_downloads = new CountUp('publications_downloads', 0, 0, 0, 1.0, optionsAnimation);
-    publications_downloads.reset();
-}
+// function mainReset() {
+//     var valuepublications = new CountUp('valuepublications', 0, 0, 0, 1.0, optionsAnimation);
+//     valuepublications.reset();
+//     var publications_downloads = new CountUp('publications_downloads', 0, 0, 0, 1.0, optionsAnimation);
+//     publications_downloads.reset();
+// }
 
 
 
@@ -244,12 +244,10 @@ function optionsAnimated(suffixValue) {
  */
 function publicationsIndicatorAlltime(jsondata){
     publicationsAllTotalGlobal = (jsondataPublications.length > 0) ? jsondataPublications[0].all_the_time_publications : '0';
-    publicationsAllTotalGlobal = setSettingsNumber(publicationsAllTotalGlobal).valueNumber;
     publications2018TotalRest = (jsondataPublications.length > 0) ? jsondataPublications[0].all_the_time_LAC_downloads : '0';
     publications2018TotalRest = setSettingsNumber(publications2018TotalRest).valueNumber;
 
     publicationsAllDownloads = (jsondataPublications.length > 0) ? jsondataPublications[0].all_the_time_downloads : '0';
-    publicationsAllDownloads = setSettingsNumber(publicationsAllDownloads).valueNumber;
     publicationsAllDownloadsLac = (jsondataPublications.length > 0) ? (jsondata[0].all_the_time_porcent_total_LAC_downloads * 100).toFixed(0) : '0';
     // console.log(setSettingsNumber(publications2018TotalRest).suffixNumber);
     // $('#gauge-publications .percent-complete').append(setSettingsNumber(publications2018TotalRest).suffixNumber);
@@ -426,7 +424,7 @@ function datasetsIndicatorAlltime(jsondata) {
     
     datasetsAllTotalGlobal = (jsondata.length > 0) ? jsondata[0].all_the_time_datasets : '0';
     datasetsAllDownloads = (jsondata.length > 0) ? jsondata[0].all_the_time_downloads : '0';
-    datasetsAllDownloads = setSettingsNumber(datasetsAllDownloads).valueNumber;
+    
     datasetsAllDownloadsLac = (jsondata.length > 0) ? (jsondata[0].all_the_time_porcent_total_lac_downloads * 100).toFixed(0) : '0';
     var results = {
         datasetsValue: (jsondata.length > 0) ? jsondata[0].all_the_time_datasets : '0',
@@ -523,7 +521,6 @@ function updateGaugesDatasets() {
 function codeIndicatorAlltime(jsondata) {
     codeAllTotalGlobal = (jsondata.length > 0) ? jsondata[0].all_the_time_code : '0';
     codeAllDownloads = (jsondata.length > 0) ? jsondata[0].all_the_time_pageviews : '0';
-    codeAllDownloads = setSettingsNumber(codeAllDownloads).valueNumber;
     codeAllDownloadsLac = (jsondata.length > 0) ? (jsondata[0].porcent_total_lac * 100).toFixed(0) : '0';
     // codeAllTotalGlobal = (jsondata.length > 0) ? jsondata[0].all_the_time_code : '0';
     // console.log(jsondata);
@@ -611,9 +608,8 @@ function updateGaugesCode() {
  */
 function subscriberIndicatorAlltime(jsondata) {
     // console.log(jsondata);
-    subscribersAllTotalGlobal = (jsondata.length > 0) ? setSettingsNumber(jsondata[0].subscribers).valueNumber : '0';
+    subscribersAllTotalGlobal = (jsondata.length > 0) ? jsondata[0].subscribers : '0';
     subscribersAllDownloads = (jsondata.length > 0) ? jsondata[0].lac_subscribers : '0';
-    subscribersAllDownloads = setSettingsNumber(subscribersAllDownloads).valueNumber;
     subscribersAllDownloadsLac = (jsondata.length > 0) ? (jsondata[0].porcent_total_from_lac * 100).toFixed(0) : '0';
     var results = {
         subscriberValue: (jsondata.length > 0) ? jsondata[0].subscribers : '0',
@@ -720,4 +716,21 @@ function setSettingsNumber(valueNumber){
         decimalNumber: decimalNumber
     }
     return results;
+}
+
+function getPercentageTotal(value) {
+    if (setSettingsNumber(value).suffixNumber == "") {
+        gaugeTotalPercentage = 100;
+    } else if (setSettingsNumber(value).suffixNumber == "K") {
+        gaugeTotalPercentage = 1000000;
+    } else if (setSettingsNumber(value).suffixNumber == "M") {
+        if (value < 10000000) {
+            gaugeTotalPercentage = 10000000;
+        } else if (parseFloat(setSettingsNumber(value).valueNumber) < 20000000) {
+            gaugeTotalPercentage = 20000000;
+        } else if (parseFloat(setSettingsNumber(value).valueNumber) < 30000000) {
+            gaugeTotalPercentage = 30000000;
+        }
+    }
+    return gaugeTotalPercentage;
 }
