@@ -1032,85 +1032,49 @@ var datasetsDownloadSource = {
         }
     ],
     downloadSourceIDB: [{
-            "json_featuretype": "NewFeatureType",
-            "All the time downloads ": "5",
-            "2018 downloads": 0,
-            "2018 % total downloads ": "0",
-            "All the time % total of downloads  ": "0.000102117925780692",
-            "Download Source": "Bing",
-            "xlsx_row_id": 2
+            "valueAllTheTime": 5,
+            "value2018": 0,
+            "name": "Bing"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "All the time downloads ": "36",
-            "2018 downloads": 26,
-            "2018 % total downloads ": "0.00528240552620886",
-            "All the time % total of downloads  ": "0.000735249065620979",
-            "Download Source": "Facebook",
-            "xlsx_row_id": 3
+            "valueAllTheTime": 36,
+            "value2018": 26,
+            "name": "Facebook"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "All the time downloads ": "550",
-            "2018 downloads": 132,
-            "2018 % total downloads ": "0.0268183665176757",
-            "All the time % total of downloads  ": "0.0112329718358761",
-            "Download Source": "Google",
-            "xlsx_row_id": 4
+            "valueAllTheTime": 550,
+            "value2018": 132,
+            "name": "Google"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "All the time downloads ": "4813",
-            "2018 downloads": 49,
-            "2018 % total downloads ": "0.00995530272247054",
-            "All the time % total of downloads  ": "0.0982987153564937",
-            "Download Source": "IDB Landing Page",
-            "xlsx_row_id": 5
+            "valueAllTheTime": 4813,
+            "value2018": 49,
+            "name": "IDB Landing Page"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "All the time downloads ": "23728",
-            "2018 downloads": 4424,
-            "2018 % total downloads ": "0.898821617228769",
-            "All the time % total of downloads  ": "0.48461082858485",
-            "Download Source": "IDB Publications",
-            "xlsx_row_id": 6
+            "valueAllTheTime": 23728,
+            "value2018": 4424,
+            "name": "IDB Publications"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "All the time downloads ": "527",
-            "2018 downloads": 17,
-            "2018 % total downloads ": "0.00345388053636733",
-            "All the time % total of downloads  ": "0.0107632293772849",
-            "Download Source": "IDB RES",
-            "xlsx_row_id": 7
+            "valueAllTheTime": 527,
+            "value2018": 17,
+            "name": "IDB RES"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "All the time downloads ": "1",
-            "2018 downloads": 0,
-            "2018 % total downloads ": "0",
-            "All the time % total of downloads  ": "2.04235851561383e-5",
-            "Download Source": "LinkedIn",
-            "xlsx_row_id": 8
+            "valueAllTheTime": 1,
+            "value2018": 0,
+            "name": "LinkedIn"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "All the time downloads ": "19294",
-            "2018 downloads": 274,
-            "2018 % total downloads ": "0.0556684274685087",
-            "All the time % total of downloads  ": "0.394052652002533",
-            "Download Source": "Others",
-            "xlsx_row_id": 9
+            "valueAllTheTime": 19294,
+            "value2018": 274,
+            "name": "Others"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "All the time downloads ": "9",
-            "2018 downloads": 0,
-            "2018 % total downloads ": "0",
-            "All the time % total of downloads  ": "0.000183812266405245",
-            "Download Source": "Twitter",
-            "xlsx_row_id": 10
+            "valueAllTheTime": 9,
+            "value2018": 0,
+            "name": "Twitter"
         }
     ]
 };

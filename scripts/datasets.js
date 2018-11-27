@@ -1,7 +1,3 @@
-/**
- * Start data-trend
- *  */
-
 function drawDataTrendChart(dataDataTrend) {
     dataDataTrend = dataDataTrend.sort(function (a, b) {
         return d3.ascending(a.value, b.value);
@@ -118,182 +114,31 @@ function wrapData(text) {
     });
 }
 
-/**
- * End data-trend
- *  */
-
-
-/**
- * Start tree
- *  */
-
-var dataTree = {
-    "name": "flare",
-    "children": [{
-        "name": "analytics",
-        "children": [{
-                "name": "graph",
-                "children": [{
-                    "name": "Google",
-                    "size": 66
-                }]
-            },
-            {
-                "name": "optimization",
-                "children": [{
-                    "name": "IDB Publications",
-                    "size": 18
-                }]
-            }, {
-                "name": "graph",
-                "children": [{
-                    "name": "Google",
-                    "size": 66
-                }]
-            },
-            {
-                "name": "optimization",
-                "children": [{
-                    "name": "IDB Publications",
-                    "size": 18
-                }]
-            },
-            {
-                "name": "optimization",
-                "children": [{
-                    "name": "AspectRatioBanker",
-                    "children": [{
-                        "children": [{
-                            "name": "Others",
-                            "size": 6
-                        }, {
-                            "name": "",
-                            "size": 3
-                        }],
-                        "name": "Others"
-                    }, {
-                        "children": [{
-                            "name": "IDB Blogs",
-                            "size": 3
-                        }, {
-                            "name": "",
-                            "size": 1
-                        }, {
-                            "name": "",
-                            "size": 1
-                        }, {
-                            "name": "",
-                            "size": 1
-                        }, {
-                            "name": "",
-                            "size": 1
-                        }, {
-                            "name": "",
-                            "size": 1
-                        }],
-                        "name": "IDB Blogs"
-                    }]
-                }]
-            }
-        ]
-    }]
-}
-
-drawTree(dataTree);
-
-function drawTree(dataTree) {
-    const marginTree = {
-            top: 40,
-            right: 10,
-            bottom: 10,
-            left: 10
-        },
-        widthTree = 935 - marginTree.left - marginTree.right,
-        heightTree = 200 - marginTree.top - marginTree.bottom,
-        colorTree = d3.scaleOrdinal().range(["#424488", "#726ea5", "#a19cc3", "#cfcce1", "#f1f1f1"]);
-
-    const treemap = d3.treemap().size([widthTree, heightTree]);
-
-    const divTree = d3.select("#downloads-dataset").append("div")
-        .style("position", "relative")
-        .style("width", (widthTree + marginTree.left + marginTree.right) + "px")
-        .style("height", (heightTree + marginTree.top + marginTree.bottom) + "px")
-        .style("left", marginTree.left + "px")
-        .style("top", marginTree.top + "px");
-    const root = d3.hierarchy(dataTree, function (d) {
-            return d.children
-        })
-        .sum(function (d) {
-            return d.size
-        });
-
-    const tree = treemap(root);
-
-    const node = divTree.datum(root).selectAll(".node")
-        .data(tree.leaves())
-        .enter().append("div")
-        .attr("class", "node")
-        .style("left", function (d) {
-            return d.x0 + "px"
-        })
-        .style("top", function (d) {
-            return d.y0 + "px"
-        })
-        .style("width", function (d) {
-            return Math.max(0, d.x1 - d.x0) + "px"
-        })
-        .style("height", function (d) {
-            return Math.max(0, d.y1 - d.y0) + "px"
-        })
-        .style("background", function (d) {
-            return colorTree(d.parent.data.name)
-        })
-        .text(function (d) {
-            return d.data.name
-        });
-
-    d3.selectAll("input").on("change", function change() {
-        const value = this.value === "count" ?
-            function (d) {
-                return d.size ? 1 : 0;
-            } :
-            function (d) {
-                return d.size;
-            };
-
-        const newRoot = d3.hierarchy(dataTree, function (d) {
-                return d.children
-            })
-            .sum(value);
-
-        node.data(treemap(newRoot).leaves())
-            .transition()
-            .duration(1500)
-            .style("left", function (d) {
-                return d.x0 + "px"
-            })
-            .style("top", function (d) {
-                return d.y0 + "px"
-            })
-            .style("width", function (d) {
-                return Math.max(0, d.x1 - d.x0 - 1) + "px"
-            })
-            .style("height", function (d) {
-                return Math.max(0, d.y1 - d.y0 - 1) + "px"
-            })
+function drawTreeDataset(dataTree, filtertype){
+    var colours = interpolateColors("rgb(217, 30, 24)", "rgb(94, 79, 162)", dataTree.length);
+    
+    dataTree.forEach(function(element, i) {
+      element.color = colours[i]
     });
+    
+    var groupData = ["name", "value"+filtertype];
+    var colorParam = "value"+filtertype;
+    var sizeMeasure = "value"+filtertype;
+    var indexColor = 0;
+    new d3plus.Treemap()
+      .data(dataTree)
+      .groupBy(["value"+filtertype, "name"])
+      .sum("value"+filtertype)
+      .shapeConfig({
+         fill: function(d) {
+           return d.color;
+         }
+      })
+      
+      .select("#downloads-dataset")
+      .render();
+  
 }
-/**
- * End tree
- *  */
-
-
-/**
- * Start timelines
- *  */
-
-
-
 
 function createChartTimeLineDataSet(data) {
     if ($("#dataSet2018").prop("checked")) {
@@ -468,17 +313,6 @@ function createChartTimeLineDataSet(data) {
         .call(d3.axisLeft(y)
             .tickFormat(d3.format(".2s")));
 }
-
-/**
- * End timelines
- *  */
-
-
-/** 
- * Start Gauges
- */
-
-
 var dataGaugeDatasets = {
     "code": {
         "total": getPercentageTotal(datasetsAllTotalGlobal),
@@ -712,11 +546,6 @@ function drawPlotChartDataset(data) {
         });
 }
 
-
-/**
- * End Gauges
- */
-
 //init
 var ObjectTimeLineDataSet = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
 var ObjectDataSetPlot = $.extend(true, [], datasetsScatterplotArrays);
@@ -724,6 +553,8 @@ var ObjectDataSetPlot = $.extend(true, [], datasetsScatterplotArrays);
 createChartTimeLineDataSet(ObjectTimeLineDataSet);
 drawDataTrendChart(datasetsTopArrays.topIDBAllTime);
 drawPlotChartDataset(ObjectDataSetPlot);
+drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "2018");
+
 //click radiobutton drawChart(id del click)
 $("input[name*='dataSetTrend']").click(function () {
     var ObjectTimeLineDataSet = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
@@ -732,14 +563,17 @@ $("input[name*='dataSetTrend']").click(function () {
     d3.select("#timeline-dataset svg").remove();
     d3.select("#data-trend svg").remove();
     d3.select("#dataset-publications-plot svg").remove();
+    d3.select("#downloads-dataset svg").remove();
 
     if (this.id == "dataSetAllTime") {
         createChartTimeLineDataSet(ObjectTimeLineDataSet);
         drawDataTrendChart(datasetsTopArrays.topIDBAllTime);
         drawPlotChartDataset(ObjectDataSetPlot);
+        drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "AllTheTime");
     } else {
         createChartTimeLineDataSet(ObjectTimeLineDataSet);
         drawDataTrendChart(datasetsTopArrays.topIDB2018);
         drawPlotChartDataset(ObjectDataSetPlot);
+        drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "2018");
     }
 });
