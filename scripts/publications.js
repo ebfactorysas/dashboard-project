@@ -940,20 +940,26 @@ $("input[name*='publicationTrend']").click(function () {
 });
 
 //department filter
-$("#deparmentSelect").change(function () {
+$("#deparmentSelect").on('change', function () {
     $("select[id*='divisionSelect']").val("");
     removePublicationsSvg();
-    drawTrendPublicationChart(publicationsTopArrays.topDepartmentsAllTime);
+    jsonPublicationsBarras = publicationsTopArrays.topDepartmentsAllTime.filter(dataP => {
+        return dataP.department_codes == this.value
+    });
+    drawTrendPublicationChart(jsonPublicationsBarras);
     //console.log($("#deparmentSelect").val());
-    publicationFilter();
+    // publicationFilter();
 });
 
 //division filter
-$("#divisionSelect").change(function () {
+$("#divisionSelect").on('change', function () {
     $("select[id*='deparmentSelect']").val("");
     removePublicationsSvg();
-    drawTrendPublicationChart(publicationsTopArrays.topDivisionsAllTime);
-    publicationFilter();
+    jsonPublicationsBarras = publicationsTopArrays.topDivisionsAllTime.filter(dataP => {
+        return dataP.division_codes == this.value
+    });
+    drawTrendPublicationChart(jsonPublicationsBarras);
+    // publicationFilter();
 });
 
 //iadb filter
