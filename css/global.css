@@ -22,33 +22,33 @@
 .white {
   color: #FFF !important; }
 
-@media (min-width: 960px) {
-  section .right-bar > .row > div.left-zone {
-    border-right: solid 2px #b4b4b4; } }
-
-section .right-bar > .row > div:nth-child(2) {
-  position: relative; }
-  section .right-bar > .row > div:nth-child(2):before {
-    content: "";
-    height: 2px;
-    width: 90%;
-    position: absolute;
-    bottom: 0;
-    left: 5%;
-    z-index: 3;
-    background: #b4b4b4; }
-
-section .right-bar > .row > div:nth-child(3) {
-  position: relative; }
-  section .right-bar > .row > div:nth-child(3):before {
-    content: "";
-    height: 2px;
-    width: 90%;
-    position: absolute;
-    bottom: 0;
-    left: 5%;
-    z-index: 3;
-    background: #b4b4b4; }
+section .right-bar > .row {
+  margin: 0; }
+  @media (min-width: 960px) {
+    section .right-bar > .row > div.left-zone {
+      border-right: solid 2px #b4b4b4; } }
+  section .right-bar > .row > div:nth-child(2) {
+    position: relative; }
+    section .right-bar > .row > div:nth-child(2):before {
+      content: "";
+      height: 2px;
+      width: 90%;
+      position: absolute;
+      bottom: 0;
+      left: 5%;
+      z-index: 3;
+      background: #b4b4b4; }
+  section .right-bar > .row > div:nth-child(3) {
+    position: relative; }
+    section .right-bar > .row > div:nth-child(3):before {
+      content: "";
+      height: 2px;
+      width: 90%;
+      position: absolute;
+      bottom: 0;
+      left: 5%;
+      z-index: 3;
+      background: #b4b4b4; }
 
 section.moocs .right-bar > .row > div:nth-child(4) {
   position: relative; }
