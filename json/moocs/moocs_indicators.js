@@ -13,6 +13,7 @@ var moocsIndicatorsArray = {
           "all_the_time_registrations": 13935,
           "all_the_time_courses": 2,
           "2018_courses": "0",
+          "porcent_total_LAC": "0",
           "xlsx_row_id": 2
       },
       {
@@ -30,6 +31,7 @@ var moocsIndicatorsArray = {
           "all_the_time_registrations": 31648,
           "all_the_time_courses": 4,
           "2018_courses": "1",
+          "porcent_total_LAC": "0.926899611758181",
           "xlsx_row_id": 3
       },
       {
@@ -47,6 +49,7 @@ var moocsIndicatorsArray = {
           "all_the_time_registrations": 154786,
           "all_the_time_courses": 16,
           "2018_courses": "2",
+          "porcent_total_LAC": "0.889734236581553",
           "xlsx_row_id": 4
       },
       {
@@ -64,6 +67,7 @@ var moocsIndicatorsArray = {
           "all_the_time_registrations": 153464,
           "all_the_time_courses": 17,
           "2018_courses": "5",
+          "porcent_total_LAC": "0.928531650269167",
           "xlsx_row_id": 5
       },
       {
@@ -81,6 +85,7 @@ var moocsIndicatorsArray = {
           "all_the_time_registrations": 46100,
           "all_the_time_courses": 6,
           "2018_courses": "2",
+          "porcent_total_LAC": "0.912287633346503",
           "xlsx_row_id": 6
       },
       {
@@ -98,6 +103,7 @@ var moocsIndicatorsArray = {
           "all_the_time_registrations": 454646,
           "all_the_time_courses": 27,
           "2018_courses": "7",
+          "porcent_total_LAC": "0.757293991238945",
           "xlsx_row_id": 7
       },
       {
@@ -115,6 +121,7 @@ var moocsIndicatorsArray = {
           "all_the_time_registrations": 177067,
           "all_the_time_courses": 22,
           "2018_courses": "6",
+          "porcent_total_LAC": "0.881149871561072",
           "xlsx_row_id": 8
       }
   ],
