@@ -17,16 +17,11 @@ function drawInstitutionsChart(dataInstitution) {
     var widthInstitution = 650 - marginInstitution.left - marginInstitution.right;
     var heightInstitution = 400 - marginInstitution.top - marginInstitution.bottom;
     var svgInstitution = d3.select('#institution-suscribers')
-        // .attr("width", widthInstitution + marginInstitution.left + marginInstitution.right)
-        // .attr("height", heightInstitution + marginInstitution.top + marginInstitution.bottom)
-        // .append("g")
-        // .attr("transform", "translate(" + 30 + "," + marginInstitution.top + ")");
         .append("svg")
         //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
         .attr("viewBox", "-60 -60 700 400")
-        .append("g")
-        // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
+        .append("g")        
 
         //class to make it responsive
         .classed("svg-content-responsive", true);
