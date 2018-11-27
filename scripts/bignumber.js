@@ -332,17 +332,17 @@ function updateGaugesPublications(){
  * Columna de indicadores de MOOCS 
  */
 function moocsIndicatorAlltime(jsondata) {
-    moocsAllTotalGlobal = 0;
-    moocsAllDownloads = 0;
-    moocsAllDownloads = setSettingsNumber(moocsAllDownloads).valueNumber;
-    moocsAllDownloadsLac = 0;
+    moocsAllTotalGlobal = (jsondata.length > 0) ? jsondata[0]['all_the_time_courses'] : '0';
+    moocsAllDownloads = (jsondata.length > 0) ? jsondata[0]['all_the_time_registrations'] : '0';
+    
+    moocsAllDownloadsLac = (jsondata[0]['porcent_total_LAC'] * 100).toFixed(1);
     var results = {
-        moocsValue: 0,
-        porcent_total_publications: "100%", /*missing, rodrigo dice que si falta el dato que pongamos 100% para all the time*/
-        compare2017_2018_publications: 0,
-        downloadsValue: 0,
-        porcent_total_downloads: "100%", /*missing, rodrigo dice que si falta el dato que pongamos 100% para all the time*/
-        porcent_downloads_lac: 0
+        moocsValue: (jsondata.length > 0) ? jsondata[0]['all_the_time_courses'] : '0',
+        porcent_total_publications: '100%', /*missing, rodrigo dice que si falta el dato que pongamos 100% para all the time*/
+        compare2017_2018_publications: (jsondata.length > 0) ? jsondata[0]['2017_2018_courses'] : '0',
+        downloadsValue: (jsondata.length > 0) ? jsondata[0]['all_the_time_registrations'] : '0',
+        porcent_total_downloads: (jsondata.length > 0) ? (jsondata[0]['all_the_time_porcent_total_registrations'] * 100).toFixed(1) + '%' : '', /*missing, rodrigo dice que si falta el dato que pongamos 100% para all the time*/
+        porcent_downloads_lac: (jsondata.length > 0) ? (jsondata[0]['porcent_total_LAC'] * 100).toFixed(1) + '%' : '',
     }
     // console.log(results);
     return results;
@@ -356,7 +356,7 @@ function moocsIndicator2018(jsondata) {
         compare2017_2018_publications: (jsondata.length > 0) ? jsondata[0]['2017_2018_courses'] : '',
         downloadsValue: (jsondata.length > 0) ? jsondata[0]['2018_registrations'] : '0',
         porcent_total_downloads: (jsondata.length > 0) ? (jsondata[0]['porcent_total_registrations'] * 100).toFixed(1) + '%' : '', // no se enviaron en los datos para el porcentaje total de downloads filtrado por all time
-        porcent_downloads_lac: (jsondata.length > 0) ? (jsondata[0]['porcent_total_lac'] * 100).toFixed(1) + '%' : ''
+        porcent_downloads_lac: (jsondata.length > 0) ? (jsondata[0]['porcent_total_LAC'] * 100).toFixed(1) + '%' : ''
     }
     // console.log(results);
     return results;
