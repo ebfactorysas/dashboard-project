@@ -1,6 +1,7 @@
 section {
   .right-bar {
     > .row {
+      margin: 0;
       > div {
         &.left-zone {
           @include breakpoint($desk) {
