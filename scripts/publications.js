@@ -411,11 +411,12 @@ function drawTrendPublicationChart(dataPublicationTrend) {
         heightPublicationTrend = 400 - marginPublicationTrend.top - marginPublicationTrend.bottom;
 
 
-    var svgPublicationTrend = d3.select("#publication-trend").append("svg")
-        .attr("width", widthPublicationTrend + marginPublicationTrend.left + marginPublicationTrend.right)
-        .attr("height", heightPublicationTrend + marginPublicationTrend.top + marginPublicationTrend.bottom)
-        .append("g")
-        .attr("transform", "translate(" + marginPublicationTrend.left + "," + marginPublicationTrend.top + ")");
+    var svgPublicationTrend = d3.select("#publication-trend")
+    .append("svg")
+    .attr("preserveAspectRatio", "xMinYMin meet")
+    .attr("viewBox", "-40-40 800 450")
+    .append("g")
+    .classed("svg-content-responsive", true);
 
     var xPublicationTrend = d3.scaleLinear()
         .range([0, widthPublicationTrend])
