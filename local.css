@@ -943,9 +943,6 @@ section.map select.form-control:not([size]):not([multiple]) {
     height: 250px;
 }
 
-#distribution-moocs {
-    height: 250px;
-}
 
 #downloads-publications {
     min-width: 300px;
