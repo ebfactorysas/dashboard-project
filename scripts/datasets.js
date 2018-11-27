@@ -341,10 +341,14 @@ function createChartTimeLineDataSet(data) {
     // appends a 'group' element to 'svg'
     // moves the 'group' element to the top left margin
     var svg = d3.select("#timeline-dataset").append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
-        .append("g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    //responsive SVG needs these 2 attributes and no width and height attr
+    .attr("preserveAspectRatio", "xMinYMin meet")
+    .attr("viewBox", "-60 -40 600 300")
+    .append("g")
+    // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
+
+    //class to make it responsive
+    .classed("svg-content-responsive", true);
     var totalAmount = 0;
     // format the data
     data.forEach(function (d) {
@@ -474,20 +478,6 @@ function createChartTimeLineDataSet(data) {
  * Start Gauges
  */
 
-// var dataGauge = {
-//     "code": {
-//         "total": 100,
-//         "allocated": 76
-//     },
-//     "pageview": {
-//         "total": 1000,
-//         "allocated": 113
-//     },
-//     "lac": {
-//         "total": 100,
-//         "allocated": 9
-//     }
-// }
 
 var dataGaugeDatasets = {
     "code": {
