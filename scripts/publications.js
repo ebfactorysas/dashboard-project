@@ -958,6 +958,8 @@ $("input[name*='publicationTrend']").click(function () {
 //department filter
 $("#deparmentSelect").change(function () {
     $("select[id*='divisionSelect']").val("");
+    removePublicationsSvg();
+    drawTrendPublicationChart(publicationsTopArrays.topDepartmentsAllTime);
     //console.log($("#deparmentSelect").val());
     publicationFilter();
 });
@@ -965,6 +967,8 @@ $("#deparmentSelect").change(function () {
 //division filter
 $("#divisionSelect").change(function () {
     $("select[id*='deparmentSelect']").val("");
+    removePublicationsSvg();
+    drawTrendPublicationChart(publicationsTopArrays.topDivisionsAllTime);
     publicationFilter();
 });
 
