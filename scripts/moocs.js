@@ -1023,6 +1023,7 @@ function moocsGenderFilter(moocsJson, gender) {
 }
 
 function moocsGenderAddGray(moocsJson) {
+    if(moocsJson.length === 0 )return [];
     moocsJson[0].population = (moocsJson[0].population * 100).toFixed(0);
     var gray = {
         "age": "gray",
@@ -1387,7 +1388,7 @@ function moocsFilter() {
             //top registration chart
             if ($("select[id*='divisionSelect']").val().length > 0) {
                 var timelineDivisions = divisionFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDivisions), $("select[id*='divisionSelect']").val());
-                createChart(timelineDivisions[0].data);
+                if(timelineDivisions.length > 0) createChart(timelineDivisions[0].data);
 
 
                 drawMoocsRegistrationsChart(orderTopMoocs(divisionFilter(moocsTopArrays.divisionsAlltime, $("select[id*='divisionSelect']").val())));
@@ -1409,7 +1410,7 @@ function moocsFilter() {
             } else if ($("select[id*='deparmentSelect']").val().length > 0) {
 
                 var timelineDivisions = orderTopMoocs(departmentFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDepartments), $("select[id*='deparmentSelect']").val()));
-                createChart(timelineDivisions[0].data);
+                if(timelineDivisions.length > 0)  createChart(timelineDivisions[0].data);
 
                 drawMoocsRegistrationsChart(orderTopMoocs(departmentFilter(moocsTopArrays.departmentsAllTime, $("select[id*='deparmentSelect']").val())));
                 drawDistributionChart(orderTopMoocs(departmentFilter(moocsEducationArrays.educationLevelDepartments, $("select[id*='deparmentSelect']").val())));
@@ -1452,7 +1453,7 @@ function moocsFilter() {
             //top registration chart
             if ($("select[id*='divisionSelect']").val().length > 0) {
                 var timelineDivisions = divisionFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDivisions), $("select[id*='divisionSelect']").val());
-                createChart(timelineDivisions[0].data);
+                if(timelineDivisions.length > 0) createChart(timelineDivisions[0].data);
 
                 drawMoocsRegistrationsChart(orderTopMoocs(divisionFilter(moocsTopArrays.divisions2018, $("select[id*='divisionSelect']").val())));
                 drawDistributionChart(orderTopMoocs(divisionFilter(moocsEducationArrays.educationLevelDivisions, $("select[id*='divisionSelect']").val())));
@@ -1471,7 +1472,7 @@ function moocsFilter() {
                 points3(moocsGenderAddGray(moocsGenderFilter(gender, "Other")));
             } else if ($("select[id*='deparmentSelect']").val().length > 0) {
                 var timelineDivisions = orderTopMoocs(departmentFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDepartments), $("select[id*='deparmentSelect']").val()));
-                createChart(timelineDivisions[0].data);
+                if(timelineDivisions.length > 0)  createChart(timelineDivisions[0].data);
 
                 drawMoocsRegistrationsChart(orderTopMoocs(departmentFilter(moocsTopArrays.departments2018, $("select[id*='deparmentSelect']").val())));
                 drawDistributionChart(orderTopMoocs(departmentFilter(moocsEducationArrays.educationLevelDepartments, $("select[id*='deparmentSelect']").val())));
