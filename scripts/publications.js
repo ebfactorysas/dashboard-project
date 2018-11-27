@@ -74,8 +74,7 @@ var dataPublicationGauge = {
 }
 
 //lineas que van al lado de trends
-var dataLinesPublications = [
-    {
+var dataLinesPublications = [{
         "date": 201801,
         "Paul Productive Code": 4.1 + 10,
         "Paul Raw Code": 3.2 + 20,
@@ -184,11 +183,16 @@ function createChartTimelinePublication(data) {
     // append the svg obgect to the body of the page
     // appends a 'group' element to 'svg'
     // moves the 'group' element to the top left margin
-    var svg = d3.select("#timeline-publication").append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
+    var svg = d3.select("#timeline-publication")
+        .append("svg")
+        //responsive SVG needs these 2 attributes and no width and height attr
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-60 -40 600 300")
         .append("g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+        // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
+
+        //class to make it responsive
+        .classed("svg-content-responsive", true);
     var totalAmount = 0;
     // format the data
     data.forEach(function (d) {
@@ -579,20 +583,7 @@ function drawGaugePublicationChart(dataGauge) {
 
     var i3 = d3.interpolate(progress3, dataGauge.lac.allocated / dataGauge.lac.total);
     foreground3.attr("d", arc3.endAngle(twoPi * i3(1)));
-    // d3.transition().duration(1000).tween("progress", function () {
-    //     return function (t) {
-    //         progress4 = i4(t);
-    //         foreground4.attr("d", arc4.endAngle(twoPi * progress4));
-    //         percentComplete4.text((progress4 * 100).toFixed(0));
-    //         progress2 = i2(t);
-    //         foreground2.attr("d", arc2.endAngle(twoPi * progress2));
-    //         percentComplete2.text((progress2 * 1000).toFixed(0) + "K");
-    //         progress3 = i3(t);
-    //         foreground3.attr("d", arc3.endAngle(twoPi * progress3));
-    //         percentComplete3.text((progress3 * 100).toFixed(0) + "%");
 
-    //     };
-    // });
 }
 
 function drawLinesChartPublication(data) {
@@ -750,14 +741,6 @@ function drawLinesChartPublication(data) {
             return colors[o1++]
         })
         .attr("clip-path", "url(#clip)");
-
-    // focus.append("g")
-    //     .attr("class", "grid")
-    //     .call(make_y_gridlines()
-    //         .tickSize(-width)
-    //         .tickFormat("")
-    //     )
-
 
     function brushed() {
         var extent = d3.event.selection;
