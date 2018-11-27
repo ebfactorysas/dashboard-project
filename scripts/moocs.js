@@ -982,8 +982,8 @@ function drawGaugeMoocsChart(dataGauge) {
         .attr("text-anchor", "middle")
         .attr("class", "percent-complete")
         .attr("dy", "0.3em")
-    /*percentComplete3.text((dataGauge.lac.allocated + "%"));*/
-    .text(setSettingsNumber(dataGauge.lac.allocated).valueNumber + setSettingsNumber(dataGauge.lac.allocated).suffixNumber);
+        /*percentComplete3.text((dataGauge.lac.allocated + "%"));*/
+        .text(setSettingsNumber(dataGauge.lac.allocated).valueNumber + setSettingsNumber(dataGauge.lac.allocated).suffixNumber);
 
 
     var i3 = d3.interpolate(progress3, dataGauge.lac.allocated / dataGauge.lac.total);
@@ -1400,6 +1400,10 @@ function moocsFilter() {
                 drawStudentCompletedsChart(students[0]);
                 drawStudentCertifiedsChart(students[0]);
             } else if ($("select[id*='deparmentSelect']").val().length > 0) {
+
+                var timelineDivisions = orderTopMoocs(departmentFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDepartments), $("select[id*='deparmentSelect']").val()));
+                createChart(timelineDivisions[0].data);
+
                 drawMoocsRegistrationsChart(orderTopMoocs(departmentFilter(moocsTopArrays.departmentsAllTime, $("select[id*='deparmentSelect']").val())));
                 drawDistributionChart(orderTopMoocs(departmentFilter(moocsEducationArrays.educationLevelDepartments, $("select[id*='deparmentSelect']").val())));
 
@@ -1429,7 +1433,7 @@ function moocsFilter() {
             if ($("select[id*='divisionSelect']").val().length > 0) {
                 var timelineDivisions = divisionFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDivisions), $("select[id*='divisionSelect']").val());
                 createChart(timelineDivisions[0].data);
-                
+
                 drawMoocsRegistrationsChart(orderTopMoocs(divisionFilter(moocsTopArrays.divisions2018, $("select[id*='divisionSelect']").val())));
                 drawDistributionChart(orderTopMoocs(divisionFilter(moocsEducationArrays.educationLevelDivisions, $("select[id*='divisionSelect']").val())));
 
@@ -1439,6 +1443,9 @@ function moocsFilter() {
                 drawStudentCompletedsChart(students[0]);
                 drawStudentCertifiedsChart(students[0]);
             } else if ($("select[id*='deparmentSelect']").val().length > 0) {
+                var timelineDivisions = orderTopMoocs(departmentFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDepartments), $("select[id*='deparmentSelect']").val()));
+                createChart(timelineDivisions[0].data);
+
                 drawMoocsRegistrationsChart(orderTopMoocs(departmentFilter(moocsTopArrays.departments2018, $("select[id*='deparmentSelect']").val())));
                 drawDistributionChart(orderTopMoocs(departmentFilter(moocsEducationArrays.educationLevelDepartments, $("select[id*='deparmentSelect']").val())));
 
