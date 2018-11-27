@@ -1,3 +1,61 @@
+.datasets .right-bar .filters {
+  text-align: right; }
+  .datasets .right-bar .filters span {
+    cursor: pointer;
+    padding: 0 5px;
+    border-right: 2px solid #b4b4b4;
+    font-family: Gotham-Medium; }
+    .datasets .right-bar .filters span.active {
+      color: #424488 !important;
+      border-right: 2px solid #424488; }
+    .datasets .right-bar .filters span:last-child {
+      border: 0; }
+
+.font-10 {
+  font-size: 10px !important; }
+
+.font-12 {
+  font-size: 12px !important; }
+
+.font-14 {
+  font-size: 14px !important; }
+
+.font-16 {
+  font-size: 16px !important; }
+
+.font-17 {
+  font-size: 17px !important; }
+
+.font-18 {
+  font-size: 18px !important; }
+
+.font-20 {
+  font-size: 20px !important; }
+
+.font-22 {
+  font-size: 22px !important; }
+
+.font-24 {
+  font-size: 24px !important; }
+
+.font-26 {
+  font-size: 26px !important; }
+
+.font-28 {
+  font-size: 28px !important; }
+
+.font-30 {
+  font-size: 30px !important; }
+
+.font-48 {
+  font-size: 48px !important; }
+
+.font-65 {
+  font-size: 65px !important; }
+
+.font-66 {
+  font-size: 66px !important; }
+
 .red {
   color: #D1415A !important; }
 
@@ -209,6 +267,47 @@ section.moocs .right-bar > .row > div:nth-child(5) {
       .menu ul.open li.first:after {
         border-width: 0 8px 13px 8px;
         border-color: transparent transparent #000 transparent; }
+
+.moocs .right-bar .filters {
+  text-align: right; }
+  .moocs .right-bar .filters span {
+    cursor: pointer;
+    padding: 0 5px;
+    border-right: 2px solid #b4b4b4;
+    font-family: Gotham-Medium; }
+    .moocs .right-bar .filters span.active {
+      color: #FA2E00 !important;
+      border-right: 2px solid #FA2E00; }
+    .moocs .right-bar .filters span:last-child {
+      border: 0; }
+
+.publications .right-bar .filters {
+  text-align: right; }
+  .publications .right-bar .filters span {
+    cursor: pointer;
+    padding: 0 5px;
+    border-right: 2px solid #b4b4b4;
+    font-family: Gotham-Medium; }
+    .publications .right-bar .filters span.active {
+      color: #D1415A !important;
+      border-right: 2px solid #D1415A; }
+    .publications .right-bar .filters span:last-child {
+      border: 0; }
+
+.publications .right-bar #kic {
+  margin-top: 20px;
+  padding-top: 15px;
+  text-align: center;
+  position: relative; }
+  .publications .right-bar #kic:before {
+    content: "";
+    height: 2px;
+    width: 90%;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    z-index: 3;
+    background: #b4b4b4; }
 
 .container_radio.blue {
   display: block;

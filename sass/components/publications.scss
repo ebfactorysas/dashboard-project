@@ -1,0 +1,14 @@
+.publications {
+  .right-bar {
+    .filters {
+      @include filters($red);
+    }
+
+    #kic {
+      margin-top: 20px;
+      padding-top: 15px;
+      text-align: center;
+      @include borderTopGraphs();
+    }
+  }
+}
