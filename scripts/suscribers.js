@@ -16,11 +16,20 @@ function drawInstitutionsChart(dataInstitution) {
 
     var widthInstitution = 650 - marginInstitution.left - marginInstitution.right;
     var heightInstitution = 400 - marginInstitution.top - marginInstitution.bottom;
-    var svgInstitution = d3.select('#institution-suscribers').append("svg")
-        .attr("width", widthInstitution + marginInstitution.left + marginInstitution.right)
-        .attr("height", heightInstitution + marginInstitution.top + marginInstitution.bottom)
+    var svgInstitution = d3.select('#institution-suscribers')
+        // .attr("width", widthInstitution + marginInstitution.left + marginInstitution.right)
+        // .attr("height", heightInstitution + marginInstitution.top + marginInstitution.bottom)
+        // .append("g")
+        // .attr("transform", "translate(" + 30 + "," + marginInstitution.top + ")");
+        .append("svg")
+        //responsive SVG needs these 2 attributes and no width and height attr
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-60 -60 700 400")
         .append("g")
-        .attr("transform", "translate(" + 30 + "," + marginInstitution.top + ")");
+        // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
+
+        //class to make it responsive
+        .classed("svg-content-responsive", true);
 
     var xInstitution = d3.scaleBand()
         .range([0, widthInstitution]);
@@ -360,28 +369,56 @@ function drawTree(dataTree) {
  * End tree
  *  */
 
-/** 
+/**
  * Start Gauges
  */
 
-var dataGauge = {
+// var dataGauge = {
+//     "code": {
+//         "total": 100,
+//         "allocated": 76
+//     },
+//     "pageview": {
+//         "total": 1000,
+//         "allocated": 113
+//     },
+//     "lac": {
+//         "total": 100,
+//         "allocated": 9
+//     }
+// }
+// var dataGaugeSubscribers = {
+//     "code": {
+//         "total": (subscribersAllTotalGlobal > 0) ? ((subscribersAllTotalGlobal > 100) ? 1000 : 100) : 100,
+//         "allocated": subscribersAllTotalGlobal
+//     },
+//     "pageview": {
+//         "total": (subscribersAllDownloads > 0) ? ((subscribersAllDownloads > 100) ? 1000 : 100) : 100,
+//         "allocated": subscribersAllDownloads
+//     },
+//     "lac": {
+//         "total": (subscribersAllDownloadsLac > 0) ? ((subscribersAllDownloadsLac > 100) ? 1000 : 100) : 100,
+//         "allocated": subscribersAllDownloadsLac
+//     }
+// }
+var dataGaugeSubscribers = {
     "code": {
-        "total": 100,
-        "allocated": 76
+        "total": getPercentageTotal(subscribersAllTotalGlobal),
+        "allocated": subscribersAllTotalGlobal
     },
     "pageview": {
-        "total": 1000,
-        "allocated": 113
+        "total": getPercentageTotal(subscribersAllDownloads),
+        "allocated": subscribersAllDownloads
     },
     "lac": {
         "total": 100,
-        "allocated": 9
+        "allocated": subscribersAllDownloadsLac
     }
 }
+drawGaugeSubscribersChart(dataGaugeSubscribers);
 
-drawGaugeDatasetChart(dataGauge)
 
-function drawGaugeDatasetChart(dataGauge) {
+function drawGaugeSubscribersChart(dataGauge) {
     var width = 150,
         height = 150,
         progress = 0,
@@ -415,7 +452,8 @@ function drawGaugeDatasetChart(dataGauge) {
         .attr("text-anchor", "middle")
         .attr("class", "percent-complete")
         .attr("dy", "0.3em")
-        .text(dataGauge.code.allocated);;
+        .text(setSettingsNumber(dataGauge.code.allocated).valueNumber + setSettingsNumber(dataGauge.code.allocated).suffixNumber);
+        
 
 
     var i = d3.interpolate(progress, dataGauge.code.allocated / dataGauge.code.total);
@@ -447,7 +485,8 @@ function drawGaugeDatasetChart(dataGauge) {
         .attr("text-anchor", "middle")
         .attr("class", "percent-complete")
         .attr("dy", "0.3em")
-        .text(dataGauge.pageview.allocated + "k");;
+        .text(setSettingsNumber(dataGauge.pageview.allocated).valueNumber + setSettingsNumber(dataGauge.pageview.allocated).suffixNumber);
+        
 
 
     var i2 = d3.interpolate(progress2, dataGauge.pageview.allocated / dataGauge.pageview.total);
@@ -530,7 +569,14 @@ function orderTopDataSuscribers(data) {
 
 
 
-function drawSuscribersChart(dataSet) {
+function drawSuscribersChart(data) {
+
+
+    dataSet = data.sort(function (a, b) {
+        return d3.ascending(a.value, b.value);
+    });
+
+    dataSet = dataSet.slice(0, 6);
 
     var marginSuscriber = {
         top: 15,
@@ -540,8 +586,7 @@ function drawSuscribersChart(dataSet) {
     };
 
     var widthSuscriber = 560 - marginSuscriber.left - marginSuscriber.right,
-        heightSuscriber = 400 - marginSuscriber.top - marginSuscriber.bottom;
-
+        heightSuscriber = 250 - marginSuscriber.top - marginSuscriber.bottom;
 
     var svgSuscribers = d3.select("#suscribers-interested").append("svg")
         .attr("width", widthSuscriber + marginSuscriber.left + marginSuscriber.right)
@@ -635,7 +680,7 @@ drawInstitutionsChart(subscribersInstitution.institutionIDB);
 function removeSubscribersSvg() {
     d3.select("#institution-suscribers svg").remove();
     d3.select("#age-suscribers svg").remove();
-    
+
 }
 
 function divisionSubscriberFilter(moocsJson, filterBy) {

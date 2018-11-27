@@ -70,18 +70,34 @@ var dataTree = {
     }]
 }
 
-var dataGauge = {
+// var dataGaugeCode = {
+//     "code": {
+//         "total": 100,
+//         "allocated": 76
+//     },
+//     "pageview": {
+//         "total": 1000,
+//         "allocated": 113
+//     },
+//     "lac": {
+//         "total": 100,
+//         "allocated": 9
+//     }
+// }
+
+
+var dataGaugeCode = {
     "code": {
-        "total": 100,
-        "allocated": 76
+        "total": getPercentageTotal(codeAllTotalGlobal),
+        "allocated": codeAllTotalGlobal
     },
     "pageview": {
-        "total": 1000,
-        "allocated": 113
+        "total": getPercentageTotal(codeAllDownloads),
+        "allocated": codeAllDownloads
     },
     "lac": {
         "total": 100,
-        "allocated": 9
+        "allocated": codeAllDownloadsLac
     }
 }
 
@@ -621,7 +637,7 @@ function drawGaugeCodeChart(dataGauge) {
         .attr("text-anchor", "middle")
         .attr("class", "percent-complete")
         .attr("dy", "0.3em")
-        .text(dataGauge.code.allocated);
+        .text(setSettingsNumber(dataGauge.code.allocated).valueNumber + setSettingsNumber(dataGauge.code.allocated).suffixNumber);
 
 
     var i = d3.interpolate(progress, dataGauge.code.allocated / dataGauge.code.total);
@@ -653,7 +669,7 @@ function drawGaugeCodeChart(dataGauge) {
         .attr("text-anchor", "middle")
         .attr("class", "percent-complete")
         .attr("dy", "0.3em")
-        .text(dataGauge.pageview.allocated + "k");
+        .text(setSettingsNumber(dataGauge.pageview.allocated).valueNumber + setSettingsNumber(dataGauge.pageview.allocated).suffixNumber);
 
 
     var i2 = d3.interpolate(progress2, dataGauge.pageview.allocated / dataGauge.pageview.total);
@@ -893,7 +909,7 @@ var ObjectcodeScatterploArrays = $.extend(true, [], codeScatterploArrays);
 drawTree(codePageviewsSourceArrays.pageviewSourceIDB);
 //aca
 
-drawGaugeCodeChart(dataGauge);
+drawGaugeCodeChart(dataGaugeCode);
 drawPlotChart(ObjectcodeScatterploArrays);
 drawChartCodeTrend(ObjectTopIdbAllTime);
 createChartTimeline(ObjectPageViewsTimeLineAllTime);

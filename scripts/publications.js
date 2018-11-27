@@ -56,23 +56,26 @@ var dataTree = {
         ]
     }]
 }
+
+
 var dataPublicationGauge = {
     "publication": {
-        "total": 100,
-        "allocated": 76
+        "total": getPercentageTotal(publicationsAllTotalGlobal),
+        "allocated": publicationsAllTotalGlobal
     },
     "download": {
-        "total": 1000,
-        "allocated": 113
+        "total": getPercentageTotal(publicationsAllDownloads),
+        "allocated": publicationsAllDownloads
     },
     "lac": {
         "total": 100,
-        "allocated": 9
+        "allocated": publicationsAllDownloadsLac
     }
 }
 
 //lineas que van al lado de trends
-var dataLinesPublications = [{
+var dataLinesPublications = [
+    {
         "date": 201801,
         "Paul Productive Code": 4.1 + 10,
         "Paul Raw Code": 3.2 + 20,
@@ -506,7 +509,8 @@ function drawGaugePublicationChart(dataGauge) {
         .attr("text-anchor", "middle")
         .attr("class", "percent-complete")
         .attr("dy", "0.3em")
-        .text(dataGauge.publication.allocated);
+        /*.text(setSettingsNumber(dataGauge.publication.allocated).valueNumber + setSettingsNumber(dataGauge.publication.allocated).suffixNumber);*/
+        .text(setSettingsNumber(dataGauge.publication.allocated).valueNumber + setSettingsNumber(dataGauge.publication.allocated).suffixNumber);
 
 
     var i4 = d3.interpolate(progress4, dataGauge.publication.allocated / dataGauge.publication.total);
@@ -538,7 +542,7 @@ function drawGaugePublicationChart(dataGauge) {
         .attr("text-anchor", "middle")
         .attr("class", "percent-complete")
         .attr("dy", "0.3em")
-        .text(dataGauge.download.allocated + "k");
+        .text(setSettingsNumber(dataGauge.download.allocated).valueNumber + setSettingsNumber(dataGauge.download.allocated).suffixNumber);
 
 
     var i2 = d3.interpolate(progress2, dataGauge.download.allocated / dataGauge.download.total);
@@ -941,10 +945,12 @@ $("input[name*='publicationTrend']").click(function () {
             createChartTimelinePublication(downloadTimelineIDBTEST);
             drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
             drawPlotChartPublication(ObjectpublicationsAttention);
+            drawGaugePublicationChart(dataPublicationGauge);
         } else {
             createChartTimelinePublication(downloadTimelineIDBTEST);
             drawTrendPublicationChart(publicationsTopArrays.topIDB2018);
             drawPlotChartPublication(ObjectpublicationsAttention);
+            drawGaugePublicationChart(dataPublicationGauge);
         }
     }
 });

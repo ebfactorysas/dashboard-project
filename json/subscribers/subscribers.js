@@ -109,7 +109,7 @@ var subscribersArray = {
             "subscribers": "58711",
             "lac_subscribers": "48750",
             "porcent_total_subscribers": "0.097959912",
-            "% from LAC": "0.830338437",
+            "porcent_total_from_lac": "0.830338437",
             "Departments": "CSD",
             "Divisions": "CCS"
         },
@@ -118,7 +118,7 @@ var subscribersArray = {
             "subscribers": "81595",
             "lac_subscribers": "55755",
             "porcent_total_subscribers": "0.136142104",
-            "% from LAC": "0.683313929",
+            "porcent_total_from_lac": "0.683313929",
             "Departments": "CSD",
             "Divisions": "HUD"
         },
@@ -127,7 +127,7 @@ var subscribersArray = {
             "subscribers": "31148",
             "lac_subscribers": "28818",
             "porcent_total_subscribers": "0.051970761",
-            "% from LAC": "0.925195839",
+            "porcent_total_from_lac": "0.925195839",
             "Departments": "IFD",
             "Divisions": "CMF"
         },
@@ -136,7 +136,7 @@ var subscribersArray = {
             "subscribers": "49015",
             "lac_subscribers": "43438",
             "porcent_total_subscribers": "0.081782036",
-            "% from LAC": "0.886218505",
+            "porcent_total_from_lac": "0.886218505",
             "Departments": "IFD",
             "Divisions": "CTI"
         },
@@ -145,7 +145,7 @@ var subscribersArray = {
             "subscribers": "56542",
             "lac_subscribers": "50400",
             "porcent_total_subscribers": "0.094340913",
-            "% from LAC": "0.891372785",
+            "porcent_total_from_lac": "0.891372785",
             "Departments": "IFD",
             "Divisions": "ICS"
         },
@@ -154,7 +154,7 @@ var subscribersArray = {
             "subscribers": "30755",
             "lac_subscribers": "27818",
             "porcent_total_subscribers": "0.051315036",
-            "% from LAC": "0.904503333",
+            "porcent_total_from_lac": "0.904503333",
             "Departments": "INE",
             "Divisions": "ENE"
         },
@@ -163,7 +163,7 @@ var subscribersArray = {
             "subscribers": "29691",
             "lac_subscribers": "25094",
             "porcent_total_subscribers": "0.049539741",
-            "% from LAC": "0.845171938",
+            "porcent_total_from_lac": "0.845171938",
             "Departments": "INE",
             "Divisions": "TSP"
         },
@@ -172,7 +172,7 @@ var subscribersArray = {
             "subscribers": "50471",
             "lac_subscribers": "40352",
             "porcent_total_subscribers": "0.084211387",
-            "% from LAC": "0.799508629",
+            "porcent_total_from_lac": "0.799508629",
             "Departments": "INE",
             "Divisions": "WSA"
         },
@@ -181,7 +181,7 @@ var subscribersArray = {
             "subscribers": "53100",
             "lac_subscribers": "39012",
             "porcent_total_subscribers": "0.088597901",
-            "% from LAC": "0.734689266",
+            "porcent_total_from_lac": "0.734689266",
             "Departments": "INT",
             "Divisions": "TIN"
         },
@@ -190,7 +190,7 @@ var subscribersArray = {
             "subscribers": "78845",
             "lac_subscribers": "55591",
             "porcent_total_subscribers": "0.131553700",
-            "% from LAC": "0.705066903",
+            "porcent_total_from_lac": "0.705066903",
             "Departments": "KIC",
             "Divisions": "DCC"
         },
@@ -199,7 +199,7 @@ var subscribersArray = {
             "subscribers": "51668",
             "lac_subscribers": "44316",
             "porcent_total_subscribers": "0.086208594",
-            "% from LAC": "0.857706898",
+            "porcent_total_from_lac": "0.857706898",
             "Departments": "KIC",
             "Divisions": "ICD"
         },
@@ -208,7 +208,7 @@ var subscribersArray = {
             "subscribers": "371088",
             "lac_subscribers": "183842",
             "porcent_total_subscribers": "0.619164176",
-            "% from LAC": "0.495413487",
+            "porcent_total_from_lac": "0.495413487",
             "Departments": "KIC",
             "Divisions": "KLD"
         },
@@ -217,7 +217,7 @@ var subscribersArray = {
             "subscribers": "50450",
             "lac_subscribers": "34279",
             "porcent_total_subscribers": "0.084176348",
-            "% from LAC": "0.679464817",
+            "porcent_total_from_lac": "0.679464817",
             "Departments": "RES",
             "Divisions": "RES"
         },
@@ -226,7 +226,7 @@ var subscribersArray = {
             "subscribers": "62839",
             "lac_subscribers": "49492",
             "porcent_total_subscribers": "0.104847523",
-            "% from LAC": "0.787600057",
+            "porcent_total_from_lac": "0.787600057",
             "Departments": "SCL",
             "Divisions": "EDU"
         },
@@ -235,7 +235,7 @@ var subscribersArray = {
             "subscribers": "34614",
             "lac_subscribers": "31542",
             "porcent_total_subscribers": "0.057753818",
-            "% from LAC": "0.911249783",
+            "porcent_total_from_lac": "0.911249783",
             "Departments": "SCL",
             "Divisions": "GDI"
         },
@@ -244,7 +244,7 @@ var subscribersArray = {
             "subscribers": "39076",
             "lac_subscribers": "35216",
             "porcent_total_subscribers": "0.065198711",
-            "% from LAC": "0.901218139",
+            "porcent_total_from_lac": "0.901218139",
             "Departments": "SCL",
             "Divisions": "LMK"
         },
@@ -253,7 +253,7 @@ var subscribersArray = {
             "subscribers": "73750",
             "lac_subscribers": "60220",
             "porcent_total_subscribers": "0.123052640",
-            "% from LAC": "0.816542373",
+            "porcent_total_from_lac": "0.816542373",
             "Departments": "SCL",
             "Divisions": "SPH"
         },
@@ -262,7 +262,7 @@ var subscribersArray = {
             "subscribers": "9080",
             "lac_subscribers": "7642",
             "porcent_total_subscribers": "0.015150074",
-            "% from LAC": "0.841629956",
+            "porcent_total_from_lac": "0.841629956",
             "Departments": "SPD",
             "Divisions": "SPD"
         },
@@ -271,7 +271,7 @@ var subscribersArray = {
             "subscribers": "1993",
             "lac_subscribers": "1972",
             "porcent_total_subscribers": "0.003325341",
-            "% from LAC": "0.989463121",
+            "porcent_total_from_lac": "0.989463121",
             "Departments": "VPC",
             "Divisions": "CUR"
         },
@@ -280,7 +280,7 @@ var subscribersArray = {
             "subscribers": "58711",
             "lac_subscribers": "48750",
             "porcent_total_subscribers": "0.097959912",
-            "% from LAC": "0.830338437",
+            "porcent_total_from_lac": "0.830338437",
             "Departments": "VPS",
             "Divisions": "ESG"
         },
@@ -289,7 +289,7 @@ var subscribersArray = {
             "subscribers": "1",
             "lac_subscribers": "",
             "porcent_total_subscribers": "1.668510371e-06",
-            "% from LAC": "",
+            "porcent_total_from_lac": "",
             "Departments": "VPC",
             "Divisions": "CHA"
         },
@@ -298,7 +298,7 @@ var subscribersArray = {
             "subscribers": "1",
             "lac_subscribers": "",
             "porcent_total_subscribers": "1.668510371e-06",
-            "% from LAC": "",
+            "porcent_total_from_lac": "",
             "Departments": "VPC",
             "Divisions": "CAR"
         }
@@ -308,6 +308,7 @@ var subscribersArray = {
         "subscribers": "599337",
         "lac_subscribers": "333589",
         "IDB": "IDB",
-        "% from LAC": "0.556596706"
+        "porcent_total_from_lac": "0.556596706",
+        "porcent_total_subscribers": ""
     }]
 };

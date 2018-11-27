@@ -1503,15 +1503,15 @@ var publicationsIndicators = {
     ],
     indicatorsIDB: [{
         "json_featuretype": "NewFeatureType",
-        "2018 publications": "525",
-        "2018 % total publications": "1",
-        "2017-2018 publications": -38,
-        "2018 downloads": "871364",
-        "2018 % total downloads": "0.999999999999342",
-        "2018 % total LAC downloads": "0.754327697724487",
-        "All the time publications": 10161,
-        "All the time downloads": 12695865,
-        "All the time % total LAC downloads": 0.612325745429713,
+        "2018_publications": "525",
+        "2018_porcent_total_publications": "1",
+        "2017_2018_publications": -38,
+        "2018_downloads": "871364",
+        "2018_porcent_total downloads": "0.999999999999342",
+        "2018_porcent_total_LAC_downloads": "0.754327697724487",
+        "all_the_time_publications": 10161,
+        "all_the_time_downloads": 12695865,
+        "all_the_time_porcent_total_LAC_downloads": 0.612325745429713,
         "xlsx_row_id": 2
     }]
 };

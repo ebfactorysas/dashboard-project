@@ -1,17 +1,13 @@
 .right-bar {
-
-}
-
-
-@include breakpoint($desk) {
-  .right-bar {
-    width: 75%;
+  float: left;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  @include breakpoint($desk) {
+    padding-left: 25%;
     min-height: 930px;
   }
-}
-
-@include breakpoint($wide) {
-  .right-bar {
-    width: auto;
+  @include breakpoint($wide) {
+    padding-left: 250px;
   }
 }
