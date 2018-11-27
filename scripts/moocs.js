@@ -1008,13 +1008,37 @@ function drawGaugeMoocsChart(dataGauge) {
 /**
  * End Gauges
  */
+// var datapoints = [{
+//     "age": "red",
+//     "population": 68
+// }, {
+//     "age": "gray",
+//     "population": 32
+// }]
 
-points()
-points1()
-points2()
-points3()
+function moocsGenderFilter(moocsJson, gender) {
+    return moocsJson.filter(function (entry) {
+        return entry.Gender === gender;
+    });
+}
 
-function points() {
+function moocsGenderAddGray(moocsJson) {
+    moocsJson[0].population = (moocsJson[0].population * 100).toFixed(0);
+    var gray = {
+        "age": "gray",
+        "population": 100 - moocsJson[0].population
+    }
+    moocsJson.push(gray);
+    return moocsJson;
+}
+// console.log()
+points(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Female")));
+points1(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Male")));
+points2(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Not Available")));
+points3(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Other")));
+
+function points(data) {
+
     var total = 100;
     var widthSquares = 10,
         heightSquares = 10,
@@ -1022,15 +1046,6 @@ function points() {
         squareValue = 0,
         gap = 50,
         theData = [];
-
-    var data = [{
-        "age": "red",
-        "population": 68
-    }, {
-        "age": "gray",
-        "population": 32
-    }]
-
 
 
 
@@ -1098,7 +1113,9 @@ function points() {
         })
 }
 
-function points1() {
+
+
+function points1(data) {
     var total = 100;
     var widthSquares = 10,
         heightSquares = 10,
@@ -1107,13 +1124,7 @@ function points1() {
         gap = 50,
         theData = [];
 
-    var data = [{
-        "age": "red",
-        "population": 68
-    }, {
-        "age": "gray",
-        "population": 32
-    }]
+
 
 
 
@@ -1182,7 +1193,7 @@ function points1() {
         })
 }
 
-function points2() {
+function points2(data) {
     var total = 100;
     var widthSquares = 10,
         heightSquares = 10,
@@ -1191,13 +1202,6 @@ function points2() {
         gap = 50,
         theData = [];
 
-    var data = [{
-        "age": "red",
-        "population": 68
-    }, {
-        "age": "gray",
-        "population": 32
-    }]
 
 
 
@@ -1266,7 +1270,7 @@ function points2() {
         })
 }
 
-function points3() {
+function points3(data) {
     var total = 100;
     var widthSquares = 10,
         heightSquares = 10,
@@ -1274,15 +1278,6 @@ function points3() {
         squareValue = 0,
         gap = 50,
         theData = [];
-
-    var data = [{
-        "age": "red",
-        "population": 68
-    }, {
-        "age": "gray",
-        "population": 32
-    }]
-
 
 
 
@@ -1350,8 +1345,6 @@ function points3() {
         })
 }
 
-
-
 /**
  * Start Filters
  */
@@ -1363,6 +1356,12 @@ function removeMoocsSvg() {
     d3.select("#student2 svg").remove();
     d3.select("#student3 svg").remove();
     d3.select("#student4 svg").remove();
+
+    d3.select("#waffle svg").remove();
+    d3.select("#waffle1 svg").remove();
+    d3.select("#waffle2 svg").remove();
+    d3.select("#waffle3 svg").remove();
+    
 
 }
 
@@ -1399,6 +1398,14 @@ function moocsFilter() {
                 drawStudentParticipantsChart(students[0]);
                 drawStudentCompletedsChart(students[0]);
                 drawStudentCertifiedsChart(students[0]);
+
+                // Gender
+                var gender = divisionFilter($.extend(true, [], moocsGenderArrays.genderDivisions),$("select[id*='divisionSelect']").val());
+                points(moocsGenderAddGray(moocsGenderFilter(gender, "Female")));
+                points1(moocsGenderAddGray(moocsGenderFilter(gender, "Male")));
+                points2(moocsGenderAddGray(moocsGenderFilter(gender, "Not Available")));
+                points3(moocsGenderAddGray(moocsGenderFilter(gender, "Other")));
+              
             } else if ($("select[id*='deparmentSelect']").val().length > 0) {
 
                 var timelineDivisions = orderTopMoocs(departmentFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDepartments), $("select[id*='deparmentSelect']").val()));
@@ -1412,6 +1419,13 @@ function moocsFilter() {
                 drawStudentParticipantsChart(students[0]);
                 drawStudentCompletedsChart(students[0]);
                 drawStudentCertifiedsChart(students[0]);
+
+                 // Gender
+                 var gender = departmentFilter($.extend(true, [], moocsGenderArrays.genderDepartments),$("select[id*='deparmentSelect']").val());
+                 points(moocsGenderAddGray(moocsGenderFilter(gender, "Female")));
+                 points1(moocsGenderAddGray(moocsGenderFilter(gender, "Male")));
+                 points2(moocsGenderAddGray(moocsGenderFilter(gender, "Not Available")));
+                 points3(moocsGenderAddGray(moocsGenderFilter(gender, "Other")));
             } else {
 
                 createChart($.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB));
@@ -1423,6 +1437,12 @@ function moocsFilter() {
                 drawStudentParticipantsChart(moocsStudentsFlowArrays.studentsFlowIDB);
                 drawStudentCompletedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
                 drawStudentCertifiedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+
+                // Gender
+                points(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Female")));
+                points1(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Male")));
+                points2(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Not Available")));
+                points3(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Other")));
             }
 
 
@@ -1442,6 +1462,13 @@ function moocsFilter() {
                 drawStudentParticipantsChart(students[0]);
                 drawStudentCompletedsChart(students[0]);
                 drawStudentCertifiedsChart(students[0]);
+
+                // Gender
+                var gender = divisionFilter($.extend(true, [], moocsGenderArrays.genderDivisions),$("select[id*='divisionSelect']").val());
+                points(moocsGenderAddGray(moocsGenderFilter(gender, "Female")));
+                points1(moocsGenderAddGray(moocsGenderFilter(gender, "Male")));
+                points2(moocsGenderAddGray(moocsGenderFilter(gender, "Not Available")));
+                points3(moocsGenderAddGray(moocsGenderFilter(gender, "Other")));
             } else if ($("select[id*='deparmentSelect']").val().length > 0) {
                 var timelineDivisions = orderTopMoocs(departmentFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDepartments), $("select[id*='deparmentSelect']").val()));
                 createChart(timelineDivisions[0].data);
@@ -1454,6 +1481,13 @@ function moocsFilter() {
                 drawStudentParticipantsChart(students[0]);
                 drawStudentCompletedsChart(students[0]);
                 drawStudentCertifiedsChart(students[0]);
+
+                // Gender
+                var gender = departmentFilter($.extend(true, [], moocsGenderArrays.genderDepartments),$("select[id*='deparmentSelect']").val());
+                points(moocsGenderAddGray(moocsGenderFilter(gender, "Female")));
+                points1(moocsGenderAddGray(moocsGenderFilter(gender, "Male")));
+                points2(moocsGenderAddGray(moocsGenderFilter(gender, "Not Available")));
+                points3(moocsGenderAddGray(moocsGenderFilter(gender, "Other")));
             } else {
                 createChart($.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB));
 
@@ -1464,6 +1498,12 @@ function moocsFilter() {
                 drawStudentParticipantsChart(moocsStudentsFlowArrays.studentsFlowIDB);
                 drawStudentCompletedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
                 drawStudentCertifiedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+
+                 // Gender
+                 points(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Female")));
+                 points1(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Male")));
+                 points2(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Not Available")));
+                 points3(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Other")));
             }
             break;
     }
