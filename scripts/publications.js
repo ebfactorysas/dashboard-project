@@ -911,7 +911,7 @@ function init() {
     var downloadTimelineIDB = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineIDB);
     var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
 
-    drawTree(dataTree);
+    //drawTree(dataTree);
     drawGaugePublicationChart(dataPublicationGauge);
     drawLinesChartPublication(dataLinesPublications);
 
@@ -970,4 +970,147 @@ $("#idbLink").click(function (event) {
     $("select[id*='divisionSelect']").val("");
     event.preventDefault();
     publicationFilter();
-})
+});
+
+
+/******************************** */
+function test(){
+
+
+    var geoData = [
+        {
+                "value": 40359,
+                "name": "Bing",
+                "group": "group 1"
+            },
+            {
+                "value": 185489,
+                "name": "Facebook",
+                "group": "group 1"
+            },
+            {
+                "value": 3712118,
+                "name": "Google",
+                "group": "group 1"
+            },
+            {
+                "value": 91257,
+                "name": "IDB Blogs",
+                "group": "group 1"
+            },
+            {
+                "value": 268514,
+                "name": "IDB Landing Page",
+                "group": "group 1"
+            },
+            {
+                "value": 60878,
+                "name": "IDB MOOCs",
+                "group": "group 1"
+            },
+            {
+                "value": 2741813,
+                "name": "IDB Publications",
+                "group": "group 1"
+            },
+            {
+                "value": 79309,
+                "name": "IDB RES",
+                "group": "group 1"
+            },
+            {
+                "value": 2177,
+                "name": "Indes Virtual",
+                "group": "group 1"
+            },
+            {
+                "value": 69649,
+                "name": "INTAL",
+                "group": "group 1"
+            },
+            {
+                "value": 8766,
+                "name": "LinkedIn",
+                "group": "group 1"
+            },
+            {
+                "value": 593965,
+                "name": "Others",
+                "group": "group 1"
+            },
+            {
+                "value": 8236,
+                "name": "RePec",
+                "group": "group 1"
+            },
+            {
+                "value": 29475,
+                "name": "Twitter",
+                "group": "group 1"
+            },
+            {
+                "value": 18121,
+                "name": "Yahoo",
+                "group": "group 1"
+            }
+        ]
+
+    var colours = interpolateColors("rgb(217, 30, 24)", "rgb(94, 79, 162)", geoData.length);
+
+
+    
+    
+    geoData.forEach(function(element, i) {
+      element.color = colours[i]
+    });
+    console.log(geoData);
+    var groupData = ["name", "value"];
+    var colorParam = "value";
+    var sizeMeasure = "value";
+    var indexColor = 0;
+    new d3plus.Treemap()
+      .data(geoData)
+      .groupBy(["value", "name"])
+      .sum("value")
+      .shapeConfig({
+         fill: function(d) {
+           return d.color;
+         }
+      })
+      
+      .select("#downloads-publications")
+      .render();
+  
+     
+    
+}
+
+// Returns a single rgb color interpolation between given rgb color
+// based on the factor given; via https://codepen.io/njmcode/pen/axoyD?editors=0010
+function interpolateColor(color1, color2, factor) {
+    if (arguments.length < 3) { 
+        factor = 0.5; 
+    }
+    var result = color1.slice();
+    for (var i = 0; i < 3; i++) {
+        result[i] = Math.round(result[i] + factor * (color2[i] - color1[i]));
+    }
+    return result;
+};
+// My function to interpolate between two colors completely, returning an array
+function interpolateColors(color1, color2, steps) {
+    var stepFactor = 1 / (steps - 1),
+    interpolatedColorArray = [];
+
+    color1 = color1.match(/\d+/g).map(Number);
+    color2 = color2.match(/\d+/g).map(Number);
+
+    for(var i = 0; i < steps; i++) {
+    	var aux = interpolateColor(color1, color2, stepFactor * i);
+        aux = "rgb("+aux[0]+","+aux[1]+","+aux[2]+")"
+        //console.log(aux);
+        interpolatedColorArray.push(aux);
+    }
+    return interpolatedColorArray;
+}
+test();

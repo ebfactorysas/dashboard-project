@@ -3180,7 +3180,8 @@ var publicationsDownloadSourceArrays = {
             "xlsx_row_id": 319
         }
     ],
-    downloadSourceDivisions: [{
+    downloadSourceDivisions: [
+        {
             "json_featuretype": "NewFeatureType",
             "All the time downloads ": "1",
             "2018 downloads": "0",
@@ -10133,137 +10134,137 @@ var publicationsDownloadSourceArrays = {
     ],
     downloadSourceIDB: [{
             "json_featuretype": "NewFeatureType",
-            "All the time downloads ": "40359",
+            "value": 40359,
             "2018 downloads": "150",
             "2018 % total downloads ": "0.000268577506096709",
             "All the time % total of downloads  ": "0.00510219432661376",
-            "Download Source": "Bing",
+            "name": "Bing",
             "xlsx_row_id": 2
         },
         {
             "json_featuretype": "NewFeatureType",
-            "All the time downloads ": "185489",
+            "value": 185489,
             "2018 downloads": "39016",
             "2018 % total downloads ": "0.0698587998524614",
             "All the time % total of downloads  ": "0.0234495632560088",
-            "Download Source": "Facebook",
+            "name": "Facebook",
             "xlsx_row_id": 3
         },
         {
             "json_featuretype": "NewFeatureType",
-            "All the time downloads ": "3712118",
+            "value": 3712118,
             "2018 downloads": "71512",
             "2018 % total downloads ": "0.128043430773253",
             "All the time % total of downloads  ": "0.469286835633212",
-            "Download Source": "Google",
+            "name": "Google",
             "xlsx_row_id": 4
         },
         {
             "json_featuretype": "NewFeatureType",
-            "All the time downloads ": "91257",
+            "value": 91257,
             "2018 downloads": "3954",
             "2018 % total downloads ": "0.00707970306070926",
             "All the time % total of downloads  ": "0.0115367315261476",
-            "Download Source": "IDB Blogs",
+            "name": "IDB Blogs",
             "xlsx_row_id": 5
         },
         {
             "json_featuretype": "NewFeatureType",
-            "All the time downloads ": "268514",
+            "value": 268514,
             "2018 downloads": "17894",
             "2018 % total downloads ": "0.0320395059606301",
             "All the time % total of downloads  ": "0.0339456033949396",
-            "Download Source": "IDB Landing Page",
+            "name": "IDB Landing Page",
             "xlsx_row_id": 6
         },
         {
             "json_featuretype": "NewFeatureType",
-            "All the time downloads ": "60878",
+            "value": 60878,
             "2018 downloads": "459",
             "2018 % total downloads ": "0.000821847168655931",
             "All the time % total of downloads  ": "0.00769621116022678",
-            "Download Source": "IDB MOOCs",
+            "name": "IDB MOOCs",
             "xlsx_row_id": 7
         },
         {
             "json_featuretype": "NewFeatureType",
-            "All the time downloads ": "2741813",
+            "value": 2741813,
             "2018 downloads": "206189",
             "2018 % total downloads ": "0.369184849363829",
             "All the time % total of downloads  ": "0.346620648014962",
-            "Download Source": "IDB Publications",
+            "name": "IDB Publications",
             "xlsx_row_id": 8
         },
         {
             "json_featuretype": "NewFeatureType",
-            "All the time downloads ": "79309",
+            "value": 79309,
             "2018 downloads": "1997",
             "2018 % total downloads ": "0.00357566186450086",
             "All the time % total of downloads  ": "0.0100262625399393",
-            "Download Source": "IDB RES",
+            "name": "IDB RES",
             "xlsx_row_id": 9
         },
         {
             "json_featuretype": "NewFeatureType",
-            "All the time downloads ": "2177",
+            "value": 2177,
             "2018 downloads": "121",
             "2018 % total downloads ": "0.000216652521584679",
             "All the time % total of downloads  ": "0.000275216854952753",
-            "Download Source": "Indes Virtual",
+            "name": "Indes Virtual",
             "xlsx_row_id": 10
         },
         {
             "json_featuretype": "NewFeatureType",
-            "All the time downloads ": "69649",
+            "value": 69649,
             "2018 downloads": "30185",
             "2018 % total downloads ": "0.0540467468101945",
             "All the time % total of downloads  ": "0.00880504305493996",
-            "Download Source": "INTAL",
+            "name": "INTAL",
             "xlsx_row_id": 11
         },
         {
             "json_featuretype": "NewFeatureType",
-            "All the time downloads ": "8766",
+            "value": 8766,
             "2018 downloads": "2807",
             "2018 % total downloads ": "0.00502598039742309",
             "All the time % total of downloads  ": "0.00110819979353047",
-            "Download Source": "LinkedIn",
+            "name": "LinkedIn",
             "xlsx_row_id": 12
         },
         {
             "json_featuretype": "NewFeatureType",
-            "All the time downloads ": "593965",
+            "value": 593965,
             "2018 downloads": "177425",
             "2018 % total downloads ": "0.317682426794724",
             "All the time % total of downloads  ": "0.0750891957978925",
-            "Download Source": "Others",
+            "name": "Others",
             "xlsx_row_id": 13
         },
         {
             "json_featuretype": "NewFeatureType",
-            "All the time downloads ": "8236",
+            "value": 8236,
             "2018 downloads": "137",
             "2018 % total downloads ": "0.000245300788901661",
             "All the time % total of downloads  ": "0.00104119706816301",
-            "Download Source": "RePec",
+            "name": "RePec",
             "xlsx_row_id": 14
         },
         {
             "json_featuretype": "NewFeatureType",
-            "All the time downloads ": "29475",
+            "value": 29475,
             "2018 downloads": "6569",
             "2018 % total downloads ": "0.0117619042503286",
             "All the time % total of downloads  ": "0.00372623647208654",
-            "Download Source": "Twitter",
+            "name": "Twitter",
             "xlsx_row_id": 15
         },
         {
             "json_featuretype": "NewFeatureType",
-            "All the time downloads ": "18121",
+            "value": "18121",
             "2018 downloads": "83",
             "2018 % total downloads ": "0.000148612886706846",
             "All the time % total of downloads  ": "0.0022908611063844",
-            "Download Source": "Yahoo",
+            "name": "Yahoo",
             "xlsx_row_id": 16
         }
     ]
