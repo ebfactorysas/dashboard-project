@@ -1,7 +1,8 @@
 var moocsRegistrationTimeline = {
     registrationTimelineDepartments: [{
             code: "CID",
-            data: [{
+            data: [
+                {
                     "date": "1-Apr-18",
                     "close": 6
                 },
@@ -109,7 +110,8 @@ var moocsRegistrationTimeline = {
         },
         {
             code: "CSC",
-            data: [{
+            data: [
+                {
                     "date": "1-Apr-18",
                     "close": 712
                 },
@@ -273,7 +275,8 @@ var moocsRegistrationTimeline = {
         },
         {
             code: "CSD",
-            data: [{
+            data: [
+                {
                     "date": "1-Apr-18",
                     "close": 498
                 },
@@ -481,7 +484,8 @@ var moocsRegistrationTimeline = {
         },
         {
             code: "IFD",
-            data: [{
+            data: [
+                {
                     "date": "1-Apr-18",
                     "close": 3241
                 },
@@ -3631,7 +3635,8 @@ var moocsRegistrationTimeline = {
             code: "WSA"
         }
     ],
-    registrationTimelineIDB: [{
+    registrationTimelineIDB: [
+        {
             "date": "30-Apr-18",
             "close": 23378
         },
