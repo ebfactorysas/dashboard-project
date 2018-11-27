@@ -562,11 +562,17 @@ function sortByDateAscending(a, b) {
     // Dates will be cast to numbers automagically:
     return new Date(b.date) - new Date(a.date);
 }
-var TimeLineIDB = $.extend([], moocsRegistrationTimeline.registrationTimelineIDB);
-
-createChart(moocsRegistrationTimeline.registrationTimelineIDB);
+// var TimeLineIDB = $.extend([], moocsRegistrationTimeline.registrationTimelineIDB);
+var TimeLineIDB = $.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB);
+createChart(TimeLineIDB);
 
 function createChart(data) {
+    if ($("#moocs2018").prop("checked")) {
+        data = data.filter(function (data) {
+            return data.date.indexOf("-18") > -1
+        });
+    }
+
     var margin = {
             top: 20,
             right: 20,
@@ -605,23 +611,11 @@ function createChart(data) {
     // append the svg obgect to the body of the page
     // appends a 'group' element to 'svg'
     // moves the 'group' element to the top left margin
-
-    // var svg = d3.select("#timeline-moocs")
-    //     .append("svg")
-    //     .attr("width", width + margin.left + margin.right)
-    //     .attr("height", height + margin.top + margin.bottom)
-    //     .append("g")
-    //     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-
-    var svg = d3.select("#timeline-moocs")
-        .classed("svg-container", true) //container class to make it responsive
-        .append("svg")
-        //responsive SVG needs these 2 attributes and no width and height attr
-        .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "0 0 500 200")
-        //class to make it responsive
-        .classed("svg-content-responsive", true);
+    var svg = d3.select("#timeline-moocs").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
     var totalAmount = 0;
     // format the data
     data.forEach(function (d) {
@@ -687,16 +681,16 @@ function createChart(data) {
         .style('stroke-width', '3px')
         .style("font-family", "Gotham-Book")
         .style("font-size", "13px")
-        // .call(d3.axisBottom(x));
         .call(d3.axisBottom(x)
+            //.ticks(d3.timeDay.filter(d {return } d3.timeDay.count(0, d) % 100 === 0))
             .ticks(d3.timeDay.filter(function (d) {
-                return d3.timeDay.count(0, d) % 300 === 0
+                return $("#moocs2018").prop("checked") ? d3.timeDay.count(0, d) % 60 === 0 : d3.timeDay.count(0, d) % 300 === 0
             }))
             .tickFormat(function (x) {
                 // get the milliseconds since Epoch for the date
                 var milli = (x.getTime() - 10000);
 
-                // calculate new date 10 seconds earlier. Could be one second,
+                // calculate new date 10 seconds earlier. Could be one second, 
                 // but I like a little buffer for my neuroses
                 var vanilli = new Date(milli);
 
@@ -705,15 +699,15 @@ function createChart(data) {
                 var yr = vanilli.getFullYear();
 
                 // return appropriate quarter for that month
-                if ($("#2018Radio").prop("checked")) {
+                if ($("#moocs2018").prop("checked")) {
                     if (mon <= 2 && yr == 2018) {
-                        return yr;
+                        return "Q1 " + yr;
                     } else if (mon <= 5 && yr == 2018) {
-                        return yr;
+                        return "Q2 " + yr;
                     } else if (mon <= 8 && yr == 2018) {
-                        return yr;
+                        return "Q3 " + yr;
                     } else if (yr == 2018) {
-                        return yr;
+                        return "Q4 " + yr;
                     }
                 } else {
                     if (mon <= 2) {
@@ -730,7 +724,9 @@ function createChart(data) {
 
             })
             .tickSizeOuter(0)
-        );
+        )
+    //.call(d3.axisBottom(x));
+
     // add the Y Axis
     svg.append("g")
         .attr("class", "y-axis")
@@ -899,12 +895,14 @@ function drawGaugeMoocsChart(dataGauge) {
  * Start Filters
  */
 function removeMoocsSvg() {
+    d3.select("#timeline-moocs svg").remove();
     d3.select("#moocs-registrations svg").remove();
     d3.select("#distribution-moocs svg").remove();
     d3.select("#student1 svg").remove();
     d3.select("#student2 svg").remove();
     d3.select("#student3 svg").remove();
     d3.select("#student4 svg").remove();
+
 }
 
 function divisionFilter(moocsJson, filterBy) {
@@ -912,6 +910,7 @@ function divisionFilter(moocsJson, filterBy) {
         return entry.code === filterBy;
     });
 }
+
 
 function departmentFilter(moocsJson, filterBy) {
     return moocsJson.filter(function (entry) {
@@ -927,6 +926,10 @@ function moocsFilter() {
 
             //top registration chart
             if ($("select[id*='divisionSelect']").val().length > 0) {
+                var timelineDivisions = divisionFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDivisions), $("select[id*='divisionSelect']").val());
+                createChart(timelineDivisions[0].data);
+
+
                 drawMoocsRegistrationsChart(orderTopMoocs(divisionFilter(moocsTopArrays.divisionsAlltime, $("select[id*='divisionSelect']").val())));
                 drawDistributionChart(orderTopMoocs(divisionFilter(moocsEducationArrays.educationLevelDivisions, $("select[id*='divisionSelect']").val())));
 
@@ -945,6 +948,9 @@ function moocsFilter() {
                 drawStudentCompletedsChart(students[0]);
                 drawStudentCertifiedsChart(students[0]);
             } else {
+
+                createChart($.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB));
+
                 drawMoocsRegistrationsChart(topAllMoocs);
                 drawDistributionChart(moocsEducationArrays.educationLevelIDB);
                 // same data for all and 2018
@@ -960,6 +966,9 @@ function moocsFilter() {
         default:
             //top registration chart
             if ($("select[id*='divisionSelect']").val().length > 0) {
+                var timelineDivisions = divisionFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDivisions), $("select[id*='divisionSelect']").val());
+                createChart(timelineDivisions[0].data);
+                
                 drawMoocsRegistrationsChart(orderTopMoocs(divisionFilter(moocsTopArrays.divisions2018, $("select[id*='divisionSelect']").val())));
                 drawDistributionChart(orderTopMoocs(divisionFilter(moocsEducationArrays.educationLevelDivisions, $("select[id*='divisionSelect']").val())));
 
@@ -978,6 +987,8 @@ function moocsFilter() {
                 drawStudentCompletedsChart(students[0]);
                 drawStudentCertifiedsChart(students[0]);
             } else {
+                createChart($.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB));
+
                 drawMoocsRegistrationsChart(top2018Moocs);
                 drawDistributionChart(moocsEducationArrays.educationLevelIDB);
                 // same data for all and 2018
