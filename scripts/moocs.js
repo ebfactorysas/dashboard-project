@@ -1024,6 +1024,7 @@ function moocsGenderFilter(moocsJson, gender) {
 
 function moocsGenderAddGray(moocsJson) {
     if(moocsJson.length === 0 )return [];
+    moocsJson[0].realpopulation = moocsJson[0].population;
     moocsJson[0].population = (moocsJson[0].population * 100).toFixed(0);
     var gray = {
         "age": "gray",
@@ -1039,7 +1040,9 @@ points2(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArray
 points3(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Other")));
 
 function points(data) {
-
+    var formatNumber = setSettingsNumber(data[0].registrations);
+    $('#waffle-registrations').html(formatNumber.valueNumber + formatNumber.suffixNumber);
+    $('#waffle-gender').html(data[0].Gender + " " + (data[0].realpopulation * 100).toFixed(2) + "%");
     var total = 100;
     var widthSquares = 10,
         heightSquares = 10,
@@ -1083,7 +1086,7 @@ function points(data) {
         .append("svg")
         //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-80 -300 800 1000")
+        .attr("viewBox", "-80 -300 560 1000")
         //class to make it responsive
         .classed("svg-content-responsive", true)
         .append("g")
@@ -1117,6 +1120,10 @@ function points(data) {
 
 
 function points1(data) {
+    var formatNumber = setSettingsNumber(data[0].registrations);
+    $('#waffle1-registrations').html(formatNumber.valueNumber + formatNumber.suffixNumber);
+    $('#waffle1-gender').html(data[0].Gender + " " + (data[0].realpopulation * 100).toFixed(2) + "%");
+
     var total = 100;
     var widthSquares = 10,
         heightSquares = 10,
@@ -1163,7 +1170,7 @@ function points1(data) {
         .append("svg")
         //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-80 -300 800 1000")
+        .attr("viewBox", "-80 -300 560 1000")
         //class to make it responsive
         .classed("svg-content-responsive", true)
         .append("g")
@@ -1195,6 +1202,9 @@ function points1(data) {
 }
 
 function points2(data) {
+    var formatNumber = setSettingsNumber(data[0].registrations);
+    $('#waffle2-registrations').html(formatNumber.valueNumber + formatNumber.suffixNumber);
+    $('#waffle2-gender').html(data[0].Gender + " " + (data[0].realpopulation * 100).toFixed(2) + "%");
     var total = 100;
     var widthSquares = 10,
         heightSquares = 10,
@@ -1240,7 +1250,7 @@ function points2(data) {
         .append("svg")
         //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-80 -300 800 1000")
+        .attr("viewBox", "-80 -300 560 1000")
         //class to make it responsive
         .classed("svg-content-responsive", true)
         .append("g")
@@ -1272,6 +1282,10 @@ function points2(data) {
 }
 
 function points3(data) {
+    var formatNumber = setSettingsNumber(data[0].registrations);
+    $('#waffle3-registrations').html(formatNumber.valueNumber + formatNumber.suffixNumber);
+    $('#waffle3-gender').html(data[0].Gender + " " + (data[0].realpopulation * 100).toFixed(2) + "%");
+
     var total = 100;
     var widthSquares = 10,
         heightSquares = 10,
@@ -1315,7 +1329,7 @@ function points3(data) {
         .append("svg")
         //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-80 -300 800 1000")
+        .attr("viewBox", "-80 -300 560 1000")
         //class to make it responsive
         .classed("svg-content-responsive", true)
         .append("g")
