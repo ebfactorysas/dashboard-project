@@ -1,0 +1,15 @@
+section {
+  float: left;
+  width: 100%;
+  position: relative;
+
+  &.publications, &.moocs, &.datasets, &.code, &.suscribers, &.map {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    @include breakpoint($desk) {
+      min-height: 960px;
+    }
+  }
+}

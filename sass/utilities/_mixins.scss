@@ -71,3 +71,48 @@
     }
   }
 }
+
+@mixin borderTopGraphs {
+  position: relative;
+  &:before {
+    content: "";
+    height: 2px;
+    width: 90%;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    z-index: 3;
+    background: $gray;
+  }
+}
+
+@mixin borderBottomGraphs {
+  position: relative;
+  &:before {
+    content: "";
+    height: 2px;
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    z-index: 3;
+    background: $gray;
+  }
+}
+
+@mixin filters($activeColor) {
+  text-align: right;
+  span {
+    cursor: pointer;
+    padding: 0 5px;
+    border-right: 2px solid $gray;
+    font-family: Gotham-Medium;
+    &.active {
+      color: $activeColor !important;
+      border-right: 2px solid $activeColor;
+    }
+    &:last-child {
+      border: 0;
+    }
+  }
+}

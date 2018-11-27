@@ -1,12 +1,32 @@
+#nav-title {
+  .navbar-nav {
+    a {
+      @include breakpoint($max_desktop) {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
 .menu {
   ul {
     margin: 0;
-    padding: 0;
+    padding: 10px 0 !important;
     font-size: 0;
+    position: relative;
+    padding-top: 55px !important;
+    min-height: 45px;
+    font-family: 'Gotham-Bold';
+    color: #b4b4b4;
+    font-size: 20px;
+    z-index: 2;
 
     @include breakpoint($desk) {
       display: -ms-flexbox !important;
       display: flex !important;
+      padding: 10px 0 !important;
     }
 
     li {
@@ -24,10 +44,22 @@
       display: none;
       @include breakpoint($desk) {
         display: inline-block;
+        border: 0;
+        -ms-flex: auto;
+        flex: auto;
       }
 
-      &:first-child {
+      &.first {
+        position: absolute;
+        top: 10px;
+        left: 0;
         display: inline-block;
+        border: 0;
+        @include breakpoint($desk) {
+          position: relative;
+          top: inherit;
+          left: inherit;
+        }
         &:after {
           content: "";
           width: 0;
@@ -43,15 +75,21 @@
           }
         }
       }
+    }
 
-      &:hover {
-        background: #f1f1f1;
-      }
-
-      @include breakpoint($desk) {
-        border: 0;
-        -ms-flex: auto;
-        flex: auto;
+    &.open {
+      li {
+        display: inline-block;
+        &.first {
+          border-bottom: 1px solid #f1f1f1;
+          @include breakpoint($desk) {
+            border: 0;
+          }
+          &:after {
+            border-width: 0 8px 13px 8px;
+            border-color: transparent transparent #000 transparent;
+          }
+        }
       }
     }
   }

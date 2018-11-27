@@ -56,75 +56,344 @@ var dataTree = {
         ]
     }]
 }
+
+
 var dataPublicationGauge = {
     "publication": {
-        "total": (publicationsAllTotalGlobal > 100) ? 1000: 100,
+        "total": getPercentageTotal(publicationsAllTotalGlobal),
         "allocated": publicationsAllTotalGlobal
     },
     "download": {
-        "total": (publicationsAllDownloads > 100) ? 1000: 100,
+        "total": getPercentageTotal(publicationsAllDownloads),
         "allocated": publicationsAllDownloads
     },
     "lac": {
-        "total": (publicationsAllDownloads > 100) ? 1000: 100,
+        "total": 100,
         "allocated": publicationsAllDownloadsLac
     }
 }
 
 //lineas que van al lado de trends
 var dataLinesPublications = [{
-        "date": 201801,
-        "Paul Productive Code": 4.1 + 10,
-        "Paul Raw Code": 3.2 + 20,
-        "Michelle Productive Code": 2.2 + 30,
-        "Michelle Raw Code": 1.9 + 40,
-        "mario pro code": 7 + 50,
-        "mario raw code": 3 + 60
+        "date": 20180101,
+
+        "one": Math.floor((Math.random() * 10) + 1) + 10,
+        "two": Math.floor((Math.random() * 10) + 1) + 20,
+        "three": Math.floor((Math.random() * 10) + 1) + 30,
+        "four": Math.floor((Math.random() * 10) + 1) + 40,
+        "five": Math.floor((Math.random() * 10) + 1) + 50,
+        "six": Math.floor((Math.random() * 10) + 1) + 60,
+        "seven": Math.floor((Math.random() * 10) + 1) + 70,
+        "eight": Math.floor((Math.random() * 10) + 1) + 80,
+        "nine": Math.floor((Math.random() * 10) + 1) + 90,
+        "ten": Math.floor((Math.random() * 10) + 1) + 100
+    },    {
+        "date": 20180102,
+
+        "one": Math.floor((Math.random() * 10) + 1) + 10,
+        "two": Math.floor((Math.random() * 10) + 1) + 20,
+        "three": Math.floor((Math.random() * 10) + 1) + 30,
+        "four": Math.floor((Math.random() * 10) + 1) + 40,
+        "five": Math.floor((Math.random() * 10) + 1) + 50,
+        "six": Math.floor((Math.random() * 10) + 1) + 60,
+        "seven": Math.floor((Math.random() * 10) + 1) + 70,
+        "eight": Math.floor((Math.random() * 10) + 1) + 80,
+        "nine": Math.floor((Math.random() * 10) + 1) + 90,
+        "ten": Math.floor((Math.random() * 10) + 1) + 100
+
+    },    {
+        "date": 20180103,
+
+        "one": Math.floor((Math.random() * 10) + 1) + 10,
+        "two": Math.floor((Math.random() * 10) + 1) + 20,
+        "three": Math.floor((Math.random() * 10) + 1) + 30,
+        "four": Math.floor((Math.random() * 10) + 1) + 40,
+        "five": Math.floor((Math.random() * 10) + 1) + 50,
+        "six": Math.floor((Math.random() * 10) + 1) + 60,
+        "seven": Math.floor((Math.random() * 10) + 1) + 70,
+        "eight": Math.floor((Math.random() * 10) + 1) + 80,
+        "nine": Math.floor((Math.random() * 10) + 1) + 90,
+        "ten": Math.floor((Math.random() * 10) + 1) + 100
+
     },
     {
-        "date": 201802,
-        "Paul Productive Code": 6 + 10,
-        "Paul Raw Code": 3.5 + 20,
-        "Michelle Productive Code": 3.4 + 30,
-        "Michelle Raw Code": 1.9 + 40,
-        "mario pro code": 2 + 50,
-        "mario raw code": 3 + 60
+        "date": 20180104,
+
+        "one": Math.floor((Math.random() * 10) + 1) + 10,
+        "two": Math.floor((Math.random() * 10) + 1) + 20,
+        "three": Math.floor((Math.random() * 10) + 1) + 30,
+        "four": Math.floor((Math.random() * 10) + 1) + 40,
+        "five": Math.floor((Math.random() * 10) + 1) + 50,
+        "six": Math.floor((Math.random() * 10) + 1) + 60,
+        "seven": Math.floor((Math.random() * 10) + 1) + 70,
+        "eight": Math.floor((Math.random() * 10) + 1) + 80,
+        "nine": Math.floor((Math.random() * 10) + 1) + 90,
+        "ten": Math.floor((Math.random() * 10) + 1) + 100
+
     },
     {
-        "date": 201803,
-        "Paul Productive Code": 0 + 10,
-        "Paul Raw Code": 3.1 + 20,
-        "Michelle Productive Code": 3.1 + 30,
-        "Michelle Raw Code": 1.9 + 40,
-        "mario pro code": 2 + 50,
-        "mario raw code": 9 + 60
+        "date": 20180105,
+
+        "one": Math.floor((Math.random() * 10) + 1) + 10,
+        "two": Math.floor((Math.random() * 10) + 1) + 20,
+        "three": Math.floor((Math.random() * 10) + 1) + 30,
+        "four": Math.floor((Math.random() * 10) + 1) + 40,
+        "five": Math.floor((Math.random() * 10) + 1) + 50,
+        "six": Math.floor((Math.random() * 10) + 1) + 60,
+        "seven": Math.floor((Math.random() * 10) + 1) + 70,
+        "eight": Math.floor((Math.random() * 10) + 1) + 80,
+        "nine": Math.floor((Math.random() * 10) + 1) + 90,
+        "ten": Math.floor((Math.random() * 10) + 1) + 100
     },
     {
-        "date": 201804,
-        "Paul Productive Code": 7 + 10,
-        "Paul Raw Code": 3.8 + 20,
-        "Michelle Productive Code": 3.2 + 30,
-        "Michelle Raw Code": 2.3 + 40,
-        "mario pro code": 9 + 50,
-        "mario raw code": 0 + 60
-    },
-    {
-        "date": 201805,
-        "Paul Productive Code": 4 + 10,
-        "Paul Raw Code": 4.7 + 20,
-        "Michelle Productive Code": 3.7 + 30,
-        "Michelle Raw Code": 2.7 + 40,
-        "mario pro code": 5 + 50,
-        "mario raw code": 4 + 60
-    },
-    {
-        "date": 201806,
-        "Paul Productive Code": 9 + 10,
-        "Paul Raw Code": 5.5 + 20,
-        "Michelle Productive Code": 3.2 + 30,
-        "Michelle Raw Code": 2.2 + 40,
-        "mario pro code": 6 + 50,
-        "mario raw code": 2 + 60
+        "date": 20180106,
+
+        "one": Math.floor((Math.random() * 10) + 1) + 10,
+        "two": Math.floor((Math.random() * 10) + 1) + 20,
+        "three": Math.floor((Math.random() * 10) + 1) + 30,
+        "four": Math.floor((Math.random() * 10) + 1) + 40,
+        "five": Math.floor((Math.random() * 10) + 1) + 50,
+        "six": Math.floor((Math.random() * 10) + 1) + 60,
+        "seven": Math.floor((Math.random() * 10) + 1) + 70,
+        "eight": Math.floor((Math.random() * 10) + 1) + 80,
+        "nine": Math.floor((Math.random() * 10) + 1) + 90,
+        "ten": Math.floor((Math.random() * 10) + 1) + 100
+    }, {
+        "date": 20180107,
+
+        "one": Math.floor((Math.random() * 10) + 1) + 10,
+        "two": Math.floor((Math.random() * 10) + 1) + 20,
+        "three": Math.floor((Math.random() * 10) + 1) + 30,
+        "four": Math.floor((Math.random() * 10) + 1) + 40,
+        "five": Math.floor((Math.random() * 10) + 1) + 50,
+        "six": Math.floor((Math.random() * 10) + 1) + 60,
+        "seven": Math.floor((Math.random() * 10) + 1) + 70,
+        "eight": Math.floor((Math.random() * 10) + 1) + 80,
+        "nine": Math.floor((Math.random() * 10) + 1) + 90,
+        "ten": Math.floor((Math.random() * 10) + 1) + 100
+    }, {
+        "date": 20180108,
+
+        "one": Math.floor((Math.random() * 10) + 1) + 10,
+        "two": Math.floor((Math.random() * 10) + 1) + 20,
+        "three": Math.floor((Math.random() * 10) + 1) + 30,
+        "four": Math.floor((Math.random() * 10) + 1) + 40,
+        "five": Math.floor((Math.random() * 10) + 1) + 50,
+        "six": Math.floor((Math.random() * 10) + 1) + 60,
+        "seven": Math.floor((Math.random() * 10) + 1) + 70,
+        "eight": Math.floor((Math.random() * 10) + 1) + 80,
+        "nine": Math.floor((Math.random() * 10) + 1) + 90,
+        "ten": Math.floor((Math.random() * 10) + 1) + 100
+    }, {
+        "date": 20180109,
+
+        "one": Math.floor((Math.random() * 10) + 1) + 10,
+        "two": Math.floor((Math.random() * 10) + 1) + 20,
+        "three": Math.floor((Math.random() * 10) + 1) + 30,
+        "four": Math.floor((Math.random() * 10) + 1) + 40,
+        "five": Math.floor((Math.random() * 10) + 1) + 50,
+        "six": Math.floor((Math.random() * 10) + 1) + 60,
+        "seven": Math.floor((Math.random() * 10) + 1) + 70,
+        "eight": Math.floor((Math.random() * 10) + 1) + 80,
+        "nine": Math.floor((Math.random() * 10) + 1) + 90,
+        "ten": Math.floor((Math.random() * 10) + 1) + 100
+    }, {
+        "date": 20180110,
+
+        "one": Math.floor((Math.random() * 10) + 1) + 10,
+        "two": Math.floor((Math.random() * 10) + 1) + 20,
+        "three": Math.floor((Math.random() * 10) + 1) + 30,
+        "four": Math.floor((Math.random() * 10) + 1) + 40,
+        "five": Math.floor((Math.random() * 10) + 1) + 50,
+        "six": Math.floor((Math.random() * 10) + 1) + 60,
+        "seven": Math.floor((Math.random() * 10) + 1) + 70,
+        "eight": Math.floor((Math.random() * 10) + 1) + 80,
+        "nine": Math.floor((Math.random() * 10) + 1) + 90,
+        "ten": Math.floor((Math.random() * 10) + 1) + 100
+    }, {
+        "date": 20180111,
+
+        "one": Math.floor((Math.random() * 10) + 1) + 10,
+        "two": Math.floor((Math.random() * 10) + 1) + 20,
+        "three": Math.floor((Math.random() * 10) + 1) + 30,
+        "four": Math.floor((Math.random() * 10) + 1) + 40,
+        "five": Math.floor((Math.random() * 10) + 1) + 50,
+        "six": Math.floor((Math.random() * 10) + 1) + 60,
+        "seven": Math.floor((Math.random() * 10) + 1) + 70,
+        "eight": Math.floor((Math.random() * 10) + 1) + 80,
+        "nine": Math.floor((Math.random() * 10) + 1) + 90,
+        "ten": Math.floor((Math.random() * 10) + 1) + 100
+    }, {
+        "date": 20180112,
+
+        "one": Math.floor((Math.random() * 10) + 1) + 10,
+        "two": Math.floor((Math.random() * 10) + 1) + 20,
+        "three": Math.floor((Math.random() * 10) + 1) + 30,
+        "four": Math.floor((Math.random() * 10) + 1) + 40,
+        "five": Math.floor((Math.random() * 10) + 1) + 50,
+        "six": Math.floor((Math.random() * 10) + 1) + 60,
+        "seven": Math.floor((Math.random() * 10) + 1) + 70,
+        "eight": Math.floor((Math.random() * 10) + 1) + 80,
+        "nine": Math.floor((Math.random() * 10) + 1) + 90,
+        "ten": Math.floor((Math.random() * 10) + 1) + 100
+    }, {
+        "date": 20180113,
+
+        "one": Math.floor((Math.random() * 10) + 1) + 10,
+        "two": Math.floor((Math.random() * 10) + 1) + 20,
+        "three": Math.floor((Math.random() * 10) + 1) + 30,
+        "four": Math.floor((Math.random() * 10) + 1) + 40,
+        "five": Math.floor((Math.random() * 10) + 1) + 50,
+        "six": Math.floor((Math.random() * 10) + 1) + 60,
+        "seven": Math.floor((Math.random() * 10) + 1) + 70,
+        "eight": Math.floor((Math.random() * 10) + 1) + 80,
+        "nine": Math.floor((Math.random() * 10) + 1) + 90,
+        "ten": Math.floor((Math.random() * 10) + 1) + 100
+    }, {
+        "date": 20180114,
+
+        "one": Math.floor((Math.random() * 10) + 1) + 10,
+        "two": Math.floor((Math.random() * 10) + 1) + 20,
+        "three": Math.floor((Math.random() * 10) + 1) + 30,
+        "four": Math.floor((Math.random() * 10) + 1) + 40,
+        "five": Math.floor((Math.random() * 10) + 1) + 50,
+        "six": Math.floor((Math.random() * 10) + 1) + 60,
+        "seven": Math.floor((Math.random() * 10) + 1) + 70,
+        "eight": Math.floor((Math.random() * 10) + 1) + 80,
+        "nine": Math.floor((Math.random() * 10) + 1) + 90,
+        "ten": Math.floor((Math.random() * 10) + 1) + 100
+    }, {
+        "date": 20180115,
+
+        "one": Math.floor((Math.random() * 10) + 1) + 10,
+        "two": Math.floor((Math.random() * 10) + 1) + 20,
+        "three": Math.floor((Math.random() * 10) + 1) + 30,
+        "four": Math.floor((Math.random() * 10) + 1) + 40,
+        "five": Math.floor((Math.random() * 10) + 1) + 50,
+        "six": Math.floor((Math.random() * 10) + 1) + 60,
+        "seven": Math.floor((Math.random() * 10) + 1) + 70,
+        "eight": Math.floor((Math.random() * 10) + 1) + 80,
+        "nine": Math.floor((Math.random() * 10) + 1) + 90,
+        "ten": Math.floor((Math.random() * 10) + 1) + 100
+    }, {
+        "date": 20180116,
+
+        "one": Math.floor((Math.random() * 10) + 1) + 10,
+        "two": Math.floor((Math.random() * 10) + 1) + 20,
+        "three": Math.floor((Math.random() * 10) + 1) + 30,
+        "four": Math.floor((Math.random() * 10) + 1) + 40,
+        "five": Math.floor((Math.random() * 10) + 1) + 50,
+        "six": Math.floor((Math.random() * 10) + 1) + 60,
+        "seven": Math.floor((Math.random() * 10) + 1) + 70,
+        "eight": Math.floor((Math.random() * 10) + 1) + 80,
+        "nine": Math.floor((Math.random() * 10) + 1) + 90,
+        "ten": Math.floor((Math.random() * 10) + 1) + 100
+    }, {
+        "date": 20180117,
+
+        "one": Math.floor((Math.random() * 10) + 1) + 10,
+        "two": Math.floor((Math.random() * 10) + 1) + 20,
+        "three": Math.floor((Math.random() * 10) + 1) + 30,
+        "four": Math.floor((Math.random() * 10) + 1) + 40,
+        "five": Math.floor((Math.random() * 10) + 1) + 50,
+        "six": Math.floor((Math.random() * 10) + 1) + 60,
+        "seven": Math.floor((Math.random() * 10) + 1) + 70,
+        "eight": Math.floor((Math.random() * 10) + 1) + 80,
+        "nine": Math.floor((Math.random() * 10) + 1) + 90,
+        "ten": Math.floor((Math.random() * 10) + 1) + 100
+    }, {
+        "date": 20180118,
+
+        "one": Math.floor((Math.random() * 10) + 1) + 10,
+        "two": Math.floor((Math.random() * 10) + 1) + 20,
+        "three": Math.floor((Math.random() * 10) + 1) + 30,
+        "four": Math.floor((Math.random() * 10) + 1) + 40,
+        "five": Math.floor((Math.random() * 10) + 1) + 50,
+        "six": Math.floor((Math.random() * 10) + 1) + 60,
+        "seven": Math.floor((Math.random() * 10) + 1) + 70,
+        "eight": Math.floor((Math.random() * 10) + 1) + 80,
+        "nine": Math.floor((Math.random() * 10) + 1) + 90,
+        "ten": Math.floor((Math.random() * 10) + 1) + 100
+    }, {
+        "date": 20180119,
+
+        "one": Math.floor((Math.random() * 10) + 1) + 10,
+        "two": Math.floor((Math.random() * 10) + 1) + 20,
+        "three": Math.floor((Math.random() * 10) + 1) + 30,
+        "four": Math.floor((Math.random() * 10) + 1) + 40,
+        "five": Math.floor((Math.random() * 10) + 1) + 50,
+        "six": Math.floor((Math.random() * 10) + 1) + 60,
+        "seven": Math.floor((Math.random() * 10) + 1) + 70,
+        "eight": Math.floor((Math.random() * 10) + 1) + 80,
+        "nine": Math.floor((Math.random() * 10) + 1) + 90,
+        "ten": Math.floor((Math.random() * 10) + 1) + 100
+    }, {
+        "date": 20180120,
+
+        "one": Math.floor((Math.random() * 10) + 1) + 10,
+        "two": Math.floor((Math.random() * 10) + 1) + 20,
+        "three": Math.floor((Math.random() * 10) + 1) + 30,
+        "four": Math.floor((Math.random() * 10) + 1) + 40,
+        "five": Math.floor((Math.random() * 10) + 1) + 50,
+        "six": Math.floor((Math.random() * 10) + 1) + 60,
+        "seven": Math.floor((Math.random() * 10) + 1) + 70,
+        "eight": Math.floor((Math.random() * 10) + 1) + 80,
+        "nine": Math.floor((Math.random() * 10) + 1) + 90,
+        "ten": Math.floor((Math.random() * 10) + 1) + 100
+
+    }, {
+        "date": 20180121,
+
+        "one": Math.floor((Math.random() * 10) + 1) + 10,
+        "two": Math.floor((Math.random() * 10) + 1) + 20,
+        "three": Math.floor((Math.random() * 10) + 1) + 30,
+        "four": Math.floor((Math.random() * 10) + 1) + 40,
+        "five": Math.floor((Math.random() * 10) + 1) + 50,
+        "six": Math.floor((Math.random() * 10) + 1) + 60,
+        "seven": Math.floor((Math.random() * 10) + 1) + 70,
+        "eight": Math.floor((Math.random() * 10) + 1) + 80,
+        "nine": Math.floor((Math.random() * 10) + 1) + 90,
+        "ten": Math.floor((Math.random() * 10) + 1) + 100
+    }, {
+
+        "date": 20180122,
+
+        "one": Math.floor((Math.random() * 10) + 1) + 10,
+        "two": Math.floor((Math.random() * 10) + 1) + 20,
+        "three": Math.floor((Math.random() * 10) + 1) + 30,
+        "four": Math.floor((Math.random() * 10) + 1) + 40,
+        "five": Math.floor((Math.random() * 10) + 1) + 50,
+        "six": Math.floor((Math.random() * 10) + 1) + 60,
+        "seven": Math.floor((Math.random() * 10) + 1) + 70,
+        "eight": Math.floor((Math.random() * 10) + 1) + 80,
+        "nine": Math.floor((Math.random() * 10) + 1) + 90,
+        "ten": Math.floor((Math.random() * 10) + 1) + 100
+    }, {
+        "date": 20180123,
+
+        "one": Math.floor((Math.random() * 10) + 1) + 10,
+        "two": Math.floor((Math.random() * 10) + 1) + 20,
+        "three": Math.floor((Math.random() * 10) + 1) + 30,
+        "four": Math.floor((Math.random() * 10) + 1) + 40,
+        "five": Math.floor((Math.random() * 10) + 1) + 50,
+        "six": Math.floor((Math.random() * 10) + 1) + 60,
+        "seven": Math.floor((Math.random() * 10) + 1) + 70,
+        "eight": Math.floor((Math.random() * 10) + 1) + 80,
+        "nine": Math.floor((Math.random() * 10) + 1) + 90,
+        "ten": Math.floor((Math.random() * 10) + 1) + 100
+    }, {
+        "date": 20180124,
+
+        "one": Math.floor((Math.random() * 10) + 1) + 10,
+        "two": Math.floor((Math.random() * 10) + 1) + 20,
+        "three": Math.floor((Math.random() * 10) + 1) + 30,
+        "four": Math.floor((Math.random() * 10) + 1) + 40,
+        "five": Math.floor((Math.random() * 10) + 1) + 50,
+        "six": Math.floor((Math.random() * 10) + 1) + 60,
+        "seven": Math.floor((Math.random() * 10) + 1) + 70,
+        "eight": Math.floor((Math.random() * 10) + 1) + 80,
+        "nine": Math.floor((Math.random() * 10) + 1) + 90,
+        "ten": Math.floor((Math.random() * 10) + 1) + 100
     }
 ];
 
@@ -181,11 +450,16 @@ function createChartTimelinePublication(data) {
     // append the svg obgect to the body of the page
     // appends a 'group' element to 'svg'
     // moves the 'group' element to the top left margin
-    var svg = d3.select("#timeline-publication").append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
+    var svg = d3.select("#timeline-publication")
+        .append("svg")
+        //responsive SVG needs these 2 attributes and no width and height attr
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-60 -40 600 300")
         .append("g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+        // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
+
+        //class to make it responsive
+        .classed("svg-content-responsive", true);
     var totalAmount = 0;
     // format the data
     data.forEach(function (d) {
@@ -404,11 +678,12 @@ function drawTrendPublicationChart(dataPublicationTrend) {
         heightPublicationTrend = 400 - marginPublicationTrend.top - marginPublicationTrend.bottom;
 
 
-    var svgPublicationTrend = d3.select("#publication-trend").append("svg")
-        .attr("width", widthPublicationTrend + marginPublicationTrend.left + marginPublicationTrend.right)
-        .attr("height", heightPublicationTrend + marginPublicationTrend.top + marginPublicationTrend.bottom)
+    var svgPublicationTrend = d3.select("#publication-trend")
+        .append("svg")
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-40-40 800 450")
         .append("g")
-        .attr("transform", "translate(" + marginPublicationTrend.left + "," + marginPublicationTrend.top + ")");
+        .classed("svg-content-responsive", true);
 
     var xPublicationTrend = d3.scaleLinear()
         .range([0, widthPublicationTrend])
@@ -506,7 +781,8 @@ function drawGaugePublicationChart(dataGauge) {
         .attr("text-anchor", "middle")
         .attr("class", "percent-complete")
         .attr("dy", "0.3em")
-        .text(dataGauge.publication.allocated);
+        /*.text(setSettingsNumber(dataGauge.publication.allocated).valueNumber + setSettingsNumber(dataGauge.publication.allocated).suffixNumber);*/
+        .text(setSettingsNumber(dataGauge.publication.allocated).valueNumber + setSettingsNumber(dataGauge.publication.allocated).suffixNumber);
 
 
     var i4 = d3.interpolate(progress4, dataGauge.publication.allocated / dataGauge.publication.total);
@@ -538,7 +814,7 @@ function drawGaugePublicationChart(dataGauge) {
         .attr("text-anchor", "middle")
         .attr("class", "percent-complete")
         .attr("dy", "0.3em")
-        .text(dataGauge.download.allocated + "k");
+        .text(setSettingsNumber(dataGauge.download.allocated).valueNumber + setSettingsNumber(dataGauge.download.allocated).suffixNumber);
 
 
     var i2 = d3.interpolate(progress2, dataGauge.download.allocated / dataGauge.download.total);
@@ -575,24 +851,15 @@ function drawGaugePublicationChart(dataGauge) {
 
     var i3 = d3.interpolate(progress3, dataGauge.lac.allocated / dataGauge.lac.total);
     foreground3.attr("d", arc3.endAngle(twoPi * i3(1)));
-    // d3.transition().duration(1000).tween("progress", function () {
-    //     return function (t) {
-    //         progress4 = i4(t);
-    //         foreground4.attr("d", arc4.endAngle(twoPi * progress4));
-    //         percentComplete4.text((progress4 * 100).toFixed(0));
-    //         progress2 = i2(t);
-    //         foreground2.attr("d", arc2.endAngle(twoPi * progress2));
-    //         percentComplete2.text((progress2 * 1000).toFixed(0) + "K");
-    //         progress3 = i3(t);
-    //         foreground3.attr("d", arc3.endAngle(twoPi * progress3));
-    //         percentComplete3.text((progress3 * 100).toFixed(0) + "%");
 
-    //     };
-    // });
 }
 
 function drawLinesChartPublication(data) {
-    var svg = d3.select("#lines-publications"),
+    var svg = d3.select("#lines-publications").append("svg")
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-1 -100 380 1100")
+        .append("g")
+        .classed("svg-content-responsive", true),
         margin = {
             top: 20,
             right: 0,
@@ -605,9 +872,9 @@ function drawLinesChartPublication(data) {
             bottom: 30,
             left: 0
         },
-        width = +svg.attr("width") - margin.left - margin.right,
-        height = +svg.attr("height") - margin.top - margin.bottom,
-        height2 = +svg.attr("height") - margin2.top - margin2.bottom;
+        width = 400 - margin.left - margin.right,
+        height = 1100 - margin.top - margin.bottom,
+        height2 = 400 - margin2.top - margin2.bottom;
 
 
     svg.append("rect")
@@ -615,7 +882,7 @@ function drawLinesChartPublication(data) {
         .attr("height", "100%")
         .attr("fill", "transparent")
 
-    var parseTime = d3.timeParse("%Y%m");
+    var parseTime = d3.timeParse("%Y%m%d");
 
     var x = d3.scaleTime().range([0, width]),
         x2 = d3.scaleTime().range([0, width]),
@@ -743,17 +1010,9 @@ function drawLinesChartPublication(data) {
             return line(d.values);
         })
         .style("stroke", function (d) {
-            return colors[o1++]
+            return "#e39aa7"
         })
         .attr("clip-path", "url(#clip)");
-
-    // focus.append("g")
-    //     .attr("class", "grid")
-    //     .call(make_y_gridlines()
-    //         .tickSize(-width)
-    //         .tickFormat("")
-    //     )
-
 
     function brushed() {
         var extent = d3.event.selection;
@@ -941,12 +1200,12 @@ $("input[name*='publicationTrend']").click(function () {
             createChartTimelinePublication(downloadTimelineIDBTEST);
             drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
             drawPlotChartPublication(ObjectpublicationsAttention);
-            drawGaugePublicationChart(dataPublicationGauge);
+            // drawGaugePublicationChart(dataPublicationGauge);
         } else {
             createChartTimelinePublication(downloadTimelineIDBTEST);
             drawTrendPublicationChart(publicationsTopArrays.topIDB2018);
             drawPlotChartPublication(ObjectpublicationsAttention);
-            drawGaugePublicationChart(dataPublicationGauge);
+            // drawGaugePublicationChart(dataPublicationGauge);
         }
     }
 });

@@ -1,0 +1,7 @@
+.moocs {
+  .right-bar {
+    .filters {
+      @include filters($orange);
+    }
+  }
+}

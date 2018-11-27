@@ -1,0 +1,7 @@
+.datasets {
+  .right-bar {
+    .filters {
+      @include filters($purple);
+    }
+  }
+}

@@ -48,13 +48,13 @@ function drawDistributionChart(dataDistribution) {
         left: 50
     }
 
-    var widthDistribution = 520 - marginDistribution.left - marginDistribution.right;
-    var heightDistribution = 280 - marginDistribution.top - marginDistribution.bottom;
+    var widthDistribution = 650 - marginDistribution.left - marginDistribution.right;
+    var heightDistribution = 400 - marginDistribution.top - marginDistribution.bottom;
     var svgDistribution = d3.select('#distribution-moocs')
         .append("svg")
         //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "0 0 500 200")
+        .attr("viewBox", "0 0 500 500")
         .append("g")
         // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
 
@@ -226,6 +226,110 @@ function drawMoocsRegistrationsChart(dataMoocs) {
 /**
  * End registration-moocs
  */
+/**
+ * Start age-distribution-moocs
+ */
+drawMoocsAgeDistributionChart(topAllMoocs);
+
+var data = [{
+    value: 0,
+    name: "<18"
+}]
+
+function drawMoocsAgeDistributionChart(dataMoocs) {
+
+    var marginMoocs = {
+        top: 15,
+        right: 25,
+        bottom: 15,
+        left: 55
+    };
+
+    var widthMoocs = 560 - marginMoocs.left - marginMoocs.right,
+        heightMoocs = 200 - marginMoocs.top - marginMoocs.bottom;
+
+
+    var svgMoocs = d3.select("#age-distribution-moocs")
+        .append("svg")
+        //responsive SVG needs these 2 attributes and no width and height attr
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-55 -25 700 200")
+        .append("g")
+        // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
+
+        //class to make it responsive
+        .classed("svg-content-responsive", true);
+    // .append("svg")
+    // .attr("width", widthMoocs + marginMoocs.left + marginMoocs.right)
+    // .attr("height", heightMoocs + marginMoocs.top + marginMoocs.bottom)
+    // .append("g")
+    // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")");
+
+    var xMoocs = d3.scaleLinear()
+        .range([0, widthMoocs])
+        .domain([0, d3.max(dataMoocs, function (d) {
+            return d.value;
+        })]);
+
+    var yMoocs = d3.scaleBand()
+
+        .rangeRound([heightMoocs, 0], .1)
+        .domain(dataMoocs.map(function (d) {
+            return d.value;
+        }));
+
+    var yAxisMoocs = d3.axisLeft(yMoocs)
+        //no tick marks
+        .tickPadding(55)
+        .tickSize(0);
+
+    var gyMoocs = svgMoocs.append("g")
+        .style("text-anchor", "start")
+        .style("color", "#555555")
+        .attr("class", "y-data")
+
+        .call(yAxisMoocs)
+
+    var barsMoocs = svgMoocs.selectAll(".bar")
+        .data(dataMoocs)
+        .enter()
+        .append("g")
+
+    barsMoocs.append("rect")
+        .attr("class", "bar")
+        .attr("y", function (d) {
+            return yMoocs(d.value);
+        })
+        .attr("rx", 25)
+        .attr("ry", 25)
+        .attr("fill", "#dea692")
+        .attr("height", yMoocs.bandwidth() - 2)
+        .attr("x", 8)
+        .attr("width", function (d) {
+            return xMoocs(d.value);
+        });
+
+    barsMoocs.append("text")
+        .attr("class", "label")
+        //y position of the label is halfway down the bar
+        .attr("y", function (d) {
+            return yMoocs(d.value) + yMoocs.bandwidth() / 2 + 4;
+        })
+        //x position is 3 pixels to the right of the bar
+        .attr("x", function (d) {
+            return 12;
+        })
+        .attr("class", "text-inside")
+        .attr("font-family", "Gotham-Bold")
+        .attr("font-size", "12px")
+        .text(function (d) {
+            return d.name;
+        });
+}
+/**
+ * End age-distribution-moocs
+ */
+
 
 var marginStudents = {
     top: 2,
@@ -562,11 +666,17 @@ function sortByDateAscending(a, b) {
     // Dates will be cast to numbers automagically:
     return new Date(b.date) - new Date(a.date);
 }
-var TimeLineIDB = $.extend([], moocsRegistrationTimeline.registrationTimelineIDB);
-
-createChart(moocsRegistrationTimeline.registrationTimelineIDB);
+// var TimeLineIDB = $.extend([], moocsRegistrationTimeline.registrationTimelineIDB);
+var TimeLineIDB = $.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB);
+createChart(TimeLineIDB);
 
 function createChart(data) {
+    if ($("#moocs2018").prop("checked")) {
+        data = data.filter(function (data) {
+            return data.date.indexOf("-18") > -1
+        });
+    }
+
     var margin = {
             top: 20,
             right: 20,
@@ -605,23 +715,11 @@ function createChart(data) {
     // append the svg obgect to the body of the page
     // appends a 'group' element to 'svg'
     // moves the 'group' element to the top left margin
-
-    // var svg = d3.select("#timeline-moocs")
-    //     .append("svg")
-    //     .attr("width", width + margin.left + margin.right)
-    //     .attr("height", height + margin.top + margin.bottom)
-    //     .append("g")
-    //     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-
-    var svg = d3.select("#timeline-moocs")
-        .classed("svg-container", true) //container class to make it responsive
-        .append("svg")
-        //responsive SVG needs these 2 attributes and no width and height attr
-        .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "0 0 500 200")
-        //class to make it responsive
-        .classed("svg-content-responsive", true);
+    var svg = d3.select("#timeline-moocs").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
     var totalAmount = 0;
     // format the data
     data.forEach(function (d) {
@@ -687,16 +785,16 @@ function createChart(data) {
         .style('stroke-width', '3px')
         .style("font-family", "Gotham-Book")
         .style("font-size", "13px")
-        // .call(d3.axisBottom(x));
         .call(d3.axisBottom(x)
+            //.ticks(d3.timeDay.filter(d {return } d3.timeDay.count(0, d) % 100 === 0))
             .ticks(d3.timeDay.filter(function (d) {
-                return d3.timeDay.count(0, d) % 300 === 0
+                return $("#moocs2018").prop("checked") ? d3.timeDay.count(0, d) % 60 === 0 : d3.timeDay.count(0, d) % 300 === 0
             }))
             .tickFormat(function (x) {
                 // get the milliseconds since Epoch for the date
                 var milli = (x.getTime() - 10000);
 
-                // calculate new date 10 seconds earlier. Could be one second,
+                // calculate new date 10 seconds earlier. Could be one second, 
                 // but I like a little buffer for my neuroses
                 var vanilli = new Date(milli);
 
@@ -705,15 +803,15 @@ function createChart(data) {
                 var yr = vanilli.getFullYear();
 
                 // return appropriate quarter for that month
-                if ($("#2018Radio").prop("checked")) {
+                if ($("#moocs2018").prop("checked")) {
                     if (mon <= 2 && yr == 2018) {
-                        return yr;
+                        return "Q1 " + yr;
                     } else if (mon <= 5 && yr == 2018) {
-                        return yr;
+                        return "Q2 " + yr;
                     } else if (mon <= 8 && yr == 2018) {
-                        return yr;
+                        return "Q3 " + yr;
                     } else if (yr == 2018) {
-                        return yr;
+                        return "Q4 " + yr;
                     }
                 } else {
                     if (mon <= 2) {
@@ -730,7 +828,9 @@ function createChart(data) {
 
             })
             .tickSizeOuter(0)
-        );
+        )
+    //.call(d3.axisBottom(x));
+
     // add the Y Axis
     svg.append("g")
         .attr("class", "y-axis")
@@ -766,13 +866,14 @@ function createChart(data) {
 //         "allocated": 9
 //     }
 // }
+
 var dataGaugeMoocs = {
     "code": {
-        "total": (moocsAllTotalGlobal > 0) ? ((moocsAllTotalGlobal > 100) ? 1000 : 100) : 100,
+        "total": getPercentageTotal(moocsAllTotalGlobal),
         "allocated": moocsAllTotalGlobal
     },
     "pageview": {
-        "total": (moocsAllDownloads > 0) ? ((moocsAllDownloads > 100) ? 1000 : 100) : 100,
+        "total": getPercentageTotal(moocsAllDownloads),
         "allocated": moocsAllDownloads
     },
     "lac": {
@@ -817,7 +918,7 @@ function drawGaugeMoocsChart(dataGauge) {
         .attr("text-anchor", "middle")
         .attr("class", "percent-complete")
         .attr("dy", "0.3em")
-        .text((dataGauge.code.allocated));
+        .text(setSettingsNumber(dataGauge.code.allocated).valueNumber + setSettingsNumber(dataGauge.code.allocated).suffixNumber);
 
 
     var i = d3.interpolate(progress, dataGauge.code.allocated / dataGauge.code.total);
@@ -849,7 +950,7 @@ function drawGaugeMoocsChart(dataGauge) {
         .attr("text-anchor", "middle")
         .attr("class", "percent-complete")
         .attr("dy", "0.3em")
-        .text((dataGauge.pageview.allocated + "k"));
+        .text(setSettingsNumber(dataGauge.pageview.allocated).valueNumber + setSettingsNumber(dataGauge.pageview.allocated).suffixNumber);
 
 
     var i2 = d3.interpolate(progress2, dataGauge.pageview.allocated / dataGauge.pageview.total);
@@ -881,7 +982,8 @@ function drawGaugeMoocsChart(dataGauge) {
         .attr("text-anchor", "middle")
         .attr("class", "percent-complete")
         .attr("dy", "0.3em")
-    percentComplete3.text((dataGauge.lac.allocated + "%"));
+        /*percentComplete3.text((dataGauge.lac.allocated + "%"));*/
+        .text(setSettingsNumber(dataGauge.lac.allocated).valueNumber + setSettingsNumber(dataGauge.lac.allocated).suffixNumber);
 
 
     var i3 = d3.interpolate(progress3, dataGauge.lac.allocated / dataGauge.lac.total);
@@ -906,19 +1008,406 @@ function drawGaugeMoocsChart(dataGauge) {
 /**
  * End Gauges
  */
+// var datapoints = [{
+//     "age": "red",
+//     "population": 68
+// }, {
+//     "age": "gray",
+//     "population": 32
+// }]
+
+function moocsGenderFilter(moocsJson, gender) {
+    return moocsJson.filter(function (entry) {
+        return entry.Gender === gender;
+    });
+}
+
+function moocsGenderAddGray(moocsJson) {
+    if (moocsJson.length === 0) {
+        return [{
+            "age": "red",
+            "population": 0,
+            "registrations": 0
+        }, {
+            "age": "gray",
+            "population": 100
+        }];
+
+    }
+    moocsJson[0].realpopulation = moocsJson[0].population;
+    moocsJson[0].population = (moocsJson[0].population * 100).toFixed(0);
+    var gray = {
+        "age": "gray",
+        "population": 100 - moocsJson[0].population
+    }
+    moocsJson.push(gray);
+    return moocsJson;
+}
+// console.log()
+points(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Female")));
+points1(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Male")));
+points2(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Not Available")));
+points3(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Other")));
+
+function points(data) {
+    var formatNumber = setSettingsNumber(data[0].registrations);
+    $('#waffle-registrations').html(formatNumber.valueNumber + formatNumber.suffixNumber);
+    if (typeof data[0].Gender == "undefined") {
+        $('#waffle-gender').html("Female 0%");
+    } else {
+        $('#waffle-gender').html(data[0].Gender + " " + (data[0].realpopulation * 100).toFixed(2) + "%");
+    }
+
+    var total = 100;
+    var widthSquares = 10,
+        heightSquares = 10,
+        squareSize = 10,
+        squareValue = 0,
+        gap = 50,
+        theData = [];
 
 
+
+    //total
+    total = d3.sum(data, function (d) {
+        return d.population;
+    });
+
+
+    //value of a square
+    squareValue = total / (widthSquares * heightSquares);
+    //remap data
+    data.forEach(function (d, i) {
+        d.population = +d.population;
+        d.units = Math.floor(d.population / squareValue);
+        theData = theData.concat(
+            Array(d.units + 1).join(1).split('').map(function () {
+                return {
+                    squareValue: squareValue,
+                    units: d.units,
+                    population: d.population,
+                    groupIndex: i
+                };
+            })
+        );
+    });
+
+
+    width = (squareSize * widthSquares) + widthSquares * gap;
+    height = (squareSize * heightSquares) + heightSquares * gap;
+
+    var waffle = d3.select("#waffle")
+        //container class to make it responsive
+        .append("svg")
+        //responsive SVG needs these 2 attributes and no width and height attr
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-40 -300 600 1000")
+        //class to make it responsive
+        .classed("svg-content-responsive", true)
+        .append("g")
+        .selectAll("div")
+        .data(theData)
+        .enter()
+        .append("circle")
+        .attr('r', squareSize)
+
+        .attr("fill", function (d) {
+            if (d.groupIndex == 1) {
+                return "#d3d3d3"
+            } else {
+                return "#ea2f01"
+            }
+
+
+        })
+        .attr("cx", function (d, i) {
+            //group n squares for column
+
+            row = i % heightSquares;
+            return (row * squareSize) + (row * gap) + 5;
+        })
+        .attr("cy", function (d, i) {
+            col = Math.floor(i / heightSquares);
+            return -(heightSquares * squareSize) + ((col * squareSize) + (col * gap)) + 5
+        })
+}
+
+
+
+function points1(data) {
+    var formatNumber = setSettingsNumber(data[0].registrations);
+    $('#waffle1-registrations').html(formatNumber.valueNumber + formatNumber.suffixNumber);
+    if (typeof data[0].Gender == "undefined") {
+        $('#waffle1-gender').html("Male 0%");
+    } else {
+        $('#waffle1-gender').html(data[0].Gender + " " + (data[0].realpopulation * 100).toFixed(2) + "%");
+    }
+
+    var total = 100;
+    var widthSquares = 10,
+        heightSquares = 10,
+        squareSize = 10,
+        squareValue = 0,
+        gap = 50,
+        theData = [];
+
+
+
+
+
+
+    //total
+    total = d3.sum(data, function (d) {
+        return d.population;
+    });
+
+
+    //value of a square
+    squareValue = total / (widthSquares * heightSquares);
+    //remap data
+    data.forEach(function (d, i) {
+        d.population = +d.population;
+        d.units = Math.floor(d.population / squareValue);
+        theData = theData.concat(
+            Array(d.units + 1).join(1).split('').map(function () {
+                return {
+                    squareValue: squareValue,
+                    units: d.units,
+                    population: d.population,
+                    groupIndex: i
+                };
+            })
+        );
+    });
+
+
+    width = (squareSize * widthSquares) + widthSquares * gap;
+    height = (squareSize * heightSquares) + heightSquares * gap;
+
+    var waffle = d3.select("#waffle1")
+        //container class to make it responsive
+        .append("svg")
+        //responsive SVG needs these 2 attributes and no width and height attr
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-40 -300 600 1000")
+        //class to make it responsive
+        .classed("svg-content-responsive", true)
+        .append("g")
+        .selectAll("div")
+        .data(theData)
+        .enter()
+        .append("circle")
+        .attr('r', squareSize)
+
+        .attr("fill", function (d) {
+            if (d.groupIndex == 1) {
+                return "#d3d3d3"
+            } else {
+                return "#ea2f01"
+            }
+
+
+        })
+        .attr("cx", function (d, i) {
+            //group n squares for column
+
+            row = i % heightSquares;
+            return (row * squareSize) + (row * gap) + 5;
+        })
+        .attr("cy", function (d, i) {
+            col = Math.floor(i / heightSquares);
+            return -(heightSquares * squareSize) + ((col * squareSize) + (col * gap)) + 5
+        })
+}
+
+function points2(data) {
+    var formatNumber = setSettingsNumber(data[0].registrations);
+    $('#waffle2-registrations').html(formatNumber.valueNumber + formatNumber.suffixNumber);
+    if (typeof data[0].Gender == "undefined") {
+        $('#waffle2-gender').html("Not Available 0%");
+    } else {
+        $('#waffle2-gender').html(data[0].Gender + " " + (data[0].realpopulation * 100).toFixed(2) + "%");
+    }
+    var total = 100;
+    var widthSquares = 10,
+        heightSquares = 10,
+        squareSize = 10,
+        squareValue = 0,
+        gap = 50,
+        theData = [];
+
+
+
+
+
+    //total
+    total = d3.sum(data, function (d) {
+        return d.population;
+    });
+
+
+    //value of a square
+    squareValue = total / (widthSquares * heightSquares);
+    //remap data
+    data.forEach(function (d, i) {
+        d.population = +d.population;
+        d.units = Math.floor(d.population / squareValue);
+        theData = theData.concat(
+            Array(d.units + 1).join(1).split('').map(function () {
+                return {
+                    squareValue: squareValue,
+                    units: d.units,
+                    population: d.population,
+                    groupIndex: i
+                };
+            })
+        );
+    });
+
+
+    width = (squareSize * widthSquares) + widthSquares * gap;
+    height = (squareSize * heightSquares) + heightSquares * gap;
+
+    var waffle = d3.select("#waffle2")
+        //container class to make it responsive
+        .append("svg")
+        //responsive SVG needs these 2 attributes and no width and height attr
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-40 -300 600 1000")
+        //class to make it responsive
+        .classed("svg-content-responsive", true)
+        .append("g")
+        .selectAll("div")
+        .data(theData)
+        .enter()
+        .append("circle")
+        .attr('r', squareSize)
+
+        .attr("fill", function (d) {
+            if (d.groupIndex == 1) {
+                return "#d3d3d3"
+            } else {
+                return "#ea2f01"
+            }
+
+
+        })
+        .attr("cx", function (d, i) {
+            //group n squares for column
+
+            row = i % heightSquares;
+            return (row * squareSize) + (row * gap) + 5;
+        })
+        .attr("cy", function (d, i) {
+            col = Math.floor(i / heightSquares);
+            return -(heightSquares * squareSize) + ((col * squareSize) + (col * gap)) + 5
+        })
+}
+
+function points3(data) {
+    var formatNumber = setSettingsNumber(data[0].registrations);
+    $('#waffle3-registrations').html(formatNumber.valueNumber + formatNumber.suffixNumber);
+    if (typeof data[0].Gender == "undefined") {
+        $('#waffle3-gender').html("Not Available 0%");
+    } else {
+        $('#waffle3-gender').html(data[0].Gender + " " + (data[0].realpopulation * 100).toFixed(2) + "%");
+    }
+
+    var total = 100;
+    var widthSquares = 10,
+        heightSquares = 10,
+        squareSize = 10,
+        squareValue = 0,
+        gap = 50,
+        theData = [];
+
+
+
+    //total
+    total = d3.sum(data, function (d) {
+        return d.population;
+    });
+
+
+    //value of a square
+    squareValue = total / (widthSquares * heightSquares);
+    //remap data
+    data.forEach(function (d, i) {
+        d.population = +d.population;
+        d.units = Math.floor(d.population / squareValue);
+        theData = theData.concat(
+            Array(d.units + 1).join(1).split('').map(function () {
+                return {
+                    squareValue: squareValue,
+                    units: d.units,
+                    population: d.population,
+                    groupIndex: i
+                };
+            })
+        );
+    });
+
+
+    width = (squareSize * widthSquares) + widthSquares * gap;
+    height = (squareSize * heightSquares) + heightSquares * gap;
+
+    var waffle = d3.select("#waffle3")
+        //container class to make it responsive
+        .append("svg")
+        //responsive SVG needs these 2 attributes and no width and height attr
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-40 -300 600 1000")
+        //class to make it responsive
+        .classed("svg-content-responsive", true)
+        .append("g")
+        .selectAll("div")
+        .data(theData)
+        .enter()
+        .append("circle")
+        .attr('r', squareSize)
+
+        .attr("fill", function (d) {
+            if (d.groupIndex == 1) {
+                return "#d3d3d3"
+            } else {
+                return "#ea2f01"
+            }
+
+
+        })
+        .attr("cx", function (d, i) {
+            //group n squares for column
+
+            row = i % heightSquares;
+            return (row * squareSize) + (row * gap) + 5;
+        })
+        .attr("cy", function (d, i) {
+            col = Math.floor(i / heightSquares);
+            return -(heightSquares * squareSize) + ((col * squareSize) + (col * gap)) + 5
+        })
+}
 
 /**
  * Start Filters
  */
 function removeMoocsSvg() {
+
+    d3.select("#timeline-moocs svg").remove();
     d3.select("#moocs-registrations svg").remove();
     d3.select("#distribution-moocs svg").remove();
     d3.select("#student1 svg").remove();
     d3.select("#student2 svg").remove();
     d3.select("#student3 svg").remove();
     d3.select("#student4 svg").remove();
+
+    d3.select("#waffle svg").remove();
+    d3.select("#waffle1 svg").remove();
+    d3.select("#waffle2 svg").remove();
+    d3.select("#waffle3 svg").remove();
+
+
+
+
 }
 
 function divisionFilter(moocsJson, filterBy) {
@@ -926,6 +1415,7 @@ function divisionFilter(moocsJson, filterBy) {
         return entry.code === filterBy;
     });
 }
+
 
 function departmentFilter(moocsJson, filterBy) {
     return moocsJson.filter(function (entry) {
@@ -941,6 +1431,10 @@ function moocsFilter() {
 
             //top registration chart
             if ($("select[id*='divisionSelect']").val().length > 0) {
+                var timelineDivisions = divisionFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDivisions), $("select[id*='divisionSelect']").val());
+                if (timelineDivisions.length > 0) createChart(timelineDivisions[0].data);
+
+
                 drawMoocsRegistrationsChart(orderTopMoocs(divisionFilter(moocsTopArrays.divisionsAlltime, $("select[id*='divisionSelect']").val())));
                 drawDistributionChart(orderTopMoocs(divisionFilter(moocsEducationArrays.educationLevelDivisions, $("select[id*='divisionSelect']").val())));
 
@@ -949,7 +1443,19 @@ function moocsFilter() {
                 drawStudentParticipantsChart(students[0]);
                 drawStudentCompletedsChart(students[0]);
                 drawStudentCertifiedsChart(students[0]);
+
+                // Gender
+                var gender = divisionFilter($.extend(true, [], moocsGenderArrays.genderDivisions), $("select[id*='divisionSelect']").val());
+                points(moocsGenderAddGray(moocsGenderFilter(gender, "Female")));
+                points1(moocsGenderAddGray(moocsGenderFilter(gender, "Male")));
+                points2(moocsGenderAddGray(moocsGenderFilter(gender, "Not Available")));
+                points3(moocsGenderAddGray(moocsGenderFilter(gender, "Other")));
+
             } else if ($("select[id*='deparmentSelect']").val().length > 0) {
+
+                var timelineDivisions = orderTopMoocs(departmentFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDepartments), $("select[id*='deparmentSelect']").val()));
+                if (timelineDivisions.length > 0) createChart(timelineDivisions[0].data);
+
                 drawMoocsRegistrationsChart(orderTopMoocs(departmentFilter(moocsTopArrays.departmentsAllTime, $("select[id*='deparmentSelect']").val())));
                 drawDistributionChart(orderTopMoocs(departmentFilter(moocsEducationArrays.educationLevelDepartments, $("select[id*='deparmentSelect']").val())));
 
@@ -958,7 +1464,17 @@ function moocsFilter() {
                 drawStudentParticipantsChart(students[0]);
                 drawStudentCompletedsChart(students[0]);
                 drawStudentCertifiedsChart(students[0]);
+
+                // Gender
+                var gender = departmentFilter($.extend(true, [], moocsGenderArrays.genderDepartments), $("select[id*='deparmentSelect']").val());
+                points(moocsGenderAddGray(moocsGenderFilter(gender, "Female")));
+                points1(moocsGenderAddGray(moocsGenderFilter(gender, "Male")));
+                points2(moocsGenderAddGray(moocsGenderFilter(gender, "Not Available")));
+                points3(moocsGenderAddGray(moocsGenderFilter(gender, "Other")));
             } else {
+
+                createChart($.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB));
+
                 drawMoocsRegistrationsChart(topAllMoocs);
                 drawDistributionChart(moocsEducationArrays.educationLevelIDB);
                 // same data for all and 2018
@@ -966,6 +1482,12 @@ function moocsFilter() {
                 drawStudentParticipantsChart(moocsStudentsFlowArrays.studentsFlowIDB);
                 drawStudentCompletedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
                 drawStudentCertifiedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+
+                // Gender
+                points(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Female")));
+                points1(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Male")));
+                points2(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Not Available")));
+                points3(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Other")));
             }
 
 
@@ -974,6 +1496,9 @@ function moocsFilter() {
         default:
             //top registration chart
             if ($("select[id*='divisionSelect']").val().length > 0) {
+                var timelineDivisions = divisionFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDivisions), $("select[id*='divisionSelect']").val());
+                if (timelineDivisions.length > 0) createChart(timelineDivisions[0].data);
+
                 drawMoocsRegistrationsChart(orderTopMoocs(divisionFilter(moocsTopArrays.divisions2018, $("select[id*='divisionSelect']").val())));
                 drawDistributionChart(orderTopMoocs(divisionFilter(moocsEducationArrays.educationLevelDivisions, $("select[id*='divisionSelect']").val())));
 
@@ -982,7 +1507,17 @@ function moocsFilter() {
                 drawStudentParticipantsChart(students[0]);
                 drawStudentCompletedsChart(students[0]);
                 drawStudentCertifiedsChart(students[0]);
+
+                // Gender
+                var gender = divisionFilter($.extend(true, [], moocsGenderArrays.genderDivisions), $("select[id*='divisionSelect']").val());
+                points(moocsGenderAddGray(moocsGenderFilter(gender, "Female")));
+                points1(moocsGenderAddGray(moocsGenderFilter(gender, "Male")));
+                points2(moocsGenderAddGray(moocsGenderFilter(gender, "Not Available")));
+                points3(moocsGenderAddGray(moocsGenderFilter(gender, "Other")));
             } else if ($("select[id*='deparmentSelect']").val().length > 0) {
+                var timelineDivisions = orderTopMoocs(departmentFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDepartments), $("select[id*='deparmentSelect']").val()));
+                if (timelineDivisions.length > 0) createChart(timelineDivisions[0].data);
+
                 drawMoocsRegistrationsChart(orderTopMoocs(departmentFilter(moocsTopArrays.departments2018, $("select[id*='deparmentSelect']").val())));
                 drawDistributionChart(orderTopMoocs(departmentFilter(moocsEducationArrays.educationLevelDepartments, $("select[id*='deparmentSelect']").val())));
 
@@ -991,7 +1526,16 @@ function moocsFilter() {
                 drawStudentParticipantsChart(students[0]);
                 drawStudentCompletedsChart(students[0]);
                 drawStudentCertifiedsChart(students[0]);
+
+                // Gender
+                var gender = departmentFilter($.extend(true, [], moocsGenderArrays.genderDepartments), $("select[id*='deparmentSelect']").val());
+                points(moocsGenderAddGray(moocsGenderFilter(gender, "Female")));
+                points1(moocsGenderAddGray(moocsGenderFilter(gender, "Male")));
+                points2(moocsGenderAddGray(moocsGenderFilter(gender, "Not Available")));
+                points3(moocsGenderAddGray(moocsGenderFilter(gender, "Other")));
             } else {
+                createChart($.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB));
+
                 drawMoocsRegistrationsChart(top2018Moocs);
                 drawDistributionChart(moocsEducationArrays.educationLevelIDB);
                 // same data for all and 2018
@@ -999,6 +1543,12 @@ function moocsFilter() {
                 drawStudentParticipantsChart(moocsStudentsFlowArrays.studentsFlowIDB);
                 drawStudentCompletedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
                 drawStudentCertifiedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+
+                // Gender
+                points(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Female")));
+                points1(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Male")));
+                points2(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Not Available")));
+                points3(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Other")));
             }
             break;
     }
