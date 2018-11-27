@@ -137,8 +137,7 @@
         .menu ul li.first {
           position: relative;
           top: inherit;
-          left: inherit;
-          display: none; } }
+          left: inherit; } }
       .menu ul li.first:after {
         content: "";
         width: 0;
