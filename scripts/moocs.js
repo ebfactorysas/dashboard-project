@@ -48,13 +48,13 @@ function drawDistributionChart(dataDistribution) {
         left: 50
     }
 
-    var widthDistribution = 520 - marginDistribution.left - marginDistribution.right;
-    var heightDistribution = 280 - marginDistribution.top - marginDistribution.bottom;
+    var widthDistribution = 650 - marginDistribution.left - marginDistribution.right;
+    var heightDistribution = 400 - marginDistribution.top - marginDistribution.bottom;
     var svgDistribution = d3.select('#distribution-moocs')
         .append("svg")
         //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "0 0 500 200")
+        .attr("viewBox", "0 0 500 500")
         .append("g")
         // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
 
@@ -226,6 +226,110 @@ function drawMoocsRegistrationsChart(dataMoocs) {
 /**
  * End registration-moocs
  */
+/**
+ * Start age-distribution-moocs
+ */
+drawMoocsAgeDistributionChart(topAllMoocs);
+
+var data = [{
+    value: 0,
+    name: "<18"
+}]
+
+function drawMoocsAgeDistributionChart(dataMoocs) {
+
+    var marginMoocs = {
+        top: 15,
+        right: 25,
+        bottom: 15,
+        left: 55
+    };
+
+    var widthMoocs = 560 - marginMoocs.left - marginMoocs.right,
+        heightMoocs = 200 - marginMoocs.top - marginMoocs.bottom;
+
+
+    var svgMoocs = d3.select("#age-distribution-moocs")
+        .append("svg")
+        //responsive SVG needs these 2 attributes and no width and height attr
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-55 -25 700 200")
+        .append("g")
+        // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
+
+        //class to make it responsive
+        .classed("svg-content-responsive", true);
+    // .append("svg")
+    // .attr("width", widthMoocs + marginMoocs.left + marginMoocs.right)
+    // .attr("height", heightMoocs + marginMoocs.top + marginMoocs.bottom)
+    // .append("g")
+    // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")");
+
+    var xMoocs = d3.scaleLinear()
+        .range([0, widthMoocs])
+        .domain([0, d3.max(dataMoocs, function (d) {
+            return d.value;
+        })]);
+
+    var yMoocs = d3.scaleBand()
+
+        .rangeRound([heightMoocs, 0], .1)
+        .domain(dataMoocs.map(function (d) {
+            return d.value;
+        }));
+
+    var yAxisMoocs = d3.axisLeft(yMoocs)
+        //no tick marks
+        .tickPadding(55)
+        .tickSize(0);
+
+    var gyMoocs = svgMoocs.append("g")
+        .style("text-anchor", "start")
+        .style("color", "#555555")
+        .attr("class", "y-data")
+
+        .call(yAxisMoocs)
+
+    var barsMoocs = svgMoocs.selectAll(".bar")
+        .data(dataMoocs)
+        .enter()
+        .append("g")
+
+    barsMoocs.append("rect")
+        .attr("class", "bar")
+        .attr("y", function (d) {
+            return yMoocs(d.value);
+        })
+        .attr("rx", 25)
+        .attr("ry", 25)
+        .attr("fill", "#dea692")
+        .attr("height", yMoocs.bandwidth() - 2)
+        .attr("x", 8)
+        .attr("width", function (d) {
+            return xMoocs(d.value);
+        });
+
+    barsMoocs.append("text")
+        .attr("class", "label")
+        //y position of the label is halfway down the bar
+        .attr("y", function (d) {
+            return yMoocs(d.value) + yMoocs.bandwidth() / 2 + 4;
+        })
+        //x position is 3 pixels to the right of the bar
+        .attr("x", function (d) {
+            return 12;
+        })
+        .attr("class", "text-inside")
+        .attr("font-family", "Gotham-Bold")
+        .attr("font-size", "12px")
+        .text(function (d) {
+            return d.name;
+        });
+}
+/**
+ * End age-distribution-moocs
+ */
+
 
 var marginStudents = {
     top: 2,
@@ -619,7 +723,7 @@ function createChart(data) {
         .append("svg")
         //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "0 0 500 200")
+        .attr("viewBox", "-60 -60 700 300")
         //class to make it responsive
         .classed("svg-content-responsive", true);
     var totalAmount = 0;
@@ -908,6 +1012,347 @@ function drawGaugeMoocsChart(dataGauge) {
 /**
  * End Gauges
  */
+
+points()
+points1()
+points2()
+points3()
+
+function points() {
+    var total = 100;
+    var widthSquares = 10,
+        heightSquares = 10,
+        squareSize = 10,
+        squareValue = 0,
+        gap = 50,
+        theData = [];
+
+    var data = [{
+        "age": "red",
+        "population": 68
+    }, {
+        "age": "gray",
+        "population": 32
+    }]
+
+
+
+
+    //total
+    total = d3.sum(data, function (d) {
+        return d.population;
+    });
+
+
+    //value of a square
+    squareValue = total / (widthSquares * heightSquares);
+    //remap data
+    data.forEach(function (d, i) {
+        d.population = +d.population;
+        d.units = Math.floor(d.population / squareValue);
+        theData = theData.concat(
+            Array(d.units + 1).join(1).split('').map(function () {
+                return {
+                    squareValue: squareValue,
+                    units: d.units,
+                    population: d.population,
+                    groupIndex: i
+                };
+            })
+        );
+    });
+
+
+    width = (squareSize * widthSquares) + widthSquares * gap;
+    height = (squareSize * heightSquares) + heightSquares * gap;
+
+    var waffle = d3.select("#waffle")
+        //container class to make it responsive
+        .append("svg")
+        //responsive SVG needs these 2 attributes and no width and height attr
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-80 -300 800 1000")
+        //class to make it responsive
+        .classed("svg-content-responsive", true)
+        .append("g")
+        .selectAll("div")
+        .data(theData)
+        .enter()
+        .append("circle")
+        .attr('r', squareSize)
+
+        .attr("fill", function (d) {
+            if (d.groupIndex == 1) {
+                return "#d3d3d3"
+            } else {
+                return "#ea2f01"
+            }
+
+
+        })
+        .attr("cx", function (d, i) {
+            //group n squares for column
+
+            row = i % heightSquares;
+            return (row * squareSize) + (row * gap) + 5;
+        })
+        .attr("cy", function (d, i) {
+            col = Math.floor(i / heightSquares);
+            return -(heightSquares * squareSize) + ((col * squareSize) + (col * gap)) + 5
+        })
+}
+
+function points1() {
+    var total = 100;
+    var widthSquares = 10,
+        heightSquares = 10,
+        squareSize = 10,
+        squareValue = 0,
+        gap = 50,
+        theData = [];
+
+    var data = [{
+        "age": "red",
+        "population": 68
+    }, {
+        "age": "gray",
+        "population": 32
+    }]
+
+
+
+
+    //total
+    total = d3.sum(data, function (d) {
+        return d.population;
+    });
+
+
+    //value of a square
+    squareValue = total / (widthSquares * heightSquares);
+    //remap data
+    data.forEach(function (d, i) {
+        d.population = +d.population;
+        d.units = Math.floor(d.population / squareValue);
+        theData = theData.concat(
+            Array(d.units + 1).join(1).split('').map(function () {
+                return {
+                    squareValue: squareValue,
+                    units: d.units,
+                    population: d.population,
+                    groupIndex: i
+                };
+            })
+        );
+    });
+
+
+    width = (squareSize * widthSquares) + widthSquares * gap;
+    height = (squareSize * heightSquares) + heightSquares * gap;
+
+    var waffle = d3.select("#waffle1")
+        //container class to make it responsive
+        .append("svg")
+        //responsive SVG needs these 2 attributes and no width and height attr
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-80 -300 800 1000")
+        //class to make it responsive
+        .classed("svg-content-responsive", true)
+        .append("g")
+        .selectAll("div")
+        .data(theData)
+        .enter()
+        .append("circle")
+        .attr('r', squareSize)
+
+        .attr("fill", function (d) {
+            if (d.groupIndex == 1) {
+                return "#d3d3d3"
+            } else {
+                return "#ea2f01"
+            }
+
+
+        })
+        .attr("cx", function (d, i) {
+            //group n squares for column
+
+            row = i % heightSquares;
+            return (row * squareSize) + (row * gap) + 5;
+        })
+        .attr("cy", function (d, i) {
+            col = Math.floor(i / heightSquares);
+            return -(heightSquares * squareSize) + ((col * squareSize) + (col * gap)) + 5
+        })
+}
+
+function points2() {
+    var total = 100;
+    var widthSquares = 10,
+        heightSquares = 10,
+        squareSize = 10,
+        squareValue = 0,
+        gap = 50,
+        theData = [];
+
+    var data = [{
+        "age": "red",
+        "population": 68
+    }, {
+        "age": "gray",
+        "population": 32
+    }]
+
+
+
+
+    //total
+    total = d3.sum(data, function (d) {
+        return d.population;
+    });
+
+
+    //value of a square
+    squareValue = total / (widthSquares * heightSquares);
+    //remap data
+    data.forEach(function (d, i) {
+        d.population = +d.population;
+        d.units = Math.floor(d.population / squareValue);
+        theData = theData.concat(
+            Array(d.units + 1).join(1).split('').map(function () {
+                return {
+                    squareValue: squareValue,
+                    units: d.units,
+                    population: d.population,
+                    groupIndex: i
+                };
+            })
+        );
+    });
+
+
+    width = (squareSize * widthSquares) + widthSquares * gap;
+    height = (squareSize * heightSquares) + heightSquares * gap;
+
+    var waffle = d3.select("#waffle2")
+        //container class to make it responsive
+        .append("svg")
+        //responsive SVG needs these 2 attributes and no width and height attr
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-80 -300 800 1000")
+        //class to make it responsive
+        .classed("svg-content-responsive", true)
+        .append("g")
+        .selectAll("div")
+        .data(theData)
+        .enter()
+        .append("circle")
+        .attr('r', squareSize)
+
+        .attr("fill", function (d) {
+            if (d.groupIndex == 1) {
+                return "#d3d3d3"
+            } else {
+                return "#ea2f01"
+            }
+
+
+        })
+        .attr("cx", function (d, i) {
+            //group n squares for column
+
+            row = i % heightSquares;
+            return (row * squareSize) + (row * gap) + 5;
+        })
+        .attr("cy", function (d, i) {
+            col = Math.floor(i / heightSquares);
+            return -(heightSquares * squareSize) + ((col * squareSize) + (col * gap)) + 5
+        })
+}
+
+function points3() {
+    var total = 100;
+    var widthSquares = 10,
+        heightSquares = 10,
+        squareSize = 10,
+        squareValue = 0,
+        gap = 50,
+        theData = [];
+
+    var data = [{
+        "age": "red",
+        "population": 68
+    }, {
+        "age": "gray",
+        "population": 32
+    }]
+
+
+
+
+    //total
+    total = d3.sum(data, function (d) {
+        return d.population;
+    });
+
+
+    //value of a square
+    squareValue = total / (widthSquares * heightSquares);
+    //remap data
+    data.forEach(function (d, i) {
+        d.population = +d.population;
+        d.units = Math.floor(d.population / squareValue);
+        theData = theData.concat(
+            Array(d.units + 1).join(1).split('').map(function () {
+                return {
+                    squareValue: squareValue,
+                    units: d.units,
+                    population: d.population,
+                    groupIndex: i
+                };
+            })
+        );
+    });
+
+
+    width = (squareSize * widthSquares) + widthSquares * gap;
+    height = (squareSize * heightSquares) + heightSquares * gap;
+
+    var waffle = d3.select("#waffle3")
+        //container class to make it responsive
+        .append("svg")
+        //responsive SVG needs these 2 attributes and no width and height attr
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-80 -300 800 1000")
+        //class to make it responsive
+        .classed("svg-content-responsive", true)
+        .append("g")
+        .selectAll("div")
+        .data(theData)
+        .enter()
+        .append("circle")
+        .attr('r', squareSize)
+
+        .attr("fill", function (d) {
+            if (d.groupIndex == 1) {
+                return "#d3d3d3"
+            } else {
+                return "#ea2f01"
+            }
+
+
+        })
+        .attr("cx", function (d, i) {
+            //group n squares for column
+
+            row = i % heightSquares;
+            return (row * squareSize) + (row * gap) + 5;
+        })
+        .attr("cy", function (d, i) {
+            col = Math.floor(i / heightSquares);
+            return -(heightSquares * squareSize) + ((col * squareSize) + (col * gap)) + 5
+        })
+}
 
 
 

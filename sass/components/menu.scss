@@ -1,3 +1,15 @@
+#nav-title {
+  .navbar-nav {
+    a {
+      @include breakpoint($max_desktop) {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
 .menu {
   ul {
     margin: 0;
@@ -47,7 +59,6 @@
           position: relative;
           top: inherit;
           left: inherit;
-          display: none;
         }
         &:after {
           content: "";

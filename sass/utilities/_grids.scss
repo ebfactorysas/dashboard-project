@@ -1,6 +1,7 @@
 $small: 540px;
 $tab: 720px;
 $desk: 960px;
+$desktop: 992px;
 $wide: 1140px;
 $plus_wide: 1600px;
 $ultra_wide: 1900px;
@@ -8,6 +9,7 @@ $ultra_wide: 1900px;
 $max_small: max-width $small;
 $max_tab: max-width $tab;
 $max_desk: max-width $desk;
+$max_desktop: max-width $desktop;
 $max_wide: max-width $wide;
 $max_plus_wide: max-width $plus_wide;
 $max_ultra_wide: max-width $ultra_wide;

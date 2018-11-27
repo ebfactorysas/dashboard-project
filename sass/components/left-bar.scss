@@ -9,7 +9,11 @@
   }
   @include breakpoint($desk) {
     width: 25%;
-    min-height: 930px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    position: absolute;
   }
   @include breakpoint($wide) {
     width: 250px;

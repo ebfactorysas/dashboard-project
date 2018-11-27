@@ -22,6 +22,10 @@
 .white {
   color: #FFF !important; }
 
+@media (min-width: 960px) {
+  .left-zone {
+    border-right: solid 1.5px #b4b4b4; } }
+
 .left-bar {
   float: left;
   width: 100%;
@@ -34,7 +38,11 @@
   @media (min-width: 960px) {
     .left-bar {
       width: 25%;
-      min-height: 930px; } }
+      top: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 3;
+      position: absolute; } }
   @media (min-width: 1140px) {
     .left-bar {
       width: 250px; } }
@@ -72,6 +80,12 @@
         .left-bar .gauge-3.gauge-1 {
           padding-top: 4rem;
           min-height: 330px; } }
+
+@media (max-width: 992px) {
+  #nav-title .navbar-nav a {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; } }
 
 .menu ul {
   margin: 0;
@@ -123,8 +137,7 @@
         .menu ul li.first {
           position: relative;
           top: inherit;
-          left: inherit;
-          display: none; } }
+          left: inherit; } }
       .menu ul li.first:after {
         content: "";
         width: 0;
@@ -512,27 +525,28 @@
 
 .right-bar {
   float: left;
-  width: 100% !important; }
+  width: 100%;
+  position: relative;
+  z-index: 1; }
   @media (min-width: 960px) {
     .right-bar {
-      width: 75% !important;
+      padding-left: 25%;
       min-height: 930px; } }
   @media (min-width: 1140px) {
     .right-bar {
-      top: 0;
-      bottom: 0;
-      left: 0;
-      width: 100% !important;
-      position: absolute !important;
-      z-index: 1;
-      padding-left: 250px !important; } }
+      padding-left: 250px; } }
 
 section {
   float: left;
   width: 100%;
   position: relative; }
-  @media (min-width: 960px) {
-    section.publications, section.moocs, section.datasets, section.code, section.suscribers, section.map {
-      min-height: 960px; } }
+  section.publications, section.moocs, section.datasets, section.code, section.suscribers, section.map {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    @media (min-width: 960px) {
+      section.publications, section.moocs, section.datasets, section.code, section.suscribers, section.map {
+        min-height: 960px; } }
 
 /*# sourceMappingURL=global.css.map */
