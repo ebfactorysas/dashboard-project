@@ -1,8 +1,33 @@
-.left-zone {
-  @include breakpoint($desk) {
-    border-right: solid 1.5px #b4b4b4;
+section {
+  .right-bar {
+    > .row {
+      > div {
+        &.left-zone {
+          @include breakpoint($desk) {
+            border-right: solid 2px #b4b4b4;
+          }
+        }
+        &:nth-child(2) {
+          @include borderBottomGraphs;
+        }
+        &:nth-child(3) {
+          @include borderBottomGraphs;
+        }
+      }
+    }
   }
-}
-.right-zone {
-  
+  &.moocs {
+    .right-bar {
+      > .row {
+        > div {
+          &:nth-child(4) {
+            @include borderBottomGraphs;
+          }
+          &:nth-child(5) {
+            @include borderBottomGraphs;
+          }
+        }
+      }
+    }
+  }
 }
