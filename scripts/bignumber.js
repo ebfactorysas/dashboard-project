@@ -34,6 +34,7 @@ $("#deparmentSelect").on('change', function () {
     // console.log(this.value);
     // mainReset();
     initIndicators('departments', this.value);
+    $('.label-filter-select').text(this.value);
     $("#divisionSelect").value = "";
     $('#blueAllTime').click();
     d3.select("#gauge-publications svg").remove();
@@ -63,6 +64,7 @@ $("#deparmentSelect").on('change', function () {
 });
 $("#divisionSelect").on('change', function () {
     // console.log(this.value);
+    $('.label-filter-select').text(this.value);
     $("#deparmentSelect").value = "";
     // mainReset();
     initIndicators('divisions', this.value);
@@ -253,10 +255,10 @@ function publicationsIndicatorAlltime(jsondata){
     // $('#gauge-publications .percent-complete').append(setSettingsNumber(publications2018TotalRest).suffixNumber);
     var results = {
         publicationsValue: (jsondata.length > 0) ? jsondata[0].all_the_time_publications : '0',
-        porcent_total_publications : "Missing", // no se enviaron en los datos para el porcentaje total de publicaciones filtrado por all time
+        porcent_total_publications: "100", /*missing, rodrigo dice que si falta el dato que pongamos 100% para all the time*/
         compare2017_2018_publications : (jsondata.length > 0) ? jsondata[0]['2017_2018_publications'] : '',
         downloadsValue: (jsondata.length > 0) ? jsondata[0]['all_the_time_downloads'] : '0',
-        porcent_total_downloads : "Missing", // no se enviaron en los datos para el porcentaje total de downloads filtrado por all time
+        porcent_total_downloads: "100", /*missing, rodrigo dice que si falta el dato que pongamos 100% para all the time*/
         porcent_downloads_lac: (jsondata.length > 0) ? ((jsondata[0].all_the_time_porcent_total_LAC_downloads != "missing") ? (jsondata[0].all_the_time_porcent_total_LAC_downloads * 100).toFixed(1) + '%' : jsondata[0].all_the_time_porcent_total_LAC_downloads) : ''
     }
     return results;
@@ -335,7 +337,7 @@ function moocsIndicatorAlltime(jsondata) {
     moocsAllTotalGlobal = (jsondata.length > 0) ? jsondata[0]['all_the_time_courses'] : '0';
     moocsAllDownloads = (jsondata.length > 0) ? jsondata[0]['all_the_time_registrations'] : '0';
     
-    moocsAllDownloadsLac = (jsondata[0]['porcent_total_LAC'] * 100).toFixed(1);
+    moocsAllDownloadsLac = (jsondata.length > 0) ? (jsondata[0]['porcent_total_LAC'] * 100).toFixed(1) : '';
     var results = {
         moocsValue: (jsondata.length > 0) ? jsondata[0]['all_the_time_courses'] : '0',
         porcent_total_publications: '100%', /*missing, rodrigo dice que si falta el dato que pongamos 100% para all the time*/

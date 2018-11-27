@@ -945,12 +945,12 @@ $("input[name*='publicationTrend']").click(function () {
             createChartTimelinePublication(downloadTimelineIDBTEST);
             drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
             drawPlotChartPublication(ObjectpublicationsAttention);
-            drawGaugePublicationChart(dataPublicationGauge);
+            // drawGaugePublicationChart(dataPublicationGauge);
         } else {
             createChartTimelinePublication(downloadTimelineIDBTEST);
             drawTrendPublicationChart(publicationsTopArrays.topIDB2018);
             drawPlotChartPublication(ObjectpublicationsAttention);
-            drawGaugePublicationChart(dataPublicationGauge);
+            // drawGaugePublicationChart(dataPublicationGauge);
         }
     }
 });
