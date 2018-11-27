@@ -513,21 +513,21 @@ function createChartTimelinePublication(data) {
             .tickFormat(d3.format(".2s")));
 }
 
-function drawTreePublication(dataTree) {
+function drawTreePublication(dataTree,filtertype) {
     var colours = interpolateColors("rgb(217, 30, 24)", "rgb(94, 79, 162)", dataTree.length);
     
     dataTree.forEach(function(element, i) {
       element.color = colours[i]
     });
     
-    var groupData = ["name", "value"];
-    var colorParam = "value";
-    var sizeMeasure = "value";
+    var groupData = ["name", "value"+filtertype];
+    var colorParam = "value"+filtertype;
+    var sizeMeasure = "value"+filtertype;
     var indexColor = 0;
     new d3plus.Treemap()
       .data(dataTree)
-      .groupBy(["value", "name"])
-      .sum("value")
+      .groupBy(["value"+filtertype, "name"])
+      .sum("value"+filtertype)
       .shapeConfig({
          fill: function(d) {
            return d.color;
@@ -1017,6 +1017,7 @@ function drawPlotChartPublication(data) {
 }
 
 function removePublicationsSvg() {
+    d3.select("#downloads-publications svg").remove();
     d3.select("#timeline-publication svg").remove();
     d3.select("#publication-trend svg").remove();
     d3.select("#publications-plot svg").remove();
@@ -1045,7 +1046,7 @@ function init() {
     var downloadTimelineIDB = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineIDB);
     var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
 
-    drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB);
+    drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "2018");
     drawGaugePublicationChart(dataPublicationGauge);
     drawLinesChartPublication(dataLinesPublications);
 
@@ -1060,7 +1061,7 @@ $("input[name*='publicationTrend']").click(function () {
     var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
 
     removePublicationsSvg();
-
+    
     if ($("select[id*='divisionSelect']").val().length > 0) {
 
     } else if ($("select[id*='deparmentSelect']").val().length > 0) {
@@ -1072,11 +1073,14 @@ $("input[name*='publicationTrend']").click(function () {
         createChartTimelinePublication(downloadTimelineDepartment);
     } else {
         if (this.id == "publicationAllTime") {
+            drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "AllTheTime");
+
             createChartTimelinePublication(downloadTimelineIDBTEST);
             drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
             drawPlotChartPublication(ObjectpublicationsAttention);
             // drawGaugePublicationChart(dataPublicationGauge);
         } else {
+            drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "2018");
             createChartTimelinePublication(downloadTimelineIDBTEST);
             drawTrendPublicationChart(publicationsTopArrays.topIDB2018);
             drawPlotChartPublication(ObjectpublicationsAttention);
