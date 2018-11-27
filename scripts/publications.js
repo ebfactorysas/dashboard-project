@@ -13,7 +13,6 @@ var dataPublicationGauge = {
     }
 }
 
-//lineas que van al lado de trends
 var dataLinesPublications = [{
         "date": 20180101,
 
@@ -336,10 +335,6 @@ var dataLinesPublications = [{
         "ten": Math.floor((Math.random() * 10) + 1) + 100
     }
 ];
-
-/***
- * revisar
- */
 
 function sortByDateAscending(a, b) {
     // Dates will be cast to numbers automagically:
@@ -1044,9 +1039,6 @@ function publicationFilter() {
     }
 }
 
-//revisar bien la lógica de filtrado
-
-//init
 init();
 
 function init() {
