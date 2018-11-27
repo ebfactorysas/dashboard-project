@@ -975,7 +975,7 @@ section.map select.form-control:not([size]):not([multiple]) {
 
 .funds-allocated-meter text.percent-complete {
     font-family: "Gotham-Book";
-    font-size: 65px;
+    font-size: 45px;
     fill: #FFF;
     letter-spacing: -0.03em;
 }
