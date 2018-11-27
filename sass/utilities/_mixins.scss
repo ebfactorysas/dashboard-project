@@ -71,3 +71,17 @@
     }
   }
 }
+
+@mixin borderBottomGraphs {
+  position: relative;
+  &:before {
+    content: "";
+    height: 2px;
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    z-index: 3;
+    background: #b4b4b4;
+  }
+}
