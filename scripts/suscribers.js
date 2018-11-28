@@ -142,10 +142,14 @@ function drawAgeSuscribersChart(dataAgeSuscribers) {
         return d.value;
     });
     var svgAgeSuscribers = d3.select('#age-suscribers').append("svg")
-        .attr("width", widthAgeSuscribers + marginAgeSuscribers.left + marginAgeSuscribers.right)
-        .attr("height", heightAgeSuscribers + marginAgeSuscribers.top + marginAgeSuscribers.bottom)
-        .append("g")
-        .attr("transform", "translate(" + 30 + "," + marginAgeSuscribers.top + ")");
+    //responsive SVG needs these 2 attributes and no width and height attr
+    .attr("preserveAspectRatio", "xMinYMin meet")
+    .attr("viewBox", "-40 -40 400 400")
+    .append("g")
+    // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
+
+    //class to make it responsive
+    .classed("svg-content-responsive", true);
 
     var xAgeSuscribers = d3.scaleBand()
         .range([0, widthAgeSuscribers]);
