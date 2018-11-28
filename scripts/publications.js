@@ -516,11 +516,11 @@ function createChartTimelinePublication(data) {
 function drawTreePublication(dataTree, filtertype) {
     if ($("#publication2018").prop("checked")) {
         dataTree = dataTree.sort(function (a, b) {
-            return d3.descending(a.valueAllTheTime, b.valuevalueAllTheTime);
+            return d3.descending(a.value2018, b.value2018);
         });
     } else {
         dataTree = dataTree.sort(function (a, b) {
-            return d3.descending(a.value2018, b.value2018);
+            return d3.descending(a.valueAllTheTime, b.valueAllTheTime);
         });
     }
 
@@ -1108,6 +1108,10 @@ $("#deparmentSelect").on('change', function () {
         return dataP.department_codes == this.value
     });
     drawTrendPublicationChart(jsonPublicationsBarras);
+    jsonPublicTree = publicationsDownloadSourceArrays.downloadSourceDepartments.filter(dataT => {
+        return dataT.department_codes == this.value
+    });
+    drawTreePublication(jsonPublicTree, "AllTheTime");
     //console.log($("#deparmentSelect").val());
     // publicationFilter();
 });
@@ -1120,6 +1124,11 @@ $("#divisionSelect").on('change', function () {
         return dataP.division_codes == this.value
     });
     drawTrendPublicationChart(jsonPublicationsBarras);
+    
+    jsonPublicTree = publicationsDownloadSourceArrays.downloadSourceDivisions.filter(dataT => {
+        return dataT.division_codes == this.value
+    });
+    drawTreePublication(jsonPublicTree, "AllTheTime");
     // publicationFilter();
 });
 
