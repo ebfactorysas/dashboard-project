@@ -264,8 +264,8 @@ function publicationsIndicatorAlltime(jsondata){
     return results;
 }
 function publicationsIndicator2018(jsondata){
-    publications2018TotalGlobal = (jsondata.length > 0) ? jsondata[0]['2018_publications'] : '0';
-    publications2018TotalGlobal = setSettingsNumber(publications2018TotalGlobal);
+    // publications2018TotalGlobal = (jsondata.length > 0) ? jsondata[0]['2018_publications'] : '0';
+    // publications2018TotalGlobal = setSettingsNumber(publications2018TotalGlobal);
     var results = {
         publicationsValue: (jsondata.length > 0) ? jsondata[0]['2018_publications'] : '0',
         porcent_total_publications: (jsondata.length > 0) ? (jsondata[0]['2018_porcent_total_publications'] * 100).toFixed(1) + '%': '',
