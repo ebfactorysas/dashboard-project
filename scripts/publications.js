@@ -744,26 +744,28 @@ function drawGaugePublicationChart(dataGauge) {
 }
 
 function drawLinesChartPublication(data) {
+    margin = {
+        top: 20,
+        right: 0,
+        bottom: 0,
+        left: 0
+    },
+    margin2 = {
+        top: 0,
+        right: 20,
+        bottom: 30,
+        left: 0
+    },
+    width = 400 - margin.left - margin.right,
+    height = 400 - margin.top - margin.bottom,
+    height2 = 400 - margin2.top - margin2.bottom;
+
     var svg = d3.select("#lines-publications").append("svg")
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-1 -100 380 1100")
+        .attr("viewBox", "-1 -20 130 400")
         .append("g")
-        .classed("svg-content-responsive", true),
-        margin = {
-            top: 20,
-            right: 0,
-            bottom: 0,
-            left: 0
-        },
-        margin2 = {
-            top: 0,
-            right: 20,
-            bottom: 30,
-            left: 0
-        },
-        width = 400 - margin.left - margin.right,
-        height = 1100 - margin.top - margin.bottom,
-        height2 = 400 - margin2.top - margin2.bottom;
+        .classed("svg-content-responsive", true);
+       
 
 
     svg.append("rect")
@@ -914,6 +916,7 @@ function drawLinesChartPublication(data) {
         focus.select(".axis--y").call(yAxis);
     }
 }
+
 
 function drawPlotChartPublication(data) {
     //console.log(data)
