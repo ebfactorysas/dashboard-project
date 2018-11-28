@@ -160,7 +160,9 @@ var moocsTopArrays = {
             "xlsx_row_id": 21
         }
     ],
-    departments2018: [],
+    departments2018: [
+        
+    ],
     divisionsAlltime: [
         {
             "json_featuretype": "NewFeatureType",
