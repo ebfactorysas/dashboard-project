@@ -513,7 +513,7 @@ function createChartTimelinePublication(data) {
             .tickFormat(d3.format(".2s")));
 }
 
-function drawTreePublication(dataTree,filtertype) {
+function drawTreePublication(dataTree, filtertype) {
     var colours = interpolateColors("rgb(217, 30, 24)", "rgb(94, 79, 162)", dataTree.length);
     
     dataTree.forEach(function(element, i) {
@@ -1052,7 +1052,7 @@ function init() {
 
     createChartTimelinePublication(downloadTimelineIDB);
     drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
-    drawPlotChartPublication(ObjectpublicationsAttention);
+    //drawPlotChartPublication(ObjectpublicationsAttention);
 }
 
 //click radiobutton drawChart(id del click)
@@ -1061,7 +1061,7 @@ $("input[name*='publicationTrend']").click(function () {
     var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
 
     removePublicationsSvg();
-    
+
     if ($("select[id*='divisionSelect']").val().length > 0) {
 
     } else if ($("select[id*='deparmentSelect']").val().length > 0) {

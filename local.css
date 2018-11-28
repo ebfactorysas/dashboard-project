@@ -943,8 +943,7 @@ section.map select.form-control:not([size]):not([multiple]) {
     height: 250px;
 }
 
-
-#downloads-publications {
+#demographics-suscribers, #downloads-code, #downloads-publications {
     min-width: 300px;
     max-width: 100%;
     margin: 0 auto;
