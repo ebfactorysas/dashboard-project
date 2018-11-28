@@ -844,7 +844,7 @@ var ObjectcodeScatterploArrays = $.extend(true, [], codeScatterploArrays);
 
 drawTreeCode(codePageviewsSourceArrays.pageviewSourceIDB, "2018");
 drawGaugeCodeChart(dataGaugeCode);
-//drawPlotChart(ObjectcodeScatterploArrays);
+drawPlotChart(ObjectcodeScatterploArrays);
 drawChartCodeTrend(ObjectTopIdbAllTime);
 createChartTimeline(ObjectPageViewsTimeLineAllTime);
 

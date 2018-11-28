@@ -1063,7 +1063,7 @@ function init() {
 
     createChartTimelinePublication(downloadTimelineIDB);
     drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
-    //drawPlotChartPublication(ObjectpublicationsAttention);
+    drawPlotChartPublication(ObjectpublicationsAttention);
 }
 
 //click radiobutton drawChart(id del click)

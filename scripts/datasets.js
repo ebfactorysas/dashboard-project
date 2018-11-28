@@ -565,7 +565,7 @@ var ObjectDataSetPlot = $.extend(true, [], datasetsScatterplotArrays);
 
 createChartTimeLineDataSet(ObjectTimeLineDataSet);
 drawDataTrendChart(datasetsTopArrays.topIDBAllTime);
-//drawPlotChartDataset(ObjectDataSetPlot);
+drawPlotChartDataset(ObjectDataSetPlot);
 drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "2018");
 
 //click radiobutton drawChart(id del click)
