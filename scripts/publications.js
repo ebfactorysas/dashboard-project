@@ -26,7 +26,7 @@ var dataLinesPublications = [{
         "eight": Math.floor((Math.random() * 10) + 1) + 80,
         "nine": Math.floor((Math.random() * 10) + 1) + 90,
         "ten": Math.floor((Math.random() * 10) + 1) + 100
-    },    {
+    }, {
         "date": 20180102,
 
         "one": Math.floor((Math.random() * 10) + 1) + 10,
@@ -40,7 +40,7 @@ var dataLinesPublications = [{
         "nine": Math.floor((Math.random() * 10) + 1) + 90,
         "ten": Math.floor((Math.random() * 10) + 1) + 100
 
-    },    {
+    }, {
         "date": 20180103,
 
         "one": Math.floor((Math.random() * 10) + 1) + 10,
@@ -514,29 +514,40 @@ function createChartTimelinePublication(data) {
 }
 
 function drawTreePublication(dataTree, filtertype) {
-    var colours = interpolateColors("rgb(217, 30, 24)", "rgb(94, 79, 162)", dataTree.length);
-    
-    dataTree.forEach(function(element, i) {
-      element.color = colours[i]
+    if ($("#publication2018").prop("checked")) {
+        dataTree = dataTree.sort(function (a, b) {
+            return d3.descending(a.valueAllTheTime, b.valuevalueAllTheTime);
+        });
+    } else {
+        dataTree = dataTree.sort(function (a, b) {
+            return d3.descending(a.value2018, b.value2018);
+        });
+    }
+
+    colours = chroma.scale(['#D91E18', '#f0e9eb'])
+        .mode('lch').colors(dataTree.length)
+
+    dataTree.forEach(function (element, i) {
+        element.color = colours[i]
     });
-    
-    var groupData = ["name", "value"+filtertype];
-    var colorParam = "value"+filtertype;
-    var sizeMeasure = "value"+filtertype;
+
+    var groupData = ["name", "value" + filtertype];
+    var colorParam = "value" + filtertype;
+    var sizeMeasure = "value" + filtertype;
     var indexColor = 0;
     new d3plus.Treemap()
-      .data(dataTree)
-      .groupBy(["value"+filtertype, "name"])
-      .sum("value"+filtertype)
-      .shapeConfig({
-         fill: function(d) {
-           return d.color;
-         }
-      })
-      
-      .select("#downloads-publications")
-      .render();
-  
+        .data(dataTree)
+        .groupBy(["value" + filtertype, "name"])
+        .sum("value" + filtertype)
+        .shapeConfig({
+            fill: function (d) {
+                return d.color;
+            }
+        })
+
+        .select("#downloads-publications")
+        .render();
+
 }
 
 function drawTrendPublicationChart(dataPublicationTrend) {

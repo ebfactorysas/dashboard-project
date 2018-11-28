@@ -17,7 +17,7 @@ function drawInstitutionsChart(dataInstitution) {
         //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
         .attr("viewBox", "-60 -60 700 400")
-        .append("g")        
+        .append("g")
 
         //class to make it responsive
         .classed("svg-content-responsive", true);
@@ -229,28 +229,39 @@ function drawAgeSuscribersChart(dataAgeSuscribers) {
 
 
 function drawTreeSuscriber(dataTree) {
-    var colours = interpolateColors("rgb(217, 30, 24)", "rgb(94, 79, 162)", dataTree.length);
-    
-    dataTree.forEach(function(element, i) {
-      element.color = colours[i]
+    if ($("#code2018").prop("checked")) {
+        dataTree = dataTree.sort(function (a, b) {
+            return d3.descending(a.valueAllTheTime, b.valuevalueAllTheTime);
+        });
+    } else {
+        dataTree = dataTree.sort(function (a, b) {
+            return d3.descending(a.value2018, b.value2018);
+        });
+    }
+
+    colours = chroma.scale(['#4f8a81', '#adccc7'])
+        .mode('lch').colors(dataTree.length)
+
+    dataTree.forEach(function (element, i) {
+        element.color = colours[i]
     });
-    
+
     var groupData = ["Gender", "Subscribers"];
     var colorParam = "Subscribers";
     var sizeMeasure = "Subscribers";
     var indexColor = 0;
     new d3plus.Treemap()
-      .data(dataTree)
-      .groupBy(["Subscribers", "Gender"])
-      .sum("Subscribers")
-      .shapeConfig({
-         fill: function(d) {
-           return d.color;
-         }
-      })
-      
-      .select("#demographics-suscribers")
-      .render();
+        .data(dataTree)
+        .groupBy(["Subscribers", "Gender"])
+        .sum("Subscribers")
+        .shapeConfig({
+            fill: function (d) {
+                return d.color;
+            }
+        })
+
+        .select("#demographics-suscribers")
+        .render();
 }
 
 var dataGaugeSubscribers = {
@@ -305,7 +316,7 @@ function drawGaugeSubscribersChart(dataGauge) {
         .attr("class", "percent-complete")
         .attr("dy", "0.3em")
         .text(setSettingsNumber(dataGauge.code.allocated).valueNumber + setSettingsNumber(dataGauge.code.allocated).suffixNumber);
-        
+
 
 
     var i = d3.interpolate(progress, dataGauge.code.allocated / dataGauge.code.total);
@@ -338,7 +349,7 @@ function drawGaugeSubscribersChart(dataGauge) {
         .attr("class", "percent-complete")
         .attr("dy", "0.3em")
         .text(setSettingsNumber(dataGauge.pageview.allocated).valueNumber + setSettingsNumber(dataGauge.pageview.allocated).suffixNumber);
-        
+
 
 
     var i2 = d3.interpolate(progress2, dataGauge.pageview.allocated / dataGauge.pageview.total);
@@ -377,8 +388,7 @@ function drawGaugeSubscribersChart(dataGauge) {
     foreground3.attr("d", arc3.endAngle(twoPi * i3(1)));
 }
 
-var testData = [
-    {
+var testData = [{
         "name": "Education",
         "value": 75000,
     },

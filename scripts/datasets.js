@@ -115,10 +115,23 @@ function wrapData(text) {
 }
 
 function drawTreeDataset(dataTree, filtertype){
-    var colours = interpolateColors("rgb(217, 30, 24)", "rgb(94, 79, 162)", dataTree.length);
+    //var colours = interpolateColors("rgb(217, 30, 24)", "rgb(94, 79, 162)", dataTree.length);
     
-    dataTree.forEach(function(element, i) {
-      element.color = colours[i]
+    if ($("#dataSet2018").prop("checked")) {
+        dataTree = dataTree.sort(function (a, b) {
+            return d3.descending(a.valueAllTheTime, b.valuevalueAllTheTime);
+        });
+    } else {
+        dataTree = dataTree.sort(function (a, b) {
+            return d3.descending(a.value2018, b.value2018);
+        });
+    }
+    
+    colours = chroma.scale(['#42428a', '#8889b3'])
+        .mode('lch').colors(dataTree.length)
+
+    dataTree.forEach(function (element, i) {
+        element.color = colours[i]
     });
     
     var groupData = ["name", "value"+filtertype];

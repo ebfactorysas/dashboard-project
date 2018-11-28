@@ -224,10 +224,21 @@ function drawChartCodeTrend(codeTrend) {
 }
 
 function drawTreeCode(dataTree,filtertype) {
-    var colours = interpolateColors("rgb(217, 30, 24)", "rgb(94, 79, 162)", dataTree.length);
-    
-    dataTree.forEach(function(element, i) {
-      element.color = colours[i]
+    if ($("#code2018").prop("checked")) {
+        dataTree = dataTree.sort(function (a, b) {
+            return d3.descending(a.Subscribers, b.Subscribers);
+        });
+    } else {
+        dataTree = dataTree.sort(function (a, b) {
+            return d3.descending(a.Subscribers, b.Subscribers);
+        });
+    }   
+
+    colours = chroma.scale(['#ffbd00', '#e4c87a'])
+        .mode('lch').colors(dataTree.length)
+
+    dataTree.forEach(function (element, i) {
+        element.color = colours[i]
     });
     
     var groupData = ["name", "value"+filtertype];
