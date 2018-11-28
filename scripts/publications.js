@@ -13,7 +13,6 @@ var dataPublicationGauge = {
     }
 }
 
-//lineas que van al lado de trends
 var dataLinesPublications = [{
         "date": 20180101,
 
@@ -27,7 +26,7 @@ var dataLinesPublications = [{
         "eight": Math.floor((Math.random() * 10) + 1) + 80,
         "nine": Math.floor((Math.random() * 10) + 1) + 90,
         "ten": Math.floor((Math.random() * 10) + 1) + 100
-    },    {
+    }, {
         "date": 20180102,
 
         "one": Math.floor((Math.random() * 10) + 1) + 10,
@@ -41,7 +40,7 @@ var dataLinesPublications = [{
         "nine": Math.floor((Math.random() * 10) + 1) + 90,
         "ten": Math.floor((Math.random() * 10) + 1) + 100
 
-    },    {
+    }, {
         "date": 20180103,
 
         "one": Math.floor((Math.random() * 10) + 1) + 10,
@@ -337,10 +336,6 @@ var dataLinesPublications = [{
     }
 ];
 
-/***
- * revisar
- */
-
 function sortByDateAscending(a, b) {
     // Dates will be cast to numbers automagically:
     return a.date - b.date;
@@ -518,113 +513,41 @@ function createChartTimelinePublication(data) {
             .tickFormat(d3.format(".2s")));
 }
 
-function newDrawTree(dataTree) {
-    var colours = interpolateColors("rgb(217, 30, 24)", "rgb(94, 79, 162)", dataTree.length);
-    
-    dataTree.forEach(function(element, i) {
-      element.color = colours[i]
+function drawTreePublication(dataTree, filtertype) {
+    if ($("#publication2018").prop("checked")) {
+        dataTree = dataTree.sort(function (a, b) {
+            return d3.descending(a.valueAllTheTime, b.valuevalueAllTheTime);
+        });
+    } else {
+        dataTree = dataTree.sort(function (a, b) {
+            return d3.descending(a.value2018, b.value2018);
+        });
+    }
+
+    colours = chroma.scale(['#D91E18', '#f0e9eb'])
+        .mode('lch').colors(dataTree.length)
+
+    dataTree.forEach(function (element, i) {
+        element.color = colours[i]
     });
-    
-    var groupData = ["name", "value"];
-    var colorParam = "value";
-    var sizeMeasure = "value";
+
+    var groupData = ["name", "value" + filtertype];
+    var colorParam = "value" + filtertype;
+    var sizeMeasure = "value" + filtertype;
     var indexColor = 0;
     new d3plus.Treemap()
-      .data(dataTree)
-      .groupBy(["value", "name"])
-      .sum("value")
-      .shapeConfig({
-         fill: function(d) {
-           return d.color;
-         }
-      })
-      
-      .select("#downloads-publications")
-      .render();
-  
-}
-
-function drawTree(dataTree) {
-    const marginTree = {
-            top: 40,
-            right: 10,
-            bottom: 10,
-            left: 10
-        },
-        widthTree = 935 - marginTree.left - marginTree.right,
-        heightTree = 200 - marginTree.top - marginTree.bottom,
-        colorTree = d3.scaleOrdinal().range(["#d1415a", "#e8bcc3", "#eedfe2", "#f0e9eb", "#f1eff0", "#f1f0f0"]);
-
-    const treemap = d3.treemap().size([widthTree, heightTree]);
-
-    const divTree = d3.select("#downloads-publications").append("div")
-        .style("position", "relative")
-        .style("width", (widthTree + marginTree.left + marginTree.right) + "px")
-        .style("height", (heightTree + marginTree.top + marginTree.bottom) + "px")
-        .style("left", marginTree.left + "px")
-        .style("top", marginTree.top + "px");
-    const root = d3.hierarchy(dataTree, function (d) {
-            return d.children
+        .data(dataTree)
+        .groupBy(["value" + filtertype, "name"])
+        .sum("value" + filtertype)
+        .shapeConfig({
+            fill: function (d) {
+                return d.color;
+            }
         })
-        .sum(function (d) {
-            return d.size
-        });
 
-    const tree = treemap(root);
+        .select("#downloads-publications")
+        .render();
 
-    const node = divTree.datum(root).selectAll(".node")
-        .data(tree.leaves())
-        .enter().append("div")
-        .attr("class", "node")
-        .style("left", function (d) {
-            return d.x0 + "px"
-        })
-        .style("top", function (d) {
-            return d.y0 + "px"
-        })
-        .style("width", function (d) {
-            return Math.max(0, d.x1 - d.x0) + "px"
-        })
-        .style("height", function (d) {
-            return Math.max(0, d.y1 - d.y0) + "px"
-        })
-        .style("background", function (d) {
-            return colorTree(d.parent.data.name)
-        })
-        .text(function (d) {
-            return d.data.name
-        });
-
-    d3.selectAll("input").on("change", function change() {
-        const value = this.value === "count" ?
-            function (d) {
-                return d.size ? 1 : 0;
-            } :
-            function (d) {
-                return d.size;
-            };
-
-        const newRoot = d3.hierarchy(dataTree, function (d) {
-                return d.children
-            })
-            .sum(value);
-
-        node.data(treemap(newRoot).leaves())
-            .transition()
-            .duration(1500)
-            .style("left", function (d) {
-                return d.x0 + "px"
-            })
-            .style("top", function (d) {
-                return d.y0 + "px"
-            })
-            .style("width", function (d) {
-                return Math.max(0, d.x1 - d.x0 - 1) + "px"
-            })
-            .style("height", function (d) {
-                return Math.max(0, d.y1 - d.y0 - 1) + "px"
-            })
-    });
 }
 
 function drawTrendPublicationChart(dataPublicationTrend) {
@@ -1105,6 +1028,7 @@ function drawPlotChartPublication(data) {
 }
 
 function removePublicationsSvg() {
+    d3.select("#downloads-publications svg").remove();
     d3.select("#timeline-publication svg").remove();
     d3.select("#publication-trend svg").remove();
     d3.select("#publications-plot svg").remove();
@@ -1127,17 +1051,13 @@ function publicationFilter() {
     }
 }
 
-//revisar bien la lógica de filtrado
-
-//init
 init();
 
 function init() {
     var downloadTimelineIDB = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineIDB);
     var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
 
-    //drawTree(dataTree);
-    newDrawTree(publicationsDownloadSourceArrays.downloadSourceIDB);
+    drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "2018");
     drawGaugePublicationChart(dataPublicationGauge);
     drawLinesChartPublication(dataLinesPublications);
 
@@ -1164,11 +1084,14 @@ $("input[name*='publicationTrend']").click(function () {
         createChartTimelinePublication(downloadTimelineDepartment);
     } else {
         if (this.id == "publicationAllTime") {
+            drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "AllTheTime");
+
             createChartTimelinePublication(downloadTimelineIDBTEST);
             drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
             drawPlotChartPublication(ObjectpublicationsAttention);
             // drawGaugePublicationChart(dataPublicationGauge);
         } else {
+            drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "2018");
             createChartTimelinePublication(downloadTimelineIDBTEST);
             drawTrendPublicationChart(publicationsTopArrays.topIDB2018);
             drawPlotChartPublication(ObjectpublicationsAttention);

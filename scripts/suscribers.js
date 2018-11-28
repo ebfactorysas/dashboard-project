@@ -1,7 +1,3 @@
-/**
- * Start institution-suscribers
- *  */
-
 function drawInstitutionsChart(dataInstitution) {
     var dataInstitutionSum = d3.sum(dataInstitution, function (d) {
         return d.value;
@@ -21,7 +17,7 @@ function drawInstitutionsChart(dataInstitution) {
         //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
         .attr("viewBox", "-60 -60 700 400")
-        .append("g")        
+        .append("g")
 
         //class to make it responsive
         .classed("svg-content-responsive", true);
@@ -106,15 +102,6 @@ function drawInstitutionsChart(dataInstitution) {
 
 }
 
-/**
- * End institution-suscribers
- *  */
-
-/**
- * Start age-suscribers
- *  */
-
-
 var dataAgeSuscribers = [{
     "name": "0-19",
     "value": 2.7
@@ -155,10 +142,14 @@ function drawAgeSuscribersChart(dataAgeSuscribers) {
         return d.value;
     });
     var svgAgeSuscribers = d3.select('#age-suscribers').append("svg")
-        .attr("width", widthAgeSuscribers + marginAgeSuscribers.left + marginAgeSuscribers.right)
-        .attr("height", heightAgeSuscribers + marginAgeSuscribers.top + marginAgeSuscribers.bottom)
-        .append("g")
-        .attr("transform", "translate(" + 30 + "," + marginAgeSuscribers.top + ")");
+    //responsive SVG needs these 2 attributes and no width and height attr
+    .attr("preserveAspectRatio", "xMinYMin meet")
+    .attr("viewBox", "-40 -40 400 400")
+    .append("g")
+    // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
+
+    //class to make it responsive
+    .classed("svg-content-responsive", true);
 
     var xAgeSuscribers = d3.scaleBand()
         .range([0, widthAgeSuscribers]);
@@ -241,161 +232,42 @@ function drawAgeSuscribersChart(dataAgeSuscribers) {
 
 
 
-/**
- * End age-suscribers
- *  */
-
-
-/**
- * Start tree
- *  */
-
-var dataTree = {
-    "name": "flare",
-    "children": [{
-        "name": "analytics",
-        "children": [{
-                "name": "graph",
-                "children": [{
-                    "name": "Not Reported",
-                    "size": 66
-                }]
-            },
-            {
-                "name": "optimization",
-                "children": [{
-                    "name": "Male",
-                    "size": 18
-                }]
-            }, {
-                "name": "graph",
-                "children": [{
-                    "name": "Female",
-                    "size": 66
-                }]
-            }
-        ]
-    }]
-}
-
-function drawTree(dataTree) {
-    const marginTree = {
-            top: 40,
-            right: 10,
-            bottom: 10,
-            left: 10
-        },
-        widthTree = 500 - marginTree.left - marginTree.right,
-        heightTree = 200 - marginTree.top - marginTree.bottom,
-        colorTree = d3.scaleOrdinal().range(["#518a81", "#9abfba", "#aeccc7"]);
-
-    const treemap = d3.treemap().size([widthTree, heightTree]);
-
-    const divTree = d3.select("#demographics-suscribers").append("div")
-        .style("position", "relative")
-        .style("width", (widthTree + marginTree.left + marginTree.right) + "px")
-        .style("height", (heightTree + marginTree.top + marginTree.bottom) + "px")
-        .style("left", marginTree.left + "px")
-        .style("top", marginTree.top + "px");
-    const root = d3.hierarchy(dataTree, function (d) {
-            return d.children
-        })
-        .sum(function (d) {
-            return d.size
+function drawTreeSuscriber(dataTree) {
+    if ($("#code2018").prop("checked")) {
+        dataTree = dataTree.sort(function (a, b) {
+            return d3.descending(a.valueAllTheTime, b.valuevalueAllTheTime);
         });
-
-    const tree = treemap(root);
-
-    const node = divTree.datum(root).selectAll(".node")
-        .data(tree.leaves())
-        .enter().append("div")
-        .attr("class", "node")
-        .style("left", function (d) {
-            return d.x0 + "px"
-        })
-        .style("top", function (d) {
-            return d.y0 + "px"
-        })
-        .style("width", function (d) {
-            return Math.max(0, d.x1 - d.x0) + "px"
-        })
-        .style("height", function (d) {
-            return Math.max(0, d.y1 - d.y0) + "px"
-        })
-        .style("background", function (d) {
-            return colorTree(d.parent.data.name)
-        })
-        .text(function (d) {
-            return d.data.name
+    } else {
+        dataTree = dataTree.sort(function (a, b) {
+            return d3.descending(a.value2018, b.value2018);
         });
+    }
 
-    d3.selectAll("input").on("change", function change() {
-        const value = this.value === "count" ?
-            function (d) {
-                return d.size ? 1 : 0;
-            } :
-            function (d) {
-                return d.size
-            };
+    colours = chroma.scale(['#4f8a81', '#adccc7'])
+        .mode('lch').colors(dataTree.length)
 
-        const newRoot = d3.hierarchy(dataTree, function (d) {
-                return d.children
-            })
-            .sum(value);
-
-        node.data(treemap(newRoot).leaves())
-            .transition()
-            .duration(1500)
-            .style("left", function (d) {
-                return d.x0 + "px"
-            })
-            .style("top", function (d) {
-                return d.y0 + "px"
-            })
-            .style("width", function (d) {
-                return Math.max(0, d.x1 - d.x0 - 1) + "px"
-            })
-            .style("height", function (d) {
-                return Math.max(0, d.y1 - d.y0 - 1) + "px"
-            })
+    dataTree.forEach(function (element, i) {
+        element.color = colours[i]
     });
+
+    var groupData = ["Gender", "Subscribers"];
+    var colorParam = "Subscribers";
+    var sizeMeasure = "Subscribers";
+    var indexColor = 0;
+    new d3plus.Treemap()
+        .data(dataTree)
+        .groupBy(["Subscribers", "Gender"])
+        .sum("Subscribers")
+        .shapeConfig({
+            fill: function (d) {
+                return d.color;
+            }
+        })
+
+        .select("#demographics-suscribers")
+        .render();
 }
-/**
- * End tree
- *  */
 
-/**
- * Start Gauges
- */
-
-// var dataGauge = {
-//     "code": {
-//         "total": 100,
-//         "allocated": 76
-//     },
-//     "pageview": {
-//         "total": 1000,
-//         "allocated": 113
-//     },
-//     "lac": {
-//         "total": 100,
-//         "allocated": 9
-//     }
-// }
-// var dataGaugeSubscribers = {
-//     "code": {
-//         "total": (subscribersAllTotalGlobal > 0) ? ((subscribersAllTotalGlobal > 100) ? 1000 : 100) : 100,
-//         "allocated": subscribersAllTotalGlobal
-//     },
-//     "pageview": {
-//         "total": (subscribersAllDownloads > 0) ? ((subscribersAllDownloads > 100) ? 1000 : 100) : 100,
-//         "allocated": subscribersAllDownloads
-//     },
-//     "lac": {
-//         "total": (subscribersAllDownloadsLac > 0) ? ((subscribersAllDownloadsLac > 100) ? 1000 : 100) : 100,
-//         "allocated": subscribersAllDownloadsLac
-//     }
-// }
 var dataGaugeSubscribers = {
     "code": {
         "total": getPercentageTotal(subscribersAllTotalGlobal),
@@ -448,7 +320,7 @@ function drawGaugeSubscribersChart(dataGauge) {
         .attr("class", "percent-complete")
         .attr("dy", "0.3em")
         .text(setSettingsNumber(dataGauge.code.allocated).valueNumber + setSettingsNumber(dataGauge.code.allocated).suffixNumber);
-        
+
 
 
     var i = d3.interpolate(progress, dataGauge.code.allocated / dataGauge.code.total);
@@ -481,7 +353,7 @@ function drawGaugeSubscribersChart(dataGauge) {
         .attr("class", "percent-complete")
         .attr("dy", "0.3em")
         .text(setSettingsNumber(dataGauge.pageview.allocated).valueNumber + setSettingsNumber(dataGauge.pageview.allocated).suffixNumber);
-        
+
 
 
     var i2 = d3.interpolate(progress2, dataGauge.pageview.allocated / dataGauge.pageview.total);
@@ -520,15 +392,6 @@ function drawGaugeSubscribersChart(dataGauge) {
     foreground3.attr("d", arc3.endAngle(twoPi * i3(1)));
 }
 
-
-/**
- * End Gauges
- */
-
-/**
- * Start suscribers-interested
- */
-
 var testData = [{
         "name": "Education",
         "value": 75000,
@@ -561,8 +424,6 @@ function orderTopDataSuscribers(data) {
     });
     return dataSet;
 }
-
-
 
 function drawSuscribersChart(data) {
 
@@ -659,15 +520,10 @@ function drawSuscribersChart(data) {
         });
 }
 
-
-/**
- * End suscribers-interested
- */
-
 //init
 
 drawSuscribersChart(orderTopDataSuscribers(subscribersTopics));
-drawTree(dataTree);
+drawTreeSuscriber(subscribersGender.genderIDB);
 drawInstitutionsChart(subscribersInstitution.institutionIDB);
 
 
@@ -684,12 +540,6 @@ function divisionSubscriberFilter(moocsJson, filterBy) {
         return entry.code.indexOf(filterBy) > 0;
     });
 }
-
-// function departmentFilter(moocsJson, filterBy) {
-//     return moocsJson.filter(function (entry) {
-//         return entry.code === filterBy;
-//     });
-// }
 
 function subscribersFilter() {
     removeSubscribersSvg();
@@ -796,8 +646,6 @@ $("#idbLink").click(function () {
     $("select[id*='divisionSelect']").val("");
     subscribersFilter();
 });
-
-
 
 $("input[name*='suscribersTrend']").click(function () {
     subscribersFilter();

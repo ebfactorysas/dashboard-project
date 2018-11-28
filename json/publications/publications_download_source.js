@@ -10133,139 +10133,79 @@ var publicationsDownloadSourceArrays = {
         }
     ],
     downloadSourceIDB: [{
-            "json_featuretype": "NewFeatureType",
-            "value": 40359,
-            "2018 downloads": "150",
-            "2018 % total downloads ": "0.000268577506096709",
-            "All the time % total of downloads  ": "0.00510219432661376",
+            "valueAllTheTime": 40359,
+            "value2018": 150,
             "name": "Bing",
-            "xlsx_row_id": 2
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": 185489,
-            "2018 downloads": "39016",
-            "2018 % total downloads ": "0.0698587998524614",
-            "All the time % total of downloads  ": "0.0234495632560088",
+            "valueAllTheTime": 185489,   
+            "value2018": 39016,
             "name": "Facebook",
-            "xlsx_row_id": 3
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": 3712118,
-            "2018 downloads": "71512",
-            "2018 % total downloads ": "0.128043430773253",
-            "All the time % total of downloads  ": "0.469286835633212",
+            "valueAllTheTime": 3712118,
+            "value2018": 71512,
             "name": "Google",
-            "xlsx_row_id": 4
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": 91257,
-            "2018 downloads": "3954",
-            "2018 % total downloads ": "0.00707970306070926",
-            "All the time % total of downloads  ": "0.0115367315261476",
+            "valueAllTheTime": 91257,
+            "value2018": 3954,
             "name": "IDB Blogs",
-            "xlsx_row_id": 5
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": 268514,
-            "2018 downloads": "17894",
-            "2018 % total downloads ": "0.0320395059606301",
-            "All the time % total of downloads  ": "0.0339456033949396",
+            "valueAllTheTime": 268514,
+            "value2018": 17894,
             "name": "IDB Landing Page",
-            "xlsx_row_id": 6
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": 60878,
-            "2018 downloads": "459",
-            "2018 % total downloads ": "0.000821847168655931",
-            "All the time % total of downloads  ": "0.00769621116022678",
+            "valueAllTheTime": 60878,
+            "value2018": 459,
             "name": "IDB MOOCs",
-            "xlsx_row_id": 7
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": 2741813,
-            "2018 downloads": "206189",
-            "2018 % total downloads ": "0.369184849363829",
-            "All the time % total of downloads  ": "0.346620648014962",
+            "valueAllTheTime": 2741813,
+            "value2018": 206189,
             "name": "IDB Publications",
-            "xlsx_row_id": 8
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": 79309,
-            "2018 downloads": "1997",
-            "2018 % total downloads ": "0.00357566186450086",
-            "All the time % total of downloads  ": "0.0100262625399393",
+            "valueAllTheTime": 79309,
+            "value2018": 1997,
             "name": "IDB RES",
-            "xlsx_row_id": 9
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": 2177,
-            "2018 downloads": "121",
-            "2018 % total downloads ": "0.000216652521584679",
-            "All the time % total of downloads  ": "0.000275216854952753",
+            "valueAllTheTime": 2177,
+            "value2018": 121,
             "name": "Indes Virtual",
-            "xlsx_row_id": 10
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": 69649,
-            "2018 downloads": "30185",
-            "2018 % total downloads ": "0.0540467468101945",
-            "All the time % total of downloads  ": "0.00880504305493996",
+            "valueAllTheTime": 69649,
+            "value2018": 30185,
             "name": "INTAL",
-            "xlsx_row_id": 11
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": 8766,
-            "2018 downloads": "2807",
-            "2018 % total downloads ": "0.00502598039742309",
-            "All the time % total of downloads  ": "0.00110819979353047",
+            "valueAllTheTime": 8766,
+            "value2018": 2807,
             "name": "LinkedIn",
-            "xlsx_row_id": 12
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": 593965,
-            "2018 downloads": "177425",
-            "2018 % total downloads ": "0.317682426794724",
-            "All the time % total of downloads  ": "0.0750891957978925",
+            "valueAllTheTime": 593965,
+            "value2018": 177425,
             "name": "Others",
-            "xlsx_row_id": 13
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": 8236,
-            "2018 downloads": "137",
-            "2018 % total downloads ": "0.000245300788901661",
-            "All the time % total of downloads  ": "0.00104119706816301",
+            "valueAllTheTime": 8236,
+            "value2018": 137,
             "name": "RePec",
-            "xlsx_row_id": 14
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": 29475,
-            "2018 downloads": "6569",
-            "2018 % total downloads ": "0.0117619042503286",
-            "All the time % total of downloads  ": "0.00372623647208654",
+            "valueAllTheTime": 29475,
+            "value2018": 6569,
             "name": "Twitter",
-            "xlsx_row_id": 15
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "18121",
-            "2018 downloads": "83",
-            "2018 % total downloads ": "0.000148612886706846",
-            "All the time % total of downloads  ": "0.0022908611063844",
+            "valueAllTheTime": 18121,
+            "value2018": 83,
             "name": "Yahoo",
-            "xlsx_row_id": 16
         }
     ]
 };
