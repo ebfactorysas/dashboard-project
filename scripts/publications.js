@@ -744,26 +744,28 @@ function drawGaugePublicationChart(dataGauge) {
 }
 
 function drawLinesChartPublication(data) {
+    margin = {
+        top: 20,
+        right: 0,
+        bottom: 0,
+        left: 0
+    },
+    margin2 = {
+        top: 0,
+        right: 20,
+        bottom: 30,
+        left: 0
+    },
+    width = 400 - margin.left - margin.right,
+    height = 400 - margin.top - margin.bottom,
+    height2 = 400 - margin2.top - margin2.bottom;
+
     var svg = d3.select("#lines-publications").append("svg")
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-1 -100 380 1100")
+        .attr("viewBox", "-1 -20 130 400")
         .append("g")
-        .classed("svg-content-responsive", true),
-        margin = {
-            top: 20,
-            right: 0,
-            bottom: 0,
-            left: 0
-        },
-        margin2 = {
-            top: 0,
-            right: 20,
-            bottom: 30,
-            left: 0
-        },
-        width = 400 - margin.left - margin.right,
-        height = 1100 - margin.top - margin.bottom,
-        height2 = 400 - margin2.top - margin2.bottom;
+        .classed("svg-content-responsive", true);
+       
 
 
     svg.append("rect")
@@ -915,6 +917,7 @@ function drawLinesChartPublication(data) {
     }
 }
 
+
 function drawPlotChartPublication(data) {
     //console.log(data)
     if ($("#publication2018").prop("checked")) {
@@ -923,108 +926,120 @@ function drawPlotChartPublication(data) {
             return data.publishedDate.indexOf("-18")
         })
     }
+    var margin = {
+        top: 30,
+        right: 50,
+        bottom: 60,
+        left: 100
+    };
+    var width = 600 - margin.left - margin.right;
+    var height = 600 - margin.top - margin.bottom;
+
+    var svg = d3.select('#publications-plot')
+        .append("svg")
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-80 -20 750 600")
+        .append("g")
+        .classed("svg-content-responsive", true);
+
+    var opacityScale = d3.scaleLinear()
+        .domain([0.0, 30.0])
+        .range([0.10, .80]);
+
+    // The API for scales have changed in v4. There is a separate module d3-scale which can be used instead. The main change here is instead of d3.scale.linear, we have d3.scaleLinear.
+    var xScale = d3.scaleLinear()
+        .range([0, width]);
+
+    var yScale = d3.scaleLinear()
+        .range([height, 0]);
+
+    // square root scale.
+    var radius = d3.scaleSqrt()
+        .range([2, 5]);
+
+    // the axes are much cleaner and easier now. No need to rotate and orient the axis, just call axisBottom, axisLeft etc.
+    var xAxis = d3.axisBottom()
+        .scale(xScale)
+        .tickPadding(20)
+        .tickSize(0)
+        .ticks(5);
+
+    var yAxis = d3.axisLeft()
+        .scale(yScale)
+        .tickPadding(20)
+        .tickSize(0)
+        .ticks(5);
+
     data.forEach(function (d) {
+        d.Downloads = +d.Downloads;
         d.daysPublished = +d.daysPublished;
-        d.departmentCode = +d.departmentCode;
-        d.Code = +d.Code;
-        d.publishedDate = +d.publishedDate;
+        d.Code = d.Code;
     });
 
+    xScale.domain(d3.extent(data, function (d) {
+        return d.Downloads;
+    })).nice();
 
-    const width = 350;
-    const height = 300;
+    yScale.domain(d3.extent(data, function (d) {
+        return d.daysPublished;
+    })).nice();
 
-
-
-    const xValue = function (d) {
-        d.pageviews
-    };
-    const xAxisLabel = 'Total Days Published';
-
-    const yValue = function (d) {
-        d.daysPublished
-    };
-    const circleRadius = 10;
-    const yAxisLabel = 'PageViews';
-
-    const margin = {
-        top: 30,
-        right: 30,
-        bottom: 50,
-        left: 50
-    };
-    const innerWidth = width - margin.left - margin.right;
-    const innerHeight = height - margin.top - margin.bottom;
-    const svg = d3.select("#publications-plot").append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
-        .append("g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-    const xScale = d3.scaleLinear()
-        .domain(d3.extent(data, xValue))
-        .range([0, innerWidth])
-        .nice();
-
-    const yScale = d3.scaleLinear()
-        .domain(d3.extent(data, yValue))
-        .range([innerHeight, 0])
-        .nice();
-
-    const g = svg.append('g')
-        .attr('transform', "translate(" + margin.left + "," + margin.top + ")");
-
-    const xAxis = d3.axisBottom(xScale)
-        .scale(xScale)
-        .tickSize(0)
-        .tickPadding(30);
-
-    const yAxis = d3.axisLeft(yScale)
-        .scale(yScale)
-        .tickSize(0)
-        .tickPadding(30);
-
-    const yAxisG = g.append('g').call(yAxis);
-
-
-    yAxisG.selectAll('.domain').remove();
-
-    yAxisG.append('text')
+    svg.append('g')
+			.attr('transform', 'translate(0,' + height + ')')
+			.attr('class', 'x axis')
+			.style("stroke-dasharray","5,5")
+			.call(xAxis)
+			.append('text')
         .attr('class', 'axis-label')
-        .attr('y', -93)
-        .attr('x', -innerHeight / 2)
+        .attr('y',50)
+        .attr('x', 250)
+        .attr('fill', 'black')
+        .text("Downloads");
+
+		// y-axis is translated to (0,0)
+		svg.append('g')
+			.attr('transform', 'translate(0,0)')
+			.attr('class', 'y axis')
+			.style("stroke-dasharray","5,5")
+			.call(yAxis)
+			.append('text')
+        .attr('class', 'axis-label')
+        .attr('y', -50)
+        .attr('x', -300)
         .attr('fill', 'black')
         .attr('transform', "rotate(-90)")
         .attr('text-anchor', 'middle')
-        .text(yAxisLabel);
+        .text("Published Days");
 
-    const xAxisG = g.append('g').call(xAxis)
-        .attr('transform', "translate(0," + innerHeight + ")");
 
-    xAxisG.select('.domain').remove();
-
-    xAxisG.append('text')
-        .attr('class', 'axis-label')
-        .attr('y', 75)
-        .attr('x', innerWidth / 2)
-        .attr('fill', 'black')
-        .text(xAxisLabel);
-
-    g.selectAll('circle').data(data)
+    var bubble = svg.selectAll('.bubble')
+        .data(data)
         .enter().append('circle')
-        .attr('cy', function (d) {
-            return yScale(yValue(d))
-        })
+        .attr('class', 'bubble')
         .attr('cx', function (d) {
-            return xScale(xValue(d))
+            return xScale(d.Downloads);
         })
-        .attr('r', circleRadius)
-        .attr('fill', function (d) {
-            if (d.daysPublished >= 200 && d.pageviews >= 1000) {
-                return '#d65a70'
+        .attr('cy', function (d) {
+            return yScale(d.daysPublished);
+        })
+        .attr('r', function (d) {
+            return radius(20);
+        })
+        .style('fill', function (d) {
+            if (d.Downloads >= 1000 && d.daysPublished >= 200) {
+                return "#d65a70"
             } else {
-                return '#d8d8d8'
+                return "#d8d8d8"
             }
+        })
+    .append('title')
+        .attr('x', function (d) {
+            return radius(d.Downloads);
+        })
+        .text(function (d) {
+            return d.Code;
         });
+
 }
 
 function removePublicationsSvg() {
@@ -1104,7 +1119,7 @@ $("input[name*='publicationTrend']").click(function () {
 $("#deparmentSelect").on('change', function () {
     $("select[id*='divisionSelect']").val("");
     removePublicationsSvg();
-    jsonPublicationsBarras = publicationsTopArrays.topDepartmentsAllTime.filter(dataP => {
+    jsonPublicationsBarras = publicationsTopArrays.topDepartmentsAllTime.filter(function (dataP) {
         return dataP.department_codes == this.value
     });
     drawTrendPublicationChart(jsonPublicationsBarras);
@@ -1120,7 +1135,7 @@ $("#deparmentSelect").on('change', function () {
 $("#divisionSelect").on('change', function () {
     $("select[id*='deparmentSelect']").val("");
     removePublicationsSvg();
-    jsonPublicationsBarras = publicationsTopArrays.topDivisionsAllTime.filter(dataP => {
+    jsonPublicationsBarras = publicationsTopArrays.topDivisionsAllTime.filter(function (dataP) {
         return dataP.division_codes == this.value
     });
     drawTrendPublicationChart(jsonPublicationsBarras);

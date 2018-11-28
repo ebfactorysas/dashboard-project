@@ -370,6 +370,46 @@ section.publications .grid path {
     stroke-width: 0;
 }
 
+section.publications #publications-plot .legend text,
+section.publications #publications-plot .axis text {
+    font-size: 14px;
+    fill: #333;
+    font-family: 'Gotham-Book'
+}
+
+section.publications #publications-plot .axis path,
+section.publications #publications-plot .axis line {
+    fill: none;
+    stroke-width: 3px;
+    stroke: #555555;
+}
+
+section.publications #publications-plot .circle {
+    fill-opacity: 0.65;
+}
+
+section.publications #publications-plot .bubble {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+section.publications #publications-plot .bubble:hover text {
+    opacity: 1;
+}
+
+section.publications #publications-plot .bubble:hover circle {
+    fill-opacity: 1;
+}
+
+section.publications #publications-plot .legend rect {
+    fill-opacity: 0.75;
+}
+
+section.publications #publications-plot .legeng:hover rect {
+    fill-opacity: 1;
+}
+
+
 section.moocs .left-bar h4 {
     font-size: 18px;
     color: white;
@@ -730,21 +770,21 @@ section.code .line {
 }
 
 section.code .grid line {
-  stroke: lightgrey;
-  stroke-opacity: 0.7;
-  shape-rendering: crispEdges;
+    stroke: lightgrey;
+    stroke-opacity: 0.7;
+    shape-rendering: crispEdges;
 }
 
 section.code .grid path {
-  stroke-width: 0;
+    stroke-width: 0;
 }
 
 section.suscribers {
-  font-family: 'Gotham-Bold';
+    font-family: 'Gotham-Bold';
 }
 
 section.suscribers .right-bar .left-zone {
-  width: 940px;
+    width: 940px;
 }
 
 section.suscribers .right-bar .right-zone {
@@ -756,11 +796,11 @@ section.suscribers .right-bar .right-zone .top-zone {
 }
 
 section.suscribers .left-bar {
-  text-align: center;
+    text-align: center;
 }
 
 section.suscribers .left-bar .gauge-1 {
-  padding-top: 4rem;
+    padding-top: 4rem;
 }
 
 
@@ -943,7 +983,9 @@ section.map select.form-control:not([size]):not([multiple]) {
     height: 250px;
 }
 
-#demographics-suscribers, #downloads-code, #downloads-publications {
+#demographics-suscribers,
+#downloads-code,
+#downloads-publications {
     min-width: 300px;
     max-width: 100%;
     margin: 0 auto;
@@ -1059,4 +1101,5 @@ section.map select.form-control:not([size]):not([multiple]) {
 .waffle-gender {
     min-height: 31px;
 }
+
 /** red-section***/
