@@ -70,22 +70,6 @@ var dataTree = {
     }]
 }
 
-// var dataGaugeCode = {
-//     "code": {
-//         "total": 100,
-//         "allocated": 76
-//     },
-//     "pageview": {
-//         "total": 1000,
-//         "allocated": 113
-//     },
-//     "lac": {
-//         "total": 100,
-//         "allocated": 9
-//     }
-// }
-
-
 var dataGaugeCode = {
     "code": {
         "total": getPercentageTotal(codeAllTotalGlobal),
@@ -101,7 +85,8 @@ var dataGaugeCode = {
     }
 }
 
-var dataLines = [{
+var dataLines = [
+    {
         "date": 201801,
         "Paul Productive Code": 4.1 + 10,
         "Paul Raw Code": 3.2 + 20,
@@ -238,90 +223,30 @@ function drawChartCodeTrend(codeTrend) {
         });
 }
 
-
-function drawTree(data) {
-    data = data[0];
-
-    const marginTree = {
-            top: 40,
-            right: 10,
-            bottom: 10,
-            left: 10
-        },
-        widthTree = 935 - marginTree.left - marginTree.right,
-        heightTree = 200 - marginTree.top - marginTree.bottom,
-        colorTree = d3.scaleOrdinal().range(["#ebb203", "#ebb817", "#edc959", "#f0e9eb", "#f1ede2", "#f1f1f1"]);
-
-    const treemap = d3.treemap().size([widthTree, heightTree]);
-
-    const divTree = d3.select("#downloads-code").append("div")
-        .style("position", "relative")
-        .style("width", (widthTree + marginTree.left + marginTree.right) + "px")
-        .style("height", (heightTree + marginTree.top + marginTree.bottom) + "px")
-        .style("left", marginTree.left + "px")
-        .style("top", marginTree.top + "px");
-    const root = d3.hierarchy(data, function (d) {
-            return d.children
-        })
-        .sum(function (d) {
-            return d.data2018
-        });
-
-    const tree = treemap(root);
-
-    const node = divTree.datum(root).selectAll(".node")
-        .data(tree.leaves())
-        .enter().append("div")
-        .attr("class", "node")
-        .style("left", function (d) {
-            return d.x0 + "px"
-        })
-        .style("top", function (d) {
-            return d.y0 + "px"
-        })
-        .style("width", function (d) {
-            return Math.max(0, d.x1 - d.x0) + "px"
-        })
-        .style("height", function (d) {
-            return Math.max(0, d.y1 - d.y0) + "px"
-        })
-        .style("background", function (d) {
-            return colorTree(d.parent.data.name)
-        })
-        .text(function (d) {
-            return d.data.name
-        });
-
-    d3.selectAll("input").on("change", function change() {
-        const value = this.value === "count" ?
-            function (d) {
-                return d.data2018 ? 1 : 0;
-            } :
-            function (d) {
-                return d.data2018;
-            };
-
-        const newRoot = d3.hierarchy(data, function (d) {
-                return d.children
-            })
-            .sum(value);
-
-        node.data(treemap(newRoot).leaves())
-            .transition()
-            .duration(1500)
-            .style("left", function (d) {
-                return d.x0 + "px"
-            })
-            .style("top", function (d) {
-                return d.y0 + "px"
-            })
-            .style("width", function (d) {
-                return Math.max(0, d.x1 - d.x0 - 1) + "px"
-            })
-            .style("height", function (d) {
-                return Math.max(0, d.y1 - d.y0 - 1) + "px"
-            })
+function drawTreeCode(dataTree,filtertype) {
+    var colours = interpolateColors("rgb(217, 30, 24)", "rgb(94, 79, 162)", dataTree.length);
+    
+    dataTree.forEach(function(element, i) {
+      element.color = colours[i]
     });
+    
+    var groupData = ["name", "value"+filtertype];
+    var colorParam = "value"+filtertype;
+    var sizeMeasure = "value"+filtertype;
+    var indexColor = 0;
+    new d3plus.Treemap()
+      .data(dataTree)
+      .groupBy(["value"+filtertype, "name"])
+      .sum("value"+filtertype)
+      .shapeConfig({
+         fill: function(d) {
+           return d.color;
+         }
+      })
+      
+      .select("#downloads-code")
+      .render();
+  
 }
 
 function createChartTimeline(data) {
@@ -905,10 +830,8 @@ var ObjectTopIdbAllTime = $.extend(true, [], codeTopArrays.codeTrendIADBAllTime)
 var ObjectPageViewsTimeLineAllTime = $.extend(true, [], codePageviewsTimelineArrays.pageviewTimelineIDB);
 var ObjectcodeScatterploArrays = $.extend(true, [], codeScatterploArrays);
 
-//aca
-drawTree(codePageviewsSourceArrays.pageviewSourceIDB);
-//aca
 
+drawTreeCode(codePageviewsSourceArrays.pageviewSourceIDB, "2018");
 drawGaugeCodeChart(dataGaugeCode);
 drawPlotChart(ObjectcodeScatterploArrays);
 drawChartCodeTrend(ObjectTopIdbAllTime);
@@ -921,15 +844,18 @@ $("input[name*='codeTrend']").click(function () {
     var ObjectTopIdb2018 = $.extend(true, [], codeTopArrays.codeTrendIADBA2018);
     var ObjectcodeScatterploArrays = $.extend(true, [], codeScatterploArrays);
 
+    d3.select("#downloads-code svg").remove();
     d3.select("#code-trend svg").remove();
     d3.select("#timeline-code svg").remove();
     d3.select("#code-plot svg").remove();
-
+    
     if (this.id == "codeAllTime") {
+        drawTreeCode(codePageviewsSourceArrays.pageviewSourceIDB, "AllTheTime");
         drawChartCodeTrend(ObjectTopIdbAllTime);
         createChartTimeline(ObjectPageViewsTimeLineAllTime);
         drawPlotChart(ObjectcodeScatterploArrays);
     } else {
+        drawTreeCode(codePageviewsSourceArrays.pageviewSourceIDB, "2018");
         drawChartCodeTrend(ObjectTopIdb2018);
         createChartTimeline(ObjectPageViewsTimeLineAllTime);
         drawPlotChart(ObjectcodeScatterploArrays);
