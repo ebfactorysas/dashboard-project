@@ -306,10 +306,14 @@ function createChartTimeline(data) {
     // appends a 'group' element to 'svg'
     // moves the 'group' element to the top left margin
     var svg = d3.select("#timeline-code").append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
-        .append("g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    //responsive SVG needs these 2 attributes and no width and height attr
+    .attr("preserveAspectRatio", "xMinYMin meet")
+    .attr("viewBox", "-60 -40 520 300")
+    .append("g")
+    // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
+
+    //class to make it responsive
+    .classed("svg-content-responsive", true);
     var totalAmount = 0;
     // format the data
     data.forEach(function (d) {
