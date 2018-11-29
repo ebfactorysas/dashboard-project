@@ -1565,23 +1565,23 @@ function moocsFilter() {
 
 
 }
-// Divisions select filter
-$("select[id*='divisionSelect']").change(function () {
-    $("select[id*='deparmentSelect']").val("");
-    moocsFilter();
-});
+// // Divisions select filter
+// $("select[id*='divisionSelect']").change(function () {
+//     $("select[id*='deparmentSelect']").val("");
+//     moocsFilter();
+// });
 
-// Deparment select filter
-$("select[id*='deparmentSelect']").change(function () {
-    $("select[id*='divisionSelect']").val("");
-    moocsFilter();
-});
+// // Deparment select filter
+// $("select[id*='deparmentSelect']").change(function () {
+//     $("select[id*='divisionSelect']").val("");
+//     moocsFilter();
+// });
 
-$("#idbLink").click(function () {
-    $("select[id*='deparmentSelect']").val("");
-    $("select[id*='divisionSelect']").val("");
-    moocsFilter();
-});
+// $("#idbLink").click(function () {
+//     $("select[id*='deparmentSelect']").val("");
+//     $("select[id*='divisionSelect']").val("");
+//     moocsFilter();
+// });
 
 
 

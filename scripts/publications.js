@@ -1065,29 +1065,29 @@ function removePublicationsSvg() {
     // d3.select("#timeline-publication svg").remove();
     d3.select("#publication-trend svg").remove();
     // d3.select("#publications-plot svg").remove();
-    d3.select("#gauge-publications svg").remove();
-    d3.select("#gauge-download-p svg").remove();
-    d3.select("#gauge-lac-p svg").remove();
+    // d3.select("#gauge-publications svg").remove();
+    // d3.select("#gauge-download-p svg").remove();
+    // d3.select("#gauge-lac-p svg").remove();
     
 
 }
 
-function publicationFilter() {
-    removePublicationsSvg();
+// function publicationFilter() {
+//     removePublicationsSvg();
 
-    if ($("select[id*='divisionSelect']").val().length > 0) {
+//     if ($("select[id*='divisionSelect']").val().length > 0) {
 
-    } else if ($("select[id*='deparmentSelect']").val().length > 0) {
-        var downloadTimelineDepartment = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineDepartments);
-        downloadTimelineDepartment = downloadTimelineDepartment.filter(function (downloadTimelineDepartment) {
-            return downloadTimelineDepartment.departmentCode == $("#deparmentSelect").val()
-        })
-        //downloadTimelineDepartment = downloadTimelineDepartment[0].data;
-        createChartTimelinePublication(downloadTimelineDepartment);
-    } else {
-        initPublications();
-    }
-}
+//     } else if ($("select[id*='deparmentSelect']").val().length > 0) {
+//         var downloadTimelineDepartment = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineDepartments);
+//         downloadTimelineDepartment = downloadTimelineDepartment.filter(function (downloadTimelineDepartment) {
+//             return downloadTimelineDepartment.departmentCode == $("#deparmentSelect").val()
+//         })
+//         //downloadTimelineDepartment = downloadTimelineDepartment[0].data;
+//         createChartTimelinePublication(downloadTimelineDepartment);
+//     } else {
+//         initPublications();
+//     }
+// }
 
 initPublications();
 
@@ -1160,45 +1160,12 @@ $("input[name*='publicationTrend']").click(function () {
 });
 
 //department filter
-$("#deparmentSelect").on('change', function () {
-    $("select[id*='divisionSelect']").val("");
-    removePublicationsSvg();
-    jsonPublicationsBarras = publicationsTopArrays.topDepartmentsAllTime.filter(function (dataP) {
-        return dataP.department_codes == this.value
-    });
-    drawTrendPublicationChart(jsonPublicationsBarras);
-    jsonPublicTree = publicationsDownloadSourceArrays.downloadSourceDepartments.filter(dataT => {
-        return dataT.department_codes == this.value
-    });
-    drawTreePublication(jsonPublicTree, "AllTheTime");
-    drawGaugePublicationChart(dataPublicationGauge);
-    
-    //console.log($("#deparmentSelect").val());
-    // publicationFilter();
-});
 
-//division filter
-$("#divisionSelect").on('change', function () {
-    $("select[id*='deparmentSelect']").val("");
-    removePublicationsSvg();
-    jsonPublicationsBarras = publicationsTopArrays.topDivisionsAllTime.filter(function (dataP) {
-        return dataP.division_codes == this.value
-    });
-    drawTrendPublicationChart(jsonPublicationsBarras);
-
-    jsonPublicTree = publicationsDownloadSourceArrays.downloadSourceDivisions.filter(dataT => {
-        return dataT.division_codes == this.value
-    });
-    drawTreePublication(jsonPublicTree, "AllTheTime");
-    drawGaugePublicationChart(dataPublicationGauge);
-    
-    // publicationFilter();
-});
 
 //iadb filter
-$("#idbLink").click(function (event) {
-    $("select[id*='deparmentSelect']").val("");
-    $("select[id*='divisionSelect']").val("");
-    event.preventDefault();
-    publicationFilter();
-});
+// $("#idbLink").click(function (event) {
+//     $("select[id*='deparmentSelect']").val("");
+//     $("select[id*='divisionSelect']").val("");
+//     event.preventDefault();
+//     publicationFilter();
+// });

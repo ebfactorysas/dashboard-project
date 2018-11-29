@@ -39,75 +39,8 @@ var subscribersAllDownloadsLac = 0;
 
 initIndicators(filterselect, valueFilter);
 
-$("#deparmentSelect").on('change', function () {
-    // console.log(this.value);
-    // mainReset();
-    initIndicators('departments', this.value);
-    $('.label-filter-select').text(this.value);
-    $("#divisionSelect").value = "";
-    $('#blueAllTime').click();
-    d3.select("#gauge-publications svg").remove();
-    d3.select("#gauge-download-p svg").remove();
-    d3.select("#gauge-lac-p svg").remove();
 
-    d3.select("#gauge-moocs svg").remove();
-    d3.select("#gauge-registrations-m svg").remove();
-    d3.select("#gauge-lac-m svg").remove();
-
-    d3.select("#gauge-datasets svg").remove();
-    d3.select("#gauge-download-d svg").remove();
-    d3.select("#gauge-lac-d svg").remove();
-
-    d3.select("#gauge-code svg").remove();
-    d3.select("#gauge-pageview svg").remove();
-    d3.select("#gauge-lac svg").remove();
-
-    d3.select("#gauge-suscribers svg").remove();
-    d3.select("#gauge-lac-s svg").remove();
-    d3.select("#gauge-2018 svg").remove();
-    updateGaugesPublications();
-    updateGaugesMoocs();
-    updateGaugesDatasets();
-    updateGaugesCode();
-    updateGaugesSubscribers();
-});
-$("#divisionSelect").on('change', function () {
-    // console.log(this.value);
-    $('.label-filter-select').text(this.value);
-    $("#deparmentSelect").value = "";
-    removePublicationsSvg();
-    // mainReset();
-    initIndicators('divisions', this.value);
-    $('#blueAllTime').click();
-    d3.select("#gauge-publications svg").remove();
-    d3.select("#gauge-download-p svg").remove();
-    d3.select("#gauge-lac-p svg").remove();
-    
-    d3.select("#gauge-moocs svg").remove();
-    d3.select("#gauge-registrations-m svg").remove();
-    d3.select("#gauge-lac-m svg").remove();
-    
-    d3.select("#gauge-datasets svg").remove();
-    d3.select("#gauge-download-d svg").remove();
-    d3.select("#gauge-lac-d svg").remove();
-    
-    d3.select("#gauge-code svg").remove();
-    d3.select("#gauge-pageview svg").remove();
-    d3.select("#gauge-lac svg").remove();
-    
-    d3.select("#gauge-suscribers svg").remove();
-    d3.select("#gauge-lac-s svg").remove();
-    d3.select("#gauge-2018 svg").remove();
-    updateGaugesPublications();
-    updateGaugesMoocs();
-    updateGaugesDatasets();
-    updateGaugesCode();
-    updateGaugesSubscribers();
-
-    
-    initPublications();
-});
-$('#idbLink').click(function () {
+function gaugeIDB() {
     $("#deparmentSelect").value = "";
     $("#divisionSelect").value = "";
     initIndicators('IDB', 'IDB');
@@ -136,7 +69,7 @@ $('#idbLink').click(function () {
     updateGaugesDatasets();
     updateGaugesCode();
     updateGaugesSubscribers();
-});
+};
 
 function initIndicators(filterselect, valueFilter) {
     // var jsondata = "";
@@ -270,10 +203,10 @@ function publicationsIndicatorAlltime(jsondata){
     // $('#gauge-publications .percent-complete').append(setSettingsNumber(publications2018TotalRest).suffixNumber);
     var results = {
         publicationsValue: (jsondata.length > 0) ? jsondata[0].all_the_time_publications : '0',
-        porcent_total_publications: "100", /*missing, rodrigo dice que si falta el dato que pongamos 100% para all the time*/
+        porcent_total_publications: "100%", /*missing, rodrigo dice que si falta el dato que pongamos 100% para all the time*/
         compare2017_2018_publications : (jsondata.length > 0) ? jsondata[0]['2017_2018_publications'] : '',
         downloadsValue: (jsondata.length > 0) ? jsondata[0]['all_the_time_downloads'] : '0',
-        porcent_total_downloads: "100", /*missing, rodrigo dice que si falta el dato que pongamos 100% para all the time*/
+        porcent_total_downloads: "100%", /*missing, rodrigo dice que si falta el dato que pongamos 100% para all the time*/
         porcent_downloads_lac: (jsondata.length > 0) ? ((jsondata[0].all_the_time_porcent_total_LAC_downloads != "missing") ? (jsondata[0].all_the_time_porcent_total_LAC_downloads * 100).toFixed(1) + '%' : jsondata[0].all_the_time_porcent_total_LAC_downloads) : ''
     }
     return results;
@@ -355,8 +288,9 @@ function moocsIndicatorAlltime(jsondata) {
         porcent_total_publications: '100%', /*missing, rodrigo dice que si falta el dato que pongamos 100% para all the time*/
         compare2017_2018_publications: (jsondata.length > 0) ? jsondata[0]['2017_2018_courses'] : '0',
         downloadsValue: (jsondata.length > 0) ? jsondata[0]['all_the_time_registrations'] : '0',
-        porcent_total_downloads: (jsondata.length > 0) ? (jsondata[0]['all_the_time_porcent_total_registrations'] * 100).toFixed(1) + '%' : '', /*missing, rodrigo dice que si falta el dato que pongamos 100% para all the time*/
-        porcent_downloads_lac: (jsondata.length > 0) ? (jsondata[0]['porcent_total_LAC'] * 100).toFixed(1) + '%' : '',
+        // porcent_total_downloads: (jsondata.length > 0) ? (jsondata[0]['all_the_time_porcent_total_registrations'] * 100).toFixed(1) + '%' : '', /*missing, rodrigo dice que si falta el dato que pongamos 100% para all the time*/
+        porcent_total_downloads: (jsondata.length > 0) ? ((jsondata[0]['all_the_time_porcent_total_registrations'] * 100 >= 100) ? "100%" : (jsondata[0]['all_the_time_porcent_total_registrations'] * 100).toFixed(1) + '%') : '', /*missing, rodrigo dice que si falta el dato que pongamos 100% para all the time*/
+        porcent_downloads_lac: (jsondata.length > 0) ? ((jsondata[0]['porcent_total_LAC'] * 100 >= 100) ? "100%" : (jsondata[0]['porcent_total_LAC'] * 100).toFixed(1) + '%') : '',
     }
     // console.log(results);
     return results;
@@ -366,11 +300,14 @@ function moocsIndicator2018(jsondata) {
     
     var results = {
         moocsValue: (jsondata.length > 0) ? jsondata[0]['2018_courses'] : '0',
-        porcent_total_publications: (jsondata.length > 0) ? (jsondata[0]['porcent_total_courses'] * 100).toFixed(1) + '%': '',
+        // porcent_total_publications: (jsondata.length > 0) ? (jsondata[0]['porcent_total_courses'] * 100).toFixed(1) + '%': '',
+        porcent_total_publications: (jsondata.length > 0) ? ((jsondata[0]['porcent_total_courses'] * 100 == 100) ? "100%" : (jsondata[0]['porcent_total_courses'] * 100).toFixed(1) + '%') : '',
         compare2017_2018_publications: (jsondata.length > 0) ? jsondata[0]['2017_2018_courses'] : '',
         downloadsValue: (jsondata.length > 0) ? jsondata[0]['2018_registrations'] : '0',
-        porcent_total_downloads: (jsondata.length > 0) ? (jsondata[0]['porcent_total_registrations'] * 100).toFixed(1) + '%' : '', // no se enviaron en los datos para el porcentaje total de downloads filtrado por all time
-        porcent_downloads_lac: (jsondata.length > 0) ? (jsondata[0]['porcent_total_LAC'] * 100).toFixed(1) + '%' : ''
+        // porcent_total_downloads: (jsondata.length > 0) ? (jsondata[0]['porcent_total_registrations'] * 100).toFixed(1) + '%' : '', // no se enviaron en los datos para el porcentaje total de downloads filtrado por all time
+        porcent_total_downloads: (jsondata.length > 0) ? ((jsondata[0]['porcent_total_registrations'] * 100 == 100) ? "100%" : (jsondata[0]['porcent_total_registrations'] * 100).toFixed(1) + '%') : '', // no se enviaron en los datos para el porcentaje total de downloads filtrado por all time
+        // porcent_downloads_lac: (jsondata.length > 0) ? (jsondata[0]['porcent_total_LAC'] * 100).toFixed(1) + '%' : ''
+        porcent_downloads_lac: (jsondata.length > 0) ? ((jsondata[0]['porcent_total_LAC'] * 100 == 100) ? "100%" : (jsondata[0]['porcent_total_LAC'] * 100).toFixed(1) + '%') : '',
     }
     // console.log(results);
     return results;
@@ -452,11 +389,14 @@ function datasetsIndicator2018(jsondata) {
     
     var results = {
         datasetsValue: datasets2018TotalGlobal,
-        porcent_total_publications: (jsondata.length > 0) ? (jsondata[0]['2018_porcent_total_datasets'] * 100).toFixed(1) + '%' : '',
+        // porcent_total_publications: (jsondata.length > 0) ? (jsondata[0]['2018_porcent_total_datasets'] * 100).toFixed(1) + '%' : '',
+        porcent_total_publications: (jsondata.length > 0) ? ((jsondata[0]['2018_porcent_total_datasets'] * 100 >= 100) ? "100%" : (jsondata[0]['2018_porcent_total_datasets'] * 100).toFixed(1) + '%') : '',
         compare2017_2018_publications: (jsondata.length > 0) ? jsondata[0]['2017_2018_datasets'] : '',
         downloadsValue: (jsondata.length > 0) ? jsondata[0]['2018_downloads'] : '0',
-        porcent_total_downloads: (jsondata.length > 0) ? (jsondata[0]['2018_porcent_total_downloads'] * 100).toFixed(1) + '%' : '', // no se enviaron en los datos para el porcentaje total de downloads filtrado por all time
-        porcent_downloads_lac: (jsondata.length > 0) ? (jsondata[0]['2018_porcent_total_lac_downloads'] * 100).toFixed(1) + '%' : ''
+        // porcent_total_downloads: (jsondata.length > 0) ? (jsondata[0]['2018_porcent_total_downloads'] * 100).toFixed(1) + '%' : '', // no se enviaron en los datos para el porcentaje total de downloads filtrado por all time
+        porcent_total_downloads: (jsondata.length > 0) ? ((jsondata[0]['2018_porcent_total_downloads'] * 100 >= 100) ? "100%" : (jsondata[0]['2018_porcent_total_downloads'] * 100).toFixed(1) + '%') : '', // no se enviaron en los datos para el porcentaje total de downloads filtrado por all time
+        // porcent_downloads_lac: (jsondata.length > 0) ? (jsondata[0]['2018_porcent_total_lac_downloads'] * 100).toFixed(1) + '%' : ''
+        porcent_downloads_lac: (jsondata.length > 0) ? ((jsondata[0]['2018_porcent_total_lac_downloads'] * 100 >= 100) ? "100%" : (jsondata[0]['2018_porcent_total_lac_downloads'] * 100).toFixed(1) + '%') : '',
     }
     // console.log(results);
     return results;
@@ -532,11 +472,14 @@ function codeIndicatorAlltime(jsondata) {
     
     var results = {
         codeValue: (jsondata.length > 0) ? jsondata[0].all_the_time_code : '0',
-        porcent_total_publications: (jsondata.length > 0) ? (jsondata[0]['porcent_total_code'] * 100).toFixed(1) + '%' : '',
+        // porcent_total_publications: (jsondata.length > 0) ? (jsondata[0]['porcent_total_code'] * 100).toFixed(1) + '%' : '',
+        porcent_total_publications: (jsondata.length > 0) ? ((jsondata[0]['porcent_total_code'] * 100 >= 100) ? "100%" : (jsondata[0]['porcent_total_code'] * 100).toFixed(1) + '%') : '',
         compare2017_2018_publications: 'Missing',
         downloadsValue: (jsondata.length > 0) ? jsondata[0]['all_the_time_pageviews'] : '0',
-        porcent_total_downloads: (jsondata.length > 0) ? (jsondata[0].all_the_time_porcent_total_pageviews * 100).toFixed(1) : '0',
-        porcent_downloads_lac: (jsondata.length > 0) ? (jsondata[0]['porcent_total_lac'] * 100).toFixed(1) + '%' : ''
+        // porcent_total_downloads: (jsondata.length > 0) ? (jsondata[0].all_the_time_porcent_total_pageviews * 100).toFixed(1) : '0',
+        porcent_total_downloads: (jsondata.length > 0) ? ((jsondata[0]['all_the_time_porcent_total_pageviews'] * 100 >= 100) ? "100%" : (jsondata[0]['all_the_time_porcent_total_pageviews'] * 100).toFixed(1) + '%') : '',
+        // porcent_downloads_lac: (jsondata.length > 0) ? (jsondata[0]['porcent_total_lac'] * 100).toFixed(1) + '%' : ''
+        porcent_downloads_lac: (jsondata.length > 0) ? ((jsondata[0]['porcent_total_lac'] * 100 >= 100) ? "100%" : (jsondata[0]['porcent_total_lac'] * 100).toFixed(1) + '%') : '',
     }
     // console.log(results);
     return results;
@@ -617,9 +560,11 @@ function subscriberIndicatorAlltime(jsondata) {
     
     var results = {
         subscriberValue: (jsondata.length > 0) ? jsondata[0].subscribers : '0',
-        porcent_total_subscriber: (jsondata.length > 0) ? (jsondata[0].porcent_total_subscribers * 100).toFixed(1) + '%' : '',
+        // porcent_total_subscriber: (jsondata.length > 0) ? (jsondata[0].porcent_total_subscribers * 100).toFixed(1) + '%' : '',
+        porcent_total_subscriber: (jsondata.length > 0) ? ((jsondata[0]['porcent_total_subscribers'] * 100 >= 100) ? "100%" : (jsondata[0]['porcent_total_subscribers'] * 100).toFixed(1) + '%') : '',
         porcent_total_subscriber_2018: '100%', /** missing, se pone 100% por orden de rodrigo */
-        porcent_subscriber_lac: (jsondata.length > 0) ? (jsondata[0]['porcent_total_from_lac'] * 100).toFixed(1) + '%' : ''
+        // porcent_subscriber_lac: (jsondata.length > 0) ? (jsondata[0]['porcent_total_from_lac'] * 100).toFixed(1) + '%' : ''
+        porcent_subscriber_lac: (jsondata.length > 0) ? ((jsondata[0]['porcent_total_from_lac'] * 100 >= 100) ? "100%" : (jsondata[0]['porcent_total_from_lac'] * 100).toFixed(1) + '%') : '',
     }
     // console.log(results);
     return results;
@@ -628,9 +573,11 @@ function subscriberIndicatorAlltime(jsondata) {
 function subscriberIndicator2018(jsondata) {
     var results = {
         subscriberValue: (jsondata.length > 0) ? jsondata[0].subscribers : '0',
-        porcent_total_subscriber: (jsondata.length > 0) ? (jsondata[0].porcent_total_subscribers * 100).toFixed(1) + '%' : '0',
+        // porcent_total_subscriber: (jsondata.length > 0) ? (jsondata[0].porcent_total_subscribers * 100).toFixed(1) + '%' : '0',
+        porcent_total_subscriber: (jsondata.length > 0) ? ((jsondata[0]['porcent_total_subscribers'] * 100 >= 100) ? "100%" : (jsondata[0]['porcent_total_subscribers'] * 100).toFixed(1) + '%') : '',
         porcent_total_subscriber_2018: '100%', /** missing, se pone 100% por orden de rodrigo */
-        porcent_subscriber_lac: (jsondata.length > 0) ? (jsondata[0]['porcent_total_from_lac'] * 100).toFixed(1) + '%' : ''
+        // porcent_subscriber_lac: (jsondata.length > 0) ? (jsondata[0]['porcent_total_from_lac'] * 100).toFixed(1) + '%' : ''
+        porcent_subscriber_lac: (jsondata.length > 0) ? ((jsondata[0]['porcent_total_from_lac'] * 100 >= 100) ? "100%" : (jsondata[0]['porcent_total_from_lac'] * 100).toFixed(1) + '%') : '',
     }
     // console.log(results);
     return results;
