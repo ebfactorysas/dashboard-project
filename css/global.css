@@ -315,7 +315,6 @@ section.moocs .right-bar > .row > div:nth-child(5) {
   line-height: 100%; }
 
 .container_radio.blue {
-  font-size: 1.5vw;
   display: block;
   position: relative;
   padding-left: 16px;
@@ -331,7 +330,8 @@ section.moocs .right-bar > .row > div:nth-child(5) {
   vertical-align: middle;
   *vertical-align: auto;
   zoom: 1;
-  *display: inline; }
+  *display: inline;
+  font-size: 1.5vw; }
   .container_radio.blue .checkmark {
     position: absolute;
     top: 7px;
