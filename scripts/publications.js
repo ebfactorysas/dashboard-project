@@ -1050,9 +1050,9 @@ function drawPlotChartPublication(data) {
 
 function removePublicationsSvg() {
     d3.select("#downloads-publications svg").remove();
-    d3.select("#timeline-publication svg").remove();
+    // d3.select("#timeline-publication svg").remove();
     d3.select("#publication-trend svg").remove();
-    d3.select("#publications-plot svg").remove();
+    // d3.select("#publications-plot svg").remove();
 }
 
 function publicationFilter() {
@@ -1126,16 +1126,15 @@ $("input[name*='publicationTrend']").click(function () {
     } else {
         if (this.id == "publicationAllTime") {
             drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "AllTheTime");
-
-            createChartTimelinePublication(downloadTimelineIDBTEST);
+            // createChartTimelinePublication(downloadTimelineIDBTEST);
             drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
-            drawPlotChartPublication(ObjectpublicationsAttention);
+            // drawPlotChartPublication(ObjectpublicationsAttention);
             // drawGaugePublicationChart(dataPublicationGauge);
         } else {
             drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "2018");
-            createChartTimelinePublication(downloadTimelineIDBTEST);
+            // createChartTimelinePublication(downloadTimelineIDBTEST);
             drawTrendPublicationChart(publicationsTopArrays.topIDB2018);
-            drawPlotChartPublication(ObjectpublicationsAttention);
+            // drawPlotChartPublication(ObjectpublicationsAttention);
             // drawGaugePublicationChart(dataPublicationGauge);
         }
     }
