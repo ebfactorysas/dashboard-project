@@ -1133,6 +1133,40 @@ section.map select.form-control:not([size]):not([multiple]) {
         height: 175px !important;
     }
 
+    section.publications #downloads-publications .d3plus-Shape {
+        stroke-width: 1;
+    }
+
+    section.publications #downloads-publications .d3plus-textBox text {
+        font-family: 'Gotham-Bold' !important;
+    }
+
+    section.publications #downloads-publications .tooltip-table {
+        width: 100%;
+    }
+
+    section.publications #downloads-publications .tooltip-table .data {
+        text-align: right;
+    }
+
+    section.publications #downloads-publications .tooltip-footer {
+        opacity: 0.5;
+    }
+
+    section.publications #downloads-publications .tooltip-table {
+        width: 100%;
+        height: auto;
+    }
+
+    section.publications #downloads-publications .tooltip-table .data {
+        text-align: right;
+    }
+
+    section.publications #downloads-publications .tooltip-footer {
+        opacity: 0.5;
+    }
+
+
     /* section.publications #downloads-publications svg{
         
         height: 200px!important;

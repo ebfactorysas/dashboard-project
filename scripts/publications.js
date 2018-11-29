@@ -553,16 +553,13 @@ function drawTreePublication(dataTree, filtertype) {
     new d3plus.Treemap()
         .width(935)
         .height(200)
+        .layoutPadding([0])
         .data(dataTree)
         .groupBy(["value" + filtertype, "name"])
         .sum("value" + filtertype)
         .shapeConfig({
             fill: function (d) {
                 return d.color;
-            },
-            labelConfig: {
-                fontFamily: 'Gotham-Bold',
-                fontMax: 20,
             }
         })
         .legend(false)
@@ -584,14 +581,14 @@ function drawTrendPublicationChart(dataPublicationTrend) {
         left: 40
     };
 
-    var widthPublicationTrend = 560 - marginPublicationTrend.left - marginPublicationTrend.right,
-        heightPublicationTrend = 400 - marginPublicationTrend.top - marginPublicationTrend.bottom;
+    var widthPublicationTrend = 680 - marginPublicationTrend.left - marginPublicationTrend.right,
+        heightPublicationTrend = 447 - marginPublicationTrend.top - marginPublicationTrend.bottom;
 
 
     var svgPublicationTrend = d3.select("#publication-trend")
         .append("svg")
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-40-40 800 450")
+        .attr("viewBox", "-40-20 730 450")
         .append("g")
         .classed("svg-content-responsive", true);
 
@@ -633,8 +630,8 @@ function drawTrendPublicationChart(dataPublicationTrend) {
         .attr("rx", 25)
         .attr("ry", 25)
         .attr("fill", "#dea6b0")
-        .attr("height", yPublicationTrend.bandwidth() - 2)
-        .attr("x", 8)
+        .attr("height", yPublicationTrend.bandwidth() - 6)
+        .attr("x",16)
         .attr("width", function (d) {
             return xPublicationTrend(d.value);
         });
@@ -647,7 +644,7 @@ function drawTrendPublicationChart(dataPublicationTrend) {
         })
         //x position is 3 pixels to the right of the bar
         .attr("x", function (d) {
-            return 12;
+            return 25;
         })
         .attr("class", "text-inside")
         .attr("font-family", "Gotham-Bold")
@@ -783,7 +780,7 @@ function drawLinesChartPublication(data) {
 
     var svg = d3.select("#lines-publications").append("svg")
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-1 -20 130 400")
+        .attr("viewBox", "-1 -10 110 400")
         .append("g")
         .classed("svg-content-responsive", true);
 
