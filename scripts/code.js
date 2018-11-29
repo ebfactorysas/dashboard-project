@@ -234,8 +234,6 @@ function drawTreeCode(dataTree,filtertype) {
         });
     }   
 
-    console.log("code",dataTree);
-
     colours = chroma.scale(['#ebb203', '#ffffff'])
         .mode('lch').colors(dataTree.length)
 
