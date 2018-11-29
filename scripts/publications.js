@@ -12,8 +12,23 @@ var dataPublicationGauge = {
         "allocated": publicationsAllDownloadsLac
     }
 }
+var dataPublicationGauge2018 = {
+    "publication": {
+        "total": getPercentageTotal(publications2018TotalGlobal),
+        "allocated": publications2018TotalGlobal
+    },
+    "download": {
+        "total": getPercentageTotal(publications2018Downloads),
+        "allocated": publications2018Downloads
+    },
+    "lac": {
+        "total": 100,
+        "allocated": publications2018DownloadsLac
+    }
+}
 
-var dataLinesPublications = [{
+var dataLinesPublications = [
+    {
         "date": 20180101,
 
         "one": Math.floor((Math.random() * 10) + 1) + 10,
@@ -1053,6 +1068,10 @@ function removePublicationsSvg() {
     // d3.select("#timeline-publication svg").remove();
     d3.select("#publication-trend svg").remove();
     // d3.select("#publications-plot svg").remove();
+    d3.select("#gauge-publications svg").remove();
+    d3.select("#gauge-download-p svg").remove();
+    d3.select("#gauge-lac-p svg").remove();
+
 }
 
 function publicationFilter() {
@@ -1129,13 +1148,13 @@ $("input[name*='publicationTrend']").click(function () {
             // createChartTimelinePublication(downloadTimelineIDBTEST);
             drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
             // drawPlotChartPublication(ObjectpublicationsAttention);
-            // drawGaugePublicationChart(dataPublicationGauge);
+            drawGaugePublicationChart(dataPublicationGauge);
         } else {
             drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "2018");
             // createChartTimelinePublication(downloadTimelineIDBTEST);
             drawTrendPublicationChart(publicationsTopArrays.topIDB2018);
             // drawPlotChartPublication(ObjectpublicationsAttention);
-            // drawGaugePublicationChart(dataPublicationGauge);
+            drawGaugePublicationChart(dataPublicationGauge2018);
         }
     }
 });

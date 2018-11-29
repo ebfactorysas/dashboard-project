@@ -5,23 +5,32 @@ var valueFilter = ""
 
 //variables globales para usar en los gauges
 var publicationsAllTotalGlobal = 0;
-var publications2018TotalGlobal = 0;
-var publicationsAllTotalRest = 0;
-var publications2018TotalRest = 0;
 var publicationsAllDownloads = 0;
 var publicationsAllDownloadsLac = 0;
+var publications2018TotalGlobal = 0;
+var publications2018Downloads = 0;
+var publications2018DownloadsLac = 0;
 
 var moocsAllTotalGlobal = 0;
 var moocsAllDownloads = 0;
 var moocsAllDownloadsLac = 0;
+var moocs2018TotalGlobal = 0;
+var moocs2018Downloads = 0;
+var moocs2018DownloadsLac = 0;
 
 var datasetsAllTotalGlobal = 0;
 var datasetsAllDownloads = 0;
 var datasetsAllDownloadsLac = 0;
+var datasets2018TotalGlobal = 0;
+var datasets2018Downloads = 0;
+var datasets2018DownloadsLac = 0;
 
 var codeAllTotalGlobal = 0;
 var codeAllDownloads = 0;
 var codeAllDownloadsLac = 0;
+var code2018TotalGlobal = 0;
+var code2018Downloads = 0;
+var code2018DownloadsLac = 0;
 
 var subscribersAllTotalGlobal = 0;
 var subscribersAllDownloads = 0;
@@ -178,6 +187,7 @@ function initIndicators(filterselect, valueFilter) {
     // console.log(jsondataPublications);
     // console.log(dataPublicationsResults);
     setDataMain(dataPublicationsResults, dataMoocsResults, dataDatasetsResults, dataCodeResults, dataSubscribersResults);
+    getDataBignumbers(jsondataPublications, jsondataMoocs, jsondataDatasets, jsondataCode, jsondataSubscriber);
 }
 $("input[name*='blueTrend']").click(function () {
     // console.log(jsondata);
@@ -246,8 +256,8 @@ function optionsAnimated(suffixValue) {
  */
 function publicationsIndicatorAlltime(jsondata){
     publicationsAllTotalGlobal = (jsondataPublications.length > 0) ? jsondataPublications[0].all_the_time_publications : '0';
-    publications2018TotalRest = (jsondataPublications.length > 0) ? jsondataPublications[0].all_the_time_LAC_downloads : '0';
-    publications2018TotalRest = setSettingsNumber(publications2018TotalRest).valueNumber;
+    // publications2018TotalRest = (jsondataPublications.length > 0) ? jsondataPublications[0].all_the_time_LAC_downloads : '0';
+    // publications2018TotalRest = setSettingsNumber(publications2018TotalRest).valueNumber;
 
     publicationsAllDownloads = (jsondataPublications.length > 0) ? jsondataPublications[0].all_the_time_downloads : '0';
     // publicationsAllDownloadsLac = (jsondataPublications.length > 0) ? (jsondata[0].all_the_time_porcent_total_LAC_downloads * 100).toFixed(0) : '0';
@@ -335,10 +345,7 @@ function updateGaugesPublications(){
  * Columna de indicadores de MOOCS 
  */
 function moocsIndicatorAlltime(jsondata) {
-    moocsAllTotalGlobal = (jsondata.length > 0) ? jsondata[0]['all_the_time_courses'] : '0';
-    moocsAllDownloads = (jsondata.length > 0) ? jsondata[0]['all_the_time_registrations'] : '0';
     
-    moocsAllDownloadsLac = (jsondata.length > 0) ? (jsondata[0]['porcent_total_LAC'] * 100).toFixed(1) : '';
     var results = {
         moocsValue: (jsondata.length > 0) ? jsondata[0]['all_the_time_courses'] : '0',
         porcent_total_publications: '100%', /*missing, rodrigo dice que si falta el dato que pongamos 100% para all the time*/
@@ -352,9 +359,9 @@ function moocsIndicatorAlltime(jsondata) {
 }
 
 function moocsIndicator2018(jsondata) {
-    moocs2018TotalGlobal = (jsondata.length > 0) ? jsondata[0]['2018_courses'] : '0';
+    
     var results = {
-        moocsValue: moocs2018TotalGlobal,
+        moocsValue: (jsondata.length > 0) ? jsondata[0]['2018_courses'] : '0',
         porcent_total_publications: (jsondata.length > 0) ? (jsondata[0]['porcent_total_courses'] * 100).toFixed(1) + '%': '',
         compare2017_2018_publications: (jsondata.length > 0) ? jsondata[0]['2017_2018_courses'] : '',
         downloadsValue: (jsondata.length > 0) ? jsondata[0]['2018_registrations'] : '0',
@@ -425,10 +432,6 @@ function updateGaugesMoocs() {
  */
 function datasetsIndicatorAlltime(jsondata) {
     
-    datasetsAllTotalGlobal = (jsondata.length > 0) ? jsondata[0].all_the_time_datasets : '0';
-    datasetsAllDownloads = (jsondata.length > 0) ? jsondata[0].all_the_time_downloads : '0';
-    
-    datasetsAllDownloadsLac = (jsondata.length > 0) ? (jsondata[0].all_the_time_porcent_total_lac_downloads * 100).toFixed(0) : '0';
     var results = {
         datasetsValue: (jsondata.length > 0) ? jsondata[0].all_the_time_datasets : '0',
         porcent_total_publications: "100%", /*missing, rodrigo dice que si falta el dato que pongamos 100% para all the time*/
@@ -442,7 +445,7 @@ function datasetsIndicatorAlltime(jsondata) {
 }
 
 function datasetsIndicator2018(jsondata) {
-    datasets2018TotalGlobal = (jsondata.length > 0) ? jsondata[0]['2018_datasets'] : '0';
+    
     var results = {
         datasetsValue: datasets2018TotalGlobal,
         porcent_total_publications: (jsondata.length > 0) ? (jsondata[0]['2018_porcent_total_datasets'] * 100).toFixed(1) + '%' : '',
@@ -522,11 +525,7 @@ function updateGaugesDatasets() {
  * Columna de indicadores de CODE 
  */
 function codeIndicatorAlltime(jsondata) {
-    codeAllTotalGlobal = (jsondata.length > 0) ? jsondata[0].all_the_time_code : '0';
-    codeAllDownloads = (jsondata.length > 0) ? jsondata[0].all_the_time_pageviews : '0';
-    codeAllDownloadsLac = (jsondata.length > 0) ? (jsondata[0].porcent_total_lac * 100).toFixed(0) : '0';
-    // codeAllTotalGlobal = (jsondata.length > 0) ? jsondata[0].all_the_time_code : '0';
-    // console.log(jsondata);
+    
     var results = {
         codeValue: (jsondata.length > 0) ? jsondata[0].all_the_time_code : '0',
         porcent_total_publications: (jsondata.length > 0) ? (jsondata[0]['porcent_total_code'] * 100).toFixed(1) + '%' : '',
@@ -540,9 +539,9 @@ function codeIndicatorAlltime(jsondata) {
 }
 
 function codeIndicator2018(jsondata) {
-    code2018TotalGlobal = (jsondata.length > 0) ? jsondata[0]['2018_code'] : '0';
+    
     var results = {
-        codeValue: code2018TotalGlobal,
+        codeValue: (jsondata.length > 0) ? jsondata[0]['2018_code'] : '0',
         porcent_total_publications: (jsondata.length > 0) ? (jsondata[0]['2018_porcent_total_pageviews'] * 100).toFixed(1) + '%' : '',
         compare2017_2018_publications: 'Missing',
         downloadsValue: (jsondata.length > 0) ? jsondata[0]['2018_pageviews'] : '0',
@@ -611,9 +610,7 @@ function updateGaugesCode() {
  */
 function subscriberIndicatorAlltime(jsondata) {
     // console.log(jsondata);
-    subscribersAllTotalGlobal = (jsondata.length > 0) ? jsondata[0].subscribers : '0';
-    subscribersAllDownloads = (jsondata.length > 0) ? jsondata[0].lac_subscribers : '0';
-    subscribersAllDownloadsLac = (jsondata.length > 0) ? (jsondata[0].porcent_total_from_lac * 100).toFixed(0) : '0';
+    
     var results = {
         subscriberValue: (jsondata.length > 0) ? jsondata[0].subscribers : '0',
         porcent_total_subscriber: (jsondata.length > 0) ? (jsondata[0].porcent_total_subscribers * 100).toFixed(1) + '%' : '',
@@ -676,6 +673,40 @@ function updateGaugesSubscribers() {
         }
     }
     drawGaugeSubscribersChart(dataGaugeSubscribers);
+}
+
+function getDataBignumbers(jsondataPublications, jsondataMoocs, jsondataDatasets, jsondataCode, jsondataSubscriber) {
+    publicationsAllTotalGlobal = (jsondataPublications.length > 0) ? jsondataPublications[0].all_the_time_publications : '0';
+    publicationsAllDownloads = (jsondataPublications.length > 0) ? jsondataPublications[0].all_the_time_downloads : '0';
+    publicationsAllDownloadsLac = (jsondataPublications.length > 0) ? ((jsondataPublications[0].all_the_time_porcent_total_LAC_downloads != "missing") ? (jsondataPublications[0].all_the_time_porcent_total_LAC_downloads * 100).toFixed(1) : jsondataPublications[0].all_the_time_porcent_total_LAC_downloads) : '';
+    publications2018TotalGlobal = (jsondataPublications.length > 0) ? jsondataPublications[0]['2018_publications'] : '0';
+    publications2018Downloads = (jsondataPublications.length > 0) ? jsondataPublications[0]['2018_downloads'] : '0';
+    publications2018DownloadsLac = (jsondataPublications.length > 0) ? ((jsondataPublications[0]['2018_porcent_total_LAC_downloads'] != "missing") ? (jsondataPublications[0]['2018_porcent_total_LAC_downloads'] * 100).toFixed(1) : jsondataPublications[0]['2018_porcent_total_LAC_downloads']) : '';
+
+    moocsAllTotalGlobal = (jsondataMoocs.length > 0) ? jsondataMoocs[0]['all_the_time_courses'] : '0';
+    moocsAllDownloads = (jsondataMoocs.length > 0) ? jsondataMoocs[0]['all_the_time_registrations'] : '0';
+    moocsAllDownloadsLac = (jsondataMoocs.length > 0) ? (jsondataMoocs[0]['porcent_total_LAC'] * 100).toFixed(1) : '';
+    moocs2018TotalGlobal = (jsondataMoocs.length > 0) ? jsondataMoocs[0]['2018_courses'] : '0';
+    moocs2018Downloads = (jsondataMoocs.length > 0) ? jsondataMoocs[0]['2018_registrations'] : '0';
+    moocs2018DownloadsLac = (jsondataMoocs.length > 0) ? (jsondataMoocs[0]['porcent_total_LAC'] * 100).toFixed(1) : '';
+
+    datasetsAllTotalGlobal = (jsondataDatasets.length > 0) ? jsondataDatasets[0].all_the_time_datasets : '0';
+    datasetsAllDownloads = (jsondataDatasets.length > 0) ? jsondataDatasets[0].all_the_time_downloads : '0';
+    datasetsAllDownloadsLac = (jsondataDatasets.length > 0) ? (jsondataDatasets[0].all_the_time_porcent_total_lac_downloads * 100).toFixed(0) : '0';
+    datasets2018TotalGlobal = (jsondataDatasets.length > 0) ? jsondataDatasets[0]['2018_datasets'] : '0';
+    datasets2018Downloads = (jsondataDatasets.length > 0) ? jsondataDatasets[0]['2018_downloads'] : '0';
+    datasets2018DownloadsLac = (jsondataDatasets.length > 0) ? (jsondataDatasets[0]['2018_porcent_total_lac_downloads'] * 100).toFixed(0) : '0';
+
+    codeAllTotalGlobal = (jsondataCode.length > 0) ? jsondataCode[0].all_the_time_code : '0';
+    codeAllDownloads = (jsondataCode.length > 0) ? jsondataCode[0].all_the_time_pageviews : '0';
+    codeAllDownloadsLac = (jsondataCode.length > 0) ? (jsondataCode[0].porcent_total_lac * 100).toFixed(0) : '0';
+    code2018TotalGlobal = (jsondataCode.length > 0) ? jsondataCode[0]['2018_code'] : '0';
+    code2018Downloads = (jsondataCode.length > 0) ? jsondataCode[0]['2018_pageviews'] : '0';
+    code2018DownloadsLac = (jsondataCode.length > 0) ? (jsondataCode[0].porcent_total_lac * 100).toFixed(0) : '0';
+
+    subscribersAllTotalGlobal = (jsondataSubscriber.length > 0) ? jsondataSubscriber[0].subscribers : '0';
+    subscribersAllDownloads = (jsondataSubscriber.length > 0) ? jsondataSubscriber[0].lac_subscribers : '0';
+    subscribersAllDownloadsLac = (jsondataSubscriber.length > 0) ? (jsondataSubscriber[0].porcent_total_from_lac * 100).toFixed(0) : '0';
 }
 
 
