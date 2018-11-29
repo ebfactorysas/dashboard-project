@@ -75,6 +75,7 @@ $("#divisionSelect").on('change', function () {
     // console.log(this.value);
     $('.label-filter-select').text(this.value);
     $("#deparmentSelect").value = "";
+    removePublicationsSvg();
     // mainReset();
     initIndicators('divisions', this.value);
     $('#blueAllTime').click();
@@ -102,6 +103,9 @@ $("#divisionSelect").on('change', function () {
     updateGaugesDatasets();
     updateGaugesCode();
     updateGaugesSubscribers();
+
+    
+    initPublications();
 });
 $('#idbLink').click(function () {
     $("#deparmentSelect").value = "";

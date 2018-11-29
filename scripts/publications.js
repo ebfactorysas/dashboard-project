@@ -1068,6 +1068,7 @@ function removePublicationsSvg() {
     d3.select("#gauge-publications svg").remove();
     d3.select("#gauge-download-p svg").remove();
     d3.select("#gauge-lac-p svg").remove();
+    
 
 }
 
@@ -1084,13 +1085,14 @@ function publicationFilter() {
         //downloadTimelineDepartment = downloadTimelineDepartment[0].data;
         createChartTimelinePublication(downloadTimelineDepartment);
     } else {
-        init();
+        initPublications();
     }
 }
 
-init();
+initPublications();
 
-function init() {
+function initPublications() {
+    removePublicationsSvg();
     var downloadTimelineIDB = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineIDB);
     var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
 
@@ -1111,10 +1113,10 @@ $("input[name*='publicationTrend']").click(function () {
     removePublicationsSvg();
 
     if ($("select[id*='divisionSelect']").val().length > 0) {
-        // jsonPublicationsBarras = publicationsTopArrays.topDepartmentsAllTime.filter(function (dataP) {
-        //     return dataP.department_codes == this.value
-        // });
-        // drawTrendPublicationChart(jsonPublicationsBarras);
+        jsonPublicationsBarras = publicationsTopArrays.topDepartmentsAllTime.filter(function (dataP) {
+            return dataP.department_codes == this.value
+        });
+        drawTrendPublicationChart(jsonPublicationsBarras);
         // jsonPublicTree = publicationsDownloadSourceArrays.downloadSourceDepartments.filter(dataT => {
         //     return dataT.department_codes == this.value
         // });
@@ -1140,6 +1142,7 @@ $("input[name*='publicationTrend']").click(function () {
         downloadTimelineDepartment = downloadTimelineDepartment[0].data;
         createChartTimelinePublication(downloadTimelineDepartment);
     } else {
+        removePublicationsSvg();
         if (this.id == "publicationAllTime") {
             drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "AllTheTime");
             // createChartTimelinePublication(downloadTimelineIDBTEST);
@@ -1168,6 +1171,8 @@ $("#deparmentSelect").on('change', function () {
         return dataT.department_codes == this.value
     });
     drawTreePublication(jsonPublicTree, "AllTheTime");
+    drawGaugePublicationChart(dataPublicationGauge);
+    
     //console.log($("#deparmentSelect").val());
     // publicationFilter();
 });
@@ -1185,6 +1190,8 @@ $("#divisionSelect").on('change', function () {
         return dataT.division_codes == this.value
     });
     drawTreePublication(jsonPublicTree, "AllTheTime");
+    drawGaugePublicationChart(dataPublicationGauge);
+    
     // publicationFilter();
 });
 
