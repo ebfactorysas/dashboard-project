@@ -1103,3 +1103,38 @@ section.map select.form-control:not([size]):not([multiple]) {
 }
 
 /** red-section***/
+
+@media (min-width: 1900px) {
+    .left-bar {
+        width: 250px;
+    }
+
+    section.publications .left-zone {
+        width: 1000px;
+        height: 280px;
+    }
+
+    section.publications .right-zone {
+        width: 648px;
+        height: 280px;
+    }
+
+    section.publications .down-zone {
+        height: 550px;
+    }
+
+    section.publications .container_radio {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    section.publications #downloads-publications {
+        width: 935px !important;
+        height: 175px !important;
+    }
+
+    /* section.publications #downloads-publications svg{
+        
+        height: 200px!important;
+    } */
+}
