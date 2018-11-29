@@ -286,6 +286,20 @@ var dataGaugeSubscribers = {
         "allocated": subscribersAllDownloadsLac
     }
 }
+var dataGaugeSubscribers2018 = {
+    "code": {
+        "total": getPercentageTotal(subscribersAllTotalGlobal),
+        "allocated": subscribersAllTotalGlobal
+    },
+    "pageview": {
+        "total": getPercentageTotal(subscribersAllDownloads),
+        "allocated": subscribersAllDownloads
+    },
+    "lac": {
+        "total": 100,
+        "allocated": subscribersAllDownloadsLac
+    }
+}
 drawGaugeSubscribersChart(dataGaugeSubscribers);
 
 
@@ -535,6 +549,9 @@ drawInstitutionsChart(subscribersInstitution.institutionIDB);
 function removeSubscribersSvg() {
     d3.select("#institution-suscribers svg").remove();
     d3.select("#age-suscribers svg").remove();
+    d3.select("#gauge-suscribers svg").remove();
+    d3.select("#gauge-lac-s svg").remove();
+    d3.select("#gauge-2018 svg").remove();
 
 }
 
@@ -554,7 +571,7 @@ function subscribersFilter() {
             //top registration chart
             if ($("select[id*='divisionSelect']").val().length > 0) {
 
-                console.log("division subscriber=> ", divisionSubscriberFilter(subscribersInstitution.institutionDivisions, $("select[id*='divisionSelect']").val()))
+                // console.log("division subscriber=> ", divisionSubscriberFilter(subscribersInstitution.institutionDivisions, $("select[id*='divisionSelect']").val()))
                 drawInstitutionsChart(divisionSubscriberFilter(subscribersInstitution.institutionDivisions, $("select[id*='divisionSelect']").val()));
 
                 // drawMoocsRegistrationsChart(orderTopMoocs(divisionFilter(moocsTopArrays.divisionsAlltime, $("select[id*='divisionSelect']").val())));
@@ -591,7 +608,9 @@ function subscribersFilter() {
 
 
             break;
-
+        case "2018":
+            drawGaugeSubscribersChart(dataGaugeSubscribers2018);
+        break;
         default:
             //top registration chart
             if ($("select[id*='divisionSelect']").val().length > 0) {

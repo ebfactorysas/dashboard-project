@@ -84,6 +84,20 @@ var dataGaugeCode = {
         "allocated": codeAllDownloadsLac
     }
 }
+var dataGaugeCode2018 = {
+    "code": {
+        "total": getPercentageTotal(code2018TotalGlobal),
+        "allocated": code2018TotalGlobal
+    },
+    "pageview": {
+        "total": getPercentageTotal(code2018Downloads),
+        "allocated": code2018Downloads
+    },
+    "lac": {
+        "total": 100,
+        "allocated": code2018DownloadsLac
+    }
+}
 
 var dataLines = [
     {
@@ -871,17 +885,22 @@ $("input[name*='codeTrend']").click(function () {
     d3.select("#code-trend svg").remove();
     d3.select("#timeline-code svg").remove();
     d3.select("#code-plot svg").remove();
+    d3.select("#gauge-code svg").remove();
+    d3.select("#gauge-pageview svg").remove();
+    d3.select("#gauge-lac svg").remove();
     
     if (this.id == "codeAllTime") {
         drawTreeCode(codePageviewsSourceArrays.pageviewSourceIDB, "AllTheTime");
         drawChartCodeTrend(ObjectTopIdbAllTime);
         createChartTimeline(ObjectPageViewsTimeLineAllTime);
         drawPlotChart(ObjectcodeScatterploArrays);
+        drawGaugeCodeChart(dataGaugeCode);
     } else {
         drawTreeCode(codePageviewsSourceArrays.pageviewSourceIDB, "2018");
         drawChartCodeTrend(ObjectTopIdb2018);
         createChartTimeline(ObjectPageViewsTimeLineAllTime);
         drawPlotChart(ObjectcodeScatterploArrays);
+        drawGaugeCodeChart(dataGaugeCode2018);
     }
 
     //drawChartCodeTrend(codetrendArrays[this.id]);

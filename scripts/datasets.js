@@ -344,6 +344,20 @@ var dataGaugeDatasets = {
         "allocated": datasetsAllDownloadsLac
     }
 }
+var dataGaugeDatasets2018 = {
+    "code": {
+        "total": getPercentageTotal(datasets2018TotalGlobal),
+        "allocated": datasets2018TotalGlobal
+    },
+    "pageview": {
+        "total": getPercentageTotal(datasets2018Downloads),
+        "allocated": datasets2018Downloads
+    },
+    "lac": {
+        "total": 100,
+        "allocated": datasets2018DownloadsLac
+    }
+}
 drawGaugeDatasetChart(dataGaugeDatasets)
 
 function drawGaugeDatasetChart(dataGauge) {
@@ -577,20 +591,25 @@ $("input[name*='dataSetTrend']").click(function () {
     var ObjectTimeLineDataSet = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
     var ObjectDataSetPlot = $.extend(true, [], datasetsScatterplotArrays);
 
-    d3.select("#timeline-dataset svg").remove();
+    // d3.select("#timeline-dataset svg").remove();
     d3.select("#data-trend svg").remove();
-    d3.select("#dataset-publications-plot svg").remove();
+    // d3.select("#dataset-publications-plot svg").remove();
     d3.select("#downloads-dataset svg").remove();
+    d3.select("#gauge-datasets svg").remove();
+    d3.select("#gauge-download-d svg").remove();
+    d3.select("#gauge-lac-d svg").remove();
 
     if (this.id == "dataSetAllTime") {
         createChartTimeLineDataSet(ObjectTimeLineDataSet);
         drawDataTrendChart(datasetsTopArrays.topIDBAllTime);
         drawPlotChartDataset(ObjectDataSetPlot);
         drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "AllTheTime");
+        drawGaugeDatasetChart(dataGaugeDatasets);
     } else {
         createChartTimeLineDataSet(ObjectTimeLineDataSet);
         drawDataTrendChart(datasetsTopArrays.topIDB2018);
         drawPlotChartDataset(ObjectDataSetPlot);
         drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "2018");
+        drawGaugeDatasetChart(dataGaugeDatasets2018);
     }
 });
