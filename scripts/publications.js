@@ -1099,13 +1099,16 @@ $("input[name*='publicationTrend']").click(function () {
         // drawTreePublication(jsonPublicTree, "AllTheTime");
         var downloadTimelineIDB = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineIDB);
         var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
-
-        drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "2018");
+        // jsonPublicationsBarras = publicationsTopArrays.topDivisionsAllTime.filter(function (dataP) {
+        //     return dataP.division_codes == this.value
+        // });
+        // drawTrendPublicationChart(jsonPublicationsBarras);
+        drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "AllTheTime");
         drawGaugePublicationChart(dataPublicationGauge);
         drawLinesChartPublication(dataLinesPublications);
 
         createChartTimelinePublication(downloadTimelineIDB);
-        drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
+        // drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
         drawPlotChartPublication(ObjectpublicationsAttention);
     } else if ($("select[id*='deparmentSelect']").val().length > 0) {
         var downloadTimelineDepartment = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineDepartments);
