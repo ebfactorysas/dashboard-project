@@ -1,0 +1,13 @@
+.vertical-text {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-orientation: sideways;
+  text-align: center;
+  text-orientation: sideways;
+  margin: 1rem;
+  font-size: 12px;
+  font-family: 'Gotham-Book';
+  position: absolute;
+  top: 25%;
+  left: -10px;
+}

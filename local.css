@@ -243,12 +243,6 @@ section.publications .left-bar span:nth-child(2n+1) {
 }
 
 
-section.publications p {
-    font-size: 18px;
-    font-family: 'Gotham-Bold';
-    color: #d1415a;
-}
-
 section.publications .d-border-left p {
     font-size: 11px;
     font-family: 'Gotham-Book';
@@ -408,21 +402,8 @@ section.moocs h1 {
     font-size: 48px;
 }
 
-section.moocs .vertical-text {
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    text-orientation: sideways;
-    text-align: center;
-    text-orientation: sideways;
-    margin: 1rem;
-    font-size: 12px;
-    font-family: 'Gotham-Book';
-    height: 130px;
-}
-
 section.moocs .down-zone span {
-    font-size: 10px;
-
+  font-size: 10px;
 }
 
 section.moocs .down-zone .special span:nth-child(1) {
@@ -668,7 +649,7 @@ section.code h4 {
 
 section.code .small-letter {
     font-size: 12px;
-    font-family: 'Gotham-Bold';
+    font-family: 'Gotham-Medium';
     color: #b4b4b4;
 }
 
@@ -780,18 +761,6 @@ section.suscribers .left-bar span:nth-child(2n+1) {
     color: #027B8E;
     font-size: 10px;
     font-family: 'Gotham-Bold';
-}
-
-section.suscribers .vertical-text {
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    text-orientation: sideways;
-    text-align: center;
-    text-orientation: sideways;
-    margin: 1rem;
-    font-size: 12px;
-    font-family: 'Gotham-Book';
-    height: 100px;
 }
 
 section.suscribers .funds-allocated-meter .background {

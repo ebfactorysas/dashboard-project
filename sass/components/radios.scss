@@ -1,5 +1,6 @@
 .container_radio {
   &.blue {
+    font-size: 1.5vw;
     @include radioStyle($blue, $white);
     .checkmark {
       background: $blue;
