@@ -234,7 +234,7 @@ function drawTreeCode(dataTree,filtertype) {
         });
     }   
 
-    colours = chroma.scale(['#ffbd00', '#e4c87a'])
+    colours = chroma.scale(['#ebb203', '#ffffff'])
         .mode('lch').colors(dataTree.length)
 
     dataTree.forEach(function (element, i) {
@@ -252,11 +252,15 @@ function drawTreeCode(dataTree,filtertype) {
       .shapeConfig({
          fill: function(d) {
            return d.color;
+         },
+         labelConfig: {
+             fontFamily: 'Gotham-Bold',
+             fontMax: 20,
          }
-      })
-      
-      .select("#downloads-code")
-      .render();
+        })
+    .legend(false)
+    .select("#downloads-code")
+    .render();
   
 }
 

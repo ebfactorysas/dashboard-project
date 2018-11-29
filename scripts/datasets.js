@@ -119,19 +119,19 @@ function drawTreeDataset(dataTree, filtertype){
     
     if ($("#dataSet2018").prop("checked")) {
         dataTree = dataTree.sort(function (a, b) {
-            return d3.descending(a.valueAllTheTime, b.valuevalueAllTheTime);
+            return d3.descending(a.value2018, b.value2018);
         });
     } else {
         dataTree = dataTree.sort(function (a, b) {
-            return d3.descending(a.value2018, b.value2018);
+            return d3.descending(a.valuevalueAllTheTime, b.valuevalueAllTheTime);
         });
     }
     
-    colours = chroma.scale(['#42428a', '#8889b3'])
+    coloursDataSet = chroma.scale(['#424488', '#ffffff'])
         .mode('lch').colors(dataTree.length)
 
     dataTree.forEach(function (element, i) {
-        element.color = colours[i]
+        element.color = coloursDataSet[i]
     });
     
     var groupData = ["name", "value"+filtertype];
@@ -145,11 +145,15 @@ function drawTreeDataset(dataTree, filtertype){
       .shapeConfig({
          fill: function(d) {
            return d.color;
+         },
+         labelConfig: {
+             fontFamily: 'Gotham-Bold',
+             fontMax: 20,
          }
-      })
-      
-      .select("#downloads-dataset")
-      .render();
+        })
+    .legend(false)
+    .select("#downloads-dataset")
+    .render();
   
 }
 

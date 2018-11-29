@@ -516,15 +516,15 @@ function createChartTimelinePublication(data) {
 function drawTreePublication(dataTree, filtertype) {
     if ($("#publication2018").prop("checked")) {
         dataTree = dataTree.sort(function (a, b) {
-            return d3.descending(a.value2018, b.value2018);
+            return d3.descending(a.valueAllTheTime, b.valuevalueAllTheTime);
         });
     } else {
         dataTree = dataTree.sort(function (a, b) {
-            return d3.descending(a.valueAllTheTime, b.valueAllTheTime);
+            return d3.descending(a.value2018, b.value2018);
         });
     }
 
-    colours = chroma.scale(['#D91E18', '#f0e9eb'])
+    colours = chroma.scale(['#d1415a', '#ffffff'])
         .mode('lch').colors(dataTree.length)
 
     dataTree.forEach(function (element, i) {
@@ -542,9 +542,13 @@ function drawTreePublication(dataTree, filtertype) {
         .shapeConfig({
             fill: function (d) {
                 return d.color;
+            },
+            labelConfig: {
+                fontFamily: 'Gotham-Bold',
+                fontMax: 20,
             }
         })
-
+        .legend(false)
         .select("#downloads-publications")
         .render();
 

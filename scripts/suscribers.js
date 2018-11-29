@@ -243,7 +243,7 @@ function drawTreeSuscriber(dataTree) {
         });
     }
 
-    colours = chroma.scale(['#4f8a81', '#adccc7'])
+    colours = chroma.scale(['#518a81', '#ffffff'])
         .mode('lch').colors(dataTree.length)
 
     dataTree.forEach(function (element, i) {
@@ -261,9 +261,13 @@ function drawTreeSuscriber(dataTree) {
         .shapeConfig({
             fill: function (d) {
                 return d.color;
+            },
+            labelConfig: {
+                fontFamily: 'Gotham-Bold',
+                fontMax: 20,
             }
-        })
-
+           })
+       .legend(false)
         .select("#demographics-suscribers")
         .render();
 }
