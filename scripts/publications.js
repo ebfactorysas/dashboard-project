@@ -531,11 +531,11 @@ function createChartTimelinePublication(data) {
 function drawTreePublication(dataTree, filtertype) {
     if ($("#publication2018").prop("checked")) {
         dataTree = dataTree.sort(function (a, b) {
-            return d3.descending(a.valueAllTheTime, b.valuevalueAllTheTime);
+            return d3.descending(a.value2018, b.value2018);
         });
     } else {
         dataTree = dataTree.sort(function (a, b) {
-            return d3.descending(a.value2018, b.value2018);
+            return d3.descending(a.valueAllTheTime, b.valueAllTheTime);
         });
     }
 
@@ -551,6 +551,7 @@ function drawTreePublication(dataTree, filtertype) {
     var sizeMeasure = "value" + filtertype;
     var indexColor = 0;
     new d3plus.Treemap()
+        .select("#downloads-publications")
         .width(935)
         .height(200)
         .layoutPadding([0])
@@ -563,7 +564,7 @@ function drawTreePublication(dataTree, filtertype) {
             }
         })
         .legend(false)
-        .select("#downloads-publications")
+
         .render();
 
 }
@@ -1112,7 +1113,7 @@ function publicationFilter() {
     }
 }
 
-init();
+
 
 function init() {
     var downloadTimelineIDB = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineIDB);

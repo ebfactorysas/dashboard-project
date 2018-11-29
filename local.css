@@ -186,7 +186,7 @@ section.big-numbers {
     color: #FFFFFF;
     background-color: #1156A1;
     font-family: 'Gotham-Bold';
-    min-height: 750px;
+    height: 38.1vw ;
 }
 
 section.big-numbers h4 {
@@ -195,18 +195,26 @@ section.big-numbers h4 {
 }
 
 section.big-numbers h1 {
-    font-size: 100px;
+    font-size: 5.5vw;
     font-family: 'Gotham-Book';
     color: #ffffff;
 }
 
 section.big-numbers .border-right-dash {
     border-right: 2px solid #0f5095;
+    padding-left: .5vw;
+    padding-right: .5vw;
+}
+
+section.big-numbers .last-panel {
+        padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 section.big-numbers p {
-    font-size: 15px;
+    font-size: 0.9vw;
 }
+
 
 section.big-numbers img {
     max-width: 55px;
