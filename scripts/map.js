@@ -1,8 +1,8 @@
-init();
+initMap();
 
 
 
-function init() {
+function initMap() {
 
     loadSimulatedData();
 

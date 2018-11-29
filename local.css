@@ -186,7 +186,7 @@ section.big-numbers {
     color: #FFFFFF;
     background-color: #1156A1;
     font-family: 'Gotham-Bold';
-    min-height: 750px;
+    height: 38.1vw ;
 }
 
 section.big-numbers h4 {
@@ -195,18 +195,26 @@ section.big-numbers h4 {
 }
 
 section.big-numbers h1 {
-    font-size: 100px;
+    font-size: 5.5vw;
     font-family: 'Gotham-Book';
     color: #ffffff;
 }
 
 section.big-numbers .border-right-dash {
     border-right: 2px solid #0f5095;
+    padding-left: .5vw;
+    padding-right: .5vw;
+}
+
+section.big-numbers .last-panel {
+        padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 section.big-numbers p {
-    font-size: 15px;
+    font-size: 0.9vw;
 }
+
 
 section.big-numbers img {
     max-width: 55px;
@@ -242,12 +250,6 @@ section.publications .left-bar span:nth-child(2n+1) {
     font-size: 10px;
 }
 
-
-section.publications p {
-    font-size: 18px;
-    font-family: 'Gotham-Bold';
-    color: #d1415a;
-}
 
 section.publications .d-border-left p {
     font-size: 11px;
@@ -448,21 +450,8 @@ section.moocs h1 {
     font-size: 48px;
 }
 
-section.moocs .vertical-text {
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    text-orientation: sideways;
-    text-align: center;
-    text-orientation: sideways;
-    margin: 1rem;
-    font-size: 12px;
-    font-family: 'Gotham-Book';
-    height: 130px;
-}
-
 section.moocs .down-zone span {
-    font-size: 10px;
-
+  font-size: 10px;
 }
 
 section.moocs .down-zone .special span:nth-child(1) {
@@ -708,7 +697,7 @@ section.code h4 {
 
 section.code .small-letter {
     font-size: 12px;
-    font-family: 'Gotham-Bold';
+    font-family: 'Gotham-Medium';
     color: #b4b4b4;
 }
 
@@ -820,18 +809,6 @@ section.suscribers .left-bar span:nth-child(2n+1) {
     color: #027B8E;
     font-size: 10px;
     font-family: 'Gotham-Bold';
-}
-
-section.suscribers .vertical-text {
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    text-orientation: sideways;
-    text-align: center;
-    text-orientation: sideways;
-    margin: 1rem;
-    font-size: 12px;
-    font-family: 'Gotham-Book';
-    height: 100px;
 }
 
 section.suscribers .funds-allocated-meter .background {
@@ -1166,6 +1143,61 @@ section.map select.form-control:not([size]):not([multiple]) {
         opacity: 0.5;
     }
 
+    section.publications .text-different {
+        font-size: 14px;
+        font-family: 'Gotham-Book';
+        color: #555555
+    }
+
+    section.publications .text-different b {
+        font-family: 'Gotham-Bold';
+    }
+
+    section.publications {
+        height: 100vh;
+    }
+
+    section .right-bar>.row>div:nth-child(2):before {
+        content: "";
+        height: 2px;
+        width: 96%;
+        position: absolute;
+        bottom: 0;
+        left: 2%;
+        z-index: 3;
+        background: #b4b4b4;
+    }
+
+    section .right-bar>.row>div:nth-child(3):before {
+        content: "";
+        height: 2px;
+        width: 96%;
+        position: absolute;
+        bottom: 0;
+        left: 2%;
+        z-index: 3;
+        background: #b4b4b4;
+    }
+
+    .publications .right-bar #kic:before {
+        content: "";
+        height: 2px;
+        width: 96%;
+        position: absolute;
+        bottom: 0;
+        left: 2%;
+        z-index: 3;
+        background: #b4b4b4;
+    }
+
+    section.publications .gauge-2 {
+        height: 335px;
+        padding-top: 20px
+    }
+
+    .ms-fullscreenmode #contentBox {
+        margin-left: 0 !important;
+    }
 
     /* section.publications #downloads-publications svg{
         

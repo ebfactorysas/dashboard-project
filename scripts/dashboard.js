@@ -114,3 +114,8 @@ $("#divisionSelect").on('change', function (data) {
 /**
  * bignumbers
  */
+
+
+$( document ).ready(function() {
+  init()
+});

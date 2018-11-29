@@ -27,8 +27,7 @@ var dataPublicationGauge2018 = {
     }
 }
 
-var dataLinesPublications = [
-    {
+var dataLinesPublications = [{
         "date": 20180101,
 
         "one": Math.floor((Math.random() * 10) + 1) + 10,
@@ -404,7 +403,7 @@ function createChartTimelinePublication(data) {
         .append("svg")
         //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-60 -40 600 300")
+        .attr("viewBox", "-60 -28 600 300")
         .append("g")
         // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
 
@@ -525,17 +524,18 @@ function createChartTimelinePublication(data) {
         .style("font-family", "Gotham-Book")
         .style("font-size", "13px")
         .call(d3.axisLeft(y)
+            .ticks(3)
             .tickFormat(d3.format(".2s")));
 }
 
 function drawTreePublication(dataTree, filtertype) {
     if ($("#publication2018").prop("checked")) {
         dataTree = dataTree.sort(function (a, b) {
-            return d3.descending(a.valueAllTheTime, b.valuevalueAllTheTime);
+            return d3.descending(a.value2018, b.value2018);
         });
     } else {
         dataTree = dataTree.sort(function (a, b) {
-            return d3.descending(a.value2018, b.value2018);
+            return d3.descending(a.valueAllTheTime, b.valueAllTheTime);
         });
     }
 
@@ -551,6 +551,7 @@ function drawTreePublication(dataTree, filtertype) {
     var sizeMeasure = "value" + filtertype;
     var indexColor = 0;
     new d3plus.Treemap()
+        .select("#downloads-publications")
         .width(935)
         .height(200)
         .layoutPadding([0])
@@ -563,7 +564,7 @@ function drawTreePublication(dataTree, filtertype) {
             }
         })
         .legend(false)
-        .select("#downloads-publications")
+
         .render();
 
 }
@@ -607,6 +608,10 @@ function drawTrendPublicationChart(dataPublicationTrend) {
 
     var yAxisPublicationTrend = d3.axisLeft(yPublicationTrend)
         //no tick marks
+        .tickFormat(function (x) {
+            var value = setSettingsNumber(x);
+            return value.valueNumber + suffixNumber;
+        })
         .tickPadding(40)
         .tickSize(0);
 
@@ -631,7 +636,7 @@ function drawTrendPublicationChart(dataPublicationTrend) {
         .attr("ry", 25)
         .attr("fill", "#dea6b0")
         .attr("height", yPublicationTrend.bandwidth() - 6)
-        .attr("x",16)
+        .attr("x", 16)
         .attr("width", function (d) {
             return xPublicationTrend(d.value);
         });
@@ -909,6 +914,8 @@ function drawLinesChartPublication(data) {
         return c.id;
     }));
 
+
+
     var focuslineGroups = focus.selectAll("g")
         .data(employees)
         .enter().append("g");
@@ -922,6 +929,24 @@ function drawLinesChartPublication(data) {
             return "#e39aa7"
         })
         .attr("clip-path", "url(#clip)");
+
+    var line = svg.append("line")
+        .attr("x1", 30)
+        .attr("x2", 30)
+        .attr("y1", 0)
+        .attr("y2", height)
+        .attr("stroke-width", 1)
+        .attr("stroke", "#c3c3c3")
+        .attr("stroke-dasharray", "2,2")
+
+    var line2 = svg.append("line")
+        .attr("x1", 80)
+        .attr("x2", 80)
+        .attr("y1", 0)
+        .attr("y2", height)
+        .attr("stroke-width", 1)
+        .attr("stroke", "#c3c3c3")
+        .attr("stroke-dasharray", "2,2")
 
     function brushed() {
         var extent = d3.event.selection;
@@ -950,13 +975,13 @@ function drawPlotChartPublication(data) {
         bottom: 60,
         left: 100
     };
-    var width = 600 - margin.left - margin.right;
-    var height = 600 - margin.top - margin.bottom;
+    var width = 800 - margin.left - margin.right;
+    var height = 450 - margin.top - margin.bottom;
 
     var svg = d3.select('#publications-plot')
         .append("svg")
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-80 -20 750 600")
+        .attr("viewBox", "-100 -60 750 600")
         .append("g")
         .classed("svg-content-responsive", true);
 
@@ -978,13 +1003,13 @@ function drawPlotChartPublication(data) {
     // the axes are much cleaner and easier now. No need to rotate and orient the axis, just call axisBottom, axisLeft etc.
     var xAxis = d3.axisBottom()
         .scale(xScale)
-        .tickPadding(20)
+        .tickPadding(40)
         .tickSize(0)
         .ticks(5);
 
     var yAxis = d3.axisLeft()
         .scale(yScale)
-        .tickPadding(20)
+        .tickPadding(40)
         .tickSize(0)
         .ticks(5);
 
@@ -1009,8 +1034,8 @@ function drawPlotChartPublication(data) {
         .call(xAxis)
         .append('text')
         .attr('class', 'axis-label')
-        .attr('y', 50)
-        .attr('x', 250)
+        .attr('y', 70)
+        .attr('x', 300)
         .attr('fill', 'black')
         .text("Downloads");
 
@@ -1022,8 +1047,8 @@ function drawPlotChartPublication(data) {
         .call(yAxis)
         .append('text')
         .attr('class', 'axis-label')
-        .attr('y', -50)
-        .attr('x', -300)
+        .attr('y', -80)
+        .attr('x', -180)
         .attr('fill', 'black')
         .attr('transform', "rotate(-90)")
         .attr('text-anchor', 'middle')

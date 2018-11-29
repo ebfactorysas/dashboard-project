@@ -10,5 +10,11 @@
       text-align: center;
       @include borderTopGraphs();
     }
+
+    p {
+      font-size: 14px;
+      font-family: 'Gotham-Book';
+      line-height: 100%;
+    }
   }
 }

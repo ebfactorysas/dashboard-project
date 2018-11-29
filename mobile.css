@@ -241,8 +241,7 @@ section.publications .row div:nth-child(3) {
 
 section.publications p {
     font-size: 18px;
-    font-family: 'Gotham-Bold';
-    color: #d1415a;
+    font-family: 'Gotham-Book';
 }
 
 section.publications .d-border-left p {
@@ -392,7 +391,6 @@ section.moocs .vertical-text {
     margin: 1rem;
     font-size: 12px;
     font-family: 'Gotham-Book';
-    height: 130px;
 }
 
 section.moocs .down-zone span {
@@ -588,7 +586,7 @@ section.code h4 {
 
 section.code .small-letter {
     font-size: 12px;
-    font-family: 'Gotham-Bold';
+    font-family: 'Gotham-Medium';
     color: #b4b4b4;
 }
 

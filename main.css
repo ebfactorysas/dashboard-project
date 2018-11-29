@@ -195,18 +195,26 @@ section.big-numbers h4 {
 }
 
 section.big-numbers h1 {
-    font-size: 100px;
+    font-size: 6vw;
     font-family: 'Gotham-Book';
     color: #ffffff;
 }
 
 section.big-numbers .border-right-dash {
     border-right: 2px solid #0f5095;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+section.big-numbers .last-panel {
+        padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 section.big-numbers p {
-    font-size: 15px;
+    font-size: 0.9vw;
 }
+
 
 section.big-numbers img {
     max-width: 55px;
@@ -240,13 +248,6 @@ section.publications .left-bar span:nth-child(2n) {
 section.publications .left-bar span:nth-child(2n+1) {
     color: #AA0206;
     font-size: 10px;
-}
-
-
-section.publications p {
-    font-size: 18px;
-    font-family: 'Gotham-Bold';
-    color: #d1415a;
 }
 
 section.publications .d-border-left p {
@@ -448,17 +449,6 @@ section.moocs h1 {
     font-size: 48px;
 }
 
-section.moocs .vertical-text {
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    text-orientation: sideways;
-    text-align: center;
-    text-orientation: sideways;
-    margin: 1rem;
-    font-size: 12px;
-    font-family: 'Gotham-Book';
-    height: 130px;
-}
 
 section.moocs .down-zone span {
     font-size: 10px;
@@ -822,17 +812,6 @@ section.suscribers .left-bar span:nth-child(2n+1) {
     font-family: 'Gotham-Bold';
 }
 
-section.suscribers .vertical-text {
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    text-orientation: sideways;
-    text-align: center;
-    text-orientation: sideways;
-    margin: 1rem;
-    font-size: 12px;
-    font-family: 'Gotham-Book';
-    height: 100px;
-}
 
 section.suscribers .funds-allocated-meter .background {
     fill: #027B8E;
@@ -1098,8 +1077,133 @@ section.map select.form-control:not([size]):not([multiple]) {
 }
 
 
+/** red-section***/
 .waffle-gender {
     min-height: 31px;
 }
 
 /** red-section***/
+
+@media (min-width: 1900px) {
+    .left-bar {
+        width: 250px;
+    }
+
+    section.publications .left-zone {
+        width: 1000px;
+        height: 280px;
+    }
+
+    section.publications .right-zone {
+        width: 648px;
+        height: 280px;
+    }
+
+    section.publications .down-zone {
+        height: 550px;
+    }
+
+    section.publications .container_radio {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    section.publications #downloads-publications {
+        width: 935px !important;
+        height: 175px !important;
+    }
+
+    section.publications #downloads-publications .d3plus-Shape {
+        stroke-width: 1;
+    }
+
+    section.publications #downloads-publications .d3plus-textBox text {
+        font-family: 'Gotham-Bold' !important;
+    }
+
+    section.publications #downloads-publications .tooltip-table {
+        width: 100%;
+    }
+
+    section.publications #downloads-publications .tooltip-table .data {
+        text-align: right;
+    }
+
+    section.publications #downloads-publications .tooltip-footer {
+        opacity: 0.5;
+    }
+
+    section.publications #downloads-publications .tooltip-table {
+        width: 100%;
+        height: auto;
+    }
+
+    section.publications #downloads-publications .tooltip-table .data {
+        text-align: right;
+    }
+
+    section.publications #downloads-publications .tooltip-footer {
+        opacity: 0.5;
+    }
+
+    section.publications .text-different {
+        font-size: 14px;
+        font-family: 'Gotham-Book';
+        color: #555555
+    }
+
+    section.publications .text-different b{
+        font-family: 'Gotham-Bold';
+    }
+
+    section.publications{
+        height: 100vh;
+    }
+
+    section .right-bar > .row > div:nth-child(2):before {
+        content: "";
+        height: 2px;
+        width: 96%;
+        position: absolute;
+        bottom: 0;
+        left: 2%;
+        z-index: 3;
+        background: #b4b4b4;
+    }
+
+    section .right-bar > .row > div:nth-child(3):before {
+        content: "";
+        height: 2px;
+        width: 96%;
+        position: absolute;
+        bottom: 0;
+        left: 2%;
+        z-index: 3;
+        background: #b4b4b4;
+    }
+
+    .publications .right-bar #kic:before {
+        content: "";
+        height: 2px;
+        width: 96%;
+        position: absolute;
+        bottom: 0;
+        left: 2%;
+        z-index: 3;
+        background: #b4b4b4;
+    }
+
+    section.publications .gauge-2{
+        height: 335px;
+        padding-top: 20px
+    }
+
+    .ms-fullscreenmode #contentBox {
+        margin-left: 0 !important;
+    }
+
+    /* section.publications #downloads-publications svg{
+        
+        height: 200px!important;
+    } */
+}
