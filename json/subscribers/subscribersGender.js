@@ -880,23 +880,19 @@ var subscribersGender = {
     ],
     genderIDB: [
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "392796",
+            "Subscribers": 392796,
             "Gender": "Not Reported"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "97994",
+            "Subscribers": 97994,
             "Gender": "Female"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "108488",
+            "Subscribers": 108488,
             "Gender": "Male"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "59",
+            "Subscribers": 59,
             "Gender": "Other"
         }
     ]

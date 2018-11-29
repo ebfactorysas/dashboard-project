@@ -1243,91 +1243,56 @@ var codePageviewsSourceArrays = {
             "xlsx_row_id": 72
         }
     ],
-    pageviewSourceIDB: [{
-        "name": "flare",
-        "children": [{
-            "name": "analytics",
-            "children": [{
-                    "name": "optimization",
-                    "children": [{
-                        "name": "Bing",
-                        "data2018": 0.000783392087739914 * 100,
-                        "AllTheTime": 0.00147326458098622 * 100
-                    }]
-                },
-                {
-                    "name": "optimization",
-                    "children": [{
-                        "name": "Code Website",
-                        "data2018": 0.511946729338034 * 100,
-                        "AllTheTime": 0.476875523586677 * 100
-                    }]
-                },
-                {
-                    "name": "optimization",
-                    "children": [{
-                        "name": "Facebook",
-                        "data2018": 0.063454759106933 * 100,
-                        "AllTheTime": 0.123060923823555 * 100
-                    }]
-                },
-                {
-                    "name": "optimization",
-                    "children": [{
-                        "name": "Google",
-                        "data2018": 0.194281237759499 * 100,
-                        "AllTheTime": 0.148366409567554 * 100
-                    }]
-                },
-                {
-                    "name": "optimization",
-                    "children": [{
-                        "name": "IDB Blogs",
-                        "data2018": 0 * 100,
-                        "AllTheTime": 0.000173325244821908 * 100
-                    }]
-                },
-                {
-                    "name": "optimization",
-                    "children": [{
-                        "name": "IDB Publications",
-                        "data2018": 0 * 100,
-                        "AllTheTime": 0.000173325244821908 * 100
-                    }]
-                },
-                {
-                    "name": "optimization",
-                    "children": [{
-                        "name": "LinkedIn",
-                        "data2018": 0.00117508813160987 * 100,
-                        "AllTheTime": 0.000751076060894936 * 100
-                    }]
-                },
-                {
-                    "name": "optimization",
-                    "children": [{
-                        "name": "Others",
-                        "data2018": 0.135526831179005 * 100,
-                        "AllTheTime": 0.163243493081434 * 100
-                    }]
-                },
-                {
-                    "name": "optimization",
-                    "children": [{
-                        "name": "Twitter",
-                        "data2018": 0.0920485703094399 * 100,
-                        "AllTheTime": 0.0858248837276483 * 100
-                    }]
-                },
-                {
-                    "name": "optimization",
-                    "children": [{
-                        "name": "Yahoo",
-                        "data2018": 0.000783392087739914 * 100,
-                        "AllTheTime": 0.00577750816073028 * 100
-                    }]
-                }
-            ]
-        }]
-    }]
+    pageviewSourceIDB: [
+        {
+            "valueAllTheTime" : 51,
+            "value2018" : 2,
+            "name" : "Bing"
+        },
+        {
+            "valueAllTheTime" : 16508,
+            "value2018" : 1307,
+            "name" : "Code Website"
+        },
+        {
+            "valueAllTheTime" : 4260,
+            "value2018" : 162,
+            "name" : "Facebook"
+        },
+        {
+            "valueAllTheTime" : 5136,
+            "value2018" : 496,
+            "name" : "Google"
+        },
+        {
+            "valueAllTheTime" : 6,
+            "value2018" : 0,
+            "name" : "IDB Blogs"
+        },
+        {
+            "valueAllTheTime" : 6,
+            "value2018" : 0,
+            "name" : "IDB Publications"
+        },
+        {
+            "valueAllTheTime" : 26,
+            "value2018" : 3,
+            "name" : "LinkedIn"
+        },
+        {
+            "valueAllTheTime" : 5651,
+            "value2018" : 346,
+            "name" : "Others"
+        },
+        {
+            "valueAllTheTime" : 2971,
+            "value2018" : 235,
+            "name" : "Twitter"
+        },
+        {
+            "valueAllTheTime" : 2,
+            "value2018" : 2,
+            "name" : "Yahoo"
+        }
+    ]
 };

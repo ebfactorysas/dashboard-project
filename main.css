@@ -111,38 +111,6 @@ body {
     max-width: 100%;
 }
 
-.red {
-    color: #d1415a !important;
-}
-
-.orange {
-    color: #FA2E00 !important;
-}
-
-.green {
-    color: #336577 !important;
-}
-
-.yellow {
-    color: #EEAE00 !important;
-}
-
-.purple {
-    color: #424488 !important;
-}
-
-.black {
-    color: #555555 !important;
-}
-
-.gray {
-    color: #b4b4b4 !important;
-}
-
-.white {
-    color: #ffffff !important;
-}
-
 .title-text h1 {
     font-family: "Gotham-Book";
     font-size: 2.2rem;
@@ -183,7 +151,6 @@ body {
     font-size: 13px;
     text-align: center;
     font-family: 'Gotham-Bold';
-
 }
 
 #nav-title .navbar-nav a {
@@ -245,68 +212,18 @@ section.big-numbers img {
     max-width: 55px;
 }
 
-section.menu {
-    font-family: 'Gotham-Bold';
-    color: #b4b4b4;
-    font-size: 20px;
-}
-
-section.menu ul {
-    margin: 0;
-}
-
-section.menu ul li {
-    margin: 0;
-}
-
 section.publications {
     font-family: 'Gotham-Bold';
-    height: 930px;
 }
 
-section.publications .right-bar {
-    height: 930px;
-}
-
-section.publications .right-bar .left-zone {
-    width: 1000px;
-}
-
-section.publications .right-bar .left-zone .top-zone {
-    height: 265px;
-    padding-top: 1rem;
-}
-
-section.publications .right-bar .left-zone .down-zone {
-    height: 530px;
-}
-
-section.publications .right-bar .right-zone {
-    width: 590px;
-}
-
-section.publications .right-bar .right-zone .top-zone {
-    height: 265px;
-    padding-top: 1rem;
-}
 
 section.publications .left-bar .gauge-1 {
-    height: 330px;
+
     padding-top: 4rem;
-}
-
-section.publications .left-bar .gauge-2 {
-    height: 300px;
-}
-
-section.publications .left-bar .gauge-3 {
-    height: 300px;
 }
 
 section.publications .left-bar {
     text-align: center;
-    height: 930px;
-    width: 250px;
 }
 
 section.publications .left-bar h4 {
@@ -446,32 +363,45 @@ section.publications .grid path {
     stroke-width: 0;
 }
 
-section.moocs {
-    height: 930px;
+section.publications #publications-plot .legend text,
+section.publications #publications-plot .axis text {
+    font-size: 14px;
+    fill: #333;
+    font-family: 'Gotham-Book'
 }
 
-section.moocs .right-bar {
-    height: 930px;
+section.publications #publications-plot .axis path,
+section.publications #publications-plot .axis line {
+    fill: none;
+    stroke-width: 3px;
+    stroke: #555555;
 }
 
-section.moocs .left-bar {
-    text-align: center;
-    height: 930px;
-    width: 250px;
+section.publications #publications-plot .circle {
+    fill-opacity: 0.65;
 }
 
-section.moocs .left-bar .gauge-1 {
-    height: 330px;
-    padding-top: 4rem;
+section.publications #publications-plot .bubble {
+    opacity: 1;
+    transition: opacity 0.3s;
 }
 
-section.moocs .left-bar .gauge-2 {
-    height: 300px;
+section.publications #publications-plot .bubble:hover text {
+    opacity: 1;
 }
 
-section.moocs .left-bar .gauge-3 {
-    height: 300px;
+section.publications #publications-plot .bubble:hover circle {
+    fill-opacity: 1;
 }
+
+section.publications #publications-plot .legend rect {
+    fill-opacity: 0.75;
+}
+
+section.publications #publications-plot .legeng:hover rect {
+    fill-opacity: 1;
+}
+
 
 section.moocs .left-bar h4 {
     font-size: 18px;
@@ -594,36 +524,12 @@ section.moocs [id^="student"] .y-data {
 
 section.datasets {
     font-family: 'Gotham-Bold';
-    height: 930px;
-}
-
-section.datasets .right-bar {
-    height: 930px;
-}
-
-section.datasets .left-bar {
-    text-align: center;
-    height: 930px;
-    width: 250px;
 }
 
 section.datasets .left-bar h4 {
     font-size: 18px;
     color: white;
     margin-bottom: 0;
-}
-
-section.datasets .left-bar .gauge-1 {
-    height: 330px;
-    padding-top: 4rem;
-}
-
-section.datasets .left-bar .gauge-2 {
-    height: 300px;
-}
-
-section.datasets .left-bar .gauge-3 {
-    height: 300px;
 }
 
 section.datasets .left-bar span:nth-child(2n) {
@@ -740,33 +646,6 @@ section.datasets #timeline-dataset .y-axis .tick line {
     display: none;
 }
 
-section.code {
-    height: 930px;
-}
-
-section.code .left-bar .gauge-1 {
-    height: 330px;
-    padding-top: 4rem;
-}
-
-section.code .left-bar .gauge-2 {
-    height: 300px;
-}
-
-section.code .left-bar .gauge-3 {
-    height: 300px;
-}
-
-section.code .right-bar {
-    height: 930px;
-}
-
-section.code .left-bar {
-    text-align: center;
-    height: 930px;
-    width: 250px;
-}
-
 section.code .funds-allocated-meter .background {
     fill: #A17603;
 }
@@ -797,10 +676,6 @@ section.code .left-bar span:nth-child(2n) {
 section.code .left-bar span:nth-child(2n+1) {
     color: #A17603;
     font-size: 10px;
-}
-
-section.code .right-bar .left-zone {
-    width: 1000px;
 }
 
 section.code .right-bar .left-zone .top-zone {
@@ -887,24 +762,11 @@ section.code .grid path {
 }
 
 section.suscribers {
-    height: 930px;
     font-family: 'Gotham-Bold';
-}
-
-section.suscribers .right-bar {
-    height: 930px;
 }
 
 section.suscribers .right-bar .left-zone {
     width: 940px;
-}
-
-section.suscribers .right-bar .left-zone .top-zone {
-    height: 285px;
-}
-
-section.suscribers .right-bar .left-zone .down-zone {
-    height: 540px;
 }
 
 section.suscribers .right-bar .right-zone {
@@ -912,28 +774,17 @@ section.suscribers .right-bar .right-zone {
 }
 
 section.suscribers .right-bar .right-zone .top-zone {
-    height: 285px;
     padding-top: 1rem;
 }
 
 section.suscribers .left-bar {
     text-align: center;
-    height: 930px;
-    width: 250px;
 }
 
 section.suscribers .left-bar .gauge-1 {
-    height: 330px;
     padding-top: 4rem;
 }
 
-section.suscribers .left-bar .gauge-2 {
-    height: 300px;
-}
-
-section.suscribers .left-bar .gauge-3 {
-    height: 300px;
-}
 
 section.suscribers .left-bar h4 {
     font-size: 18px;
@@ -1019,8 +870,6 @@ section.map .stylish-input-group button {
 
 section.map .side-filter {
     width: 100%;
-    /*height: 60px;*/
-    /*background-color: antiquewhite;*/
     border-bottom: 2px solid #000;
     margin-bottom: 10px;
     padding: 5px;
@@ -1031,7 +880,6 @@ section.map .side-filter {
 
 section.map #drop-products {
     color: #c42a48;
-    /*color: rgb(173, 53, 75);*/
 }
 
 section.map #totales {
@@ -1085,7 +933,6 @@ section.map html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 section.map select.form-control:not([size]):not([multiple]) {
-    /*height: calc(1.80rem + 2px);*/
     -webkit-appearance: none;
     -moz-appearance: none;
     background-position: right 50%;
@@ -1107,16 +954,13 @@ section.map select.form-control:not([size]):not([multiple]) {
     height: 250px;
 }
 
-#distribution-moocs {
-    height: 250px;
-}
-
-
+#demographics-suscribers,
+#downloads-code,
 #downloads-publications {
     min-width: 300px;
     max-width: 100%;
     margin: 0 auto;
-    /* height: 220px; */
+    min-height: 220px;
 }
 
 #downloads-publications rect {
@@ -1125,7 +969,7 @@ section.map select.form-control:not([size]):not([multiple]) {
 }
 
 #moocs-registrations {
-    /* height: 245px; */
+    height: 245px;
 }
 
 
@@ -1140,7 +984,7 @@ section.map select.form-control:not([size]):not([multiple]) {
 
 .funds-allocated-meter text.percent-complete {
     font-family: "Gotham-Book";
-    font-size: 65px;
+    font-size: 45px;
     fill: #FFF;
     letter-spacing: -0.03em;
 }
@@ -1204,6 +1048,8 @@ section.map select.form-control:not([size]):not([multiple]) {
     padding-left: 0;
 }
 
+
+
 .lightgray-background {
     background-color: #f1f1f1;
 }
@@ -1224,3 +1070,6 @@ section.map select.form-control:not([size]):not([multiple]) {
 
 
 /** red-section***/
+.waffle-gender {
+    min-height: 31px;
+}

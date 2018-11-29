@@ -1,63 +1,3 @@
-var dataTree = {
-    "name": "flare",
-    "children": [{
-        "name": "analytics",
-        "children": [{
-                "name": "graph",
-                "children": [{
-                    "name": "Google",
-                    "size": 66
-                }]
-            },
-            {
-                "name": "optimization",
-                "children": [{
-                    "name": "IDB Publications",
-                    "size": 18
-                }]
-            },
-            {
-                "name": "optimization",
-                "children": [{
-                    "name": "AspectRatioBanker",
-                    "children": [{
-                        "children": [{
-                            "name": "Others",
-                            "size": 6
-                        }, {
-                            "name": "",
-                            "size": 3
-                        }],
-                        "name": "Others"
-                    }, {
-                        "children": [{
-                            "name": "IDB Blogs",
-                            "size": 3
-                        }, {
-                            "name": "",
-                            "size": 1
-                        }, {
-                            "name": "",
-                            "size": 1
-                        }, {
-                            "name": "",
-                            "size": 1
-                        }, {
-                            "name": "",
-                            "size": 1
-                        }, {
-                            "name": "",
-                            "size": 1
-                        }],
-                        "name": "IDB Blogs"
-                    }]
-                }]
-            }
-        ]
-    }]
-}
-
-
 var dataPublicationGauge = {
     "publication": {
         "total": getPercentageTotal(publicationsAllTotalGlobal),
@@ -72,9 +12,23 @@ var dataPublicationGauge = {
         "allocated": publicationsAllDownloadsLac
     }
 }
+var dataPublicationGauge2018 = {
+    "publication": {
+        "total": getPercentageTotal(publications2018TotalGlobal),
+        "allocated": publications2018TotalGlobal
+    },
+    "download": {
+        "total": getPercentageTotal(publications2018Downloads),
+        "allocated": publications2018Downloads
+    },
+    "lac": {
+        "total": 100,
+        "allocated": publications2018DownloadsLac
+    }
+}
 
-//lineas que van al lado de trends
-var dataLinesPublications = [{
+var dataLinesPublications = [
+    {
         "date": 20180101,
 
         "one": Math.floor((Math.random() * 10) + 1) + 10,
@@ -87,7 +41,7 @@ var dataLinesPublications = [{
         "eight": Math.floor((Math.random() * 10) + 1) + 80,
         "nine": Math.floor((Math.random() * 10) + 1) + 90,
         "ten": Math.floor((Math.random() * 10) + 1) + 100
-    },    {
+    }, {
         "date": 20180102,
 
         "one": Math.floor((Math.random() * 10) + 1) + 10,
@@ -101,7 +55,7 @@ var dataLinesPublications = [{
         "nine": Math.floor((Math.random() * 10) + 1) + 90,
         "ten": Math.floor((Math.random() * 10) + 1) + 100
 
-    },    {
+    }, {
         "date": 20180103,
 
         "one": Math.floor((Math.random() * 10) + 1) + 10,
@@ -397,10 +351,6 @@ var dataLinesPublications = [{
     }
 ];
 
-/***
- * revisar
- */
-
 function sortByDateAscending(a, b) {
     // Dates will be cast to numbers automagically:
     return a.date - b.date;
@@ -578,87 +528,44 @@ function createChartTimelinePublication(data) {
             .tickFormat(d3.format(".2s")));
 }
 
-function drawTree(dataTree) {
-    const marginTree = {
-            top: 40,
-            right: 10,
-            bottom: 10,
-            left: 10
-        },
-        widthTree = 935 - marginTree.left - marginTree.right,
-        heightTree = 200 - marginTree.top - marginTree.bottom,
-        colorTree = d3.scaleOrdinal().range(["#d1415a", "#e8bcc3", "#eedfe2", "#f0e9eb", "#f1eff0", "#f1f0f0"]);
-
-    const treemap = d3.treemap().size([widthTree, heightTree]);
-
-    const divTree = d3.select("#downloads-publications").append("div")
-        .style("position", "relative")
-        .style("width", (widthTree + marginTree.left + marginTree.right) + "px")
-        .style("height", (heightTree + marginTree.top + marginTree.bottom) + "px")
-        .style("left", marginTree.left + "px")
-        .style("top", marginTree.top + "px");
-    const root = d3.hierarchy(dataTree, function (d) {
-            return d.children
-        })
-        .sum(function (d) {
-            return d.size
+function drawTreePublication(dataTree, filtertype) {
+    if ($("#publication2018").prop("checked")) {
+        dataTree = dataTree.sort(function (a, b) {
+            return d3.descending(a.valueAllTheTime, b.valuevalueAllTheTime);
         });
-
-    const tree = treemap(root);
-
-    const node = divTree.datum(root).selectAll(".node")
-        .data(tree.leaves())
-        .enter().append("div")
-        .attr("class", "node")
-        .style("left", function (d) {
-            return d.x0 + "px"
-        })
-        .style("top", function (d) {
-            return d.y0 + "px"
-        })
-        .style("width", function (d) {
-            return Math.max(0, d.x1 - d.x0) + "px"
-        })
-        .style("height", function (d) {
-            return Math.max(0, d.y1 - d.y0) + "px"
-        })
-        .style("background", function (d) {
-            return colorTree(d.parent.data.name)
-        })
-        .text(function (d) {
-            return d.data.name
+    } else {
+        dataTree = dataTree.sort(function (a, b) {
+            return d3.descending(a.value2018, b.value2018);
         });
+    }
 
-    d3.selectAll("input").on("change", function change() {
-        const value = this.value === "count" ?
-            function (d) {
-                return d.size ? 1 : 0;
-            } :
-            function (d) {
-                return d.size;
-            };
+    colours = chroma.scale(['#d1415a', '#ffffff'])
+        .mode('lch').colors(dataTree.length)
 
-        const newRoot = d3.hierarchy(dataTree, function (d) {
-                return d.children
-            })
-            .sum(value);
-
-        node.data(treemap(newRoot).leaves())
-            .transition()
-            .duration(1500)
-            .style("left", function (d) {
-                return d.x0 + "px"
-            })
-            .style("top", function (d) {
-                return d.y0 + "px"
-            })
-            .style("width", function (d) {
-                return Math.max(0, d.x1 - d.x0 - 1) + "px"
-            })
-            .style("height", function (d) {
-                return Math.max(0, d.y1 - d.y0 - 1) + "px"
-            })
+    dataTree.forEach(function (element, i) {
+        element.color = colours[i]
     });
+
+    var groupData = ["name", "value" + filtertype];
+    var colorParam = "value" + filtertype;
+    var sizeMeasure = "value" + filtertype;
+    var indexColor = 0;
+    new d3plus.Treemap()
+        .width(935)
+        .height(200)
+        .layoutPadding([0])
+        .data(dataTree)
+        .groupBy(["value" + filtertype, "name"])
+        .sum("value" + filtertype)
+        .shapeConfig({
+            fill: function (d) {
+                return d.color;
+            }
+        })
+        .legend(false)
+        .select("#downloads-publications")
+        .render();
+
 }
 
 function drawTrendPublicationChart(dataPublicationTrend) {
@@ -674,14 +581,14 @@ function drawTrendPublicationChart(dataPublicationTrend) {
         left: 40
     };
 
-    var widthPublicationTrend = 560 - marginPublicationTrend.left - marginPublicationTrend.right,
-        heightPublicationTrend = 400 - marginPublicationTrend.top - marginPublicationTrend.bottom;
+    var widthPublicationTrend = 680 - marginPublicationTrend.left - marginPublicationTrend.right,
+        heightPublicationTrend = 447 - marginPublicationTrend.top - marginPublicationTrend.bottom;
 
 
     var svgPublicationTrend = d3.select("#publication-trend")
         .append("svg")
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-40-40 800 450")
+        .attr("viewBox", "-40-20 730 450")
         .append("g")
         .classed("svg-content-responsive", true);
 
@@ -723,8 +630,8 @@ function drawTrendPublicationChart(dataPublicationTrend) {
         .attr("rx", 25)
         .attr("ry", 25)
         .attr("fill", "#dea6b0")
-        .attr("height", yPublicationTrend.bandwidth() - 2)
-        .attr("x", 8)
+        .attr("height", yPublicationTrend.bandwidth() - 6)
+        .attr("x",16)
         .attr("width", function (d) {
             return xPublicationTrend(d.value);
         });
@@ -737,7 +644,7 @@ function drawTrendPublicationChart(dataPublicationTrend) {
         })
         //x position is 3 pixels to the right of the bar
         .attr("x", function (d) {
-            return 12;
+            return 25;
         })
         .attr("class", "text-inside")
         .attr("font-family", "Gotham-Bold")
@@ -855,12 +762,7 @@ function drawGaugePublicationChart(dataGauge) {
 }
 
 function drawLinesChartPublication(data) {
-    var svg = d3.select("#lines-publications").append("svg")
-        .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-1 -100 380 1100")
-        .append("g")
-        .classed("svg-content-responsive", true),
-        margin = {
+    margin = {
             top: 20,
             right: 0,
             bottom: 0,
@@ -873,8 +775,15 @@ function drawLinesChartPublication(data) {
             left: 0
         },
         width = 400 - margin.left - margin.right,
-        height = 1100 - margin.top - margin.bottom,
+        height = 400 - margin.top - margin.bottom,
         height2 = 400 - margin2.top - margin2.bottom;
+
+    var svg = d3.select("#lines-publications").append("svg")
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-1 -10 110 400")
+        .append("g")
+        .classed("svg-content-responsive", true);
+
 
 
     svg.append("rect")
@@ -1026,6 +935,7 @@ function drawLinesChartPublication(data) {
     }
 }
 
+
 function drawPlotChartPublication(data) {
     //console.log(data)
     if ($("#publication2018").prop("checked")) {
@@ -1034,114 +944,131 @@ function drawPlotChartPublication(data) {
             return data.publishedDate.indexOf("-18")
         })
     }
+    var margin = {
+        top: 30,
+        right: 50,
+        bottom: 60,
+        left: 100
+    };
+    var width = 600 - margin.left - margin.right;
+    var height = 600 - margin.top - margin.bottom;
+
+    var svg = d3.select('#publications-plot')
+        .append("svg")
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-80 -20 750 600")
+        .append("g")
+        .classed("svg-content-responsive", true);
+
+    var opacityScale = d3.scaleLinear()
+        .domain([0.0, 30.0])
+        .range([0.10, .80]);
+
+    // The API for scales have changed in v4. There is a separate module d3-scale which can be used instead. The main change here is instead of d3.scale.linear, we have d3.scaleLinear.
+    var xScale = d3.scaleLinear()
+        .range([0, width]);
+
+    var yScale = d3.scaleLinear()
+        .range([height, 0]);
+
+    // square root scale.
+    var radius = d3.scaleSqrt()
+        .range([2, 5]);
+
+    // the axes are much cleaner and easier now. No need to rotate and orient the axis, just call axisBottom, axisLeft etc.
+    var xAxis = d3.axisBottom()
+        .scale(xScale)
+        .tickPadding(20)
+        .tickSize(0)
+        .ticks(5);
+
+    var yAxis = d3.axisLeft()
+        .scale(yScale)
+        .tickPadding(20)
+        .tickSize(0)
+        .ticks(5);
+
     data.forEach(function (d) {
+        d.Downloads = +d.Downloads;
         d.daysPublished = +d.daysPublished;
-        d.departmentCode = +d.departmentCode;
-        d.Code = +d.Code;
-        d.publishedDate = +d.publishedDate;
+        d.Code = d.Code;
     });
 
+    xScale.domain(d3.extent(data, function (d) {
+        return d.Downloads;
+    })).nice();
 
-    const width = 350;
-    const height = 300;
+    yScale.domain(d3.extent(data, function (d) {
+        return d.daysPublished;
+    })).nice();
 
-
-
-    const xValue = function (d) {
-        d.pageviews
-    };
-    const xAxisLabel = 'Total Days Published';
-
-    const yValue = function (d) {
-        d.daysPublished
-    };
-    const circleRadius = 10;
-    const yAxisLabel = 'PageViews';
-
-    const margin = {
-        top: 30,
-        right: 30,
-        bottom: 50,
-        left: 50
-    };
-    const innerWidth = width - margin.left - margin.right;
-    const innerHeight = height - margin.top - margin.bottom;
-    const svg = d3.select("#publications-plot").append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
-        .append("g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-    const xScale = d3.scaleLinear()
-        .domain(d3.extent(data, xValue))
-        .range([0, innerWidth])
-        .nice();
-
-    const yScale = d3.scaleLinear()
-        .domain(d3.extent(data, yValue))
-        .range([innerHeight, 0])
-        .nice();
-
-    const g = svg.append('g')
-        .attr('transform', "translate(" + margin.left + "," + margin.top + ")");
-
-    const xAxis = d3.axisBottom(xScale)
-        .scale(xScale)
-        .tickSize(0)
-        .tickPadding(30);
-
-    const yAxis = d3.axisLeft(yScale)
-        .scale(yScale)
-        .tickSize(0)
-        .tickPadding(30);
-
-    const yAxisG = g.append('g').call(yAxis);
-
-
-    yAxisG.selectAll('.domain').remove();
-
-    yAxisG.append('text')
+    svg.append('g')
+        .attr('transform', 'translate(0,' + height + ')')
+        .attr('class', 'x axis')
+        .style("stroke-dasharray", "5,5")
+        .call(xAxis)
+        .append('text')
         .attr('class', 'axis-label')
-        .attr('y', -93)
-        .attr('x', -innerHeight / 2)
+        .attr('y', 50)
+        .attr('x', 250)
+        .attr('fill', 'black')
+        .text("Downloads");
+
+    // y-axis is translated to (0,0)
+    svg.append('g')
+        .attr('transform', 'translate(0,0)')
+        .attr('class', 'y axis')
+        .style("stroke-dasharray", "5,5")
+        .call(yAxis)
+        .append('text')
+        .attr('class', 'axis-label')
+        .attr('y', -50)
+        .attr('x', -300)
         .attr('fill', 'black')
         .attr('transform', "rotate(-90)")
         .attr('text-anchor', 'middle')
-        .text(yAxisLabel);
+        .text("Published Days");
 
-    const xAxisG = g.append('g').call(xAxis)
-        .attr('transform', "translate(0," + innerHeight + ")");
 
-    xAxisG.select('.domain').remove();
-
-    xAxisG.append('text')
-        .attr('class', 'axis-label')
-        .attr('y', 75)
-        .attr('x', innerWidth / 2)
-        .attr('fill', 'black')
-        .text(xAxisLabel);
-
-    g.selectAll('circle').data(data)
+    var bubble = svg.selectAll('.bubble')
+        .data(data)
         .enter().append('circle')
-        .attr('cy', function (d) {
-            return yScale(yValue(d))
-        })
+        .attr('class', 'bubble')
         .attr('cx', function (d) {
-            return xScale(xValue(d))
+            return xScale(d.Downloads);
         })
-        .attr('r', circleRadius)
-        .attr('fill', function (d) {
-            if (d.daysPublished >= 200 && d.pageviews >= 1000) {
-                return '#d65a70'
+        .attr('cy', function (d) {
+            return yScale(d.daysPublished);
+        })
+        .attr('r', function (d) {
+            return radius(20);
+        })
+        .style('fill', function (d) {
+            if (d.Downloads >= 1000 && d.daysPublished >= 200) {
+                return "#d65a70"
             } else {
-                return '#d8d8d8'
+                return "#d8d8d8"
             }
+        })
+        .append('title')
+        .attr('x', function (d) {
+            return radius(d.Downloads);
+        })
+        .text(function (d) {
+            return d.Code;
         });
+
 }
 
 function removePublicationsSvg() {
-    d3.select("#timeline-publication svg").remove();
+    d3.select("#downloads-publications svg").remove();
+    // d3.select("#timeline-publication svg").remove();
     d3.select("#publication-trend svg").remove();
-    d3.select("#publications-plot svg").remove();
+    // d3.select("#publications-plot svg").remove();
+    d3.select("#gauge-publications svg").remove();
+    d3.select("#gauge-download-p svg").remove();
+    d3.select("#gauge-lac-p svg").remove();
+
 }
 
 function publicationFilter() {
@@ -1161,16 +1088,13 @@ function publicationFilter() {
     }
 }
 
-//revisar bien la lógica de filtrado
-
-//init
 init();
 
 function init() {
     var downloadTimelineIDB = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineIDB);
     var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
 
-    //drawTree(dataTree);
+    drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "2018");
     drawGaugePublicationChart(dataPublicationGauge);
     drawLinesChartPublication(dataLinesPublications);
 
@@ -1187,40 +1111,81 @@ $("input[name*='publicationTrend']").click(function () {
     removePublicationsSvg();
 
     if ($("select[id*='divisionSelect']").val().length > 0) {
+        // jsonPublicationsBarras = publicationsTopArrays.topDepartmentsAllTime.filter(function (dataP) {
+        //     return dataP.department_codes == this.value
+        // });
+        // drawTrendPublicationChart(jsonPublicationsBarras);
+        // jsonPublicTree = publicationsDownloadSourceArrays.downloadSourceDepartments.filter(dataT => {
+        //     return dataT.department_codes == this.value
+        // });
+        // drawTreePublication(jsonPublicTree, "AllTheTime");
+        var downloadTimelineIDB = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineIDB);
+        var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
+        // jsonPublicationsBarras = publicationsTopArrays.topDivisionsAllTime.filter(function (dataP) {
+        //     return dataP.division_codes == this.value
+        // });
+        // drawTrendPublicationChart(jsonPublicationsBarras);
+        drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "AllTheTime");
+        drawGaugePublicationChart(dataPublicationGauge);
+        drawLinesChartPublication(dataLinesPublications);
 
+        createChartTimelinePublication(downloadTimelineIDB);
+        // drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
+        drawPlotChartPublication(ObjectpublicationsAttention);
     } else if ($("select[id*='deparmentSelect']").val().length > 0) {
         var downloadTimelineDepartment = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineDepartments);
         downloadTimelineDepartment = downloadTimelineDepartment.filter(function (downloadTimelineDepartment) {
             return downloadTimelineDepartment.departmentCode == $("#deparmentSelect").val()
-        })
+        });
         downloadTimelineDepartment = downloadTimelineDepartment[0].data;
         createChartTimelinePublication(downloadTimelineDepartment);
     } else {
         if (this.id == "publicationAllTime") {
-            createChartTimelinePublication(downloadTimelineIDBTEST);
+            drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "AllTheTime");
+            // createChartTimelinePublication(downloadTimelineIDBTEST);
             drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
-            drawPlotChartPublication(ObjectpublicationsAttention);
-            // drawGaugePublicationChart(dataPublicationGauge);
+            // drawPlotChartPublication(ObjectpublicationsAttention);
+            drawGaugePublicationChart(dataPublicationGauge);
         } else {
-            createChartTimelinePublication(downloadTimelineIDBTEST);
+            drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "2018");
+            // createChartTimelinePublication(downloadTimelineIDBTEST);
             drawTrendPublicationChart(publicationsTopArrays.topIDB2018);
-            drawPlotChartPublication(ObjectpublicationsAttention);
-            // drawGaugePublicationChart(dataPublicationGauge);
+            // drawPlotChartPublication(ObjectpublicationsAttention);
+            drawGaugePublicationChart(dataPublicationGauge2018);
         }
     }
 });
 
 //department filter
-$("#deparmentSelect").change(function () {
+$("#deparmentSelect").on('change', function () {
     $("select[id*='divisionSelect']").val("");
+    removePublicationsSvg();
+    jsonPublicationsBarras = publicationsTopArrays.topDepartmentsAllTime.filter(function (dataP) {
+        return dataP.department_codes == this.value
+    });
+    drawTrendPublicationChart(jsonPublicationsBarras);
+    jsonPublicTree = publicationsDownloadSourceArrays.downloadSourceDepartments.filter(dataT => {
+        return dataT.department_codes == this.value
+    });
+    drawTreePublication(jsonPublicTree, "AllTheTime");
     //console.log($("#deparmentSelect").val());
-    publicationFilter();
+    // publicationFilter();
 });
 
 //division filter
-$("#divisionSelect").change(function () {
+$("#divisionSelect").on('change', function () {
     $("select[id*='deparmentSelect']").val("");
-    publicationFilter();
+    removePublicationsSvg();
+    jsonPublicationsBarras = publicationsTopArrays.topDivisionsAllTime.filter(function (dataP) {
+        return dataP.division_codes == this.value
+    });
+    drawTrendPublicationChart(jsonPublicationsBarras);
+
+    jsonPublicTree = publicationsDownloadSourceArrays.downloadSourceDivisions.filter(dataT => {
+        return dataT.division_codes == this.value
+    });
+    drawTreePublication(jsonPublicTree, "AllTheTime");
+    // publicationFilter();
 });
 
 //iadb filter
@@ -1230,146 +1195,3 @@ $("#idbLink").click(function (event) {
     event.preventDefault();
     publicationFilter();
 });
-
-
-/******************************** */
-function test(){
-
-
-    var geoData = [
-        {
-                "value": 40359,
-                "name": "Bing",
-                "group": "group 1"
-            },
-            {
-                "value": 185489,
-                "name": "Facebook",
-                "group": "group 1"
-            },
-            {
-                "value": 3712118,
-                "name": "Google",
-                "group": "group 1"
-            },
-            {
-                "value": 91257,
-                "name": "IDB Blogs",
-                "group": "group 1"
-            },
-            {
-                "value": 268514,
-                "name": "IDB Landing Page",
-                "group": "group 1"
-            },
-            {
-                "value": 60878,
-                "name": "IDB MOOCs",
-                "group": "group 1"
-            },
-            {
-                "value": 2741813,
-                "name": "IDB Publications",
-                "group": "group 1"
-            },
-            {
-                "value": 79309,
-                "name": "IDB RES",
-                "group": "group 1"
-            },
-            {
-                "value": 2177,
-                "name": "Indes Virtual",
-                "group": "group 1"
-            },
-            {
-                "value": 69649,
-                "name": "INTAL",
-                "group": "group 1"
-            },
-            {
-                "value": 8766,
-                "name": "LinkedIn",
-                "group": "group 1"
-            },
-            {
-                "value": 593965,
-                "name": "Others",
-                "group": "group 1"
-            },
-            {
-                "value": 8236,
-                "name": "RePec",
-                "group": "group 1"
-            },
-            {
-                "value": 29475,
-                "name": "Twitter",
-                "group": "group 1"
-            },
-            {
-                "value": 18121,
-                "name": "Yahoo",
-                "group": "group 1"
-            }
-        ]
-
-    var colours = interpolateColors("rgb(217, 30, 24)", "rgb(94, 79, 162)", geoData.length);
-
-
-    
-    
-    geoData.forEach(function(element, i) {
-      element.color = colours[i]
-    });
-    console.log(geoData);
-    var groupData = ["name", "value"];
-    var colorParam = "value";
-    var sizeMeasure = "value";
-    var indexColor = 0;
-    new d3plus.Treemap()
-      .data(geoData)
-      .groupBy(["value", "name"])
-      .sum("value")
-      .shapeConfig({
-         fill: function(d) {
-           return d.color;
-         }
-      })
-      
-      .select("#downloads-publications")
-      .render();
-  
-     
-    
-}
-
-// Returns a single rgb color interpolation between given rgb color
-// based on the factor given; via https://codepen.io/njmcode/pen/axoyD?editors=0010
-function interpolateColor(color1, color2, factor) {
-    if (arguments.length < 3) { 
-        factor = 0.5; 
-    }
-    var result = color1.slice();
-    for (var i = 0; i < 3; i++) {
-        result[i] = Math.round(result[i] + factor * (color2[i] - color1[i]));
-    }
-    return result;
-};
-// My function to interpolate between two colors completely, returning an array
-function interpolateColors(color1, color2, steps) {
-    var stepFactor = 1 / (steps - 1),
-    interpolatedColorArray = [];
-
-    color1 = color1.match(/\d+/g).map(Number);
-    color2 = color2.match(/\d+/g).map(Number);
-
-    for(var i = 0; i < steps; i++) {
-    	var aux = interpolateColor(color1, color2, stepFactor * i);
-        aux = "rgb("+aux[0]+","+aux[1]+","+aux[2]+")"
-        //console.log(aux);
-        interpolatedColorArray.push(aux);
-    }
-    return interpolatedColorArray;
-}
-test();
