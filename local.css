@@ -1135,6 +1135,61 @@ section.map select.form-control:not([size]):not([multiple]) {
         opacity: 0.5;
     }
 
+    section.publications .text-different {
+        font-size: 14px;
+        font-family: 'Gotham-Book';
+        color: #555555
+    }
+
+    section.publications .text-different b {
+        font-family: 'Gotham-Bold';
+    }
+
+    section.publications {
+        height: 100vh;
+    }
+
+    section .right-bar>.row>div:nth-child(2):before {
+        content: "";
+        height: 2px;
+        width: 96%;
+        position: absolute;
+        bottom: 0;
+        left: 2%;
+        z-index: 3;
+        background: #b4b4b4;
+    }
+
+    section .right-bar>.row>div:nth-child(3):before {
+        content: "";
+        height: 2px;
+        width: 96%;
+        position: absolute;
+        bottom: 0;
+        left: 2%;
+        z-index: 3;
+        background: #b4b4b4;
+    }
+
+    .publications .right-bar #kic:before {
+        content: "";
+        height: 2px;
+        width: 96%;
+        position: absolute;
+        bottom: 0;
+        left: 2%;
+        z-index: 3;
+        background: #b4b4b4;
+    }
+
+    section.publications .gauge-2 {
+        height: 335px;
+        padding-top: 20px
+    }
+
+    .ms-fullscreenmode #contentBox {
+        margin-left: 0 !important;
+    }
 
     /* section.publications #downloads-publications svg{
         
