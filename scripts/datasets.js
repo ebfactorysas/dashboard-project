@@ -123,7 +123,7 @@ function drawTreeDataset(dataTree, filtertype){
         });
     } else {
         dataTree = dataTree.sort(function (a, b) {
-            return d3.descending(a.valuevalueAllTheTime, b.valuevalueAllTheTime);
+            return d3.descending(a.valueAllTheTime, b.valueAllTheTime);
         });
     }
     

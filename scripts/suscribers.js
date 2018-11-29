@@ -142,14 +142,14 @@ function drawAgeSuscribersChart(dataAgeSuscribers) {
         return d.value;
     });
     var svgAgeSuscribers = d3.select('#age-suscribers').append("svg")
-    //responsive SVG needs these 2 attributes and no width and height attr
-    .attr("preserveAspectRatio", "xMinYMin meet")
-    .attr("viewBox", "-40 -40 400 400")
-    .append("g")
-    // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
+        //responsive SVG needs these 2 attributes and no width and height attr
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-40 -40 400 400")
+        .append("g")
+        // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
 
-    //class to make it responsive
-    .classed("svg-content-responsive", true);
+        //class to make it responsive
+        .classed("svg-content-responsive", true);
 
     var xAgeSuscribers = d3.scaleBand()
         .range([0, widthAgeSuscribers]);
@@ -235,11 +235,11 @@ function drawAgeSuscribersChart(dataAgeSuscribers) {
 function drawTreeSuscriber(dataTree) {
     if ($("#code2018").prop("checked")) {
         dataTree = dataTree.sort(function (a, b) {
-            return d3.descending(a.valueAllTheTime, b.valuevalueAllTheTime);
+            return d3.descending(a.Subscribers, b.Subscribers);
         });
     } else {
         dataTree = dataTree.sort(function (a, b) {
-            return d3.descending(a.value2018, b.value2018);
+            return d3.descending(a.Subscribers, b.Subscribers);
         });
     }
 
@@ -266,8 +266,8 @@ function drawTreeSuscriber(dataTree) {
                 fontFamily: 'Gotham-Bold',
                 fontMax: 20,
             }
-           })
-       .legend(false)
+        })
+        .legend(false)
         .select("#demographics-suscribers")
         .render();
 }
