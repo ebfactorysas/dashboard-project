@@ -186,7 +186,7 @@ section.big-numbers {
     color: #FFFFFF;
     background-color: #1156A1;
     font-family: 'Gotham-Bold';
-    min-height: 750px;
+    height: 38.1vw ;
 }
 
 section.big-numbers h4 {
@@ -195,18 +195,26 @@ section.big-numbers h4 {
 }
 
 section.big-numbers h1 {
-    font-size: 100px;
+    font-size: 5.5vw;
     font-family: 'Gotham-Book';
     color: #ffffff;
 }
 
 section.big-numbers .border-right-dash {
     border-right: 2px solid #0f5095;
+    padding-left: .5vw;
+    padding-right: .5vw;
+}
+
+section.big-numbers .last-panel {
+        padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 section.big-numbers p {
-    font-size: 15px;
+    font-size: 0.9vw;
 }
+
 
 section.big-numbers img {
     max-width: 55px;
@@ -1135,6 +1143,61 @@ section.map select.form-control:not([size]):not([multiple]) {
         opacity: 0.5;
     }
 
+    section.publications .text-different {
+        font-size: 14px;
+        font-family: 'Gotham-Book';
+        color: #555555
+    }
+
+    section.publications .text-different b {
+        font-family: 'Gotham-Bold';
+    }
+
+    section.publications {
+        height: 100vh;
+    }
+
+    section .right-bar>.row>div:nth-child(2):before {
+        content: "";
+        height: 2px;
+        width: 96%;
+        position: absolute;
+        bottom: 0;
+        left: 2%;
+        z-index: 3;
+        background: #b4b4b4;
+    }
+
+    section .right-bar>.row>div:nth-child(3):before {
+        content: "";
+        height: 2px;
+        width: 96%;
+        position: absolute;
+        bottom: 0;
+        left: 2%;
+        z-index: 3;
+        background: #b4b4b4;
+    }
+
+    .publications .right-bar #kic:before {
+        content: "";
+        height: 2px;
+        width: 96%;
+        position: absolute;
+        bottom: 0;
+        left: 2%;
+        z-index: 3;
+        background: #b4b4b4;
+    }
+
+    section.publications .gauge-2 {
+        height: 335px;
+        padding-top: 20px
+    }
+
+    .ms-fullscreenmode #contentBox {
+        margin-left: 0 !important;
+    }
 
     /* section.publications #downloads-publications svg{
         

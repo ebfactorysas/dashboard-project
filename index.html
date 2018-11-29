@@ -16,7 +16,7 @@
     <link href="https://refreshless.com/nouislider/distribute/nouislider.css?v=1210" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
@@ -106,7 +106,7 @@
             <div class="col-md-5 pt-4 pb-4">
                 <div class="row">
                     <div class="col-md-6 text-center dropdown-bg pt-2 left-text-drop">now showing data for <select id="divisionSelect">
-                            <option value="" selected></option>
+                            <option value=""></option>
                             <option value="IDB" >IDB</option>
                             <option value="ATI">ATI</option>
                             <option value="AUG">AUG</option>
@@ -263,7 +263,7 @@
                                     LAC</p>
                             </div>
                         </div>
-                        <div class="col d-flex align-items-center justify-content-center">
+                        <div class="col d-flex align-items-center justify-content-center last-panel">
                             <div class="col-12 ">
                                 <div>
                                     <h4>SUBSCRIBERS</h4>
@@ -368,8 +368,8 @@
                 </div>
 
                 <div class=" right-zone down-zone p-4">
-                    <h4>PUBLICATIONS THAT NEED YOUR ATTENTION</h4>
-                    <p>red circles below represent the <span><label class="label-filter-select">-</label></span>
+                    <h4 class="pt-2">PUBLICATIONS THAT NEED YOUR ATTENTION</h4>
+                    <p class="text-different"> <b>red</b> circles below represent the <span><label class="label-filter-select"></label></label></span>
                         publications that are published for
                         least 200 days and that reached less than 1000 downloads</p>
                     <div id="publications-plot"></div>

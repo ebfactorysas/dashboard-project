@@ -653,22 +653,22 @@ function subscribersFilter() {
 
 }
 // Divisions select filter
-$("select[id*='divisionSelect']").change(function () {
-    $("select[id*='deparmentSelect']").val("");
-    subscribersFilter();
-});
+// $("select[id*='divisionSelect']").change(function () {
+//     $("select[id*='deparmentSelect']").val("");
+//     subscribersFilter();
+// });
 
-// Deparment select filter
-$("select[id*='deparmentSelect']").change(function () {
-    $("select[id*='divisionSelect']").val("");
-    subscribersFilter();
-});
+// // Deparment select filter
+// $("select[id*='deparmentSelect']").change(function () {
+//     $("select[id*='divisionSelect']").val("");
+//     subscribersFilter();
+// });
 
-$("#idbLink").click(function () {
-    $("select[id*='deparmentSelect']").val("");
-    $("select[id*='divisionSelect']").val("");
-    subscribersFilter();
-});
+// $("#idbLink").click(function () {
+//     $("select[id*='deparmentSelect']").val("");
+//     $("select[id*='divisionSelect']").val("");
+//     subscribersFilter();
+// });
 
 $("input[name*='suscribersTrend']").click(function () {
     subscribersFilter();
