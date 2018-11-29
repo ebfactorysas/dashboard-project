@@ -226,15 +226,17 @@ function drawChartCodeTrend(codeTrend) {
 function drawTreeCode(dataTree,filtertype) {
     if ($("#code2018").prop("checked")) {
         dataTree = dataTree.sort(function (a, b) {
-            return d3.descending(a.Subscribers, b.Subscribers);
+            return d3.descending(a.value2018, b.value2018);
         });
     } else {
         dataTree = dataTree.sort(function (a, b) {
-            return d3.descending(a.Subscribers, b.Subscribers);
+            return d3.descending(a.valueAllTheTime, b.valueAllTheTime);
         });
     }   
 
-    colours = chroma.scale(['#ffbd00', '#e4c87a'])
+    console.log("code",dataTree);
+
+    colours = chroma.scale(['#ebb203', '#ffffff'])
         .mode('lch').colors(dataTree.length)
 
     dataTree.forEach(function (element, i) {
@@ -252,11 +254,15 @@ function drawTreeCode(dataTree,filtertype) {
       .shapeConfig({
          fill: function(d) {
            return d.color;
+         },
+         labelConfig: {
+             fontFamily: 'Gotham-Bold',
+             fontMax: 20,
          }
-      })
-      
-      .select("#downloads-code")
-      .render();
+        })
+    .legend(false)
+    .select("#downloads-code")
+    .render();
   
 }
 

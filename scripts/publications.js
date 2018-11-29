@@ -516,15 +516,15 @@ function createChartTimelinePublication(data) {
 function drawTreePublication(dataTree, filtertype) {
     if ($("#publication2018").prop("checked")) {
         dataTree = dataTree.sort(function (a, b) {
-            return d3.descending(a.value2018, b.value2018);
+            return d3.descending(a.valueAllTheTime, b.valuevalueAllTheTime);
         });
     } else {
         dataTree = dataTree.sort(function (a, b) {
-            return d3.descending(a.valueAllTheTime, b.valueAllTheTime);
+            return d3.descending(a.value2018, b.value2018);
         });
     }
 
-    colours = chroma.scale(['#D91E18', '#f0e9eb'])
+    colours = chroma.scale(['#d1415a', '#ffffff'])
         .mode('lch').colors(dataTree.length)
 
     dataTree.forEach(function (element, i) {
@@ -536,15 +536,21 @@ function drawTreePublication(dataTree, filtertype) {
     var sizeMeasure = "value" + filtertype;
     var indexColor = 0;
     new d3plus.Treemap()
+        .width(935)
+        .height(200)
         .data(dataTree)
         .groupBy(["value" + filtertype, "name"])
         .sum("value" + filtertype)
         .shapeConfig({
             fill: function (d) {
                 return d.color;
+            },
+            labelConfig: {
+                fontFamily: 'Gotham-Bold',
+                fontMax: 20,
             }
         })
-
+        .legend(false)
         .select("#downloads-publications")
         .render();
 
@@ -745,27 +751,27 @@ function drawGaugePublicationChart(dataGauge) {
 
 function drawLinesChartPublication(data) {
     margin = {
-        top: 20,
-        right: 0,
-        bottom: 0,
-        left: 0
-    },
-    margin2 = {
-        top: 0,
-        right: 20,
-        bottom: 30,
-        left: 0
-    },
-    width = 400 - margin.left - margin.right,
-    height = 400 - margin.top - margin.bottom,
-    height2 = 400 - margin2.top - margin2.bottom;
+            top: 20,
+            right: 0,
+            bottom: 0,
+            left: 0
+        },
+        margin2 = {
+            top: 0,
+            right: 20,
+            bottom: 30,
+            left: 0
+        },
+        width = 400 - margin.left - margin.right,
+        height = 400 - margin.top - margin.bottom,
+        height2 = 400 - margin2.top - margin2.bottom;
 
     var svg = d3.select("#lines-publications").append("svg")
         .attr("preserveAspectRatio", "xMinYMin meet")
         .attr("viewBox", "-1 -20 130 400")
         .append("g")
         .classed("svg-content-responsive", true);
-       
+
 
 
     svg.append("rect")
@@ -985,24 +991,24 @@ function drawPlotChartPublication(data) {
     })).nice();
 
     svg.append('g')
-			.attr('transform', 'translate(0,' + height + ')')
-			.attr('class', 'x axis')
-			.style("stroke-dasharray","5,5")
-			.call(xAxis)
-			.append('text')
+        .attr('transform', 'translate(0,' + height + ')')
+        .attr('class', 'x axis')
+        .style("stroke-dasharray", "5,5")
+        .call(xAxis)
+        .append('text')
         .attr('class', 'axis-label')
-        .attr('y',50)
+        .attr('y', 50)
         .attr('x', 250)
         .attr('fill', 'black')
         .text("Downloads");
 
-		// y-axis is translated to (0,0)
-		svg.append('g')
-			.attr('transform', 'translate(0,0)')
-			.attr('class', 'y axis')
-			.style("stroke-dasharray","5,5")
-			.call(yAxis)
-			.append('text')
+    // y-axis is translated to (0,0)
+    svg.append('g')
+        .attr('transform', 'translate(0,0)')
+        .attr('class', 'y axis')
+        .style("stroke-dasharray", "5,5")
+        .call(yAxis)
+        .append('text')
         .attr('class', 'axis-label')
         .attr('y', -50)
         .attr('x', -300)
@@ -1032,7 +1038,7 @@ function drawPlotChartPublication(data) {
                 return "#d8d8d8"
             }
         })
-    .append('title')
+        .append('title')
         .attr('x', function (d) {
             return radius(d.Downloads);
         })
@@ -1159,7 +1165,7 @@ $("#divisionSelect").on('change', function () {
         return dataP.division_codes == this.value
     });
     drawTrendPublicationChart(jsonPublicationsBarras);
-    
+
     jsonPublicTree = publicationsDownloadSourceArrays.downloadSourceDivisions.filter(dataT => {
         return dataT.division_codes == this.value
     });

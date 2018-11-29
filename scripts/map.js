@@ -575,7 +575,7 @@ function getCoutryTotals(data) {
         .map(function(d) {
             return [d.code3, d.z];
         });
-    var serie2 = $('#bar-graph-countries').highcharts().get('series-2');
+    var serie2 = $('#bar-graph-countries').d32Bars().get('series-2');
     serie2.setData(serieTopCountries, true, false, false);
 
     //console.log('data:',data);
@@ -606,7 +606,7 @@ function getCoutryTotals(data) {
             return [d.src, d.total];
         });
 
-    var serie3 = $('#bar-graph-sources').highcharts().get('series-2');
+    var serie3 = $('#bar-graph-sources').d32Bars().get('series-2');
     serie3.setData(serieTopSources, true, false, false);
 
 
@@ -650,8 +650,9 @@ function dynamicSort(property) {
 
 function barGraph(selectorID, title) {
 
-    Highcharts.chart(selectorID, {
+    d32Bars.chart(selectorID, {
         chart: {
+            credits: false,
             type: 'bar',
             style: {
                 fontFamily: 'Gotham-Book'
