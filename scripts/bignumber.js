@@ -706,7 +706,11 @@ function setSettingsNumber(valueNumber){
 
 function getPercentageTotal(value) {
     if (setSettingsNumber(value).suffixNumber == "") {
-        gaugeTotalPercentage = 100;
+        if (value < 100) {
+            gaugeTotalPercentage = 100;
+        } else if (value > 100 && value < 1000) {
+            gaugeTotalPercentage = 1000;
+        }
     } else if (setSettingsNumber(value).suffixNumber == "K") {
         gaugeTotalPercentage = 1000000;
     } else if (setSettingsNumber(value).suffixNumber == "M") {

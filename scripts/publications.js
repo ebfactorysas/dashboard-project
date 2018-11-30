@@ -2,11 +2,11 @@
 function setPublicationGauge() {
     var publicationGauge = {
         "publication": {
-            "total": getPercentageTotal(publicationsAllTotalGlobal),
+            "total": 100,//getPercentageTotal(publicationsAllTotalGlobal),
             "allocated": publicationsAllTotalGlobal
         },
         "download": {
-            "total": getPercentageTotal(publicationsAllDownloads),
+            "total": 100,//getPercentageTotal(publicationsAllDownloads),
             "allocated": publicationsAllDownloads
         },
         "lac": {
