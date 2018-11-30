@@ -10,9 +10,7 @@
  */
 
 
-$("#idbLink").click(function (event) {
-    event.preventDefaul();
-});
+
 
 
 $("#deparmentSelect").on('change', function () {
@@ -112,7 +110,7 @@ $("#divisionSelect").on('change', function (data) {
  */
 
 
-$( document ).ready(function() {
+$(window).on('load', function(){
     initPublications();
     $('.label-filter-restidb').hide();
-});
+ });
