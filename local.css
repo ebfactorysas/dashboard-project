@@ -315,6 +315,12 @@ section.publications #publication-trend .y-data {
 }
 
 
+section.publications #publication-trend .y-data text{
+    font-family: 'Gotham-Bold';
+    font-size: 14px;
+}
+
+
 section.publications #publication-trend .text-inside {
     color: #8a858d
 }
