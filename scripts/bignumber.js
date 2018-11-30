@@ -169,7 +169,9 @@ $("input[name*='blueTrend']").click(function () {
         dataResultsDatasets = datasetsIndicatorAlltime(jsondataDatasets);
         dataResultsCode = codeIndicatorAlltime(jsondataCode);
         dataResultsSubscriber = subscriberIndicatorAlltime(jsondataSubscriber);
+        
     } else {
+        
         dataResultsPublications = publicationsIndicator2018(jsondataPublications);
         dataResultsMoocs = moocsIndicator2018(jsondataMoocs);
         dataResultsDatasets = datasetsIndicator2018(jsondataDatasets);
