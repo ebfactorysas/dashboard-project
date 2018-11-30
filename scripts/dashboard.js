@@ -114,4 +114,5 @@ $("#divisionSelect").on('change', function (data) {
 
 $( document ).ready(function() {
     initPublications();
+    $('.label-filter-restidb').hide();
 });

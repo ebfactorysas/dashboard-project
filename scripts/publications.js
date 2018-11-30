@@ -1178,6 +1178,7 @@ $("input[name*='publicationTrend']").click(function () {
         // drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
         
         if(this.id == "publicationAllTime"){
+            $('.label-filter-restidb').hide();
             jsondataPublications = bnPublicationsArrays.publicationsDivisions.filter(function (data) {
                 return data.division_codes == $("select[id*='divisionSelect']").val()
             });
@@ -1187,7 +1188,7 @@ $("input[name*='publicationTrend']").click(function () {
             dataPublicationGauge = setPublicationGauge();
             drawGaugePublicationChart(dataPublicationGauge);
         } else {
-            
+            $('.label-filter-restidb').show();
             jsondataPublications = bnPublicationsArrays.publicationsDivisions.filter(function (data) {
                 return data.division_codes == $("select[id*='divisionSelect']").val()
             });
@@ -1208,6 +1209,7 @@ $("input[name*='publicationTrend']").click(function () {
         removePublicationsSvg();
         removePublicationsGauges();
         if (this.id == "publicationAllTime") {
+            $('.label-filter-restidb').hide();
             dataPublicationGauge = setPublicationGauge();
             drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "AllTheTime");
             // createChartTimelinePublication(downloadTimelineIDBTEST);
@@ -1215,6 +1217,7 @@ $("input[name*='publicationTrend']").click(function () {
             // drawPlotChartPublication(ObjectpublicationsAttention);
             drawGaugePublicationChart(dataPublicationGauge);
         } else {
+            $('.label-filter-restidb').show();
             dataPublicationGauge = setPublicationGauge2018();
             drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "2018");
             // createChartTimelinePublication(downloadTimelineIDBTEST);
