@@ -1138,13 +1138,14 @@ function initPublications() {
     var downloadTimelineIDB = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineIDB);
     var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
 
-    drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "AllTheTime");
+    
     drawGaugePublicationChart(dataPublicationGauge);
     drawLinesChartPublication(dataLinesPublications);
 
     createChartTimelinePublication(downloadTimelineIDB);
     drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
     drawPlotChartPublication(ObjectpublicationsAttention);
+    drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "AllTheTime");
 }
 
 //click radiobutton drawChart(id del click)
