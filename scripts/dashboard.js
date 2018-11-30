@@ -58,6 +58,7 @@ $("#deparmentSelect").on('change', function () {
 //division filter
 $("#divisionSelect").on('change', function (data) {
     var sltValue = this.value;
+    $('#idbLink').text(sltValue);
     initIndicators('divisions', sltValue);
     $("select[id*='deparmentSelect']").val("");
     removePublicationsSvg();
