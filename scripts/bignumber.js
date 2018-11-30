@@ -199,7 +199,7 @@ function publicationsIndicatorAlltime(jsondata){
 
     publicationsAllDownloads = (jsondataPublications.length > 0) ? jsondataPublications[0].all_the_time_downloads : '0';
     // publicationsAllDownloadsLac = (jsondataPublications.length > 0) ? (jsondata[0].all_the_time_porcent_total_LAC_downloads * 100).toFixed(0) : '0';
-    publicationsAllDownloadsLac = (jsondataPublications.length > 0) ? ((jsondataPublications[0].all_the_time_porcent_total_LAC_downloads != "missing") ? (jsondataPublications[0].all_the_time_porcent_total_LAC_downloads * 100).toFixed(1) : jsondataPublications[0].all_the_time_porcent_total_LAC_downloads) : '';
+    publicationsAllDownloadsLac = (jsondataPublications.length > 0) ? ((jsondataPublications[0].all_the_time_porcent_total_LAC_downloads != "missing" && jsondataPublications[0].all_the_time_porcent_total_LAC_downloads > 0) ? (jsondataPublications[0].all_the_time_porcent_total_LAC_downloads * 100).toFixed(1) : jsondataPublications[0].all_the_time_porcent_total_LAC_downloads) : 0;
     // console.log(setSettingsNumber(publications2018TotalRest).suffixNumber);
     // $('#gauge-publications .percent-complete').append(setSettingsNumber(publications2018TotalRest).suffixNumber);
     var results = {
@@ -208,7 +208,7 @@ function publicationsIndicatorAlltime(jsondata){
         compare2017_2018_publications : (jsondata.length > 0) ? jsondata[0]['2017_2018_publications'] : '',
         downloadsValue: (jsondata.length > 0) ? jsondata[0]['all_the_time_downloads'] : '0',
         porcent_total_downloads: "100%", /*missing, rodrigo dice que si falta el dato que pongamos 100% para all the time*/
-        porcent_downloads_lac: (jsondata.length > 0) ? ((jsondata[0].all_the_time_porcent_total_LAC_downloads != "missing") ? (jsondata[0].all_the_time_porcent_total_LAC_downloads * 100).toFixed(1) + '%' : jsondata[0].all_the_time_porcent_total_LAC_downloads) : ''
+        porcent_downloads_lac: (jsondata.length > 0) ? ((jsondata[0].all_the_time_porcent_total_LAC_downloads != "missing" && jsondata[0].all_the_time_porcent_total_LAC_downloads > 0) ? (jsondata[0].all_the_time_porcent_total_LAC_downloads * 100).toFixed(1) + '%' : jsondata[0].all_the_time_porcent_total_LAC_downloads) : 0, //falta en el archivo
     }
     return results;
 }
