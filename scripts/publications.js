@@ -1138,7 +1138,7 @@ function initPublications() {
     var downloadTimelineIDB = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineIDB);
     var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
 
-    drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "2018");
+    drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "AllTheTime");
     drawGaugePublicationChart(dataPublicationGauge);
     drawLinesChartPublication(dataLinesPublications);
 
