@@ -1,33 +1,42 @@
-var dataPublicationGauge = {
-    "publication": {
-        "total": getPercentageTotal(publicationsAllTotalGlobal),
-        "allocated": publicationsAllTotalGlobal
-    },
-    "download": {
-        "total": getPercentageTotal(publicationsAllDownloads),
-        "allocated": publicationsAllDownloads
-    },
-    "lac": {
-        "total": 100,
-        "allocated": publicationsAllDownloadsLac
+
+function setPublicationGauge() {
+    var publicationGauge = {
+        "publication": {
+            "total": getPercentageTotal(publicationsAllTotalGlobal),
+            "allocated": publicationsAllTotalGlobal
+        },
+        "download": {
+            "total": getPercentageTotal(publicationsAllDownloads),
+            "allocated": publicationsAllDownloads
+        },
+        "lac": {
+            "total": 100,
+            "allocated": publicationsAllDownloadsLac
+        }
     }
+    return publicationGauge;
 }
-var dataPublicationGauge2018 = {
-    "publication": {
-        "total": getPercentageTotal(publications2018TotalGlobal),
-        "allocated": publications2018TotalGlobal
-    },
-    "download": {
-        "total": getPercentageTotal(publications2018Downloads),
-        "allocated": publications2018Downloads
-    },
-    "lac": {
-        "total": 100,
-        "allocated": publications2018DownloadsLac
+function setPublicationGauge2018() {
+    var publicationGauge2018 = {
+        "publication": {
+            "total": getPercentageTotal(publications2018TotalGlobal),
+            "allocated": publications2018TotalGlobal
+        },
+        "download": {
+            "total": getPercentageTotal(publications2018Downloads),
+            "allocated": publications2018Downloads
+        },
+        "lac": {
+            "total": 100,
+            "allocated": publications2018DownloadsLac
+        }
     }
+    return publicationGauge2018;
 }
 
-var dataLinesPublications = [{
+
+var dataLinesPublications = [
+    {
         "date": 20180101,
 
         "one": Math.floor((Math.random() * 10) + 1) + 10,
@@ -1090,11 +1099,12 @@ function removePublicationsSvg() {
     // d3.select("#timeline-publication svg").remove();
     d3.select("#publication-trend svg").remove();
     // d3.select("#publications-plot svg").remove();
-    // d3.select("#gauge-publications svg").remove();
-    // d3.select("#gauge-download-p svg").remove();
-    // d3.select("#gauge-lac-p svg").remove();
     
-
+}
+function removePublicationsGauges() {
+    d3.select("#gauge-publications svg").remove();
+    d3.select("#gauge-download-p svg").remove();
+    d3.select("#gauge-lac-p svg").remove();
 }
 
 // function publicationFilter() {
@@ -1118,6 +1128,8 @@ initPublications();
 
 function initPublications() {
     removePublicationsSvg();
+    dataPublicationGauge = setPublicationGauge();
+    dataPublicationGauge2018 = setPublicationGauge2018();
     var downloadTimelineIDB = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineIDB);
     var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
 
@@ -1136,7 +1148,7 @@ $("input[name*='publicationTrend']").click(function () {
     var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
 
     removePublicationsSvg();
-
+    removePublicationsGauges();
     if ($("select[id*='divisionSelect']").val().length > 0) {
         jsonPublicationsBarras = publicationsTopArrays.topDepartmentsAllTime.filter(function (dataP) {
             return dataP.department_codes == this.value
@@ -1146,35 +1158,59 @@ $("input[name*='publicationTrend']").click(function () {
         //     return dataT.department_codes == this.value
         // });
         // drawTreePublication(jsonPublicTree, "AllTheTime");
-        var downloadTimelineIDB = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineIDB);
+        
         var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
+        drawPlotChartPublication(ObjectpublicationsAttention);
         // jsonPublicationsBarras = publicationsTopArrays.topDivisionsAllTime.filter(function (dataP) {
         //     return dataP.division_codes == this.value
         // });
         // drawTrendPublicationChart(jsonPublicationsBarras);
         drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "AllTheTime");
-        drawGaugePublicationChart(dataPublicationGauge);
         drawLinesChartPublication(dataLinesPublications);
-
-        createChartTimelinePublication(downloadTimelineIDB);
+        
+        // var downloadTimelineIDB = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineIDB);
+        // createChartTimelinePublication(downloadTimelineIDB);
         // drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
-        drawPlotChartPublication(ObjectpublicationsAttention);
+        
+        if(this.id == "publicationAllTime"){
+            jsondataPublications = bnPublicationsArrays.publicationsDivisions.filter(function (data) {
+                return data.division_codes == $("select[id*='divisionSelect']").val()
+            });
+            publicationsAllTotalGlobal = (jsondataPublications.length > 0) ? jsondataPublications[0].all_the_time_publications : '0';
+            publicationsAllDownloads = (jsondataPublications.length > 0) ? jsondataPublications[0].all_the_time_downloads : '0';
+            publicationsAllDownloadsLac = (jsondataPublications.length > 0) ? ((jsondataPublications[0].all_the_time_porcent_total_LAC_downloads != "missing") ? (jsondataPublications[0].all_the_time_porcent_total_LAC_downloads * 100).toFixed(1) : jsondataPublications[0].all_the_time_porcent_total_LAC_downloads) : '';
+            dataPublicationGauge = setPublicationGauge();
+            drawGaugePublicationChart(dataPublicationGauge);
+        } else {
+            
+            jsondataPublications = bnPublicationsArrays.publicationsDivisions.filter(function (data) {
+                return data.division_codes == $("select[id*='divisionSelect']").val()
+            });
+            publications2018TotalGlobal = (jsondataPublications.length > 0) ? jsondataPublications[0]['2018_publications'] : '0';
+            publications2018Downloads = (jsondataPublications.length > 0) ? jsondataPublications[0]['2018_downloads'] : '0';
+            publications2018DownloadsLac = (jsondataPublications.length > 0) ? ((jsondataPublications[0]['2018_porcent_total_LAC_downloads'] != "missing") ? (jsondataPublications[0]['2018_porcent_total_LAC_downloads'] * 100).toFixed(1) : jsondataPublications[0]['2018_porcent_total_LAC_downloads']) : '';
+            dataPublicationGauge2018 = setPublicationGauge2018();
+            drawGaugePublicationChart(dataPublicationGauge2018);
+        }
     } else if ($("select[id*='deparmentSelect']").val().length > 0) {
         var downloadTimelineDepartment = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineDepartments);
         downloadTimelineDepartment = downloadTimelineDepartment.filter(function (downloadTimelineDepartment) {
             return downloadTimelineDepartment.departmentCode == $("#deparmentSelect").val()
         });
         downloadTimelineDepartment = downloadTimelineDepartment[0].data;
-        createChartTimelinePublication(downloadTimelineDepartment);
+        // createChartTimelinePublication(downloadTimelineDepartment);
     } else {
         removePublicationsSvg();
+        removePublicationsGauges();
         if (this.id == "publicationAllTime") {
+            dataPublicationGauge = setPublicationGauge();
             drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "AllTheTime");
             // createChartTimelinePublication(downloadTimelineIDBTEST);
             drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
             // drawPlotChartPublication(ObjectpublicationsAttention);
             drawGaugePublicationChart(dataPublicationGauge);
         } else {
+            dataPublicationGauge = setPublicationGauge2018();
             drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "2018");
             // createChartTimelinePublication(downloadTimelineIDBTEST);
             drawTrendPublicationChart(publicationsTopArrays.topIDB2018);

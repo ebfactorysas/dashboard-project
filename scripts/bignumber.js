@@ -125,6 +125,7 @@ function initIndicators(filterselect, valueFilter) {
     // console.log(dataPublicationsResults);
     setDataMain(dataPublicationsResults, dataMoocsResults, dataDatasetsResults, dataCodeResults, dataSubscribersResults);
     getDataBignumbers(jsondataPublications, jsondataMoocs, jsondataDatasets, jsondataCode, jsondataSubscriber);
+    
 }
 $("input[name*='blueTrend']").click(function () {
     // console.log(jsondata);

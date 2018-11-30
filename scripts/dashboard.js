@@ -33,9 +33,7 @@ $("#deparmentSelect").on('change', function () {
     $('.label-filter-select').text(this.value);
     $("#divisionSelect").value = "";
     $('#blueAllTime').click();
-    d3.select("#gauge-publications svg").remove();
-    d3.select("#gauge-download-p svg").remove();
-    d3.select("#gauge-lac-p svg").remove();
+    removePublicationsGauges();
 
     d3.select("#gauge-moocs svg").remove();
     d3.select("#gauge-registrations-m svg").remove();
@@ -65,7 +63,7 @@ $("#divisionSelect").on('change', function (data) {
     initIndicators('divisions', sltValue);
     $("select[id*='deparmentSelect']").val("");
     removePublicationsSvg();
-    console.log(data);
+    
     jsonPublicationsBarras = publicationsTopArrays.topDivisionsAllTime.filter(function (dataP) {
         return dataP.division_codes == sltValue
     });
@@ -81,12 +79,10 @@ $("#divisionSelect").on('change', function (data) {
     } else {
         $('.label-filter-select').text(this.value);
         $("#deparmentSelect").value = "";
-        removePublicationsSvg();
+        
         // mainReset();
         $('#blueAllTime').click();
-        d3.select("#gauge-publications svg").remove();
-        d3.select("#gauge-download-p svg").remove();
-        d3.select("#gauge-lac-p svg").remove();
+        removePublicationsGauges();
 
         d3.select("#gauge-moocs svg").remove();
         d3.select("#gauge-registrations-m svg").remove();
@@ -117,5 +113,5 @@ $("#divisionSelect").on('change', function (data) {
 
 
 $( document ).ready(function() {
-  init()
+//   init();
 });
