@@ -622,14 +622,18 @@ function drawTrendPublicationChart(dataPublicationTrend) {
             return value.valueNumber + suffixNumber;
         })
         .tickPadding(40)
-        .tickSize(0);
+        .tickSize(0)
+        
+    
 
     var gyPublicationTrend = svgPublicationTrend.append("g")
         .style("text-anchor", "start")
         .style("color", "#555555")
         .attr("class", "y-data")
-
         .call(yAxisPublicationTrend)
+    
+    var textInAxis = d3.selectAll("#publication-trend .y-data text")
+    .attr("dy",".2em")
 
     var barsPublicationTrend = svgPublicationTrend.selectAll(".bar")
         .data(dataPublicationTrend)
@@ -654,7 +658,7 @@ function drawTrendPublicationChart(dataPublicationTrend) {
         .attr("class", "label")
         //y position of the label is halfway down the bar
         .attr("y", function (d) {
-            return yPublicationTrend(d.value) + yPublicationTrend.bandwidth() / 2 + 4;
+            return yPublicationTrend(d.value) + yPublicationTrend.bandwidth() / 2 + 2;
         })
         //x position is 3 pixels to the right of the bar
         .attr("x", function (d) {
@@ -662,7 +666,7 @@ function drawTrendPublicationChart(dataPublicationTrend) {
         })
         .attr("class", "text-inside")
         .attr("font-family", "Gotham-Bold")
-        .attr("font-size", "12px")
+        .attr("font-size", "14px")
         .text(function (d) {
             return d.name;
         });
@@ -939,7 +943,8 @@ function drawLinesChartPublication(data) {
         })
         .attr("clip-path", "url(#clip)");
 
-    var line = svg.append("line")
+    /* will be evaluated 
+        var line = svg.append("line")
         .attr("x1", 30)
         .attr("x2", 30)
         .attr("y1", 0)
@@ -955,7 +960,7 @@ function drawLinesChartPublication(data) {
         .attr("y2", height)
         .attr("stroke-width", 1)
         .attr("stroke", "#c3c3c3")
-        .attr("stroke-dasharray", "2,2")
+        .attr("stroke-dasharray", "2,2")*/
 
     function brushed() {
         var extent = d3.event.selection;
