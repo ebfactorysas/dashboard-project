@@ -1487,7 +1487,7 @@ function moocsFilter() {
         case 'all':
             removeMoocsSvg();
             //top registration chart
-            if ($("select[id*='divisionSelect']").val().length > 0) {
+            if ($("select[id*='divisionSelect']").val().length > 0 && $("select[id*='divisionSelect']").val() !== "IDB") {
                 drawGaugeMoocsChart(dataGaugeMoocs);
                 var timelineDivisions = divisionFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDivisions), $("select[id*='divisionSelect']").val());
                 if (timelineDivisions.length > 0) createChart(timelineDivisions[0].data);
@@ -1509,26 +1509,27 @@ function moocsFilter() {
                 points2(moocsGenderAddGray(moocsGenderFilter(gender, "Not Available")));
                 points3(moocsGenderAddGray(moocsGenderFilter(gender, "Other")));
 
-            } else if ($("select[id*='deparmentSelect']").val().length > 0) {
-                drawGaugeMoocsChart(dataGaugeMoocs);
-                var timelineDivisions = orderTopMoocs(departmentFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDepartments), $("select[id*='deparmentSelect']").val()));
-                if (timelineDivisions.length > 0) createChart(timelineDivisions[0].data);
+            // Por ahora se deshabilita
+            // } else if ( $("select[id*='deparmentSelect']").val().length > 0) {
+            //     drawGaugeMoocsChart(dataGaugeMoocs);
+            //     var timelineDivisions = orderTopMoocs(departmentFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDepartments), $("select[id*='deparmentSelect']").val()));
+            //     if (timelineDivisions.length > 0) createChart(timelineDivisions[0].data);
 
-                drawMoocsRegistrationsChart(orderTopMoocs(departmentFilter(moocsTopArrays.departmentsAllTime, $("select[id*='deparmentSelect']").val())));
-                drawDistributionChart(orderTopMoocs(departmentFilter(moocsEducationArrays.educationLevelDepartments, $("select[id*='deparmentSelect']").val())));
+            //     drawMoocsRegistrationsChart(orderTopMoocs(departmentFilter(moocsTopArrays.departmentsAllTime, $("select[id*='deparmentSelect']").val())));
+            //     drawDistributionChart(orderTopMoocs(departmentFilter(moocsEducationArrays.educationLevelDepartments, $("select[id*='deparmentSelect']").val())));
 
-                var students = divisionFilter(moocsStudentsFlowArrays.studentsFlowDepartments, $("select[id*='deparmentSelect']").val());
-                drawStudentRegistrationsChart($.extend(true, [], students[0]));
-                drawStudentParticipantsChart($.extend(true, [], students[0]));
-                drawStudentCompletedsChart($.extend(true, [], students[0]));
-                drawStudentCertifiedsChart($.extend(true, [], students[0]));
+            //     var students = divisionFilter(moocsStudentsFlowArrays.studentsFlowDepartments, $("select[id*='deparmentSelect']").val());
+            //     drawStudentRegistrationsChart($.extend(true, [], students[0]));
+            //     drawStudentParticipantsChart($.extend(true, [], students[0]));
+            //     drawStudentCompletedsChart($.extend(true, [], students[0]));
+            //     drawStudentCertifiedsChart($.extend(true, [], students[0]));
 
-                // Gender
-                var gender = departmentFilter($.extend(true, [], moocsGenderArrays.genderDepartments), $("select[id*='deparmentSelect']").val());
-                points(moocsGenderAddGray(moocsGenderFilter(gender, "Female")));
-                points1(moocsGenderAddGray(moocsGenderFilter(gender, "Male")));
-                points2(moocsGenderAddGray(moocsGenderFilter(gender, "Not Available")));
-                points3(moocsGenderAddGray(moocsGenderFilter(gender, "Other")));
+            //     // Gender
+            //     var gender = departmentFilter($.extend(true, [], moocsGenderArrays.genderDepartments), $("select[id*='deparmentSelect']").val());
+            //     points(moocsGenderAddGray(moocsGenderFilter(gender, "Female")));
+            //     points1(moocsGenderAddGray(moocsGenderFilter(gender, "Male")));
+            //     points2(moocsGenderAddGray(moocsGenderFilter(gender, "Not Available")));
+            //     points3(moocsGenderAddGray(moocsGenderFilter(gender, "Other")));
             } else {
                 drawGaugeMoocsChart(dataGaugeMoocs);
                 createChart($.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB));
@@ -1550,7 +1551,7 @@ function moocsFilter() {
         break;
         default:
             //top registration chart
-            if ($("select[id*='divisionSelect']").val().length > 0) {
+            if ($("select[id*='divisionSelect']").val().length > 0 && $("select[id*='divisionSelect']").val() !== "IDB") {
                 var timelineDivisions = divisionFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDivisions), $("select[id*='divisionSelect']").val());
                 if (timelineDivisions.length > 0) createChart(timelineDivisions[0].data);
 
@@ -1572,27 +1573,29 @@ function moocsFilter() {
                 points1(moocsGenderAddGray(moocsGenderFilter(gender, "Male")));
                 points2(moocsGenderAddGray(moocsGenderFilter(gender, "Not Available")));
                 points3(moocsGenderAddGray(moocsGenderFilter(gender, "Other")));
-            } else if ($("select[id*='deparmentSelect']").val().length > 0) {
-                drawGaugeMoocsChart(dataGaugeMoocs2018);
                 
-                var timelineDivisions = orderTopMoocs(departmentFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDepartments), $("select[id*='deparmentSelect']").val()));
-                if (timelineDivisions.length > 0) createChart(timelineDivisions[0].data);
+            // Por ahora se deshabilita
+            // } else if ($("select[id*='deparmentSelect']").val().length > 0) {
+            //     drawGaugeMoocsChart(dataGaugeMoocs2018);
+                
+            //     var timelineDivisions = orderTopMoocs(departmentFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDepartments), $("select[id*='deparmentSelect']").val()));
+            //     if (timelineDivisions.length > 0) createChart(timelineDivisions[0].data);
 
-                drawMoocsRegistrationsChart(orderTopMoocs(departmentFilter(moocsTopArrays.departments2018, $("select[id*='deparmentSelect']").val())));
-                drawDistributionChart(orderTopMoocs(departmentFilter(moocsEducationArrays.educationLevelDepartments, $("select[id*='deparmentSelect']").val())));
+            //     drawMoocsRegistrationsChart(orderTopMoocs(departmentFilter(moocsTopArrays.departments2018, $("select[id*='deparmentSelect']").val())));
+            //     drawDistributionChart(orderTopMoocs(departmentFilter(moocsEducationArrays.educationLevelDepartments, $("select[id*='deparmentSelect']").val())));
 
-                var students = divisionFilter(moocsStudentsFlowArrays.studentsFlowDepartments, $("select[id*='deparmentSelect']").val());
-                drawStudentRegistrationsChart($.extend(true, [], students[0]));
-                drawStudentParticipantsChart($.extend(true, [], students[0]));
-                drawStudentCompletedsChart($.extend(true, [], students[0]));
-                drawStudentCertifiedsChart($.extend(true, [], students[0]));
+            //     var students = divisionFilter(moocsStudentsFlowArrays.studentsFlowDepartments, $("select[id*='deparmentSelect']").val());
+            //     drawStudentRegistrationsChart($.extend(true, [], students[0]));
+            //     drawStudentParticipantsChart($.extend(true, [], students[0]));
+            //     drawStudentCompletedsChart($.extend(true, [], students[0]));
+            //     drawStudentCertifiedsChart($.extend(true, [], students[0]));
 
-                // Gender
-                var gender = departmentFilter($.extend(true, [], moocsGenderArrays.genderDepartments), $("select[id*='deparmentSelect']").val());
-                points(moocsGenderAddGray(moocsGenderFilter(gender, "Female")));
-                points1(moocsGenderAddGray(moocsGenderFilter(gender, "Male")));
-                points2(moocsGenderAddGray(moocsGenderFilter(gender, "Not Available")));
-                points3(moocsGenderAddGray(moocsGenderFilter(gender, "Other")));
+            //     // Gender
+            //     var gender = departmentFilter($.extend(true, [], moocsGenderArrays.genderDepartments), $("select[id*='deparmentSelect']").val());
+            //     points(moocsGenderAddGray(moocsGenderFilter(gender, "Female")));
+            //     points1(moocsGenderAddGray(moocsGenderFilter(gender, "Male")));
+            //     points2(moocsGenderAddGray(moocsGenderFilter(gender, "Not Available")));
+            //     points3(moocsGenderAddGray(moocsGenderFilter(gender, "Other")));
             } else {
                 drawGaugeMoocsChart(dataGaugeMoocs2018);
                 
