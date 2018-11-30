@@ -70,7 +70,40 @@ function gaugeIDB() {
     updateGaugesCode();
     updateGaugesSubscribers();
 };
-
+function getJsonDepartments($department, valueFilter) {
+    jsondataPublications = bnPublicationsArrays.publicationsDepartments.filter(function (data) {
+        return data.department_codes == valueFilter
+    });
+    jsondataMoocs = moocsIndicatorsArray.indicatorsDepartments.filter(function (data) {
+        return data.department_codes == valueFilter
+    });
+    jsondataDatasets = datasetsIndicatorsArray.indicatorsDepartments.filter(function (data) {
+        return data.department_codes == valueFilter
+    });
+    jsondataCode = codeIndicatorsArrays.indicatorsDepartments.filter(function (data) {
+        return data.department_codes == valueFilter
+    });
+    jsondataSubscriber = subscribersArray.subscribersDepartments.filter(function (data) {
+        return data.deparment_code == valueFilter
+    });
+}
+function getJsonDvisions($divisions, valueFilter) {
+    jsondataPublications = bnPublicationsArrays.publicationsDivisions.filter(function (data) {
+        return data.division_codes == valueFilter
+    });
+    jsondataMoocs = moocsIndicatorsArray.indicatorsDivisions.filter(function (data) {
+        return data.division_codes == valueFilter
+    });
+    jsondataDatasets = datasetsIndicatorsArray.indicatorsDivisions.filter(function (data) {
+        return data.division_codes == valueFilter
+    });
+    jsondataCode = codeIndicatorsArrays.indicatorsDivisions.filter(function (data) {
+        return data.division_codes == valueFilter
+    });
+    jsondataSubscriber = subscribersArray.subscribersDivisions.filter(function (data) {
+        return data.Divisions == valueFilter
+    });
+}
 function initIndicators(filterselect, valueFilter) {
     // var jsondata = "";
     if (filterselect == "departments") {

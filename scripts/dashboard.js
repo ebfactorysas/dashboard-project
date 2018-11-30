@@ -113,5 +113,5 @@ $("#divisionSelect").on('change', function (data) {
 
 
 $( document ).ready(function() {
-//   init();
+    initPublications();
 });

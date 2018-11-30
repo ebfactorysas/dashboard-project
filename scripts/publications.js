@@ -1129,7 +1129,7 @@ function removePublicationsGauges() {
 //     }
 // }
 
-initPublications();
+// initPublications();
 
 function initPublications() {
     removePublicationsSvg();
