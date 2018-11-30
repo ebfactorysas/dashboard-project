@@ -351,7 +351,18 @@ function drawStudentRegistrationsChart(dataStudents) {
         $('#student1-title').html("0");
         return
     };
-    $('#student1-title').html(dataStudents.registrations.value < 1000 ? dataStudents.registrations.value : (Math.round(dataStudents.registrations.value / 1000).toFixed(0)) + "K");
+
+    if($("input[name*='moocsTrend']:checked").val() === "2018"){
+        var students2018 = dataStudents.registrations.years.filter(function (values) {
+            return values.name === "2018";
+        });
+        dataStudents.registrations.years = students2018;
+        dataStudents.registrations.value = students2018[0].value;
+    }
+
+    var formatNumber = setSettingsNumber(dataStudents.registrations.value);
+    
+    $('#student1-title').html(formatNumber.valueNumber + formatNumber.suffixNumber);
     var svgStudent1 = d3.select("#student1").append("svg")
         .attr("width", widthStudents + marginStudents.left + marginStudents.right)
         .attr("height", heightStudents + marginStudents.top + marginStudents.bottom)
@@ -412,7 +423,8 @@ function drawStudentRegistrationsChart(dataStudents) {
         .attr("font-family", "Gotham-Book")
         .attr("font-size", "10px")
         .text(function (d) {
-            return d.value < 1000 ? d.value : (Math.round(d.value / 1000).toFixed(0)) + "K";
+            var value = setSettingsNumber(d.value);
+            return value.valueNumber + value.suffixNumber;
         });
 }
 /**
@@ -431,7 +443,18 @@ function drawStudentParticipantsChart(dataStudents) {
         $('#student2-title').html("0");
         return
     };
-    $('#student2-title').html(dataStudents.participants.value < 1000 ? dataStudents.participants.value : (Math.round(dataStudents.participants.value / 1000).toFixed(0)) + "K");
+
+    if($("input[name*='moocsTrend']:checked").val() === "2018"){
+        var students2018 = dataStudents.participants.years.filter(function (values) {
+            return values.name === "2018";
+        });
+        dataStudents.participants.years = students2018;
+        dataStudents.participants.value = students2018[0].value;
+    }
+
+    var formatNumber = setSettingsNumber(dataStudents.participants.value);
+    $('#student2-title').html(formatNumber.valueNumber + formatNumber.suffixNumber);
+
     var svgStudent2 = d3.select("#student2").append("svg")
         .attr("width", widthStudents + marginStudents.left + marginStudents.right)
         .attr("height", heightStudents + marginStudents.top + marginStudents.bottom)
@@ -491,7 +514,8 @@ function drawStudentParticipantsChart(dataStudents) {
         .attr("font-family", "Gotham-Book")
         .attr("font-size", "10px")
         .text(function (d) {
-            return d.value < 1000 ? d.value : (Math.round(d.value / 1000).toFixed(0)) + "K";
+            var value = setSettingsNumber(d.value);
+            return value.valueNumber + value.suffixNumber;
         });
 }
 /**
@@ -510,7 +534,18 @@ function drawStudentCompletedsChart(dataStudents) {
         $('#student3-title').html("0");
         return
     };
-    $('#student3-title').html(dataStudents.completed.value < 1000 ? dataStudents.completed.value : (Math.round(dataStudents.completed.value / 1000).toFixed(0)) + "K");
+
+    if($("input[name*='moocsTrend']:checked").val() === "2018"){
+        var students2018 = dataStudents.completed.years.filter(function (values) {
+            return values.name === "2018";
+        });
+        dataStudents.completed.years = students2018;
+        dataStudents.completed.value = students2018[0].value;
+    }
+
+    var formatNumber = setSettingsNumber(dataStudents.completed.value);
+    $('#student3-title').html(formatNumber.valueNumber + formatNumber.suffixNumber);
+
     var svgStudent3 = d3.select("#student3").append("svg")
         .attr("width", widthStudents + marginStudents.left + marginStudents.right)
         .attr("height", heightStudents + marginStudents.top + marginStudents.bottom)
@@ -570,7 +605,8 @@ function drawStudentCompletedsChart(dataStudents) {
         .attr("font-family", "Gotham-Book")
         .attr("font-size", "10px")
         .text(function (d) {
-            return d.value < 1000 ? d.value : (Math.round(d.value / 1000).toFixed(0)) + "K";
+            var value = setSettingsNumber(d.value);
+            return value.valueNumber + value.suffixNumber;
         });
 }
 
@@ -590,7 +626,19 @@ function drawStudentCertifiedsChart(dataStudents) {
         $('#student4-title').html("0");
         return
     };
-    $('#student4-title').html(dataStudents.certified.value < 1000 ? dataStudents.certified.value : (Math.round(dataStudents.certified.value / 1000).toFixed(0)) + "K");
+
+
+    if($("input[name*='moocsTrend']:checked").val() === "2018"){
+        var students2018 = dataStudents.certified.years.filter(function (values) {
+            return values.name === "2018";
+        });
+        dataStudents.certified.years = students2018;
+        dataStudents.certified.value = students2018[0].value;
+    }
+
+    var formatNumber = setSettingsNumber(dataStudents.certified.value);
+    $('#student4-title').html(formatNumber.valueNumber + formatNumber.suffixNumber);
+
     var svgStudent4 = d3.select("#student4").append("svg")
         .attr("width", widthStudents + marginStudents.left + marginStudents.right)
         .attr("height", heightStudents + marginStudents.top + marginStudents.bottom)
@@ -651,7 +699,8 @@ function drawStudentCertifiedsChart(dataStudents) {
         .attr("font-family", "Gotham-Book")
         .attr("font-size", "10px")
         .text(function (d) {
-            return d.value < 1000 ? d.value : (Math.round(d.value / 1000).toFixed(0)) + "K";
+            var value = setSettingsNumber(d.value);
+            return value.valueNumber + value.suffixNumber;
         });
 }
 /**
@@ -1014,7 +1063,7 @@ function drawGaugeMoocsChart(dataGauge) {
 
 function moocsGenderFilter(moocsJson, gender) {
     return moocsJson.filter(function (entry) {
-        return entry.Gender === gender;
+        return entry.gender === gender;
     });
 }
 
@@ -1030,8 +1079,17 @@ function moocsGenderAddGray(moocsJson) {
         }];
 
     }
-    moocsJson[0].realpopulation = moocsJson[0].population;
-    moocsJson[0].population = (moocsJson[0].population * 100).toFixed(0);
+console.log("gernder");
+    if($("input[name*='moocsTrend']:checked").val() === "all"){
+        moocsJson[0].registrations = moocsJson[0].all_registrations;
+        moocsJson[0].realpopulation = moocsJson[0].all_population;
+        moocsJson[0].population = (moocsJson[0].all_population * 100).toFixed(0);
+    }else{
+        moocsJson[0].registrations = moocsJson[0]["2018_registrations"];
+        moocsJson[0].realpopulation = moocsJson[0]["2018_population"];
+        moocsJson[0].population = (moocsJson[0]["2018_population"] * 100).toFixed(0);
+    }
+  
     var gray = {
         "age": "gray",
         "population": 100 - moocsJson[0].population
@@ -1439,10 +1497,10 @@ function moocsFilter() {
                 drawDistributionChart(orderTopMoocs(divisionFilter(moocsEducationArrays.educationLevelDivisions, $("select[id*='divisionSelect']").val())));
 
                 var students = divisionFilter(moocsStudentsFlowArrays.studentsFlowDivisions, $("select[id*='divisionSelect']").val());
-                drawStudentRegistrationsChart(students[0]);
-                drawStudentParticipantsChart(students[0]);
-                drawStudentCompletedsChart(students[0]);
-                drawStudentCertifiedsChart(students[0]);
+                drawStudentRegistrationsChart($.extend(true, [], students[0]));
+                drawStudentParticipantsChart($.extend(true, [], students[0]));
+                drawStudentCompletedsChart($.extend(true, [], students[0]));
+                drawStudentCertifiedsChart($.extend(true, [], students[0]));
 
                 // Gender
                 var gender = divisionFilter($.extend(true, [], moocsGenderArrays.genderDivisions), $("select[id*='divisionSelect']").val());
@@ -1460,10 +1518,10 @@ function moocsFilter() {
                 drawDistributionChart(orderTopMoocs(departmentFilter(moocsEducationArrays.educationLevelDepartments, $("select[id*='deparmentSelect']").val())));
 
                 var students = divisionFilter(moocsStudentsFlowArrays.studentsFlowDepartments, $("select[id*='deparmentSelect']").val());
-                drawStudentRegistrationsChart(students[0]);
-                drawStudentParticipantsChart(students[0]);
-                drawStudentCompletedsChart(students[0]);
-                drawStudentCertifiedsChart(students[0]);
+                drawStudentRegistrationsChart($.extend(true, [], students[0]));
+                drawStudentParticipantsChart($.extend(true, [], students[0]));
+                drawStudentCompletedsChart($.extend(true, [], students[0]));
+                drawStudentCertifiedsChart($.extend(true, [], students[0]));
 
                 // Gender
                 var gender = departmentFilter($.extend(true, [], moocsGenderArrays.genderDepartments), $("select[id*='deparmentSelect']").val());
@@ -1478,28 +1536,16 @@ function moocsFilter() {
                 drawMoocsRegistrationsChart(topAllMoocs);
                 drawDistributionChart(moocsEducationArrays.educationLevelIDB);
                 // same data for all and 2018
-                drawStudentRegistrationsChart(moocsStudentsFlowArrays.studentsFlowIDB);
-                drawStudentParticipantsChart(moocsStudentsFlowArrays.studentsFlowIDB);
-                drawStudentCompletedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
-                drawStudentCertifiedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+                drawStudentRegistrationsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
+                drawStudentParticipantsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
+                drawStudentCompletedsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
+                drawStudentCertifiedsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
 
                 // Gender
                 points(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Female")));
                 points1(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Male")));
                 points2(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Not Available")));
                 points3(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Other")));
-            }
-        break;
-        case '2018':
-            removeMoocsSvg();
-            //top registration chart
-            if ($("select[id*='divisionSelect']").val().length > 0) {
-                drawGaugeMoocsChart(dataGaugeMoocs2018);
-            } else if ($("select[id*='deparmentSelect']").val().length > 0) {
-                drawGaugeMoocsChart(dataGaugeMoocs2018);
-            }
-            else {
-                drawGaugeMoocsChart(dataGaugeMoocs2018);
             }
         break;
         default:
@@ -1512,10 +1558,13 @@ function moocsFilter() {
                 drawDistributionChart(orderTopMoocs(divisionFilter(moocsEducationArrays.educationLevelDivisions, $("select[id*='divisionSelect']").val())));
 
                 var students = divisionFilter(moocsStudentsFlowArrays.studentsFlowDivisions, $("select[id*='divisionSelect']").val());
-                drawStudentRegistrationsChart(students[0]);
-                drawStudentParticipantsChart(students[0]);
-                drawStudentCompletedsChart(students[0]);
-                drawStudentCertifiedsChart(students[0]);
+                drawStudentRegistrationsChart($.extend(true, [], students[0]));
+                drawStudentParticipantsChart($.extend(true, [], students[0]));
+                drawStudentCompletedsChart($.extend(true, [], students[0]));
+                drawStudentCertifiedsChart($.extend(true, [], students[0]));
+
+
+                drawGaugeMoocsChart(dataGaugeMoocs2018);
 
                 // Gender
                 var gender = divisionFilter($.extend(true, [], moocsGenderArrays.genderDivisions), $("select[id*='divisionSelect']").val());
@@ -1524,6 +1573,8 @@ function moocsFilter() {
                 points2(moocsGenderAddGray(moocsGenderFilter(gender, "Not Available")));
                 points3(moocsGenderAddGray(moocsGenderFilter(gender, "Other")));
             } else if ($("select[id*='deparmentSelect']").val().length > 0) {
+                drawGaugeMoocsChart(dataGaugeMoocs2018);
+                
                 var timelineDivisions = orderTopMoocs(departmentFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDepartments), $("select[id*='deparmentSelect']").val()));
                 if (timelineDivisions.length > 0) createChart(timelineDivisions[0].data);
 
@@ -1531,10 +1582,10 @@ function moocsFilter() {
                 drawDistributionChart(orderTopMoocs(departmentFilter(moocsEducationArrays.educationLevelDepartments, $("select[id*='deparmentSelect']").val())));
 
                 var students = divisionFilter(moocsStudentsFlowArrays.studentsFlowDepartments, $("select[id*='deparmentSelect']").val());
-                drawStudentRegistrationsChart(students[0]);
-                drawStudentParticipantsChart(students[0]);
-                drawStudentCompletedsChart(students[0]);
-                drawStudentCertifiedsChart(students[0]);
+                drawStudentRegistrationsChart($.extend(true, [], students[0]));
+                drawStudentParticipantsChart($.extend(true, [], students[0]));
+                drawStudentCompletedsChart($.extend(true, [], students[0]));
+                drawStudentCertifiedsChart($.extend(true, [], students[0]));
 
                 // Gender
                 var gender = departmentFilter($.extend(true, [], moocsGenderArrays.genderDepartments), $("select[id*='deparmentSelect']").val());
@@ -1543,15 +1594,17 @@ function moocsFilter() {
                 points2(moocsGenderAddGray(moocsGenderFilter(gender, "Not Available")));
                 points3(moocsGenderAddGray(moocsGenderFilter(gender, "Other")));
             } else {
+                drawGaugeMoocsChart(dataGaugeMoocs2018);
+                
                 createChart($.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB));
 
                 drawMoocsRegistrationsChart(top2018Moocs);
                 drawDistributionChart(moocsEducationArrays.educationLevelIDB);
                 // same data for all and 2018
-                drawStudentRegistrationsChart(moocsStudentsFlowArrays.studentsFlowIDB);
-                drawStudentParticipantsChart(moocsStudentsFlowArrays.studentsFlowIDB);
-                drawStudentCompletedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
-                drawStudentCertifiedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+                drawStudentRegistrationsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
+                drawStudentParticipantsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
+                drawStudentCompletedsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
+                drawStudentCertifiedsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
 
                 // Gender
                 points(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Female")));
@@ -1565,11 +1618,10 @@ function moocsFilter() {
 
 
 }
-// // Divisions select filter
-// $("select[id*='divisionSelect']").change(function () {
-//     $("select[id*='deparmentSelect']").val("");
-//     moocsFilter();
-// });
+// Divisions select filter
+$("select[id*='divisionSelect']").change(function () {
+    moocsFilter();
+});
 
 // // Deparment select filter
 // $("select[id*='deparmentSelect']").change(function () {

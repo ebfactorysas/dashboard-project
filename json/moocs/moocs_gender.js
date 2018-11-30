@@ -6,7 +6,7 @@ var moocsGenderArrays = {
             "2018_registrations": 2599,
             "2018_population": "0.288297282307266",
             "all_population": "0.288297282307266",
-            "Gender": "Female",
+            "gender": "Female",
             "xlsx_row_id": 2,
             "age": "red"        
         },
@@ -17,7 +17,7 @@ var moocsGenderArrays = {
             "2018_registrations": 3114,
             "2018_population": "0.345424292845258",
             "all_population": "0.345424292845258",
-            "Gender": "Male",
+            "gender": "Male",
             "xlsx_row_id": 3,
             "age": "red"        
         },
@@ -28,7 +28,7 @@ var moocsGenderArrays = {
             "2018_registrations": 3292,
             "2018_population": "0.365169162506933",
             "all_population": "0.365169162506933",
-            "Gender": "Not Available",
+            "gender": "Not Available",
             "xlsx_row_id": 4,
             "age": "red"        
         },
@@ -39,7 +39,7 @@ var moocsGenderArrays = {
             "2018_registrations": 10,
             "2018_population": "0.00110926234054354",
             "all_population": "0.00110926234054354",
-            "Gender": "Other",
+            "gender": "Other",
             "xlsx_row_id": 5,
             "age": "red"        
         },
@@ -50,7 +50,7 @@ var moocsGenderArrays = {
             "2018_registrations": 2735,
             "2018_population": "0.285044293903075",
             "all_population": "0.285044293903075",
-            "Gender": "Female",
+            "gender": "Female",
             "xlsx_row_id": 6,
             "age": "red"        
         },
@@ -61,7 +61,7 @@ var moocsGenderArrays = {
             "2018_registrations": 4112,
             "2018_population": "0.428556539864513",
             "all_population": "0.428556539864513",
-            "Gender": "Male",
+            "gender": "Male",
             "xlsx_row_id": 7,
             "age": "red"        
         },
@@ -72,7 +72,7 @@ var moocsGenderArrays = {
             "2018_registrations": 2736,
             "2018_population": "0.285148514851485",
             "all_population": "0.285148514851485",
-            "Gender": "Not Available",
+            "gender": "Not Available",
             "xlsx_row_id": 8,
             "age": "red"        
         },
@@ -83,7 +83,7 @@ var moocsGenderArrays = {
             "2018_registrations": 12,
             "2018_population": "0.00125065138092757",
             "all_population": "0.00125065138092757",
-            "Gender": "Other",
+            "gender": "Other",
             "xlsx_row_id": 9,
             "age": "red"        
         },
@@ -94,7 +94,7 @@ var moocsGenderArrays = {
             "2018_registrations": 9318,
             "2018_population": "0.288286615927232",
             "all_population": "0.288286615927232",
-            "Gender": "Female",
+            "gender": "Female",
             "xlsx_row_id": 10,
             "age": "red"
         },
@@ -105,7 +105,7 @@ var moocsGenderArrays = {
             "2018_registrations": 14067,
             "2018_population": "0.435214405049193",
             "all_population": "0.435214405049193",
-            "Gender": "Male",
+            "gender": "Male",
             "xlsx_row_id": 11,
             "age": "red"
         },
@@ -116,7 +116,7 @@ var moocsGenderArrays = {
             "2018_registrations": 8883,
             "2018_population": "0.274828290328569",
             "all_population": "0.274828290328569",
-            "Gender": "Not Available",
+            "gender": "Not Available",
             "xlsx_row_id": 12,
             "age": "red"
         },
@@ -127,7 +127,7 @@ var moocsGenderArrays = {
             "2018_registrations": 54,
             "2018_population": "0.0016706886950065",
             "all_population": "0.0016706886950065",
-            "Gender": "Other",
+            "gender": "Other",
             "xlsx_row_id": 13,
             "age": "red"
         },
@@ -138,7 +138,7 @@ var moocsGenderArrays = {
             "2018_registrations": 2904,
             "2018_population": "0.286843145001976",
             "all_population": "0.286843145001976",
-            "Gender": "Female",
+            "gender": "Female",
             "xlsx_row_id": 14,
             "age": "red"
         },
@@ -149,7 +149,7 @@ var moocsGenderArrays = {
             "2018_registrations": 4132,
             "2018_population": "0.408139075464243",
             "all_population": "0.408139075464243",
-            "Gender": "Male",
+            "gender": "Male",
             "xlsx_row_id": 15,
             "age": "red"
         },
@@ -160,7 +160,7 @@ var moocsGenderArrays = {
             "2018_registrations": 3079,
             "2018_population": "0.304128802844725",
             "all_population": "0.304128802844725",
-            "Gender": "Not Available",
+            "gender": "Not Available",
             "xlsx_row_id": 16,
             "age": "red"
         },
@@ -171,7 +171,7 @@ var moocsGenderArrays = {
             "2018_registrations": 9,
             "2018_population": "0.000888976689055709",
             "all_population": "0.000888976689055709",
-            "Gender": "Other",
+            "gender": "Other",
             "xlsx_row_id": 17,
             "age": "red"
         },
@@ -182,7 +182,7 @@ var moocsGenderArrays = {
             "2018_registrations": 28922,
             "2018_population": "0.298805686420365",
             "all_population": "0.298805686420365",
-            "Gender": "Female",
+            "gender": "Female",
             "xlsx_row_id": 18,
             "age": "red"
         },
@@ -193,7 +193,7 @@ var moocsGenderArrays = {
             "2018_registrations": 38407,
             "2018_population": "0.396799322258038",
             "all_population": "0.396799322258038",
-            "Gender": "Male",
+            "gender": "Male",
             "xlsx_row_id": 19,
             "age": "red"
         },
@@ -204,7 +204,7 @@ var moocsGenderArrays = {
             "2018_registrations": 29296,
             "2018_population": "0.302669642119183",
             "all_population": "0.302669642119183",
-            "Gender": "Not Available",
+            "gender": "Not Available",
             "xlsx_row_id": 20,
             "age": "red"
         },
@@ -215,7 +215,7 @@ var moocsGenderArrays = {
             "2018_registrations": 167,
             "2018_population": "0.00172534920241342",
             "all_population": "0.00172534920241342",
-            "Gender": "Other",
+            "gender": "Other",
             "xlsx_row_id": 21,
             "age": "red"
         },
@@ -226,7 +226,7 @@ var moocsGenderArrays = {
             "2018_registrations": 21269,
             "2018_population": "0.417063748847971",
             "all_population": "0.417063748847971",
-            "Gender": "Female",
+            "gender": "Female",
             "xlsx_row_id": 22,
             "age": "red"
         },
@@ -237,7 +237,7 @@ var moocsGenderArrays = {
             "2018_registrations": 11603,
             "2018_population": "0.227523187638489",
             "all_population": "0.227523187638489",
-            "Gender": "Male",
+            "gender": "Male",
             "xlsx_row_id": 23,
             "age": "red"
         },
@@ -248,7 +248,7 @@ var moocsGenderArrays = {
             "2018_registrations": 18018,
             "2018_population": "0.353314900876522",
             "all_population": "0.353314900876522",
-            "Gender": "Not Available",
+            "gender": "Not Available",
             "xlsx_row_id": 24,
             "age": "red"
         },
@@ -259,7 +259,7 @@ var moocsGenderArrays = {
             "2018_registrations": 107,
             "2018_population": "0.00209816263701786",
             "all_population": "0.00209816263701786",
-            "Gender": "Other",
+            "gender": "Other",
             "xlsx_row_id": 25,
             "age": "red"
         }
@@ -270,7 +270,7 @@ var moocsGenderArrays = {
             "2018 registrations": 2599,
             "2018_population": "0.288297282307266",
             "all_population": "0.288297282307266",
-            "Gender": "Female",
+            "gender": "Female",
             "code": "CBD",
             "age": "red",
             "xlsx_row_id": 2
@@ -281,7 +281,7 @@ var moocsGenderArrays = {
             "2018 registrations": 3114,
             "2018_population": "0.345424292845258",
             "all_population": "0.345424292845258",
-            "Gender": "Male",
+            "gender": "Male",
             "code": "CBD",
             "age": "red",
             "xlsx_row_id": 3
@@ -292,7 +292,7 @@ var moocsGenderArrays = {
             "2018 registrations": 3292,
             "2018_population": "0.365169162506933",
             "all_population": "0.365169162506933",
-            "Gender": "Not Available",
+            "gender": "Not Available",
             "code": "CBD",
             "age": "red",
             "xlsx_row_id": 4
@@ -303,7 +303,7 @@ var moocsGenderArrays = {
             "2018 registrations": 10,
             "2018_population": "0.00110926234054354",
             "all_population": "0.00110926234054354",
-            "Gender": "Other",
+            "gender": "Other",
             "code": "CBD",
             "age": "red",
             "xlsx_row_id": 5
@@ -314,7 +314,7 @@ var moocsGenderArrays = {
             "2018 registrations": 8240,
             "2018_population": "0.378207187772525",
             "all_population": "0.378207187772525",
-            "Gender": "Female",
+            "gender": "Female",
             "code": "EDU",
             "age": "red",
             "xlsx_row_id": 6
@@ -325,7 +325,7 @@ var moocsGenderArrays = {
             "2018 registrations": 6294,
             "2018_population": "0.288887868912654",
             "all_population": "0.288887868912654",
-            "Gender": "Male",
+            "gender": "Male",
             "code": "EDU",
             "age": "red",
             "xlsx_row_id": 7
@@ -336,7 +336,7 @@ var moocsGenderArrays = {
             "2018 registrations": 7198,
             "2018_population": "0.3303805021343",
             "all_population": "0.3303805021343",
-            "Gender": "Not Available",
+            "gender": "Not Available",
             "code": "EDU",
             "age": "red",
             "xlsx_row_id": 8
@@ -347,7 +347,7 @@ var moocsGenderArrays = {
             "2018 registrations": 55,
             "2018_population": "0.00252444118052049",
             "all_population": "0.00252444118052049",
-            "Gender": "Other",
+            "gender": "Other",
             "code": "EDU",
             "age": "red",
             "xlsx_row_id": 9
@@ -358,7 +358,7 @@ var moocsGenderArrays = {
             "2018 registrations": 5393,
             "2018_population": "0.324371466377962",
             "all_population": "0.324371466377962",
-            "Gender": "Female",
+            "gender": "Female",
             "code": "FHL",
             "age": "red",
             "xlsx_row_id": 10
@@ -369,7 +369,7 @@ var moocsGenderArrays = {
             "2018 registrations": 7181,
             "2018_population": "0.431913869842416",
             "all_population": "0.431913869842416",
-            "Gender": "Male",
+            "gender": "Male",
             "code": "FHL",
             "age": "red",
             "xlsx_row_id": 11
@@ -380,7 +380,7 @@ var moocsGenderArrays = {
             "2018 registrations": 4025,
             "2018_population": "0.242090701311199",
             "all_population": "0.242090701311199",
-            "Gender": "Not Available",
+            "gender": "Not Available",
             "code": "FHL",
             "age": "red",
             "xlsx_row_id": 12
@@ -391,7 +391,7 @@ var moocsGenderArrays = {
             "2018 registrations": 27,
             "2018_population": "0.00162396246842295",
             "all_population": "0.00162396246842295",
-            "Gender": "Other",
+            "gender": "Other",
             "code": "FHL",
             "age": "red",
             "xlsx_row_id": 13
@@ -402,7 +402,7 @@ var moocsGenderArrays = {
             "2018 registrations": 3787,
             "2018_population": "0.29345215032933",
             "all_population": "0.29345215032933",
-            "Gender": "Female",
+            "gender": "Female",
             "code": "FMM",
             "age": "red",
             "xlsx_row_id": 14
@@ -413,7 +413,7 @@ var moocsGenderArrays = {
             "2018 registrations": 5427,
             "2018_population": "0.420534676481984",
             "all_population": "0.420534676481984",
-            "Gender": "Male",
+            "gender": "Male",
             "code": "FMM",
             "age": "red",
             "xlsx_row_id": 15
@@ -424,7 +424,7 @@ var moocsGenderArrays = {
             "2018 registrations": 3667,
             "2018_population": "0.284153428903526",
             "all_population": "0.284153428903526",
-            "Gender": "Not Available",
+            "gender": "Not Available",
             "code": "FMM",
             "age": "red",
             "xlsx_row_id": 16
@@ -435,7 +435,7 @@ var moocsGenderArrays = {
             "2018 registrations": 24,
             "2018_population": "0.00185974428516079",
             "all_population": "0.00185974428516079",
-            "Gender": "Other",
+            "gender": "Other",
             "code": "FMM",
             "age": "red",
             "xlsx_row_id": 17
@@ -446,7 +446,7 @@ var moocsGenderArrays = {
             "2018 registrations": 2644,
             "2018_population": "0.319362241816645",
             "all_population": "0.319362241816645",
-            "Gender": "Female",
+            "gender": "Female",
             "code": "ICS",
             "age": "red",
             "xlsx_row_id": 18
@@ -457,7 +457,7 @@ var moocsGenderArrays = {
             "2018 registrations": 3650,
             "2018_population": "0.440874501751419",
             "all_population": "0.440874501751419",
-            "Gender": "Male",
+            "gender": "Male",
             "code": "ICS",
             "age": "red",
             "xlsx_row_id": 19
@@ -468,7 +468,7 @@ var moocsGenderArrays = {
             "2018 registrations": 1970,
             "2018_population": "0.23795144341104",
             "all_population": "0.23795144341104",
-            "Gender": "Not Available",
+            "gender": "Not Available",
             "code": "ICS",
             "age": "red",
             "xlsx_row_id": 20
@@ -479,7 +479,7 @@ var moocsGenderArrays = {
             "2018 registrations": 15,
             "2018_population": "0.00181181302089624",
             "all_population": "0.00181181302089624",
-            "Gender": "Other",
+            "gender": "Other",
             "code": "ICS",
             "age": "red",
             "xlsx_row_id": 21
@@ -490,7 +490,7 @@ var moocsGenderArrays = {
             "2018 registrations": 2887,
             "2018_population": "0.259202729394864",
             "all_population": "0.259202729394864",
-            "Gender": "Female",
+            "gender": "Female",
             "code": "IFD",
             "age": "red",
             "xlsx_row_id": 22
@@ -501,7 +501,7 @@ var moocsGenderArrays = {
             "2018 registrations": 4990,
             "2018_population": "0.448015801759741",
             "all_population": "0.448015801759741",
-            "Gender": "Male",
+            "gender": "Male",
             "code": "IFD",
             "age": "red",
             "xlsx_row_id": 23
@@ -512,7 +512,7 @@ var moocsGenderArrays = {
             "2018 registrations": 3246,
             "2018_population": "0.291434727958341",
             "all_population": "0.291434727958341",
-            "Gender": "Not Available",
+            "gender": "Not Available",
             "code": "IFD",
             "age": "red",
             "xlsx_row_id": 24
@@ -523,7 +523,7 @@ var moocsGenderArrays = {
             "2018 registrations": 15,
             "2018_population": "0.00134674088705333",
             "all_population": "0.00134674088705333",
-            "Gender": "Other",
+            "gender": "Other",
             "code": "IFD",
             "age": "red",
             "xlsx_row_id": 25
@@ -534,7 +534,7 @@ var moocsGenderArrays = {
             "2018 registrations": 2170,
             "2018_population": "0.406214900786222",
             "all_population": "0.406214900786222",
-            "Gender": "Female",
+            "gender": "Female",
             "code": "KNM",
             "age": "red",
             "xlsx_row_id": 26
@@ -545,7 +545,7 @@ var moocsGenderArrays = {
             "2018 registrations": 1718,
             "2018_population": "0.321602396106327",
             "all_population": "0.321602396106327",
-            "Gender": "Male",
+            "gender": "Male",
             "code": "KNM",
             "age": "red",
             "xlsx_row_id": 27
@@ -556,7 +556,7 @@ var moocsGenderArrays = {
             "2018 registrations": 1442,
             "2018_population": "0.269936353425683",
             "all_population": "0.269936353425683",
-            "Gender": "Not Available",
+            "gender": "Not Available",
             "code": "KNM",
             "age": "red",
             "xlsx_row_id": 28
@@ -567,7 +567,7 @@ var moocsGenderArrays = {
             "2018 registrations": 12,
             "2018_population": "0.00224634968176713",
             "all_population": "0.00224634968176713",
-            "Gender": "Other",
+            "gender": "Other",
             "code": "KNM",
             "age": "red",
             "xlsx_row_id": 29
@@ -578,7 +578,7 @@ var moocsGenderArrays = {
             "2018 registrations": 2170,
             "2018_population": "0.406214900786222",
             "all_population": "0.406214900786222",
-            "Gender": "Female",
+            "gender": "Female",
             "code": "LMK",
             "age": "red",
             "xlsx_row_id": 30
@@ -589,7 +589,7 @@ var moocsGenderArrays = {
             "2018 registrations": 1718,
             "2018_population": "0.321602396106327",
             "all_population": "0.321602396106327",
-            "Gender": "Male",
+            "gender": "Male",
             "code": "LMK",
             "age": "red",
             "xlsx_row_id": 31
@@ -600,7 +600,7 @@ var moocsGenderArrays = {
             "2018 registrations": 1442,
             "2018_population": "0.269936353425683",
             "all_population": "0.269936353425683",
-            "Gender": "Not Available",
+            "gender": "Not Available",
             "code": "LMK",
             "age": "red",
             "xlsx_row_id": 32
@@ -611,7 +611,7 @@ var moocsGenderArrays = {
             "2018 registrations": 12,
             "2018_population": "0.00224634968176713",
             "all_population": "0.00224634968176713",
-            "Gender": "Other",
+            "gender": "Other",
             "code": "LMK",
             "age": "red",
             "xlsx_row_id": 33
@@ -622,7 +622,7 @@ var moocsGenderArrays = {
             "2018 registrations": 2735,
             "2018_population": "0.285044293903075",
             "all_population": "0.285044293903075",
-            "Gender": "Female",
+            "gender": "Female",
             "code": "RND",
             "age": "red",
             "xlsx_row_id": 34
@@ -633,7 +633,7 @@ var moocsGenderArrays = {
             "2018 registrations": 4112,
             "2018_population": "0.428556539864513",
             "all_population": "0.428556539864513",
-            "Gender": "Male",
+            "gender": "Male",
             "code": "RND",
             "age": "red",
             "xlsx_row_id": 35
@@ -644,7 +644,7 @@ var moocsGenderArrays = {
             "2018 registrations": 2736,
             "2018_population": "0.285148514851485",
             "all_population": "0.285148514851485",
-            "Gender": "Not Available",
+            "gender": "Not Available",
             "code": "RND",
             "age": "red",
             "xlsx_row_id": 36
@@ -655,7 +655,7 @@ var moocsGenderArrays = {
             "2018 registrations": 12,
             "2018_population": "0.00125065138092757",
             "all_population": "0.00125065138092757",
-            "Gender": "Other",
+            "gender": "Other",
             "code": "RND",
             "age": "red",
             "xlsx_row_id": 37
@@ -666,7 +666,7 @@ var moocsGenderArrays = {
             "2018 registrations": 21359,
             "2018_population": "0.285456538009195",
             "all_population": "0.285456538009195",
-            "Gender": "Female",
+            "gender": "Female",
             "code": "SDI",
             "age": "red",
             "xlsx_row_id": 38
@@ -677,7 +677,7 @@ var moocsGenderArrays = {
             "2018 registrations": 29508,
             "2018_population": "0.394365444242489",
             "all_population": "0.394365444242489",
-            "Gender": "Male",
+            "gender": "Male",
             "code": "SDI",
             "age": "red",
             "xlsx_row_id": 39
@@ -688,7 +688,7 @@ var moocsGenderArrays = {
             "2018 registrations": 23829,
             "2018_population": "0.318467336683417",
             "all_population": "0.318467336683417",
-            "Gender": "Not Available",
+            "gender": "Not Available",
             "code": "SDI",
             "age": "red",
             "xlsx_row_id": 40
@@ -699,7 +699,7 @@ var moocsGenderArrays = {
             "2018 registrations": 128,
             "2018_population": "0.00171068106489896",
             "all_population": "0.00171068106489896",
-            "Gender": "Other",
+            "gender": "Other",
             "code": "SDI",
             "age": "red",
             "xlsx_row_id": 41
@@ -710,7 +710,7 @@ var moocsGenderArrays = {
             "2018 registrations": 10859,
             "2018_population": "0.454960616725323",
             "all_population": "0.454960616725323",
-            "Gender": "Female",
+            "gender": "Female",
             "code": "SPH",
             "age": "red",
             "xlsx_row_id": 42
@@ -721,7 +721,7 @@ var moocsGenderArrays = {
             "2018 registrations": 3591,
             "2018_population": "0.150452488687783",
             "all_population": "0.150452488687783",
-            "Gender": "Male",
+            "gender": "Male",
             "code": "SPH",
             "age": "red",
             "xlsx_row_id": 43
@@ -732,7 +732,7 @@ var moocsGenderArrays = {
             "2018 registrations": 9378,
             "2018_population": "0.392911010558069",
             "all_population": "0.392911010558069",
-            "Gender": "Not Available",
+            "gender": "Not Available",
             "code": "SPH",
             "age": "red",
             "xlsx_row_id": 44
@@ -743,7 +743,7 @@ var moocsGenderArrays = {
             "2018 registrations": 40,
             "2018_population": "0.00167588402882521",
             "all_population": "0.00167588402882521",
-            "Gender": "Other",
+            "gender": "Other",
             "code": "SPH",
             "age": "red",
             "xlsx_row_id": 45
@@ -754,7 +754,7 @@ var moocsGenderArrays = {
             "2018 registrations": 1253,
             "2018_population": "0.243679502139245",
             "all_population": "0.243679502139245",
-            "Gender": "Female",
+            "gender": "Female",
             "code": "TSP",
             "age": "red",
             "xlsx_row_id": 46
@@ -765,7 +765,7 @@ var moocsGenderArrays = {
             "2018 registrations": 2294,
             "2018_population": "0.446129910540646",
             "all_population": "0.446129910540646",
-            "Gender": "Male",
+            "gender": "Male",
             "code": "TSP",
             "age": "red",
             "xlsx_row_id": 47
@@ -776,7 +776,7 @@ var moocsGenderArrays = {
             "2018 registrations": 1592,
             "2018_population": "0.309607156748347",
             "all_population": "0.309607156748347",
-            "Gender": "Not Available",
+            "gender": "Not Available",
             "code": "TSP",
             "age": "red",
             "xlsx_row_id": 48
@@ -787,7 +787,7 @@ var moocsGenderArrays = {
             "2018 registrations": 3,
             "2018_population": "0.00058343057176196",
             "all_population": "0.00058343057176196",
-            "Gender": "Other",
+            "gender": "Other",
             "code": "TSP",
             "age": "red",
             "xlsx_row_id": 49
@@ -798,7 +798,7 @@ var moocsGenderArrays = {
             "2018 registrations": 1651,
             "2018_population": "0.331393014853473",
             "all_population": "0.331393014853473",
-            "Gender": "Female",
+            "gender": "Female",
             "code": "WSA",
             "age": "red",
             "xlsx_row_id": 50
@@ -809,7 +809,7 @@ var moocsGenderArrays = {
             "2018 registrations": 1838,
             "2018_population": "0.368928141308711",
             "all_population": "0.368928141308711",
-            "Gender": "Male",
+            "gender": "Male",
             "code": "WSA",
             "age": "red",
             "xlsx_row_id": 51
@@ -820,7 +820,7 @@ var moocsGenderArrays = {
             "2018 registrations": 1487,
             "2018_population": "0.298474508229627",
             "all_population": "0.298474508229627",
-            "Gender": "Not Available",
+            "gender": "Not Available",
             "code": "WSA",
             "age": "red",
             "xlsx_row_id": 52
@@ -831,7 +831,7 @@ var moocsGenderArrays = {
             "2018 registrations": 6,
             "2018_population": "0.00120433560818948",
             "all_population": "0.00120433560818948",
-            "Gender": "Other",
+            "gender": "Other",
             "code": "WSA",
             "age": "red",
             "xlsx_row_id": 53

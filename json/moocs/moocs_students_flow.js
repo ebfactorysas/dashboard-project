@@ -361,7 +361,8 @@ var moocsStudentsFlowArrays = {
             code: "SCL"
         },
     ],
-    studentsFlowDivisions: [{
+    studentsFlowDivisions: [
+        {
             registrations: {
                 years: [{
                     name: "2017",
