@@ -1,4 +1,3 @@
-
 /*
  * Caro
  */
@@ -21,7 +20,7 @@ $("#deparmentSelect").on('change', function () {
         return dataP.department_codes == this.value
     });
     drawTrendPublicationChart(jsonPublicationsBarras);
-    jsonPublicTree = publicationsDownloadSourceArrays.downloadSourceDepartments.filter(dataT => {
+    jsonPublicTree = publicationsDownloadSourceArrays.downloadSourceDepartments.filter(function (dataT) {
         return dataT.department_codes == this.value
     });
     drawTreePublication(jsonPublicTree, "AllTheTime");
@@ -60,9 +59,9 @@ $("#divisionSelect").on('change', function (data) {
     var sltValue = this.value;
     $('#idbLink').text(sltValue);
     initIndicators('divisions', sltValue);
-    $("select[id*='deparmentSelect']").val("");
+    // $("select[id*='deparmentSelect']").val("");
     removePublicationsSvg();
-    
+    $('#idbLink').text(sltValue);
     jsonPublicationsBarras = publicationsTopArrays.topDivisionsAllTime.filter(function (dataP) {
         return dataP.division_codes == sltValue
     });
@@ -78,7 +77,7 @@ $("#divisionSelect").on('change', function (data) {
     } else {
         $('.label-filter-select').text(this.value);
         $("#deparmentSelect").value = "";
-        
+
         // mainReset();
         $('#blueAllTime').click();
         removePublicationsGauges();
@@ -111,7 +110,7 @@ $("#divisionSelect").on('change', function (data) {
  */
 
 
-$(window).on('load', function(){
+$(window).on('load', function () {
     initPublications();
     $('.label-filter-restidb').hide();
- });
+});
