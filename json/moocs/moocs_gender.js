@@ -267,7 +267,7 @@ var moocsGenderArrays = {
     genderDivisions: [{
             "json_featuretype": "NewFeatureType",
             "all_registrations": "2599",
-            "2018 registrations": 2599,
+            "2018_registrations": 2599,
             "2018_population": "0.288297282307266",
             "all_population": "0.288297282307266",
             "gender": "Female",
@@ -278,7 +278,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "3114",
-            "2018 registrations": 3114,
+            "2018_registrations": 3114,
             "2018_population": "0.345424292845258",
             "all_population": "0.345424292845258",
             "gender": "Male",
@@ -289,7 +289,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "3292",
-            "2018 registrations": 3292,
+            "2018_registrations": 3292,
             "2018_population": "0.365169162506933",
             "all_population": "0.365169162506933",
             "gender": "Not Available",
@@ -300,7 +300,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "10",
-            "2018 registrations": 10,
+            "2018_registrations": 10,
             "2018_population": "0.00110926234054354",
             "all_population": "0.00110926234054354",
             "gender": "Other",
@@ -311,7 +311,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "8240",
-            "2018 registrations": 8240,
+            "2018_registrations": 8240,
             "2018_population": "0.378207187772525",
             "all_population": "0.378207187772525",
             "gender": "Female",
@@ -322,7 +322,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "6294",
-            "2018 registrations": 6294,
+            "2018_registrations": 6294,
             "2018_population": "0.288887868912654",
             "all_population": "0.288887868912654",
             "gender": "Male",
@@ -333,7 +333,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "7198",
-            "2018 registrations": 7198,
+            "2018_registrations": 7198,
             "2018_population": "0.3303805021343",
             "all_population": "0.3303805021343",
             "gender": "Not Available",
@@ -344,7 +344,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "55",
-            "2018 registrations": 55,
+            "2018_registrations": 55,
             "2018_population": "0.00252444118052049",
             "all_population": "0.00252444118052049",
             "gender": "Other",
@@ -355,7 +355,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "5393",
-            "2018 registrations": 5393,
+            "2018_registrations": 5393,
             "2018_population": "0.324371466377962",
             "all_population": "0.324371466377962",
             "gender": "Female",
@@ -366,7 +366,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "7181",
-            "2018 registrations": 7181,
+            "2018_registrations": 7181,
             "2018_population": "0.431913869842416",
             "all_population": "0.431913869842416",
             "gender": "Male",
@@ -377,7 +377,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "4025",
-            "2018 registrations": 4025,
+            "2018_registrations": 4025,
             "2018_population": "0.242090701311199",
             "all_population": "0.242090701311199",
             "gender": "Not Available",
@@ -388,7 +388,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "27",
-            "2018 registrations": 27,
+            "2018_registrations": 27,
             "2018_population": "0.00162396246842295",
             "all_population": "0.00162396246842295",
             "gender": "Other",
@@ -399,7 +399,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "3787",
-            "2018 registrations": 3787,
+            "2018_registrations": 3787,
             "2018_population": "0.29345215032933",
             "all_population": "0.29345215032933",
             "gender": "Female",
@@ -410,7 +410,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "5427",
-            "2018 registrations": 5427,
+            "2018_registrations": 5427,
             "2018_population": "0.420534676481984",
             "all_population": "0.420534676481984",
             "gender": "Male",
@@ -421,7 +421,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "3667",
-            "2018 registrations": 3667,
+            "2018_registrations": 3667,
             "2018_population": "0.284153428903526",
             "all_population": "0.284153428903526",
             "gender": "Not Available",
@@ -432,7 +432,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "24",
-            "2018 registrations": 24,
+            "2018_registrations": 24,
             "2018_population": "0.00185974428516079",
             "all_population": "0.00185974428516079",
             "gender": "Other",
@@ -443,7 +443,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "2644",
-            "2018 registrations": 2644,
+            "2018_registrations": 2644,
             "2018_population": "0.319362241816645",
             "all_population": "0.319362241816645",
             "gender": "Female",
@@ -454,7 +454,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "3650",
-            "2018 registrations": 3650,
+            "2018_registrations": 3650,
             "2018_population": "0.440874501751419",
             "all_population": "0.440874501751419",
             "gender": "Male",
@@ -465,7 +465,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "1970",
-            "2018 registrations": 1970,
+            "2018_registrations": 1970,
             "2018_population": "0.23795144341104",
             "all_population": "0.23795144341104",
             "gender": "Not Available",
@@ -476,7 +476,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "15",
-            "2018 registrations": 15,
+            "2018_registrations": 15,
             "2018_population": "0.00181181302089624",
             "all_population": "0.00181181302089624",
             "gender": "Other",
@@ -487,7 +487,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "2887",
-            "2018 registrations": 2887,
+            "2018_registrations": 2887,
             "2018_population": "0.259202729394864",
             "all_population": "0.259202729394864",
             "gender": "Female",
@@ -498,7 +498,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "4990",
-            "2018 registrations": 4990,
+            "2018_registrations": 4990,
             "2018_population": "0.448015801759741",
             "all_population": "0.448015801759741",
             "gender": "Male",
@@ -509,7 +509,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "3246",
-            "2018 registrations": 3246,
+            "2018_registrations": 3246,
             "2018_population": "0.291434727958341",
             "all_population": "0.291434727958341",
             "gender": "Not Available",
@@ -520,7 +520,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "15",
-            "2018 registrations": 15,
+            "2018_registrations": 15,
             "2018_population": "0.00134674088705333",
             "all_population": "0.00134674088705333",
             "gender": "Other",
@@ -531,7 +531,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "2170",
-            "2018 registrations": 2170,
+            "2018_registrations": 2170,
             "2018_population": "0.406214900786222",
             "all_population": "0.406214900786222",
             "gender": "Female",
@@ -542,7 +542,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "1718",
-            "2018 registrations": 1718,
+            "2018_registrations": 1718,
             "2018_population": "0.321602396106327",
             "all_population": "0.321602396106327",
             "gender": "Male",
@@ -553,7 +553,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "1442",
-            "2018 registrations": 1442,
+            "2018_registrations": 1442,
             "2018_population": "0.269936353425683",
             "all_population": "0.269936353425683",
             "gender": "Not Available",
@@ -564,7 +564,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "12",
-            "2018 registrations": 12,
+            "2018_registrations": 12,
             "2018_population": "0.00224634968176713",
             "all_population": "0.00224634968176713",
             "gender": "Other",
@@ -575,7 +575,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "2170",
-            "2018 registrations": 2170,
+            "2018_registrations": 2170,
             "2018_population": "0.406214900786222",
             "all_population": "0.406214900786222",
             "gender": "Female",
@@ -586,7 +586,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "1718",
-            "2018 registrations": 1718,
+            "2018_registrations": 1718,
             "2018_population": "0.321602396106327",
             "all_population": "0.321602396106327",
             "gender": "Male",
@@ -597,7 +597,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "1442",
-            "2018 registrations": 1442,
+            "2018_registrations": 1442,
             "2018_population": "0.269936353425683",
             "all_population": "0.269936353425683",
             "gender": "Not Available",
@@ -608,7 +608,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "12",
-            "2018 registrations": 12,
+            "2018_registrations": 12,
             "2018_population": "0.00224634968176713",
             "all_population": "0.00224634968176713",
             "gender": "Other",
@@ -619,7 +619,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "2735",
-            "2018 registrations": 2735,
+            "2018_registrations": 2735,
             "2018_population": "0.285044293903075",
             "all_population": "0.285044293903075",
             "gender": "Female",
@@ -630,7 +630,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "4112",
-            "2018 registrations": 4112,
+            "2018_registrations": 4112,
             "2018_population": "0.428556539864513",
             "all_population": "0.428556539864513",
             "gender": "Male",
@@ -641,7 +641,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "2736",
-            "2018 registrations": 2736,
+            "2018_registrations": 2736,
             "2018_population": "0.285148514851485",
             "all_population": "0.285148514851485",
             "gender": "Not Available",
@@ -652,7 +652,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "12",
-            "2018 registrations": 12,
+            "2018_registrations": 12,
             "2018_population": "0.00125065138092757",
             "all_population": "0.00125065138092757",
             "gender": "Other",
@@ -663,7 +663,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "21359",
-            "2018 registrations": 21359,
+            "2018_registrations": 21359,
             "2018_population": "0.285456538009195",
             "all_population": "0.285456538009195",
             "gender": "Female",
@@ -674,7 +674,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "29508",
-            "2018 registrations": 29508,
+            "2018_registrations": 29508,
             "2018_population": "0.394365444242489",
             "all_population": "0.394365444242489",
             "gender": "Male",
@@ -685,7 +685,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "23829",
-            "2018 registrations": 23829,
+            "2018_registrations": 23829,
             "2018_population": "0.318467336683417",
             "all_population": "0.318467336683417",
             "gender": "Not Available",
@@ -696,7 +696,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "128",
-            "2018 registrations": 128,
+            "2018_registrations": 128,
             "2018_population": "0.00171068106489896",
             "all_population": "0.00171068106489896",
             "gender": "Other",
@@ -707,7 +707,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "10859",
-            "2018 registrations": 10859,
+            "2018_registrations": 10859,
             "2018_population": "0.454960616725323",
             "all_population": "0.454960616725323",
             "gender": "Female",
@@ -718,7 +718,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "3591",
-            "2018 registrations": 3591,
+            "2018_registrations": 3591,
             "2018_population": "0.150452488687783",
             "all_population": "0.150452488687783",
             "gender": "Male",
@@ -729,7 +729,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "9378",
-            "2018 registrations": 9378,
+            "2018_registrations": 9378,
             "2018_population": "0.392911010558069",
             "all_population": "0.392911010558069",
             "gender": "Not Available",
@@ -740,7 +740,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "40",
-            "2018 registrations": 40,
+            "2018_registrations": 40,
             "2018_population": "0.00167588402882521",
             "all_population": "0.00167588402882521",
             "gender": "Other",
@@ -751,7 +751,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "1253",
-            "2018 registrations": 1253,
+            "2018_registrations": 1253,
             "2018_population": "0.243679502139245",
             "all_population": "0.243679502139245",
             "gender": "Female",
@@ -762,7 +762,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "2294",
-            "2018 registrations": 2294,
+            "2018_registrations": 2294,
             "2018_population": "0.446129910540646",
             "all_population": "0.446129910540646",
             "gender": "Male",
@@ -773,7 +773,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "1592",
-            "2018 registrations": 1592,
+            "2018_registrations": 1592,
             "2018_population": "0.309607156748347",
             "all_population": "0.309607156748347",
             "gender": "Not Available",
@@ -784,7 +784,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "3",
-            "2018 registrations": 3,
+            "2018_registrations": 3,
             "2018_population": "0.00058343057176196",
             "all_population": "0.00058343057176196",
             "gender": "Other",
@@ -795,7 +795,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "1651",
-            "2018 registrations": 1651,
+            "2018_registrations": 1651,
             "2018_population": "0.331393014853473",
             "all_population": "0.331393014853473",
             "gender": "Female",
@@ -806,7 +806,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "1838",
-            "2018 registrations": 1838,
+            "2018_registrations": 1838,
             "2018_population": "0.368928141308711",
             "all_population": "0.368928141308711",
             "gender": "Male",
@@ -817,7 +817,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "1487",
-            "2018 registrations": 1487,
+            "2018_registrations": 1487,
             "2018_population": "0.298474508229627",
             "all_population": "0.298474508229627",
             "gender": "Not Available",
@@ -828,7 +828,7 @@ var moocsGenderArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "all_registrations": "6",
-            "2018 registrations": 6,
+            "2018_registrations": 6,
             "2018_population": "0.00120433560818948",
             "all_population": "0.00120433560818948",
             "gender": "Other",

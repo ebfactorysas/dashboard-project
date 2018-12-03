@@ -2,432 +2,432 @@ var moocsEducationArrays = {
     educationLevelDepartments: [{
             "json_featuretype": "NewFeatureType",
             "code": "CSC",
-            "value": "307",
-            "% of 2018 registrations ": "0.0340543538546866",
+            "registrations": "307",
+            "value": "0.0340543538546866",
             "name": "Associate",
             "xlsx_row_id": 2
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "CSC",
-            "value": "7",
-            "% of 2018 registrations ": "0.000776483638380477",
+            "registrations": "7",
+            "value": "0.000776483638380477",
             "name": "Elementary",
             "xlsx_row_id": 3
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "CSC",
-            "value": "632",
-            "% of 2018 registrations ": "0.0701053799223516",
+            "registrations": "632",
+            "value": "0.0701053799223516",
             "name": "High School",
             "xlsx_row_id": 4
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "CSC",
-            "value": "2607",
-            "% of 2018 registrations ": "0.289184692179701",
+            "registrations": "2607",
+            "value": "0.289184692179701",
             "name": "Bachelor",
             "xlsx_row_id": 5
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "CSC",
-            "value": "1580",
-            "% of 2018 registrations ": "0.175263449805879",
+            "registrations": "1580",
+            "value": "0.175263449805879",
             "name": "Master",
             "xlsx_row_id": 6
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "CSC",
-            "value": "164",
-            "% of 2018 registrations ": "0.018191902384914",
+            "registrations": "164",
+            "value": "0.018191902384914",
             "name": "Doctorate",
             "xlsx_row_id": 7
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "CSC",
-            "value": "125",
-            "% of 2018 registrations ": "0.0138657792567942",
+            "registrations": "125",
+            "value": "0.0138657792567942",
             "name": "Other",
             "xlsx_row_id": 8
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "CSC",
-            "value": "12",
-            "% of 2018 registrations ": "0.00133111480865225",
+            "registrations": "12",
+            "value": "0.00133111480865225",
             "name": "None",
             "xlsx_row_id": 9
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "CSC",
-            "value": "3581",
-            "% of 2018 registrations ": "0.397226844148641",
+            "registrations": "3581",
+            "value": "0.397226844148641",
             "name": "Not Available",
             "xlsx_row_id": 10
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "CSD",
-            "value": "992",
-            "% of 2018 registrations ": "0.103387180823346",
+            "registrations": "992",
+            "value": "0.103387180823346",
             "name": "Associate",
             "xlsx_row_id": 11
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "CSD",
-            "value": "6",
-            "% of 2018 registrations ": "0.000625325690463783",
+            "registrations": "6",
+            "value": "0.000625325690463783",
             "name": "Elementary",
             "xlsx_row_id": 12
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "CSD",
-            "value": "525",
-            "% of 2018 registrations ": "0.054715997915581",
+            "registrations": "525",
+            "value": "0.054715997915581",
             "name": "High School",
             "xlsx_row_id": 13
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "CSD",
-            "value": "2768",
-            "% of 2018 registrations ": "0.288483585200625",
+            "registrations": "2768",
+            "value": "0.288483585200625",
             "name": "Bachelor",
             "xlsx_row_id": 14
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "CSD",
-            "value": "2053",
-            "% of 2018 registrations ": "0.213965607087025",
+            "registrations": "2053",
+            "value": "0.213965607087025",
             "name": "Master",
             "xlsx_row_id": 15
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "CSD",
-            "value": "225",
-            "% of 2018 registrations ": "0.0234497133923919",
+            "registrations": "225",
+            "value": "0.0234497133923919",
             "name": "Doctorate",
             "xlsx_row_id": 16
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "CSD",
-            "value": "121",
-            "% of 2018 registrations ": "0.0126107347576863",
+            "registrations": "121",
+            "value": "0.0126107347576863",
             "name": "Other",
             "xlsx_row_id": 17
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "CSD",
-            "value": "4",
-            "% of 2018 registrations ": "0.000416883793642522",
+            "registrations": "4",
+            "value": "0.000416883793642522",
             "name": "None",
             "xlsx_row_id": 18
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "CSD",
-            "value": "2901",
-            "% of 2018 registrations ": "0.302344971339239",
+            "registrations": "2901",
+            "value": "0.302344971339239",
             "name": "Not Available",
             "xlsx_row_id": 19
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "IFD",
-            "value": "2982",
-            "% of 2018 registrations ": "0.0922591423798032",
+            "registrations": "2982",
+            "value": "0.0922591423798032",
             "name": "Associate",
             "xlsx_row_id": 20
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "IFD",
-            "value": "22",
-            "% of 2018 registrations ": "0.000680650949817462",
+            "registrations": "22",
+            "value": "0.000680650949817462",
             "name": "Elementary",
             "xlsx_row_id": 21
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "IFD",
-            "value": "2164",
-            "% of 2018 registrations ": "0.0669513025184085",
+            "registrations": "2164",
+            "value": "0.0669513025184085",
             "name": "High School",
             "xlsx_row_id": 22
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "IFD",
-            "value": "9834",
-            "% of 2018 registrations ": "0.304250974568405",
+            "registrations": "9834",
+            "value": "0.304250974568405",
             "name": "Bachelor",
             "xlsx_row_id": 23
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "IFD",
-            "value": "6859",
-            "% of 2018 registrations ": "0.212208402945362",
+            "registrations": "6859",
+            "value": "0.212208402945362",
             "name": "Master",
             "xlsx_row_id": 24
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "IFD",
-            "value": "498",
-            "% of 2018 registrations ": "0.0154074624095044",
+            "registrations": "498",
+            "value": "0.0154074624095044",
             "name": "Doctorate",
             "xlsx_row_id": 25
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "IFD",
-            "value": "444",
-            "% of 2018 registrations ": "0.0137367737144979",
+            "registrations": "444",
+            "value": "0.0137367737144979",
             "name": "Other",
             "xlsx_row_id": 26
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "IFD",
-            "value": "18",
-            "% of 2018 registrations ": "0.000556896231668832",
+            "registrations": "18",
+            "value": "0.000556896231668832",
             "name": "None",
             "xlsx_row_id": 27
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "IFD",
-            "value": "9501",
-            "% of 2018 registrations ": "0.293948394282532",
+            "registrations": "9501",
+            "value": "0.293948394282532",
             "name": "Not Available",
             "xlsx_row_id": 28
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "INE",
-            "value": "1152",
-            "% of 2018 registrations ": "0.113789016199131",
+            "registrations": "1152",
+            "value": "0.113789016199131",
             "name": "Associate",
             "xlsx_row_id": 29
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "INE",
-            "value": "8",
-            "% of 2018 registrations ": "0.000790201501382853",
+            "registrations": "8",
+            "value": "0.000790201501382853",
             "name": "Elementary",
             "xlsx_row_id": 30
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "INE",
-            "value": "921",
-            "% of 2018 registrations ": "0.0909719478467009",
+            "registrations": "921",
+            "value": "0.0909719478467009",
             "name": "High School",
             "xlsx_row_id": 31
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "INE",
-            "value": "2675",
-            "% of 2018 registrations ": "0.264223627024891",
+            "registrations": "2675",
+            "value": "0.264223627024891",
             "name": "Bachelor",
             "xlsx_row_id": 32
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "INE",
-            "value": "1740",
-            "% of 2018 registrations ": "0.17186882655077",
+            "registrations": "1740",
+            "value": "0.17186882655077",
             "name": "Master",
             "xlsx_row_id": 33
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "INE",
-            "value": "123",
-            "% of 2018 registrations ": "0.0121493480837614",
+            "registrations": "123",
+            "value": "0.0121493480837614",
             "name": "Doctorate",
             "xlsx_row_id": 34
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "INE",
-            "value": "137",
-            "% of 2018 registrations ": "0.0135322007111814",
+            "registrations": "137",
+            "value": "0.0135322007111814",
             "name": "Other",
             "xlsx_row_id": 35
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "INE",
-            "value": "5",
-            "% of 2018 registrations ": "0.000493875938364283",
+            "registrations": "5",
+            "value": "0.000493875938364283",
             "name": "None",
             "xlsx_row_id": 36
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "INE",
-            "value": "3363",
-            "% of 2018 registrations ": "0.332180956143817",
+            "registrations": "3363",
+            "value": "0.332180956143817",
             "name": "Not Available",
             "xlsx_row_id": 37
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "KNL",
-            "value": "7098",
-            "% of 2018 registrations ": "0.0733325068187454",
+            "registrations": "7098",
+            "value": "0.0733325068187454",
             "name": "Associate",
             "xlsx_row_id": 38
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "KNL",
-            "value": "58",
-            "% of 2018 registrations ": "0.000599223076287296",
+            "registrations": "58",
+            "value": "0.000599223076287296",
             "name": "Elementary",
             "xlsx_row_id": 39
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "KNL",
-            "value": "6354",
-            "% of 2018 registrations ": "0.0656459211505083",
+            "registrations": "6354",
+            "value": "0.0656459211505083",
             "name": "High School",
             "xlsx_row_id": 40
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "KNL",
-            "value": "28506",
-            "% of 2018 registrations ": "0.294507810562856",
+            "registrations": "28506",
+            "value": "0.294507810562856",
             "name": "Bachelor",
             "xlsx_row_id": 41
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "KNL",
-            "value": "20500",
-            "% of 2018 registrations ": "0.21179436317051",
+            "registrations": "20500",
+            "value": "0.21179436317051",
             "name": "Master",
             "xlsx_row_id": 42
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "KNL",
-            "value": "1553",
-            "% of 2018 registrations ": "0.0160447144392099",
+            "registrations": "1553",
+            "value": "0.0160447144392099",
             "name": "Doctorate",
             "xlsx_row_id": 43
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "KNL",
-            "value": "1243",
-            "% of 2018 registrations ": "0.0128419704107778",
+            "registrations": "1243",
+            "value": "0.0128419704107778",
             "name": "Other",
             "xlsx_row_id": 44
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "KNL",
-            "value": "81",
-            "% of 2018 registrations ": "0.000836846020332259",
+            "registrations": "81",
+            "value": "0.000836846020332259",
             "name": "None",
             "xlsx_row_id": 45
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "KNL",
-            "value": "31399",
-            "% of 2018 registrations ": "0.324396644350773",
+            "registrations": "31399",
+            "value": "0.324396644350773",
             "name": "Not Available",
             "xlsx_row_id": 46
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "SCL",
-            "value": "4004",
-            "% of 2018 registrations ": "0.0785144224170049",
+            "registrations": "4004",
+            "value": "0.0785144224170049",
             "name": "Associate",
             "xlsx_row_id": 47
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "SCL",
-            "value": "136",
-            "% of 2018 registrations ": "0.00266682353863953",
+            "registrations": "136",
+            "value": "0.00266682353863953",
             "name": "Elementary",
             "xlsx_row_id": 48
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "SCL",
-            "value": "3408",
-            "% of 2018 registrations ": "0.0668274604388494",
+            "registrations": "3408",
+            "value": "0.0668274604388494",
             "name": "High School",
             "xlsx_row_id": 49
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "SCL",
-            "value": "13852",
-            "% of 2018 registrations ": "0.271623821009079",
+            "registrations": "13852",
+            "value": "0.271623821009079",
             "name": "Bachelor",
             "xlsx_row_id": 50
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "SCL",
-            "value": "8826",
-            "% of 2018 registrations ": "0.173069004059062",
+            "registrations": "8826",
+            "value": "0.173069004059062",
             "name": "Master",
             "xlsx_row_id": 51
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "SCL",
-            "value": "878",
-            "% of 2018 registrations ": "0.0172166990215111",
+            "registrations": "878",
+            "value": "0.0172166990215111",
             "name": "Doctorate",
             "xlsx_row_id": 52
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "SCL",
-            "value": "709",
-            "% of 2018 registrations ": "0.0139027785948193",
+            "registrations": "709",
+            "value": "0.0139027785948193",
             "name": "Other",
             "xlsx_row_id": 53
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "SCL",
-            "value": "43",
-            "% of 2018 registrations ": "0.000843186854128674",
+            "registrations": "43",
+            "value": "0.000843186854128674",
             "name": "None",
             "xlsx_row_id": 54
         },
         {
             "json_featuretype": "NewFeatureType",
             "code": "SCL",
-            "value": "19141",
-            "% of 2018 registrations ": "0.375335804066906",
+            "registrations": "19141",
+            "value": "0.375335804066906",
             "name": "Not Available",
             "xlsx_row_id": 55
         }
@@ -435,977 +435,1003 @@ var moocsEducationArrays = {
     educationLevelDivisions: [
         {
             "json_featuretype": "NewFeatureType",
-            "value": "307",
-            "% of 2018 registrations ": "0.0340543538546866",
+            "registrations": "307",
+            "value": "0.0340543538546866",
             "code": "CBD",
             "name": "Associate",
             "xlsx_row_id": 2
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "7",
-            "% of 2018 registrations ": "0.000776483638380477",
+            "registrations": "7",
+            "value": "0.000776483638380477",
             "code": "CBD",
             "name": "Elementary",
             "xlsx_row_id": 3
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "632",
-            "% of 2018 registrations ": "0.0701053799223516",
+            "registrations": "632",
+            "value": "0.0701053799223516",
             "code": "CBD",
             "name": "High School",
             "xlsx_row_id": 4
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "2607",
-            "% of 2018 registrations ": "0.289184692179701",
+            "registrations": "2607",
+            "value": "0.289184692179701",
             "code": "CBD",
             "name": "Bachelor",
             "xlsx_row_id": 5
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "1580",
-            "% of 2018 registrations ": "0.175263449805879",
+            "registrations": "1580",
+            "value": "0.175263449805879",
             "code": "CBD",
             "name": "Master",
             "xlsx_row_id": 6
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "164",
-            "% of 2018 registrations ": "0.018191902384914",
+            "registrations": "164",
+            "value": "0.018191902384914",
             "code": "CBD",
             "name": "Doctorate",
             "xlsx_row_id": 7
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "125",
-            "% of 2018 registrations ": "0.0138657792567942",
+            "registrations": "125",
+            "value": "0.0138657792567942",
             "code": "CBD",
             "name": "Other",
             "xlsx_row_id": 8
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "12",
-            "% of 2018 registrations ": "0.00133111480865225",
+            "registrations": "12",
+            "value": "0.00133111480865225",
             "code": "CBD",
             "name": "None",
             "xlsx_row_id": 9
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "3581",
-            "% of 2018 registrations ": "0.397226844148641",
+            "registrations": "3581",
+            "value": "0.397226844148641",
             "code": "CBD",
             "name": "Not Available",
             "xlsx_row_id": 10
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "1668",
-            "% of 2018 registrations ": "0.0765594161656033",
+            "registrations": "1668",
+            "value": "0.0765594161656033",
             "code": "EDU",
             "name": "Associate",
             "xlsx_row_id": 11
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "61",
-            "% of 2018 registrations ": "0.00279983476385",
+            "registrations": "61",
+            "value": "0.00279983476385",
             "code": "EDU",
             "name": "Elementary",
             "xlsx_row_id": 12
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "1633",
-            "% of 2018 registrations ": "0.0749529535961812",
+            "registrations": "1633",
+            "value": "0.0749529535961812",
             "code": "EDU",
             "name": "High School",
             "xlsx_row_id": 13
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "5803",
-            "% of 2018 registrations ": "0.26635149401019",
+            "registrations": "5803",
+            "value": "0.26635149401019",
             "code": "EDU",
             "name": "Bachelor",
             "xlsx_row_id": 14
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "4174",
-            "% of 2018 registrations ": "0.191582136136228",
+            "registrations": "4174",
+            "value": "0.191582136136228",
             "code": "EDU",
             "name": "Master",
             "xlsx_row_id": 15
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "411",
-            "% of 2018 registrations ": "0.0188644604580713",
+            "registrations": "411",
+            "value": "0.0188644604580713",
             "code": "EDU",
             "name": "Doctorate",
             "xlsx_row_id": 16
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "301",
-            "% of 2018 registrations ": "0.0138155780970303",
+            "registrations": "301",
+            "value": "0.0138155780970303",
             "code": "EDU",
             "name": "Other",
             "xlsx_row_id": 17
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "20",
-            "% of 2018 registrations ": "0.000917978611098361",
+            "registrations": "20",
+            "value": "0.000917978611098361",
             "code": "EDU",
             "name": "None",
             "xlsx_row_id": 18
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "7716",
-            "% of 2018 registrations ": "0.354156148161748",
+            "registrations": "7716",
+            "value": "0.354156148161748",
             "code": "EDU",
             "name": "Not Available",
             "xlsx_row_id": 19
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "1105",
-            "% of 2018 registrations ": "0.0664621676891616",
+            "registrations": "1105",
+            "value": "0.0664621676891616",
             "code": "FHL",
             "name": "Associate",
             "xlsx_row_id": 20
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "11",
-            "% of 2018 registrations ": "0.000661614338987129",
+            "registrations": "11",
+            "value": "0.000661614338987129",
             "code": "FHL",
             "name": "Elementary",
             "xlsx_row_id": 21
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "1123",
-            "% of 2018 registrations ": "0.0675448093347769",
+            "registrations": "1123",
+            "value": "0.0675448093347769",
             "code": "FHL",
             "name": "High School",
             "xlsx_row_id": 22
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "5015",
-            "% of 2018 registrations ": "0.301635991820041",
+            "registrations": "5015",
+            "value": "0.301635991820041",
             "code": "FHL",
             "name": "Bachelor",
             "xlsx_row_id": 23
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "4461",
-            "% of 2018 registrations ": "0.268314687838326",
+            "registrations": "4461",
+            "value": "0.268314687838326",
             "code": "FHL",
             "name": "Master",
             "xlsx_row_id": 24
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "430",
-            "% of 2018 registrations ": "0.0258631059785878",
+            "registrations": "430",
+            "value": "0.0258631059785878",
             "code": "FHL",
             "name": "Doctorate",
             "xlsx_row_id": 25
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "189",
-            "% of 2018 registrations ": "0.0113677372789607",
+            "registrations": "189",
+            "value": "0.0113677372789607",
             "code": "FHL",
             "name": "Other",
             "xlsx_row_id": 26
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "11",
-            "% of 2018 registrations ": "0.000661614338987129",
+            "registrations": "11",
+            "value": "0.000661614338987129",
             "code": "FHL",
             "name": "None",
             "xlsx_row_id": 27
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "4281",
-            "% of 2018 registrations ": "0.257488271382173",
+            "registrations": "4281",
+            "value": "0.257488271382173",
             "code": "FHL",
             "name": "Not Available",
             "xlsx_row_id": 28
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "1189",
-            "% of 2018 registrations ": "0.0921348314606742",
+            "registrations": "1189",
+            "value": "0.0921348314606742",
             "code": "FMM",
             "name": "Associate",
             "xlsx_row_id": 29
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "9",
-            "% of 2018 registrations ": "0.000697404106935297",
+            "registrations": "9",
+            "value": "0.000697404106935297",
             "code": "FMM",
             "name": "Elementary",
             "xlsx_row_id": 30
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "767",
-            "% of 2018 registrations ": "0.0594343277799303",
+            "registrations": "767",
+            "value": "0.0594343277799303",
             "code": "FMM",
             "name": "High School",
             "xlsx_row_id": 31
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "3986",
-            "% of 2018 registrations ": "0.308872530027121",
+            "registrations": "3986",
+            "value": "0.308872530027121",
             "code": "FMM",
             "name": "Bachelor",
             "xlsx_row_id": 32
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "2672",
-            "% of 2018 registrations ": "0.207051530414568",
+            "registrations": "2672",
+            "value": "0.207051530414568",
             "code": "FMM",
             "name": "Master",
             "xlsx_row_id": 33
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "194",
-            "% of 2018 registrations ": "0.0150329329717164",
+            "registrations": "194",
+            "value": "0.0150329329717164",
             "code": "FMM",
             "name": "Doctorate",
             "xlsx_row_id": 34
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "172",
-            "% of 2018 registrations ": "0.0133281673769857",
+            "registrations": "172",
+            "value": "0.0133281673769857",
             "code": "FMM",
             "name": "Other",
             "xlsx_row_id": 35
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "8",
-            "% of 2018 registrations ": "0.000619914761720263",
+            "registrations": "8",
+            "value": "0.000619914761720263",
             "code": "FMM",
             "name": "None",
             "xlsx_row_id": 36
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "3908",
-            "% of 2018 registrations ": "0.302828361100349",
+            "registrations": "3908",
+            "value": "0.302828361100349",
             "code": "FMM",
             "name": "Not Available",
             "xlsx_row_id": 37
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "789",
-            "% of 2018 registrations ": "0.0953013648991424",
+            "registrations": "789",
+            "value": "0.0953013648991424",
             "code": "ICS",
             "name": "Associate",
             "xlsx_row_id": 38
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "3",
-            "% of 2018 registrations ": "0.000362362604179249",
+            "registrations": "3",
+            "value": "0.000362362604179249",
             "code": "ICS",
             "name": "Elementary",
             "xlsx_row_id": 39
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "463",
-            "% of 2018 registrations ": "0.0559246285783307",
+            "registrations": "463",
+            "value": "0.0559246285783307",
             "code": "ICS",
             "name": "High School",
             "xlsx_row_id": 40
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "2836",
-            "% of 2018 registrations ": "0.342553448484116",
+            "registrations": "2836",
+            "value": "0.342553448484116",
             "code": "ICS",
             "name": "Bachelor",
             "xlsx_row_id": 41
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "1845",
-            "% of 2018 registrations ": "0.222853001570238",
+            "registrations": "1845",
+            "value": "0.222853001570238",
             "code": "ICS",
             "name": "Master",
             "xlsx_row_id": 42
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "109",
-            "% of 2018 registrations ": "0.0131658412851794",
+            "registrations": "109",
+            "value": "0.0131658412851794",
             "code": "ICS",
             "name": "Doctorate",
             "xlsx_row_id": 43
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "130",
-            "% of 2018 registrations ": "0.0157023795144341",
+            "registrations": "130",
+            "value": "0.0157023795144341",
             "code": "ICS",
             "name": "Other",
             "xlsx_row_id": 44
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "3",
-            "% of 2018 registrations ": "0.000362362604179249",
+            "registrations": "3",
+            "value": "0.000362362604179249",
             "code": "ICS",
             "name": "None",
             "xlsx_row_id": 45
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "2101",
-            "% of 2018 registrations ": "0.253774610460201",
+            "registrations": "2101",
+            "value": "0.253774610460201",
             "code": "ICS",
             "name": "Not Available",
             "xlsx_row_id": 46
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "1004",
-            "% of 2018 registrations ": "0.0901418567067696",
+            "registrations": "1004",
+            "value": "0.0901418567067696",
             "code": "IFD",
             "name": "Associate",
             "xlsx_row_id": 47
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "10",
-            "% of 2018 registrations ": "0.000897827258035554",
+            "registrations": "10",
+            "value": "0.000897827258035554",
             "code": "IFD",
             "name": "Elementary",
             "xlsx_row_id": 48
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "934",
-            "% of 2018 registrations ": "0.0838570659005207",
+            "registrations": "934",
+            "value": "0.0838570659005207",
             "code": "IFD",
             "name": "High School",
             "xlsx_row_id": 49
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "3012",
-            "% of 2018 registrations ": "0.270425570120309",
+            "registrations": "3012",
+            "value": "0.270425570120309",
             "code": "IFD",
             "name": "Bachelor",
             "xlsx_row_id": 50
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "2342",
-            "% of 2018 registrations ": "0.210271143831927",
+            "registrations": "2342",
+            "value": "0.210271143831927",
             "code": "IFD",
             "name": "Master",
             "xlsx_row_id": 51
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "195",
-            "% of 2018 registrations ": "0.0175076315316933",
+            "registrations": "195",
+            "value": "0.0175076315316933",
             "code": "IFD",
             "name": "Doctorate",
             "xlsx_row_id": 52
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "142",
-            "% of 2018 registrations ": "0.0127491470641049",
+            "registrations": "142",
+            "value": "0.0127491470641049",
             "code": "IFD",
             "name": "Other",
             "xlsx_row_id": 53
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "7",
-            "% of 2018 registrations ": "0.000628479080624888",
+            "registrations": "7",
+            "value": "0.000628479080624888",
             "code": "IFD",
             "name": "None",
             "xlsx_row_id": 54
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "3492",
-            "% of 2018 registrations ": "0.313521278506015",
+            "registrations": "3492",
+            "value": "0.313521278506015",
             "code": "IFD",
             "name": "Not Available",
             "xlsx_row_id": 55
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "425",
-            "% of 2018 registrations ": "0.0795582178959191",
+            "registrations": "425",
+            "value": "0.0795582178959191",
             "code": "KNM",
             "name": "Associate",
             "xlsx_row_id": 56
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "7",
-            "% of 2018 registrations ": "0.00131037064769749",
+            "registrations": "7",
+            "value": "0.00131037064769749",
             "code": "KNM",
             "name": "Elementary",
             "xlsx_row_id": 57
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "520",
-            "% of 2018 registrations ": "0.0973418195432422",
+            "registrations": "520",
+            "value": "0.0973418195432422",
             "code": "KNM",
             "name": "High School",
             "xlsx_row_id": 58
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "1493",
-            "% of 2018 registrations ": "0.279483339573194",
+            "registrations": "1493",
+            "value": "0.279483339573194",
             "code": "KNM",
             "name": "Bachelor",
             "xlsx_row_id": 59
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "1130",
-            "% of 2018 registrations ": "0.211531261699738",
+            "registrations": "1130",
+            "value": "0.211531261699738",
             "code": "KNM",
             "name": "Master",
             "xlsx_row_id": 60
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "121",
-            "% of 2018 registrations ": "0.0226506926244852",
+            "registrations": "121",
+            "value": "0.0226506926244852",
             "code": "KNM",
             "name": "Doctorate",
             "xlsx_row_id": 61
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "79",
-            "% of 2018 registrations ": "0.0147884687383003",
+            "registrations": "79",
+            "value": "0.0147884687383003",
             "code": "KNM",
             "name": "Other",
             "xlsx_row_id": 62
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "2",
-            "% of 2018 registrations ": "0.000374391613627855",
+            "registrations": "2",
+            "value": "0.000374391613627855",
             "code": "KNM",
             "name": "None",
             "xlsx_row_id": 63
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "1565",
-            "% of 2018 registrations ": "0.292961437663796",
+            "registrations": "1565",
+            "value": "0.292961437663796",
             "code": "KNM",
             "name": "Not Available",
             "xlsx_row_id": 64
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "425",
-            "% of 2018 registrations ": "0.0795582178959191",
+            "registrations": "425",
+            "value": "0.0795582178959191",
             "code": "LMK",
             "name": "Associate",
             "xlsx_row_id": 65
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "7",
-            "% of 2018 registrations ": "0.00131037064769749",
+            "registrations": "7",
+            "value": "0.00131037064769749",
             "code": "LMK",
             "name": "Elementary",
             "xlsx_row_id": 66
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "520",
-            "% of 2018 registrations ": "0.0973418195432422",
+            "registrations": "520",
+            "value": "0.0973418195432422",
             "code": "LMK",
             "name": "High School",
             "xlsx_row_id": 67
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "1493",
-            "% of 2018 registrations ": "0.279483339573194",
+            "registrations": "1493",
+            "value": "0.279483339573194",
             "code": "LMK",
             "name": "Bachelor",
             "xlsx_row_id": 68
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "1130",
-            "% of 2018 registrations ": "0.211531261699738",
+            "registrations": "1130",
+            "value": "0.211531261699738",
             "code": "LMK",
             "name": "Master",
             "xlsx_row_id": 69
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "121",
-            "% of 2018 registrations ": "0.0226506926244852",
+            "registrations": "121",
+            "value": "0.0226506926244852",
             "code": "LMK",
             "name": "Doctorate",
             "xlsx_row_id": 70
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "79",
-            "% of 2018 registrations ": "0.0147884687383003",
+            "registrations": "79",
+            "value": "0.0147884687383003",
             "code": "LMK",
             "name": "Other",
             "xlsx_row_id": 71
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "2",
-            "% of 2018 registrations ": "0.000374391613627855",
+            "registrations": "2",
+            "value": "0.000374391613627855",
             "code": "LMK",
             "name": "None",
             "xlsx_row_id": 72
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "1565",
-            "% of 2018 registrations ": "0.292961437663796",
+            "registrations": "1565",
+            "value": "0.292961437663796",
             "code": "LMK",
             "name": "Not Available",
             "xlsx_row_id": 73
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "992",
-            "% of 2018 registrations ": "0.103387180823346",
+            "registrations": "992",
+            "value": "0.103387180823346",
             "code": "RND",
             "name": "Associate",
             "xlsx_row_id": 74
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "6",
-            "% of 2018 registrations ": "0.000625325690463783",
+            "registrations": "6",
+            "value": "0.000625325690463783",
             "code": "RND",
             "name": "Elementary",
             "xlsx_row_id": 75
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "525",
-            "% of 2018 registrations ": "0.054715997915581",
+            "registrations": "525",
+            "value": "0.054715997915581",
             "code": "RND",
             "name": "High School",
             "xlsx_row_id": 76
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "2768",
-            "% of 2018 registrations ": "0.288483585200625",
+            "registrations": "2768",
+            "value": "0.288483585200625",
             "code": "RND",
             "name": "Bachelor",
             "xlsx_row_id": 77
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "2053",
-            "% of 2018 registrations ": "0.213965607087025",
+            "registrations": "2053",
+            "value": "0.213965607087025",
             "code": "RND",
             "name": "Master",
             "xlsx_row_id": 78
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "225",
-            "% of 2018 registrations ": "0.0234497133923919",
+            "registrations": "225",
+            "value": "0.0234497133923919",
             "code": "RND",
             "name": "Doctorate",
             "xlsx_row_id": 79
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "121",
-            "% of 2018 registrations ": "0.0126107347576863",
+            "registrations": "121",
+            "value": "0.0126107347576863",
             "code": "RND",
             "name": "Other",
             "xlsx_row_id": 80
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "4",
-            "% of 2018 registrations ": "0.000416883793642522",
+            "registrations": "4",
+            "value": "0.000416883793642522",
             "code": "RND",
             "name": "None",
             "xlsx_row_id": 81
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "2901",
-            "% of 2018 registrations ": "0.302344971339239",
+            "registrations": "2901",
+            "value": "0.302344971339239",
             "code": "RND",
             "name": "Not Available",
             "xlsx_row_id": 82
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "5568",
-            "% of 2018 registrations ": "0.0744146263231049",
+            "registrations": "5568",
+            "value": "0.0744146263231049",
             "code": "SDI",
             "name": "Associate",
             "xlsx_row_id": 83
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "40",
-            "% of 2018 registrations ": "0.000534587832780926",
+            "registrations": "40",
+            "value": "0.000534587832780926",
             "code": "SDI",
             "name": "Elementary",
             "xlsx_row_id": 84
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "4711",
-            "% of 2018 registrations ": "0.0629610820057736",
+            "registrations": "4711",
+            "value": "0.0629610820057736",
             "code": "SDI",
             "name": "High School",
             "xlsx_row_id": 85
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "21998",
-            "% of 2018 registrations ": "0.29399657863787",
+            "registrations": "21998",
+            "value": "0.29399657863787",
             "code": "SDI",
             "name": "Bachelor",
             "xlsx_row_id": 86
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "14909",
-            "% of 2018 registrations ": "0.199254249973271",
+            "registrations": "14909",
+            "value": "0.199254249973271",
             "code": "SDI",
             "name": "Master",
             "xlsx_row_id": 87
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "1002",
-            "% of 2018 registrations ": "0.0133914252111622",
+            "registrations": "1002",
+            "value": "0.0133914252111622",
             "code": "SDI",
             "name": "Doctorate",
             "xlsx_row_id": 88
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "975",
-            "% of 2018 registrations ": "0.0130305784240351",
+            "registrations": "975",
+            "value": "0.0130305784240351",
             "code": "SDI",
             "name": "Other",
             "xlsx_row_id": 89
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "68",
-            "% of 2018 registrations ": "0.000908799315727574",
+            "registrations": "68",
+            "value": "0.000908799315727574",
             "code": "SDI",
             "name": "None",
             "xlsx_row_id": 90
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "25553",
-            "% of 2018 registrations ": "0.341508072276275",
+            "registrations": "25553",
+            "value": "0.341508072276275",
             "code": "SDI",
             "name": "Not Available",
             "xlsx_row_id": 91
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "1911",
-            "% of 2018 registrations ": "0.0800653594771242",
+            "registrations": "1911",
+            "value": "0.0800653594771242",
             "code": "SPH",
             "name": "Associate",
             "xlsx_row_id": 92
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "68",
-            "% of 2018 registrations ": "0.00284900284900285",
+            "registrations": "68",
+            "value": "0.00284900284900285",
             "code": "SPH",
             "name": "Elementary",
             "xlsx_row_id": 93
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "1255",
-            "% of 2018 registrations ": "0.0525808614043908",
+            "registrations": "1255",
+            "value": "0.0525808614043908",
             "code": "SPH",
             "name": "High School",
             "xlsx_row_id": 94
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "6556",
-            "% of 2018 registrations ": "0.274677392324451",
+            "registrations": "6556",
+            "value": "0.274677392324451",
             "code": "SPH",
             "name": "Bachelor",
             "xlsx_row_id": 95
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "3522",
-            "% of 2018 registrations ": "0.147561588738059",
+            "registrations": "3522",
+            "value": "0.147561588738059",
             "code": "SPH",
             "name": "Master",
             "xlsx_row_id": 96
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "346",
-            "% of 2018 registrations ": "0.014496396849338",
+            "registrations": "346",
+            "value": "0.014496396849338",
             "code": "SPH",
             "name": "Doctorate",
             "xlsx_row_id": 97
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "329",
-            "% of 2018 registrations ": "0.0137841461370873",
+            "registrations": "329",
+            "value": "0.0137841461370873",
             "code": "SPH",
             "name": "Other",
             "xlsx_row_id": 98
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "21",
-            "% of 2018 registrations ": "0.000879839115133233",
+            "registrations": "21",
+            "value": "0.000879839115133233",
             "code": "SPH",
             "name": "None",
             "xlsx_row_id": 99
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "9860",
-            "% of 2018 registrations ": "0.413105413105413",
+            "registrations": "9860",
+            "value": "0.413105413105413",
             "code": "SPH",
             "name": "Not Available",
             "xlsx_row_id": 100
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "643",
-            "% of 2018 registrations ": "0.125048619214313",
+            "registrations": "643",
+            "value": "0.125048619214313",
             "code": "TSP",
             "name": "Associate",
             "xlsx_row_id": 101
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "5",
-            "% of 2018 registrations ": "0.000972384286269934",
+            "registrations": "5",
+            "value": "0.000972384286269934",
             "code": "TSP",
             "name": "Elementary",
             "xlsx_row_id": 102
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "435",
-            "% of 2018 registrations ": "0.0845974329054842",
+            "registrations": "435",
+            "value": "0.0845974329054842",
             "code": "TSP",
             "name": "High School",
             "xlsx_row_id": 103
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "1400",
-            "% of 2018 registrations ": "0.272267600155582",
+            "registrations": "1400",
+            "value": "0.272267600155582",
             "code": "TSP",
             "name": "Bachelor",
             "xlsx_row_id": 104
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "815",
-            "% of 2018 registrations ": "0.158498638661999",
+            "registrations": "815",
+            "value": "0.158498638661999",
             "code": "TSP",
             "name": "Master",
             "xlsx_row_id": 105
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "44",
-            "% of 2018 registrations ": "0.00855698171917542",
+            "registrations": "44",
+            "value": "0.00855698171917542",
             "code": "TSP",
             "name": "Doctorate",
             "xlsx_row_id": 106
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "67",
-            "% of 2018 registrations ": "0.0130299494360171",
+            "registrations": "67",
+            "value": "0.0130299494360171",
             "code": "TSP",
             "name": "Other",
             "xlsx_row_id": 107
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "3",
-            "% of 2018 registrations ": "0.00058343057176196",
+            "registrations": "3",
+            "value": "0.00058343057176196",
             "code": "TSP",
             "name": "None",
             "xlsx_row_id": 108
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "1730",
-            "% of 2018 registrations ": "0.336444963049397",
+            "registrations": "1730",
+            "value": "0.336444963049397",
             "code": "TSP",
             "name": "Not Available",
             "xlsx_row_id": 109
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "509",
-            "% of 2018 registrations ": "0.102167804094741",
+            "registrations": "509",
+            "value": "0.102167804094741",
             "code": "WSA",
             "name": "Associate",
             "xlsx_row_id": 110
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "3",
-            "% of 2018 registrations ": "0.000602167804094741",
+            "registrations": "3",
+            "value": "0.000602167804094741",
             "code": "WSA",
             "name": "Elementary",
             "xlsx_row_id": 111
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "486",
-            "% of 2018 registrations ": "0.0975511842633481",
+            "registrations": "486",
+            "value": "0.0975511842633481",
             "code": "WSA",
             "name": "High School",
             "xlsx_row_id": 112
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "1275",
-            "% of 2018 registrations ": "0.255921316740265",
+            "registrations": "1275",
+            "value": "0.255921316740265",
             "code": "WSA",
             "name": "Bachelor",
             "xlsx_row_id": 113
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "925",
-            "% of 2018 registrations ": "0.185668406262545",
+            "registrations": "925",
+            "value": "0.185668406262545",
             "code": "WSA",
             "name": "Master",
             "xlsx_row_id": 114
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "79",
-            "% of 2018 registrations ": "0.0158570855078282",
+            "registrations": "79",
+            "value": "0.0158570855078282",
             "code": "WSA",
             "name": "Doctorate",
             "xlsx_row_id": 115
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "70",
-            "% of 2018 registrations ": "0.014050582095544",
+            "registrations": "70",
+            "value": "0.014050582095544",
             "code": "WSA",
             "name": "Other",
             "xlsx_row_id": 116
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "2",
-            "% of 2018 registrations ": "0.000401445202729827",
+            "registrations": "2",
+            "value": "0.000401445202729827",
             "code": "WSA",
             "name": "None",
             "xlsx_row_id": 117
         },
         {
             "json_featuretype": "NewFeatureType",
-            "value": "1633",
-            "% of 2018 registrations ": "0.327780008028904",
+            "registrations": "1633",
+            "value": "0.327780008028904",
             "code": "WSA",
             "name": "Not Available",
             "xlsx_row_id": 118
         }
     ],
-    educationLevelIDB: [
-        {
-            "value": "16535",
-            "name": "Associate",
-        },
-        {
-            "value": "237",
-            "name": "Elementary",
-        },
-        {
-            "value": "14004",
-            "name": "High School",
-        },
-        {
-            "value": "60242",
-            "name": "Bachelor",
-        },
-        {
-            "value": "41558",
-            "name": "Master",
-        },
-        {
-            "value": "3441",
-            "name": "Doctorate",
-        },
-        {
-            "value": "2779",
-            "name": "Other",
-        },
-        {
-            "value": "163",
-            "name": "None",
-        },
-        {
-            "value": "69886",
-            "name": "Not Available",
-        }
-    ]
+    educationLevelIDB: [{
+        "json_featuretype": "NewFeatureType",
+        "registrations": "16535",
+        "value": "0.0791735497617851",
+        "name": "Associate",
+        "xlsx_row_id": 2
+    },
+    {
+        "json_featuretype": "NewFeatureType",
+        "registrations": "237",
+        "value": "0.00113481289951878",
+        "name": "Elementary",
+        "xlsx_row_id": 3
+    },
+    {
+        "json_featuretype": "NewFeatureType",
+        "registrations": "14004",
+        "value": "0.0670545141133376",
+        "name": "High School",
+        "xlsx_row_id": 4
+    },
+    {
+        "json_featuretype": "NewFeatureType",
+        "registrations": "60242",
+        "value": "0.288453159041394",
+        "name": "Bachelor",
+        "xlsx_row_id": 5
+    },
+    {
+        "json_featuretype": "NewFeatureType",
+        "registrations": "41558",
+        "value": "0.198989681342623",
+        "name": "Master",
+        "xlsx_row_id": 6
+    },
+    {
+        "json_featuretype": "NewFeatureType",
+        "registrations": "3441",
+        "value": "0.0164763341233929",
+        "name": "Doctorate",
+        "xlsx_row_id": 7
+    },
+    {
+        "json_featuretype": "NewFeatureType",
+        "registrations": "2779",
+        "value": "0.0133065191888721",
+        "name": "Other",
+        "xlsx_row_id": 8
+    },
+    {
+        "json_featuretype": "NewFeatureType",
+        "registrations": "163",
+        "value": "0.00078048313342431",
+        "name": "None",
+        "xlsx_row_id": 9
+    },
+    {
+        "json_featuretype": "NewFeatureType",
+        "registrations": "69886",
+        "value": "0.334630946395652",
+        "name": "Not Available",
+        "xlsx_row_id": 10
+    }
+]
 };
