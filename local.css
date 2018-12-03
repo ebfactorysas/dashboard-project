@@ -186,7 +186,7 @@ section.big-numbers {
     color: #FFFFFF;
     background-color: #1156A1;
     font-family: 'Gotham-Bold';
-    height: 38.1vw ;
+    height: 38.1vw;
 }
 
 section.big-numbers h4 {
@@ -207,7 +207,7 @@ section.big-numbers .border-right-dash {
 }
 
 section.big-numbers .last-panel {
-        padding-left: 1vw;
+    padding-left: 1vw;
     padding-right: 1vw;
 }
 
@@ -284,8 +284,11 @@ section.publications .right-bar h4 {
     color: #d1415a;
 }
 
-section.publications .down-zone span {
-    font-size: 10px;
+
+section.publications .label-filter-select section.publications .down-zone span {
+    font-size: 16px;
+    font-family: 'Gotham-Bold';
+    color: #d1415a;
 }
 
 section.publications .down-zone .special span:nth-child(1) {
@@ -303,8 +306,8 @@ section.publications .down-zone .special span:nth-child(3) {
     color: #b4b4b4;
 }
 
-section.publications .down-zone h4 span {
-    font-size: 12px;
+section.publications .down-zone h4 span label {
+    font-size: 16px;
     text-decoration: underline;
     border-right: none;
 }
@@ -315,7 +318,7 @@ section.publications #publication-trend .y-data {
 }
 
 
-section.publications #publication-trend .y-data text{
+section.publications #publication-trend .y-data text {
     font-family: 'Gotham-Bold';
     font-size: 16px;
 }
@@ -418,6 +421,38 @@ section.publications #publications-plot .legeng:hover rect {
 }
 
 
+.tooltip{
+    position: absolute;
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    border: solid 1px #f5f5f5 ;
+    background-color: white;
+}
+
+.tooltip p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: "Gotham-Bold"
+}
+
+.tooltip p span{
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+    font-family: "Gotham-Book"
+}
+
+
+.tooltip h4 {
+    font-size: 12px;
+    font-family: "Gotham-Bold"
+}
+
+
+
 section.moocs .left-bar h4 {
     font-size: 18px;
     color: white;
@@ -457,7 +492,7 @@ section.moocs h1 {
 }
 
 section.moocs .down-zone span {
-  font-size: 10px;
+    font-size: 10px;
 }
 
 section.moocs .down-zone .special span:nth-child(1) {
@@ -1205,12 +1240,12 @@ section.map select.form-control:not([size]):not([multiple]) {
         margin-left: 0 !important;
     }
 
-    .left-text-drop select { 
-        color:#1658a1
+    .left-text-drop select {
+        color: #1658a1
     }
 
-    #idbLink{
-        color:#1658a1;
+    #idbLink {
+        color: #1658a1;
     }
 
     /* section.publications #downloads-publications svg{
