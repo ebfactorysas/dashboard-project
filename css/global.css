@@ -334,7 +334,7 @@ section.moocs .right-bar > .row > div:nth-child(5) {
   font-size: 1vw; }
   .container_radio.blue .checkmark {
     position: absolute;
-    top: 3px;
+    top: 6px;
     left: 0;
     height: 14px;
     width: 14px;

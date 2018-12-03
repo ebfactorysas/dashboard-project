@@ -113,7 +113,7 @@ body {
 
 .title-text h1 {
     font-family: "Gotham-Book";
-    font-size: 2.2rem;
+    font-size: 4rem;
     text-align: center;
 }
 
@@ -317,7 +317,7 @@ section.publications #publication-trend .y-data {
 
 section.publications #publication-trend .y-data text{
     font-family: 'Gotham-Bold';
-    font-size: 14px;
+    font-size: 16px;
 }
 
 
@@ -1203,6 +1203,14 @@ section.map select.form-control:not([size]):not([multiple]) {
 
     .ms-fullscreenmode #contentBox {
         margin-left: 0 !important;
+    }
+
+    .left-text-drop select { 
+        color:#1658a1
+    }
+
+    #idbLink{
+        color:#1658a1;
     }
 
     /* section.publications #downloads-publications svg{
