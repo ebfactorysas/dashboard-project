@@ -1155,58 +1155,61 @@ $("input[name*='publicationTrend']").click(function () {
 
     removePublicationsSvg();
     removePublicationsGauges();
-    if ($("select[id*='divisionSelect']").val().length > 0) {
-        jsonPublicationsBarras = publicationsTopArrays.topDepartmentsAllTime.filter(function (dataP) {
-            return dataP.department_codes == this.value
-        });
-        drawTrendPublicationChart(jsonPublicationsBarras);
-        // jsonPublicTree = publicationsDownloadSourceArrays.downloadSourceDepartments.filter(dataT => {
-        //     return dataT.department_codes == this.value
-        // });
-        // drawTreePublication(jsonPublicTree, "AllTheTime");
-        
-        var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
-        drawPlotChartPublication(ObjectpublicationsAttention);
-        // jsonPublicationsBarras = publicationsTopArrays.topDivisionsAllTime.filter(function (dataP) {
-        //     return dataP.division_codes == this.value
-        // });
-        // drawTrendPublicationChart(jsonPublicationsBarras);
-        drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "AllTheTime");
-        drawLinesChartPublication(dataLinesPublications);
-        
-        // var downloadTimelineIDB = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineIDB);
-        // createChartTimelinePublication(downloadTimelineIDB);
-        // drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
-        
-        if(this.id == "publicationAllTime"){
-            $('.label-filter-restidb').hide();
-            jsondataPublications = bnPublicationsArrays.publicationsDivisions.filter(function (data) {
-                return data.division_codes == $("select[id*='divisionSelect']").val()
+    if($("select[id*='divisionSelect']").val() != "IDB") {
+        if ($("select[id*='divisionSelect']").val().length > 0) {
+            jsonPublicationsBarras = publicationsTopArrays.topDepartmentsAllTime.filter(function (dataP) {
+                return dataP.department_codes == this.value
             });
-            publicationsAllTotalGlobal = (jsondataPublications.length > 0) ? jsondataPublications[0].all_the_time_publications : '0';
-            publicationsAllDownloads = (jsondataPublications.length > 0) ? jsondataPublications[0].all_the_time_downloads : '0';
-            publicationsAllDownloadsLac = (jsondataPublications.length > 0) ? ((jsondataPublications[0].all_the_time_porcent_total_LAC_downloads != "missing" && jsondataPublications[0].all_the_time_porcent_total_LAC_downloads > 0) ? (jsondataPublications[0].all_the_time_porcent_total_LAC_downloads * 100).toFixed(1) : jsondataPublications[0].all_the_time_porcent_total_LAC_downloads) : '';
-            dataPublicationGauge = setPublicationGauge();
-            drawGaugePublicationChart(dataPublicationGauge);
-        } else {
-            $('.label-filter-restidb').show();
-            jsondataPublications = bnPublicationsArrays.publicationsDivisions.filter(function (data) {
-                return data.division_codes == $("select[id*='divisionSelect']").val()
+            drawTrendPublicationChart(jsonPublicationsBarras);
+            // jsonPublicTree = publicationsDownloadSourceArrays.downloadSourceDepartments.filter(dataT => {
+            //     return dataT.department_codes == this.value
+            // });
+            // drawTreePublication(jsonPublicTree, "AllTheTime");
+            
+            var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
+            drawPlotChartPublication(ObjectpublicationsAttention);
+            // jsonPublicationsBarras = publicationsTopArrays.topDivisionsAllTime.filter(function (dataP) {
+            //     return dataP.division_codes == this.value
+            // });
+            // drawTrendPublicationChart(jsonPublicationsBarras);
+            drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "AllTheTime");
+            drawLinesChartPublication(dataLinesPublications);
+            
+            // var downloadTimelineIDB = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineIDB);
+            // createChartTimelinePublication(downloadTimelineIDB);
+            // drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
+            
+            if(this.id == "publicationAllTime"){
+                $('.label-filter-restidb').hide();
+                jsondataPublications = bnPublicationsArrays.publicationsDivisions.filter(function (data) {
+                    return data.division_codes == $("select[id*='divisionSelect']").val()
+                });
+                publicationsAllTotalGlobal = (jsondataPublications.length > 0) ? jsondataPublications[0].all_the_time_publications : '0';
+                publicationsAllDownloads = (jsondataPublications.length > 0) ? jsondataPublications[0].all_the_time_downloads : '0';
+                publicationsAllDownloadsLac = (jsondataPublications.length > 0) ? ((jsondataPublications[0].all_the_time_porcent_total_LAC_downloads != "missing" && jsondataPublications[0].all_the_time_porcent_total_LAC_downloads > 0) ? (jsondataPublications[0].all_the_time_porcent_total_LAC_downloads * 100).toFixed(1) : jsondataPublications[0].all_the_time_porcent_total_LAC_downloads) : '';
+                dataPublicationGauge = setPublicationGauge();
+                drawGaugePublicationChart(dataPublicationGauge);
+            } else {
+                $('.label-filter-restidb').show();
+                jsondataPublications = bnPublicationsArrays.publicationsDivisions.filter(function (data) {
+                    return data.division_codes == $("select[id*='divisionSelect']").val()
+                });
+                publications2018TotalGlobal = (jsondataPublications.length > 0) ? jsondataPublications[0]['2018_publications'] : '0';
+                publications2018Downloads = (jsondataPublications.length > 0) ? jsondataPublications[0]['2018_downloads'] : '0';
+                publications2018DownloadsLac = (jsondataPublications.length > 0) ? ((jsondataPublications[0]['2018_porcent_total_LAC_downloads'] != "missing" && jsondataPublications[0]['2018_porcent_total_LAC_downloads'] > 0) ? (jsondataPublications[0]['2018_porcent_total_LAC_downloads'] * 100).toFixed(1) : jsondataPublications[0]['2018_porcent_total_LAC_downloads']) : '';
+                dataPublicationGauge2018 = setPublicationGauge2018();
+                drawGaugePublicationChart(dataPublicationGauge2018);
+            }
+        } else if ($("select[id*='deparmentSelect']").val().length > 0) {
+            var downloadTimelineDepartment = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineDepartments);
+            downloadTimelineDepartment = downloadTimelineDepartment.filter(function (downloadTimelineDepartment) {
+                return downloadTimelineDepartment.departmentCode == $("#deparmentSelect").val()
             });
-            publications2018TotalGlobal = (jsondataPublications.length > 0) ? jsondataPublications[0]['2018_publications'] : '0';
-            publications2018Downloads = (jsondataPublications.length > 0) ? jsondataPublications[0]['2018_downloads'] : '0';
-            publications2018DownloadsLac = (jsondataPublications.length > 0) ? ((jsondataPublications[0]['2018_porcent_total_LAC_downloads'] != "missing" && jsondataPublications[0]['2018_porcent_total_LAC_downloads'] > 0) ? (jsondataPublications[0]['2018_porcent_total_LAC_downloads'] * 100).toFixed(1) : jsondataPublications[0]['2018_porcent_total_LAC_downloads']) : '';
-            dataPublicationGauge2018 = setPublicationGauge2018();
-            drawGaugePublicationChart(dataPublicationGauge2018);
+            downloadTimelineDepartment = downloadTimelineDepartment[0].data;
+            // createChartTimelinePublication(downloadTimelineDepartment);
         }
-    } else if ($("select[id*='deparmentSelect']").val().length > 0) {
-        var downloadTimelineDepartment = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineDepartments);
-        downloadTimelineDepartment = downloadTimelineDepartment.filter(function (downloadTimelineDepartment) {
-            return downloadTimelineDepartment.departmentCode == $("#deparmentSelect").val()
-        });
-        downloadTimelineDepartment = downloadTimelineDepartment[0].data;
-        // createChartTimelinePublication(downloadTimelineDepartment);
-    } else {
+    } 
+    else {
         removePublicationsSvg();
         removePublicationsGauges();
         if (this.id == "publicationAllTime") {
