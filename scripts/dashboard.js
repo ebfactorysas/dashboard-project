@@ -113,6 +113,5 @@ $("#divisionSelect").on('change', function (data) {
 $(window).on('load', function () {
     initPublications();
     $('.label-filter-restidb').hide();
-    $("#blue2018").click();
-    $("#publication2018").click();
+    
 });

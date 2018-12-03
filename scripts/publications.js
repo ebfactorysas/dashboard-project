@@ -365,11 +365,11 @@ function sortByDateAscending(a, b) {
 }
 
 function createChartTimelinePublication(data) {
-    if ($("#publication2018").prop("checked")) {
-        data = data.filter(function (data) {
-            return data.date.indexOf("-18") > -1
-        });
-    }
+    // if ($("#publication2018").prop("checked")) {
+    //     data = data.filter(function (data) {
+    //         return data.date.indexOf("-18") > -1
+    //     });
+    // }
     var margin = {
             top: 20,
             right: 20,
@@ -1145,7 +1145,7 @@ function initPublications() {
     createChartTimelinePublication(downloadTimelineIDB);
     drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
     drawPlotChartPublication(ObjectpublicationsAttention);
-    drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "2018Data");
+    drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "2018");
 }
 
 //click radiobutton drawChart(id del click)

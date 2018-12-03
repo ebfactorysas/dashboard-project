@@ -146,11 +146,11 @@ function initIndicators(filterselect, valueFilter) {
         jsondataSubscriber = subscribersArray.subscribersIDB;
     }
 
-    var dataPublicationsResults = publicationsIndicatorAlltime(jsondataPublications);
-    var dataMoocsResults = moocsIndicatorAlltime(jsondataMoocs);
-    var dataDatasetsResults = datasetsIndicatorAlltime(jsondataDatasets);
-    var dataCodeResults = codeIndicatorAlltime(jsondataCode);
-    var dataSubscribersResults = subscriberIndicatorAlltime(jsondataSubscriber);
+    var dataPublicationsResults = publicationsIndicator2018(jsondataPublications);
+    var dataMoocsResults = moocsIndicator2018(jsondataMoocs);
+    var dataDatasetsResults = datasetsIndicator2018(jsondataDatasets);
+    var dataCodeResults = codeIndicator2018(jsondataCode);
+    var dataSubscribersResults = subscriberIndicator2018(jsondataSubscriber);
 
     // console.log(filterselect);
     // console.log(valueFilter);
@@ -415,7 +415,7 @@ function datasetsIndicatorAlltime(jsondata) {
         compare2017_2018_publications: (jsondata.length > 0) ? jsondata[0]['2017_2018_datasets'] : '',
         downloadsValue: (jsondata.length > 0) ? jsondata[0]['all_the_time_downloads'] : '0',
         porcent_total_downloads: "100%", /*missing, rodrigo dice que si falta el dato que pongamos 100% para all the time*/
-        porcent_downloads_lac: (jsondata.length > 0) ? (jsondata[0]['all_the_time_porcent_total_lac_downloads'] * 100).toFixed(1) + '%' : ''
+        porcent_downloads_lac: (jsondata.length > 0) ? ((jsondata[0]['all_the_time_porcent_total_lac_downloads'] * 100 >= 100) ? "100%" : (jsondata[0]['all_the_time_porcent_total_lac_downloads'] * 100).toFixed(1) + '%') : '',
     }
     // console.log(results);
     return results;
@@ -430,7 +430,7 @@ function datasetsIndicator2018(jsondata) {
         compare2017_2018_publications: (jsondata.length > 0) ? jsondata[0]['2017_2018_datasets'] : '',
         downloadsValue: (jsondata.length > 0) ? jsondata[0]['2018_downloads'] : '0',
         // porcent_total_downloads: (jsondata.length > 0) ? (jsondata[0]['2018_porcent_total_downloads'] * 100).toFixed(1) + '%' : '', // no se enviaron en los datos para el porcentaje total de downloads filtrado por all time
-        porcent_total_downloads: (jsondata.length > 0) ? ((jsondata[0]['2018_porcent_total_downloads'] * 100 >= 100) ? "100%" : (jsondata[0]['2018_porcent_total_downloads'] * 100).toFixed(1) + '%') : '', // no se enviaron en los datos para el porcentaje total de downloads filtrado por all time
+        porcent_total_downloads: (jsondata.length > 0) ? ((jsondata[0]['2018_porcent_total_downloads'] * 100 >= 100) ? "100%" : (jsondata[0]['2018_porcent_total_downloads'] * 100).toFixed() + '%') : '', // no se enviaron en los datos para el porcentaje total de downloads filtrado por all time
         // porcent_downloads_lac: (jsondata.length > 0) ? (jsondata[0]['2018_porcent_total_lac_downloads'] * 100).toFixed(1) + '%' : ''
         porcent_downloads_lac: (jsondata.length > 0) ? ((jsondata[0]['2018_porcent_total_lac_downloads'] * 100 >= 100) ? "100%" : (jsondata[0]['2018_porcent_total_lac_downloads'] * 100).toFixed(1) + '%') : '',
     }
@@ -524,11 +524,12 @@ function codeIndicatorAlltime(jsondata) {
 function codeIndicator2018(jsondata) {
     
     var results = {
+        
         codeValue: (jsondata.length > 0) ? jsondata[0]['2018_code'] : '0',
-        porcent_total_publications: (jsondata.length > 0) ? (jsondata[0]['2018_porcent_total_pageviews'] * 100).toFixed(1) + '%' : '',
+        porcent_total_publications: (jsondata.length > 0) ? ((jsondata[0]['porcent_total_code'] * 100 >= 100) ? "100%" : (jsondata[0]['porcent_total_code'] * 100).toFixed(1) + '%') : '',
         compare2017_2018_publications: 'Missing',
         downloadsValue: (jsondata.length > 0) ? jsondata[0]['2018_pageviews'] : '0',
-        porcent_total_downloads: (jsondata.length > 0) ? (jsondata[0]['2018_porcent_total_pageviews'] * 100).toFixed(1) + '%' : '', // no se enviaron en los datos para el porcentaje total de downloads filtrado por all time
+        porcent_total_downloads: (jsondata.length > 0) ? ((jsondata[0]['2018_porcent_total_pageviews'] * 100 >= 100) ? "100%" : (jsondata[0]['2018_porcent_total_pageviews'] * 100).toFixed(1) + '%') : '', // no se enviaron en los datos para el porcentaje total de downloads filtrado por all time
         porcent_downloads_lac: (jsondata.length > 0) ? (jsondata[0]['porcent_total_lac'] * 100).toFixed(1) + '%' : ''
     }
     // console.log(results);
