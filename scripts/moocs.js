@@ -347,7 +347,7 @@ var widthStudents = 80 - marginStudents.left - marginStudents.right,
 drawStudentRegistrationsChart(moocsStudentsFlowArrays.studentsFlowIDB);
 
 function drawStudentRegistrationsChart(dataStudents) {
-    if (typeof dataStudents == "undefined") {
+    if (typeof dataStudents == "undefined" || typeof dataStudents.registrations == "undefined") {
         $('#student1-title').html("0");
         return
     };
@@ -360,9 +360,9 @@ function drawStudentRegistrationsChart(dataStudents) {
         dataStudents.registrations.value = students2018[0].value;
     }
 
-    var formatNumber = setSettingsNumber(dataStudents.registrations.value);
-
+    var formatNumber = setSettingsNumber(dataStudents.registrations ? dataStudents.registrations.value : 0 );
     $('#student1-title').html(formatNumber.valueNumber + formatNumber.suffixNumber);
+
     var svgStudent1 = d3.select("#student1").append("svg")
         .attr("width", widthStudents + marginStudents.left + marginStudents.right)
         .attr("height", heightStudents + marginStudents.top + marginStudents.bottom)
@@ -439,7 +439,7 @@ function drawStudentRegistrationsChart(dataStudents) {
 drawStudentParticipantsChart(moocsStudentsFlowArrays.studentsFlowIDB);
 
 function drawStudentParticipantsChart(dataStudents) {
-    if (typeof dataStudents == "undefined") {
+    if (typeof dataStudents == "undefined" || typeof dataStudents.participants == "undefined") {
         $('#student2-title').html("0");
         return
     };
@@ -530,7 +530,7 @@ function drawStudentParticipantsChart(dataStudents) {
 drawStudentCompletedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
 
 function drawStudentCompletedsChart(dataStudents) {
-    if (typeof dataStudents == "undefined") {
+    if (typeof dataStudents == "undefined" || typeof dataStudents.completed == "undefined") {
         $('#student3-title').html("0");
         return
     };
@@ -622,7 +622,7 @@ function drawStudentCompletedsChart(dataStudents) {
 drawStudentCertifiedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
 
 function drawStudentCertifiedsChart(dataStudents) {
-    if (typeof dataStudents == "undefined") {
+    if (typeof dataStudents == "undefined" || typeof dataStudents.certified == "undefined") {
         $('#student4-title').html("0");
         return
     };
