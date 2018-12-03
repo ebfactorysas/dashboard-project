@@ -504,7 +504,7 @@ var datasetsIndicatorsArray = {
         "2017_2018_datasets": "-10",
         "2018_downloads": 6677,
         "2018_porcent_total_downloads": "0.999999999999887",
-        "2018_porcent_total_downloads": "0.427437471918526",
+        "2018_porcent_total_lac_downloads": "0.427437471918526",
         "all_the_time_datasets": 180,
         "all_the_time_downloads": 77891,
         "all_the_time_porcent_total_lac_downloads": 0.260607772399892,

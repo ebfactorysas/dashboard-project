@@ -309,6 +309,6 @@ var subscribersArray = {
         "lac_subscribers": "333589",
         "IDB": "IDB",
         "porcent_total_from_lac": "0.556596706",
-        "porcent_total_subscribers": ""
+        "porcent_total_subscribers": "100"
     }]
 };
