@@ -35,7 +35,8 @@ function setPublicationGauge2018() {
 }
 
 
-var dataLinesPublications = [{
+var dataLinesPublications = [
+    {
         "date": 20180101,
 
         "one": Math.floor((Math.random() * 10) + 1) + 10,
@@ -364,13 +365,13 @@ function sortByDateAscending(a, b) {
 }
 
 function createChartTimelinePublication(data, typeload) {
-    if (typeload != "init") {
-        if ($("#publication2018").prop("checked")) {
-            data = data.filter(function (data) {
-                return data.date.indexOf("-18") > -1
-            });
-        }
-    }
+    // if (typeload != "init") {
+    //     if ($("#publication2018").prop("checked")) {
+    //         data = data.filter(function (data) {
+    //             return data.date.indexOf("-18") > -1
+    //         });
+    //     }
+    // }
     
     var margin = {
             top: 20,
@@ -1123,6 +1124,12 @@ function removePublicationsSvg() {
     d3.select("#publication-trend svg").remove();
     //d3.select("#publications-plot svg").remove();
 }
+function removePublicationsSvgAll() {
+    d3.select("#downloads-publications svg").remove();
+    d3.select("#timeline-publication svg").remove();
+    d3.select("#publication-trend svg").remove();
+    d3.select("#publications-plot svg").remove();
+}
 
 
 function removePublicationsGauges() {
@@ -1276,8 +1283,8 @@ $("input[name*='publicationTrend']").click(function () {
             // drawPlotChartPublication(ObjectpublicationsAttention);
             drawGaugePublicationChart(dataPublicationGauge);
         } else {
+            dataPublicationGauge2018 = setPublicationGauge2018();
             $('.label-filter-restidb').show();
-            dataPublicationGauge = setPublicationGauge2018();
             drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "2018");
             // createChartTimelinePublication(downloadTimelineIDBTEST);
             drawTrendPublicationChart(publicationsTopArrays.topIDB2018);

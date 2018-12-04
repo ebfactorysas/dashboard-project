@@ -7787,4709 +7787,17704 @@ var publicationsDownloadTimelineArray = {
 
         }
     ],
-    downloadTimelineDivisions: [{
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 131,
-            "April 2014": 101,
-            "March 2013": "108",
-            "August 2013": 158,
-            "June 2013": 106,
-            "September 2013": "132",
-            "May 2013": 160,
-            "November 2013": 141,
-            "February 2015": "99",
-            "June 2014": 103,
-            "November 2014": 158,
-            "August 2014": 96,
-            "July 2014": 89,
-            "February 2013": "107",
-            "October 2013": 151,
-            "May 2014": 116,
-            "January 2013": "58",
-            "December 2013": 142,
-            "Division Codes": "ATI",
-            "February 2014": "167",
-            "December 2014": 88,
-            "September 2014": "1412",
-            "April 2013": "116",
-            "October 2014": "145",
-            "January 2015": 75,
-            "March 2014": 104,
-            "January 2014": 96,
-            "xlsx_row_id": 2
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "April 2018": "3",
-            "August 2018": "1",
-            "February 2016": "1",
-            "April 2015": "5",
-            "December 2016": "1",
-            "August 2017": "1",
-            "November 2018": "2",
-            "May 2018": "1",
-            "May 2017": "3",
-            "June 2015": "4",
-            "February 2015": "5",
-            "August 2015": "3",
-            "October 2015": "4",
-            "April 2017": "4",
-            "November 2014": 12,
-            "June 2017": "5",
-            "September 2015": "1",
-            "February 2017": "4",
-            "May 2016": "4",
-            "May 2015": "1",
-            "Division Codes": "AUG",
-            "October 2016": "4",
-            "October 2017": "3",
-            "October 2018": "1",
-            "March 2018": "4",
-            "September 2017": "2",
-            "March 2015": "2",
-            "September 2018": "1",
-            "January 2017": "1",
-            "November 2015": "1",
-            "December 2014": 17,
-            "November 2017": "1",
-            "January 2016": "1",
-            "October 2014": "16",
-            "July 2018": "3",
-            "September 2016": "3",
-            "March 2016": "5",
-            "January 2015": 7,
-            "August 2016": "2",
-            "xlsx_row_id": 3
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 24,
-            "April 2014": 7,
-            "April 2018": "8",
-            "March 2013": "14",
-            "August 2013": 31,
-            "August 2018": "12",
-            "February 2016": "5",
-            "January 2018": "6",
-            "June 2013": 29,
-            "March 2017": "14",
-            "September 2013": "32",
-            "April 2015": "3",
-            "December 2016": "2",
-            "May 2013": 38,
-            "August 2017": "4",
-            "November 2018": "2",
-            "May 2018": "3",
-            "June 2018": "9",
-            "May 2017": "16",
-            "June 2015": "4",
-            "November 2013": 38,
-            "February 2015": "31",
-            "June 2014": 3,
-            "August 2015": "6",
-            "October 2015": "5",
-            "April 2017": "20",
-            "July 2015": "20",
-            "June 2016": "39",
-            "November 2014": 10,
-            "August 2014": 3,
-            "June 2017": "27",
-            "July 2014": 6,
-            "September 2015": "14",
-            "February 2013": "19",
-            "February 2017": "12",
-            "October 2013": 35,
-            "May 2016": "17",
-            "May 2014": 9,
-            "November 2016": "3",
-            "July 2016": "4",
-            "January 2013": "16",
-            "December 2013": 40,
-            "May 2015": "4",
-            "Division Codes": "BOG",
-            "February 2018": "10",
-            "October 2016": "7",
-            "October 2017": "14",
-            "February 2014": "81",
-            "October 2018": "7",
-            "March 2018": "8",
-            "September 2017": "5",
-            "April 2016": "11",
-            "March 2015": "7",
-            "September 2018": "4",
-            "December 2017": "8",
-            "January 2017": "3",
-            "November 2015": "16",
-            "December 2014": 4,
-            "November 2017": "15",
-            "September 2014": "8",
-            "January 2016": "11",
-            "April 2013": "18",
-            "October 2014": "2",
-            "July 2018": "17",
-            "September 2016": "5",
-            "December 2015": "19",
-            "March 2016": "11",
-            "January 2015": 5,
-            "July 2017": "22",
-            "March 2014": 30,
-            "January 2014": 74,
-            "xlsx_row_id": 4
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 148,
-            "April 2014": 201,
-            "April 2018": "4248",
-            "March 2013": "171",
-            "August 2013": 143,
-            "August 2018": "6514",
-            "February 2016": "1717",
-            "January 2018": "2735",
-            "June 2013": 176,
-            "March 2017": "4292",
-            "September 2013": "270",
-            "April 2015": "1214",
-            "December 2016": "2277",
-            "May 2013": 196,
-            "August 2017": "3998",
-            "November 2018": "12969",
-            "May 2018": "3719",
-            "June 2018": "3632",
-            "May 2017": "5307",
-            "June 2015": "1448",
-            "November 2013": 360,
-            "February 2015": "783",
-            "June 2014": 565,
-            "August 2015": "2368",
-            "October 2015": "1532",
-            "April 2017": "4510",
-            "July 2015": "1653",
-            "June 2016": "1554",
-            "November 2014": 343,
-            "August 2014": 325,
-            "June 2017": "4058",
-            "July 2014": 557,
-            "September 2015": "1583",
-            "February 2013": "99",
-            "February 2017": "3406",
-            "October 2013": 937,
-            "May 2016": "1420",
-            "May 2014": 359,
-            "November 2016": "2666",
-            "July 2016": "1767",
-            "January 2013": "77",
-            "December 2013": 453,
-            "May 2015": "1521",
-            "Division Codes": "CAN",
-            "February 2018": "2901",
-            "October 2016": "3017",
-            "October 2017": "4565",
-            "February 2014": "653",
-            "October 2018": "9961",
-            "March 2018": "3538",
-            "September 2017": "4198",
-            "April 2016": "1654",
-            "March 2015": "811",
-            "September 2018": "7646",
-            "December 2017": "2138",
-            "January 2017": "2830",
-            "November 2015": "1745",
-            "December 2014": 362,
-            "November 2017": "3956",
-            "September 2014": "403",
-            "January 2016": "1074",
-            "April 2013": "320",
-            "October 2014": "457",
-            "July 2018": "5420",
-            "September 2016": "2106",
-            "December 2015": "1040",
-            "March 2016": "2003",
-            "January 2015": 390,
-            "July 2017": "4480",
-            "March 2014": 350,
-            "August 2016": "1935",
-            "January 2014": 393,
-            "xlsx_row_id": 5
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "April 2018": "25",
-            "August 2018": "9",
-            "February 2016": "99",
-            "January 2018": "11",
-            "March 2017": "18",
-            "April 2015": "73",
-            "December 2016": "22",
-            "August 2017": "42",
-            "November 2018": "6",
-            "May 2018": "19",
-            "June 2018": "6",
-            "May 2017": "16",
-            "June 2015": "53",
-            "February 2015": "57",
-            "August 2015": "90",
-            "October 2015": "76",
-            "April 2017": "12",
-            "July 2015": "59",
-            "June 2016": "50",
-            "November 2014": 140,
-            "June 2017": "8",
-            "September 2015": "88",
-            "February 2017": "20",
-            "May 2016": "50",
-            "November 2016": "39",
-            "July 2016": "60",
-            "May 2015": "36",
-            "Division Codes": "CAR",
-            "February 2018": "19",
-            "October 2016": "73",
-            "October 2017": "16",
-            "October 2018": "6",
-            "March 2018": "50",
-            "September 2017": "30",
-            "April 2016": "45",
-            "March 2015": "45",
-            "September 2018": "5",
-            "December 2017": "7",
-            "January 2017": "21",
-            "November 2015": "79",
-            "December 2014": 77,
-            "November 2017": "11",
-            "January 2016": "70",
-            "October 2014": "85",
-            "July 2018": "6",
-            "September 2016": "87",
-            "December 2015": "60",
-            "March 2016": "60",
-            "January 2015": 48,
-            "July 2017": "85",
-            "August 2016": "58",
-            "xlsx_row_id": 6
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "April 2018": "1",
-            "August 2018": "2",
-            "February 2016": "5",
-            "January 2018": "9",
-            "March 2017": "6",
-            "April 2015": "5",
-            "December 2016": "6",
-            "August 2017": "2",
-            "November 2018": "19",
-            "May 2018": "3",
-            "May 2017": "11",
-            "June 2015": "4",
-            "February 2015": "1",
-            "August 2015": "1",
-            "October 2015": "6",
-            "April 2017": "13",
-            "July 2015": "1",
-            "June 2016": "4",
-            "November 2014": 1,
-            "June 2017": "17",
-            "September 2015": "2",
-            "February 2017": "8",
-            "May 2016": "7",
-            "November 2016": "2",
-            "July 2016": "12",
-            "May 2015": "2",
-            "Division Codes": "CBH",
-            "February 2018": "4",
-            "October 2016": "1",
-            "October 2017": "4",
-            "October 2018": "28",
-            "March 2018": "2",
-            "April 2016": "4",
-            "March 2015": "17",
-            "September 2018": "10",
-            "December 2017": "3",
-            "January 2017": "7",
-            "November 2015": "10",
-            "November 2017": "5",
-            "January 2016": "11",
-            "July 2018": "6",
-            "September 2016": "13",
-            "December 2015": "4",
-            "March 2016": "14",
-            "July 2017": "8",
-            "August 2016": "5",
-            "xlsx_row_id": 7
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 33,
-            "April 2014": 19,
-            "April 2018": "101",
-            "March 2013": "42",
-            "August 2013": 27,
-            "August 2018": "83",
-            "February 2016": "49",
-            "January 2018": "55",
-            "June 2013": 34,
-            "March 2017": "58",
-            "September 2013": "21",
-            "April 2015": "10",
-            "December 2016": "136",
-            "May 2013": 25,
-            "August 2017": "70",
-            "November 2018": "75",
-            "May 2018": "62",
-            "June 2018": "58",
-            "May 2017": "65",
-            "June 2015": "16",
-            "November 2013": 26,
-            "February 2015": "30",
-            "June 2014": 70,
-            "August 2015": "38",
-            "October 2015": "75",
-            "April 2017": "62",
-            "July 2015": "52",
-            "June 2016": "40",
-            "November 2014": 27,
-            "August 2014": 21,
-            "June 2017": "91",
-            "July 2014": 39,
-            "September 2015": "22",
-            "February 2013": "66",
-            "February 2017": "62",
-            "October 2013": 30,
-            "May 2016": "60",
-            "May 2014": 26,
-            "November 2016": "44",
-            "July 2016": "38",
-            "January 2013": "23",
-            "December 2013": 22,
-            "May 2015": "20",
-            "Division Codes": "CBL",
-            "February 2018": "84",
-            "October 2016": "64",
-            "October 2017": "136",
-            "February 2014": "119",
-            "October 2018": "102",
-            "March 2018": "103",
-            "September 2017": "62",
-            "April 2016": "63",
-            "March 2015": "25",
-            "September 2018": "89",
-            "December 2017": "54",
-            "January 2017": "40",
-            "November 2015": "59",
-            "December 2014": 12,
-            "November 2017": "91",
-            "September 2014": "18",
-            "January 2016": "32",
-            "April 2013": "37",
-            "October 2014": "25",
-            "July 2018": "65",
-            "September 2016": "57",
-            "December 2015": "37",
-            "March 2016": "57",
-            "January 2015": 17,
-            "July 2017": "61",
-            "March 2014": 28,
-            "August 2016": "34",
-            "January 2014": 75,
-            "xlsx_row_id": 8
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "August 2018": "63",
-            "November 2018": "53",
-            "June 2018": "134",
-            "Division Codes": "CBO",
-            "October 2018": "87",
-            "September 2018": "35",
-            "July 2018": "80",
-            "xlsx_row_id": 9
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 10,
-            "April 2014": 2,
-            "March 2013": "11",
-            "August 2013": 9,
-            "June 2013": 8,
-            "March 2017": "5",
-            "September 2013": "4",
-            "April 2015": "1",
-            "May 2013": 15,
-            "August 2017": "1",
-            "November 2018": "4",
-            "May 2018": "2",
-            "June 2018": "1",
-            "May 2017": "3",
-            "June 2015": "2",
-            "November 2013": 4,
-            "February 2015": "1",
-            "June 2014": 1,
-            "August 2015": "1",
-            "October 2015": "1",
-            "April 2017": "2",
-            "July 2015": "2",
-            "June 2016": "1",
-            "August 2014": 3,
-            "June 2017": "8",
-            "July 2014": 2,
-            "September 2015": "2",
-            "February 2013": "6",
-            "October 2013": 10,
-            "November 2016": "2",
-            "January 2013": "6",
-            "December 2013": 14,
-            "May 2015": "3",
-            "Division Codes": "CBR",
-            "October 2016": "2",
-            "February 2014": "3",
-            "March 2018": "5",
-            "September 2017": "3",
-            "April 2016": "2",
-            "March 2015": "6",
-            "September 2018": "2",
-            "November 2015": "1",
-            "December 2014": 1,
-            "November 2017": "5",
-            "September 2014": "2",
-            "April 2013": "8",
-            "July 2018": "3",
-            "September 2016": "1",
-            "July 2017": "4",
-            "March 2014": 6,
-            "August 2016": "2",
-            "January 2014": 2,
-            "xlsx_row_id": 10
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 4,
-            "April 2014": 416,
-            "April 2018": "9347",
-            "March 2013": "2",
-            "August 2013": 99,
-            "August 2018": "6832",
-            "February 2016": "1590",
-            "January 2018": "7042",
-            "June 2013": 3,
-            "March 2017": "6860",
-            "September 2013": "522",
-            "April 2015": "1190",
-            "December 2016": "4141",
-            "May 2013": 6,
-            "August 2017": "5402",
-            "November 2018": "7328",
-            "May 2018": "8871",
-            "June 2018": "6694",
-            "May 2017": "5881",
-            "June 2015": "1258",
-            "November 2013": 1422,
-            "February 2015": "853",
-            "June 2014": 1248,
-            "August 2015": "4014",
-            "October 2015": "828",
-            "April 2017": "6733",
-            "July 2015": "1379",
-            "June 2016": "1464",
-            "November 2014": 975,
-            "August 2014": 1296,
-            "June 2017": "7210",
-            "July 2014": 635,
-            "September 2015": "871",
-            "February 2013": "1",
-            "February 2017": "4879",
-            "October 2013": 1335,
-            "May 2016": "1061",
-            "May 2014": 900,
-            "November 2016": "3138",
-            "July 2016": "958",
-            "January 2013": "1",
-            "December 2013": 561,
-            "May 2015": "1235",
-            "Division Codes": "CCB",
-            "February 2018": "7637",
-            "October 2016": "3699",
-            "October 2017": "8016",
-            "February 2014": "1452",
-            "October 2018": "11067",
-            "March 2018": "10767",
-            "September 2017": "6218",
-            "April 2016": "1413",
-            "March 2015": "849",
-            "September 2018": "8545",
-            "December 2017": "5272",
-            "January 2017": "4477",
-            "November 2015": "1110",
-            "December 2014": 3794,
-            "November 2017": "9182",
-            "September 2014": "689",
-            "January 2016": "1272",
-            "April 2013": "7",
-            "October 2014": "643",
-            "July 2018": "6991",
-            "September 2016": "2292",
-            "December 2015": "1497",
-            "March 2016": "2135",
-            "January 2015": 1030,
-            "July 2017": "6570",
-            "March 2014": 908,
-            "August 2016": "2163",
-            "January 2014": 696,
-            "xlsx_row_id": 11
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 55,
-            "April 2014": 22,
-            "April 2018": "51",
-            "March 2013": "8",
-            "August 2013": 48,
-            "August 2018": "41",
-            "February 2016": "52",
-            "January 2018": "26",
-            "June 2013": 40,
-            "March 2017": "46",
-            "September 2013": "35",
-            "April 2015": "40",
-            "December 2016": "24",
-            "May 2013": 45,
-            "August 2017": "48",
-            "November 2018": "31",
-            "May 2018": "53",
-            "June 2018": "58",
-            "May 2017": "92",
-            "June 2015": "49",
-            "November 2013": 80,
-            "February 2015": "46",
-            "June 2014": 33,
-            "August 2015": "67",
-            "October 2015": "63",
-            "April 2017": "69",
-            "July 2015": "70",
-            "June 2016": "53",
-            "November 2014": 47,
-            "August 2014": 44,
-            "June 2017": "145",
-            "July 2014": 58,
-            "September 2015": "73",
-            "February 2013": "3",
-            "February 2017": "79",
-            "October 2013": 92,
-            "May 2016": "45",
-            "May 2014": 45,
-            "November 2016": "107",
-            "July 2016": "61",
-            "January 2013": "1",
-            "December 2013": 121,
-            "May 2015": "49",
-            "Division Codes": "CCH",
-            "February 2018": "33",
-            "October 2016": "55",
-            "October 2017": "45",
-            "February 2014": "156",
-            "October 2018": "61",
-            "March 2018": "57",
-            "September 2017": "47",
-            "April 2016": "44",
-            "March 2015": "48",
-            "September 2018": "45",
-            "December 2017": "39",
-            "January 2017": "36",
-            "November 2015": "93",
-            "December 2014": 32,
-            "November 2017": "40",
-            "September 2014": "77",
-            "January 2016": "51",
-            "April 2013": "27",
-            "October 2014": "46",
-            "July 2018": "49",
-            "September 2016": "44",
-            "December 2015": "45",
-            "March 2016": "49",
-            "January 2015": 49,
-            "July 2017": "62",
-            "March 2014": 71,
-            "August 2016": "33",
-            "January 2014": 76,
-            "xlsx_row_id": 12
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 36,
-            "April 2014": 5,
-            "April 2018": "24",
-            "August 2013": 83,
-            "August 2018": "18",
-            "February 2016": "4",
-            "January 2018": "27",
-            "March 2017": "29",
-            "September 2013": "33",
-            "April 2015": "10",
-            "December 2016": "14",
-            "August 2017": "35",
-            "November 2018": "21",
-            "May 2018": "36",
-            "June 2018": "27",
-            "May 2017": "43",
-            "June 2015": "20",
-            "November 2013": 21,
-            "February 2015": "5",
-            "June 2014": 43,
-            "August 2015": "21",
-            "October 2015": "20",
-            "April 2017": "37",
-            "July 2015": "17",
-            "June 2016": "3",
-            "November 2014": 8,
-            "August 2014": 4,
-            "June 2017": "40",
-            "July 2014": 4,
-            "September 2015": "9",
-            "February 2017": "19",
-            "October 2013": 16,
-            "May 2016": "9",
-            "May 2014": 32,
-            "November 2016": "25",
-            "July 2016": "5",
-            "December 2013": 24,
-            "May 2015": "61",
-            "Division Codes": "CCO",
-            "February 2018": "22",
-            "October 2016": "83",
-            "October 2017": "27",
-            "February 2014": "24",
-            "October 2018": "23",
-            "March 2018": "23",
-            "September 2017": "24",
-            "April 2016": "11",
-            "March 2015": "4",
-            "September 2018": "12",
-            "December 2017": "19",
-            "January 2017": "15",
-            "November 2015": "8",
-            "November 2017": "29",
-            "September 2014": "7",
-            "January 2016": "5",
-            "October 2014": "6",
-            "July 2018": "17",
-            "September 2016": "44",
-            "December 2015": "10",
-            "March 2016": "7",
-            "January 2015": 3,
-            "July 2017": "28",
-            "March 2014": 19,
-            "August 2016": "9",
-            "January 2014": 9,
-            "xlsx_row_id": 13
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "April 2018": "2464",
-            "August 2018": "2867",
-            "January 2018": "1901",
-            "March 2017": "1130",
-            "December 2016": "360",
-            "August 2017": "1509",
-            "November 2018": "2169",
-            "May 2018": "2309",
-            "June 2018": "2245",
-            "May 2017": "3658",
-            "April 2017": "2152",
-            "June 2017": "1592",
-            "February 2017": "593",
-            "November 2016": "772",
-            "July 2016": "6",
-            "Division Codes": "CCS",
-            "February 2018": "1756",
-            "October 2016": "529",
-            "October 2017": "2224",
-            "October 2018": "10098",
-            "March 2018": "2313",
-            "September 2017": "2094",
-            "September 2018": "3259",
-            "December 2017": "2419",
-            "January 2017": "396",
-            "November 2017": "2028",
-            "July 2018": "5424",
-            "September 2016": "302",
-            "July 2017": "1441",
-            "August 2016": "160",
-            "xlsx_row_id": 14
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 7,
-            "April 2014": 8,
-            "April 2018": "159",
-            "March 2013": "4",
-            "August 2013": 4,
-            "August 2018": "230",
-            "February 2016": "97",
-            "January 2018": "41",
-            "June 2013": 12,
-            "March 2017": "125",
-            "September 2013": "8",
-            "April 2015": "69",
-            "December 2016": "46",
-            "May 2013": 8,
-            "August 2017": "153",
-            "November 2018": "88",
-            "May 2018": "209",
-            "June 2018": "195",
-            "May 2017": "184",
-            "June 2015": "58",
-            "November 2013": 8,
-            "February 2015": "68",
-            "June 2014": 16,
-            "August 2015": "87",
-            "October 2015": "79",
-            "April 2017": "168",
-            "July 2015": "94",
-            "June 2016": "124",
-            "November 2014": 18,
-            "August 2014": 71,
-            "June 2017": "217",
-            "July 2014": 33,
-            "September 2015": "112",
-            "February 2013": "1",
-            "February 2017": "127",
-            "October 2013": 8,
-            "May 2016": "145",
-            "May 2014": 3,
-            "November 2016": "105",
-            "July 2016": "124",
-            "December 2013": 16,
-            "May 2015": "53",
-            "Division Codes": "CDR",
-            "February 2018": "29",
-            "October 2016": "141",
-            "October 2017": "47",
-            "February 2014": "16",
-            "October 2018": "242",
-            "March 2018": "64",
-            "September 2017": "90",
-            "April 2016": "129",
-            "March 2015": "126",
-            "September 2018": "169",
-            "December 2017": "20",
-            "January 2017": "56",
-            "November 2015": "91",
-            "December 2014": 20,
-            "November 2017": "69",
-            "September 2014": "39",
-            "January 2016": "87",
-            "April 2013": "12",
-            "October 2014": "34",
-            "July 2018": "189",
-            "September 2016": "86",
-            "December 2015": "95",
-            "March 2016": "130",
-            "January 2015": 27,
-            "July 2017": "193",
-            "March 2014": 13,
-            "August 2016": "102",
-            "January 2014": 18,
-            "xlsx_row_id": 15
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 29,
-            "April 2014": 15,
-            "April 2018": "5",
-            "March 2013": "17",
-            "August 2013": 28,
-            "August 2018": "16",
-            "February 2016": "5",
-            "January 2018": "4",
-            "June 2013": 19,
-            "March 2017": "13",
-            "September 2013": "19",
-            "April 2015": "21",
-            "December 2016": "7",
-            "May 2013": 22,
-            "August 2017": "18",
-            "November 2018": "13",
-            "May 2018": "19",
-            "June 2018": "27",
-            "May 2017": "13",
-            "June 2015": "12",
-            "November 2013": 14,
-            "February 2015": "13",
-            "June 2014": 12,
-            "August 2015": "2",
-            "October 2015": "1",
-            "April 2017": "21",
-            "July 2015": "5",
-            "June 2016": "1",
-            "November 2014": 20,
-            "August 2014": 11,
-            "June 2017": "16",
-            "July 2014": 12,
-            "September 2015": "7",
-            "February 2013": "23",
-            "February 2017": "16",
-            "October 2013": 15,
-            "May 2014": 12,
-            "November 2016": "8",
-            "July 2016": "3",
-            "January 2013": "13",
-            "December 2013": 12,
-            "May 2015": "19",
-            "Division Codes": "CGY",
-            "February 2018": "19",
-            "October 2016": "5",
-            "October 2017": "17",
-            "February 2014": "20",
-            "October 2018": "11",
-            "March 2018": "10",
-            "September 2017": "26",
-            "April 2016": "1",
-            "March 2015": "14",
-            "September 2018": "11",
-            "December 2017": "3",
-            "January 2017": "11",
-            "November 2015": "4",
-            "December 2014": 12,
-            "November 2017": "2",
-            "September 2014": "9",
-            "January 2016": "3",
-            "April 2013": "13",
-            "October 2014": "11",
-            "July 2018": "11",
-            "September 2016": "5",
-            "March 2016": "1",
-            "January 2015": 17,
-            "July 2017": "19",
-            "March 2014": 23,
-            "August 2016": "1",
-            "January 2014": 5,
-            "xlsx_row_id": 16
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "April 2018": "53",
-            "August 2018": "39",
-            "February 2016": "19",
-            "January 2018": "9",
-            "March 2017": "15",
-            "December 2016": "10",
-            "August 2017": "17",
-            "November 2018": "45",
-            "May 2018": "49",
-            "June 2018": "47",
-            "May 2017": "39",
-            "April 2017": "30",
-            "June 2016": "19",
-            "June 2017": "46",
-            "February 2017": "23",
-            "May 2016": "28",
-            "November 2016": "8",
-            "July 2016": "5",
-            "Division Codes": "CHO",
-            "February 2018": "15",
-            "October 2016": "8",
-            "October 2017": "33",
-            "October 2018": "68",
-            "March 2018": "25",
-            "September 2017": "32",
-            "April 2016": "16",
-            "September 2018": "60",
-            "December 2017": "25",
-            "January 2017": "13",
-            "November 2015": "35",
-            "November 2017": "70",
-            "January 2016": "10",
-            "July 2018": "45",
-            "September 2016": "5",
-            "December 2015": "32",
-            "March 2016": "14",
-            "July 2017": "37",
-            "August 2016": "5",
-            "xlsx_row_id": 17
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 314,
-            "April 2014": 194,
-            "April 2018": "4573",
-            "March 2013": "285",
-            "August 2013": 246,
-            "August 2018": "8807",
-            "February 2016": "670",
-            "January 2018": "2456",
-            "June 2013": 276,
-            "March 2017": "3054",
-            "September 2013": "307",
-            "April 2015": "704",
-            "December 2016": "1030",
-            "May 2013": 426,
-            "August 2017": "2396",
-            "November 2018": "3409",
-            "May 2018": "4360",
-            "June 2018": "3459",
-            "May 2017": "3167",
-            "June 2015": "634",
-            "November 2013": 343,
-            "February 2015": "474",
-            "June 2014": 197,
-            "August 2015": "550",
-            "October 2015": "810",
-            "April 2017": "2844",
-            "July 2015": "521",
-            "June 2016": "856",
-            "November 2014": 407,
-            "August 2014": 316,
-            "June 2017": "3218",
-            "July 2014": 328,
-            "September 2015": "558",
-            "February 2013": "225",
-            "February 2017": "4653",
-            "October 2013": 361,
-            "May 2016": "1226",
-            "May 2014": 193,
-            "November 2016": "1050",
-            "July 2016": "1061",
-            "January 2013": "113",
-            "December 2013": 275,
-            "May 2015": "611",
-            "Division Codes": "CID",
-            "February 2018": "3556",
-            "October 2016": "1215",
-            "October 2017": "2596",
-            "February 2014": "722",
-            "October 2018": "8847",
-            "March 2018": "5872",
-            "September 2017": "2103",
-            "April 2016": "863",
-            "March 2015": "1060",
-            "September 2018": "6076",
-            "December 2017": "2321",
-            "January 2017": "1337",
-            "November 2015": "786",
-            "December 2014": 232,
-            "November 2017": "8789",
-            "September 2014": "450",
-            "January 2016": "583",
-            "April 2013": "278",
-            "October 2014": "426",
-            "July 2018": "3657",
-            "September 2016": "1105",
-            "December 2015": "562",
-            "March 2016": "1399",
-            "January 2015": 301,
-            "July 2017": "2715",
-            "March 2014": 438,
-            "August 2016": "1022",
-            "January 2014": 434,
-            "xlsx_row_id": 18
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 6,
-            "April 2014": 13,
-            "April 2018": "16",
-            "August 2013": 21,
-            "August 2018": "16",
-            "February 2016": "8",
-            "January 2018": "12",
-            "June 2013": 11,
-            "March 2017": "23",
-            "September 2013": "10",
-            "April 2015": "32",
-            "December 2016": "15",
-            "May 2013": 15,
-            "August 2017": "15",
-            "November 2018": "9",
-            "May 2018": "14",
-            "June 2018": "31",
-            "May 2017": "12",
-            "June 2015": "14",
-            "November 2013": 16,
-            "February 2015": "11",
-            "June 2014": 13,
-            "August 2015": "31",
-            "October 2015": "5",
-            "April 2017": "21",
-            "July 2015": "41",
-            "June 2016": "5",
-            "November 2014": 27,
-            "August 2014": 111,
-            "June 2017": "27",
-            "July 2014": 18,
-            "September 2015": "17",
-            "February 2017": "13",
-            "October 2013": 22,
-            "May 2016": "10",
-            "May 2014": 19,
-            "November 2016": "9",
-            "July 2016": "6",
-            "January 2013": "3",
-            "December 2013": 8,
-            "May 2015": "26",
-            "Division Codes": "CJA",
-            "February 2018": "15",
-            "October 2016": "10",
-            "October 2017": "15",
-            "February 2014": "15",
-            "October 2018": "18",
-            "March 2018": "16",
-            "September 2017": "18",
-            "April 2016": "5",
-            "March 2015": "38",
-            "September 2018": "10",
-            "December 2017": "10",
-            "January 2017": "8",
-            "November 2015": "6",
-            "December 2014": 14,
-            "November 2017": "20",
-            "September 2014": "17",
-            "January 2016": "7",
-            "April 2013": "4",
-            "October 2014": "56",
-            "July 2018": "40",
-            "September 2016": "5",
-            "December 2015": "7",
-            "March 2016": "6",
-            "January 2015": 21,
-            "July 2017": "28",
-            "March 2014": 19,
-            "August 2016": "6",
-            "January 2014": 11,
-            "xlsx_row_id": 19
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 22,
-            "April 2014": 7,
-            "April 2018": "90",
-            "March 2013": "5",
-            "August 2013": 14,
-            "August 2018": "76",
-            "February 2016": "279",
-            "January 2018": "59",
-            "June 2013": 16,
-            "March 2017": "39",
-            "September 2013": "18",
-            "April 2015": "63",
-            "December 2016": "151",
-            "May 2013": 11,
-            "August 2017": "112",
-            "November 2018": "161",
-            "May 2018": "110",
-            "June 2018": "90",
-            "May 2017": "97",
-            "June 2015": "25",
-            "November 2013": 9,
-            "February 2015": "25",
-            "June 2014": 4,
-            "August 2015": "45",
-            "October 2015": "223",
-            "April 2017": "77",
-            "July 2015": "18",
-            "June 2016": "226",
-            "November 2014": 11,
-            "August 2014": 82,
-            "June 2017": "104",
-            "July 2014": 18,
-            "September 2015": "110",
-            "February 2013": "3",
-            "February 2017": "86",
-            "October 2013": 21,
-            "May 2016": "224",
-            "May 2014": 5,
-            "November 2016": "235",
-            "July 2016": "183",
-            "January 2013": "2",
-            "December 2013": 24,
-            "May 2015": "33",
-            "Division Codes": "CME",
-            "February 2018": "78",
-            "October 2016": "223",
-            "October 2017": "111",
-            "February 2014": "26",
-            "October 2018": "106",
-            "March 2018": "80",
-            "September 2017": "61",
-            "April 2016": "264",
-            "March 2015": "74",
-            "September 2018": "90",
-            "December 2017": "62",
-            "January 2017": "57",
-            "November 2015": "234",
-            "December 2014": 18,
-            "November 2017": "55",
-            "September 2014": "100",
-            "January 2016": "180",
-            "April 2013": "15",
-            "October 2014": "68",
-            "July 2018": "85",
-            "September 2016": "105",
-            "December 2015": "154",
-            "March 2016": "197",
-            "January 2015": 26,
-            "July 2017": "103",
-            "March 2014": 17,
-            "August 2016": "187",
-            "January 2014": 4,
-            "xlsx_row_id": 20
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 1187,
-            "April 2014": 1132,
-            "April 2018": "14860",
-            "March 2013": "712",
-            "August 2013": 1137,
-            "August 2018": "12175",
-            "February 2016": "2091",
-            "January 2018": "8745",
-            "June 2013": 1368,
-            "March 2017": "4297",
-            "September 2013": "1128",
-            "April 2015": "1717",
-            "December 2016": "2184",
-            "May 2013": 1146,
-            "August 2017": "5345",
-            "November 2018": "10140",
-            "May 2018": "11587",
-            "June 2018": "15394",
-            "May 2017": "7030",
-            "June 2015": "1421",
-            "November 2013": 1601,
-            "February 2015": "2078",
-            "June 2014": 1015,
-            "August 2015": "2954",
-            "October 2015": "1685",
-            "April 2017": "4735",
-            "July 2015": "1763",
-            "June 2016": "1776",
-            "November 2014": 1249,
-            "August 2014": 1041,
-            "June 2017": "7179",
-            "July 2014": 1057,
-            "September 2015": "1460",
-            "February 2013": "512",
-            "February 2017": "3011",
-            "October 2013": 1618,
-            "May 2016": "1971",
-            "May 2014": 980,
-            "November 2016": "3006",
-            "July 2016": "1520",
-            "January 2013": "440",
-            "December 2013": 1500,
-            "May 2015": "1490",
-            "Division Codes": "CMF",
-            "February 2018": "10985",
-            "October 2016": "3571",
-            "October 2017": "6863",
-            "February 2014": "2270",
-            "October 2018": "12692",
-            "March 2018": "12466",
-            "September 2017": "5651",
-            "April 2016": "1903",
-            "March 2015": "1889",
-            "September 2018": "11732",
-            "December 2017": "6444",
-            "January 2017": "2979",
-            "November 2015": "1725",
-            "December 2014": 1276,
-            "November 2017": "10050",
-            "September 2014": "1323",
-            "January 2016": "1904",
-            "April 2013": "1421",
-            "October 2014": "1437",
-            "July 2018": "11020",
-            "September 2016": "3280",
-            "December 2015": "1484",
-            "March 2016": "2035",
-            "January 2015": 1258,
-            "July 2017": "5302",
-            "March 2014": 983,
-            "August 2016": "2564",
-            "January 2014": 1790,
-            "xlsx_row_id": 21
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 363,
-            "April 2014": 549,
-            "April 2018": "308",
-            "March 2013": "204",
-            "August 2013": 437,
-            "August 2018": "344",
-            "February 2016": "83",
-            "January 2018": "327",
-            "June 2013": 404,
-            "March 2017": "2003",
-            "September 2013": "360",
-            "April 2015": "133",
-            "December 2016": "1300",
-            "May 2013": 369,
-            "August 2017": "406",
-            "November 2018": "639",
-            "May 2018": "254",
-            "June 2018": "232",
-            "May 2017": "609",
-            "June 2015": "106",
-            "November 2013": 414,
-            "February 2015": "131",
-            "June 2014": 201,
-            "August 2015": "121",
-            "October 2015": "85",
-            "April 2017": "676",
-            "July 2015": "126",
-            "June 2016": "1620",
-            "November 2014": 151,
-            "August 2014": 174,
-            "June 2017": "604",
-            "July 2014": 147,
-            "September 2015": "73",
-            "February 2013": "64",
-            "February 2017": "1608",
-            "October 2013": 556,
-            "May 2016": "1882",
-            "May 2014": 264,
-            "November 2016": "1552",
-            "July 2016": "1320",
-            "January 2013": "58",
-            "December 2013": 361,
-            "May 2015": "121",
-            "Division Codes": "CMG",
-            "February 2018": "226",
-            "October 2016": "1731",
-            "October 2017": "539",
-            "February 2014": "480",
-            "October 2018": "5695",
-            "March 2018": "335",
-            "September 2017": "385",
-            "April 2016": "1284",
-            "March 2015": "169",
-            "September 2018": "3024",
-            "December 2017": "315",
-            "January 2017": "1513",
-            "November 2015": "116",
-            "December 2014": 165,
-            "November 2017": "581",
-            "September 2014": "204",
-            "January 2016": "70",
-            "April 2013": "342",
-            "October 2014": "154",
-            "July 2018": "244",
-            "September 2016": "1533",
-            "December 2015": "55",
-            "March 2016": "76",
-            "January 2015": 79,
-            "July 2017": "531",
-            "March 2014": 246,
-            "August 2016": "1287",
-            "January 2014": 270,
-            "xlsx_row_id": 22
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "April 2018": "9",
-            "August 2018": "8",
-            "January 2018": "7",
-            "March 2017": "17",
-            "August 2017": "11",
-            "November 2018": "7",
-            "May 2018": "11",
-            "June 2018": "28",
-            "May 2017": "16",
-            "April 2017": "12",
-            "June 2017": "12",
-            "February 2017": "126",
-            "Division Codes": "CNI",
-            "February 2018": "1",
-            "October 2017": "25",
-            "October 2018": "9",
-            "March 2018": "10",
-            "September 2017": "13",
-            "September 2018": "19",
-            "December 2017": "5",
-            "November 2017": "15",
-            "July 2018": "9",
-            "July 2017": "14",
-            "xlsx_row_id": 23
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 112,
-            "April 2014": 100,
-            "April 2018": "231",
-            "March 2013": "27",
-            "August 2013": 109,
-            "August 2018": "112",
-            "February 2016": "318",
-            "January 2018": "107",
-            "June 2013": 178,
-            "March 2017": "163",
-            "September 2013": "91",
-            "April 2015": "128",
-            "December 2016": "188",
-            "May 2013": 46,
-            "August 2017": "144",
-            "November 2018": "203",
-            "May 2018": "142",
-            "June 2018": "91",
-            "May 2017": "208",
-            "June 2015": "207",
-            "November 2013": 78,
-            "February 2015": "103",
-            "June 2014": 192,
-            "August 2015": "177",
-            "October 2015": "283",
-            "April 2017": "190",
-            "July 2015": "212",
-            "June 2016": "311",
-            "November 2014": 143,
-            "August 2014": 129,
-            "June 2017": "175",
-            "July 2014": 145,
-            "September 2015": "153",
-            "February 2013": "7",
-            "February 2017": "160",
-            "October 2013": 87,
-            "May 2016": "318",
-            "May 2014": 127,
-            "November 2016": "389",
-            "July 2016": "557",
-            "January 2013": "11",
-            "December 2013": 62,
-            "May 2015": "127",
-            "Division Codes": "CPE",
-            "February 2018": "77",
-            "October 2016": "499",
-            "October 2017": "97",
-            "February 2014": "75",
-            "October 2018": "168",
-            "March 2018": "117",
-            "September 2017": "169",
-            "April 2016": "495",
-            "March 2015": "102",
-            "September 2018": "167",
-            "December 2017": "213",
-            "January 2017": "204",
-            "November 2015": "356",
-            "December 2014": 84,
-            "November 2017": "324",
-            "September 2014": "192",
-            "January 2016": "367",
-            "April 2013": "41",
-            "October 2014": "152",
-            "July 2018": "92",
-            "September 2016": "493",
-            "December 2015": "360",
-            "March 2016": "422",
-            "January 2015": 75,
-            "July 2017": "219",
-            "March 2014": 91,
-            "August 2016": "445",
-            "January 2014": 51,
-            "xlsx_row_id": 24
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "August 2018": "53",
-            "November 2018": "20",
-            "Division Codes": "CPR",
-            "October 2018": "15",
-            "September 2018": "36",
-            "xlsx_row_id": 25
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 125,
-            "April 2014": 80,
-            "April 2018": "868",
-            "March 2013": "61",
-            "August 2013": 145,
-            "August 2018": "1570",
-            "February 2016": "281",
-            "January 2018": "496",
-            "June 2013": 62,
-            "March 2017": "635",
-            "September 2013": "136",
-            "April 2015": "303",
-            "December 2016": "415",
-            "May 2013": 85,
-            "August 2017": "866",
-            "November 2018": "699",
-            "May 2018": "1126",
-            "June 2018": "1036",
-            "May 2017": "944",
-            "June 2015": "469",
-            "November 2013": 260,
-            "February 2015": "215",
-            "June 2014": 351,
-            "August 2015": "461",
-            "October 2015": "449",
-            "April 2017": "605",
-            "July 2015": "310",
-            "June 2016": "298",
-            "November 2014": 317,
-            "August 2014": 235,
-            "June 2017": "820",
-            "July 2014": 304,
-            "September 2015": "450",
-            "February 2013": "54",
-            "February 2017": "608",
-            "October 2013": 178,
-            "May 2016": "191",
-            "May 2014": 140,
-            "November 2016": "435",
-            "July 2016": "276",
-            "January 2013": "22",
-            "December 2013": 140,
-            "May 2015": "409",
-            "Division Codes": "CSC",
-            "February 2018": "627",
-            "October 2016": "499",
-            "October 2017": "597",
-            "February 2014": "309",
-            "October 2018": "1114",
-            "March 2018": "740",
-            "September 2017": "561",
-            "April 2016": "259",
-            "March 2015": "355",
-            "September 2018": "1365",
-            "December 2017": "321",
-            "January 2017": "416",
-            "November 2015": "423",
-            "December 2014": 171,
-            "November 2017": "583",
-            "September 2014": "271",
-            "January 2016": "267",
-            "April 2013": "90",
-            "October 2014": "336",
-            "July 2018": "995",
-            "September 2016": "406",
-            "December 2015": "241",
-            "March 2016": "321",
-            "January 2015": 193,
-            "July 2017": "903",
-            "March 2014": 108,
-            "August 2016": "424",
-            "January 2014": 190,
-            "xlsx_row_id": 26
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "April 2018": "1158",
-            "August 2018": "949",
-            "January 2018": "9",
-            "August 2017": "44",
-            "November 2018": "659",
-            "May 2018": "1356",
-            "June 2018": "1708",
-            "May 2017": "87",
-            "June 2017": "42",
-            "Division Codes": "CSD",
-            "February 2018": "23",
-            "October 2017": "13",
-            "October 2018": "1135",
-            "March 2018": "7779",
-            "September 2017": "25",
-            "September 2018": "1065",
-            "December 2017": "7",
-            "November 2017": "15",
-            "July 2018": "1099",
-            "July 2017": "27",
-            "xlsx_row_id": 27
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 316,
-            "April 2014": 138,
-            "April 2018": "4644",
-            "March 2013": "167",
-            "August 2013": 352,
-            "August 2018": "9028",
-            "February 2016": "231",
-            "January 2018": "3013",
-            "June 2013": 330,
-            "March 2017": "455",
-            "September 2013": "215",
-            "April 2015": "192",
-            "December 2016": "134",
-            "May 2013": 283,
-            "August 2017": "11171",
-            "November 2018": "6441",
-            "May 2018": "5400",
-            "June 2018": "15988",
-            "May 2017": "301",
-            "June 2015": "186",
-            "November 2013": 550,
-            "February 2015": "156",
-            "June 2014": 91,
-            "August 2015": "846",
-            "October 2015": "227",
-            "April 2017": "353",
-            "July 2015": "2041",
-            "June 2016": "118",
-            "November 2014": 186,
-            "August 2014": 158,
-            "June 2017": "402",
-            "July 2014": 133,
-            "September 2015": "326",
-            "February 2013": "120",
-            "February 2017": "284",
-            "October 2013": 410,
-            "May 2016": "214",
-            "May 2014": 80,
-            "November 2016": "224",
-            "July 2016": "148",
-            "January 2013": "113",
-            "December 2013": 735,
-            "May 2015": "197",
-            "Division Codes": "CSO",
-            "February 2018": "5515",
-            "October 2016": "239",
-            "October 2017": "9197",
-            "February 2014": "809",
-            "October 2018": "9514",
-            "March 2018": "3566",
-            "September 2017": "12061",
-            "April 2016": "199",
-            "March 2015": "171",
-            "September 2018": "7668",
-            "December 2017": "6554",
-            "January 2017": "92",
-            "November 2015": "204",
-            "December 2014": 133,
-            "November 2017": "6111",
-            "September 2014": "137",
-            "January 2016": "172",
-            "April 2013": "254",
-            "October 2014": "201",
-            "July 2018": "4793",
-            "September 2016": "165",
-            "December 2015": "290",
-            "March 2016": "176",
-            "January 2015": 762,
-            "July 2017": "5331",
-            "March 2014": 475,
-            "August 2016": "168",
-            "January 2014": 646,
-            "xlsx_row_id": 28
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 1120,
-            "April 2014": 917,
-            "April 2018": "14247",
-            "March 2013": "994",
-            "August 2013": 1200,
-            "August 2018": "17081",
-            "February 2016": "3857",
-            "January 2018": "7495",
-            "June 2013": 1210,
-            "March 2017": "7880",
-            "September 2013": "1059",
-            "April 2015": "1571",
-            "December 2016": "3487",
-            "May 2013": 1334,
-            "August 2017": "6899",
-            "November 2018": "14462",
-            "May 2018": "16168",
-            "June 2018": "11902",
-            "May 2017": "7265",
-            "June 2015": "2203",
-            "November 2013": 866,
-            "February 2015": "1318",
-            "June 2014": 911,
-            "August 2015": "2473",
-            "October 2015": "2157",
-            "April 2017": "6840",
-            "July 2015": "2032",
-            "June 2016": "3694",
-            "November 2014": 1402,
-            "August 2014": 1907,
-            "June 2017": "6348",
-            "July 2014": 1143,
-            "September 2015": "2059",
-            "February 2013": "816",
-            "February 2017": "7674",
-            "October 2013": 1147,
-            "May 2016": "4178",
-            "May 2014": 1169,
-            "November 2016": "5143",
-            "July 2016": "5013",
-            "January 2013": "504",
-            "December 2013": 904,
-            "May 2015": "1679",
-            "Division Codes": "CTI",
-            "February 2018": "11926",
-            "October 2016": "9831",
-            "October 2017": "12201",
-            "February 2014": "1854",
-            "October 2018": "20902",
-            "March 2018": "11942",
-            "September 2017": "7594",
-            "April 2016": "3444",
-            "March 2015": "1466",
-            "September 2018": "13621",
-            "December 2017": "7600",
-            "January 2017": "3808",
-            "November 2015": "2354",
-            "December 2014": 1181,
-            "November 2017": "17552",
-            "September 2014": "2063",
-            "January 2016": "2128",
-            "April 2013": "1133",
-            "October 2014": "1805",
-            "July 2018": "11642",
-            "September 2016": "4601",
-            "December 2015": "1801",
-            "March 2016": "4718",
-            "January 2015": 1969,
-            "July 2017": "6498",
-            "March 2014": 1241,
-            "August 2016": "5514",
-            "January 2014": 1175,
-            "xlsx_row_id": 29
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "November 2018": "57",
-            "Division Codes": "CUR",
-            "xlsx_row_id": 30
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 10825,
-            "April 2014": 11245,
-            "April 2018": "43134",
-            "March 2013": "4288",
-            "August 2013": 11236,
-            "August 2018": "36032",
-            "February 2016": "18094",
-            "January 2018": "19616",
-            "June 2013": 12318,
-            "March 2017": "28056",
-            "September 2013": "9734",
-            "April 2015": "15723",
-            "December 2016": "16861",
-            "May 2013": 11325,
-            "August 2017": "26653",
-            "November 2018": "22128",
-            "May 2018": "39051",
-            "June 2018": "34555",
-            "May 2017": "34104",
-            "June 2015": "13431",
-            "November 2013": 12162,
-            "February 2015": "15633",
-            "June 2014": 21554,
-            "August 2015": "23769",
-            "October 2015": "16390",
-            "April 2017": "33559",
-            "July 2015": "14851",
-            "June 2016": "14786",
-            "November 2014": 17678,
-            "August 2014": 15137,
-            "June 2017": "38025",
-            "July 2014": 20057,
-            "September 2015": "17530",
-            "February 2013": "2952",
-            "February 2017": "24925",
-            "October 2013": 14907,
-            "May 2016": "17655",
-            "May 2014": 17298,
-            "November 2016": "21576",
-            "July 2016": "16767",
-            "January 2013": "2042",
-            "December 2013": 14006,
-            "May 2015": "20502",
-            "Division Codes": "Discontinued Divisions",
-            "February 2018": "24520",
-            "October 2016": "23325",
-            "October 2017": "30248",
-            "February 2014": "24673",
-            "October 2018": "34864",
-            "March 2018": "32150",
-            "September 2017": "27303",
-            "April 2016": "17502",
-            "March 2015": "18652",
-            "September 2018": "36781",
-            "December 2017": "18217",
-            "January 2017": "16767",
-            "November 2015": "18108",
-            "December 2014": 11309,
-            "November 2017": "29154",
-            "September 2014": "19484",
-            "January 2016": "12389",
-            "April 2013": "8930",
-            "October 2014": "17582",
-            "July 2018": "33975",
-            "September 2016": "19168",
-            "December 2015": "15677",
-            "March 2016": "16796",
-            "January 2015": 10647,
-            "July 2017": "33735",
-            "March 2014": 13339,
-            "August 2016": "19204",
-            "January 2014": 11415,
-            "xlsx_row_id": 31
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 1360,
-            "April 2014": 4284,
-            "April 2018": "25121",
-            "March 2013": "1355",
-            "August 2013": 1362,
-            "August 2018": "28104",
-            "February 2016": "4462",
-            "January 2018": "12479",
-            "June 2013": 1399,
-            "March 2017": "15365",
-            "September 2013": "1573",
-            "April 2015": "4072",
-            "December 2016": "11740",
-            "May 2013": 2045,
-            "August 2017": "15831",
-            "November 2018": "19145",
-            "May 2018": "27432",
-            "June 2018": "24441",
-            "May 2017": "17091",
-            "June 2015": "4833",
-            "November 2013": 1698,
-            "February 2015": "4094",
-            "June 2014": 2662,
-            "August 2015": "5740",
-            "October 2015": "5117",
-            "April 2017": "17606",
-            "July 2015": "4530",
-            "June 2016": "4916",
-            "November 2014": 2373,
-            "August 2014": 8133,
-            "June 2017": "23213",
-            "July 2014": 1930,
-            "September 2015": "4673",
-            "February 2013": "1000",
-            "February 2017": "9266",
-            "October 2013": 1870,
-            "May 2016": "6103",
-            "May 2014": 3019,
-            "November 2016": "10903",
-            "July 2016": "5651",
-            "January 2013": "707",
-            "December 2013": 1673,
-            "May 2015": "5583",
-            "Division Codes": "EDU",
-            "February 2018": "16543",
-            "October 2016": "39620",
-            "October 2017": "24153",
-            "February 2014": "3377",
-            "October 2018": "35611",
-            "March 2018": "23133",
-            "September 2017": "18615",
-            "April 2016": "6270",
-            "March 2015": "3971",
-            "September 2018": "30540",
-            "December 2017": "13695",
-            "January 2017": "6848",
-            "November 2015": "5645",
-            "December 2014": 15257,
-            "November 2017": "28504",
-            "September 2014": "3246",
-            "January 2016": "3338",
-            "April 2013": "1548",
-            "October 2014": "2634",
-            "July 2018": "27071",
-            "September 2016": "10326",
-            "December 2015": "3536",
-            "March 2016": "4950",
-            "January 2015": 2469,
-            "July 2017": "16168",
-            "March 2014": 2796,
-            "August 2016": "8839",
-            "January 2014": 2973,
-            "xlsx_row_id": 32
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 769,
-            "April 2014": 830,
-            "April 2018": "12455",
-            "March 2013": "581",
-            "August 2013": 568,
-            "August 2018": "16651",
-            "February 2016": "3677",
-            "January 2018": "7476",
-            "June 2013": 599,
-            "March 2017": "6882",
-            "September 2013": "572",
-            "April 2015": "1918",
-            "December 2016": "9288",
-            "May 2013": 640,
-            "August 2017": "7973",
-            "November 2018": "10936",
-            "May 2018": "14239",
-            "June 2018": "13160",
-            "May 2017": "9076",
-            "June 2015": "3260",
-            "November 2013": 572,
-            "February 2015": "1775",
-            "June 2014": 1511,
-            "August 2015": "3058",
-            "October 2015": "2020",
-            "April 2017": "6898",
-            "July 2015": "5529",
-            "June 2016": "2885",
-            "November 2014": 2340,
-            "August 2014": 2204,
-            "June 2017": "8927",
-            "July 2014": 2380,
-            "September 2015": "2292",
-            "February 2013": "383",
-            "February 2017": "6301",
-            "October 2013": 767,
-            "May 2016": "2868",
-            "May 2014": 1424,
-            "November 2016": "4876",
-            "July 2016": "3068",
-            "January 2013": "158",
-            "December 2013": 1198,
-            "May 2015": "2534",
-            "Division Codes": "ENE",
-            "February 2018": "10195",
-            "October 2016": "4079",
-            "October 2017": "8681",
-            "February 2014": "1819",
-            "October 2018": "23554",
-            "March 2018": "11721",
-            "September 2017": "6872",
-            "April 2016": "3234",
-            "March 2015": "1940",
-            "September 2018": "13616",
-            "December 2017": "13873",
-            "January 2017": "3839",
-            "November 2015": "2286",
-            "December 2014": 2216,
-            "November 2017": "9859",
-            "September 2014": "1587",
-            "January 2016": "2272",
-            "April 2013": "647",
-            "October 2014": "2271",
-            "July 2018": "14165",
-            "September 2016": "3579",
-            "December 2015": "2011",
-            "March 2016": "4184",
-            "January 2015": 2294,
-            "July 2017": "8865",
-            "March 2014": 1043,
-            "August 2016": "4276",
-            "January 2014": 953,
-            "xlsx_row_id": 33
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 1149,
-            "April 2014": 4268,
-            "April 2018": "4549",
-            "March 2013": "1997",
-            "August 2013": 1429,
-            "August 2018": "4126",
-            "February 2016": "1520",
-            "January 2018": "2288",
-            "June 2013": 1188,
-            "March 2017": "4569",
-            "September 2013": "1337",
-            "April 2015": "2529",
-            "December 2016": "2379",
-            "May 2013": 1402,
-            "August 2017": "4258",
-            "November 2018": "4213",
-            "May 2018": "4717",
-            "June 2018": "4751",
-            "May 2017": "3713",
-            "June 2015": "2470",
-            "November 2013": 1479,
-            "February 2015": "1760",
-            "June 2014": 1697,
-            "August 2015": "2159",
-            "October 2015": "5199",
-            "April 2017": "3561",
-            "July 2015": "1818",
-            "June 2016": "2667",
-            "November 2014": 1497,
-            "August 2014": 1477,
-            "June 2017": "4042",
-            "July 2014": 1497,
-            "September 2015": "2027",
-            "February 2013": "360",
-            "February 2017": "3300",
-            "October 2013": 2017,
-            "May 2016": "3436",
-            "May 2014": 1384,
-            "November 2016": "2308",
-            "July 2016": "1645",
-            "January 2013": "346",
-            "December 2013": 1709,
-            "May 2015": "2397",
-            "Division Codes": "ESG",
-            "February 2018": "2520",
-            "October 2016": "2384",
-            "October 2017": "2884",
-            "February 2014": "3167",
-            "October 2018": "8095",
-            "March 2018": "3685",
-            "September 2017": "2766",
-            "April 2016": "2309",
-            "March 2015": "1554",
-            "September 2018": "17527",
-            "December 2017": "2042",
-            "January 2017": "1992",
-            "November 2015": "1841",
-            "December 2014": 1081,
-            "November 2017": "3285",
-            "September 2014": "8084",
-            "January 2016": "1446",
-            "April 2013": "1407",
-            "October 2014": "1481",
-            "July 2018": "3747",
-            "September 2016": "1787",
-            "December 2015": "1430",
-            "March 2016": "1661",
-            "January 2015": 1426,
-            "July 2017": "3983",
-            "March 2014": 1599,
-            "August 2016": "1796",
-            "January 2014": 1861,
-            "xlsx_row_id": 34
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 30,
-            "April 2014": 12,
-            "April 2018": "138",
-            "March 2013": "11",
-            "August 2013": 47,
-            "August 2018": "326",
-            "February 2016": "42",
-            "January 2018": "35",
-            "June 2013": 30,
-            "March 2017": "56",
-            "September 2013": "35",
-            "April 2015": "42",
-            "December 2016": "23",
-            "May 2013": 43,
-            "August 2017": "49",
-            "November 2018": "191",
-            "May 2018": "174",
-            "June 2018": "179",
-            "May 2017": "136",
-            "June 2015": "20",
-            "November 2013": 68,
-            "February 2015": "42",
-            "June 2014": 61,
-            "August 2015": "20",
-            "October 2015": "28",
-            "April 2017": "68",
-            "July 2015": "26",
-            "June 2016": "12",
-            "November 2014": 49,
-            "August 2014": 42,
-            "June 2017": "63",
-            "July 2014": 32,
-            "September 2015": "22",
-            "February 2013": "21",
-            "February 2017": "58",
-            "October 2013": 59,
-            "May 2016": "36",
-            "May 2014": 18,
-            "November 2016": "27",
-            "July 2016": "19",
-            "January 2013": "12",
-            "December 2013": 68,
-            "May 2015": "17",
-            "Division Codes": "EUR",
-            "February 2018": "53",
-            "October 2016": "26",
-            "October 2017": "48",
-            "February 2014": "145",
-            "October 2018": "261",
-            "March 2018": "57",
-            "September 2017": "74",
-            "April 2016": "50",
-            "March 2015": "96",
-            "September 2018": "326",
-            "December 2017": "39",
-            "January 2017": "24",
-            "November 2015": "38",
-            "December 2014": 13,
-            "November 2017": "59",
-            "September 2014": "59",
-            "January 2016": "20",
-            "April 2013": "39",
-            "October 2014": "43",
-            "July 2018": "161",
-            "September 2016": "23",
-            "December 2015": "27",
-            "March 2016": "45",
-            "January 2015": 19,
-            "July 2017": "44",
-            "March 2014": 44,
-            "August 2016": "30",
-            "January 2014": 74,
-            "xlsx_row_id": 35
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 72,
-            "April 2014": 71,
-            "April 2018": "458",
-            "March 2013": "9",
-            "August 2013": 57,
-            "August 2018": "420",
-            "February 2016": "45",
-            "January 2018": "326",
-            "June 2013": 23,
-            "March 2017": "47",
-            "September 2013": "19",
-            "April 2015": "157",
-            "December 2016": "40",
-            "May 2013": 11,
-            "August 2017": "137",
-            "November 2018": "453",
-            "May 2018": "453",
-            "June 2018": "553",
-            "May 2017": "165",
-            "June 2015": "119",
-            "November 2013": 67,
-            "February 2015": "270",
-            "June 2014": 89,
-            "August 2015": "110",
-            "October 2015": "91",
-            "April 2017": "85",
-            "July 2015": "122",
-            "June 2016": "39",
-            "November 2014": 122,
-            "August 2014": 219,
-            "June 2017": "310",
-            "July 2014": 163,
-            "September 2015": "131",
-            "February 2013": "1",
-            "February 2017": "145",
-            "October 2013": 65,
-            "May 2016": "52",
-            "May 2014": 54,
-            "November 2016": "75",
-            "July 2016": "35",
-            "December 2013": 132,
-            "May 2015": "148",
-            "Division Codes": "FHL",
-            "February 2018": "423",
-            "October 2016": "90",
-            "October 2017": "201",
-            "February 2014": "218",
-            "October 2018": "430",
-            "March 2018": "360",
-            "September 2017": "207",
-            "April 2016": "40",
-            "March 2015": "238",
-            "September 2018": "429",
-            "December 2017": "430",
-            "January 2017": "49",
-            "November 2015": "136",
-            "December 2014": 49,
-            "November 2017": "191",
-            "September 2014": "81",
-            "January 2016": "86",
-            "April 2013": "4",
-            "October 2014": "83",
-            "July 2018": "621",
-            "September 2016": "46",
-            "December 2015": "86",
-            "March 2016": "61",
-            "January 2015": 91,
-            "July 2017": "131",
-            "March 2014": 154,
-            "August 2016": "88",
-            "January 2014": 136,
-            "xlsx_row_id": 36
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 847,
-            "April 2014": 1091,
-            "April 2018": "16750",
-            "March 2013": "445",
-            "August 2013": 1471,
-            "August 2018": "20065",
-            "February 2016": "2898",
-            "January 2018": "11083",
-            "June 2013": 962,
-            "March 2017": "27708",
-            "September 2013": "1372",
-            "April 2015": "2093",
-            "December 2016": "7777",
-            "May 2013": 1308,
-            "August 2017": "11103",
-            "November 2018": "15704",
-            "May 2018": "14829",
-            "June 2018": "15038",
-            "May 2017": "15834",
-            "June 2015": "2872",
-            "November 2013": 1273,
-            "February 2015": "2607",
-            "June 2014": 1432,
-            "August 2015": "11404",
-            "October 2015": "3436",
-            "April 2017": "12809",
-            "July 2015": "3276",
-            "June 2016": "3442",
-            "November 2014": 1625,
-            "August 2014": 2278,
-            "June 2017": "20617",
-            "July 2014": 1364,
-            "September 2015": "4194",
-            "February 2013": "326",
-            "February 2017": "8237",
-            "October 2013": 1652,
-            "May 2016": "3656",
-            "May 2014": 1285,
-            "November 2016": "9233",
-            "July 2016": "7558",
-            "January 2013": "138",
-            "December 2013": 1318,
-            "May 2015": "2686",
-            "Division Codes": "FMM",
-            "February 2018": "12270",
-            "October 2016": "8271",
-            "October 2017": "18548",
-            "February 2014": "1909",
-            "October 2018": "15355",
-            "March 2018": "13478",
-            "September 2017": "10138",
-            "April 2016": "3339",
-            "March 2015": "2692",
-            "September 2018": "15690",
-            "December 2017": "9334",
-            "January 2017": "6339",
-            "November 2015": "3573",
-            "December 2014": 1360,
-            "November 2017": "25955",
-            "September 2014": "2092",
-            "January 2016": "2687",
-            "April 2013": "807",
-            "October 2014": "1942",
-            "July 2018": "22256",
-            "September 2016": "8795",
-            "December 2015": "2537",
-            "March 2016": "2723",
-            "January 2015": 1083,
-            "July 2017": "11105",
-            "March 2014": 1482,
-            "August 2016": "5563",
-            "January 2014": 963,
-            "xlsx_row_id": 37
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "April 2014": 16,
-            "April 2018": "313",
-            "August 2018": "651",
-            "February 2016": "89",
-            "January 2018": "249",
-            "March 2017": "97",
-            "April 2015": "76",
-            "December 2016": "41",
-            "August 2017": "144",
-            "November 2018": "412",
-            "May 2018": "307",
-            "June 2018": "302",
-            "May 2017": "168",
-            "June 2015": "122",
-            "February 2015": "133",
-            "June 2014": 125,
-            "August 2015": "132",
-            "October 2015": "93",
-            "April 2017": "149",
-            "July 2015": "96",
-            "June 2016": "63",
-            "November 2014": 137,
-            "August 2014": 294,
-            "June 2017": "179",
-            "July 2014": 195,
-            "September 2015": "107",
-            "February 2017": "92",
-            "May 2016": "101",
-            "May 2014": 37,
-            "November 2016": "85",
-            "July 2016": "85",
-            "December 2013": 133,
-            "May 2015": "121",
-            "Division Codes": "FMP",
-            "February 2018": "206",
-            "October 2016": "93",
-            "October 2017": "138",
-            "February 2014": "70",
-            "October 2018": "580",
-            "March 2018": "257",
-            "September 2017": "133",
-            "April 2016": "43",
-            "March 2015": "109",
-            "September 2018": "449",
-            "December 2017": "341",
-            "January 2017": "78",
-            "November 2015": "70",
-            "December 2014": 110,
-            "November 2017": "154",
-            "September 2014": "269",
-            "January 2016": "53",
-            "October 2014": "155",
-            "July 2018": "465",
-            "September 2016": "72",
-            "December 2015": "70",
-            "March 2016": "80",
-            "January 2015": 113,
-            "July 2017": "134",
-            "March 2014": 36,
-            "August 2016": "99",
-            "January 2014": 169,
-            "xlsx_row_id": 38
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 103,
-            "April 2014": 22,
-            "April 2018": "74",
-            "March 2013": "17",
-            "August 2013": 104,
-            "August 2018": "101",
-            "February 2016": "44",
-            "January 2018": "41",
-            "June 2013": 52,
-            "March 2017": "38",
-            "September 2013": "56",
-            "April 2015": "38",
-            "December 2016": "64",
-            "May 2013": 58,
-            "August 2017": "98",
-            "November 2018": "99",
-            "May 2018": "66",
-            "June 2018": "106",
-            "May 2017": "56",
-            "June 2015": "24",
-            "November 2013": 76,
-            "February 2015": "17",
-            "June 2014": 36,
-            "August 2015": "25",
-            "October 2015": "28",
-            "April 2017": "75",
-            "July 2015": "20",
-            "June 2016": "6",
-            "November 2014": 18,
-            "August 2014": 27,
-            "June 2017": "108",
-            "July 2014": 38,
-            "September 2015": "49",
-            "February 2013": "9",
-            "February 2017": "106",
-            "October 2013": 108,
-            "May 2016": "20",
-            "May 2014": 64,
-            "November 2016": "72",
-            "July 2016": "9",
-            "January 2013": "10",
-            "December 2013": 127,
-            "May 2015": "67",
-            "Division Codes": "GCM",
-            "February 2018": "38",
-            "October 2016": "90",
-            "October 2017": "53",
-            "February 2014": "221",
-            "October 2018": "128",
-            "March 2018": "43",
-            "September 2017": "129",
-            "April 2016": "32",
-            "March 2015": "31",
-            "September 2018": "94",
-            "December 2017": "35",
-            "January 2017": "128",
-            "November 2015": "30",
-            "December 2014": 8,
-            "November 2017": "36",
-            "September 2014": "29",
-            "January 2016": "11",
-            "April 2013": "59",
-            "October 2014": "22",
-            "July 2018": "92",
-            "September 2016": "53",
-            "December 2015": "25",
-            "March 2016": "18",
-            "January 2015": 13,
-            "July 2017": "102",
-            "March 2014": 107,
-            "August 2016": "145",
-            "January 2014": 99,
-            "xlsx_row_id": 39
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 99,
-            "April 2014": 471,
-            "April 2018": "2210",
-            "March 2013": "89",
-            "August 2013": 106,
-            "August 2018": "2016",
-            "February 2016": "429",
-            "January 2018": "2303",
-            "June 2013": 140,
-            "March 2017": "858",
-            "September 2013": "102",
-            "April 2015": "201",
-            "December 2016": "701",
-            "May 2013": 121,
-            "August 2017": "1688",
-            "November 2018": "1638",
-            "May 2018": "2529",
-            "June 2018": "2160",
-            "May 2017": "920",
-            "June 2015": "169",
-            "November 2013": 205,
-            "February 2015": "310",
-            "June 2014": 288,
-            "August 2015": "314",
-            "October 2015": "194",
-            "April 2017": "902",
-            "July 2015": "173",
-            "June 2016": "969",
-            "November 2014": 258,
-            "August 2014": 189,
-            "June 2017": "1017",
-            "July 2014": 241,
-            "September 2015": "183",
-            "February 2013": "66",
-            "February 2017": "570",
-            "October 2013": 131,
-            "May 2016": "2104",
-            "May 2014": 294,
-            "November 2016": "470",
-            "July 2016": "326",
-            "January 2013": "44",
-            "December 2013": 196,
-            "May 2015": "151",
-            "Division Codes": "GDI",
-            "February 2018": "5084",
-            "October 2016": "417",
-            "October 2017": "1303",
-            "February 2014": "336",
-            "October 2018": "2254",
-            "March 2018": "1963",
-            "September 2017": "1103",
-            "April 2016": "221",
-            "March 2015": "133",
-            "September 2018": "2260",
-            "December 2017": "1167",
-            "January 2017": "680",
-            "November 2015": "215",
-            "December 2014": 165,
-            "November 2017": "5913",
-            "September 2014": "206",
-            "January 2016": "1212",
-            "April 2013": "114",
-            "October 2014": "278",
-            "July 2018": "1777",
-            "September 2016": "435",
-            "December 2015": "141",
-            "March 2016": "332",
-            "January 2015": 156,
-            "July 2017": "652",
-            "March 2014": 740,
-            "August 2016": "399",
-            "January 2014": 169,
-            "xlsx_row_id": 40
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Division Codes": "HRD",
-            "November 2015": "164",
-            "xlsx_row_id": 41
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 358,
-            "April 2014": 7211,
-            "April 2018": "11578",
-            "March 2013": "181",
-            "August 2013": 448,
-            "August 2018": "15133",
-            "February 2016": "1298",
-            "January 2018": "8104",
-            "June 2013": 299,
-            "March 2017": "10048",
-            "September 2013": "355",
-            "April 2015": "3381",
-            "December 2016": "3667",
-            "May 2013": 382,
-            "August 2017": "8759",
-            "November 2018": "6466",
-            "May 2018": "12349",
-            "June 2018": "9756",
-            "May 2017": "13432",
-            "June 2015": "2029",
-            "November 2013": 358,
-            "February 2015": "2754",
-            "June 2014": 2132,
-            "August 2015": "6363",
-            "October 2015": "1406",
-            "April 2017": "10166",
-            "July 2015": "7176",
-            "June 2016": "2708",
-            "November 2014": 1115,
-            "August 2014": 3832,
-            "June 2017": "13332",
-            "July 2014": 3668,
-            "September 2015": "1461",
-            "February 2013": "148",
-            "February 2017": "5588",
-            "October 2013": 440,
-            "May 2016": "2359",
-            "May 2014": 2235,
-            "November 2016": "4411",
-            "July 2016": "7556",
-            "January 2013": "98",
-            "December 2013": 417,
-            "May 2015": "2820",
-            "Division Codes": "HUD",
-            "February 2018": "10085",
-            "October 2016": "4787",
-            "October 2017": "13178",
-            "February 2014": "697",
-            "October 2018": "14989",
-            "March 2018": "10896",
-            "September 2017": "9866",
-            "April 2016": "3319",
-            "March 2015": "5265",
-            "September 2018": "17686",
-            "December 2017": "9415",
-            "January 2017": "3938",
-            "November 2015": "1493",
-            "December 2014": 1161,
-            "November 2017": "15365",
-            "September 2014": "2401",
-            "January 2016": "1972",
-            "April 2013": "346",
-            "October 2014": "1740",
-            "July 2018": "13614",
-            "September 2016": "6725",
-            "December 2015": "1090",
-            "March 2016": "1483",
-            "January 2015": 1098,
-            "July 2017": "9436",
-            "March 2014": 1628,
-            "August 2016": "8718",
-            "January 2014": 694,
-            "xlsx_row_id": 42
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "November 2018": "796",
-            "Division Codes": "ICD",
-            "October 2018": "2849",
-            "September 2018": "327",
-            "xlsx_row_id": 43
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 1830,
-            "April 2014": 2763,
-            "April 2018": "20240",
-            "March 2013": "710",
-            "August 2013": 1784,
-            "August 2018": "40626",
-            "February 2016": "10756",
-            "January 2018": "13358",
-            "June 2013": 1698,
-            "March 2017": "21510",
-            "September 2013": "2596",
-            "April 2015": "4512",
-            "December 2016": "9120",
-            "May 2013": 3146,
-            "August 2017": "17158",
-            "November 2018": "16776",
-            "May 2018": "20939",
-            "June 2018": "29618",
-            "May 2017": "17538",
-            "June 2015": "15557",
-            "November 2013": 2282,
-            "February 2015": "3367",
-            "June 2014": 2296,
-            "August 2015": "8809",
-            "October 2015": "6878",
-            "April 2017": "15459",
-            "July 2015": "10836",
-            "June 2016": "8416",
-            "November 2014": 4786,
-            "August 2014": 2433,
-            "June 2017": "15755",
-            "July 2014": 2799,
-            "September 2015": "6341",
-            "February 2013": "520",
-            "February 2017": "18708",
-            "October 2013": 2889,
-            "May 2016": "7524",
-            "May 2014": 2553,
-            "November 2016": "10051",
-            "July 2016": "8671",
-            "January 2013": "422",
-            "December 2013": 1794,
-            "May 2015": "4656",
-            "Division Codes": "ICS",
-            "February 2018": "17491",
-            "October 2016": "12742",
-            "October 2017": "23550",
-            "February 2014": "4036",
-            "October 2018": "31520",
-            "March 2018": "17592",
-            "September 2017": "22631",
-            "April 2016": "8051",
-            "March 2015": "4791",
-            "September 2018": "35262",
-            "December 2017": "14469",
-            "January 2017": "10155",
-            "November 2015": "8413",
-            "December 2014": 3817,
-            "November 2017": "27976",
-            "September 2014": "6477",
-            "January 2016": "4755",
-            "April 2013": "1896",
-            "October 2014": "5910",
-            "July 2018": "36940",
-            "September 2016": "11472",
-            "December 2015": "6094",
-            "March 2016": "13890",
-            "January 2015": 4983,
-            "July 2017": "17360",
-            "March 2014": 2924,
-            "August 2016": "9371",
-            "January 2014": 1970,
-            "xlsx_row_id": 44
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 591,
-            "April 2014": 679,
-            "April 2018": "5803",
-            "March 2013": "322",
-            "August 2013": 590,
-            "August 2018": "3987",
-            "February 2016": "606",
-            "January 2018": "4134",
-            "June 2013": 618,
-            "March 2017": "3803",
-            "September 2013": "478",
-            "April 2015": "969",
-            "December 2016": "1099",
-            "May 2013": 568,
-            "August 2017": "2009",
-            "November 2018": "3851",
-            "May 2018": "4545",
-            "June 2018": "3502",
-            "May 2017": "3159",
-            "June 2015": "795",
-            "November 2013": 641,
-            "February 2015": "1095",
-            "June 2014": 729,
-            "August 2015": "726",
-            "October 2015": "619",
-            "April 2017": "3701",
-            "July 2015": "873",
-            "June 2016": "598",
-            "November 2014": 775,
-            "August 2014": 914,
-            "June 2017": "3533",
-            "July 2014": 744,
-            "September 2015": "797",
-            "February 2013": "239",
-            "February 2017": "2420",
-            "October 2013": 932,
-            "May 2016": "660",
-            "May 2014": 693,
-            "November 2016": "1426",
-            "July 2016": "590",
-            "January 2013": "163",
-            "December 2013": 697,
-            "May 2015": "877",
-            "Division Codes": "IFD",
-            "February 2018": "4750",
-            "October 2016": "1351",
-            "October 2017": "4393",
-            "February 2014": "1035",
-            "October 2018": "5172",
-            "March 2018": "6420",
-            "September 2017": "3277",
-            "April 2016": "798",
-            "March 2015": "1004",
-            "September 2018": "4778",
-            "December 2017": "3876",
-            "January 2017": "1473",
-            "November 2015": "677",
-            "December 2014": 484,
-            "November 2017": "10616",
-            "September 2014": "1080",
-            "January 2016": "601",
-            "April 2013": "343",
-            "October 2014": "860",
-            "July 2018": "3548",
-            "September 2016": "1124",
-            "December 2015": "598",
-            "March 2016": "708",
-            "January 2015": 762,
-            "July 2017": "2742",
-            "March 2014": 552,
-            "August 2016": "1155",
-            "January 2014": 593,
-            "xlsx_row_id": 45
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "April 2014": 4928,
-            "April 2018": "4848",
-            "August 2018": "5449",
-            "February 2016": "1450",
-            "January 2018": "2905",
-            "March 2017": "3240",
-            "April 2015": "860",
-            "December 2016": "2057",
-            "August 2017": "4224",
-            "November 2018": "3510",
-            "May 2018": "6378",
-            "June 2018": "4917",
-            "May 2017": "3862",
-            "June 2015": "748",
-            "November 2013": 135,
-            "February 2015": "1356",
-            "June 2014": 1103,
-            "August 2015": "836",
-            "October 2015": "677",
-            "April 2017": "3212",
-            "July 2015": "580",
-            "June 2016": "1970",
-            "November 2014": 417,
-            "August 2014": 676,
-            "June 2017": "4042",
-            "July 2014": 596,
-            "September 2015": "720",
-            "February 2017": "2524",
-            "May 2016": "1988",
-            "May 2014": 1259,
-            "November 2016": "3003",
-            "July 2016": "1773",
-            "December 2013": 117,
-            "May 2015": "950",
-            "Division Codes": "INE",
-            "February 2018": "3272",
-            "October 2016": "2553",
-            "October 2017": "5416",
-            "February 2014": "234",
-            "October 2018": "4890",
-            "March 2018": "4283",
-            "September 2017": "4307",
-            "April 2016": "2514",
-            "March 2015": "1152",
-            "September 2018": "6070",
-            "December 2017": "2792",
-            "January 2017": "2023",
-            "November 2015": "1075",
-            "December 2014": 473,
-            "November 2017": "7002",
-            "September 2014": "607",
-            "January 2016": "1610",
-            "October 2014": "773",
-            "July 2018": "4225",
-            "September 2016": "2313",
-            "December 2015": "950",
-            "March 2016": "1246",
-            "January 2015": 358,
-            "July 2017": "3788",
-            "March 2014": 1638,
-            "August 2016": "2186",
-            "January 2014": 56,
-            "xlsx_row_id": 46
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 2096,
-            "April 2014": 1916,
-            "April 2018": "8056",
-            "March 2013": "1159",
-            "August 2013": 2547,
-            "August 2018": "26228",
-            "February 2016": "2291",
-            "January 2018": "12096",
-            "June 2013": 1725,
-            "March 2017": "5167",
-            "September 2013": "1917",
-            "April 2015": "2342",
-            "December 2016": "11221",
-            "May 2013": 2137,
-            "August 2017": "25198",
-            "November 2018": "11129",
-            "May 2018": "10363",
-            "June 2018": "9114",
-            "May 2017": "7194",
-            "June 2015": "2005",
-            "November 2013": 2668,
-            "February 2015": "2397",
-            "June 2014": 1961,
-            "August 2015": "3790",
-            "October 2015": "2399",
-            "April 2017": "9348",
-            "July 2015": "2510",
-            "June 2016": "4115",
-            "November 2014": 2187,
-            "August 2014": 1528,
-            "June 2017": "7365",
-            "July 2014": 1357,
-            "September 2015": "2628",
-            "February 2013": "729",
-            "February 2017": "4647",
-            "October 2013": 2571,
-            "May 2016": "3978",
-            "May 2014": 2212,
-            "November 2016": "6916",
-            "July 2016": "3274",
-            "January 2013": "478",
-            "December 2013": 3390,
-            "May 2015": "2662",
-            "Division Codes": "INL",
-            "February 2018": "10094",
-            "October 2016": "4791",
-            "October 2017": "14236",
-            "February 2014": "4503",
-            "October 2018": "28670",
-            "March 2018": "8846",
-            "September 2017": "29863",
-            "April 2016": "3607",
-            "March 2015": "2632",
-            "September 2018": "40614",
-            "December 2017": "13531",
-            "January 2017": "4798",
-            "November 2015": "3406",
-            "December 2014": 1163,
-            "November 2017": "9769",
-            "September 2014": "1819",
-            "January 2016": "1845",
-            "April 2013": "1293",
-            "October 2014": "2509",
-            "July 2018": "8103",
-            "September 2016": "3609",
-            "December 2015": "2138",
-            "March 2016": "2998",
-            "January 2015": 927,
-            "July 2017": "6689",
-            "March 2014": 2206,
-            "August 2016": "3471",
-            "January 2014": 2266,
-            "xlsx_row_id": 47
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 2873,
-            "April 2014": 3872,
-            "April 2018": "13821",
-            "March 2013": "1709",
-            "August 2013": 2937,
-            "August 2018": "21342",
-            "February 2016": "5758",
-            "January 2018": "11772",
-            "June 2013": 3241,
-            "March 2017": "10995",
-            "September 2013": "2471",
-            "April 2015": "7796",
-            "December 2016": "11273",
-            "May 2013": 3414,
-            "August 2017": "10625",
-            "November 2018": "13025",
-            "May 2018": "14695",
-            "June 2018": "17423",
-            "May 2017": "12056",
-            "June 2015": "7005",
-            "November 2013": 4632,
-            "February 2015": "10362",
-            "June 2014": 3855,
-            "August 2015": "5875",
-            "October 2015": "6792",
-            "April 2017": "12315",
-            "July 2015": "5704",
-            "June 2016": "5526",
-            "November 2014": 7312,
-            "August 2014": 2646,
-            "June 2017": "11543",
-            "July 2014": 3566,
-            "September 2015": "4721",
-            "February 2013": "1374",
-            "February 2017": "10367",
-            "October 2013": 4648,
-            "May 2016": "5275",
-            "May 2014": 4558,
-            "November 2016": "9263",
-            "July 2016": "4350",
-            "January 2013": "992",
-            "December 2013": 3634,
-            "May 2015": "7373",
-            "Division Codes": "INT",
-            "February 2018": "8310",
-            "October 2016": "9741",
-            "October 2017": "8919",
-            "February 2014": "7769",
-            "October 2018": "19624",
-            "March 2018": "10197",
-            "September 2017": "8449",
-            "April 2016": "5825",
-            "March 2015": "10169",
-            "September 2018": "18662",
-            "December 2017": "9832",
-            "January 2017": "8626",
-            "November 2015": "5267",
-            "December 2014": 10507,
-            "November 2017": "17705",
-            "September 2014": "4997",
-            "January 2016": "3681",
-            "April 2013": "2873",
-            "October 2014": "8232",
-            "July 2018": "14181",
-            "September 2016": "6203",
-            "December 2015": "5651",
-            "March 2016": "7243",
-            "January 2015": 8118,
-            "July 2017": "14170",
-            "March 2014": 3755,
-            "August 2016": "5560",
-            "January 2014": 3628,
-            "xlsx_row_id": 48
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 4,
-            "April 2014": 1,
-            "April 2018": "3",
-            "August 2013": 2,
-            "August 2018": "1667",
-            "February 2016": "1",
-            "January 2018": "2",
-            "June 2013": 2,
-            "March 2017": "3",
-            "September 2013": "1",
-            "May 2013": 4,
-            "August 2017": "3",
-            "November 2018": "764",
-            "May 2018": "5",
-            "June 2018": "1128",
-            "May 2017": "4",
-            "November 2013": 3,
-            "August 2015": "1",
-            "October 2015": "2",
-            "April 2017": "5",
-            "August 2014": 1,
-            "June 2017": "5",
-            "September 2015": "2",
-            "February 2017": "4",
-            "October 2013": 6,
-            "May 2016": "1",
-            "November 2016": "1",
-            "Division Codes": "ITE",
-            "February 2018": "3",
-            "October 2016": "6",
-            "October 2017": "4",
-            "February 2014": "14",
-            "October 2018": "804",
-            "March 2018": "4",
-            "September 2017": "3",
-            "April 2016": "6",
-            "March 2015": "2",
-            "September 2018": "767",
-            "December 2017": "4",
-            "November 2015": "1",
-            "November 2017": "3",
-            "April 2013": "2",
-            "July 2018": "1876",
-            "July 2017": "4",
-            "xlsx_row_id": 49
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 2142,
-            "April 2014": 4808,
-            "April 2018": "34157",
-            "March 2013": "1367",
-            "August 2013": 2008,
-            "August 2018": "45266",
-            "February 2016": "7699",
-            "January 2018": "19170",
-            "June 2013": 2226,
-            "March 2017": "18051",
-            "September 2013": "1672",
-            "April 2015": "7514",
-            "December 2016": "10520",
-            "May 2013": 2378,
-            "August 2017": "22659",
-            "November 2018": "24952",
-            "May 2018": "37692",
-            "June 2018": "35047",
-            "May 2017": "24039",
-            "June 2015": "6490",
-            "November 2013": 9850,
-            "February 2015": "5424",
-            "June 2014": 3563,
-            "August 2015": "7287",
-            "October 2015": "6909",
-            "April 2017": "17967",
-            "July 2015": "6299",
-            "June 2016": "8724",
-            "November 2014": 5436,
-            "August 2014": 6298,
-            "June 2017": "22843",
-            "July 2014": 4200,
-            "September 2015": "5943",
-            "February 2013": "997",
-            "February 2017": "19884",
-            "October 2013": 5542,
-            "May 2016": "17384",
-            "May 2014": 5064,
-            "November 2016": "13259",
-            "July 2016": "7844",
-            "January 2013": "677",
-            "December 2013": 5364,
-            "May 2015": "8662",
-            "Division Codes": "KIC",
-            "February 2018": "24828",
-            "October 2016": "13499",
-            "October 2017": "19516",
-            "February 2014": "5446",
-            "October 2018": "38452",
-            "March 2018": "29689",
-            "September 2017": "22560",
-            "April 2016": "9809",
-            "March 2015": "5338",
-            "September 2018": "38826",
-            "December 2017": "16515",
-            "January 2017": "11764",
-            "November 2015": "6429",
-            "December 2014": 5953,
-            "November 2017": "25772",
-            "September 2014": "6679",
-            "January 2016": "7865",
-            "April 2013": "2011",
-            "October 2014": "7212",
-            "July 2018": "34764",
-            "September 2016": "10497",
-            "December 2015": "8937",
-            "March 2016": "7355",
-            "January 2015": 3671,
-            "July 2017": "19214",
-            "March 2014": 4385,
-            "August 2016": "10622",
-            "January 2014": 4840,
-            "xlsx_row_id": 50
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 122,
-            "April 2014": 59,
-            "April 2018": "705",
-            "March 2013": "74",
-            "August 2013": 126,
-            "August 2018": "589",
-            "February 2016": "195",
-            "January 2018": "448",
-            "June 2013": 101,
-            "March 2017": "350",
-            "September 2013": "65",
-            "April 2015": "185",
-            "December 2016": "190",
-            "May 2013": 139,
-            "August 2017": "970",
-            "November 2018": "267",
-            "May 2018": "677",
-            "June 2018": "631",
-            "May 2017": "444",
-            "June 2015": "165",
-            "November 2013": 96,
-            "February 2015": "315",
-            "June 2014": 84,
-            "August 2015": "231",
-            "October 2015": "159",
-            "April 2017": "494",
-            "July 2015": "154",
-            "June 2016": "364",
-            "November 2014": 98,
-            "August 2014": 95,
-            "June 2017": "872",
-            "July 2014": 76,
-            "September 2015": "180",
-            "February 2013": "73",
-            "February 2017": "257",
-            "October 2013": 118,
-            "May 2016": "221",
-            "May 2014": 50,
-            "November 2016": "297",
-            "July 2016": "368",
-            "January 2013": "41",
-            "December 2013": 188,
-            "May 2015": "204",
-            "Division Codes": "KNM",
-            "February 2018": "467",
-            "October 2016": "205",
-            "October 2017": "714",
-            "February 2014": "288",
-            "October 2018": "409",
-            "March 2018": "603",
-            "September 2017": "664",
-            "April 2016": "227",
-            "March 2015": "276",
-            "September 2018": "434",
-            "December 2017": "532",
-            "January 2017": "188",
-            "November 2015": "176",
-            "December 2014": 67,
-            "November 2017": "896",
-            "September 2014": "144",
-            "January 2016": "189",
-            "April 2013": "125",
-            "October 2014": "108",
-            "July 2018": "584",
-            "September 2016": "204",
-            "December 2015": "141",
-            "March 2016": "212",
-            "January 2015": 86,
-            "July 2017": "877",
-            "March 2014": 174,
-            "August 2016": "241",
-            "January 2014": 243,
-            "xlsx_row_id": 51
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 256,
-            "April 2014": 406,
-            "April 2018": "12358",
-            "March 2013": "294",
-            "August 2013": 272,
-            "August 2018": "14626",
-            "February 2016": "4063",
-            "January 2018": "7007",
-            "June 2013": 365,
-            "March 2017": "6814",
-            "September 2013": "190",
-            "April 2015": "3386",
-            "December 2016": "4959",
-            "May 2013": 441,
-            "August 2017": "8744",
-            "November 2018": "26288",
-            "May 2018": "22872",
-            "June 2018": "12984",
-            "May 2017": "9262",
-            "June 2015": "1735",
-            "November 2013": 742,
-            "February 2015": "861",
-            "June 2014": 469,
-            "August 2015": "2452",
-            "October 2015": "2322",
-            "April 2017": "7596",
-            "July 2015": "1834",
-            "June 2016": "2988",
-            "November 2014": 692,
-            "August 2014": 591,
-            "June 2017": "8402",
-            "July 2014": 525,
-            "September 2015": "2730",
-            "February 2013": "110",
-            "February 2017": "6886",
-            "October 2013": 1134,
-            "May 2016": "3860",
-            "May 2014": 480,
-            "November 2016": "7458",
-            "July 2016": "3883",
-            "January 2013": "85",
-            "December 2013": 685,
-            "May 2015": "2983",
-            "Division Codes": "LMK",
-            "February 2018": "8098",
-            "October 2016": "6283",
-            "October 2017": "10776",
-            "February 2014": "945",
-            "October 2018": "18454",
-            "March 2018": "10241",
-            "September 2017": "8666",
-            "April 2016": "3044",
-            "March 2015": "1527",
-            "September 2018": "14061",
-            "December 2017": "5564",
-            "January 2017": "4561",
-            "November 2015": "3710",
-            "December 2014": 533,
-            "November 2017": "10345",
-            "September 2014": "1236",
-            "January 2016": "2934",
-            "April 2013": "273",
-            "October 2014": "1352",
-            "July 2018": "12530",
-            "September 2016": "4891",
-            "December 2015": "3500",
-            "March 2016": "3419",
-            "January 2015": 702,
-            "July 2017": "7471",
-            "March 2014": 747,
-            "August 2016": "5036",
-            "January 2014": 732,
-            "xlsx_row_id": 52
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 110,
-            "April 2014": 14,
-            "April 2018": "29",
-            "March 2013": "135",
-            "August 2013": 98,
-            "August 2018": "18",
-            "February 2016": "32",
-            "January 2018": "15",
-            "June 2013": 150,
-            "March 2017": "15",
-            "September 2013": "122",
-            "April 2015": "18",
-            "December 2016": "6",
-            "May 2013": 134,
-            "August 2017": "48",
-            "November 2018": "12",
-            "May 2018": "35",
-            "June 2018": "26",
-            "May 2017": "43",
-            "June 2015": "9",
-            "November 2013": 133,
-            "February 2015": "73",
-            "June 2014": 115,
-            "August 2015": "72",
-            "October 2015": "55",
-            "April 2017": "22",
-            "July 2015": "54",
-            "June 2016": "8",
-            "November 2014": 49,
-            "August 2014": 89,
-            "June 2017": "40",
-            "July 2014": 120,
-            "September 2015": "82",
-            "February 2017": "43",
-            "October 2013": 124,
-            "May 2016": "7",
-            "May 2014": 360,
-            "November 2016": "12",
-            "July 2016": "6",
-            "December 2013": 69,
-            "May 2015": "11",
-            "Division Codes": "MICI",
-            "February 2018": "26",
-            "October 2016": "20",
-            "October 2017": "19",
-            "February 2014": "84",
-            "October 2018": "20",
-            "March 2018": "27",
-            "September 2017": "54",
-            "April 2016": "9",
-            "March 2015": "50",
-            "September 2018": "22",
-            "December 2017": "16",
-            "January 2017": "11",
-            "November 2015": "121",
-            "December 2014": 32,
-            "November 2017": "45",
-            "September 2014": "65",
-            "January 2016": "48",
-            "April 2013": "223",
-            "October 2014": "81",
-            "July 2018": "61",
-            "September 2016": "24",
-            "December 2015": "30",
-            "March 2016": "22",
-            "January 2015": 41,
-            "July 2017": "32",
-            "March 2014": 27,
-            "August 2016": "7",
-            "January 2014": 65,
-            "xlsx_row_id": 53
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 3303,
-            "April 2014": 3114,
-            "April 2018": "13251",
-            "March 2013": "1387",
-            "August 2013": 3293,
-            "August 2018": "12114",
-            "February 2016": "3127",
-            "January 2018": "7061",
-            "June 2013": 3373,
-            "March 2017": "6419",
-            "September 2013": "2980",
-            "April 2015": "3388",
-            "December 2016": "3331",
-            "May 2013": 3704,
-            "August 2017": "7825",
-            "November 2018": "8511",
-            "May 2018": "11660",
-            "June 2018": "9834",
-            "May 2017": "6335",
-            "June 2015": "3320",
-            "November 2013": 3660,
-            "February 2015": "2555",
-            "June 2014": 2265,
-            "August 2015": "3398",
-            "October 2015": "4077",
-            "April 2017": "7640",
-            "July 2015": "3562",
-            "June 2016": "2607",
-            "November 2014": 2846,
-            "August 2014": 2058,
-            "June 2017": "9601",
-            "July 2014": 2679,
-            "September 2015": "3898",
-            "February 2013": "1214",
-            "February 2017": "8109",
-            "October 2013": 4620,
-            "May 2016": "3118",
-            "May 2014": 3983,
-            "November 2016": "4356",
-            "July 2016": "2807",
-            "January 2013": "679",
-            "December 2013": 4386,
-            "May 2015": "4171",
-            "Division Codes": "MIF",
-            "February 2018": "7109",
-            "October 2016": "5033",
-            "October 2017": "8458",
-            "February 2014": "7674",
-            "October 2018": "12104",
-            "March 2018": "8684",
-            "September 2017": "8189",
-            "April 2016": "2886",
-            "March 2015": "2999",
-            "September 2018": "11619",
-            "December 2017": "8044",
-            "January 2017": "3566",
-            "November 2015": "4421",
-            "December 2014": 1629,
-            "November 2017": "8662",
-            "September 2014": "2747",
-            "January 2016": "2530",
-            "April 2013": "2523",
-            "October 2014": "2970",
-            "July 2018": "9410",
-            "September 2016": "3266",
-            "December 2015": "3086",
-            "March 2016": "2743",
-            "January 2015": 1658,
-            "July 2017": "7996",
-            "March 2014": 3581,
-            "August 2016": "3509",
-            "January 2014": 3782,
-            "xlsx_row_id": 54
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 83,
-            "April 2014": 43,
-            "April 2018": "90",
-            "March 2013": "41",
-            "August 2013": 112,
-            "August 2018": "75",
-            "February 2016": "95",
-            "January 2018": "78",
-            "June 2013": 82,
-            "March 2017": "74",
-            "September 2013": "109",
-            "April 2015": "20",
-            "December 2016": "41",
-            "May 2013": 117,
-            "August 2017": "87",
-            "November 2018": "67",
-            "May 2018": "100",
-            "June 2018": "83",
-            "May 2017": "90",
-            "June 2015": "36",
-            "November 2013": 89,
-            "February 2015": "30",
-            "June 2014": 32,
-            "August 2015": "67",
-            "October 2015": "57",
-            "April 2017": "95",
-            "July 2015": "29",
-            "June 2016": "54",
-            "November 2014": 30,
-            "August 2014": 21,
-            "June 2017": "132",
-            "July 2014": 8,
-            "September 2015": "58",
-            "February 2013": "39",
-            "February 2017": "141",
-            "October 2013": 167,
-            "May 2016": "82",
-            "May 2014": 54,
-            "November 2016": "27",
-            "July 2016": "36",
-            "January 2013": "50",
-            "December 2013": 147,
-            "May 2015": "45",
-            "Division Codes": "OII",
-            "February 2018": "80",
-            "October 2016": "83",
-            "October 2017": "63",
-            "February 2014": "217",
-            "October 2018": "108",
-            "March 2018": "78",
-            "September 2017": "102",
-            "April 2016": "78",
-            "March 2015": "31",
-            "September 2018": "82",
-            "December 2017": "72",
-            "January 2017": "56",
-            "November 2015": "52",
-            "December 2014": 18,
-            "November 2017": "82",
-            "September 2014": "28",
-            "January 2016": "34",
-            "April 2013": "109",
-            "October 2014": "24",
-            "July 2018": "64",
-            "September 2016": "76",
-            "December 2015": "56",
-            "March 2016": "55",
-            "January 2015": 17,
-            "July 2017": "106",
-            "March 2014": 103,
-            "August 2016": "88",
-            "January 2014": 100,
-            "xlsx_row_id": 55
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 52,
-            "April 2014": 1970,
-            "April 2018": "957",
-            "March 2013": "117",
-            "August 2013": 59,
-            "August 2018": "677",
-            "February 2016": "334",
-            "January 2018": "319",
-            "June 2013": 40,
-            "March 2017": "610",
-            "September 2013": "39",
-            "April 2015": "373",
-            "December 2016": "323",
-            "May 2013": 63,
-            "August 2017": "446",
-            "November 2018": "357",
-            "May 2018": "634",
-            "June 2018": "568",
-            "May 2017": "1199",
-            "June 2015": "400",
-            "November 2013": 67,
-            "February 2015": "336",
-            "June 2014": 691,
-            "August 2015": "353",
-            "October 2015": "424",
-            "April 2017": "591",
-            "July 2015": "400",
-            "June 2016": "703",
-            "November 2014": 337,
-            "August 2014": 346,
-            "June 2017": "810",
-            "July 2014": 503,
-            "September 2015": "373",
-            "February 2013": "61",
-            "February 2017": "381",
-            "October 2013": 107,
-            "May 2016": "569",
-            "May 2014": 2035,
-            "November 2016": "386",
-            "July 2016": "671",
-            "January 2013": "36",
-            "December 2013": 54,
-            "May 2015": "366",
-            "Division Codes": "ORP",
-            "February 2018": "345",
-            "October 2016": "421",
-            "October 2017": "404",
-            "February 2014": "99",
-            "October 2018": "657",
-            "March 2018": "1573",
-            "September 2017": "392",
-            "April 2016": "647",
-            "March 2015": "405",
-            "September 2018": "513",
-            "December 2017": "310",
-            "January 2017": "375",
-            "November 2015": "443",
-            "December 2014": 253,
-            "November 2017": "402",
-            "September 2014": "629",
-            "January 2016": "255",
-            "April 2013": "77",
-            "October 2014": "788",
-            "July 2018": "414",
-            "September 2016": "423",
-            "December 2015": "226",
-            "March 2016": "322",
-            "January 2015": 235,
-            "July 2017": "565",
-            "March 2014": 48,
-            "August 2016": "490",
-            "January 2014": 50,
-            "xlsx_row_id": 56
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 4187,
-            "April 2014": 2230,
-            "April 2018": "12082",
-            "March 2013": "1191",
-            "August 2013": 3701,
-            "August 2018": "12866",
-            "February 2016": "5255",
-            "January 2018": "7332",
-            "June 2013": 4834,
-            "March 2017": "9860",
-            "September 2013": "4051",
-            "April 2015": "3476",
-            "December 2016": "4332",
-            "May 2013": 4653,
-            "August 2017": "8261",
-            "November 2018": "9752",
-            "May 2018": "12600",
-            "June 2018": "11786",
-            "May 2017": "14551",
-            "June 2015": "5008",
-            "November 2013": 7739,
-            "February 2015": "3178",
-            "June 2014": 2302,
-            "August 2015": "5520",
-            "October 2015": "4743",
-            "April 2017": "12004",
-            "July 2015": "5395",
-            "June 2016": "6323",
-            "November 2014": 2808,
-            "August 2014": 2485,
-            "June 2017": "13084",
-            "July 2014": 3338,
-            "September 2015": "4683",
-            "February 2013": "574",
-            "February 2017": "9258",
-            "October 2013": 6321,
-            "May 2016": "6464",
-            "May 2014": 2036,
-            "November 2016": "7632",
-            "July 2016": "5529",
-            "January 2013": "317",
-            "December 2013": 6220,
-            "May 2015": "4949",
-            "Division Codes": "OVE",
-            "February 2018": "8471",
-            "October 2016": "8004",
-            "October 2017": "8555",
-            "February 2014": "8493",
-            "October 2018": "14962",
-            "March 2018": "9449",
-            "September 2017": "8351",
-            "April 2016": "6575",
-            "March 2015": "3765",
-            "September 2018": "12320",
-            "December 2017": "5831",
-            "January 2017": "5110",
-            "November 2015": "5587",
-            "December 2014": 2564,
-            "November 2017": "8615",
-            "September 2014": "2691",
-            "January 2016": "4528",
-            "April 2013": "3198",
-            "October 2014": "2856",
-            "July 2018": "12472",
-            "September 2016": "6355",
-            "December 2015": "4378",
-            "March 2016": "5189",
-            "January 2015": 2361,
-            "July 2017": "10330",
-            "March 2014": 4927,
-            "August 2016": "6349",
-            "January 2014": 7866,
-            "xlsx_row_id": 57
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 15,
-            "April 2014": 3,
-            "March 2013": "9",
-            "August 2013": 20,
-            "June 2013": 6,
-            "September 2013": "12",
-            "May 2013": 15,
-            "November 2013": 14,
-            "February 2015": "8",
-            "June 2014": 2,
-            "November 2014": 2,
-            "August 2014": 2,
-            "July 2014": 2,
-            "February 2013": "8",
-            "October 2013": 19,
-            "May 2014": 3,
-            "January 2013": "9",
-            "December 2013": 13,
-            "Division Codes": "PCY",
-            "February 2014": "44",
-            "December 2014": 4,
-            "September 2014": "6",
-            "April 2013": "11",
-            "October 2014": "4",
-            "January 2015": 4,
-            "March 2014": 14,
-            "January 2014": 6,
-            "xlsx_row_id": 58
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 223,
-            "April 2014": 145,
-            "April 2018": "15",
-            "March 2013": "249",
-            "August 2013": 214,
-            "August 2018": "65",
-            "February 2016": "484",
-            "January 2018": "86",
-            "June 2013": 256,
-            "March 2017": "47",
-            "September 2013": "246",
-            "April 2015": "96",
-            "December 2016": "72",
-            "May 2013": 328,
-            "August 2017": "130",
-            "November 2018": "22",
-            "May 2018": "23",
-            "June 2018": "22",
-            "May 2017": "46",
-            "June 2015": "54",
-            "November 2013": 203,
-            "February 2015": "214",
-            "June 2014": 162,
-            "August 2015": "72",
-            "October 2015": "32",
-            "April 2017": "60",
-            "July 2015": "63",
-            "June 2016": "26",
-            "November 2014": 163,
-            "August 2014": 152,
-            "June 2017": "35",
-            "July 2014": 156,
-            "September 2015": "45",
-            "February 2013": "248",
-            "February 2017": "61",
-            "October 2013": 253,
-            "May 2016": "27",
-            "May 2014": 102,
-            "November 2016": "11",
-            "July 2016": "37",
-            "January 2013": "183",
-            "December 2013": 154,
-            "May 2015": "105",
-            "Division Codes": "PRE",
-            "February 2018": "21",
-            "October 2016": "21",
-            "October 2017": "36",
-            "February 2014": "250",
-            "October 2018": "29",
-            "March 2018": "34",
-            "September 2017": "229",
-            "April 2016": "31",
-            "March 2015": "73",
-            "September 2018": "31",
-            "December 2017": "34",
-            "January 2017": "198",
-            "November 2015": "41",
-            "December 2014": 118,
-            "November 2017": "32",
-            "September 2014": "200",
-            "January 2016": "100",
-            "April 2013": "221",
-            "October 2014": "177",
-            "July 2018": "32",
-            "September 2016": "16",
-            "December 2015": "38",
-            "March 2016": "61",
-            "January 2015": 166,
-            "July 2017": "49",
-            "March 2014": 104,
-            "August 2016": "12",
-            "January 2014": 229,
-            "xlsx_row_id": 59
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 6,
-            "April 2014": 1,
-            "April 2018": "3",
-            "August 2013": 2,
-            "February 2016": "2",
-            "January 2018": "1",
-            "June 2013": 1,
-            "March 2017": "1",
-            "September 2013": "2",
-            "May 2013": 2,
-            "August 2017": "3",
-            "November 2018": "1",
-            "June 2018": "3",
-            "May 2017": "1",
-            "June 2015": "2",
-            "November 2013": 2,
-            "February 2015": "5",
-            "August 2015": "2",
-            "October 2015": "2",
-            "April 2017": "13",
-            "July 2015": "2",
-            "November 2014": 4,
-            "August 2014": 1,
-            "June 2017": "7",
-            "July 2014": 2,
-            "September 2015": "3",
-            "February 2017": "1",
-            "October 2013": 4,
-            "May 2014": 3,
-            "November 2016": "2",
-            "July 2016": "1",
-            "December 2013": 1,
-            "May 2015": "5",
-            "Division Codes": "PRO",
-            "February 2018": "9",
-            "October 2016": "5",
-            "October 2017": "1",
-            "February 2014": "1",
-            "March 2018": "1",
-            "April 2016": "1",
-            "March 2015": "3",
-            "September 2018": "1",
-            "December 2017": "3",
-            "January 2017": "2",
-            "November 2017": "2",
-            "October 2014": "1",
-            "July 2018": "5",
-            "September 2016": "1",
-            "December 2015": "2",
-            "March 2016": "4",
-            "January 2015": 1,
-            "July 2017": "1",
-            "March 2014": 2,
-            "August 2016": "2",
-            "January 2014": 1,
-            "xlsx_row_id": 60
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 3388,
-            "April 2014": 8162,
-            "April 2018": "39648",
-            "March 2013": "2172",
-            "August 2013": 3221,
-            "August 2018": "32392",
-            "February 2016": "19630",
-            "January 2018": "24443",
-            "June 2013": 3292,
-            "March 2017": "23516",
-            "September 2013": "2791",
-            "April 2015": "24339",
-            "December 2016": "23542",
-            "May 2013": 4221,
-            "August 2017": "25506",
-            "November 2018": "28916",
-            "May 2018": "41672",
-            "June 2018": "32571",
-            "May 2017": "30892",
-            "June 2015": "18951",
-            "November 2013": 4410,
-            "February 2015": "18632",
-            "June 2014": 13045,
-            "August 2015": "45208",
-            "October 2015": "22093",
-            "April 2017": "32038",
-            "July 2015": "18190",
-            "June 2016": "17732",
-            "November 2014": 19312,
-            "August 2014": 14554,
-            "June 2017": "26753",
-            "July 2014": 14430,
-            "September 2015": "18871",
-            "February 2013": "1420",
-            "February 2017": "22045",
-            "October 2013": 5583,
-            "May 2016": "16519",
-            "May 2014": 12787,
-            "November 2016": "26564",
-            "July 2016": "27602",
-            "January 2013": "971",
-            "December 2013": 4682,
-            "May 2015": "26745",
-            "Division Codes": "RES",
-            "February 2018": "26968",
-            "October 2016": "24872",
-            "October 2017": "36784",
-            "February 2014": "9439",
-            "October 2018": "50205",
-            "March 2018": "33212",
-            "September 2017": "38726",
-            "April 2016": "18409",
-            "March 2015": "21260",
-            "September 2018": "37405",
-            "December 2017": "25786",
-            "January 2017": "19871",
-            "November 2015": "34121",
-            "December 2014": 15191,
-            "November 2017": "31807",
-            "September 2014": "20540",
-            "January 2016": "21588",
-            "April 2013": "2874",
-            "October 2014": "21903",
-            "July 2018": "31862",
-            "September 2016": "25609",
-            "December 2015": "25846",
-            "March 2016": "17060",
-            "January 2015": 13075,
-            "July 2017": "25295",
-            "March 2014": 5069,
-            "August 2016": "27528",
-            "January 2014": 4802,
-            "xlsx_row_id": 61
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "April 2018": "6",
-            "August 2018": "3",
-            "January 2018": "6",
-            "August 2017": "14",
-            "November 2018": "3",
-            "May 2018": "6",
-            "June 2018": "5",
-            "May 2017": "4",
-            "June 2017": "14",
-            "Division Codes": "RMG",
-            "February 2018": "5",
-            "October 2017": "11",
-            "October 2018": "8",
-            "March 2018": "5",
-            "September 2017": "7",
-            "September 2018": "6",
-            "December 2017": "4",
-            "November 2017": "12",
-            "July 2018": "3",
-            "July 2017": "17",
-            "xlsx_row_id": 62
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "April 2018": "3818",
-            "August 2018": "5661",
-            "January 2018": "1947",
-            "March 2017": "1650",
-            "December 2016": "1158",
-            "August 2017": "1264",
-            "November 2018": "4703",
-            "May 2018": "5349",
-            "June 2018": "5674",
-            "May 2017": "1215",
-            "April 2017": "1410",
-            "June 2017": "1370",
-            "February 2017": "2097",
-            "November 2016": "1056",
-            "July 2016": "3",
-            "Division Codes": "RND",
-            "February 2018": "1958",
-            "October 2016": "730",
-            "October 2017": "3939",
-            "October 2018": "12866",
-            "March 2018": "5940",
-            "September 2017": "2480",
-            "September 2018": "8188",
-            "December 2017": "5200",
-            "January 2017": "1020",
-            "November 2017": "5788",
-            "July 2018": "3147",
-            "September 2016": "300",
-            "July 2017": "1324",
-            "August 2016": "44",
-            "xlsx_row_id": 63
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 133,
-            "April 2014": 200,
-            "April 2018": "1748",
-            "March 2013": "120",
-            "August 2013": 166,
-            "August 2018": "6093",
-            "February 2016": "347",
-            "January 2018": "2391",
-            "June 2013": 181,
-            "March 2017": "1741",
-            "September 2013": "170",
-            "April 2015": "321",
-            "December 2016": "1261",
-            "May 2013": 170,
-            "August 2017": "1487",
-            "November 2018": "9060",
-            "May 2018": "12809",
-            "June 2018": "4166",
-            "May 2017": "1721",
-            "June 2015": "218",
-            "November 2013": 171,
-            "February 2015": "267",
-            "June 2014": 154,
-            "August 2015": "1068",
-            "October 2015": "250",
-            "April 2017": "1857",
-            "July 2015": "207",
-            "June 2016": "359",
-            "November 2014": 256,
-            "August 2014": 148,
-            "June 2017": "1857",
-            "July 2014": 154,
-            "September 2015": "175",
-            "February 2013": "68",
-            "February 2017": "1975",
-            "October 2013": 245,
-            "May 2016": "386",
-            "May 2014": 223,
-            "November 2016": "3265",
-            "July 2016": "439",
-            "January 2013": "64",
-            "December 2013": 212,
-            "May 2015": "313",
-            "Division Codes": "SCL",
-            "February 2018": "1853",
-            "October 2016": "3684",
-            "October 2017": "2446",
-            "February 2014": "464",
-            "October 2018": "7077",
-            "March 2018": "1956",
-            "September 2017": "2051",
-            "April 2016": "386",
-            "March 2015": "272",
-            "September 2018": "4148",
-            "December 2017": "11076",
-            "January 2017": "1288",
-            "November 2015": "219",
-            "December 2014": 118,
-            "November 2017": "2430",
-            "September 2014": "772",
-            "January 2016": "181",
-            "April 2013": "175",
-            "October 2014": "317",
-            "July 2018": "3939",
-            "September 2016": "467",
-            "December 2015": "190",
-            "March 2016": "583",
-            "January 2015": 130,
-            "July 2017": "1468",
-            "March 2014": 275,
-            "August 2016": "453",
-            "January 2014": 207,
-            "xlsx_row_id": 64
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 768,
-            "April 2014": 818,
-            "April 2018": "7887",
-            "March 2013": "249",
-            "August 2013": 667,
-            "August 2018": "7401",
-            "February 2016": "3635",
-            "January 2018": "2944",
-            "June 2013": 730,
-            "March 2017": "4730",
-            "September 2013": "648",
-            "April 2015": "2028",
-            "December 2016": "3002",
-            "May 2013": 675,
-            "August 2017": "3021",
-            "November 2018": "5535",
-            "May 2018": "7982",
-            "June 2018": "6942",
-            "May 2017": "5111",
-            "June 2015": "1514",
-            "November 2013": 802,
-            "February 2015": "2264",
-            "June 2014": 1858,
-            "August 2015": "1938",
-            "October 2015": "2789",
-            "April 2017": "5193",
-            "July 2015": "1666",
-            "June 2016": "2535",
-            "November 2014": 1469,
-            "August 2014": 2236,
-            "June 2017": "3915",
-            "July 2014": 1588,
-            "September 2015": "2213",
-            "February 2013": "219",
-            "February 2017": "3742",
-            "October 2013": 902,
-            "May 2016": "3071",
-            "May 2014": 1644,
-            "November 2016": "3913",
-            "July 2016": "2115",
-            "January 2013": "117",
-            "December 2013": 860,
-            "May 2015": "1779",
-            "Division Codes": "SDI",
-            "February 2018": "3988",
-            "October 2016": "4141",
-            "October 2017": "3430",
-            "February 2014": "1613",
-            "October 2018": "8263",
-            "March 2018": "5634",
-            "September 2017": "3131",
-            "April 2016": "3712",
-            "March 2015": "2193",
-            "September 2018": "8110",
-            "December 2017": "2386",
-            "January 2017": "3638",
-            "November 2015": "3407",
-            "December 2014": 1067,
-            "November 2017": "3998",
-            "September 2014": "1337",
-            "January 2016": "2092",
-            "April 2013": "549",
-            "October 2014": "1194",
-            "July 2018": "6821",
-            "September 2016": "3374",
-            "December 2015": "2025",
-            "March 2016": "3695",
-            "January 2015": 1506,
-            "July 2017": "3143",
-            "March 2014": 988,
-            "August 2016": "3137",
-            "January 2014": 903,
-            "xlsx_row_id": 65
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 744,
-            "April 2014": 267,
-            "April 2018": "956",
-            "March 2013": "558",
-            "August 2013": 612,
-            "August 2018": "1080",
-            "February 2016": "358",
-            "January 2018": "622",
-            "June 2013": 687,
-            "March 2017": "939",
-            "September 2013": "593",
-            "April 2015": "471",
-            "December 2016": "668",
-            "May 2013": 724,
-            "August 2017": "1402",
-            "November 2018": "769",
-            "May 2018": "1145",
-            "June 2018": "834",
-            "May 2017": "953",
-            "June 2015": "351",
-            "November 2013": 588,
-            "February 2015": "373",
-            "June 2014": 407,
-            "August 2015": "303",
-            "October 2015": "364",
-            "April 2017": "856",
-            "July 2015": "304",
-            "June 2016": "370",
-            "November 2014": 345,
-            "August 2014": 269,
-            "June 2017": "1001",
-            "July 2014": 690,
-            "September 2015": "241",
-            "February 2013": "490",
-            "February 2017": "842",
-            "October 2013": 655,
-            "May 2016": "319",
-            "May 2014": 663,
-            "November 2016": "721",
-            "July 2016": "371",
-            "January 2013": "307",
-            "December 2013": 488,
-            "May 2015": "424",
-            "Division Codes": "SDV",
-            "February 2018": "830",
-            "October 2016": "693",
-            "October 2017": "607",
-            "February 2014": "720",
-            "October 2018": "1104",
-            "March 2018": "914",
-            "September 2017": "820",
-            "April 2016": "377",
-            "March 2015": "410",
-            "September 2018": "1123",
-            "December 2017": "490",
-            "January 2017": "715",
-            "November 2015": "391",
-            "December 2014": 302,
-            "November 2017": "530",
-            "September 2014": "352",
-            "January 2016": "360",
-            "April 2013": "783",
-            "October 2014": "358",
-            "July 2018": "895",
-            "September 2016": "645",
-            "December 2015": "325",
-            "March 2016": "330",
-            "January 2015": 326,
-            "July 2017": "874",
-            "March 2014": 441,
-            "August 2016": "438",
-            "January 2014": 474,
-            "xlsx_row_id": 66
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 84,
-            "April 2014": 36,
-            "April 2018": "84",
-            "March 2013": "20",
-            "August 2013": 101,
-            "August 2018": "52",
-            "February 2016": "19",
-            "January 2018": "35",
-            "June 2013": 60,
-            "March 2017": "37",
-            "September 2013": "71",
-            "April 2015": "27",
-            "December 2016": "31",
-            "May 2013": 76,
-            "August 2017": "20",
-            "November 2018": "39",
-            "May 2018": "35",
-            "June 2018": "54",
-            "May 2017": "41",
-            "June 2015": "24",
-            "November 2013": 115,
-            "February 2015": "31",
-            "June 2014": 30,
-            "August 2015": "83",
-            "October 2015": "87",
-            "April 2017": "110",
-            "July 2015": "73",
-            "June 2016": "12",
-            "November 2014": 21,
-            "August 2014": 23,
-            "June 2017": "106",
-            "July 2014": 38,
-            "September 2015": "82",
-            "February 2013": "13",
-            "February 2017": "62",
-            "October 2013": 107,
-            "May 2016": "49",
-            "May 2014": 55,
-            "November 2016": "48",
-            "July 2016": "21",
-            "January 2013": "13",
-            "December 2013": 115,
-            "May 2015": "27",
-            "Division Codes": "SEC",
-            "February 2018": "29",
-            "October 2016": "71",
-            "October 2017": "36",
-            "February 2014": "224",
-            "October 2018": "65",
-            "March 2018": "40",
-            "September 2017": "28",
-            "April 2016": "47",
-            "March 2015": "44",
-            "September 2018": "26",
-            "December 2017": "27",
-            "January 2017": "23",
-            "November 2015": "52",
-            "December 2014": 13,
-            "November 2017": "41",
-            "September 2014": "26",
-            "January 2016": "24",
-            "April 2013": "55",
-            "October 2014": "31",
-            "July 2018": "71",
-            "September 2016": "28",
-            "December 2015": "26",
-            "March 2016": "67",
-            "January 2015": 20,
-            "July 2017": "37",
-            "March 2014": 81,
-            "August 2016": "36",
-            "January 2014": 57,
-            "xlsx_row_id": 67
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "April 2018": "4",
-            "August 2018": "12",
-            "February 2016": "11",
-            "January 2018": "10",
-            "March 2017": "7",
-            "April 2015": "28",
-            "December 2016": "4",
-            "August 2017": "21",
-            "May 2018": "2",
-            "June 2018": "4",
-            "May 2017": "5",
-            "June 2015": "18",
-            "February 2015": "13",
-            "August 2015": "13",
-            "October 2015": "7",
-            "April 2017": "10",
-            "July 2015": "27",
-            "June 2016": "10",
-            "June 2017": "4",
-            "September 2015": "12",
-            "February 2017": "3",
-            "May 2016": "7",
-            "November 2016": "8",
-            "July 2016": "12",
-            "May 2015": "10",
-            "Division Codes": "SMO",
-            "February 2018": "6",
-            "October 2016": "7",
-            "October 2017": "6",
-            "October 2018": "3",
-            "March 2018": "4",
-            "September 2017": "24",
-            "April 2016": "9",
-            "March 2015": "26",
-            "September 2018": "6",
-            "December 2017": "4",
-            "January 2017": "8",
-            "November 2015": "14",
-            "December 2014": 45,
-            "November 2017": "7",
-            "January 2016": "10",
-            "July 2018": "4",
-            "September 2016": "2",
-            "December 2015": "24",
-            "March 2016": "17",
-            "January 2015": 30,
-            "July 2017": "7",
-            "August 2016": "18",
-            "xlsx_row_id": 68
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 540,
-            "April 2014": 1120,
-            "April 2018": "6149",
-            "March 2013": "1923",
-            "August 2013": 439,
-            "August 2018": "6331",
-            "February 2016": "1312",
-            "January 2018": "4125",
-            "June 2013": 642,
-            "March 2017": "4798",
-            "September 2013": "502",
-            "April 2015": "2463",
-            "December 2016": "2410",
-            "May 2013": 862,
-            "August 2017": "4272",
-            "November 2018": "4089",
-            "May 2018": "15212",
-            "June 2018": "6027",
-            "May 2017": "5651",
-            "June 2015": "1120",
-            "November 2013": 627,
-            "February 2015": "1028",
-            "June 2014": 811,
-            "August 2015": "1204",
-            "October 2015": "1230",
-            "April 2017": "4629",
-            "July 2015": "1123",
-            "June 2016": "1283",
-            "November 2014": 1071,
-            "August 2014": 938,
-            "June 2017": "4719",
-            "July 2014": 739,
-            "September 2015": "864",
-            "February 2013": "178",
-            "February 2017": "11554",
-            "October 2013": 891,
-            "May 2016": "1491",
-            "May 2014": 818,
-            "November 2016": "2618",
-            "July 2016": "1626",
-            "January 2013": "100",
-            "December 2013": 569,
-            "May 2015": "2602",
-            "Division Codes": "SPD",
-            "February 2018": "4296",
-            "October 2016": "7095",
-            "October 2017": "5849",
-            "February 2014": "1012",
-            "October 2018": "6508",
-            "March 2018": "5315",
-            "September 2017": "4119",
-            "April 2016": "1522",
-            "March 2015": "1455",
-            "September 2018": "6399",
-            "December 2017": "3704",
-            "January 2017": "2487",
-            "November 2015": "1809",
-            "December 2014": 1065,
-            "November 2017": "5194",
-            "September 2014": "1023",
-            "January 2016": "1176",
-            "April 2013": "1592",
-            "October 2014": "965",
-            "July 2018": "6295",
-            "September 2016": "1961",
-            "December 2015": "939",
-            "March 2016": "1281",
-            "January 2015": 733,
-            "July 2017": "4579",
-            "March 2014": 1600,
-            "August 2016": "1896",
-            "January 2014": 665,
-            "xlsx_row_id": 69
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 1622,
-            "April 2014": 2078,
-            "April 2018": "28725",
-            "March 2013": "876",
-            "August 2013": 2056,
-            "August 2018": "29891",
-            "February 2016": "8530",
-            "January 2018": "16959",
-            "June 2013": 1673,
-            "March 2017": "26186",
-            "September 2013": "1814",
-            "April 2015": "3988",
-            "December 2016": "11129",
-            "May 2013": 1537,
-            "August 2017": "19841",
-            "November 2018": "20587",
-            "May 2018": "39115",
-            "June 2018": "32070",
-            "May 2017": "26516",
-            "June 2015": "5483",
-            "November 2013": 1790,
-            "February 2015": "3352",
-            "June 2014": 4152,
-            "August 2015": "9225",
-            "October 2015": "6585",
-            "April 2017": "27651",
-            "July 2015": "4922",
-            "June 2016": "10513",
-            "November 2014": 3097,
-            "August 2014": 4036,
-            "June 2017": "22356",
-            "July 2014": 2574,
-            "September 2015": "5050",
-            "February 2013": "947",
-            "February 2017": "15553",
-            "October 2013": 1991,
-            "May 2016": "9972",
-            "May 2014": 2646,
-            "November 2016": "15225",
-            "July 2016": "10869",
-            "January 2013": "554",
-            "December 2013": 1730,
-            "May 2015": "4744",
-            "Division Codes": "SPH",
-            "February 2018": "22221",
-            "October 2016": "15438",
-            "October 2017": "24617",
-            "February 2014": "5232",
-            "October 2018": "33927",
-            "March 2018": "26052",
-            "September 2017": "21642",
-            "April 2016": "13401",
-            "March 2015": "3938",
-            "September 2018": "30651",
-            "December 2017": "15178",
-            "January 2017": "11424",
-            "November 2015": "7279",
-            "December 2014": 2471,
-            "November 2017": "28009",
-            "September 2014": "3701",
-            "January 2016": "4901",
-            "April 2013": "1533",
-            "October 2014": "4637",
-            "July 2018": "26137",
-            "September 2016": "17098",
-            "December 2015": "6302",
-            "March 2016": "9405",
-            "January 2015": 2425,
-            "July 2017": "22131",
-            "March 2014": 2557,
-            "August 2016": "18472",
-            "January 2014": 4142,
-            "xlsx_row_id": 70
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "April 2018": "389",
-            "August 2018": "656",
-            "February 2016": "176",
-            "January 2018": "207",
-            "March 2017": "629",
-            "April 2015": "265",
-            "December 2016": "241",
-            "August 2017": "497",
-            "November 2018": "242",
-            "May 2018": "453",
-            "June 2018": "411",
-            "May 2017": "713",
-            "June 2015": "116",
-            "February 2015": "393",
-            "August 2015": "108",
-            "October 2015": "125",
-            "April 2017": "558",
-            "July 2015": "146",
-            "June 2016": "211",
-            "November 2014": 50,
-            "June 2017": "765",
-            "September 2015": "121",
-            "February 2017": "486",
-            "May 2016": "294",
-            "November 2016": "536",
-            "July 2016": "149",
-            "May 2015": "210",
-            "Division Codes": "Strategic Core",
-            "February 2018": "211",
-            "October 2016": "875",
-            "October 2017": "498",
-            "October 2018": "499",
-            "March 2018": "232",
-            "September 2017": "529",
-            "April 2016": "172",
-            "March 2015": "1220",
-            "September 2018": "433",
-            "December 2017": "196",
-            "January 2017": "371",
-            "November 2015": "148",
-            "December 2014": 853,
-            "November 2017": "607",
-            "January 2016": "154",
-            "October 2014": "42",
-            "July 2018": "362",
-            "September 2016": "822",
-            "December 2015": "196",
-            "March 2016": "158",
-            "January 2015": 724,
-            "July 2017": "587",
-            "August 2016": "335",
-            "xlsx_row_id": 71
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 1088,
-            "April 2014": 708,
-            "April 2018": "20081",
-            "March 2013": "1188",
-            "August 2013": 1186,
-            "August 2018": "13951",
-            "February 2016": "7696",
-            "January 2018": "9146",
-            "June 2013": 1032,
-            "March 2017": "6170",
-            "September 2013": "1070",
-            "April 2015": "4711",
-            "December 2016": "3450",
-            "May 2013": 1033,
-            "August 2017": "8614",
-            "November 2018": "12774",
-            "May 2018": "17606",
-            "June 2018": "14153",
-            "May 2017": "9057",
-            "June 2015": "2608",
-            "November 2013": 1048,
-            "February 2015": "2664",
-            "June 2014": 1950,
-            "August 2015": "3037",
-            "October 2015": "8960",
-            "April 2017": "8249",
-            "July 2015": "2753",
-            "June 2016": "3437",
-            "November 2014": 1274,
-            "August 2014": 2470,
-            "June 2017": "9360",
-            "July 2014": 2175,
-            "September 2015": "5123",
-            "February 2013": "211",
-            "February 2017": "4619",
-            "October 2013": 1136,
-            "May 2016": "3680",
-            "May 2014": 1576,
-            "November 2016": "5369",
-            "July 2016": "4925",
-            "January 2013": "179",
-            "December 2013": 1231,
-            "May 2015": "3900",
-            "Division Codes": "TSP",
-            "February 2018": "9431",
-            "October 2016": "5336",
-            "October 2017": "10509",
-            "February 2014": "1944",
-            "October 2018": "16861",
-            "March 2018": "13178",
-            "September 2017": "9521",
-            "April 2016": "5835",
-            "March 2015": "5285",
-            "September 2018": "15060",
-            "December 2017": "11896",
-            "January 2017": "3554",
-            "November 2015": "9622",
-            "December 2014": 1107,
-            "November 2017": "15703",
-            "September 2014": "3802",
-            "January 2016": "10188",
-            "April 2013": "1029",
-            "October 2014": "1332",
-            "July 2018": "12588",
-            "September 2016": "4828",
-            "December 2015": "6251",
-            "March 2016": "8757",
-            "January 2015": 1223,
-            "July 2017": "8012",
-            "March 2014": 1081,
-            "August 2016": "4190",
-            "January 2014": 1198,
-            "xlsx_row_id": 72
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "November 2018": "4017",
-            "Division Codes": "UCC",
-            "October 2018": "8506",
-            "September 2018": "11461",
-            "xlsx_row_id": 73
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 20,
-            "April 2014": 13,
-            "April 2018": "1071",
-            "March 2013": "13",
-            "August 2013": 15,
-            "August 2018": "1554",
-            "February 2016": "237",
-            "January 2018": "874",
-            "June 2013": 32,
-            "March 2017": "1301",
-            "September 2013": "38",
-            "April 2015": "17",
-            "December 2016": "684",
-            "May 2013": 17,
-            "August 2017": "1104",
-            "November 2018": "874",
-            "May 2018": "1244",
-            "June 2018": "1342",
-            "May 2017": "1005",
-            "June 2015": "6",
-            "November 2013": 63,
-            "February 2015": "16",
-            "June 2014": 3,
-            "August 2015": "8",
-            "October 2015": "21",
-            "April 2017": "1072",
-            "July 2015": "19",
-            "June 2016": "322",
-            "November 2014": 13,
-            "August 2014": 6,
-            "June 2017": "1206",
-            "July 2014": 4,
-            "September 2015": "44",
-            "February 2013": "5",
-            "February 2017": "991",
-            "October 2013": 53,
-            "May 2016": "811",
-            "May 2014": 9,
-            "November 2016": "586",
-            "July 2016": "242",
-            "January 2013": "9",
-            "December 2013": 103,
-            "May 2015": "19",
-            "Division Codes": "VPC",
-            "February 2018": "768",
-            "October 2016": "712",
-            "October 2017": "1047",
-            "February 2014": "189",
-            "October 2018": "1578",
-            "March 2018": "843",
-            "September 2017": "928",
-            "April 2016": "1245",
-            "March 2015": "11",
-            "September 2018": "1224",
-            "December 2017": "631",
-            "January 2017": "647",
-            "November 2015": "176",
-            "December 2014": 5,
-            "November 2017": "1200",
-            "September 2014": "3",
-            "January 2016": "1",
-            "April 2013": "24",
-            "October 2014": "16",
-            "July 2018": "1217",
-            "September 2016": "372",
-            "December 2015": "3",
-            "March 2016": "589",
-            "January 2015": 1,
-            "July 2017": "1036",
-            "March 2014": 35,
-            "August 2016": "312",
-            "January 2014": 52,
-            "xlsx_row_id": 74
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 85,
-            "April 2014": 799,
-            "April 2018": "1447",
-            "March 2013": "85",
-            "August 2013": 109,
-            "August 2018": "16552",
-            "February 2016": "367",
-            "January 2018": "750",
-            "June 2013": 105,
-            "March 2017": "840",
-            "September 2013": "101",
-            "April 2015": "620",
-            "December 2016": "800",
-            "May 2013": 187,
-            "August 2017": "1004",
-            "November 2018": "3438",
-            "May 2018": "1705",
-            "June 2018": "1314",
-            "May 2017": "1356",
-            "June 2015": "344",
-            "November 2013": 108,
-            "February 2015": "264",
-            "June 2014": 348,
-            "August 2015": "1663",
-            "October 2015": "313",
-            "April 2017": "1123",
-            "July 2015": "2964",
-            "June 2016": "930",
-            "November 2014": 366,
-            "August 2014": 359,
-            "June 2017": "1144",
-            "July 2014": 341,
-            "September 2015": "313",
-            "February 2013": "21",
-            "February 2017": "766",
-            "October 2013": 138,
-            "May 2016": "341",
-            "May 2014": 540,
-            "November 2016": "714",
-            "July 2016": "1146",
-            "January 2013": "13",
-            "December 2013": 113,
-            "May 2015": "494",
-            "Division Codes": "VPS",
-            "February 2018": "905",
-            "October 2016": "957",
-            "October 2017": "1141",
-            "February 2014": "205",
-            "October 2018": "5695",
-            "March 2018": "1286",
-            "September 2017": "980",
-            "April 2016": "391",
-            "March 2015": "1275",
-            "September 2018": "10683",
-            "December 2017": "619",
-            "January 2017": "853",
-            "November 2015": "399",
-            "December 2014": 495,
-            "November 2017": "1034",
-            "September 2014": "390",
-            "January 2016": "217",
-            "April 2013": "165",
-            "October 2014": "363",
-            "July 2018": "14511",
-            "September 2016": "759",
-            "December 2015": "235",
-            "March 2016": "332",
-            "January 2015": 282,
-            "July 2017": "991",
-            "March 2014": 1175,
-            "August 2016": "957",
-            "January 2014": 97,
-            "xlsx_row_id": 75
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "July 2013": 1333,
-            "April 2014": 1275,
-            "April 2018": "13918",
-            "March 2013": "636",
-            "August 2013": 1288,
-            "August 2018": "28640",
-            "February 2016": "3587",
-            "January 2018": "5515",
-            "June 2013": 1367,
-            "March 2017": "10512",
-            "September 2013": "1044",
-            "April 2015": "1919",
-            "December 2016": "4688",
-            "May 2013": 1620,
-            "August 2017": "10614",
-            "November 2018": "9447",
-            "May 2018": "16329",
-            "June 2018": "16359",
-            "May 2017": "11690",
-            "June 2015": "2604",
-            "November 2013": 1686,
-            "February 2015": "3557",
-            "June 2014": 1725,
-            "August 2015": "1757",
-            "October 2015": "7474",
-            "April 2017": "9394",
-            "July 2015": "2106",
-            "June 2016": "3503",
-            "November 2014": 1642,
-            "August 2014": 2941,
-            "June 2017": "11047",
-            "July 2014": 2485,
-            "September 2015": "3972",
-            "February 2013": "380",
-            "February 2017": "8299",
-            "October 2013": 1787,
-            "May 2016": "4664",
-            "May 2014": 1397,
-            "November 2016": "6432",
-            "July 2016": "3982",
-            "January 2013": "255",
-            "December 2013": 1626,
-            "May 2015": "2981",
-            "Division Codes": "WSA",
-            "February 2018": "8909",
-            "October 2016": "6661",
-            "October 2017": "9081",
-            "February 2014": "3432",
-            "October 2018": "26490",
-            "March 2018": "12734",
-            "September 2017": "11036",
-            "April 2016": "3157",
-            "March 2015": "3076",
-            "September 2018": "20677",
-            "December 2017": "5662",
-            "January 2017": "5498",
-            "November 2015": "4281",
-            "December 2014": 1103,
-            "November 2017": "10989",
-            "September 2014": "3526",
-            "January 2016": "3548",
-            "April 2013": "1058",
-            "October 2014": "1841",
-            "July 2018": "18876",
-            "September 2016": "6184",
-            "December 2015": "3479",
-            "March 2016": "3573",
-            "January 2015": 2169,
-            "July 2017": "9204",
-            "March 2014": 2220,
-            "August 2016": "5994",
-            "January 2014": 1960,
-            "xlsx_row_id": 76
+    downloadTimelineDivisions: [
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "ATI",
+            "data": [{
+                    "close": 131,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 101,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 108,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 158,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 106,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 132,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 160,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 141,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 99,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 103,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 158,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 96,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 89,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 107,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 151,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 116,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 58,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 142,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 167,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 88,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 1412,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 116,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 145,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 75,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 104,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 96,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "AUG",
+            "data": [{
+                    "close": 3,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 1,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 3,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 12,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 4,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 1,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 17,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 16,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 7,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Aug-16",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "BOG",
+            "data": [{
+                    "close": 24,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 7,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 8,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 14,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 31,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 12,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 29,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 14,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 32,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 38,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 3,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 9,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 16,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 38,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 31,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 20,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 20,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 39,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 10,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 27,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 14,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 19,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 12,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 35,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 17,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 9,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 16,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 40,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 4,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 10,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 7,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 14,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 81,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 7,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 8,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 11,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 7,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 8,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 16,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 15,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 8,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 11,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 18,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 17,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 19,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 11,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 22,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 30,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 74,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "CAN",
+            "data": [{
+                    "close": 148,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 201,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 4248,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 171,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 143,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 6514,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 1717,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 2735,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 176,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 4292,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 270,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 1214,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 2277,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 196,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 3998,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 12969,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 3719,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 3632,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 5307,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 1448,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 360,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 783,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 565,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 2368,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 1532,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 4510,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 1653,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 1554,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 343,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 325,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 4058,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 557,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 1583,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 99,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 3406,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 937,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 1420,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 359,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 2666,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 1767,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 77,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 453,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 1521,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 2901,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 3017,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 4565,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 653,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 9961,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 3538,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 4198,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 1654,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 811,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 7646,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 2138,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 2830,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 1745,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 362,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 3956,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 403,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 1074,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 320,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 457,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 5420,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 2106,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 1040,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 2003,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 390,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 4480,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 350,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 1935,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 393,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "CAR",
+            "data": [{
+                    "close": 25,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 9,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 99,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 11,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 18,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 73,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 22,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 42,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 19,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 16,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 53,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 57,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 90,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 76,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 12,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 59,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 50,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 140,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 8,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 88,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 20,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 50,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 39,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 60,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 36,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 19,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 73,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 16,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 50,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 30,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 45,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 45,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 7,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 21,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 79,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 77,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 11,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 70,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 85,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 87,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 60,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 60,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 48,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 85,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 58,
+                    "date": "1-Aug-16",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "CBH",
+            "data": [{
+                    "close": 1,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 9,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 19,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 3,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 11,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 13,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 17,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 8,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 7,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 12,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 2,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 28,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 17,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 10,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 7,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 10,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 11,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 13,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 14,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 8,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Aug-16",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "CBL",
+            "data": [{
+                    "close": 33,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 19,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 101,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 42,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 27,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 83,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 49,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 55,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 34,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 58,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 21,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 10,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 136,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 25,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 70,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 75,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 62,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 58,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 65,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 16,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 26,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 30,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 70,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 38,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 75,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 62,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 52,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 40,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 27,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 21,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 91,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 39,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 22,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 66,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 62,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 30,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 60,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 26,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 44,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 38,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 23,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 22,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 20,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 84,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 64,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 136,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 119,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 102,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 103,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 62,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 63,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 25,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 89,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 54,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 40,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 59,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 12,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 91,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 18,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 32,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 37,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 25,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 65,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 57,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 37,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 57,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 17,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 61,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 28,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 34,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 75,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "CBO",
+            "data": [{
+                    "close": 63,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 53,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 134,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 87,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 35,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 80,
+                    "date": "1-Jul-18",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "CBR",
+            "data": [{
+                    "close": 10,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 11,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 9,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 8,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 15,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 2,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 3,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 8,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 10,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 14,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 3,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 8,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "CCB",
+            "data": [{
+                    "close": 4,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 416,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 9347,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 99,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 6832,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 1590,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 7042,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 6860,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 522,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 1190,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 4141,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 6,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 5402,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 7328,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 8871,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 6694,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 5881,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 1258,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 1422,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 853,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 1248,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 4014,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 828,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 6733,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 1379,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 1464,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 975,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 1296,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 7210,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 635,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 871,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 4879,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 1335,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 1061,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 900,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 3138,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 958,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 561,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 1235,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 7637,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 3699,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 8016,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 1452,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 11067,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 10767,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 6218,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 1413,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 849,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 8545,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 5272,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 4477,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 1110,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 3794,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 9182,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 689,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 1272,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 7,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 643,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 6991,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 2292,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 1497,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 2135,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 1030,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 6570,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 908,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 2163,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 696,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "CCH",
+            "data": [{
+                    "close": 55,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 22,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 51,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 8,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 48,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 41,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 52,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 26,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 40,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 46,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 35,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 40,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 24,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 45,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 48,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 31,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 53,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 58,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 92,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 49,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 80,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 46,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 33,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 67,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 63,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 69,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 70,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 53,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 47,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 44,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 145,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 58,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 73,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 79,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 92,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 45,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 45,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 107,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 61,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 121,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 49,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 33,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 55,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 45,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 156,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 61,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 57,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 47,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 44,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 48,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 45,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 39,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 36,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 93,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 32,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 40,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 77,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 51,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 27,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 46,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 49,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 44,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 45,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 49,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 49,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 62,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 71,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 33,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 76,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "CCO",
+            "data": [{
+                    "close": 36,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 24,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 83,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 18,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 27,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 29,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 33,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 10,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 14,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 35,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 21,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 36,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 27,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 43,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 20,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 21,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 43,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 21,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 20,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 37,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 17,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 8,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 40,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 9,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 19,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 16,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 9,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 32,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 25,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 24,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 61,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 22,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 83,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 27,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 24,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 23,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 23,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 24,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 11,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 12,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 19,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 15,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 8,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 29,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 7,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 17,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 44,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 10,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 7,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 28,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 19,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 9,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 9,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "CCS",
+            "data": [{
+                    "close": 2464,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 2867,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 1901,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 1130,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 360,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 1509,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 2169,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 2309,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 2245,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 3658,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 2152,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 1592,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 593,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 772,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 1756,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 529,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 2224,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 10098,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 2313,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 2094,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 3259,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 2419,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 396,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 2028,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 5424,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 302,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 1441,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 160,
+                    "date": "1-Aug-16",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "CDR",
+            "data": [{
+                    "close": 7,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 8,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 159,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 230,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 97,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 41,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 12,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 125,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 8,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 69,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 46,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 8,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 153,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 88,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 209,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 195,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 184,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 58,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 8,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 68,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 16,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 87,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 79,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 168,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 94,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 124,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 18,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 71,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 217,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 33,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 112,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 127,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 8,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 145,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 3,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 105,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 124,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 16,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 53,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 29,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 141,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 47,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 16,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 242,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 64,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 90,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 129,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 126,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 169,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 20,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 56,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 91,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 20,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 69,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 39,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 87,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 12,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 34,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 189,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 86,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 95,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 130,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 27,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 193,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 13,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 102,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 18,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "CGY",
+            "data": [{
+                    "close": 29,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 15,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 17,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 28,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 16,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 19,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 13,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 19,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 21,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 7,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 22,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 18,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 13,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 19,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 27,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 13,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 12,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 14,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 13,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 12,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 21,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 20,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 11,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 16,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 12,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 7,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 23,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 16,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 15,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 12,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 8,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 13,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 12,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 19,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 19,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 17,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 20,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 11,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 10,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 26,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 14,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 11,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 11,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 12,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 9,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 13,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 11,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 11,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 17,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 19,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 23,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "CHO",
+            "data": [{
+                    "close": 53,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 39,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 19,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 9,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 15,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 10,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 17,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 45,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 49,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 47,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 39,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 30,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 19,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 46,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 23,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 28,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 8,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 15,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 8,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 33,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 68,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 25,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 32,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 16,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 60,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 25,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 13,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 35,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 70,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 10,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 45,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 32,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 14,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 37,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Aug-16",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "CID",
+            "data": [{
+                    "close": 314,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 194,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 4573,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 285,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 246,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 8807,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 670,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 2456,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 276,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 3054,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 307,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 704,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 1030,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 426,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 2396,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 3409,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 4360,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 3459,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 3167,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 634,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 343,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 474,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 197,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 550,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 810,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 2844,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 521,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 856,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 407,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 316,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 3218,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 328,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 558,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 225,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 4653,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 361,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 1226,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 193,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 1050,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 1061,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 113,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 275,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 611,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 3556,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 1215,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 2596,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 722,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 8847,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 5872,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 2103,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 863,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 1060,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 6076,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 2321,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 1337,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 786,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 232,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 8789,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 450,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 583,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 278,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 426,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 3657,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 1105,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 562,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 1399,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 301,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 2715,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 438,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 1022,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 434,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "CJA",
+            "data": [{
+                    "close": 6,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 13,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 16,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 21,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 16,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 8,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 12,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 11,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 23,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 10,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 32,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 15,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 15,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 15,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 9,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 14,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 31,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 12,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 14,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 16,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 11,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 13,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 31,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 21,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 41,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 27,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 111,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 27,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 18,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 17,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 13,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 22,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 10,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 19,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 9,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 8,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 26,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 15,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 10,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 15,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 15,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 18,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 16,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 18,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 38,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 10,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 10,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 8,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 14,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 20,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 17,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 7,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 56,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 40,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 7,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 21,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 28,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 19,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 11,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "CME",
+            "data": [{
+                    "close": 22,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 7,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 90,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 14,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 76,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 279,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 59,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 16,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 39,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 18,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 63,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 151,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 11,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 112,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 161,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 110,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 90,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 97,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 25,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 9,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 25,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 45,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 223,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 77,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 18,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 226,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 11,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 82,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 104,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 18,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 110,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 86,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 21,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 224,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 5,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 235,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 183,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 24,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 33,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 78,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 223,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 111,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 26,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 106,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 80,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 61,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 264,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 74,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 90,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 62,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 57,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 234,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 18,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 55,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 100,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 180,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 15,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 68,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 85,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 105,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 154,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 197,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 26,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 103,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 17,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 187,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "CMF",
+            "data": [{
+                    "close": 1187,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 1132,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 14860,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 712,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 1137,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 12175,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 2091,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 8745,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 1368,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 4297,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 1128,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 1717,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 2184,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 1146,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 5345,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 10140,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 11587,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 15394,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 7030,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 1421,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 1601,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 2078,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 1015,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 2954,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 1685,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 4735,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 1763,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 1776,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 1249,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 1041,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 7179,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 1057,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 1460,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 512,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 3011,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 1618,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 1971,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 980,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 3006,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 1520,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 440,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 1500,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 1490,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 10985,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 3571,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 6863,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 2270,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 12692,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 12466,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 5651,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 1903,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 1889,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 11732,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 6444,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 2979,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 1725,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 1276,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 10050,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 1323,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 1904,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 1421,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 1437,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 11020,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 3280,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 1484,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 2035,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 1258,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 5302,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 983,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 2564,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 1790,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "CMG",
+            "data": [{
+                    "close": 363,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 549,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 308,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 204,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 437,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 344,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 83,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 327,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 404,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 2003,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 360,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 133,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 1300,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 369,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 406,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 639,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 254,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 232,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 609,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 106,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 414,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 131,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 201,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 121,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 85,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 676,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 126,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 1620,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 151,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 174,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 604,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 147,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 73,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 64,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 1608,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 556,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 1882,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 264,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 1552,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 1320,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 58,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 361,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 121,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 226,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 1731,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 539,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 480,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 5695,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 335,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 385,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 1284,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 169,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 3024,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 315,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 1513,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 116,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 165,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 581,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 204,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 70,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 342,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 154,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 244,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 1533,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 55,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 76,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 79,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 531,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 246,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 1287,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 270,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "CNI",
+            "data": [{
+                    "close": 9,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 8,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 7,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 17,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 11,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 7,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 11,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 28,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 16,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 12,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 12,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 126,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 25,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 9,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 10,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 13,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 19,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 15,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 9,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 14,
+                    "date": "1-Jul-17",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "CPE",
+            "data": [{
+                    "close": 112,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 100,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 231,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 27,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 109,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 112,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 318,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 107,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 178,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 163,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 91,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 128,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 188,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 46,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 144,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 203,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 142,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 91,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 208,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 207,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 78,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 103,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 192,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 177,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 283,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 190,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 212,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 311,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 143,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 129,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 175,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 145,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 153,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 7,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 160,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 87,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 318,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 127,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 389,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 557,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 11,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 62,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 127,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 77,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 499,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 97,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 75,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 168,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 117,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 169,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 495,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 102,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 167,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 213,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 204,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 356,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 84,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 324,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 192,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 367,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 41,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 152,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 92,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 493,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 360,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 422,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 75,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 219,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 91,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 445,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 51,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "CPR",
+            "data": [{
+                    "close": 53,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 20,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 15,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 36,
+                    "date": "1-Sep-18",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "CSC",
+            "data": [{
+                    "close": 125,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 80,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 868,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 61,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 145,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 1570,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 281,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 496,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 62,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 635,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 136,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 303,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 415,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 85,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 866,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 699,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 1126,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 1036,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 944,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 469,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 260,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 215,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 351,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 461,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 449,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 605,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 310,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 298,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 317,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 235,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 820,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 304,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 450,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 54,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 608,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 178,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 191,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 140,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 435,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 276,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 22,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 140,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 409,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 627,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 499,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 597,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 309,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 1114,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 740,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 561,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 259,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 355,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 1365,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 321,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 416,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 423,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 171,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 583,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 271,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 267,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 90,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 336,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 995,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 406,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 241,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 321,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 193,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 903,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 108,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 424,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 190,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "CSD",
+            "data": [{
+                    "close": 1158,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 949,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 9,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 44,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 659,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 1356,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 1708,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 87,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 42,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 23,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 13,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 1135,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 7779,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 25,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 1065,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 7,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 15,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 1099,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 27,
+                    "date": "1-Jul-17",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "CSO",
+            "data": [{
+                    "close": 316,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 138,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 4644,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 167,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 352,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 9028,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 231,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 3013,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 330,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 455,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 215,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 192,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 134,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 283,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 11171,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 6441,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 5400,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 15988,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 301,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 186,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 550,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 156,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 91,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 846,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 227,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 353,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 2041,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 118,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 186,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 158,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 402,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 133,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 326,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 120,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 284,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 410,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 214,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 80,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 224,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 148,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 113,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 735,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 197,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 5515,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 239,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 9197,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 809,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 9514,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 3566,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 12061,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 199,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 171,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 7668,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 6554,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 92,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 204,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 133,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 6111,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 137,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 172,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 254,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 201,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 4793,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 165,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 290,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 176,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 762,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 5331,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 475,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 168,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 646,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "CTI",
+            "data": [{
+                    "close": 1120,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 917,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 14247,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 994,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 1200,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 17081,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 3857,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 7495,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 1210,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 7880,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 1059,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 1571,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 3487,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 1334,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 6899,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 14462,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 16168,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 11902,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 7265,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 2203,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 866,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 1318,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 911,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 2473,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 2157,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 6840,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 2032,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 3694,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 1402,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 1907,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 6348,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 1143,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 2059,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 816,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 7674,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 1147,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 4178,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 1169,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 5143,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 5013,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 504,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 904,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 1679,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 11926,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 9831,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 12201,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 1854,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 20902,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 11942,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 7594,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 3444,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 1466,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 13621,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 7600,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 3808,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 2354,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 1181,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 17552,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 2063,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 2128,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 1133,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 1805,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 11642,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 4601,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 1801,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 4718,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 1969,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 6498,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 1241,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 5514,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 1175,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "CUR",
+            "data": [{
+                "close": 57,
+                "date": "1-Nov-18",
+            }, ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "Discontinued Divisions",
+            "data": [{
+                    "close": 10825,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 11245,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 43134,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 4288,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 11236,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 36032,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 18094,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 19616,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 12318,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 28056,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 9734,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 15723,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 16861,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 11325,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 26653,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 22128,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 39051,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 34555,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 34104,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 13431,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 12162,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 15633,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 21554,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 23769,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 16390,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 33559,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 14851,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 14786,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 17678,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 15137,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 38025,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 20057,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 17530,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 2952,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 24925,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 14907,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 17655,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 17298,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 21576,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 16767,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 2042,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 14006,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 20502,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 24520,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 23325,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 30248,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 24673,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 34864,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 32150,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 27303,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 17502,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 18652,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 36781,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 18217,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 16767,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 18108,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 11309,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 29154,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 19484,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 12389,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 8930,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 17582,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 33975,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 19168,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 15677,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 16796,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 10647,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 33735,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 13339,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 19204,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 11415,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "EDU",
+            "data": [{
+                    "close": 1360,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 4284,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 25121,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 1355,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 1362,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 28104,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 4462,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 12479,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 1399,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 15365,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 1573,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 4072,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 11740,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 2045,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 15831,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 19145,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 27432,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 24441,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 17091,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 4833,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 1698,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 4094,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 2662,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 5740,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 5117,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 17606,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 4530,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 4916,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 2373,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 8133,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 23213,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 1930,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 4673,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 1000,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 9266,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 1870,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 6103,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 3019,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 10903,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 5651,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 707,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 1673,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 5583,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 16543,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 39620,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 24153,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 3377,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 35611,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 23133,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 18615,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 6270,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 3971,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 30540,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 13695,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 6848,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 5645,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 15257,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 28504,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 3246,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 3338,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 1548,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 2634,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 27071,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 10326,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 3536,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 4950,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 2469,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 16168,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 2796,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 8839,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 2973,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "ENE",
+            "data": [{
+                    "close": 769,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 830,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 12455,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 581,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 568,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 16651,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 3677,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 7476,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 599,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 6882,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 572,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 1918,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 9288,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 640,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 7973,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 10936,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 14239,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 13160,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 9076,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 3260,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 572,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 1775,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 1511,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 3058,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 2020,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 6898,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 5529,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 2885,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 2340,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 2204,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 8927,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 2380,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 2292,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 383,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 6301,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 767,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 2868,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 1424,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 4876,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 3068,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 158,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 1198,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 2534,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 10195,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 4079,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 8681,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 1819,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 23554,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 11721,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 6872,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 3234,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 1940,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 13616,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 13873,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 3839,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 2286,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 2216,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 9859,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 1587,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 2272,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 647,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 2271,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 14165,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 3579,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 2011,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 4184,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 2294,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 8865,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 1043,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 4276,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 953,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "ESG",
+            "data": [{
+                    "close": 1149,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 4268,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 4549,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 1997,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 1429,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 4126,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 1520,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 2288,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 1188,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 4569,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 1337,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 2529,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 2379,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 1402,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 4258,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 4213,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 4717,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 4751,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 3713,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 2470,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 1479,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 1760,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 1697,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 2159,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 5199,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 3561,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 1818,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 2667,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 1497,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 1477,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 4042,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 1497,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 2027,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 360,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 3300,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 2017,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 3436,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 1384,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 2308,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 1645,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 346,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 1709,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 2397,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 2520,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 2384,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 2884,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 3167,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 8095,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 3685,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 2766,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 2309,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 1554,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 17527,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 2042,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 1992,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 1841,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 1081,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 3285,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 8084,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 1446,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 1407,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 1481,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 3747,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 1787,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 1430,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 1661,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 1426,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 3983,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 1599,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 1796,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 1861,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "EUR",
+            "data": [{
+                    "close": 30,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 12,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 138,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 11,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 47,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 326,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 42,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 35,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 30,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 56,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 35,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 42,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 23,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 43,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 49,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 191,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 174,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 179,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 136,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 20,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 68,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 42,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 61,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 20,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 28,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 68,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 26,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 12,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 49,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 42,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 63,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 32,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 22,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 21,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 58,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 59,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 36,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 18,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 27,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 19,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 12,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 68,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 17,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 53,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 26,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 48,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 145,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 261,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 57,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 74,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 50,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 96,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 326,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 39,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 24,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 38,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 13,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 59,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 59,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 20,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 39,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 43,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 161,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 23,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 27,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 45,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 19,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 44,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 44,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 30,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 74,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "FHL",
+            "data": [{
+                    "close": 72,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 71,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 458,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 9,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 57,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 420,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 45,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 326,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 23,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 47,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 19,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 157,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 40,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 11,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 137,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 453,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 453,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 553,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 165,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 119,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 67,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 270,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 89,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 110,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 91,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 85,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 122,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 39,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 122,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 219,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 310,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 163,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 131,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 145,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 65,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 52,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 54,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 75,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 35,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 132,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 148,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 423,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 90,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 201,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 218,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 430,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 360,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 207,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 40,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 238,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 429,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 430,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 49,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 136,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 49,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 191,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 81,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 86,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 83,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 621,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 46,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 86,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 61,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 91,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 131,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 154,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 88,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 136,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "FMM",
+            "data": [{
+                    "close": 847,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 1091,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 16750,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 445,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 1471,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 20065,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 2898,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 11083,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 962,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 27708,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 1372,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 2093,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 7777,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 1308,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 11103,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 15704,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 14829,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 15038,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 15834,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 2872,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 1273,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 2607,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 1432,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 11404,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 3436,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 12809,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 3276,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 3442,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 1625,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 2278,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 20617,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 1364,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 4194,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 326,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 8237,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 1652,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 3656,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 1285,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 9233,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 7558,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 138,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 1318,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 2686,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 12270,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 8271,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 18548,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 1909,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 15355,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 13478,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 10138,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 3339,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 2692,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 15690,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 9334,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 6339,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 3573,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 1360,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 25955,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 2092,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 2687,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 807,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 1942,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 22256,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 8795,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 2537,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 2723,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 1083,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 11105,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 1482,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 5563,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 963,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "FMP",
+            "data": [{
+                    "close": 16,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 313,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 651,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 89,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 249,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 97,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 76,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 41,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 144,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 412,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 307,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 302,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 168,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 122,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 133,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 125,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 132,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 93,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 149,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 96,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 63,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 137,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 294,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 179,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 195,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 107,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 92,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 101,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 37,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 85,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 85,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 133,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 121,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 206,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 93,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 138,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 70,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 580,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 257,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 133,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 43,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 109,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 449,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 341,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 78,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 70,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 110,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 154,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 269,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 53,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 155,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 465,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 72,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 70,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 80,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 113,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 134,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 36,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 99,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 169,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "GCM",
+            "data": [{
+                    "close": 103,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 22,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 74,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 17,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 104,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 101,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 44,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 41,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 52,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 38,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 56,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 38,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 64,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 58,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 98,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 99,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 66,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 106,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 56,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 24,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 76,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 17,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 36,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 25,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 28,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 75,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 20,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 18,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 27,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 108,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 38,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 49,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 9,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 106,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 108,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 20,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 64,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 72,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 9,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 10,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 127,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 67,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 38,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 90,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 53,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 221,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 128,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 43,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 129,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 32,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 31,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 94,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 35,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 128,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 30,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 8,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 36,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 29,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 11,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 59,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 22,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 92,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 53,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 25,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 18,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 13,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 102,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 107,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 145,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 99,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "GDI",
+            "data": [{
+                    "close": 99,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 471,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 2210,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 89,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 106,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 2016,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 429,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 2303,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 140,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 858,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 102,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 201,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 701,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 121,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 1688,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 1638,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 2529,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 2160,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 920,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 169,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 205,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 310,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 288,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 314,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 194,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 902,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 173,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 969,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 258,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 189,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 1017,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 241,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 183,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 66,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 570,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 131,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 2104,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 294,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 470,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 326,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 44,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 196,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 151,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 5084,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 417,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 1303,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 336,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 2254,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 1963,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 1103,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 221,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 133,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 2260,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 1167,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 680,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 215,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 165,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 5913,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 206,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 1212,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 114,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 278,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 1777,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 435,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 141,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 332,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 156,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 652,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 740,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 399,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 169,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "HRD",
+            "data": [{
+                "close": 164,
+                "date": "1-Nov-15",
+            }, ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "HUD",
+            "data": [{
+                    "close": 358,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 7211,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 11578,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 181,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 448,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 15133,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 1298,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 8104,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 299,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 10048,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 355,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 3381,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 3667,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 382,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 8759,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 6466,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 12349,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 9756,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 13432,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 2029,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 358,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 2754,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 2132,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 6363,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 1406,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 10166,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 7176,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 2708,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 1115,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 3832,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 13332,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 3668,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 1461,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 148,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 5588,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 440,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 2359,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 2235,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 4411,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 7556,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 98,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 417,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 2820,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 10085,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 4787,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 13178,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 697,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 14989,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 10896,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 9866,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 3319,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 5265,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 17686,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 9415,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 3938,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 1493,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 1161,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 15365,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 2401,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 1972,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 346,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 1740,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 13614,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 6725,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 1090,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 1483,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 1098,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 9436,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 1628,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 8718,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 694,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "ICD",
+            "data": [{
+                    "close": 796,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 2849,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 327,
+                    "date": "1-Sep-18",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "ICS",
+            "data": [{
+                    "close": 1830,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 2763,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 20240,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 710,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 1784,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 40626,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 10756,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 13358,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 1698,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 21510,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 2596,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 4512,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 9120,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 3146,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 17158,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 16776,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 20939,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 29618,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 17538,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 15557,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 2282,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 3367,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 2296,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 8809,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 6878,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 15459,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 10836,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 8416,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 4786,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 2433,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 15755,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 2799,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 6341,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 520,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 18708,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 2889,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 7524,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 2553,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 10051,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 8671,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 422,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 1794,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 4656,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 17491,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 12742,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 23550,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 4036,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 31520,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 17592,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 22631,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 8051,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 4791,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 35262,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 14469,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 10155,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 8413,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 3817,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 27976,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 6477,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 4755,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 1896,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 5910,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 36940,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 11472,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 6094,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 13890,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 4983,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 17360,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 2924,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 9371,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 1970,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "IFD",
+            "data": [{
+                    "close": 591,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 679,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 5803,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 322,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 590,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 3987,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 606,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 4134,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 618,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 3803,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 478,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 969,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 1099,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 568,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 2009,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 3851,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 4545,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 3502,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 3159,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 795,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 641,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 1095,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 729,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 726,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 619,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 3701,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 873,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 598,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 775,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 914,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 3533,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 744,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 797,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 239,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 2420,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 932,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 660,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 693,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 1426,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 590,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 163,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 697,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 877,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 4750,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 1351,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 4393,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 1035,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 5172,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 6420,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 3277,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 798,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 1004,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 4778,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 3876,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 1473,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 677,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 484,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 10616,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 1080,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 601,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 343,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 860,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 3548,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 1124,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 598,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 708,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 762,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 2742,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 552,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 1155,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 593,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "INE",
+            "data": [{
+                    "close": 4928,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 4848,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 5449,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 1450,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 2905,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 3240,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 860,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 2057,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 4224,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 3510,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 6378,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 4917,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 3862,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 748,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 135,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 1356,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 1103,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 836,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 677,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 3212,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 580,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 1970,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 417,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 676,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 4042,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 596,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 720,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 2524,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 1988,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 1259,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 3003,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 1773,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 117,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 950,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 3272,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 2553,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 5416,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 234,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 4890,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 4283,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 4307,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 2514,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 1152,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 6070,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 2792,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 2023,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 1075,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 473,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 7002,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 607,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 1610,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 773,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 4225,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 2313,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 950,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 1246,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 358,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 3788,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 1638,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 2186,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 56,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "INL",
+            "data": [{
+                    "close": 2096,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 1916,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 8056,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 1159,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 2547,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 26228,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 2291,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 12096,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 1725,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 5167,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 1917,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 2342,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 11221,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 2137,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 25198,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 11129,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 10363,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 9114,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 7194,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 2005,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 2668,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 2397,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 1961,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 3790,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 2399,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 9348,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 2510,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 4115,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 2187,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 1528,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 7365,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 1357,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 2628,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 729,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 4647,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 2571,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 3978,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 2212,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 6916,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 3274,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 478,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 3390,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 2662,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 10094,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 4791,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 14236,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 4503,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 28670,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 8846,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 29863,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 3607,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 2632,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 40614,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 13531,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 4798,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 3406,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 1163,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 9769,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 1819,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 1845,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 1293,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 2509,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 8103,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 3609,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 2138,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 2998,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 927,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 6689,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 2206,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 3471,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 2266,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "INT",
+            "data": [{
+                    "close": 2873,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 3872,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 13821,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 1709,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 2937,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 21342,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 5758,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 11772,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 3241,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 10995,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 2471,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 7796,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 11273,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 3414,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 10625,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 13025,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 14695,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 17423,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 12056,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 7005,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 4632,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 10362,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 3855,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 5875,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 6792,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 12315,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 5704,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 5526,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 7312,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 2646,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 11543,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 3566,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 4721,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 1374,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 10367,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 4648,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 5275,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 4558,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 9263,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 4350,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 992,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 3634,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 7373,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 8310,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 9741,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 8919,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 7769,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 19624,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 10197,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 8449,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 5825,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 10169,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 18662,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 9832,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 8626,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 5267,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 10507,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 17705,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 4997,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 3681,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 2873,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 8232,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 14181,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 6203,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 5651,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 7243,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 8118,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 14170,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 3755,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 5560,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 3628,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "ITE",
+            "data": [{
+                    "close": 4,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 1667,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 4,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 764,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 5,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 1128,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 4,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 1,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Nov-16",
+                },
+
+                {
+                    "close": 3,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 14,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 804,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 767,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 1876,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Jul-17",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "KIC",
+            "data": [{
+                    "close": 2142,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 4808,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 34157,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 1367,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 2008,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 45266,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 7699,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 19170,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 2226,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 18051,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 1672,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 7514,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 10520,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 2378,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 22659,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 24952,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 37692,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 35047,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 24039,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 6490,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 9850,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 5424,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 3563,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 7287,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 6909,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 17967,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 6299,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 8724,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 5436,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 6298,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 22843,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 4200,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 5943,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 997,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 19884,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 5542,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 17384,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 5064,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 13259,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 7844,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 677,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 5364,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 8662,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 24828,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 13499,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 19516,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 5446,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 38452,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 29689,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 22560,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 9809,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 5338,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 38826,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 16515,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 11764,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 6429,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 5953,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 25772,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 6679,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 7865,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 2011,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 7212,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 34764,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 10497,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 8937,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 7355,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 3671,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 19214,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 4385,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 10622,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 4840,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "KNM",
+            "data": [{
+                    "close": 122,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 59,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 705,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 74,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 126,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 589,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 195,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 448,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 101,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 350,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 65,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 185,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 190,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 139,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 970,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 267,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 677,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 631,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 444,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 165,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 96,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 315,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 84,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 231,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 159,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 494,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 154,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 364,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 98,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 95,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 872,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 76,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 180,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 73,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 257,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 118,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 221,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 50,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 297,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 368,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 41,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 188,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 204,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 467,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 205,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 714,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 288,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 409,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 603,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 664,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 227,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 276,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 434,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 532,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 188,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 176,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 67,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 896,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 144,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 189,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 125,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 108,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 584,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 204,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 141,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 212,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 86,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 877,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 174,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 241,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 243,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "LMK",
+            "data": [{
+                    "close": 256,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 406,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 12358,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 294,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 272,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 14626,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 4063,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 7007,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 365,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 6814,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 190,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 3386,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 4959,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 441,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 8744,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 26288,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 22872,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 12984,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 9262,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 1735,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 742,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 861,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 469,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 2452,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 2322,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 7596,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 1834,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 2988,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 692,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 591,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 8402,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 525,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 2730,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 110,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 6886,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 1134,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 3860,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 480,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 7458,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 3883,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 85,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 685,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 2983,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 8098,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 6283,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 10776,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 945,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 18454,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 10241,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 8666,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 3044,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 1527,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 14061,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 5564,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 4561,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 3710,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 533,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 10345,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 1236,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 2934,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 273,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 1352,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 12530,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 4891,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 3500,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 3419,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 702,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 7471,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 747,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 5036,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 732,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "MICI",
+            "data": [{
+                    "close": 110,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 14,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 29,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 135,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 98,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 18,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 32,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 15,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 150,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 15,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 122,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 18,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 134,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 48,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 12,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 35,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 26,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 43,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 9,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 133,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 73,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 115,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 72,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 55,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 22,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 54,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 8,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 49,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 89,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 40,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 120,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 82,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 43,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 124,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 7,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 360,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 12,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 69,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 11,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 26,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 20,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 19,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 84,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 20,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 27,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 54,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 9,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 50,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 22,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 16,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 11,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 121,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 32,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 45,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 65,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 48,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 223,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 81,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 61,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 24,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 30,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 22,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 41,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 32,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 27,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 7,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 65,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "MIF",
+            "data": [{
+                    "close": 3303,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 3114,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 13251,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 1387,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 3293,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 12114,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 3127,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 7061,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 3373,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 6419,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 2980,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 3388,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 3331,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 3704,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 7825,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 8511,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 11660,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 9834,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 6335,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 3320,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 3660,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 2555,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 2265,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 3398,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 4077,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 7640,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 3562,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 2607,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 2846,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 2058,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 9601,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 2679,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 3898,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 1214,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 8109,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 4620,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 3118,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 3983,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 4356,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 2807,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 679,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 4386,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 4171,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 7109,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 5033,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 8458,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 7674,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 12104,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 8684,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 8189,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 2886,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 2999,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 11619,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 8044,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 3566,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 4421,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 1629,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 8662,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 2747,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 2530,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 2523,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 2970,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 9410,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 3266,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 3086,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 2743,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 1658,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 7996,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 3581,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 3509,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 3782,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "OII",
+            "data": [{
+                    "close": 83,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 43,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 90,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 41,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 112,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 75,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 95,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 78,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 82,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 74,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 109,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 20,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 41,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 117,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 87,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 67,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 100,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 83,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 90,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 36,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 89,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 30,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 32,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 67,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 57,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 95,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 29,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 54,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 30,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 21,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 132,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 8,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 58,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 39,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 141,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 167,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 82,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 54,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 27,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 36,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 50,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 147,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 45,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 80,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 83,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 63,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 217,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 108,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 78,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 102,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 78,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 31,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 82,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 72,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 56,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 52,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 18,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 82,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 28,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 34,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 109,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 24,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 64,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 76,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 56,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 55,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 17,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 106,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 103,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 88,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 100,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "ORP",
+            "data": [{
+                    "close": 52,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 1970,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 957,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 117,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 59,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 677,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 334,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 319,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 40,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 610,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 39,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 373,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 323,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 63,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 446,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 357,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 634,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 568,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 1199,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 400,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 67,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 336,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 691,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 353,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 424,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 591,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 400,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 703,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 337,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 346,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 810,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 503,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 373,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 61,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 381,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 107,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 569,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 2035,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 386,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 671,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 36,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 54,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 366,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 345,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 421,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 404,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 99,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 657,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 1573,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 392,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 647,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 405,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 513,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 310,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 375,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 443,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 253,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 402,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 629,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 255,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 77,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 788,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 414,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 423,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 226,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 322,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 235,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 565,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 48,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 490,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 50,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "OVE",
+            "data": [{
+                    "close": 4187,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 2230,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 12082,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 1191,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 3701,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 12866,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 5255,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 7332,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 4834,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 9860,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 4051,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 3476,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 4332,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 4653,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 8261,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 9752,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 12600,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 11786,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 14551,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 5008,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 7739,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 3178,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 2302,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 5520,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 4743,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 12004,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 5395,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 6323,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 2808,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 2485,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 13084,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 3338,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 4683,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 574,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 9258,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 6321,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 6464,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 2036,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 7632,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 5529,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 317,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 6220,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 4949,
+                    "date": "1-May-15",
+                },
+
+                {
+                    "close": 8471,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 8004,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 8555,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 8493,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 14962,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 9449,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 8351,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 6575,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 3765,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 12320,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 5831,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 5110,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 5587,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 2564,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 8615,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 2691,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 4528,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 3198,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 2856,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 12472,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 6355,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 4378,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 5189,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 2361,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 10330,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 4927,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 6349,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 7866,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "PCY",
+            "data": [{
+                    "close": 15,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 9,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 20,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 12,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 15,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 14,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 8,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 8,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 19,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 3,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 9,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 13,
+                    "date": "1-Dec-13",
+                },
+
+                {
+                    "close": 44,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 11,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 14,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "PRE",
+            "data": [{
+                    "close": 223,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 145,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 15,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 249,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 214,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 65,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 484,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 86,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 256,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 47,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 246,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 96,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 72,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 328,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 130,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 22,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 23,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 22,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 46,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 54,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 203,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 214,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 162,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 72,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 32,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 60,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 63,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 26,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 163,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 152,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 35,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 156,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 45,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 248,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 61,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 253,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 27,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 102,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 11,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 37,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 183,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 154,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 105,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 21,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 21,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 36,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 250,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 29,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 34,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 229,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 31,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 73,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 31,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 34,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 198,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 41,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 118,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 32,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 200,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 100,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 221,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 177,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 32,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 16,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 38,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 61,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 166,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 49,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 104,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 12,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 229,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "PRO",
+            "data": [{
+                    "close": 6,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 2,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 1,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 13,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 7,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 3,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 5,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 9,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "RES",
+            "data": [{
+                    "close": 3388,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 8162,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 39648,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 2172,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 3221,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 32392,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 19630,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 24443,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 3292,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 23516,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 2791,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 24339,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 23542,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 4221,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 25506,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 28916,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 41672,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 32571,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 30892,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 18951,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 4410,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 18632,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 13045,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 45208,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 22093,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 32038,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 18190,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 17732,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 19312,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 14554,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 26753,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 14430,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 18871,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 1420,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 22045,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 5583,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 16519,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 12787,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 26564,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 27602,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 971,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 4682,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 26745,
+                    "date": "1-May-15",
+                },
+
+                {
+                    "close": 26968,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 24872,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 36784,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 9439,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 50205,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 33212,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 38726,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 18409,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 21260,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 37405,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 25786,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 19871,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 34121,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 15191,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 31807,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 20540,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 21588,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 2874,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 21903,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 31862,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 25609,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 25846,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 17060,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 13075,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 25295,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 5069,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 27528,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 4802,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "RMG",
+            "data": [{
+                    "close": 6,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 14,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 6,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 4,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 14,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 11,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 8,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 7,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 12,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 17,
+                    "date": "1-Jul-17",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "RND",
+            "data": [{
+                    "close": 3818,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 5661,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 1947,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 1650,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 1158,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 1264,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 4703,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 5349,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 5674,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 1215,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 1410,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 1370,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 2097,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 1056,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 1958,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 730,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 3939,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 12866,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 5940,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 2480,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 8188,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 5200,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 1020,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 5788,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 3147,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 300,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 1324,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 44,
+                    "date": "1-Aug-16",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "SCL",
+            "data": [{
+                    "close": 133,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 200,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 1748,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 120,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 166,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 6093,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 347,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 2391,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 181,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 1741,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 170,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 321,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 1261,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 170,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 1487,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 9060,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 12809,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 4166,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 1721,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 218,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 171,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 267,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 154,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 1068,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 250,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 1857,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 207,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 359,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 256,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 148,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 1857,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 154,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 175,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 68,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 1975,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 245,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 386,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 223,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 3265,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 439,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 64,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 212,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 313,
+                    "date": "1-May-15",
+                },
+
+                {
+                    "close": 1853,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 3684,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 2446,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 464,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 7077,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 1956,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 2051,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 386,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 272,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 4148,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 11076,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 1288,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 219,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 118,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 2430,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 772,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 181,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 175,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 317,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 3939,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 467,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 190,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 583,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 130,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 1468,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 275,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 453,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 207,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "SDI",
+            "data": [{
+                    "close": 768,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 818,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 7887,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 249,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 667,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 7401,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 3635,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 2944,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 730,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 4730,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 648,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 2028,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 3002,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 675,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 3021,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 5535,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 7982,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 6942,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 5111,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 1514,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 802,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 2264,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 1858,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 1938,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 2789,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 5193,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 1666,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 2535,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 1469,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 2236,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 3915,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 1588,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 2213,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 219,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 3742,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 902,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 3071,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 1644,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 3913,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 2115,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 117,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 860,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 1779,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 3988,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 4141,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 3430,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 1613,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 8263,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 5634,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 3131,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 3712,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 2193,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 8110,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 2386,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 3638,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 3407,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 1067,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 3998,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 1337,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 2092,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 549,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 1194,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 6821,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 3374,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 2025,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 3695,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 1506,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 3143,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 988,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 3137,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 903,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "SDV",
+            "data": [{
+                    "close": 744,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 267,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 956,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 558,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 612,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 1080,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 358,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 622,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 687,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 939,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 593,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 471,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 668,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 724,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 1402,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 769,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 1145,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 834,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 953,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 351,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 588,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 373,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 407,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 303,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 364,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 856,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 304,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 370,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 345,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 269,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 1001,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 690,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 241,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 490,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 842,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 655,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 319,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 663,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 721,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 371,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 307,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 488,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 424,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 830,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 693,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 607,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 720,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 1104,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 914,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 820,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 377,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 410,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 1123,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 490,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 715,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 391,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 302,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 530,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 352,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 360,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 783,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 358,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 895,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 645,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 325,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 330,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 326,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 874,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 441,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 438,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 474,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "SEC",
+            "data": [{
+                    "close": 84,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 36,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 84,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 20,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 101,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 52,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 19,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 35,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 60,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 37,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 71,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 27,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 31,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 76,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 20,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 39,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 35,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 54,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 41,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 24,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 115,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 31,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 30,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 83,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 87,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 110,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 73,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 12,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 21,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 23,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 106,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 38,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 82,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 13,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 62,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 107,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 49,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 55,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 48,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 21,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 13,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 115,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 27,
+                    "date": "1-May-15",
+                },
+
+                {
+                    "close": 29,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 71,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 36,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 224,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 65,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 40,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 28,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 47,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 44,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 26,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 27,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 23,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 52,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 13,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 41,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 26,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 24,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 55,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 31,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 71,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 28,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 26,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 67,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 20,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 37,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 81,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 36,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 57,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "SMO",
+            "data": [{
+                    "close": 4,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 12,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 11,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 10,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 7,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 28,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 21,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 2,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 5,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 18,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 13,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 13,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 7,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 10,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 27,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 10,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 12,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 7,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 8,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 12,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 10,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 7,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 24,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 9,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 26,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 8,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 14,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 45,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 7,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 10,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 2,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 24,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 17,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 30,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 7,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 18,
+                    "date": "1-Aug-16",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "SPD",
+            "data": [{
+                    "close": 540,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 1120,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 6149,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 1923,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 439,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 6331,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 1312,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 4125,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 642,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 4798,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 502,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 2463,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 2410,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 862,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 4272,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 4089,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 15212,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 6027,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 5651,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 1120,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 627,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 1028,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 811,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 1204,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 1230,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 4629,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 1123,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 1283,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 1071,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 938,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 4719,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 739,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 864,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 178,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 11554,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 891,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 1491,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 818,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 2618,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 1626,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 100,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 569,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 2602,
+                    "date": "1-May-15",
+                },
+
+                {
+                    "close": 4296,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 7095,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 5849,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 1012,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 6508,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 5315,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 4119,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 1522,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 1455,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 6399,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 3704,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 2487,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 1809,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 1065,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 5194,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 1023,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 1176,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 1592,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 965,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 6295,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 1961,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 939,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 1281,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 733,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 4579,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 1600,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 1896,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 665,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "SPH",
+            "data": [{
+                    "close": 1622,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 2078,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 28725,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 876,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 2056,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 29891,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 8530,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 16959,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 1673,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 26186,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 1814,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 3988,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 11129,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 1537,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 19841,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 20587,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 39115,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 32070,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 26516,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 5483,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 1790,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 3352,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 4152,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 9225,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 6585,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 27651,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 4922,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 10513,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 3097,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 4036,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 22356,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 2574,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 5050,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 947,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 15553,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 1991,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 9972,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 2646,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 15225,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 10869,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 554,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 1730,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 4744,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 22221,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 15438,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 24617,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 5232,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 33927,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 26052,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 21642,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 13401,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 3938,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 30651,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 15178,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 11424,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 7279,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 2471,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 28009,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 3701,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 4901,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 1533,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 4637,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 26137,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 17098,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 6302,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 9405,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 2425,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 22131,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 2557,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 18472,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 4142,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "Strategic Core",
+            "data": [{
+                    "close": 389,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 656,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 176,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 207,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 629,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 265,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 241,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 497,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 242,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 453,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 411,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 713,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 116,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 393,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 108,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 125,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 558,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 146,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 211,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 50,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 765,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 121,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 486,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 294,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 536,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 149,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 210,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 211,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 875,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 498,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 499,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 232,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 529,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 172,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 1220,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 433,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 196,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 371,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 148,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 853,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 607,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 154,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 42,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 362,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 822,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 196,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 158,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 724,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 587,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 335,
+                    "date": "1-Aug-16",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "TSP",
+            "data": [{
+                    "close": 1088,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 708,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 20081,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 1188,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 1186,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 13951,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 7696,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 9146,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 1032,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 6170,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 1070,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 4711,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 3450,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 1033,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 8614,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 12774,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 17606,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 14153,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 9057,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 2608,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 1048,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 2664,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 1950,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 3037,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 8960,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 8249,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 2753,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 3437,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 1274,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 2470,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 9360,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 2175,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 5123,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 211,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 4619,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 1136,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 3680,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 1576,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 5369,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 4925,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 179,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 1231,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 3900,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 9431,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 5336,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 10509,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 1944,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 16861,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 13178,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 9521,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 5835,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 5285,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 15060,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 11896,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 3554,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 9622,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 1107,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 15703,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 3802,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 10188,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 1029,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 1332,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 12588,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 4828,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 6251,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 8757,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 1223,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 8012,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 1081,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 4190,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 1198,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "UCC",
+            "data": [{
+                    "close": 4017,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 8506,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 11461,
+                    "date": "1-Sep-18",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "VPC",
+            "data": [{
+                    "close": 20,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 13,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 1071,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 13,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 15,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 1554,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 237,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 874,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 32,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 1301,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 38,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 17,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 684,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 17,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 1104,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 874,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 1244,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 1342,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 1005,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 63,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 16,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 8,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 21,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 1072,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 19,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 322,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 13,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 6,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 1206,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 4,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 44,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 991,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 53,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 811,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 9,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 586,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 242,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 9,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 103,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 19,
+                    "date": "1-May-15",
+                },
+
+                {
+                    "close": 768,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 712,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 1047,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 189,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 1578,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 843,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 928,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 1245,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 11,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 1224,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 631,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 647,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 176,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 5,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 1200,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 24,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 16,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 1217,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 372,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 3,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 589,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 1,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 1036,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 35,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 312,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 52,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "VPS",
+            "data": [{
+                    "close": 85,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 799,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 1447,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 85,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 109,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 16552,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 367,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 750,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 105,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 840,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 101,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 620,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 800,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 187,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 1004,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 3438,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 1705,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 1314,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 1356,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 344,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 108,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 264,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 348,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 1663,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 313,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 1123,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 2964,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 930,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 366,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 359,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 1144,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 341,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 313,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 21,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 766,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 138,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 341,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 540,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 714,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 1146,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 13,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 113,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 494,
+                    "date": "1-May-15",
+                },
+
+                {
+                    "close": 905,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 957,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 1141,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 205,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 5695,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 1286,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 980,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 391,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 1275,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 10683,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 619,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 853,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 399,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 495,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 1034,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 390,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 217,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 165,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 363,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 14511,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 759,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 235,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 332,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 282,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 991,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 1175,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 957,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 97,
+                    "date": "1-Jan-14",
+                },
+            ]
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "division_codes": "WSA",
+            "data": [{
+                    "close": 1333,
+                    "date": "1-Jul-13",
+                },
+                {
+                    "close": 1275,
+                    "date": "1-Apr-14",
+                },
+                {
+                    "close": 13918,
+                    "date": "1-Apr-18",
+                },
+                {
+                    "close": 636,
+                    "date": "1-Mar-13",
+                },
+                {
+                    "close": 1288,
+                    "date": "1-Aug-13",
+                },
+                {
+                    "close": 28640,
+                    "date": "1-Aug-18",
+                },
+                {
+                    "close": 3587,
+                    "date": "1-Feb-16",
+                },
+                {
+                    "close": 5515,
+                    "date": "1-Jan-18",
+                },
+                {
+                    "close": 1367,
+                    "date": "1-Jun-13",
+                },
+                {
+                    "close": 10512,
+                    "date": "1-Mar-17",
+                },
+                {
+                    "close": 1044,
+                    "date": "1-Sep-13",
+                },
+                {
+                    "close": 1919,
+                    "date": "1-Apr-15",
+                },
+                {
+                    "close": 4688,
+                    "date": "1-Dec-16",
+                },
+                {
+                    "close": 1620,
+                    "date": "1-May-13",
+                },
+                {
+                    "close": 10614,
+                    "date": "1-Aug-17",
+                },
+                {
+                    "close": 9447,
+                    "date": "1-Nov-18",
+                },
+                {
+                    "close": 16329,
+                    "date": "1-May-18",
+                },
+                {
+                    "close": 16359,
+                    "date": "1-Jun-18",
+                },
+                {
+                    "close": 11690,
+                    "date": "1-May-17",
+                },
+                {
+                    "close": 2604,
+                    "date": "1-Jun-15",
+                },
+                {
+                    "close": 1686,
+                    "date": "1-Nov-13",
+                },
+                {
+                    "close": 3557,
+                    "date": "1-Feb-15",
+                },
+                {
+                    "close": 1725,
+                    "date": "1-Jun-14",
+                },
+                {
+                    "close": 1757,
+                    "date": "1-Aug-15",
+                },
+                {
+                    "close": 7474,
+                    "date": "1-Oct-15",
+                },
+                {
+                    "close": 9394,
+                    "date": "1-Apr-17",
+                },
+                {
+                    "close": 2106,
+                    "date": "1-Jul-15",
+                },
+                {
+                    "close": 3503,
+                    "date": "1-Jun-16",
+                },
+                {
+                    "close": 1642,
+                    "date": "1-Nov-14",
+                },
+                {
+                    "close": 2941,
+                    "date": "1-Aug-14",
+                },
+                {
+                    "close": 11047,
+                    "date": "1-Jun-17",
+                },
+                {
+                    "close": 2485,
+                    "date": "1-Jul-14",
+                },
+                {
+                    "close": 3972,
+                    "date": "1-Sep-15",
+                },
+                {
+                    "close": 380,
+                    "date": "1-Feb-13",
+                },
+                {
+                    "close": 8299,
+                    "date": "1-Feb-17",
+                },
+                {
+                    "close": 1787,
+                    "date": "1-Oct-13",
+                },
+                {
+                    "close": 4664,
+                    "date": "1-May-16",
+                },
+                {
+                    "close": 1397,
+                    "date": "1-May-14",
+                },
+                {
+                    "close": 6432,
+                    "date": "1-Nov-16",
+                },
+                {
+                    "close": 3982,
+                    "date": "1-Jul-16",
+                },
+                {
+                    "close": 255,
+                    "date": "1-Jan-13",
+                },
+                {
+                    "close": 1626,
+                    "date": "1-Dec-13",
+                },
+                {
+                    "close": 2981,
+                    "date": "1-May-15",
+                },
+                {
+                    "close": 8909,
+                    "date": "1-Feb-18",
+                },
+                {
+                    "close": 6661,
+                    "date": "1-Oct-16",
+                },
+                {
+                    "close": 9081,
+                    "date": "1-Oct-17",
+                },
+                {
+                    "close": 3432,
+                    "date": "1-Feb-14",
+                },
+                {
+                    "close": 26490,
+                    "date": "1-Oct-18",
+                },
+                {
+                    "close": 12734,
+                    "date": "1-Mar-18",
+                },
+                {
+                    "close": 11036,
+                    "date": "1-Sep-17",
+                },
+                {
+                    "close": 3157,
+                    "date": "1-Apr-16",
+                },
+                {
+                    "close": 3076,
+                    "date": "1-Mar-15",
+                },
+                {
+                    "close": 20677,
+                    "date": "1-Sep-18",
+                },
+                {
+                    "close": 5662,
+                    "date": "1-Dec-17",
+                },
+                {
+                    "close": 5498,
+                    "date": "1-Jan-17",
+                },
+                {
+                    "close": 4281,
+                    "date": "1-Nov-15",
+                },
+                {
+                    "close": 1103,
+                    "date": "1-Dec-14",
+                },
+                {
+                    "close": 10989,
+                    "date": "1-Nov-17",
+                },
+                {
+                    "close": 3526,
+                    "date": "1-Sep-14",
+                },
+                {
+                    "close": 3548,
+                    "date": "1-Jan-16",
+                },
+                {
+                    "close": 1058,
+                    "date": "1-Apr-13",
+                },
+                {
+                    "close": 1841,
+                    "date": "1-Oct-14",
+                },
+                {
+                    "close": 18876,
+                    "date": "1-Jul-18",
+                },
+                {
+                    "close": 6184,
+                    "date": "1-Sep-16",
+                },
+                {
+                    "close": 3479,
+                    "date": "1-Dec-15",
+                },
+                {
+                    "close": 3573,
+                    "date": "1-Mar-16",
+                },
+                {
+                    "close": 2169,
+                    "date": "1-Jan-15",
+                },
+                {
+                    "close": 9204,
+                    "date": "1-Jul-17",
+                },
+                {
+                    "close": 2220,
+                    "date": "1-Mar-14",
+                },
+                {
+                    "close": 5994,
+                    "date": "1-Aug-16",
+                },
+                {
+                    "close": 1960,
+                    "date": "1-Jan-14",
+                },
+            ]
         }
     ],
     downloadTimelineIDB: [{

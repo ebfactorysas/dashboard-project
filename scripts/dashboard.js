@@ -14,8 +14,9 @@
 
 $("#deparmentSelect").on('change', function () {
     $("select[id*='divisionSelect']").val("");
+    
     removePublicationsSvg();
-
+    removePublicationsGauges();
     jsonPublicationsBarras = publicationsTopArrays.topDepartmentsAllTime.filter(function (dataP) {
         return dataP.department_codes == this.value
     });
@@ -58,45 +59,18 @@ $("#deparmentSelect").on('change', function () {
 $("#divisionSelect").on('change', function (data) {
     var sltValue = this.value;
     $('#idbLink').text(sltValue);
-
+    removePublicationsGauges();
+    removePublicationsSvgAll();
     if (this.value == "IDB") {
-        // dataPublicationGauge = setPublicationGauge();
-        // dataPublicationGauge2018 = setPublicationGauge2018();
-        removePublicationsSvg();
-        var downloadTimelineIDB = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineIDB);
-        var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
-        gaugeIDB();
-        drawLinesChartPublication(dataLinesPublications);
-        createChartTimelinePublication(downloadTimelineIDB, 'init');
-        drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
-        drawPlotChartPublication(ObjectpublicationsAttention, 'init');
-        drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "2018", 'init');
+        setDataIDB();
     } else {
-        // initIndicators('divisions', sltValue);
-        d3.select("#publications-plot svg").remove();
-        var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
-        drawPlotChartPublication(ObjectpublicationsAttention);
-
-        // $("select[id*='deparmentSelect']").val("");
-        removePublicationsSvg();
-        $('#idbLink').text(sltValue);
-        jsonPublicationsBarras = publicationsTopArrays.topDivisionsAllTime.filter(function (dataP) {
-            return dataP.division_codes == sltValue
-        });
-        drawTrendPublicationChart(jsonPublicationsBarras, '2018', '');
-
-        jsonPublicTree = publicationsDownloadSourceArrays.downloadSourceDivisions.filter(dataT => {
-            return dataT.division_codes == sltValue
-        });
-        drawTreePublication(jsonPublicTree, "2018", 'init');
-
+        initIndicators('divisions', sltValue);
         $('.label-filter-select').text(this.value);
-        // $("#deparmentSelect").value = "";
-
-        // mainReset();
         $('#blue2018').click();
-        $('#publication2018').click();
-        removePublicationsGauges();
+        // $('#publication2018').click();
+        
+        //Se llama la funcion para actulizar los datos con el valor de la division seleccionada
+        setDataPublicationsByDivisions(sltValue);
 
         d3.select("#gauge-moocs svg").remove();
         d3.select("#gauge-registrations-m svg").remove();
@@ -113,7 +87,8 @@ $("#divisionSelect").on('change', function (data) {
         d3.select("#gauge-suscribers svg").remove();
         d3.select("#gauge-lac-s svg").remove();
         d3.select("#gauge-2018 svg").remove();
-        updateGaugesPublications();
+        // updateGaugesPublications();
+        
         updateGaugesMoocs();
         updateGaugesDatasets();
         updateGaugesCode();
@@ -121,6 +96,53 @@ $("#divisionSelect").on('change', function (data) {
     }
 });
 
+function setDataIDB(){
+    // dataPublicationGauge = setPublicationGauge();
+    // dataPublicationGauge2018 = setPublicationGauge2018();
+    removePublicationsSvgAll();
+    var downloadTimelineIDB = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineIDB);
+    var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
+    // gaugeIDB();
+    initIndicators('', '');
+    dataPublicationGauge2018 = setPublicationGauge2018();
+    drawGaugePublicationChart(dataPublicationGauge2018);
+    drawLinesChartPublication(dataLinesPublications);
+    createChartTimelinePublication(downloadTimelineIDB, 'init');
+    drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
+    drawPlotChartPublication(ObjectpublicationsAttention, 'init');
+    drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "2018", 'init');
+}
+
+/**
+ * Funcion para actualizar la informacion de la seccion de publicaciones
+ */
+function setDataPublicationsByDivisions(sltValue) {
+    // removePublicationsGauges();
+    // removePublicationsSvgAll();
+    dataPublicationGauge2018 = setPublicationGauge2018();
+    drawGaugePublicationChart(dataPublicationGauge2018);
+    var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
+    drawPlotChartPublication(ObjectpublicationsAttention);
+
+    // $("select[id*='deparmentSelect']").val("");
+    $('#idbLink').text(sltValue);
+    jsonPublicationsBarras = publicationsTopArrays.topDivisionsAllTime.filter(function (dataP) {
+        return dataP.division_codes == sltValue
+    });
+    drawTrendPublicationChart(jsonPublicationsBarras, '2018', '');
+
+    jsonPublicTree = publicationsDownloadSourceArrays.downloadSourceDivisions.filter(dataT => {
+        return dataT.division_codes == sltValue
+    });
+    drawTreePublication(jsonPublicTree, "2018", 'init');
+    var auxDownloadTimelineDivisions = publicationsDownloadTimelineArray.downloadTimelineDivisions.filter(function (d){
+        return d.division_codes == sltValue
+    })
+    auxDownloadTimelineDivisions = $.extend(true, [], auxDownloadTimelineDivisions[0].data);
+    createChartTimelinePublication(auxDownloadTimelineDivisions, '');
+
+    // d3.select("#publications-plot svg").remove();
+}
 /**
  * bignumbers
  */
