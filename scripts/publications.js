@@ -1,12 +1,11 @@
-
 function setPublicationGauge() {
     var publicationGauge = {
         "publication": {
-            "total": 100,//getPercentageTotal(publicationsAllTotalGlobal),
+            "total": 100, //getPercentageTotal(publicationsAllTotalGlobal),
             "allocated": publicationsAllTotalGlobal
         },
         "download": {
-            "total": 100,//getPercentageTotal(publicationsAllDownloads),
+            "total": 100, //getPercentageTotal(publicationsAllDownloads),
             "allocated": publicationsAllDownloads
         },
         "lac": {
@@ -16,6 +15,7 @@ function setPublicationGauge() {
     }
     return publicationGauge;
 }
+
 function setPublicationGauge2018() {
     var publicationGauge2018 = {
         "publication": {
@@ -35,8 +35,7 @@ function setPublicationGauge2018() {
 }
 
 
-var dataLinesPublications = [
-    {
+var dataLinesPublications = [{
         "date": 20180101,
 
         "one": Math.floor((Math.random() * 10) + 1) + 10,
@@ -471,13 +470,13 @@ function createChartTimelinePublication(data, typeload) {
         .data([data])
         .attr("class", "line")
         .attr("d", valueline);
-    //
-    svg.append('svg:path')
-        .attr('d', lineGen(data))
-        .attr('stroke', '#c3c3c3')
-        .attr("stroke-dasharray", "4")
-        .attr('stroke-width', 2)
-        .attr('fill', 'none');
+    //calculate path do not delete it
+    // svg.append('svg:path')
+    //     .attr('d', lineGen(data))
+    //     .attr('stroke', '#c3c3c3')
+    //     .attr("stroke-dasharray", "4")
+    //     .attr('stroke-width', 2)
+    //     .attr('fill', 'none');
 
     // add the X Axis
     svg.append("g")
@@ -537,7 +536,10 @@ function createChartTimelinePublication(data, typeload) {
         .style("font-size", "13px")
         .call(d3.axisLeft(y)
             .ticks(3)
-            .tickFormat(d3.format(".2s")));
+            .tickFormat(function (x) {
+                var value = setSettingsNumber(x);
+                return value.valueNumber + suffixNumber;
+            }));
 }
 
 function drawTreePublication(dataTree, filtertype, typeload) {
@@ -633,17 +635,17 @@ function drawTrendPublicationChart(dataPublicationTrend) {
         })
         .tickPadding(40)
         .tickSize(0)
-        
-    
+
+
 
     var gyPublicationTrend = svgPublicationTrend.append("g")
         .style("text-anchor", "start")
         .style("color", "#555555")
         .attr("class", "y-data")
         .call(yAxisPublicationTrend)
-    
+
     var textInAxis = d3.selectAll("#publication-trend .y-data text")
-    .attr("dy",".2em")
+        .attr("dy", ".2em")
 
     var barsPublicationTrend = svgPublicationTrend.selectAll(".bar")
         .data(dataPublicationTrend)
@@ -1008,6 +1010,21 @@ function drawPlotChartPublication(data, typeload) {
     };
     var width = 800 - margin.left - margin.right;
     var height = 450 - margin.top - margin.bottom;
+    var valueOfFilter = $('#idbLink')[0].text;
+    var arrayAux = [];
+    var arrayElements = [];
+    for (let i = 0; i < data.length; i++) {
+        if (valueOfFilter == data[i].departmentCode) {
+            arrayElements.push(data[i])
+        } else {
+            arrayAux.push(data[i])
+        }
+    }
+    data = arrayAux.concat(arrayElements);
+
+    var div = d3.select("body").append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
 
     var svg = d3.select('#publications-plot')
         .append("svg")
@@ -1085,7 +1102,24 @@ function drawPlotChartPublication(data, typeload) {
         .attr('text-anchor', 'middle')
         .text("Published Days");
 
+    var mouseOver = function (d) {
+        div.transition()
+            .duration(0)
+            .style("opacity", .9);
+        div.html(
+                "<div><h4 class='text-center'><b>PUBLICATION DETAILS</b></h4><p class='pb-2'>" +
+                d.Code + "</p><p><b>" +
+                d.departmentCode + "</b></p><div class='pl-0'><p><span>Downloads:</span>&nbsp;&nbsp;&nbsp;<b>" + d.Downloads + "</b></p><p><span>Published Days:</span><b>" + d.daysPublished + "</b></p></div></div>")
+            .style("left", (d3.event.pageX) + "px")
+            .style("top", (d3.event.pageY) + "px");
 
+    }
+
+    var mouseOut = function (d) {
+        div.transition()
+            .duration(0)
+            .style("opacity", 0);
+    }
     var bubble = svg.selectAll('.bubble')
         .data(data)
         .enter().append('circle')
@@ -1100,19 +1134,21 @@ function drawPlotChartPublication(data, typeload) {
             return radius(20);
         })
         .style('fill', function (d) {
-            if (d.Downloads >= 1000 && d.daysPublished >= 200) {
-                return "#d65a70"
-            } else {
+
+            if (d.departmentCode != valueOfFilter) {
                 return "#d8d8d8"
             }
+            return "#d65a70"
         })
-        .append('title')
-        .attr('x', function (d) {
-            return radius(d.Downloads);
-        })
-        .text(function (d) {
-            return d.Code;
-        });
+        .on("mouseover", mouseOver)
+        .on("mouseout", mouseOut);
+    // .append('title')
+    // .attr('x', function (d) {
+    //     return radius(d.Downloads);
+    // })
+    // .text(function (d) {
+    //     return d.Code;
+    // });
 
 }
 
@@ -1120,9 +1156,10 @@ function removePublicationsSvg() {
     d3.select("#downloads-publications svg").remove();
     // d3.select("#timeline-publication svg").remove();
     d3.select("#publication-trend svg").remove();
-    // d3.select("#publications-plot svg").remove();
-    
+    //d3.select("#publications-plot svg").remove();
+
 }
+
 function removePublicationsGauges() {
     d3.select("#gauge-publications svg").remove();
     d3.select("#gauge-download-p svg").remove();
@@ -1175,7 +1212,7 @@ $("input[name*='publicationTrend']").click(function () {
 
     removePublicationsSvg();
     removePublicationsGauges();
-    if($("select[id*='divisionSelect']").val() != "IDB") {
+    if ($("select[id*='divisionSelect']").val() != "IDB") {
         if ($("select[id*='divisionSelect']").val().length > 0) {
             
             
@@ -1189,8 +1226,8 @@ $("input[name*='publicationTrend']").click(function () {
             // var downloadTimelineIDB = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineIDB);
             // createChartTimelinePublication(downloadTimelineIDB);
             // drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
-            
-            if(this.id == "publicationAllTime"){
+
+            if (this.id == "publicationAllTime") {
                 $('.label-filter-restidb').hide();
                 jsondataPublications = bnPublicationsArrays.publicationsDivisions.filter(function (data) {
                     return data.division_codes == $("select[id*='divisionSelect']").val()
@@ -1235,8 +1272,7 @@ $("input[name*='publicationTrend']").click(function () {
             downloadTimelineDepartment = downloadTimelineDepartment[0].data;
             // createChartTimelinePublication(downloadTimelineDepartment);
         }
-    } 
-    else {
+    } else {
         removePublicationsSvg();
         removePublicationsGauges();
         if (this.id == "publicationAllTime") {

@@ -59,6 +59,10 @@ $("#divisionSelect").on('change', function (data) {
     var sltValue = this.value;
     $('#idbLink').text(sltValue);
     // initIndicators('divisions', sltValue);
+    d3.select("#publications-plot svg").remove();
+    var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
+    drawPlotChartPublication(ObjectpublicationsAttention);
+    
     // $("select[id*='deparmentSelect']").val("");
     removePublicationsSvg();
     $('#idbLink').text(sltValue);
