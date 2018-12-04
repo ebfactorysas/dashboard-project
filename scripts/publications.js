@@ -422,13 +422,11 @@ function createChartTimelinePublication(data, typeload) {
         //class to make it responsive
         .classed("svg-content-responsive", true);
     var totalAmount = 0;
-    var totalDownloads = 0;
     // format the data
     data.forEach(function (d) {
         d.date = parseTime(d.date);
-        totalDownloads = totalDownloads + d.close
+        
     });
-    console.log(totalDownloads);
 
     data = data.sort(sortByDateAscending);
 
@@ -507,8 +505,26 @@ function createChartTimelinePublication(data, typeload) {
             .ticks(3)
             .tickFormat(function (x) {
                 var value = setSettingsNumber(x);
-                return value.valueNumber + suffixNumber;
+                return value.valueNumber + value.suffixNumber;
             }));
+
+    var textOfTotal = setSettingsNumber(totalAmount);
+
+            svg.append("text")
+        .attr("x",(width-(margin.left/2)))             
+        .attr("y", 0 - (margin.top / 5))
+        // .attr("text-anchor", "middle")  
+        .style("font-size", "16px") 
+        .style("font-family", "Gotham-Bold")
+        .text(textOfTotal.valueNumber + textOfTotal.suffixNumber);
+        svg.append("text")
+        .attr("x",(width-(margin.left/2)))             
+        .attr("y", 10)
+        // .attr("text-anchor", "middle")  
+        .style("font-size", "14px") 
+        .style("font-family", "Gotham-Book")
+        .text("TOTAL");
+
 }
 
 function drawTreePublication(dataTree, filtertype, typeload) {
