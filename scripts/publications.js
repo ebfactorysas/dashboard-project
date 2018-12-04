@@ -1226,11 +1226,18 @@ $("input[name*='publicationTrend']").click(function () {
             // var downloadTimelineIDB = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineIDB);
             // createChartTimelinePublication(downloadTimelineIDB);
             // drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
-
+            
+            var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
             if (this.id == "publicationAllTime") {
                 $('.label-filter-restidb').hide();
                 jsondataPublications = bnPublicationsArrays.publicationsDivisions.filter(function (data) {
                     return data.division_codes == $("select[id*='divisionSelect']").val()
+                });
+                jsonPublicationsBarras = publicationsTopArrays.topDivisions2018.filter(function (dataP) {
+                    return dataP.division_codes == $("select[id*='divisionSelect']").val()
+                });
+                jsonTreePublications = publicationsDownloadSourceArrays.downloadSourceDivisions.filter(function (dataP) {
+                    return dataP.division_codes == $("select[id*='divisionSelect']").val()
                 });
                 publicationsAllTotalGlobal = (jsondataPublications.length > 0) ? jsondataPublications[0].all_the_time_publications : '0';
                 publicationsAllDownloads = (jsondataPublications.length > 0) ? jsondataPublications[0].all_the_time_downloads : '0';
@@ -1241,16 +1248,16 @@ $("input[name*='publicationTrend']").click(function () {
                     return dataP.division_codes == $("select[id*='divisionSelect']").val()
                 });
                 drawTreePublication(jsonTreePublications, "AllTheTime");
+                drawTrendPublicationChart(jsonPublicationsBarras);
             } else {
                 $('.label-filter-restidb').show();
-                jsonPublicationsBarras = publicationsTopArrays.topDivisions2018.filter(function (dataP) {
+                jsonPublicationsBarras = publicationsTopArrays.topDivisionsAllTime.filter(function (dataP) {
                     return dataP.division_codes == $("select[id*='divisionSelect']").val()
                 });
-                var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
-                drawPlotChartPublication(ObjectpublicationsAttention);
                 jsonTreePublications = publicationsDownloadSourceArrays.downloadSourceDivisions.filter(function (dataP) {
                     return dataP.division_codes == $("select[id*='divisionSelect']").val()
                 });
+                // drawPlotChartPublication(ObjectpublicationsAttention);
                 drawTrendPublicationChart(jsonPublicationsBarras);
                 drawTreePublication(jsonTreePublications, "2018");
                 drawLinesChartPublication(dataLinesPublications);
