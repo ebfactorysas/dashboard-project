@@ -425,6 +425,7 @@ function createChartTimelinePublication(data, typeload) {
     // format the data
     data.forEach(function (d) {
         d.date = parseTime(d.date);
+        
     });
 
     data = data.sort(sortByDateAscending);
@@ -471,6 +472,7 @@ function createChartTimelinePublication(data, typeload) {
         .data([data])
         .attr("class", "line")
         .attr("d", valueline);
+
     //calculate path do not delete it
     // svg.append('svg:path')
     //     .attr('d', lineGen(data))
@@ -486,7 +488,6 @@ function createChartTimelinePublication(data, typeload) {
         .style('stroke-width', '3px')
         .style("font-family", "Gotham-Book")
         .style("font-size", "13px")
-        //.call(d3.axisBottom(x));
         .call(d3.axisBottom(x)
             .ticks(d3.timeDay.filter(function (d) {
                 return $("#publication2018").prop("checked") ? d3.timeDay.count(0, d) % 60 === 0 : d3.timeDay.count(0, d) % 300 === 0
@@ -504,8 +505,26 @@ function createChartTimelinePublication(data, typeload) {
             .ticks(3)
             .tickFormat(function (x) {
                 var value = setSettingsNumber(x);
-                return value.valueNumber + suffixNumber;
+                return value.valueNumber + value.suffixNumber;
             }));
+
+    var textOfTotal = setSettingsNumber(totalAmount);
+
+            svg.append("text")
+        .attr("x",(width-(margin.left/2)))             
+        .attr("y", 0 - (margin.top / 5))
+        // .attr("text-anchor", "middle")  
+        .style("font-size", "16px") 
+        .style("font-family", "Gotham-Bold")
+        .text(textOfTotal.valueNumber + textOfTotal.suffixNumber);
+        svg.append("text")
+        .attr("x",(width-(margin.left/2)))             
+        .attr("y", 10)
+        // .attr("text-anchor", "middle")  
+        .style("font-size", "14px") 
+        .style("font-family", "Gotham-Book")
+        .text("TOTAL");
+
 }
 
 function drawTreePublication(dataTree, filtertype, typeload) {
@@ -519,8 +538,7 @@ function drawTreePublication(dataTree, filtertype, typeload) {
                 return d3.descending(a.valueAllTheTime, b.valueAllTheTime);
             });
         }
-    }
-    else {
+    } else {
         dataTree = dataTree.sort(function (a, b) {
             return d3.descending(a.value2018, b.value2018);
         });
@@ -570,7 +588,7 @@ function drawTrendPublicationChart(dataPublicationTrend) {
     };
 
     var widthPublicationTrend = 680 - marginPublicationTrend.left - marginPublicationTrend.right,
-        heightPublicationTrend = 447 - marginPublicationTrend.top - marginPublicationTrend.bottom;
+        heightPublicationTrend = 465 - marginPublicationTrend.top - marginPublicationTrend.bottom;
 
 
     var svgPublicationTrend = d3.select("#publication-trend")
@@ -776,7 +794,7 @@ function drawLinesChartPublication(data) {
 
     var svg = d3.select("#lines-publications").append("svg")
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-1 -10 110 400")
+        .attr("viewBox", "-1 -10 105 400")
         .append("g")
         .classed("svg-content-responsive", true);
 
@@ -954,6 +972,7 @@ function drawLinesChartPublication(data) {
 
 
 function drawPlotChartPublication(data, typeload) {
+    d3.select("#publications-plot svg").remove();
     //console.log(data)
     // if (typeload != "init") {
     //     if ($("#publication2018").prop("checked")) {
@@ -974,8 +993,8 @@ function drawPlotChartPublication(data, typeload) {
         bottom: 60,
         left: 100
     };
-    var width = 800 - margin.left - margin.right;
-    var height = 450 - margin.top - margin.bottom;
+    var width = 750 - margin.left - margin.right;
+    var height = 540 - margin.top - margin.bottom;
     var valueOfFilter = $('#idbLink')[0].text;
     var arrayAux = [];
     var arrayElements = [];
@@ -1101,7 +1120,7 @@ function drawPlotChartPublication(data, typeload) {
         })
         .style('fill', function (d) {
 
-            if (d.departmentCode != valueOfFilter) {
+            if (d.departmentCode != valueOfFilter && valueOfFilter != "IDB") {
                 return "#d8d8d8"
             }
             return "#d65a70"
@@ -1164,21 +1183,21 @@ function initPublications() {
     var downloadTimelineIDB = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineIDB);
     var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
 
-    
-    var jsonPublicationLines = publicationsLines.linesAllDivisions.filter(function (data) {
-        return data.division_codes = 'CAN'
-    });
-    const ordered = {};
-    Object.keys(jsonPublicationLines).sort().forEach(function (key) {
-        ordered[key] = jsonPublicationLines[key];
-    });
 
-    // console.log(JSON.parse(JSON.stringify(ordered)));
+    // var jsonPublicationLines = publicationsLines.linesAllDivisions.filter(function (data) {
+    //     return data.division_codes = 'CAN'
+    // });
+    // const ordered = {};
+    // Object.keys(jsonPublicationLines).sort().forEach(function (key) {
+    //     ordered[key] = jsonPublicationLines[key];
+    // });
 
-    for (var key in JSON.parse(JSON.stringify(ordered))) {
-        console.log(key);
-    }
-    
+    // // console.log(JSON.parse(JSON.stringify(ordered)));
+
+    // for (var key in JSON.parse(JSON.stringify(ordered))) {
+    //     console.log(key);
+    // }
+
 
 
     drawGaugePublicationChart(dataPublicationGauge2018);
@@ -1188,6 +1207,7 @@ function initPublications() {
     drawPlotChartPublication(ObjectpublicationsAttention, 'init');
     drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "2018", 'init');
 }
+
 function validarFormatoFecha(campo) {
     var RegExPattern = /^\d{1,2}\/\d{1,2}\/\d{2,4}$/;
     if ((campo.match(RegExPattern)) && (campo != '')) {
@@ -1206,19 +1226,19 @@ $("input[name*='publicationTrend']").click(function () {
     removePublicationsGauges();
     if ($("select[id*='divisionSelect']").val() != "IDB") {
         if ($("select[id*='divisionSelect']").val().length > 0) {
-            
-            
+
+
             // jsonPublicTree = publicationsDownloadSourceArrays.downloadSourceDepartments.filter(dataT => {
             //     return dataT.department_codes == this.value
             // });
             // drawTreePublication(jsonPublicTree, "AllTheTime");
-            
-            
-            
+
+
+
             // var downloadTimelineIDB = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineIDB);
             // createChartTimelinePublication(downloadTimelineIDB);
             // drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
-            
+
             var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
             if (this.id == "publicationAllTime") {
                 $('.label-filter-restidb').hide();
@@ -1253,7 +1273,7 @@ $("input[name*='publicationTrend']").click(function () {
                 drawTrendPublicationChart(jsonPublicationsBarras);
                 drawTreePublication(jsonTreePublications, "2018");
                 drawLinesChartPublication(dataLinesPublications);
-                
+
                 jsondataPublications = bnPublicationsArrays.publicationsDivisions.filter(function (data) {
                     return data.division_codes == $("select[id*='divisionSelect']").val()
                 });

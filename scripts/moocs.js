@@ -765,10 +765,10 @@ function createChart(data) {
     // appends a 'group' element to 'svg'
     // moves the 'group' element to the top left margin
     var svg = d3.select("#timeline-moocs").append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
-        .append("g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    .attr("preserveAspectRatio", "xMinYMin meet")
+    .attr("viewBox", "-60 -28 600 300")
+    .append("g")
+    .classed("svg-content-responsive", true);
     var totalAmount = 0;
     // format the data
     data.forEach(function (d) {
@@ -819,13 +819,13 @@ function createChart(data) {
         .data([data])
         .attr("class", "line")
         .attr("d", valueline);
-    //
-    svg.append('svg:path')
+    //calculate path do not delete it
+    /*svg.append('svg:path')
         .attr('d', lineGen(data))
         .attr('stroke', '#c3c3c3')
         .attr("stroke-dasharray", "4")
         .attr('stroke-width', 2)
-        .attr('fill', 'none');
+        .attr('fill', 'none');*/
 
     // add the X Axis
     svg.append("g")
@@ -835,50 +835,9 @@ function createChart(data) {
         .style("font-family", "Gotham-Book")
         .style("font-size", "13px")
         .call(d3.axisBottom(x)
-            //.ticks(d3.timeDay.filter(d {return } d3.timeDay.count(0, d) % 100 === 0))
-            .ticks(d3.timeDay.filter(function (d) {
-                return $("#moocs2018").prop("checked") ? d3.timeDay.count(0, d) % 60 === 0 : d3.timeDay.count(0, d) % 300 === 0
-            }))
-            .tickFormat(function (x) {
-                // get the milliseconds since Epoch for the date
-                var milli = (x.getTime() - 10000);
-
-                // calculate new date 10 seconds earlier. Could be one second, 
-                // but I like a little buffer for my neuroses
-                var vanilli = new Date(milli);
-
-                // calculate the month (0-11) based on the new date
-                var mon = vanilli.getMonth();
-                var yr = vanilli.getFullYear();
-
-                // return appropriate quarter for that month
-                if ($("#moocs2018").prop("checked")) {
-                    if (mon <= 2 && yr == 2018) {
-                        return "Q1 " + yr;
-                    } else if (mon <= 5 && yr == 2018) {
-                        return "Q2 " + yr;
-                    } else if (mon <= 8 && yr == 2018) {
-                        return "Q3 " + yr;
-                    } else if (yr == 2018) {
-                        return "Q4 " + yr;
-                    }
-                } else {
-                    if (mon <= 2) {
-                        return yr;
-                    } else if (mon <= 5) {
-                        return yr;
-                    } else if (mon <= 8) {
-                        return yr;
-                    } else {
-                        return yr;
-                    }
-                }
-
-
-            })
+            .ticks(7)            
             .tickSizeOuter(0)
         )
-    //.call(d3.axisBottom(x));
 
     // add the Y Axis
     svg.append("g")
@@ -886,7 +845,11 @@ function createChart(data) {
         .style("font-family", "Gotham-Book")
         .style("font-size", "13px")
         .call(d3.axisLeft(y)
-            .tickFormat(d3.format(".2s")));
+        .ticks(3)
+        .tickFormat(function (x) {
+            var value = setSettingsNumber(x);
+            return value.valueNumber + suffixNumber;
+        }));
 }
 
 /**
@@ -1033,20 +996,6 @@ function drawGaugeMoocsChart(dataGauge) {
 
     var i3 = d3.interpolate(progress3, dataGauge.lac.allocated / dataGauge.lac.total);
     foreground3.attr("d", arc3.endAngle(twoPi * i3(1)));
-    // d3.transition().duration(1000).tween("progress", function () {
-    //     return function (t) {
-    //         progress = i(t);
-    //         foreground.attr("d", arc.endAngle(twoPi * progress));
-    //         percentComplete.text((progress * 100).toFixed(0));
-    //         progress2 = i2(t);
-    //         foreground2.attr("d", arc2.endAngle(twoPi * progress2));
-    //         percentComplete2.text((progress2 * 1000).toFixed(0) + "K");
-    //         progress3 = i3(t);
-    //         foreground3.attr("d", arc3.endAngle(twoPi * progress3));
-    //         percentComplete3.text((progress3 * 100).toFixed(0) + "%");
-
-    //     };
-    // });
 }
 
 

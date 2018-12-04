@@ -68,7 +68,7 @@ $("#divisionSelect").on('change', function (data) {
         $('.label-filter-select').text(this.value);
         $('#blue2018').click();
         // $('#publication2018').click();
-        
+
         //Se llama la funcion para actulizar los datos con el valor de la division seleccionada
         setDataPublicationsByDivisions(sltValue);
 
@@ -88,7 +88,7 @@ $("#divisionSelect").on('change', function (data) {
         d3.select("#gauge-lac-s svg").remove();
         d3.select("#gauge-2018 svg").remove();
         // updateGaugesPublications();
-        
+
         updateGaugesMoocs();
         updateGaugesDatasets();
         updateGaugesCode();
