@@ -1122,8 +1122,8 @@ function removePublicationsSvg() {
     // d3.select("#timeline-publication svg").remove();
     d3.select("#publication-trend svg").remove();
     //d3.select("#publications-plot svg").remove();
-
 }
+
 
 function removePublicationsGauges() {
     d3.select("#gauge-publications svg").remove();
@@ -1158,16 +1158,36 @@ function initPublications() {
     var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
 
     
+    var jsonPublicationLines = publicationsLines.linesAllDivisions.filter(function (data) {
+        return data.division_codes = 'CAN'
+    });
+    const ordered = {};
+    Object.keys(jsonPublicationLines).sort().forEach(function (key) {
+        ordered[key] = jsonPublicationLines[key];
+    });
+
+    // console.log(JSON.parse(JSON.stringify(ordered)));
+
+    for (var key in JSON.parse(JSON.stringify(ordered))) {
+        console.log(key);
+    }
     
-    // console.log(publicationsLines.linesAllDivisions.filter(function (data){
-    //     return data.division_codes = 'CAN'
-    // }));
+
+
     drawGaugePublicationChart(dataPublicationGauge2018);
     drawLinesChartPublication(dataLinesPublications);
     createChartTimelinePublication(downloadTimelineIDB, 'init');
     drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
     drawPlotChartPublication(ObjectpublicationsAttention, 'init');
     drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "2018", 'init');
+}
+function validarFormatoFecha(campo) {
+    var RegExPattern = /^\d{1,2}\/\d{1,2}\/\d{2,4}$/;
+    if ((campo.match(RegExPattern)) && (campo != '')) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 //click radiobutton drawChart(id del click)
@@ -1198,7 +1218,7 @@ $("input[name*='publicationTrend']").click(function () {
                 jsondataPublications = bnPublicationsArrays.publicationsDivisions.filter(function (data) {
                     return data.division_codes == $("select[id*='divisionSelect']").val()
                 });
-                jsonPublicationsBarras = publicationsTopArrays.topDivisions2018.filter(function (dataP) {
+                jsonPublicationsBarras = publicationsTopArrays.topDivisionsAllTime.filter(function (dataP) {
                     return dataP.division_codes == $("select[id*='divisionSelect']").val()
                 });
                 jsonTreePublications = publicationsDownloadSourceArrays.downloadSourceDivisions.filter(function (dataP) {
@@ -1216,7 +1236,7 @@ $("input[name*='publicationTrend']").click(function () {
                 drawTrendPublicationChart(jsonPublicationsBarras);
             } else {
                 $('.label-filter-restidb').show();
-                jsonPublicationsBarras = publicationsTopArrays.topDivisionsAllTime.filter(function (dataP) {
+                jsonPublicationsBarras = publicationsTopArrays.topDivisions2018.filter(function (dataP) {
                     return dataP.division_codes == $("select[id*='divisionSelect']").val()
                 });
                 jsonTreePublications = publicationsDownloadSourceArrays.downloadSourceDivisions.filter(function (dataP) {
