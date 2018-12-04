@@ -224,7 +224,6 @@ section.publications {
     font-family: 'Gotham-Bold';
 }
 
-
 section.publications .left-bar label{
     padding-bottom: 0px;
     margin-bottom: 0;
@@ -387,6 +386,10 @@ section.publications .grid path {
     stroke-width: 0;
 }
 
+section.publications #publications-plot {
+    margin-top: -32px;
+}
+
 section.publications #publications-plot .legend text,
 section.publications #publications-plot .axis text {
     font-size: 14px;
@@ -495,6 +498,20 @@ section.moocs h3 {
 
 section.moocs h1 {
     font-size: 48px;
+}
+
+section.moocs {
+    height: 100vh;
+}
+
+section.moocs .left-zone {
+    width: 950px;
+    height: 280px;
+}
+
+section.moocs .right-zone {
+    width: 690px;
+    height: 280px;
 }
 
 section.moocs .down-zone span {
@@ -1242,6 +1259,24 @@ section.map select.form-control:not([size]):not([multiple]) {
         padding-top: 20px
     }
 
+    section.moocs {
+        height: 100vh;
+    }
+
+    section.moocs .left-zone {
+        width: 950px;
+        height: 280px;
+    }
+
+    section.moocs .right-zone {
+        width: 690px;
+        height: 280px;
+    }
+
+
+
+
+
     .ms-fullscreenmode #contentBox {
         margin-left: 0 !important;
     }
@@ -1254,8 +1289,4 @@ section.map select.form-control:not([size]):not([multiple]) {
         color: #1658a1;
     }
 
-    /* section.publications #downloads-publications svg{
-        
-        height: 200px!important;
-    } */
 }
