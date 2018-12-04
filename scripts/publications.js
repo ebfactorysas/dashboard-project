@@ -490,42 +490,7 @@ function createChartTimelinePublication(data, typeload) {
             .ticks(d3.timeDay.filter(function (d) {
                 return $("#publication2018").prop("checked") ? d3.timeDay.count(0, d) % 60 === 0 : d3.timeDay.count(0, d) % 300 === 0
             }))
-            .tickFormat(function (x) {
-                // get the milliseconds since Epoch for the date
-                var milli = (x.getTime() - 10000);
-
-                // calculate new date 10 seconds earlier. Could be one second, 
-                // but I like a little buffer for my neuroses
-                var vanilli = new Date(milli);
-
-                // calculate the month (0-11) based on the new date
-                var mon = vanilli.getMonth();
-                var yr = vanilli.getFullYear();
-
-                // return appropriate quarter for that month
-                // if ($("#code2018").prop("checked")) {
-                if ($("#publication2018").prop("checked")) {
-                    if (mon <= 2 && yr == 2018) {
-                        return "Q1 " + yr;
-                    } else if (mon <= 5 && yr == 2018) {
-                        return "Q2 " + yr;
-                    } else if (mon <= 8 && yr == 2018) {
-                        return "Q3 " + yr;
-                    } else if (yr == 2018) {
-                        return "Q4 " + yr;
-                    }
-                } else {
-                    if (mon <= 2) {
-                        return yr;
-                    } else if (mon <= 5) {
-                        return yr;
-                    } else if (mon <= 8) {
-                        return yr;
-                    } else {
-                        return yr;
-                    }
-                }
-            })
+            .ticks(7)
             .tickSizeOuter(0)
         )
 
