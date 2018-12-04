@@ -58,28 +58,29 @@ $("#deparmentSelect").on('change', function () {
 $("#divisionSelect").on('change', function (data) {
     var sltValue = this.value;
     $('#idbLink').text(sltValue);
-    initIndicators('divisions', sltValue);
+    // initIndicators('divisions', sltValue);
     // $("select[id*='deparmentSelect']").val("");
     removePublicationsSvg();
     $('#idbLink').text(sltValue);
     jsonPublicationsBarras = publicationsTopArrays.topDivisionsAllTime.filter(function (dataP) {
         return dataP.division_codes == sltValue
     });
-    drawTrendPublicationChart(jsonPublicationsBarras);
+    drawTrendPublicationChart(jsonPublicationsBarras, '2018', '');
 
     jsonPublicTree = publicationsDownloadSourceArrays.downloadSourceDivisions.filter(dataT => {
         return dataT.division_codes == sltValue
     });
-    drawTreePublication(jsonPublicTree, "AllTheTime");
+    drawTreePublication(jsonPublicTree, "2018",'init');
 
     if (this.value == "IDB") {
         gaugeIDB();
     } else {
         $('.label-filter-select').text(this.value);
-        $("#deparmentSelect").value = "";
+        // $("#deparmentSelect").value = "";
 
         // mainReset();
-        $('#blueAllTime').click();
+        $('#blue2018').click();
+        $('#publication2018').click();
         removePublicationsGauges();
 
         d3.select("#gauge-moocs svg").remove();

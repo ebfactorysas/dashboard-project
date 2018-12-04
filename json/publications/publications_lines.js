@@ -2,7 +2,7 @@ var publicationsLines = {
     linesAllDepartments: [
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "AUG",
+            "department_codes": "AUG",
             "Title": "Leveraging Data Analytics Beyond Assurance",
             "11/1/2018": 1,
             "11/18/2018": 1,
@@ -12,7 +12,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "BOG",
+            "department_codes": "BOG",
             "Title": "Evaluación de la Necesidad de un Aumento General de Capital del Capital Ordinario y una Reposición de Recursos del Fondo para Operaciones Especiales: Avances y Próximos Pasos",
             "11/6/2018": 1,
             "All the time downloads": 478,
@@ -21,7 +21,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "BOG",
+            "department_codes": "BOG",
             "Title": "Examen de la Nécessité d'une Augmentation Générale du Capital Ordinaire et de la Reconstitution du Fonds des Opérations Spéciales: État d'Avancement et Prochaines Étapes",
             "10/30/2018": 4,
             "11/13/2018": "1",
@@ -31,7 +31,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CAN",
+            "department_codes": "CAN",
             "Title": "Las ciudades intermedias con mayor potencial en Colombia: Un sistema de identificación",
             "10/29/2018": 2,
             "10/31/2018": 2,
@@ -60,7 +60,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CAN",
+            "department_codes": "CAN",
             "Title": "Growth Diagnostic: Peru",
             "10/29/2018": 4,
             "10/30/2018": 5,
@@ -90,7 +90,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CAN",
+            "department_codes": "CAN",
             "Title": "Perú: Gestión del riesgo de desastres y adaptación al cambio climático: Marco de la preparación de la estrategia 2012-2016 del BID en Perú",
             "10/29/2018": 12,
             "10/30/2018": 11,
@@ -121,7 +121,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CAN",
+            "department_codes": "CAN",
             "Title": "Creciendo con Productividad: Una agenda para la Region Andina",
             "10/29/2018": 284,
             "10/30/2018": 252,
@@ -152,7 +152,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CAN",
+            "department_codes": "CAN",
             "Title": "Ingresos fiscales por explotación de recursos mineros e hidrocarburos en Perú",
             "10/29/2018": 5,
             "10/30/2018": 4,
@@ -181,7 +181,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CAN",
+            "department_codes": "CAN",
             "Title": "Ingresos fiscales por explotación de hidrocarburos en Bolivia",
             "10/30/2018": 4,
             "10/31/2018": 10,
@@ -209,7 +209,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CAN",
+            "department_codes": "CAN",
             "Title": "Pobreza y movilidad social en Bolivia en la última década",
             "10/29/2018": 4,
             "10/30/2018": 19,
@@ -240,7 +240,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CAN",
+            "department_codes": "CAN",
             "Title": "Reformas y desarrollo en el Ecuador contemporáneo",
             "11/1/2018": 4,
             "11/6/2018": 618,
@@ -264,7 +264,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CAN",
+            "department_codes": "CAN",
             "Title": "Trade and Integration Monitor 2013: After the Boom: Prospects for Latin America and the Caribbean in South-South Trade",
             "10/29/2018": 5,
             "10/31/2018": 1,
@@ -286,7 +286,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CAN",
+            "department_codes": "CAN",
             "Title": "Retos de desarrollo del Perú: 2012-2016",
             "10/30/2018": 1,
             "10/31/2018": 2,
@@ -314,7 +314,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CCB",
+            "department_codes": "CCB",
             "Title": "Crime and Violence in Jamaica: IDB Series on Crime and Violence in the Caribbean",
             "10/29/2018": 26,
             "10/30/2018": 39,
@@ -345,7 +345,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CCB",
+            "department_codes": "CCB",
             "Title": "Crime and Violence in Trinidad and Tobago: IDB Series on Crime and Violence in the Caribbean",
             "10/29/2018": 24,
             "10/30/2018": 30,
@@ -376,7 +376,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CCB",
+            "department_codes": "CCB",
             "Title": "Crime and Violence in Barbados: IDB Series on Crime and Violence in the Caribbean",
             "10/29/2018": 5,
             "10/30/2018": 7,
@@ -407,7 +407,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CCB",
+            "department_codes": "CCB",
             "Title": "Crime and Violence in The Bahamas: IDB Series on Crime and Violence in the Caribbean",
             "10/29/2018": 26,
             "10/30/2018": 28,
@@ -438,7 +438,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CCB",
+            "department_codes": "CCB",
             "Title": "Restoring Paradise in the Caribbean: Combatting Violence with Numbers",
             "10/29/2018": 22,
             "10/30/2018": 24,
@@ -469,7 +469,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CCB",
+            "department_codes": "CCB",
             "Title": "Does Participatory Budgeting Improve Decentralized Public Service Delivery?",
             "10/29/2018": 5,
             "10/30/2018": 3,
@@ -499,7 +499,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CCB",
+            "department_codes": "CCB",
             "Title": "Engine of Growth?: The Caribbean Private Sector Needs More Than an Oil Change",
             "10/29/2018": 6,
             "10/30/2018": 8,
@@ -530,7 +530,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CCB",
+            "department_codes": "CCB",
             "Title": "Chinese Rise in the Caribbean: What Does It Mean for Caribbean Stakeholders?",
             "10/29/2018": 3,
             "10/30/2018": 2,
@@ -558,7 +558,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CCB",
+            "department_codes": "CCB",
             "Title": "Privately Managed Public Secondary Schools and Academic Achievement in Trinidad and Tobago: Evidence from Rule-Based Student Assignments",
             "10/29/2018": 1,
             "10/31/2018": 4,
@@ -574,7 +574,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CCB",
+            "department_codes": "CCB",
             "Title": "Are Oil and Gas Smothering the Private Sector in Trinidad and Tobago?",
             "10/29/2018": 4,
             "11/1/2018": 1,
@@ -603,7 +603,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CID",
+            "department_codes": "CID",
             "Title": "Intervention and Policy Options for Combating Malnutrition in Guatemala",
             "10/29/2018": 10,
             "10/30/2018": 17,
@@ -633,7 +633,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CID",
+            "department_codes": "CID",
             "Title": "La ruta hacia el crecimiento sostenible en la República Dominicana: Fiscalidad, competitividad, institucionalidad y electricidad",
             "10/29/2018": 5,
             "10/30/2018": 7,
@@ -663,7 +663,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CID",
+            "department_codes": "CID",
             "Title": "Running Out of Tailwinds: Opportunities to Foster Inclusive Growth in Central America and the Dominican Republic",
             "10/29/2018": 3,
             "10/30/2018": 3,
@@ -689,7 +689,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CID",
+            "department_codes": "CID",
             "Title": "BIDeconomics México: Políticas para el crecimiento inclusivo y desarrollo de la economía nacional",
             "10/29/2018": 17,
             "10/30/2018": 12,
@@ -720,7 +720,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CID",
+            "department_codes": "CID",
             "Title": "Industrias creativas culturales en Panamá: Diagnóstico del sector y relevancia económica",
             "10/29/2018": 21,
             "10/30/2018": 42,
@@ -750,7 +750,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CID",
+            "department_codes": "CID",
             "Title": "Programación financiera: Fundamentos teóricos y aplicación práctica al caso de Costa Rica",
             "10/29/2018": 6,
             "10/30/2018": 16,
@@ -781,7 +781,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CID",
+            "department_codes": "CID",
             "Title": "Social Expenditure in Central America, Panama and the Dominican Republic at a Glance: 2007-2013",
             "10/29/2018": 7,
             "10/30/2018": 12,
@@ -812,7 +812,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CID",
+            "department_codes": "CID",
             "Title": "Turismo y desarrollo en México",
             "10/29/2018": 15,
             "10/30/2018": 19,
@@ -843,7 +843,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CID",
+            "department_codes": "CID",
             "Title": "Labor Market Performance in Belize",
             "10/29/2018": 4,
             "10/30/2018": 2,
@@ -871,7 +871,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CID",
+            "department_codes": "CID",
             "Title": "Inclusive Growth: Challenges and Opportunities for Central America and the Dominican Republic",
             "10/29/2018": 7,
             "10/30/2018": 8,
@@ -899,7 +899,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
+            "department_codes": "CSC",
             "Title": "Argentina: Mitigación y adaptación al cambio climático",
             "10/29/2018": 5,
             "10/30/2018": 10,
@@ -927,7 +927,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
+            "department_codes": "CSC",
             "Title": "Crecimiento económico y brechas de desarrollo en Uruguay",
             "10/29/2018": 5,
             "10/30/2018": 7,
@@ -957,7 +957,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
+            "department_codes": "CSC",
             "Title": "Sector Agroindustrial de Paraguay",
             "10/29/2018": 4,
             "10/30/2018": 2,
@@ -984,7 +984,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
+            "department_codes": "CSC",
             "Title": "Los jóvenes Sí-Sí: Experiencias y aprendizajes de Organizaciones de la Sociedad Civil para la transición de los jóvenes entre educación y trabajo",
             "10/30/2018": 1,
             "11/5/2018": 2,
@@ -996,7 +996,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
+            "department_codes": "CSC",
             "Title": "Diagnóstico de Crecimiento de Paraguay",
             "10/29/2018": 1,
             "11/7/2018": 6,
@@ -1018,7 +1018,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
+            "department_codes": "CSC",
             "Title": "Development Diagnostics for the Southern Cone",
             "10/30/2018": 1,
             "10/31/2018": 3,
@@ -1041,7 +1041,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
+            "department_codes": "CSC",
             "Title": "Paraguay: Rutas para el Desarrollo",
             "10/29/2018": 3,
             "10/30/2018": 8,
@@ -1070,7 +1070,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
+            "department_codes": "CSC",
             "Title": "Recalibrando la medición del balance estructural en Chile",
             "10/29/2018": 1,
             "11/2/2018": 2,
@@ -1083,7 +1083,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
+            "department_codes": "CSC",
             "Title": "El manejo de los ingresos fiscales del cobre en Chile",
             "10/29/2018": 2,
             "11/5/2018": 2,
@@ -1101,7 +1101,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
+            "department_codes": "CSC",
             "Title": "Competencia en el mercado bancario del crédito en Chile",
             "10/30/2018": 1,
             "11/8/2018": "1",
@@ -1114,7 +1114,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
+            "department_codes": "CSD",
             "Title": "The Road toward Smart Cities: Migrating from Traditional City Management to the Smart City",
             "10/29/2018": 139,
             "10/30/2018": 90,
@@ -1145,7 +1145,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
+            "department_codes": "CSD",
             "Title": "Ciclo-inclusión en América Latina y el Caribe: Guía para impulsar el uso de la bicicleta",
             "10/29/2018": 18,
             "10/30/2018": 18,
@@ -1176,7 +1176,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
+            "department_codes": "CSD",
             "Title": "Mega-Cities & Infrastructure in Latin America: What its people think",
             "10/29/2018": 3,
             "10/30/2018": 3,
@@ -1207,7 +1207,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
+            "department_codes": "CSD",
             "Title": "Rental Housing Wanted: Policy Options for Latin America and the Caribbean",
             "10/29/2018": 2,
             "10/30/2018": 5,
@@ -1238,7 +1238,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
+            "department_codes": "CSD",
             "Title": "Water in the Time of Drought: Lessons from Five Droughts around the World",
             "10/29/2018": 59,
             "10/30/2018": 102,
@@ -1269,7 +1269,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
+            "department_codes": "CSD",
             "Title": "De ciudades emergentes a ciudades sostenibles",
             "10/29/2018": 28,
             "10/30/2018": 22,
@@ -1300,7 +1300,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
+            "department_codes": "CSD",
             "Title": "Downtown Poverty: Methods of Analysis and Interventions: A Sourcebook for Practitioners",
             "10/29/2018": 2,
             "10/30/2018": 3,
@@ -1331,7 +1331,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
+            "department_codes": "CSD",
             "Title": "Inter-American Development Bank Sustainability Report 2016",
             "10/29/2018": 6,
             "10/30/2018": 6,
@@ -1361,7 +1361,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
+            "department_codes": "CSD",
             "Title": "Inter-American Development Bank Sustainability Report 2017",
             "10/29/2018": 25,
             "10/30/2018": 26,
@@ -1392,7 +1392,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
+            "department_codes": "CSD",
             "Title": "The Potential of Land Value Capture for Financing Urban Projects: Methodological Considerations and Case Studies",
             "10/29/2018": 18,
             "10/30/2018": 27,
@@ -1422,7 +1422,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "Discontinued Departments",
+            "department_codes": "Discontinued Departments",
             "Title": "The Next Global Breadbasket: How Latin America Can Feed the World: A Call to Action for Addressing Challenges & Developing Solutions",
             "10/29/2018": 9,
             "10/30/2018": 10,
@@ -1452,7 +1452,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "Discontinued Departments",
+            "department_codes": "Discontinued Departments",
             "Title": "Development Effectiveness Overview (DEO) 2013",
             "10/29/2018": 1,
             "11/1/2018": 4,
@@ -1475,7 +1475,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "Discontinued Departments",
+            "department_codes": "Discontinued Departments",
             "Title": "Financing Infrastructure in Latin America and the Caribbean: How, How Much and by Whom?",
             "10/29/2018": 20,
             "10/30/2018": 13,
@@ -1506,7 +1506,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "Discontinued Departments",
+            "department_codes": "Discontinued Departments",
             "Title": "Diagnóstico de la situación del manejo de residuos sólidos municipales en América Latina y el Caribe",
             "10/29/2018": 40,
             "10/30/2018": 62,
@@ -1537,7 +1537,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "Discontinued Departments",
+            "department_codes": "Discontinued Departments",
             "Title": "Agriculture and Future Climate in Latin America and the Caribbean: Systemic Impacts and Potential Responses",
             "10/29/2018": 6,
             "10/30/2018": 4,
@@ -1565,7 +1565,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "Discontinued Departments",
+            "department_codes": "Discontinued Departments",
             "Title": "Argentina: Mitigación y adaptación al cambio climático",
             "10/29/2018": 5,
             "10/30/2018": 10,
@@ -1593,7 +1593,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "Discontinued Departments",
+            "department_codes": "Discontinued Departments",
             "Title": "Applying Behavioral Tools to the Design of Health Projects",
             "10/29/2018": 26,
             "10/30/2018": 10,
@@ -1624,7 +1624,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "Discontinued Departments",
+            "department_codes": "Discontinued Departments",
             "Title": "Impactos económicos del cambio climático en Colombia: sector ganadero",
             "10/29/2018": 5,
             "10/30/2018": 4,
@@ -1652,7 +1652,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "Discontinued Departments",
+            "department_codes": "Discontinued Departments",
             "Title": "The Politics of Policies: Economic and Social Progress in Latin America: 2006 Report",
             "10/29/2018": 7,
             "10/30/2018": 4,
@@ -1683,7 +1683,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "Discontinued Departments",
+            "department_codes": "Discontinued Departments",
             "Title": "Perú: Gestión del riesgo de desastres y adaptación al cambio climático: Marco de la preparación de la estrategia 2012-2016 del BID en Perú",
             "10/29/2018": 12,
             "10/30/2018": 11,
@@ -1714,7 +1714,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "ESG",
+            "department_codes": "ESG",
             "Title": "Social Impact Assessment: Integrating Social Issues in Development Projects",
             "10/29/2018": 31,
             "10/30/2018": 55,
@@ -1745,7 +1745,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "ESG",
+            "department_codes": "ESG",
             "Title": "El cambio climático y los recursos hídricos en los Andes tropicales",
             "10/29/2018": 6,
             "10/30/2018": 15,
@@ -1776,7 +1776,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "ESG",
+            "department_codes": "ESG",
             "Title": "Inter-American Development Bank Sustainability Report 2014",
             "10/29/2018": 3,
             "11/1/2018": 2,
@@ -1803,7 +1803,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "ESG",
+            "department_codes": "ESG",
             "Title": "Inter-American Development Bank Sustainability Report 2015",
             "10/29/2018": 7,
             "10/30/2018": 1,
@@ -1827,7 +1827,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "ESG",
+            "department_codes": "ESG",
             "Title": "Greenhouse Gas Emissions from New Petrochemical Plants Background Information Paper for the Elaboration of Technical Notes and Guidelines for IDB Projects",
             "10/29/2018": 9,
             "10/30/2018": 12,
@@ -1858,7 +1858,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "ESG",
+            "department_codes": "ESG",
             "Title": "Inter-American Development Bank Sustainability Report 2013",
             "11/6/2018": 2,
             "11/7/2018": 3,
@@ -1871,7 +1871,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "ESG",
+            "department_codes": "ESG",
             "Title": "Good Practices for Biodiversity Inclusive Impact Assessment and Management Planning",
             "10/29/2018": 3,
             "10/30/2018": 6,
@@ -1901,7 +1901,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "ESG",
+            "department_codes": "ESG",
             "Title": "Meaningful Stakeholder Consultation",
             "10/29/2018": 17,
             "10/30/2018": 40,
@@ -1932,7 +1932,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "ESG",
+            "department_codes": "ESG",
             "Title": "Guidance for Assessing and Managing Biodiversity Impacts and Risks in Inter-American Development Bank Supported Operations",
             "10/29/2018": 3,
             "10/30/2018": 9,
@@ -1963,7 +1963,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "ESG",
+            "department_codes": "ESG",
             "Title": "Climate Change Data and Risk Assessment Methodologies for the Caribbean",
             "10/29/2018": 4,
             "10/30/2018": 3,
@@ -1986,7 +1986,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "FMP",
+            "department_codes": "FMP",
             "Title": "Procurement and Operational Efficiency: An Analysis of How IDB-Financed Projects are Executed",
             "10/29/2018": 1,
             "10/30/2018": 2,
@@ -2014,7 +2014,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "FMP",
+            "department_codes": "FMP",
             "Title": "Efficiency and Transparency in the Public Sector: Advances in Public Procurement in Latin America and the Caribbean (2002-2012)",
             "10/29/2018": 4,
             "10/30/2018": 1,
@@ -2035,7 +2035,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "FMP",
+            "department_codes": "FMP",
             "Title": "Innovation in the Methods of Public Procurement in Latin America and The Caribbean: Case studies",
             "10/29/2018": 2,
             "10/31/2018": 2,
@@ -2064,7 +2064,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "FMP",
+            "department_codes": "FMP",
             "Title": "Transparency and Confidence in the Public Sector: Advances in Supreme Audit Institutions in Latin America and the Caribbean (2002-2012)",
             "11/6/2018": 1,
             "11/8/2018": "1",
@@ -2080,7 +2080,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "FMP",
+            "department_codes": "FMP",
             "Title": "Green Procurement: How to Encourage Green Procurement Practices in IDB Funded Projects?",
             "10/29/2018": 1,
             "10/30/2018": 5,
@@ -2102,7 +2102,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
+            "department_codes": "IFD",
             "Title": "Panorama de las Administraciones Públicas: América Latina y el Caribe 2017",
             "10/29/2018": 89,
             "10/30/2018": 50,
@@ -2133,7 +2133,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
+            "department_codes": "IFD",
             "Title": "Crime and Violence in Jamaica: IDB Series on Crime and Violence in the Caribbean",
             "10/29/2018": 26,
             "10/30/2018": 39,
@@ -2164,7 +2164,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
+            "department_codes": "IFD",
             "Title": "Crime and Violence in Trinidad and Tobago: IDB Series on Crime and Violence in the Caribbean",
             "10/29/2018": 24,
             "10/30/2018": 30,
@@ -2195,7 +2195,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
+            "department_codes": "IFD",
             "Title": "The Costs of Crime and Violence: New Evidence and Insights in Latin America and the Caribbean",
             "10/29/2018": 51,
             "10/30/2018": 59,
@@ -2226,7 +2226,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
+            "department_codes": "IFD",
             "Title": "Cybersecurity: Are We Ready in Latin America and the Caribbean?",
             "10/29/2018": 29,
             "10/30/2018": 23,
@@ -2257,7 +2257,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
+            "department_codes": "IFD",
             "Title": "FINTECH:  Innovations You May Not Know were from Latin America and the Caribbean",
             "10/29/2018": 39,
             "10/30/2018": 24,
@@ -2288,7 +2288,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
+            "department_codes": "IFD",
             "Title": "Public Financial Management in Latin America: The Key to Efficiency and Transparency",
             "10/29/2018": 35,
             "10/30/2018": 19,
@@ -2319,7 +2319,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
+            "department_codes": "IFD",
             "Title": "Building Effective Governments: Achievements and Challenges for Results-Based Public Administration in Latin America and the Caribbean",
             "10/29/2018": 29,
             "10/30/2018": 43,
@@ -2350,7 +2350,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
+            "department_codes": "IFD",
             "Title": "La política de innovación en América Latina y el Caribe: Nuevos caminos",
             "10/29/2018": 37,
             "10/30/2018": 76,
@@ -2381,7 +2381,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
+            "department_codes": "IFD",
             "Title": "Governments that Serve: Innovations that Improve Service Delivery to Citizens",
             "10/29/2018": 29,
             "10/30/2018": 35,
@@ -2412,7 +2412,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
+            "department_codes": "INE",
             "Title": "Distribución urbana de mercancías: Estrategias con centros logísticos",
             "10/29/2018": 8,
             "10/30/2018": 7,
@@ -2443,7 +2443,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
+            "department_codes": "INE",
             "Title": "Tratamiento de aguas residuales en México",
             "10/29/2018": 42,
             "10/30/2018": 20,
@@ -2474,7 +2474,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
+            "department_codes": "INE",
             "Title": "Ciclo-inclusión en América Latina y el Caribe: Guía para impulsar el uso de la bicicleta",
             "10/29/2018": 18,
             "10/30/2018": 18,
@@ -2505,7 +2505,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
+            "department_codes": "INE",
             "Title": "Generación de electricidad a partir de biogás capturado de residuos sólidos urbanos: Un análisis teórico-práctico",
             "10/29/2018": 120,
             "10/30/2018": 82,
@@ -2536,7 +2536,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
+            "department_codes": "INE",
             "Title": "Mega-Cities & Infrastructure in Latin America: What its people think",
             "10/29/2018": 3,
             "10/30/2018": 3,
@@ -2567,7 +2567,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
+            "department_codes": "INE",
             "Title": "Financing Infrastructure in Latin America and the Caribbean: How, How Much and by Whom?",
             "10/29/2018": 20,
             "10/30/2018": 13,
@@ -2598,7 +2598,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
+            "department_codes": "INE",
             "Title": "Solid Waste Management in Latin America and the Caribbean",
             "10/29/2018": 96,
             "10/30/2018": 89,
@@ -2629,7 +2629,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
+            "department_codes": "INE",
             "Title": "Ventajas y riesgos de contrato llave en mano",
             "10/29/2018": 6,
             "10/30/2018": 9,
@@ -2658,7 +2658,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
+            "department_codes": "INE",
             "Title": "Manejo de Residuos Sólidos: Lineamientos para un Servicio Integral, Sustentable e Inclusivo",
             "10/29/2018": 4,
             "10/30/2018": 3,
@@ -2686,7 +2686,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
+            "department_codes": "INE",
             "Title": "Water in the Time of Drought: Lessons from Five Droughts around the World",
             "10/29/2018": 59,
             "10/30/2018": 102,
@@ -2717,7 +2717,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INT",
+            "department_codes": "INT",
             "Title": "The Next Global Breadbasket: How Latin America Can Feed the World: A Call to Action for Addressing Challenges & Developing Solutions",
             "10/29/2018": 9,
             "10/30/2018": 10,
@@ -2747,7 +2747,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INT",
+            "department_codes": "INT",
             "Title": "Integration and Trade Journal: Volume 21: No. 42: August, 2017: Robot-lución: The future of work in Latin American Integration 4.0",
             "10/29/2018": 36,
             "10/30/2018": 34,
@@ -2778,7 +2778,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INT",
+            "department_codes": "INT",
             "Title": "Industria 4.0: Fabricando el Futuro",
             "10/29/2018": 47,
             "10/30/2018": 33,
@@ -2809,7 +2809,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INT",
+            "department_codes": "INT",
             "Title": "Integration and Trade Journal: Volume 22: No. 44: July, 2018: Planet Algorithm: Artificial Intelligence for a Predictive and Inclusive form of Integration in Latin America",
             "10/29/2018": 702,
             "10/30/2018": 653,
@@ -2840,7 +2840,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INT",
+            "department_codes": "INT",
             "Title": "Trade Trend Estimates: Latin America and the Caribbean - 2017 Edition",
             "10/29/2018": 22,
             "10/30/2018": 12,
@@ -2871,7 +2871,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INT",
+            "department_codes": "INT",
             "Title": "Compás Millennial: La generación Y en la era de la integración 4.0",
             "10/29/2018": 12,
             "10/30/2018": 8,
@@ -2902,7 +2902,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INT",
+            "department_codes": "INT",
             "Title": "Fábricas sincronizadas: América Latina y el Caribe en la era de las Cadenas Globales de Valor",
             "10/29/2018": 3,
             "10/30/2018": 3,
@@ -2933,7 +2933,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INT",
+            "department_codes": "INT",
             "Title": "Progress, Poverty and Exclusion: An Economic History of Latin America in the 20th Century",
             "10/29/2018": 455,
             "10/30/2018": 451,
@@ -2964,7 +2964,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INT",
+            "department_codes": "INT",
             "Title": "Latin American Trade Trends - Update 1Q 2016",
             "10/29/2018": 22,
             "10/30/2018": 19,
@@ -2995,7 +2995,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INT",
+            "department_codes": "INT",
             "Title": "Techno-integration of Latin America: institutions, exponential trade, and equality in the era of algorithms",
             "10/29/2018": 3,
             "10/30/2018": 3,
@@ -3026,7 +3026,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "ITE",
+            "department_codes": "ITE",
             "Title": "Blockchain: How to Develop Trust in Complex Surroundings to Generate Social Impact Value",
             "10/29/2018": 27,
             "10/30/2018": 33,
@@ -3057,7 +3057,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "ITE",
+            "department_codes": "ITE",
             "Title": "Electronic Commerce and Development Implications for IDB Actions",
             "10/31/2018": 1,
             "11/10/2018": 1,
@@ -3068,7 +3068,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "KIC",
+            "department_codes": "KIC",
             "Title": "The Orange Economy: An Infinite Opportunity",
             "10/29/2018": 822,
             "10/30/2018": 1016,
@@ -3099,7 +3099,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "KIC",
+            "department_codes": "KIC",
             "Title": "Pautas para la elaboración de estudios de caso",
             "10/29/2018": 197,
             "10/30/2018": 167,
@@ -3130,7 +3130,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "KIC",
+            "department_codes": "KIC",
             "Title": "Orange Economy: Innovations you may not know were from Latin America and the Caribbean",
             "10/29/2018": 133,
             "10/30/2018": 123,
@@ -3161,7 +3161,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "KIC",
+            "department_codes": "KIC",
             "Title": "FINTECH:  Innovations You May Not Know were from Latin America and the Caribbean",
             "10/29/2018": 39,
             "10/30/2018": 24,
@@ -3192,7 +3192,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "KIC",
+            "department_codes": "KIC",
             "Title": "Inter-American Development Bank Annual Report 2017: The Year in Review",
             "10/29/2018": 97,
             "10/30/2018": 110,
@@ -3223,7 +3223,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "KIC",
+            "department_codes": "KIC",
             "Title": "Latin America and the Caribbean 2030: Future Scenarios",
             "10/29/2018": 54,
             "10/30/2018": 42,
@@ -3254,7 +3254,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "KIC",
+            "department_codes": "KIC",
             "Title": "Water in the Time of Drought: Lessons from Five Droughts around the World",
             "10/29/2018": 59,
             "10/30/2018": 102,
@@ -3285,7 +3285,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "KIC",
+            "department_codes": "KIC",
             "Title": "Inter-American Development Bank Annual Report 2016: The Year in Review",
             "10/29/2018": 19,
             "10/30/2018": 21,
@@ -3316,7 +3316,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "KIC",
+            "department_codes": "KIC",
             "Title": "Launching an Orange Future: Fifteen Questions for Getting to Know the Creative Entrepreneurs of Latin America and the Caribbean",
             "10/29/2018": 284,
             "10/30/2018": 346,
@@ -3347,7 +3347,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "KIC",
+            "department_codes": "KIC",
             "Title": "Future Landscapes of the Orange Economy: Creative Pathways for Improving Lives in Latin America and the Caribbean",
             "10/29/2018": 354,
             "10/30/2018": 251,
@@ -3378,7 +3378,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "MICI",
+            "department_codes": "MICI",
             "Title": "The Independent Consultation and Investigation Mechanism: 2012 Annual Report",
             "11/8/2018": "1",
             "11/14/2018": 1,
@@ -3388,7 +3388,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "MICI",
+            "department_codes": "MICI",
             "Title": "2014 Annual Report: Independent Consultation and Investigation Mechanism",
             "10/29/2018": 1,
             "11/5/2018": 1,
@@ -3403,7 +3403,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "MIF",
+            "department_codes": "MIF",
             "Title": "The Next Global Breadbasket: How Latin America Can Feed the World: A Call to Action for Addressing Challenges & Developing Solutions",
             "10/29/2018": 9,
             "10/30/2018": 10,
@@ -3433,7 +3433,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "MIF",
+            "department_codes": "MIF",
             "Title": "Preparing Informal Recycler Inclusion Plans: An Operational Guide",
             "10/29/2018": 11,
             "10/30/2018": 10,
@@ -3464,7 +3464,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "MIF",
+            "department_codes": "MIF",
             "Title": "La responsabilidad social de la empresa en América Latina: Manual de Gestión",
             "10/29/2018": 6,
             "10/30/2018": 9,
@@ -3495,7 +3495,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "MIF",
+            "department_codes": "MIF",
             "Title": "Avances y desafíos para el reciclaje inclusivo: Evaluación de 12 ciudades de América Latina y el Caribe",
             "10/29/2018": 9,
             "10/30/2018": 33,
@@ -3525,7 +3525,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "MIF",
+            "department_codes": "MIF",
             "Title": "AgroTech: Innovaciones que no sabías que eran de América Latina y el Caribe",
             "10/29/2018": 7,
             "10/30/2018": 8,
@@ -3554,7 +3554,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "MIF",
+            "department_codes": "MIF",
             "Title": "Attracting Remittances: Market, Money and Reduced Costs",
             "10/29/2018": 8,
             "10/30/2018": 10,
@@ -3584,7 +3584,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "MIF",
+            "department_codes": "MIF",
             "Title": "Beyond Small Change: Making Migrant Remittances Count",
             "10/29/2018": 2,
             "10/30/2018": 2,
@@ -3614,7 +3614,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "MIF",
+            "department_codes": "MIF",
             "Title": "Clusters, territorio y desarrollo empresarial: Diferentes modelos de organización productiva",
             "10/29/2018": 11,
             "10/30/2018": 15,
@@ -3644,7 +3644,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "MIF",
+            "department_codes": "MIF",
             "Title": "Remittance Recipients in Guatemala: A Socioeconomic Profile",
             "10/29/2018": 10,
             "10/30/2018": 8,
@@ -3674,7 +3674,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "MIF",
+            "department_codes": "MIF",
             "Title": "Estimación de costos y beneficios: Una metodologia propuesta para el Programa entra21",
             "10/31/2018": 1,
             "11/6/2018": 1,
@@ -3687,7 +3687,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "OII",
+            "department_codes": "OII",
             "Title": "Office of Institutional Integrity Annual Report 2012",
             "10/29/2018": 1,
             "10/30/2018": 1,
@@ -3698,7 +3698,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "OII",
+            "department_codes": "OII",
             "Title": "Office of Institutional Integrity and the Sanctions System: Annual Report 2015",
             "10/29/2018": 1,
             "11/2/2018": 1,
@@ -3711,7 +3711,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "OII",
+            "department_codes": "OII",
             "Title": "Office of Institutional Integrity and Sanctions System: Annual Report 2014",
             "10/29/2018": 1,
             "11/1/2018": 1,
@@ -3726,7 +3726,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "OII",
+            "department_codes": "OII",
             "Title": "Anticorruption Activities Trust Fund: Report on Preparatory Activities",
             "10/29/2018": 1,
             "10/30/2018": 1,
@@ -3742,7 +3742,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "OII",
+            "department_codes": "OII",
             "Title": "Office of Institutional Integrity Annual Report 2011",
             "10/29/2018": 1,
             "All the time downloads": 308,
@@ -3751,7 +3751,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "OII",
+            "department_codes": "OII",
             "Title": "Office of Institutional Integrity and Sanctions System: Annual Report 2016",
             "10/29/2018": 2,
             "10/30/2018": 1,
@@ -3775,7 +3775,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "OII",
+            "department_codes": "OII",
             "Title": "Office of Institutional Integrity Annual Report 2009",
             "10/29/2018": 1,
             "11/10/2018": 1,
@@ -3785,7 +3785,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "OII",
+            "department_codes": "OII",
             "Title": "Office of Institutional Integrity Annual Report 2007",
             "11/12/2018": 1,
             "11/14/2018": 2,
@@ -3796,7 +3796,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "OII",
+            "department_codes": "OII",
             "Title": "Office of Institutional Integrity Annual Report 2010",
             "10/29/2018": 1,
             "11/1/2018": 1,
@@ -3808,7 +3808,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "OII",
+            "department_codes": "OII",
             "Title": "Inter-American Development Bank Oversight Committee on Fraud and Corruption: First Semi-Annual Report",
             "10/31/2018": 1,
             "11/5/2018": 1,
@@ -3819,7 +3819,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "ORP",
+            "department_codes": "ORP",
             "Title": "The Next Global Breadbasket: How Latin America Can Feed the World: A Call to Action for Addressing Challenges & Developing Solutions",
             "10/29/2018": 9,
             "10/30/2018": 10,
@@ -3849,7 +3849,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "ORP",
+            "department_codes": "ORP",
             "Title": "Multilatinas to Global Latinas: The New Latin American Multinationals",
             "10/29/2018": 6,
             "10/30/2018": 22,
@@ -3878,7 +3878,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "ORP",
+            "department_codes": "ORP",
             "Title": "2017 Partnership Report",
             "10/29/2018": 2,
             "10/30/2018": 5,
@@ -3906,7 +3906,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "ORP",
+            "department_codes": "ORP",
             "Title": "IDB 2015 Partnership Report",
             "10/29/2018": 2,
             "10/31/2018": 3,
@@ -3925,7 +3925,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "ORP",
+            "department_codes": "ORP",
             "Title": "Bridging Gaps, Building Opportunity: Broadband as a Catalyst of Economic Growth and Social Progress in Latin America and the Caribbean: A View from the Industry",
             "10/31/2018": 1,
             "11/1/2018": 1,
@@ -3941,7 +3941,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "ORP",
+            "department_codes": "ORP",
             "Title": "2016 Partnership Report",
             "10/29/2018": 5,
             "10/30/2018": 1,
@@ -3961,7 +3961,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "ORP",
+            "department_codes": "ORP",
             "Title": "Foreign Direct Investment in Latin America: The Role of European Investors",
             "10/29/2018": 9,
             "10/30/2018": 9,
@@ -3992,7 +3992,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "ORP",
+            "department_codes": "ORP",
             "Title": "Impactful Innovations: Lessons from Family Agriculture on Adaptation to Climate Change in Latin America and the Caribbean",
             "11/2/2018": 2,
             "11/4/2018": 3,
@@ -4006,7 +4006,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "ORP",
+            "department_codes": "ORP",
             "Title": "Anticorruption Activities Trust Fund: Report on Preparatory Activities",
             "10/29/2018": 1,
             "10/30/2018": 1,
@@ -4022,7 +4022,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "ORP",
+            "department_codes": "ORP",
             "Title": "Foreign Direct Investment in Latin America: Perspectives of the Major Investors",
             "11/17/2018": 1,
             "All the time downloads": 474,
@@ -4031,7 +4031,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "OVE",
+            "department_codes": "OVE",
             "Title": "Approach paper: Comparative Case Studies: IDB Supported Urban Transport Projects",
             "10/29/2018": 21,
             "10/30/2018": 36,
@@ -4062,7 +4062,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "OVE",
+            "department_codes": "OVE",
             "Title": "The Implementation Challenge: Lessons From Five Citizen Security Projects",
             "10/29/2018": 13,
             "10/30/2018": 8,
@@ -4091,7 +4091,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "OVE",
+            "department_codes": "OVE",
             "Title": "Evaluation of Public-Private Partnerships in Infrastructure",
             "10/29/2018": 20,
             "10/30/2018": 6,
@@ -4121,7 +4121,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "OVE",
+            "department_codes": "OVE",
             "Title": "Study on the Development of the Renewable Energy Market in Latin America and the Caribbean",
             "10/29/2018": 3,
             "10/30/2018": 4,
@@ -4150,7 +4150,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "OVE",
+            "department_codes": "OVE",
             "Title": "Comparative Case Studies of Three IDB-supported Urban Transport Projects",
             "10/29/2018": 10,
             "10/30/2018": 8,
@@ -4181,7 +4181,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "OVE",
+            "department_codes": "OVE",
             "Title": "Crime and Violence Prevention in Latin America and the Caribbean: Evidence from IDB's Interventions",
             "10/29/2018": 5,
             "10/30/2018": 13,
@@ -4212,7 +4212,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "OVE",
+            "department_codes": "OVE",
             "Title": "Climate Change at the IDB: Building Resilience and Reducing Emissions",
             "10/30/2018": 2,
             "10/31/2018": 3,
@@ -4240,7 +4240,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "OVE",
+            "department_codes": "OVE",
             "Title": "Land Regularization and Administration Projects: A Comparative Evaluation",
             "10/29/2018": 1,
             "10/30/2018": 3,
@@ -4270,7 +4270,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "OVE",
+            "department_codes": "OVE",
             "Title": "IDB-9: IDB Integrated Strategy for Climate Change Adaptation and Mitigation, and Sustainable and Renewable Energy",
             "10/30/2018": 4,
             "11/4/2018": 1,
@@ -4295,7 +4295,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "OVE",
+            "department_codes": "OVE",
             "Title": "IDB-9: Review of the IDB Institutions for Growth and Social Welfare Strategy",
             "10/29/2018": 2,
             "10/30/2018": 2,
@@ -4322,7 +4322,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "PRE",
+            "department_codes": "PRE",
             "Title": "La década de América Latina y el Caribe, una oportunidad real. 2a edición ampliada",
             "11/5/2018": 2,
             "11/6/2018": 1,
@@ -4335,7 +4335,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "PRE",
+            "department_codes": "PRE",
             "Title": "The Decade of Latin America and the Caribbean: A Real Opportunity",
             "10/29/2018": 3,
             "11/2/2018": 1,
@@ -4347,7 +4347,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "PRE",
+            "department_codes": "PRE",
             "Title": "Cambio y crecimiento en América Latina 1988-1998: Ideas y acciones",
             "10/31/2018": 2,
             "11/6/2018": 3,
@@ -4363,7 +4363,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "RES",
+            "department_codes": "RES",
             "Title": "The Early Years: Child Well-being and the Role of Public Policy",
             "10/29/2018": 57,
             "10/30/2018": 57,
@@ -4394,7 +4394,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "RES",
+            "department_codes": "RES",
             "Title": "Learning Better: Public Policy for Skills Development",
             "10/29/2018": 87,
             "10/30/2018": 79,
@@ -4425,7 +4425,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "RES",
+            "department_codes": "RES",
             "Title": "Saving for Development: How Latin America and the Caribbean Can Save More and Better",
             "10/29/2018": 34,
             "10/30/2018": 32,
@@ -4456,7 +4456,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "RES",
+            "department_codes": "RES",
             "Title": "¿Cómo repensar el desarrollo productivo?: Políticas e instituciones sólidas para la transformación económica",
             "10/29/2018": 14,
             "10/30/2018": 12,
@@ -4487,7 +4487,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "RES",
+            "department_codes": "RES",
             "Title": "¿Quiénes deciden la política social? Economía política de programas sociales en América Latina",
             "10/29/2018": 15,
             "10/30/2018": 8,
@@ -4518,7 +4518,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "RES",
+            "department_codes": "RES",
             "Title": "The IDB and Technology in Education: How to Promote Effective Programs?",
             "10/29/2018": 13,
             "10/30/2018": 13,
@@ -4549,7 +4549,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "RES",
+            "department_codes": "RES",
             "Title": "2018 Latin American and Caribbean Macroeconomic Report: A Mandate to Grow",
             "10/29/2018": 78,
             "10/30/2018": 94,
@@ -4580,7 +4580,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "RES",
+            "department_codes": "RES",
             "Title": "2015 Latin American and Caribbean Macroeconomic Report: The Labyrinth: How Can Latin America and the Caribbean Navigate the Global Economy",
             "10/29/2018": 9,
             "10/30/2018": 6,
@@ -4610,7 +4610,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "RES",
+            "department_codes": "RES",
             "Title": "2017 Latin American and Caribbean Macroeconomic Report: Routes to Growth in a New Trade World",
             "10/29/2018": 1,
             "10/30/2018": 12,
@@ -4641,7 +4641,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "RES",
+            "department_codes": "RES",
             "Title": "Better Spending for Better Lives: How Latin America and the Caribbean Can Do More with Less",
             "10/29/2018": 205,
             "10/30/2018": 209,
@@ -4672,7 +4672,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "RMG",
+            "department_codes": "RMG",
             "Title": "The Equity-Financed Enterprise: Sharing Uncertainty to Support Investment",
             "11/16/2018": 2,
             "11/17/2018": 1,
@@ -4682,7 +4682,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
+            "department_codes": "SCL",
             "Title": "How to Select an Instrument for Assessing Student Learning",
             "10/29/2018": 20,
             "10/30/2018": 23,
@@ -4713,7 +4713,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
+            "department_codes": "SCL",
             "Title": "A Toolkit for the Measurement of Youth Risk Behavior",
             "10/29/2018": 22,
             "10/30/2018": 34,
@@ -4744,7 +4744,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
+            "department_codes": "SCL",
             "Title": "School Green Areas",
             "10/29/2018": 9,
             "10/30/2018": 80,
@@ -4775,7 +4775,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
+            "department_codes": "SCL",
             "Title": "Guide to Workforce Skills Assessment Instruments",
             "10/29/2018": 140,
             "10/30/2018": 156,
@@ -4806,7 +4806,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
+            "department_codes": "SCL",
             "Title": "How is Child Care Quality Measured?: A toolkit",
             "10/29/2018": 41,
             "10/30/2018": 36,
@@ -4837,7 +4837,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
+            "department_codes": "SCL",
             "Title": "Profesión: Profesor en América Latina ¿Por qué se perdió el prestigio docente y cómo recuperarlo?",
             "10/29/2018": 419,
             "10/30/2018": 448,
@@ -4868,7 +4868,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
+            "department_codes": "SCL",
             "Title": "Health Benefit Plans in Latin America: A Regional Comparison",
             "10/29/2018": 30,
             "10/30/2018": 14,
@@ -4899,7 +4899,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
+            "department_codes": "SCL",
             "Title": "Enfermedades crónicas no transmisibles y sus factores de riesgo en Argentina: prevalencia y prevención",
             "10/29/2018": 5,
             "10/30/2018": 5,
@@ -4926,7 +4926,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
+            "department_codes": "SCL",
             "Title": "The IDB and Technology in Education: How to Promote Effective Programs?",
             "10/29/2018": 13,
             "10/30/2018": 13,
@@ -4957,7 +4957,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
+            "department_codes": "SCL",
             "Title": "Social Services for Digital Citizens: Opportunities for Latin America and the Caribbean",
             "10/29/2018": 382,
             "10/30/2018": 459,
@@ -4988,7 +4988,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SEC",
+            "department_codes": "SEC",
             "Title": "Proyectos Enclave: ¿Qué Son y Qué Se Puede Hacer?",
             "11/7/2018": 2,
             "11/10/2018": 3,
@@ -5004,7 +5004,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SEC",
+            "department_codes": "SEC",
             "Title": "Social Capital and Social Cohesion: Definition and Measurement",
             "11/4/2018": 1,
             "11/7/2018": 1,
@@ -5015,7 +5015,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SEC",
+            "department_codes": "SEC",
             "Title": "Enclave Projects: What Are They and What Can Be Done?",
             "11/3/2018": 2,
             "All the time downloads": 279,
@@ -5024,7 +5024,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SEC",
+            "department_codes": "SEC",
             "Title": "Software para generación de cuestionarios",
             "11/3/2018": 1,
             "11/6/2018": 1,
@@ -5034,7 +5034,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SEC",
+            "department_codes": "SEC",
             "Title": "Climate-Resilient Coastal Development: Leveraging DRR and CCA to Promote Integrated Coastal Zone Management",
             "10/30/2018": 1,
             "11/14/2018": 1,
@@ -5044,7 +5044,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SEC",
+            "department_codes": "SEC",
             "Title": "Integrating Disaster Risk Reduction and Climate Change in Coastal Zone Management (CZM) Policy and Practice: The Belize Experience: Developing a National Coastal Plan for Conservation and Development Using an Integrated Management Approach",
             "10/31/2018": 1,
             "11/5/2018": 1,
@@ -5056,7 +5056,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SEC",
+            "department_codes": "SEC",
             "Title": "La violencia en su laberinto (estadístico)",
             "10/30/2018": 1,
             "11/16/2018": 1,
@@ -5066,7 +5066,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SEC",
+            "department_codes": "SEC",
             "Title": "Cleaning Up the Kitchen Sink: On the Consequences of the Linearity Assumption for Cross-Country Growth Empirics",
             "11/18/2018": 1,
             "All the time downloads": 140,
@@ -5075,7 +5075,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SEC",
+            "department_codes": "SEC",
             "Title": "Argentina's Distributional Failure: The Role of Integration and Public Policy",
             "11/15/2018": 1,
             "All the time downloads": 131,
@@ -5084,7 +5084,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SEC",
+            "department_codes": "SEC",
             "Title": "Esquemas de comunicación, transmisión y concentración de la información",
             "11/13/2018": "1",
             "All the time downloads": 114,
@@ -5093,7 +5093,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SPD",
+            "department_codes": "SPD",
             "Title": "Development Effectiveness Overview (DEO) 2013",
             "10/29/2018": 1,
             "11/1/2018": 4,
@@ -5116,7 +5116,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SPD",
+            "department_codes": "SPD",
             "Title": "Impact Evaluation in Practice: Second Edition",
             "10/29/2018": 45,
             "10/30/2018": 53,
@@ -5147,7 +5147,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SPD",
+            "department_codes": "SPD",
             "Title": "The Future of Work: Regional Perspectives",
             "10/29/2018": 9,
             "10/30/2018": 11,
@@ -5177,7 +5177,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SPD",
+            "department_codes": "SPD",
             "Title": "Centros infantiles en Bolivia: Atención, infraestructura y calidad de servicios de desarrollo infantil",
             "10/29/2018": 49,
             "10/30/2018": 31,
@@ -5208,7 +5208,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SPD",
+            "department_codes": "SPD",
             "Title": "Development Effectiveness Overview (DEO) 2014",
             "10/29/2018": 12,
             "10/30/2018": 9,
@@ -5239,7 +5239,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SPD",
+            "department_codes": "SPD",
             "Title": "Development Effectiveness Overview (DEO) 2015",
             "10/29/2018": 4,
             "10/30/2018": 7,
@@ -5270,7 +5270,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SPD",
+            "department_codes": "SPD",
             "Title": "The Impact of Coastal Infrastructure Improvements on Economic Growth: Evidence from Barbados",
             "10/29/2018": 14,
             "10/30/2018": 6,
@@ -5301,7 +5301,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SPD",
+            "department_codes": "SPD",
             "Title": "Development Effectiveness Overview (DEO) 2012",
             "11/6/2018": 5,
             "11/7/2018": 1,
@@ -5313,7 +5313,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SPD",
+            "department_codes": "SPD",
             "Title": "A Primer for Applying Propensity-Score Matching",
             "10/29/2018": 2,
             "10/30/2018": 3,
@@ -5344,7 +5344,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SPD",
+            "department_codes": "SPD",
             "Title": "Tourism Policy, a Big Push to Employment: Evidence from a Multiple Synthetic Control Approach",
             "10/29/2018": 1,
             "10/30/2018": 1,
@@ -5367,7 +5367,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "Strategic Core",
+            "department_codes": "Strategic Core",
             "Title": "Escalando la nueva educación: Innovaciones inspiradoras masivas en América Latina",
             "10/29/2018": 12,
             "10/30/2018": 13,
@@ -5398,7 +5398,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "VPC",
+            "department_codes": "VPC",
             "Title": "Colombia Toward a High-Income Country with Social Mobility",
             "10/29/2018": 26,
             "10/30/2018": 24,
@@ -5429,7 +5429,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "VPC",
+            "department_codes": "VPC",
             "Title": "Public Consultations with Civil Society: Guidelines for Public and Private Executing Agencies",
             "10/29/2018": 26,
             "10/30/2018": 9,
@@ -5460,7 +5460,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "VPC",
+            "department_codes": "VPC",
             "Title": "Public Procurement in Latin America and the Caribbean and IDB-financed project: a Normative and Comparative Study",
             "10/29/2018": 2,
             "10/30/2018": 1,
@@ -5488,7 +5488,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "VPC",
+            "department_codes": "VPC",
             "Title": "IDB Group-Civil Society: Engagement Review 2014-2015",
             "10/29/2018": 2,
             "10/30/2018": 2,
@@ -5513,7 +5513,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "VPC",
+            "department_codes": "VPC",
             "Title": "Three are better than one: Government, Civil Society, Private Sector. Joint efforts in Caribbean countries toward sustainable development",
             "10/29/2018": 2,
             "10/30/2018": 1,
@@ -5532,7 +5532,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "VPC",
+            "department_codes": "VPC",
             "Title": "Procurement Newsletter: Volume 1: March, 2008",
             "10/29/2018": 1,
             "10/31/2018": 1,
@@ -5544,7 +5544,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "VPC",
+            "department_codes": "VPC",
             "Title": "IDB Group-Civil Society Engagement Review 2016-2017",
             "10/29/2018": 5,
             "10/30/2018": 1,
@@ -5564,7 +5564,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "VPC",
+            "department_codes": "VPC",
             "Title": "MERCOSUR: Instituciones de gobierno regional, asimetrías e integración profunda",
             "11/6/2018": 2,
             "11/14/2018": 1,
@@ -5574,7 +5574,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "VPC",
+            "department_codes": "VPC",
             "Title": "Sector extractivo y sociedad civil: Cuando el trabajo de comunidades, gobiernos e industrias es sinónimo de desarrollo",
             "10/29/2018": 39,
             "10/30/2018": 26,
@@ -5602,7 +5602,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "VPC",
+            "department_codes": "VPC",
             "Title": "Development Challenges in Guyana",
             "10/30/2018": 2,
             "11/5/2018": 3,
@@ -5616,7 +5616,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "VPS",
+            "department_codes": "VPS",
             "Title": "Development Effectiveness Overview (DEO) 2013",
             "10/29/2018": 1,
             "11/1/2018": 4,
@@ -5639,7 +5639,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "VPS",
+            "department_codes": "VPS",
             "Title": "Under-Rewarded Efforts: The Elusive Quest for Prosperity in Mexico",
             "10/29/2018": 149,
             "10/30/2018": 118,
@@ -5670,7 +5670,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "VPS",
+            "department_codes": "VPS",
             "Title": "Urban Sustainability in Latin America and the Caribbean",
             "10/29/2018": 9,
             "10/30/2018": 4,
@@ -5701,7 +5701,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "VPS",
+            "department_codes": "VPS",
             "Title": "Ley de guarderías en México y los desafíos institucionales de conectar familia y trabajo",
             "10/29/2018": 18,
             "10/30/2018": 10,
@@ -5732,7 +5732,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "VPS",
+            "department_codes": "VPS",
             "Title": "Multilatinas to Global Latinas: The New Latin American Multinationals",
             "10/29/2018": 3,
             "10/30/2018": 11,
@@ -5761,7 +5761,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "VPS",
+            "department_codes": "VPS",
             "Title": "Childcare and Women's Labor Participation: Evidence for Latin America and the Caribbean",
             "10/29/2018": 2,
             "10/30/2018": 7,
@@ -5790,7 +5790,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "VPS",
+            "department_codes": "VPS",
             "Title": "Logística urbana: Los desafíos de la Distribución Urbana de Mercancías",
             "10/29/2018": 15,
             "10/30/2018": 2,
@@ -5820,7 +5820,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "VPS",
+            "department_codes": "VPS",
             "Title": "The End of Informality in Mexico?: Fiscal Reform for Universal Social Insurance",
             "10/29/2018": 1,
             "10/30/2018": 2,
@@ -5843,7 +5843,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "VPS",
+            "department_codes": "VPS",
             "Title": "The Cyclical Characteristics of Universal Social Insurance",
             "11/5/2018": 1,
             "All the time downloads": 379,
@@ -5852,7 +5852,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "VPS",
+            "department_codes": "VPS",
             "Title": "Guía metodológica para el diseño e implementación de observatorios de experiencias innovadoras",
             "10/29/2018": 2,
             "10/31/2018": 1,
@@ -5869,7 +5869,7 @@ var publicationsLines = {
     linesAllDivisions: [
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "",
+            "division_codes": "",
             "Rank All Downloads": 1,
             "Title": "Global Microscope 2018: The Enabling Environment for Financial Inclusion",
             "All the time downloads": 1,
@@ -5878,7 +5878,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "",
+            "division_codes": "",
             "Rank All Downloads": 2,
             "Title": "CIMA Brief #6: How can policy-maker address teacher shortages in disadvantaged schools?",
             "All the time downloads": 78,
@@ -5891,7 +5891,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "",
+            "division_codes": "",
             "Rank All Downloads": 3,
             "Title": "Capital Openness and Income Inequality: Smooth Sailing or Troubled Waters?",
             "All the time downloads": 62,
@@ -5902,7 +5902,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "AUG",
+            "division_codes": "AUG",
             "Rank All Downloads": 1,
             "Title": "Leveraging Data Analytics Beyond Assurance",
             "All the time downloads": 139,
@@ -5912,7 +5912,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "BOG",
+            "division_codes": "BOG",
             "Rank All Downloads": 1,
             "Title": "Evaluación de la Necesidad de un Aumento General de Capital del Capital Ordinario y una Reposición de Recursos del Fondo para Operaciones Especiales: Avances y Próximos Pasos",
             "All the time downloads": 478,
@@ -5921,7 +5921,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "BOG",
+            "division_codes": "BOG",
             "Rank All Downloads": 2,
             "Title": "Examen de la Nécessité d'une Augmentation Générale du Capital Ordinaire et de la Reconstitution du Fonds des Opérations Spéciales: État d'Avancement et Prochaines Étapes",
             "All the time downloads": 161,
@@ -5931,7 +5931,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CAN",
+            "division_codes": "CAN",
             "Rank All Downloads": 1,
             "Title": "Las ciudades intermedias con mayor potencial en Colombia: Un sistema de identificación",
             "All the time downloads": 45,
@@ -5960,7 +5960,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CAN",
+            "division_codes": "CAN",
             "Rank All Downloads": 2,
             "Title": "Growth Diagnostic: Peru",
             "All the time downloads": 21,
@@ -5990,7 +5990,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CAN",
+            "division_codes": "CAN",
             "Rank All Downloads": 3,
             "Title": "Perú: Gestión del riesgo de desastres y adaptación al cambio climático: Marco de la preparación de la estrategia 2012-2016 del BID en Perú",
             "All the time downloads": 20,
@@ -6021,7 +6021,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CAN",
+            "division_codes": "CAN",
             "Rank All Downloads": 4,
             "Title": "Creciendo con Productividad: Una agenda para la Region Andina",
             "All the time downloads": 18,
@@ -6052,7 +6052,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CAN",
+            "division_codes": "CAN",
             "Rank All Downloads": 5,
             "Title": "Ingresos fiscales por explotación de recursos mineros e hidrocarburos en Perú",
             "All the time downloads": 8,
@@ -6081,7 +6081,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CAN",
+            "division_codes": "CAN",
             "Rank All Downloads": 6,
             "Title": "Ingresos fiscales por explotación de hidrocarburos en Bolivia",
             "All the time downloads": 8,
@@ -6109,7 +6109,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CAN",
+            "division_codes": "CAN",
             "Rank All Downloads": 7,
             "Title": "Pobreza y movilidad social en Bolivia en la última década",
             "All the time downloads": 7,
@@ -6140,7 +6140,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CAN",
+            "division_codes": "CAN",
             "Rank All Downloads": 8,
             "Title": "Reformas y desarrollo en el Ecuador contemporáneo",
             "All the time downloads": 6,
@@ -6164,7 +6164,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CAN",
+            "division_codes": "CAN",
             "Rank All Downloads": 9,
             "Title": "Trade and Integration Monitor 2013: After the Boom: Prospects for Latin America and the Caribbean in South-South Trade",
             "All the time downloads": 6,
@@ -6186,7 +6186,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CAN",
+            "division_codes": "CAN",
             "Rank All Downloads": 10,
             "Title": "Ingresos fiscales por explotación de recursos naturales en Colombia",
             "All the time downloads": 4,
@@ -6209,7 +6209,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CAR",
+            "division_codes": "CAR",
             "Rank All Downloads": 1,
             "Title": "Los jóvenes Sí-Sí: Experiencias y aprendizajes de Organizaciones de la Sociedad Civil para la transición de los jóvenes entre educación y trabajo",
             "All the time downloads": 2,
@@ -6221,7 +6221,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CBH",
+            "division_codes": "CBH",
             "Rank All Downloads": 1,
             "Title": "Conditions for Improving the Property Tax in the Bahamas: Final Report",
             "All the time downloads": 306,
@@ -6242,7 +6242,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CBL",
+            "division_codes": "CBL",
             "Rank All Downloads": 1,
             "Title": "Rekindling Economic Growth in Belize",
             "All the time downloads": 1,
@@ -6269,7 +6269,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CBL",
+            "division_codes": "CBL",
             "Rank All Downloads": 2,
             "Title": "Belize and the IDB: Twenty Years of Partnership",
             "All the time downloads": 1,
@@ -6283,7 +6283,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CBL",
+            "division_codes": "CBL",
             "Rank All Downloads": 3,
             "Title": "Belize's Regional Integration Options: Guatemala and Mexico",
             "All the time downloads": 249,
@@ -6297,7 +6297,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CBO",
+            "division_codes": "CBO",
             "Rank All Downloads": 1,
             "Title": "Development Challenges in Bolivia",
             "All the time downloads": 452,
@@ -6325,7 +6325,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CBR",
+            "division_codes": "CBR",
             "Rank All Downloads": 1,
             "Title": "Iniciativas de Economia Verde no Brasil: Experiências das unidades federativas em promover uma economia verde inclusiva",
             "All the time downloads": 410,
@@ -6334,7 +6334,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CCB",
+            "division_codes": "CCB",
             "Rank All Downloads": 1,
             "Title": "Crime and Violence in Jamaica: IDB Series on Crime and Violence in the Caribbean",
             "All the time downloads": 60,
@@ -6365,7 +6365,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CCB",
+            "division_codes": "CCB",
             "Rank All Downloads": 2,
             "Title": "Crime and Violence in Trinidad and Tobago: IDB Series on Crime and Violence in the Caribbean",
             "All the time downloads": 58,
@@ -6396,7 +6396,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CCB",
+            "division_codes": "CCB",
             "Rank All Downloads": 3,
             "Title": "Crime and Violence in Barbados: IDB Series on Crime and Violence in the Caribbean",
             "All the time downloads": 12,
@@ -6427,7 +6427,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CCB",
+            "division_codes": "CCB",
             "Rank All Downloads": 4,
             "Title": "Crime and Violence in The Bahamas: IDB Series on Crime and Violence in the Caribbean",
             "All the time downloads": 11,
@@ -6458,7 +6458,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CCB",
+            "division_codes": "CCB",
             "Rank All Downloads": 5,
             "Title": "Restoring Paradise in the Caribbean: Combatting Violence with Numbers",
             "All the time downloads": 9,
@@ -6489,7 +6489,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CCB",
+            "division_codes": "CCB",
             "Rank All Downloads": 6,
             "Title": "Does Participatory Budgeting Improve Decentralized Public Service Delivery?",
             "All the time downloads": 6,
@@ -6519,7 +6519,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CCB",
+            "division_codes": "CCB",
             "Rank All Downloads": 7,
             "Title": "Engine of Growth?: The Caribbean Private Sector Needs More Than an Oil Change",
             "All the time downloads": 5,
@@ -6550,7 +6550,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CCB",
+            "division_codes": "CCB",
             "Rank All Downloads": 8,
             "Title": "Chinese Rise in the Caribbean: What Does It Mean for Caribbean Stakeholders?",
             "All the time downloads": 4,
@@ -6578,7 +6578,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CCB",
+            "division_codes": "CCB",
             "Rank All Downloads": 9,
             "Title": "Privately Managed Public Secondary Schools and Academic Achievement in Trinidad and Tobago: Evidence from Rule-Based Student Assignments",
             "All the time downloads": 3,
@@ -6594,7 +6594,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CCB",
+            "division_codes": "CCB",
             "Rank All Downloads": 10,
             "Title": "Are Oil and Gas Smothering the Private Sector in Trinidad and Tobago?",
             "All the time downloads": 3,
@@ -6623,7 +6623,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CCH",
+            "division_codes": "CCH",
             "Rank All Downloads": 1,
             "Title": "Competencia en el mercado bancario del crédito en Chile",
             "All the time downloads": 1,
@@ -6636,7 +6636,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CCH",
+            "division_codes": "CCH",
             "Rank All Downloads": 2,
             "Title": "Viviendas sociales: Rehabilitación y gestión eficiente",
             "All the time downloads": 668,
@@ -6647,7 +6647,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CCH",
+            "division_codes": "CCH",
             "Rank All Downloads": 3,
             "Title": "Desafíos institucionales del sistema de pensiones chileno",
             "All the time downloads": 331,
@@ -6657,7 +6657,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CCH",
+            "division_codes": "CCH",
             "Rank All Downloads": 4,
             "Title": "Trade and Integration Sector Note: Chile",
             "All the time downloads": 266,
@@ -6666,7 +6666,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CCH",
+            "division_codes": "CCH",
             "Rank All Downloads": 5,
             "Title": "Trade and Integration Sector Note",
             "All the time downloads": 220,
@@ -6676,7 +6676,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CCH",
+            "division_codes": "CCH",
             "Rank All Downloads": 6,
             "Title": "Estudio sobre el estado de situación de la política chilena en materia de discapacidad",
             "All the time downloads": 219,
@@ -6687,7 +6687,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CCH",
+            "division_codes": "CCH",
             "Rank All Downloads": 7,
             "Title": "Fomento al turismo",
             "All the time downloads": 198,
@@ -6699,7 +6699,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CCH",
+            "division_codes": "CCH",
             "Rank All Downloads": 8,
             "Title": "Estudio sobre alternativas de atención integral a la niñez menor de 4 años (1a fase)",
             "All the time downloads": 159,
@@ -6710,7 +6710,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CCH",
+            "division_codes": "CCH",
             "Rank All Downloads": 9,
             "Title": "Diagnostico institucional del sistema de pensiones chileno y propuesta de recomendaciones",
             "All the time downloads": 145,
@@ -6722,7 +6722,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CCH",
+            "division_codes": "CCH",
             "Rank All Downloads": 10,
             "Title": "Fortalecimiento de la gestión ambiental para cumplimiento de compromisos ambientales en acuerdos multilaterales y tratados de libre comercio",
             "All the time downloads": 141,
@@ -6732,7 +6732,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CCO",
+            "division_codes": "CCO",
             "Rank All Downloads": 1,
             "Title": "Is Entrepreneurship a Channel of Social Mobility in Latin America?",
             "All the time downloads": 899,
@@ -6741,7 +6741,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CCO",
+            "division_codes": "CCO",
             "Rank All Downloads": 2,
             "Title": "Measuring Changes in Poverty in Colombia: The 2000s",
             "All the time downloads": 477,
@@ -6760,7 +6760,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CCS",
+            "division_codes": "CCS",
             "Rank All Downloads": 1,
             "Title": "Inter-American Development Bank Sustainability Report 2016",
             "All the time downloads": 17,
@@ -6790,7 +6790,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CCS",
+            "division_codes": "CCS",
             "Rank All Downloads": 2,
             "Title": "What is Sustainable Infrastructure?  A Framework to Guide Sustainability Across the Project Cycle",
             "All the time downloads": 14,
@@ -6821,7 +6821,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CCS",
+            "division_codes": "CCS",
             "Rank All Downloads": 3,
             "Title": "Lessons from Four Decades of Infrastructure Project-Related Conflicts in Latin America and the Caribbean",
             "All the time downloads": 4,
@@ -6852,7 +6852,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CCS",
+            "division_codes": "CCS",
             "Rank All Downloads": 4,
             "Title": "Crossing the Bridge to Sustainable Infrastructure Investing: Exploring Ways to Make it Across",
             "All the time downloads": 3,
@@ -6881,7 +6881,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CCS",
+            "division_codes": "CCS",
             "Rank All Downloads": 5,
             "Title": "Building a Bridge to Sustainable Infrastructure: Mapping the Global Initiatives That Are Paving the Way",
             "All the time downloads": 2,
@@ -6909,7 +6909,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CCS",
+            "division_codes": "CCS",
             "Rank All Downloads": 6,
             "Title": "2016 Joint Report On Multilateral Development Banks' Climate Finance",
             "All the time downloads": 2,
@@ -6935,7 +6935,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CCS",
+            "division_codes": "CCS",
             "Rank All Downloads": 7,
             "Title": "Stranded Assets: A Climate Risk Challenge",
             "All the time downloads": 1,
@@ -6961,7 +6961,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CCS",
+            "division_codes": "CCS",
             "Rank All Downloads": 8,
             "Title": "Impactos económicos del cambio climático en Colombia: Análisis costo-beneficio de medidas de adaptación",
             "All the time downloads": 1,
@@ -6984,7 +6984,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CCS",
+            "division_codes": "CCS",
             "Rank All Downloads": 9,
             "Title": "Vulnerabilidad al cambio climático de los sistemas de producción hidroeléctrica en Centroamérica y sus opciones de adaptación",
             "All the time downloads": 1,
@@ -7004,7 +7004,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CCS",
+            "division_codes": "CCS",
             "Rank All Downloads": 10,
             "Title": "Vulnerability to Climate Change of Hydroelectric Production Systems in Central America and their Adaptation Options: Executive Summary",
             "All the time downloads": 1,
@@ -7022,7 +7022,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CDR",
+            "division_codes": "CDR",
             "Rank All Downloads": 1,
             "Title": "Diagnóstico de crecimiento de Costa Rica",
             "All the time downloads": 3,
@@ -7050,7 +7050,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CDR",
+            "division_codes": "CDR",
             "Rank All Downloads": 2,
             "Title": "Democracia estable ¿alcanza?: Análisis de la gobernabilidad en Costa Rica",
             "All the time downloads": 952,
@@ -7061,7 +7061,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CDR",
+            "division_codes": "CDR",
             "Rank All Downloads": 3,
             "Title": "Dualidad productiva y espacio de crecimiento para las PYMES en Costa Rica",
             "All the time downloads": 860,
@@ -7079,7 +7079,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CGY",
+            "division_codes": "CGY",
             "Rank All Downloads": 1,
             "Title": "Guyana and the IDB: Partners for Progress",
             "All the time downloads": 862,
@@ -7096,7 +7096,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CHO",
+            "division_codes": "CHO",
             "Rank All Downloads": 1,
             "Title": "Estimación del tipo de cambio real de equilibrio de Honduras",
             "All the time downloads": 1,
@@ -7120,7 +7120,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CID",
+            "division_codes": "CID",
             "Rank All Downloads": 1,
             "Title": "Intervention and Policy Options for Combating Malnutrition in Guatemala",
             "All the time downloads": 11,
@@ -7150,7 +7150,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CID",
+            "division_codes": "CID",
             "Rank All Downloads": 2,
             "Title": "La ruta hacia el crecimiento sostenible en la República Dominicana: Fiscalidad, competitividad, institucionalidad y electricidad",
             "All the time downloads": 10,
@@ -7180,7 +7180,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CID",
+            "division_codes": "CID",
             "Rank All Downloads": 3,
             "Title": "Running Out of Tailwinds: Opportunities to Foster Inclusive Growth in Central America and the Dominican Republic",
             "All the time downloads": 8,
@@ -7206,7 +7206,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CID",
+            "division_codes": "CID",
             "Rank All Downloads": 4,
             "Title": "BIDeconomics México: Políticas para el crecimiento inclusivo y desarrollo de la economía nacional",
             "All the time downloads": 8,
@@ -7237,7 +7237,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CID",
+            "division_codes": "CID",
             "Rank All Downloads": 5,
             "Title": "Industrias creativas culturales en Panamá: Diagnóstico del sector y relevancia económica",
             "All the time downloads": 7,
@@ -7267,7 +7267,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CID",
+            "division_codes": "CID",
             "Rank All Downloads": 6,
             "Title": "Programación financiera: Fundamentos teóricos y aplicación práctica al caso de Costa Rica",
             "All the time downloads": 7,
@@ -7298,7 +7298,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CID",
+            "division_codes": "CID",
             "Rank All Downloads": 7,
             "Title": "Social Expenditure in Central America, Panama and the Dominican Republic at a Glance: 2007-2013",
             "All the time downloads": 6,
@@ -7329,7 +7329,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CID",
+            "division_codes": "CID",
             "Rank All Downloads": 8,
             "Title": "Turismo y desarrollo en México",
             "All the time downloads": 5,
@@ -7360,7 +7360,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CID",
+            "division_codes": "CID",
             "Rank All Downloads": 9,
             "Title": "Labor Market Performance in Belize",
             "All the time downloads": 5,
@@ -7388,7 +7388,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CID",
+            "division_codes": "CID",
             "Rank All Downloads": 10,
             "Title": "Inclusive Growth: Challenges and Opportunities for Central America and the Dominican Republic",
             "All the time downloads": 5,
@@ -7416,7 +7416,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CJA",
+            "division_codes": "CJA",
             "Rank All Downloads": 1,
             "Title": "Power and Possibility: The Energy Sector in Jamaica",
             "All the time downloads": 1,
@@ -7430,7 +7430,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CME",
+            "division_codes": "CME",
             "Rank All Downloads": 1,
             "Title": "Desarrollo de la Industria Consultora de México: Direcciones Estratégicas, Agenda de Acciones y Política",
             "All the time downloads": 4,
@@ -7457,7 +7457,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CME",
+            "division_codes": "CME",
             "Rank All Downloads": 2,
             "Title": "El rol del enfoque sectorial ampliado para el desarrollo rural sostenible en Centroamérica",
             "All the time downloads": 1,
@@ -7474,7 +7474,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CME",
+            "division_codes": "CME",
             "Rank All Downloads": 3,
             "Title": "Estudio de identificación de los bloques económicos, así como los sectores productivos en los que México tendría una mayor oportunidad de integración comercial: Parte I",
             "All the time downloads": 117,
@@ -7492,7 +7492,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CME",
+            "division_codes": "CME",
             "Rank All Downloads": 4,
             "Title": "Estudio de identificación de los bloques económicos, así como los sectores productivos en los que México tendría una mayor oportunidad de integración comercial: Parte II",
             "All the time downloads": 47,
@@ -7508,7 +7508,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CMF",
+            "division_codes": "CMF",
             "Rank All Downloads": 1,
             "Title": "FINTECH:  Innovations You May Not Know were from Latin America and the Caribbean",
             "All the time downloads": 52,
@@ -7539,7 +7539,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CMF",
+            "division_codes": "CMF",
             "Rank All Downloads": 2,
             "Title": "Managing Environmental and Social Risks: A Roadmap for National Development Banks in Latin America and the Caribbean",
             "All the time downloads": 12,
@@ -7570,7 +7570,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CMF",
+            "division_codes": "CMF",
             "Rank All Downloads": 3,
             "Title": "La gobernanza de las telecomunicaciones: Hacia la economía digital",
             "All the time downloads": 12,
@@ -7601,7 +7601,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CMF",
+            "division_codes": "CMF",
             "Rank All Downloads": 4,
             "Title": "Inclusión financiera en América Latina y el Caribe: Coyuntura actual y desafíos para los próximos años",
             "All the time downloads": 10,
@@ -7632,7 +7632,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CMF",
+            "division_codes": "CMF",
             "Rank All Downloads": 5,
             "Title": "Informe anual del Índice de Desarrollo de la Banda Ancha en América Latina y el Caribe: IDBA 2016",
             "All the time downloads": 9,
@@ -7662,7 +7662,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CMF",
+            "division_codes": "CMF",
             "Rank All Downloads": 6,
             "Title": "Economía digital en América Latina y el Caribe: Situación actual y recomendaciones",
             "All the time downloads": 9,
@@ -7693,7 +7693,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CMF",
+            "division_codes": "CMF",
             "Rank All Downloads": 7,
             "Title": "The Ecotourism Industry in the Caribbean: A Value Chain Analysis",
             "All the time downloads": 8,
@@ -7722,7 +7722,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CMF",
+            "division_codes": "CMF",
             "Rank All Downloads": 8,
             "Title": "Regulatory Sandboxes in Latin America and the Caribbean for the FinTech Ecosystem and the Financial System",
             "All the time downloads": 7,
@@ -7753,7 +7753,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CMF",
+            "division_codes": "CMF",
             "Rank All Downloads": 9,
             "Title": "El sector financiero en Honduras: Visión general y tópicos sobre la red de seguridad financiera",
             "All the time downloads": 6,
@@ -7779,7 +7779,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CMF",
+            "division_codes": "CMF",
             "Rank All Downloads": 10,
             "Title": "Integrated Value Chain Risk Management",
             "All the time downloads": 5,
@@ -7810,7 +7810,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CMG",
+            "division_codes": "CMG",
             "Rank All Downloads": 1,
             "Title": "Water in the Time of Drought: Lessons from Five Droughts around the World",
             "All the time downloads": 26,
@@ -7841,7 +7841,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CMG",
+            "division_codes": "CMG",
             "Rank All Downloads": 2,
             "Title": "Inter-American Development Bank Annual Report 2015: The Year in Review",
             "All the time downloads": 22,
@@ -7871,7 +7871,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CMG",
+            "division_codes": "CMG",
             "Rank All Downloads": 3,
             "Title": "Inter-American Development Bank Annual Report 2012: Financial Statements",
             "All the time downloads": 4,
@@ -7888,7 +7888,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CMG",
+            "division_codes": "CMG",
             "Rank All Downloads": 4,
             "Title": "LAC2025 América Latina y el Caribe en 2025",
             "All the time downloads": 2,
@@ -7908,7 +7908,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CMG",
+            "division_codes": "CMG",
             "Rank All Downloads": 5,
             "Title": "Partidos políticos y paridad: La ecuación pendiente",
             "All the time downloads": 2,
@@ -7928,7 +7928,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CMG",
+            "division_codes": "CMG",
             "Rank All Downloads": 6,
             "Title": "Women's Economic Opportunities in the Formal Private Sector in Latin America and the Caribbean: A Focus on Entrepreneurship",
             "All the time downloads": 771,
@@ -7944,7 +7944,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CMG",
+            "division_codes": "CMG",
             "Rank All Downloads": 7,
             "Title": "Policy Profile: Access to Information Policy",
             "All the time downloads": 384,
@@ -7954,7 +7954,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CMG",
+            "division_codes": "CMG",
             "Rank All Downloads": 8,
             "Title": "Indigenous presence in Bolvian Folk Art: Folk Art in Bolivia: Celebration of Everyday Life",
             "All the time downloads": 285,
@@ -7963,7 +7963,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CMG",
+            "division_codes": "CMG",
             "Rank All Downloads": 9,
             "Title": "The IDB Group: Effective Development, Best Practices",
             "All the time downloads": 226,
@@ -7972,7 +7972,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CMG",
+            "division_codes": "CMG",
             "Rank All Downloads": 10,
             "Title": "The Climate and Development Challenge for Latin America and the Caribbean: Options for Climate Resilient Low Carbon Development (Summary)",
             "All the time downloads": 225,
@@ -7982,7 +7982,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CNI",
+            "division_codes": "CNI",
             "Rank All Downloads": 1,
             "Title": "Mejorando Vidas Nicaragua",
             "All the time downloads": 384,
@@ -7997,7 +7997,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CPE",
+            "division_codes": "CPE",
             "Rank All Downloads": 1,
             "Title": "Retos de desarrollo del Perú: 2012-2016",
             "All the time downloads": 4,
@@ -8025,7 +8025,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CPE",
+            "division_codes": "CPE",
             "Rank All Downloads": 2,
             "Title": "La clase media en Perú: Cuantificación y evolución reciente",
             "All the time downloads": 3,
@@ -8046,7 +8046,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CPE",
+            "division_codes": "CPE",
             "Rank All Downloads": 3,
             "Title": "Las barreras al crecimiento económico en San Martín",
             "All the time downloads": 2,
@@ -8061,7 +8061,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CPE",
+            "division_codes": "CPE",
             "Rank All Downloads": 4,
             "Title": "Las barreras al crecimiento económico en Junín",
             "All the time downloads": 1,
@@ -8088,7 +8088,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CPE",
+            "division_codes": "CPE",
             "Rank All Downloads": 5,
             "Title": "Resumen de la ejecución de los compromisos ambientales y sociales del proyecto CAMISEA",
             "All the time downloads": 121,
@@ -8097,7 +8097,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CPR",
+            "division_codes": "CPR",
             "Rank All Downloads": 1,
             "Title": "FDI Flows to Paraguay: What do Investors Prioritize?",
             "All the time downloads": 124,
@@ -8118,7 +8118,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CSC",
+            "division_codes": "CSC",
             "Rank All Downloads": 1,
             "Title": "Argentina: Mitigación y adaptación al cambio climático",
             "All the time downloads": 23,
@@ -8146,7 +8146,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CSC",
+            "division_codes": "CSC",
             "Rank All Downloads": 2,
             "Title": "Crecimiento económico y brechas de desarrollo en Uruguay",
             "All the time downloads": 3,
@@ -8176,7 +8176,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CSC",
+            "division_codes": "CSC",
             "Rank All Downloads": 3,
             "Title": "Sector Agroindustrial de Paraguay",
             "All the time downloads": 2,
@@ -8203,7 +8203,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CSC",
+            "division_codes": "CSC",
             "Rank All Downloads": 4,
             "Title": "Diagnóstico de Crecimiento de Paraguay",
             "All the time downloads": 2,
@@ -8225,7 +8225,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CSC",
+            "division_codes": "CSC",
             "Rank All Downloads": 5,
             "Title": "Development Diagnostics for the Southern Cone",
             "All the time downloads": 1,
@@ -8248,7 +8248,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CSC",
+            "division_codes": "CSC",
             "Rank All Downloads": 6,
             "Title": "Paraguay: Rutas para el Desarrollo",
             "All the time downloads": 1,
@@ -8277,7 +8277,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CSC",
+            "division_codes": "CSC",
             "Rank All Downloads": 7,
             "Title": "Recalibrando la medición del balance estructural en Chile",
             "All the time downloads": 1,
@@ -8290,7 +8290,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CSC",
+            "division_codes": "CSC",
             "Rank All Downloads": 8,
             "Title": "El manejo de los ingresos fiscales del cobre en Chile",
             "All the time downloads": 1,
@@ -8308,7 +8308,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CSC",
+            "division_codes": "CSC",
             "Rank All Downloads": 9,
             "Title": "Intervención cambiaria y costos de esterilización: Algunas reflexiones de política",
             "All the time downloads": 869,
@@ -8327,7 +8327,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CSC",
+            "division_codes": "CSC",
             "Rank All Downloads": 10,
             "Title": "Oferta laboral femenina y cuidado infantil",
             "All the time downloads": 750,
@@ -8342,7 +8342,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CSD",
+            "division_codes": "CSD",
             "Rank All Downloads": 1,
             "Title": "Inter-American Development Bank Sustainability Report 2017",
             "All the time downloads": 16,
@@ -8373,7 +8373,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CSD",
+            "division_codes": "CSD",
             "Rank All Downloads": 2,
             "Title": "The Impact of Upgrading Municipal Infrastructure on Property Prices: Evidence from Brazil",
             "All the time downloads": 1,
@@ -8392,7 +8392,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CSD",
+            "division_codes": "CSD",
             "Rank All Downloads": 3,
             "Title": "Inter-American Development Bank Sustainability Report 2017: Global Reporting Initiative Annex",
             "All the time downloads": 205,
@@ -8411,7 +8411,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CSD",
+            "division_codes": "CSD",
             "Rank All Downloads": 4,
             "Title": "The Net Effect of Concessions on Forest Loss: Quasi-Experimental Evidence from Mexico",
             "All the time downloads": 30,
@@ -8421,7 +8421,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CSO",
+            "division_codes": "CSO",
             "Rank All Downloads": 1,
             "Title": "Orange Economy: Innovations you may not know were from Latin America and the Caribbean",
             "All the time downloads": 91,
@@ -8452,7 +8452,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CSO",
+            "division_codes": "CSO",
             "Rank All Downloads": 2,
             "Title": "Future Landscapes of the Orange Economy: Creative Pathways for Improving Lives in Latin America and the Caribbean",
             "All the time downloads": 23,
@@ -8483,7 +8483,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CSO",
+            "division_codes": "CSO",
             "Rank All Downloads": 3,
             "Title": "AgroTech: Innovaciones que no sabías que eran de América Latina y el Caribe",
             "All the time downloads": 7,
@@ -8512,7 +8512,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CSO",
+            "division_codes": "CSO",
             "Rank All Downloads": 4,
             "Title": "Perceptive Strokes: Women Artists of Panama",
             "All the time downloads": 4,
@@ -8538,7 +8538,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CSO",
+            "division_codes": "CSO",
             "Rank All Downloads": 5,
             "Title": "Gabo tiene quien le escriba",
             "All the time downloads": 3,
@@ -8554,7 +8554,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CSO",
+            "division_codes": "CSO",
             "Rank All Downloads": 6,
             "Title": "Salud: Innovaciones que no sabías que eran de América Latina y el Caribe",
             "All the time downloads": 2,
@@ -8577,7 +8577,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CSO",
+            "division_codes": "CSO",
             "Rank All Downloads": 7,
             "Title": "Heavenly Jade of the Maya",
             "All the time downloads": 2,
@@ -8598,7 +8598,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CSO",
+            "division_codes": "CSO",
             "Rank All Downloads": 8,
             "Title": "GOLS for Development",
             "All the time downloads": 1,
@@ -8609,7 +8609,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CSO",
+            "division_codes": "CSO",
             "Rank All Downloads": 9,
             "Title": "The Development  of Sculpture in the Quito School",
             "All the time downloads": 1,
@@ -8623,7 +8623,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CSO",
+            "division_codes": "CSO",
             "Rank All Downloads": 10,
             "Title": "The Economic Impact of the Creative Industries in the Americas",
             "All the time downloads": 969,
@@ -8650,7 +8650,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CTI",
+            "division_codes": "CTI",
             "Rank All Downloads": 1,
             "Title": "La política de innovación en América Latina y el Caribe: Nuevos caminos",
             "All the time downloads": 33,
@@ -8681,7 +8681,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CTI",
+            "division_codes": "CTI",
             "Rank All Downloads": 2,
             "Title": "Public Policies for Creativity and Innovation: Promoting the Orange Economy in Latin America and the Caribbean",
             "All the time downloads": 32,
@@ -8712,7 +8712,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CTI",
+            "division_codes": "CTI",
             "Rank All Downloads": 3,
             "Title": "Panorama actual de la innovación social en Colombia",
             "All the time downloads": 28,
@@ -8743,7 +8743,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CTI",
+            "division_codes": "CTI",
             "Rank All Downloads": 4,
             "Title": "El Sistema Nacional de Calidad en Colombia: Un análisis cualitativo del desarrollo del sistema",
             "All the time downloads": 19,
@@ -8772,7 +8772,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CTI",
+            "division_codes": "CTI",
             "Rank All Downloads": 5,
             "Title": "Women in Science and Technology: What Does the Literature Say?",
             "All the time downloads": 17,
@@ -8803,7 +8803,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CTI",
+            "division_codes": "CTI",
             "Rank All Downloads": 6,
             "Title": "Science, Technology, and Innovation in Latin America and the Caribbean: A Statistical Compendium of Indicators",
             "All the time downloads": 12,
@@ -8834,7 +8834,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CTI",
+            "division_codes": "CTI",
             "Rank All Downloads": 7,
             "Title": "Retos y posibilidades de la economía colaborativa en América Latina y el Caribe",
             "All the time downloads": 10,
@@ -8865,7 +8865,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CTI",
+            "division_codes": "CTI",
             "Rank All Downloads": 8,
             "Title": "Diagnóstico del sector TIC en México: Conectividad e inclusión social para la mejora de la productividad y el crecimiento económico",
             "All the time downloads": 9,
@@ -8895,7 +8895,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CTI",
+            "division_codes": "CTI",
             "Rank All Downloads": 9,
             "Title": "ICTs in Latin American and the Caribbean Firms: Stylized Facts, Programs and Policies: Knowledge Sharing Forum on Development Experiences: Comparative Experiences of Korea and Latin America and the Caribbean",
             "All the time downloads": 8,
@@ -8926,7 +8926,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CTI",
+            "division_codes": "CTI",
             "Rank All Downloads": 10,
             "Title": "Agencias latinoamericanas de fomento de la innovación y el emprendimiento: Características y retos futuros",
             "All the time downloads": 8,
@@ -8957,7 +8957,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "CUR",
+            "division_codes": "CUR",
             "Rank All Downloads": 1,
             "Title": "Una mirada joven a la juventud: Aportes para las políticas públicas de Uruguay",
             "All the time downloads": 57,
@@ -8969,7 +8969,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "Discontinued Divisions",
+            "division_codes": "Discontinued Divisions",
             "Rank All Downloads": 1,
             "Title": "The Next Global Breadbasket: How Latin America Can Feed the World: A Call to Action for Addressing Challenges & Developing Solutions",
             "All the time downloads": 76,
@@ -8999,7 +8999,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "Discontinued Divisions",
+            "division_codes": "Discontinued Divisions",
             "Rank All Downloads": 2,
             "Title": "Development Effectiveness Overview (DEO) 2013",
             "All the time downloads": 45,
@@ -9022,7 +9022,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "Discontinued Divisions",
+            "division_codes": "Discontinued Divisions",
             "Rank All Downloads": 3,
             "Title": "Financing Infrastructure in Latin America and the Caribbean: How, How Much and by Whom?",
             "All the time downloads": 38,
@@ -9053,7 +9053,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "Discontinued Divisions",
+            "division_codes": "Discontinued Divisions",
             "Rank All Downloads": 4,
             "Title": "Diagnóstico de la situación del manejo de residuos sólidos municipales en América Latina y el Caribe",
             "All the time downloads": 32,
@@ -9084,7 +9084,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "Discontinued Divisions",
+            "division_codes": "Discontinued Divisions",
             "Rank All Downloads": 5,
             "Title": "Agriculture and Future Climate in Latin America and the Caribbean: Systemic Impacts and Potential Responses",
             "All the time downloads": 28,
@@ -9112,7 +9112,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "Discontinued Divisions",
+            "division_codes": "Discontinued Divisions",
             "Rank All Downloads": 6,
             "Title": "Argentina: Mitigación y adaptación al cambio climático",
             "All the time downloads": 23,
@@ -9140,7 +9140,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "Discontinued Divisions",
+            "division_codes": "Discontinued Divisions",
             "Rank All Downloads": 7,
             "Title": "Applying Behavioral Tools to the Design of Health Projects",
             "All the time downloads": 22,
@@ -9171,7 +9171,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "Discontinued Divisions",
+            "division_codes": "Discontinued Divisions",
             "Rank All Downloads": 8,
             "Title": "Impactos económicos del cambio climático en Colombia: sector ganadero",
             "All the time downloads": 21,
@@ -9199,7 +9199,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "Discontinued Divisions",
+            "division_codes": "Discontinued Divisions",
             "Rank All Downloads": 9,
             "Title": "The Politics of Policies: Economic and Social Progress in Latin America: 2006 Report",
             "All the time downloads": 21,
@@ -9230,7 +9230,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "Discontinued Divisions",
+            "division_codes": "Discontinued Divisions",
             "Rank All Downloads": 10,
             "Title": "Perú: Gestión del riesgo de desastres y adaptación al cambio climático: Marco de la preparación de la estrategia 2012-2016 del BID en Perú",
             "All the time downloads": 20,
@@ -9261,7 +9261,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "EDU",
+            "division_codes": "EDU",
             "Rank All Downloads": 1,
             "Title": "How to Select an Instrument for Assessing Student Learning",
             "All the time downloads": 191,
@@ -9292,7 +9292,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "EDU",
+            "division_codes": "EDU",
             "Rank All Downloads": 2,
             "Title": "School Green Areas",
             "All the time downloads": 57,
@@ -9323,7 +9323,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "EDU",
+            "division_codes": "EDU",
             "Rank All Downloads": 3,
             "Title": "Profesión: Profesor en América Latina ¿Por qué se perdió el prestigio docente y cómo recuperarlo?",
             "All the time downloads": 40,
@@ -9354,7 +9354,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "EDU",
+            "division_codes": "EDU",
             "Rank All Downloads": 4,
             "Title": "The IDB and Technology in Education: How to Promote Effective Programs?",
             "All the time downloads": 38,
@@ -9385,7 +9385,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "EDU",
+            "division_codes": "EDU",
             "Rank All Downloads": 5,
             "Title": "América Latina en PISA 2012: ¿Cómo le fue a la región?",
             "All the time downloads": 20,
@@ -9412,7 +9412,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "EDU",
+            "division_codes": "EDU",
             "Rank All Downloads": 6,
             "Title": "Energize: Lesson Plans for Children and Youth",
             "All the time downloads": 17,
@@ -9441,7 +9441,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "EDU",
+            "division_codes": "EDU",
             "Rank All Downloads": 7,
             "Title": "All Children Count: Early Mathematics and Science Education in Latin America and the Caribbean: Overview report",
             "All the time downloads": 15,
@@ -9472,7 +9472,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "EDU",
+            "division_codes": "EDU",
             "Rank All Downloads": 8,
             "Title": "Energy Savings, Efficient Use, and Alternative Technologies",
             "All the time downloads": 14,
@@ -9503,7 +9503,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "EDU",
+            "division_codes": "EDU",
             "Rank All Downloads": 9,
             "Title": "Learning in 21st Century Schools: Toward School Buildings That Promote Learning Ensure Safety, and Protect the Environment",
             "All the time downloads": 13,
@@ -9534,7 +9534,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "EDU",
+            "division_codes": "EDU",
             "Rank All Downloads": 10,
             "Title": "Managing Risk in the School",
             "All the time downloads": 13,
@@ -9562,7 +9562,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ENE",
+            "division_codes": "ENE",
             "Rank All Downloads": 1,
             "Title": "Generación de electricidad a partir de biogás capturado de residuos sólidos urbanos: Un análisis teórico-práctico",
             "All the time downloads": 41,
@@ -9593,7 +9593,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ENE",
+            "division_codes": "ENE",
             "Rank All Downloads": 2,
             "Title": "Emprendimiento de la energía geotérmica en Colombia",
             "All the time downloads": 22,
@@ -9624,7 +9624,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ENE",
+            "division_codes": "ENE",
             "Rank All Downloads": 3,
             "Title": "Solar Thermal Energy: Let the sunshine in! A renewable source for industrial processes",
             "All the time downloads": 20,
@@ -9655,7 +9655,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ENE",
+            "division_codes": "ENE",
             "Rank All Downloads": 4,
             "Title": "Geothermal Energy: A Sustainable Source of Power",
             "All the time downloads": 16,
@@ -9686,7 +9686,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ENE",
+            "division_codes": "ENE",
             "Rank All Downloads": 5,
             "Title": "Analysis of the impact of increased Non-Conventional Renewable Energy generation on Latin American Electric Power Systems",
             "All the time downloads": 15,
@@ -9716,7 +9716,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ENE",
+            "division_codes": "ENE",
             "Rank All Downloads": 6,
             "Title": "Beneficios para la sociedad de la adopción de fuentes renovables de energía en América Latina y el Caribe",
             "All the time downloads": 14,
@@ -9740,7 +9740,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ENE",
+            "division_codes": "ENE",
             "Rank All Downloads": 7,
             "Title": "Transparent Governance in an Age of Abundance: Experiences from the Extractive Industries in Latin America and the Caribbean",
             "All the time downloads": 12,
@@ -9769,7 +9769,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ENE",
+            "division_codes": "ENE",
             "Rank All Downloads": 8,
             "Title": "Variable Renewable Energies and Their Contribution to Energy Security: Complementarity in Colombia",
             "All the time downloads": 9,
@@ -9800,7 +9800,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ENE",
+            "division_codes": "ENE",
             "Rank All Downloads": 9,
             "Title": "Power Lost: Sizing Electricity Losses in Transmission and Distribution Systems in Latin America and the Caribbean",
             "All the time downloads": 9,
@@ -9831,7 +9831,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ENE",
+            "division_codes": "ENE",
             "Rank All Downloads": 10,
             "Title": "The Energy Sector in Belize",
             "All the time downloads": 8,
@@ -9862,7 +9862,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ESG",
+            "division_codes": "ESG",
             "Rank All Downloads": 1,
             "Title": "Social Impact Assessment: Integrating Social Issues in Development Projects",
             "All the time downloads": 17,
@@ -9893,7 +9893,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ESG",
+            "division_codes": "ESG",
             "Rank All Downloads": 2,
             "Title": "El cambio climático y los recursos hídricos en los Andes tropicales",
             "All the time downloads": 14,
@@ -9924,7 +9924,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ESG",
+            "division_codes": "ESG",
             "Rank All Downloads": 3,
             "Title": "Inter-American Development Bank Sustainability Report 2014",
             "All the time downloads": 9,
@@ -9951,7 +9951,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ESG",
+            "division_codes": "ESG",
             "Rank All Downloads": 4,
             "Title": "Inter-American Development Bank Sustainability Report 2015",
             "All the time downloads": 8,
@@ -9975,7 +9975,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ESG",
+            "division_codes": "ESG",
             "Rank All Downloads": 5,
             "Title": "Greenhouse Gas Emissions from New Petrochemical Plants Background Information Paper for the Elaboration of Technical Notes and Guidelines for IDB Projects",
             "All the time downloads": 7,
@@ -10006,7 +10006,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ESG",
+            "division_codes": "ESG",
             "Rank All Downloads": 6,
             "Title": "Inter-American Development Bank Sustainability Report 2013",
             "All the time downloads": 7,
@@ -10019,7 +10019,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ESG",
+            "division_codes": "ESG",
             "Rank All Downloads": 7,
             "Title": "Good Practices for Biodiversity Inclusive Impact Assessment and Management Planning",
             "All the time downloads": 6,
@@ -10049,7 +10049,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ESG",
+            "division_codes": "ESG",
             "Rank All Downloads": 8,
             "Title": "Meaningful Stakeholder Consultation",
             "All the time downloads": 5,
@@ -10080,7 +10080,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ESG",
+            "division_codes": "ESG",
             "Rank All Downloads": 9,
             "Title": "Guidance for Assessing and Managing Biodiversity Impacts and Risks in Inter-American Development Bank Supported Operations",
             "All the time downloads": 5,
@@ -10111,7 +10111,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ESG",
+            "division_codes": "ESG",
             "Rank All Downloads": 10,
             "Title": "Climate Change Data and Risk Assessment Methodologies for the Caribbean",
             "All the time downloads": 4,
@@ -10134,7 +10134,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "EUR",
+            "division_codes": "EUR",
             "Rank All Downloads": 1,
             "Title": "Multilatinas to Global Latinas: The New Latin American Multinationals",
             "All the time downloads": 8,
@@ -10163,7 +10163,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "EUR",
+            "division_codes": "EUR",
             "Rank All Downloads": 2,
             "Title": "Foreign Direct Investment in Latin America: The Role of European Investors",
             "All the time downloads": 1,
@@ -10194,7 +10194,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "EUR",
+            "division_codes": "EUR",
             "Rank All Downloads": 3,
             "Title": "Foreign Direct Investment in Latin America: Perspectives of the Major Investors",
             "All the time downloads": 474,
@@ -10203,7 +10203,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "EUR",
+            "division_codes": "EUR",
             "Rank All Downloads": 4,
             "Title": "An Unequal Democracy?: Seeing Latin America through European Eyes",
             "All the time downloads": 383,
@@ -10216,7 +10216,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "FHL",
+            "division_codes": "FHL",
             "Rank All Downloads": 1,
             "Title": "El uso de datos masivos y sus técnicas analíticas para el diseño e implementación de políticas públicas en Latinoamérica y el Caribe",
             "All the time downloads": 3,
@@ -10247,7 +10247,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "FHL",
+            "division_codes": "FHL",
             "Rank All Downloads": 2,
             "Title": "Using Big Data and its Analytical Techniques for Public Policy Design and Implementation in Latin America and the Caribbean",
             "All the time downloads": 1,
@@ -10276,7 +10276,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "FHL",
+            "division_codes": "FHL",
             "Rank All Downloads": 3,
             "Title": "Cambio tecnológico en la industria metalmecánica latinoamericana: Resultados de un programa de estudios de casos",
             "All the time downloads": 845,
@@ -10292,7 +10292,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "FHL",
+            "division_codes": "FHL",
             "Rank All Downloads": 4,
             "Title": "Etapas históricas y conductas tecnológicas en una planta Argentina de máquinas herramienta",
             "All the time downloads": 712,
@@ -10307,7 +10307,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "FHL",
+            "division_codes": "FHL",
             "Rank All Downloads": 5,
             "Title": "Cambio tecnológico en la firma Distral S.A. fabricante de calderas y equipos de presión",
             "All the time downloads": 495,
@@ -10318,7 +10318,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "FHL",
+            "division_codes": "FHL",
             "Rank All Downloads": 6,
             "Title": "Domestic Technology Generation in LDCs: A Review of Research Findings",
             "All the time downloads": 393,
@@ -10328,7 +10328,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "FHL",
+            "division_codes": "FHL",
             "Rank All Downloads": 7,
             "Title": "Programa de Investigaciones sobre Desarrollo Científico y Tecnológico en América Latina: Monografía de Trabajo: No. 52:  Julio, 1982: Cambio tecnológico en la industria Venezolana de maquinaria agrícola: Estudios de caso",
             "All the time downloads": 369,
@@ -10338,7 +10338,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "FHL",
+            "division_codes": "FHL",
             "Rank All Downloads": 8,
             "Title": "Steelplant Technological Development in Latin America: A Comparative Study of the Selection and Upgrading of Technology in Plants in Argentina, Brasil, Colombia, Mexico and Peru",
             "All the time downloads": 330,
@@ -10347,7 +10347,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "FHL",
+            "division_codes": "FHL",
             "Rank All Downloads": 9,
             "Title": "Análisis de la trayectoria de una planta automotriz en Colombia: El caso de SOFASA",
             "All the time downloads": 248,
@@ -10360,7 +10360,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "FHL",
+            "division_codes": "FHL",
             "Rank All Downloads": 10,
             "Title": "Un estudio sobre el cambio tecnológico de una empresa Mexicana productora de maquinaria para molinos",
             "All the time downloads": 214,
@@ -10372,7 +10372,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "FMM",
+            "division_codes": "FMM",
             "Rank All Downloads": 1,
             "Title": "Panorama de las Administraciones Públicas: América Latina y el Caribe 2017",
             "All the time downloads": 103,
@@ -10403,7 +10403,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "FMM",
+            "division_codes": "FMM",
             "Rank All Downloads": 2,
             "Title": "Public Financial Management in Latin America: The Key to Efficiency and Transparency",
             "All the time downloads": 37,
@@ -10434,7 +10434,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "FMM",
+            "division_codes": "FMM",
             "Rank All Downloads": 3,
             "Title": "International Case Studies of Smart Cities: Singapore, Republic of Singapore",
             "All the time downloads": 24,
@@ -10465,7 +10465,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "FMM",
+            "division_codes": "FMM",
             "Rank All Downloads": 4,
             "Title": "Expandiendo el uso de la valorización del suelo: La captura de plusvalías en América Latina y el Caribe",
             "All the time downloads": 17,
@@ -10495,7 +10495,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "FMM",
+            "division_codes": "FMM",
             "Rank All Downloads": 5,
             "Title": "International Case Studies of Smart Cities: Medellin, Colombia",
             "All the time downloads": 15,
@@ -10526,7 +10526,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "FMM",
+            "division_codes": "FMM",
             "Rank All Downloads": 6,
             "Title": "Decentralizing Revenue in Latin America: Why and How",
             "All the time downloads": 14,
@@ -10555,7 +10555,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "FMM",
+            "division_codes": "FMM",
             "Rank All Downloads": 7,
             "Title": "La eficacia de los incentivos fiscales: El caso de las zonas francas de exportación de Costa Rica, El Salvador y República Dominicana",
             "All the time downloads": 13,
@@ -10586,7 +10586,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "FMM",
+            "division_codes": "FMM",
             "Rank All Downloads": 8,
             "Title": "El potencial oculto: Factores determinantes y oportunidades del impuesto a la propiedad inmobiliaria en América Latina",
             "All the time downloads": 12,
@@ -10611,7 +10611,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "FMM",
+            "division_codes": "FMM",
             "Rank All Downloads": 9,
             "Title": "Slum Upgrading: Lessons Learned from Brazil",
             "All the time downloads": 11,
@@ -10640,7 +10640,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "FMM",
+            "division_codes": "FMM",
             "Rank All Downloads": 10,
             "Title": "Rental Housing Wanted: Options for Expanding Housing Policy",
             "All the time downloads": 11,
@@ -10671,7 +10671,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "FMP",
+            "division_codes": "FMP",
             "Rank All Downloads": 1,
             "Title": "Procurement and Operational Efficiency: An Analysis of How IDB-Financed Projects are Executed",
             "All the time downloads": 3,
@@ -10699,7 +10699,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "FMP",
+            "division_codes": "FMP",
             "Rank All Downloads": 2,
             "Title": "Efficiency and Transparency in the Public Sector: Advances in Public Procurement in Latin America and the Caribbean (2002-2012)",
             "All the time downloads": 2,
@@ -10720,7 +10720,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "FMP",
+            "division_codes": "FMP",
             "Rank All Downloads": 3,
             "Title": "Innovation in the Methods of Public Procurement in Latin America and The Caribbean: Case studies",
             "All the time downloads": 2,
@@ -10749,7 +10749,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "FMP",
+            "division_codes": "FMP",
             "Rank All Downloads": 4,
             "Title": "Transparency and Confidence in the Public Sector: Advances in Supreme Audit Institutions in Latin America and the Caribbean (2002-2012)",
             "All the time downloads": 1,
@@ -10765,7 +10765,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "FMP",
+            "division_codes": "FMP",
             "Rank All Downloads": 5,
             "Title": "Green Procurement: How to Encourage Green Procurement Practices in IDB Funded Projects?",
             "All the time downloads": 172,
@@ -10787,7 +10787,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "GCM",
+            "division_codes": "GCM",
             "Rank All Downloads": 1,
             "Title": "Impactful Innovations: Lessons from Family Agriculture on Adaptation to Climate Change in Latin America and the Caribbean",
             "All the time downloads": 686,
@@ -10801,7 +10801,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "GCM",
+            "division_codes": "GCM",
             "Rank All Downloads": 2,
             "Title": "Anticorruption Activities Trust Fund: Report on Preparatory Activities",
             "All the time downloads": 610,
@@ -10817,7 +10817,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "GCM",
+            "division_codes": "GCM",
             "Rank All Downloads": 3,
             "Title": "Japan Special Fund and Japanese Trust Fund for Consultancy Services Annual Report 2003",
             "All the time downloads": 417,
@@ -10835,7 +10835,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "GCM",
+            "division_codes": "GCM",
             "Rank All Downloads": 4,
             "Title": "Promoción de la Equidad de Género en la Educación Básica: Guía de Recursos para la Igualdad de Género",
             "All the time downloads": 318,
@@ -10856,7 +10856,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "GCM",
+            "division_codes": "GCM",
             "Rank All Downloads": 5,
             "Title": "Japan Special Fund and Japanese Trust Fund for Consultancy Services Annual Report 2008",
             "All the time downloads": 311,
@@ -10866,7 +10866,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "GCM",
+            "division_codes": "GCM",
             "Rank All Downloads": 6,
             "Title": "Promoción de la Equidad de Género en la Educación Básica: Programa Multifase para la Equidad de la Educación Básica: República Dominicana",
             "All the time downloads": 298,
@@ -10878,7 +10878,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "GCM",
+            "division_codes": "GCM",
             "Rank All Downloads": 7,
             "Title": "Japan Special Fund and Japanese Trust Fund for Consultancy Services Annual Report 2007",
             "All the time downloads": 224,
@@ -10890,7 +10890,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "GCM",
+            "division_codes": "GCM",
             "Rank All Downloads": 8,
             "Title": "Evaluación proyecto equidad de género",
             "All the time downloads": 197,
@@ -10904,7 +10904,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "GCM",
+            "division_codes": "GCM",
             "Rank All Downloads": 9,
             "Title": "Proyecto ¿Promoción de la Equidad de Género en la Educación Básica: Cuaderno de Unidaded Didacticas para la Iqualdad: Programa Multifase para la Equidad de la Educación Básica",
             "All the time downloads": 188,
@@ -10913,7 +10913,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "GCM",
+            "division_codes": "GCM",
             "Rank All Downloads": 10,
             "Title": "Manual del Ciudadano Final - NSI - AR-T1044",
             "All the time downloads": 184,
@@ -10924,7 +10924,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "GDI",
+            "division_codes": "GDI",
             "Rank All Downloads": 1,
             "Title": "Programa P Bolivia: Un manual para la paternidad activa",
             "All the time downloads": 9,
@@ -10954,7 +10954,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "GDI",
+            "division_codes": "GDI",
             "Rank All Downloads": 2,
             "Title": "Social, racial and gender profile of the 500 largest Brazilian companies",
             "All the time downloads": 6,
@@ -10983,7 +10983,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "GDI",
+            "division_codes": "GDI",
             "Rank All Downloads": 3,
             "Title": "Adolescent Relationship Violence in Brazil and Honduras: Executive Summary",
             "All the time downloads": 4,
@@ -11002,7 +11002,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "GDI",
+            "division_codes": "GDI",
             "Rank All Downloads": 4,
             "Title": "Marco conceptual y operativo del Programa de Servicios Integrados para el Empoderamiento de la Mujer",
             "All the time downloads": 4,
@@ -11031,7 +11031,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "GDI",
+            "division_codes": "GDI",
             "Rank All Downloads": 5,
             "Title": "Partidos politicos y paridad: Un desafio de la democracia en América Latina",
             "All the time downloads": 4,
@@ -11056,7 +11056,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "GDI",
+            "division_codes": "GDI",
             "Rank All Downloads": 6,
             "Title": "Pueblos indígenas y Programas de Transferencias Condicionadas (PTC): Estudio etnográfico sobre la implementación y los efectos socioculturales del Programa Juntos en seis comunidades andinas y amazónicas de Perú",
             "All the time downloads": 3,
@@ -11078,7 +11078,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "GDI",
+            "division_codes": "GDI",
             "Rank All Downloads": 7,
             "Title": "Experiencia de investigación de la violencia contra las mujeres en poblaciones indígenas: Desafíos y recomendaciones",
             "All the time downloads": 3,
@@ -11105,7 +11105,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "GDI",
+            "division_codes": "GDI",
             "Rank All Downloads": 8,
             "Title": "Mainstreaming Gender in Rural Development Projects in Latin America and the Caribbean",
             "All the time downloads": 2,
@@ -11129,7 +11129,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "GDI",
+            "division_codes": "GDI",
             "Rank All Downloads": 9,
             "Title": "Evaluación de impacto del Proyecto Ciudad Mujer en El Salvador",
             "All the time downloads": 1,
@@ -11154,7 +11154,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "GDI",
+            "division_codes": "GDI",
             "Rank All Downloads": 10,
             "Title": "La igualdad de género en la modernización de la Administración de Justicia",
             "All the time downloads": 1,
@@ -11172,7 +11172,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "HUD",
+            "division_codes": "HUD",
             "Rank All Downloads": 1,
             "Title": "The Road toward Smart Cities: Migrating from Traditional City Management to the Smart City",
             "All the time downloads": 96,
@@ -11203,7 +11203,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "HUD",
+            "division_codes": "HUD",
             "Rank All Downloads": 2,
             "Title": "Ciclo-inclusión en América Latina y el Caribe: Guía para impulsar el uso de la bicicleta",
             "All the time downloads": 45,
@@ -11234,7 +11234,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "HUD",
+            "division_codes": "HUD",
             "Rank All Downloads": 3,
             "Title": "Mega-Cities & Infrastructure in Latin America: What its people think",
             "All the time downloads": 38,
@@ -11265,7 +11265,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "HUD",
+            "division_codes": "HUD",
             "Rank All Downloads": 4,
             "Title": "Rental Housing Wanted: Policy Options for Latin America and the Caribbean",
             "All the time downloads": 26,
@@ -11296,7 +11296,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "HUD",
+            "division_codes": "HUD",
             "Rank All Downloads": 5,
             "Title": "De ciudades emergentes a ciudades sostenibles",
             "All the time downloads": 23,
@@ -11327,7 +11327,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "HUD",
+            "division_codes": "HUD",
             "Rank All Downloads": 6,
             "Title": "Downtown Poverty: Methods of Analysis and Interventions: A Sourcebook for Practitioners",
             "All the time downloads": 18,
@@ -11358,7 +11358,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "HUD",
+            "division_codes": "HUD",
             "Rank All Downloads": 7,
             "Title": "The Potential of Land Value Capture for Financing Urban Projects: Methodological Considerations and Case Studies",
             "All the time downloads": 15,
@@ -11388,7 +11388,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "HUD",
+            "division_codes": "HUD",
             "Rank All Downloads": 8,
             "Title": "¡A todo pedal!: Guía para construir ciudades ciclo-inclusivas en América Latina y el Caribe",
             "All the time downloads": 13,
@@ -11415,7 +11415,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "HUD",
+            "division_codes": "HUD",
             "Rank All Downloads": 9,
             "Title": "Guía Metodológica Programa de Ciudades Emergentes y Sostenibles: Tercera edición",
             "All the time downloads": 12,
@@ -11446,7 +11446,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "HUD",
+            "division_codes": "HUD",
             "Rank All Downloads": 10,
             "Title": "Voces emergentes: Percepciones sobre la calidad de vida urbana en América Latina y el Caribe",
             "All the time downloads": 12,
@@ -11477,7 +11477,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ICD",
+            "division_codes": "ICD",
             "Rank All Downloads": 1,
             "Title": "Economía creativa en América Latina y el Caribe: Mediciones y desafíos",
             "All the time downloads": 3,
@@ -11508,7 +11508,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ICS",
+            "division_codes": "ICS",
             "Rank All Downloads": 1,
             "Title": "The Costs of Crime and Violence: New Evidence and Insights in Latin America and the Caribbean",
             "All the time downloads": 55,
@@ -11539,7 +11539,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ICS",
+            "division_codes": "ICS",
             "Rank All Downloads": 2,
             "Title": "Cybersecurity: Are We Ready in Latin America and the Caribbean?",
             "All the time downloads": 52,
@@ -11570,7 +11570,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ICS",
+            "division_codes": "ICS",
             "Rank All Downloads": 3,
             "Title": "Building Effective Governments: Achievements and Challenges for Results-Based Public Administration in Latin America and the Caribbean",
             "All the time downloads": 36,
@@ -11601,7 +11601,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ICS",
+            "division_codes": "ICS",
             "Rank All Downloads": 4,
             "Title": "Governments that Serve: Innovations that Improve Service Delivery to Citizens",
             "All the time downloads": 33,
@@ -11632,7 +11632,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ICS",
+            "division_codes": "ICS",
             "Rank All Downloads": 5,
             "Title": "Wait No More: Citizens, Red Tape, and Digital Government",
             "All the time downloads": 26,
@@ -11663,7 +11663,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ICS",
+            "division_codes": "ICS",
             "Rank All Downloads": 6,
             "Title": "Serving Citizens: A Decade of Civil Service Reforms in Latin America (2004-13)",
             "All the time downloads": 25,
@@ -11693,7 +11693,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ICS",
+            "division_codes": "ICS",
             "Rank All Downloads": 7,
             "Title": "The Welfare Costs of Crime and Violence in Latin America and the Caribbean",
             "All the time downloads": 24,
@@ -11723,7 +11723,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ICS",
+            "division_codes": "ICS",
             "Rank All Downloads": 8,
             "Title": "Managing for Development Results: Progress and Challenges in Latin America and the Caribbean",
             "All the time downloads": 13,
@@ -11750,7 +11750,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ICS",
+            "division_codes": "ICS",
             "Rank All Downloads": 9,
             "Title": "Governing to Deliver: Reinventing the Center of Government in Latin America and the Caribbean",
             "All the time downloads": 12,
@@ -11781,7 +11781,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ICS",
+            "division_codes": "ICS",
             "Rank All Downloads": 10,
             "Title": "Big Data in the Public Sector: Selected Applications and Lessons Learned",
             "All the time downloads": 12,
@@ -11812,7 +11812,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "IFD",
+            "division_codes": "IFD",
             "Rank All Downloads": 1,
             "Title": "Crime and Violence in Jamaica: IDB Series on Crime and Violence in the Caribbean",
             "All the time downloads": 60,
@@ -11843,7 +11843,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "IFD",
+            "division_codes": "IFD",
             "Rank All Downloads": 2,
             "Title": "Crime and Violence in Trinidad and Tobago: IDB Series on Crime and Violence in the Caribbean",
             "All the time downloads": 58,
@@ -11874,7 +11874,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "IFD",
+            "division_codes": "IFD",
             "Rank All Downloads": 3,
             "Title": "Gestión de riesgos en cadenas de valor: Guía para el diseño de programas",
             "All the time downloads": 10,
@@ -11893,7 +11893,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "IFD",
+            "division_codes": "IFD",
             "Rank All Downloads": 4,
             "Title": "Tourism Policy, a Big Push to Employment: Evidence from a Multiple Synthetic Control Approach",
             "All the time downloads": 6,
@@ -11916,7 +11916,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "IFD",
+            "division_codes": "IFD",
             "Rank All Downloads": 5,
             "Title": "Development Effectiveness and Results-Based Budgeting",
             "All the time downloads": 6,
@@ -11947,7 +11947,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "IFD",
+            "division_codes": "IFD",
             "Rank All Downloads": 6,
             "Title": "Remittances and the Impact on Crime in Mexico",
             "All the time downloads": 5,
@@ -11973,7 +11973,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "IFD",
+            "division_codes": "IFD",
             "Rank All Downloads": 7,
             "Title": "Leading from the Center: Pernambuco's Management Model",
             "All the time downloads": 3,
@@ -11999,7 +11999,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "IFD",
+            "division_codes": "IFD",
             "Rank All Downloads": 8,
             "Title": "Informe sobre la situación del servicio civil en América Latina",
             "All the time downloads": 3,
@@ -12027,7 +12027,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "IFD",
+            "division_codes": "IFD",
             "Rank All Downloads": 9,
             "Title": "Estudio comparativo de estadísticas de empleo público en 26 países de América Latina y el Caribe",
             "All the time downloads": 3,
@@ -12052,7 +12052,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "IFD",
+            "division_codes": "IFD",
             "Rank All Downloads": 10,
             "Title": "Las instituciones fiscales del mañana",
             "All the time downloads": 3,
@@ -12070,7 +12070,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "INE",
+            "division_codes": "INE",
             "Rank All Downloads": 1,
             "Title": "Mega-Cities & Infrastructure in Latin America: What its people think",
             "All the time downloads": 38,
@@ -12101,7 +12101,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "INE",
+            "division_codes": "INE",
             "Rank All Downloads": 2,
             "Title": "Financing Infrastructure in Latin America and the Caribbean: How, How Much and by Whom?",
             "All the time downloads": 38,
@@ -12132,7 +12132,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "INE",
+            "division_codes": "INE",
             "Rank All Downloads": 3,
             "Title": "Tasa de descuento social y evaluación de proyectos: algunas reflexiones prácticas para América Latina y el Caribe",
             "All the time downloads": 20,
@@ -12160,7 +12160,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "INE",
+            "division_codes": "INE",
             "Rank All Downloads": 4,
             "Title": "Infrastructure and Export Performance in the Pacific Alliance",
             "All the time downloads": 17,
@@ -12191,7 +12191,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "INE",
+            "division_codes": "INE",
             "Rank All Downloads": 5,
             "Title": "Sustainable infrastructure for competitiveness and inclusive growth",
             "All the time downloads": 16,
@@ -12222,7 +12222,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "INE",
+            "division_codes": "INE",
             "Rank All Downloads": 6,
             "Title": "¡A todo pedal!: Guía para construir ciudades ciclo-inclusivas en América Latina y el Caribe",
             "All the time downloads": 13,
@@ -12249,7 +12249,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "INE",
+            "division_codes": "INE",
             "Rank All Downloads": 7,
             "Title": "¿Los teleféricos como alternativa de transporte urbano?: Ahorros de tiempo en el sistema de teleférico urbano más grande del mundo: La Paz-El Alto (Bolivia)",
             "All the time downloads": 11,
@@ -12280,7 +12280,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "INE",
+            "division_codes": "INE",
             "Rank All Downloads": 8,
             "Title": "An Overview of the Brazilian PPP Experience from a Stakeholders' Viewpoint",
             "All the time downloads": 7,
@@ -12310,7 +12310,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "INE",
+            "division_codes": "INE",
             "Rank All Downloads": 9,
             "Title": "Tourism Policy, a Big Push to Employment: Evidence from a Multiple Synthetic Control Approach",
             "All the time downloads": 6,
@@ -12333,7 +12333,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "INE",
+            "division_codes": "INE",
             "Rank All Downloads": 10,
             "Title": "Lights On?: Energy Needs in Latin America and the Caribbean to 2040",
             "All the time downloads": 6,
@@ -12363,7 +12363,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "INL",
+            "division_codes": "INL",
             "Rank All Downloads": 1,
             "Title": "Integration and Trade Journal: Volume 21: No. 42: August, 2017: Robot-lución: The future of work in Latin American Integration 4.0",
             "All the time downloads": 41,
@@ -12394,7 +12394,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "INL",
+            "division_codes": "INL",
             "Rank All Downloads": 2,
             "Title": "Industria 4.0: Fabricando el Futuro",
             "All the time downloads": 38,
@@ -12425,7 +12425,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "INL",
+            "division_codes": "INL",
             "Rank All Downloads": 3,
             "Title": "Integration and Trade Journal: Volume 22: No. 44: July, 2018: Planet Algorithm: Artificial Intelligence for a Predictive and Inclusive form of Integration in Latin America",
             "All the time downloads": 33,
@@ -12456,7 +12456,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "INL",
+            "division_codes": "INL",
             "Rank All Downloads": 4,
             "Title": "Compás Millennial: La generación Y en la era de la integración 4.0",
             "All the time downloads": 25,
@@ -12487,7 +12487,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "INL",
+            "division_codes": "INL",
             "Rank All Downloads": 5,
             "Title": "Techno-integration of Latin America: institutions, exponential trade, and equality in the era of algorithms",
             "All the time downloads": 19,
@@ -12518,7 +12518,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "INL",
+            "division_codes": "INL",
             "Rank All Downloads": 6,
             "Title": "Informe MERCOSUR N° 20 (2014-2015) Segundo Semestre 2014 - Primer Semestre 2015",
             "All the time downloads": 19,
@@ -12548,7 +12548,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "INL",
+            "division_codes": "INL",
             "Rank All Downloads": 7,
             "Title": "Informe MERCOSUR No 19 (2013-2014) Segundo Semestre 2013 - Primer Semestre 2014",
             "All the time downloads": 15,
@@ -12574,7 +12574,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "INL",
+            "division_codes": "INL",
             "Rank All Downloads": 8,
             "Title": "The DNA of Regional Integration: Latin American's Views on High Quality Convergence Innovation Equality and Care for the Environment",
             "All the time downloads": 15,
@@ -12600,7 +12600,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "INL",
+            "division_codes": "INL",
             "Rank All Downloads": 9,
             "Title": "Informe MERCOSUR No 21 (2015-2016) Segundo semestre 2015 - Primer semestre 2016",
             "All the time downloads": 12,
@@ -12630,7 +12630,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "INL",
+            "division_codes": "INL",
             "Rank All Downloads": 10,
             "Title": "La negociación MERCOSUR-Unión Europea a veinte años del acuerdo marco de cooperación: Quo vadis?",
             "All the time downloads": 10,
@@ -12661,7 +12661,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "INT",
+            "division_codes": "INT",
             "Rank All Downloads": 1,
             "Title": "The Next Global Breadbasket: How Latin America Can Feed the World: A Call to Action for Addressing Challenges & Developing Solutions",
             "All the time downloads": 76,
@@ -12691,7 +12691,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "INT",
+            "division_codes": "INT",
             "Rank All Downloads": 2,
             "Title": "Trade Trend Estimates: Latin America and the Caribbean - 2017 Edition",
             "All the time downloads": 32,
@@ -12722,7 +12722,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "INT",
+            "division_codes": "INT",
             "Rank All Downloads": 3,
             "Title": "Fábricas sincronizadas: América Latina y el Caribe en la era de las Cadenas Globales de Valor",
             "All the time downloads": 23,
@@ -12753,7 +12753,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "INT",
+            "division_codes": "INT",
             "Rank All Downloads": 4,
             "Title": "Progress, Poverty and Exclusion: An Economic History of Latin America in the 20th Century",
             "All the time downloads": 22,
@@ -12784,7 +12784,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "INT",
+            "division_codes": "INT",
             "Rank All Downloads": 5,
             "Title": "Latin American Trade Trends - Update 1Q 2016",
             "All the time downloads": 21,
@@ -12815,7 +12815,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "INT",
+            "division_codes": "INT",
             "Rank All Downloads": 6,
             "Title": "Trade Trend Estimates Latin America and the Caribbean - 2018 Edition",
             "All the time downloads": 19,
@@ -12846,7 +12846,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "INT",
+            "division_codes": "INT",
             "Rank All Downloads": 7,
             "Title": "Infrastructure and Export Performance in the Pacific Alliance",
             "All the time downloads": 17,
@@ -12877,7 +12877,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "INT",
+            "division_codes": "INT",
             "Rank All Downloads": 8,
             "Title": "Latin American Trade Trends 2014 - Update 1Q 2015",
             "All the time downloads": 15,
@@ -12898,7 +12898,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "INT",
+            "division_codes": "INT",
             "Rank All Downloads": 9,
             "Title": "LAC Investment in China: A New Chapter in Latin America and the Caribbean-China Relations",
             "All the time downloads": 14,
@@ -12927,7 +12927,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "INT",
+            "division_codes": "INT",
             "Rank All Downloads": 10,
             "Title": "Trade and Integration Monitor 2015: Double-Dip: Latin America and the Caribbean Facing the Contraction of World Trade",
             "All the time downloads": 12,
@@ -12957,7 +12957,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ITE",
+            "division_codes": "ITE",
             "Rank All Downloads": 1,
             "Title": "Blockchain: How to Develop Trust in Complex Surroundings to Generate Social Impact Value",
             "All the time downloads": 6,
@@ -12988,7 +12988,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ITE",
+            "division_codes": "ITE",
             "Rank All Downloads": 2,
             "Title": "Electronic Commerce and Development Implications for IDB Actions",
             "All the time downloads": 284,
@@ -12999,7 +12999,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "KIC",
+            "division_codes": "KIC",
             "Rank All Downloads": 1,
             "Title": "The Orange Economy: An Infinite Opportunity",
             "All the time downloads": 400,
@@ -13030,7 +13030,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "KIC",
+            "division_codes": "KIC",
             "Rank All Downloads": 2,
             "Title": "Pautas para la elaboración de estudios de caso",
             "All the time downloads": 197,
@@ -13061,7 +13061,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "KIC",
+            "division_codes": "KIC",
             "Rank All Downloads": 3,
             "Title": "FINTECH:  Innovations You May Not Know were from Latin America and the Caribbean",
             "All the time downloads": 52,
@@ -13092,7 +13092,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "KIC",
+            "division_codes": "KIC",
             "Rank All Downloads": 4,
             "Title": "Inter-American Development Bank Annual Report 2017: The Year in Review",
             "All the time downloads": 36,
@@ -13123,7 +13123,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "KIC",
+            "division_codes": "KIC",
             "Rank All Downloads": 5,
             "Title": "Latin America and the Caribbean 2030: Future Scenarios",
             "All the time downloads": 31,
@@ -13154,7 +13154,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "KIC",
+            "division_codes": "KIC",
             "Rank All Downloads": 6,
             "Title": "Inter-American Development Bank Annual Report 2016: The Year in Review",
             "All the time downloads": 25,
@@ -13185,7 +13185,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "KIC",
+            "division_codes": "KIC",
             "Rank All Downloads": 7,
             "Title": "Inter-American Development Bank Annual Report 2014: The Year in Review",
             "All the time downloads": 22,
@@ -13210,7 +13210,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "KIC",
+            "division_codes": "KIC",
             "Rank All Downloads": 8,
             "Title": "Inter-American Development Bank Annual Report 2013: The Year in Review",
             "All the time downloads": 17,
@@ -13235,7 +13235,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "KIC",
+            "division_codes": "KIC",
             "Rank All Downloads": 9,
             "Title": "Graduate XXI: Un mapa del futuro: Cincuenta innovaciones educativas en América Latina",
             "All the time downloads": 16,
@@ -13263,7 +13263,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "KIC",
+            "division_codes": "KIC",
             "Rank All Downloads": 10,
             "Title": "Inter-American Development Bank Annual Report 2012: The Year in Review",
             "All the time downloads": 16,
@@ -13286,7 +13286,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "KNM",
+            "division_codes": "KNM",
             "Rank All Downloads": 1,
             "Title": "Lecciones aprendidas",
             "All the time downloads": 11,
@@ -13314,7 +13314,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "KNM",
+            "division_codes": "KNM",
             "Rank All Downloads": 2,
             "Title": "Creating Fiscal Space for Poverty Reduction in Ecuador: A Fiscal Management and Public Expenditure Review",
             "All the time downloads": 1,
@@ -13330,7 +13330,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "KNM",
+            "division_codes": "KNM",
             "Rank All Downloads": 3,
             "Title": "Pautas para la realización de \"after action reviews\" o reuniones de reflexión después de la acción",
             "All the time downloads": 1,
@@ -13354,7 +13354,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "KNM",
+            "division_codes": "KNM",
             "Rank All Downloads": 4,
             "Title": "PATCA: Una experiencia positiva de apoyo mediante financiamiento parcial no reembolsable para la adopción de nuevas tecnologías agropecuarias",
             "All the time downloads": 1,
@@ -13366,7 +13366,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "KNM",
+            "division_codes": "KNM",
             "Rank All Downloads": 5,
             "Title": "Analysis of Experiences in Trade and Investment between LAC and Korea: Lessons Learned in Development",
             "All the time downloads": 817,
@@ -13388,7 +13388,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "KNM",
+            "division_codes": "KNM",
             "Rank All Downloads": 6,
             "Title": "Experiencia piloto de subvención de la demanda a través de vouchers para facilitar el acceso a insumos agrícolas en Haití",
             "All the time downloads": 762,
@@ -13398,7 +13398,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "KNM",
+            "division_codes": "KNM",
             "Rank All Downloads": 7,
             "Title": "Apuntes sobre liderazgo",
             "All the time downloads": 745,
@@ -13411,7 +13411,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "KNM",
+            "division_codes": "KNM",
             "Rank All Downloads": 8,
             "Title": "Apoyando a Adecoagro: Innovación y prácticas sostenibles de agricultura en Argentina",
             "All the time downloads": 650,
@@ -13420,7 +13420,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "KNM",
+            "division_codes": "KNM",
             "Rank All Downloads": 9,
             "Title": "Plataforma Finanzas Carbono, una herramienta de conocimiento e información para la toma de decisiones",
             "All the time downloads": 427,
@@ -13433,7 +13433,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "KNM",
+            "division_codes": "KNM",
             "Rank All Downloads": 10,
             "Title": "Fortalecimiento institucional y de gestión de empresas publicas de Medellín (EPM) basado en la implementación de prácticas de gobierno corporativo",
             "All the time downloads": 372,
@@ -13444,7 +13444,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "LMK",
+            "division_codes": "LMK",
             "Rank All Downloads": 1,
             "Title": "Guide to Workforce Skills Assessment Instruments",
             "All the time downloads": 55,
@@ -13475,7 +13475,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "LMK",
+            "division_codes": "LMK",
             "Rank All Downloads": 2,
             "Title": "Panorama de las Pensiones: América Latina y el Caribe",
             "All the time downloads": 35,
@@ -13506,7 +13506,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "LMK",
+            "division_codes": "LMK",
             "Rank All Downloads": 3,
             "Title": "Jobs for Growth",
             "All the time downloads": 30,
@@ -13537,7 +13537,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "LMK",
+            "division_codes": "LMK",
             "Rank All Downloads": 4,
             "Title": "Better Pensions, Better Jobs: Towards Universal Coverage in Latin America and the Caribbean",
             "All the time downloads": 29,
@@ -13568,7 +13568,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "LMK",
+            "division_codes": "LMK",
             "Rank All Downloads": 5,
             "Title": "The Future of Work: Regional Perspectives",
             "All the time downloads": 26,
@@ -13598,7 +13598,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "LMK",
+            "division_codes": "LMK",
             "Rank All Downloads": 6,
             "Title": "El futuro del trabajo en América Latina y el Caribe: ¿Una gran oportunidad para la región? (versión interactiva)",
             "All the time downloads": 21,
@@ -13629,7 +13629,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "LMK",
+            "division_codes": "LMK",
             "Rank All Downloads": 7,
             "Title": "Apprenticeships for the XXI Century: A Model for Latin America and the Caribbean?",
             "All the time downloads": 13,
@@ -13660,7 +13660,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "LMK",
+            "division_codes": "LMK",
             "Rank All Downloads": 8,
             "Title": "The World of Public Employment Services",
             "All the time downloads": 11,
@@ -13690,7 +13690,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "LMK",
+            "division_codes": "LMK",
             "Rank All Downloads": 9,
             "Title": "Antigüedad en el empleo y rotación laboral en América Latina",
             "All the time downloads": 11,
@@ -13721,7 +13721,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "LMK",
+            "division_codes": "LMK",
             "Rank All Downloads": 10,
             "Title": "How Can Job Opportunities for Young People in Latin America be Improved?",
             "All the time downloads": 8,
@@ -13750,7 +13750,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "MICI",
+            "division_codes": "MICI",
             "Rank All Downloads": 1,
             "Title": "The Independent Consultation and Investigation Mechanism: 2012 Annual Report",
             "All the time downloads": 1,
@@ -13760,7 +13760,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "MICI",
+            "division_codes": "MICI",
             "Rank All Downloads": 2,
             "Title": "2014 Annual Report: Independent Consultation and Investigation Mechanism",
             "All the time downloads": 730,
@@ -13775,7 +13775,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "MIF",
+            "division_codes": "MIF",
             "Rank All Downloads": 1,
             "Title": "The Next Global Breadbasket: How Latin America Can Feed the World: A Call to Action for Addressing Challenges & Developing Solutions",
             "All the time downloads": 76,
@@ -13805,7 +13805,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "MIF",
+            "division_codes": "MIF",
             "Rank All Downloads": 2,
             "Title": "Preparing Informal Recycler Inclusion Plans: An Operational Guide",
             "All the time downloads": 25,
@@ -13836,7 +13836,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "MIF",
+            "division_codes": "MIF",
             "Rank All Downloads": 3,
             "Title": "La responsabilidad social de la empresa en América Latina: Manual de Gestión",
             "All the time downloads": 19,
@@ -13867,7 +13867,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "MIF",
+            "division_codes": "MIF",
             "Rank All Downloads": 4,
             "Title": "Avances y desafíos para el reciclaje inclusivo: Evaluación de 12 ciudades de América Latina y el Caribe",
             "All the time downloads": 12,
@@ -13897,7 +13897,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "MIF",
+            "division_codes": "MIF",
             "Rank All Downloads": 5,
             "Title": "AgroTech: Innovaciones que no sabías que eran de América Latina y el Caribe",
             "All the time downloads": 7,
@@ -13926,7 +13926,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "MIF",
+            "division_codes": "MIF",
             "Rank All Downloads": 6,
             "Title": "Attracting Remittances: Market, Money and Reduced Costs",
             "All the time downloads": 6,
@@ -13956,7 +13956,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "MIF",
+            "division_codes": "MIF",
             "Rank All Downloads": 7,
             "Title": "Beyond Small Change: Making Migrant Remittances Count",
             "All the time downloads": 6,
@@ -13986,7 +13986,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "MIF",
+            "division_codes": "MIF",
             "Rank All Downloads": 8,
             "Title": "Clusters, territorio y desarrollo empresarial: Diferentes modelos de organización productiva",
             "All the time downloads": 6,
@@ -14016,7 +14016,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "MIF",
+            "division_codes": "MIF",
             "Rank All Downloads": 9,
             "Title": "Remittance Recipients in Guatemala: A Socioeconomic Profile",
             "All the time downloads": 5,
@@ -14046,7 +14046,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "MIF",
+            "division_codes": "MIF",
             "Rank All Downloads": 10,
             "Title": "Estimación de costos y beneficios: Una metodologia propuesta para el Programa entra21",
             "All the time downloads": 4,
@@ -14059,7 +14059,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "OII",
+            "division_codes": "OII",
             "Rank All Downloads": 1,
             "Title": "Office of Institutional Integrity Annual Report 2012",
             "All the time downloads": 930,
@@ -14070,7 +14070,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "OII",
+            "division_codes": "OII",
             "Rank All Downloads": 2,
             "Title": "Office of Institutional Integrity and the Sanctions System: Annual Report 2015",
             "All the time downloads": 783,
@@ -14083,7 +14083,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "OII",
+            "division_codes": "OII",
             "Rank All Downloads": 3,
             "Title": "Office of Institutional Integrity and Sanctions System: Annual Report 2014",
             "All the time downloads": 645,
@@ -14098,7 +14098,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "OII",
+            "division_codes": "OII",
             "Rank All Downloads": 4,
             "Title": "Anticorruption Activities Trust Fund: Report on Preparatory Activities",
             "All the time downloads": 610,
@@ -14114,7 +14114,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "OII",
+            "division_codes": "OII",
             "Rank All Downloads": 5,
             "Title": "Office of Institutional Integrity Annual Report 2011",
             "All the time downloads": 308,
@@ -14123,7 +14123,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "OII",
+            "division_codes": "OII",
             "Rank All Downloads": 6,
             "Title": "Office of Institutional Integrity and Sanctions System: Annual Report 2016",
             "All the time downloads": 249,
@@ -14147,7 +14147,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "OII",
+            "division_codes": "OII",
             "Rank All Downloads": 7,
             "Title": "Office of Institutional Integrity Annual Report 2009",
             "All the time downloads": 178,
@@ -14157,7 +14157,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "OII",
+            "division_codes": "OII",
             "Rank All Downloads": 8,
             "Title": "Office of Institutional Integrity Annual Report 2007",
             "All the time downloads": 147,
@@ -14168,7 +14168,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "OII",
+            "division_codes": "OII",
             "Rank All Downloads": 9,
             "Title": "Office of Institutional Integrity Annual Report 2010",
             "All the time downloads": 138,
@@ -14180,7 +14180,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "OII",
+            "division_codes": "OII",
             "Rank All Downloads": 10,
             "Title": "Inter-American Development Bank Oversight Committee on Fraud and Corruption: First Semi-Annual Report",
             "All the time downloads": 73,
@@ -14191,7 +14191,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ORP",
+            "division_codes": "ORP",
             "Rank All Downloads": 1,
             "Title": "The Next Global Breadbasket: How Latin America Can Feed the World: A Call to Action for Addressing Challenges & Developing Solutions",
             "All the time downloads": 76,
@@ -14221,7 +14221,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ORP",
+            "division_codes": "ORP",
             "Rank All Downloads": 2,
             "Title": "Multilatinas to Global Latinas: The New Latin American Multinationals",
             "All the time downloads": 8,
@@ -14250,7 +14250,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ORP",
+            "division_codes": "ORP",
             "Rank All Downloads": 3,
             "Title": "2017 Partnership Report",
             "All the time downloads": 2,
@@ -14278,7 +14278,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ORP",
+            "division_codes": "ORP",
             "Rank All Downloads": 4,
             "Title": "IDB 2015 Partnership Report",
             "All the time downloads": 2,
@@ -14297,7 +14297,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ORP",
+            "division_codes": "ORP",
             "Rank All Downloads": 5,
             "Title": "Bridging Gaps, Building Opportunity: Broadband as a Catalyst of Economic Growth and Social Progress in Latin America and the Caribbean: A View from the Industry",
             "All the time downloads": 2,
@@ -14313,7 +14313,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ORP",
+            "division_codes": "ORP",
             "Rank All Downloads": 6,
             "Title": "2016 Partnership Report",
             "All the time downloads": 1,
@@ -14333,7 +14333,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "ORP",
+            "division_codes": "ORP",
             "Rank All Downloads": 7,
             "Title": "España y el BID: Hacia el desarrollo sostenible en América Latina y el Caribe",
             "All the time downloads": 436,
@@ -14346,7 +14346,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "OVE",
+            "division_codes": "OVE",
             "Rank All Downloads": 1,
             "Title": "Approach paper: Comparative Case Studies: IDB Supported Urban Transport Projects",
             "All the time downloads": 15,
@@ -14377,7 +14377,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "OVE",
+            "division_codes": "OVE",
             "Rank All Downloads": 2,
             "Title": "The Implementation Challenge: Lessons From Five Citizen Security Projects",
             "All the time downloads": 11,
@@ -14406,7 +14406,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "OVE",
+            "division_codes": "OVE",
             "Rank All Downloads": 3,
             "Title": "Evaluation of Public-Private Partnerships in Infrastructure",
             "All the time downloads": 10,
@@ -14436,7 +14436,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "OVE",
+            "division_codes": "OVE",
             "Rank All Downloads": 4,
             "Title": "Study on the Development of the Renewable Energy Market in Latin America and the Caribbean",
             "All the time downloads": 9,
@@ -14465,7 +14465,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "OVE",
+            "division_codes": "OVE",
             "Rank All Downloads": 5,
             "Title": "Comparative Case Studies of Three IDB-supported Urban Transport Projects",
             "All the time downloads": 9,
@@ -14496,7 +14496,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "OVE",
+            "division_codes": "OVE",
             "Rank All Downloads": 6,
             "Title": "Crime and Violence Prevention in Latin America and the Caribbean: Evidence from IDB's Interventions",
             "All the time downloads": 7,
@@ -14527,7 +14527,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "OVE",
+            "division_codes": "OVE",
             "Rank All Downloads": 7,
             "Title": "Climate Change at the IDB: Building Resilience and Reducing Emissions",
             "All the time downloads": 7,
@@ -14555,7 +14555,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "OVE",
+            "division_codes": "OVE",
             "Rank All Downloads": 8,
             "Title": "Land Regularization and Administration Projects: A Comparative Evaluation",
             "All the time downloads": 6,
@@ -14585,7 +14585,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "OVE",
+            "division_codes": "OVE",
             "Rank All Downloads": 9,
             "Title": "IDB-9: IDB Integrated Strategy for Climate Change Adaptation and Mitigation, and Sustainable and Renewable Energy",
             "All the time downloads": 5,
@@ -14610,7 +14610,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "OVE",
+            "division_codes": "OVE",
             "Rank All Downloads": 10,
             "Title": "IDB-9: Review of the IDB Institutions for Growth and Social Welfare Strategy",
             "All the time downloads": 5,
@@ -14637,7 +14637,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "PRE",
+            "division_codes": "PRE",
             "Rank All Downloads": 1,
             "Title": "La década de América Latina y el Caribe, una oportunidad real. 2a edición ampliada",
             "All the time downloads": 2,
@@ -14650,7 +14650,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "PRE",
+            "division_codes": "PRE",
             "Rank All Downloads": 2,
             "Title": "The Decade of Latin America and the Caribbean: A Real Opportunity",
             "All the time downloads": 1,
@@ -14662,7 +14662,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "PRE",
+            "division_codes": "PRE",
             "Rank All Downloads": 3,
             "Title": "Cambio y crecimiento en América Latina 1988-1998: Ideas y acciones",
             "All the time downloads": 320,
@@ -14678,7 +14678,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "PRO",
+            "division_codes": "PRO",
             "Rank All Downloads": 1,
             "Title": "Cleaning Up the Kitchen Sink: On the Consequences of the Linearity Assumption for Cross-Country Growth Empirics",
             "All the time downloads": 140,
@@ -14687,7 +14687,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "RES",
+            "division_codes": "RES",
             "Rank All Downloads": 1,
             "Title": "The Early Years: Child Well-being and the Role of Public Policy",
             "All the time downloads": 91,
@@ -14718,7 +14718,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "RES",
+            "division_codes": "RES",
             "Rank All Downloads": 2,
             "Title": "Learning Better: Public Policy for Skills Development",
             "All the time downloads": 74,
@@ -14749,7 +14749,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "RES",
+            "division_codes": "RES",
             "Rank All Downloads": 3,
             "Title": "Saving for Development: How Latin America and the Caribbean Can Save More and Better",
             "All the time downloads": 58,
@@ -14780,7 +14780,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "RES",
+            "division_codes": "RES",
             "Rank All Downloads": 4,
             "Title": "¿Cómo repensar el desarrollo productivo?: Políticas e instituciones sólidas para la transformación económica",
             "All the time downloads": 42,
@@ -14811,7 +14811,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "RES",
+            "division_codes": "RES",
             "Rank All Downloads": 5,
             "Title": "¿Quiénes deciden la política social? Economía política de programas sociales en América Latina",
             "All the time downloads": 42,
@@ -14842,7 +14842,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "RES",
+            "division_codes": "RES",
             "Rank All Downloads": 6,
             "Title": "The IDB and Technology in Education: How to Promote Effective Programs?",
             "All the time downloads": 38,
@@ -14873,7 +14873,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "RES",
+            "division_codes": "RES",
             "Rank All Downloads": 7,
             "Title": "2018 Latin American and Caribbean Macroeconomic Report: A Mandate to Grow",
             "All the time downloads": 32,
@@ -14904,7 +14904,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "RES",
+            "division_codes": "RES",
             "Rank All Downloads": 8,
             "Title": "2015 Latin American and Caribbean Macroeconomic Report: The Labyrinth: How Can Latin America and the Caribbean Navigate the Global Economy",
             "All the time downloads": 27,
@@ -14934,7 +14934,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "RES",
+            "division_codes": "RES",
             "Rank All Downloads": 9,
             "Title": "2017 Latin American and Caribbean Macroeconomic Report: Routes to Growth in a New Trade World",
             "All the time downloads": 27,
@@ -14965,7 +14965,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "RES",
+            "division_codes": "RES",
             "Rank All Downloads": 10,
             "Title": "Better Spending for Better Lives: How Latin America and the Caribbean Can Do More with Less",
             "All the time downloads": 27,
@@ -14996,7 +14996,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "RMG",
+            "division_codes": "RMG",
             "Rank All Downloads": 1,
             "Title": "The Equity-Financed Enterprise: Sharing Uncertainty to Support Investment",
             "All the time downloads": 139,
@@ -15006,7 +15006,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "RND",
+            "division_codes": "RND",
             "Rank All Downloads": 1,
             "Title": "Water in the Time of Drought: Lessons from Five Droughts around the World",
             "All the time downloads": 26,
@@ -15037,7 +15037,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "RND",
+            "division_codes": "RND",
             "Rank All Downloads": 2,
             "Title": "The Impact of Coastal Infrastructure Improvements on Economic Growth: Evidence from Barbados",
             "All the time downloads": 12,
@@ -15068,7 +15068,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "RND",
+            "division_codes": "RND",
             "Rank All Downloads": 3,
             "Title": "Public Expenditures, Impact Evaluations and Agricultural Productivity: Summary of the Evidence from Latin America and the Caribbean",
             "All the time downloads": 9,
@@ -15097,7 +15097,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "RND",
+            "division_codes": "RND",
             "Rank All Downloads": 4,
             "Title": "Public Expenditures and the Performance of Latin American and Caribbean Agriculture",
             "All the time downloads": 6,
@@ -15127,7 +15127,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "RND",
+            "division_codes": "RND",
             "Rank All Downloads": 5,
             "Title": "Natural Capital and Roads: Managing Dependencies and Impacts on Ecosystem Services for Sustainable Road Investments",
             "All the time downloads": 6,
@@ -15155,7 +15155,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "RND",
+            "division_codes": "RND",
             "Rank All Downloads": 6,
             "Title": "Upscaling Silvopastoral Systems in South America",
             "All the time downloads": 6,
@@ -15186,7 +15186,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "RND",
+            "division_codes": "RND",
             "Rank All Downloads": 7,
             "Title": "Environment and Biodiversity: Priorities for Protecting Natural Capital and Competitiviness in Latin America and the Caribbean",
             "All the time downloads": 4,
@@ -15214,7 +15214,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "RND",
+            "division_codes": "RND",
             "Rank All Downloads": 8,
             "Title": "Agricultural Support Policies in Latin America and the Caribbean: 2018 Review",
             "All the time downloads": 4,
@@ -15245,7 +15245,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "RND",
+            "division_codes": "RND",
             "Rank All Downloads": 9,
             "Title": "Review of Agricultural Support Policies in Latin America and the Caribbean",
             "All the time downloads": 4,
@@ -15271,7 +15271,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "RND",
+            "division_codes": "RND",
             "Rank All Downloads": 10,
             "Title": "Gestionando el riesgo: Efectos de la gobernabilidad en las pérdidas humanas por desastres en América Latina y el Caribe",
             "All the time downloads": 2,
@@ -15300,7 +15300,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SCL",
+            "division_codes": "SCL",
             "Rank All Downloads": 1,
             "Title": "Social Services for Digital Citizens: Opportunities for Latin America and the Caribbean",
             "All the time downloads": 36,
@@ -15331,7 +15331,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SCL",
+            "division_codes": "SCL",
             "Rank All Downloads": 2,
             "Title": "Social Pulse in Latin America and the Caribbean 2016: Realities & Perspectives",
             "All the time downloads": 20,
@@ -15362,7 +15362,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SCL",
+            "division_codes": "SCL",
             "Rank All Downloads": 3,
             "Title": "Social Pulse in Latin America and the Caribbean 2017: Family Legacy, Breaking the Mold or Repeating Patterns?",
             "All the time downloads": 14,
@@ -15393,7 +15393,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SCL",
+            "division_codes": "SCL",
             "Rank All Downloads": 4,
             "Title": "Wealth Gradients in Early Childhood Cognitive Development in Five Latin American Countries",
             "All the time downloads": 9,
@@ -15424,7 +15424,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SCL",
+            "division_codes": "SCL",
             "Rank All Downloads": 5,
             "Title": "Teacher Quality and Learning Outcomes in Kindergarten",
             "All the time downloads": 7,
@@ -15455,7 +15455,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SCL",
+            "division_codes": "SCL",
             "Rank All Downloads": 6,
             "Title": "Can Cash Transfers Help Households Escape an Inter-Generational Poverty Trap?",
             "All the time downloads": 2,
@@ -15475,7 +15475,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SCL",
+            "division_codes": "SCL",
             "Rank All Downloads": 7,
             "Title": "Conditional Cash Transfer Programs in Latin America: Problems and Opportunities",
             "All the time downloads": 1,
@@ -15488,7 +15488,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SCL",
+            "division_codes": "SCL",
             "Rank All Downloads": 8,
             "Title": "The Gender Dividend: Capitalizing on Women's Work",
             "All the time downloads": 1,
@@ -15506,7 +15506,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SCL",
+            "division_codes": "SCL",
             "Rank All Downloads": 9,
             "Title": "Estrategias para reducir la pobreza multidimensional: Iniciativa en Puebla, México (2013-2016)",
             "All the time downloads": 1,
@@ -15518,7 +15518,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SCL",
+            "division_codes": "SCL",
             "Rank All Downloads": 10,
             "Title": "Changes in Welfare with a Heterogeneous Workforce: The Case of Peru",
             "All the time downloads": 1,
@@ -15527,7 +15527,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SDI",
+            "division_codes": "SDI",
             "Rank All Downloads": 1,
             "Title": "Una guía práctica para la elaboración de estudios de caso sobre buenas prácticas en gerencia social",
             "All the time downloads": 14,
@@ -15557,7 +15557,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SDI",
+            "division_codes": "SDI",
             "Rank All Downloads": 2,
             "Title": "La Realidad Fiscal: Una Introducción a los Problemas y Políticas Fiscales en América Latina: Módulo 1: Gasto público, estructura, estabilidad y procesos de decisión",
             "All the time downloads": 14,
@@ -15588,7 +15588,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SDI",
+            "division_codes": "SDI",
             "Rank All Downloads": 3,
             "Title": "Women's Participation in Social Development: Experiences from Asia, Latin America and the Caribbean",
             "All the time downloads": 9,
@@ -15602,7 +15602,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SDI",
+            "division_codes": "SDI",
             "Rank All Downloads": 4,
             "Title": "Inclusión social: Una perspectiva para la reducción de la pobreza",
             "All the time downloads": 8,
@@ -15619,7 +15619,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SDI",
+            "division_codes": "SDI",
             "Rank All Downloads": 5,
             "Title": "La Gerencia Social INDES",
             "All the time downloads": 8,
@@ -15650,7 +15650,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SDI",
+            "division_codes": "SDI",
             "Rank All Downloads": 6,
             "Title": "Eficacia, eficiencia, equidad y sostenibilidad: ¿Qué queremos decir?",
             "All the time downloads": 8,
@@ -15680,7 +15680,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SDI",
+            "division_codes": "SDI",
             "Rank All Downloads": 7,
             "Title": "La comunicación y la movilización social en la construcción de bienes públicos",
             "All the time downloads": 7,
@@ -15707,7 +15707,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SDI",
+            "division_codes": "SDI",
             "Rank All Downloads": 8,
             "Title": "Causas de la pobreza en América Latina y políticas para reducirla, con referencia especial al Paraguay",
             "All the time downloads": 7,
@@ -15737,7 +15737,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SDI",
+            "division_codes": "SDI",
             "Rank All Downloads": 9,
             "Title": "Educational Indicators: What's to Be Measured?",
             "All the time downloads": 7,
@@ -15760,7 +15760,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SDI",
+            "division_codes": "SDI",
             "Rank All Downloads": 10,
             "Title": "Participación Ciudadana en la Gestión Pública: enfoque y condiciones para su desarrollo: Módulo 1: Participación Ciudadana y Políticas Públicas: Unidad 1.2: Mecanismos de participación ciudadana previstos en los programas públicos",
             "All the time downloads": 5,
@@ -15791,7 +15791,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SDV",
+            "division_codes": "SDV",
             "Rank All Downloads": 1,
             "Title": "A Primer for Applying Propensity-Score Matching",
             "All the time downloads": 7,
@@ -15822,7 +15822,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SDV",
+            "division_codes": "SDV",
             "Rank All Downloads": 2,
             "Title": "Designing Impact Evaluations for Agricultural Projects",
             "All the time downloads": 5,
@@ -15852,7 +15852,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SDV",
+            "division_codes": "SDV",
             "Rank All Downloads": 3,
             "Title": "Indicators to Assess the Effectiveness of Climate Change Projects",
             "All the time downloads": 5,
@@ -15881,7 +15881,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SDV",
+            "division_codes": "SDV",
             "Rank All Downloads": 4,
             "Title": "Assessing the Effectiveness of Agricultural Interventions",
             "All the time downloads": 4,
@@ -15911,7 +15911,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SDV",
+            "division_codes": "SDV",
             "Rank All Downloads": 5,
             "Title": "Food Security and Productivity: Impacts of Technology Adoption in Small Subsistence Farmers in Bolivia",
             "All the time downloads": 4,
@@ -15936,7 +15936,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SDV",
+            "division_codes": "SDV",
             "Rank All Downloads": 6,
             "Title": "Climate-Smart Agriculture in Latin America: Drawing on Research to Incorporate Technologies to Adapt to Climate Change",
             "All the time downloads": 3,
@@ -15959,7 +15959,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SDV",
+            "division_codes": "SDV",
             "Rank All Downloads": 7,
             "Title": "Program Evaluation and Spillover Effects",
             "All the time downloads": 2,
@@ -15990,7 +15990,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SDV",
+            "division_codes": "SDV",
             "Rank All Downloads": 8,
             "Title": "Technical Guidelines for Evaluating the Impacts of Tourism Using Simulation Models",
             "All the time downloads": 2,
@@ -16009,7 +16009,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SDV",
+            "division_codes": "SDV",
             "Rank All Downloads": 9,
             "Title": "Development Effectiveness Overview (DEO) 2010",
             "All the time downloads": 1,
@@ -16028,7 +16028,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SDV",
+            "division_codes": "SDV",
             "Rank All Downloads": 10,
             "Title": "Panorama de la efectividad en el desarrollo (DEO) 2010",
             "All the time downloads": 1,
@@ -16048,7 +16048,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SEC",
+            "division_codes": "SEC",
             "Rank All Downloads": 1,
             "Title": "Proyectos Enclave: ¿Qué Son y Qué Se Puede Hacer?",
             "All the time downloads": 509,
@@ -16064,7 +16064,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SEC",
+            "division_codes": "SEC",
             "Rank All Downloads": 2,
             "Title": "Social Capital and Social Cohesion: Definition and Measurement",
             "All the time downloads": 366,
@@ -16075,7 +16075,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SEC",
+            "division_codes": "SEC",
             "Rank All Downloads": 3,
             "Title": "Enclave Projects: What Are They and What Can Be Done?",
             "All the time downloads": 279,
@@ -16084,7 +16084,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SEC",
+            "division_codes": "SEC",
             "Rank All Downloads": 4,
             "Title": "Software para generación de cuestionarios",
             "All the time downloads": 272,
@@ -16094,7 +16094,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SEC",
+            "division_codes": "SEC",
             "Rank All Downloads": 5,
             "Title": "Climate-Resilient Coastal Development: Leveraging DRR and CCA to Promote Integrated Coastal Zone Management",
             "All the time downloads": 195,
@@ -16104,7 +16104,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SEC",
+            "division_codes": "SEC",
             "Rank All Downloads": 6,
             "Title": "Integrating Disaster Risk Reduction and Climate Change in Coastal Zone Management (CZM) Policy and Practice: The Belize Experience: Developing a National Coastal Plan for Conservation and Development Using an Integrated Management Approach",
             "All the time downloads": 169,
@@ -16116,7 +16116,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SEC",
+            "division_codes": "SEC",
             "Rank All Downloads": 7,
             "Title": "La violencia en su laberinto (estadístico)",
             "All the time downloads": 157,
@@ -16126,7 +16126,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SEC",
+            "division_codes": "SEC",
             "Rank All Downloads": 8,
             "Title": "Argentina's Distributional Failure: The Role of Integration and Public Policy",
             "All the time downloads": 131,
@@ -16135,7 +16135,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SEC",
+            "division_codes": "SEC",
             "Rank All Downloads": 9,
             "Title": "Esquemas de comunicación, transmisión y concentración de la información",
             "All the time downloads": 114,
@@ -16144,7 +16144,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SEC",
+            "division_codes": "SEC",
             "Rank All Downloads": 10,
             "Title": "Salud: Qué sabemos, qué más deberíamos de saber y cómo podemos averiguarlo",
             "All the time downloads": 104,
@@ -16154,7 +16154,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SPD",
+            "division_codes": "SPD",
             "Rank All Downloads": 1,
             "Title": "Development Effectiveness Overview (DEO) 2013",
             "All the time downloads": 45,
@@ -16177,7 +16177,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SPD",
+            "division_codes": "SPD",
             "Rank All Downloads": 2,
             "Title": "Impact Evaluation in Practice: Second Edition",
             "All the time downloads": 38,
@@ -16208,7 +16208,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SPD",
+            "division_codes": "SPD",
             "Rank All Downloads": 3,
             "Title": "The Future of Work: Regional Perspectives",
             "All the time downloads": 26,
@@ -16238,7 +16238,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SPD",
+            "division_codes": "SPD",
             "Rank All Downloads": 4,
             "Title": "Centros infantiles en Bolivia: Atención, infraestructura y calidad de servicios de desarrollo infantil",
             "All the time downloads": 19,
@@ -16269,7 +16269,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SPD",
+            "division_codes": "SPD",
             "Rank All Downloads": 5,
             "Title": "Development Effectiveness Overview (DEO) 2014",
             "All the time downloads": 18,
@@ -16300,7 +16300,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SPD",
+            "division_codes": "SPD",
             "Rank All Downloads": 6,
             "Title": "Development Effectiveness Overview (DEO) 2015",
             "All the time downloads": 15,
@@ -16331,7 +16331,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SPD",
+            "division_codes": "SPD",
             "Rank All Downloads": 7,
             "Title": "The Impact of Coastal Infrastructure Improvements on Economic Growth: Evidence from Barbados",
             "All the time downloads": 12,
@@ -16362,7 +16362,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SPD",
+            "division_codes": "SPD",
             "Rank All Downloads": 8,
             "Title": "Development Effectiveness Overview (DEO) 2012",
             "All the time downloads": 9,
@@ -16374,7 +16374,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SPD",
+            "division_codes": "SPD",
             "Rank All Downloads": 9,
             "Title": "Tourism Policy, a Big Push to Employment: Evidence from a Multiple Synthetic Control Approach",
             "All the time downloads": 6,
@@ -16397,7 +16397,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SPD",
+            "division_codes": "SPD",
             "Rank All Downloads": 10,
             "Title": "The Effect of In-Service Teacher Training on Student Learning of English as a Second Language",
             "All the time downloads": 4,
@@ -16424,7 +16424,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SPH",
+            "division_codes": "SPH",
             "Rank All Downloads": 1,
             "Title": "A Toolkit for the Measurement of Youth Risk Behavior",
             "All the time downloads": 77,
@@ -16455,7 +16455,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SPH",
+            "division_codes": "SPH",
             "Rank All Downloads": 2,
             "Title": "How is Child Care Quality Measured?: A toolkit",
             "All the time downloads": 44,
@@ -16486,7 +16486,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SPH",
+            "division_codes": "SPH",
             "Rank All Downloads": 3,
             "Title": "Health Benefit Plans in Latin America: A Regional Comparison",
             "All the time downloads": 39,
@@ -16517,7 +16517,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SPH",
+            "division_codes": "SPH",
             "Rank All Downloads": 4,
             "Title": "Enfermedades crónicas no transmisibles y sus factores de riesgo en Argentina: prevalencia y prevención",
             "All the time downloads": 39,
@@ -16544,7 +16544,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SPH",
+            "division_codes": "SPH",
             "Rank All Downloads": 5,
             "Title": "How Conditional Cash Transfers Work",
             "All the time downloads": 29,
@@ -16575,7 +16575,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SPH",
+            "division_codes": "SPH",
             "Rank All Downloads": 6,
             "Title": "Applying Behavioral Tools to the Design of Health Projects",
             "All the time downloads": 22,
@@ -16606,7 +16606,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SPH",
+            "division_codes": "SPH",
             "Rank All Downloads": 7,
             "Title": "Poverty, Vulnerability and the Middle Class in Latin America",
             "All the time downloads": 20,
@@ -16637,7 +16637,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SPH",
+            "division_codes": "SPH",
             "Rank All Downloads": 8,
             "Title": "Análisis de modalidades de acompañamiento familiar en programas de apoyo a poblaciones vulnerables o en situación de pobreza",
             "All the time downloads": 20,
@@ -16667,7 +16667,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SPH",
+            "division_codes": "SPH",
             "Rank All Downloads": 9,
             "Title": "Centros infantiles en Bolivia: Atención, infraestructura y calidad de servicios de desarrollo infantil",
             "All the time downloads": 19,
@@ -16698,7 +16698,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "SPH",
+            "division_codes": "SPH",
             "Rank All Downloads": 10,
             "Title": "Atención integral a la primera infancia en Colombia: Estrategia de país 2011-2014: Nota sectorial para su discusión con las nuevas autoridades y actores del sector",
             "All the time downloads": 19,
@@ -16729,7 +16729,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "Strategic Core",
+            "division_codes": "Strategic Core",
             "Rank All Downloads": 1,
             "Title": "Escalando la nueva educación: Innovaciones inspiradoras masivas en América Latina",
             "All the time downloads": 19,
@@ -16760,7 +16760,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "TSP",
+            "division_codes": "TSP",
             "Rank All Downloads": 1,
             "Title": "Distribución urbana de mercancías: Estrategias con centros logísticos",
             "All the time downloads": 72,
@@ -16791,7 +16791,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "TSP",
+            "division_codes": "TSP",
             "Rank All Downloads": 2,
             "Title": "Ciclo-inclusión en América Latina y el Caribe: Guía para impulsar el uso de la bicicleta",
             "All the time downloads": 45,
@@ -16822,7 +16822,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "TSP",
+            "division_codes": "TSP",
             "Rank All Downloads": 3,
             "Title": "Practical Guidebook: Parking and Travel Demand Management Policies in Latin America",
             "All the time downloads": 20,
@@ -16853,7 +16853,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "TSP",
+            "division_codes": "TSP",
             "Rank All Downloads": 4,
             "Title": "Mitigation Strategies and Accounting Methods for Greenhouse Gas Emissions from Transportation",
             "All the time downloads": 19,
@@ -16884,7 +16884,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "TSP",
+            "division_codes": "TSP",
             "Rank All Downloads": 5,
             "Title": "Cómo impulsar el ciclismo urbano: Recomendaciones para las instituciones de América Latina y el Caribe",
             "All the time downloads": 19,
@@ -16915,7 +16915,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "TSP",
+            "division_codes": "TSP",
             "Rank All Downloads": 6,
             "Title": "Air Transport: Current Topics in Latin America and the Caribbean: Regulation and Economics",
             "All the time downloads": 18,
@@ -16946,7 +16946,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "TSP",
+            "division_codes": "TSP",
             "Rank All Downloads": 7,
             "Title": "The Relationship Between Gender and Transport",
             "All the time downloads": 15,
@@ -16977,7 +16977,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "TSP",
+            "division_codes": "TSP",
             "Rank All Downloads": 8,
             "Title": "Manual para la estimación y seguimiento del costo final de un programa de infraestructura",
             "All the time downloads": 14,
@@ -17007,7 +17007,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "TSP",
+            "division_codes": "TSP",
             "Rank All Downloads": 9,
             "Title": "El transporte público desde una perspectiva de género: Percepción de inseguridad y victimización en Asunción y Lima",
             "All the time downloads": 8,
@@ -17038,7 +17038,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "TSP",
+            "division_codes": "TSP",
             "Rank All Downloads": 10,
             "Title": "Guía logística: aspectos conceptuales y prácticos de la logística de cargas (2015)",
             "All the time downloads": 8,
@@ -17069,7 +17069,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "UCC",
+            "division_codes": "UCC",
             "Rank All Downloads": 1,
             "Title": "Launching an Orange Future: Fifteen Questions for Getting to Know the Creative Entrepreneurs of Latin America and the Caribbean",
             "All the time downloads": 23,
@@ -17100,7 +17100,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "VPC",
+            "division_codes": "VPC",
             "Rank All Downloads": 1,
             "Title": "Colombia Toward a High-Income Country with Social Mobility",
             "All the time downloads": 15,
@@ -17131,7 +17131,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "VPC",
+            "division_codes": "VPC",
             "Rank All Downloads": 2,
             "Title": "Public Consultations with Civil Society: Guidelines for Public and Private Executing Agencies",
             "All the time downloads": 8,
@@ -17162,7 +17162,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "VPC",
+            "division_codes": "VPC",
             "Rank All Downloads": 3,
             "Title": "Public Procurement in Latin America and the Caribbean and IDB-financed project: a Normative and Comparative Study",
             "All the time downloads": 3,
@@ -17190,7 +17190,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "VPC",
+            "division_codes": "VPC",
             "Rank All Downloads": 4,
             "Title": "IDB Group-Civil Society: Engagement Review 2014-2015",
             "All the time downloads": 2,
@@ -17215,7 +17215,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "VPC",
+            "division_codes": "VPC",
             "Rank All Downloads": 5,
             "Title": "Three are better than one: Government, Civil Society, Private Sector. Joint efforts in Caribbean countries toward sustainable development",
             "All the time downloads": 914,
@@ -17234,7 +17234,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "VPC",
+            "division_codes": "VPC",
             "Rank All Downloads": 6,
             "Title": "Procurement Newsletter: Volume 1: March, 2008",
             "All the time downloads": 373,
@@ -17246,7 +17246,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "VPC",
+            "division_codes": "VPC",
             "Rank All Downloads": 7,
             "Title": "IDB Group-Civil Society Engagement Review 2016-2017",
             "All the time downloads": 356,
@@ -17266,7 +17266,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "VPC",
+            "division_codes": "VPC",
             "Rank All Downloads": 8,
             "Title": "MERCOSUR: Instituciones de gobierno regional, asimetrías e integración profunda",
             "All the time downloads": 301,
@@ -17276,7 +17276,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "VPC",
+            "division_codes": "VPC",
             "Rank All Downloads": 9,
             "Title": "Sector extractivo y sociedad civil: Cuando el trabajo de comunidades, gobiernos e industrias es sinónimo de desarrollo",
             "All the time downloads": 203,
@@ -17304,7 +17304,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "VPC",
+            "division_codes": "VPC",
             "Rank All Downloads": 10,
             "Title": "Development Challenges in Guyana",
             "All the time downloads": 192,
@@ -17318,7 +17318,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "VPS",
+            "division_codes": "VPS",
             "Rank All Downloads": 1,
             "Title": "Development Effectiveness Overview (DEO) 2013",
             "All the time downloads": 45,
@@ -17341,7 +17341,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "VPS",
+            "division_codes": "VPS",
             "Rank All Downloads": 2,
             "Title": "Under-Rewarded Efforts: The Elusive Quest for Prosperity in Mexico",
             "All the time downloads": 44,
@@ -17372,7 +17372,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "VPS",
+            "division_codes": "VPS",
             "Rank All Downloads": 3,
             "Title": "Urban Sustainability in Latin America and the Caribbean",
             "All the time downloads": 13,
@@ -17403,7 +17403,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "VPS",
+            "division_codes": "VPS",
             "Rank All Downloads": 4,
             "Title": "Ley de guarderías en México y los desafíos institucionales de conectar familia y trabajo",
             "All the time downloads": 10,
@@ -17434,7 +17434,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "VPS",
+            "division_codes": "VPS",
             "Rank All Downloads": 5,
             "Title": "Multilatinas to Global Latinas: The New Latin American Multinationals",
             "All the time downloads": 8,
@@ -17463,7 +17463,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "VPS",
+            "division_codes": "VPS",
             "Rank All Downloads": 6,
             "Title": "Childcare and Women's Labor Participation: Evidence for Latin America and the Caribbean",
             "All the time downloads": 2,
@@ -17492,7 +17492,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "VPS",
+            "division_codes": "VPS",
             "Rank All Downloads": 7,
             "Title": "Logística urbana: Los desafíos de la Distribución Urbana de Mercancías",
             "All the time downloads": 2,
@@ -17522,7 +17522,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "VPS",
+            "division_codes": "VPS",
             "Rank All Downloads": 8,
             "Title": "The End of Informality in Mexico?: Fiscal Reform for Universal Social Insurance",
             "All the time downloads": 1,
@@ -17545,7 +17545,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "VPS",
+            "division_codes": "VPS",
             "Rank All Downloads": 9,
             "Title": "The Cyclical Characteristics of Universal Social Insurance",
             "All the time downloads": 379,
@@ -17554,7 +17554,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "VPS",
+            "division_codes": "VPS",
             "Rank All Downloads": 10,
             "Title": "Guía metodológica para el diseño e implementación de observatorios de experiencias innovadoras",
             "All the time downloads": 362,
@@ -17569,7 +17569,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "WSA",
+            "division_codes": "WSA",
             "Rank All Downloads": 1,
             "Title": "Tratamiento de aguas residuales en México",
             "All the time downloads": 57,
@@ -17600,7 +17600,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "WSA",
+            "division_codes": "WSA",
             "Rank All Downloads": 2,
             "Title": "Solid Waste Management in Latin America and the Caribbean",
             "All the time downloads": 33,
@@ -17631,7 +17631,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "WSA",
+            "division_codes": "WSA",
             "Rank All Downloads": 3,
             "Title": "Ventajas y riesgos de contrato llave en mano",
             "All the time downloads": 32,
@@ -17660,7 +17660,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "WSA",
+            "division_codes": "WSA",
             "Rank All Downloads": 4,
             "Title": "Manejo de Residuos Sólidos: Lineamientos para un Servicio Integral, Sustentable e Inclusivo",
             "All the time downloads": 29,
@@ -17688,7 +17688,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "WSA",
+            "division_codes": "WSA",
             "Rank All Downloads": 5,
             "Title": "Water in the Time of Drought: Lessons from Five Droughts around the World",
             "All the time downloads": 26,
@@ -17719,7 +17719,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "WSA",
+            "division_codes": "WSA",
             "Rank All Downloads": 6,
             "Title": "Ejecutar proyectos de agua y saneamiento en el sector rural: Retos y desafíos en América Latina y el Caribe",
             "All the time downloads": 25,
@@ -17750,7 +17750,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "WSA",
+            "division_codes": "WSA",
             "Rank All Downloads": 7,
             "Title": "Preparing Informal Recycler Inclusion Plans: An Operational Guide",
             "All the time downloads": 25,
@@ -17781,7 +17781,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "WSA",
+            "division_codes": "WSA",
             "Rank All Downloads": 8,
             "Title": "Regional Evaluation on Urban Solid Waste Management in Latin America and the Caribbean: 2010  Report",
             "All the time downloads": 17,
@@ -17811,7 +17811,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "WSA",
+            "division_codes": "WSA",
             "Rank All Downloads": 9,
             "Title": "Evaluacion para sistemas de bombeo de agua: Manual de mantenimiento",
             "All the time downloads": 12,
@@ -17839,7 +17839,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Division Codes": "WSA",
+            "division_codes": "WSA",
             "Rank All Downloads": 10,
             "Title": "Avances y desafíos para el reciclaje inclusivo: Evaluación de 12 ciudades de América Latina y el Caribe",
             "All the time downloads": 12,
@@ -17870,7 +17870,7 @@ var publicationsLines = {
     ],
     lines30daysDepartments: [{
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "",
+            "department_codes": "",
             "Ranking": 1,
             "Title": "Global Microscope 2018: The Enabling Environment for Financial Inclusion",
             "2018 downloads": 1,
@@ -17879,7 +17879,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "",
+            "department_codes": "",
             "Ranking": 2,
             "Title": "CIMA Brief #6: How can policy-maker address teacher shortages in disadvantaged schools?",
             "2018 downloads": 78,
@@ -17892,7 +17892,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CAN",
+            "department_codes": "CAN",
             "Ranking": 1,
             "Title": "Creciendo con Productividad: Una agenda para la Region Andina",
             "2018 downloads": 18,
@@ -17923,7 +17923,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CAN",
+            "department_codes": "CAN",
             "Ranking": 2,
             "Title": "Reformas y desarrollo en el Ecuador contemporáneo",
             "2018 downloads": 6,
@@ -17947,7 +17947,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CAN",
+            "department_codes": "CAN",
             "Ranking": 3,
             "Title": "El impacto macroeconómico de la reforma energética ecuatoriana",
             "2018 downloads": 1,
@@ -17973,7 +17973,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CAN",
+            "department_codes": "CAN",
             "Ranking": 4,
             "Title": "Apertura comercial y crecimiento de la productividad total de los factores",
             "2018 downloads": 558,
@@ -17987,7 +17987,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CAN",
+            "department_codes": "CAN",
             "Ranking": 5,
             "Title": "Development Challenges in Bolivia",
             "2018 downloads": 452,
@@ -18015,7 +18015,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CAN",
+            "department_codes": "CAN",
             "Ranking": 6,
             "Title": "Development Challenges in Peru",
             "2018 downloads": 444,
@@ -18045,7 +18045,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CAN",
+            "department_codes": "CAN",
             "Ranking": 7,
             "Title": "Diagnóstico de mercados laborales en la Región Andina",
             "2018 downloads": 379,
@@ -18059,7 +18059,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CAN",
+            "department_codes": "CAN",
             "Ranking": 8,
             "Title": "Development Challenges in Colombia",
             "2018 downloads": 293,
@@ -18088,7 +18088,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CAN",
+            "department_codes": "CAN",
             "Ranking": 9,
             "Title": "Development Challenges in Ecuador",
             "2018 downloads": 193,
@@ -18109,7 +18109,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CAN",
+            "department_codes": "CAN",
             "Ranking": 10,
             "Title": "Do Labor Market Regulations Affect the Link between Innovation and Employment?: Evidence from Latin America",
             "2018 downloads": 117,
@@ -18125,7 +18125,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CCB",
+            "department_codes": "CCB",
             "Ranking": 1,
             "Title": "National Women's Health Survey for Trinidad and Tobago: Final Report",
             "2018 downloads": 3,
@@ -18152,7 +18152,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CCB",
+            "department_codes": "CCB",
             "Ranking": 2,
             "Title": "Nurturing Institutions for a Resilient Caribbean",
             "2018 downloads": 1,
@@ -18183,7 +18183,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CCB",
+            "department_codes": "CCB",
             "Ranking": 3,
             "Title": "Caribbean Region Quarterly Bulletin: Volume 7: Issue 1: March 2018",
             "2018 downloads": 1,
@@ -18207,7 +18207,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CCB",
+            "department_codes": "CCB",
             "Ranking": 4,
             "Title": "Women's health survey 2016: Jamaica: Final Report",
             "2018 downloads": 956,
@@ -18238,7 +18238,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CCB",
+            "department_codes": "CCB",
             "Ranking": 5,
             "Title": "Constraints Affecting Guyana's Private Sector: Survey Results",
             "2018 downloads": 781,
@@ -18252,7 +18252,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CCB",
+            "department_codes": "CCB",
             "Ranking": 6,
             "Title": "Caribbean Region Quarterly Bulletin: Volume 7: Issue 2: June 2018",
             "2018 downloads": 780,
@@ -18282,7 +18282,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CCB",
+            "department_codes": "CCB",
             "Ranking": 7,
             "Title": "Caribbean Region Quarterly Bulletin: Volume 7, Issue 3: September 2018",
             "2018 downloads": 642,
@@ -18309,7 +18309,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CCB",
+            "department_codes": "CCB",
             "Ranking": 8,
             "Title": "National Women's Health Survey for Trinidad and Tobago",
             "2018 downloads": 584,
@@ -18325,7 +18325,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CCB",
+            "department_codes": "CCB",
             "Ranking": 9,
             "Title": "Strengthening of Guyana’s Fiscal Framework in Anticipation of an Oil Boom",
             "2018 downloads": 451,
@@ -18354,7 +18354,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CCB",
+            "department_codes": "CCB",
             "Ranking": 10,
             "Title": "CBR Withdrawals: Understanding the Uneven Occurrence Across the Caribbean",
             "2018 downloads": 422,
@@ -18373,7 +18373,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CID",
+            "department_codes": "CID",
             "Ranking": 1,
             "Title": "BIDeconomics México: Políticas para el crecimiento inclusivo y desarrollo de la economía nacional",
             "2018 downloads": 8,
@@ -18404,7 +18404,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CID",
+            "department_codes": "CID",
             "Ranking": 2,
             "Title": "Inclusive Growth: Challenges and Opportunities for Central America and the Dominican Republic",
             "2018 downloads": 5,
@@ -18432,7 +18432,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CID",
+            "department_codes": "CID",
             "Ranking": 3,
             "Title": "La política migratoria de los EE.UU. y su impacto en el Triángulo Norte de Centroamérica",
             "2018 downloads": 613,
@@ -18459,7 +18459,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CID",
+            "department_codes": "CID",
             "Ranking": 4,
             "Title": "Promoción de la transformación productiva en el sector alimentos y bebidas en El Salvador",
             "2018 downloads": 589,
@@ -18483,7 +18483,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CID",
+            "department_codes": "CID",
             "Ranking": 5,
             "Title": "Libro blanco para una política de clústeres en Costa Rica: Promoviendo la innovación y la productividad a través de una mayor articulación productiva",
             "2018 downloads": 545,
@@ -18514,7 +18514,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CID",
+            "department_codes": "CID",
             "Ranking": 6,
             "Title": "Telecommunication Sector Policies for the Development of Information and Communication Technologies in Panama: Part I",
             "2018 downloads": 204,
@@ -18540,7 +18540,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CID",
+            "department_codes": "CID",
             "Ranking": 7,
             "Title": "Management and Execution of Investment Projects, the Task Prior to the Measurement of Development Effectiveness: The Case of the Inter-American Development Bank",
             "2018 downloads": 181,
@@ -18559,7 +18559,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CID",
+            "department_codes": "CID",
             "Ranking": 8,
             "Title": "Retos ambientales de Costa Rica",
             "2018 downloads": 165,
@@ -18583,7 +18583,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CID",
+            "department_codes": "CID",
             "Ranking": 9,
             "Title": "Retos del sector agrícola de Panamá",
             "2018 downloads": 142,
@@ -18596,7 +18596,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CID",
+            "department_codes": "CID",
             "Ranking": 10,
             "Title": "Estudio de identificación de los bloques económicos, así como los sectores productivos en los que México tendría una mayor oportunidad de integración comercial: Parte I",
             "2018 downloads": 117,
@@ -18614,7 +18614,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
+            "department_codes": "CSC",
             "Ranking": 1,
             "Title": "Paraguay: Rutas para el Desarrollo",
             "2018 downloads": 1,
@@ -18643,7 +18643,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
+            "department_codes": "CSC",
             "Ranking": 2,
             "Title": "Trade Potential in Southern Cone Countries",
             "2018 downloads": 180,
@@ -18654,7 +18654,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
+            "department_codes": "CSC",
             "Ranking": 3,
             "Title": "Development Challenges in Brazil",
             "2018 downloads": 126,
@@ -18669,7 +18669,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
+            "department_codes": "CSC",
             "Ranking": 4,
             "Title": "FDI Flows to Paraguay: What do Investors Prioritize?",
             "2018 downloads": 124,
@@ -18690,7 +18690,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
+            "department_codes": "CSC",
             "Ranking": 5,
             "Title": "Development Challenges in Chile",
             "2018 downloads": 99,
@@ -18710,7 +18710,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
+            "department_codes": "CSC",
             "Ranking": 6,
             "Title": "Development Challenges in Uruguay",
             "2018 downloads": 96,
@@ -18727,7 +18727,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
+            "department_codes": "CSC",
             "Ranking": 7,
             "Title": "Development Challenges in Paraguay",
             "2018 downloads": 92,
@@ -18746,7 +18746,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
+            "department_codes": "CSC",
             "Ranking": 8,
             "Title": "A Structural Analysis of Commodity Price Fluctuations and Fiscal Performance",
             "2018 downloads": 64,
@@ -18762,7 +18762,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
+            "department_codes": "CSC",
             "Ranking": 9,
             "Title": "Una mirada joven a la juventud: Aportes para las políticas públicas de Uruguay",
             "2018 downloads": 57,
@@ -18774,7 +18774,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
+            "department_codes": "CSC",
             "Ranking": 10,
             "Title": "Liquidity and Exchange Rates",
             "2018 downloads": 37,
@@ -18786,7 +18786,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
+            "department_codes": "CSD",
             "Ranking": 1,
             "Title": "Water in the Time of Drought: Lessons from Five Droughts around the World",
             "2018 downloads": 26,
@@ -18817,7 +18817,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
+            "department_codes": "CSD",
             "Ranking": 2,
             "Title": "Inter-American Development Bank Sustainability Report 2017",
             "2018 downloads": 16,
@@ -18848,7 +18848,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
+            "department_codes": "CSD",
             "Ranking": 3,
             "Title": "What is Sustainable Infrastructure?  A Framework to Guide Sustainability Across the Project Cycle",
             "2018 downloads": 14,
@@ -18879,7 +18879,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
+            "department_codes": "CSD",
             "Ranking": 4,
             "Title": "Ciudades Inclusivas: Productividad urbana a partir de la igualdad de género",
             "2018 downloads": 5,
@@ -18910,7 +18910,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
+            "department_codes": "CSD",
             "Ranking": 5,
             "Title": "Smart City Technologies in Israel: A Review of Cutting-Edge Technologies and Innovation Hubs",
             "2018 downloads": 5,
@@ -18941,7 +18941,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
+            "department_codes": "CSD",
             "Ranking": 6,
             "Title": "Interdependencia municipal en regiones metropolitanas: El caso de la Sabana de Bogotá",
             "2018 downloads": 4,
@@ -18971,7 +18971,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
+            "department_codes": "CSD",
             "Ranking": 7,
             "Title": "Agricultural Support Policies in Latin America and the Caribbean: 2018 Review",
             "2018 downloads": 4,
@@ -19002,7 +19002,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
+            "department_codes": "CSD",
             "Ranking": 8,
             "Title": "Políticas de tarificación por congestión: Efectos potenciales y consideraciones para su implementación en Bogotá, Ciudad de México y Santiago",
             "2018 downloads": 1,
@@ -19026,7 +19026,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
+            "department_codes": "CSD",
             "Ranking": 9,
             "Title": "Managing the Distributional Effects of Energy Taxes and Subsidy Removal in Latin America and the Caribbean",
             "2018 downloads": 1,
@@ -19052,7 +19052,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
+            "department_codes": "CSD",
             "Ranking": 10,
             "Title": "Agricultural Policies in the Caribbean: A Regional Analysis",
             "2018 downloads": 693,
@@ -19075,7 +19075,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "Discontinued Departments",
+            "department_codes": "Discontinued Departments",
             "Ranking": 1,
             "Title": "Inter-American Development Bank Annual Report 2017: Financial Statements",
             "2018 downloads": 3,
@@ -19106,7 +19106,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "Discontinued Departments",
+            "department_codes": "Discontinued Departments",
             "Ranking": 2,
             "Title": "Global Microscope 2018: The Enabling Environment for Financial Inclusion",
             "2018 downloads": 1,
@@ -19136,7 +19136,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "Discontinued Departments",
+            "department_codes": "Discontinued Departments",
             "Ranking": 3,
             "Title": "FINLAC Data: Datos de desempeño e inclusión financiera de América Latina y el Caribe",
             "2018 downloads": 754,
@@ -19163,7 +19163,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "Discontinued Departments",
+            "department_codes": "Discontinued Departments",
             "Ranking": 4,
             "Title": "Mobilization Effects of Multilateral Development Banks",
             "2018 downloads": 218,
@@ -19185,7 +19185,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "ESG",
+            "department_codes": "ESG",
             "Ranking": 1,
             "Title": "Social Impact Assessment: Integrating Social Issues in Development Projects",
             "2018 downloads": 17,
@@ -19216,7 +19216,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "ESG",
+            "department_codes": "ESG",
             "Ranking": 2,
             "Title": "Social Impact Assessment: Integrating Social issues in Development Projects (Summary Brochure)",
             "2018 downloads": 1,
@@ -19245,7 +19245,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "FMP",
+            "department_codes": "FMP",
             "Ranking": 1,
             "Title": "Green Procurement: How to Encourage Green Procurement Practices in IDB Funded Projects?",
             "2018 downloads": 172,
@@ -19267,7 +19267,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
+            "department_codes": "IFD",
             "Ranking": 1,
             "Title": "Wait No More: Citizens, Red Tape, and Digital Government",
             "2018 downloads": 26,
@@ -19298,7 +19298,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
+            "department_codes": "IFD",
             "Ranking": 2,
             "Title": "Who wants to know?: The Political Economy of Statistical Capacity in Latin America",
             "2018 downloads": 11,
@@ -19329,7 +19329,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
+            "department_codes": "IFD",
             "Ranking": 3,
             "Title": "Public Expenditure Efficiency in Health Care in Latin America and the Caribbean: Highlights from an IDB Workshop on Public Expenditure Efficiency and Outcomes",
             "2018 downloads": 8,
@@ -19360,7 +19360,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
+            "department_codes": "IFD",
             "Ranking": 4,
             "Title": "Electronic Invoicing in Latin America",
             "2018 downloads": 7,
@@ -19390,7 +19390,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
+            "department_codes": "IFD",
             "Ranking": 5,
             "Title": "Regulatory Sandboxes in Latin America and the Caribbean for the FinTech Ecosystem and the Financial System",
             "2018 downloads": 7,
@@ -19421,7 +19421,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
+            "department_codes": "IFD",
             "Ranking": 6,
             "Title": "Los datos abiertos en América Latina y el Caribe",
             "2018 downloads": 5,
@@ -19451,7 +19451,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
+            "department_codes": "IFD",
             "Ranking": 7,
             "Title": "Las brechas de género en ciencia, tecnología e innovación en América Latina y el Caribe: resultados de una recolección piloto y propuesta metodológica para la medición",
             "2018 downloads": 4,
@@ -19477,7 +19477,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
+            "department_codes": "IFD",
             "Ranking": 8,
             "Title": "Smarter Crowdsourcing for Anti-Corruption: A Handbook of Innovative Legal, Technical, and Policy Proposals and a Guide to their Implementation",
             "2018 downloads": 4,
@@ -19507,7 +19507,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
+            "department_codes": "IFD",
             "Ranking": 9,
             "Title": "Do delivery units deliver?: Assessing Government Innovations",
             "2018 downloads": 4,
@@ -19538,7 +19538,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
+            "department_codes": "IFD",
             "Ranking": 10,
             "Title": "Interdependencia municipal en regiones metropolitanas: El caso de la Sabana de Bogotá",
             "2018 downloads": 4,
@@ -19568,7 +19568,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
+            "department_codes": "INE",
             "Ranking": 1,
             "Title": "Water in the Time of Drought: Lessons from Five Droughts around the World",
             "2018 downloads": 26,
@@ -19599,7 +19599,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
+            "department_codes": "INE",
             "Ranking": 2,
             "Title": "Ejecutar proyectos de agua y saneamiento en el sector rural: Retos y desafíos en América Latina y el Caribe",
             "2018 downloads": 25,
@@ -19630,7 +19630,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
+            "department_codes": "INE",
             "Ranking": 3,
             "Title": "Speaking of Water: Digital Conversation on Water and Sanitation in Latin America and the Caribbean 2016-2017",
             "2018 downloads": 6,
@@ -19661,7 +19661,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
+            "department_codes": "INE",
             "Ranking": 4,
             "Title": "Examen de instrumentos económicos para la fijación de precios al carbono: Revisión de experiencias nacionales y regionales y estudios de caso",
             "2018 downloads": 5,
@@ -19692,7 +19692,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
+            "department_codes": "INE",
             "Ranking": 5,
             "Title": "Transparencia: Impulsando eficiencia en empresas proveedoras de servicios de agua y saneamiento: Buenas prácticas en cuatro empresas de América Latina",
             "2018 downloads": 4,
@@ -19723,7 +19723,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
+            "department_codes": "INE",
             "Ranking": 6,
             "Title": "Eficiencia energética en América Latina y el Caribe: Avances y oportunidades",
             "2018 downloads": 3,
@@ -19745,7 +19745,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
+            "department_codes": "INE",
             "Ranking": 7,
             "Title": "Lineamientos para la gestión social en proyectos de agua potable y saneamiento en comunidades rurales",
             "2018 downloads": 2,
@@ -19775,7 +19775,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
+            "department_codes": "INE",
             "Ranking": 8,
             "Title": "Conectividad aérea en regiones remotas: Un análisis crítico de las políticas públicas de transporte aéreo esencial existentes en el mundo",
             "2018 downloads": 2,
@@ -19796,7 +19796,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
+            "department_codes": "INE",
             "Ranking": 9,
             "Title": "Impact Evaluation in Transport",
             "2018 downloads": 2,
@@ -19819,7 +19819,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
+            "department_codes": "INE",
             "Ranking": 10,
             "Title": "El sector hidroeléctrico en Latinoamérica:  Desarrollo, potencial y perspectivas",
             "2018 downloads": 1,
@@ -19850,7 +19850,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INT",
+            "department_codes": "INT",
             "Ranking": 1,
             "Title": "Industria 4.0: Fabricando el Futuro",
             "2018 downloads": 38,
@@ -19881,7 +19881,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INT",
+            "department_codes": "INT",
             "Ranking": 2,
             "Title": "Integration and Trade Journal: Volume 22: No. 44: July, 2018: Planet Algorithm: Artificial Intelligence for a Predictive and Inclusive form of Integration in Latin America",
             "2018 downloads": 33,
@@ -19912,7 +19912,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INT",
+            "department_codes": "INT",
             "Ranking": 3,
             "Title": "Connecting the Dots: A Road Map for Better Integration in Latin America and the Caribbean",
             "2018 downloads": 11,
@@ -19942,7 +19942,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INT",
+            "department_codes": "INT",
             "Ranking": 4,
             "Title": "A Digital Trade Policy for Latin America and the Caribbean",
             "2018 downloads": 7,
@@ -19973,7 +19973,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INT",
+            "department_codes": "INT",
             "Ranking": 5,
             "Title": "Informe MERCOSUR No. 22: Renovando la integración",
             "2018 downloads": 5,
@@ -20004,7 +20004,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INT",
+            "department_codes": "INT",
             "Ranking": 6,
             "Title": "Integration and Trade Journal: Volume 21: No. 43: December, 2017: LATINDIA: The Future of Cooperation between India and Latin America",
             "2018 downloads": 5,
@@ -20031,7 +20031,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INT",
+            "department_codes": "INT",
             "Ranking": 7,
             "Title": "Trade and Integration Monitor 2018: Flying to Quality: Export Sophistication as An Engine of Growth",
             "2018 downloads": 2,
@@ -20048,7 +20048,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INT",
+            "department_codes": "INT",
             "Ranking": 8,
             "Title": "Exponential Disruption in the Digital Economy",
             "2018 downloads": 1,
@@ -20078,7 +20078,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INT",
+            "department_codes": "INT",
             "Ranking": 9,
             "Title": "Action for Growth: Policy Recommendations and 2018-2021 Action Plan for Growth in the Americas",
             "2018 downloads": 1,
@@ -20104,7 +20104,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "INT",
+            "department_codes": "INT",
             "Ranking": 10,
             "Title": "MERCOSUR - Alianza del Pacífico: informe del Diálogo de Alto Nivel: una agenda positiva para la integración",
             "2018 downloads": 1,
@@ -20135,7 +20135,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "ITE",
+            "department_codes": "ITE",
             "Ranking": 1,
             "Title": "Blockchain: How to Develop Trust in Complex Surroundings to Generate Social Impact Value",
             "2018 downloads": 6,
@@ -20166,7 +20166,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "KIC",
+            "department_codes": "KIC",
             "Ranking": 1,
             "Title": "Inter-American Development Bank Annual Report 2017: The Year in Review",
             "2018 downloads": 36,
@@ -20197,7 +20197,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "KIC",
+            "department_codes": "KIC",
             "Ranking": 2,
             "Title": "Water in the Time of Drought: Lessons from Five Droughts around the World",
             "2018 downloads": 26,
@@ -20228,7 +20228,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "KIC",
+            "department_codes": "KIC",
             "Ranking": 3,
             "Title": "Launching an Orange Future: Fifteen Questions for Getting to Know the Creative Entrepreneurs of Latin America and the Caribbean",
             "2018 downloads": 23,
@@ -20259,7 +20259,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "KIC",
+            "department_codes": "KIC",
             "Ranking": 4,
             "Title": "Economía creativa en América Latina y el Caribe: Mediciones y desafíos",
             "2018 downloads": 3,
@@ -20290,7 +20290,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "MIF",
+            "department_codes": "MIF",
             "Ranking": 1,
             "Title": "Global Microscope 2018: The Enabling Environment for Financial Inclusion",
             "2018 downloads": 1,
@@ -20320,7 +20320,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "MIF",
+            "department_codes": "MIF",
             "Ranking": 2,
             "Title": "Innovations in Financing Structures for Impact Enterprises: A Spotlight on Latin America",
             "2018 downloads": 1,
@@ -20345,7 +20345,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "MIF",
+            "department_codes": "MIF",
             "Ranking": 3,
             "Title": "FINLAC Data: Datos de desempeño e inclusión financiera de América Latina y el Caribe",
             "2018 downloads": 754,
@@ -20372,7 +20372,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "MIF",
+            "department_codes": "MIF",
             "Ranking": 4,
             "Title": "Tecnolatinas: Latin America Riding the Technology Tsunami",
             "2018 downloads": 423,
@@ -20393,7 +20393,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "MIF",
+            "department_codes": "MIF",
             "Ranking": 5,
             "Title": "Empathy Driven Funding: New Frontier of Financing Small Businesses",
             "2018 downloads": 261,
@@ -20407,7 +20407,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "MIF",
+            "department_codes": "MIF",
             "Ranking": 6,
             "Title": "Corporate Venturing in the Caribbean: Creating Positive Outcomes for Businesses and Communities",
             "2018 downloads": 164,
@@ -20423,7 +20423,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "MIF",
+            "department_codes": "MIF",
             "Ranking": 7,
             "Title": "Empathy Driven Funding: Case Studies",
             "2018 downloads": 138,
@@ -20435,7 +20435,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "MIF",
+            "department_codes": "MIF",
             "Ranking": 8,
             "Title": "Remittances to Latin America And The Caribbean in 2017: Greater Growth Dynamism",
             "2018 downloads": 107,
@@ -20453,7 +20453,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "MIF",
+            "department_codes": "MIF",
             "Ranking": 9,
             "Title": "Green microfinance in Latin America and the Caribbean: An Analysis of Opportunities",
             "2018 downloads": 15,
@@ -20464,7 +20464,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "ORP",
+            "department_codes": "ORP",
             "Ranking": 1,
             "Title": "2017 Partnership Report",
             "2018 downloads": 2,
@@ -20492,7 +20492,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "OVE",
+            "department_codes": "OVE",
             "Ranking": 1,
             "Title": "Country Program Evaluation: Ecuador 2012-2017",
             "2018 downloads": 5,
@@ -20523,7 +20523,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "OVE",
+            "department_codes": "OVE",
             "Ranking": 2,
             "Title": "Country Program Evaluation: Bahamas 2010-2017",
             "2018 downloads": 2,
@@ -20554,7 +20554,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "OVE",
+            "department_codes": "OVE",
             "Ranking": 3,
             "Title": "OVE Annual Report 2017",
             "2018 downloads": 1,
@@ -20577,7 +20577,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "OVE",
+            "department_codes": "OVE",
             "Ranking": 4,
             "Title": "IDB and IIC Project Performance: OVE’s Review of 2016 Project Completion Reports and Expanded Supervision Reports",
             "2018 downloads": 624,
@@ -20607,7 +20607,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "OVE",
+            "department_codes": "OVE",
             "Ranking": 5,
             "Title": "Snapshot: 2017 OVE Annual Report",
             "2018 downloads": 455,
@@ -20626,7 +20626,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "OVE",
+            "department_codes": "OVE",
             "Ranking": 6,
             "Title": "Approach Paper: Country Program Evaluation: Chile 2014-2018",
             "2018 downloads": 407,
@@ -20646,7 +20646,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "OVE",
+            "department_codes": "OVE",
             "Ranking": 7,
             "Title": "Evaluation of the Bank's Support for Gender and Diversity",
             "2018 downloads": 364,
@@ -20673,7 +20673,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "OVE",
+            "department_codes": "OVE",
             "Ranking": 8,
             "Title": "Approach Paper: Country Program Evaluation: Paraguay 2014-2018",
             "2018 downloads": 283,
@@ -20700,7 +20700,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "OVE",
+            "department_codes": "OVE",
             "Ranking": 9,
             "Title": "Approach Paper: Country Program Evaluation: Barbados 2014-2018",
             "2018 downloads": 265,
@@ -20723,7 +20723,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "OVE",
+            "department_codes": "OVE",
             "Ranking": 10,
             "Title": "IDB’s Ninth General Capital Increase: Implementation and Results",
             "2018 downloads": 163,
@@ -20749,7 +20749,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "RES",
+            "department_codes": "RES",
             "Ranking": 1,
             "Title": "2018 Latin American and Caribbean Macroeconomic Report: A Mandate to Grow",
             "2018 downloads": 32,
@@ -20780,7 +20780,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "RES",
+            "department_codes": "RES",
             "Ranking": 2,
             "Title": "Better Spending for Better Lives: How Latin America and the Caribbean Can Do More with Less",
             "2018 downloads": 27,
@@ -20811,7 +20811,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "RES",
+            "department_codes": "RES",
             "Ranking": 3,
             "Title": "The Database of Political Institutions 2017 (DPI2017)",
             "2018 downloads": 4,
@@ -20841,7 +20841,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "RES",
+            "department_codes": "RES",
             "Ranking": 4,
             "Title": "Building Capabilities for Productive Development",
             "2018 downloads": 1,
@@ -20871,7 +20871,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "RES",
+            "department_codes": "RES",
             "Ranking": 5,
             "Title": "Labor Market Search, Informality and Schooling Investments",
             "2018 downloads": 363,
@@ -20885,7 +20885,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "RES",
+            "department_codes": "RES",
             "Ranking": 6,
             "Title": "What Can Massive Mobile Phone Data Tell Us About International Trade?: The Case of Spain",
             "2018 downloads": 299,
@@ -20903,7 +20903,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "RES",
+            "department_codes": "RES",
             "Ranking": 7,
             "Title": "The Impact of School-Based Financial Education on High School Students and their Teachers: Experimental Evidence from Peru",
             "2018 downloads": 244,
@@ -20918,7 +20918,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "RES",
+            "department_codes": "RES",
             "Ranking": 8,
             "Title": "The Time-Varying Degree of Inflation Expectation Anchoring in Bolivia",
             "2018 downloads": 233,
@@ -20932,7 +20932,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "RES",
+            "department_codes": "RES",
             "Ranking": 9,
             "Title": "Price Dynamics and the Financing Structure of Firms in Emerging Economies",
             "2018 downloads": 227,
@@ -20953,7 +20953,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "RES",
+            "department_codes": "RES",
             "Ranking": 10,
             "Title": "La cuenta satélite de los servicios de infraestructura: Una nueva manera de medir la infraestructura en América Latina con base en los casos de Argentina, Brasil y México: Fuentes, métodos y resultados",
             "2018 downloads": 210,
@@ -20979,7 +20979,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
+            "department_codes": "SCL",
             "Ranking": 1,
             "Title": "Profesión: Profesor en América Latina ¿Por qué se perdió el prestigio docente y cómo recuperarlo?",
             "2018 downloads": 40,
@@ -21010,7 +21010,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
+            "department_codes": "SCL",
             "Ranking": 2,
             "Title": "Social Services for Digital Citizens: Opportunities for Latin America and the Caribbean",
             "2018 downloads": 36,
@@ -21041,7 +21041,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
+            "department_codes": "SCL",
             "Ranking": 3,
             "Title": "The Future of Work: Regional Perspectives",
             "2018 downloads": 26,
@@ -21071,7 +21071,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
+            "department_codes": "SCL",
             "Ranking": 4,
             "Title": "El futuro del trabajo en América Latina y el Caribe: ¿Una gran oportunidad para la región? (versión interactiva)",
             "2018 downloads": 21,
@@ -21102,7 +21102,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
+            "department_codes": "SCL",
             "Ranking": 5,
             "Title": "La priorización en salud paso a paso: Cómo articulan sus procesos México, Brasil y Colombia",
             "2018 downloads": 16,
@@ -21133,7 +21133,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
+            "department_codes": "SCL",
             "Ranking": 6,
             "Title": "Desde el paciente: Experiencias de la atención primaria de salud en América Latina y el Caribe",
             "2018 downloads": 12,
@@ -21164,7 +21164,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
+            "department_codes": "SCL",
             "Ranking": 7,
             "Title": "Panorama de envejecimiento y dependencia en América Latina y el Caribe",
             "2018 downloads": 9,
@@ -21195,7 +21195,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
+            "department_codes": "SCL",
             "Ranking": 8,
             "Title": "Public Expenditure Efficiency in Health Care in Latin America and the Caribbean: Highlights from an IDB Workshop on Public Expenditure Efficiency and Outcomes",
             "2018 downloads": 8,
@@ -21226,7 +21226,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
+            "department_codes": "SCL",
             "Ranking": 9,
             "Title": "Millennials en América Latina y el Caribe: ¿Trabajar o estudiar?",
             "2018 downloads": 1,
@@ -21240,7 +21240,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
+            "department_codes": "SCL",
             "Ranking": 10,
             "Title": "The Future of Work: Regional Perspectives (Summary)",
             "2018 downloads": 1,
@@ -21258,7 +21258,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SPD",
+            "department_codes": "SPD",
             "Ranking": 1,
             "Title": "The Future of Work: Regional Perspectives",
             "2018 downloads": 26,
@@ -21288,7 +21288,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SPD",
+            "department_codes": "SPD",
             "Ranking": 2,
             "Title": "Impact Evaluation in Transport",
             "2018 downloads": 2,
@@ -21311,7 +21311,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SPD",
+            "department_codes": "SPD",
             "Ranking": 3,
             "Title": "The Future of Work: Regional Perspectives (Summary)",
             "2018 downloads": 1,
@@ -21329,7 +21329,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SPD",
+            "department_codes": "SPD",
             "Ranking": 4,
             "Title": "Piloto de cambio de receptor de becas en educación media superior",
             "2018 downloads": 1,
@@ -21347,7 +21347,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SPD",
+            "department_codes": "SPD",
             "Ranking": 5,
             "Title": "El efecto de la educación en las actitudes de género: Evidencia experimental en educación secundaria en El Salvador",
             "2018 downloads": 1,
@@ -21363,7 +21363,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SPD",
+            "department_codes": "SPD",
             "Ranking": 6,
             "Title": "Multilateral Development Banks’ Risk Mitigation Instruments for Infrastructure Investment",
             "2018 downloads": 1,
@@ -21391,7 +21391,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SPD",
+            "department_codes": "SPD",
             "Ranking": 7,
             "Title": "Development Effectiveness Overview (DEO) 2018",
             "2018 downloads": 1,
@@ -21421,7 +21421,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SPD",
+            "department_codes": "SPD",
             "Ranking": 8,
             "Title": "How Effective is Energy-efficient Housing?: Evidence From a Field Experiment in Mexico",
             "2018 downloads": 424,
@@ -21443,7 +21443,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SPD",
+            "department_codes": "SPD",
             "Ranking": 9,
             "Title": "¿Cuán efectiva es la eficiencia energética en vivienda?: Evidencia deun experimento de campo en México: Resumen ejecutivo",
             "2018 downloads": 377,
@@ -21455,7 +21455,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "SPD",
+            "department_codes": "SPD",
             "Ranking": 10,
             "Title": "Development Effectiveness Overview (DEO) 2018: Executive Summary",
             "2018 downloads": 362,
@@ -21483,7 +21483,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "VPC",
+            "department_codes": "VPC",
             "Ranking": 1,
             "Title": "IDB Group-Civil Society Engagement Review 2016-2017",
             "2018 downloads": 356,
@@ -21503,7 +21503,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "VPC",
+            "department_codes": "VPC",
             "Ranking": 2,
             "Title": "Sector extractivo y sociedad civil: Cuando el trabajo de comunidades, gobiernos e industrias es sinónimo de desarrollo",
             "2018 downloads": 203,
@@ -21531,7 +21531,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "VPC",
+            "department_codes": "VPC",
             "Ranking": 3,
             "Title": "Development Challenges in Guyana",
             "2018 downloads": 192,
@@ -21545,7 +21545,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "VPS",
+            "department_codes": "VPS",
             "Ranking": 1,
             "Title": "Under-Rewarded Efforts: The Elusive Quest for Prosperity in Mexico",
             "2018 downloads": 44,
@@ -21576,7 +21576,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "VPS",
+            "department_codes": "VPS",
             "Ranking": 2,
             "Title": "Tailoring Instruction to Improve Mathematics Skills in Preschools: A Randomized Evaluation",
             "2018 downloads": 324,
@@ -21591,7 +21591,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "VPS",
+            "department_codes": "VPS",
             "Ranking": 3,
             "Title": "Public Education Investment and Local Labor Markets: Evidence from a Large Federal Program in Brazil",
             "2018 downloads": 83,
@@ -21608,7 +21608,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "VPS",
+            "department_codes": "VPS",
             "Ranking": 4,
             "Title": "Gender-Segmented Labor Markets and the Effects of Local Demand Shocks",
             "2018 downloads": 72,
@@ -21624,7 +21624,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "VPS",
+            "department_codes": "VPS",
             "Ranking": 5,
             "Title": "Evaluation of Inflation Forecasting Models in Guatemala",
             "2018 downloads": 47,
@@ -21639,7 +21639,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "VPS",
+            "department_codes": "VPS",
             "Ranking": 6,
             "Title": "Firm Knowledge and International Business Cycles",
             "2018 downloads": 39,
@@ -21650,7 +21650,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "VPS",
+            "department_codes": "VPS",
             "Ranking": 7,
             "Title": "Forecasting Inflation Expectations from the CESifo World Economic Survey: An Empirical Application in Inflation Targeting",
             "2018 downloads": 33,
@@ -21663,7 +21663,7 @@ var publicationsLines = {
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Department Codes": "VPS",
+            "department_codes": "VPS",
             "Ranking": 8,
             "Title": "Targeting Credit through Community Members",
             "2018 downloads": 25,
@@ -21680,7 +21680,7 @@ var publicationsLines = {
             "Title": "Global Microscope 2018: The Enabling Environment for Financial Inclusion",
             "2018 downloads": 1,
             "10/30/2018": 6,
-            "Division Codes": "",
+            "division_codes": "",
             "xlsx_row_id": 2
         },
         {
@@ -21693,7 +21693,7 @@ var publicationsLines = {
             "11/7/2018": 6,
             "11/8/2018": "6",
             "11/20/2018": "12",
-            "Division Codes": "",
+            "division_codes": "",
             "xlsx_row_id": 3
         },
         {
@@ -21724,7 +21724,7 @@ var publicationsLines = {
             "11/18/2018": 207,
             "11/19/2018": "276",
             "11/20/2018": "211",
-            "Division Codes": "CAN",
+            "division_codes": "CAN",
             "xlsx_row_id": 4
         },
         {
@@ -21748,7 +21748,7 @@ var publicationsLines = {
             "11/18/2018": 49,
             "11/19/2018": "39",
             "11/20/2018": "75",
-            "Division Codes": "CAN",
+            "division_codes": "CAN",
             "xlsx_row_id": 5
         },
         {
@@ -21774,7 +21774,7 @@ var publicationsLines = {
             "11/18/2018": 2,
             "11/19/2018": "2",
             "11/20/2018": "4",
-            "Division Codes": "CAN",
+            "division_codes": "CAN",
             "xlsx_row_id": 6
         },
         {
@@ -21788,7 +21788,7 @@ var publicationsLines = {
             "11/17/2018": 10,
             "11/18/2018": 18,
             "11/20/2018": "2",
-            "Division Codes": "CAN",
+            "division_codes": "CAN",
             "xlsx_row_id": 7
         },
         {
@@ -21818,7 +21818,7 @@ var publicationsLines = {
             "11/18/2018": 1,
             "11/19/2018": "4",
             "11/20/2018": "2",
-            "Division Codes": "CAN",
+            "division_codes": "CAN",
             "xlsx_row_id": 8
         },
         {
@@ -21832,7 +21832,7 @@ var publicationsLines = {
             "11/13/2018": "1",
             "11/14/2018": 1,
             "11/18/2018": 1,
-            "Division Codes": "CAN",
+            "division_codes": "CAN",
             "xlsx_row_id": 9
         },
         {
@@ -21861,7 +21861,7 @@ var publicationsLines = {
             "11/18/2018": 2,
             "11/19/2018": "1",
             "11/20/2018": "1",
-            "Division Codes": "CAN",
+            "division_codes": "CAN",
             "xlsx_row_id": 10
         },
         {
@@ -21882,7 +21882,7 @@ var publicationsLines = {
             "11/17/2018": 2,
             "11/19/2018": "2",
             "11/20/2018": "2",
-            "Division Codes": "CAN",
+            "division_codes": "CAN",
             "xlsx_row_id": 11
         },
         {
@@ -21898,7 +21898,7 @@ var publicationsLines = {
             "11/8/2018": "5",
             "11/9/2018": 1,
             "11/16/2018": 2,
-            "Division Codes": "CAN",
+            "division_codes": "CAN",
             "xlsx_row_id": 12
         },
         {
@@ -21911,7 +21911,7 @@ var publicationsLines = {
             "11/5/2018": 1,
             "11/7/2018": 1,
             "11/11/2018": "3",
-            "Division Codes": "CAN",
+            "division_codes": "CAN",
             "xlsx_row_id": 13
         },
         {
@@ -21939,7 +21939,7 @@ var publicationsLines = {
             "11/17/2018": 3,
             "11/19/2018": "2",
             "11/20/2018": "4",
-            "Division Codes": "CBO",
+            "division_codes": "CBO",
             "xlsx_row_id": 14
         },
         {
@@ -21966,7 +21966,7 @@ var publicationsLines = {
             "11/18/2018": 2,
             "11/19/2018": "6",
             "11/20/2018": "3",
-            "Division Codes": "CCB",
+            "division_codes": "CCB",
             "xlsx_row_id": 15
         },
         {
@@ -21997,7 +21997,7 @@ var publicationsLines = {
             "11/18/2018": 13,
             "11/19/2018": "29",
             "11/20/2018": "10",
-            "Division Codes": "CCB",
+            "division_codes": "CCB",
             "xlsx_row_id": 16
         },
         {
@@ -22021,7 +22021,7 @@ var publicationsLines = {
             "11/15/2018": 3,
             "11/17/2018": 1,
             "11/20/2018": "2",
-            "Division Codes": "CCB",
+            "division_codes": "CCB",
             "xlsx_row_id": 17
         },
         {
@@ -22052,7 +22052,7 @@ var publicationsLines = {
             "11/18/2018": 1,
             "11/19/2018": "7",
             "11/20/2018": "1",
-            "Division Codes": "CCB",
+            "division_codes": "CCB",
             "xlsx_row_id": 18
         },
         {
@@ -22066,7 +22066,7 @@ var publicationsLines = {
             "11/12/2018": 1,
             "11/14/2018": 1,
             "11/15/2018": 1,
-            "Division Codes": "CCB",
+            "division_codes": "CCB",
             "xlsx_row_id": 19
         },
         {
@@ -22096,7 +22096,7 @@ var publicationsLines = {
             "11/18/2018": 1,
             "11/19/2018": "7",
             "11/20/2018": "8",
-            "Division Codes": "CCB",
+            "division_codes": "CCB",
             "xlsx_row_id": 20
         },
         {
@@ -22123,7 +22123,7 @@ var publicationsLines = {
             "11/17/2018": 3,
             "11/19/2018": "3",
             "11/20/2018": "4",
-            "Division Codes": "CCB",
+            "division_codes": "CCB",
             "xlsx_row_id": 21
         },
         {
@@ -22139,7 +22139,7 @@ var publicationsLines = {
             "11/15/2018": 3,
             "11/19/2018": "2",
             "11/20/2018": "3",
-            "Division Codes": "CCB",
+            "division_codes": "CCB",
             "xlsx_row_id": 22
         },
         {
@@ -22168,7 +22168,7 @@ var publicationsLines = {
             "11/18/2018": 1,
             "11/19/2018": "5",
             "11/20/2018": "3",
-            "Division Codes": "CCB",
+            "division_codes": "CCB",
             "xlsx_row_id": 23
         },
         {
@@ -22187,7 +22187,7 @@ var publicationsLines = {
             "11/12/2018": 1,
             "11/17/2018": 1,
             "11/19/2018": "1",
-            "Division Codes": "CCB",
+            "division_codes": "CCB",
             "xlsx_row_id": 24
         },
         {
@@ -22218,7 +22218,7 @@ var publicationsLines = {
             "11/18/2018": 23,
             "11/19/2018": "65",
             "11/20/2018": "69",
-            "Division Codes": "CCS",
+            "division_codes": "CCS",
             "xlsx_row_id": 25
         },
         {
@@ -22244,7 +22244,7 @@ var publicationsLines = {
             "11/17/2018": 1,
             "11/19/2018": "2",
             "11/20/2018": "5",
-            "Division Codes": "CCS",
+            "division_codes": "CCS",
             "xlsx_row_id": 26
         },
         {
@@ -22266,7 +22266,7 @@ var publicationsLines = {
             "11/18/2018": 4,
             "11/19/2018": "6",
             "11/20/2018": "4",
-            "Division Codes": "CCS",
+            "division_codes": "CCS",
             "xlsx_row_id": 27
         },
         {
@@ -22287,7 +22287,7 @@ var publicationsLines = {
             "11/18/2018": 1,
             "11/19/2018": "1",
             "11/20/2018": "1",
-            "Division Codes": "CCS",
+            "division_codes": "CCS",
             "xlsx_row_id": 28
         },
         {
@@ -22302,7 +22302,7 @@ var publicationsLines = {
             "11/13/2018": "1",
             "11/16/2018": 1,
             "11/19/2018": "1",
-            "Division Codes": "CCS",
+            "division_codes": "CCS",
             "xlsx_row_id": 29
         },
         {
@@ -22312,7 +22312,7 @@ var publicationsLines = {
             "2018 downloads": 148,
             "10/29/2018": 1,
             "11/7/2018": 1,
-            "Division Codes": "CCS",
+            "division_codes": "CCS",
             "xlsx_row_id": 30
         },
         {
@@ -22324,7 +22324,7 @@ var publicationsLines = {
             "11/1/2018": 2,
             "11/10/2018": 2,
             "11/12/2018": 1,
-            "Division Codes": "CCS",
+            "division_codes": "CCS",
             "xlsx_row_id": 31
         },
         {
@@ -22335,7 +22335,7 @@ var publicationsLines = {
             "10/30/2018": 1,
             "11/1/2018": 1,
             "11/16/2018": 2,
-            "Division Codes": "CCS",
+            "division_codes": "CCS",
             "xlsx_row_id": 32
         },
         {
@@ -22358,7 +22358,7 @@ var publicationsLines = {
             "11/18/2018": 2,
             "11/19/2018": "1",
             "11/20/2018": "3",
-            "Division Codes": "CCS",
+            "division_codes": "CCS",
             "xlsx_row_id": 33
         },
         {
@@ -22389,7 +22389,7 @@ var publicationsLines = {
             "11/18/2018": 1,
             "11/19/2018": "5",
             "11/20/2018": "22",
-            "Division Codes": "CID",
+            "division_codes": "CID",
             "xlsx_row_id": 34
         },
         {
@@ -22417,7 +22417,7 @@ var publicationsLines = {
             "11/18/2018": 2,
             "11/19/2018": "5",
             "11/20/2018": "3",
-            "Division Codes": "CID",
+            "division_codes": "CID",
             "xlsx_row_id": 35
         },
         {
@@ -22444,7 +22444,7 @@ var publicationsLines = {
             "11/18/2018": 1,
             "11/19/2018": "2",
             "11/20/2018": "2",
-            "Division Codes": "CID",
+            "division_codes": "CID",
             "xlsx_row_id": 36
         },
         {
@@ -22468,7 +22468,7 @@ var publicationsLines = {
             "11/17/2018": 2,
             "11/18/2018": 4,
             "11/20/2018": "3",
-            "Division Codes": "CID",
+            "division_codes": "CID",
             "xlsx_row_id": 37
         },
         {
@@ -22499,7 +22499,7 @@ var publicationsLines = {
             "11/18/2018": 2,
             "11/19/2018": "5",
             "11/20/2018": "2",
-            "Division Codes": "CID",
+            "division_codes": "CID",
             "xlsx_row_id": 38
         },
         {
@@ -22525,7 +22525,7 @@ var publicationsLines = {
             "11/15/2018": 7,
             "11/17/2018": 3,
             "11/18/2018": 4,
-            "Division Codes": "CID",
+            "division_codes": "CID",
             "xlsx_row_id": 39
         },
         {
@@ -22544,7 +22544,7 @@ var publicationsLines = {
             "11/14/2018": 3,
             "11/15/2018": 1,
             "11/16/2018": 1,
-            "Division Codes": "CID",
+            "division_codes": "CID",
             "xlsx_row_id": 40
         },
         {
@@ -22568,7 +22568,7 @@ var publicationsLines = {
             "11/17/2018": 1,
             "11/19/2018": "3",
             "11/20/2018": "7",
-            "Division Codes": "CID",
+            "division_codes": "CID",
             "xlsx_row_id": 41
         },
         {
@@ -22581,7 +22581,7 @@ var publicationsLines = {
             "11/7/2018": 2,
             "11/8/2018": "6",
             "11/15/2018": 1,
-            "Division Codes": "CID",
+            "division_codes": "CID",
             "xlsx_row_id": 42
         },
         {
@@ -22596,7 +22596,7 @@ var publicationsLines = {
             "11/12/2018": 2,
             "11/13/2018": "1",
             "11/14/2018": 1,
-            "Division Codes": "CID",
+            "division_codes": "CID",
             "xlsx_row_id": 43
         },
         {
@@ -22614,7 +22614,7 @@ var publicationsLines = {
             "11/15/2018": 1,
             "11/18/2018": 2,
             "11/19/2018": "2",
-            "Division Codes": "CME",
+            "division_codes": "CME",
             "xlsx_row_id": 44
         },
         {
@@ -22630,7 +22630,7 @@ var publicationsLines = {
             "11/13/2018": "1",
             "11/15/2018": 1,
             "11/19/2018": "1",
-            "Division Codes": "CME",
+            "division_codes": "CME",
             "xlsx_row_id": 45
         },
         {
@@ -22661,7 +22661,7 @@ var publicationsLines = {
             "11/18/2018": 14,
             "11/19/2018": "20",
             "11/20/2018": "11",
-            "Division Codes": "CMF",
+            "division_codes": "CMF",
             "xlsx_row_id": 46
         },
         {
@@ -22686,7 +22686,7 @@ var publicationsLines = {
             "11/18/2018": 145,
             "11/19/2018": "214",
             "11/20/2018": "129",
-            "Division Codes": "CMF",
+            "division_codes": "CMF",
             "xlsx_row_id": 47
         },
         {
@@ -22711,7 +22711,7 @@ var publicationsLines = {
             "11/17/2018": 1,
             "11/19/2018": "1",
             "11/20/2018": "4",
-            "Division Codes": "CMF",
+            "division_codes": "CMF",
             "xlsx_row_id": 48
         },
         {
@@ -22740,7 +22740,7 @@ var publicationsLines = {
             "11/18/2018": 1,
             "11/19/2018": "9",
             "11/20/2018": "2",
-            "Division Codes": "CMF",
+            "division_codes": "CMF",
             "xlsx_row_id": 49
         },
         {
@@ -22770,7 +22770,7 @@ var publicationsLines = {
             "11/18/2018": 1,
             "11/19/2018": "1",
             "11/20/2018": "3",
-            "Division Codes": "CMF",
+            "division_codes": "CMF",
             "xlsx_row_id": 50
         },
         {
@@ -22798,7 +22798,7 @@ var publicationsLines = {
             "11/16/2018": 4,
             "11/17/2018": 7,
             "11/20/2018": "3",
-            "Division Codes": "CMF",
+            "division_codes": "CMF",
             "xlsx_row_id": 51
         },
         {
@@ -22818,7 +22818,7 @@ var publicationsLines = {
             "11/14/2018": 2,
             "11/17/2018": 1,
             "11/20/2018": "2",
-            "Division Codes": "CMF",
+            "division_codes": "CMF",
             "xlsx_row_id": 52
         },
         {
@@ -22846,7 +22846,7 @@ var publicationsLines = {
             "11/18/2018": 2,
             "11/19/2018": "3",
             "11/20/2018": "11",
-            "Division Codes": "CMF",
+            "division_codes": "CMF",
             "xlsx_row_id": 53
         },
         {
@@ -22875,7 +22875,7 @@ var publicationsLines = {
             "11/18/2018": 3,
             "11/19/2018": "2",
             "11/20/2018": "1",
-            "Division Codes": "CMF",
+            "division_codes": "CMF",
             "xlsx_row_id": 54
         },
         {
@@ -22898,7 +22898,7 @@ var publicationsLines = {
             "11/14/2018": 1,
             "11/15/2018": 1,
             "11/20/2018": "5",
-            "Division Codes": "CMF",
+            "division_codes": "CMF",
             "xlsx_row_id": 55
         },
         {
@@ -22929,7 +22929,7 @@ var publicationsLines = {
             "11/18/2018": 7,
             "11/19/2018": "10",
             "11/20/2018": "13",
-            "Division Codes": "CMG",
+            "division_codes": "CMG",
             "xlsx_row_id": 56
         },
         {
@@ -22950,7 +22950,7 @@ var publicationsLines = {
             "11/16/2018": 1,
             "11/18/2018": 1,
             "11/20/2018": "3",
-            "Division Codes": "CPR",
+            "division_codes": "CPR",
             "xlsx_row_id": 57
         },
         {
@@ -22979,7 +22979,7 @@ var publicationsLines = {
             "11/18/2018": 11,
             "11/19/2018": "16",
             "11/20/2018": "22",
-            "Division Codes": "CSC",
+            "division_codes": "CSC",
             "xlsx_row_id": 58
         },
         {
@@ -22990,7 +22990,7 @@ var publicationsLines = {
             "11/1/2018": 1,
             "11/10/2018": 1,
             "11/20/2018": "1",
-            "Division Codes": "CSC",
+            "division_codes": "CSC",
             "xlsx_row_id": 59
         },
         {
@@ -23005,7 +23005,7 @@ var publicationsLines = {
             "11/10/2018": 9,
             "11/11/2018": "3",
             "11/17/2018": 2,
-            "Division Codes": "CSC",
+            "division_codes": "CSC",
             "xlsx_row_id": 60
         },
         {
@@ -23025,7 +23025,7 @@ var publicationsLines = {
             "11/14/2018": 1,
             "11/15/2018": 3,
             "11/19/2018": "2",
-            "Division Codes": "CSC",
+            "division_codes": "CSC",
             "xlsx_row_id": 61
         },
         {
@@ -23042,7 +23042,7 @@ var publicationsLines = {
             "11/13/2018": "1",
             "11/14/2018": 3,
             "11/20/2018": "1",
-            "Division Codes": "CSC",
+            "division_codes": "CSC",
             "xlsx_row_id": 62
         },
         {
@@ -23061,7 +23061,7 @@ var publicationsLines = {
             "11/14/2018": 1,
             "11/15/2018": 1,
             "11/16/2018": 1,
-            "Division Codes": "CSC",
+            "division_codes": "CSC",
             "xlsx_row_id": 63
         },
         {
@@ -23077,7 +23077,7 @@ var publicationsLines = {
             "11/16/2018": 1,
             "11/19/2018": "2",
             "11/20/2018": "1",
-            "Division Codes": "CSC",
+            "division_codes": "CSC",
             "xlsx_row_id": 64
         },
         {
@@ -23089,7 +23089,7 @@ var publicationsLines = {
             "11/11/2018": "1",
             "11/12/2018": 1,
             "11/16/2018": 1,
-            "Division Codes": "CSC",
+            "division_codes": "CSC",
             "xlsx_row_id": 65
         },
         {
@@ -23100,7 +23100,7 @@ var publicationsLines = {
             "10/31/2018": 1,
             "11/7/2018": 1,
             "11/16/2018": 1,
-            "Division Codes": "CSC",
+            "division_codes": "CSC",
             "xlsx_row_id": 66
         },
         {
@@ -23131,7 +23131,7 @@ var publicationsLines = {
             "11/18/2018": 35,
             "11/19/2018": "33",
             "11/20/2018": "36",
-            "Division Codes": "CSD",
+            "division_codes": "CSD",
             "xlsx_row_id": 67
         },
         {
@@ -23150,7 +23150,7 @@ var publicationsLines = {
             "11/14/2018": 1,
             "11/15/2018": 2,
             "11/19/2018": "1",
-            "Division Codes": "CSD",
+            "division_codes": "CSD",
             "xlsx_row_id": 68
         },
         {
@@ -23160,7 +23160,7 @@ var publicationsLines = {
             "2018 downloads": 30,
             "11/1/2018": 1,
             "11/13/2018": "2",
-            "Division Codes": "CSD",
+            "division_codes": "CSD",
             "xlsx_row_id": 69
         },
         {
@@ -23186,7 +23186,7 @@ var publicationsLines = {
             "11/18/2018": 5,
             "11/19/2018": "4",
             "11/20/2018": "4",
-            "Division Codes": "CTI",
+            "division_codes": "CTI",
             "xlsx_row_id": 70
         },
         {
@@ -23216,7 +23216,7 @@ var publicationsLines = {
             "11/18/2018": 1,
             "11/19/2018": "23",
             "11/20/2018": "10",
-            "Division Codes": "CTI",
+            "division_codes": "CTI",
             "xlsx_row_id": 71
         },
         {
@@ -23232,7 +23232,7 @@ var publicationsLines = {
             "11/16/2018": 6,
             "11/19/2018": "1",
             "11/20/2018": "1",
-            "Division Codes": "CTI",
+            "division_codes": "CTI",
             "xlsx_row_id": 72
         },
         {
@@ -23252,7 +23252,7 @@ var publicationsLines = {
             "11/16/2018": 3,
             "11/18/2018": 1,
             "11/19/2018": "1",
-            "Division Codes": "CTI",
+            "division_codes": "CTI",
             "xlsx_row_id": 73
         },
         {
@@ -23266,7 +23266,7 @@ var publicationsLines = {
             "11/13/2018": "4",
             "11/15/2018": 1,
             "11/20/2018": "1",
-            "Division Codes": "CTI",
+            "division_codes": "CTI",
             "xlsx_row_id": 74
         },
         {
@@ -23280,7 +23280,7 @@ var publicationsLines = {
             "11/15/2018": 2,
             "11/16/2018": 1,
             "11/19/2018": "2",
-            "Division Codes": "CTI",
+            "division_codes": "CTI",
             "xlsx_row_id": 75
         },
         {
@@ -23292,7 +23292,7 @@ var publicationsLines = {
             "11/16/2018": 10,
             "11/19/2018": "6",
             "11/20/2018": "34",
-            "Division Codes": "CUR",
+            "division_codes": "CUR",
             "xlsx_row_id": 76
         },
         {
@@ -23323,7 +23323,7 @@ var publicationsLines = {
             "11/18/2018": 14,
             "11/19/2018": "37",
             "11/20/2018": "17",
-            "Division Codes": "Discontinued Divisions",
+            "division_codes": "Discontinued Divisions",
             "xlsx_row_id": 77
         },
         {
@@ -23353,7 +23353,7 @@ var publicationsLines = {
             "11/18/2018": 101,
             "11/19/2018": "193",
             "11/20/2018": "100",
-            "Division Codes": "Discontinued Divisions",
+            "division_codes": "Discontinued Divisions",
             "xlsx_row_id": 78
         },
         {
@@ -23380,7 +23380,7 @@ var publicationsLines = {
             "11/18/2018": 1,
             "11/19/2018": "2",
             "11/20/2018": "4",
-            "Division Codes": "Discontinued Divisions",
+            "division_codes": "Discontinued Divisions",
             "xlsx_row_id": 79
         },
         {
@@ -23402,7 +23402,7 @@ var publicationsLines = {
             "11/15/2018": 3,
             "11/16/2018": 2,
             "11/20/2018": "1",
-            "Division Codes": "Discontinued Divisions",
+            "division_codes": "Discontinued Divisions",
             "xlsx_row_id": 80
         },
         {
@@ -23433,7 +23433,7 @@ var publicationsLines = {
             "11/18/2018": 391,
             "11/19/2018": "651",
             "11/20/2018": "340",
-            "Division Codes": "EDU",
+            "division_codes": "EDU",
             "xlsx_row_id": 81
         },
         {
@@ -23450,7 +23450,7 @@ var publicationsLines = {
             "11/16/2018": 1,
             "11/19/2018": "2",
             "11/20/2018": "2",
-            "Division Codes": "EDU",
+            "division_codes": "EDU",
             "xlsx_row_id": 82
         },
         {
@@ -23465,7 +23465,7 @@ var publicationsLines = {
             "11/6/2018": 1,
             "11/8/2018": "2",
             "11/10/2018": 1,
-            "Division Codes": "EDU",
+            "division_codes": "EDU",
             "xlsx_row_id": 83
         },
         {
@@ -23479,7 +23479,7 @@ var publicationsLines = {
             "11/7/2018": 1,
             "11/13/2018": "1",
             "11/20/2018": "4",
-            "Division Codes": "EDU",
+            "division_codes": "EDU",
             "xlsx_row_id": 84
         },
         {
@@ -23503,7 +23503,7 @@ var publicationsLines = {
             "11/17/2018": 4,
             "11/19/2018": "2",
             "11/20/2018": "2",
-            "Division Codes": "EDU",
+            "division_codes": "EDU",
             "xlsx_row_id": 85
         },
         {
@@ -23520,7 +23520,7 @@ var publicationsLines = {
             "11/15/2018": 2,
             "11/19/2018": "1",
             "11/20/2018": "1",
-            "Division Codes": "EDU",
+            "division_codes": "EDU",
             "xlsx_row_id": 86
         },
         {
@@ -23541,7 +23541,7 @@ var publicationsLines = {
             "11/16/2018": 3,
             "11/19/2018": "1",
             "11/20/2018": "5",
-            "Division Codes": "EDU",
+            "division_codes": "EDU",
             "xlsx_row_id": 87
         },
         {
@@ -23564,7 +23564,7 @@ var publicationsLines = {
             "11/16/2018": 2,
             "11/17/2018": 1,
             "11/19/2018": "1",
-            "Division Codes": "EDU",
+            "division_codes": "EDU",
             "xlsx_row_id": 88
         },
         {
@@ -23584,7 +23584,7 @@ var publicationsLines = {
             "11/17/2018": 2,
             "11/18/2018": 1,
             "11/20/2018": "1",
-            "Division Codes": "EDU",
+            "division_codes": "EDU",
             "xlsx_row_id": 89
         },
         {
@@ -23598,7 +23598,7 @@ var publicationsLines = {
             "11/7/2018": 1,
             "11/17/2018": 1,
             "11/20/2018": "1",
-            "Division Codes": "EDU",
+            "division_codes": "EDU",
             "xlsx_row_id": 90
         },
         {
@@ -23629,7 +23629,7 @@ var publicationsLines = {
             "11/18/2018": 6,
             "11/19/2018": "9",
             "11/20/2018": "7",
-            "Division Codes": "ENE",
+            "division_codes": "ENE",
             "xlsx_row_id": 91
         },
         {
@@ -23651,7 +23651,7 @@ var publicationsLines = {
             "11/14/2018": 2,
             "11/17/2018": 1,
             "11/20/2018": "1",
-            "Division Codes": "ENE",
+            "division_codes": "ENE",
             "xlsx_row_id": 92
         },
         {
@@ -23682,7 +23682,7 @@ var publicationsLines = {
             "11/18/2018": 3,
             "11/19/2018": "280",
             "11/20/2018": "163",
-            "Division Codes": "ENE",
+            "division_codes": "ENE",
             "xlsx_row_id": 93
         },
         {
@@ -23700,7 +23700,7 @@ var publicationsLines = {
             "11/14/2018": 1,
             "11/15/2018": 1,
             "11/16/2018": 1,
-            "Division Codes": "ENE",
+            "division_codes": "ENE",
             "xlsx_row_id": 94
         },
         {
@@ -23719,7 +23719,7 @@ var publicationsLines = {
             "11/18/2018": 6,
             "11/19/2018": "6",
             "11/20/2018": "10",
-            "Division Codes": "ENE",
+            "division_codes": "ENE",
             "xlsx_row_id": 95
         },
         {
@@ -23733,7 +23733,7 @@ var publicationsLines = {
             "11/18/2018": 1,
             "11/19/2018": "1",
             "11/20/2018": "6",
-            "Division Codes": "ENE",
+            "division_codes": "ENE",
             "xlsx_row_id": 96
         },
         {
@@ -23764,7 +23764,7 @@ var publicationsLines = {
             "11/18/2018": 50,
             "11/19/2018": "98",
             "11/20/2018": "139",
-            "Division Codes": "ESG",
+            "division_codes": "ESG",
             "xlsx_row_id": 97
         },
         {
@@ -23793,7 +23793,7 @@ var publicationsLines = {
             "11/18/2018": 3,
             "11/19/2018": "16",
             "11/20/2018": "9",
-            "Division Codes": "ESG",
+            "division_codes": "ESG",
             "xlsx_row_id": 98
         },
         {
@@ -23824,7 +23824,7 @@ var publicationsLines = {
             "11/18/2018": 6,
             "11/19/2018": "18",
             "11/20/2018": "9",
-            "Division Codes": "FMM",
+            "division_codes": "FMM",
             "xlsx_row_id": 99
         },
         {
@@ -23854,7 +23854,7 @@ var publicationsLines = {
             "11/17/2018": 4,
             "11/18/2018": 2,
             "11/20/2018": "4",
-            "Division Codes": "FMM",
+            "division_codes": "FMM",
             "xlsx_row_id": 100
         },
         {
@@ -23884,7 +23884,7 @@ var publicationsLines = {
             "11/18/2018": 6,
             "11/19/2018": "6",
             "11/20/2018": "5",
-            "Division Codes": "FMM",
+            "division_codes": "FMM",
             "xlsx_row_id": 101
         },
         {
@@ -23910,7 +23910,7 @@ var publicationsLines = {
             "11/18/2018": 20,
             "11/19/2018": "22",
             "11/20/2018": "24",
-            "Division Codes": "FMM",
+            "division_codes": "FMM",
             "xlsx_row_id": 102
         },
         {
@@ -23935,7 +23935,7 @@ var publicationsLines = {
             "11/16/2018": 4,
             "11/19/2018": "2",
             "11/20/2018": "4",
-            "Division Codes": "FMM",
+            "division_codes": "FMM",
             "xlsx_row_id": 103
         },
         {
@@ -23959,7 +23959,7 @@ var publicationsLines = {
             "11/16/2018": 9,
             "11/19/2018": "5",
             "11/20/2018": "2",
-            "Division Codes": "FMM",
+            "division_codes": "FMM",
             "xlsx_row_id": 104
         },
         {
@@ -23988,7 +23988,7 @@ var publicationsLines = {
             "11/18/2018": 1,
             "11/19/2018": "3",
             "11/20/2018": "12",
-            "Division Codes": "FMM",
+            "division_codes": "FMM",
             "xlsx_row_id": 105
         },
         {
@@ -24010,7 +24010,7 @@ var publicationsLines = {
             "11/16/2018": 3,
             "11/19/2018": "2",
             "11/20/2018": "2",
-            "Division Codes": "FMM",
+            "division_codes": "FMM",
             "xlsx_row_id": 106
         },
         {
@@ -24039,7 +24039,7 @@ var publicationsLines = {
             "11/18/2018": 22,
             "11/19/2018": "38",
             "11/20/2018": "5",
-            "Division Codes": "FMM",
+            "division_codes": "FMM",
             "xlsx_row_id": 107
         },
         {
@@ -24068,7 +24068,7 @@ var publicationsLines = {
             "11/18/2018": 2,
             "11/19/2018": "7",
             "11/20/2018": "2",
-            "Division Codes": "FMM",
+            "division_codes": "FMM",
             "xlsx_row_id": 108
         },
         {
@@ -24090,7 +24090,7 @@ var publicationsLines = {
             "11/14/2018": 2,
             "11/15/2018": 3,
             "11/20/2018": "1",
-            "Division Codes": "FMP",
+            "division_codes": "FMP",
             "xlsx_row_id": 109
         },
         {
@@ -24106,7 +24106,7 @@ var publicationsLines = {
             "11/16/2018": 1,
             "11/17/2018": 6,
             "11/20/2018": "2",
-            "Division Codes": "GDI",
+            "division_codes": "GDI",
             "xlsx_row_id": 110
         },
         {
@@ -24127,7 +24127,7 @@ var publicationsLines = {
             "11/14/2018": 1,
             "11/15/2018": 7,
             "11/20/2018": "1",
-            "Division Codes": "GDI",
+            "division_codes": "GDI",
             "xlsx_row_id": 111
         },
         {
@@ -24145,7 +24145,7 @@ var publicationsLines = {
             "11/12/2018": 1,
             "11/16/2018": 1,
             "11/18/2018": 1,
-            "Division Codes": "GDI",
+            "division_codes": "GDI",
             "xlsx_row_id": 112
         },
         {
@@ -24157,7 +24157,7 @@ var publicationsLines = {
             "11/7/2018": 4,
             "11/13/2018": "4",
             "11/20/2018": "1",
-            "Division Codes": "GDI",
+            "division_codes": "GDI",
             "xlsx_row_id": 113
         },
         {
@@ -24173,7 +24173,7 @@ var publicationsLines = {
             "11/13/2018": "1",
             "11/14/2018": 1,
             "11/16/2018": 1,
-            "Division Codes": "GDI",
+            "division_codes": "GDI",
             "xlsx_row_id": 114
         },
         {
@@ -24192,7 +24192,7 @@ var publicationsLines = {
             "11/14/2018": 1,
             "11/16/2018": 1,
             "11/20/2018": "1",
-            "Division Codes": "GDI",
+            "division_codes": "GDI",
             "xlsx_row_id": 115
         },
         {
@@ -24223,7 +24223,7 @@ var publicationsLines = {
             "11/18/2018": 7,
             "11/19/2018": "20",
             "11/20/2018": "24",
-            "Division Codes": "HUD",
+            "division_codes": "HUD",
             "xlsx_row_id": 116
         },
         {
@@ -24254,7 +24254,7 @@ var publicationsLines = {
             "11/18/2018": 5,
             "11/19/2018": "7",
             "11/20/2018": "21",
-            "Division Codes": "HUD",
+            "division_codes": "HUD",
             "xlsx_row_id": 117
         },
         {
@@ -24284,7 +24284,7 @@ var publicationsLines = {
             "11/18/2018": 6,
             "11/19/2018": "6",
             "11/20/2018": "5",
-            "Division Codes": "HUD",
+            "division_codes": "HUD",
             "xlsx_row_id": 118
         },
         {
@@ -24308,7 +24308,7 @@ var publicationsLines = {
             "11/16/2018": 9,
             "11/19/2018": "5",
             "11/20/2018": "2",
-            "Division Codes": "HUD",
+            "division_codes": "HUD",
             "xlsx_row_id": 119
         },
         {
@@ -24332,7 +24332,7 @@ var publicationsLines = {
             "11/18/2018": 1,
             "11/19/2018": "1",
             "11/20/2018": "1",
-            "Division Codes": "HUD",
+            "division_codes": "HUD",
             "xlsx_row_id": 120
         },
         {
@@ -24363,7 +24363,7 @@ var publicationsLines = {
             "11/18/2018": 37,
             "11/19/2018": "22",
             "11/20/2018": "14",
-            "Division Codes": "ICD",
+            "division_codes": "ICD",
             "xlsx_row_id": 121
         },
         {
@@ -24394,7 +24394,7 @@ var publicationsLines = {
             "11/18/2018": 27,
             "11/19/2018": "103",
             "11/20/2018": "51",
-            "Division Codes": "ICS",
+            "division_codes": "ICS",
             "xlsx_row_id": 122
         },
         {
@@ -24425,7 +24425,7 @@ var publicationsLines = {
             "11/18/2018": 15,
             "11/19/2018": "21",
             "11/20/2018": "12",
-            "Division Codes": "ICS",
+            "division_codes": "ICS",
             "xlsx_row_id": 123
         },
         {
@@ -24455,7 +24455,7 @@ var publicationsLines = {
             "11/18/2018": 23,
             "11/19/2018": "36",
             "11/20/2018": "81",
-            "Division Codes": "ICS",
+            "division_codes": "ICS",
             "xlsx_row_id": 124
         },
         {
@@ -24485,7 +24485,7 @@ var publicationsLines = {
             "11/18/2018": 3,
             "11/19/2018": "6",
             "11/20/2018": "5",
-            "Division Codes": "ICS",
+            "division_codes": "ICS",
             "xlsx_row_id": 125
         },
         {
@@ -24516,7 +24516,7 @@ var publicationsLines = {
             "11/18/2018": 11,
             "11/19/2018": "13",
             "11/20/2018": "12",
-            "Division Codes": "ICS",
+            "division_codes": "ICS",
             "xlsx_row_id": 126
         },
         {
@@ -24543,7 +24543,7 @@ var publicationsLines = {
             "11/18/2018": 2,
             "11/19/2018": "6",
             "11/20/2018": "3",
-            "Division Codes": "ICS",
+            "division_codes": "ICS",
             "xlsx_row_id": 127
         },
         {
@@ -24574,7 +24574,7 @@ var publicationsLines = {
             "11/18/2018": 2,
             "11/19/2018": "9",
             "11/20/2018": "110",
-            "Division Codes": "ICS",
+            "division_codes": "ICS",
             "xlsx_row_id": 128
         },
         {
@@ -24605,7 +24605,7 @@ var publicationsLines = {
             "11/18/2018": 18,
             "11/19/2018": "17",
             "11/20/2018": "6",
-            "Division Codes": "ICS",
+            "division_codes": "ICS",
             "xlsx_row_id": 129
         },
         {
@@ -24636,7 +24636,7 @@ var publicationsLines = {
             "11/18/2018": 2,
             "11/19/2018": "17",
             "11/20/2018": "8",
-            "Division Codes": "ICS",
+            "division_codes": "ICS",
             "xlsx_row_id": 130
         },
         {
@@ -24664,7 +24664,7 @@ var publicationsLines = {
             "11/18/2018": 3,
             "11/19/2018": "3",
             "11/20/2018": "16",
-            "Division Codes": "ICS",
+            "division_codes": "ICS",
             "xlsx_row_id": 131
         },
         {
@@ -24675,7 +24675,7 @@ var publicationsLines = {
             "11/5/2018": 1,
             "11/7/2018": 1,
             "11/19/2018": "2",
-            "Division Codes": "IFD",
+            "division_codes": "IFD",
             "xlsx_row_id": 132
         },
         {
@@ -24696,7 +24696,7 @@ var publicationsLines = {
             "11/16/2018": 2,
             "11/19/2018": "97",
             "11/20/2018": "41",
-            "Division Codes": "INE",
+            "division_codes": "INE",
             "xlsx_row_id": 133
         },
         {
@@ -24725,7 +24725,7 @@ var publicationsLines = {
             "11/18/2018": 1,
             "11/19/2018": "3",
             "11/20/2018": "12",
-            "Division Codes": "INE",
+            "division_codes": "INE",
             "xlsx_row_id": 134
         },
         {
@@ -24755,7 +24755,7 @@ var publicationsLines = {
             "11/18/2018": 2,
             "11/19/2018": "5",
             "11/20/2018": "6",
-            "Division Codes": "INE",
+            "division_codes": "INE",
             "xlsx_row_id": 135
         },
         {
@@ -24784,7 +24784,7 @@ var publicationsLines = {
             "11/18/2018": 2,
             "11/19/2018": "7",
             "11/20/2018": "9",
-            "Division Codes": "INE",
+            "division_codes": "INE",
             "xlsx_row_id": 136
         },
         {
@@ -24805,7 +24805,7 @@ var publicationsLines = {
             "11/14/2018": 1,
             "11/15/2018": 2,
             "11/16/2018": 1,
-            "Division Codes": "INE",
+            "division_codes": "INE",
             "xlsx_row_id": 137
         },
         {
@@ -24831,7 +24831,7 @@ var publicationsLines = {
             "11/18/2018": 14,
             "11/19/2018": "28",
             "11/20/2018": "8",
-            "Division Codes": "INE",
+            "division_codes": "INE",
             "xlsx_row_id": 138
         },
         {
@@ -24853,7 +24853,7 @@ var publicationsLines = {
             "11/17/2018": 1,
             "11/19/2018": "2",
             "11/20/2018": "2",
-            "Division Codes": "INE",
+            "division_codes": "INE",
             "xlsx_row_id": 139
         },
         {
@@ -24869,7 +24869,7 @@ var publicationsLines = {
             "11/14/2018": 1,
             "11/16/2018": 1,
             "11/17/2018": 1,
-            "Division Codes": "INE",
+            "division_codes": "INE",
             "xlsx_row_id": 140
         },
         {
@@ -24883,7 +24883,7 @@ var publicationsLines = {
             "11/12/2018": 1,
             "11/15/2018": 1,
             "11/16/2018": 1,
-            "Division Codes": "INE",
+            "division_codes": "INE",
             "xlsx_row_id": 141
         },
         {
@@ -24909,7 +24909,7 @@ var publicationsLines = {
             "11/16/2018": 1,
             "11/17/2018": 1,
             "11/20/2018": "4",
-            "Division Codes": "INE",
+            "division_codes": "INE",
             "xlsx_row_id": 142
         },
         {
@@ -24940,7 +24940,7 @@ var publicationsLines = {
             "11/18/2018": 38,
             "11/19/2018": "65",
             "11/20/2018": "72",
-            "Division Codes": "INL",
+            "division_codes": "INL",
             "xlsx_row_id": 143
         },
         {
@@ -24971,7 +24971,7 @@ var publicationsLines = {
             "11/18/2018": 24,
             "11/19/2018": "18",
             "11/20/2018": "17",
-            "Division Codes": "INL",
+            "division_codes": "INL",
             "xlsx_row_id": 144
         },
         {
@@ -25002,7 +25002,7 @@ var publicationsLines = {
             "11/18/2018": 10,
             "11/19/2018": "34",
             "11/20/2018": "44",
-            "Division Codes": "INL",
+            "division_codes": "INL",
             "xlsx_row_id": 145
         },
         {
@@ -25029,7 +25029,7 @@ var publicationsLines = {
             "11/18/2018": 2,
             "11/19/2018": "5",
             "11/20/2018": "1",
-            "Division Codes": "INL",
+            "division_codes": "INL",
             "xlsx_row_id": 146
         },
         {
@@ -25060,7 +25060,7 @@ var publicationsLines = {
             "11/18/2018": 3,
             "11/19/2018": "2",
             "11/20/2018": "3",
-            "Division Codes": "INL",
+            "division_codes": "INL",
             "xlsx_row_id": 147
         },
         {
@@ -25076,7 +25076,7 @@ var publicationsLines = {
             "11/12/2018": 2,
             "11/14/2018": 1,
             "11/15/2018": 1,
-            "Division Codes": "INL",
+            "division_codes": "INL",
             "xlsx_row_id": 148
         },
         {
@@ -25091,7 +25091,7 @@ var publicationsLines = {
             "11/11/2018": "1",
             "11/13/2018": "20",
             "11/15/2018": 1,
-            "Division Codes": "INL",
+            "division_codes": "INL",
             "xlsx_row_id": 149
         },
         {
@@ -25102,7 +25102,7 @@ var publicationsLines = {
             "11/7/2018": 2,
             "11/8/2018": "7",
             "11/20/2018": "1",
-            "Division Codes": "INL",
+            "division_codes": "INL",
             "xlsx_row_id": 150
         },
         {
@@ -25113,7 +25113,7 @@ var publicationsLines = {
             "10/29/2018": 1,
             "11/7/2018": 2,
             "11/8/2018": "6",
-            "Division Codes": "INL",
+            "division_codes": "INL",
             "xlsx_row_id": 151
         },
         {
@@ -25127,7 +25127,7 @@ var publicationsLines = {
             "11/9/2018": 1,
             "11/12/2018": 1,
             "11/16/2018": 1,
-            "Division Codes": "INL",
+            "division_codes": "INL",
             "xlsx_row_id": 152
         },
         {
@@ -25157,7 +25157,7 @@ var publicationsLines = {
             "11/17/2018": 11,
             "11/19/2018": "13",
             "11/20/2018": "13",
-            "Division Codes": "INT",
+            "division_codes": "INT",
             "xlsx_row_id": 153
         },
         {
@@ -25188,7 +25188,7 @@ var publicationsLines = {
             "11/18/2018": 14,
             "11/19/2018": "19",
             "11/20/2018": "9",
-            "Division Codes": "INT",
+            "division_codes": "INT",
             "xlsx_row_id": 154
         },
         {
@@ -25205,7 +25205,7 @@ var publicationsLines = {
             "11/18/2018": 54,
             "11/19/2018": "110",
             "11/20/2018": "81",
-            "Division Codes": "INT",
+            "division_codes": "INT",
             "xlsx_row_id": 155
         },
         {
@@ -25235,7 +25235,7 @@ var publicationsLines = {
             "11/18/2018": 7,
             "11/19/2018": "5",
             "11/20/2018": "2",
-            "Division Codes": "INT",
+            "division_codes": "INT",
             "xlsx_row_id": 156
         },
         {
@@ -25261,7 +25261,7 @@ var publicationsLines = {
             "11/17/2018": 1,
             "11/19/2018": "4",
             "11/20/2018": "5",
-            "Division Codes": "INT",
+            "division_codes": "INT",
             "xlsx_row_id": 157
         },
         {
@@ -25292,7 +25292,7 @@ var publicationsLines = {
             "11/18/2018": 1,
             "11/19/2018": "7",
             "11/20/2018": "3",
-            "Division Codes": "INT",
+            "division_codes": "INT",
             "xlsx_row_id": 158
         },
         {
@@ -25305,7 +25305,7 @@ var publicationsLines = {
             "11/6/2018": 1,
             "11/13/2018": "1",
             "11/17/2018": 1,
-            "Division Codes": "INT",
+            "division_codes": "INT",
             "xlsx_row_id": 159
         },
         {
@@ -25335,7 +25335,7 @@ var publicationsLines = {
             "11/17/2018": 5,
             "11/19/2018": "7",
             "11/20/2018": "7",
-            "Division Codes": "INT",
+            "division_codes": "INT",
             "xlsx_row_id": 160
         },
         {
@@ -25357,7 +25357,7 @@ var publicationsLines = {
             "11/17/2018": 2,
             "11/19/2018": "1",
             "11/20/2018": "1",
-            "Division Codes": "INT",
+            "division_codes": "INT",
             "xlsx_row_id": 161
         },
         {
@@ -25377,7 +25377,7 @@ var publicationsLines = {
             "11/14/2018": 3,
             "11/17/2018": 1,
             "11/19/2018": "2",
-            "Division Codes": "INT",
+            "division_codes": "INT",
             "xlsx_row_id": 162
         },
         {
@@ -25408,7 +25408,7 @@ var publicationsLines = {
             "11/18/2018": 49,
             "11/19/2018": "63",
             "11/20/2018": "30",
-            "Division Codes": "ITE",
+            "division_codes": "ITE",
             "xlsx_row_id": 163
         },
         {
@@ -25439,7 +25439,7 @@ var publicationsLines = {
             "11/18/2018": 63,
             "11/19/2018": "96",
             "11/20/2018": "71",
-            "Division Codes": "KIC",
+            "division_codes": "KIC",
             "xlsx_row_id": 164
         },
         {
@@ -25469,7 +25469,7 @@ var publicationsLines = {
             "11/18/2018": 6,
             "11/19/2018": "31",
             "11/20/2018": "26",
-            "Division Codes": "LMK",
+            "division_codes": "LMK",
             "xlsx_row_id": 165
         },
         {
@@ -25500,7 +25500,7 @@ var publicationsLines = {
             "11/18/2018": 897,
             "11/19/2018": "1021",
             "11/20/2018": "1001",
-            "Division Codes": "LMK",
+            "division_codes": "LMK",
             "xlsx_row_id": 166
         },
         {
@@ -25514,7 +25514,7 @@ var publicationsLines = {
             "11/18/2018": 64,
             "11/19/2018": "632",
             "11/20/2018": "491",
-            "Division Codes": "LMK",
+            "division_codes": "LMK",
             "xlsx_row_id": 167
         },
         {
@@ -25532,7 +25532,7 @@ var publicationsLines = {
             "11/13/2018": "1",
             "11/19/2018": "4",
             "11/20/2018": "1",
-            "Division Codes": "LMK",
+            "division_codes": "LMK",
             "xlsx_row_id": 168
         },
         {
@@ -25562,7 +25562,7 @@ var publicationsLines = {
             "11/18/2018": 16,
             "11/19/2018": "20",
             "11/20/2018": "49",
-            "Division Codes": "LMK",
+            "division_codes": "LMK",
             "xlsx_row_id": 169
         },
         {
@@ -25579,7 +25579,7 @@ var publicationsLines = {
             "11/10/2018": 1,
             "11/12/2018": 2,
             "11/15/2018": 3,
-            "Division Codes": "LMK",
+            "division_codes": "LMK",
             "xlsx_row_id": 170
         },
         {
@@ -25610,7 +25610,7 @@ var publicationsLines = {
             "11/18/2018": 1,
             "11/19/2018": "5",
             "11/20/2018": "3",
-            "Division Codes": "LMK",
+            "division_codes": "LMK",
             "xlsx_row_id": 171
         },
         {
@@ -25628,7 +25628,7 @@ var publicationsLines = {
             "11/14/2018": 1,
             "11/15/2018": 3,
             "11/16/2018": 1,
-            "Division Codes": "LMK",
+            "division_codes": "LMK",
             "xlsx_row_id": 172
         },
         {
@@ -25642,7 +25642,7 @@ var publicationsLines = {
             "11/18/2018": 12,
             "11/19/2018": "47",
             "11/20/2018": "72",
-            "Division Codes": "LMK",
+            "division_codes": "LMK",
             "xlsx_row_id": 173
         },
         {
@@ -25662,7 +25662,7 @@ var publicationsLines = {
             "11/15/2018": 3,
             "11/18/2018": 4,
             "11/19/2018": "1",
-            "Division Codes": "LMK",
+            "division_codes": "LMK",
             "xlsx_row_id": 174
         },
         {
@@ -25692,7 +25692,7 @@ var publicationsLines = {
             "11/18/2018": 101,
             "11/19/2018": "193",
             "11/20/2018": "100",
-            "Division Codes": "MIF",
+            "division_codes": "MIF",
             "xlsx_row_id": 175
         },
         {
@@ -25717,7 +25717,7 @@ var publicationsLines = {
             "11/18/2018": 2,
             "11/19/2018": "8",
             "11/20/2018": "8",
-            "Division Codes": "MIF",
+            "division_codes": "MIF",
             "xlsx_row_id": 176
         },
         {
@@ -25744,7 +25744,7 @@ var publicationsLines = {
             "11/18/2018": 1,
             "11/19/2018": "2",
             "11/20/2018": "4",
-            "Division Codes": "MIF",
+            "division_codes": "MIF",
             "xlsx_row_id": 177
         },
         {
@@ -25765,7 +25765,7 @@ var publicationsLines = {
             "11/15/2018": 2,
             "11/16/2018": 2,
             "11/20/2018": "1",
-            "Division Codes": "MIF",
+            "division_codes": "MIF",
             "xlsx_row_id": 178
         },
         {
@@ -25779,7 +25779,7 @@ var publicationsLines = {
             "11/11/2018": "1",
             "11/16/2018": 1,
             "11/19/2018": "5",
-            "Division Codes": "MIF",
+            "division_codes": "MIF",
             "xlsx_row_id": 179
         },
         {
@@ -25795,7 +25795,7 @@ var publicationsLines = {
             "11/15/2018": 1,
             "11/16/2018": 1,
             "11/19/2018": "1",
-            "Division Codes": "MIF",
+            "division_codes": "MIF",
             "xlsx_row_id": 180
         },
         {
@@ -25807,7 +25807,7 @@ var publicationsLines = {
             "11/8/2018": "1",
             "11/16/2018": 2,
             "11/19/2018": "1",
-            "Division Codes": "MIF",
+            "division_codes": "MIF",
             "xlsx_row_id": 181
         },
         {
@@ -25825,7 +25825,7 @@ var publicationsLines = {
             "11/13/2018": "2",
             "11/15/2018": 2,
             "11/16/2018": 1,
-            "Division Codes": "MIF",
+            "division_codes": "MIF",
             "xlsx_row_id": 182
         },
         {
@@ -25836,7 +25836,7 @@ var publicationsLines = {
             "10/31/2018": 1,
             "11/7/2018": 1,
             "11/20/2018": "1",
-            "Division Codes": "MIF",
+            "division_codes": "MIF",
             "xlsx_row_id": 183
         },
         {
@@ -25864,7 +25864,7 @@ var publicationsLines = {
             "11/18/2018": 1,
             "11/19/2018": "17",
             "11/20/2018": "6",
-            "Division Codes": "ORP",
+            "division_codes": "ORP",
             "xlsx_row_id": 184
         },
         {
@@ -25895,7 +25895,7 @@ var publicationsLines = {
             "11/18/2018": 64,
             "11/19/2018": "80",
             "11/20/2018": "108",
-            "Division Codes": "OVE",
+            "division_codes": "OVE",
             "xlsx_row_id": 185
         },
         {
@@ -25926,7 +25926,7 @@ var publicationsLines = {
             "11/18/2018": 9,
             "11/19/2018": "18",
             "11/20/2018": "22",
-            "Division Codes": "OVE",
+            "division_codes": "OVE",
             "xlsx_row_id": 186
         },
         {
@@ -25949,7 +25949,7 @@ var publicationsLines = {
             "11/16/2018": 2,
             "11/18/2018": 1,
             "11/19/2018": "6",
-            "Division Codes": "OVE",
+            "division_codes": "OVE",
             "xlsx_row_id": 187
         },
         {
@@ -25979,7 +25979,7 @@ var publicationsLines = {
             "11/18/2018": 1,
             "11/19/2018": "6",
             "11/20/2018": "1",
-            "Division Codes": "OVE",
+            "division_codes": "OVE",
             "xlsx_row_id": 188
         },
         {
@@ -25998,7 +25998,7 @@ var publicationsLines = {
             "11/13/2018": "1",
             "11/14/2018": 3,
             "11/19/2018": "1",
-            "Division Codes": "OVE",
+            "division_codes": "OVE",
             "xlsx_row_id": 189
         },
         {
@@ -26018,7 +26018,7 @@ var publicationsLines = {
             "11/15/2018": 1,
             "11/18/2018": 1,
             "11/19/2018": "3",
-            "Division Codes": "OVE",
+            "division_codes": "OVE",
             "xlsx_row_id": 190
         },
         {
@@ -26045,7 +26045,7 @@ var publicationsLines = {
             "11/17/2018": 4,
             "11/19/2018": "2",
             "11/20/2018": "2",
-            "Division Codes": "OVE",
+            "division_codes": "OVE",
             "xlsx_row_id": 191
         },
         {
@@ -26072,7 +26072,7 @@ var publicationsLines = {
             "11/18/2018": 3,
             "11/19/2018": "3",
             "11/20/2018": "1",
-            "Division Codes": "OVE",
+            "division_codes": "OVE",
             "xlsx_row_id": 192
         },
         {
@@ -26095,7 +26095,7 @@ var publicationsLines = {
             "11/17/2018": 5,
             "11/18/2018": 2,
             "11/19/2018": "1",
-            "Division Codes": "OVE",
+            "division_codes": "OVE",
             "xlsx_row_id": 193
         },
         {
@@ -26121,7 +26121,7 @@ var publicationsLines = {
             "11/18/2018": 1,
             "11/19/2018": "4",
             "11/20/2018": "1",
-            "Division Codes": "OVE",
+            "division_codes": "OVE",
             "xlsx_row_id": 194
         },
         {
@@ -26152,7 +26152,7 @@ var publicationsLines = {
             "11/18/2018": 105,
             "11/19/2018": "141",
             "11/20/2018": "127",
-            "Division Codes": "RES",
+            "division_codes": "RES",
             "xlsx_row_id": 195
         },
         {
@@ -26183,7 +26183,7 @@ var publicationsLines = {
             "11/18/2018": 647,
             "11/19/2018": "575",
             "11/20/2018": "532",
-            "Division Codes": "RES",
+            "division_codes": "RES",
             "xlsx_row_id": 196
         },
         {
@@ -26213,7 +26213,7 @@ var publicationsLines = {
             "11/18/2018": 12,
             "11/19/2018": "284",
             "11/20/2018": "194",
-            "Division Codes": "RES",
+            "division_codes": "RES",
             "xlsx_row_id": 197
         },
         {
@@ -26243,7 +26243,7 @@ var publicationsLines = {
             "11/18/2018": 4,
             "11/19/2018": "14",
             "11/20/2018": "15",
-            "Division Codes": "RES",
+            "division_codes": "RES",
             "xlsx_row_id": 198
         },
         {
@@ -26257,7 +26257,7 @@ var publicationsLines = {
             "11/17/2018": 1,
             "11/19/2018": "4",
             "11/20/2018": "1",
-            "Division Codes": "RES",
+            "division_codes": "RES",
             "xlsx_row_id": 199
         },
         {
@@ -26275,7 +26275,7 @@ var publicationsLines = {
             "11/14/2018": 1,
             "11/19/2018": "1",
             "11/20/2018": "3",
-            "Division Codes": "RES",
+            "division_codes": "RES",
             "xlsx_row_id": 200
         },
         {
@@ -26290,7 +26290,7 @@ var publicationsLines = {
             "11/7/2018": 1,
             "11/10/2018": 1,
             "11/20/2018": "1",
-            "Division Codes": "RES",
+            "division_codes": "RES",
             "xlsx_row_id": 201
         },
         {
@@ -26304,7 +26304,7 @@ var publicationsLines = {
             "11/6/2018": 1,
             "11/18/2018": 1,
             "11/20/2018": "1",
-            "Division Codes": "RES",
+            "division_codes": "RES",
             "xlsx_row_id": 202
         },
         {
@@ -26325,7 +26325,7 @@ var publicationsLines = {
             "11/17/2018": 2,
             "11/19/2018": "2",
             "11/20/2018": "3",
-            "Division Codes": "RES",
+            "division_codes": "RES",
             "xlsx_row_id": 203
         },
         {
@@ -26351,7 +26351,7 @@ var publicationsLines = {
             "11/16/2018": 1,
             "11/17/2018": 1,
             "11/20/2018": "4",
-            "Division Codes": "RES",
+            "division_codes": "RES",
             "xlsx_row_id": 204
         },
         {
@@ -26382,7 +26382,7 @@ var publicationsLines = {
             "11/18/2018": 7,
             "11/19/2018": "10",
             "11/20/2018": "13",
-            "Division Codes": "RND",
+            "division_codes": "RND",
             "xlsx_row_id": 205
         },
         {
@@ -26413,7 +26413,7 @@ var publicationsLines = {
             "11/18/2018": 8,
             "11/19/2018": "17",
             "11/20/2018": "15",
-            "Division Codes": "RND",
+            "division_codes": "RND",
             "xlsx_row_id": 206
         },
         {
@@ -26436,7 +26436,7 @@ var publicationsLines = {
             "11/14/2018": 2,
             "11/19/2018": "2",
             "11/20/2018": "6",
-            "Division Codes": "RND",
+            "division_codes": "RND",
             "xlsx_row_id": 207
         },
         {
@@ -26454,7 +26454,7 @@ var publicationsLines = {
             "11/13/2018": "1",
             "11/15/2018": 2,
             "11/16/2018": 4,
-            "Division Codes": "RND",
+            "division_codes": "RND",
             "xlsx_row_id": 208
         },
         {
@@ -26479,7 +26479,7 @@ var publicationsLines = {
             "11/18/2018": 3,
             "11/19/2018": "2",
             "11/20/2018": "2",
-            "Division Codes": "RND",
+            "division_codes": "RND",
             "xlsx_row_id": 209
         },
         {
@@ -26495,7 +26495,7 @@ var publicationsLines = {
             "11/13/2018": "1",
             "11/15/2018": 1,
             "11/20/2018": "1",
-            "Division Codes": "RND",
+            "division_codes": "RND",
             "xlsx_row_id": 210
         },
         {
@@ -26520,7 +26520,7 @@ var publicationsLines = {
             "11/18/2018": 2,
             "11/19/2018": "4",
             "11/20/2018": "4",
-            "Division Codes": "RND",
+            "division_codes": "RND",
             "xlsx_row_id": 211
         },
         {
@@ -26538,7 +26538,7 @@ var publicationsLines = {
             "11/15/2018": 1,
             "11/17/2018": 1,
             "11/20/2018": "2",
-            "Division Codes": "RND",
+            "division_codes": "RND",
             "xlsx_row_id": 212
         },
         {
@@ -26559,7 +26559,7 @@ var publicationsLines = {
             "11/14/2018": 1,
             "11/16/2018": 1,
             "11/20/2018": "1",
-            "Division Codes": "RND",
+            "division_codes": "RND",
             "xlsx_row_id": 213
         },
         {
@@ -26581,7 +26581,7 @@ var publicationsLines = {
             "11/15/2018": 2,
             "11/16/2018": 1,
             "11/20/2018": "3",
-            "Division Codes": "RND",
+            "division_codes": "RND",
             "xlsx_row_id": 214
         },
         {
@@ -26612,7 +26612,7 @@ var publicationsLines = {
             "11/18/2018": 360,
             "11/19/2018": "391",
             "11/20/2018": "345",
-            "Division Codes": "SCL",
+            "division_codes": "SCL",
             "xlsx_row_id": 215
         },
         {
@@ -26633,7 +26633,7 @@ var publicationsLines = {
             "11/14/2018": 1,
             "11/15/2018": 2,
             "11/16/2018": 1,
-            "Division Codes": "SCL",
+            "division_codes": "SCL",
             "xlsx_row_id": 216
         },
         {
@@ -26659,7 +26659,7 @@ var publicationsLines = {
             "11/18/2018": 14,
             "11/19/2018": "28",
             "11/20/2018": "8",
-            "Division Codes": "SCL",
+            "division_codes": "SCL",
             "xlsx_row_id": 217
         },
         {
@@ -26681,7 +26681,7 @@ var publicationsLines = {
             "11/17/2018": 1,
             "11/19/2018": "2",
             "11/20/2018": "2",
-            "Division Codes": "SCL",
+            "division_codes": "SCL",
             "xlsx_row_id": 218
         },
         {
@@ -26703,7 +26703,7 @@ var publicationsLines = {
             "11/16/2018": 1,
             "11/18/2018": 1,
             "11/19/2018": "1",
-            "Division Codes": "SCL",
+            "division_codes": "SCL",
             "xlsx_row_id": 219
         },
         {
@@ -26720,7 +26720,7 @@ var publicationsLines = {
             "11/12/2018": 1,
             "11/16/2018": 1,
             "11/20/2018": "2",
-            "Division Codes": "SCL",
+            "division_codes": "SCL",
             "xlsx_row_id": 220
         },
         {
@@ -26750,7 +26750,7 @@ var publicationsLines = {
             "11/18/2018": 6,
             "11/19/2018": "31",
             "11/20/2018": "26",
-            "Division Codes": "SPD",
+            "division_codes": "SPD",
             "xlsx_row_id": 221
         },
         {
@@ -26773,7 +26773,7 @@ var publicationsLines = {
             "11/18/2018": 1,
             "11/19/2018": "3",
             "11/20/2018": "1",
-            "Division Codes": "SPD",
+            "division_codes": "SPD",
             "xlsx_row_id": 222
         },
         {
@@ -26791,7 +26791,7 @@ var publicationsLines = {
             "11/13/2018": "1",
             "11/19/2018": "4",
             "11/20/2018": "1",
-            "Division Codes": "SPD",
+            "division_codes": "SPD",
             "xlsx_row_id": 223
         },
         {
@@ -26809,7 +26809,7 @@ var publicationsLines = {
             "11/12/2018": 1,
             "11/15/2018": 2,
             "11/20/2018": "2",
-            "Division Codes": "SPD",
+            "division_codes": "SPD",
             "xlsx_row_id": 224
         },
         {
@@ -26825,7 +26825,7 @@ var publicationsLines = {
             "11/16/2018": 1,
             "11/17/2018": 6,
             "11/20/2018": "2",
-            "Division Codes": "SPD",
+            "division_codes": "SPD",
             "xlsx_row_id": 225
         },
         {
@@ -26853,7 +26853,7 @@ var publicationsLines = {
             "11/18/2018": 2,
             "11/19/2018": "4",
             "11/20/2018": "4",
-            "Division Codes": "SPD",
+            "division_codes": "SPD",
             "xlsx_row_id": 226
         },
         {
@@ -26883,7 +26883,7 @@ var publicationsLines = {
             "11/18/2018": 7,
             "11/19/2018": "42",
             "11/20/2018": "112",
-            "Division Codes": "SPD",
+            "division_codes": "SPD",
             "xlsx_row_id": 227
         },
         {
@@ -26905,7 +26905,7 @@ var publicationsLines = {
             "11/14/2018": 1,
             "11/17/2018": 1,
             "11/20/2018": "1",
-            "Division Codes": "SPD",
+            "division_codes": "SPD",
             "xlsx_row_id": 228
         },
         {
@@ -26917,7 +26917,7 @@ var publicationsLines = {
             "10/31/2018": 1,
             "11/6/2018": 1,
             "11/8/2018": "1",
-            "Division Codes": "SPD",
+            "division_codes": "SPD",
             "xlsx_row_id": 229
         },
         {
@@ -26945,7 +26945,7 @@ var publicationsLines = {
             "11/18/2018": 3,
             "11/19/2018": "5",
             "11/20/2018": "2",
-            "Division Codes": "SPD",
+            "division_codes": "SPD",
             "xlsx_row_id": 230
         },
         {
@@ -26976,7 +26976,7 @@ var publicationsLines = {
             "11/18/2018": 6,
             "11/19/2018": "10",
             "11/20/2018": "12",
-            "Division Codes": "SPH",
+            "division_codes": "SPH",
             "xlsx_row_id": 231
         },
         {
@@ -27007,7 +27007,7 @@ var publicationsLines = {
             "11/18/2018": 244,
             "11/19/2018": "283",
             "11/20/2018": "260",
-            "Division Codes": "SPH",
+            "division_codes": "SPH",
             "xlsx_row_id": 232
         },
         {
@@ -27038,7 +27038,7 @@ var publicationsLines = {
             "11/18/2018": 36,
             "11/19/2018": "40",
             "11/20/2018": "72",
-            "Division Codes": "SPH",
+            "division_codes": "SPH",
             "xlsx_row_id": 233
         },
         {
@@ -27069,7 +27069,7 @@ var publicationsLines = {
             "11/18/2018": 6,
             "11/19/2018": "18",
             "11/20/2018": "9",
-            "Division Codes": "SPH",
+            "division_codes": "SPH",
             "xlsx_row_id": 234
         },
         {
@@ -27087,7 +27087,7 @@ var publicationsLines = {
             "11/12/2018": 1,
             "11/15/2018": 2,
             "11/20/2018": "2",
-            "Division Codes": "SPH",
+            "division_codes": "SPH",
             "xlsx_row_id": 235
         },
         {
@@ -27111,7 +27111,7 @@ var publicationsLines = {
             "11/16/2018": 5,
             "11/18/2018": 1,
             "11/20/2018": "1",
-            "Division Codes": "SPH",
+            "division_codes": "SPH",
             "xlsx_row_id": 236
         },
         {
@@ -27140,7 +27140,7 @@ var publicationsLines = {
             "11/18/2018": 8,
             "11/19/2018": "15",
             "11/20/2018": "6",
-            "Division Codes": "SPH",
+            "division_codes": "SPH",
             "xlsx_row_id": 237
         },
         {
@@ -27159,7 +27159,7 @@ var publicationsLines = {
             "11/15/2018": 3,
             "11/16/2018": 1,
             "11/17/2018": 1,
-            "Division Codes": "SPH",
+            "division_codes": "SPH",
             "xlsx_row_id": 238
         },
         {
@@ -27188,7 +27188,7 @@ var publicationsLines = {
             "11/18/2018": 3,
             "11/19/2018": "3",
             "11/20/2018": "4",
-            "Division Codes": "SPH",
+            "division_codes": "SPH",
             "xlsx_row_id": 239
         },
         {
@@ -27212,7 +27212,7 @@ var publicationsLines = {
             "11/18/2018": 2,
             "11/19/2018": "1",
             "11/20/2018": "1",
-            "Division Codes": "SPH",
+            "division_codes": "SPH",
             "xlsx_row_id": 240
         },
         {
@@ -27233,7 +27233,7 @@ var publicationsLines = {
             "11/16/2018": 2,
             "11/19/2018": "97",
             "11/20/2018": "41",
-            "Division Codes": "TSP",
+            "division_codes": "TSP",
             "xlsx_row_id": 241
         },
         {
@@ -27256,7 +27256,7 @@ var publicationsLines = {
             "11/18/2018": 1,
             "11/19/2018": "3",
             "11/20/2018": "1",
-            "Division Codes": "TSP",
+            "division_codes": "TSP",
             "xlsx_row_id": 242
         },
         {
@@ -27281,7 +27281,7 @@ var publicationsLines = {
             "11/17/2018": 13,
             "11/19/2018": "4",
             "11/20/2018": "3",
-            "Division Codes": "TSP",
+            "division_codes": "TSP",
             "xlsx_row_id": 243
         },
         {
@@ -27312,7 +27312,7 @@ var publicationsLines = {
             "11/18/2018": 9,
             "11/19/2018": "12",
             "11/20/2018": "9",
-            "Division Codes": "TSP",
+            "division_codes": "TSP",
             "xlsx_row_id": 244
         },
         {
@@ -27340,7 +27340,7 @@ var publicationsLines = {
             "11/18/2018": 1,
             "11/19/2018": "4",
             "11/20/2018": "1",
-            "Division Codes": "TSP",
+            "division_codes": "TSP",
             "xlsx_row_id": 245
         },
         {
@@ -27362,7 +27362,7 @@ var publicationsLines = {
             "11/16/2018": 1,
             "11/18/2018": 1,
             "11/19/2018": "3",
-            "Division Codes": "TSP",
+            "division_codes": "TSP",
             "xlsx_row_id": 246
         },
         {
@@ -27391,7 +27391,7 @@ var publicationsLines = {
             "11/18/2018": 9,
             "11/19/2018": "19",
             "11/20/2018": "17",
-            "Division Codes": "TSP",
+            "division_codes": "TSP",
             "xlsx_row_id": 247
         },
         {
@@ -27419,7 +27419,7 @@ var publicationsLines = {
             "11/18/2018": 4,
             "11/19/2018": "8",
             "11/20/2018": "5",
-            "Division Codes": "TSP",
+            "division_codes": "TSP",
             "xlsx_row_id": 248
         },
         {
@@ -27449,7 +27449,7 @@ var publicationsLines = {
             "11/17/2018": 5,
             "11/19/2018": "7",
             "11/20/2018": "7",
-            "Division Codes": "TSP",
+            "division_codes": "TSP",
             "xlsx_row_id": 249
         },
         {
@@ -27473,7 +27473,7 @@ var publicationsLines = {
             "11/18/2018": 1,
             "11/19/2018": "1",
             "11/20/2018": "1",
-            "Division Codes": "TSP",
+            "division_codes": "TSP",
             "xlsx_row_id": 250
         },
         {
@@ -27504,7 +27504,7 @@ var publicationsLines = {
             "11/18/2018": 124,
             "11/19/2018": "161",
             "11/20/2018": "173",
-            "Division Codes": "UCC",
+            "division_codes": "UCC",
             "xlsx_row_id": 251
         },
         {
@@ -27524,7 +27524,7 @@ var publicationsLines = {
             "11/17/2018": 1,
             "11/18/2018": 1,
             "11/19/2018": "1",
-            "Division Codes": "VPC",
+            "division_codes": "VPC",
             "xlsx_row_id": 252
         },
         {
@@ -27552,7 +27552,7 @@ var publicationsLines = {
             "11/18/2018": 1,
             "11/19/2018": "3",
             "11/20/2018": "23",
-            "Division Codes": "VPC",
+            "division_codes": "VPC",
             "xlsx_row_id": 253
         },
         {
@@ -27566,7 +27566,7 @@ var publicationsLines = {
             "11/13/2018": "1",
             "11/14/2018": 1,
             "11/20/2018": "4",
-            "Division Codes": "VPC",
+            "division_codes": "VPC",
             "xlsx_row_id": 254
         },
         {
@@ -27597,7 +27597,7 @@ var publicationsLines = {
             "11/18/2018": 115,
             "11/19/2018": "135",
             "11/20/2018": "134",
-            "Division Codes": "VPS",
+            "division_codes": "VPS",
             "xlsx_row_id": 255
         },
         {
@@ -27612,7 +27612,7 @@ var publicationsLines = {
             "11/6/2018": 1,
             "11/8/2018": "2",
             "11/10/2018": 1,
-            "Division Codes": "VPS",
+            "division_codes": "VPS",
             "xlsx_row_id": 256
         },
         {
@@ -27629,7 +27629,7 @@ var publicationsLines = {
             "11/14/2018": 1,
             "11/16/2018": 1,
             "11/17/2018": 1,
-            "Division Codes": "VPS",
+            "division_codes": "VPS",
             "xlsx_row_id": 257
         },
         {
@@ -27645,7 +27645,7 @@ var publicationsLines = {
             "11/16/2018": 1,
             "11/17/2018": 1,
             "11/20/2018": "1",
-            "Division Codes": "VPS",
+            "division_codes": "VPS",
             "xlsx_row_id": 258
         },
         {
@@ -27660,7 +27660,7 @@ var publicationsLines = {
             "11/14/2018": 1,
             "11/15/2018": 1,
             "11/20/2018": "1",
-            "Division Codes": "VPS",
+            "division_codes": "VPS",
             "xlsx_row_id": 259
         },
         {
@@ -27671,7 +27671,7 @@ var publicationsLines = {
             "10/29/2018": 1,
             "11/1/2018": 1,
             "11/7/2018": 1,
-            "Division Codes": "VPS",
+            "division_codes": "VPS",
             "xlsx_row_id": 260
         },
         {
@@ -27684,7 +27684,7 @@ var publicationsLines = {
             "11/7/2018": 2,
             "11/15/2018": 1,
             "11/18/2018": 1,
-            "Division Codes": "VPS",
+            "division_codes": "VPS",
             "xlsx_row_id": 261
         },
         {
@@ -27695,7 +27695,7 @@ var publicationsLines = {
             "10/31/2018": 1,
             "11/1/2018": 1,
             "11/7/2018": 1,
-            "Division Codes": "VPS",
+            "division_codes": "VPS",
             "xlsx_row_id": 262
         },
         {
@@ -27726,7 +27726,7 @@ var publicationsLines = {
             "11/18/2018": 7,
             "11/19/2018": "10",
             "11/20/2018": "13",
-            "Division Codes": "WSA",
+            "division_codes": "WSA",
             "xlsx_row_id": 263
         },
         {
@@ -27757,7 +27757,7 @@ var publicationsLines = {
             "11/18/2018": 26,
             "11/19/2018": "51",
             "11/20/2018": "34",
-            "Division Codes": "WSA",
+            "division_codes": "WSA",
             "xlsx_row_id": 264
         },
         {
@@ -27788,7 +27788,7 @@ var publicationsLines = {
             "11/18/2018": 13,
             "11/19/2018": "21",
             "11/20/2018": "14",
-            "Division Codes": "WSA",
+            "division_codes": "WSA",
             "xlsx_row_id": 265
         },
         {
@@ -27819,7 +27819,7 @@ var publicationsLines = {
             "11/18/2018": 1,
             "11/19/2018": "7",
             "11/20/2018": "6",
-            "Division Codes": "WSA",
+            "division_codes": "WSA",
             "xlsx_row_id": 266
         },
         {
@@ -27849,7 +27849,7 @@ var publicationsLines = {
             "11/18/2018": 13,
             "11/19/2018": "21",
             "11/20/2018": "19",
-            "Division Codes": "WSA",
+            "division_codes": "WSA",
             "xlsx_row_id": 267
         },
         {
@@ -27875,7 +27875,7 @@ var publicationsLines = {
             "11/18/2018": 1,
             "11/19/2018": "1",
             "11/20/2018": "1",
-            "Division Codes": "WSA",
+            "division_codes": "WSA",
             "xlsx_row_id": 268
         },
         {
@@ -27904,7 +27904,7 @@ var publicationsLines = {
             "11/18/2018": 4,
             "11/19/2018": "4",
             "11/20/2018": "4",
-            "Division Codes": "WSA",
+            "division_codes": "WSA",
             "xlsx_row_id": 269
         },
         {
@@ -27929,7 +27929,7 @@ var publicationsLines = {
             "11/16/2018": 2,
             "11/19/2018": "2",
             "11/20/2018": "2",
-            "Division Codes": "WSA",
+            "division_codes": "WSA",
             "xlsx_row_id": 270
         },
         {
@@ -27950,7 +27950,7 @@ var publicationsLines = {
             "11/17/2018": 2,
             "11/19/2018": "2",
             "11/20/2018": "4",
-            "Division Codes": "WSA",
+            "division_codes": "WSA",
             "xlsx_row_id": 271
         },
         {
@@ -27979,7 +27979,7 @@ var publicationsLines = {
             "11/18/2018": 2,
             "11/19/2018": "2",
             "11/20/2018": "2",
-            "Division Codes": "WSA",
+            "division_codes": "WSA",
             "xlsx_row_id": 272
         }
     ],

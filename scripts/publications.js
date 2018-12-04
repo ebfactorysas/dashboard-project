@@ -364,12 +364,15 @@ function sortByDateAscending(a, b) {
     return a.date - b.date;
 }
 
-function createChartTimelinePublication(data) {
-    // if ($("#publication2018").prop("checked")) {
-    //     data = data.filter(function (data) {
-    //         return data.date.indexOf("-18") > -1
-    //     });
-    // }
+function createChartTimelinePublication(data, typeload) {
+    if (typeload != "init") {
+        if ($("#publication2018").prop("checked")) {
+            data = data.filter(function (data) {
+                return data.date.indexOf("-18") > -1
+            });
+        }
+    }
+    
     var margin = {
             top: 20,
             right: 20,
@@ -537,14 +540,21 @@ function createChartTimelinePublication(data) {
             .tickFormat(d3.format(".2s")));
 }
 
-function drawTreePublication(dataTree, filtertype) {
-    if ($("#publication2018").prop("checked")) {
+function drawTreePublication(dataTree, filtertype, typeload) {
+    if (typeload != "init") {
+        if ($("#publication2018").prop("checked")) {
+            dataTree = dataTree.sort(function (a, b) {
+                return d3.descending(a.value2018, b.value2018);
+            });
+        } else {
+            dataTree = dataTree.sort(function (a, b) {
+                return d3.descending(a.valueAllTheTime, b.valueAllTheTime);
+            });
+        }
+    }
+    else {
         dataTree = dataTree.sort(function (a, b) {
             return d3.descending(a.value2018, b.value2018);
-        });
-    } else {
-        dataTree = dataTree.sort(function (a, b) {
-            return d3.descending(a.valueAllTheTime, b.valueAllTheTime);
         });
     }
 
@@ -975,14 +985,21 @@ function drawLinesChartPublication(data) {
 }
 
 
-function drawPlotChartPublication(data) {
+function drawPlotChartPublication(data, typeload) {
     //console.log(data)
-    if ($("#publication2018").prop("checked")) {
-        //data = data.filter(data {return } data.publishedDate.indexOf("-18") > -1);
-        data.filter(function (data) {
-            return data.publishedDate.indexOf("-18")
-        })
-    }
+    // if (typeload != "init") {
+    //     if ($("#publication2018").prop("checked")) {
+    //         //data = data.filter(data {return } data.publishedDate.indexOf("-18") > -1);
+    //         data.filter(function (data) {
+    //             return data.publishedDate.indexOf("-18")
+    //         })
+    //     }
+    // }
+    // else {
+    //     data.filter(function (data) {
+    //         return data.publishedDate.indexOf("-18")
+    //     })
+    // }
     var margin = {
         top: 30,
         right: 50,
@@ -1139,13 +1156,16 @@ function initPublications() {
     var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
 
     
+    
+    // console.log(publicationsLines.linesAllDivisions.filter(function (data){
+    //     return data.division_codes = 'CAN'
+    // }));
     drawGaugePublicationChart(dataPublicationGauge2018);
     drawLinesChartPublication(dataLinesPublications);
-
-    createChartTimelinePublication(downloadTimelineIDB);
+    createChartTimelinePublication(downloadTimelineIDB, 'init');
     drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
-    drawPlotChartPublication(ObjectpublicationsAttention);
-    drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "2018");
+    drawPlotChartPublication(ObjectpublicationsAttention, 'init');
+    drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "2018", 'init');
 }
 
 //click radiobutton drawChart(id del click)
@@ -1157,23 +1177,14 @@ $("input[name*='publicationTrend']").click(function () {
     removePublicationsGauges();
     if($("select[id*='divisionSelect']").val() != "IDB") {
         if ($("select[id*='divisionSelect']").val().length > 0) {
-            jsonPublicationsBarras = publicationsTopArrays.topDepartmentsAllTime.filter(function (dataP) {
-                return dataP.department_codes == this.value
-            });
-            drawTrendPublicationChart(jsonPublicationsBarras);
+            
+            
             // jsonPublicTree = publicationsDownloadSourceArrays.downloadSourceDepartments.filter(dataT => {
             //     return dataT.department_codes == this.value
             // });
             // drawTreePublication(jsonPublicTree, "AllTheTime");
             
-            var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
-            drawPlotChartPublication(ObjectpublicationsAttention);
-            // jsonPublicationsBarras = publicationsTopArrays.topDivisionsAllTime.filter(function (dataP) {
-            //     return dataP.division_codes == this.value
-            // });
-            // drawTrendPublicationChart(jsonPublicationsBarras);
-            drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "AllTheTime");
-            drawLinesChartPublication(dataLinesPublications);
+            
             
             // var downloadTimelineIDB = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineIDB);
             // createChartTimelinePublication(downloadTimelineIDB);
@@ -1189,8 +1200,24 @@ $("input[name*='publicationTrend']").click(function () {
                 publicationsAllDownloadsLac = (jsondataPublications.length > 0) ? ((jsondataPublications[0].all_the_time_porcent_total_LAC_downloads != "missing" && jsondataPublications[0].all_the_time_porcent_total_LAC_downloads > 0) ? (jsondataPublications[0].all_the_time_porcent_total_LAC_downloads * 100).toFixed(1) : jsondataPublications[0].all_the_time_porcent_total_LAC_downloads) : '';
                 dataPublicationGauge = setPublicationGauge();
                 drawGaugePublicationChart(dataPublicationGauge);
+                jsonTreePublications = publicationsDownloadSourceArrays.downloadSourceDivisions.filter(function (dataP) {
+                    return dataP.division_codes == $("select[id*='divisionSelect']").val()
+                });
+                drawTreePublication(jsonTreePublications, "AllTheTime");
             } else {
                 $('.label-filter-restidb').show();
+                jsonPublicationsBarras = publicationsTopArrays.topDivisions2018.filter(function (dataP) {
+                    return dataP.division_codes == $("select[id*='divisionSelect']").val()
+                });
+                var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
+                drawPlotChartPublication(ObjectpublicationsAttention);
+                jsonTreePublications = publicationsDownloadSourceArrays.downloadSourceDivisions.filter(function (dataP) {
+                    return dataP.division_codes == $("select[id*='divisionSelect']").val()
+                });
+                drawTrendPublicationChart(jsonPublicationsBarras);
+                drawTreePublication(jsonTreePublications, "2018");
+                drawLinesChartPublication(dataLinesPublications);
+                
                 jsondataPublications = bnPublicationsArrays.publicationsDivisions.filter(function (data) {
                     return data.division_codes == $("select[id*='divisionSelect']").val()
                 });
