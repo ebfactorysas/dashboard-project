@@ -225,6 +225,12 @@ section.publications {
 }
 
 
+section.publications .left-bar label{
+    padding-bottom: 0px;
+    margin-bottom: 0;
+}
+
+
 section.publications .left-bar .gauge-1 {
 
     padding-top: 4rem;

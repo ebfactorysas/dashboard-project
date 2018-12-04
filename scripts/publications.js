@@ -364,6 +364,7 @@ function sortByDateAscending(a, b) {
 }
 
 function createChartTimelinePublication(data, typeload) {
+    d3.select("#timeline-publication svg").remove();
     if (typeload != "init") {
         if ($("#publication2018").prop("checked")) {
             data = data.filter(function (data) {
@@ -470,6 +471,7 @@ function createChartTimelinePublication(data, typeload) {
         .data([data])
         .attr("class", "line")
         .attr("d", valueline);
+        
     //calculate path do not delete it
     // svg.append('svg:path')
     //     .attr('d', lineGen(data))
@@ -485,7 +487,6 @@ function createChartTimelinePublication(data, typeload) {
         .style('stroke-width', '3px')
         .style("font-family", "Gotham-Book")
         .style("font-size", "13px")
-        //.call(d3.axisBottom(x));
         .call(d3.axisBottom(x)
             .ticks(d3.timeDay.filter(function (d) {
                 return $("#publication2018").prop("checked") ? d3.timeDay.count(0, d) % 60 === 0 : d3.timeDay.count(0, d) % 300 === 0
@@ -953,6 +954,7 @@ function drawLinesChartPublication(data) {
 
 
 function drawPlotChartPublication(data, typeload) {
+    d3.select("#publications-plot svg").remove();
     //console.log(data)
     // if (typeload != "init") {
     //     if ($("#publication2018").prop("checked")) {

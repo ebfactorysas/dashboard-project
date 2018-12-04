@@ -85,7 +85,7 @@ $("#divisionSelect").on('change', function (data) {
         });
         drawTrendPublicationChart(jsonPublicationsBarras, '2018', '');
 
-        jsonPublicTree = publicationsDownloadSourceArrays.downloadSourceDivisions.filter(dataT => {
+        jsonPublicTree = publicationsDownloadSourceArrays.downloadSourceDivisions.filter(function(dataT) {
             return dataT.division_codes == sltValue
         });
         drawTreePublication(jsonPublicTree, "2018", 'init');
