@@ -387,7 +387,7 @@ function createChartTimelinePublication(data, typeload) {
     // set the ranges
     var x = d3.scaleTime().range([0, width]);
     var y = d3.scaleLinear().range([height, 0]);
-    var test = 0;
+    var positionText = 0;
     // define the area
     var area = d3.area()
         .x(function (d) {
@@ -395,7 +395,7 @@ function createChartTimelinePublication(data, typeload) {
         })
         .y0(height)
         .y1(function (d) {
-            test =y(d.close);
+            positionText =y(d.close);
             return y(d.close);
         });
 
@@ -512,14 +512,14 @@ function createChartTimelinePublication(data, typeload) {
 
     svg.append("text")
         .attr("x", (width - (margin.left / 2)))
-        .attr("y", test)
+        .attr("y", positionText)
         // .attr("text-anchor", "middle")  
         .style("font-size", "16px")
         .style("font-family", "Gotham-Bold")
         .text(textOfTotal.valueNumber + textOfTotal.suffixNumber);
     svg.append("text")
         .attr("x", (width - (margin.left / 2)))
-        .attr("y", test+20)
+        .attr("y", positionText+20)
         // .attr("text-anchor", "middle")  
         .style("font-size", "14px")
         .style("font-family", "Gotham-Book")
