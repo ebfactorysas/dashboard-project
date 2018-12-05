@@ -234,102 +234,107 @@ function drawMoocsRegistrationsChart(dataMoocs) {
 /**
  * Start age-distribution-moocs
  */
-drawMoocsAgeDistributionChart(topAllMoocs);
+
 
 var data = [{
     value: 0,
     name: "<18"
-}]
+}, {
+    value: 5000,
+    name: "18-25"
+}, {
+    value: 16000,
+    name: "26-39"
+}, {
+    value: 10000,
+    name: "40-62"
+}, {
+    value: 0,
+    name: ">63"
+}, {
+    value: 19000,
+    name: "Not Reported"
+}];
+drawMoocsAgeDistributionChart(data);
 
-function drawMoocsAgeDistributionChart(dataMoocs) {
+function drawMoocsAgeDistributionChart(data) {
 
-    var marginMoocs = {
-        top: 15,
-        right: 25,
-        bottom: 15,
-        left: 55
-    };
+    // data = data.sort(function (a, b) {
+    //     return d3.ascending(a.value, b.value);
+    // })
 
-    var widthMoocs = 560 - marginMoocs.left - marginMoocs.right,
-        heightMoocs = 200 - marginMoocs.top - marginMoocs.bottom;
+    // //set up svg using margin conventions - we'll need plenty of room on the left for labels
+    // var margin = {
+    //     top: 15,
+    //     right: 25,
+    //     bottom: 15,
+    //     left: 60
+    // };
+
+    // var width = 960 - margin.left - margin.right,
+    //     height = 500 - margin.top - margin.bottom;
+
+    // var svg = d3.select("#age-distribution-moocs").append("svg")
+    //     .attr("width", width + margin.left + margin.right)
+    //     .attr("height", height + margin.top + margin.bottom)
+    //     .append("g")
+    //     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    // var x = d3.scaleLinear()
+    //     .range([0, width])
+    //     .domain([0, d3.max(data, function (d) {
+    //         return d.value;
+    //     })]);
+
+    // var y = d3.scaleOrdinal()
+    //     .range([height, 0], .1)
+    //     .domain(data.map(function (d) {
+    //         return d.name;
+    //     }));
+
+    // //make y axis to show bar names
+    // var yAxis = d3.axisLeft(y)
+
+    //     //no tick marks
+    //     .tickSize(0);
 
 
-    var svgMoocs = d3.select("#age-distribution-moocs")
-        .append("svg")
-        //responsive SVG needs these 2 attributes and no width and height attr
-        .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-55 -25 700 200")
-        .append("g")
-        // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
+    // var gy = svg.append("g")
+    //     .attr("class", "y axis")
+    //     .call(yAxis)
 
-        //class to make it responsive
-        .classed("svg-content-responsive", true);
-    // .append("svg")
-    // .attr("width", widthMoocs + marginMoocs.left + marginMoocs.right)
-    // .attr("height", heightMoocs + marginMoocs.top + marginMoocs.bottom)
-    // .append("g")
-    // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")");
+    // var bars = svg.selectAll(".bar")
+    //     .data(data)
+    //     .enter()
+    //     .append("g")
 
-    var xMoocs = d3.scaleLinear()
-        .range([0, widthMoocs])
-        .domain([0, d3.max(dataMoocs, function (d) {
-            return d.value;
-        })]);
+    // //append rects
+    // bars.append("rect")
+    //     .attr("class", "bar")
+    //     .attr("y", function (d) {
+    //         return y(d.name);
+    //     })
+    //     .attr("height", y.rangeBand())
+    //     .attr("x", 0)
+    //     .attr("width", function (d) {
+    //         return x(d.value);
+    //     });
 
-    var yMoocs = d3.scaleBand()
+    // //add a value label to the right of each bar
+    // bars.append("text")
+    //     .attr("class", "label")
+    //     //y position of the label is halfway down the bar
+    //     .attr("y", function (d) {
+    //         return y(d.name) + y.rangeBand() / 2 + 4;
+    //     })
+    //     //x position is 3 pixels to the right of the bar
+    //     .attr("x", function (d) {
+    //         return x(d.value) + 3;
+    //     })
+    //     .text(function (d) {
+    //         return d.value;
+    //     });
 
-        .rangeRound([heightMoocs, 0], .1)
-        .domain(dataMoocs.map(function (d) {
-            return d.value;
-        }));
-
-    var yAxisMoocs = d3.axisLeft(yMoocs)
-        //no tick marks
-        .tickPadding(55)
-        .tickSize(0);
-
-    var gyMoocs = svgMoocs.append("g")
-        .style("text-anchor", "start")
-        .style("color", "#555555")
-        .attr("class", "y-data")
-
-        .call(yAxisMoocs)
-
-    var barsMoocs = svgMoocs.selectAll(".bar")
-        .data(dataMoocs)
-        .enter()
-        .append("g")
-
-    barsMoocs.append("rect")
-        .attr("class", "bar")
-        .attr("y", function (d) {
-            return yMoocs(d.value);
-        })
-        .attr("rx", 25)
-        .attr("ry", 25)
-        .attr("fill", "#dea692")
-        .attr("height", yMoocs.bandwidth() - 2)
-        .attr("x", 8)
-        .attr("width", function (d) {
-            return xMoocs(d.value);
-        });
-
-    barsMoocs.append("text")
-        .attr("class", "label")
-        //y position of the label is halfway down the bar
-        .attr("y", function (d) {
-            return yMoocs(d.value) + yMoocs.bandwidth() / 2 + 4;
-        })
-        //x position is 3 pixels to the right of the bar
-        .attr("x", function (d) {
-            return 12;
-        })
-        .attr("class", "text-inside")
-        .attr("font-family", "Gotham-Bold")
-        .attr("font-size", "12px")
-        .text(function (d) {
-            return d.name;
-        });
 }
 /**
  * End age-distribution-moocs

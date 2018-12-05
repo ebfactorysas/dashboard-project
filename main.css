@@ -103,6 +103,7 @@
     font-style: normal;
 }
 
+
 body {
     font-family: 'Gotham-Bold';
 }
@@ -224,7 +225,7 @@ section.publications {
     font-family: 'Gotham-Bold';
 }
 
-section.publications .left-bar label{
+section.publications .left-bar label {
     padding-bottom: 0px;
     margin-bottom: 0;
 }
@@ -430,13 +431,13 @@ section.publications #publications-plot .legeng:hover rect {
 }
 
 
-.tooltip{
+.tooltip {
     position: absolute;
     text-align: center;
     padding: 5px;
     font-size: 12px;
     font-weight: bold;
-    border: solid 1px #f5f5f5 ;
+    border: solid 1px #f5f5f5;
     background-color: white;
 }
 
@@ -447,7 +448,7 @@ section.publications #publications-plot .legeng:hover rect {
     font-family: "Gotham-Bold"
 }
 
-.tooltip p span{
+.tooltip p span {
     margin: 0;
     padding: 0;
     font-size: 11px;
@@ -463,7 +464,7 @@ section.publications #publications-plot .legeng:hover rect {
 
 
 section.moocs .left-bar h4 {
-    font-size: 18px;
+    font-size: 17px;
     color: white;
     margin-bottom: 0;
 }
@@ -487,12 +488,12 @@ section.moocs p {
 }
 
 section.moocs h4 {
-    font-size: 12px;
+    font-size: 16px;
     font-family: 'Gotham-Bold';
 }
 
 section.moocs h3 {
-    font-size: 10px;
+    font-size: 12px;
     font-family: 'Gotham-Bold';
 }
 
@@ -501,7 +502,7 @@ section.moocs h1 {
 }
 
 section.moocs {
-    height: 100vh;
+    height: 940px;
 }
 
 section.moocs .left-zone {
@@ -1135,7 +1136,7 @@ section.map select.form-control:not([size]):not([multiple]) {
 } */
 
 [id^="student"] {
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
 
@@ -1260,22 +1261,91 @@ section.map select.form-control:not([size]):not([multiple]) {
     }
 
     section.moocs {
-        height: 100vh;
+        height: 95vh;
     }
 
     section.moocs .left-zone {
         width: 950px;
-        height: 280px;
+        height: 275px;
+    }
+
+    section.moocs .middle-left {
+        width: 950px;
+        height: 310px;
     }
 
     section.moocs .right-zone {
         width: 690px;
-        height: 280px;
+        height: 275px;
     }
 
+    section.moocs .middle-right {
+        width: 690px;
+        height: 310px;
+    }
 
+    section.moocs .container_radio {
+        margin-top: 0;
+        padding-top: 0;
+    }
 
+    section.moocs #moocs-registration .y-data {
+        margin-top: -10px;
+    }
 
+    section.moocs #timeline-moocs .x-axis text {
+        font-size: 14px;
+        font-family: "Gotham-Book"
+    }
+
+    section.moocs #timeline-moocs .y-axis text {
+        font-size: 14px;
+        font-family: "Gotham-Book"
+    }
+
+    section.moocs .waffles h2 {
+        font-family: "Gotham-Book";
+        font-size: 35px;
+        margin-bottom: 0;
+    }
+
+    section.moocs .waffles h3 {
+        font-family: "Gotham-Book";
+        font-size: 10px;
+    }
+
+    section.moocs .down .vertical-text {
+        -ms-writing-mode: tb-lr;
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        text-orientation: sideways;
+        text-align: center;
+        text-orientation: sideways;
+        margin: 1rem;
+        font-size: 12px;
+        font-family: 'Gotham-Book';
+        position: relative;
+        top: -67px;
+        left: -33px;
+    }
+
+    section.moocs .down .left-zone {
+        width: 690px;
+        height: 305px;
+    }
+
+    section.moocs .down .right-zone {
+        width: 690px;
+        height: 305px;
+    }
+
+    section.moocs #distribution-moocs {
+        margin-left: -40px;
+    }
+
+    section.moocs .gauge-3 {
+        padding-top: 50px;
+    }
 
     .ms-fullscreenmode #contentBox {
         margin-left: 0 !important;
