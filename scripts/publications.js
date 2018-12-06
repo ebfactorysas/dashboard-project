@@ -569,7 +569,8 @@ function drawTreePublication(dataTree, filtertype, typeload) {
             }
         })
         .legend(false)
-
+        //.duration(0)
+        .detectVisible(false)
         .render();
 
 }

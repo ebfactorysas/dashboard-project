@@ -1326,7 +1326,7 @@ section.map select.form-control:not([size]):not([multiple]) {
         font-family: 'Gotham-Book';
         position: relative;
         top: -67px;
-        left: -33px;
+        left: -21px;
     }
 
     section.moocs .down .left-zone {
@@ -1341,6 +1341,24 @@ section.map select.form-control:not([size]):not([multiple]) {
 
     section.moocs #distribution-moocs {
         margin-left: -40px;
+    }
+
+    section.moocs #age-distribution-moocs .bar {
+        fill: #f1a592;
+    }
+    
+    section.moocs #age-distribution-moocs .axis {
+        font-size: 13px;
+    }
+    
+    section.moocs #age-distribution-moocs .axis path,
+    section.moocs #age-distribution-moocs .axis line {
+        fill: black;
+        stroke-width:1.5
+    }
+    
+    section.moocs #age-distribution-moocs .label {
+        font-size: 13px;
     }
 
     section.moocs .gauge-3 {
