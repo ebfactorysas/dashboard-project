@@ -1,17 +1,3 @@
-/*
- * Caro
- */
-
-
-
-/*
- * Chalo
- */
-
-
-
-
-
 $("#deparmentSelect").on('change', function () {
     $("select[id*='divisionSelect']").val("");
     
@@ -151,6 +137,7 @@ function setDataPublicationsByDivisions(sltValue) {
 
 $(window).on('load', function () {
     initPublications();
+    initDataSet();
     $('.label-filter-restidb').hide();
     
 });

@@ -530,18 +530,9 @@ function drawPlotChartDataset(data) {
         });
 }
 
-//init
-var ObjectTimeLineDataSet = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
-var ObjectDataSetPlot = $.extend(true, [], datasetsScatterplotArrays);
-
-drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "2018");
-createChartTimeLineDataSet(ObjectTimeLineDataSet);
-drawDataTrendChart(datasetsTopArrays.topIDB2018);
-drawPlotChartDataset(ObjectDataSetPlot);
-
-
 //click radiobutton drawChart(id del click)
 $("input[name*='dataSetTrend']").click(function () {
+    removeDataSetSvg();
     var ObjectTimeLineDataSet = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
     var ObjectDataSetPlot = $.extend(true, [], datasetsScatterplotArrays);
 
@@ -567,3 +558,32 @@ $("input[name*='dataSetTrend']").click(function () {
         drawGaugeDatasetChart(dataGaugeDatasets2018);
     }
 });
+
+
+/************************************************************** 
+ * Nueva lógica
+*/
+
+
+function initDataSet(){
+    removeDataSetSvg();
+
+    //init
+    var ObjectTimeLineDataSet = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
+    var ObjectDataSetPlot = $.extend(true, [], datasetsScatterplotArrays);
+
+    drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "2018");
+    createChartTimeLineDataSet(ObjectTimeLineDataSet);
+    drawDataTrendChart(datasetsTopArrays.topIDB2018);
+    drawPlotChartDataset(ObjectDataSetPlot);
+}
+
+function removeDataSetSvg(){
+        d3.select("#timeline-dataset svg").remove();
+        d3.select("#data-trend svg").remove();
+        d3.select("#dataset-publications-plot svg").remove();
+        d3.select("#downloads-dataset svg").remove();
+        d3.select("#gauge-datasets svg").remove();
+        d3.select("#gauge-download-d svg").remove();
+        d3.select("#gauge-lac-d svg").remove();
+}

@@ -767,7 +767,6 @@ function drawGaugePublicationChart(dataGauge) {
 }
 
 function drawLinesChartPublication(data) {
-    console.log(data);
     margin = {
             top: 20,
             right: 0,
