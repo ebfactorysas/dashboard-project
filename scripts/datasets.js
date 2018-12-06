@@ -114,9 +114,9 @@ function wrapData(text) {
     });
 }
 
-function drawTreeDataset(dataTree, filtertype){
+function drawTreeDataset(dataTree, filtertype) {
     //var colours = interpolateColors("rgb(217, 30, 24)", "rgb(94, 79, 162)", dataTree.length);
-    
+
     if ($("#dataSet2018").prop("checked")) {
         dataTree = dataTree.sort(function (a, b) {
             return d3.descending(a.value2018, b.value2018);
@@ -126,32 +126,31 @@ function drawTreeDataset(dataTree, filtertype){
             return d3.descending(a.valueAllTheTime, b.valueAllTheTime);
         });
     }
-    
+
     coloursDataSet = chroma.scale(['#424488', '#ffffff'])
         .mode('lch').colors(dataTree.length)
 
     dataTree.forEach(function (element, i) {
         element.color = coloursDataSet[i]
     });
-    
+
     new d3plus.Treemap()
-      .data(dataTree)
-      .groupBy(["value"+filtertype, "name"])
-      .sum("value"+filtertype)
-      .shapeConfig({
-         fill: function(d) {
-           return d.color;
-         },
-         labelConfig: {
-             fontFamily: 'Gotham-Bold',
-             fontMax: 20,
-         }
+        .select("#downloads-dataset")
+        .width(935)
+        .height(200)
+        .layoutPadding([0])
+        .data(dataTree)
+        .groupBy(["value" + filtertype, "name"])
+        .sum("value" + filtertype)
+        .shapeConfig({
+            fill: function (d) {
+                return d.color;
+            }
         })
-    .legend(false)
-    .detectVisible(false)
-    .select("#downloads-dataset")
-    .render();
-  
+        .legend(false)
+        .detectVisible(false)
+        .render();
+
 }
 
 function createChartTimeLineDataSet(data) {
@@ -195,14 +194,14 @@ function createChartTimeLineDataSet(data) {
     // appends a 'group' element to 'svg'
     // moves the 'group' element to the top left margin
     var svg = d3.select("#timeline-dataset").append("svg")
-    //responsive SVG needs these 2 attributes and no width and height attr
-    .attr("preserveAspectRatio", "xMinYMin meet")
-    .attr("viewBox", "-60 -40 600 300")
-    .append("g")
-    // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
+        //responsive SVG needs these 2 attributes and no width and height attr
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-60 -28 600 300")
+        .append("g")
+        // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
 
-    //class to make it responsive
-    .classed("svg-content-responsive", true);
+        //class to make it responsive
+        .classed("svg-content-responsive", true);
     var totalAmount = 0;
     // format the data
     data.forEach(function (d) {
@@ -253,13 +252,14 @@ function createChartTimeLineDataSet(data) {
         .data([data])
         .attr("class", "line")
         .attr("d", valueline);
-    //
-    svg.append('svg:path')
-        .attr('d', lineGen(data))
-        .attr('stroke', '#c3c3c3')
-        .attr("stroke-dasharray", "4")
-        .attr('stroke-width', 2)
-        .attr('fill', 'none');
+
+    //calculate path do not delete it
+    // svg.append('svg:path')
+    //     .attr('d', lineGen(data))
+    //     .attr('stroke', '#c3c3c3')
+    //     .attr("stroke-dasharray", "4")
+    //     .attr('stroke-width', 2)
+    //     .attr('fill', 'none');
 
     // add the X Axis
     svg.append("g")
@@ -272,47 +272,9 @@ function createChartTimeLineDataSet(data) {
             .ticks(d3.timeDay.filter(function (d) {
                 return $("#dataSet2018").prop("checked") ? d3.timeDay.count(0, d) % 60 === 0 : d3.timeDay.count(0, d) % 60 === 0
             }))
-            .tickFormat(function (x) {
-                // get the milliseconds since Epoch for the date
-                var milli = (x.getTime() - 10000);
-
-                // calculate new date 10 seconds earlier. Could be one second, 
-                // but I like a little buffer for my neuroses
-                var vanilli = new Date(milli);
-
-                // calculate the month (0-11) based on the new date
-                var mon = vanilli.getMonth();
-                var yr = vanilli.getFullYear();
-
-                // return appropriate quarter for that month
-
-                if ($("#dataSet2018").prop("checked")) {
-                    if (mon <= 2) {
-                        return yr;
-                    } else if (mon <= 5) {
-                        return yr;
-                    } else if (mon <= 8) {
-                        return yr;
-                    } else if (yr == 2018) {
-                        return yr;
-                    }
-                } else {
-                    if (mon <= 2) {
-                        return yr;
-                    } else if (mon <= 5) {
-                        return yr;
-                    } else if (mon <= 8) {
-                        return yr;
-                    } else {
-                        return yr;
-                    }
-                }
-
-
-            })
+            .ticks(7)
             .tickSizeOuter(0)
         )
-    //.call(d3.axisBottom(x));
 
     // add the Y Axis
     svg.append("g")
@@ -320,7 +282,11 @@ function createChartTimeLineDataSet(data) {
         .style("font-family", "Gotham-Book")
         .style("font-size", "13px")
         .call(d3.axisLeft(y)
-            .tickFormat(d3.format(".2s")));
+            .ticks(3)
+            .tickFormat(function (x) {
+                var value = setSettingsNumber(x);
+                return value.valueNumber + value.suffixNumber;
+            }));
 }
 var dataGaugeDatasets = {
     "code": {
@@ -387,7 +353,7 @@ function drawGaugeDatasetChart(dataGauge) {
         .attr("class", "percent-complete")
         .attr("dy", "0.3em")
         .text(setSettingsNumber(dataGauge.code.allocated).valueNumber + setSettingsNumber(dataGauge.code.allocated).suffixNumber);
-        
+
 
 
     var i = d3.interpolate(progress, dataGauge.code.allocated / dataGauge.code.total);
