@@ -155,11 +155,6 @@ function drawTreeDataset(dataTree, filtertype){
 }
 
 function createChartTimeLineDataSet(data) {
-    if ($("#dataSet2018").prop("checked")) {
-        data = data.filter(function (data) {
-            return data.date.indexOf("-18") > -1
-        });
-    }
 
     var margin = {
             top: 20,
@@ -274,9 +269,8 @@ function createChartTimeLineDataSet(data) {
         .style("font-family", "Gotham-Book")
         .style("font-size", "13px")
         .call(d3.axisBottom(x)
-            //.ticks(d3.timeDay.filter(d {return } d3.timeDay.count(0, d) % 100 === 0))
             .ticks(d3.timeDay.filter(function (d) {
-                return $("#dataSet2018").prop("checked") ? d3.timeDay.count(0, d) % 60 === 0 : d3.timeDay.count(0, d) % 300 === 0
+                return $("#dataSet2018").prop("checked") ? d3.timeDay.count(0, d) % 60 === 0 : d3.timeDay.count(0, d) % 60 === 0
             }))
             .tickFormat(function (x) {
                 // get the milliseconds since Epoch for the date
@@ -291,15 +285,16 @@ function createChartTimeLineDataSet(data) {
                 var yr = vanilli.getFullYear();
 
                 // return appropriate quarter for that month
+
                 if ($("#dataSet2018").prop("checked")) {
-                    if (mon <= 2 && yr == 2018) {
-                        return "Q1 " + yr;
-                    } else if (mon <= 5 && yr == 2018) {
-                        return "Q2 " + yr;
-                    } else if (mon <= 8 && yr == 2018) {
-                        return "Q3 " + yr;
+                    if (mon <= 2) {
+                        return yr;
+                    } else if (mon <= 5) {
+                        return yr;
+                    } else if (mon <= 8) {
+                        return yr;
                     } else if (yr == 2018) {
-                        return "Q4 " + yr;
+                        return yr;
                     }
                 } else {
                     if (mon <= 2) {
@@ -465,11 +460,6 @@ function drawGaugeDatasetChart(dataGauge) {
 }
 
 function drawPlotChartDataset(data) {
-    if ($("#dataSet2018").prop("checked")) {
-        data = data.filter(function (data) {
-            return data.publishedDate.indexOf("-18") > -1
-        });
-    }
     data.forEach(function (d) {
         d.daysPublished = +d.daysPublished;
         d.departmentCode = +d.departmentCode;
@@ -578,10 +568,11 @@ function drawPlotChartDataset(data) {
 var ObjectTimeLineDataSet = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
 var ObjectDataSetPlot = $.extend(true, [], datasetsScatterplotArrays);
 
-createChartTimeLineDataSet(ObjectTimeLineDataSet);
-drawDataTrendChart(datasetsTopArrays.topIDBAllTime);
-drawPlotChartDataset(ObjectDataSetPlot);
 drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "2018");
+createChartTimeLineDataSet(ObjectTimeLineDataSet);
+drawDataTrendChart(datasetsTopArrays.topIDB2018);
+drawPlotChartDataset(ObjectDataSetPlot);
+
 
 //click radiobutton drawChart(id del click)
 $("input[name*='dataSetTrend']").click(function () {

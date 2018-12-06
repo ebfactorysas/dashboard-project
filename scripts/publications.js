@@ -364,13 +364,7 @@ function sortByDateAscending(a, b) {
 }
 
 function createChartTimelinePublication(data, typeload) {
-    // if (typeload != "init") {
-    //     if ($("#publication2018").prop("checked")) {
-    //         data = data.filter(function (data) {
-    //             return data.date.indexOf("-18") > -1
-    //         });
-    //     }
-    // }
+
 
     var margin = {
             top: 20,
@@ -551,10 +545,6 @@ function drawTreePublication(dataTree, filtertype, typeload) {
         element.color = colours[i]
     });
 
-    var groupData = ["name", "value" + filtertype];
-    var colorParam = "value" + filtertype;
-    var sizeMeasure = "value" + filtertype;
-    var indexColor = 0;
     new d3plus.Treemap()
         .select("#downloads-publications")
         .width(935)

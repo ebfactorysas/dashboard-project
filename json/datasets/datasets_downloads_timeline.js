@@ -1611,7 +1611,7 @@ var datasetsDownloadsTimelineArrays = {
         },
         {
             "date": "1-Apr-18",
-            "close": "1418"
+            "close": 1418
         },
         {
             "date": "1-Mar-13",
@@ -1623,7 +1623,7 @@ var datasetsDownloadsTimelineArrays = {
         },
         {
             "date": "1-Aug-18",
-            "close": "2509"
+            "close": 2509
         },
         {
             "date": "1-Feb-16",
@@ -1631,7 +1631,7 @@ var datasetsDownloadsTimelineArrays = {
         },
         {
             "date": "1-Jan-18",
-            "close": "1350"
+            "close": 1350
         },
         {
             "date": "1-Jun-13",
@@ -1651,7 +1651,7 @@ var datasetsDownloadsTimelineArrays = {
         },
         {
             "date": "1-Dec-16",
-            "close": "2741"
+            "close": 2741
         },
         {
             "date": "1-May-13",
@@ -1659,7 +1659,7 @@ var datasetsDownloadsTimelineArrays = {
         },
         {
             "date": "1-Aug-17",
-            "close": "1225"
+            "close": 1225
         },
         {
             "date": "1-Nov-18",
@@ -1667,15 +1667,15 @@ var datasetsDownloadsTimelineArrays = {
         },
         {
             "date": "1-May-18",
-            "close": "1866"
+            "close": 1866
         },
         {
             "date": "1-Jun-18",
-            "close": "1294"
+            "close": 1294
         },
         {
             "date": "1-May-17",
-            "close": "1641"
+            "close": 1641
         },
         {
             "date": "1-Jun-15",
@@ -1695,7 +1695,7 @@ var datasetsDownloadsTimelineArrays = {
         },
         {
             "date": "1-Aug-15",
-            "close": "13714"
+            "close": 13714
         },
         {
             "date": "1-Oct-15",
@@ -1723,7 +1723,7 @@ var datasetsDownloadsTimelineArrays = {
         },
         {
             "date": "1-Jun-17",
-            "close": "2479"
+            "close": 2479
         },
         {
             "date": "1-Jul-14",
@@ -1739,7 +1739,7 @@ var datasetsDownloadsTimelineArrays = {
         },
         {
             "date": "1-Feb-17",
-            "close": "2769"
+            "close": 2769
         },
         {
             "date": "1-Oct-13",
@@ -1755,7 +1755,7 @@ var datasetsDownloadsTimelineArrays = {
         },
         {
             "date": "1-Nov-16",
-            "close": "1214"
+            "close": 1214
         },
         {
             "date": "1-Jul-16",
@@ -1775,7 +1775,7 @@ var datasetsDownloadsTimelineArrays = {
         },
         {
             "date": "1-Feb-18",
-            "close": "2054"
+            "close": 2054
         },
         {
             "date": "1-Oct-16",
@@ -1783,7 +1783,7 @@ var datasetsDownloadsTimelineArrays = {
         },
         {
             "date": "1-Oct-17",
-            "close": "1470"
+            "close": 1470
         },
         {
             "date": "1-Feb-14",
@@ -1791,15 +1791,15 @@ var datasetsDownloadsTimelineArrays = {
         },
         {
             "date": "1-Oct-18",
-            "close": "1875"
+            "close": 1875
         },
         {
             "date": "1-Mar-18",
-            "close": "1704"
+            "close": 1704
         },
         {
             "date": "1-Sep-17",
-            "close": "1476"
+            "close": 1476
         },
         {
             "date": "1-Apr-16",
@@ -1811,15 +1811,15 @@ var datasetsDownloadsTimelineArrays = {
         },
         {
             "date": "1-Sep-18",
-            "close": "2602"
+            "close": 2602
         },
         {
             "date": "1-Dec-17",
-            "close": "1290"
+            "close": 1290
         },
         {
             "date": "1-Jan-17",
-            "close": "2040"
+            "close": 2040
         },
         {
             "date": "1-Nov-15",
@@ -1831,11 +1831,11 @@ var datasetsDownloadsTimelineArrays = {
         },
         {
             "date": "1-Nov-17",
-            "close": "2299"
+            "close": 2299
         },
         {
             "date": "1-Sep-14",
-            "close": "120"
+            "close": 120
         },
         {
             "date": "1-Jan-16",
@@ -1851,7 +1851,7 @@ var datasetsDownloadsTimelineArrays = {
         },
         {
             "date": "1-Jul-18",
-            "close": "1238"
+            "close": 1238
         },
         {
             "date": "1-Sep-16",
@@ -1871,7 +1871,7 @@ var datasetsDownloadsTimelineArrays = {
         },
         {
             "date": "1-Jul-17",
-            "close": "1253"
+            "close": 1253
         },
         {
             "date": "1-Mar-14",
@@ -1887,7 +1887,7 @@ var datasetsDownloadsTimelineArrays = {
         },
         {
             "date": "1-Jan-14",
-            "close": "119"
+            "close": 119
         }
     ]
 };
