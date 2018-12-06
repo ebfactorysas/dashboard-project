@@ -267,7 +267,7 @@ section.publications .d-border-left p span {
 }
 
 
-section.publications #downloads-publications .node {
+/* section.publications #downloads-publications .node {
     border: solid .5px #d1415a;
     font: 18px;
     font-family: 'Gotham-Bold';
@@ -275,7 +275,7 @@ section.publications #downloads-publications .node {
     overflow: hidden;
     position: absolute;
     text-indent: 9px;
-}
+} */
 
 section.publications #kic p {
     font-family: 'Gotham-Book';
@@ -597,6 +597,11 @@ section.datasets {
     font-family: 'Gotham-Bold';
 }
 
+section.datasets .container_radio {
+    margin-top: 0;
+    padding-top: 0;
+}
+
 section.datasets .left-bar h4 {
     font-size: 18px;
     color: white;
@@ -626,13 +631,13 @@ section.datasets p {
 }
 
 section.datasets h4 {
-    font-size: 12px;
+    font-size: 16px;
     font-family: 'Gotham-Bold';
     color: #424488;
 }
 
 section.datasets h4 span {
-    font-size: 12px;
+    font-size: 16px;
     font-family: 'Gotham-Bold';
 }
 
@@ -673,21 +678,25 @@ section.datasets #data-trend .y-data .domain {
     display: none;
 }
 
-section.datasets #downloads-dataset .node {
-    border: solid .5px #424488;
-    font: 18px;
-    font-family: 'Gotham-Bold';
-    line-height: 24px;
-    overflow: hidden;
-    position: absolute;
-    text-indent: 9px;
-}
 
 section.datasets #downloads-dataset {
     min-width: 300px;
     max-width: 100%;
     margin: 0 auto;
     height: 220px;
+}
+
+section.datasets #downloads-dataset rect {
+
+    stroke: #424488;
+}
+
+section.datasets #downloads-dataset .d3plus-Shape {
+    stroke-width: 1;
+}
+
+section.datasets #downloads-dataset .d3plus-textBox text {
+    font-family: 'Gotham-Bold' !important;
 }
 
 
@@ -1345,17 +1354,17 @@ section.map select.form-control:not([size]):not([multiple]) {
     section.moocs #age-distribution-moocs .bar {
         fill: #f1a592;
     }
-    
+
     section.moocs #age-distribution-moocs .axis {
         font-size: 13px;
     }
-    
+
     section.moocs #age-distribution-moocs .axis path,
     section.moocs #age-distribution-moocs .axis line {
         fill: black;
-        stroke-width:1.5
+        stroke-width: 1.5
     }
-    
+
     section.moocs #age-distribution-moocs .label {
         font-size: 13px;
     }
@@ -1376,4 +1385,26 @@ section.map select.form-control:not([size]):not([multiple]) {
         color: #1658a1;
     }
 
+    section.datasets .left-zone {
+        width: 1000px;
+        height: 280px;
+    }
+
+    section.datasets .down {
+        height: 600px;
+    }
+
+    section.datasets .right-zone {
+        width: 648px;
+        height: 280px;
+    }
+
+    section.datasets #downloads-dataset {
+        width: 935px !important;
+        height: 175px !important;
+    }
+
+    section.publications {
+        height: 100vh;
+    }
 }
