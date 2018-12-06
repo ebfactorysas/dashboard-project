@@ -797,7 +797,7 @@ function drawLinesChartPublication(data) {
         .attr("height", "100%")
         .attr("fill", "transparent")
 
-    var parseTime = d3.timeParse("%Y%m%d");
+    var parseTime = d3.timeParse("%m/%d/%Y");
 
     var x = d3.scaleTime().range([0, width]),
         x2 = d3.scaleTime().range([0, width]),
