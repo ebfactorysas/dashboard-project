@@ -238,103 +238,149 @@ function drawMoocsRegistrationsChart(dataMoocs) {
 
 var data = [{
     value: 0,
-    name: "<18"
+    name: "<18",
+    id: 0
 }, {
     value: 5000,
-    name: "18-25"
+    name: "18 - 25",
+    id: 1
 }, {
     value: 16000,
-    name: "26-39"
+    name: "26 - 39",
+    id: 2
 }, {
     value: 10000,
-    name: "40-62"
+    name: "40 - 62",
+    id: 3
 }, {
     value: 0,
-    name: ">63"
+    name: "> 63",
+    id: 4
 }, {
     value: 19000,
-    name: "Not Reported"
+    name: "Not Reported",
+    id: 5
 }];
 drawMoocsAgeDistributionChart(data);
 
 function drawMoocsAgeDistributionChart(data) {
+    data = data.sort(function (a, b) {
+        return d3.descending(a.id, b.id);
+    })
 
-    // data = data.sort(function (a, b) {
-    //     return d3.ascending(a.value, b.value);
-    // })
-
-    // //set up svg using margin conventions - we'll need plenty of room on the left for labels
-    // var margin = {
-    //     top: 15,
-    //     right: 25,
-    //     bottom: 15,
-    //     left: 60
-    // };
-
-    // var width = 960 - margin.left - margin.right,
-    //     height = 500 - margin.top - margin.bottom;
-
-    // var svg = d3.select("#age-distribution-moocs").append("svg")
-    //     .attr("width", width + margin.left + margin.right)
-    //     .attr("height", height + margin.top + margin.bottom)
-    //     .append("g")
-    //     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-    // var x = d3.scaleLinear()
-    //     .range([0, width])
-    //     .domain([0, d3.max(data, function (d) {
-    //         return d.value;
-    //     })]);
-
-    // var y = d3.scaleOrdinal()
-    //     .range([height, 0], .1)
-    //     .domain(data.map(function (d) {
-    //         return d.name;
-    //     }));
-
-    // //make y axis to show bar names
-    // var yAxis = d3.axisLeft(y)
-
-    //     //no tick marks
-    //     .tickSize(0);
+    //set up svg using margin conventions - we'll need plenty of room on the left for labels
+    var margin = {
+        top: 15,
+        right: 25,
+        bottom: 15,
+        left: 100
+    };
 
 
-    // var gy = svg.append("g")
-    //     .attr("class", "y axis")
-    //     .call(yAxis)
+    var width = 625 - margin.left - margin.right,
+        height = 290 - margin.top - margin.bottom;
 
-    // var bars = svg.selectAll(".bar")
-    //     .data(data)
-    //     .enter()
-    //     .append("g")
+    var svg = d3.select("#age-distribution-moocs").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    // //append rects
-    // bars.append("rect")
-    //     .attr("class", "bar")
-    //     .attr("y", function (d) {
-    //         return y(d.name);
-    //     })
-    //     .attr("height", y.rangeBand())
-    //     .attr("x", 0)
-    //     .attr("width", function (d) {
-    //         return x(d.value);
-    //     });
+    var x = d3.scaleLinear()
+        .range([0, width])
+        .domain([0, d3.max(data, function (d) {
+            return d.value;
+        })]);
 
-    // //add a value label to the right of each bar
-    // bars.append("text")
-    //     .attr("class", "label")
-    //     //y position of the label is halfway down the bar
-    //     .attr("y", function (d) {
-    //         return y(d.name) + y.rangeBand() / 2 + 4;
-    //     })
-    //     //x position is 3 pixels to the right of the bar
-    //     .attr("x", function (d) {
-    //         return x(d.value) + 3;
-    //     })
-    //     .text(function (d) {
-    //         return d.value;
-    //     });
+    var y = d3.scaleBand()
+        .rangeRound([height, 0], .1)
+        .domain(data.map(function (d) {
+            return d.name;
+        }));
+    var bars = svg.selectAll(".bar")
+        .data(data)
+        .enter()
+        .append("g")
+    bars.append("rect")
+        .attr("class", "bar-back")
+        .attr("y", function (d) {
+            return y(d.name);
+        })
+        .attr("height", y.bandwidth() - 15)
+        .attr("x", 0)
+        .attr("fill", "#efefef")
+        .attr("width", function (d) {
+            return width;
+        });
 
+    bars.append("rect")
+        .attr("class", "bar")
+        .attr("y", function (d) {
+            return y(d.name);
+        })
+        .attr("height", y.bandwidth() - 15)
+        .attr("x", 0)
+        .attr("width", function (d) {
+            if ((x(d.value) - 20) <= 0) {
+                return 0;
+            } else {
+                return x(d.value) - 20;
+            }
+        });
+
+
+    //append rects
+    bars.append("rect")
+        .attr("class", "bar")
+        .attr("y", function (d) {
+            return y(d.name);
+        })
+        .attr("height", y.bandwidth() - 15)
+        .attr("x", 0)
+        .attr("rx", 30)
+        .attr("ry", 30)
+        .attr("width", function (d) {
+            return x(d.value) + 10;
+        });
+
+    //make y axis to show bar names
+    var yAxis = d3.axisLeft(y)
+        .tickPadding(50)
+        //no tick marks
+        .tickSize(0);
+
+
+    var gy = svg.append("g")
+        .attr("class", "y axis")
+        .call(yAxis)
+        .attr("transform", "translate(-10,-12 )")
+    
+        var path = svg.select(".y .domain")
+        .attr("transform", "translate(10,0 )")
+
+
+
+    //add a value label to the right of each bar
+    bars.append("text")
+        .attr("class", "label")
+        //y position of the label is halfway down the bar
+        .attr("y", function (d) {
+            return y(d.name) + y.bandwidth() / 2 - 5;
+        })
+        //x position is 3 pixels to the right of the bar
+        .attr("x", function (d) {
+            return 10;
+        })
+        .text(function (d) {
+            var value = setSettingsNumber(d.value);
+            return value.valueNumber + value.suffixNumber;
+        })
+        .style("font-family", "Gotham-Bold");
+
+    svg.selectAll(".tick text")
+        .call(wrap, y.bandwidth(),10)
+        .attr("font-family", "Gotham-Bold")
+        .attr("font-size", "12px");
 }
 /**
  * End age-distribution-moocs
