@@ -1325,7 +1325,7 @@ section.map select.form-control:not([size]):not([multiple]) {
         font-family: 'Gotham-Book';
         position: relative;
         top: -67px;
-        left: -33px;
+        left: -21px;
     }
 
     section.moocs .down .left-zone {

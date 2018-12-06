@@ -268,6 +268,7 @@ function drawTreeSuscriber(dataTree) {
             }
         })
         .legend(false)
+        .detectVisible(false)
         .select("#demographics-suscribers")
         .render();
 }

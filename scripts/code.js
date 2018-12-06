@@ -274,6 +274,7 @@ function drawTreeCode(dataTree,filtertype) {
         })
     .legend(false)
     .select("#downloads-code")
+    .detectVisible(false)
     .render();
   
 }
