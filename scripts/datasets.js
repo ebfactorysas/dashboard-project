@@ -134,10 +134,6 @@ function drawTreeDataset(dataTree, filtertype){
         element.color = coloursDataSet[i]
     });
     
-    var groupData = ["name", "value"+filtertype];
-    var colorParam = "value"+filtertype;
-    var sizeMeasure = "value"+filtertype;
-    var indexColor = 0;
     new d3plus.Treemap()
       .data(dataTree)
       .groupBy(["value"+filtertype, "name"])
