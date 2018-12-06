@@ -48,13 +48,13 @@ function drawDistributionChart(dataDistribution) {
         left: 50
     }
 
-    var widthDistribution = 650 - marginDistribution.left - marginDistribution.right;
+    var widthDistribution = 800 - marginDistribution.left - marginDistribution.right;
     var heightDistribution = 400 - marginDistribution.top - marginDistribution.bottom;
     var svgDistribution = d3.select('#distribution-moocs')
         .append("svg")
         //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "0 0 500 500")
+        .attr("viewBox", "0 0 720 500")
         .append("g")
         // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
 
@@ -80,9 +80,9 @@ function drawDistributionChart(dataDistribution) {
         .attr("x", function (d) {
             return xDistribution(d.name);
         })
-        .attr("width", xDistribution.bandwidth() - 15)
-        .attr("rx", 15)
-        .attr("ry", 15)
+        .attr("width", xDistribution.bandwidth() - 35)
+        .attr("rx", 25)
+        .attr("ry", 25)
         .attr("y", function (d) {
             return yDistribution(d.value + 3);
         })
@@ -119,8 +119,8 @@ function drawDistributionChart(dataDistribution) {
 
     svgDistribution.selectAll(".tick text")
         .call(wrap, xDistribution.bandwidth())
-        .attr("font-family", "Gotham-Book")
-        .attr("font-size", "10px");
+        .attr("font-family", "Gotham-Bold")
+        .attr("font-size", "12px");
 
 }
 /**
@@ -142,15 +142,15 @@ function drawMoocsRegistrationsChart(dataMoocs) {
         left: 55
     };
 
-    var widthMoocs = 560 - marginMoocs.left - marginMoocs.right,
-        heightMoocs = 200 - marginMoocs.top - marginMoocs.bottom;
+    var widthMoocs = 800 - marginMoocs.left - marginMoocs.right,
+        heightMoocs = 230 - marginMoocs.top - marginMoocs.bottom;
 
 
     var svgMoocs = d3.select("#moocs-registrations")
         .append("svg")
         //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-55 -25 700 200")
+        .attr("viewBox", "-55 0 800 200")
         .append("g")
         // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
 
@@ -169,7 +169,6 @@ function drawMoocsRegistrationsChart(dataMoocs) {
         })]);
 
     var yMoocs = d3.scaleBand()
-
         .rangeRound([heightMoocs, 0], .1)
         .domain(dataMoocs.map(function (d) {
             return d.value;
@@ -177,14 +176,20 @@ function drawMoocsRegistrationsChart(dataMoocs) {
 
     var yAxisMoocs = d3.axisLeft(yMoocs)
         //no tick marks
-        .tickPadding(55)
-        .tickSize(0);
+        .tickPadding(50)
+        .tickSize(0)
+        .tickFormat(function (x) {
+            var value = setSettingsNumber(x);
+            return value.valueNumber + value.suffixNumber;
+        });
 
     var gyMoocs = svgMoocs.append("g")
         .style("text-anchor", "start")
         .style("color", "#555555")
+        .style("font-family", "Gotham-Bold")
+        .style("font-size", "14px")
         .attr("class", "y-data")
-
+        .attr("transform", "translate( 0 ,-7)")
         .call(yAxisMoocs)
 
     var barsMoocs = svgMoocs.selectAll(".bar")
@@ -197,10 +202,10 @@ function drawMoocsRegistrationsChart(dataMoocs) {
         .attr("y", function (d) {
             return yMoocs(d.value);
         })
-        .attr("rx", 25)
-        .attr("ry", 25)
-        .attr("fill", "#dea692")
-        .attr("height", yMoocs.bandwidth() - 2)
+        .attr("rx", 20)
+        .attr("ry", 20)
+        .attr("fill", "#f1a592")
+        .attr("height", 26)
         .attr("x", 8)
         .attr("width", function (d) {
             return xMoocs(d.value);
@@ -210,7 +215,7 @@ function drawMoocsRegistrationsChart(dataMoocs) {
         .attr("class", "label")
         //y position of the label is halfway down the bar
         .attr("y", function (d) {
-            return yMoocs(d.value) + yMoocs.bandwidth() / 2 + 4;
+            return yMoocs(d.value) + yMoocs.bandwidth() / 2 - 2;
         })
         //x position is 3 pixels to the right of the bar
         .attr("x", function (d) {
@@ -229,102 +234,153 @@ function drawMoocsRegistrationsChart(dataMoocs) {
 /**
  * Start age-distribution-moocs
  */
-drawMoocsAgeDistributionChart(topAllMoocs);
+
 
 var data = [{
     value: 0,
-    name: "<18"
-}]
+    name: "<18",
+    id: 0
+}, {
+    value: 5000,
+    name: "18 - 25",
+    id: 1
+}, {
+    value: 16000,
+    name: "26 - 39",
+    id: 2
+}, {
+    value: 10000,
+    name: "40 - 62",
+    id: 3
+}, {
+    value: 0,
+    name: "> 63",
+    id: 4
+}, {
+    value: 19000,
+    name: "Not Reported",
+    id: 5
+}];
+drawMoocsAgeDistributionChart(data);
 
-function drawMoocsAgeDistributionChart(dataMoocs) {
+function drawMoocsAgeDistributionChart(data) {
+    data = data.sort(function (a, b) {
+        return d3.descending(a.id, b.id);
+    })
 
-    var marginMoocs = {
+    //set up svg using margin conventions - we'll need plenty of room on the left for labels
+    var margin = {
         top: 15,
         right: 25,
         bottom: 15,
-        left: 55
+        left: 100
     };
 
-    var widthMoocs = 560 - marginMoocs.left - marginMoocs.right,
-        heightMoocs = 200 - marginMoocs.top - marginMoocs.bottom;
 
+    var width = 625 - margin.left - margin.right,
+        height = 290 - margin.top - margin.bottom;
 
-    var svgMoocs = d3.select("#age-distribution-moocs")
-        .append("svg")
-        //responsive SVG needs these 2 attributes and no width and height attr
-        .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-55 -25 700 200")
+    var svg = d3.select("#age-distribution-moocs").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
         .append("g")
-        // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-        //class to make it responsive
-        .classed("svg-content-responsive", true);
-    // .append("svg")
-    // .attr("width", widthMoocs + marginMoocs.left + marginMoocs.right)
-    // .attr("height", heightMoocs + marginMoocs.top + marginMoocs.bottom)
-    // .append("g")
-    // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")");
-
-    var xMoocs = d3.scaleLinear()
-        .range([0, widthMoocs])
-        .domain([0, d3.max(dataMoocs, function (d) {
+    var x = d3.scaleLinear()
+        .range([0, width])
+        .domain([0, d3.max(data, function (d) {
             return d.value;
         })]);
 
-    var yMoocs = d3.scaleBand()
-
-        .rangeRound([heightMoocs, 0], .1)
-        .domain(dataMoocs.map(function (d) {
-            return d.value;
+    var y = d3.scaleBand()
+        .rangeRound([height, 0], .1)
+        .domain(data.map(function (d) {
+            return d.name;
         }));
-
-    var yAxisMoocs = d3.axisLeft(yMoocs)
-        //no tick marks
-        .tickPadding(55)
-        .tickSize(0);
-
-    var gyMoocs = svgMoocs.append("g")
-        .style("text-anchor", "start")
-        .style("color", "#555555")
-        .attr("class", "y-data")
-
-        .call(yAxisMoocs)
-
-    var barsMoocs = svgMoocs.selectAll(".bar")
-        .data(dataMoocs)
+    var bars = svg.selectAll(".bar")
+        .data(data)
         .enter()
         .append("g")
-
-    barsMoocs.append("rect")
-        .attr("class", "bar")
+    bars.append("rect")
+        .attr("class", "bar-back")
         .attr("y", function (d) {
-            return yMoocs(d.value);
+            return y(d.name);
         })
-        .attr("rx", 25)
-        .attr("ry", 25)
-        .attr("fill", "#dea692")
-        .attr("height", yMoocs.bandwidth() - 2)
-        .attr("x", 8)
+        .attr("height", y.bandwidth() - 15)
+        .attr("x", 0)
+        .attr("fill", "#efefef")
         .attr("width", function (d) {
-            return xMoocs(d.value);
+            return width;
         });
 
-    barsMoocs.append("text")
+    bars.append("rect")
+        .attr("class", "bar")
+        .attr("y", function (d) {
+            return y(d.name);
+        })
+        .attr("height", y.bandwidth() - 15)
+        .attr("x", 0)
+        .attr("width", function (d) {
+            if ((x(d.value) - 20) <= 0) {
+                return 0;
+            } else {
+                return x(d.value) - 20;
+            }
+        });
+
+
+    //append rects
+    bars.append("rect")
+        .attr("class", "bar")
+        .attr("y", function (d) {
+            return y(d.name);
+        })
+        .attr("height", y.bandwidth() - 15)
+        .attr("x", 0)
+        .attr("rx", 30)
+        .attr("ry", 30)
+        .attr("width", function (d) {
+            return x(d.value) + 10;
+        });
+
+    //make y axis to show bar names
+    var yAxis = d3.axisLeft(y)
+        .tickPadding(50)
+        //no tick marks
+        .tickSize(0);
+
+
+    var gy = svg.append("g")
+        .attr("class", "y axis")
+        .call(yAxis)
+        .attr("transform", "translate(-10,-12 )")
+    
+        var path = svg.select(".y .domain")
+        .attr("transform", "translate(10,0 )")
+
+
+
+    //add a value label to the right of each bar
+    bars.append("text")
         .attr("class", "label")
         //y position of the label is halfway down the bar
         .attr("y", function (d) {
-            return yMoocs(d.value) + yMoocs.bandwidth() / 2 + 4;
+            return y(d.name) + y.bandwidth() / 2 - 5;
         })
         //x position is 3 pixels to the right of the bar
         .attr("x", function (d) {
-            return 12;
+            return 10;
         })
-        .attr("class", "text-inside")
-        .attr("font-family", "Gotham-Bold")
-        .attr("font-size", "12px")
         .text(function (d) {
-            return d.name;
-        });
+            var value = setSettingsNumber(d.value);
+            return value.valueNumber + value.suffixNumber;
+        })
+        .style("font-family", "Gotham-Bold");
+
+    svg.selectAll(".tick text")
+        .call(wrap, y.bandwidth(),10)
+        .attr("font-family", "Gotham-Bold")
+        .attr("font-size", "12px");
 }
 /**
  * End age-distribution-moocs
@@ -338,8 +394,8 @@ var marginStudents = {
     left: 20
 };
 
-var widthStudents = 80 - marginStudents.left - marginStudents.right,
-    heightStudents = 80 - marginStudents.top - marginStudents.bottom;
+var widthStudents = 100 - marginStudents.left - marginStudents.right,
+    heightStudents = 60 - marginStudents.top - marginStudents.bottom;
 
 /**
  * Start student-registrations-moocs
@@ -360,14 +416,15 @@ function drawStudentRegistrationsChart(dataStudents) {
         dataStudents.registrations.value = students2018[0].value;
     }
 
-    var formatNumber = setSettingsNumber(dataStudents.registrations ? dataStudents.registrations.value : 0 );
+    var formatNumber = setSettingsNumber(dataStudents.registrations ? dataStudents.registrations.value : 0);
     $('#student1-title').html(formatNumber.valueNumber + formatNumber.suffixNumber);
 
-    var svgStudent1 = d3.select("#student1").append("svg")
-        .attr("width", widthStudents + marginStudents.left + marginStudents.right)
-        .attr("height", heightStudents + marginStudents.top + marginStudents.bottom)
+    var svgStudent1 = d3.select("#student1")
+        .append("svg")
+        //responsive SVG needs these 2 attributes and no width and height attr
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-20 -7 100 60")
         .append("g")
-        .attr("transform", "translate(" + marginStudents.left + "," + marginStudents.top + ")");
 
     var xStudent1 = d3.scaleLinear()
         .range([0, widthStudents])
@@ -387,9 +444,13 @@ function drawStudentRegistrationsChart(dataStudents) {
 
     var gyStudent1 = svgStudent1.append("g")
         .style("text-anchor", "start")
-        .style("color", "#000")
+        .style("color", "#fff")
+        .style("font-family", "Gotham-Book")
+        .style("font-size", "9px")
         .attr("class", "y-data")
+        .attr("transform", "translate(0,-4 )")
         .call(yAxisStudent1)
+
 
 
     var barsStudent1 = svgStudent1.selectAll(".bar")
@@ -421,7 +482,7 @@ function drawStudentRegistrationsChart(dataStudents) {
         })
         .attr("class", "text-inside")
         .attr("font-family", "Gotham-Book")
-        .attr("font-size", "10px")
+        .attr("font-size", "8px")
         .text(function (d) {
             var value = setSettingsNumber(d.value);
             return value.valueNumber + value.suffixNumber;
@@ -455,11 +516,12 @@ function drawStudentParticipantsChart(dataStudents) {
     var formatNumber = setSettingsNumber(dataStudents.participants.value);
     $('#student2-title').html(formatNumber.valueNumber + formatNumber.suffixNumber);
 
-    var svgStudent2 = d3.select("#student2").append("svg")
-        .attr("width", widthStudents + marginStudents.left + marginStudents.right)
-        .attr("height", heightStudents + marginStudents.top + marginStudents.bottom)
-        .append("g")
-        .attr("transform", "translate(" + marginStudents.left + "," + marginStudents.top + ")");
+    var svgStudent2 = d3.select("#student2")
+        .append("svg")
+        //responsive SVG needs these 2 attributes and no width and height attr
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-20 -7 100 60")
+        .append("g");
 
     var xStudent2 = d3.scaleLinear()
         .range([0, widthStudents])
@@ -479,8 +541,11 @@ function drawStudentParticipantsChart(dataStudents) {
 
     var gyStudent2 = svgStudent2.append("g")
         .style("text-anchor", "start")
-        .style("color", "#000")
+        .style("color", "#fff")
+        .style("font-family", "Gotham-Book")
+        .style("font-size", "9px")
         .attr("class", "y-data")
+        .attr("transform", "translate(0,-4 )")
         .call(yAxisStudent2)
 
     var barsStudent2 = svgStudent2.selectAll(".bar")
@@ -512,7 +577,7 @@ function drawStudentParticipantsChart(dataStudents) {
         })
         .attr("class", "text-inside")
         .attr("font-family", "Gotham-Book")
-        .attr("font-size", "10px")
+        .attr("font-size", "8px")
         .text(function (d) {
             var value = setSettingsNumber(d.value);
             return value.valueNumber + value.suffixNumber;
@@ -546,11 +611,12 @@ function drawStudentCompletedsChart(dataStudents) {
     var formatNumber = setSettingsNumber(dataStudents.completed.value);
     $('#student3-title').html(formatNumber.valueNumber + formatNumber.suffixNumber);
 
-    var svgStudent3 = d3.select("#student3").append("svg")
-        .attr("width", widthStudents + marginStudents.left + marginStudents.right)
-        .attr("height", heightStudents + marginStudents.top + marginStudents.bottom)
+    var svgStudent3 = d3.select("#student3")
+        .append("svg")
+        //responsive SVG needs these 2 attributes and no width and height attr
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-20 -7 100 60")
         .append("g")
-        .attr("transform", "translate(" + marginStudents.left + "," + marginStudents.top + ")");
 
     var xStudent3 = d3.scaleLinear()
         .range([0, widthStudents])
@@ -571,7 +637,10 @@ function drawStudentCompletedsChart(dataStudents) {
     var gyStudent3 = svgStudent3.append("g")
         .style("text-anchor", "start")
         .style("color", "#000")
+        .style("font-family", "Gotham-Book")
+        .style("font-size", "9px")
         .attr("class", "y-data")
+        .attr("transform", "translate(0,-4 )")
         .call(yAxisStudent3)
 
     var barsStudent3 = svgStudent3.selectAll(".bar")
@@ -603,7 +672,7 @@ function drawStudentCompletedsChart(dataStudents) {
         })
         .attr("class", "text-inside")
         .attr("font-family", "Gotham-Book")
-        .attr("font-size", "10px")
+        .attr("font-size", "8px")
         .text(function (d) {
             var value = setSettingsNumber(d.value);
             return value.valueNumber + value.suffixNumber;
@@ -639,11 +708,12 @@ function drawStudentCertifiedsChart(dataStudents) {
     var formatNumber = setSettingsNumber(dataStudents.certified.value);
     $('#student4-title').html(formatNumber.valueNumber + formatNumber.suffixNumber);
 
-    var svgStudent4 = d3.select("#student4").append("svg")
-        .attr("width", widthStudents + marginStudents.left + marginStudents.right)
-        .attr("height", heightStudents + marginStudents.top + marginStudents.bottom)
+    var svgStudent4 = d3.select("#student4")
+        .append("svg")
+        //responsive SVG needs these 2 attributes and no width and height attr
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-20 -7 100 60")
         .append("g")
-        .attr("transform", "translate(" + marginStudents.left + "," + marginStudents.top + ")");
 
     var xStudent4 = d3.scaleLinear()
         .range([0, widthStudents])
@@ -665,7 +735,10 @@ function drawStudentCertifiedsChart(dataStudents) {
     var gyStudent4 = svgStudent4.append("g")
         .style("text-anchor", "start")
         .style("color", "#000")
+        .style("font-family", "Gotham-Book")
+        .style("font-size", "9px")
         .attr("class", "y-data")
+        .attr("transform", "translate(0,-4 )")
         .call(yAxisStudent4)
 
     var barsStudent4 = svgStudent4.selectAll(".bar")
@@ -697,7 +770,7 @@ function drawStudentCertifiedsChart(dataStudents) {
         })
         .attr("class", "text-inside")
         .attr("font-family", "Gotham-Book")
-        .attr("font-size", "10px")
+        .attr("font-size", "8px")
         .text(function (d) {
             var value = setSettingsNumber(d.value);
             return value.valueNumber + value.suffixNumber;
@@ -732,8 +805,8 @@ function createChart(data) {
             bottom: 30,
             left: 50
         },
-        width = 580 - margin.left - margin.right,
-        height = 220 - margin.top - margin.bottom;
+        width = 850 - margin.left - margin.right,
+        height = 230 - margin.top - margin.bottom;
 
     // parse the date / time
     var parseTime = d3.timeParse("%d-%b-%y");
@@ -741,7 +814,7 @@ function createChart(data) {
     // set the ranges
     var x = d3.scaleTime().range([0, width]);
     var y = d3.scaleLinear().range([height, 0]);
-
+    var positionText = 0;
     // define the area
     var area = d3.area()
         .x(function (d) {
@@ -749,6 +822,7 @@ function createChart(data) {
         })
         .y0(height)
         .y1(function (d) {
+            positionText = y(d.close);
             return y(d.close);
         });
 
@@ -765,10 +839,10 @@ function createChart(data) {
     // appends a 'group' element to 'svg'
     // moves the 'group' element to the top left margin
     var svg = d3.select("#timeline-moocs").append("svg")
-    .attr("preserveAspectRatio", "xMinYMin meet")
-    .attr("viewBox", "-60 -28 600 300")
-    .append("g")
-    .classed("svg-content-responsive", true);
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-50 -22 850 300")
+        .append("g")
+        .classed("svg-content-responsive", true);
     var totalAmount = 0;
     // format the data
     data.forEach(function (d) {
@@ -835,7 +909,7 @@ function createChart(data) {
         .style("font-family", "Gotham-Book")
         .style("font-size", "13px")
         .call(d3.axisBottom(x)
-            .ticks(7)            
+            .ticks(8)
             .tickSizeOuter(0)
         )
 
@@ -845,11 +919,26 @@ function createChart(data) {
         .style("font-family", "Gotham-Book")
         .style("font-size", "13px")
         .call(d3.axisLeft(y)
-        .ticks(3)
-        .tickFormat(function (x) {
-            var value = setSettingsNumber(x);
-            return value.valueNumber + suffixNumber;
-        }));
+            .ticks(3)
+            .tickFormat(function (x) {
+                var value = setSettingsNumber(x);
+                return value.valueNumber + suffixNumber;
+            }));
+    var textOfTotal = setSettingsNumber(totalAmount);
+    svg.append("text")
+        .attr("x", (width - (40)))
+        .attr("y", positionText - 10)
+        // .attr("text-anchor", "middle")  
+        .style("font-size", "16px")
+        .style("font-family", "Gotham-Bold")
+        .text(textOfTotal.valueNumber + textOfTotal.suffixNumber);
+    svg.append("text")
+        .attr("x", (width - (40)))
+        .attr("y", positionText + 5)
+        // .attr("text-anchor", "middle")  
+        .style("font-size", "14px")
+        .style("font-family", "Gotham-Book")
+        .text("TOTAL");
 }
 
 /**
@@ -1055,9 +1144,9 @@ function points(data) {
     var formatNumber = setSettingsNumber(data[0].registrations);
     $('#waffle-registrations').html(formatNumber.valueNumber + formatNumber.suffixNumber);
     if (typeof data[0].gender == "undefined") {
-        $('#waffle-gender').html("Female 0%");
+        $('#waffle-gender').html("FEMALE 0%");
     } else {
-        $('#waffle-gender').html(data[0].gender + " " + (data[0].realpopulation * 100).toFixed(2) + "%");
+        $('#waffle-gender').html(data[0].gender.toUpperCase() + " " + (data[0].realpopulation * 100).toFixed(2) + "%");
     }
 
     var total = 100;
@@ -1065,7 +1154,7 @@ function points(data) {
         heightSquares = 10,
         squareSize = 10,
         squareValue = 0,
-        gap = 50,
+        gap = 35,
         theData = [];
 
 
@@ -1103,7 +1192,7 @@ function points(data) {
         .append("svg")
         //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-40 -300 600 1000")
+        .attr("viewBox", "-80 -140 600 1000")
         //class to make it responsive
         .classed("svg-content-responsive", true)
         .append("g")
@@ -1130,7 +1219,7 @@ function points(data) {
         })
         .attr("cy", function (d, i) {
             col = Math.floor(i / heightSquares);
-            return -(heightSquares * squareSize) + ((col * squareSize) + (col * gap)) + 5
+            return -(heightSquares * squareSize) + ((col * squareSize) + (col * 50)) + 5
         })
 }
 
@@ -1140,9 +1229,9 @@ function points1(data) {
     var formatNumber = setSettingsNumber(data[0].registrations);
     $('#waffle1-registrations').html(formatNumber.valueNumber + formatNumber.suffixNumber);
     if (typeof data[0].gender == "undefined") {
-        $('#waffle1-gender').html("Male 0%");
+        $('#waffle1-gender').html("MALE 0%");
     } else {
-        $('#waffle1-gender').html(data[0].gender + " " + (data[0].realpopulation * 100).toFixed(2) + "%");
+        $('#waffle1-gender').html(data[0].gender.toUpperCase() + " " + (data[0].realpopulation * 100).toFixed(2) + "%");
     }
 
     var total = 100;
@@ -1150,7 +1239,7 @@ function points1(data) {
         heightSquares = 10,
         squareSize = 10,
         squareValue = 0,
-        gap = 50,
+        gap = 35,
         theData = [];
 
 
@@ -1191,7 +1280,7 @@ function points1(data) {
         .append("svg")
         //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-40 -300 600 1000")
+        .attr("viewBox", "-80 -140 600 1000")
         //class to make it responsive
         .classed("svg-content-responsive", true)
         .append("g")
@@ -1218,7 +1307,7 @@ function points1(data) {
         })
         .attr("cy", function (d, i) {
             col = Math.floor(i / heightSquares);
-            return -(heightSquares * squareSize) + ((col * squareSize) + (col * gap)) + 5
+            return -(heightSquares * squareSize) + ((col * squareSize) + (col * 50)) + 5
         })
 }
 
@@ -1226,16 +1315,16 @@ function points2(data) {
     var formatNumber = setSettingsNumber(data[0].registrations);
     $('#waffle2-registrations').html(formatNumber.valueNumber + formatNumber.suffixNumber);
     if (typeof data[0].gender == "undefined") {
-        $('#waffle2-gender').html("Not Available 0%");
+        $('#waffle2-gender').html("NOT INFORMED 0%");
     } else {
-        $('#waffle2-gender').html(data[0].gender + " " + (data[0].realpopulation * 100).toFixed(2) + "%");
+        $('#waffle2-gender').html(data[0].gender.toUpperCase() + " " + (data[0].realpopulation * 100).toFixed(2) + "%");
     }
     var total = 100;
     var widthSquares = 10,
         heightSquares = 10,
         squareSize = 10,
         squareValue = 0,
-        gap = 50,
+        gap = 35,
         theData = [];
 
 
@@ -1275,7 +1364,7 @@ function points2(data) {
         .append("svg")
         //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-40 -300 600 1000")
+        .attr("viewBox", "-80 -140 600 1000")
         //class to make it responsive
         .classed("svg-content-responsive", true)
         .append("g")
@@ -1302,7 +1391,7 @@ function points2(data) {
         })
         .attr("cy", function (d, i) {
             col = Math.floor(i / heightSquares);
-            return -(heightSquares * squareSize) + ((col * squareSize) + (col * gap)) + 5
+            return -(heightSquares * squareSize) + ((col * squareSize) + (col * 50)) + 5
         })
 }
 
@@ -1310,9 +1399,9 @@ function points3(data) {
     var formatNumber = setSettingsNumber(data[0].registrations);
     $('#waffle3-registrations').html(formatNumber.valueNumber + formatNumber.suffixNumber);
     if (typeof data[0].gender == "undefined") {
-        $('#waffle3-gender').html("Not Available 0%");
+        $('#waffle3-gender').html("OTHER 0%");
     } else {
-        $('#waffle3-gender').html(data[0].gender + " " + (data[0].realpopulation * 100).toFixed(2) + "%");
+        $('#waffle3-gender').html(data[0].gender.toUpperCase() + " " + (data[0].realpopulation * 100).toFixed(2) + "%");
     }
 
     var total = 100;
@@ -1320,7 +1409,7 @@ function points3(data) {
         heightSquares = 10,
         squareSize = 10,
         squareValue = 0,
-        gap = 50,
+        gap = 35,
         theData = [];
 
 
@@ -1358,7 +1447,7 @@ function points3(data) {
         .append("svg")
         //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-40 -300 600 1000")
+        .attr("viewBox", "-80 -140 600 1000")
         //class to make it responsive
         .classed("svg-content-responsive", true)
         .append("g")
@@ -1385,7 +1474,7 @@ function points3(data) {
         })
         .attr("cy", function (d, i) {
             col = Math.floor(i / heightSquares);
-            return -(heightSquares * squareSize) + ((col * squareSize) + (col * gap)) + 5
+            return -(heightSquares * squareSize) + ((col * squareSize) + (col * 50)) + 5
         })
 }
 

@@ -35,8 +35,7 @@ function setPublicationGauge2018() {
 }
 
 
-var dataLinesPublications = [
-    {
+var dataLinesPublications = [{
         "date": 20180101,
 
         "one": Math.floor((Math.random() * 10) + 1) + 10,
@@ -372,7 +371,7 @@ function createChartTimelinePublication(data, typeload) {
     //         });
     //     }
     // }
-    
+
     var margin = {
             top: 20,
             right: 20,
@@ -388,7 +387,7 @@ function createChartTimelinePublication(data, typeload) {
     // set the ranges
     var x = d3.scaleTime().range([0, width]);
     var y = d3.scaleLinear().range([height, 0]);
-
+    var positionText = 0;
     // define the area
     var area = d3.area()
         .x(function (d) {
@@ -396,6 +395,7 @@ function createChartTimelinePublication(data, typeload) {
         })
         .y0(height)
         .y1(function (d) {
+            positionText =y(d.close);
             return y(d.close);
         });
 
@@ -425,7 +425,7 @@ function createChartTimelinePublication(data, typeload) {
     // format the data
     data.forEach(function (d) {
         d.date = parseTime(d.date);
-        
+
     });
 
     data = data.sort(sortByDateAscending);
@@ -510,18 +510,18 @@ function createChartTimelinePublication(data, typeload) {
 
     var textOfTotal = setSettingsNumber(totalAmount);
 
-            svg.append("text")
-        .attr("x",(width-(margin.left/2)))             
-        .attr("y", 0 - (margin.top / 5))
+    svg.append("text")
+        .attr("x", (width - (margin.left / 2)))
+        .attr("y", positionText)
         // .attr("text-anchor", "middle")  
-        .style("font-size", "16px") 
+        .style("font-size", "16px")
         .style("font-family", "Gotham-Bold")
         .text(textOfTotal.valueNumber + textOfTotal.suffixNumber);
-        svg.append("text")
-        .attr("x",(width-(margin.left/2)))             
-        .attr("y", 10)
+    svg.append("text")
+        .attr("x", (width - (margin.left / 2)))
+        .attr("y", positionText+20)
         // .attr("text-anchor", "middle")  
-        .style("font-size", "14px") 
+        .style("font-size", "14px")
         .style("font-family", "Gotham-Book")
         .text("TOTAL");
 
@@ -1089,6 +1089,7 @@ function drawPlotChartPublication(data, typeload) {
         .text("Published Days");
 
     var mouseOver = function (d) {
+        d3.select(this).attr("stroke", "#555555").attr("stroke-width", "2");
         div.transition()
             .duration(0)
             .style("opacity", .9);
@@ -1102,6 +1103,7 @@ function drawPlotChartPublication(data, typeload) {
     }
 
     var mouseOut = function (d) {
+        d3.select(this).attr("stroke-width", "0");
         div.transition()
             .duration(0)
             .style("opacity", 0);
@@ -1144,6 +1146,7 @@ function removePublicationsSvg() {
     d3.select("#publication-trend svg").remove();
     //d3.select("#publications-plot svg").remove();
 }
+
 function removePublicationsSvgAll() {
     d3.select("#downloads-publications svg").remove();
     d3.select("#timeline-publication svg").remove();
