@@ -62,6 +62,7 @@ $("#divisionSelect").on('change', function (data) {
     removePublicationsGauges();
     removePublicationsSvgAll();
     if (this.value == "IDB") {
+        $('.label-filter-select').text(this.value);
         setDataIDB();
     } else {
         initIndicators('divisions', sltValue);

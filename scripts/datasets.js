@@ -148,6 +148,7 @@ function drawTreeDataset(dataTree, filtertype){
          }
         })
     .legend(false)
+    .detectVisible(false)
     .select("#downloads-dataset")
     .render();
   

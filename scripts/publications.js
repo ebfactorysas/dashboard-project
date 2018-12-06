@@ -569,7 +569,8 @@ function drawTreePublication(dataTree, filtertype, typeload) {
             }
         })
         .legend(false)
-
+        //.duration(0)
+        .detectVisible(false)
         .render();
 
 }
@@ -776,6 +777,7 @@ function drawGaugePublicationChart(dataGauge) {
 }
 
 function drawLinesChartPublication(data) {
+    console.log(data);
     margin = {
             top: 20,
             right: 0,
@@ -1187,24 +1189,64 @@ function initPublications() {
     var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
 
 
-    // var jsonPublicationLines = publicationsLines.linesAllDivisions.filter(function (data) {
-    //     return data.division_codes = 'CAN'
-    // });
-    // const ordered = {};
+    var jsonPublicationLines = $.extend(true, [], publicationsLines.lines30daysDivisions);
+    jsonDataLines = jsonPublicationLines.filter(function (data) {
+        return data.division_codes == 'CAN'
+    });
+    
+    // console.log(jsonDataLines);
+    // var ordered = {};
     // Object.keys(jsonPublicationLines).sort().forEach(function (key) {
     //     ordered[key] = jsonPublicationLines[key];
     // });
-
-    // // console.log(JSON.parse(JSON.stringify(ordered)));
-
-    // for (var key in JSON.parse(JSON.stringify(ordered))) {
-    //     console.log(key);
-    // }
-
+    // jsonResult = JSON.parse(JSON.stringify(ordered));
+    // console.log(jsonPublicationLines);
+    
+    jsonLines += '"data":';
+    
+    var jsonDates = "{data:[";
+    jsonResultAux = $.extend(true, [], jsonDataLines);
+    jsonResultAux.length = 1;
+    $.each(jsonResultAux[0].dates, function (y, val) {
+        // console.log(validarFormatoFecha(y));
+        if (validarFormatoFecha(val.date) == true) {
+            jsonDates += '{"date":"' + val.date + '"},';
+        }
+    });
+    jsonDates += "]}";
+    jsonDates = eval(jsonDates);
+    // console.log(jsonDataLines);
+    
+    
+    var jsonLines = "[";
+    jsonDates.forEach(function (dataDate, i) {
+        jsonLines += '{"division_codes":"CAN",';
+        jsonLines += '"date":"' + dataDate.date + '",';
+        // console.log(jsonDataLines);
+        jsonDataLines.forEach(function (value, y, arr) {
+            // $.each(internalJson, function (y, val) {
+            // jsonLines += '"2018_downloads_' + y + '":"' + value['2018_downloads'] + '",';
+            resultsDate = value.dates.filter(function (d, y){
+                return d.date == dataDate.date
+            });
+            // console.log(resultsDate);
+            jsonLines += '"' + y + '":' + (parseInt(resultsDate[0].value) + (10 * (y+1))) + ',';
+            
+            // jsonDates = jsonDates.filter(function (datajson){
+            //     return datajson.date == y
+            // });
+            
+            // console.log(val);
+        });
+        jsonLines += "},"
+    });
+    jsonLines += "]";
+    jsonLines = eval(jsonLines);
+    
 
 
     drawGaugePublicationChart(dataPublicationGauge2018);
-    drawLinesChartPublication(dataLinesPublications);
+    drawLinesChartPublication(jsonLines);
     createChartTimelinePublication(downloadTimelineIDB, 'init');
     drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
     drawPlotChartPublication(ObjectpublicationsAttention, 'init');

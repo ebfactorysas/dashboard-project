@@ -158,7 +158,7 @@ function initIndicators(filterselect, valueFilter) {
     // console.log(dataPublicationsResults);
     setDataMain(dataPublicationsResults, dataMoocsResults, dataDatasetsResults, dataCodeResults, dataSubscribersResults);
     getDataBignumbers(jsondataPublications, jsondataMoocs, jsondataDatasets, jsondataCode, jsondataSubscriber);
-    
+    getDataTotalPercentage(jsondataPublications, jsondataMoocs, jsondataDatasets, jsondataCode, jsondataSubscriber);
 }
 $("input[name*='blueTrend']").click(function () {
     // console.log(jsondata);
@@ -194,6 +194,13 @@ function setDataMain(dataResultsPublications, dataResultsMoocs, dataResultsDatas
     setSubscriber(dataResultsSubscriber);
 }
 
+/**
+ * Funcion para obtener los valores totales y calcular los rangos de los gauges
+ */
+function getDataTotalPercentage(jsondataPublications, jsondataMoocs, jsondataDatasets, jsondataCode, jsondataSubscriber) {
+    publicationsTotalGlobal = (jsondataPublications.length > 0) ? jsondataPublications[0].all_the_time_publications : '0';
+    publicationsTotalDownloadsGlobal = (jsondataPublications.length > 0) ? jsondataPublications[0].all_the_time_downloads : '0';
+}
 // function mainReset() {
 //     var valuepublications = new CountUp('valuepublications', 0, 0, 0, 1.0, optionsAnimation);
 //     valuepublications.reset();
@@ -229,14 +236,8 @@ function optionsAnimated(suffixValue) {
  */
 function publicationsIndicatorAlltime(jsondata){
     publicationsAllTotalGlobal = (jsondataPublications.length > 0) ? jsondataPublications[0].all_the_time_publications : '0';
-    // publications2018TotalRest = (jsondataPublications.length > 0) ? jsondataPublications[0].all_the_time_LAC_downloads : '0';
-    // publications2018TotalRest = setSettingsNumber(publications2018TotalRest).valueNumber;
-
     publicationsAllDownloads = (jsondataPublications.length > 0) ? jsondataPublications[0].all_the_time_downloads : '0';
-    // publicationsAllDownloadsLac = (jsondataPublications.length > 0) ? (jsondata[0].all_the_time_porcent_total_LAC_downloads * 100).toFixed(0) : '0';
     publicationsAllDownloadsLac = (jsondataPublications.length > 0) ? ((jsondataPublications[0].all_the_time_porcent_total_LAC_downloads != "missing" && jsondataPublications[0].all_the_time_porcent_total_LAC_downloads > 0) ? (jsondataPublications[0].all_the_time_porcent_total_LAC_downloads * 100).toFixed(1) : jsondataPublications[0].all_the_time_porcent_total_LAC_downloads) : 0;
-    // console.log(setSettingsNumber(publications2018TotalRest).suffixNumber);
-    // $('#gauge-publications .percent-complete').append(setSettingsNumber(publications2018TotalRest).suffixNumber);
     var results = {
         publicationsValue: (jsondata.length > 0) ? jsondata[0].all_the_time_publications : '0',
         porcent_total_publications: "100%", /*missing, rodrigo dice que si falta el dato que pongamos 100% para all the time*/
