@@ -480,13 +480,21 @@ function drawPlotChartDataset(data) {
         .scale(xScale)
         .tickPadding(40)
         .tickSize(0)
-        .ticks(5);
+        .ticks(10)
+        .tickFormat(function (x) {
+            var value = setSettingsNumber(x);
+            return value.valueNumber + value.suffixNumber;
+        });
 
     var yAxis = d3.axisLeft()
         .scale(yScale)
         .tickPadding(40)
         .tickSize(0)
-        .ticks(5);
+        .ticks(10)
+        .tickFormat(function (x) {
+            var value = setSettingsNumber(x);
+            return value.valueNumber + value.suffixNumber;
+        });
 
     data.forEach(function (d) {
         d.downloadsByDepartment = +d.downloadsByDepartment;
