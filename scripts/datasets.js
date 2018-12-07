@@ -10,7 +10,7 @@ function drawDataTrendChart(dataDataTrend) {
     };
 
     var widthDataTrend = 800 - marginDataTrend.left - marginDataTrend.right,
-        heightDataTrend = 560 - marginDataTrend.top - marginDataTrend.bottom;
+        heightDataTrend = 520 - marginDataTrend.top - marginDataTrend.bottom;
 
 
     var svgDataTrend = d3.select("#data-trend").append("svg")
@@ -436,7 +436,7 @@ function drawPlotChartDataset(data) {
         left: 100
     };
     var width = 750 - margin.left - margin.right;
-    var height = 540 - margin.top - margin.bottom;
+    var height = 580 - margin.top - margin.bottom;
     var valueOfFilter = $('#idbLink')[0].text;
     var arrayAux = [];
     var arrayElements = [];
@@ -456,7 +456,7 @@ function drawPlotChartDataset(data) {
     var svg = d3.select('#dataset-publications-plot')
         .append("svg")
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-100 -60 750 600")
+        .attr("viewBox", "-100 -60 750 650")
         .append("g")
         .classed("svg-content-responsive", true);
 
@@ -561,6 +561,8 @@ function drawPlotChartDataset(data) {
         .data(data)
         .enter().append('circle')
         .attr('class', 'bubble')
+        .attr('stroke-width','2')
+        .attr('stroke','#7879a9')
         .attr('cx', function (d) {
             return xScale(d.daysPublished);
         })
@@ -570,6 +572,7 @@ function drawPlotChartDataset(data) {
         .attr('r', function (d) {
             return radius(20);
         })
+        .style('opacity','.6')
         .style('fill', function (d) {
 
             if (d.departmentCode != valueOfFilter && valueOfFilter != "IDB") {

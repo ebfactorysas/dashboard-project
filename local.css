@@ -1434,6 +1434,14 @@ section.map select.form-control:not([size]):not([multiple]) {
         height: 280px;
     }
 
+    section.datasets .left-bar{
+        height: 940px;
+    }
+
+    section.datasets .right-bar{
+        height: 940px;
+    }
+
     section.datasets .down {
         height: 600px;
     }
