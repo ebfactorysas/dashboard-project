@@ -730,6 +730,50 @@ section.code .funds-allocated-meter .background {
     fill: #A17603;
 }
 
+section.datasets #dataset-publications-plot {
+    margin-top: -32px;
+}
+
+section.datasets #dataset-publications-plot .legend text,
+section.datasets #dataset-publications-plot .axis text {
+    font-size: 14px;
+    fill: #333;
+    font-family: 'Gotham-Book'
+}
+
+section.datasets #dataset-publications-plot .axis path,
+section.datasets #dataset-publications-plot .axis line {
+    fill: none;
+    stroke-width: 3px;
+    stroke: #555555;
+}
+
+section.datasets #dataset-publications-plot .circle {
+    fill-opacity: 0.65;
+}
+
+section.datasets #dataset-publications-plot .bubble {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+section.datasets #dataset-publications-plot .bubble:hover text {
+    opacity: 1;
+}
+
+section.datasets #dataset-publications-plot .bubble:hover circle {
+    fill-opacity: 1;
+}
+
+section.datasets #dataset-publications-plot .legend rect {
+    fill-opacity: 0.75;
+}
+
+section.datasets #dataset-publications-plot .legeng:hover rect {
+    fill-opacity: 1;
+}
+
+
 section.code #code-trend .y-code {
     font-family: 'Gotham-Bold';
     font-size: 11px;
@@ -1388,6 +1432,14 @@ section.map select.form-control:not([size]):not([multiple]) {
     section.datasets .left-zone {
         width: 1000px;
         height: 280px;
+    }
+
+    section.datasets .left-bar{
+        height: 940px;
+    }
+
+    section.datasets .right-bar{
+        height: 940px;
     }
 
     section.datasets .down {
