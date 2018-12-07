@@ -67,13 +67,13 @@ function drawDataTrendChart(dataDataTrend) {
         })
         //x position is 3 pixels to the right of the bar
         .attr("x", function (d) {
-            return xDataTrend(d.value)+10;
+            return xDataTrend(d.value) + 10;
         })
         .attr("class", "text-inside")
         .attr("font-family", "Gotham-Bold")
         .attr("font-size", "13px")
         .text(function (d) {
-            var value =setSettingsNumber(d.value)
+            var value = setSettingsNumber(d.value)
             return value.valueNumber + value.suffixNumber;
         });
 
@@ -128,7 +128,7 @@ function drawTreeDataset(dataTree, filtertype, typeload) {
                 return d3.descending(a.value2018, b.value2018);
             });
             dataTree.forEach(element => {
-                if(element.value2018 > 0 ){
+                if (element.value2018 > 0) {
                     count++;
                 }
             });
@@ -137,7 +137,7 @@ function drawTreeDataset(dataTree, filtertype, typeload) {
                 return d3.descending(a.valueAllTheTime, b.valueAllTheTime);
             });
             dataTree.forEach(element => {
-                if(element.valueAllTheTime > 0 ){
+                if (element.valueAllTheTime > 0) {
                     count++;
                 }
             });
@@ -147,7 +147,7 @@ function drawTreeDataset(dataTree, filtertype, typeload) {
             return d3.descending(a.value2018, b.value2018);
         });
         dataTree.forEach(element => {
-            if(element.value2018 > 0 ){
+            if (element.value2018 > 0) {
                 count++;
             }
         });
@@ -160,6 +160,7 @@ function drawTreeDataset(dataTree, filtertype, typeload) {
         element.color = coloursDataSet[i]
     });
 
+    //if all values are zero clean array to avoid error (darker of undefined)
     count > 0 ? dataTree = dataTree : dataTree = [];
 
     new d3plus.Treemap()
@@ -524,7 +525,7 @@ function drawPlotChartDataset(data) {
     data.forEach(function (d) {
         d.downloadsByDepartment = +d.downloadsByDepartment;
         d.daysPublished = +d.daysPublished;
-        
+
     });
 
     xScale.domain(d3.extent(data, function (d) {
@@ -586,8 +587,8 @@ function drawPlotChartDataset(data) {
         .data(data)
         .enter().append('circle')
         .attr('class', 'bubble')
-        .attr('stroke-width','2')
-        .attr('stroke','#7879a9')
+        .attr('stroke-width', '2')
+        .attr('stroke', '#7879a9')
         .attr('cx', function (d) {
             return xScale(d.daysPublished);
         })
@@ -597,7 +598,7 @@ function drawPlotChartDataset(data) {
         .attr('r', function (d) {
             return radius(20);
         })
-        .style('opacity','.6')
+        .style('opacity', '.6')
         .style('fill', function (d) {
 
             if (d.departmentCode != valueOfFilter && valueOfFilter != "IDB") {
@@ -609,42 +610,79 @@ function drawPlotChartDataset(data) {
         .on("mouseout", mouseOut);
 }
 
-//click radiobutton drawChart(id del click)
 $("input[name*='dataSetTrend']").click(function () {
+
     removeDataSetSvg();
-    var ObjectTimeLineDataSet = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
-    var ObjectDataSetPlot = $.extend(true, [], datasetsScatterplotArrays);
 
-    // d3.select("#timeline-dataset svg").remove();
-    d3.select("#data-trend svg").remove();
-    // d3.select("#dataset-publications-plot svg").remove();
-    d3.select("#downloads-dataset svg").remove();
-    d3.select("#gauge-datasets svg").remove();
-    d3.select("#gauge-download-d svg").remove();
-    d3.select("#gauge-lac-d svg").remove();
+    if ($("select[id*='divisionSelect']").val() != "IDB") {
+        if ($("select[id*='divisionSelect']").val().length > 0) {
 
-    if (this.id == "dataSetAllTime") {
-        createChartTimeLineDataSet(ObjectTimeLineDataSet);
-        drawDataTrendChart(datasetsTopArrays.topIDBAllTime);
-        drawPlotChartDataset(ObjectDataSetPlot);
-        drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "AllTheTime");
-        drawGaugeDatasetChart(dataGaugeDatasets);
+            if (this.id == "dataSetAllTime") {
+                $('.label-filter-restidb').hide();
+                
+                jsonDataSetTree = datasetsDownloadSource.downloadSourceDivisions.filter(dataT => {
+                    return dataT.division_codes == $("select[id*='divisionSelect']").val()
+                });
+                drawTreeDataset(jsonDataSetTree, "AllTheTime");
+            } else {
+                jsonDataSetTree = datasetsDownloadSource.downloadSourceDivisions.filter(dataT => {
+                    return dataT.division_codes == $("select[id*='divisionSelect']").val()
+                });
+                drawTreeDataset(jsonDataSetTree, "2018");
+            }
+
+        } else if ($("select[id*='deparmentSelect']").val().length > 0) {
+            //acá iría la lógica de departamentos
+        }
+
     } else {
-        createChartTimeLineDataSet(ObjectTimeLineDataSet);
-        drawDataTrendChart(datasetsTopArrays.topIDB2018);
-        drawPlotChartDataset(ObjectDataSetPlot);
-        drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "2018");
-        drawGaugeDatasetChart(dataGaugeDatasets2018);
+
+        if (this.id == "dataSetAllTime") {
+            drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "2018");
+        } else {
+            drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "AllTheTime");
+        }
+
     }
 });
+
+//click radiobutton drawChart(id del click)
+// $("input[name*='dataSetTrend']").click(function () {
+//     removeDataSetSvg();
+
+//     var ObjectTimeLineDataSet = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
+//     var ObjectDataSetPlot = $.extend(true, [], datasetsScatterplotArrays);
+
+//     // d3.select("#timeline-dataset svg").remove();
+//     d3.select("#data-trend svg").remove();
+//     // d3.select("#dataset-publications-plot svg").remove();
+//     d3.select("#downloads-dataset svg").remove();
+//     d3.select("#gauge-datasets svg").remove();
+//     d3.select("#gauge-download-d svg").remove();
+//     d3.select("#gauge-lac-d svg").remove();
+
+//     if (this.id == "dataSetAllTime") {
+//         createChartTimeLineDataSet(ObjectTimeLineDataSet);
+//         drawDataTrendChart(datasetsTopArrays.topIDBAllTime);
+//         drawPlotChartDataset(ObjectDataSetPlot);
+//         drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "AllTheTime");
+//         drawGaugeDatasetChart(dataGaugeDatasets);
+//     } else {
+//         createChartTimeLineDataSet(ObjectTimeLineDataSet);
+//         drawDataTrendChart(datasetsTopArrays.topIDB2018);
+//         drawPlotChartDataset(ObjectDataSetPlot);
+//         drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "2018");
+//         drawGaugeDatasetChart(dataGaugeDatasets2018);
+//     }
+// });
 
 
 /************************************************************** 
  * Nueva lógica
-*/
+ */
 
 
-function initDataSet(){
+function initDataSet() {
     removeDataSetSvg();
 
     //init
@@ -657,12 +695,12 @@ function initDataSet(){
     drawPlotChartDataset(ObjectDataSetPlot);
 }
 
-function removeDataSetSvg(){
-        d3.select("#timeline-dataset svg").remove();
-        d3.select("#data-trend svg").remove();
-        d3.select("#dataset-publications-plot svg").remove();
-        d3.select("#downloads-dataset svg").remove();
-        // d3.select("#gauge-datasets svg").remove();
-        // d3.select("#gauge-download-d svg").remove();
-        // d3.select("#gauge-lac-d svg").remove();
+function removeDataSetSvg() {
+    d3.select("#timeline-dataset svg").remove();
+    d3.select("#data-trend svg").remove();
+    d3.select("#dataset-publications-plot svg").remove();
+    d3.select("#downloads-dataset svg").remove();
+    // d3.select("#gauge-datasets svg").remove();
+    // d3.select("#gauge-download-d svg").remove();
+    // d3.select("#gauge-lac-d svg").remove();
 }
