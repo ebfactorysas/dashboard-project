@@ -4,13 +4,13 @@ function drawDataTrendChart(dataDataTrend) {
     })
     var marginDataTrend = {
         top: 15,
-        right: 25,
+        right: 48,
         bottom: 15,
         left: 300
     };
 
-    var widthDataTrend = 560 - marginDataTrend.left - marginDataTrend.right,
-        heightDataTrend = 400 - marginDataTrend.top - marginDataTrend.bottom;
+    var widthDataTrend = 800 - marginDataTrend.left - marginDataTrend.right,
+        heightDataTrend = 560 - marginDataTrend.top - marginDataTrend.bottom;
 
 
     var svgDataTrend = d3.select("#data-trend").append("svg")
@@ -67,20 +67,23 @@ function drawDataTrendChart(dataDataTrend) {
         })
         //x position is 3 pixels to the right of the bar
         .attr("x", function (d) {
-            return 12;
+            return xDataTrend(d.value)+10;
         })
         .attr("class", "text-inside")
         .attr("font-family", "Gotham-Bold")
-        .attr("font-size", "12px")
+        .attr("font-size", "13px")
         .text(function (d) {
-            return d.value + "K";
+            var value =setSettingsNumber(d.value)
+            return value.valueNumber + value.suffixNumber;
         });
 
     svgDataTrend.selectAll(".tick text")
-        .attr("width", "248")
+        .attr("width", "290")
         .attr("x", -290)
         .attr("y", -5)
         .attr("text-anchor", "start")
+        .style("font-family", "Gotham-Medium")
+        .style("font-size", "13px")
         .call(wrapData);
 }
 
@@ -88,7 +91,7 @@ function wrapData(text) {
     text.each(function () {
         var text = d3.select(this);
         var words = text.text().split(/\s+/).reverse();
-        var lineHeight = 15;
+        var lineHeight = 17;
         var width = parseFloat(text.attr('width'));
         var y = parseFloat(text.attr('y'));
         var x = text.attr('x');
@@ -530,18 +533,9 @@ function drawPlotChartDataset(data) {
         });
 }
 
-//init
-var ObjectTimeLineDataSet = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
-var ObjectDataSetPlot = $.extend(true, [], datasetsScatterplotArrays);
-
-drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "2018");
-createChartTimeLineDataSet(ObjectTimeLineDataSet);
-drawDataTrendChart(datasetsTopArrays.topIDB2018);
-drawPlotChartDataset(ObjectDataSetPlot);
-
-
 //click radiobutton drawChart(id del click)
 $("input[name*='dataSetTrend']").click(function () {
+    removeDataSetSvg();
     var ObjectTimeLineDataSet = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
     var ObjectDataSetPlot = $.extend(true, [], datasetsScatterplotArrays);
 
@@ -567,3 +561,32 @@ $("input[name*='dataSetTrend']").click(function () {
         drawGaugeDatasetChart(dataGaugeDatasets2018);
     }
 });
+
+
+/************************************************************** 
+ * Nueva lógica
+*/
+
+
+function initDataSet(){
+    removeDataSetSvg();
+
+    //init
+    var ObjectTimeLineDataSet = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
+    var ObjectDataSetPlot = $.extend(true, [], datasetsScatterplotArrays);
+
+    drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "2018");
+    createChartTimeLineDataSet(ObjectTimeLineDataSet);
+    drawDataTrendChart(datasetsTopArrays.topIDB2018);
+    drawPlotChartDataset(ObjectDataSetPlot);
+}
+
+function removeDataSetSvg(){
+        d3.select("#timeline-dataset svg").remove();
+        d3.select("#data-trend svg").remove();
+        d3.select("#dataset-publications-plot svg").remove();
+        d3.select("#downloads-dataset svg").remove();
+        d3.select("#gauge-datasets svg").remove();
+        d3.select("#gauge-download-d svg").remove();
+        d3.select("#gauge-lac-d svg").remove();
+}
