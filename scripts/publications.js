@@ -34,7 +34,9 @@ function setPublicationGauge2018() {
     return publicationGauge2018;
 }
 
-var dataLinesPublications = [{
+
+var dataLinesPublications = [
+    {
         "date": 20180101,
 
         "one": Math.floor((Math.random() * 10) + 1) + 10,
@@ -766,6 +768,7 @@ function drawGaugePublicationChart(dataGauge) {
 }
 
 function drawLinesChartPublication(data) {
+    // console.log(data);
     margin = {
             top: 20,
             right: 0,
@@ -1181,6 +1184,10 @@ function initPublications() {
     jsonDataLines = jsonPublicationLines.filter(function (data) {
         return data.division_codes == 'CAN'
     });
+
+    jsonDataLines = jsonDataLines.sort(function (a, b) {
+        return b['2018_downloads'] - a['2018_downloads'];
+    });
     
     // console.log(jsonDataLines);
     // var ordered = {};
@@ -1208,7 +1215,7 @@ function initPublications() {
     
     var jsonLines = "[";
     jsonDates.forEach(function (dataDate, i) {
-        jsonLines += '{"division_codes":"CAN",';
+        jsonLines += '{';
         jsonLines += '"date":"' + dataDate.date + '",';
         // console.log(jsonDataLines);
         jsonDataLines.forEach(function (value, y, arr) {
@@ -1218,7 +1225,7 @@ function initPublications() {
                 return d.date == dataDate.date
             });
             // console.log(resultsDate);
-            jsonLines += '"' + y + '":' + (parseInt(resultsDate[0].value) + (10 * (y+1))) + ',';
+            jsonLines += '"' + y + '":' + (parseFloat(resultsDate[0].value) + (1000 * (y+1))) + ',';
             
             // jsonDates = jsonDates.filter(function (datajson){
             //     return datajson.date == y
@@ -1229,6 +1236,7 @@ function initPublications() {
         jsonLines += "},"
     });
     jsonLines += "]";
+    // console.log(jsonLines);
     jsonLines = eval(jsonLines);
     
 
