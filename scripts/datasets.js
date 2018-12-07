@@ -429,17 +429,14 @@ function drawGaugeDatasetChart(dataGauge) {
 }
 
 function drawPlotChartDataset(data) {
-    data.forEach(function (d) {
-        d.daysPublished = +d.daysPublished;
-        d.departmentCode = +d.departmentCode;
-        d.Code = +d.Code;
-        d.publishedDate = +d.publishedDate;
-    });
-
-
-    const width = 350;
-    const height = 300;
-
+    var margin = {
+        top: 30,
+        right: 50,
+        bottom: 60,
+        left: 100
+    };
+    var width = 750 - margin.left - margin.right;
+    var height = 540 - margin.top - margin.bottom;
     var valueOfFilter = $('#idbLink')[0].text;
     var arrayAux = [];
     var arrayElements = [];
@@ -452,95 +449,128 @@ function drawPlotChartDataset(data) {
     }
     data = arrayAux.concat(arrayElements);
 
-    const xValue = function (d) {
-        return d.downloadsByDepartment
-    };
-    const xAxisLabel = 'Published days';
+    var div = d3.select("body").append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
 
-    const yValue = function (d) {
-        d.daysPublished
-    };
-    const circleRadius = 10;
-    const yAxisLabel = 'Download by departmens';
-
-    const margin = {
-        top: 30,
-        right: 30,
-        bottom: 50,
-        left: 50
-    };
-    const innerWidth = width - margin.left - margin.right;
-    const innerHeight = height - margin.top - margin.bottom;
-    const svg = d3.select("#dataset-publications-plot").append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
+    var svg = d3.select('#dataset-publications-plot')
+        .append("svg")
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-100 -60 750 600")
         .append("g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-    const xScale = d3.scaleLinear()
-        .domain(d3.extent(data, xValue))
-        .range([0, innerWidth])
-        .nice();
+        .classed("svg-content-responsive", true);
 
-    const yScale = d3.scaleLinear()
-        .domain(d3.extent(data, yValue))
-        .range([innerHeight, 0])
-        .nice();
+    var opacityScale = d3.scaleLinear()
+        .domain([0.0, 30.0])
+        .range([0.10, .80]);
 
-    const g = svg.append('g')
-        .attr('transform', "translate(" + margin.left + "," + margin.top + ")");
+    // The API for scales have changed in v4. There is a separate module d3-scale which can be used instead. The main change here is instead of d3.scale.linear, we have d3.scaleLinear.
+    var xScale = d3.scaleLinear()
+        .range([0, width]);
 
-    const xAxis = d3.axisBottom(xScale)
+    var yScale = d3.scaleLinear()
+        .range([height, 0]);
+
+    // square root scale.
+    var radius = d3.scaleSqrt()
+        .range([2, 5]);
+
+    // the axes are much cleaner and easier now. No need to rotate and orient the axis, just call axisBottom, axisLeft etc.
+    var xAxis = d3.axisBottom()
         .scale(xScale)
+        .tickPadding(40)
         .tickSize(0)
-        .tickPadding(30);
+        .ticks(5);
 
-    const yAxis = d3.axisLeft(yScale)
+    var yAxis = d3.axisLeft()
         .scale(yScale)
+        .tickPadding(40)
         .tickSize(0)
-        .tickPadding(30);
+        .ticks(5);
 
-    const yAxisG = g.append('g').call(yAxis);
+    data.forEach(function (d) {
+        d.downloadsByDepartment = +d.downloadsByDepartment;
+        d.daysPublished = +d.daysPublished;
+        
+    });
 
+    xScale.domain(d3.extent(data, function (d) {
+        return d.daysPublished;
+    })).nice();
 
-    yAxisG.selectAll('.domain').remove();
+    yScale.domain(d3.extent(data, function (d) {
+        return d.downloadsByDepartment;
+    })).nice();
 
-    yAxisG.append('text')
+    svg.append('g')
+        .attr('transform', 'translate(0,' + height + ')')
+        .attr('class', 'x axis')
+        .style("stroke-dasharray", "5,5")
+        .call(xAxis)
+        .append('text')
         .attr('class', 'axis-label')
-        .attr('y', -93)
-        .attr('x', -innerHeight / 2)
+        .attr('y', 70)
+        .attr('x', 300)
+        .attr('fill', 'black')
+        .text("Published Days");
+
+    // y-axis is translated to (0,0)
+    svg.append('g')
+        .attr('transform', 'translate(0,0)')
+        .attr('class', 'y axis')
+        .style("stroke-dasharray", "5,5")
+        .call(yAxis)
+        .append('text')
+        .attr('class', 'axis-label')
+        .attr('y', -80)
+        .attr('x', -180)
         .attr('fill', 'black')
         .attr('transform', "rotate(-90)")
         .attr('text-anchor', 'middle')
-        .text(yAxisLabel);
+        .text("Downloads by Department");
 
-    const xAxisG = g.append('g').call(xAxis)
-        .attr('transform', "translate(0," + innerHeight + ")");
+    var mouseOver = function (d) {
+        d3.select(this).attr("stroke", "#555555").attr("stroke-width", "2");
+        div.transition()
+            .duration(0)
+            .style("opacity", .9);
+        div.html(
+                "<div><h4 class='text-center'><b>DATASETS DETAILS</b></h4><p class='pb-2'>" +
+                d.Code + "</p><p><b>" +
+                d.departmentCode + "</b></p><div class='pl-0'><p><span>Downloads by Department:</span>&nbsp;&nbsp;&nbsp;<b>" + d.downloadsByDepartment + "</b></p><p><span>Published Days:</span><b>" + d.daysPublished + "</b></p></div></div>")
+            .style("left", (d3.event.pageX) + "px")
+            .style("top", (d3.event.pageY) + "px");
 
-    xAxisG.select('.domain').remove();
+    }
 
-    xAxisG.append('text')
-        .attr('class', 'axis-label')
-        .attr('y', 75)
-        .attr('x', innerWidth / 2)
-        .attr('fill', 'black')
-        .text(xAxisLabel);
-
-    g.selectAll('circle').data(data)
+    var mouseOut = function (d) {
+        d3.select(this).attr("stroke-width", "0");
+        div.transition()
+            .duration(0)
+            .style("opacity", 0);
+    }
+    var bubble = svg.selectAll('.bubble')
+        .data(data)
         .enter().append('circle')
-        .attr('cy', function (d) {
-            return yScale(yValue(d))
-        })
+        .attr('class', 'bubble')
         .attr('cx', function (d) {
-            return xScale(xValue(d))
+            return xScale(d.daysPublished);
         })
-        .attr('r', circleRadius)
-        .attr('fill', function (d) {
-            if (d.daysPublished >= 200 && d.downloadsByDepartment >= 1000) {
-                return '#8889b3'
-            } else {
-                return '#d8d8d8'
+        .attr('cy', function (d) {
+            return yScale(d.downloadsByDepartment);
+        })
+        .attr('r', function (d) {
+            return radius(20);
+        })
+        .style('fill', function (d) {
+
+            if (d.departmentCode != valueOfFilter && valueOfFilter != "IDB") {
+                return "#d8d8d8"
             }
-        });
+            return "#8889b3"
+        })
+        .on("mouseover", mouseOver)
+        .on("mouseout", mouseOut);
 }
 
 //click radiobutton drawChart(id del click)
