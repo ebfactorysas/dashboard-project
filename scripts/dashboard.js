@@ -45,11 +45,15 @@ $("#deparmentSelect").on('change', function () {
 $("#divisionSelect").on('change', function (data) {
     var sltValue = this.value;
     $('#idbLink').text(sltValue);
+    
     removePublicationsGauges();
     removePublicationsSvgAll();
+
+
     if (this.value == "IDB") {
         $('.label-filter-select').text(this.value);
-        setDataIDB();
+        setDataIDBPublications();
+        SetDataIDBDataSet();
     } else {
         initIndicators('divisions', sltValue);
         $('.label-filter-select').text(this.value);
@@ -58,6 +62,7 @@ $("#divisionSelect").on('change', function (data) {
 
         //Se llama la funcion para actulizar los datos con el valor de la division seleccionada
         setDataPublicationsByDivisions(sltValue);
+        setDataDataSetByDivisions(sltValue);
 
         d3.select("#gauge-moocs svg").remove();
         d3.select("#gauge-registrations-m svg").remove();
@@ -83,7 +88,11 @@ $("#divisionSelect").on('change', function (data) {
     }
 });
 
-function setDataIDB(){
+/**
+ * Funciones para cuando se cambia de division para IDB
+ */
+
+function setDataIDBPublications(){
     // dataPublicationGauge = setPublicationGauge();
     // dataPublicationGauge2018 = setPublicationGauge2018();
     removePublicationsSvgAll();
@@ -99,6 +108,13 @@ function setDataIDB(){
     drawPlotChartPublication(ObjectpublicationsAttention, 'init');
     drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "2018", 'init');
 }
+
+
+function SetDataIDBDataSet(){
+
+}
+
+
 
 /**
  * Funcion para actualizar la informacion de la seccion de publicaciones
@@ -130,6 +146,15 @@ function setDataPublicationsByDivisions(sltValue) {
 
     // d3.select("#publications-plot svg").remove();
 }
+/**
+ * Funcion para actualizar la informacion de la seccion de dataset
+ */
+
+ function setDataDataSetByDivisions(sltValue) {
+     
+ }
+
+
 /**
  * bignumbers
  */

@@ -440,7 +440,17 @@ function drawPlotChartDataset(data) {
     const width = 350;
     const height = 300;
 
-
+    var valueOfFilter = $('#idbLink')[0].text;
+    var arrayAux = [];
+    var arrayElements = [];
+    for (let i = 0; i < data.length; i++) {
+        if (valueOfFilter == data[i].departmentCode) {
+            arrayElements.push(data[i])
+        } else {
+            arrayAux.push(data[i])
+        }
+    }
+    data = arrayAux.concat(arrayElements);
 
     const xValue = function (d) {
         return d.downloadsByDepartment
@@ -586,7 +596,7 @@ function removeDataSetSvg(){
         d3.select("#data-trend svg").remove();
         d3.select("#dataset-publications-plot svg").remove();
         d3.select("#downloads-dataset svg").remove();
-        d3.select("#gauge-datasets svg").remove();
-        d3.select("#gauge-download-d svg").remove();
-        d3.select("#gauge-lac-d svg").remove();
+        // d3.select("#gauge-datasets svg").remove();
+        // d3.select("#gauge-download-d svg").remove();
+        // d3.select("#gauge-lac-d svg").remove();
 }

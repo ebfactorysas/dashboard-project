@@ -34,7 +34,6 @@ function setPublicationGauge2018() {
     return publicationGauge2018;
 }
 
-
 var dataLinesPublications = [{
         "date": 20180101,
 
