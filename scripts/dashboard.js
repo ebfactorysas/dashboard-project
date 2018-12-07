@@ -151,8 +151,12 @@ function setDataPublicationsByDivisions(sltValue) {
  */
 
  function setDataDataSetByDivisions(sltValue) {
-     
+    jsonDataSetTree = datasetsDownloadSource.downloadSourceDivisions.filter(dataT => {
+        return dataT.division_codes == sltValue
+    });
+    drawTreeDataset(jsonDataSetTree, "2018", 'init');
  }
+
 
 
 /**

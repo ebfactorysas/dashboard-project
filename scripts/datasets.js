@@ -117,16 +117,39 @@ function wrapData(text) {
     });
 }
 
-function drawTreeDataset(dataTree, filtertype) {
-    //var colours = interpolateColors("rgb(217, 30, 24)", "rgb(94, 79, 162)", dataTree.length);
+function drawTreeDataset(dataTree, filtertype, typeload) {
+    d3.select("#downloads-dataset svg").remove();
 
-    if ($("#dataSet2018").prop("checked")) {
+    var count = 0;
+
+    if (typeload != "init") {
+        if ($("#dataSet2018").prop("checked")) {
+            dataTree = dataTree.sort(function (a, b) {
+                return d3.descending(a.value2018, b.value2018);
+            });
+            dataTree.forEach(element => {
+                if(element.value2018 > 0 ){
+                    count++;
+                }
+            });
+        } else {
+            dataTree = dataTree.sort(function (a, b) {
+                return d3.descending(a.valueAllTheTime, b.valueAllTheTime);
+            });
+            dataTree.forEach(element => {
+                if(element.valueAllTheTime > 0 ){
+                    count++;
+                }
+            });
+        }
+    } else {
         dataTree = dataTree.sort(function (a, b) {
             return d3.descending(a.value2018, b.value2018);
         });
-    } else {
-        dataTree = dataTree.sort(function (a, b) {
-            return d3.descending(a.valueAllTheTime, b.valueAllTheTime);
+        dataTree.forEach(element => {
+            if(element.value2018 > 0 ){
+                count++;
+            }
         });
     }
 
@@ -136,6 +159,8 @@ function drawTreeDataset(dataTree, filtertype) {
     dataTree.forEach(function (element, i) {
         element.color = coloursDataSet[i]
     });
+
+    count > 0 ? dataTree = dataTree : dataTree = [];
 
     new d3plus.Treemap()
         .select("#downloads-dataset")
