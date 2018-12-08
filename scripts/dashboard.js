@@ -157,6 +157,13 @@ function setDataPublicationsByDivisions(sltValue) {
         return dataT.division_codes == sltValue
     });
     drawTreeDataset(jsonDataSetTree, "2018", 'init');
+
+    //chart time line
+    var ObjectDataSetPlot = $.extend(true, [], datasetsScatterplotArrays);
+    jsonPlotDataSet = ObjectDataSetPlot.filter(dataT => {
+        return dataT.division_codes == sltValue
+    });
+    createChartTimeLineDataSet(jsonPlotDataSet);
  }
 
 

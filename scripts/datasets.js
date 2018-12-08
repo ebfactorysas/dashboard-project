@@ -188,7 +188,7 @@ function drawTreeDataset(dataTree, filtertype, typeload) {
 }
 
 function createChartTimeLineDataSet(data) {
-
+    d3.select("#timeline-dataset svg").remove();
     var margin = {
             top: 20,
             right: 20,

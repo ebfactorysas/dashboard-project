@@ -434,7 +434,7 @@ function createChartTimeline(data) {
 }
 
 function drawPlotChart(data) {
-   console.log(data)
+   //console.log(data)
     var margin = {
         top: 30,
         right: 50,
