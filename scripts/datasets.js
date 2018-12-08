@@ -14,15 +14,15 @@ function drawDataTrendChart(dataDataTrend) {
 
 
     var svgDataTrend = d3.select("#data-trend")
-    .append("svg")
-    //responsive SVG needs these 2 attributes and no width and height attr
-    .attr("preserveAspectRatio", "xMinYMin meet")
-    .attr("viewBox", "-290 -28 800 550")
-    .append("g")
-    // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
+        .append("svg")
+        //responsive SVG needs these 2 attributes and no width and height attr
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-290 -28 800 550")
+        .append("g")
+        // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
 
-    //class to make it responsive
-    .classed("svg-content-responsive", true);
+        //class to make it responsive
+        .classed("svg-content-responsive", true);
 
     var xDataTrend = d3.scaleLinear()
         .range([0, widthDataTrend])
@@ -132,7 +132,7 @@ function drawTreeDataset(dataTree, filtertype, typeload) {
             dataTree = dataTree.sort(function (a, b) {
                 return d3.descending(a.value2018, b.value2018);
             });
-            dataTree.forEach(element => {
+            dataTree.forEach(function (element) {
                 if (element.value2018 > 0) {
                     count++;
                 }
@@ -141,7 +141,7 @@ function drawTreeDataset(dataTree, filtertype, typeload) {
             dataTree = dataTree.sort(function (a, b) {
                 return d3.descending(a.valueAllTheTime, b.valueAllTheTime);
             });
-            dataTree.forEach(element => {
+            dataTree.forEach(function (element) {
                 if (element.valueAllTheTime > 0) {
                     count++;
                 }
@@ -151,7 +151,7 @@ function drawTreeDataset(dataTree, filtertype, typeload) {
         dataTree = dataTree.sort(function (a, b) {
             return d3.descending(a.value2018, b.value2018);
         });
-        dataTree.forEach(element => {
+        dataTree.forEach(function (element) {
             if (element.value2018 > 0) {
                 count++;
             }
