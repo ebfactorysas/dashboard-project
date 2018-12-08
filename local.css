@@ -468,6 +468,11 @@ section.moocs .left-bar h4 {
     margin-bottom: 0;
 }
 
+section.moocs .left-bar label {
+    padding-bottom: 0px;
+    margin-bottom: 0;
+}
+
 section.moocs .left-bar span:nth-child(2n) {
     color: white;
     font-size: 10px;
@@ -734,6 +739,11 @@ section.datasets #dataset-publications-plot {
     margin-top: -32px;
 }
 
+section.datasets .left-bar label {
+    padding-bottom: 0px;
+    margin-bottom: 0;
+}
+
 section.datasets #dataset-publications-plot .legend text,
 section.datasets #dataset-publications-plot .axis text {
     font-size: 14px;
@@ -777,6 +787,11 @@ section.datasets #dataset-publications-plot .legeng:hover rect {
 section.code #code-trend .y-code {
     font-family: 'Gotham-Bold';
     font-size: 11px;
+}
+
+section.code .left-bar label {
+    padding-bottom: 0px;
+    margin-bottom: 0;
 }
 
 section.code #code-trend .text-inside {
@@ -838,11 +853,13 @@ section.code .left-bar h4 {
 section.code .left-bar span:nth-child(2n) {
     color: white;
     font-size: 10px;
+    font-family: 'Gotham-Bold';
 }
 
 section.code .left-bar span:nth-child(2n+1) {
     color: #A17603;
     font-size: 10px;
+    font-family: 'Gotham-Bold';
 }
 
 section.code .right-bar .left-zone .top-zone {
@@ -968,7 +985,7 @@ section.suscribers .left-bar .gauge-1 {
 
 
 section.suscribers .left-bar h4 {
-    font-size: 18px;
+    font-size: 16px;
     color: white;
     margin-bottom: 0;
 }
@@ -989,8 +1006,13 @@ section.suscribers .funds-allocated-meter .background {
     fill: #027B8E;
 }
 
+section.suscribers .right-bar label {
+    padding-bottom: 0px;
+    margin-bottom: 0;
+}
+
 section.suscribers h4 {
-    font-size: 12px;
+    font-size: 16px;
     font-family: 'Gotham-Bold';
 }
 
@@ -1018,6 +1040,28 @@ section.suscribers #demographics-suscribers .node {
     overflow: hidden;
     position: absolute;
     text-indent: 9px;
+}
+
+section.suscribers .container_radio {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+section.suscribers #suscribers-interested .y-suscribers path{
+    display: none;
+}
+
+section.suscribers #demographics-suscribers rect {
+
+    stroke: #518a81;
+}
+
+section.suscribers #demographics-suscribers .d3plus-Shape {
+    stroke-width: 1;
+}
+
+section.suscribers #demographics-suscribers .d3plus-textBox text {
+    font-family: 'Gotham-Bold' !important;
 }
 
 section.map .fa {
@@ -1540,6 +1584,27 @@ section.map select.form-control:not([size]):not([multiple]) {
         height: 600px;
     }
 
+
+    section.suscribers .right-zone {
+        width: 648px;
+        height: 300px;
+    }
+
+    section.suscribers .left-zone {
+        width: 950px;
+        height: 300px;
+    }
+
+    section.suscribers .down {
+        height: 550px;
+    }
+
+    section.suscribers .down .vertical-text{
+        position: static;
+    }
+    section.suscribers .right-bar .right-zone {
+        width: 700px;
+    }
     #moocs-registrations {
         height: 545px;
     }
