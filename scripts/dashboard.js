@@ -19,7 +19,7 @@ $("#deparmentSelect").on('change', function () {
     $('#blueAllTime').click();
     removePublicationsGauges();
     removeMoocsGauges();
-    
+
 
     d3.select("#gauge-datasets svg").remove();
     d3.select("#gauge-download-d svg").remove();
@@ -47,7 +47,7 @@ $("#divisionSelect").on('change', function (data) {
     removePublicationsGauges();
     removePublicationsSvgAll();
 
-    
+
     if (this.value == "IDB") {
         $('.label-filter-select').text(this.value);
         setDataIDBPublications();
@@ -56,7 +56,7 @@ $("#divisionSelect").on('change', function (data) {
         initIndicators('divisions', sltValue);
         $('.label-filter-select').text(this.value);
         $('#blue2018').click();
-        
+
 
         //Se llama la funcion para actulizar los datos con el valor de la division seleccionada
         setDataPublicationsByDivisions(sltValue);
@@ -110,10 +110,10 @@ function setDataIDBPublications() {
 }
 
 
-function SetDataIDBDataSet(){
+function SetDataIDBDataSet() {
     //treemap
     drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "2018");
-    
+
     var ObjectDataSetLineChart = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
     createChartTimeLineDataSet(ObjectDataSetLineChart);
 
@@ -158,18 +158,18 @@ function setDataPublicationsByDivisions(sltValue) {
 function setDataDataSetByDivisions(sltValue) {
 
     //treemap
-    jsonDataSetTree = datasetsDownloadSource.downloadSourceDivisions.filter(function(dataT) {
+    jsonDataSetTree = datasetsDownloadSource.downloadSourceDivisions.filter(function (dataT) {
         return dataT.division_codes == sltValue
     });
     drawTreeDataset(jsonDataSetTree, "2018", 'init');
 
     //chart time line
     var ObjectDataSetTimeLine = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineDivisions);
-    jsonTimeLineDataSet = ObjectDataSetTimeLine.filter(dataT => {
+    jsonTimeLineDataSet = ObjectDataSetTimeLine.filter(function (dataT) {
         return dataT.division_code == sltValue
     });
     createChartTimeLineDataSet(jsonTimeLineDataSet[0].data);
- }
+}
 
 
 
