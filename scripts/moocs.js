@@ -1517,8 +1517,9 @@ function moocsFilter() {
             //top registration chart
             if ($("select[id*='divisionSelect']").val().length > 0 && $("select[id*='divisionSelect']").val() !== "IDB") {
                 
-                // var timelineDivisions = divisionFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDivisions), $("select[id*='divisionSelect']").val());
-                // if (timelineDivisions.length > 0) createChart(timelineDivisions[0].data);
+                var timelineDivisions = divisionFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDivisions), $("select[id*='divisionSelect']").val());
+                if (timelineDivisions.length > 0) createChart(timelineDivisions[0].data)
+                else createChart(timelineDivisions);
 
 
                 drawMoocsRegistrationsChart(orderTopMoocs(divisionFilter(moocsTopArrays.divisionsAlltime, $("select[id*='divisionSelect']").val())));
@@ -1582,8 +1583,8 @@ function moocsFilter() {
             drawGaugeMoocsChart(dataGaugeMoocs2018);
             //top registration chart
             if ($("select[id*='divisionSelect']").val().length > 0 && $("select[id*='divisionSelect']").val() !== "IDB") {
-                // var timelineDivisions = divisionFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDivisions), $("select[id*='divisionSelect']").val());
-                // if (timelineDivisions.length > 0) createChart(timelineDivisions[0].data);
+                var timelineDivisions = divisionFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDivisions), $("select[id*='divisionSelect']").val());
+                if (timelineDivisions.length > 0) createChart(timelineDivisions[0].data);
 
                 drawMoocsRegistrationsChart(orderTopMoocs(divisionFilter(moocsTopArrays.divisions2018, $("select[id*='divisionSelect']").val())));
                 drawDistributionChart(orderTopMoocs(divisionFilter(moocsEducationArrays.educationLevelDivisions, $("select[id*='divisionSelect']").val())));
@@ -1651,7 +1652,7 @@ function moocsFilter() {
 }
 
 function removeMoocsSvg() {
-    // d3.select("#timeline-moocs svg").remove();
+    d3.select("#timeline-moocs svg").remove();
     d3.select("#moocs-registrations svg").remove();
     d3.select("#distribution-moocs svg").remove();
     d3.select("#student1 svg").remove();
