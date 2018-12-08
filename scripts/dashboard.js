@@ -1,6 +1,6 @@
 $("#deparmentSelect").on('change', function () {
     $("select[id*='divisionSelect']").val("");
-    
+
     removePublicationsSvg();
     removePublicationsGauges();
     jsonPublicationsBarras = publicationsTopArrays.topDepartmentsAllTime.filter(function (dataP) {
@@ -43,7 +43,7 @@ $("#deparmentSelect").on('change', function () {
 $("#divisionSelect").on('change', function (data) {
     var sltValue = this.value;
     $('#idbLink').text(sltValue);
-    
+
     removePublicationsGauges();
     removePublicationsSvgAll();
 
@@ -92,7 +92,7 @@ $("#divisionSelect").on('change', function (data) {
  * Funciones para cuando se cambia de division para IDB
  */
 
-function setDataIDBPublications(){
+function setDataIDBPublications() {
     // dataPublicationGauge = setPublicationGauge();
     // dataPublicationGauge2018 = setPublicationGauge2018();
     removePublicationsSvgAll();
@@ -110,7 +110,7 @@ function setDataIDBPublications(){
 }
 
 
-function SetDataIDBDataSet(){
+function SetDataIDBDataSet() {
     drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "2018");
 }
 
@@ -134,11 +134,11 @@ function setDataPublicationsByDivisions(sltValue) {
     });
     drawTrendPublicationChart(jsonPublicationsBarras, '2018', '');
 
-    jsonPublicTree = publicationsDownloadSourceArrays.downloadSourceDivisions.filter(dataT => {
+    jsonPublicTree = publicationsDownloadSourceArrays.downloadSourceDivisions.filter(function (dataT) {
         return dataT.division_codes == sltValue
     });
     drawTreePublication(jsonPublicTree, "2018", 'init');
-    var auxDownloadTimelineDivisions = publicationsDownloadTimelineArray.downloadTimelineDivisions.filter(function (d){
+    var auxDownloadTimelineDivisions = publicationsDownloadTimelineArray.downloadTimelineDivisions.filter(function (d) {
         return d.division_codes == sltValue
     })
     auxDownloadTimelineDivisions = $.extend(true, [], auxDownloadTimelineDivisions[0].data);
@@ -150,10 +150,10 @@ function setDataPublicationsByDivisions(sltValue) {
  * Funcion para actualizar la informacion de la seccion de dataset
  */
 
- function setDataDataSetByDivisions(sltValue) {
+function setDataDataSetByDivisions(sltValue) {
 
     //treemap
-    jsonDataSetTree = datasetsDownloadSource.downloadSourceDivisions.filter(dataT => {
+    jsonDataSetTree = datasetsDownloadSource.downloadSourceDivisions.filter(function(dataT) {
         return dataT.division_codes == sltValue
     });
     drawTreeDataset(jsonDataSetTree, "2018", 'init');
@@ -178,5 +178,5 @@ $(window).on('load', function () {
     initMoocs();
     initDataSet();
     $('.label-filter-restidb').hide();
-    
+
 });
