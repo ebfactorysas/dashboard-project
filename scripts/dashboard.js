@@ -18,10 +18,8 @@ $("#deparmentSelect").on('change', function () {
     $("#divisionSelect").value = "";
     $('#blueAllTime').click();
     removePublicationsGauges();
-
-    d3.select("#gauge-moocs svg").remove();
-    d3.select("#gauge-registrations-m svg").remove();
-    d3.select("#gauge-lac-m svg").remove();
+    removeMoocsGauges();
+    
 
     d3.select("#gauge-datasets svg").remove();
     d3.select("#gauge-download-d svg").remove();
@@ -34,8 +32,8 @@ $("#deparmentSelect").on('change', function () {
     d3.select("#gauge-suscribers svg").remove();
     d3.select("#gauge-lac-s svg").remove();
     d3.select("#gauge-2018 svg").remove();
-    updateGaugesPublications();
-    updateGaugesMoocs();
+    // updateGaugesPublications();
+    // updateGaugesMoocs();
     updateGaugesDatasets();
     updateGaugesCode();
     updateGaugesSubscribers();
@@ -49,7 +47,7 @@ $("#divisionSelect").on('change', function (data) {
     removePublicationsGauges();
     removePublicationsSvgAll();
 
-
+    
     if (this.value == "IDB") {
         $('.label-filter-select').text(this.value);
         setDataIDBPublications();
@@ -58,7 +56,7 @@ $("#divisionSelect").on('change', function (data) {
         initIndicators('divisions', sltValue);
         $('.label-filter-select').text(this.value);
         $('#blue2018').click();
-        // $('#publication2018').click();
+        
 
         //Se llama la funcion para actulizar los datos con el valor de la division seleccionada
         setDataPublicationsByDivisions(sltValue);
@@ -86,6 +84,8 @@ $("#divisionSelect").on('change', function (data) {
         updateGaugesCode();
         updateGaugesSubscribers();
     }
+
+    moocsFilter();
 });
 
 /**
@@ -166,6 +166,7 @@ function setDataPublicationsByDivisions(sltValue) {
 
 $(window).on('load', function () {
     initPublications();
+    initMoocs();
     initDataSet();
     $('.label-filter-restidb').hide();
     
