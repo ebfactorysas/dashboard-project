@@ -5,18 +5,18 @@ function drawInstitutionsChart(dataInstitution) {
 
     var marginInstitution = {
         top: 50,
-        right: 50,
+        right: 40,
         bottom: 50,
-        left: 50
+        left: 40
     }
 
-    var widthInstitution = 650 - marginInstitution.left - marginInstitution.right;
-    var heightInstitution = 400 - marginInstitution.top - marginInstitution.bottom;
+    var widthInstitution = 800 - marginInstitution.left - marginInstitution.right;
+    var heightInstitution = 460 - marginInstitution.top - marginInstitution.bottom;
     var svgInstitution = d3.select('#institution-suscribers')
         .append("svg")
         //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-60 -60 700 400")
+        .attr("viewBox", "-60 -60 800 500")
         .append("g")
 
         //class to make it responsive
@@ -41,12 +41,12 @@ function drawInstitutionsChart(dataInstitution) {
         .attr("x", function (d) {
             return xInstitution(d.name);
         })
-        .attr("width", xInstitution.bandwidth() - 15)
+        .attr("width", xInstitution.bandwidth() - 30)
         .attr("y", function (d) {
             return yInstitution(d.value + 3);
         })
         .attr("x", function (d, i) {
-            return i * xInstitution.bandwidth() + 10; //Bar width of 20 plus 1 for padding
+            return i * xInstitution.bandwidth() + 15; //Bar width of 20 plus 1 for padding
         })
         .attr("fill", "#9ebbc2")
         .attr("stroke-width", 1)
@@ -61,17 +61,17 @@ function drawInstitutionsChart(dataInstitution) {
         .append("text")
         .text(null)
         .attr("y", function (d) {
-            return yInstitution(d.value + 5);
+            return yInstitution(d.value) - 20;
         })
         .attr("x", function (d, i) {
-            return i * xInstitution.bandwidth() + 12; //Bar width of 20 plus 1 for padding
+            return i * xInstitution.bandwidth() + 50; //Bar width of 20 plus 1 for padding
         })
         .attr("fill", "#336577")
         .attr("font-family", "Gotham-Bold")
         .attr("font-size", "12px")
         .append("tspan")
         .attr("x", function (d, i) {
-            return i * xInstitution.bandwidth() + 12; //Bar width of 20 plus 1 for padding
+            return i * xInstitution.bandwidth() + 25; //Bar width of 20 plus 1 for padding
         })
         .text(function (d) {
 
@@ -79,7 +79,7 @@ function drawInstitutionsChart(dataInstitution) {
         })
         .append("tspan")
         .attr("x", function (d, i) {
-            return i * xInstitution.bandwidth() + 12; //Bar width of 20 plus 1 for padding
+            return i * xInstitution.bandwidth() + 25; //Bar width of 20 plus 1 for padding
         })
         .attr("dy", "1.2em")
         .attr("font-family", "Gotham-Book")
@@ -130,13 +130,13 @@ drawAgeSuscribersChart(dataAgeSuscribers);
 function drawAgeSuscribersChart(dataAgeSuscribers) {
     var marginAgeSuscribers = {
         top: 50,
-        right: 50,
+        right: 0,
         bottom: 50,
         left: 50
     }
 
-    var widthAgeSuscribers = 450 - marginAgeSuscribers.left - marginAgeSuscribers.right;
-    var heightAgeSuscribers = 400 - marginAgeSuscribers.top - marginAgeSuscribers.bottom;
+    var widthAgeSuscribers = 700 - marginAgeSuscribers.left - marginAgeSuscribers.right;
+    var heightAgeSuscribers = 510 - marginAgeSuscribers.top - marginAgeSuscribers.bottom;
 
     var sumDataAgeSuscribers = d3.sum(dataAgeSuscribers, function (d) {
         return d.value;
@@ -144,7 +144,7 @@ function drawAgeSuscribersChart(dataAgeSuscribers) {
     var svgAgeSuscribers = d3.select('#age-suscribers').append("svg")
         //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-40 -40 400 400")
+        .attr("viewBox", "0 -95 650 550")
         .append("g")
         // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
 
@@ -170,7 +170,7 @@ function drawAgeSuscribersChart(dataAgeSuscribers) {
         .attr("x", function (d) {
             return xAgeSuscribers(d.name);
         })
-        .attr("width", xAgeSuscribers.bandwidth() - 15)
+        .attr("width", xAgeSuscribers.bandwidth() - 30)
         .attr("y", function (d) {
             return yAgeSuscribers(d.value + 3);
         })
@@ -200,7 +200,7 @@ function drawAgeSuscribersChart(dataAgeSuscribers) {
         .attr("font-size", "12px")
         .append("tspan")
         .attr("x", function (d, i) {
-            return i * xAgeSuscribers.bandwidth() + 20; //Bar width of 20 plus 1 for padding
+            return i * xAgeSuscribers.bandwidth() + 25; //Bar width of 20 plus 1 for padding
         })
         .text(function (d) {
 
@@ -208,11 +208,11 @@ function drawAgeSuscribersChart(dataAgeSuscribers) {
         })
         .append("tspan")
         .attr("x", function (d, i) {
-            return i * xAgeSuscribers.bandwidth() + 20; //Bar width of 20 plus 1 for padding
+            return i * xAgeSuscribers.bandwidth() + 25; //Bar width of 20 plus 1 for padding
         })
         .attr("dy", "1.2em")
         .attr("font-family", "Gotham-Book")
-        .attr("font-size", "10px")
+        .attr("font-size", "12px")
         .text(function (d) {
             return parseFloat(Math.round((d.value * 100 / sumDataAgeSuscribers) * 100) / 100).toFixed(2) +
                 "%";
@@ -250,26 +250,21 @@ function drawTreeSuscriber(dataTree) {
         element.color = colours[i]
     });
 
-    var groupData = ["Gender", "Subscribers"];
-    var colorParam = "Subscribers";
-    var sizeMeasure = "Subscribers";
-    var indexColor = 0;
     new d3plus.Treemap()
+        .select("#demographics-suscribers")
+        .width(630)
+        .height(200)
         .data(dataTree)
+        .layoutPadding([0])
         .groupBy(["Subscribers", "Gender"])
         .sum("Subscribers")
         .shapeConfig({
             fill: function (d) {
                 return d.color;
-            },
-            labelConfig: {
-                fontFamily: 'Gotham-Bold',
-                fontMax: 20,
             }
         })
         .legend(false)
         .detectVisible(false)
-        .select("#demographics-suscribers")
         .render();
 }
 
@@ -455,19 +450,20 @@ function drawSuscribersChart(data) {
 
     var marginSuscriber = {
         top: 15,
-        right: 50,
+        right: 25,
         bottom: 15,
-        left: 15
+        left: 205
     };
 
-    var widthSuscriber = 560 - marginSuscriber.left - marginSuscriber.right,
-        heightSuscriber = 250 - marginSuscriber.top - marginSuscriber.bottom;
+    var widthSuscriber = 750 - marginSuscriber.left - marginSuscriber.right,
+        heightSuscriber = 220 - marginSuscriber.top - marginSuscriber.bottom;
 
     var svgSuscribers = d3.select("#suscribers-interested").append("svg")
-        .attr("width", widthSuscriber + marginSuscriber.left + marginSuscriber.right)
-        .attr("height", heightSuscriber + marginSuscriber.top + marginSuscriber.bottom)
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-265 -28 800 220")
         .append("g")
-        .attr("transform", "translate(" + marginSuscriber.left + "," + marginSuscriber.top + ")");
+        //class to make it responsive
+        .classed("svg-content-responsive", true);
 
     var xSuscribers = d3.scaleLinear()
         .range([0, widthSuscriber])
@@ -479,13 +475,21 @@ function drawSuscribersChart(data) {
 
         .rangeRound([heightSuscriber, 0], .1)
         .domain(dataSet.map(function (d) {
-            return d.value;
+            return d.name;
         }));
 
     var yAxisSuscribers = d3.axisLeft(ySuscribers)
         //no tick marks
-        .tickPadding(55)
+        .tickPadding(260)
         .tickSize(0);
+
+    var gySuscribers = svgSuscribers.append("g")
+        .style("text-anchor", "start")
+        .style("color", "#1e6577")
+        .style("font-family", "Gotham-Medium")
+        .style("font-size", "13px")
+        .attr("class", "y-suscribers")
+        .call(yAxisSuscribers)
 
     var barsSuscribers = svgSuscribers.selectAll(".bar")
         .data(dataSet)
@@ -495,7 +499,7 @@ function drawSuscribersChart(data) {
     barsSuscribers.append("rect")
         .attr("class", "bar")
         .attr("y", function (d) {
-            return ySuscribers(d.value);
+            return ySuscribers(d.name);
         })
         .attr("fill", "#9ebbc2")
         .attr("stroke-width", 1)
@@ -506,36 +510,22 @@ function drawSuscribersChart(data) {
             return xSuscribers(d.value);
         });
 
+
     barsSuscribers.append("text")
         .attr("class", "label")
         //y position of the label is halfway down the bar
         .attr("y", function (d) {
-            return ySuscribers(d.value) + ySuscribers.bandwidth() / 2 + 4;
+            return ySuscribers(d.name) + ySuscribers.bandwidth() / 2 + 4;
         })
         //x position is 3 pixels to the right of the bar
         .attr("x", function (d) {
-            return 12;
-        })
-        .attr("class", "text-inside")
-        .attr("font-family", "Gotham-Bold")
-        .attr("font-size", "12px")
-        .text(function (d) {
-            return d.name;
-        });
-    barsSuscribers.append("text")
-        .attr("class", "label")
-        //y position of the label is halfway down the bar
-        .attr("y", function (d) {
-            return ySuscribers(d.value) + ySuscribers.bandwidth() / 2 + 4;
-        })
-        //x position is 3 pixels to the right of the bar
-        .attr("x", function (d) {
-            return xSuscribers(d.value) + 10;
+            return 16;
         })
         .attr("font-family", "Gotham-Bold")
         .attr("font-size", "12px")
         .text(function (d) {
-            return d.value / 1000 + "K";
+            var value = setSettingsNumber(d.value)
+            return value.valueNumber + value.suffixNumber;
         });
 }
 
@@ -611,7 +601,7 @@ function subscribersFilter() {
             break;
         case "2018":
             drawGaugeSubscribersChart(dataGaugeSubscribers2018);
-        break;
+            break;
         default:
             //top registration chart
             if ($("select[id*='divisionSelect']").val().length > 0) {
