@@ -306,7 +306,7 @@ function createChartTimeLineDataSet(data) {
             .ticks(d3.timeDay.filter(function (d) {
                 return $("#dataSet2018").prop("checked") ? d3.timeDay.count(0, d) % 60 === 0 : d3.timeDay.count(0, d) % 60 === 0
             }))
-            .ticks(7)
+            .ticks(10)
             .tickSizeOuter(0)
         )
 
@@ -617,24 +617,32 @@ function drawPlotChartDataset(data) {
 
 $("input[name*='dataSetTrend']").click(function () {
 
-    removeDataSetSvg();
-
     if ($("select[id*='divisionSelect']").val() != "IDB") {
         if ($("select[id*='divisionSelect']").val().length > 0) {
 
             if (this.id == "dataSetAllTime") {
                 $('.label-filter-restidb').hide();
                 
-                jsonDataSetTree = datasetsDownloadSource.downloadSourceDivisions.filter(dataT => {
+                //treemap
+                jsonDataSetTree = datasetsDownloadSource.downloadSourceDivisions.filter(function(dataT) {
                     return dataT.division_codes == $("select[id*='divisionSelect']").val()
                 });
                 drawTreeDataset(jsonDataSetTree, "AllTheTime");
+
             } else {
+                //treemap
                 jsonDataSetTree = datasetsDownloadSource.downloadSourceDivisions.filter(dataT => {
                     return dataT.division_codes == $("select[id*='divisionSelect']").val()
                 });
                 drawTreeDataset(jsonDataSetTree, "2018");
             }
+
+            // //linechart
+            // var ObjectDataSetLineChart = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineDivisions);
+            // ObjectDataSetLineChart.filter(function(data) {
+            //     return data.division_code == $("select[id*='divisionSelect']").val()
+            // });
+            // createChartTimeLineDataSet(ObjectDataSetLineChart[0].data);
 
         } else if ($("select[id*='deparmentSelect']").val().length > 0) {
             //acá iría la lógica de departamentos
@@ -643,10 +651,18 @@ $("input[name*='dataSetTrend']").click(function () {
     } else {
 
         if (this.id == "dataSetAllTime") {
+            //treemap
             drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "2018");
+           
         } else {
+            //tree map
             drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "AllTheTime");
         }
+
+        //linechart
+        // var ObjectDataSetLineChart = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
+        // createChartTimeLineDataSet(ObjectDataSetLineChart);
+
 
     }
 });
@@ -690,14 +706,16 @@ $("input[name*='dataSetTrend']").click(function () {
 function initDataSet() {
     removeDataSetSvg();
 
-    //init
-    var ObjectTimeLineDataSet = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
-    var ObjectDataSetPlot = $.extend(true, [], datasetsScatterplotArrays);
+    //init 
+    var ObjectDataSetLineChart = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
 
+    //new logic
     drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "2018");
-    createChartTimeLineDataSet(ObjectTimeLineDataSet);
+    createChartTimeLineDataSet(ObjectDataSetLineChart);
+
+    //old logic
     drawDataTrendChart(datasetsTopArrays.topIDB2018);
-    drawPlotChartDataset(ObjectDataSetPlot);
+    //drawPlotChartDataset(ObjectDataSetPlot);
 }
 
 function removeDataSetSvg() {

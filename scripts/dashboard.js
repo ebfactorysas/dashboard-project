@@ -111,7 +111,12 @@ function setDataIDBPublications(){
 
 
 function SetDataIDBDataSet(){
+    //treemap
     drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "2018");
+    
+    var ObjectDataSetLineChart = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
+    createChartTimeLineDataSet(ObjectDataSetLineChart);
+
 }
 
 
@@ -159,11 +164,11 @@ function setDataPublicationsByDivisions(sltValue) {
     drawTreeDataset(jsonDataSetTree, "2018", 'init');
 
     //chart time line
-    var ObjectDataSetPlot = $.extend(true, [], datasetsScatterplotArrays);
-    jsonPlotDataSet = ObjectDataSetPlot.filter(dataT => {
-        return dataT.division_codes == sltValue
+    var ObjectDataSetTimeLine = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineDivisions);
+    jsonTimeLineDataSet = ObjectDataSetTimeLine.filter(dataT => {
+        return dataT.division_code == sltValue
     });
-    createChartTimeLineDataSet(jsonPlotDataSet);
+    createChartTimeLineDataSet(jsonTimeLineDataSet[0].data);
  }
 
 

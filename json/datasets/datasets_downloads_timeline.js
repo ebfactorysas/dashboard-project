@@ -2922,7 +2922,7 @@ var datasetsDownloadsTimelineArrays = {
         }
     ],
     downloadsTimelineDivisions: [{
-            "Division Codes": "CCB",
+            "division_code": "CCB",
             "data": [{
                     "date": "1-Jan-13",
                     "close": 0
@@ -3214,7 +3214,7 @@ var datasetsDownloadsTimelineArrays = {
             ]
         },
         {
-            "Division Codes": "CCS",
+            "division_code": "CCS",
             "data": [{
                     "date": "1-Jan-13",
                     "close": 0
@@ -3506,7 +3506,7 @@ var datasetsDownloadsTimelineArrays = {
             ]
         },
         {
-            "Division Codes": "CMF",
+            "division_code": "CMF",
             "data": [{
                     "date": "1-Jan-13",
                     "close": 0
@@ -3799,7 +3799,7 @@ var datasetsDownloadsTimelineArrays = {
 
         },
         {
-            "Division Codes": "CTI",
+            "division_code": "CTI",
             "data": [{
                     "date": "1-Jan-13",
                     "close": 0
@@ -4091,7 +4091,7 @@ var datasetsDownloadsTimelineArrays = {
             ]
         },
         {
-            "Division Codes": "Discontinued Divisions",
+            "division_code": "Discontinued Divisions",
             "data": [{
                     "date": "1-Jan-13",
                     "close": 0
@@ -4383,7 +4383,7 @@ var datasetsDownloadsTimelineArrays = {
             ]
         },
         {
-            "Division Codes": "EDU",
+            "division_code": "EDU",
             "data": [{
                     "date": "1-Jan-13",
                     "close": 0
@@ -4675,7 +4675,7 @@ var datasetsDownloadsTimelineArrays = {
             ]
         },
         {
-            "Division Codes": "ENE",
+            "division_code": "ENE",
             "data": [{
                     "date": "1-Jan-13",
                     "close": 0
@@ -4967,7 +4967,7 @@ var datasetsDownloadsTimelineArrays = {
             ]
         },
         {
-            "Division Codes": "FMM",
+            "division_code": "FMM",
             "data": [{
                     "date": "1-Jan-13",
                     "close": 0
@@ -5259,7 +5259,7 @@ var datasetsDownloadsTimelineArrays = {
             ]
         },
         {
-            "Division Codes": "GDI",
+            "division_code": "GDI",
             "data": [{
                     "date": "1-Jan-13",
                     "close": 0
@@ -5551,7 +5551,7 @@ var datasetsDownloadsTimelineArrays = {
             ]
         },
         {
-            "Division Codes": "HUD",
+            "division_code": "HUD",
             "data": [{
                     "date": "1-Jan-13",
                     "close": 0
@@ -5843,7 +5843,7 @@ var datasetsDownloadsTimelineArrays = {
             ]
         },
         {
-            "Division Codes": "ICS",
+            "division_code": "ICS",
             "data": [{
                     "date": "1-Jan-13",
                     "close": 0
@@ -6135,7 +6135,7 @@ var datasetsDownloadsTimelineArrays = {
             ]
         },
         {
-            "Division Codes": "INE",
+            "division_code": "INE",
             "data": [{
                     "date": "1-Jan-13",
                     "close": 0
@@ -6427,7 +6427,7 @@ var datasetsDownloadsTimelineArrays = {
             ]
         },
         {
-            "Division Codes": "INL",
+            "division_code": "INL",
             "data": [{
                     "date": "1-Jan-13",
                     "close": 0
@@ -6719,7 +6719,7 @@ var datasetsDownloadsTimelineArrays = {
             ]
         },
         {
-            "Division Codes": "INT",
+            "division_code": "INT",
             "data": [{
                     "date": "1-Jan-13",
                     "close": 0
@@ -7011,7 +7011,7 @@ var datasetsDownloadsTimelineArrays = {
             ]
         },
         {
-            "Division Codes": "LMK",
+            "division_code": "LMK",
             "data": [{
                     "date": "1-Jan-13",
                     "close": 0
@@ -7303,7 +7303,7 @@ var datasetsDownloadsTimelineArrays = {
             ]
         },
         {
-            "Division Codes": "MIF",
+            "division_code": "MIF",
             "data": [{
                     "date": "1-Jan-13",
                     "close": 0
@@ -7595,7 +7595,7 @@ var datasetsDownloadsTimelineArrays = {
             ]
         },
         {
-            "Division Codes": "RES",
+            "division_code": "RES",
             "data": [{
                     "date": "1-Jan-13",
                     "close": 14
@@ -7887,7 +7887,7 @@ var datasetsDownloadsTimelineArrays = {
             ]
         },
         {
-            "Division Codes": "RND",
+            "division_code": "RND",
             "data": [{
                     "date": "1-Jan-13",
                     "close": 0
@@ -8179,7 +8179,7 @@ var datasetsDownloadsTimelineArrays = {
             ]
         },
         {
-            "Division Codes": "SCL",
+            "division_code": "SCL",
             "data": [{
                     "date": "1-Jan-13",
                     "close": 0
@@ -8471,7 +8471,7 @@ var datasetsDownloadsTimelineArrays = {
             ]
         },
         {
-            "Division Codes": "SPD",
+            "division_code": "SPD",
             "data": [{
                     "date": "1-Jan-13",
                     "close": 0
@@ -8763,7 +8763,7 @@ var datasetsDownloadsTimelineArrays = {
             ]
         },
         {
-            "Division Codes": "SPH",
+            "division_code": "SPH",
             "data": [{
                     "date": "1-Jan-13",
                     "close": 0
@@ -9055,7 +9055,7 @@ var datasetsDownloadsTimelineArrays = {
             ]
         },
         {
-            "Division Codes": "TSP",
+            "division_code": "TSP",
             "data": [{
                     "date": "1-Jan-13",
                     "close": 0
@@ -9347,7 +9347,7 @@ var datasetsDownloadsTimelineArrays = {
             ]
         },
         {
-            "Division Codes": "WSA",
+            "division_code": "WSA",
             "data": [{
                     "date": "1-Jan-13",
                     "close": 0
@@ -9648,7 +9648,7 @@ var datasetsDownloadsTimelineArrays = {
             "close": 21
         },
         {
-            "date": "1-Mar13",
+            "date": "1-Mar-13",
             "close": 10
         },
         {
@@ -9696,7 +9696,7 @@ var datasetsDownloadsTimelineArrays = {
             "close": 93
         },
         {
-            "date": "1-Mar14",
+            "date": "1-Mar-14",
             "close": 20
         },
         {
@@ -9744,7 +9744,7 @@ var datasetsDownloadsTimelineArrays = {
             "close": 74
         },
         {
-            "date": "1-Mar15",
+            "date": "1-Mar-15",
             "close": 202
         },
         {
@@ -9792,7 +9792,7 @@ var datasetsDownloadsTimelineArrays = {
             "close": 649
         },
         {
-            "date": "1-Mar16",
+            "date": "1-Mar-16",
             "close": 603
         },
         {
@@ -9840,7 +9840,7 @@ var datasetsDownloadsTimelineArrays = {
             "close": 2744
         },
         {
-            "date": "1-Mar17",
+            "date": "1-Mar-17",
             "close": 7819
         },
         {
@@ -9888,7 +9888,7 @@ var datasetsDownloadsTimelineArrays = {
             "close": 2039
         },
         {
-            "date": "1-Mar18",
+            "date": "1-Mar-18",
             "close": 1613
         },
         {
