@@ -322,35 +322,44 @@ function createChartTimeLineDataSet(data) {
                 return value.valueNumber + value.suffixNumber;
             }));
 }
-var dataGaugeDatasets = {
-    "code": {
-        "total": getPercentageTotal(datasetsAllTotalGlobal),
-        "allocated": datasetsAllTotalGlobal
-    },
-    "pageview": {
-        "total": getPercentageTotal(datasetsAllDownloads),
-        "allocated": datasetsAllDownloads
-    },
-    "lac": {
-        "total": 100,
-        "allocated": datasetsAllDownloadsLac
+
+
+function setDatasetsGauge() {
+    var dataGaugeDatasets = {
+        "code": {
+            "total": 100, //getPercentageTotal(datasetsAllTotalGlobal),
+            "allocated": datasetsAllTotalGlobal
+        },
+        "pageview": {
+            "total": 100, //getPercentageTotal(datasetsAllDownloads),
+            "allocated": datasetsAllDownloads
+        },
+        "lac": {
+            "total": 100,
+            "allocated": datasetsAllDownloadsLac
+        }
     }
+    return dataGaugeDatasets;
 }
-var dataGaugeDatasets2018 = {
-    "code": {
-        "total": getPercentageTotal(datasets2018TotalGlobal),
-        "allocated": datasets2018TotalGlobal
-    },
-    "pageview": {
-        "total": getPercentageTotal(datasets2018Downloads),
-        "allocated": datasets2018Downloads
-    },
-    "lac": {
-        "total": 100,
-        "allocated": datasets2018DownloadsLac
+
+function setDatasetsGauge2018() {
+    var dataGaugeDatasets2018 = {
+        "code": {
+            "total": getPercentageTotal(datasets2018TotalGlobal),
+            "allocated": datasets2018TotalGlobal
+        },
+        "pageview": {
+            "total": getPercentageTotal(datasets2018Downloads),
+            "allocated": datasets2018Downloads
+        },
+        "lac": {
+            "total": 100,
+            "allocated": datasets2018DownloadsLac
+        }
     }
+    return dataGaugeDatasets2018;
 }
-drawGaugeDatasetChart(dataGaugeDatasets)
+
 
 function drawGaugeDatasetChart(dataGauge) {
     var width = 150,
@@ -614,10 +623,29 @@ function drawPlotChartDataset(data) {
         .on("mouseover", mouseOver)
         .on("mouseout", mouseOut);
 }
+function removeDatasetsSvg() {
+    d3.select("#timeline-dataset svg").remove();
+    d3.select("#data-trend svg").remove();
+    d3.select("#dataset-publications-plot svg").remove();
+    d3.select("#downloads-dataset svg").remove();
+}
 
+function removeDatasetsSvgAll() {
+    d3.select("#timeline-dataset svg").remove();
+    d3.select("#data-trend svg").remove();
+    d3.select("#dataset-publications-plot svg").remove();
+    d3.select("#downloads-dataset svg").remove();
+}
+
+function removeDatasetsGauges() {
+    d3.select("#gauge-datasets svg").remove();
+    d3.select("#gauge-download-d svg").remove();
+    d3.select("#gauge-lac-d svg").remove();
+}
 $("input[name*='dataSetTrend']").click(function () {
 
-    removeDataSetSvg();
+    removeDatasetsSvg();
+    removeDatasetsGauges();
 
     if ($("select[id*='divisionSelect']").val() != "IDB") {
         if ($("select[id*='divisionSelect']").val().length > 0) {
@@ -629,11 +657,15 @@ $("input[name*='dataSetTrend']").click(function () {
                     return dataT.division_codes == $("select[id*='divisionSelect']").val()
                 });
                 drawTreeDataset(jsonDataSetTree, "AllTheTime");
+                dataDatasets = setDatasetsGauge();
+                drawGaugeDatasetChart(dataDatasets);
             } else {
                 jsonDataSetTree = datasetsDownloadSource.downloadSourceDivisions.filter(dataT => {
                     return dataT.division_codes == $("select[id*='divisionSelect']").val()
                 });
                 drawTreeDataset(jsonDataSetTree, "2018");
+                dataDatasets2018 = setDatasetsGauge2018();
+                drawGaugeDatasetChart(dataDatasets2018);
             }
 
         } else if ($("select[id*='deparmentSelect']").val().length > 0) {
@@ -644,8 +676,12 @@ $("input[name*='dataSetTrend']").click(function () {
 
         if (this.id == "dataSetAllTime") {
             drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "2018");
+            dataDatasets = setDatasetsGauge();
+            drawGaugeDatasetChart(dataDatasets);
         } else {
             drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "AllTheTime");
+            dataDatasets2018 = setDatasetsGauge2018();
+            drawGaugeDatasetChart(dataDatasets2018);
         }
 
     }
@@ -653,7 +689,7 @@ $("input[name*='dataSetTrend']").click(function () {
 
 //click radiobutton drawChart(id del click)
 // $("input[name*='dataSetTrend']").click(function () {
-//     removeDataSetSvg();
+//     removeDataSetsSvg();
 
 //     var ObjectTimeLineDataSet = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
 //     var ObjectDataSetPlot = $.extend(true, [], datasetsScatterplotArrays);
@@ -688,8 +724,8 @@ $("input[name*='dataSetTrend']").click(function () {
 
 
 function initDataSet() {
-    removeDataSetSvg();
-
+    // removeDataSetsSvg();
+    // removeDatasetsGauges();
     //init
     var ObjectTimeLineDataSet = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
     var ObjectDataSetPlot = $.extend(true, [], datasetsScatterplotArrays);
@@ -698,14 +734,6 @@ function initDataSet() {
     createChartTimeLineDataSet(ObjectTimeLineDataSet);
     drawDataTrendChart(datasetsTopArrays.topIDB2018);
     drawPlotChartDataset(ObjectDataSetPlot);
-}
-
-function removeDataSetSvg() {
-    d3.select("#timeline-dataset svg").remove();
-    d3.select("#data-trend svg").remove();
-    d3.select("#dataset-publications-plot svg").remove();
-    d3.select("#downloads-dataset svg").remove();
-    // d3.select("#gauge-datasets svg").remove();
-    // d3.select("#gauge-download-d svg").remove();
-    // d3.select("#gauge-lac-d svg").remove();
+    dataGaugeDatasets = setDatasetsGauge2018();
+    drawGaugeDatasetChart(dataGaugeDatasets);
 }

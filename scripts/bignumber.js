@@ -425,7 +425,7 @@ function datasetsIndicatorAlltime(jsondata) {
 function datasetsIndicator2018(jsondata) {
     
     var results = {
-        datasetsValue: datasets2018TotalGlobal,
+        datasetsValue: (jsondata.length > 0) ? jsondata[0]['2018_datasets'] : '0',
         // porcent_total_publications: (jsondata.length > 0) ? (jsondata[0]['2018_porcent_total_datasets'] * 100).toFixed(1) + '%' : '',
         porcent_total_publications: (jsondata.length > 0) ? ((jsondata[0]['2018_porcent_total_datasets'] * 100 >= 100) ? "100%" : (jsondata[0]['2018_porcent_total_datasets'] * 100).toFixed(1) + '%') : '',
         compare2017_2018_publications: (jsondata.length > 0) ? jsondata[0]['2017_2018_datasets'] : '',

@@ -3,6 +3,9 @@ $("#deparmentSelect").on('change', function () {
     
     removePublicationsSvg();
     removePublicationsGauges();
+    
+    
+    
     jsonPublicationsBarras = publicationsTopArrays.topDepartmentsAllTime.filter(function (dataP) {
         return dataP.department_codes == this.value
     });
@@ -19,11 +22,7 @@ $("#deparmentSelect").on('change', function () {
     $('#blueAllTime').click();
     removePublicationsGauges();
     removeMoocsGauges();
-    
-
-    d3.select("#gauge-datasets svg").remove();
-    d3.select("#gauge-download-d svg").remove();
-    d3.select("#gauge-lac-d svg").remove();
+    removeDatasetsGauges();
 
     d3.select("#gauge-code svg").remove();
     d3.select("#gauge-pageview svg").remove();
@@ -46,7 +45,7 @@ $("#divisionSelect").on('change', function (data) {
     
     removePublicationsGauges();
     removePublicationsSvgAll();
-
+    // removeDatasetsGauges();
     
     if (this.value == "IDB") {
         $('.label-filter-select').text(this.value);
@@ -62,13 +61,9 @@ $("#divisionSelect").on('change', function (data) {
         setDataPublicationsByDivisions(sltValue);
         setDataDataSetByDivisions(sltValue);
 
-        d3.select("#gauge-moocs svg").remove();
-        d3.select("#gauge-registrations-m svg").remove();
-        d3.select("#gauge-lac-m svg").remove();
+        
 
-        d3.select("#gauge-datasets svg").remove();
-        d3.select("#gauge-download-d svg").remove();
-        d3.select("#gauge-lac-d svg").remove();
+        
 
         d3.select("#gauge-code svg").remove();
         d3.select("#gauge-pageview svg").remove();
