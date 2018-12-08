@@ -160,7 +160,7 @@ function setDataDataSetByDivisions(sltValue) {
 
     //chart time line
     var ObjectDataSetPlot = $.extend(true, [], datasetsScatterplotArrays);
-    jsonPlotDataSet = ObjectDataSetPlot.filter(dataT => {
+    jsonPlotDataSet = ObjectDataSetPlot.filter(function(dataT) {
         return dataT.division_codes == sltValue
     });
     createChartTimeLineDataSet(jsonPlotDataSet);
