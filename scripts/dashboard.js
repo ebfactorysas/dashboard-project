@@ -111,7 +111,7 @@ function setDataIDBPublications(){
 
 
 function SetDataIDBDataSet(){
-
+    drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "2018");
 }
 
 
@@ -151,6 +151,8 @@ function setDataPublicationsByDivisions(sltValue) {
  */
 
  function setDataDataSetByDivisions(sltValue) {
+
+    //treemap
     jsonDataSetTree = datasetsDownloadSource.downloadSourceDivisions.filter(dataT => {
         return dataT.division_codes == sltValue
     });

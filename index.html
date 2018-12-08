@@ -607,7 +607,7 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-2"></div>
-                        <div id="data-trend"></div>
+                        <div class="col-10" id="data-trend"></div>
                     </div>
                 </div>
                 <div class=" down right-zone p-4">
@@ -637,13 +637,13 @@
     <section class="code">
         <div class=" yellow-background left-bar">
             <div class="gauge-1">
-                <h4>CODE</h4>
+                <h4 class="pt-4">CODE</h4>
                 <span><i class="fas fa-circle fa-xs"></i>Total from <label class="label-filter-select">IDB</label></span>
                 <span><label class="label-filter-restidb"><i class="fas fa-circle fa-xs"></i>Rest of IDB</label></span>
                 <div id="gauge-code" class="gauge"></div>
             </div>
             <div class="gauge-2">
-                <h4>PAGEVIEWS</h4>
+                <h4 class="pt-2">PAGEVIEWS</h4>
                 <span><i class="fas fa-circle fa-xs"></i>Total from <label class="label-filter-select">IDB</label></span>
                 <span><label class="label-filter-restidb"><i class="fas fa-circle fa-xs"></i>Rest of IDB</label></span>
                 <div class="gauge-k" id="gauge-pageview"></div>
@@ -673,16 +673,16 @@
                     </label>
                 </div>
 
-                <div class="col-12 col-md-8 left-zone p-4">
+                <div class=" left-zone p-4">
                     <h4 class=" text-center yellow">WHERE ARE PAGEVIEWS COMING FROM?</h4>
                     <div id="downloads-code"> </div>
                 </div>
-                <div class="col-12 col-md-4 right-zone p-4">
+                <div class="right-zone p-4">
                     <h4 class=" text-center yellow">DOWNLOADS TIMELINE</h4>
                     <div id="timeline-code"></div>
                 </div>
 
-                <div class="col-12 col-md-8 left-zone p-4">
+                <div class=" left-zone p-4 down">
                     <div class="row pt-2">
                         <div class="col-sm-2">
                             <h4 class="yellow">30 DAYS TREND</h4>
@@ -694,10 +694,10 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-2"><svg id="lines-code" width="120" height="400"></svg></div>
-                        <div id="code-trend"></div>
+                        <div class="col-10" id="code-trend"></div>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 right-zone p-4">
+                <div class=" right-zone down p-4">
                     <h4 class="yellow">HOW IS <span><label class="label-filter-select">IDB</label>'s</span> DATASETS
                         COMPARED TO <span class="gray">OTHER DEPARTMENT's</span>? </h4>
                     <p class="small-letter gray">yellow circles bellow represent <span><label class="label-filter-select">IDB</label></span>
@@ -724,13 +724,13 @@
     <section class="suscribers">
         <div class="green-background left-bar">
             <div class="gauge-1 ">
-                <h4>SUSCRIBERS</h4>
+                <h4 class="pt-4">SUSCRIBERS</h4>
                 <span><i class="fas fa-circle fa-xs"></i>Total from <label class="label-filter-select">IDB</label></span>
                 <span><label class="label-filter-restidb"><i class="fas fa-circle fa-xs"></i>Rest of IDB</label></span>
                 <div class="gauge" id="gauge-suscribers"></div>
             </div>
             <div class="gauge-2">
-                <h4>SUSCRIBERS FROM LAC</h4>
+                <h4 class="pt-2">SUSCRIBERS FROM LAC</h4>
                 <span><i class="fas fa-circle fa-xs"></i>Total from <label class="label-filter-select">IDB</label></span>
                 <span><label class="label-filter-restidb"><i class="fas fa-circle fa-xs"></i>Rest of IDB</label></span>
                 <div class="gauge-k" id="gauge-lac-s"></div>
@@ -759,27 +759,27 @@
                     </label>
                 </div>
 
-                <div class="col-12 col-md-8 left-zone p-4">
+                <div class=" left-zone p-4">
                     <h4 class=" text-center green">WHAT ARE <label class="label-filter-select">IDB</label> SUSCRIBERS
                         INTERESTED ON?</h4>
                     <div id="suscribers-interested"></div>
                 </div>
-                <div class="col-12 col-md-4 right-zone p-4">
+                <div class=" right-zone p-4">
                     <div class="top-zone d-flex align-items-center">
                         <div class="vertical-text green"> GENDER</div>
-                        <div class="d-flex flex-column w-100">
+                        <div class="d-flex flex-column ">
                             <h4 class=" text-center green">DEMOGRAPHICS</h4>
-                            <div id="demographics-suscribers"></div>
+                            <div class="pl-4" id="demographics-suscribers"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-8 left-zone p-4">
-                    <h4 class="green">FOR WHICH KIND OF INSTITUTION DO THEY WORK FOR?</h4>
+                <div class=" left-zone down p-4">
+                    <h4 class="green text-center">FOR WHICH KIND OF INSTITUTION DO THEY WORK FOR?</h4>
                     <div class="col-sm-12 " id="institution-suscribers"></div>
                 </div>
-                <div class="col-12 col-md-4 right-zone p-4">
-                    <div class="vertical-text green"> AGE GROUPS</div>
-                    <div id="age-suscribers" class="pt-4"></div>
+                <div class=" right-zone  d-flex  down p-4">
+                    <div class="vertical-text green ml-0 pl-0"> AGE GROUPS</div>
+                    <div id="age-suscribers" class="pt-4 col"></div>
                 </div>
             </div>
         </div>

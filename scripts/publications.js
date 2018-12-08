@@ -1189,14 +1189,6 @@ function initPublications() {
         return b['2018_downloads'] - a['2018_downloads'];
     });
     
-    // console.log(jsonDataLines);
-    // var ordered = {};
-    // Object.keys(jsonPublicationLines).sort().forEach(function (key) {
-    //     ordered[key] = jsonPublicationLines[key];
-    // });
-    // jsonResult = JSON.parse(JSON.stringify(ordered));
-    // console.log(jsonPublicationLines);
-    
     jsonLines += '"data":';
     
     var jsonDates = "{data:[";
@@ -1239,8 +1231,6 @@ function initPublications() {
     // console.log(jsonLines);
     jsonLines = eval(jsonLines);
     
-
-
     drawGaugePublicationChart(dataPublicationGauge2018);
     drawLinesChartPublication(jsonLines);
     createChartTimelinePublication(downloadTimelineIDB, 'init');

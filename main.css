@@ -469,6 +469,11 @@ section.moocs .left-bar h4 {
     margin-bottom: 0;
 }
 
+section.moocs .left-bar label {
+    padding-bottom: 0px;
+    margin-bottom: 0;
+}
+
 section.moocs .left-bar span:nth-child(2n) {
     color: white;
     font-size: 10px;
@@ -735,6 +740,11 @@ section.datasets #dataset-publications-plot {
     margin-top: -32px;
 }
 
+section.datasets .left-bar label {
+    padding-bottom: 0px;
+    margin-bottom: 0;
+}
+
 section.datasets #dataset-publications-plot .legend text,
 section.datasets #dataset-publications-plot .axis text {
     font-size: 14px;
@@ -780,6 +790,11 @@ section.code #code-trend .y-code {
     font-size: 11px;
 }
 
+section.code .left-bar label {
+    padding-bottom: 0px;
+    margin-bottom: 0;
+}
+
 section.code #code-trend .text-inside {
     color: #8a858d
 }
@@ -788,19 +803,64 @@ section.code #code-trend .y-code .domain {
     display: none;
 }
 
+section.code #code-plot {
+    margin-top: -32px;
+}
+
+section.code #code-plot .legend text,
+section.code #code-plot .axis text {
+    font-size: 14px;
+    fill: #333;
+    font-family: 'Gotham-Book'
+}
+
+section.code #code-plot .axis path,
+section.code #code-plot .axis line {
+    fill: none;
+    stroke-width: 3px;
+    stroke: #555555;
+}
+
+section.code #code-plot .circle {
+    fill-opacity: 0.65;
+}
+
+section.code #code-plot .bubble {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+section.code #code-plot .bubble:hover text {
+    opacity: 1;
+}
+
+section.code #code-plot .bubble:hover circle {
+    fill-opacity: 1;
+}
+
+section.code #code-plot .legend rect {
+    fill-opacity: 0.75;
+}
+
+section.code #code-plot .legeng:hover rect {
+    fill-opacity: 1;
+}
+
 section.code .left-bar h4 {
-    font-size: 12px;
+    font-size: 16px;
     color: white;
 }
 
 section.code .left-bar span:nth-child(2n) {
     color: white;
     font-size: 10px;
+    font-family: 'Gotham-Bold';
 }
 
 section.code .left-bar span:nth-child(2n+1) {
     color: #A17603;
     font-size: 10px;
+    font-family: 'Gotham-Bold';
 }
 
 section.code .right-bar .left-zone .top-zone {
@@ -809,7 +869,7 @@ section.code .right-bar .left-zone .top-zone {
 }
 
 section.code h4 {
-    font-size: 12px;
+    font-size: 16px;
     font-family: 'Gotham-Bold';
 }
 
@@ -827,7 +887,7 @@ section.code #publications {
     height: 325px;
 }
 
-section.code #downloads-code .node {
+/* section.code #downloads-code .node {
     border: solid .5px #ebb203;
     font: 18px;
     font-family: 'Gotham-Bold';
@@ -835,7 +895,21 @@ section.code #downloads-code .node {
     overflow: hidden;
     position: absolute;
     text-indent: 9px;
+} */
+
+section.code #downloads-code rect {
+
+    stroke: #ebb203;
 }
+
+section.code #downloads-code .d3plus-Shape {
+    stroke-width: 1;
+}
+
+section.code #downloads-code .d3plus-textBox text {
+    font-family: 'Gotham-Bold' !important;
+}
+
 
 section.code #timeline-code {
     font-family: 'Gotham-Bold';
@@ -912,7 +986,7 @@ section.suscribers .left-bar .gauge-1 {
 
 
 section.suscribers .left-bar h4 {
-    font-size: 18px;
+    font-size: 16px;
     color: white;
     margin-bottom: 0;
 }
@@ -933,8 +1007,13 @@ section.suscribers .funds-allocated-meter .background {
     fill: #027B8E;
 }
 
+section.suscribers .right-bar label {
+    padding-bottom: 0px;
+    margin-bottom: 0;
+}
+
 section.suscribers h4 {
-    font-size: 12px;
+    font-size: 16px;
     font-family: 'Gotham-Bold';
 }
 
@@ -962,6 +1041,28 @@ section.suscribers #demographics-suscribers .node {
     overflow: hidden;
     position: absolute;
     text-indent: 9px;
+}
+
+section.suscribers .container_radio {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+section.suscribers #suscribers-interested .y-suscribers path{
+    display: none;
+}
+
+section.suscribers #demographics-suscribers rect {
+
+    stroke: #518a81;
+}
+
+section.suscribers #demographics-suscribers .d3plus-Shape {
+    stroke-width: 1;
+}
+
+section.suscribers #demographics-suscribers .d3plus-textBox text {
+    font-family: 'Gotham-Bold' !important;
 }
 
 section.map .fa {
@@ -1430,6 +1531,10 @@ section.map select.form-control:not([size]):not([multiple]) {
         color: #1658a1;
     }
 
+    section.datasets{
+        min-height: 940px;
+    }
+
     section.datasets .left-zone {
         width: 1000px;
         height: 280px;
@@ -1455,6 +1560,54 @@ section.map select.form-control:not([size]):not([multiple]) {
     section.datasets #downloads-dataset {
         width: 935px !important;
         height: 175px !important;
+    }
+
+    section.code{
+        min-height: 940px;
+    }
+
+    section.code .container_radio {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    section.code .right-zone {
+        width: 648px;
+        height: 280px;
+    }
+
+    section.code .left-zone {
+        width: 1000px;
+        height: 280px;
+    }
+
+    section.code .down {
+        height: 600px;
+    }
+
+
+    section.suscribers .right-zone {
+        width: 648px;
+        height: 300px;
+    }
+
+    section.suscribers .left-zone {
+        width: 950px;
+        height: 300px;
+    }
+
+    section.suscribers .down {
+        height: 550px;
+    }
+
+    section.suscribers .down .vertical-text{
+        position: static;
+    }
+    section.suscribers .right-bar .right-zone {
+        width: 700px;
+    }
+    #moocs-registrations {
+        height: 545px;
     }
 
     section.publications {
