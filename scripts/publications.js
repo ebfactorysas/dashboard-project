@@ -966,20 +966,6 @@ function drawLinesChartPublication(data) {
 
 function drawPlotChartPublication(data, typeload) {
     d3.select("#publications-plot svg").remove();
-    //console.log(data)
-    // if (typeload != "init") {
-    //     if ($("#publication2018").prop("checked")) {
-    //         //data = data.filter(data {return } data.publishedDate.indexOf("-18") > -1);
-    //         data.filter(function (data) {
-    //             return data.publishedDate.indexOf("-18")
-    //         })
-    //     }
-    // }
-    // else {
-    //     data.filter(function (data) {
-    //         return data.publishedDate.indexOf("-18")
-    //     })
-    // }
     var margin = {
         top: 30,
         right: 50,
