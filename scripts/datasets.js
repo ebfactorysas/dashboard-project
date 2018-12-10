@@ -662,7 +662,7 @@ $("input[name*='dataSetTrend']").click(function () {
                 drawGaugeDatasetChart(dataDatasets);
             } else {
                 //treemap
-                jsonDataSetTree = datasetsDownloadSource.downloadSourceDivisions.filter(dataT => {
+                jsonDataSetTree = datasetsDownloadSource.downloadSourceDivisions.filter(function(dataT) {
                     return dataT.division_codes == $("select[id*='divisionSelect']").val()
                 });
                 drawTreeDataset(jsonDataSetTree, "2018");

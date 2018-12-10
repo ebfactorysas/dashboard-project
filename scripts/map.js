@@ -1,8 +1,291 @@
-initMap();
+var cMalos = [];
+
+var newData = nuevoTest();
+new_graph(newData);
+
+barGraph('bar-graph-countries', 'TOP COUNTRIES');
 
 
 
-function initMap() {
+
+function nuevoTest() {
+
+    baseData = testDatos.filter(function (d) {
+        return (d['fff'] == 'Publications')
+    });
+    //baseData = testDatos.filter(d => {return (d['fff'] == 'Code')});
+    // baseData = testDatos;
+
+
+
+
+    updateProducts(testDatos);
+
+    $('#drop-products').on('change', function () {
+        
+        var that = this;
+        baseData = testDatos.filter(function (d) {
+            return (d['fff'] == that.value)
+        });
+        updateTypes(baseData);
+
+        var datosBySegmentType = baseData.filter(function (d) {
+            return (d['segment type'] == 'IDB')
+        });
+        
+        updateSegments(datosBySegmentType, 'IDB');
+
+        
+        new_updateFilter();
+    });
+
+    updateTypes(baseData);
+
+    var datosBySegmentType = baseData.filter(function (d) {
+        return (d['segment type'] == 'IDB')
+    });
+    
+    updateSegments(datosBySegmentType, 'IDB');
+
+    $('#drop-departments').on('change', function () {
+        
+
+        // var datosBySegmentType = baseData.filter(function (d) {
+        //     return (d['segment type'] == this.value);
+        // });
+        var that = this;
+        var datosBySegmentType = baseData.filter(function (d) {
+            return (d['segment type'] == that.value)
+        });
+        
+        
+        updateSegments(datosBySegmentType, this.value);
+
+
+        
+        new_updateFilter();
+    });
+    $('#drop-materials').on('change', function () {
+        
+        
+        new_updateFilter();
+    });
+
+    $('#lac-checkbox').change(function () {
+        new_updateFilter();
+    });
+
+    var datosBySegmentName = baseData.filter(function (d) {
+        return (d['segment name'] == 'IDB')
+    });
+    
+
+    var datosMapeados = datosBySegmentName.map(function (d) {
+        var nuevoDato = {
+            code3: getCoutryCode(d['Country']),
+            country: d['Country'],
+            z: Number(d['2018 downloads'])
+        };
+        return nuevoDato;
+    });
+    
+
+    // var countryIso3 = getCoutryCode('Afghanistan');
+    
+
+    return datosMapeados;
+}
+
+function updateProducts(baseData) {
+
+
+    var products = getUnique(baseData, 'fff');
+    
+
+    $('#drop-products').empty();
+    //$('#drop-products').append('<option value="all">ALL</option>');
+    products.forEach(function (item) {
+        $('#drop-products').append('<option value="' + item + '">' + item + '</option>');
+    });
+
+
+}
+
+
+function getCoutryCode(country) {
+    
+
+
+    if (country.length != 2) {
+        var countryIso2 = isoCountries[country];
+    } else {
+        var countryIso2 = country.toUpperCase();
+    }
+    // var countryIso2 = isoCountries[country];
+    //var countryIso2 = countryData.find(o => o.Name === country).Code;
+    //  var countryIso2 = countryData.find(o => o.Name === country);
+    // if(countryIso2===undefined){
+    //   console.warn('>>> '+country,countryIso2);
+    // }
+    
+
+    var countryIso3 = iso2toIso3[countryIso2];
+    
+
+    if (countryIso3 === undefined) {
+        // console.warn('>>> '+country,countryIso3);
+        if ((cMalos.indexOf(country) < 0)) {
+            cMalos.push(country);
+        }
+        console.warn(cMalos);
+    }
+
+
+    return countryIso3
+}
+
+function updateTypes(baseData) {
+
+
+    var types = getUnique(baseData, 'segment type');
+    
+
+    $('#drop-departments').empty();
+    // $('#drop-departments').append('<option value="all">Group by: ALL</option>');
+    types.forEach(function (item) {
+        $('#drop-departments').append('<option value="' + item + '">Group by: ' + item + '</option>');
+    });
+
+
+}
+
+function updateSegments(datosBySegmentType, splitSegment) {
+    
+
+    var segmentos = getUnique(datosBySegmentType, 'segment name');
+    
+
+    $('#drop-materials').empty();
+    if (splitSegment != 'IDB') {
+        $('#drop-materials').append('<option value="all">' + splitSegment + ': ALL</option>');
+    }
+    segmentos.forEach(function (item) {
+        $('#drop-materials').append('<option value="' + item + '">' + splitSegment + ': ' + item + '</option>');
+    });
+    // // var departmentsItems = [];
+    // segmentos.forEach(function(item) {
+    //   // departmentsItems.push('<option value="' + item + '">DEPARTMENT: ' + item + '</option>');
+    //   $('#drop-departments').append('<option value="' + item + '">DEPARTMENT: ' + item + '</option>');
+    // });
+    // // $('#drop-departments').append(departmentsItems);
+
+}
+
+function getUnique(array2reduce, property) {
+    return array2reduce
+        .map(function (element) {
+            return element[property]
+        })
+        .filter(function (item, pos, self) {
+            return (self.indexOf(item) == pos)
+        });
+}
+
+
+
+function new_updateFilter() {
+
+
+    // var dateSlider = document.getElementById('slider-download-date');
+    // var vall_download = dateSlider.noUiSlider.get();
+    
+
+    // var dateCreationSlider = document.getElementById('slider-creation-date');
+    // var vall_Creation = dateCreationSlider.noUiSlider.get();
+    
+
+    // var fromDownload = moment(vall_download[0],'x').format('YYYYMMDD');
+    // var toDownload = moment(vall_download[1],'x').format('YYYYMMDD');
+
+    // var fromCreation = moment(vall_Creation[0],'x').format('YYYYMMDD');
+    // var toCreation = moment(vall_Creation[1],'x').format('YYYYMMDD');
+
+
+    var lacCheck = $("#lac-checkbox").is(":checked");
+
+
+    var selectedDepartment = $('#drop-departments').find(":selected").val();
+
+
+    var selectedMaterial = $('#drop-materials').find(":selected").val();
+
+
+
+    var dataFilteredDeps = filterDropdown(baseData, selectedDepartment, 'segment type');
+
+
+    var dataFilteredMaterials = filterDropdown(dataFilteredDeps, selectedMaterial, 'segment name');
+
+
+    // var dataFilteredLAC = filterLACcountries(dataFilteredMaterials, lacCheck);
+
+
+    // var dataFilteredDownladDate = filterDate('Download_Date', dataFilteredLAC, fromDownload, toDownload);
+    
+
+
+
+    // var dataFilteredCreationDate = filterDate('Publication_Date', dataFilteredDownladDate, fromCreation, toCreation);
+    
+
+
+
+
+
+    // var data2Graph = getCoutryTotals(dataFilteredCreationDate);
+
+
+    var datosMapeados = dataFilteredMaterials.map(function (d) {
+        var nuevoDato = {
+            code3: getCoutryCode(d['Country']),
+            country: d['Country'],
+            z: Number(d['2018 downloads'])
+        };
+        return nuevoDato;
+    });
+
+
+    var dataFilteredLAC = filterLACcountries(datosMapeados, lacCheck);
+
+
+
+    var data2Graph = getCoutryTotals(dataFilteredLAC, selectedMaterial);
+
+    var serie1 = $('#graph-container').d32().get('series-1');
+    //serie1.setData(data2Graph, true, false, true);
+    // serie1.setData(data2Graph, true, true, false);
+    serie1.setData(data2Graph, true, false, false);
+    // var serie1 = $('#graph-container').d32().get('series-1');
+    // //serie1.setData(datosMapeados, true, false, true);
+    // //serie1.setData(datosMapeados, true, true, false);
+    // serie1.setData(datosMapeados, true, false, false);
+
+
+
+
+    // var serie1 = $('#graph-container').d32().get('series-1');
+    // //serie1.setData(data2Graph, true, false, true);
+    // serie1.setData(data2Graph, true, true, false);
+
+}
+
+
+
+//init();
+
+
+
+function init() {
 
     loadSimulatedData();
 
@@ -19,7 +302,7 @@ function initMap() {
     });
     $('#drop-materials').append(materialsItems);
 
-    // console.log('baseData',baseData);
+    
 
 
     graph(baseData);
@@ -43,14 +326,14 @@ function initMap() {
     });
 
     $('#drop-departments').on('change', function () {
-        // console.log( this.value );
-        // console.log( $(this).find(":selected").val() );
+        
+        
         updateFilter();
     });
 
     $('#drop-materials').on('change', function () {
-        // console.log( this.value );
-        // console.log( $(this).find(":selected").val() );
+        
+        
         updateFilter();
     });
 
@@ -82,7 +365,7 @@ function generatePublicationData(department) {
     // var Material_Type = "MaterialA";
 
     var paisesGenerados = generate_randomCountries();
-    //console.log('paisesGenerados',paisesGenerados);
+    
 
     paisesGenerados.forEach(function (newPais) {
         countryPushDates(newPais, fecha_Publication_Date, Material_Type, department);
@@ -105,7 +388,7 @@ function generate_randomCountries() {
             randCountries.push(rndCountry);
         }
     }
-    // console.log('randCountries',randCountries);
+    
 
     return randCountries;
 }
@@ -121,7 +404,7 @@ function countryPushDates(pais, fecha_Publication_Date, Material_Type, departmen
 
     var newItems = [];
     fechasGeneradas.forEach(function (newFecha) {
-        //console.log(newFecha);
+        
         var source = SourceTypes[getRandomInt(0, (SourceTypes.length - 1))];
         var valor = getRandomInt(0, 10);
         newItem = {
@@ -140,13 +423,13 @@ function countryPushDates(pais, fecha_Publication_Date, Material_Type, departmen
         newItems.push(newItem);
     });
 
-    //console.log('newItems',newItems);
+    
 
-    // console.log('baseData',baseData);
+    
 
     baseData = baseData.concat(newItems);
 
-    //console.log('baseData',baseData);
+    
 
 }
 
@@ -159,21 +442,21 @@ function generate_randomDates() {
 
     dates = [];
 
-    var cantFechas = getRandomInt(1, 100);
+    var cantFechas = 1; ///-- getRandomInt(1,100);
 
-    for (var i = 0; i <= cantFechas; i++) {
+    for (var i = 0; i < cantFechas; i++) {
         var newDate = new_randomDate(start, end);
         if ((dates.indexOf(newDate) < 0)) {
             dates.push(newDate);
         }
-        // console.log('rndDATE('+i+')= ' + new_randomDate(start, end) );
+        
     }
-    //console.log('dates',dates);
+    
 
     return dates;
     //new_randomDate(start, end);
     // var nn = new_randomDate(start, end);
-    // console.log('nn',nn);
+    
 }
 
 
@@ -185,7 +468,7 @@ function new_randomDate(start, end) {
     var randDate = (ss + Math.random() * (ee - ss));
 
     var rr = moment(randDate, 'x').format('YYYYMMDD'); // values[1];
-    //console.log('rr',rr);
+    
 
     return rr;
     //return new Date(ss + Math.random() * (ee - ss));
@@ -210,7 +493,6 @@ function getMinDate(item, data) {
         Math.min.apply(null, data.map(function (d) {
             return d[item]
         }));
-    //console.log('min',min);
     return min;
 }
 
@@ -218,8 +500,7 @@ function getMaxDate(item, data) {
     var max = Math.max.apply(null, data.map(function (d) {
         return d[item]
     }));
-    //Math.max.apply(null, data.map(function(d) {return d[item]}));
-    //console.log('max',max);
+
     return max;
 }
 
@@ -269,15 +550,15 @@ function addEventsDownloadSlider() {
 
 
     dateSlider.noUiSlider.on('update', function (values, handle) {
-        // console.log('values',values);
-        // console.log('handle',handle);
+        
+        
 
         updateFilter();
         // var a = moment(values[0],'x').format('YYYYMMDD'); // values[0];
         // var b = moment(values[1],'x').format('YYYYMMDD'); // values[1];
 
-        // console.log('a',a);
-        // console.log('b',b);
+        
+        
 
         // updateFilter(a,b);
 
@@ -325,14 +606,14 @@ function createCreationSlider() {
 
 
     // dateCreationSlider.noUiSlider.on('update', function (values, handle) {
-    //   console.log('values',values);
-    //   console.log('handle',handle);
+    
+    
 
     //   var a = moment(values[0],'x').format('YYYYMMDD'); // values[0];
     //   var b = moment(values[1],'x').format('YYYYMMDD'); // values[1];
 
-    //   console.log('a',a);
-    //   console.log('b',b);
+    
+    
 
     //   updateFilter(a,b);
 
@@ -342,8 +623,8 @@ function createCreationSlider() {
 
 
     // dateCreationSlider.noUiSlider.on('set', function (values, handle) {
-    //   console.log('values',values);
-    //   console.log('handle',handle);
+    
+    
     // });
 }
 
@@ -360,15 +641,15 @@ function addEventsCreationSlider() {
 
 
     dateCreationSlider.noUiSlider.on('update', function (values, handle) {
-        // console.log('values',values);
-        // console.log('handle',handle);
+        
+        
 
         updateFilter();
         // var a = moment(values[0],'x').format('YYYYMMDD'); // values[0];
         // var b = moment(values[1],'x').format('YYYYMMDD'); // values[1];
 
-        // console.log('a',a);
-        // console.log('b',b);
+        
+        
 
         // updateFilter(a,b);
 
@@ -385,11 +666,11 @@ function updateFilter() {
 
     var dateSlider = document.getElementById('slider-download-date');
     var vall_download = dateSlider.noUiSlider.get();
-    // console.log('vall_download',vall_download);
+    
 
     var dateCreationSlider = document.getElementById('slider-creation-date');
     var vall_Creation = dateCreationSlider.noUiSlider.get();
-    // console.log('vall_Creation',vall_Creation);
+    
 
     var fromDownload = moment(vall_download[0], 'x').format('YYYYMMDD');
     var toDownload = moment(vall_download[1], 'x').format('YYYYMMDD');
@@ -399,13 +680,13 @@ function updateFilter() {
 
 
     var lacCheck = $("#lac-checkbox").is(":checked");
-    // console.log('lacCheck',lacCheck);
+    
 
     var selectedDepartment = $('#drop-departments').find(":selected").val();
-    //console.log( 'selectedDepartment:',selectedDepartment );
+    
 
     var selectedMaterial = $('#drop-materials').find(":selected").val();
-    //console.log( 'selectedMaterial:',selectedMaterial );
+    
 
 
     var dataFilteredDeps = filterDropdown(baseData, selectedDepartment, 'Department');
@@ -417,12 +698,12 @@ function updateFilter() {
 
 
     var dataFilteredDownladDate = filterDate('Download_Date', dataFilteredLAC, fromDownload, toDownload);
-    // console.log('dataFilteredDownladDate: ('+dataFilteredDownladDate.length+')', dataFilteredDownladDate);
+    
 
 
 
     var dataFilteredCreationDate = filterDate('Publication_Date', dataFilteredDownladDate, fromCreation, toCreation);
-    // console.log('dataFilteredCreationDate: ('+dataFilteredCreationDate.length+')', dataFilteredCreationDate);
+    
 
 
 
@@ -443,7 +724,7 @@ function updateFilter() {
 function filterLACcountries(data, lacCheck) {
     if (lacCheck) {
         return data.filter(function (d) {
-            return lacCountries.indexOf(d.code3) >= 0
+            return (lacCountries.indexOf(d.code3) >= 0)
         });
     } else {
         return data;
@@ -453,8 +734,8 @@ function filterLACcountries(data, lacCheck) {
 
 function filterDropdown(data, selectedItem, item) {
     if (selectedItem != 'all') {
-        return data.filter(function(d){
-            return d[item] == selectedItem;
+        return data.filter(function (d) {
+            return (d[item] == selectedItem);
         });
     } else {
         return data;
@@ -468,7 +749,7 @@ function new_timestamp(str) {
 
     var ts = new moment(str + '0101', 'YYYYMMDD').utc().format('x');
     // var ts = new moment('20100101','YYYYMMDD').utc().format('x');
-    // console.log('ts',ts);
+    
     return Number(ts);
     //return new Date(str).getTime();
 }
@@ -478,7 +759,7 @@ function timestamp(str) {
 
     var ts = new moment(str + '0101', 'YYYYMMDD').utc().format('x');
     // var ts = new moment('20100101','YYYYMMDD').utc().format('x');
-    // console.log('ts',ts);
+    
     return Number(ts);
     //return new Date(str).getTime();
 }
@@ -504,7 +785,7 @@ function nth(d) {
 
 // Create a string representation of the date.
 function formatDate(date) {
-    //console.log('date',date);
+    
 
     return shortMonths[date.getMonth()] + "-" + date.getFullYear();
     // return weekdays[date.getDay()] + ", " +
@@ -524,11 +805,11 @@ function filterDate(item, data, from, to) {
     // var to = "20171203";
 
     var dataFilteredDownladDate = data
-        .filter(function(d) {
-            return d[item] >= from
+        .filter(function (d) {
+            return (d[item] >= from)
         })
-        .filter(function(d) {
-            return d[item] <= to
+        .filter(function (d) {
+            return (d[item] <= to)
         });
     return dataFilteredDownladDate;
 
@@ -536,79 +817,92 @@ function filterDate(item, data, from, to) {
 
 
 
-function getCoutryTotals(data) {
+function getCoutryTotals(data, test_material) {
 
     var total = 0;
 
-    var counts = data.reduce(function(p, c) {
+    var counts = data.reduce(function (p, c) {
         var country = c.code3;
         if (!p.hasOwnProperty(country)) {
-            p[country] = 0;
+            p[country] = null;
         }
-        p[country] += c.z;
-        total += c.z;
+        if (c.z != 0) {
+            p[country] += c.z;
+            total += c.z;
+        }
         return p;
     }, {});
+    // var counts = data.reduce((p, c) => {
+    //   var country = c.code3;
+    //   if (!p.hasOwnProperty(country)) {
+    //     p[country] = 0;
+    //   }
+    //   p[country] += c.z;
+    //   total += c.z;
+    //   return p;
+    // }, {});
 
-    //console.log('counts:',counts);
+    // nuevoTest();
 
-    // console.log(total);
+
+
+    if (total == 0) {
+        $('.alert').text('No data for: ' + test_material);
+        $('.alert').show();
+    } else {
+        $('.alert').hide();
+    }
 
 
     $('#totales').text(abbreviate_number(total));
     // $('#totales').text(total);
 
-    var countsExtended = Object.keys(counts).map(function(k) {
+    var countsExtended = Object.keys(counts).map(function (k) {
         return {
             code3: k,
             z: counts[k]
         };
     });
 
-    //console.log(countsExtended);
+    
 
 
 
     var serieTopCountries = countsExtended
         .sort(dynamicSort("-z"))
         .slice(0, 10)
-        .map(function(d) {
+        .map(function (d) {
             return [d.code3, d.z];
         });
     var serie2 = $('#bar-graph-countries').d32Bars().get('series-2');
     serie2.setData(serieTopCountries, true, false, false);
 
-    //console.log('data:',data);
+    
 
-    var countsSource = data.reduce(function(p, c) {
-        var source = c.Source;
-        if (!p.hasOwnProperty(source)) {
-            p[source] = 0;
-        }
-        p[source] += 1;
+    /*
+    var countsSource = data.reduce((p, c) => {
+      var source = c.Source;
+      if (!p.hasOwnProperty(source)) {
+        p[source] = 0;
+      }
+      p[source] += 1;
         // p[source] += c.z;
-        return p;
+      return p;
     }, {});
-    //console.log('countsSource:',countsSource);
-    var countsSourceExtended = Object.keys(countsSource).map(function(k){
-        return {
-            src: k,
-            total: countsSource[k]
-        };
-    });
+    
+    var countsSourceExtended = Object.keys(countsSource).map(k => {
+      return { src: k, total: countsSource[k] }; });
 
-    //console.log(countsSourceExtended);
+    
 
     var serieTopSources = countsSourceExtended
-        .sort(dynamicSort("-total"))
-        .slice(0, 10)
-        .map(function(d) {
-            return [d.src, d.total];
-        });
+                              .sort(dynamicSort("-total"))
+                              .slice(0,10)
+                              .map(d => {return [d.src, d.total];});
 
     var serie3 = $('#bar-graph-sources').d32Bars().get('series-2');
     serie3.setData(serieTopSources, true, false, false);
-
+    */
 
 
     return countsExtended;
@@ -652,7 +946,6 @@ function barGraph(selectorID, title) {
 
     d32Bars.chart(selectorID, {
         chart: {
-            credits: false,
             type: 'bar',
             style: {
                 fontFamily: 'Gotham-Book'
@@ -728,11 +1021,92 @@ function barGraph(selectorID, title) {
 
 }
 
+function new_graph(data2Graph) {
+
+    d32.mapChart('graph-container', {
+        chart: {
+            map: 'custom/world',
+            style: {
+                fontFamily: 'Gotham-Book'
+            },
+            // events: {
+            //     load: function () {
+            //       //this.mapZoom(0.9);
+            //          this.mapZoom(0.9, 100, 100);
+            //     }
+            // },
+            //mapZoom: [0.9, 100, 100],
+            // borderWidth: 10,
+            // margin: [110, 10, 150, 10],
+            // width: 1500,
+            // height: 1300,
+            // spacing: [130, 30, 15, 30],
+            // spacingLeft: 300,
+        },
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: ''
+        },
+        legend: {
+            enabled: false
+        },
+        // credits: {
+        //     enabled: true
+        // },
+        mapNavigation: {
+            enabled: true,
+            buttonOptions: {
+                verticalAlign: 'bottom'
+            }
+        },
+        tooltip: {
+            // pointFormat: '<b>{point.z}</b>',
+            backgroundColor: '#F0C5CC', //'#d699a6', // 'rgb(214, 153, 166)',
+            borderColor: '#c42a48',
+            borderRadius: 20,
+            borderWidth: 1
+        },
+        // lang: {
+        //     noData: "Nichts zu anzeigen"
+        // },
+        // noData: {
+        //     style: {
+        //         fontWeight: 'bold',
+        //         fontSize: '15px',
+        //         color: '#303030'
+        //     }
+        // },
+        //         colorAxis: {
+        //         },
+        series: [{
+            name: 'Countries',
+            color: '#00FF00',
+            enableMouseTracking: false
+        }, {
+            type: 'mapbubble',
+            id: 'series-1',
+            color: '#c42a48',
+            name: 'Downloads',
+            joinBy: ['iso-a3', 'code3'],
+            data: data2Graph, //getCoutryTotals(), // countsExtended, // baseData, // data,
+            minSize: 1,
+            maxSize: '4%', // '7%', // '15%', // '50', // '5%', // '12%',
+            tooltip: {
+                pointFormat: '<b>{point.country}</b>:<br>{point.properties.hc-a2}: {point.z}'
+                // pointFormat: '{point.properties.hc-a2}: {point.z}'
+            }
+        }]
+    });
+
+}
+
+
 function graph(data2Graph) {
 
     d32.mapChart('graph-container', {
         chart: {
-            credits: false,
             map: 'custom/world',
             style: {
                 fontFamily: 'Gotham-Book'

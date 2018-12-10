@@ -233,15 +233,10 @@ function drawAgeSuscribersChart(dataAgeSuscribers) {
 
 
 function drawTreeSuscriber(dataTree) {
-    if ($("#code2018").prop("checked")) {
-        dataTree = dataTree.sort(function (a, b) {
-            return d3.descending(a.Subscribers, b.Subscribers);
-        });
-    } else {
-        dataTree = dataTree.sort(function (a, b) {
-            return d3.descending(a.Subscribers, b.Subscribers);
-        });
-    }
+    d3.select("#demographics-suscribers svg").remove();
+    dataTree = dataTree.sort(function (a, b) {
+        return d3.descending(a.subscribers, b.subscribers);
+    });
 
     colours = chroma.scale(['#518a81', '#ffffff'])
         .mode('lch').colors(dataTree.length)
@@ -256,8 +251,8 @@ function drawTreeSuscriber(dataTree) {
         .height(200)
         .data(dataTree)
         .layoutPadding([0])
-        .groupBy(["Subscribers", "Gender"])
-        .sum("Subscribers")
+        .groupBy(["subscribers", "gender"])
+        .sum("subscribers")
         .shapeConfig({
             fill: function (d) {
                 return d.color;
@@ -440,8 +435,8 @@ function orderTopDataSuscribers(data) {
 }
 
 function drawSuscribersChart(data) {
-
-
+    
+    d3.select("#suscribers-interested svg").remove();
     dataSet = data.sort(function (a, b) {
         return d3.ascending(a.value, b.value);
     });
@@ -473,7 +468,7 @@ function drawSuscribersChart(data) {
 
     var ySuscribers = d3.scaleBand()
 
-        .rangeRound([heightSuscriber, 0], .1)
+        .rangeRound([30*dataSet.length, 0], .1)
         .domain(dataSet.map(function (d) {
             return d.name;
         }));
@@ -504,7 +499,7 @@ function drawSuscribersChart(data) {
         .attr("fill", "#9ebbc2")
         .attr("stroke-width", 1)
         .attr("stroke", "#337384")
-        .attr("height", ySuscribers.bandwidth() - 5)
+        .attr("height", 25)
         .attr("x", 8)
         .attr("width", function (d) {
             return xSuscribers(d.value);
@@ -515,7 +510,7 @@ function drawSuscribersChart(data) {
         .attr("class", "label")
         //y position of the label is halfway down the bar
         .attr("y", function (d) {
-            return ySuscribers(d.name) + ySuscribers.bandwidth() / 2 + 4;
+            return ySuscribers(d.name) + 25 / 2 + 4;
         })
         //x position is 3 pixels to the right of the bar
         .attr("x", function (d) {
@@ -530,10 +525,12 @@ function drawSuscribersChart(data) {
 }
 
 //init
-
-drawSuscribersChart(orderTopDataSuscribers(subscribersTopics));
-drawTreeSuscriber(subscribersGender.genderIDB);
-drawInstitutionsChart(subscribersInstitution.institutionIDB);
+function initSuscribers() {
+    drawSuscribersChart(orderTopDataSuscribers(subscribersTopics));
+    drawTreeSuscriber(subscribersGender.genderIDB);
+    drawInstitutionsChart(subscribersInstitution.institutionIDB);
+}
+initSuscribers();
 
 
 // Filters
@@ -662,5 +659,5 @@ function subscribersFilter() {
 // });
 
 $("input[name*='suscribersTrend']").click(function () {
-    subscribersFilter();
+    //subscribersFilter();
 });

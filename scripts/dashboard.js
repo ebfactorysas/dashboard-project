@@ -51,6 +51,7 @@ $("#divisionSelect").on('change', function (data) {
         $('.label-filter-select').text(this.value);
         setDataIDBPublications();
         SetDataIDBDataSet();
+        setDataSubscribers();
     } else {
         initIndicators('divisions', sltValue);
         $('.label-filter-select').text(this.value);
@@ -60,8 +61,10 @@ $("#divisionSelect").on('change', function (data) {
         //Se llama la funcion para actulizar los datos con el valor de la division seleccionada
         setDataPublicationsByDivisions(sltValue);
         setDataDataSetByDivisions(sltValue);
-
-        
+        setDataSuscribersByDivisions(sltValue);
+        d3.select("#gauge-moocs svg").remove();
+        d3.select("#gauge-registrations-m svg").remove();
+        d3.select("#gauge-lac-m svg").remove();
 
         
 
@@ -114,6 +117,11 @@ function SetDataIDBDataSet() {
 
 }
 
+function setDataSubscribers(){
+    drawTreeSuscriber(subscribersGender.genderIDB);
+    drawSuscribersChart(orderTopDataSuscribers(subscribersTopics));
+}
+
 
 
 /**
@@ -163,7 +171,47 @@ function setDataDataSetByDivisions(sltValue) {
     jsonTimeLineDataSet = ObjectDataSetTimeLine.filter(function (dataT) {
         return dataT.division_code == sltValue
     });
-    createChartTimeLineDataSet(jsonTimeLineDataSet[0].data);
+    if(jsonTimeLineDataSet.length>0){
+        createChartTimeLineDataSet(jsonTimeLineDataSet[0].data);
+    }else{
+        createChartTimeLineDataSet([]);
+    }
+    
+}
+
+/**
+ * Funcion para actualizar la informacion de la seccion de suscribers divisions
+ */
+function setDataSuscribersByDivisions(sltValue){
+    //treemap
+    var ObjectGenderTreeMap = $.extend(true, [], subscribersGender.genderDivisions);
+    jsonSuscribersTree = ObjectGenderTreeMap.filter(function(data){
+        return data.division_code ==sltValue;
+    });
+    drawTreeSuscriber(jsonSuscribersTree);
+
+    //#suscribers-interested
+    var ObjectTopicBars = $.extend(true, [], subscribersTopics);
+    arraySuscribersTopics = ObjectTopicBars.filter(function(data){
+        return data.division_code ==sltValue;
+    });
+    drawSuscribersChart(arraySuscribersTopics);
+
+
+}
+
+
+
+
+/**
+ * Funcion para actualizar la informacion de la seccion de suscribers department
+ */
+function setDataSuscribersByDepartment(sltValue){
+    //treemap
+    jsonSuscribersTree = subscribersGender.genderDeparments.filter(function(data){
+        return data.department ==sltValue;
+    });
+    drawTreeSuscriber(jsonSuscribersTree);
 }
 
 
