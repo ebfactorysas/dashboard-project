@@ -233,15 +233,10 @@ function drawAgeSuscribersChart(dataAgeSuscribers) {
 
 
 function drawTreeSuscriber(dataTree) {
-    if ($("#code2018").prop("checked")) {
-        dataTree = dataTree.sort(function (a, b) {
-            return d3.descending(a.Subscribers, b.Subscribers);
-        });
-    } else {
-        dataTree = dataTree.sort(function (a, b) {
-            return d3.descending(a.Subscribers, b.Subscribers);
-        });
-    }
+    d3.select("#demographics-suscribers svg").remove();
+    dataTree = dataTree.sort(function (a, b) {
+        return d3.descending(a.subscribers, b.subscribers);
+    });
 
     colours = chroma.scale(['#518a81', '#ffffff'])
         .mode('lch').colors(dataTree.length)
@@ -256,8 +251,8 @@ function drawTreeSuscriber(dataTree) {
         .height(200)
         .data(dataTree)
         .layoutPadding([0])
-        .groupBy(["Subscribers", "Gender"])
-        .sum("Subscribers")
+        .groupBy(["subscribers", "gender"])
+        .sum("subscribers")
         .shapeConfig({
             fill: function (d) {
                 return d.color;

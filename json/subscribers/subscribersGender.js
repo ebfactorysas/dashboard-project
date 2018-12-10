@@ -1,899 +1,851 @@
+//new data
 var subscribersGender = {
-    genderDeparments: [
-        {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "80583",
-            "deparment_code": "CSD ",
-            "Gender": "Not Reported"
+    genderDeparments: [{
+            "department": "CSD",
+            "gender": "Not Reported",
+            "subscribers": 84176
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "24272",
-            "deparment_code": "CSD ",
-            "Gender": "Female"
+            "department": "CSD",
+            "gender": "Female",
+            "subscribers": 24728
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "31700",
-            "deparment_code": "CSD ",
-            "Gender": "Male"
+            "department": "CSD",
+            "gender": "Male",
+            "subscribers": 32377
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "32",
-            "deparment_code": "CSD ",
-            "Gender": "Other"
+            "department": "CSD",
+            "gender": "Other",
+            "subscribers": 33
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "70623",
-            "deparment_code": "IFD ",
-            "Gender": "Not Reported"
+            "department": "IFD",
+            "gender": "Not Reported",
+            "subscribers": 74405
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "15504",
-            "deparment_code": "IFD ",
-            "Gender": "Female"
+            "department": "IFD",
+            "gender": "Female",
+            "subscribers": 15996
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "26471",
-            "deparment_code": "IFD ",
-            "Gender": "Male"
+            "department": "IFD",
+            "gender": "Male",
+            "subscribers": 27233
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "29",
-            "deparment_code": "IFD ",
-            "Gender": "Other"
+            "department": "IFD",
+            "gender": "Other",
+            "subscribers": 30
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "5",
-            "deparment_code": "IIC ",
-            "Gender": "Not Reported"
+            "department": "IIC",
+            "gender": "Not Reported",
+            "subscribers": 5
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "IIC ",
-            "Gender": "Female"
+            "department": "IIC",
+            "gender": "Female",
+            "subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2",
-            "deparment_code": "IIC ",
-            "Gender": "Male"
+            "department": "IIC",
+            "gender": "Male",
+            "subscribers": 2
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "IIC ",
-            "Gender": "Other"
+            "department": "IIC",
+            "gender": "Other",
+            "subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "51613",
-            "deparment_code": "INE ",
-            "Gender": "Not Reported"
+            "department": "INE",
+            "gender": "Not Reported",
+            "subscribers": 54151
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "10559",
-            "deparment_code": "INE ",
-            "Gender": "Female"
+            "department": "INE",
+            "gender": "Female",
+            "subscribers": 10852
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "19096",
-            "deparment_code": "INE ",
-            "Gender": "Male"
+            "department": "INE",
+            "gender": "Male",
+            "subscribers": 19613
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "20",
-            "deparment_code": "INE ",
-            "Gender": "Other"
+            "department": "INE",
+            "gender": "Other",
+            "subscribers": 20
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "33610",
-            "deparment_code": "INT ",
-            "Gender": "Not Reported"
+            "department": "INT",
+            "gender": "Not Reported",
+            "subscribers": 35631
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "7138",
-            "deparment_code": "INT ",
-            "Gender": "Female"
+            "department": "INT",
+            "gender": "Female",
+            "subscribers": 7400
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "12345",
-            "deparment_code": "INT ",
-            "Gender": "Male"
+            "department": "INT",
+            "gender": "Male",
+            "subscribers": 12741
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "19",
-            "deparment_code": "INT ",
-            "Gender": "Other"
+            "department": "INT",
+            "gender": "Other",
+            "subscribers": 19
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "296902",
-            "deparment_code": "KIC ",
-            "Gender": "Not Reported"
+            "department": "KIC",
+            "gender": "Not Reported",
+            "subscribers": 303223
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "89206",
-            "deparment_code": "KIC ",
-            "Gender": "Female"
+            "department": "KIC",
+            "gender": "Female",
+            "subscribers": 90179
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "96608",
-            "deparment_code": "KIC ",
-            "Gender": "Male"
+            "department": "KIC",
+            "gender": "Male",
+            "subscribers": 97672
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "38",
-            "deparment_code": "KIC ",
-            "Gender": "Other"
+            "department": "KIC",
+            "gender": "Other",
+            "subscribers": 40
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "5",
-            "deparment_code": "MIF ",
-            "Gender": "Not Reported"
+            "department": "MIF",
+            "gender": "Not Reported",
+            "subscribers": 5
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2",
-            "deparment_code": "MIF ",
-            "Gender": "Female"
+            "department": "MIF",
+            "gender": "Female",
+            "subscribers": 2
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1",
-            "deparment_code": "MIF ",
-            "Gender": "Male"
+            "department": "MIF",
+            "gender": "Male",
+            "subscribers": 1
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "MIF ",
-            "Gender": "Other"
+            "department": "MIF",
+            "gender": "Other",
+            "subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "24891",
-            "deparment_code": "RES ",
-            "Gender": "Not Reported"
+            "department": "RES",
+            "gender": "Not Reported",
+            "subscribers": 25879
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "10125",
-            "deparment_code": "RES ",
-            "Gender": "Female"
+            "department": "RES",
+            "gender": "Female",
+            "subscribers": 10272
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "15403",
-            "deparment_code": "RES ",
-            "Gender": "Male"
+            "department": "RES",
+            "gender": "Male",
+            "subscribers": 15685
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "32",
-            "deparment_code": "RES ",
-            "Gender": "Other"
+            "department": "RES",
+            "gender": "Other",
+            "subscribers": 33
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "62735",
-            "deparment_code": "SCL ",
-            "Gender": "Not Reported"
+            "department": "SCL",
+            "gender": "Not Reported",
+            "subscribers": 66842
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "29993",
-            "deparment_code": "SCL ",
-            "Gender": "Female"
+            "department": "SCL",
+            "gender": "Female",
+            "subscribers": 30764
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "23758",
-            "deparment_code": "SCL ",
-            "Gender": "Male"
+            "department": "SCL",
+            "gender": "Male",
+            "subscribers": 24536
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "30",
-            "deparment_code": "SCL ",
-            "Gender": "Other"
+            "department": "SCL",
+            "gender": "Other",
+            "subscribers": 31
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1384",
-            "deparment_code": "SPD ",
-            "Gender": "Not Reported"
+            "department": "SPD",
+            "gender": "Not Reported",
+            "subscribers": 1410
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "3333",
-            "deparment_code": "SPD ",
-            "Gender": "Female"
+            "department": "SPD",
+            "gender": "Female",
+            "subscribers": 3372
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "4614",
-            "deparment_code": "SPD ",
-            "Gender": "Male"
+            "department": "SPD",
+            "gender": "Male",
+            "subscribers": 4677
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "15",
-            "deparment_code": "SPD ",
-            "Gender": "Other"
+            "department": "SPD",
+            "gender": "Other",
+            "subscribers": 15
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "13",
-            "deparment_code": "VPC ",
-            "Gender": "Not Reported"
+            "department": "VPC",
+            "gender": "Not Reported",
+            "subscribers": 13
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2",
-            "deparment_code": "VPC ",
-            "Gender": "Female"
+            "department": "VPC",
+            "gender": "Female",
+            "subscribers": 2
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1",
-            "deparment_code": "VPC ",
-            "Gender": "Male"
+            "department": "VPC",
+            "gender": "Male",
+            "subscribers": 1
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "VPC ",
-            "Gender": "Other"
+            "department": "VPC",
+            "gender": "Other",
+            "subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "3",
-            "deparment_code": "VPF ",
-            "Gender": "Not Reported"
+            "department": "VPF",
+            "gender": "Not Reported",
+            "subscribers": 3
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1",
-            "deparment_code": "VPF ",
-            "Gender": "Female"
+            "department": "VPF",
+            "gender": "Female",
+            "subscribers": 1
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1",
-            "deparment_code": "VPF ",
-            "Gender": "Male"
+            "department": "VPF",
+            "gender": "Male",
+            "subscribers": 1
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "VPF ",
-            "Gender": "Other"
+            "department": "VPF",
+            "gender": "Other",
+            "subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "3",
-            "deparment_code": "VPS ",
-            "Gender": "Not Reported"
+            "department": "VPS",
+            "gender": "Not Reported",
+            "subscribers": 3
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1",
-            "deparment_code": "VPS ",
-            "Gender": "Female"
+            "department": "VPS",
+            "gender": "Female",
+            "subscribers": 1
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "3",
-            "deparment_code": "VPS ",
-            "Gender": "Male"
+            "department": "VPS",
+            "gender": "Male",
+            "subscribers": 3
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "VPS ",
-            "Gender": "Other"
+            "department": "VPS",
+            "gender": "Other",
+            "subscribers": 0
         }
     ],
-    genderDivisions: [
-        {
+    genderDivisions: [{
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "30971",
+            "subscribers": "3097",
             "deparment_code": "CSD/CCS",
-            "Gender": "Not Reported"
+            "gender": "Not Reported"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "11853",
+            "subscribers": "11853",
             "deparment_code": "CSD/CCS",
-            "Gender": "Female"
+            "gender": "Female"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "15865",
+            "subscribers": "15865",
             "deparment_code": "CSD/CCS",
-            "Gender": "Male"
+            "gender": "Male"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "22",
+            "subscribers": "22",
             "deparment_code": "CSD/CCS",
-            "Gender": "Other"
+            "gender": "Other"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "50561",
+            "subscribers": "50561",
             "deparment_code": "CSD/HUD",
-            "Gender": "Not Reported"
+            "gender": "Not Reported"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "13671",
+            "subscribers": "13671",
             "deparment_code": "CSD/HUD",
-            "Gender": "Female"
+            "gender": "Female"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "17344",
+            "subscribers": "17344",
             "deparment_code": "CSD/HUD",
-            "Gender": "Male"
+            "gender": "Male"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "19",
+            "subscribers": "19",
             "deparment_code": "CSD/HUD",
-            "Gender": "Other"
+            "gender": "Other"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "43520",
+            "subscribers": "43520",
             "deparment_code": "CSD/RND",
-            "Gender": "Not Reported"
+            "gender": "Not Reported"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "16874",
+            "subscribers": "16874",
             "deparment_code": "CSD/RND",
-            "Gender": "Female"
+            "gender": "Female"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "23188",
+            "subscribers": "23188",
             "deparment_code": "CSD/RND",
-            "Gender": "Male"
+            "gender": "Male"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "28",
+            "subscribers": "28",
             "deparment_code": "CSD/RND",
-            "Gender": "Other"
+            "gender": "Other"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "17745",
+            "subscribers": "17745",
             "deparment_code": "IFD/CMF",
-            "Gender": "Not Reported"
+            "gender": "Not Reported"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "4637",
+            "subscribers": "4637",
             "deparment_code": "IFD/CMF",
-            "Gender": "Female"
+            "gender": "Female"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "8749",
+            "subscribers": "8749",
             "deparment_code": "IFD/CMF",
-            "Gender": "Male"
+            "gender": "Male"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "17",
+            "subscribers": "17",
             "deparment_code": "IFD/CMF",
-            "Gender": "Other"
+            "gender": "Other"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "29467",
+            "subscribers": "29467",
             "deparment_code": "IFD/CTI",
-            "Gender": "Not Reported"
+            "gender": "Not Reported"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "6802",
+            "subscribers": "6802",
             "deparment_code": "IFD/CTI",
-            "Gender": "Female"
+            "gender": "Female"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "12727",
+            "subscribers": "12727",
             "deparment_code": "IFD/CTI",
-            "Gender": "Male"
+            "gender": "Male"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "19",
+            "subscribers": "19",
             "deparment_code": "IFD/CTI",
-            "Gender": "Other"
+            "gender": "Other"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "32561",
+            "subscribers": "32561",
             "deparment_code": "IFD/FMM",
-            "Gender": "Not Reported"
+            "gender": "Not Reported"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "6759",
+            "subscribers": "6759",
             "deparment_code": "IFD/FMM",
-            "Gender": "Female"
+            "gender": "Female"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "12924",
+            "subscribers": "12924",
             "deparment_code": "IFD/FMM",
-            "Gender": "Male"
+            "gender": "Male"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "10",
+            "subscribers": "10",
             "deparment_code": "IFD/FMM",
-            "Gender": "Other"
+            "gender": "Other"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "30909",
+            "subscribers": "30909",
             "deparment_code": "IFD/ICS",
-            "Gender": "Not Reported"
+            "gender": "Not Reported"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "9664",
+            "subscribers": "9664",
             "deparment_code": "IFD/ICS",
-            "Gender": "Female"
+            "gender": "Female"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "15951",
+            "subscribers": "15951",
             "deparment_code": "IFD/ICS",
-            "Gender": "Male"
+            "gender": "Male"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "18",
+            "subscribers": "18",
             "deparment_code": "IFD/ICS",
-            "Gender": "Other"
+            "gender": "Other"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "18956",
+            "subscribers": "18956",
             "deparment_code": "INE/ENE",
-            "Gender": "Not Reported"
+            "gender": "Not Reported"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "3626",
+            "subscribers": "3626",
             "deparment_code": "INE/ENE",
-            "Gender": "Female"
+            "gender": "Female"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "8164",
+            "subscribers": "8164",
             "deparment_code": "INE/ENE",
-            "Gender": "Male"
+            "gender": "Male"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "9",
+            "subscribers": "9",
             "deparment_code": "INE/ENE",
-            "Gender": "Other"
+            "gender": "Other"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "16617",
+            "subscribers": "16617",
             "deparment_code": "INE/TSP",
-            "Gender": "Not Reported"
+            "gender": "Not Reported"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "4214",
+            "subscribers": "4214",
             "deparment_code": "INE/TSP",
-            "Gender": "Female"
+            "gender": "Female"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "8849",
+            "subscribers": "8849",
             "deparment_code": "INE/TSP",
-            "Gender": "Male"
+            "gender": "Male"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "11",
+            "subscribers": "11",
             "deparment_code": "INE/TSP",
-            "Gender": "Other"
+            "gender": "Other"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "32223",
+            "subscribers": "32223",
             "deparment_code": "INE/WSA",
-            "Gender": "Not Reported"
+            "gender": "Not Reported"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "6809",
+            "subscribers": "6809",
             "deparment_code": "INE/WSA",
-            "Gender": "Female"
+            "gender": "Female"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "11424",
+            "subscribers": "11424",
             "deparment_code": "INE/WSA",
-            "Gender": "Male"
+            "gender": "Male"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "15",
+            "subscribers": "15",
             "deparment_code": "INE/WSA",
-            "Gender": "Other"
+            "gender": "Other"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "33605",
+            "subscribers": "33605",
             "deparment_code": "INT/TIN",
-            "Gender": "Not Reported"
+            "gender": "Not Reported"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "7138",
+            "subscribers": "7138",
             "deparment_code": "INT/TIN",
-            "Gender": "Female"
+            "gender": "Female"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "12338",
+            "subscribers": "12338",
             "deparment_code": "INT/TIN",
-            "Gender": "Male"
+            "gender": "Male"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "19",
+            "subscribers": "19",
             "deparment_code": "INT/TIN",
-            "Gender": "Other"
+            "gender": "Other"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "64358",
+            "subscribers": "64358",
             "deparment_code": "KIC/DCC",
-            "Gender": "Not Reported"
+            "gender": "Not Reported"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "6834",
+            "subscribers": "6834",
             "deparment_code": "KIC/DCC",
-            "Gender": "Female"
+            "gender": "Female"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "7646",
+            "subscribers": "7646",
             "deparment_code": "KIC/DCC",
-            "Gender": "Male"
+            "gender": "Male"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "7",
+            "subscribers": "7",
             "deparment_code": "KIC/DCC",
-            "Gender": "Other"
+            "gender": "Other"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "31991",
+            "subscribers": "31991",
             "deparment_code": "KIC/ICD",
-            "Gender": "Not Reported"
+            "gender": "Not Reported"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "8369",
+            "subscribers": "8369",
             "deparment_code": "KIC/ICD",
-            "Gender": "Female"
+            "gender": "Female"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "11286",
+            "subscribers": "11286",
             "deparment_code": "KIC/ICD",
-            "Gender": "Male"
+            "gender": "Male"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "22",
+            "subscribers": "22",
             "deparment_code": "KIC/ICD",
-            "Gender": "Other"
+            "gender": "Other"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "207729",
+            "subscribers": "207729",
             "deparment_code": "KIC/KLD",
-            "Gender": "Not Reported"
+            "gender": "Not Reported"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "79321",
+            "subscribers": "79321",
             "deparment_code": "KIC/KLD",
-            "Gender": "Female"
+            "gender": "Female"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "84019",
+            "subscribers": "84019",
             "deparment_code": "KIC/KLD",
-            "Gender": "Male"
+            "gender": "Male"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "19",
+            "subscribers": "19",
             "deparment_code": "KIC/KLD",
-            "Gender": "Other"
+            "gender": "Other"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "24890",
+            "subscribers": "24890",
             "deparment_code": "RES/RES",
-            "Gender": "Not Reported"
+            "gender": "Not Reported"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "10125",
+            "subscribers": "10125",
             "deparment_code": "RES/RES",
-            "Gender": "Female"
+            "gender": "Female"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "15403",
+            "subscribers": "15403",
             "deparment_code": "RES/RES",
-            "Gender": "Male"
+            "gender": "Male"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "32",
+            "subscribers": "32",
             "deparment_code": "RES/RES",
-            "Gender": "Other"
+            "gender": "Other"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "26132",
+            "subscribers": "26132",
             "deparment_code": "SCL/EDU",
-            "Gender": "Not Reported"
+            "gender": "Not Reported"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "21313",
+            "subscribers": "21313",
             "deparment_code": "SCL/EDU",
-            "Gender": "Female"
+            "gender": "Female"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "15369",
+            "subscribers": "15369",
             "deparment_code": "SCL/EDU",
-            "Gender": "Male"
+            "gender": "Male"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "25",
+            "subscribers": "25",
             "deparment_code": "SCL/EDU",
-            "Gender": "Other"
+            "gender": "Other"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "20808",
+            "subscribers": "20808",
             "deparment_code": "SCL/GDI",
-            "Gender": "Not Reported"
+            "gender": "Not Reported"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "7021",
+            "subscribers": "7021",
             "deparment_code": "SCL/GDI",
-            "Gender": "Female"
+            "gender": "Female"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "6771",
+            "subscribers": "6771",
             "deparment_code": "SCL/GDI",
-            "Gender": "Male"
+            "gender": "Male"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "14",
+            "subscribers": "14",
             "deparment_code": "SCL/GDI",
-            "Gender": "Other"
+            "gender": "Other"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "24284",
+            "subscribers": "24284",
             "deparment_code": "SCL/LMK",
-            "Gender": "Not Reported"
+            "gender": "Not Reported"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "6433",
+            "subscribers": "6433",
             "deparment_code": "SCL/LMK",
-            "Gender": "Female"
+            "gender": "Female"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "8347",
+            "subscribers": "8347",
             "deparment_code": "SCL/LMK",
-            "Gender": "Male"
+            "gender": "Male"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "12",
+            "subscribers": "12",
             "deparment_code": "SCL/LMK",
-            "Gender": "Other"
+            "gender": "Other"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "38888",
+            "subscribers": "38888",
             "deparment_code": "SCL/SPH",
-            "Gender": "Not Reported"
+            "gender": "Not Reported"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "20642",
+            "subscribers": "20642",
             "deparment_code": "SCL/SPH",
-            "Gender": "Female"
+            "gender": "Female"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "14198",
+            "subscribers": "14198",
             "deparment_code": "SCL/SPH",
-            "Gender": "Male"
+            "gender": "Male"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "22",
+            "subscribers": "22",
             "deparment_code": "SCL/SPH",
-            "Gender": "Other"
+            "gender": "Other"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "1330",
+            "subscribers": "1330",
             "deparment_code": "SPD/SPD",
-            "Gender": "Not Reported"
+            "gender": "Not Reported"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "3220",
+            "subscribers": "3220",
             "deparment_code": "SPD/SPD",
-            "Gender": "Female"
+            "gender": "Female"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "4515",
+            "subscribers": "4515",
             "deparment_code": "SPD/SPD",
-            "Gender": "Male"
+            "gender": "Male"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "15",
+            "subscribers": "15",
             "deparment_code": "SPD/SPD",
-            "Gender": "Other"
+            "gender": "Other"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "1",
+            "subscribers": "1",
             "deparment_code": "VPC/CAR",
-            "Gender": "Not Reported"
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "VPC/CAR",
-            "Gender": "Female"
+            "gender": "Not Reported"
         },
         {
             "json_featuretype": "NewFeatureType",
             "deparment_code": "VPC/CAR",
-            "Gender": "Male"
+            "gender": "Female"
         },
         {
             "json_featuretype": "NewFeatureType",
             "deparment_code": "VPC/CAR",
-            "Gender": "Other"
+            "gender": "Male"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "1",
-            "deparment_code": "VPC/CHA",
-            "Gender": "Not Reported"
+            "deparment_code": "VPC/CAR",
+            "gender": "Other"
         },
         {
             "json_featuretype": "NewFeatureType",
+            "subscribers": "1",
             "deparment_code": "VPC/CHA",
-            "Gender": "Female"
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "VPC/CHA",
-            "Gender": "Male"
+            "gender": "Not Reported"
         },
         {
             "json_featuretype": "NewFeatureType",
             "deparment_code": "VPC/CHA",
-            "Gender": "Other"
+            "gender": "Female"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "1198",
+            "deparment_code": "VPC/CHA",
+            "gender": "Male"
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "deparment_code": "VPC/CHA",
+            "gender": "Other"
+        },
+        {
+            "json_featuretype": "NewFeatureType",
+            "subscribers": "1198",
             "deparment_code": "VPC/CUR",
-            "Gender": "Not Reported"
+            "gender": "Not Reported"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "403",
+            "subscribers": "403",
             "deparment_code": "VPC/CUR",
-            "Gender": "Female"
+            "gender": "Female"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "392",
+            "subscribers": "392",
             "deparment_code": "VPC/CUR",
-            "Gender": "Male"
+            "gender": "Male"
         },
         {
             "json_featuretype": "NewFeatureType",
             "deparment_code": "VPC/CUR",
-            "Gender": "Other"
+            "gender": "Other"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "30971",
+            "subscribers": "30971",
             "deparment_code": "VPS/ESG",
-            "Gender": "Not Reported"
+            "gender": "Not Reported"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "11853",
+            "subscribers": "11853",
             "deparment_code": "VPS/ESG",
-            "Gender": "Female"
+            "gender": "Female"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "15865",
+            "subscribers": "15865",
             "deparment_code": "VPS/ESG",
-            "Gender": "Male"
+            "gender": "Male"
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Subscribers": "22",
+            "subscribers": "22",
             "deparment_code": "VPS/ESG",
-            "Gender": "Other"
+            "gender": "Other"
         }
     ],
-    genderIDB: [
-        {
-            "Subscribers": 392796,
-            "Gender": "Not Reported"
+    genderIDB: [{
+            "gender": "Not Reported",
+            "subscribers": 401161
         },
         {
-            "Subscribers": 97994,
-            "Gender": "Female"
+            "gender": "Female",
+            "subscribers": 99062
         },
         {
-            "Subscribers": 108488,
-            "Gender": "Male"
+            "gender": "Male",
+            "subscribers": 109744
         },
         {
-            "Subscribers": 59,
-            "Gender": "Other"
+            "gender": "Other",
+            "subscribers": 61
         }
     ]
 };
