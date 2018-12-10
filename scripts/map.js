@@ -169,7 +169,6 @@ function updateSegments(datosBySegmentType, splitSegment) {
     if (splitSegment != 'IDB') {
         $('#drop-materials').append('<option value="all">' + splitSegment + ': ALL</option>');
     }
-    debugger;
     segmentos.forEach(function (item) {
         $('#drop-materials').append('<option value="' + item + '">' + splitSegment + ': ' + item + '</option>');
     });

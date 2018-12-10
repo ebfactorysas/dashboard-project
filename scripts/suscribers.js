@@ -525,10 +525,12 @@ function drawSuscribersChart(data) {
 }
 
 //init
-
-drawSuscribersChart(orderTopDataSuscribers(subscribersTopics));
-drawTreeSuscriber(subscribersGender.genderIDB);
-drawInstitutionsChart(subscribersInstitution.institutionIDB);
+function initSuscribers(){
+    drawSuscribersChart(orderTopDataSuscribers(subscribersTopics));
+    drawTreeSuscriber(subscribersGender.genderIDB);
+    drawInstitutionsChart(subscribersInstitution.institutionIDB);
+}
+initSuscribers();
 
 
 // Filters
@@ -657,5 +659,5 @@ function subscribersFilter() {
 // });
 
 $("input[name*='suscribersTrend']").click(function () {
-    subscribersFilter();
+    //subscribersFilter();
 });
