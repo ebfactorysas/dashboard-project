@@ -14,15 +14,15 @@ function drawDataTrendChart(dataDataTrend) {
 
 
     var svgDataTrend = d3.select("#data-trend")
-    .append("svg")
-    //responsive SVG needs these 2 attributes and no width and height attr
-    .attr("preserveAspectRatio", "xMinYMin meet")
-    .attr("viewBox", "-290 -28 800 550")
-    .append("g")
-    // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
+        .append("svg")
+        //responsive SVG needs these 2 attributes and no width and height attr
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-290 -28 800 550")
+        .append("g")
+        // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
 
-    //class to make it responsive
-    .classed("svg-content-responsive", true);
+        //class to make it responsive
+        .classed("svg-content-responsive", true);
 
     var xDataTrend = d3.scaleLinear()
         .range([0, widthDataTrend])
@@ -132,7 +132,7 @@ function drawTreeDataset(dataTree, filtertype, typeload) {
             dataTree = dataTree.sort(function (a, b) {
                 return d3.descending(a.value2018, b.value2018);
             });
-            dataTree.forEach(element => {
+            dataTree.forEach(function (element) {
                 if (element.value2018 > 0) {
                     count++;
                 }
@@ -141,7 +141,7 @@ function drawTreeDataset(dataTree, filtertype, typeload) {
             dataTree = dataTree.sort(function (a, b) {
                 return d3.descending(a.valueAllTheTime, b.valueAllTheTime);
             });
-            dataTree.forEach(element => {
+            dataTree.forEach(function (element) {
                 if (element.valueAllTheTime > 0) {
                     count++;
                 }
@@ -151,7 +151,7 @@ function drawTreeDataset(dataTree, filtertype, typeload) {
         dataTree = dataTree.sort(function (a, b) {
             return d3.descending(a.value2018, b.value2018);
         });
-        dataTree.forEach(element => {
+        dataTree.forEach(function (element) {
             if (element.value2018 > 0) {
                 count++;
             }
@@ -306,7 +306,7 @@ function createChartTimeLineDataSet(data) {
             .ticks(d3.timeDay.filter(function (d) {
                 return $("#dataSet2018").prop("checked") ? d3.timeDay.count(0, d) % 60 === 0 : d3.timeDay.count(0, d) % 60 === 0
             }))
-            .ticks(7)
+            .ticks(10)
             .tickSizeOuter(0)
         )
 
@@ -653,13 +653,15 @@ $("input[name*='dataSetTrend']").click(function () {
             if (this.id == "dataSetAllTime") {
                 $('.label-filter-restidb').hide();
                 
-                jsonDataSetTree = datasetsDownloadSource.downloadSourceDivisions.filter(dataT => {
+                //treemap
+                jsonDataSetTree = datasetsDownloadSource.downloadSourceDivisions.filter(function(dataT) {
                     return dataT.division_codes == $("select[id*='divisionSelect']").val()
                 });
                 drawTreeDataset(jsonDataSetTree, "AllTheTime");
                 dataDatasets = setDatasetsGauge();
                 drawGaugeDatasetChart(dataDatasets);
             } else {
+                //treemap
                 jsonDataSetTree = datasetsDownloadSource.downloadSourceDivisions.filter(dataT => {
                     return dataT.division_codes == $("select[id*='divisionSelect']").val()
                 });
@@ -668,6 +670,13 @@ $("input[name*='dataSetTrend']").click(function () {
                 drawGaugeDatasetChart(dataDatasets2018);
             }
 
+            // //linechart
+            // var ObjectDataSetLineChart = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineDivisions);
+            // ObjectDataSetLineChart.filter(function(data) {
+            //     return data.division_code == $("select[id*='divisionSelect']").val()
+            // });
+            // createChartTimeLineDataSet(ObjectDataSetLineChart[0].data);
+
         } else if ($("select[id*='deparmentSelect']").val().length > 0) {
             //acá iría la lógica de departamentos
         }
@@ -675,14 +684,21 @@ $("input[name*='dataSetTrend']").click(function () {
     } else {
 
         if (this.id == "dataSetAllTime") {
+            //treemap
             drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "2018");
             dataDatasets = setDatasetsGauge();
             drawGaugeDatasetChart(dataDatasets);
         } else {
+            //tree map
             drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "AllTheTime");
             dataDatasets2018 = setDatasetsGauge2018();
             drawGaugeDatasetChart(dataDatasets2018);
         }
+
+        //linechart
+        // var ObjectDataSetLineChart = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
+        // createChartTimeLineDataSet(ObjectDataSetLineChart);
+
 
     }
 });
@@ -727,11 +743,16 @@ function initDataSet() {
     // removeDataSetsSvg();
     // removeDatasetsGauges();
     //init
-    var ObjectTimeLineDataSet = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
+    
+    var ObjectDataSetLineChart = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
+    createChartTimeLineDataSet(ObjectDataSetLineChart);
     var ObjectDataSetPlot = $.extend(true, [], datasetsScatterplotArrays);
 
+    //new logic
     drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "2018");
-    createChartTimeLineDataSet(ObjectTimeLineDataSet);
+    // createChartTimeLineDataSet(ObjectDataSetLineChart);
+
+    //old logic
     drawDataTrendChart(datasetsTopArrays.topIDB2018);
     drawPlotChartDataset(ObjectDataSetPlot);
     dataGaugeDatasets = setDatasetsGauge2018();
