@@ -122,6 +122,7 @@ function SetDataIDBDataSet() {
 
 function setDataSubscribers(){
     drawTreeSuscriber(subscribersGender.genderIDB);
+    drawSuscribersChart(orderTopDataSuscribers(subscribersTopics));
 }
 
 
@@ -191,7 +192,18 @@ function setDataSuscribersByDivisions(sltValue){
         return data.division_code ==sltValue;
     });
     drawTreeSuscriber(jsonSuscribersTree);
+
+    //#suscribers-interested
+    var ObjectTopicBars = $.extend(true, [], subscribersTopics);
+    arraySuscribersTopics = ObjectTopicBars.filter(function(data){
+        return data.division_code ==sltValue;
+    });
+    drawSuscribersChart(arraySuscribersTopics);
+
+
 }
+
+
 
 
 /**
