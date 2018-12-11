@@ -69,34 +69,41 @@ var dataTree = {
         ]
     }]
 }
-
-var dataGaugeCode = {
-    "code": {
-        "total": getPercentageTotal(codeAllTotalGlobal),
-        "allocated": codeAllTotalGlobal
-    },
-    "pageview": {
-        "total": getPercentageTotal(codeAllDownloads),
-        "allocated": codeAllDownloads
-    },
-    "lac": {
-        "total": 100,
-        "allocated": codeAllDownloadsLac
+function setCodeGauge() {
+    var dataGaugeCode = {
+        "code": {
+            "total": 100,//getPercentageTotal(codeAllTotalGlobal),
+            "allocated": codeAllTotalGlobal
+        },
+        "pageview": {
+            "total": 100, //getPercentageTotal(codeAllDownloads),
+            "allocated": codeAllDownloads
+        },
+        "lac": {
+            "total": 100,
+            "allocated": codeAllDownloadsLac
+        }
     }
+    return dataGaugeCode;
 }
-var dataGaugeCode2018 = {
-    "code": {
-        "total": getPercentageTotal(code2018TotalGlobal),
-        "allocated": code2018TotalGlobal
-    },
-    "pageview": {
-        "total": getPercentageTotal(code2018Downloads),
-        "allocated": code2018Downloads
-    },
-    "lac": {
-        "total": 100,
-        "allocated": code2018DownloadsLac
+
+function setCodeGauge2018() {
+    
+    var dataGaugeCode2018 = {
+        "code": {
+            "total": getPercentageTotal(code2018TotalGlobal),
+            "allocated": code2018TotalGlobal
+        },
+        "pageview": {
+            "total": getPercentageTotal(code2018Downloads),
+            "allocated": code2018Downloads
+        },
+        "lac": {
+            "total": 100,
+            "allocated": code2018DownloadsLac
+        }
     }
+    return dataGaugeCode2018;
 }
 
 var dataLines = [{
@@ -705,7 +712,7 @@ function drawGaugeCodeChart(dataGauge) {
     // });
 }
 
-drawLinesChart(dataLines);
+
 
 function drawLinesChart(data) {
     var svg = d3.select("#lines-code"),
@@ -885,17 +892,38 @@ function drawLinesChart(data) {
 
 
 //init
-var ObjectTopIdbAllTime = $.extend(true, [], codeTopArrays.codeTrendIADBAllTime);
-var ObjectPageViewsTimeLineAllTime = $.extend(true, [], codePageviewsTimelineArrays.pageviewTimelineIDB);
-var ObjectcodeScatterploArrays = $.extend(true, [], codeScatterploArrays);
+function initCode() {
+    var ObjectTopIdb2018 = $.extend(true, [], codeTopArrays.codeTrendIADBA2018);
+    var ObjectPageViewsTimeLineAllTime = $.extend(true, [], codePageviewsTimelineArrays.pageviewTimelineIDB);
+    var ObjectcodeScatterploArrays = $.extend(true, [], codeScatterploArrays);
 
+    drawLinesChart(dataLines);
+    drawTreeCode(codePageviewsSourceArrays.pageviewSourceIDB, "2018");
+    dataGaugeCode2018 = setCodeGauge2018();
+    drawGaugeCodeChart(dataGaugeCode2018);
+    drawPlotChart(ObjectcodeScatterploArrays);
+    drawChartCodeTrend(ObjectTopIdb2018);
+    createChartTimeline(ObjectPageViewsTimeLineAllTime);
+}
 
-drawTreeCode(codePageviewsSourceArrays.pageviewSourceIDB, "2018");
-drawGaugeCodeChart(dataGaugeCode);
-drawPlotChart(ObjectcodeScatterploArrays);
-drawChartCodeTrend(ObjectTopIdbAllTime);
-createChartTimeline(ObjectPageViewsTimeLineAllTime);
+function removeCodeSvg() {
+    d3.select("#downloads-code svg").remove();
+    d3.select("#code-trend svg").remove();
+    // d3.select("#timeline-code svg").remove();
+    // d3.select("#code-plot svg").remove();
+}
 
+function removeCodeSvgAll() {
+    d3.select("#downloads-code svg").remove();
+    d3.select("#code-trend svg").remove();
+    d3.select("#timeline-code svg").remove();
+    d3.select("#code-plot svg").remove();
+}
+function removeGaugeCode() {
+    d3.select("#gauge-code svg").remove();
+    d3.select("#gauge-pageview svg").remove();
+    d3.select("#gauge-lac svg").remove();
+}
 //click radiobutton drawChart(id del click)
 $("input[name*='codeTrend']").click(function () {
     var ObjectTopIdbAllTime = $.extend(true, [], codeTopArrays.codeTrendIADBAllTime);
@@ -903,25 +931,22 @@ $("input[name*='codeTrend']").click(function () {
     var ObjectTopIdb2018 = $.extend(true, [], codeTopArrays.codeTrendIADBA2018);
     var ObjectcodeScatterploArrays = $.extend(true, [], codeScatterploArrays);
 
-    d3.select("#downloads-code svg").remove();
-    d3.select("#code-trend svg").remove();
-    d3.select("#timeline-code svg").remove();
-    d3.select("#code-plot svg").remove();
-    d3.select("#gauge-code svg").remove();
-    d3.select("#gauge-pageview svg").remove();
-    d3.select("#gauge-lac svg").remove();
+    removeCodeSvg();
+    removeGaugeCode();
 
     if (this.id == "codeAllTime") {
         drawTreeCode(codePageviewsSourceArrays.pageviewSourceIDB, "AllTheTime");
         drawChartCodeTrend(ObjectTopIdbAllTime);
-        createChartTimeline(ObjectPageViewsTimeLineAllTime);
-        drawPlotChart(ObjectcodeScatterploArrays);
+        // createChartTimeline(ObjectPageViewsTimeLineAllTime);
+        // drawPlotChart(ObjectcodeScatterploArrays);
+        dataGaugeCode = setCodeGauge();
         drawGaugeCodeChart(dataGaugeCode);
     } else {
         drawTreeCode(codePageviewsSourceArrays.pageviewSourceIDB, "2018");
         drawChartCodeTrend(ObjectTopIdb2018);
-        createChartTimeline(ObjectPageViewsTimeLineAllTime);
-        drawPlotChart(ObjectcodeScatterploArrays);
+        // createChartTimeline(ObjectPageViewsTimeLineAllTime);
+        // drawPlotChart(ObjectcodeScatterploArrays);
+        dataGaugeCode2018 = setCodeGauge2018();
         drawGaugeCodeChart(dataGaugeCode2018);
     }
 

@@ -23,10 +23,7 @@ $("#deparmentSelect").on('change', function () {
     removePublicationsGauges();
     removeMoocsGauges();
     removeDatasetsGauges();
-
-    d3.select("#gauge-code svg").remove();
-    d3.select("#gauge-pageview svg").remove();
-    d3.select("#gauge-lac svg").remove();
+    removeGaugeCode();
 
     d3.select("#gauge-suscribers svg").remove();
     d3.select("#gauge-lac-s svg").remove();
@@ -46,12 +43,15 @@ $("#divisionSelect").on('change', function (data) {
     removePublicationsGauges();
     removePublicationsSvgAll();
     // removeDatasetsGauges();
+    removeCodeSvgAll();
+    removeGaugeCode();
     
     if (this.value == "IDB") {
         $('.label-filter-select').text(this.value);
         setDataIDBPublications();
         SetDataIDBDataSet();
         setDataSubscribers();
+        setDataIDBCode();
     } else {
         initIndicators('divisions', sltValue);
         $('.label-filter-select').text(this.value);
@@ -62,25 +62,26 @@ $("#divisionSelect").on('change', function (data) {
         setDataPublicationsByDivisions(sltValue);
         setDataDataSetByDivisions(sltValue);
         setDataSuscribersByDivisions(sltValue);
-        d3.select("#gauge-moocs svg").remove();
-        d3.select("#gauge-registrations-m svg").remove();
-        d3.select("#gauge-lac-m svg").remove();
+        setDataCodeByDivisions(sltValue);
+        // d3.select("#gauge-moocs svg").remove();
+        // d3.select("#gauge-registrations-m svg").remove();
+        // d3.select("#gauge-lac-m svg").remove();
 
         
 
-        d3.select("#gauge-code svg").remove();
-        d3.select("#gauge-pageview svg").remove();
-        d3.select("#gauge-lac svg").remove();
+        // d3.select("#gauge-code svg").remove();
+        // d3.select("#gauge-pageview svg").remove();
+        // d3.select("#gauge-lac svg").remove();
 
-        d3.select("#gauge-suscribers svg").remove();
-        d3.select("#gauge-lac-s svg").remove();
-        d3.select("#gauge-2018 svg").remove();
+        // d3.select("#gauge-suscribers svg").remove();
+        // d3.select("#gauge-lac-s svg").remove();
+        // d3.select("#gauge-2018 svg").remove();
         // updateGaugesPublications();
 
-        updateGaugesMoocs();
-        updateGaugesDatasets();
-        updateGaugesCode();
-        updateGaugesSubscribers();
+        // updateGaugesMoocs();
+        // updateGaugesDatasets();
+        // updateGaugesCode();
+        // updateGaugesSubscribers();
     }
 
     moocsFilter();
@@ -115,6 +116,13 @@ function SetDataIDBDataSet() {
     var ObjectDataSetLineChart = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
     createChartTimeLineDataSet(ObjectDataSetLineChart);
 
+}
+
+function setDataIDBCode() {
+    // dataPublicationGauge = setPublicationGauge();
+    // dataPublicationGauge2018 = setPublicationGauge2018();
+    removeCodeSvgAll();
+    initCode();
 }
 
 function setDataSubscribers(){
@@ -200,7 +208,33 @@ function setDataSuscribersByDivisions(sltValue){
 
 }
 
+/**
+ * Funcion para actualizar la informacion de la seccion de Code
+ */
+function setDataCodeByDivisions(sltValue) {
+    // removePublicationsGauges();
+    // removePublicationsSvgAll();
+    var ObjectTopIdb2018 = $.extend(true, [], codeTopArrays.codeTrend2018Divisions);
+    ObjectTopIdb2018 = ObjectTopIdb2018.filter(function (data){
+        return data.division_codes == sltValue
+    });
+    var ObjectPageViewsTimeLine2018 = $.extend(true, [], codePageviewsTimelineArrays.pageviewTimelineDivisions);
+    ObjectPageViewsTimeLine2018 = ObjectPageViewsTimeLine2018.filter(function (data){
+        return data.division_codes == sltValue
+    });
+    var ObjectcodeScatterploArrays = $.extend(true, [], codeScatterploArrays);
+    ObjectcodeScatterploArrays = ObjectcodeScatterploArrays.filter(function (data){
+        return data.department_codes == sltValue
+    });
 
+    drawLinesChart(dataLines);
+    drawTreeCode(codePageviewsSourceArrays.pageviewSourceIDB, "2018");
+    dataGaugeCode2018 = setCodeGauge2018();
+    drawGaugeCodeChart(dataGaugeCode2018);
+    drawPlotChart(ObjectcodeScatterploArrays);
+    drawChartCodeTrend(ObjectTopIdb2018);
+    createChartTimeline(ObjectPageViewsTimeLine2018);
+}
 
 
 /**
@@ -225,6 +259,7 @@ $(window).on('load', function () {
     initPublications();
     initMoocs();
     initDataSet();
+    initCode();
     $('.label-filter-restidb').hide();
 
 });
