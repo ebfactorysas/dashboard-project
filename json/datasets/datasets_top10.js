@@ -3,7 +3,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "CCB",
             "E": 379,
-            "Title": "Productivity, Technology, Innovation in the Caribbean",
+            "name": "Productivity, Technology, Innovation in the Caribbean",
             "All the time Rank": 1,
             "Publication Date": "01/13/2016",
             "xlsx_row_id": 2
@@ -12,7 +12,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "CCB",
             "E": 297,
-            "Title": "Productivity, Technology and Innovation Survey Bahamas",
+            "name": "Productivity, Technology and Innovation Survey Bahamas",
             "All the time Rank": 2,
             "Publication Date": "09/13/2016",
             "xlsx_row_id": 3
@@ -21,7 +21,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "CCB",
             "E": 292,
-            "Title": "National Women's Health Survey for Trinidad and Tobago",
+            "name": "National Women's Health Survey for Trinidad and Tobago",
             "All the time Rank": 3,
             "Publication Date": "03/05/2018",
             "xlsx_row_id": 4
@@ -30,7 +30,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "CCB",
             "E": 288,
-            "Title": "Productivity, Technology and Innovation Survey OECS",
+            "name": "Productivity, Technology and Innovation Survey OECS",
             "All the time Rank": 4,
             "Publication Date": "09/14/2016",
             "xlsx_row_id": 5
@@ -39,7 +39,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "CCB",
             "E": 250,
-            "Title": "Is there a Caribbean sclerosis?: stagnating economic growth in the Caribbean-Chapter 6, A Rough Macroeconomic Environment and a Rougher Neighbourhood, IDB 2014",
+            "name": "Is there a Caribbean sclerosis?: stagnating economic growth in the Caribbean-Chapter 6, A Rough Macroeconomic Environment and a Rougher Neighbourhood, IDB 2014",
             "All the time Rank": 5,
             "Publication Date": "07/07/2015",
             "xlsx_row_id": 6
@@ -48,7 +48,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "CCB",
             "E": 209,
-            "Title": "Is there a Caribbean sclerosis?: stagnating economic growth in the Caribbean-Chapter 3, Is the Caribbean an Outlier?, IDB 2014",
+            "name": "Is there a Caribbean sclerosis?: stagnating economic growth in the Caribbean-Chapter 3, Is the Caribbean an Outlier?, IDB 2014",
             "All the time Rank": 6,
             "Publication Date": "07/07/2015",
             "xlsx_row_id": 7
@@ -57,7 +57,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "CCB",
             "E": 198,
-            "Title": "Is there a Caribbean sclerosis?: stagnating economic growth in the Caribbean-Chapter 7, Let It Be or Do Something?, IDB 2014",
+            "name": "Is there a Caribbean sclerosis?: stagnating economic growth in the Caribbean-Chapter 7, Let It Be or Do Something?, IDB 2014",
             "All the time Rank": 7,
             "Publication Date": "07/07/2015",
             "xlsx_row_id": 8
@@ -66,7 +66,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "CCB",
             "E": 197,
-            "Title": "Productivity, Technology and Innovation Survey Guyana",
+            "name": "Productivity, Technology and Innovation Survey Guyana",
             "All the time Rank": 8,
             "Publication Date": "09/13/2016",
             "xlsx_row_id": 9
@@ -75,7 +75,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "CCB",
             "E": 185,
-            "Title": "Is there a Caribbean sclerosis?: stagnating economic growth in the Caribbean-Chapter 2, Being Small Is Tough, IDB 2014",
+            "name": "Is there a Caribbean sclerosis?: stagnating economic growth in the Caribbean-Chapter 2, Being Small Is Tough, IDB 2014",
             "All the time Rank": 9,
             "Publication Date": "07/07/2015",
             "xlsx_row_id": 10
@@ -84,7 +84,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "CCB",
             "E": 183,
-            "Title": "Is there a Caribbean sclerosis?: stagnating economic growth in the Caribbean-Chapter 8, What to Do?, IDB 2014",
+            "name": "Is there a Caribbean sclerosis?: stagnating economic growth in the Caribbean-Chapter 8, What to Do?, IDB 2014",
             "All the time Rank": 10,
             "Publication Date": "07/07/2015",
             "xlsx_row_id": 11
@@ -93,7 +93,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "CSD",
             "E": 1312,
-            "Title": "Emerging and Sustainable Cities Initiative: Surveys Answers",
+            "name": "Emerging and Sustainable Cities Initiative: Surveys Answers",
             "All the time Rank": 1,
             "Publication Date": "04/27/2015",
             "xlsx_row_id": 12
@@ -102,7 +102,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "CSD",
             "E": 991,
-            "Title": "Development Connections: Unveiling the Impact of New Information Technologies - DIA 2011",
+            "name": "Development Connections: Unveiling the Impact of New Information Technologies - DIA 2011",
             "All the time Rank": 2,
             "Publication Date": "05/30/2011",
             "xlsx_row_id": 13
@@ -111,7 +111,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "CSD",
             "E": 818,
-            "Title": "Emerging and Sustainable Cities Initiative: Indicators Values",
+            "name": "Emerging and Sustainable Cities Initiative: Indicators Values",
             "All the time Rank": 3,
             "Publication Date": "04/08/2015",
             "xlsx_row_id": 14
@@ -120,7 +120,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "CSD",
             "E": 569,
-            "Title": "Emerging and Sustainable Cities Initiative: Indicators",
+            "name": "Emerging and Sustainable Cities Initiative: Indicators",
             "All the time Rank": 4,
             "Publication Date": "04/09/2015",
             "xlsx_row_id": 15
@@ -129,7 +129,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "CSD",
             "E": 514,
-            "Title": "Emerging and Sustainable Cities Initiative: Cities",
+            "name": "Emerging and Sustainable Cities Initiative: Cities",
             "All the time Rank": 5,
             "Publication Date": "04/16/2015",
             "xlsx_row_id": 16
@@ -138,7 +138,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "CSD",
             "E": 497,
-            "Title": "IDB Agrimonitor - PSE Agricultural Policy Monitoring System (data)",
+            "name": "IDB Agrimonitor - PSE Agricultural Policy Monitoring System (data)",
             "All the time Rank": 6,
             "Publication Date": "03/20/2016",
             "xlsx_row_id": 17
@@ -147,7 +147,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "CSD",
             "E": 269,
-            "Title": "Emerging and Sustainable Cities Initiative: Surveys",
+            "name": "Emerging and Sustainable Cities Initiative: Surveys",
             "All the time Rank": 7,
             "Publication Date": "04/13/2015",
             "xlsx_row_id": 18
@@ -156,7 +156,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "CSD",
             "E": 207,
-            "Title": "Social Accounting Matrix (SAM) for Paraguay 2009",
+            "name": "Social Accounting Matrix (SAM) for Paraguay 2009",
             "All the time Rank": 8,
             "Publication Date": "11/13/2015",
             "xlsx_row_id": 19
@@ -165,7 +165,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "CSD",
             "E": 186,
-            "Title": "Risk Monitor",
+            "name": "Risk Monitor",
             "All the time Rank": 9,
             "Publication Date": "09/01/2017",
             "xlsx_row_id": 20
@@ -174,7 +174,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "CSD",
             "E": 18,
-            "Title": "Urban Dashboard",
+            "name": "Urban Dashboard",
             "All the time Rank": 10,
             "Publication Date": "07/17/2015",
             "xlsx_row_id": 21
@@ -183,7 +183,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "Discontinued Departments",
             "E": 404,
-            "Title": "DataGov: Governance Indicators Database",
+            "name": "DataGov: Governance Indicators Database",
             "All the time Rank": 1,
             "Publication Date": "04/23/2007",
             "xlsx_row_id": 22
@@ -192,7 +192,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "Discontinued Departments",
             "E": 377,
-            "Title": "FINLAC Data: Datos de desempeño e inclusión financiera de América Latina y el Caribe",
+            "name": "FINLAC Data: Datos de desempeño e inclusión financiera de América Latina y el Caribe",
             "All the time Rank": 2,
             "Publication Date": "08/16/2018",
             "xlsx_row_id": 23
@@ -201,7 +201,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "Discontinued Departments",
             "E": 302,
-            "Title": "IDB Agrimonitor: PSE Agricultural Policy Monitoring System",
+            "name": "IDB Agrimonitor: PSE Agricultural Policy Monitoring System",
             "All the time Rank": 3,
             "Publication Date": "12/31/2014",
             "xlsx_row_id": 24
@@ -210,7 +210,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "IFD",
             "E": 2228,
-            "Title": "Standardized Public Debt Database",
+            "name": "Standardized Public Debt Database",
             "All the time Rank": 1,
             "Publication Date": "*",
             "xlsx_row_id": 25
@@ -219,7 +219,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "IFD",
             "E": 1769,
-            "Title": "Panorama de las Administraciones Públicas: ALC2017 indicadores",
+            "name": "Panorama de las Administraciones Públicas: ALC2017 indicadores",
             "All the time Rank": 2,
             "Publication Date": "12/06/2016",
             "xlsx_row_id": 26
@@ -228,7 +228,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "IFD",
             "E": 1545,
-            "Title": "Latin America and the Caribbean Fiscal Burden Database",
+            "name": "Latin America and the Caribbean Fiscal Burden Database",
             "All the time Rank": 3,
             "Publication Date": "*",
             "xlsx_row_id": 27
@@ -237,7 +237,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "IFD",
             "E": 601,
-            "Title": "IDBA: Índice de Desarrollo de Banda Ancha",
+            "name": "IDBA: Índice de Desarrollo de Banda Ancha",
             "All the time Rank": 4,
             "Publication Date": "07/17/2014",
             "xlsx_row_id": 28
@@ -246,7 +246,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "IFD",
             "E": 565,
-            "Title": "Structural Fiscal Balances Database for LAC: A Tool to Assess Fiscal Performance in the Region",
+            "name": "Structural Fiscal Balances Database for LAC: A Tool to Assess Fiscal Performance in the Region",
             "All the time Rank": 5,
             "Publication Date": "06/30/2015",
             "xlsx_row_id": 29
@@ -255,7 +255,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "IFD",
             "E": 529,
-            "Title": "Civil Service Development Index",
+            "name": "Civil Service Development Index",
             "All the time Rank": 6,
             "Publication Date": "*",
             "xlsx_row_id": 30
@@ -264,7 +264,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "IFD",
             "E": 529,
-            "Title": "Dataset of Housing Indicators",
+            "name": "Dataset of Housing Indicators",
             "All the time Rank": 6,
             "Publication Date": "05/10/2016",
             "xlsx_row_id": 31
@@ -272,7 +272,7 @@ var datasetsTopArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "E": 509,
-            "Title": "2016 Cybersecurity Report Data Set",
+            "name": "2016 Cybersecurity Report Data Set",
             "All the time Rank": 8,
             "Publication Date": "03/11/2016",
             "xlsx_row_id": 32
@@ -280,7 +280,7 @@ var datasetsTopArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "E": 504,
-            "Title": "Latin American and Caribbean Enterprise Survey",
+            "name": "Latin American and Caribbean Enterprise Survey",
             "All the time Rank": 9,
             "Publication Date": "01/13/2016",
             "xlsx_row_id": 33
@@ -288,7 +288,7 @@ var datasetsTopArrays = {
         {
             "json_featuretype": "NewFeatureType",
             "E": 453,
-            "Title": "Structural Fiscal Balances Database for Latin America and the Caribbean",
+            "name": "Structural Fiscal Balances Database for Latin America and the Caribbean",
             "All the time Rank": 10,
             "Publication Date": "06/30/2015",
             "xlsx_row_id": 34
@@ -297,7 +297,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "INE",
             "E": 4522,
-            "Title": "Freight Transport and Logistics Statistics Yearbook",
+            "name": "Freight Transport and Logistics Statistics Yearbook",
             "All the time Rank": 1,
             "Publication Date": "04/10/2015",
             "xlsx_row_id": 35
@@ -306,7 +306,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "INE",
             "E": 763,
-            "Title": "Energy Database",
+            "name": "Energy Database",
             "All the time Rank": 2,
             "Publication Date": "07/03/2014",
             "xlsx_row_id": 36
@@ -315,7 +315,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "INE",
             "E": 504,
-            "Title": "Infralatam: Datos de inversión en infraestructura : América Latina y el Caribe",
+            "name": "Infralatam: Datos de inversión en infraestructura : América Latina y el Caribe",
             "All the time Rank": 3,
             "Publication Date": "05/16/2017",
             "xlsx_row_id": 37
@@ -324,7 +324,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "INE",
             "E": 216,
-            "Title": "Development Effects of Rural Electrification",
+            "name": "Development Effects of Rural Electrification",
             "All the time Rank": 4,
             "Publication Date": "01/01/2017",
             "xlsx_row_id": 38
@@ -333,7 +333,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "INE",
             "E": 176,
-            "Title": "INFRALATAM",
+            "name": "INFRALATAM",
             "All the time Rank": 5,
             "Publication Date": "05/12/2017",
             "xlsx_row_id": 39
@@ -342,7 +342,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "INE",
             "E": 157,
-            "Title": "Technical Efficiency of Container Ports in Latin America and the Caribbean, 1999–2009",
+            "name": "Technical Efficiency of Container Ports in Latin America and the Caribbean, 1999–2009",
             "All the time Rank": 6,
             "Publication Date": "08/29/2016",
             "xlsx_row_id": 40
@@ -351,7 +351,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "INE",
             "E": 126,
-            "Title": "Modelo para la estimación de costos de la gestión de residuos reciclables con inclusión de recicladores",
+            "name": "Modelo para la estimación de costos de la gestión de residuos reciclables con inclusión de recicladores",
             "All the time Rank": 7,
             "Publication Date": "10/31/2017",
             "xlsx_row_id": 41
@@ -360,7 +360,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "INT",
             "E": 207,
-            "Title": "INTradeBID",
+            "name": "INTradeBID",
             "All the time Rank": 1,
             "Publication Date": "01/01/2010",
             "xlsx_row_id": 42
@@ -369,7 +369,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "INT",
             "E": 188,
-            "Title": "Informe MERCOSUR N° 20 (2014-2015)",
+            "name": "Informe MERCOSUR N° 20 (2014-2015)",
             "All the time Rank": 2,
             "Publication Date": "01/28/2016",
             "xlsx_row_id": 43
@@ -378,7 +378,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "INT",
             "E": 117,
-            "Title": "DATAINTAL",
+            "name": "DATAINTAL",
             "All the time Rank": 3,
             "Publication Date": "01/01/1992",
             "xlsx_row_id": 44
@@ -387,7 +387,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "MIF",
             "E": 1845,
-            "Title": "2010 InfraScope Index for Latin America and the Caribbean",
+            "name": "2010 InfraScope Index for Latin America and the Caribbean",
             "All the time Rank": 1,
             "Publication Date": "11/08/2010",
             "xlsx_row_id": 45
@@ -396,7 +396,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "MIF",
             "E": 670,
-            "Title": "2009-2014 InfraScope Index for Latin America and the Caribbean",
+            "name": "2009-2014 InfraScope Index for Latin America and the Caribbean",
             "All the time Rank": 2,
             "Publication Date": "05/19/2015",
             "xlsx_row_id": 46
@@ -405,7 +405,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "MIF",
             "E": 377,
-            "Title": "FINLAC Data: Datos de desempeño e inclusión financiera de América Latina y el Caribe",
+            "name": "FINLAC Data: Datos de desempeño e inclusión financiera de América Latina y el Caribe",
             "All the time Rank": 3,
             "Publication Date": "08/16/2018",
             "xlsx_row_id": 47
@@ -414,7 +414,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "MIF",
             "E": 118,
-            "Title": "Benchmarking Index 2009",
+            "name": "Benchmarking Index 2009",
             "All the time Rank": 4,
             "Publication Date": "06/01/2009",
             "xlsx_row_id": 48
@@ -423,7 +423,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "RES",
             "E": 9109,
-            "Title": "The Database of Political Institutions 2015 (DPI2015)",
+            "name": "The Database of Political Institutions 2015 (DPI2015)",
             "All the time Rank": 1,
             "Publication Date": "01/29/2016",
             "xlsx_row_id": 49
@@ -432,7 +432,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "RES",
             "E": 4564,
-            "Title": "The Database of Political Institutions 2017 (DPI2017)",
+            "name": "The Database of Political Institutions 2017 (DPI2017)",
             "All the time Rank": 2,
             "Publication Date": "02/01/2018",
             "xlsx_row_id": 50
@@ -441,7 +441,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "RES",
             "E": 1327,
-            "Title": "Latin Macro Watch: Annual",
+            "name": "Latin Macro Watch: Annual",
             "All the time Rank": 3,
             "Publication Date": "11/15/2017",
             "xlsx_row_id": 51
@@ -450,7 +450,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "RES",
             "E": 1246,
-            "Title": "Database of Political Institutions 2015",
+            "name": "Database of Political Institutions 2015",
             "All the time Rank": 4,
             "Publication Date": "02/03/2016",
             "xlsx_row_id": 52
@@ -459,7 +459,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "RES",
             "E": 817,
-            "Title": "Latin Macro Watch: Quartely",
+            "name": "Latin Macro Watch: Quartely",
             "All the time Rank": 5,
             "Publication Date": "11/15/2017",
             "xlsx_row_id": 53
@@ -468,7 +468,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "RES",
             "E": 751,
-            "Title": "Priorities for Productivity and Income (PPIs) Database",
+            "name": "Priorities for Productivity and Income (PPIs) Database",
             "All the time Rank": 6,
             "Publication Date": "01/18/2016",
             "xlsx_row_id": 54
@@ -477,7 +477,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "RES",
             "E": 743,
-            "Title": "Database for Revelation of Expectations in Latin America (REVELA)",
+            "name": "Database for Revelation of Expectations in Latin America (REVELA)",
             "All the time Rank": 7,
             "Publication Date": "03/01/2009",
             "xlsx_row_id": 55
@@ -486,7 +486,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "RES",
             "E": 712,
-            "Title": "Productivity and Factor Accumulation in Latin America and the Caribbean: A Database",
+            "name": "Productivity and Factor Accumulation in Latin America and the Caribbean: A Database",
             "All the time Rank": 8,
             "Publication Date": "04/03/2015",
             "xlsx_row_id": 56
@@ -495,7 +495,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "RES",
             "E": 663,
-            "Title": "GVAR Dataset",
+            "name": "GVAR Dataset",
             "All the time Rank": 9,
             "Publication Date": "04/13/2012",
             "xlsx_row_id": 57
@@ -504,7 +504,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "RES",
             "E": 585,
-            "Title": "Political Institutions, State Capabilities, and Public Policy: An International Dataset (2014 Update)",
+            "name": "Political Institutions, State Capabilities, and Public Policy: An International Dataset (2014 Update)",
             "All the time Rank": 10,
             "Publication Date": "04/03/2015",
             "xlsx_row_id": 58
@@ -513,7 +513,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "SCL",
             "E": 2002,
-            "Title": "2017 Índice de Mejores Trabajos Base de Datos",
+            "name": "2017 Índice de Mejores Trabajos Base de Datos",
             "All the time Rank": 1,
             "Publication Date": "10/01/2017",
             "xlsx_row_id": 59
@@ -522,7 +522,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "SCL",
             "E": 1041,
-            "Title": "Social Pulse in Latin America and the Caribbean 2016 - Statistical Annex",
+            "name": "Social Pulse in Latin America and the Caribbean 2016 - Statistical Annex",
             "All the time Rank": 2,
             "Publication Date": "10/05/2016",
             "xlsx_row_id": 60
@@ -531,7 +531,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "SCL",
             "E": 926,
-            "Title": "Pulso Social: Anexo Estadístico 2017",
+            "name": "Pulso Social: Anexo Estadístico 2017",
             "All the time Rank": 3,
             "Publication Date": "11/16/2017",
             "xlsx_row_id": 61
@@ -540,7 +540,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "SCL",
             "E": 785,
-            "Title": "Database of Labor Markets and Social Security Information System (SIMS)",
+            "name": "Database of Labor Markets and Social Security Information System (SIMS)",
             "All the time Rank": 4,
             "Publication Date": "07/15/2016",
             "xlsx_row_id": 62
@@ -549,7 +549,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "SCL",
             "E": 491,
-            "Title": "Learning Improvement Information Center: Regional Indicators for Household surveys, Coverage, Efficiency, Youth Inactivity and Education Levels",
+            "name": "Learning Improvement Information Center: Regional Indicators for Household surveys, Coverage, Efficiency, Youth Inactivity and Education Levels",
             "All the time Rank": 5,
             "Publication Date": "09/02/2015",
             "xlsx_row_id": 63
@@ -558,7 +558,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "SCL",
             "E": 436,
-            "Title": "Learning Improvement Information Center: Regional Indicators for Learning",
+            "name": "Learning Improvement Information Center: Regional Indicators for Learning",
             "All the time Rank": 6,
             "Publication Date": "08/14/2015",
             "xlsx_row_id": 64
@@ -567,7 +567,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "SCL",
             "E": 417,
-            "Title": "Harmonized LSPS (Longitudinal Social Protection Survey) Database 2016",
+            "name": "Harmonized LSPS (Longitudinal Social Protection Survey) Database 2016",
             "All the time Rank": 7,
             "Publication Date": "07/25/2016",
             "xlsx_row_id": 65
@@ -576,7 +576,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "SCL",
             "E": 413,
-            "Title": "Database and related documents LSPS (Longitudinal Social Protection Survey)",
+            "name": "Database and related documents LSPS (Longitudinal Social Protection Survey)",
             "All the time Rank": 8,
             "Publication Date": "11/08/2016",
             "xlsx_row_id": 66
@@ -585,7 +585,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "SCL",
             "E": 376,
-            "Title": "Learning Improvement Information Center: Indicators and Descriptions",
+            "name": "Learning Improvement Information Center: Indicators and Descriptions",
             "All the time Rank": 9,
             "Publication Date": "09/22/2015",
             "xlsx_row_id": 67
@@ -594,7 +594,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "SCL",
             "E": 364,
-            "Title": "Learning Improvement Information Center: Regional Indicators for Financial Resources",
+            "name": "Learning Improvement Information Center: Regional Indicators for Financial Resources",
             "All the time Rank": 10,
             "Publication Date": "09/01/2015",
             "xlsx_row_id": 68
@@ -603,7 +603,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "SPD",
             "E": 251,
-            "Title": "IDB IATI Dataset - Geolocation",
+            "name": "IDB IATI Dataset - Geolocation",
             "All the time Rank": 1,
             "Publication Date": "03/31/2016",
             "xlsx_row_id": 69
@@ -612,7 +612,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "SPD",
             "E": 246,
-            "Title": "IDB IATI Dataset - General Project Details",
+            "name": "IDB IATI Dataset - General Project Details",
             "All the time Rank": 2,
             "Publication Date": "03/31/2016",
             "xlsx_row_id": 70
@@ -621,7 +621,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "SPD",
             "E": 230,
-            "Title": "IDB IATI Dataset - Transactions",
+            "name": "IDB IATI Dataset - Transactions",
             "All the time Rank": 3,
             "Publication Date": "03/31/2016",
             "xlsx_row_id": 71
@@ -630,7 +630,7 @@ var datasetsTopArrays = {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "SPD",
             "E": 222,
-            "Title": "IDB IATI Dataset - Documents",
+            "name": "IDB IATI Dataset - Documents",
             "All the time Rank": 4,
             "Publication Date": "03/31/2016",
             "xlsx_row_id": 72
@@ -639,120 +639,120 @@ var datasetsTopArrays = {
     topDepartments2018: [{
             "json_featuretype": "NewFeatureType",
             "Department Codes": "CCB",
-            "Downloads": 289,
-            "Title": "National Women's Health Survey for Trinidad and Tobago",
+            "value": 289,
+            "name": "National Women's Health Survey for Trinidad and Tobago",
             "Rank": "1",
             "xlsx_row_id": 2
         },
         {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "CCB",
-            "Downloads": 166,
-            "Title": "Suriname Survey of Living Conditions: 2016-2017",
+            "value": 166,
+            "name": "Suriname Survey of Living Conditions: 2016-2017",
             "Rank": "2",
             "xlsx_row_id": 3
         },
         {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "CCB",
-            "Downloads": 79,
-            "Title": "Barbados Survey of Living Conditions: 2016",
+            "value": 79,
+            "name": "Barbados Survey of Living Conditions: 2016",
             "Rank": "3",
             "xlsx_row_id": 4
         },
         {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "CCB",
-            "Downloads": 62,
-            "Title": "Guyana Labor Force Survey: Fourth Quarter 2017",
+            "value": 62,
+            "name": "Guyana Labor Force Survey: Fourth Quarter 2017",
             "Rank": "4",
             "xlsx_row_id": 5
         },
         {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "CCB",
-            "Downloads": 57,
-            "Title": "Guyana Labor Force Survey: Third Quarter 2017",
+            "value": 57,
+            "name": "Guyana Labor Force Survey: Third Quarter 2017",
             "Rank": "5",
             "xlsx_row_id": 6
         },
         {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "CCB",
-            "Downloads": 36,
-            "Title": "Women’s Health Survey for Jamaica: Dataset",
+            "value": 36,
+            "name": "Women’s Health Survey for Jamaica: Dataset",
             "Rank": "6",
             "xlsx_row_id": 7
         },
         {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "Discontinued Departments",
-            "Downloads": 373,
-            "Title": "FINLAC Data: Datos de desempeño e inclusión financiera de América Latina y el Caribe",
+            "value": 373,
+            "name": "FINLAC Data: Datos de desempeño e inclusión financiera de América Latina y el Caribe",
             "Rank": "1",
             "xlsx_row_id": 8
         },
         {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "IFD",
-            "Downloads": 289,
-            "Title": "National Women's Health Survey for Trinidad and Tobago",
+            "value": 289,
+            "name": "National Women's Health Survey for Trinidad and Tobago",
             "Rank": "1",
             "xlsx_row_id": 9
         },
         {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "IFD",
-            "Downloads": 180,
-            "Title": "Standardized Public Debt Database",
+            "value": 180,
+            "name": "Standardized Public Debt Database",
             "Rank": "2",
             "xlsx_row_id": 10
         },
         {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "IFD",
-            "Downloads": 36,
-            "Title": "Women’s Health Survey for Jamaica: Dataset",
+            "value": 36,
+            "name": "Women’s Health Survey for Jamaica: Dataset",
             "Rank": "3",
             "xlsx_row_id": 11
         },
         {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "MIF",
-            "Downloads": 373,
-            "Title": "FINLAC Data: Datos de desempeño e inclusión financiera de América Latina y el Caribe",
+            "value": 373,
+            "name": "FINLAC Data: Datos de desempeño e inclusión financiera de América Latina y el Caribe",
             "Rank": "1",
             "xlsx_row_id": 12
         },
         {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "RES",
-            "Downloads": 4370,
-            "Title": "The Database of Political Institutions 2017 (DPI2017)",
+            "value": 4370,
+            "name": "The Database of Political Institutions 2017 (DPI2017)",
             "Rank": "1",
             "xlsx_row_id": 13
         },
         {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "RES",
-            "Downloads": 4,
-            "Title": "Database of Political Institutions 2017",
+            "value": 4,
+            "name": "Database of Political Institutions 2017",
             "Rank": "2",
             "xlsx_row_id": 14
         },
         {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "SCL",
-            "Downloads": 254,
-            "Title": "Datos asociados al \"Panorama de envejecimiento y dependencia en América Latina y el Caribe\"",
+            "value": 254,
+            "name": "Datos asociados al \"Panorama de envejecimiento y dependencia en América Latina y el Caribe\"",
             "Rank": "1",
             "xlsx_row_id": 15
         },
         {
             "json_featuretype": "NewFeatureType",
             "Department Codes": "SCL",
-            "Downloads": 109,
-            "Title": "Primary Healthcare Access, Experience, and Coordination in Latin America and the Caribbean 2013 (PRIMLAC)",
+            "value": 109,
+            "name": "Primary Healthcare Access, Experience, and Coordination in Latin America and the Caribbean 2013 (PRIMLAC)",
             "Rank": "2",
             "xlsx_row_id": 16
         }
@@ -760,1000 +760,1000 @@ var datasetsTopArrays = {
     topDivisionsAllTime: [{
             "json_featuretype": "NewFeatureType",
             "Rank   ": 1,
-            "D": 377,
-            "Division Codes": "CCB",
-            "Title": "Productivity, Technology, Innovation in the Caribbean",
+            "value": 377,
+            "division_codes": "CCB",
+            "name": "Productivity, Technology, Innovation in the Caribbean",
             "xlsx_row_id": 2
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 2,
-            "D": 295,
-            "Division Codes": "CCB",
-            "Title": "Productivity, Technology and Innovation Survey Bahamas",
+            "value": 295,
+            "division_codes": "CCB",
+            "name": "Productivity, Technology and Innovation Survey Bahamas",
             "xlsx_row_id": 3
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 3,
-            "D": 285,
-            "Division Codes": "CCB",
-            "Title": "Productivity, Technology and Innovation Survey OECS",
+            "value": 285,
+            "division_codes": "CCB",
+            "name": "Productivity, Technology and Innovation Survey OECS",
             "xlsx_row_id": 4
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 4,
-            "D": 281,
-            "Division Codes": "CCB",
-            "Title": "National Women's Health Survey for Trinidad and Tobago",
+            "value": 281,
+            "division_codes": "CCB",
+            "name": "National Women's Health Survey for Trinidad and Tobago",
             "xlsx_row_id": 5
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 5,
-            "D": 250,
-            "Division Codes": "CCB",
-            "Title": "Is there a Caribbean sclerosis?: stagnating economic growth in the Caribbean-Chapter 6, A Rough Macroeconomic Environment and a Rougher Neighbourhood, IDB 2014",
+            "value": 250,
+            "division_codes": "CCB",
+            "name": "Is there a Caribbean sclerosis?: stagnating economic growth in the Caribbean-Chapter 6, A Rough Macroeconomic Environment and a Rougher Neighbourhood, IDB 2014",
             "xlsx_row_id": 6
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 6,
-            "D": 209,
-            "Division Codes": "CCB",
-            "Title": "Is there a Caribbean sclerosis?: stagnating economic growth in the Caribbean-Chapter 3, Is the Caribbean an Outlier?, IDB 2014",
+            "value": 209,
+            "division_codes": "CCB",
+            "name": "Is there a Caribbean sclerosis?: stagnating economic growth in the Caribbean-Chapter 3, Is the Caribbean an Outlier?, IDB 2014",
             "xlsx_row_id": 7
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 7,
-            "D": 198,
-            "Division Codes": "CCB",
-            "Title": "Is there a Caribbean sclerosis?: stagnating economic growth in the Caribbean-Chapter 7, Let It Be or Do Something?, IDB 2014",
+            "value": 198,
+            "division_codes": "CCB",
+            "name": "Is there a Caribbean sclerosis?: stagnating economic growth in the Caribbean-Chapter 7, Let It Be or Do Something?, IDB 2014",
             "xlsx_row_id": 8
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 8,
-            "D": 194,
-            "Division Codes": "CCB",
-            "Title": "Productivity, Technology and Innovation Survey Guyana",
+            "value": 194,
+            "division_codes": "CCB",
+            "name": "Productivity, Technology and Innovation Survey Guyana",
             "xlsx_row_id": 9
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 9,
-            "D": 185,
-            "Division Codes": "CCB",
-            "Title": "Is there a Caribbean sclerosis?: stagnating economic growth in the Caribbean-Chapter 2, Being Small Is Tough, IDB 2014",
+            "value": 185,
+            "division_codes": "CCB",
+            "name": "Is there a Caribbean sclerosis?: stagnating economic growth in the Caribbean-Chapter 2, Being Small Is Tough, IDB 2014",
             "xlsx_row_id": 10
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 10,
-            "D": 183,
-            "Division Codes": "CCB",
-            "Title": "Is there a Caribbean sclerosis?: stagnating economic growth in the Caribbean-Chapter 8, What to Do?, IDB 2014",
+            "value": 183,
+            "division_codes": "CCB",
+            "name": "Is there a Caribbean sclerosis?: stagnating economic growth in the Caribbean-Chapter 8, What to Do?, IDB 2014",
             "xlsx_row_id": 11
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 1,
-            "D": 207,
-            "Division Codes": "CCS",
-            "Title": "Social Accounting Matrix (SAM) for Paraguay 2009",
+            "value": 207,
+            "division_codes": "CCS",
+            "name": "Social Accounting Matrix (SAM) for Paraguay 2009",
             "xlsx_row_id": 12
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 1,
-            "D": 2201,
-            "Division Codes": "CMF",
-            "Title": "Standardized Public Debt Database",
+            "value": 2201,
+            "division_codes": "CMF",
+            "name": "Standardized Public Debt Database",
             "xlsx_row_id": 13
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 2,
-            "D": 377,
-            "Division Codes": "CMF",
-            "Title": "Productivity, Technology, Innovation in the Caribbean",
+            "value": 377,
+            "division_codes": "CMF",
+            "name": "Productivity, Technology, Innovation in the Caribbean",
             "xlsx_row_id": 14
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 3,
-            "D": 314,
-            "Division Codes": "CMF",
-            "Title": "Wealth, Financial Intermediation, and Saving in Latin America and the Caribbean",
+            "value": 314,
+            "division_codes": "CMF",
+            "name": "Wealth, Financial Intermediation, and Saving in Latin America and the Caribbean",
             "xlsx_row_id": 15
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 4,
-            "D": 279,
-            "Division Codes": "CMF",
-            "Title": "Broadband Development Index",
+            "value": 279,
+            "division_codes": "CMF",
+            "name": "Broadband Development Index",
             "xlsx_row_id": 16
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 5,
-            "D": 11,
-            "Division Codes": "CMF",
-            "Title": "digiLAC: Broadband Development Index",
+            "value": 11,
+            "division_codes": "CMF",
+            "name": "digiLAC: Broadband Development Index",
             "xlsx_row_id": 17
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 1,
-            "D": 500,
-            "Division Codes": "CTI",
-            "Title": "Latin American and Caribbean Enterprise Survey",
+            "value": 500,
+            "division_codes": "CTI",
+            "name": "Latin American and Caribbean Enterprise Survey",
             "xlsx_row_id": 18
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 2,
-            "D": 291,
-            "Division Codes": "CTI",
-            "Title": "Finance And Gender Data",
+            "value": 291,
+            "division_codes": "CTI",
+            "name": "Finance And Gender Data",
             "xlsx_row_id": 19
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 3,
-            "D": 24,
-            "Division Codes": "CTI",
-            "Title": "Science, Technology, and Innovation in Latin America and the Caribbean",
+            "value": 24,
+            "division_codes": "CTI",
+            "name": "Science, Technology, and Innovation in Latin America and the Caribbean",
             "xlsx_row_id": 20
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 1,
-            "D": 397,
-            "Division Codes": "Discontinued Divisions",
-            "Title": "DataGov: Governance Indicators Database",
+            "value": 397,
+            "division_codes": "Discontinued Divisions",
+            "name": "DataGov: Governance Indicators Database",
             "xlsx_row_id": 21
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 2,
-            "D": 294,
-            "Division Codes": "Discontinued Divisions",
-            "Title": "IDB Agrimonitor: PSE Agricultural Policy Monitoring System",
+            "value": 294,
+            "division_codes": "Discontinued Divisions",
+            "name": "IDB Agrimonitor: PSE Agricultural Policy Monitoring System",
             "xlsx_row_id": 22
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 1,
-            "D": 492,
-            "Division Codes": "EDU",
-            "Title": "Learning Improvement Information Center: Regional Indicators for Household surveys, Coverage, Efficiency, Youth Inactivity and Education Levels",
+            "value": 492,
+            "division_codes": "EDU",
+            "name": "Learning Improvement Information Center: Regional Indicators for Household surveys, Coverage, Efficiency, Youth Inactivity and Education Levels",
             "xlsx_row_id": 23
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 2,
-            "D": 436,
-            "Division Codes": "EDU",
-            "Title": "Learning Improvement Information Center: Regional Indicators for Learning",
+            "value": 436,
+            "division_codes": "EDU",
+            "name": "Learning Improvement Information Center: Regional Indicators for Learning",
             "xlsx_row_id": 24
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 3,
-            "D": 376,
-            "Division Codes": "EDU",
-            "Title": "Learning Improvement Information Center: Indicators and Descriptions",
+            "value": 376,
+            "division_codes": "EDU",
+            "name": "Learning Improvement Information Center: Indicators and Descriptions",
             "xlsx_row_id": 25
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 4,
-            "D": 364,
-            "Division Codes": "EDU",
-            "Title": "Learning Improvement Information Center: Regional Indicators for Financial Resources",
+            "value": 364,
+            "division_codes": "EDU",
+            "name": "Learning Improvement Information Center: Regional Indicators for Financial Resources",
             "xlsx_row_id": 26
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 5,
-            "D": 315,
-            "Division Codes": "EDU",
-            "Title": "Learning Improvement Information Center: Regional Indicators for Physical Resources",
+            "value": 315,
+            "division_codes": "EDU",
+            "name": "Learning Improvement Information Center: Regional Indicators for Physical Resources",
             "xlsx_row_id": 27
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 6,
-            "D": 293,
-            "Division Codes": "EDU",
-            "Title": "Learning Improvement Information Center: Regional Indicators for Size",
+            "value": 293,
+            "division_codes": "EDU",
+            "name": "Learning Improvement Information Center: Regional Indicators for Size",
             "xlsx_row_id": 28
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 1,
-            "D": 757,
-            "Division Codes": "ENE",
-            "Title": "Energy Database",
+            "value": 757,
+            "division_codes": "ENE",
+            "name": "Energy Database",
             "xlsx_row_id": 29
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 2,
-            "D": 214,
-            "Division Codes": "ENE",
-            "Title": "Development Effects of Rural Electrification",
+            "value": 214,
+            "division_codes": "ENE",
+            "name": "Development Effects of Rural Electrification",
             "xlsx_row_id": 30
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 1,
-            "D": 1760,
-            "Division Codes": "FMM",
-            "Title": "Panorama de las Administraciones Públicas: ALC2017 indicadores",
+            "value": 1760,
+            "division_codes": "FMM",
+            "name": "Panorama de las Administraciones Públicas: ALC2017 indicadores",
             "xlsx_row_id": 31
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 2,
-            "D": 1537,
-            "Division Codes": "FMM",
-            "Title": "Latin America and the Caribbean Fiscal Burden Database",
+            "value": 1537,
+            "division_codes": "FMM",
+            "name": "Latin America and the Caribbean Fiscal Burden Database",
             "xlsx_row_id": 32
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 3,
-            "D": 565,
-            "Division Codes": "FMM",
-            "Title": "Structural Fiscal Balances Database for LAC: A Tool to Assess Fiscal Performance in the Region",
+            "value": 565,
+            "division_codes": "FMM",
+            "name": "Structural Fiscal Balances Database for LAC: A Tool to Assess Fiscal Performance in the Region",
             "xlsx_row_id": 33
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 4,
-            "D": 529,
-            "Division Codes": "FMM",
-            "Title": "Dataset of Housing Indicators",
+            "value": 529,
+            "division_codes": "FMM",
+            "name": "Dataset of Housing Indicators",
             "xlsx_row_id": 34
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 5,
-            "D": 453,
-            "Division Codes": "FMM",
-            "Title": "Structural Fiscal Balances Database for Latin America and the Caribbean",
+            "value": 453,
+            "division_codes": "FMM",
+            "name": "Structural Fiscal Balances Database for Latin America and the Caribbean",
             "xlsx_row_id": 35
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 6,
-            "D": 282,
-            "Division Codes": "FMM",
-            "Title": "Growing Resources for Growing Cities: Density and the Cost of Municipal Public Services in Brazil, Chile, and Mexico",
+            "value": 282,
+            "division_codes": "FMM",
+            "name": "Growing Resources for Growing Cities: Density and the Cost of Municipal Public Services in Brazil, Chile, and Mexico",
             "xlsx_row_id": 36
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 7,
-            "D": 132,
-            "Division Codes": "FMM",
-            "Title": "Panorama de las Administraciones Públicas América Latina y el Caribe 2017",
+            "value": 132,
+            "division_codes": "FMM",
+            "name": "Panorama de las Administraciones Públicas América Latina y el Caribe 2017",
             "xlsx_row_id": 37
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 1,
-            "D": 250,
-            "Division Codes": "GDI",
-            "Title": "GEPPAL: Base de datos de Género y Partidos Políticos en América Latina",
+            "value": 250,
+            "division_codes": "GDI",
+            "name": "GEPPAL: Base de datos de Género y Partidos Políticos en América Latina",
             "xlsx_row_id": 38
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 2,
-            "D": 200,
-            "Division Codes": "GDI",
-            "Title": "Data of Violence against women - Colombia - Survey answers",
+            "value": 200,
+            "division_codes": "GDI",
+            "name": "Data of Violence against women - Colombia - Survey answers",
             "xlsx_row_id": 39
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 3,
-            "D": 185,
-            "Division Codes": "GDI",
-            "Title": "Data of Violence against women - Honduras - Survey answers",
+            "value": 185,
+            "division_codes": "GDI",
+            "name": "Data of Violence against women - Honduras - Survey answers",
             "xlsx_row_id": 40
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 4,
-            "D": 182,
-            "Division Codes": "GDI",
-            "Title": "Data of Violence against women - Trinidad and Tobago - Survey answers",
+            "value": 182,
+            "division_codes": "GDI",
+            "name": "Data of Violence against women - Trinidad and Tobago - Survey answers",
             "xlsx_row_id": 41
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 5,
-            "D": 149,
-            "Division Codes": "GDI",
-            "Title": "Data of Violence against women - Trinidad and Tobago Harmonized Data",
+            "value": 149,
+            "division_codes": "GDI",
+            "name": "Data of Violence against women - Trinidad and Tobago Harmonized Data",
             "xlsx_row_id": 42
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 6,
-            "D": 141,
-            "Division Codes": "GDI",
-            "Title": "Data of violence against women - Honduras Harmonized Data",
+            "value": 141,
+            "division_codes": "GDI",
+            "name": "Data of violence against women - Honduras Harmonized Data",
             "xlsx_row_id": 43
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 1,
-            "D": 1311,
-            "Division Codes": "HUD",
-            "Title": "Emerging and Sustainable Cities Initiative: Surveys Answers",
+            "value": 1311,
+            "division_codes": "HUD",
+            "name": "Emerging and Sustainable Cities Initiative: Surveys Answers",
             "xlsx_row_id": 44
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 2,
-            "D": 991,
-            "Division Codes": "HUD",
-            "Title": "Development Connections: Unveiling the Impact of New Information Technologies - DIA 2011",
+            "value": 991,
+            "division_codes": "HUD",
+            "name": "Development Connections: Unveiling the Impact of New Information Technologies - DIA 2011",
             "xlsx_row_id": 45
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 3,
-            "D": 818,
-            "Division Codes": "HUD",
-            "Title": "Emerging and Sustainable Cities Initiative: Indicators Values",
+            "value": 818,
+            "division_codes": "HUD",
+            "name": "Emerging and Sustainable Cities Initiative: Indicators Values",
             "xlsx_row_id": 46
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 4,
-            "D": 569,
-            "Division Codes": "HUD",
-            "Title": "Emerging and Sustainable Cities Initiative: Indicators",
+            "value": 569,
+            "division_codes": "HUD",
+            "name": "Emerging and Sustainable Cities Initiative: Indicators",
             "xlsx_row_id": 47
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 5,
-            "D": 514,
-            "Division Codes": "HUD",
-            "Title": "Emerging and Sustainable Cities Initiative: Cities",
+            "value": 514,
+            "division_codes": "HUD",
+            "name": "Emerging and Sustainable Cities Initiative: Cities",
             "xlsx_row_id": 48
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 6,
-            "D": 270,
-            "Division Codes": "HUD",
-            "Title": "Emerging and Sustainable Cities Initiative: Surveys",
+            "value": 270,
+            "division_codes": "HUD",
+            "name": "Emerging and Sustainable Cities Initiative: Surveys",
             "xlsx_row_id": 49
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 7,
-            "D": 18,
-            "Division Codes": "HUD",
-            "Title": "Urban Dashboard",
+            "value": 18,
+            "division_codes": "HUD",
+            "name": "Urban Dashboard",
             "xlsx_row_id": 50
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 1,
-            "D": 597,
-            "Division Codes": "ICS",
-            "Title": "IDBA: Índice de Desarrollo de Banda Ancha",
+            "value": 597,
+            "division_codes": "ICS",
+            "name": "IDBA: Índice de Desarrollo de Banda Ancha",
             "xlsx_row_id": 51
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 2,
-            "D": 528,
-            "Division Codes": "ICS",
-            "Title": "Civil Service Development Index",
+            "value": 528,
+            "division_codes": "ICS",
+            "name": "Civil Service Development Index",
             "xlsx_row_id": 52
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 3,
-            "D": 509,
-            "Division Codes": "ICS",
-            "Title": "2016 Cybersecurity Report Data Set",
+            "value": 509,
+            "division_codes": "ICS",
+            "name": "2016 Cybersecurity Report Data Set",
             "xlsx_row_id": 53
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 4,
-            "D": 445,
-            "Division Codes": "ICS",
-            "Title": "Public Management Evaluation Tool",
+            "value": 445,
+            "division_codes": "ICS",
+            "name": "Public Management Evaluation Tool",
             "xlsx_row_id": 54
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 5,
-            "D": 395,
-            "Division Codes": "ICS",
-            "Title": "Managing for Development Results (MfDR) Indicators database",
+            "value": 395,
+            "division_codes": "ICS",
+            "name": "Managing for Development Results (MfDR) Indicators database",
             "xlsx_row_id": 55
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 6,
-            "D": 281,
-            "Division Codes": "ICS",
-            "Title": "National Women's Health Survey for Trinidad and Tobago",
+            "value": 281,
+            "division_codes": "ICS",
+            "name": "National Women's Health Survey for Trinidad and Tobago",
             "xlsx_row_id": 56
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 7,
-            "D": 271,
-            "Division Codes": "ICS",
-            "Title": "Regional System of Standardized Indicators in Peaceful Coexistence and Citizen Security",
+            "value": 271,
+            "division_codes": "ICS",
+            "name": "Regional System of Standardized Indicators in Peaceful Coexistence and Citizen Security",
             "xlsx_row_id": 57
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 8,
-            "D": 184,
-            "Division Codes": "ICS",
-            "Title": "Advanced Experiences in Cybersecurity Policies and Practices Data Set",
+            "value": 184,
+            "division_codes": "ICS",
+            "name": "Advanced Experiences in Cybersecurity Policies and Practices Data Set",
             "xlsx_row_id": 58
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 9,
-            "D": 166,
-            "Division Codes": "ICS",
-            "Title": "Invisible women: the costs of prison and indirect effects on women",
+            "value": 166,
+            "division_codes": "ICS",
+            "name": "Invisible women: the costs of prison and indirect effects on women",
             "xlsx_row_id": 59
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 10,
-            "D": 157,
-            "Division Codes": "ICS",
-            "Title": "Simplifying Lives: quality and satisfaction with public services",
+            "value": 157,
+            "division_codes": "ICS",
+            "name": "Simplifying Lives: quality and satisfaction with public services",
             "xlsx_row_id": 60
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 1,
-            "D": 497,
-            "Division Codes": "INE",
-            "Title": "Infralatam: Datos de inversión en infraestructura : América Latina y el Caribe",
+            "value": 497,
+            "division_codes": "INE",
+            "name": "Infralatam: Datos de inversión en infraestructura : América Latina y el Caribe",
             "xlsx_row_id": 61
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 2,
-            "D": 173,
-            "Division Codes": "INE",
-            "Title": "INFRALATAM",
+            "value": 173,
+            "division_codes": "INE",
+            "name": "INFRALATAM",
             "xlsx_row_id": 62
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 3,
-            "D": 157,
-            "Division Codes": "INE",
-            "Title": "Technical Efficiency of Container Ports in Latin America and the Caribbean, 1999–2009",
+            "value": 157,
+            "division_codes": "INE",
+            "name": "Technical Efficiency of Container Ports in Latin America and the Caribbean, 1999–2009",
             "xlsx_row_id": 63
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 1,
-            "D": 117,
-            "Division Codes": "INL",
-            "Title": "DATAINTAL",
+            "value": 117,
+            "division_codes": "INL",
+            "name": "DATAINTAL",
             "xlsx_row_id": 64
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 1,
-            "D": 207,
-            "Division Codes": "INT",
-            "Title": "INTradeBID",
+            "value": 207,
+            "division_codes": "INT",
+            "name": "INTradeBID",
             "xlsx_row_id": 65
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 2,
-            "D": 187,
-            "Division Codes": "INT",
-            "Title": "Informe MERCOSUR N° 20 (2014-2015)",
+            "value": 187,
+            "division_codes": "INT",
+            "name": "Informe MERCOSUR N° 20 (2014-2015)",
             "xlsx_row_id": 66
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 1,
-            "D": 1996,
-            "Division Codes": "LMK",
-            "Title": "2017 Índice de Mejores Trabajos Base de Datos",
+            "value": 1996,
+            "division_codes": "LMK",
+            "name": "2017 Índice de Mejores Trabajos Base de Datos",
             "xlsx_row_id": 67
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 2,
-            "D": 789,
-            "Division Codes": "LMK",
-            "Title": "Database of Labor Markets and Social Security Information System (SIMS)",
+            "value": 789,
+            "division_codes": "LMK",
+            "name": "Database of Labor Markets and Social Security Information System (SIMS)",
             "xlsx_row_id": 68
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 3,
-            "D": 417,
-            "Division Codes": "LMK",
-            "Title": "Harmonized LSPS (Longitudinal Social Protection Survey) Database 2016",
+            "value": 417,
+            "division_codes": "LMK",
+            "name": "Harmonized LSPS (Longitudinal Social Protection Survey) Database 2016",
             "xlsx_row_id": 69
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 4,
-            "D": 411,
-            "Division Codes": "LMK",
-            "Title": "Database and related documents LSPS (Longitudinal Social Protection Survey)",
+            "value": 411,
+            "division_codes": "LMK",
+            "name": "Database and related documents LSPS (Longitudinal Social Protection Survey)",
             "xlsx_row_id": 70
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 5,
-            "D": 253,
-            "Division Codes": "LMK",
-            "Title": "Better Pensions, Better Jobs: Towards Universal Coverage in Latin America and the Caribbean",
+            "value": 253,
+            "division_codes": "LMK",
+            "name": "Better Pensions, Better Jobs: Towards Universal Coverage in Latin America and the Caribbean",
             "xlsx_row_id": 71
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 6,
-            "D": 234,
-            "Division Codes": "LMK",
-            "Title": "Jobs For Growth",
+            "value": 234,
+            "division_codes": "LMK",
+            "name": "Jobs For Growth",
             "xlsx_row_id": 72
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 7,
-            "D": 227,
-            "Division Codes": "LMK",
-            "Title": "Labor Costs Annex 1",
+            "value": 227,
+            "division_codes": "LMK",
+            "name": "Labor Costs Annex 1",
             "xlsx_row_id": 73
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 7,
-            "D": 227,
-            "Division Codes": "LMK",
-            "Title": "Summary indicators of Employment protection Legislation (EPL) in Latin America and the Caribbean",
+            "value": 227,
+            "division_codes": "LMK",
+            "name": "Summary indicators of Employment protection Legislation (EPL) in Latin America and the Caribbean",
             "xlsx_row_id": 74
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 9,
-            "D": 82,
-            "Title": "NT Labor Costs Graphs",
+            "value": 82,
+            "name": "NT Labor Costs Graphs",
             "xlsx_row_id": 75
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 10,
-            "D": 9,
-            "Title": "Social Security Observatory of Latin America and the Caribbean",
+            "value": 9,
+            "name": "Social Security Observatory of Latin America and the Caribbean",
             "xlsx_row_id": 76
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 1,
-            "D": 1797,
-            "Division Codes": "MIF",
-            "Title": "2010 InfraScope Index for Latin America and the Caribbean",
+            "value": 1797,
+            "division_codes": "MIF",
+            "name": "2010 InfraScope Index for Latin America and the Caribbean",
             "xlsx_row_id": 77
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 2,
-            "D": 670,
-            "Division Codes": "MIF",
-            "Title": "2009-2014 InfraScope Index for Latin America and the Caribbean",
+            "value": 670,
+            "division_codes": "MIF",
+            "name": "2009-2014 InfraScope Index for Latin America and the Caribbean",
             "xlsx_row_id": 78
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 3,
-            "D": 333,
-            "Division Codes": "MIF",
-            "Title": "FINLAC Data: Datos de desempeño e inclusión financiera de América Latina y el Caribe",
+            "value": 333,
+            "division_codes": "MIF",
+            "name": "FINLAC Data: Datos de desempeño e inclusión financiera de América Latina y el Caribe",
             "xlsx_row_id": 79
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 4,
-            "D": 118,
-            "Division Codes": "MIF",
-            "Title": "Benchmarking Index 2009",
+            "value": 118,
+            "division_codes": "MIF",
+            "name": "Benchmarking Index 2009",
             "xlsx_row_id": 80
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 1,
-            "D": 9049,
-            "Division Codes": "RES",
-            "Title": "The Database of Political Institutions 2015 (DPI2015)",
+            "value": 9049,
+            "division_codes": "RES",
+            "name": "The Database of Political Institutions 2015 (DPI2015)",
             "xlsx_row_id": 81
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 2,
-            "D": 2603,
-            "Division Codes": "RES",
-            "Title": "The Database of Political Institutions 2017 (DPI2017)",
+            "value": 2603,
+            "division_codes": "RES",
+            "name": "The Database of Political Institutions 2017 (DPI2017)",
             "xlsx_row_id": 82
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 3,
-            "D": 1324,
-            "Division Codes": "RES",
-            "Title": "Latin Macro Watch: Annual",
+            "value": 1324,
+            "division_codes": "RES",
+            "name": "Latin Macro Watch: Annual",
             "xlsx_row_id": 83
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 4,
-            "D": 1247,
-            "Division Codes": "RES",
-            "Title": "Database of Political Institutions 2015",
+            "value": 1247,
+            "division_codes": "RES",
+            "name": "Database of Political Institutions 2015",
             "xlsx_row_id": 84
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 5,
-            "D": 817,
-            "Division Codes": "RES",
-            "Title": "Latin Macro Watch: Quartely",
+            "value": 817,
+            "division_codes": "RES",
+            "name": "Latin Macro Watch: Quartely",
             "xlsx_row_id": 85
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 6,
-            "D": 750,
-            "Division Codes": "RES",
-            "Title": "Priorities for Productivity and Income (PPIs) Database",
+            "value": 750,
+            "division_codes": "RES",
+            "name": "Priorities for Productivity and Income (PPIs) Database",
             "xlsx_row_id": 86
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 7,
-            "D": 743,
-            "Division Codes": "RES",
-            "Title": "Database for Revelation of Expectations in Latin America (REVELA)",
+            "value": 743,
+            "division_codes": "RES",
+            "name": "Database for Revelation of Expectations in Latin America (REVELA)",
             "xlsx_row_id": 87
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 8,
-            "D": 709,
-            "Division Codes": "RES",
-            "Title": "Productivity and Factor Accumulation in Latin America and the Caribbean: A Database",
+            "value": 709,
+            "division_codes": "RES",
+            "name": "Productivity and Factor Accumulation in Latin America and the Caribbean: A Database",
             "xlsx_row_id": 88
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 9,
-            "D": 663,
-            "Division Codes": "RES",
-            "Title": "GVAR Dataset",
+            "value": 663,
+            "division_codes": "RES",
+            "name": "GVAR Dataset",
             "xlsx_row_id": 89
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 10,
-            "D": 582,
-            "Division Codes": "RES",
-            "Title": "Political Institutions, State Capabilities, and Public Policy: An International Dataset (2014 Update)",
+            "value": 582,
+            "division_codes": "RES",
+            "name": "Political Institutions, State Capabilities, and Public Policy: An International Dataset (2014 Update)",
             "xlsx_row_id": 90
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 1,
-            "D": 497,
-            "Division Codes": "RND",
-            "Title": "IDB Agrimonitor - PSE Agricultural Policy Monitoring System (data)",
+            "value": 497,
+            "division_codes": "RND",
+            "name": "IDB Agrimonitor - PSE Agricultural Policy Monitoring System (data)",
             "xlsx_row_id": 91
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 2,
-            "D": 184,
-            "Division Codes": "RND",
-            "Title": "Risk Monitor",
+            "value": 184,
+            "division_codes": "RND",
+            "name": "Risk Monitor",
             "xlsx_row_id": 92
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 1,
-            "D": 1035,
-            "Division Codes": "SCL",
-            "Title": "Social Pulse in Latin America and the Caribbean 2016 - Statistical Annex",
+            "value": 1035,
+            "division_codes": "SCL",
+            "name": "Social Pulse in Latin America and the Caribbean 2016 - Statistical Annex",
             "xlsx_row_id": 93
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 2,
-            "D": 905,
-            "Division Codes": "SCL",
-            "Title": "Pulso Social: Anexo Estadístico 2017",
+            "value": 905,
+            "division_codes": "SCL",
+            "name": "Pulso Social: Anexo Estadístico 2017",
             "xlsx_row_id": 94
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 3,
-            "D": 148,
-            "Division Codes": "SCL",
-            "Title": "Sociómetro",
+            "value": 148,
+            "division_codes": "SCL",
+            "name": "Sociómetro",
             "xlsx_row_id": 95
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 1,
-            "D": 251,
-            "Division Codes": "SPD",
-            "Title": "IDB IATI Dataset - Geolocation",
+            "value": 251,
+            "division_codes": "SPD",
+            "name": "IDB IATI Dataset - Geolocation",
             "xlsx_row_id": 96
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 2,
-            "D": 246,
-            "Division Codes": "SPD",
-            "Title": "IDB IATI Dataset - General Project Details",
+            "value": 246,
+            "division_codes": "SPD",
+            "name": "IDB IATI Dataset - General Project Details",
             "xlsx_row_id": 97
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 3,
-            "D": 229,
-            "Division Codes": "SPD",
-            "Title": "IDB IATI Dataset - Transactions",
+            "value": 229,
+            "division_codes": "SPD",
+            "name": "IDB IATI Dataset - Transactions",
             "xlsx_row_id": 98
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 4,
-            "D": 223,
-            "Division Codes": "SPD",
-            "Title": "IDB IATI Dataset - Documents",
+            "value": 223,
+            "division_codes": "SPD",
+            "name": "IDB IATI Dataset - Documents",
             "xlsx_row_id": 99
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 1,
-            "D": 235,
-            "Division Codes": "SPH",
-            "Title": "Datos asociados al \"Panorama de envejecimiento y dependencia en América Latina y el Caribe\"",
+            "value": 235,
+            "division_codes": "SPH",
+            "name": "Datos asociados al \"Panorama de envejecimiento y dependencia en América Latina y el Caribe\"",
             "xlsx_row_id": 100
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 2,
-            "D": 233,
-            "Division Codes": "SPH",
-            "Title": "Baseline Salud Mesoamérica México: Encuesta de Establecimientos de Salud",
+            "value": 233,
+            "division_codes": "SPH",
+            "name": "Baseline Salud Mesoamérica México: Encuesta de Establecimientos de Salud",
             "xlsx_row_id": 101
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 3,
-            "D": 229,
-            "Division Codes": "SPH",
-            "Title": "Bogota Measurements - Concurrent Validity Bayley-Short Tests",
+            "value": 229,
+            "division_codes": "SPH",
+            "name": "Bogota Measurements - Concurrent Validity Bayley-Short Tests",
             "xlsx_row_id": 102
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 4,
-            "D": 203,
-            "Division Codes": "SPH",
-            "Title": "Setting Targets for Results: Target Setting Tool",
+            "value": 203,
+            "division_codes": "SPH",
+            "name": "Setting Targets for Results: Target Setting Tool",
             "xlsx_row_id": 103
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 5,
-            "D": 161,
-            "Division Codes": "SPH",
-            "Title": "A Snapshot on the Quality of Seven Home Visit Parenting Programs in Latin America and the Caribbean",
+            "value": 161,
+            "division_codes": "SPH",
+            "name": "A Snapshot on the Quality of Seven Home Visit Parenting Programs in Latin America and the Caribbean",
             "xlsx_row_id": 104
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 6,
-            "D": 158,
-            "Division Codes": "SPH",
-            "Title": "Baseline Salud Mesoamérica Honduras: Encuesta de Establecimientos de Salud",
+            "value": 158,
+            "division_codes": "SPH",
+            "name": "Baseline Salud Mesoamérica Honduras: Encuesta de Establecimientos de Salud",
             "xlsx_row_id": 105
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 7,
-            "D": 157,
-            "Division Codes": "SPH",
-            "Title": "Baseline Salud Mesoamérica Panamá: Encuesta de Establecimientos de Salud",
+            "value": 157,
+            "division_codes": "SPH",
+            "name": "Baseline Salud Mesoamérica Panamá: Encuesta de Establecimientos de Salud",
             "xlsx_row_id": 106
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 8,
-            "D": 154,
-            "Division Codes": "SPH",
-            "Title": "Baseline Salud Mesoamérica Honduras: Encuesta de Hogares",
+            "value": 154,
+            "division_codes": "SPH",
+            "name": "Baseline Salud Mesoamérica Honduras: Encuesta de Hogares",
             "xlsx_row_id": 107
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 9,
-            "D": 131,
-            "Division Codes": "SPH",
-            "Title": "Baseline Salud Mesoamérica Belize: Health Facility Survey",
+            "value": 131,
+            "division_codes": "SPH",
+            "name": "Baseline Salud Mesoamérica Belize: Health Facility Survey",
             "xlsx_row_id": 108
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 10,
-            "D": 128,
-            "Division Codes": "SPH",
-            "Title": "Baseline Salud Mesoamérica Guatemala: Encuesta de Hogares",
+            "value": 128,
+            "division_codes": "SPH",
+            "name": "Baseline Salud Mesoamérica Guatemala: Encuesta de Hogares",
             "xlsx_row_id": 109
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 1,
-            "D": 4478,
-            "Division Codes": "TSP",
-            "Title": "Freight Transport and Logistics Statistics Yearbook",
+            "value": 4478,
+            "division_codes": "TSP",
+            "name": "Freight Transport and Logistics Statistics Yearbook",
             "xlsx_row_id": 110
         },
         {
             "json_featuretype": "NewFeatureType",
             "Rank   ": 1,
-            "D": 110,
-            "Division Codes": "WSA",
-            "Title": "Modelo para la estimación de costos de la gestión de residuos reciclables con inclusión de recicladores",
+            "value": 110,
+            "division_codes": "WSA",
+            "name": "Modelo para la estimación de costos de la gestión de residuos reciclables con inclusión de recicladores",
             "xlsx_row_id": 111
         }
     ],
     topDivisions2018: [
         {
             "json_featuretype": "NewFeatureType",
-            "Downloads": 289,
-            "Division Codes": "CCB",
-            "Title": "National Women's Health Survey for Trinidad and Tobago",
+            "value": 289,
+            "division_codes": "CCB",
+            "name": "National Women's Health Survey for Trinidad and Tobago",
             "Rank": "1",
             "xlsx_row_id": 2
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Downloads": 166,
-            "Division Codes": "CCB",
-            "Title": "Suriname Survey of Living Conditions: 2016-2017",
+            "value": 166,
+            "division_codes": "CCB",
+            "name": "Suriname Survey of Living Conditions: 2016-2017",
             "Rank": "2",
             "xlsx_row_id": 3
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Downloads": 79,
-            "Division Codes": "CCB",
-            "Title": "Barbados Survey of Living Conditions: 2016",
+            "value": 79,
+            "division_codes": "CCB",
+            "name": "Barbados Survey of Living Conditions: 2016",
             "Rank": "3",
             "xlsx_row_id": 4
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Downloads": 62,
-            "Division Codes": "CCB",
-            "Title": "Guyana Labor Force Survey: Fourth Quarter 2017",
+            "value": 62,
+            "division_codes": "CCB",
+            "name": "Guyana Labor Force Survey: Fourth Quarter 2017",
             "Rank": "4",
             "xlsx_row_id": 5
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Downloads": 57,
-            "Division Codes": "CCB",
-            "Title": "Guyana Labor Force Survey: Third Quarter 2017",
+            "value": 57,
+            "division_codes": "CCB",
+            "name": "Guyana Labor Force Survey: Third Quarter 2017",
             "Rank": "5",
             "xlsx_row_id": 6
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Downloads": 36,
-            "Division Codes": "CCB",
-            "Title": "Women’s Health Survey for Jamaica: Dataset",
+            "value": 36,
+            "division_codes": "CCB",
+            "name": "Women’s Health Survey for Jamaica: Dataset",
             "Rank": "6",
             "xlsx_row_id": 7
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Downloads": 180,
-            "Division Codes": "CMF",
-            "Title": "Standardized Public Debt Database",
+            "value": 180,
+            "division_codes": "CMF",
+            "name": "Standardized Public Debt Database",
             "Rank": "1",
             "xlsx_row_id": 8
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Downloads": 373,
-            "Division Codes": "Discontinued Divisions",
-            "Title": "FINLAC Data: Datos de desempeño e inclusión financiera de América Latina y el Caribe",
+            "value": 373,
+            "division_codes": "Discontinued Divisions",
+            "name": "FINLAC Data: Datos de desempeño e inclusión financiera de América Latina y el Caribe",
             "Rank": "1",
             "xlsx_row_id": 9
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Downloads": 289,
-            "Division Codes": "ICS",
-            "Title": "National Women's Health Survey for Trinidad and Tobago",
+            "value": 289,
+            "division_codes": "ICS",
+            "name": "National Women's Health Survey for Trinidad and Tobago",
             "Rank": "1",
             "xlsx_row_id": 10
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Downloads": 36,
-            "Division Codes": "ICS",
-            "Title": "Women’s Health Survey for Jamaica: Dataset",
+            "value": 36,
+            "division_codes": "ICS",
+            "name": "Women’s Health Survey for Jamaica: Dataset",
             "Rank": "2",
             "xlsx_row_id": 11
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Downloads": 373,
-            "Division Codes": "MIF",
-            "Title": "FINLAC Data: Datos de desempeño e inclusión financiera de América Latina y el Caribe",
+            "value": 373,
+            "division_codes": "MIF",
+            "name": "FINLAC Data: Datos de desempeño e inclusión financiera de América Latina y el Caribe",
             "Rank": "1",
             "xlsx_row_id": 12
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Downloads": 4370,
-            "Division Codes": "RES",
-            "Title": "The Database of Political Institutions 2017 (DPI2017)",
+            "value": 4370,
+            "division_codes": "RES",
+            "name": "The Database of Political Institutions 2017 (DPI2017)",
             "Rank": "1",
             "xlsx_row_id": 13
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Downloads": 4,
-            "Division Codes": "RES",
-            "Title": "Database of Political Institutions 2017",
+            "value": 4,
+            "division_codes": "RES",
+            "name": "Database of Political Institutions 2017",
             "Rank": "2",
             "xlsx_row_id": 14
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Downloads": 254,
-            "Division Codes": "SPH",
-            "Title": "Datos asociados al \"Panorama de envejecimiento y dependencia en América Latina y el Caribe\"",
+            "value": 254,
+            "division_codes": "SPH",
+            "name": "Datos asociados al \"Panorama de envejecimiento y dependencia en América Latina y el Caribe\"",
             "Rank": "1",
             "xlsx_row_id": 15
         },
         {
             "json_featuretype": "NewFeatureType",
-            "Downloads": 109,
-            "Division Codes": "SPH",
-            "Title": "Primary Healthcare Access, Experience, and Coordination in Latin America and the Caribbean 2013 (PRIMLAC)",
+            "value": 109,
+            "division_codes": "SPH",
+            "name": "Primary Healthcare Access, Experience, and Coordination in Latin America and the Caribbean 2013 (PRIMLAC)",
             "Rank": "2",
             "xlsx_row_id": 16
         }
@@ -1761,70 +1761,70 @@ var datasetsTopArrays = {
     topIDBAllTime: [{
             "Department": "Department of Research and Chief Economist",
             "value": 9109,
-            "Rank of Downloads by Department": 1,
+            "Rank of value by Department": 1,
             "name": "The Database of Political Institutions 2015 (DPI2015)",
             "Publication Date": "01/29/2016"
         },
         {
             "Department": "Department of Research and Chief Economist",
             "value": 4564,
-            "Rank of Downloads by Department": 2,
+            "Rank of value by Department": 2,
             "name": "The Database of Political Institutions 2017 (DPI2017)",
             "Publication Date": "02/01/2018"
         },
         {
             "Department": "Transport Division",
             "value": 4522,
-            "Rank of Downloads by Department": 3,
+            "Rank of value by Department": 3,
             "name": "Freight Transport and Logistics Statistics Yearbook",
             "Publication Date": "04/10/2015"
         },
         {
             "Department": "Labor Markets Division",
             "value": 2002,
-            "Rank of Downloads by Department": 4,
+            "Rank of value by Department": 4,
             "name": "2017 Índice de Mejores Trabajos Base de Datos",
             "Publication Date": "10/01/2017"
         },
         {
             "Department": "Office of the Multilateral Investment Fund",
             "value": 1845,
-            "Rank of Downloads by Department": 5,
+            "Rank of value by Department": 5,
             "name": "2010 InfraScope Index for Latin America and the Caribbean",
             "Publication Date": "11/08/2010"
         },
         {
             "Department": "Fiscal and Municipal Management Division",
             "value": 1769,
-            "Rank of Downloads by Department": 6,
+            "Rank of value by Department": 6,
             "name": "Panorama de las Administraciones Públicas: ALC2017 indicadores",
             "Publication Date": "12/06/2016"
         },
         {
             "Department": "Department of Research and Chief Economist",
             "value": 1327,
-            "Rank of Downloads by Department": 7,
+            "Rank of value by Department": 7,
             "name": "Latin Macro Watch: Annual",
             "Publication Date": "11/15/2017"
         },
         {
             "Department": "Capital Markets and Financial Institutions Division",
             "value": 1317,
-            "Rank of Downloads by Department": 8,
+            "Rank of value by Department": 8,
             "name": "Standardized Public Debt Database",
             "Publication Date": "07/12/2018"
         },
         {
             "Department": "Housing and Urban Development Division (VPS/CSD/HUD)",
             "value": 1312,
-            "Rank of Downloads by Department": 9,
+            "Rank of value by Department": 9,
             "name": "Emerging and Sustainable Cities Initiative: Surveys Answers",
             "Publication Date": "04/27/2015"
         },
         {
             "Department": "Fiscal Management Division",
             "value": 1296,
-            "Rank of Downloads by Department": 10,
+            "Rank of value by Department": 10,
             "name": "Latin America and the Caribbean Fiscal Burden Database",
             "Publication Date": "11/01/2017"
         }

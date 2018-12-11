@@ -1,5 +1,6 @@
 function drawDataTrendChart(dataDataTrend) {
-    dataDataTrend = dataDataTrend.sort(function (a, b) {
+    d3.select("#data-trend svg").remove();
+    dataDataTrend = dataDataTrend.slice(0, 10).sort(function (a, b) {
         return d3.ascending(a.value, b.value);
     })
     var marginDataTrend = {
@@ -15,13 +16,9 @@ function drawDataTrendChart(dataDataTrend) {
 
     var svgDataTrend = d3.select("#data-trend")
         .append("svg")
-        //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
         .attr("viewBox", "-290 -28 800 550")
         .append("g")
-        // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
-
-        //class to make it responsive
         .classed("svg-content-responsive", true);
 
     var xDataTrend = d3.scaleLinear()
@@ -31,13 +28,12 @@ function drawDataTrendChart(dataDataTrend) {
         })]);
 
     var yDataTrend = d3.scaleBand()
-        .rangeRound([heightDataTrend, 0], .1)
+        .rangeRound([50*dataDataTrend.length, 0], .1)
         .domain(dataDataTrend.map(function (d) {
             return d.name;
         }));
 
     var yAxisDataTrend = d3.axisLeft(yDataTrend)
-        //no tick marks
         .tickPadding(200)
         .tickSize(0);
 
@@ -58,7 +54,7 @@ function drawDataTrendChart(dataDataTrend) {
             return yDataTrend(d.name);
         })
         .attr("fill", "#d3d3d3")
-        .attr("height", yDataTrend.bandwidth() - 2)
+        .attr("height", 45)
         .attr("x", 8)
         .attr("width", function (d) {
             return xDataTrend(d.value);
@@ -66,11 +62,9 @@ function drawDataTrendChart(dataDataTrend) {
 
     barsDataTrend.append("text")
         .attr("class", "label")
-        //y position of the label is halfway down the bar
         .attr("y", function (d) {
-            return yDataTrend(d.name) + yDataTrend.bandwidth() / 2 + 4;
+            return yDataTrend(d.name) + 45 / 2 + 4;
         })
-        //x position is 3 pixels to the right of the bar
         .attr("x", function (d) {
             return xDataTrend(d.value) + 10;
         })
@@ -90,36 +84,6 @@ function drawDataTrendChart(dataDataTrend) {
         .style("font-family", "Gotham-Medium")
         .style("font-size", "13px")
         .call(wrapData);
-}
-
-function wrapData(text) {
-    text.each(function () {
-        var text = d3.select(this);
-        var words = text.text().split(/\s+/).reverse();
-        var lineHeight = 17;
-        var width = parseFloat(text.attr('width'));
-        var y = parseFloat(text.attr('y'));
-        var x = text.attr('x');
-        var anchor = text.attr('text-anchor');
-
-        var tspan = text.text(null).append('tspan').attr('x', x).attr('y', y).attr('text-anchor', anchor);
-        var lineNumber = 0;
-        var line = [];
-        var word = words.pop();
-
-        while (word) {
-            line.push(word);
-            tspan.text(line.join(' '));
-            if (tspan.node().getComputedTextLength() > width) {
-                lineNumber += 1;
-                line.pop();
-                tspan.text(line.join(' '));
-                line = [word];
-                tspan = text.append('tspan').attr('x', x).attr('y', y + lineNumber * lineHeight).attr('anchor', anchor).text(word);
-            }
-            word = words.pop();
-        }
-    });
 }
 
 function drawTreeDataset(dataTree, filtertype, typeload) {
@@ -187,181 +151,10 @@ function drawTreeDataset(dataTree, filtertype, typeload) {
 
 }
 
-function createChartTimeLineDataSet(data) {
-    d3.select("#timeline-dataset svg").remove();
-    var margin = {
-            top: 20,
-            right: 20,
-            bottom: 30,
-            left: 50
-        },
-        width = 580 - margin.left - margin.right,
-        height = 220 - margin.top - margin.bottom;
-
-    // parse the date / time
-    var parseTime = d3.timeParse("%d-%b-%y");
-
-    // set the ranges
-    var x = d3.scaleTime().range([0, width]);
-    var y = d3.scaleLinear().range([height, 0]);
-
-    // define the area
-    var area = d3.area()
-        .x(function (d) {
-            return x(d.date);
-        })
-        .y0(height)
-        .y1(function (d) {
-            return y(d.close);
-        });
-
-    // define the line
-    var valueline = d3.line()
-        .x(function (d) {
-            return x(d.date);
-        })
-        .y(function (d) {
-            return y(d.close);
-        });
-
-    // append the svg obgect to the body of the page
-    // appends a 'group' element to 'svg'
-    // moves the 'group' element to the top left margin
-    var svg = d3.select("#timeline-dataset").append("svg")
-        //responsive SVG needs these 2 attributes and no width and height attr
-        .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-60 -28 600 300")
-        .append("g")
-        // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
-
-        //class to make it responsive
-        .classed("svg-content-responsive", true);
-    var totalAmount = 0;
-    // format the data
-    data.forEach(function (d) {
-        d.date = parseTime(d.date);
-    });
-
-    data = data.sort(sortByDateAscending);
-
-    for (var i = 0; i < data.length; i++) {
-        data[i].close = +data[i].close;
-        totalAmount += data[i].close;
-        if (i > 0) {
-            data[i]['CumulativeAmount'] = data[i].close + data[i - 1].close;
-        } else {
-            data[i]['CumulativeAmount'] = data[i].close;
-        }
-    }
-    //now calculate cumulative % from the cumulative amounts & total, round %
-    for (var i = 0; i < data.length; i++) {
-        data[i]['CumulativePercentage'] = (data[i]['CumulativeAmount'] / totalAmount);
-        data[i]['CumulativePercentage'] = parseFloat(data[i]['CumulativePercentage'].toFixed(2));
-    }
-
-    var lineGen = d3.line()
-        .x(function (d) {
-            return x(d.date);
-        })
-        .y(function (d) {
-            return y(d.CumulativeAmount);
-        });
-
-    // scale the range of the data
-    x.domain(d3.extent(data, function (d) {
-        return d.date;
-    }));
-    y.domain([0, d3.max(data, function (d) {
-        return d.close;
-    })]);
-
-    // add the area
-    svg.append("path")
-        .data([data])
-        .attr("class", "area")
-        .attr("d", area);
-
-    // add the valueline path.
-    svg.append("path")
-        .data([data])
-        .attr("class", "line")
-        .attr("d", valueline);
-
-    //calculate path do not delete it
-    // svg.append('svg:path')
-    //     .attr('d', lineGen(data))
-    //     .attr('stroke', '#c3c3c3')
-    //     .attr("stroke-dasharray", "4")
-    //     .attr('stroke-width', 2)
-    //     .attr('fill', 'none');
-
-    // add the X Axis
-    svg.append("g")
-        .attr("transform", "translate(0," + height + ")")
-        .attr("class", "x-axis")
-        .style('stroke-width', '3px')
-        .style("font-family", "Gotham-Book")
-        .style("font-size", "13px")
-        .call(d3.axisBottom(x)
-            .ticks(d3.timeDay.filter(function (d) {
-                return $("#dataSet2018").prop("checked") ? d3.timeDay.count(0, d) % 60 === 0 : d3.timeDay.count(0, d) % 60 === 0
-            }))
-            .ticks(10)
-            .tickSizeOuter(0)
-        )
-
-    // add the Y Axis
-    svg.append("g")
-        .attr("class", "y-axis")
-        .style("font-family", "Gotham-Book")
-        .style("font-size", "13px")
-        .call(d3.axisLeft(y)
-            .ticks(3)
-            .tickFormat(function (x) {
-                var value = setSettingsNumber(x);
-                return value.valueNumber + value.suffixNumber;
-            }));
-}
-
-
-function setDatasetsGauge() {
-    var dataGaugeDatasets = {
-        "code": {
-            "total": 100, //getPercentageTotal(datasetsAllTotalGlobal),
-            "allocated": datasetsAllTotalGlobal
-        },
-        "pageview": {
-            "total": 100, //getPercentageTotal(datasetsAllDownloads),
-            "allocated": datasetsAllDownloads
-        },
-        "lac": {
-            "total": 100,
-            "allocated": datasetsAllDownloadsLac
-        }
-    }
-    return dataGaugeDatasets;
-}
-
-function setDatasetsGauge2018() {
-    var dataGaugeDatasets2018 = {
-        "code": {
-            "total": getPercentageTotal(datasets2018TotalGlobal),
-            "allocated": datasets2018TotalGlobal
-        },
-        "pageview": {
-            "total": getPercentageTotal(datasets2018Downloads),
-            "allocated": datasets2018Downloads
-        },
-        "lac": {
-            "total": 100,
-            "allocated": datasets2018DownloadsLac
-        }
-    }
-    return dataGaugeDatasets2018;
-}
-
-
 function drawGaugeDatasetChart(dataGauge) {
+    d3.select("#gauge-datasets svg").remove();
+    d3.select("#gauge-download-d svg").remove();
+    d3.select("#gauge-lac-d svg").remove();
     var width = 150,
         height = 150,
         progress = 0,
@@ -469,6 +262,7 @@ function drawGaugeDatasetChart(dataGauge) {
 }
 
 function drawPlotChartDataset(data) {
+    d3.select("#dataset-publications-plot svg").remove();
     var margin = {
         top: 30,
         right: 50,
@@ -623,30 +417,180 @@ function drawPlotChartDataset(data) {
         .on("mouseover", mouseOver)
         .on("mouseout", mouseOut);
 }
-function removeDatasetsSvg() {
+
+function createChartTimeLineDataSet(data) {
     d3.select("#timeline-dataset svg").remove();
-    d3.select("#data-trend svg").remove();
-    d3.select("#dataset-publications-plot svg").remove();
-    d3.select("#downloads-dataset svg").remove();
+    var margin = {
+            top: 20,
+            right: 20,
+            bottom: 30,
+            left: 50
+        },
+        width = 580 - margin.left - margin.right,
+        height = 220 - margin.top - margin.bottom;
+
+    // parse the date / time
+    var parseTime = d3.timeParse("%d-%b-%y");
+
+    // set the ranges
+    var x = d3.scaleTime().range([0, width]);
+    var y = d3.scaleLinear().range([height, 0]);
+
+    // define the area
+    var area = d3.area()
+        .x(function (d) {
+            return x(d.date);
+        })
+        .y0(height)
+        .y1(function (d) {
+            return y(d.close);
+        });
+
+    // define the line
+    var valueline = d3.line()
+        .x(function (d) {
+            return x(d.date);
+        })
+        .y(function (d) {
+            return y(d.close);
+        });
+
+    // append the svg obgect to the body of the page
+    // appends a 'group' element to 'svg'
+    // moves the 'group' element to the top left margin
+    var svg = d3.select("#timeline-dataset").append("svg")
+        //responsive SVG needs these 2 attributes and no width and height attr
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-60 -28 600 300")
+        .append("g")
+        // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
+
+        //class to make it responsive
+        .classed("svg-content-responsive", true);
+    var totalAmount = 0;
+    // format the data
+    data.forEach(function (d) {
+        d.date = parseTime(d.date);
+    });
+
+    data = data.sort(sortByDateAscending);
+
+    for (var i = 0; i < data.length; i++) {
+        data[i].close = +data[i].close;
+        totalAmount += data[i].close;
+        if (i > 0) {
+            data[i]['CumulativeAmount'] = data[i].close + data[i - 1].close;
+        } else {
+            data[i]['CumulativeAmount'] = data[i].close;
+        }
+    }
+    //now calculate cumulative % from the cumulative amounts & total, round %
+    for (var i = 0; i < data.length; i++) {
+        data[i]['CumulativePercentage'] = (data[i]['CumulativeAmount'] / totalAmount);
+        data[i]['CumulativePercentage'] = parseFloat(data[i]['CumulativePercentage'].toFixed(2));
+    }
+
+    var lineGen = d3.line()
+        .x(function (d) {
+            return x(d.date);
+        })
+        .y(function (d) {
+            return y(d.CumulativeAmount);
+        });
+
+    // scale the range of the data
+    x.domain(d3.extent(data, function (d) {
+        return d.date;
+    }));
+    y.domain([0, d3.max(data, function (d) {
+        return d.close;
+    })]);
+
+    // add the area
+    svg.append("path")
+        .data([data])
+        .attr("class", "area")
+        .attr("d", area);
+
+    // add the valueline path.
+    svg.append("path")
+        .data([data])
+        .attr("class", "line")
+        .attr("d", valueline);
+
+    //calculate path do not delete it
+    // svg.append('svg:path')
+    //     .attr('d', lineGen(data))
+    //     .attr('stroke', '#c3c3c3')
+    //     .attr("stroke-dasharray", "4")
+    //     .attr('stroke-width', 2)
+    //     .attr('fill', 'none');
+
+    // add the X Axis
+    svg.append("g")
+        .attr("transform", "translate(0," + height + ")")
+        .attr("class", "x-axis")
+        .style('stroke-width', '3px')
+        .style("font-family", "Gotham-Book")
+        .style("font-size", "13px")
+        .call(d3.axisBottom(x)
+            .ticks(d3.timeDay.filter(function (d) {
+                return $("#dataSet2018").prop("checked") ? d3.timeDay.count(0, d) % 60 === 0 : d3.timeDay.count(0, d) % 60 === 0
+            }))
+            .ticks(10)
+            .tickSizeOuter(0)
+        )
+
+    // add the Y Axis
+    svg.append("g")
+        .attr("class", "y-axis")
+        .style("font-family", "Gotham-Book")
+        .style("font-size", "13px")
+        .call(d3.axisLeft(y)
+            .ticks(3)
+            .tickFormat(function (x) {
+                var value = setSettingsNumber(x);
+                return value.valueNumber + value.suffixNumber;
+            }));
 }
 
-function removeDatasetsSvgAll() {
-    d3.select("#timeline-dataset svg").remove();
-    d3.select("#data-trend svg").remove();
-    d3.select("#dataset-publications-plot svg").remove();
-    d3.select("#downloads-dataset svg").remove();
+function setDatasetsGauge() {
+    var dataGaugeDatasets = {
+        "code": {
+            "total": 100, //getPercentageTotal(datasetsAllTotalGlobal),
+            "allocated": datasetsAllTotalGlobal
+        },
+        "pageview": {
+            "total": 100, //getPercentageTotal(datasetsAllDownloads),
+            "allocated": datasetsAllDownloads
+        },
+        "lac": {
+            "total": 100,
+            "allocated": datasetsAllDownloadsLac
+        }
+    }
+    return dataGaugeDatasets;
 }
 
-function removeDatasetsGauges() {
-    d3.select("#gauge-datasets svg").remove();
-    d3.select("#gauge-download-d svg").remove();
-    d3.select("#gauge-lac-d svg").remove();
+function setDatasetsGauge2018() {
+    var dataGaugeDatasets2018 = {
+        "code": {
+            "total": getPercentageTotal(datasets2018TotalGlobal),
+            "allocated": datasets2018TotalGlobal
+        },
+        "pageview": {
+            "total": getPercentageTotal(datasets2018Downloads),
+            "allocated": datasets2018Downloads
+        },
+        "lac": {
+            "total": 100,
+            "allocated": datasets2018DownloadsLac
+        }
+    }
+    return dataGaugeDatasets2018;
 }
-$("input[name*='dataSetTrend']").click(function () {
 
-    removeDatasetsSvg();
-    removeDatasetsGauges();
-
+$("input[name*='dataSetTrend']").click(function () {   
     if ($("select[id*='divisionSelect']").val() != "IDB") {
         if ($("select[id*='divisionSelect']").val().length > 0) {
 
@@ -660,6 +604,17 @@ $("input[name*='dataSetTrend']").click(function () {
                 drawTreeDataset(jsonDataSetTree, "AllTheTime");
                 dataDatasets = setDatasetsGauge();
                 drawGaugeDatasetChart(dataDatasets);
+
+                //top 10
+                var ObjectDataTrendDataSet = $.extend(true, [], datasetsTopArrays.topDivisionsAllTime);
+                jsonDataTrendDataSet = ObjectDataTrendDataSet.filter(function (dataT) {
+                    return dataT.division_codes == $("select[id*='divisionSelect']").val()
+                });
+                if(jsonDataTrendDataSet.length>0){
+                    drawDataTrendChart(jsonDataTrendDataSet);
+                }else{
+                    drawDataTrendChart([]);
+                }
             } else {
                 //treemap
                 jsonDataSetTree = datasetsDownloadSource.downloadSourceDivisions.filter(function(dataT) {
@@ -668,6 +623,16 @@ $("input[name*='dataSetTrend']").click(function () {
                 drawTreeDataset(jsonDataSetTree, "2018");
                 dataDatasets2018 = setDatasetsGauge2018();
                 drawGaugeDatasetChart(dataDatasets2018);
+                //top 10
+                var ObjectDataTrendDataSet = $.extend(true, [], datasetsTopArrays.topDivisions2018);
+                jsonDataTrendDataSet = ObjectDataTrendDataSet.filter(function (dataT) {
+                    return dataT.division_codes == $("select[id*='divisionSelect']").val()
+                });
+                if(jsonDataTrendDataSet.length>0){
+                    drawDataTrendChart(jsonDataTrendDataSet);
+                }else{
+                    drawDataTrendChart([]);
+                }
             }
 
             // //linechart
@@ -694,7 +659,6 @@ $("input[name*='dataSetTrend']").click(function () {
             dataDatasets2018 = setDatasetsGauge2018();
             drawGaugeDatasetChart(dataDatasets2018);
         }
-
         //linechart
         // var ObjectDataSetLineChart = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
         // createChartTimeLineDataSet(ObjectDataSetLineChart);
@@ -703,6 +667,35 @@ $("input[name*='dataSetTrend']").click(function () {
     }
 });
 
+function wrapData(text) {
+    text.each(function () {
+        var text = d3.select(this);
+        var words = text.text().split(/\s+/).reverse();
+        var lineHeight = 17;
+        var width = parseFloat(text.attr('width'));
+        var y = parseFloat(text.attr('y'));
+        var x = text.attr('x');
+        var anchor = text.attr('text-anchor');
+
+        var tspan = text.text(null).append('tspan').attr('x', x).attr('y', y).attr('text-anchor', anchor);
+        var lineNumber = 0;
+        var line = [];
+        var word = words.pop();
+
+        while (word) {
+            line.push(word);
+            tspan.text(line.join(' '));
+            if (tspan.node().getComputedTextLength() > width) {
+                lineNumber += 1;
+                line.pop();
+                tspan.text(line.join(' '));
+                line = [word];
+                tspan = text.append('tspan').attr('x', x).attr('y', y + lineNumber * lineHeight).attr('anchor', anchor).text(word);
+            }
+            word = words.pop();
+        }
+    });
+}
 //click radiobutton drawChart(id del click)
 // $("input[name*='dataSetTrend']").click(function () {
 //     removeDataSetsSvg();
@@ -740,10 +733,8 @@ $("input[name*='dataSetTrend']").click(function () {
 
 
 function initDataSet() {
-    // removeDataSetsSvg();
-    // removeDatasetsGauges();
     //init
-    
+    $("#dataSet2018").prop("checked", true);
     var ObjectDataSetLineChart = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
     createChartTimeLineDataSet(ObjectDataSetLineChart);
     var ObjectDataSetPlot = $.extend(true, [], datasetsScatterplotArrays);
