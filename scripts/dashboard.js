@@ -130,6 +130,8 @@ function setDataSubscribersIdb() {
     drawTreeSuscriber(subscribersGender.genderIDB);
     drawSuscribersChart(orderTopDataSuscribers(subscribersTopics));
     drawInstitutionsChart(subscribersInstitution.institutionIDB);
+    gaugeSuscribers = setSuscribersGauge2018();
+    drawGaugeDatasetChart(gaugeSuscribers);
     // jsondataSubscriber = subscribersArray.subscribersDivisions.filter(function (data) {
     //     return data.Divisions == valueFilter
     // });
@@ -137,17 +139,7 @@ function setDataSubscribersIdb() {
     // porcent_total_subscriber_2018: '100%', /** missing, se pone 100% por orden de rodrigo */
     // porcent_subscriber_lac: (jsondata.length > 0) ? ((jsondata[0]['porcent_total_from_lac'] * 100 >= 100) ? "100%" : (jsondata[0]['porcent_total_from_lac'] * 100).toFixed(1) + '%') : '',
 }
-function setDataSubscribers(valueFilter) {
-    drawTreeSuscriber(subscribersGender.genderIDB);
-    drawSuscribersChart(orderTopDataSuscribers(subscribersTopics));
-    drawInstitutionsChart(subscribersInstitution.institutionIDB);
-    jsondataSubscriber = subscribersArray.subscribersDivisions.filter(function (data) {
-        return data.Divisions == valueFilter
-    });
-    subscribersAllTotalGlobal = (jsondataSubscriber.length > 0) ? jsondataSubscriber[0].subscribers : '0';
-    subscribersAllDownloads = '100%'; /** missing, se pone 100% por orden de rodrigo */
-    subscribersAllDownloadsLac = (jsondataSubscriber.length > 0) ? ((jsondataSubscriber[0]['porcent_total_from_lac'] * 100 >= 100) ? "100%" : (jsondataSubscriber[0]['porcent_total_from_lac'] * 100).toFixed(1)) : '';
-}
+
 
 
 
@@ -186,7 +178,7 @@ function setDataPublicationsByDivisions(sltValue) {
  */
 
 function setDataDataSetByDivisions(sltValue) {
-    debugger;
+    // debugger;
     $("#dataSet2018").prop("checked", true);
     //treemap
     jsonDataSetTree = datasetsDownloadSource.downloadSourceDivisions.filter(function (dataT) {
@@ -210,7 +202,7 @@ function setDataDataSetByDivisions(sltValue) {
     jsonDataTrendDataSet = ObjectDataTrendDataSet.filter(function (dataT) {
         return dataT.division_codes == sltValue
     });
-    console.log(jsonDataTrendDataSet)
+    // console.log(jsonDataTrendDataSet)
     if(jsonDataTrendDataSet.length>0){
         drawDataTrendChart(jsonDataTrendDataSet);
     }else{
@@ -246,6 +238,14 @@ function setDataSuscribersByDivisions(sltValue) {
     drawInstitutionsChart(arraySuscribersInstitution);
 
 
+    jsondataSubscriber = subscribersArray.subscribersDivisions.filter(function (data) {
+        return data.Divisions == valueFilter
+    });
+    subscribersAllTotalGlobal = (jsondataSubscriber.length > 0) ? jsondataSubscriber[0].subscribers : '0';
+    subscribersAllDownloads = '100%'; /** missing, se pone 100% por orden de rodrigo */
+    subscribersAllDownloadsLac = (jsondataSubscriber.length > 0) ? ((jsondataSubscriber[0]['porcent_total_from_lac'] * 100 >= 100) ? "100%" : (jsondataSubscriber[0]['porcent_total_from_lac'] * 100).toFixed(1)) : '';
+    gaugeSuscribers = setSuscribersGauge2018();
+    drawGaugeDatasetChart(gaugeSuscribers);
 }
 
 /**
@@ -262,6 +262,7 @@ function setDataCodeByDivisions(sltValue) {
     ObjectPageViewsTimeLine2018 = ObjectPageViewsTimeLine2018.filter(function (data) {
         return data.division_codes == sltValue
     });
+    ObjectPageViewsTimeLine2018 = (ObjectPageViewsTimeLine2018.length > 0) ? ObjectPageViewsTimeLine2018[0].data : [0];
     var ObjectcodeScatterploArrays = $.extend(true, [], codeScatterploArrays);
     ObjectcodeScatterploArrays = ObjectcodeScatterploArrays.filter(function (data) {
         return data.department_codes == sltValue
@@ -276,7 +277,7 @@ function setDataCodeByDivisions(sltValue) {
     drawGaugeCodeChart(dataGaugeCode2018);
     drawPlotChart(ObjectcodeScatterploArrays);
     drawChartCodeTrend(ObjectTopIdb2018);
-    createChartTimeline(ObjectPageViewsTimeLine2018[0].data);
+    createChartTimeline(ObjectPageViewsTimeLine2018);
     drawTreeCode(ObjectCodePageViewSource, "2018");
 }
 
