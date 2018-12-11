@@ -673,7 +673,6 @@ function wrapData(text) {
         var text = d3.select(this);
         text.text(text.text().slice(0,80));
         
-        debugger;
         var words = text.text().split(/\s+/).reverse();
         var lineHeight = 17;
         var width = parseFloat(text.attr('width'));

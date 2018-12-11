@@ -167,7 +167,6 @@ function setDataPublicationsByDivisions(sltValue) {
  */
 
 function setDataDataSetByDivisions(sltValue) {
-    debugger;
     $("#dataSet2018").prop("checked", true);
     //treemap
     jsonDataSetTree = datasetsDownloadSource.downloadSourceDivisions.filter(function (dataT) {
@@ -257,7 +256,12 @@ function setDataCodeByDivisions(sltValue) {
     drawGaugeCodeChart(dataGaugeCode2018);
     drawPlotChart(ObjectcodeScatterploArrays);
     drawChartCodeTrend(ObjectTopIdb2018);
-    createChartTimeline(ObjectPageViewsTimeLine2018[0].data);
+    if(ObjectPageViewsTimeLine2018.length>0){
+        createChartTimeline(ObjectPageViewsTimeLine2018[0].data);
+    }else{
+        createChartTimeline([]);
+    }
+    
     drawTreeCode(ObjectCodePageViewSource, "2018");
 }
 
