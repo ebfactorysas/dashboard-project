@@ -623,6 +623,7 @@ $("input[name*='dataSetTrend']").click(function () {
                 drawTreeDataset(jsonDataSetTree, "2018");
                 dataDatasets2018 = setDatasetsGauge2018();
                 drawGaugeDatasetChart(dataDatasets2018);
+
                 //top 10
                 var ObjectDataTrendDataSet = $.extend(true, [], datasetsTopArrays.topDivisions2018);
                 jsonDataTrendDataSet = ObjectDataTrendDataSet.filter(function (dataT) {
@@ -670,6 +671,9 @@ $("input[name*='dataSetTrend']").click(function () {
 function wrapData(text) {
     text.each(function () {
         var text = d3.select(this);
+        text.text(text.text().slice(0,80));
+        
+        debugger;
         var words = text.text().split(/\s+/).reverse();
         var lineHeight = 17;
         var width = parseFloat(text.attr('width'));
