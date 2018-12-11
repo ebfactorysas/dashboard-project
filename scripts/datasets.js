@@ -1,6 +1,6 @@
 function drawDataTrendChart(dataDataTrend) {
     d3.select("#data-trend svg").remove();
-    dataDataTrend = dataDataTrend.sort(function (a, b) {
+    dataDataTrend = dataDataTrend.slice(0, 10).sort(function (a, b) {
         return d3.ascending(a.value, b.value);
     })
     var marginDataTrend = {
@@ -16,13 +16,9 @@ function drawDataTrendChart(dataDataTrend) {
 
     var svgDataTrend = d3.select("#data-trend")
         .append("svg")
-        //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
         .attr("viewBox", "-290 -28 800 550")
         .append("g")
-        // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
-
-        //class to make it responsive
         .classed("svg-content-responsive", true);
 
     var xDataTrend = d3.scaleLinear()
@@ -32,13 +28,12 @@ function drawDataTrendChart(dataDataTrend) {
         })]);
 
     var yDataTrend = d3.scaleBand()
-        .rangeRound([heightDataTrend, 0], .1)
+        .rangeRound([50*dataDataTrend.length, 0], .1)
         .domain(dataDataTrend.map(function (d) {
             return d.name;
         }));
 
     var yAxisDataTrend = d3.axisLeft(yDataTrend)
-        //no tick marks
         .tickPadding(200)
         .tickSize(0);
 
@@ -59,7 +54,7 @@ function drawDataTrendChart(dataDataTrend) {
             return yDataTrend(d.name);
         })
         .attr("fill", "#d3d3d3")
-        .attr("height", yDataTrend.bandwidth() - 2)
+        .attr("height", 45)
         .attr("x", 8)
         .attr("width", function (d) {
             return xDataTrend(d.value);
@@ -67,11 +62,9 @@ function drawDataTrendChart(dataDataTrend) {
 
     barsDataTrend.append("text")
         .attr("class", "label")
-        //y position of the label is halfway down the bar
         .attr("y", function (d) {
-            return yDataTrend(d.name) + yDataTrend.bandwidth() / 2 + 4;
+            return yDataTrend(d.name) + 45 / 2 + 4;
         })
-        //x position is 3 pixels to the right of the bar
         .attr("x", function (d) {
             return xDataTrend(d.value) + 10;
         })
@@ -159,113 +152,9 @@ function drawTreeDataset(dataTree, filtertype, typeload) {
 }
 
 function drawGaugeDatasetChart(dataGauge) {
-    var width = 150,
-        height = 150,
-        progress = 0,
-        progress3 = 0,
-        progress2 = 0,
-        formatPercent = d3.format(".0%");
-    const twoPi = 2 * Math.PI;
-
-    var arc = d3.arc()
-        .startAngle(0)
-        .innerRadius(70)
-        .outerRadius(64);
-
-    var svg = d3.selectAll("#gauge-datasets").append("svg")
-        .attr("width", width)
-        .attr("height", height)
-        .append("g")
-        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-
-    var meter = svg.append("g")
-        .attr("class", "funds-allocated-meter");
-
-    meter.append("path")
-        .attr("class", "background")
-        .attr("d", arc.endAngle(twoPi));
-
-    var foreground = meter.append("path")
-        .attr("class", "foreground");
-
-    var percentComplete = meter.append("text")
-        .attr("text-anchor", "middle")
-        .attr("class", "percent-complete")
-        .attr("dy", "0.3em")
-        .text(setSettingsNumber(dataGauge.code.allocated).valueNumber + setSettingsNumber(dataGauge.code.allocated).suffixNumber);
-
-
-
-    var i = d3.interpolate(progress, dataGauge.code.allocated / dataGauge.code.total);
-    foreground.attr("d", arc.endAngle(twoPi * i(1)));
-    //gauge K
-
-    var arc2 = d3.arc()
-        .startAngle(0)
-        .innerRadius(70)
-        .outerRadius(64);
-
-    var svg2 = d3.selectAll("#gauge-download-d").append("svg")
-        .attr("width", width)
-        .attr("height", height)
-        .append("g")
-        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-
-    var meter2 = svg2.append("g")
-        .attr("class", "funds-allocated-meter");
-
-    meter2.append("path")
-        .attr("class", "background")
-        .attr("d", arc2.endAngle(twoPi));
-
-    var foreground2 = meter2.append("path")
-        .attr("class", "foreground");
-
-    var percentComplete2 = meter2.append("text")
-        .attr("text-anchor", "middle")
-        .attr("class", "percent-complete")
-        .attr("dy", "0.3em")
-        .text(setSettingsNumber(dataGauge.pageview.allocated).valueNumber + setSettingsNumber(dataGauge.pageview.allocated).suffixNumber);
-
-
-    var i2 = d3.interpolate(progress2, dataGauge.pageview.allocated / dataGauge.pageview.total);
-    foreground2.attr("d", arc2.endAngle(twoPi * i2(1)));
-    //gauge %
-
-    var arc3 = d3.arc()
-        .startAngle(0)
-        .innerRadius(70)
-        .outerRadius(64);
-
-    var svg3 = d3.selectAll("#gauge-lac-d").append("svg")
-        .attr("width", width)
-        .attr("height", height)
-        .append("g")
-        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-
-    var meter3 = svg3.append("g")
-        .attr("class", "funds-allocated-meter");
-
-    meter3.append("path")
-        .attr("class", "background")
-        .attr("d", arc3.endAngle(twoPi));
-
-    var foreground3 = meter3.append("path")
-        .attr("class", "foreground");
-
-
-    var percentComplete3 = meter3.append("text")
-        .attr("text-anchor", "middle")
-        .attr("class", "percent-complete")
-        .attr("dy", "0.3em")
-        .text(dataGauge.lac.allocated + "%");
-
-
-    var i3 = d3.interpolate(progress3, dataGauge.lac.allocated / dataGauge.lac.total);
-    foreground3.attr("d", arc3.endAngle(twoPi * i3(1)));
-}
-
-function drawGaugeDatasetChart(dataGauge) {
+    d3.select("#gauge-datasets svg").remove();
+    d3.select("#gauge-download-d svg").remove();
+    d3.select("#gauge-lac-d svg").remove();
     var width = 150,
         height = 150,
         progress = 0,
@@ -701,22 +590,7 @@ function setDatasetsGauge2018() {
     return dataGaugeDatasets2018;
 }
 
-function removeDatasetsSvg() {
-    d3.select("#timeline-dataset svg").remove();
-    d3.select("#data-trend svg").remove();
-    d3.select("#dataset-publications-plot svg").remove();
-    d3.select("#downloads-dataset svg").remove();
-}
-
-function removeDatasetsGauges() {
-    d3.select("#gauge-datasets svg").remove();
-    d3.select("#gauge-download-d svg").remove();
-    d3.select("#gauge-lac-d svg").remove();
-}
-
 $("input[name*='dataSetTrend']").click(function () {   
-    removeDatasetsGauges();
-
     if ($("select[id*='divisionSelect']").val() != "IDB") {
         if ($("select[id*='divisionSelect']").val().length > 0) {
 
@@ -730,6 +604,17 @@ $("input[name*='dataSetTrend']").click(function () {
                 drawTreeDataset(jsonDataSetTree, "AllTheTime");
                 dataDatasets = setDatasetsGauge();
                 drawGaugeDatasetChart(dataDatasets);
+
+                //top 10
+                var ObjectDataTrendDataSet = $.extend(true, [], datasetsTopArrays.topDivisionsAllTime);
+                jsonDataTrendDataSet = ObjectDataTrendDataSet.filter(function (dataT) {
+                    return dataT.division_codes == $("select[id*='divisionSelect']").val()
+                });
+                if(jsonDataTrendDataSet.length>0){
+                    drawDataTrendChart(jsonDataTrendDataSet);
+                }else{
+                    drawDataTrendChart([]);
+                }
             } else {
                 //treemap
                 jsonDataSetTree = datasetsDownloadSource.downloadSourceDivisions.filter(function(dataT) {
@@ -738,6 +623,16 @@ $("input[name*='dataSetTrend']").click(function () {
                 drawTreeDataset(jsonDataSetTree, "2018");
                 dataDatasets2018 = setDatasetsGauge2018();
                 drawGaugeDatasetChart(dataDatasets2018);
+                //top 10
+                var ObjectDataTrendDataSet = $.extend(true, [], datasetsTopArrays.topDivisions2018);
+                jsonDataTrendDataSet = ObjectDataTrendDataSet.filter(function (dataT) {
+                    return dataT.division_codes == $("select[id*='divisionSelect']").val()
+                });
+                if(jsonDataTrendDataSet.length>0){
+                    drawDataTrendChart(jsonDataTrendDataSet);
+                }else{
+                    drawDataTrendChart([]);
+                }
             }
 
             // //linechart
@@ -839,7 +734,7 @@ function wrapData(text) {
 
 function initDataSet() {
     //init
-    
+    $("#dataSet2018").prop("checked", true);
     var ObjectDataSetLineChart = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
     createChartTimeLineDataSet(ObjectDataSetLineChart);
     var ObjectDataSetPlot = $.extend(true, [], datasetsScatterplotArrays);

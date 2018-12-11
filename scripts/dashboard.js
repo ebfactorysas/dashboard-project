@@ -3,9 +3,9 @@ $("#deparmentSelect").on('change', function () {
 
     removePublicationsSvg();
     removePublicationsGauges();
-    
-    
-    
+
+
+
     jsonPublicationsBarras = publicationsTopArrays.topDepartmentsAllTime.filter(function (dataP) {
         return dataP.department_codes == this.value
     });
@@ -22,7 +22,6 @@ $("#deparmentSelect").on('change', function () {
     $('#blueAllTime').click();
     removePublicationsGauges();
     removeMoocsGauges();
-    removeDatasetsGauges();
     removeGaugeCode();
 
     d3.select("#gauge-suscribers svg").remove();
@@ -42,16 +41,15 @@ $("#divisionSelect").on('change', function (data) {
 
     removePublicationsGauges();
     removePublicationsSvgAll();
-    // removeDatasetsGauges();
     removeCodeSvgAll();
     removeGaugeCode();
-    
+
     if (this.value == "IDB") {
         $('.label-filter-select').text(this.value);
         setDataIDBPublications();
-        SetDataIDBDataSet();
         setDataSubscribers();
         setDataIDBCode();
+        initDataSet();
     } else {
         initIndicators('divisions', sltValue);
         $('.label-filter-select').text(this.value);
@@ -67,7 +65,7 @@ $("#divisionSelect").on('change', function (data) {
         // d3.select("#gauge-registrations-m svg").remove();
         // d3.select("#gauge-lac-m svg").remove();
 
-        
+
 
         // d3.select("#gauge-code svg").remove();
         // d3.select("#gauge-pageview svg").remove();
@@ -113,6 +111,7 @@ function SetDataIDBDataSet() {
     //treemap
     drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "2018");
 
+    //timeline
     var ObjectDataSetLineChart = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
     createChartTimeLineDataSet(ObjectDataSetLineChart);
 
@@ -125,7 +124,7 @@ function setDataIDBCode() {
     initCode();
 }
 
-function setDataSubscribers(){
+function setDataSubscribers() {
     drawTreeSuscriber(subscribersGender.genderIDB);
     drawSuscribersChart(orderTopDataSuscribers(subscribersTopics));
     drawInstitutionsChart(subscribersInstitution.institutionIDB);
@@ -168,7 +167,7 @@ function setDataPublicationsByDivisions(sltValue) {
  */
 
 function setDataDataSetByDivisions(sltValue) {
-
+    $("#dataSet2018").prop("checked", true);
     //treemap
     jsonDataSetTree = datasetsDownloadSource.downloadSourceDivisions.filter(function (dataT) {
         return dataT.division_codes == sltValue
@@ -176,40 +175,53 @@ function setDataDataSetByDivisions(sltValue) {
     drawTreeDataset(jsonDataSetTree, "2018", 'init');
 
     //chart time line
-    var ObjectDataSetTimeLine = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineDivisions);
+    var ObjectDataSetTimeLine = $.extend(true, [], datasetsDownloadsTimelineArrays.topDivisions2018);
     jsonTimeLineDataSet = ObjectDataSetTimeLine.filter(function (dataT) {
         return dataT.division_code == sltValue
     });
-    if(jsonTimeLineDataSet.length>0){
+    if (jsonTimeLineDataSet.length > 0) {
         createChartTimeLineDataSet(jsonTimeLineDataSet[0].data);
-    }else{
+    } else {
         createChartTimeLineDataSet([]);
     }
-    
+
+    //data-trend
+    var ObjectDataTrendDataSet = $.extend(true, [], datasetsTopArrays.topDivisions2018);
+    jsonDataTrendDataSet = ObjectDataTrendDataSet.filter(function (dataT) {
+        return dataT.division_codes == sltValue
+    });
+    console.log(jsonDataTrendDataSet)
+    if(jsonDataTrendDataSet.length>0){
+        drawDataTrendChart(jsonDataTrendDataSet);
+    }else{
+        drawDataTrendChart([]);
+    }
+
+
 }
 
 /**
  * Funcion para actualizar la informacion de la seccion de suscribers divisions
  */
-function setDataSuscribersByDivisions(sltValue){
+function setDataSuscribersByDivisions(sltValue) {
     //treemap
     var ObjectGenderTreeMap = $.extend(true, [], subscribersGender.genderDivisions);
-    jsonSuscribersTree = ObjectGenderTreeMap.filter(function(data){
-        return data.division_code ==sltValue;
+    jsonSuscribersTree = ObjectGenderTreeMap.filter(function (data) {
+        return data.division_code == sltValue;
     });
     drawTreeSuscriber(jsonSuscribersTree);
 
     //#suscribers-interested
     var ObjectTopicBars = $.extend(true, [], subscribersTopics);
-    arraySuscribersTopics = ObjectTopicBars.filter(function(data){
-        return data.division_code ==sltValue;
+    arraySuscribersTopics = ObjectTopicBars.filter(function (data) {
+        return data.division_code == sltValue;
     });
     drawSuscribersChart(arraySuscribersTopics);
 
     //#institution-suscribers
     var objectInstitution = $.extend(true, [], subscribersInstitution.institutionDivisions);
-    arraySuscribersInstitution = objectInstitution.filter(function(data){
-        return data.division_code ==sltValue;
+    arraySuscribersInstitution = objectInstitution.filter(function (data) {
+        return data.division_code == sltValue;
     });
     drawInstitutionsChart(arraySuscribersInstitution);
 
@@ -223,15 +235,15 @@ function setDataCodeByDivisions(sltValue) {
     // removePublicationsGauges();
     // removePublicationsSvgAll();
     var ObjectTopIdb2018 = $.extend(true, [], codeTopArrays.codeTrend2018Divisions);
-    ObjectTopIdb2018 = ObjectTopIdb2018.filter(function (data){
+    ObjectTopIdb2018 = ObjectTopIdb2018.filter(function (data) {
         return data.division_codes == sltValue
     });
     var ObjectPageViewsTimeLine2018 = $.extend(true, [], codePageviewsTimelineArrays.pageviewTimelineDivisions);
-    ObjectPageViewsTimeLine2018 = ObjectPageViewsTimeLine2018.filter(function (data){
+    ObjectPageViewsTimeLine2018 = ObjectPageViewsTimeLine2018.filter(function (data) {
         return data.division_codes == sltValue
     });
     var ObjectcodeScatterploArrays = $.extend(true, [], codeScatterploArrays);
-    ObjectcodeScatterploArrays = ObjectcodeScatterploArrays.filter(function (data){
+    ObjectcodeScatterploArrays = ObjectcodeScatterploArrays.filter(function (data) {
         return data.department_codes == sltValue
     });
 
@@ -248,10 +260,10 @@ function setDataCodeByDivisions(sltValue) {
 /**
  * Funcion para actualizar la informacion de la seccion de suscribers department
  */
-function setDataSuscribersByDepartment(sltValue){
+function setDataSuscribersByDepartment(sltValue) {
     //treemap
-    jsonSuscribersTree = subscribersGender.genderDeparments.filter(function(data){
-        return data.department ==sltValue;
+    jsonSuscribersTree = subscribersGender.genderDeparments.filter(function (data) {
+        return data.department == sltValue;
     });
     drawTreeSuscriber(jsonSuscribersTree);
 }

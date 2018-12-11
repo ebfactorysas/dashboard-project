@@ -1003,6 +1003,7 @@ function barGraph(selectorID, title) {
             borderRadius: 20,
             borderWidth: 1
         },
+        
         plotOptions: {
             series: {
                 pointPadding: 0,
@@ -1041,6 +1042,7 @@ function new_graph(data2Graph) {
             style: {
                 fontFamily: 'Gotham-Book'
             },
+            panning: false,
             // events: {
             //     load: function () {
             //       //this.mapZoom(0.9);
@@ -1054,6 +1056,9 @@ function new_graph(data2Graph) {
             // height: 1300,
             // spacing: [130, 30, 15, 30],
             // spacingLeft: 300,
+        },
+        mapNavigation: {
+            enabled: false,           
         },
         title: {
             text: ''
