@@ -126,7 +126,7 @@ var dataAgeSuscribers = [{
     "value": 67.5
 }];
 
-drawAgeSuscribersChart(dataAgeSuscribers);
+
 
 function drawAgeSuscribersChart(dataAgeSuscribers) {
     var marginAgeSuscribers = {
@@ -263,36 +263,44 @@ function drawTreeSuscriber(dataTree) {
         .detectVisible(false)
         .render();
 }
+function setSuscribersGauge() {
+    var dataGaugeSubscribers = {
+        "code": {
+            "total": getPercentageTotal(subscribersAllTotalGlobal),
+            "allocated": subscribersAllTotalGlobal
+        },
+        "pageview": {
+            "total": getPercentageTotal(subscribersAllDownloads),
+            "allocated": subscribersAllDownloads
+        },
+        "lac": {
+            "total": 100,
+            "allocated": subscribersAllDownloadsLac
+        }
+    }
+    return dataGaugeSubscribers;
+}
 
-var dataGaugeSubscribers = {
-    "code": {
-        "total": getPercentageTotal(subscribersAllTotalGlobal),
-        "allocated": subscribersAllTotalGlobal
-    },
-    "pageview": {
-        "total": getPercentageTotal(subscribersAllDownloads),
-        "allocated": subscribersAllDownloads
-    },
-    "lac": {
-        "total": 100,
-        "allocated": subscribersAllDownloadsLac
+function setSuscribersGauge2018() {
+    var dataGaugeSubscribers2018 = {
+        "code": {
+            "total": getPercentageTotal(subscribersAllTotalGlobal),
+            "allocated": subscribersAllTotalGlobal
+        },
+        "pageview": {
+            "total": getPercentageTotal(subscribersAllDownloads),
+            "allocated": subscribersAllDownloads
+        },
+        "lac": {
+            "total": 100,
+            "allocated": subscribersAllDownloadsLac
+        }
     }
+    return dataGaugeSubscribers2018;
 }
-var dataGaugeSubscribers2018 = {
-    "code": {
-        "total": getPercentageTotal(subscribersAllTotalGlobal),
-        "allocated": subscribersAllTotalGlobal
-    },
-    "pageview": {
-        "total": getPercentageTotal(subscribersAllDownloads),
-        "allocated": subscribersAllDownloads
-    },
-    "lac": {
-        "total": 100,
-        "allocated": subscribersAllDownloadsLac
-    }
-}
-drawGaugeSubscribersChart(dataGaugeSubscribers);
+
+
+
 
 
 function drawGaugeSubscribersChart(dataGauge) {
@@ -527,11 +535,14 @@ function drawSuscribersChart(data) {
 
 //init
 function initSuscribers() {
+    drawAgeSuscribersChart(dataAgeSuscribers);
     drawSuscribersChart(orderTopDataSuscribers(subscribersTopics));
     drawTreeSuscriber(subscribersGender.genderIDB);
     drawInstitutionsChart(subscribersInstitution.institutionIDB);
+    dataGaugeSubscribers2018 = setSuscribersGauge2018();
+    drawGaugeSubscribersChart(dataGaugeSubscribers2018);
 }
-initSuscribers();
+
 
 
 // Filters

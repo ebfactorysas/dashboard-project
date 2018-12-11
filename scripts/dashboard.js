@@ -43,11 +43,12 @@ $("#divisionSelect").on('change', function (data) {
     removePublicationsSvgAll();
     removeCodeSvgAll();
     removeGaugeCode();
+    removeSubscribersSvg();
 
     if (this.value == "IDB") {
         $('.label-filter-select').text(this.value);
         setDataIDBPublications();
-        setDataSubscribers();
+        setDataSubscribersIdb();
         setDataIDBCode();
         initDataSet();
     } else {
@@ -61,6 +62,7 @@ $("#divisionSelect").on('change', function (data) {
         setDataDataSetByDivisions(sltValue);
         setDataSuscribersByDivisions(sltValue);
         setDataCodeByDivisions(sltValue);
+        
         // d3.select("#gauge-moocs svg").remove();
         // d3.select("#gauge-registrations-m svg").remove();
         // d3.select("#gauge-lac-m svg").remove();
@@ -124,10 +126,27 @@ function setDataIDBCode() {
     initCode();
 }
 
-function setDataSubscribers() {
+function setDataSubscribersIdb() {
     drawTreeSuscriber(subscribersGender.genderIDB);
     drawSuscribersChart(orderTopDataSuscribers(subscribersTopics));
     drawInstitutionsChart(subscribersInstitution.institutionIDB);
+    // jsondataSubscriber = subscribersArray.subscribersDivisions.filter(function (data) {
+    //     return data.Divisions == valueFilter
+    // });
+    // subscriberValue: (jsondata.length > 0) ? jsondata[0].subscribers : '0',
+    // porcent_total_subscriber_2018: '100%', /** missing, se pone 100% por orden de rodrigo */
+    // porcent_subscriber_lac: (jsondata.length > 0) ? ((jsondata[0]['porcent_total_from_lac'] * 100 >= 100) ? "100%" : (jsondata[0]['porcent_total_from_lac'] * 100).toFixed(1) + '%') : '',
+}
+function setDataSubscribers(valueFilter) {
+    drawTreeSuscriber(subscribersGender.genderIDB);
+    drawSuscribersChart(orderTopDataSuscribers(subscribersTopics));
+    drawInstitutionsChart(subscribersInstitution.institutionIDB);
+    jsondataSubscriber = subscribersArray.subscribersDivisions.filter(function (data) {
+        return data.Divisions == valueFilter
+    });
+    subscriberValue = (jsondataSubscriber.length > 0) ? jsondataSubscriber[0].subscribers : '0';
+    porcent_total_subscriber_2018 = '100%'; /** missing, se pone 100% por orden de rodrigo */
+    porcent_subscriber_lac = (jsondataSubscriber.length > 0) ? ((jsondataSubscriber[0]['porcent_total_from_lac'] * 100 >= 100) ? "100%" : (jsondataSubscriber[0]['porcent_total_from_lac'] * 100).toFixed(1) + '%') : '';
 }
 
 
@@ -284,6 +303,7 @@ $(window).on('load', function () {
     initMoocs();
     initDataSet();
     initCode();
+    initSuscribers();
     $('.label-filter-restidb').hide();
 
 });
