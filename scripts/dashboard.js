@@ -130,8 +130,13 @@ function setDataSubscribersIdb() {
     drawTreeSuscriber(subscribersGender.genderIDB);
     drawSuscribersChart(orderTopDataSuscribers(subscribersTopics));
     drawInstitutionsChart(subscribersInstitution.institutionIDB);
+    
+    jsondataSubscriber = subscribersArray.subscribersIDB;
+    subscribersAllTotalGlobal = (jsondataSubscriber.length > 0) ? jsondataSubscriber[0].subscribers : '0';
+    subscribersAllDownloads = (jsondataSubscriber.length > 0) ? jsondataSubscriber[0].lac_subscribers : '0';
+    subscribersAllDownloadsLac = (jsondataSubscriber.length > 0) ? (jsondataSubscriber[0].porcent_total_from_lac * 100).toFixed(0) : '0';
     gaugeSuscribers = setSuscribersGauge2018();
-    drawGaugeDatasetChart(gaugeSuscribers);
+    drawGaugeSubscribersChart(gaugeSuscribers);
     // jsondataSubscriber = subscribersArray.subscribersDivisions.filter(function (data) {
     //     return data.Divisions == valueFilter
     // });
@@ -239,13 +244,13 @@ function setDataSuscribersByDivisions(sltValue) {
 
 
     jsondataSubscriber = subscribersArray.subscribersDivisions.filter(function (data) {
-        return data.Divisions == valueFilter
+        return data.Divisions == sltValue
     });
     subscribersAllTotalGlobal = (jsondataSubscriber.length > 0) ? jsondataSubscriber[0].subscribers : '0';
     subscribersAllDownloads = '100%'; /** missing, se pone 100% por orden de rodrigo */
     subscribersAllDownloadsLac = (jsondataSubscriber.length > 0) ? ((jsondataSubscriber[0]['porcent_total_from_lac'] * 100 >= 100) ? "100%" : (jsondataSubscriber[0]['porcent_total_from_lac'] * 100).toFixed(1)) : '';
-    gaugeSuscribers = setSuscribersGauge2018();
-    drawGaugeDatasetChart(gaugeSuscribers);
+    gaugeSuscribers = setSuscribersGauge();
+    drawGaugeSubscribersChart(gaugeSuscribers);
 }
 
 /**
