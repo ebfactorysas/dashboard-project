@@ -13,16 +13,10 @@ function nuevoTest() {
     baseData = testDatos.filter(function (d) {
         return (d['fff'] == 'Publications')
     });
-    //baseData = testDatos.filter(d => {return (d['fff'] == 'Code')});
-    // baseData = testDatos;
-
-
-
-
     updateProducts(testDatos);
 
     $('#drop-products').on('change', function () {
-        
+
         var that = this;
         baseData = testDatos.filter(function (d) {
             return (d['fff'] == that.value)
@@ -32,10 +26,10 @@ function nuevoTest() {
         var datosBySegmentType = baseData.filter(function (d) {
             return (d['segment type'] == 'IDB')
         });
-        
+
         updateSegments(datosBySegmentType, 'IDB');
 
-        
+
         new_updateFilter();
     });
 
@@ -44,11 +38,11 @@ function nuevoTest() {
     var datosBySegmentType = baseData.filter(function (d) {
         return (d['segment type'] == 'IDB')
     });
-    
+
     updateSegments(datosBySegmentType, 'IDB');
 
     $('#drop-departments').on('change', function () {
-        
+
 
         // var datosBySegmentType = baseData.filter(function (d) {
         //     return (d['segment type'] == this.value);
@@ -57,17 +51,17 @@ function nuevoTest() {
         var datosBySegmentType = baseData.filter(function (d) {
             return (d['segment type'] == that.value)
         });
-        
-        
+
+
         updateSegments(datosBySegmentType, this.value);
 
 
-        
+
         new_updateFilter();
     });
     $('#drop-materials').on('change', function () {
-        
-        
+
+
         new_updateFilter();
     });
 
@@ -78,7 +72,7 @@ function nuevoTest() {
     var datosBySegmentName = baseData.filter(function (d) {
         return (d['segment name'] == 'IDB')
     });
-    
+
 
     var datosMapeados = datosBySegmentName.map(function (d) {
         var nuevoDato = {
@@ -88,10 +82,10 @@ function nuevoTest() {
         };
         return nuevoDato;
     });
-    
+
 
     // var countryIso3 = getCoutryCode('Afghanistan');
-    
+
 
     return datosMapeados;
 }
@@ -99,8 +93,8 @@ function nuevoTest() {
 function updateProducts(baseData) {
 
 
-    var products = getUnique(baseData, 'fff');
-    
+    var products = getUniqueData(baseData, 'fff');
+
 
     $('#drop-products').empty();
     //$('#drop-products').append('<option value="all">ALL</option>');
@@ -113,7 +107,7 @@ function updateProducts(baseData) {
 
 
 function getCoutryCode(country) {
-    
+
 
 
     if (country.length != 2) {
@@ -127,10 +121,10 @@ function getCoutryCode(country) {
     // if(countryIso2===undefined){
     //   console.warn('>>> '+country,countryIso2);
     // }
-    
+
 
     var countryIso3 = iso2toIso3[countryIso2];
-    
+
 
     if (countryIso3 === undefined) {
         // console.warn('>>> '+country,countryIso3);
@@ -147,31 +141,44 @@ function getCoutryCode(country) {
 function updateTypes(baseData) {
 
 
-    var types = getUnique(baseData, 'segment type');
-    
+    var types = getUniqueData(baseData, 'segment type');
+
 
     $('#drop-departments').empty();
     // $('#drop-departments').append('<option value="all">Group by: ALL</option>');
-    types.forEach(function (item) {
-        $('#drop-departments').append('<option value="' + item + '">Group by: ' + item + '</option>');
-    });
+    
+    for (let index = 0; index < types.length; index++) {
+        var item = '<option value="' + types[index] + '">Group by: ' + types[index] + '</option>';
+        
+        $('#drop-departments').append('<option value="' + types[index] + '">Group by: ' + types[index] + '</option>');
+    }
+    // types.forEach(function (item) {
+    //     $('#drop-departments').append('<option value="' + item + '">Group by: ' + item + '</option>');
+    // });
 
 
 }
 
 function updateSegments(datosBySegmentType, splitSegment) {
-    
 
-    var segmentos = getUnique(datosBySegmentType, 'segment name');
+    
+    var segmentos = getUniqueData(datosBySegmentType, 'segment name');
     
 
     $('#drop-materials').empty();
     if (splitSegment != 'IDB') {
         $('#drop-materials').append('<option value="all">' + splitSegment + ': ALL</option>');
     }
-    segmentos.forEach(function (item) {
-        $('#drop-materials').append('<option value="' + item + '">' + splitSegment + ': ' + item + '</option>');
-    });
+    for (let index = 0; index < segmentos.length; index++) {
+        var item = '<option value="' + segmentos[index] + '">' + splitSegment + ': ' + segmentos[index] + '</option>'
+        
+        $('#drop-materials').append('<option value="' + segmentos[index] + '">' + splitSegment + ': ' + segmentos[index] + '</option>');
+
+    }
+
+    // segmentos.forEach(function (item) {
+    //     $('#drop-materials').append('<option value="' + item + '">' + splitSegment + ': ' + item + '</option>');
+    // });
     // // var departmentsItems = [];
     // segmentos.forEach(function(item) {
     //   // departmentsItems.push('<option value="' + item + '">DEPARTMENT: ' + item + '</option>');
@@ -181,14 +188,19 @@ function updateSegments(datosBySegmentType, splitSegment) {
 
 }
 
-function getUnique(array2reduce, property) {
-    return array2reduce
-        .map(function (element) {
-            return element[property]
-        })
-        .filter(function (item, pos, self) {
-            return (self.indexOf(item) == pos)
-        });
+function getUniqueData(array2reduce, property) {
+    
+    var test = array2reduce.map(function (element) {
+
+        return element[property]
+    })
+    
+    test = test.filter(function (item, pos, self) {
+        return (self.indexOf(item) == pos)
+    });
+    
+    return test;
+
 }
 
 
@@ -198,11 +210,11 @@ function new_updateFilter() {
 
     // var dateSlider = document.getElementById('slider-download-date');
     // var vall_download = dateSlider.noUiSlider.get();
-    
+
 
     // var dateCreationSlider = document.getElementById('slider-creation-date');
     // var vall_Creation = dateCreationSlider.noUiSlider.get();
-    
+
 
     // var fromDownload = moment(vall_download[0],'x').format('YYYYMMDD');
     // var toDownload = moment(vall_download[1],'x').format('YYYYMMDD');
@@ -231,12 +243,12 @@ function new_updateFilter() {
 
 
     // var dataFilteredDownladDate = filterDate('Download_Date', dataFilteredLAC, fromDownload, toDownload);
-    
+
 
 
 
     // var dataFilteredCreationDate = filterDate('Publication_Date', dataFilteredDownladDate, fromCreation, toCreation);
-    
+
 
 
 
@@ -302,7 +314,7 @@ function init() {
     });
     $('#drop-materials').append(materialsItems);
 
-    
+
 
 
     graph(baseData);
@@ -326,14 +338,14 @@ function init() {
     });
 
     $('#drop-departments').on('change', function () {
-        
-        
+
+
         updateFilter();
     });
 
     $('#drop-materials').on('change', function () {
-        
-        
+
+
         updateFilter();
     });
 
@@ -365,7 +377,7 @@ function generatePublicationData(department) {
     // var Material_Type = "MaterialA";
 
     var paisesGenerados = generate_randomCountries();
-    
+
 
     paisesGenerados.forEach(function (newPais) {
         countryPushDates(newPais, fecha_Publication_Date, Material_Type, department);
@@ -388,7 +400,7 @@ function generate_randomCountries() {
             randCountries.push(rndCountry);
         }
     }
-    
+
 
     return randCountries;
 }
@@ -404,7 +416,7 @@ function countryPushDates(pais, fecha_Publication_Date, Material_Type, departmen
 
     var newItems = [];
     fechasGeneradas.forEach(function (newFecha) {
-        
+
         var source = SourceTypes[getRandomInt(0, (SourceTypes.length - 1))];
         var valor = getRandomInt(0, 10);
         newItem = {
@@ -423,13 +435,13 @@ function countryPushDates(pais, fecha_Publication_Date, Material_Type, departmen
         newItems.push(newItem);
     });
 
-    
 
-    
+
+
 
     baseData = baseData.concat(newItems);
 
-    
+
 
 }
 
@@ -449,14 +461,14 @@ function generate_randomDates() {
         if ((dates.indexOf(newDate) < 0)) {
             dates.push(newDate);
         }
-        
+
     }
-    
+
 
     return dates;
     //new_randomDate(start, end);
     // var nn = new_randomDate(start, end);
-    
+
 }
 
 
@@ -468,7 +480,7 @@ function new_randomDate(start, end) {
     var randDate = (ss + Math.random() * (ee - ss));
 
     var rr = moment(randDate, 'x').format('YYYYMMDD'); // values[1];
-    
+
 
     return rr;
     //return new Date(ss + Math.random() * (ee - ss));
@@ -550,15 +562,15 @@ function addEventsDownloadSlider() {
 
 
     dateSlider.noUiSlider.on('update', function (values, handle) {
-        
-        
+
+
 
         updateFilter();
         // var a = moment(values[0],'x').format('YYYYMMDD'); // values[0];
         // var b = moment(values[1],'x').format('YYYYMMDD'); // values[1];
 
-        
-        
+
+
 
         // updateFilter(a,b);
 
@@ -606,14 +618,14 @@ function createCreationSlider() {
 
 
     // dateCreationSlider.noUiSlider.on('update', function (values, handle) {
-    
-    
+
+
 
     //   var a = moment(values[0],'x').format('YYYYMMDD'); // values[0];
     //   var b = moment(values[1],'x').format('YYYYMMDD'); // values[1];
 
-    
-    
+
+
 
     //   updateFilter(a,b);
 
@@ -623,8 +635,8 @@ function createCreationSlider() {
 
 
     // dateCreationSlider.noUiSlider.on('set', function (values, handle) {
-    
-    
+
+
     // });
 }
 
@@ -641,15 +653,15 @@ function addEventsCreationSlider() {
 
 
     dateCreationSlider.noUiSlider.on('update', function (values, handle) {
-        
-        
+
+
 
         updateFilter();
         // var a = moment(values[0],'x').format('YYYYMMDD'); // values[0];
         // var b = moment(values[1],'x').format('YYYYMMDD'); // values[1];
 
-        
-        
+
+
 
         // updateFilter(a,b);
 
@@ -666,11 +678,11 @@ function updateFilter() {
 
     var dateSlider = document.getElementById('slider-download-date');
     var vall_download = dateSlider.noUiSlider.get();
-    
+
 
     var dateCreationSlider = document.getElementById('slider-creation-date');
     var vall_Creation = dateCreationSlider.noUiSlider.get();
-    
+
 
     var fromDownload = moment(vall_download[0], 'x').format('YYYYMMDD');
     var toDownload = moment(vall_download[1], 'x').format('YYYYMMDD');
@@ -680,13 +692,13 @@ function updateFilter() {
 
 
     var lacCheck = $("#lac-checkbox").is(":checked");
-    
+
 
     var selectedDepartment = $('#drop-departments').find(":selected").val();
-    
+
 
     var selectedMaterial = $('#drop-materials').find(":selected").val();
-    
+
 
 
     var dataFilteredDeps = filterDropdown(baseData, selectedDepartment, 'Department');
@@ -698,12 +710,12 @@ function updateFilter() {
 
 
     var dataFilteredDownladDate = filterDate('Download_Date', dataFilteredLAC, fromDownload, toDownload);
-    
+
 
 
 
     var dataFilteredCreationDate = filterDate('Publication_Date', dataFilteredDownladDate, fromCreation, toCreation);
-    
+
 
 
 
@@ -749,7 +761,7 @@ function new_timestamp(str) {
 
     var ts = new moment(str + '0101', 'YYYYMMDD').utc().format('x');
     // var ts = new moment('20100101','YYYYMMDD').utc().format('x');
-    
+
     return Number(ts);
     //return new Date(str).getTime();
 }
@@ -759,7 +771,7 @@ function timestamp(str) {
 
     var ts = new moment(str + '0101', 'YYYYMMDD').utc().format('x');
     // var ts = new moment('20100101','YYYYMMDD').utc().format('x');
-    
+
     return Number(ts);
     //return new Date(str).getTime();
 }
@@ -785,7 +797,7 @@ function nth(d) {
 
 // Create a string representation of the date.
 function formatDate(date) {
-    
+
 
     return shortMonths[date.getMonth()] + "-" + date.getFullYear();
     // return weekdays[date.getDay()] + ", " +
@@ -864,7 +876,7 @@ function getCoutryTotals(data, test_material) {
         };
     });
 
-    
+
 
 
 
@@ -877,7 +889,7 @@ function getCoutryTotals(data, test_material) {
     var serie2 = $('#bar-graph-countries').d32Bars().get('series-2');
     serie2.setData(serieTopCountries, true, false, false);
 
-    
+
 
     /*
     var countsSource = data.reduce((p, c) => {

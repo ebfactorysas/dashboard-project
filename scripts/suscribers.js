@@ -1,4 +1,5 @@
 function drawInstitutionsChart(dataInstitution) {
+    d3.select("#institution-suscribers svg").remove();
     var dataInstitutionSum = d3.sum(dataInstitution, function (d) {
         return d.value;
     });
@@ -74,8 +75,8 @@ function drawInstitutionsChart(dataInstitution) {
             return i * xInstitution.bandwidth() + 25; //Bar width of 20 plus 1 for padding
         })
         .text(function (d) {
-
-            return d.value < 1000 ? d.value : (Math.round(d.value / 1000).toFixed(0)) + "K";
+            var number = setSettingsNumber(d.value)
+            return number.valueNumber + number.suffixNumber;
         })
         .append("tspan")
         .attr("x", function (d, i) {
