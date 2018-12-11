@@ -262,7 +262,6 @@ function setDataCodeByDivisions(sltValue) {
     ObjectPageViewsTimeLine2018 = ObjectPageViewsTimeLine2018.filter(function (data) {
         return data.division_codes == sltValue
     });
-    ObjectPageViewsTimeLine2018 = (ObjectPageViewsTimeLine2018.length > 0) ? ObjectPageViewsTimeLine2018[0].data : [0];
     var ObjectcodeScatterploArrays = $.extend(true, [], codeScatterploArrays);
     ObjectcodeScatterploArrays = ObjectcodeScatterploArrays.filter(function (data) {
         return data.department_codes == sltValue
