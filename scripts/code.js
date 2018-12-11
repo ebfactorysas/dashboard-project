@@ -286,6 +286,7 @@ function drawTreeCode(dataTree, filtertype) {
 }
 
 function createChartTimeline(data) {
+    console.log(data);
     var margin = {
             top: 20,
             right: 20,

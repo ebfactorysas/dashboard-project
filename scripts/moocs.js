@@ -354,8 +354,8 @@ function drawMoocsAgeDistributionChart(data) {
         .attr("class", "y axis")
         .call(yAxis)
         .attr("transform", "translate(-10,-12 )")
-    
-        var path = svg.select(".y .domain")
+
+    var path = svg.select(".y .domain")
         .attr("transform", "translate(10,0 )")
 
 
@@ -378,7 +378,7 @@ function drawMoocsAgeDistributionChart(data) {
         .style("font-family", "Gotham-Bold");
 
     svg.selectAll(".tick text")
-        .call(wrap, y.bandwidth(),10)
+        .call(wrap, y.bandwidth(), 10)
         .attr("font-family", "Gotham-Bold")
         .attr("font-size", "12px");
 }
@@ -798,147 +798,149 @@ function createChart(data) {
     //         return data.date.indexOf("-18") > -1
     //     });
     // }
+    if (data !== "Nodata") {
+        var margin = {
+                top: 20,
+                right: 20,
+                bottom: 30,
+                left: 50
+            },
+            width = 850 - margin.left - margin.right,
+            height = 230 - margin.top - margin.bottom;
 
-    var margin = {
-            top: 20,
-            right: 20,
-            bottom: 30,
-            left: 50
-        },
-        width = 850 - margin.left - margin.right,
-        height = 230 - margin.top - margin.bottom;
+        // parse the date / time
+        var parseTime = d3.timeParse("%d-%b-%y");
 
-    // parse the date / time
-    var parseTime = d3.timeParse("%d-%b-%y");
+        // set the ranges
+        var x = d3.scaleTime().range([0, width]);
+        var y = d3.scaleLinear().range([height, 0]);
+        var positionText = 0;
+        // define the area
+        var area = d3.area()
+            .x(function (d) {
+                return x(d.date);
+            })
+            .y0(height)
+            .y1(function (d) {
+                positionText = y(d.close);
+                return y(d.close);
+            });
 
-    // set the ranges
-    var x = d3.scaleTime().range([0, width]);
-    var y = d3.scaleLinear().range([height, 0]);
-    var positionText = 0;
-    // define the area
-    var area = d3.area()
-        .x(function (d) {
-            return x(d.date);
-        })
-        .y0(height)
-        .y1(function (d) {
-            positionText = y(d.close);
-            return y(d.close);
+        // define the line
+        var valueline = d3.line()
+            .x(function (d) {
+                return x(d.date);
+            })
+            .y(function (d) {
+                return y(d.close);
+            });
+
+        // append the svg obgect to the body of the page
+        // appends a 'group' element to 'svg'
+        // moves the 'group' element to the top left margin
+        var svg = d3.select("#timeline-moocs").append("svg")
+            .attr("preserveAspectRatio", "xMinYMin meet")
+            .attr("viewBox", "-50 -22 850 300")
+            .append("g")
+            .classed("svg-content-responsive", true);
+        var totalAmount = 0;
+        // format the data
+        data.forEach(function (d) {
+            d.date = parseTime(d.date);
         });
 
-    // define the line
-    var valueline = d3.line()
-        .x(function (d) {
-            return x(d.date);
-        })
-        .y(function (d) {
-            return y(d.close);
-        });
+        data = data.sort(sortByDateAscending);
 
-    // append the svg obgect to the body of the page
-    // appends a 'group' element to 'svg'
-    // moves the 'group' element to the top left margin
-    var svg = d3.select("#timeline-moocs").append("svg")
-        .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-50 -22 850 300")
-        .append("g")
-        .classed("svg-content-responsive", true);
-    var totalAmount = 0;
-    // format the data
-    data.forEach(function (d) {
-        d.date = parseTime(d.date);
-    });
-
-    data = data.sort(sortByDateAscending);
-
-    for (var i = 0; i < data.length; i++) {
-        data[i].close = +data[i].close;
-        totalAmount += data[i].close;
-        if (i > 0) {
-            data[i]['CumulativeAmount'] = data[i].close + data[i - 1].close;
-        } else {
-            data[i]['CumulativeAmount'] = data[i].close;
+        for (var i = 0; i < data.length; i++) {
+            data[i].close = +data[i].close;
+            totalAmount += data[i].close;
+            if (i > 0) {
+                data[i]['CumulativeAmount'] = data[i].close + data[i - 1].close;
+            } else {
+                data[i]['CumulativeAmount'] = data[i].close;
+            }
         }
+        //now calculate cumulative % from the cumulative amounts & total, round %
+        for (var i = 0; i < data.length; i++) {
+            data[i]['CumulativePercentage'] = (data[i]['CumulativeAmount'] / totalAmount);
+            data[i]['CumulativePercentage'] = parseFloat(data[i]['CumulativePercentage'].toFixed(2));
+        }
+
+        var lineGen = d3.line()
+            .x(function (d) {
+                return x(d.date);
+            })
+            .y(function (d) {
+                return y(d.CumulativeAmount);
+            });
+
+        // scale the range of the data
+        x.domain(d3.extent(data, function (d) {
+            return d.date;
+        }));
+        y.domain([0, d3.max(data, function (d) {
+            return d.close;
+        })]);
+
+        // add the area
+        svg.append("path")
+            .data([data])
+            .attr("class", "area")
+            .attr("d", area);
+
+        // add the valueline path.
+        svg.append("path")
+            .data([data])
+            .attr("class", "line")
+            .attr("d", valueline);
+        //calculate path do not delete it
+        /*svg.append('svg:path')
+            .attr('d', lineGen(data))
+            .attr('stroke', '#c3c3c3')
+            .attr("stroke-dasharray", "4")
+            .attr('stroke-width', 2)
+            .attr('fill', 'none');*/
+
+        // add the X Axis
+        svg.append("g")
+            .attr("transform", "translate(0," + height + ")")
+            .attr("class", "x-axis")
+            .style('stroke-width', '3px')
+            .style("font-family", "Gotham-Book")
+            .style("font-size", "13px")
+            .call(d3.axisBottom(x)
+                .ticks(8)
+                .tickSizeOuter(0)
+            )
+
+        // add the Y Axis
+        svg.append("g")
+            .attr("class", "y-axis")
+            .style("font-family", "Gotham-Book")
+            .style("font-size", "13px")
+            .call(d3.axisLeft(y)
+                .ticks(3)
+                .tickFormat(function (x) {
+                    var value = setSettingsNumber(x);
+                    return value.valueNumber + suffixNumber;
+                }));
+        var textOfTotal = setSettingsNumber(totalAmount);
+        svg.append("text")
+            .attr("x", (width - (40)))
+            .attr("y", positionText - 10)
+            // .attr("text-anchor", "middle")  
+            .style("font-size", "16px")
+            .style("font-family", "Gotham-Bold")
+            .text(textOfTotal.valueNumber + textOfTotal.suffixNumber);
+        svg.append("text")
+            .attr("x", (width - (40)))
+            .attr("y", positionText + 5)
+            // .attr("text-anchor", "middle")  
+            .style("font-size", "14px")
+            .style("font-family", "Gotham-Book")
+            .text("TOTAL");
     }
-    //now calculate cumulative % from the cumulative amounts & total, round %
-    for (var i = 0; i < data.length; i++) {
-        data[i]['CumulativePercentage'] = (data[i]['CumulativeAmount'] / totalAmount);
-        data[i]['CumulativePercentage'] = parseFloat(data[i]['CumulativePercentage'].toFixed(2));
-    }
 
-    var lineGen = d3.line()
-        .x(function (d) {
-            return x(d.date);
-        })
-        .y(function (d) {
-            return y(d.CumulativeAmount);
-        });
-
-    // scale the range of the data
-    x.domain(d3.extent(data, function (d) {
-        return d.date;
-    }));
-    y.domain([0, d3.max(data, function (d) {
-        return d.close;
-    })]);
-
-    // add the area
-    svg.append("path")
-        .data([data])
-        .attr("class", "area")
-        .attr("d", area);
-
-    // add the valueline path.
-    svg.append("path")
-        .data([data])
-        .attr("class", "line")
-        .attr("d", valueline);
-    //calculate path do not delete it
-    /*svg.append('svg:path')
-        .attr('d', lineGen(data))
-        .attr('stroke', '#c3c3c3')
-        .attr("stroke-dasharray", "4")
-        .attr('stroke-width', 2)
-        .attr('fill', 'none');*/
-
-    // add the X Axis
-    svg.append("g")
-        .attr("transform", "translate(0," + height + ")")
-        .attr("class", "x-axis")
-        .style('stroke-width', '3px')
-        .style("font-family", "Gotham-Book")
-        .style("font-size", "13px")
-        .call(d3.axisBottom(x)
-            .ticks(8)
-            .tickSizeOuter(0)
-        )
-
-    // add the Y Axis
-    svg.append("g")
-        .attr("class", "y-axis")
-        .style("font-family", "Gotham-Book")
-        .style("font-size", "13px")
-        .call(d3.axisLeft(y)
-            .ticks(3)
-            .tickFormat(function (x) {
-                var value = setSettingsNumber(x);
-                return value.valueNumber + suffixNumber;
-            }));
-    var textOfTotal = setSettingsNumber(totalAmount);
-    svg.append("text")
-        .attr("x", (width - (40)))
-        .attr("y", positionText - 10)
-        // .attr("text-anchor", "middle")  
-        .style("font-size", "16px")
-        .style("font-family", "Gotham-Bold")
-        .text(textOfTotal.valueNumber + textOfTotal.suffixNumber);
-    svg.append("text")
-        .attr("x", (width - (40)))
-        .attr("y", positionText + 5)
-        // .attr("text-anchor", "middle")  
-        .style("font-size", "14px")
-        .style("font-family", "Gotham-Book")
-        .text("TOTAL");
 }
 
 /**
@@ -954,10 +956,10 @@ function createChart(data) {
 
 
 function setMoocsGauge() {
-    
+
     var dataGaugeMoocs = {
         "code": {
-            "total": 100,//getPercentageTotal(moocsAllTotalGlobal),
+            "total": 100, //getPercentageTotal(moocsAllTotalGlobal),
             "allocated": moocsAllTotalGlobal
         },
         "pageview": {
@@ -1516,7 +1518,7 @@ function moocsFilter() {
             drawGaugeMoocsChart(dataGaugeMoocs);
             //top registration chart
             if ($("select[id*='divisionSelect']").val().length > 0 && $("select[id*='divisionSelect']").val() !== "IDB") {
-                
+
                 var timelineDivisions = divisionFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDivisions), $("select[id*='divisionSelect']").val());
                 if (timelineDivisions.length > 0) createChart(timelineDivisions[0].data)
                 else createChart('Nodata');
@@ -1540,7 +1542,7 @@ function moocsFilter() {
 
                 // Por ahora se deshabilita
                 // } else if ( $("select[id*='deparmentSelect']").val().length > 0) {
-                
+
                 //     var timelineDivisions = orderTopMoocs(departmentFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDepartments), $("select[id*='deparmentSelect']").val()));
                 //     if (timelineDivisions.length > 0) createChart(timelineDivisions[0].data);
 
@@ -1560,7 +1562,7 @@ function moocsFilter() {
                 //     points2(moocsGenderAddGray(moocsGenderFilter(gender, "Not Available")));
                 //     points3(moocsGenderAddGray(moocsGenderFilter(gender, "Other")));
             } else {
-                
+
                 createChart($.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB));
 
                 drawMoocsRegistrationsChart(topAllMoocs);
@@ -1605,7 +1607,7 @@ function moocsFilter() {
 
                 // Por ahora se deshabilita
                 // } else if ($("select[id*='deparmentSelect']").val().length > 0) {
-                
+
 
                 //     var timelineDivisions = orderTopMoocs(departmentFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDepartments), $("select[id*='deparmentSelect']").val()));
                 //     if (timelineDivisions.length > 0) createChart(timelineDivisions[0].data);
@@ -1626,7 +1628,7 @@ function moocsFilter() {
                 //     points2(moocsGenderAddGray(moocsGenderFilter(gender, "Not Available")));
                 //     points3(moocsGenderAddGray(moocsGenderFilter(gender, "Other")));
             } else {
-                
+
 
                 createChart($.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB));
 
@@ -1666,6 +1668,7 @@ function removeMoocsSvg() {
     d3.select("#waffle3 svg").remove();
 
 }
+
 function removeMoocsSvgAll() {
     d3.select("#timeline-moocs svg").remove();
     d3.select("#moocs-registrations svg").remove();
@@ -1684,11 +1687,13 @@ function removeMoocsSvgAll() {
     d3.select("#gauge-registrations-m svg").remove();
     d3.select("#gauge-lac-m svg").remove();
 }
+
 function removeMoocsGauges() {
     d3.select("#gauge-moocs svg").remove();
     d3.select("#gauge-registrations-m svg").remove();
     d3.select("#gauge-lac-m svg").remove();
 }
+
 function initMoocs() {
     drawDistributionChart(moocsEducationArrays.educationLevelIDB);
     drawMoocsRegistrationsChart(topAllMoocs);
