@@ -1,4 +1,5 @@
 function drawDataTrendChart(dataDataTrend) {
+    d3.select("#data-trend svg").remove();
     dataDataTrend = dataDataTrend.sort(function (a, b) {
         return d3.ascending(a.value, b.value);
     })
@@ -92,36 +93,6 @@ function drawDataTrendChart(dataDataTrend) {
         .call(wrapData);
 }
 
-function wrapData(text) {
-    text.each(function () {
-        var text = d3.select(this);
-        var words = text.text().split(/\s+/).reverse();
-        var lineHeight = 17;
-        var width = parseFloat(text.attr('width'));
-        var y = parseFloat(text.attr('y'));
-        var x = text.attr('x');
-        var anchor = text.attr('text-anchor');
-
-        var tspan = text.text(null).append('tspan').attr('x', x).attr('y', y).attr('text-anchor', anchor);
-        var lineNumber = 0;
-        var line = [];
-        var word = words.pop();
-
-        while (word) {
-            line.push(word);
-            tspan.text(line.join(' '));
-            if (tspan.node().getComputedTextLength() > width) {
-                lineNumber += 1;
-                line.pop();
-                tspan.text(line.join(' '));
-                line = [word];
-                tspan = text.append('tspan').attr('x', x).attr('y', y + lineNumber * lineHeight).attr('anchor', anchor).text(word);
-            }
-            word = words.pop();
-        }
-    });
-}
-
 function drawTreeDataset(dataTree, filtertype, typeload) {
     d3.select("#downloads-dataset svg").remove();
 
@@ -187,179 +158,112 @@ function drawTreeDataset(dataTree, filtertype, typeload) {
 
 }
 
-function createChartTimeLineDataSet(data) {
-    d3.select("#timeline-dataset svg").remove();
-    var margin = {
-            top: 20,
-            right: 20,
-            bottom: 30,
-            left: 50
-        },
-        width = 580 - margin.left - margin.right,
-        height = 220 - margin.top - margin.bottom;
+function drawGaugeDatasetChart(dataGauge) {
+    var width = 150,
+        height = 150,
+        progress = 0,
+        progress3 = 0,
+        progress2 = 0,
+        formatPercent = d3.format(".0%");
+    const twoPi = 2 * Math.PI;
 
-    // parse the date / time
-    var parseTime = d3.timeParse("%d-%b-%y");
+    var arc = d3.arc()
+        .startAngle(0)
+        .innerRadius(70)
+        .outerRadius(64);
 
-    // set the ranges
-    var x = d3.scaleTime().range([0, width]);
-    var y = d3.scaleLinear().range([height, 0]);
-
-    // define the area
-    var area = d3.area()
-        .x(function (d) {
-            return x(d.date);
-        })
-        .y0(height)
-        .y1(function (d) {
-            return y(d.close);
-        });
-
-    // define the line
-    var valueline = d3.line()
-        .x(function (d) {
-            return x(d.date);
-        })
-        .y(function (d) {
-            return y(d.close);
-        });
-
-    // append the svg obgect to the body of the page
-    // appends a 'group' element to 'svg'
-    // moves the 'group' element to the top left margin
-    var svg = d3.select("#timeline-dataset").append("svg")
-        //responsive SVG needs these 2 attributes and no width and height attr
-        .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-60 -28 600 300")
+    var svg = d3.selectAll("#gauge-datasets").append("svg")
+        .attr("width", width)
+        .attr("height", height)
         .append("g")
-        // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
+        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-        //class to make it responsive
-        .classed("svg-content-responsive", true);
-    var totalAmount = 0;
-    // format the data
-    data.forEach(function (d) {
-        d.date = parseTime(d.date);
-    });
+    var meter = svg.append("g")
+        .attr("class", "funds-allocated-meter");
 
-    data = data.sort(sortByDateAscending);
+    meter.append("path")
+        .attr("class", "background")
+        .attr("d", arc.endAngle(twoPi));
 
-    for (var i = 0; i < data.length; i++) {
-        data[i].close = +data[i].close;
-        totalAmount += data[i].close;
-        if (i > 0) {
-            data[i]['CumulativeAmount'] = data[i].close + data[i - 1].close;
-        } else {
-            data[i]['CumulativeAmount'] = data[i].close;
-        }
-    }
-    //now calculate cumulative % from the cumulative amounts & total, round %
-    for (var i = 0; i < data.length; i++) {
-        data[i]['CumulativePercentage'] = (data[i]['CumulativeAmount'] / totalAmount);
-        data[i]['CumulativePercentage'] = parseFloat(data[i]['CumulativePercentage'].toFixed(2));
-    }
+    var foreground = meter.append("path")
+        .attr("class", "foreground");
 
-    var lineGen = d3.line()
-        .x(function (d) {
-            return x(d.date);
-        })
-        .y(function (d) {
-            return y(d.CumulativeAmount);
-        });
+    var percentComplete = meter.append("text")
+        .attr("text-anchor", "middle")
+        .attr("class", "percent-complete")
+        .attr("dy", "0.3em")
+        .text(setSettingsNumber(dataGauge.code.allocated).valueNumber + setSettingsNumber(dataGauge.code.allocated).suffixNumber);
 
-    // scale the range of the data
-    x.domain(d3.extent(data, function (d) {
-        return d.date;
-    }));
-    y.domain([0, d3.max(data, function (d) {
-        return d.close;
-    })]);
 
-    // add the area
-    svg.append("path")
-        .data([data])
-        .attr("class", "area")
-        .attr("d", area);
 
-    // add the valueline path.
-    svg.append("path")
-        .data([data])
-        .attr("class", "line")
-        .attr("d", valueline);
+    var i = d3.interpolate(progress, dataGauge.code.allocated / dataGauge.code.total);
+    foreground.attr("d", arc.endAngle(twoPi * i(1)));
+    //gauge K
 
-    //calculate path do not delete it
-    // svg.append('svg:path')
-    //     .attr('d', lineGen(data))
-    //     .attr('stroke', '#c3c3c3')
-    //     .attr("stroke-dasharray", "4")
-    //     .attr('stroke-width', 2)
-    //     .attr('fill', 'none');
+    var arc2 = d3.arc()
+        .startAngle(0)
+        .innerRadius(70)
+        .outerRadius(64);
 
-    // add the X Axis
-    svg.append("g")
-        .attr("transform", "translate(0," + height + ")")
-        .attr("class", "x-axis")
-        .style('stroke-width', '3px')
-        .style("font-family", "Gotham-Book")
-        .style("font-size", "13px")
-        .call(d3.axisBottom(x)
-            .ticks(d3.timeDay.filter(function (d) {
-                return $("#dataSet2018").prop("checked") ? d3.timeDay.count(0, d) % 60 === 0 : d3.timeDay.count(0, d) % 60 === 0
-            }))
-            .ticks(10)
-            .tickSizeOuter(0)
-        )
+    var svg2 = d3.selectAll("#gauge-download-d").append("svg")
+        .attr("width", width)
+        .attr("height", height)
+        .append("g")
+        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-    // add the Y Axis
-    svg.append("g")
-        .attr("class", "y-axis")
-        .style("font-family", "Gotham-Book")
-        .style("font-size", "13px")
-        .call(d3.axisLeft(y)
-            .ticks(3)
-            .tickFormat(function (x) {
-                var value = setSettingsNumber(x);
-                return value.valueNumber + value.suffixNumber;
-            }));
+    var meter2 = svg2.append("g")
+        .attr("class", "funds-allocated-meter");
+
+    meter2.append("path")
+        .attr("class", "background")
+        .attr("d", arc2.endAngle(twoPi));
+
+    var foreground2 = meter2.append("path")
+        .attr("class", "foreground");
+
+    var percentComplete2 = meter2.append("text")
+        .attr("text-anchor", "middle")
+        .attr("class", "percent-complete")
+        .attr("dy", "0.3em")
+        .text(setSettingsNumber(dataGauge.pageview.allocated).valueNumber + setSettingsNumber(dataGauge.pageview.allocated).suffixNumber);
+
+
+    var i2 = d3.interpolate(progress2, dataGauge.pageview.allocated / dataGauge.pageview.total);
+    foreground2.attr("d", arc2.endAngle(twoPi * i2(1)));
+    //gauge %
+
+    var arc3 = d3.arc()
+        .startAngle(0)
+        .innerRadius(70)
+        .outerRadius(64);
+
+    var svg3 = d3.selectAll("#gauge-lac-d").append("svg")
+        .attr("width", width)
+        .attr("height", height)
+        .append("g")
+        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+    var meter3 = svg3.append("g")
+        .attr("class", "funds-allocated-meter");
+
+    meter3.append("path")
+        .attr("class", "background")
+        .attr("d", arc3.endAngle(twoPi));
+
+    var foreground3 = meter3.append("path")
+        .attr("class", "foreground");
+
+
+    var percentComplete3 = meter3.append("text")
+        .attr("text-anchor", "middle")
+        .attr("class", "percent-complete")
+        .attr("dy", "0.3em")
+        .text(dataGauge.lac.allocated + "%");
+
+
+    var i3 = d3.interpolate(progress3, dataGauge.lac.allocated / dataGauge.lac.total);
+    foreground3.attr("d", arc3.endAngle(twoPi * i3(1)));
 }
-
-
-function setDatasetsGauge() {
-    var dataGaugeDatasets = {
-        "code": {
-            "total": 100, //getPercentageTotal(datasetsAllTotalGlobal),
-            "allocated": datasetsAllTotalGlobal
-        },
-        "pageview": {
-            "total": 100, //getPercentageTotal(datasetsAllDownloads),
-            "allocated": datasetsAllDownloads
-        },
-        "lac": {
-            "total": 100,
-            "allocated": datasetsAllDownloadsLac
-        }
-    }
-    return dataGaugeDatasets;
-}
-
-function setDatasetsGauge2018() {
-    var dataGaugeDatasets2018 = {
-        "code": {
-            "total": getPercentageTotal(datasets2018TotalGlobal),
-            "allocated": datasets2018TotalGlobal
-        },
-        "pageview": {
-            "total": getPercentageTotal(datasets2018Downloads),
-            "allocated": datasets2018Downloads
-        },
-        "lac": {
-            "total": 100,
-            "allocated": datasets2018DownloadsLac
-        }
-    }
-    return dataGaugeDatasets2018;
-}
-
 
 function drawGaugeDatasetChart(dataGauge) {
     var width = 150,
@@ -469,6 +373,7 @@ function drawGaugeDatasetChart(dataGauge) {
 }
 
 function drawPlotChartDataset(data) {
+    d3.select("#dataset-publications-plot svg").remove();
     var margin = {
         top: 30,
         right: 50,
@@ -623,14 +528,180 @@ function drawPlotChartDataset(data) {
         .on("mouseover", mouseOver)
         .on("mouseout", mouseOut);
 }
-function removeDatasetsSvg() {
+
+function createChartTimeLineDataSet(data) {
     d3.select("#timeline-dataset svg").remove();
-    d3.select("#data-trend svg").remove();
-    d3.select("#dataset-publications-plot svg").remove();
-    d3.select("#downloads-dataset svg").remove();
+    var margin = {
+            top: 20,
+            right: 20,
+            bottom: 30,
+            left: 50
+        },
+        width = 580 - margin.left - margin.right,
+        height = 220 - margin.top - margin.bottom;
+
+    // parse the date / time
+    var parseTime = d3.timeParse("%d-%b-%y");
+
+    // set the ranges
+    var x = d3.scaleTime().range([0, width]);
+    var y = d3.scaleLinear().range([height, 0]);
+
+    // define the area
+    var area = d3.area()
+        .x(function (d) {
+            return x(d.date);
+        })
+        .y0(height)
+        .y1(function (d) {
+            return y(d.close);
+        });
+
+    // define the line
+    var valueline = d3.line()
+        .x(function (d) {
+            return x(d.date);
+        })
+        .y(function (d) {
+            return y(d.close);
+        });
+
+    // append the svg obgect to the body of the page
+    // appends a 'group' element to 'svg'
+    // moves the 'group' element to the top left margin
+    var svg = d3.select("#timeline-dataset").append("svg")
+        //responsive SVG needs these 2 attributes and no width and height attr
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-60 -28 600 300")
+        .append("g")
+        // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
+
+        //class to make it responsive
+        .classed("svg-content-responsive", true);
+    var totalAmount = 0;
+    // format the data
+    data.forEach(function (d) {
+        d.date = parseTime(d.date);
+    });
+
+    data = data.sort(sortByDateAscending);
+
+    for (var i = 0; i < data.length; i++) {
+        data[i].close = +data[i].close;
+        totalAmount += data[i].close;
+        if (i > 0) {
+            data[i]['CumulativeAmount'] = data[i].close + data[i - 1].close;
+        } else {
+            data[i]['CumulativeAmount'] = data[i].close;
+        }
+    }
+    //now calculate cumulative % from the cumulative amounts & total, round %
+    for (var i = 0; i < data.length; i++) {
+        data[i]['CumulativePercentage'] = (data[i]['CumulativeAmount'] / totalAmount);
+        data[i]['CumulativePercentage'] = parseFloat(data[i]['CumulativePercentage'].toFixed(2));
+    }
+
+    var lineGen = d3.line()
+        .x(function (d) {
+            return x(d.date);
+        })
+        .y(function (d) {
+            return y(d.CumulativeAmount);
+        });
+
+    // scale the range of the data
+    x.domain(d3.extent(data, function (d) {
+        return d.date;
+    }));
+    y.domain([0, d3.max(data, function (d) {
+        return d.close;
+    })]);
+
+    // add the area
+    svg.append("path")
+        .data([data])
+        .attr("class", "area")
+        .attr("d", area);
+
+    // add the valueline path.
+    svg.append("path")
+        .data([data])
+        .attr("class", "line")
+        .attr("d", valueline);
+
+    //calculate path do not delete it
+    // svg.append('svg:path')
+    //     .attr('d', lineGen(data))
+    //     .attr('stroke', '#c3c3c3')
+    //     .attr("stroke-dasharray", "4")
+    //     .attr('stroke-width', 2)
+    //     .attr('fill', 'none');
+
+    // add the X Axis
+    svg.append("g")
+        .attr("transform", "translate(0," + height + ")")
+        .attr("class", "x-axis")
+        .style('stroke-width', '3px')
+        .style("font-family", "Gotham-Book")
+        .style("font-size", "13px")
+        .call(d3.axisBottom(x)
+            .ticks(d3.timeDay.filter(function (d) {
+                return $("#dataSet2018").prop("checked") ? d3.timeDay.count(0, d) % 60 === 0 : d3.timeDay.count(0, d) % 60 === 0
+            }))
+            .ticks(10)
+            .tickSizeOuter(0)
+        )
+
+    // add the Y Axis
+    svg.append("g")
+        .attr("class", "y-axis")
+        .style("font-family", "Gotham-Book")
+        .style("font-size", "13px")
+        .call(d3.axisLeft(y)
+            .ticks(3)
+            .tickFormat(function (x) {
+                var value = setSettingsNumber(x);
+                return value.valueNumber + value.suffixNumber;
+            }));
 }
 
-function removeDatasetsSvgAll() {
+function setDatasetsGauge() {
+    var dataGaugeDatasets = {
+        "code": {
+            "total": 100, //getPercentageTotal(datasetsAllTotalGlobal),
+            "allocated": datasetsAllTotalGlobal
+        },
+        "pageview": {
+            "total": 100, //getPercentageTotal(datasetsAllDownloads),
+            "allocated": datasetsAllDownloads
+        },
+        "lac": {
+            "total": 100,
+            "allocated": datasetsAllDownloadsLac
+        }
+    }
+    return dataGaugeDatasets;
+}
+
+function setDatasetsGauge2018() {
+    var dataGaugeDatasets2018 = {
+        "code": {
+            "total": getPercentageTotal(datasets2018TotalGlobal),
+            "allocated": datasets2018TotalGlobal
+        },
+        "pageview": {
+            "total": getPercentageTotal(datasets2018Downloads),
+            "allocated": datasets2018Downloads
+        },
+        "lac": {
+            "total": 100,
+            "allocated": datasets2018DownloadsLac
+        }
+    }
+    return dataGaugeDatasets2018;
+}
+
+function removeDatasetsSvg() {
     d3.select("#timeline-dataset svg").remove();
     d3.select("#data-trend svg").remove();
     d3.select("#dataset-publications-plot svg").remove();
@@ -642,9 +713,8 @@ function removeDatasetsGauges() {
     d3.select("#gauge-download-d svg").remove();
     d3.select("#gauge-lac-d svg").remove();
 }
-$("input[name*='dataSetTrend']").click(function () {
 
-    removeDatasetsSvg();
+$("input[name*='dataSetTrend']").click(function () {   
     removeDatasetsGauges();
 
     if ($("select[id*='divisionSelect']").val() != "IDB") {
@@ -694,7 +764,6 @@ $("input[name*='dataSetTrend']").click(function () {
             dataDatasets2018 = setDatasetsGauge2018();
             drawGaugeDatasetChart(dataDatasets2018);
         }
-
         //linechart
         // var ObjectDataSetLineChart = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
         // createChartTimeLineDataSet(ObjectDataSetLineChart);
@@ -703,6 +772,35 @@ $("input[name*='dataSetTrend']").click(function () {
     }
 });
 
+function wrapData(text) {
+    text.each(function () {
+        var text = d3.select(this);
+        var words = text.text().split(/\s+/).reverse();
+        var lineHeight = 17;
+        var width = parseFloat(text.attr('width'));
+        var y = parseFloat(text.attr('y'));
+        var x = text.attr('x');
+        var anchor = text.attr('text-anchor');
+
+        var tspan = text.text(null).append('tspan').attr('x', x).attr('y', y).attr('text-anchor', anchor);
+        var lineNumber = 0;
+        var line = [];
+        var word = words.pop();
+
+        while (word) {
+            line.push(word);
+            tspan.text(line.join(' '));
+            if (tspan.node().getComputedTextLength() > width) {
+                lineNumber += 1;
+                line.pop();
+                tspan.text(line.join(' '));
+                line = [word];
+                tspan = text.append('tspan').attr('x', x).attr('y', y + lineNumber * lineHeight).attr('anchor', anchor).text(word);
+            }
+            word = words.pop();
+        }
+    });
+}
 //click radiobutton drawChart(id del click)
 // $("input[name*='dataSetTrend']").click(function () {
 //     removeDataSetsSvg();
@@ -740,8 +838,6 @@ $("input[name*='dataSetTrend']").click(function () {
 
 
 function initDataSet() {
-    // removeDataSetsSvg();
-    // removeDatasetsGauges();
     //init
     
     var ObjectDataSetLineChart = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
