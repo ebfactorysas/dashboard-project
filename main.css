@@ -1069,6 +1069,18 @@ section.map .fa {
     font-size: 14px;
 }
 
+section.map .alert-map {
+    color: #ffffff;
+    background-color: #f7899f;
+    border-color: #c42948;
+}
+
+
+
+section.map .temp-hide{
+  opacity: .5;
+}
+
 section.map #search {
     border: none;
 }
@@ -1606,6 +1618,19 @@ section.map select.form-control:not([size]):not([multiple]) {
     section.suscribers .right-bar .right-zone {
         width: 700px;
     }
+
+    section.suscribers .left-bar{
+        min-height: 900px;
+    }
+
+    section.suscribers .right-bar{
+        min-height: 900px;
+    }
+
+    section.suscribers {
+        min-height: 900px;
+    }
+
     #moocs-registrations {
         height: 545px;
     }
