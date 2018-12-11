@@ -83,7 +83,7 @@ $("#divisionSelect").on('change', function (data) {
         // updateGaugesCode();
         // updateGaugesSubscribers();
     }
-
+    drawPlotChartDataset($.extend(true, [], datasetsScatterplotArrays));
     moocsFilter();
 });
 
@@ -186,6 +186,7 @@ function setDataPublicationsByDivisions(sltValue) {
  */
 
 function setDataDataSetByDivisions(sltValue) {
+    debugger;
     $("#dataSet2018").prop("checked", true);
     //treemap
     jsonDataSetTree = datasetsDownloadSource.downloadSourceDivisions.filter(function (dataT) {
@@ -194,7 +195,7 @@ function setDataDataSetByDivisions(sltValue) {
     drawTreeDataset(jsonDataSetTree, "2018", 'init');
 
     //chart time line
-    var ObjectDataSetTimeLine = $.extend(true, [], datasetsDownloadsTimelineArrays.topDivisions2018);
+    var ObjectDataSetTimeLine = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineDivisions);
     jsonTimeLineDataSet = ObjectDataSetTimeLine.filter(function (dataT) {
         return dataT.division_code == sltValue
     });
