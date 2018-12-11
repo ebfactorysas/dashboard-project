@@ -224,7 +224,7 @@ function setDataCodeByDivisions(sltValue) {
     // removePublicationsSvgAll();
     var ObjectTopIdb2018 = $.extend(true, [], codeTopArrays.codeTrend2018Divisions);
     ObjectTopIdb2018 = ObjectTopIdb2018.filter(function (data){
-        return data.division_codes == sltValue
+        return data.divisionCodes == sltValue
     });
     var ObjectPageViewsTimeLine2018 = $.extend(true, [], codePageviewsTimelineArrays.pageviewTimelineDivisions);
     ObjectPageViewsTimeLine2018 = ObjectPageViewsTimeLine2018.filter(function (data){
@@ -234,14 +234,18 @@ function setDataCodeByDivisions(sltValue) {
     ObjectcodeScatterploArrays = ObjectcodeScatterploArrays.filter(function (data){
         return data.department_codes == sltValue
     });
+    var ObjectCodePageViewSource = $.extend(true, [], codePageviewsSourceArrays.pageviewSourceDivisions);
+    ObjectCodePageViewSource = ObjectCodePageViewSource.filter(function (data){
+        return data.division_codes == sltValue
+    });
 
     drawLinesChart(dataLines);
-    drawTreeCode(codePageviewsSourceArrays.pageviewSourceIDB, "2018");
     dataGaugeCode2018 = setCodeGauge2018();
     drawGaugeCodeChart(dataGaugeCode2018);
     drawPlotChart(ObjectcodeScatterploArrays);
     drawChartCodeTrend(ObjectTopIdb2018);
-    createChartTimeline(ObjectPageViewsTimeLine2018);
+    createChartTimeline(ObjectPageViewsTimeLine2018[0].data);
+    drawTreeCode(ObjectCodePageViewSource, "2018");
 }
 
 

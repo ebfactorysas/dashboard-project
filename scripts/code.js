@@ -926,30 +926,78 @@ function removeGaugeCode() {
 }
 //click radiobutton drawChart(id del click)
 $("input[name*='codeTrend']").click(function () {
-    var ObjectTopIdbAllTime = $.extend(true, [], codeTopArrays.codeTrendIADBAllTime);
-    var ObjectPageViewsTimeLineAllTime = $.extend(true, [], codePageviewsTimelineArrays.pageviewTimelineIDB);
-    var ObjectTopIdb2018 = $.extend(true, [], codeTopArrays.codeTrendIADBA2018);
-    var ObjectcodeScatterploArrays = $.extend(true, [], codeScatterploArrays);
-
+    
     removeCodeSvg();
     removeGaugeCode();
-
-    if (this.id == "codeAllTime") {
-        drawTreeCode(codePageviewsSourceArrays.pageviewSourceIDB, "AllTheTime");
-        drawChartCodeTrend(ObjectTopIdbAllTime);
-        // createChartTimeline(ObjectPageViewsTimeLineAllTime);
-        // drawPlotChart(ObjectcodeScatterploArrays);
-        dataGaugeCode = setCodeGauge();
-        drawGaugeCodeChart(dataGaugeCode);
-    } else {
-        drawTreeCode(codePageviewsSourceArrays.pageviewSourceIDB, "2018");
-        drawChartCodeTrend(ObjectTopIdb2018);
-        // createChartTimeline(ObjectPageViewsTimeLineAllTime);
-        // drawPlotChart(ObjectcodeScatterploArrays);
-        dataGaugeCode2018 = setCodeGauge2018();
-        drawGaugeCodeChart(dataGaugeCode2018);
+    if ($("select[id*='divisionSelect']").val() == "IDB") {
+        var ObjectTopIdbAllTime = $.extend(true, [], codeTopArrays.codeTrendIADBAllTime);
+        var ObjectPageViewsTimeLineAllTime = $.extend(true, [], codePageviewsTimelineArrays.pageviewTimelineIDB);
+        var ObjectTopIdb2018 = $.extend(true, [], codeTopArrays.codeTrendIADBA2018);
+        var ObjectcodeScatterploArrays = $.extend(true, [], codeScatterploArrays);
+        if (this.id == "codeAllTime") {
+            drawTreeCode(codePageviewsSourceArrays.pageviewSourceIDB, "AllTheTime");
+            drawChartCodeTrend(ObjectTopIdbAllTime);
+            // createChartTimeline(ObjectPageViewsTimeLineAllTime);
+            // drawPlotChart(ObjectcodeScatterploArrays);
+            dataGaugeCode = setCodeGauge();
+            drawGaugeCodeChart(dataGaugeCode);
+        } else {
+            drawTreeCode(codePageviewsSourceArrays.pageviewSourceIDB, "2018");
+            drawChartCodeTrend(ObjectTopIdb2018);
+            // createChartTimeline(ObjectPageViewsTimeLineAllTime);
+            // drawPlotChart(ObjectcodeScatterploArrays);
+            dataGaugeCode2018 = setCodeGauge2018();
+            drawGaugeCodeChart(dataGaugeCode2018);
+        }
     }
-
+    else {
+        jsondataCode = codeIndicatorsArrays.indicatorsDivisions.filter(function (data) {
+            return data.division_codes == $("select[id*='divisionSelect']").val()
+        });
+        var ObjectPageViewsTimeLine = $.extend(true, [], codePageviewsTimelineArrays.pageviewTimelineDivisions);
+        ObjectPageViewsTimeLine = ObjectPageViewsTimeLine.filter(function (data) {
+            return data.division_codes == $("select[id*='divisionSelect']").val()
+        });
+        var ObjectCodePageViewSource = $.extend(true, [], codePageviewsSourceArrays.pageviewSourceDivisions);
+        ObjectCodePageViewSource = ObjectCodePageViewSource.filter(function (data) {
+            return data.division_codes == $("select[id*='divisionSelect']").val()
+        });
+        if (this.id == "codeAllTime") {
+            removeCodeSvg();
+            removeGaugeCode();
+            var ObjectTopIdbAllTime = $.extend(true, [], codeTopArrays.codeTrendAllTimeDivisions);
+            ObjectTopIdbAllTime = ObjectTopIdbAllTime.filter(function (data) {
+                return data.divisionCodes == $("select[id*='divisionSelect']").val()
+            });
+            drawChartCodeTrend(ObjectTopIdbAllTime);
+            // createChartTimeline(ObjectPageViewsTimeLineAllTime);
+            // drawPlotChart(ObjectcodeScatterploArrays);
+            codeAllTotalGlobal = (jsondataCode.length > 0) ? jsondataCode[0].all_the_time_code : '0',
+            codeAllDownloads = (jsondataCode.length > 0) ? jsondataCode[0]['all_the_time_pageviews'] : '0',
+            codeAllDownloadsLac = (jsondataCode.length > 0) ? ((jsondataCode[0]['porcent_total_lac'] * 100 >= 100) ? "100%" : (jsondataCode[0]['porcent_total_lac'] * 100).toFixed(1)) : '',
+            dataGaugeCode = setCodeGauge();
+            drawGaugeCodeChart(dataGaugeCode);
+            drawTreeCode(ObjectCodePageViewSource, "AllTheTime");
+        }
+        else {
+            removeCodeSvgAll();
+            removeGaugeCode();
+            var ObjectTopIdb2018 = $.extend(true, [], codeTopArrays.codeTrend2018Divisions);
+            ObjectTopIdb2018 = ObjectTopIdb2018.filter(function (data) {
+                return data.divisionCodes == $("select[id*='divisionSelect']").val()
+            });
+            code2018TotalGlobal = (jsondataCode.length > 0) ? jsondataCode[0]['2018_code'] : '0',
+            code2018Downloads = (jsondataCode.length > 0) ? jsondataCode[0]['2018_pageviews'] : '0',
+            code2018DownloadsLac = (jsondataCode.length > 0) ? ((jsondataCode[0]['porcent_total_lac'] * 100 >= 100) ? "100%" : (jsondataCode[0]['porcent_total_lac'] * 100).toFixed(1)) : '',
+            
+            setDataCodeByDivisions($("select[id*='divisionSelect']").val());
+            // dataGaugeCode2018 = setCodeGauge2018();
+            
+            // drawGaugeCodeChart(dataGaugeCode2018);
+            // drawChartCodeTrend(ObjectTopIdb2018);
+            // drawTreeCode(ObjectCodePageViewSource, "2018");
+        }
+    }
     //drawChartCodeTrend(codetrendArrays[this.id]);
 
     //graph #4
