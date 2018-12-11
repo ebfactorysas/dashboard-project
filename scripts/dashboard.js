@@ -144,9 +144,9 @@ function setDataSubscribers(valueFilter) {
     jsondataSubscriber = subscribersArray.subscribersDivisions.filter(function (data) {
         return data.Divisions == valueFilter
     });
-    subscriberValue = (jsondataSubscriber.length > 0) ? jsondataSubscriber[0].subscribers : '0';
-    porcent_total_subscriber_2018 = '100%'; /** missing, se pone 100% por orden de rodrigo */
-    porcent_subscriber_lac = (jsondataSubscriber.length > 0) ? ((jsondataSubscriber[0]['porcent_total_from_lac'] * 100 >= 100) ? "100%" : (jsondataSubscriber[0]['porcent_total_from_lac'] * 100).toFixed(1) + '%') : '';
+    subscribersAllTotalGlobal = (jsondataSubscriber.length > 0) ? jsondataSubscriber[0].subscribers : '0';
+    subscribersAllDownloads = '100%'; /** missing, se pone 100% por orden de rodrigo */
+    subscribersAllDownloadsLac = (jsondataSubscriber.length > 0) ? ((jsondataSubscriber[0]['porcent_total_from_lac'] * 100 >= 100) ? "100%" : (jsondataSubscriber[0]['porcent_total_from_lac'] * 100).toFixed(1)) : '';
 }
 
 
