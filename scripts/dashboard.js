@@ -21,7 +21,6 @@ $("#deparmentSelect").on('change', function () {
     $("#divisionSelect").value = "";
     $('#blueAllTime').click();
     removePublicationsGauges();
-    removeMoocsGauges();
     removeGaugeCode();
 
     d3.select("#gauge-suscribers svg").remove();

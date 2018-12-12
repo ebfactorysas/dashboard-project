@@ -41,6 +41,7 @@ function wrap(text, width) {
 }
 
 function drawDistributionChart(dataDistribution) {
+    d3.select("#distribution-moocs svg").remove();
     var marginDistribution = {
         top: 50,
         right: 50,
@@ -134,7 +135,7 @@ function drawDistributionChart(dataDistribution) {
 
 
 function drawMoocsRegistrationsChart(dataMoocs) {
-
+    d3.select("#moocs-registrations svg").remove();
     var marginMoocs = {
         top: 15,
         right: 25,
@@ -403,6 +404,8 @@ var widthStudents = 100 - marginStudents.left - marginStudents.right,
 
 
 function drawStudentRegistrationsChart(dataStudents) {
+    d3.select("#student1 svg").remove();
+    
     if (typeof dataStudents == "undefined" || typeof dataStudents.registrations == "undefined") {
         $('#student1-title').html("0");
         return
@@ -500,6 +503,8 @@ function drawStudentRegistrationsChart(dataStudents) {
 
 
 function drawStudentParticipantsChart(dataStudents) {
+    d3.select("#student2 svg").remove();
+    
     if (typeof dataStudents == "undefined" || typeof dataStudents.participants == "undefined") {
         $('#student2-title').html("0");
         return
@@ -595,6 +600,8 @@ function drawStudentParticipantsChart(dataStudents) {
 
 
 function drawStudentCompletedsChart(dataStudents) {
+    d3.select("#student3 svg").remove();
+    
     if (typeof dataStudents == "undefined" || typeof dataStudents.completed == "undefined") {
         $('#student3-title').html("0");
         return
@@ -691,6 +698,7 @@ function drawStudentCompletedsChart(dataStudents) {
 
 
 function drawStudentCertifiedsChart(dataStudents) {
+    d3.select("#student4 svg").remove();
     if (typeof dataStudents == "undefined" || typeof dataStudents.certified == "undefined") {
         $('#student4-title').html("0");
         return
@@ -798,6 +806,7 @@ function createChart(data) {
     //         return data.date.indexOf("-18") > -1
     //     });
     // }
+    d3.select("#timeline-moocs svg").remove();
     if (data !== "Nodata") {
         var margin = {
                 top: 20,
@@ -994,6 +1003,9 @@ function setMoocsGauge2018() {
 }
 
 function drawGaugeMoocsChart(dataGauge) {
+    d3.select("#gauge-moocs svg").remove();
+    d3.select("#gauge-registrations-m svg").remove();
+    d3.select("#gauge-lac-m svg").remove();
     var width = 150,
         height = 150,
         progress = 0,
@@ -1153,6 +1165,8 @@ points2(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArray
 points3(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Other")));
 
 function points(data) {
+    d3.select("#waffle svg").remove();
+    
     var formatNumber = setSettingsNumber(data[0].registrations);
     $('#waffle-registrations').html(formatNumber.valueNumber + formatNumber.suffixNumber);
     if (typeof data[0].gender == "undefined") {
@@ -1238,6 +1252,8 @@ function points(data) {
 
 
 function points1(data) {
+    d3.select("#waffle1 svg").remove();
+    
     var formatNumber = setSettingsNumber(data[0].registrations);
     $('#waffle1-registrations').html(formatNumber.valueNumber + formatNumber.suffixNumber);
     if (typeof data[0].gender == "undefined") {
@@ -1324,6 +1340,8 @@ function points1(data) {
 }
 
 function points2(data) {
+    d3.select("#waffle2 svg").remove();
+    
     var formatNumber = setSettingsNumber(data[0].registrations);
     $('#waffle2-registrations').html(formatNumber.valueNumber + formatNumber.suffixNumber);
     if (typeof data[0].gender == "undefined") {
@@ -1408,6 +1426,7 @@ function points2(data) {
 }
 
 function points3(data) {
+    d3.select("#waffle3 svg").remove();
     var formatNumber = setSettingsNumber(data[0].registrations);
     $('#waffle3-registrations').html(formatNumber.valueNumber + formatNumber.suffixNumber);
     if (typeof data[0].gender == "undefined") {
@@ -1509,8 +1528,7 @@ function departmentFilter(moocsJson, filterBy) {
 }
 
 function moocsFilter() {
-    removeMoocsSvg();
-    removeMoocsGauges();
+    
     //Load the json
     switch ($("input[name*='moocsTrend']:checked").val()) {
         case 'all':
@@ -1675,47 +1693,6 @@ function moocsFilter() {
 
 
 
-}
-
-function removeMoocsSvg() {
-    d3.select("#timeline-moocs svg").remove();
-    d3.select("#moocs-registrations svg").remove();
-    d3.select("#distribution-moocs svg").remove();
-    d3.select("#student1 svg").remove();
-    d3.select("#student2 svg").remove();
-    d3.select("#student3 svg").remove();
-    d3.select("#student4 svg").remove();
-
-    d3.select("#waffle svg").remove();
-    d3.select("#waffle1 svg").remove();
-    d3.select("#waffle2 svg").remove();
-    d3.select("#waffle3 svg").remove();
-
-}
-
-function removeMoocsSvgAll() {
-    d3.select("#timeline-moocs svg").remove();
-    d3.select("#moocs-registrations svg").remove();
-    d3.select("#distribution-moocs svg").remove();
-    d3.select("#student1 svg").remove();
-    d3.select("#student2 svg").remove();
-    d3.select("#student3 svg").remove();
-    d3.select("#student4 svg").remove();
-
-    d3.select("#waffle svg").remove();
-    d3.select("#waffle1 svg").remove();
-    d3.select("#waffle2 svg").remove();
-    d3.select("#waffle3 svg").remove();
-
-    d3.select("#gauge-moocs svg").remove();
-    d3.select("#gauge-registrations-m svg").remove();
-    d3.select("#gauge-lac-m svg").remove();
-}
-
-function removeMoocsGauges() {
-    d3.select("#gauge-moocs svg").remove();
-    d3.select("#gauge-registrations-m svg").remove();
-    d3.select("#gauge-lac-m svg").remove();
 }
 
 function initMoocs() {
