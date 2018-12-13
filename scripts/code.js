@@ -330,7 +330,7 @@ function createChartTimeline(data) {
         .append("svg")
         //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-60 -28 600 300")
+        .attr("viewBox", "-60 -28 600 250")
         .append("g")
         // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
 
@@ -420,7 +420,7 @@ function createChartTimeline(data) {
             .ticks(3)
             .tickFormat(function (x) {
                 var value = setSettingsNumber(x);
-                return value.valueNumber + value.suffixNumber;
+                return Math.floor(value.valueNumber) + value.suffixNumber;
             }));
 
     var textOfTotal = setSettingsNumber(totalAmount);

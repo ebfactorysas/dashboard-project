@@ -550,7 +550,7 @@ function createChartTimeLineDataSet(data) {
             .ticks(3)
             .tickFormat(function (x) {
                 var value = setSettingsNumber(x);
-                return value.valueNumber + value.suffixNumber;
+                return Math.floor(value.valueNumber) + value.suffixNumber;
             }));
 }
 

@@ -405,19 +405,15 @@ var widthStudents = 100 - marginStudents.left - marginStudents.right,
 
 function drawStudentRegistrationsChart(dataStudents) {
     d3.select("#student1 svg").remove();
-    
+
     if (typeof dataStudents == "undefined" || typeof dataStudents.registrations == "undefined") {
         $('#student1-title').html("0");
         return
     };
-
-    if ($("input[name*='moocsTrend']:checked").val() === "2018") {
-        var students2018 = dataStudents.registrations.years.filter(function (values) {
-            return values.name === "2018";
-        });
-        dataStudents.registrations.years = students2018;
-        dataStudents.registrations.value = students2018[0].value;
-    }
+    dataStudents.registrations.value = 0;
+    dataStudents.registrations.years.forEach(element => {
+        dataStudents.registrations.value = dataStudents.registrations.value + element.value;
+    }); 
 
     var formatNumber = setSettingsNumber(dataStudents.registrations ? dataStudents.registrations.value : 0);
     $('#student1-title').html(formatNumber.valueNumber + formatNumber.suffixNumber);
@@ -436,7 +432,7 @@ function drawStudentRegistrationsChart(dataStudents) {
         })]);
 
     var yStudent1 = d3.scaleBand()
-        .rangeRound([heightStudents, 0], .1)
+        .rangeRound([18 * dataStudents.registrations.years.length, 0], .1)
         .domain(dataStudents.registrations.years.map(function (d) {
             return d.name;
         }));
@@ -467,7 +463,7 @@ function drawStudentRegistrationsChart(dataStudents) {
             return yStudent1(d.name);
         })
         .attr("fill", "#fff")
-        .attr("height", yStudent1.bandwidth() - 8)
+        .attr("height", 10)
         .attr("x", 8)
         .attr("width", function (d) {
             return xStudent1(d.value);
@@ -477,9 +473,8 @@ function drawStudentRegistrationsChart(dataStudents) {
         .attr("class", "label")
         //y position of the label is halfway down the bar
         .attr("y", function (d) {
-            return yStudent1(d.name) + yStudent1.bandwidth() / 2;
+            return yStudent1(d.name) + 16 / 2;
         })
-        //x position is 3 pixels to the right of the bar
         .attr("x", function (d) {
             return xStudent1(d.value) - 6;
         })
@@ -504,19 +499,15 @@ function drawStudentRegistrationsChart(dataStudents) {
 
 function drawStudentParticipantsChart(dataStudents) {
     d3.select("#student2 svg").remove();
-    
+
     if (typeof dataStudents == "undefined" || typeof dataStudents.participants == "undefined") {
         $('#student2-title').html("0");
         return
     };
-
-    if ($("input[name*='moocsTrend']:checked").val() === "2018") {
-        var students2018 = dataStudents.participants.years.filter(function (values) {
-            return values.name === "2018";
-        });
-        dataStudents.participants.years = students2018;
-        dataStudents.participants.value = students2018[0].value;
-    }
+    dataStudents.participants.value = 0;
+    dataStudents.participants.years.forEach(element => {
+        dataStudents.participants.value = dataStudents.participants.value + element.value;
+    }); 
 
     var formatNumber = setSettingsNumber(dataStudents.participants.value);
     $('#student2-title').html(formatNumber.valueNumber + formatNumber.suffixNumber);
@@ -535,7 +526,7 @@ function drawStudentParticipantsChart(dataStudents) {
         })]);
 
     var yStudent2 = d3.scaleBand()
-        .rangeRound([heightStudents, 0], .1)
+        .rangeRound([18 * dataStudents.participants.years.length, 0], .1)
         .domain(dataStudents.participants.years.map(function (d) {
             return d.name;
         }));
@@ -564,7 +555,7 @@ function drawStudentParticipantsChart(dataStudents) {
             return yStudent2(d.name);
         })
         .attr("fill", "#fff")
-        .attr("height", yStudent2.bandwidth() - 8)
+        .attr("height", 10)
         .attr("x", 8)
         .attr("width", function (d) {
             return xStudent2(d.value);
@@ -574,7 +565,7 @@ function drawStudentParticipantsChart(dataStudents) {
         .attr("class", "label")
         //y position of the label is halfway down the bar
         .attr("y", function (d) {
-            return yStudent2(d.name) + yStudent2.bandwidth() / 2;
+            return yStudent2(d.name) + 16 / 2;
         })
         //x position is 3 pixels to the right of the bar
         .attr("x", function (d) {
@@ -601,19 +592,15 @@ function drawStudentParticipantsChart(dataStudents) {
 
 function drawStudentCompletedsChart(dataStudents) {
     d3.select("#student3 svg").remove();
-    
+
     if (typeof dataStudents == "undefined" || typeof dataStudents.completed == "undefined") {
         $('#student3-title').html("0");
         return
     };
-
-    if ($("input[name*='moocsTrend']:checked").val() === "2018") {
-        var students2018 = dataStudents.completed.years.filter(function (values) {
-            return values.name === "2018";
-        });
-        dataStudents.completed.years = students2018;
-        dataStudents.completed.value = students2018[0].value;
-    }
+    dataStudents.completed.value = 0;
+    dataStudents.completed.years.forEach(element => {
+        dataStudents.completed.value = dataStudents.completed.value + element.value;
+    }); 
 
     var formatNumber = setSettingsNumber(dataStudents.completed.value);
     $('#student3-title').html(formatNumber.valueNumber + formatNumber.suffixNumber);
@@ -632,7 +619,7 @@ function drawStudentCompletedsChart(dataStudents) {
         })]);
 
     var yStudent3 = d3.scaleBand()
-        .rangeRound([heightStudents, 0], .1)
+        .rangeRound([18 * dataStudents.completed.years.length, 0], .1)
         .domain(dataStudents.completed.years.map(function (d) {
             return d.name;
         }));
@@ -661,7 +648,7 @@ function drawStudentCompletedsChart(dataStudents) {
             return yStudent3(d.name);
         })
         .attr("fill", "#fff")
-        .attr("height", yStudent3.bandwidth() - 8)
+        .attr("height", 10)
         .attr("x", 8)
         .attr("width", function (d) {
             return xStudent3(d.value);
@@ -671,7 +658,7 @@ function drawStudentCompletedsChart(dataStudents) {
         .attr("class", "label")
         //y position of the label is halfway down the bar
         .attr("y", function (d) {
-            return yStudent3(d.name) + yStudent3.bandwidth() / 2;
+            return yStudent3(d.name) + 16 / 2;
         })
         //x position is 3 pixels to the right of the bar
         .attr("x", function (d) {
@@ -704,14 +691,10 @@ function drawStudentCertifiedsChart(dataStudents) {
         return
     };
 
-
-    if ($("input[name*='moocsTrend']:checked").val() === "2018") {
-        var students2018 = dataStudents.certified.years.filter(function (values) {
-            return values.name === "2018";
-        });
-        dataStudents.certified.years = students2018;
-        dataStudents.certified.value = students2018[0].value;
-    }
+    dataStudents.certified.value = 0;
+    dataStudents.certified.years.forEach(element => {
+        dataStudents.certified.value = dataStudents.certified.value + element.value;
+    }); 
 
     var formatNumber = setSettingsNumber(dataStudents.certified.value);
     $('#student4-title').html(formatNumber.valueNumber + formatNumber.suffixNumber);
@@ -730,7 +713,7 @@ function drawStudentCertifiedsChart(dataStudents) {
         })]);
 
     var yStudent4 = d3.scaleBand()
-        .rangeRound([heightStudents, 0], .1)
+        .rangeRound([18 * dataStudents.certified.years.length, 0], .1)
         .domain(dataStudents.certified.years.map(function (d) {
             return d.name;
         }));
@@ -760,7 +743,7 @@ function drawStudentCertifiedsChart(dataStudents) {
             return yStudent4(d.name);
         })
         .attr("fill", "#fff")
-        .attr("height", yStudent4.bandwidth() - 8)
+        .attr("height", 10)
         .attr("x", 8)
         .attr("width", function (d) {
             return xStudent4(d.value);
@@ -770,7 +753,7 @@ function drawStudentCertifiedsChart(dataStudents) {
         .attr("class", "label")
         //y position of the label is halfway down the bar
         .attr("y", function (d) {
-            return yStudent4(d.name) + yStudent4.bandwidth() / 2;
+            return yStudent4(d.name) + 16 / 2;
         })
         //x position is 3 pixels to the right of the bar
         .attr("x", function (d) {
@@ -931,7 +914,7 @@ function createChart(data) {
                 .ticks(3)
                 .tickFormat(function (x) {
                     var value = setSettingsNumber(x);
-                    return value.valueNumber + suffixNumber;
+                    return Math.floor(value.valueNumber) + suffixNumber;
                 }));
         var textOfTotal = setSettingsNumber(totalAmount);
         svg.append("text")
@@ -1166,7 +1149,7 @@ points3(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArray
 
 function points(data) {
     d3.select("#waffle svg").remove();
-    
+
     var formatNumber = setSettingsNumber(data[0].registrations);
     $('#waffle-registrations').html(formatNumber.valueNumber + formatNumber.suffixNumber);
     if (typeof data[0].gender == "undefined") {
@@ -1253,7 +1236,7 @@ function points(data) {
 
 function points1(data) {
     d3.select("#waffle1 svg").remove();
-    
+
     var formatNumber = setSettingsNumber(data[0].registrations);
     $('#waffle1-registrations').html(formatNumber.valueNumber + formatNumber.suffixNumber);
     if (typeof data[0].gender == "undefined") {
@@ -1341,7 +1324,7 @@ function points1(data) {
 
 function points2(data) {
     d3.select("#waffle2 svg").remove();
-    
+
     var formatNumber = setSettingsNumber(data[0].registrations);
     $('#waffle2-registrations').html(formatNumber.valueNumber + formatNumber.suffixNumber);
     if (typeof data[0].gender == "undefined") {
@@ -1528,11 +1511,11 @@ function departmentFilter(moocsJson, filterBy) {
 }
 
 function moocsFilter() {
-    
+
     //Load the json
     switch ($("input[name*='moocsTrend']:checked").val()) {
         case 'all':
-            
+
             //top registration chart
             if ($("select[id*='divisionSelect']").val().length > 0 && $("select[id*='divisionSelect']").val() !== "IDB") {
                 jsondataMoocs = moocsIndicatorsArray.indicatorsDivisions.filter(function (data) {
@@ -1541,7 +1524,7 @@ function moocsFilter() {
                 moocsAllTotalGlobal = (jsondataMoocs.length > 0) ? jsondataMoocs[0]['all_the_time_courses'] : '0';
                 moocsAllDownloads = (jsondataMoocs.length > 0) ? jsondataMoocs[0]['all_the_time_registrations'] : '0';
                 moocsAllDownloadsLac = (jsondataMoocs.length > 0) ? ((jsondataMoocs[0]['porcent_total_LAC'] * 100 >= 100) ? "100%" : (jsondataMoocs[0]['porcent_total_LAC'] * 100).toFixed(1)) : 0;
-                
+
                 dataGaugeMoocs = setMoocsGauge();
                 drawGaugeMoocsChart(dataGaugeMoocs);
                 var timelineDivisions = divisionFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDivisions), $("select[id*='divisionSelect']").val());
@@ -1611,7 +1594,7 @@ function moocsFilter() {
             }
             break;
         default:
-            
+
             //top registration chart
             if ($("select[id*='divisionSelect']").val().length > 0 && $("select[id*='divisionSelect']").val() !== "IDB") {
                 jsondataMoocs = moocsIndicatorsArray.indicatorsDivisions.filter(function (data) {
@@ -1627,12 +1610,12 @@ function moocsFilter() {
 
                 drawMoocsRegistrationsChart(orderTopMoocs(divisionFilter(moocsTopArrays.divisions2018, $("select[id*='divisionSelect']").val())));
                 drawDistributionChart(orderTopMoocs(divisionFilter(moocsEducationArrays.educationLevelDivisions, $("select[id*='divisionSelect']").val())));
-
                 var students = divisionFilter(moocsStudentsFlowArrays.studentsFlowDivisions, $("select[id*='divisionSelect']").val());
                 drawStudentRegistrationsChart($.extend(true, [], students[0]));
                 drawStudentParticipantsChart($.extend(true, [], students[0]));
                 drawStudentCompletedsChart($.extend(true, [], students[0]));
                 drawStudentCertifiedsChart($.extend(true, [], students[0]));
+
 
 
                 // Gender
@@ -1677,10 +1660,10 @@ function moocsFilter() {
                 drawMoocsRegistrationsChart(top2018Moocs);
                 drawDistributionChart(moocsEducationArrays.educationLevelIDB);
                 // same data for all and 2018
-                drawStudentRegistrationsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
-                drawStudentParticipantsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
-                drawStudentCompletedsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
-                drawStudentCertifiedsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
+                // drawStudentRegistrationsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
+                // drawStudentParticipantsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
+                // drawStudentCompletedsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
+                // drawStudentCertifiedsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
 
                 // Gender
                 points(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Female")));
@@ -1699,10 +1682,10 @@ function initMoocs() {
     drawDistributionChart(moocsEducationArrays.educationLevelIDB);
     drawMoocsRegistrationsChart(topAllMoocs);
     drawMoocsAgeDistributionChart(data);
-    drawStudentRegistrationsChart(moocsStudentsFlowArrays.studentsFlowIDB);
-    drawStudentParticipantsChart(moocsStudentsFlowArrays.studentsFlowIDB);
-    drawStudentCompletedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
-    drawStudentCertifiedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+    drawStudentRegistrationsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
+    drawStudentParticipantsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
+    drawStudentCompletedsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
+    drawStudentCertifiedsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
     createChart(TimeLineIDB);
     dataGaugeMoocs2018 = setMoocsGauge2018();
     drawGaugeMoocsChart(dataGaugeMoocs2018)

@@ -224,6 +224,36 @@ section.publications {
     font-family: 'Gotham-Bold';
 }
 
+
+.d3-tip {
+    line-height: 1;
+    font-weight: bold;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 10px;
+    width: 100%;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.8);
+    content: "\25BC";
+    position: absolute;
+    text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: 0;
+}
+
 section.publications .left-bar label {
     padding-bottom: 0px;
     margin-bottom: 0;
@@ -971,10 +1001,6 @@ section.suscribers .right-bar .right-zone {
     width: 665px;
 }
 
-section.suscribers .right-bar .right-zone .top-zone {
-    padding-top: 1rem;
-}
-
 section.suscribers .left-bar {
     text-align: center;
 }
@@ -1047,7 +1073,7 @@ section.suscribers .container_radio {
     padding-top: 0;
 }
 
-section.suscribers #suscribers-interested .y-suscribers path{
+section.suscribers #suscribers-interested .y-suscribers path {
     display: none;
 }
 
@@ -1076,8 +1102,8 @@ section.map .alert-map {
 
 
 
-section.map .temp-hide{
-  opacity: .5;
+section.map .temp-hide {
+    opacity: .5;
 }
 
 section.map #search {
@@ -1542,7 +1568,7 @@ section.map select.form-control:not([size]):not([multiple]) {
         color: #1658a1;
     }
 
-    section.datasets{
+    section.datasets {
         min-height: 940px;
     }
 
@@ -1551,11 +1577,11 @@ section.map select.form-control:not([size]):not([multiple]) {
         height: 280px;
     }
 
-    section.datasets .left-bar{
+    section.datasets .left-bar {
         height: 940px;
     }
 
-    section.datasets .right-bar{
+    section.datasets .right-bar {
         height: 940px;
     }
 
@@ -1573,7 +1599,7 @@ section.map select.form-control:not([size]):not([multiple]) {
         height: 175px !important;
     }
 
-    section.code{
+    section.code {
         min-height: 940px;
     }
 
@@ -1611,18 +1637,19 @@ section.map select.form-control:not([size]):not([multiple]) {
         height: 550px;
     }
 
-    section.suscribers .down .vertical-text{
+    section.suscribers .down .vertical-text {
         position: static;
     }
+
     section.suscribers .right-bar .right-zone {
         width: 700px;
     }
 
-    section.suscribers .left-bar{
+    section.suscribers .left-bar {
         min-height: 900px;
     }
 
-    section.suscribers .right-bar{
+    section.suscribers .right-bar {
         min-height: 900px;
     }
 
