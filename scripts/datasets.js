@@ -28,7 +28,7 @@ function drawDataTrendChart(dataDataTrend) {
         })]);
 
     var yDataTrend = d3.scaleBand()
-        .rangeRound([50*dataDataTrend.length, 0], .1)
+        .rangeRound([50 * dataDataTrend.length, 0], .1)
         .domain(dataDataTrend.map(function (d) {
             return d.name;
         }));
@@ -122,6 +122,10 @@ function drawTreeDataset(dataTree, filtertype, typeload) {
         });
     }
 
+    var div = d3.select("body").append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
+
     coloursDataSet = chroma.scale(['#424488', '#ffffff'])
         .mode('lch').colors(dataTree.length)
 
@@ -148,6 +152,54 @@ function drawTreeDataset(dataTree, filtertype, typeload) {
         .legend(false)
         .detectVisible(false)
         .render();
+
+        d3.selectAll("#downloads-dataset rect")
+        .on("mouseover", function (d) {
+            var pageX = d3.event.pageX;
+            var pageY = d3.event.pageY;
+            var value = 0;
+            if ($("input[name*='datasetTrend']") == "datasetAllTime") {
+                value = d.data.valueAllTheTime;
+            } else {
+                value = d.data.value2018;
+            }
+            div.transition()
+                .duration(200)
+                .style("opacity", .9);
+            div.html(d.data.name + "<br/>" + value)
+                .style("left", pageX + "px")
+                .style("top", pageY - 28 + "px");
+        })
+        .on("mouseout", function (d) {
+            div.transition()
+                .duration(500)
+                .style("opacity", 0);
+        })
+
+    d3.selectAll("#downloads-dataset  .d3plus-textBox")
+        .on("mouseover", function (d) {
+            var pageX = d3.event.pageX;
+            var pageY = d3.event.pageY;
+            var value = 0;
+            if ($("input[name*='datasetTrend']") == "datasetAllTime") {
+                value = d.data.valueAllTheTime;
+            } else {
+                value = d.data.value2018;
+            }
+            div.transition()
+                .duration(200)
+                .style("opacity", .9);
+            div.html(d.data.name + "<br/>" + value)
+                .style("left", pageX + "px")
+                .style("top", pageY - 28 + "px");
+        })
+        .on("mouseout", function (d) {
+            div.transition()
+                .duration(500)
+                .style("opacity", 0);
+        })
+
+        
 
 }
 
@@ -590,15 +642,15 @@ function setDatasetsGauge2018() {
     return dataGaugeDatasets2018;
 }
 
-$("input[name*='dataSetTrend']").click(function () {   
+$("input[name*='dataSetTrend']").click(function () {
     if ($("select[id*='divisionSelect']").val() != "IDB") {
         if ($("select[id*='divisionSelect']").val().length > 0) {
 
             if (this.id == "dataSetAllTime") {
                 $('.label-filter-restidb').hide();
-                
+
                 //treemap
-                jsonDataSetTree = datasetsDownloadSource.downloadSourceDivisions.filter(function(dataT) {
+                jsonDataSetTree = datasetsDownloadSource.downloadSourceDivisions.filter(function (dataT) {
                     return dataT.division_codes == $("select[id*='divisionSelect']").val()
                 });
                 drawTreeDataset(jsonDataSetTree, "AllTheTime");
@@ -610,14 +662,14 @@ $("input[name*='dataSetTrend']").click(function () {
                 jsonDataTrendDataSet = ObjectDataTrendDataSet.filter(function (dataT) {
                     return dataT.division_codes == $("select[id*='divisionSelect']").val()
                 });
-                if(jsonDataTrendDataSet.length>0){
+                if (jsonDataTrendDataSet.length > 0) {
                     drawDataTrendChart(jsonDataTrendDataSet);
-                }else{
+                } else {
                     drawDataTrendChart([]);
                 }
             } else {
                 //treemap
-                jsonDataSetTree = datasetsDownloadSource.downloadSourceDivisions.filter(function(dataT) {
+                jsonDataSetTree = datasetsDownloadSource.downloadSourceDivisions.filter(function (dataT) {
                     return dataT.division_codes == $("select[id*='divisionSelect']").val()
                 });
                 drawTreeDataset(jsonDataSetTree, "2018");
@@ -629,9 +681,9 @@ $("input[name*='dataSetTrend']").click(function () {
                 jsonDataTrendDataSet = ObjectDataTrendDataSet.filter(function (dataT) {
                     return dataT.division_codes == $("select[id*='divisionSelect']").val()
                 });
-                if(jsonDataTrendDataSet.length>0){
+                if (jsonDataTrendDataSet.length > 0) {
                     drawDataTrendChart(jsonDataTrendDataSet);
-                }else{
+                } else {
                     drawDataTrendChart([]);
                 }
             }
@@ -671,8 +723,8 @@ $("input[name*='dataSetTrend']").click(function () {
 function wrapData(text) {
     text.each(function () {
         var text = d3.select(this);
-        text.text(text.text().slice(0,80));
-        
+        text.text(text.text().slice(0, 80));
+
         var words = text.text().split(/\s+/).reverse();
         var lineHeight = 17;
         var width = parseFloat(text.attr('width'));

@@ -165,9 +165,12 @@ var dataLines = [{
 function drawChartCodeTrend(codeTrend) {
 
     dataCodeTrend = codeTrend.sort(function (a, b) {
+        return d3.descending(a.value, b.value);
+    });
+    dataCodeTrend = dataCodeTrend.slice(0, 10);
+    dataCodeTrend = dataCodeTrend.sort(function (a, b) {
         return d3.ascending(a.value, b.value);
     });
-
     var marginCodeTrend = {
         top: 15,
         right: 25,
@@ -193,7 +196,7 @@ function drawChartCodeTrend(codeTrend) {
         })]);
 
     var yCodeTrend = d3.scaleBand()
-        .rangeRound([heightCodeTrend, 0], .1)
+        .rangeRound([48*dataCodeTrend.length, 0], .1)
         .domain(dataCodeTrend.map(function (d) {
             return d.name;
         }));
@@ -222,7 +225,7 @@ function drawChartCodeTrend(codeTrend) {
             return yCodeTrend(d.name);
         })
         .attr("fill", "#d3d3d3")
-        .attr("height", yCodeTrend.bandwidth() - 2)
+        .attr("height", 45)
         .attr("x", 8)
         .attr("width", function (d) {
             return xCodeTrend(d.value);
@@ -232,7 +235,7 @@ function drawChartCodeTrend(codeTrend) {
         .attr("class", "label")
         //y position of the label is halfway down the bar
         .attr("y", function (d) {
-            return yCodeTrend(d.name) + yCodeTrend.bandwidth() / 2 + 4;
+            return yCodeTrend(d.name) + 45 / 2 + 4;
         })
         //x position is 3 pixels to the right of the bar
         .attr("x", function (d) {
@@ -265,6 +268,9 @@ function drawTreeCode(dataTree, filtertype) {
     dataTree.forEach(function (element, i) {
         element.color = colours[i]
     });
+    var div = d3.select("body").append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
 
     new d3plus.Treemap()
         .select("#downloads-code")
@@ -283,10 +289,56 @@ function drawTreeCode(dataTree, filtertype) {
         .detectVisible(false)
         .render();
 
+        d3.selectAll("#downloads-code rect")
+        .on("mouseover", function (d) {
+            var pageX = d3.event.pageX;
+            var pageY = d3.event.pageY;
+            var value = 0;
+            if ($("input[name*='codeTrend']") == "codeAllTime") {
+                value = d.data.valueAllTheTime;
+            } else {
+                value = d.data.value2018;
+            }
+            div.transition()
+                .duration(200)
+                .style("opacity", .9);
+            div.html(d.data.name + "<br/>" + value)
+                .style("left", pageX + "px")
+                .style("top", pageY - 28 + "px");
+        })
+        .on("mouseout", function (d) {
+            div.transition()
+                .duration(500)
+                .style("opacity", 0);
+        })
+
+    d3.selectAll("#downloads-code  .d3plus-textBox")
+        .on("mouseover", function (d) {
+            var pageX = d3.event.pageX;
+            var pageY = d3.event.pageY;
+            var value = 0;
+            if ($("input[name*='codeTrend']") == "codeAllTime") {
+                value = d.data.valueAllTheTime;
+            } else {
+                value = d.data.value2018;
+            }
+            div.transition()
+                .duration(200)
+                .style("opacity", .9);
+            div.html(d.data.name + "<br/>" + value)
+                .style("left", pageX + "px")
+                .style("top", pageY - 28 + "px");
+        })
+        .on("mouseout", function (d) {
+            div.transition()
+                .duration(500)
+                .style("opacity", 0);
+        })
+        
+
 }
 
 function createChartTimeline(data) {
-    console.log(data);
     var margin = {
             top: 20,
             right: 20,

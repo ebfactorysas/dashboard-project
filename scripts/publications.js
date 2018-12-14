@@ -541,30 +541,6 @@ function drawTreePublication(dataTree, filtertype, typeload) {
         .attr("class", "tooltip")
         .style("opacity", 0);
 
-    var mouseOver = function (d) {
-        console.log(d)
-        d3.select(this).attr("stroke", "#555555").attr("stroke-width", "2");
-        div.transition()
-            .duration(1000)
-            .style("opacity", .9);
-        div.html(
-                "<div><h4 class='text-center'><b>PUBLICATION DETAILS</b></h4>"
-                // <p class='pb-2'>" +
-                // d.Code + "</p><p><b>" +
-                // d.departmentCode + "</b></p><div class='pl-0'><p><span>Downloads:</span>&nbsp;&nbsp;&nbsp;<b>" + d.Downloads + "</b></p><p><span>Published Days:</span><b>" + d.daysPublished + "</b></p></div></div>"
-            )
-            .style("left", (d3.event.pageX) + "px")
-            .style("top", (d3.event.pageY) + "px");
-
-    }
-
-    var mouseOut = function (d) {
-        d3.select(this).attr("stroke-width", "0");
-        div.transition()
-            .duration(0)
-            .style("opacity", 0);
-    }
-
     colours = chroma.scale(['#d1415a', '#ffffff'])
         .mode('lch').colors(dataTree.length)
 
@@ -589,25 +565,7 @@ function drawTreePublication(dataTree, filtertype, typeload) {
         .legend(false)
         //.duration(0)
         .detectVisible(false)
-        .on("mouseover", function (d) {
-            var value = 0;
-            if ($("input[name*='publicationTrend']") == publicationAllTime) {
-                value = d.data.valueAllTheTime;
-            } else {
-                value = d.data.value2018;
-            }
-            div.transition()
-                .duration(200)
-                .style("opacity", .9);
-            div.html(d.data.name + "<br/>" + d.data.value2018)
-                .style("left", (d3.event.pageX) + "px")
-                .style("top", (d3.event.pageY - 28) + "px");
-        })
-        .on("mouseout", function (d) {
-            div.transition()
-                .duration(500)
-                .style("opacity", 0);
-        })
+        
 
         .render();
 
@@ -616,7 +574,7 @@ function drawTreePublication(dataTree, filtertype, typeload) {
             var pageX = d3.event.pageX;
             var pageY = d3.event.pageY;
             var value = 0;
-            if ($("input[name*='publicationTrend']") == publicationAllTime) {
+            if ($("input[name*='publicationTrend']") == "publicationAllTime") {
                 value = d.data.valueAllTheTime;
             } else {
                 value = d.data.value2018;
@@ -639,7 +597,7 @@ function drawTreePublication(dataTree, filtertype, typeload) {
             var pageX = d3.event.pageX;
             var pageY = d3.event.pageY;
             var value = 0;
-            if ($("input[name*='publicationTrend']") == publicationAllTime) {
+            if ($("input[name*='publicationTrend']") == "publicationAllTime") {
                 value = d.data.valueAllTheTime;
             } else {
                 value = d.data.value2018;
