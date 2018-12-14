@@ -35,8 +35,7 @@ function setPublicationGauge2018($isIdb) {
 }
 
 
-var dataLinesPublications = [
-    {
+var dataLinesPublications = [{
         "date": 20180101,
 
         "one": Math.floor((Math.random() * 10) + 1) + 10,
@@ -390,7 +389,7 @@ function createChartTimelinePublication(data, typeload) {
         })
         .y0(height)
         .y1(function (d) {
-            positionText =y(d.close);
+            positionText = y(d.close);
             return y(d.close);
         });
 
@@ -500,7 +499,7 @@ function createChartTimelinePublication(data, typeload) {
             .ticks(3)
             .tickFormat(function (x) {
                 var value = setSettingsNumber(x);
-                return value.valueNumber + value.suffixNumber;
+                return Math.floor(value.valueNumber) + value.suffixNumber;
             }));
 
     var textOfTotal = setSettingsNumber(totalAmount);
@@ -514,7 +513,7 @@ function createChartTimelinePublication(data, typeload) {
         .text(textOfTotal.valueNumber + textOfTotal.suffixNumber);
     svg.append("text")
         .attr("x", (width - (margin.left / 2)))
-        .attr("y", positionText+20)
+        .attr("y", positionText + 20)
         // .attr("text-anchor", "middle")  
         .style("font-size", "14px")
         .style("font-family", "Gotham-Book")
@@ -538,6 +537,9 @@ function drawTreePublication(dataTree, filtertype, typeload) {
             return d3.descending(a.value2018, b.value2018);
         });
     }
+    var div = d3.select("body").append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
 
     colours = chroma.scale(['#d1415a', '#ffffff'])
         .mode('lch').colors(dataTree.length)
@@ -554,6 +556,7 @@ function drawTreePublication(dataTree, filtertype, typeload) {
         .data(dataTree)
         .groupBy(["value" + filtertype, "name"])
         .sum("value" + filtertype)
+
         .shapeConfig({
             fill: function (d) {
                 return d.color;
@@ -562,7 +565,56 @@ function drawTreePublication(dataTree, filtertype, typeload) {
         .legend(false)
         //.duration(0)
         .detectVisible(false)
+        
+
         .render();
+
+    d3.selectAll("#downloads-publications rect")
+        .on("mouseover", function (d) {
+            var pageX = d3.event.pageX;
+            var pageY = d3.event.pageY;
+            var value = 0;
+            if ($("input[name*='publicationTrend']") == "publicationAllTime") {
+                value = d.data.valueAllTheTime;
+            } else {
+                value = d.data.value2018;
+            }
+            div.transition()
+                .duration(200)
+                .style("opacity", .9);
+            div.html(d.data.name + "<br/>" + value)
+                .style("left", pageX + "px")
+                .style("top", pageY - 28 + "px");
+        })
+        .on("mouseout", function (d) {
+            div.transition()
+                .duration(500)
+                .style("opacity", 0);
+        })
+
+    d3.selectAll("#downloads-publications  .d3plus-textBox")
+        .on("mouseover", function (d) {
+            var pageX = d3.event.pageX;
+            var pageY = d3.event.pageY;
+            var value = 0;
+            if ($("input[name*='publicationTrend']") == "publicationAllTime") {
+                value = d.data.valueAllTheTime;
+            } else {
+                value = d.data.value2018;
+            }
+            div.transition()
+                .duration(200)
+                .style("opacity", .9);
+            div.html(d.data.name + "<br/>" + value)
+                .style("left", pageX + "px")
+                .style("top", pageY - 28 + "px");
+        })
+        .on("mouseout", function (d) {
+            div.transition()
+                .duration(500)
+                .style("opacity", 0);
+        })
+
 
 }
 
@@ -990,6 +1042,8 @@ function drawPlotChartPublication(data, typeload) {
         .attr("class", "tooltip")
         .style("opacity", 0);
 
+
+
     var svg = d3.select('#publications-plot')
         .append("svg")
         .attr("preserveAspectRatio", "xMinYMin meet")
@@ -1075,7 +1129,7 @@ function drawPlotChartPublication(data, typeload) {
                 "<div><h4 class='text-center'><b>PUBLICATION DETAILS</b></h4><p class='pb-2'>" +
                 d.Code + "</p><p><b>" +
                 d.departmentCode + "</b></p><div class='pl-0'><p><span>Downloads:</span>&nbsp;&nbsp;&nbsp;<b>" + d.Downloads + "</b></p><p><span>Published Days:</span><b>" + d.daysPublished + "</b></p></div></div>")
-            .style("left", (d3.event.pageX) + "px")
+            .style("left", (d3.event.pageX - 200) + "px")
             .style("top", (d3.event.pageY) + "px");
 
     }
@@ -1174,9 +1228,9 @@ function initPublications() {
     jsonDataLines = jsonDataLines.sort(function (a, b) {
         return b['2018_downloads'] - a['2018_downloads'];
     });
-    
+
     jsonLines += '"data":';
-    
+
     var jsonDates = "{data:[";
     jsonResultAux = $.extend(true, [], jsonDataLines);
     jsonResultAux.length = 1;
@@ -1189,8 +1243,8 @@ function initPublications() {
     jsonDates += "]}";
     jsonDates = eval(jsonDates);
     // console.log(jsonDataLines);
-    
-    
+
+
     var jsonLines = "[";
     jsonDates.forEach(function (dataDate, i) {
         jsonLines += '{';
@@ -1199,16 +1253,16 @@ function initPublications() {
         jsonDataLines.forEach(function (value, y, arr) {
             // $.each(internalJson, function (y, val) {
             // jsonLines += '"2018_downloads_' + y + '":"' + value['2018_downloads'] + '",';
-            resultsDate = value.dates.filter(function (d, y){
+            resultsDate = value.dates.filter(function (d, y) {
                 return d.date == dataDate.date
             });
             // console.log(resultsDate);
-            jsonLines += '"' + y + '":' + (parseFloat(resultsDate[0].value) + (1000 * (y+1))) + ',';
-            
+            jsonLines += '"' + y + '":' + (parseFloat(resultsDate[0].value) + (1000 * (y + 1))) + ',';
+
             // jsonDates = jsonDates.filter(function (datajson){
             //     return datajson.date == y
             // });
-            
+
             // console.log(val);
         });
         jsonLines += "},"
@@ -1216,7 +1270,7 @@ function initPublications() {
     jsonLines += "]";
     // console.log(jsonLines);
     jsonLines = eval(jsonLines);
-    
+
     drawGaugePublicationChart(dataPublicationGauge2018);
     drawLinesChartPublication(jsonLines);
     createChartTimelinePublication(downloadTimelineIDB, 'init');

@@ -1,3 +1,4 @@
+//updated idb and divisions
 var moocsStudentsFlowArrays = {
     studentsFlowDepartments: [{
             registrations: {
@@ -363,80 +364,121 @@ var moocsStudentsFlowArrays = {
     ],
     studentsFlowDivisions: [
         {
+            code: "CBD",
+            certified: {
+                years: [{
+                    name: "2016",
+                    value: 0
+                }, {
+                    name: "2017",
+                    value: 564
+                }, {
+                    name: "2018",
+                    value: 213
+                }]
+            },
             registrations: {
                 years: [{
+                    name: "2016",
+                    value: 0
+                }, {
                     name: "2017",
                     value: 8819
                 }, {
                     name: "2018",
                     value: 9015
-                }],
-                value: 17834
+                }]
             },
             participants: {
                 years: [{
+                    name: "2016",
+                    value: 0
+                }, {
                     name: "2017",
-                    value: 3781
+                    value: 3784
                 }, {
                     name: "2018",
-                    value: 3835
-                }],
-                value: 7616
+                    value: 3872
+                }]
             },
             completed: {
                 years: [{
+                    name: "2016",
+                    value: 0
+                }, {
                     name: "2017",
                     value: 872
                 }, {
                     name: "2018",
-                    value: 690
-                }],
-                value: 1562
-            },
-            certified: {
-                years: [{
-                    name: "2017",
-                    value: 564
-                }, {
-                    name: "2018",
-                    value: 180
-                }],
-                value: 744
-            },
-            code: "CBD"
+                    value: 724
+                }]
+            }
         },
         {
+            code: "CBR",
+            certified: {
+                years: [{
+                    name: "2016",
+                    value: 0
+                }, {
+                    name: "2017",
+                    value: 647
+                }, {
+                    name: "2018",
+                    value: 0
+                }]
+            },
             registrations: {
                 years: [{
+                    name: "2016",
+                    value: 0
+                }, {
                     name: "2017",
                     value: 7781
-                }],
-                value: 7781
+                }, {
+                    name: "2018",
+                    value: 0
+                }]
             },
             participants: {
                 years: [{
+                    name: "2016",
+                    value: 0
+                }, {
                     name: "2017",
                     value: 4047
-                }],
-                value: 4047
+                }, {
+                    name: "2018",
+                    value: 0
+                }]
             },
             completed: {
                 years: [{
+                    name: "2016",
+                    value: 0
+                }, {
                     name: "2017",
                     value: 1156
-                }],
-                value: 1156
-            },
-            certified: {
-                years: [{
-                    name: "2017",
-                    value: 647
-                }],
-                value: 647
-            },
-            code: "CBR"
+                }, {
+                    name: "2018",
+                    value: 0
+                }]
+            }
         },
         {
+            code: "CHA",
+            certified: {
+                years: [{
+                    name: "2016",
+                    value: 1421
+                }, {
+                    name: "2017",
+                    value: 396
+                }, {
+                    name: "2018",
+                    value: 0
+                }]
+            },
             registrations: {
                 years: [{
                     name: "2016",
@@ -444,8 +486,10 @@ var moocsStudentsFlowArrays = {
                 }, {
                     name: "2017",
                     value: 4411
-                }],
-                value: 12129
+                }, {
+                    name: "2018",
+                    value: 0
+                }]
             },
             participants: {
                 years: [{
@@ -453,9 +497,11 @@ var moocsStudentsFlowArrays = {
                     value: 5678
                 }, {
                     name: "2017",
-                    value: 2599
-                }],
-                value: 8277
+                    value: 2600
+                }, {
+                    name: "2018",
+                    value: 0
+                }]
             },
             completed: {
                 years: [{
@@ -464,120 +510,77 @@ var moocsStudentsFlowArrays = {
                 }, {
                     name: "2017",
                     value: 542
-                }],
-                value: 2323
-            },
+                }, {
+                    name: "2018",
+                    value: 0
+                }]
+            }
+        },
+        {
+            code: "EDU",
             certified: {
                 years: [{
                     name: "2016",
-                    value: 1421
+                    value: 0
                 }, {
                     name: "2017",
-                    value: 396
-                }],
-                value: 1817
+                    value: 366
+                }, {
+                    name: "2018",
+                    value: 412
+                }]
             },
-            code: "CHA"
-        },
-        {
             registrations: {
                 years: [{
+                    name: "2016",
+                    value: 0
+                }, {
                     name: "2017",
                     value: 15398
                 }, {
                     name: "2018",
                     value: 21787
-                }],
-                value: 37185
+                }]
             },
             participants: {
                 years: [{
+                    name: "2016",
+                    value: 0
+                }, {
                     name: "2017",
-                    value: 7253
+                    value: 7254
                 }, {
                     name: "2018",
-                    value: 9393
-                }],
-                value: 16646
+                    value: 9445
+                }]
             },
             completed: {
                 years: [{
+                    name: "2016",
+                    value: 0
+                }, {
                     name: "2017",
                     value: 751
                 }, {
                     name: "2018",
-                    value: 881
-                }],
-                value: 1632
-            },
-            certified: {
-                years: [{
-                    name: "2017",
-                    value: 366
-                }, {
-                    name: "2018",
-                    value: 377
-                }],
-                value: 743
-            },
-            code: "EDU"
+                    value: 933
+                }]
+            }
         },
         {
-            registrations: {
-                years: [{
-                    name: "2016",
-                    value: 7357
-                }, {
-                    name: "2017",
-                    value: 24309
-                }, {
-                    name: "2018",
-                    value: 16626
-                }],
-                value: 39672
-            },
-            participants: {
-                years: [{
-                    name: "2016",
-                    value: 4117
-                }, {
-                    name: "2017",
-                    value: 11177
-                }, {
-                    name: "2018",
-                    value: 8629
-                }],
-                value: 23923
-            },
-            completed: {
-                years: [{
-                    name: "2016",
-                    value: 379
-                }, {
-                    name: "2017",
-                    value: 1771
-                }, {
-                    name: "2018",
-                    value: 969
-                }],
-                value: 3119
-            },
+            code: "FMM",
             certified: {
                 years: [{
                     name: "2016",
-                    value: 177
+                    value: 567
                 }, {
                     name: "2017",
-                    value: 1217
+                    value: 1348
                 }, {
                     name: "2018",
-                    value: 655
-                }],
-                value: 2049
+                    value: 415
+                }]
             },
-            code: "FHL"
-        },
-        {
             registrations: {
                 years: [{
                     name: "2016",
@@ -588,8 +591,7 @@ var moocsStudentsFlowArrays = {
                 }, {
                     name: "2018",
                     value: 12905
-                }],
-                value: 39672
+                }]
             },
             participants: {
                 years: [{
@@ -597,12 +599,11 @@ var moocsStudentsFlowArrays = {
                     value: 4838
                 }, {
                     name: "2017",
-                    value: 8427
+                    value: 8431
                 }, {
                     name: "2018",
-                    value: 6135
-                }],
-                value: 19400
+                    value: 6141
+                }]
             },
             completed: {
                 years: [{
@@ -614,25 +615,23 @@ var moocsStudentsFlowArrays = {
                 }, {
                     name: "2018",
                     value: 642
-                }],
-                value: 3974
-            },
+                }]
+            }
+        },
+        {
+            code: "HUD",
             certified: {
                 years: [{
                     name: "2016",
-                    value: 567
+                    value: 924
                 }, {
                     name: "2017",
-                    value: 1348
+                    value: 594
                 }, {
                     name: "2018",
-                    value: 415
-                }],
-                value: 2330
+                    value: 0
+                }]
             },
-            code: "FMM"
-        },
-        {
             registrations: {
                 years: [{
                     name: "2016",
@@ -640,18 +639,22 @@ var moocsStudentsFlowArrays = {
                 }, {
                     name: "2017",
                     value: 19118
-                }],
-                value: 45758
+                }, {
+                    name: "2018",
+                    value: 0
+                }]
             },
             participants: {
                 years: [{
                     name: "2016",
-                    value: 12960
+                    value: 12961
                 }, {
                     name: "2017",
-                    value: 8020
-                }],
-                value: 20980
+                    value: 8022
+                }, {
+                    name: "2018",
+                    value: 0
+                }]
             },
             completed: {
                 years: [{
@@ -660,22 +663,26 @@ var moocsStudentsFlowArrays = {
                 }, {
                     name: "2017",
                     value: 1001
-                }],
-                value: 2695
-            },
+                }, {
+                    name: "2018",
+                    value: 0
+                }]
+            }
+        },
+        {
+            code: "ICS",
             certified: {
                 years: [{
                     name: "2016",
-                    value: 924
+                    value: 575
                 }, {
                     name: "2017",
-                    value: 594
-                }],
-                value: 1518
+                    value: 767
+                }, {
+                    name: "2018",
+                    value: 597
+                }]
             },
-            code: "HUD"
-        },
-        {
             registrations: {
                 years: [{
                     name: "2016",
@@ -686,8 +693,7 @@ var moocsStudentsFlowArrays = {
                 }, {
                     name: "2018",
                     value: 8279
-                }],
-                value: 26982
+                }]
             },
             participants: {
                 years: [{
@@ -695,12 +701,11 @@ var moocsStudentsFlowArrays = {
                     value: 5909
                 }, {
                     name: "2017",
-                    value: 3499
+                    value: 3500
                 }, {
                     name: "2018",
-                    value: 4105
-                }],
-                value: 13513
+                    value: 4131
+                }]
             },
             completed: {
                 years: [{
@@ -711,100 +716,177 @@ var moocsStudentsFlowArrays = {
                     value: 1057
                 }, {
                     name: "2018",
-                    value: 750
-                }],
-                value: 3009
-            },
+                    value: 787
+                }]
+            }
+        },
+        {
+            code: "IFD",
             certified: {
                 years: [{
                     name: "2016",
-                    value: 575
+                    value: 0
                 }, {
                     name: "2017",
-                    value: 767
+                    value: 0
                 }, {
                     name: "2018",
-                    value: 566
-                }],
-                value: 1908
+                    value: 280
+                }]
             },
-            code: "ICS"
-        },
-        {
             registrations: {
                 years: [{
+                    name: "2016",
+                    value: 0
+                }, {
+                    name: "2017",
+                    value: 0
+                }, {
                     name: "2018",
                     value: 11138
-                }],
-                value: 11138
+                }]
             },
             participants: {
                 years: [{
+                    name: "2016",
+                    value: 0
+                }, {
+                    name: "2017",
+                    value: 0
+                }, {
                     name: "2018",
-                    value: 5262
-                }],
-                value: 5262
+                    value: 5332
+                }]
             },
             completed: {
                 years: [{
+                    name: "2016",
+                    value: 0
+                }, {
+                    name: "2017",
+                    value: 0
+                }, {
                     name: "2018",
-                    value: 610
-                }],
-                value: 610
-            },
-            certified: {
-                years: [{
-                    name: "2018",
-                    value: 240
-                }],
-                value: 240
-            },
-            code: "IFD"
+                    value: 669
+                }]
+            }
         },
         {
+            code: "KLD",
+            certified: {
+                years: [{
+                    name: "2016",
+                    value: 6062
+                }, {
+                    name: "2017",
+                    value: 8448
+                }, {
+                    name: "2018",
+                    value: 3356
+                }]
+            },
             registrations: {
                 years: [{
+                    name: "2016",
+                    value: 92376
+                }, {
+                    name: "2017",
+                    value: 148342
+                }, {
+                    name: "2018",
+                    value: 97531
+                }]
+            },
+            participants: {
+                years: [{
+                    name: "2016",
+                    value: 51233
+                }, {
+                    name: "2017",
+                    value: 66807
+                }, {
+                    name: "2018",
+                    value: 49345
+                }]
+            },
+            completed: {
+                years: [{
+                    name: "2016",
+                    value: 10866
+                }, {
+                    name: "2017",
+                    value: 12248
+                }, {
+                    name: "2018",
+                    value: 6065
+                }]
+            }
+        },
+        {
+            code: "KNM",
+            certified: {
+                years: [{
+                    name: "2016",
+                    value: 0
+                }, {
+                    name: "2017",
+                    value: 275
+                }, {
+                    name: "2018",
+                    value: 112
+                }]
+            },
+            registrations: {
+                years: [{
+                    name: "2016",
+                    value: 0
+                }, {
                     name: "2017",
                     value: 7518
                 }, {
                     name: "2018",
                     value: 5342
-                }],
-                value: 12860
+                }]
             },
             participants: {
                 years: [{
+                    name: "2016",
+                    value: 0
+                }, {
                     name: "2017",
-                    value: 3344
+                    value: 3345
                 }, {
                     name: "2018",
-                    value: 2937
-                }],
-                value: 6281
+                    value: 2948
+                }]
             },
             completed: {
                 years: [{
+                    name: "2016",
+                    value: 0
+                }, {
                     name: "2017",
                     value: 495
                 }, {
                     name: "2018",
-                    value: 275
-                }],
-                value: 770
-            },
-            certified: {
-                years: [{
-                    name: "2017",
-                    value: 275
-                }, {
-                    name: "2018",
-                    value: 103
-                }],
-                value: 378
-            },
-            code: "KNM"
+                    value: 288
+                }]
+            }
         },
         {
+            code: "LMK",
+            certified: {
+                years: [{
+                    name: "2016",
+                    value: 129
+                }, {
+                    name: "2017",
+                    value: 347
+                }, {
+                    name: "2018",
+                    value: 112
+                }]
+            },
             registrations: {
                 years: [{
                     name: "2016",
@@ -815,8 +897,7 @@ var moocsStudentsFlowArrays = {
                 }, {
                     name: "2018",
                     value: 5342
-                }],
-                value: 17777
+                }]
             },
             participants: {
                 years: [{
@@ -824,12 +905,11 @@ var moocsStudentsFlowArrays = {
                     value: 1598
                 }, {
                     name: "2017",
-                    value: 4118
+                    value: 4119
                 }, {
                     name: "2018",
-                    value: 2937
-                }],
-                value: 8653
+                    value: 2948
+                }]
             },
             completed: {
                 years: [{
@@ -840,26 +920,24 @@ var moocsStudentsFlowArrays = {
                     value: 629
                 }, {
                     name: "2018",
-                    value: 275
-                }],
-                value: 1137
-            },
+                    value: 288
+                }]
+            }
+        },
+        {
+            code: "RND",
             certified: {
                 years: [{
                     name: "2016",
-                    value: 129
+                    value: 557
                 }, {
                     name: "2017",
-                    value: 347
+                    value: 272
                 }, {
                     name: "2018",
-                    value: 103
-                }],
-                value: 579
+                    value: 189
+                }]
             },
-            code: "LMK"
-        },
-        {
             registrations: {
                 years: [{
                     name: "2016",
@@ -870,8 +948,7 @@ var moocsStudentsFlowArrays = {
                 }, {
                     name: "2018",
                     value: 9595
-                }],
-                value: 283876
+                }]
             },
             participants: {
                 years: [{
@@ -882,9 +959,8 @@ var moocsStudentsFlowArrays = {
                     value: 4120
                 }, {
                     name: "2018",
-                    value: 2680
-                }],
-                value: 14363
+                    value: 2684
+                }]
             },
             completed: {
                 years: [{
@@ -896,80 +972,23 @@ var moocsStudentsFlowArrays = {
                 }, {
                     name: "2018",
                     value: 317
-                }],
-                value: 2065
-            },
+                }]
+            }
+        },
+        {
+            code: "SPH",
             certified: {
                 years: [{
                     name: "2016",
-                    value: 557
+                    value: 1186
                 }, {
                     name: "2017",
-                    value: 272
+                    value: 2490
                 }, {
                     name: "2018",
-                    value: 188
-                }],
-                value: 1017
+                    value: 652
+                }]
             },
-            code: "RND"
-        },
-        {
-            registrations: {
-                years: [{
-                    name: "2016",
-                    value: 85019
-                }, {
-                    name: "2017",
-                    value: 124033
-                }, {
-                    name: "2018",
-                    value: 74824
-                }],
-                value: 283876
-            },
-            participants: {
-                years: [{
-                    name: "2016",
-                    value: 47111
-                }, {
-                    name: "2017",
-                    value: 55608
-                }, {
-                    name: "2018",
-                    value: 38288
-                }],
-                value: 141007
-            },
-            completed: {
-                years: [{
-                    name: "2016",
-                    value: 10487
-                }, {
-                    name: "2017",
-                    value: 10477
-                }, {
-                    name: "2018",
-                    value: 4863
-                }],
-                value: 25827
-            },
-            certified: {
-                years: [{
-                    name: "2016",
-                    value: 5884
-                }, {
-                    name: "2017",
-                    value: 7231
-                }, {
-                    name: "2018",
-                    value: 2537
-                }],
-                value: 15652
-            },
-            code: "SDI"
-        },
-        {
             registrations: {
                 years: [{
                     name: "2016",
@@ -980,8 +999,7 @@ var moocsStudentsFlowArrays = {
                 }, {
                     name: "2018",
                     value: 23868
-                }],
-                value: 82919
+                }]
             },
             participants: {
                 years: [{
@@ -989,12 +1007,11 @@ var moocsStudentsFlowArrays = {
                     value: 10204
                 }, {
                     name: "2017",
-                    value: 19109
+                    value: 19116
                 }, {
                     name: "2018",
-                    value: 9405
-                }],
-                value: 38718
+                    value: 9422
+                }]
             },
             completed: {
                 years: [{
@@ -1005,174 +1022,157 @@ var moocsStudentsFlowArrays = {
                     value: 4285
                 }, {
                     name: "2018",
-                    value: 1417
-                }],
-                value: 7886
-            },
+                    value: 1430
+                }]
+            }
+        },
+        {
+            code: "TSP",
             certified: {
                 years: [{
                     name: "2016",
-                    value: 1186
+                    value: 0
                 }, {
                     name: "2017",
-                    value: 2490
+                    value: 583
                 }, {
                     name: "2018",
-                    value: 640
-                }],
-                value: 4316
+                    value: 260
+                }]
             },
-            code: "SPH"
-        },
-        {
             registrations: {
                 years: [{
+                    name: "2016",
+                    value: 0
+                }, {
                     name: "2017",
                     value: 5112
                 }, {
                     name: "2018",
                     value: 5142
-                }],
-                value: 10252
-            },
-            participants: {
-                years: [{
-                    name: "2017",
-                    value: 2802
-                }, {
-                    name: "2018",
-                    value: 2938
-                }],
-                value: 5740
-            },
-            completed: {
-                years: [{
-                    name: "2017",
-                    value: 899
-                }, {
-                    name: "2018",
-                    value: 416
-                }],
-                value: 1210
-            },
-            certified: {
-                years: [{
-                    name: "2017",
-                    value: 583
-                }, {
-                    name: "2018",
-                    value: 258
-                }],
-                value: 841
-            },
-            code: "TSP"
+                }]
+            }
+        ,
+        participants: {
+            years: [{
+                name: "2016",
+                value: 0
+            }, {
+                name: "2017",
+                value: 2802
+            }, {
+                name: "2018",
+                value: 2946
+            }]
         },
-        {
-            registrations: {
-                years: [{
-                    name: "2016",
-                    value: 6872
-                }, {
-                    name: "2017",
-                    value: 7019
-                }, {
-                    name: "2018",
-                    value: 4982
-                }],
-                value: 18873
-            },
-            participants: {
-                years: [{
-                    name: "2016",
-                    value: 3713
-                }, {
-                    name: "2017",
-                    value: 3486
-                }, {
-                    name: "2018",
-                    value: 2601
-                }],
-                value: 9800
-            },
-            completed: {
-                years: [{
-                    name: "2016",
-                    value: 426
-                }, {
-                    name: "2017",
-                    value: 392
-                }, {
-                    name: "2018",
-                    value: 392
-                }],
-                value: 1210
-            },
-            certified: {
-                years: [{
-                    name: "2016",
-                    value: 138
-                }, {
-                    name: "2017",
-                    value: 182
-                }, {
-                    name: "2018",
-                    value: 144
-                }],
-                value: 464
-            },
-            code: "WSA"
+        completed: {
+            years: [{
+                name: "2017",
+                value: 899
+            }, {
+                name: "2018",
+                value: 417
+            }]
         }
-    ],
+    }, {
+        code: "WSA",
+        certified: {
+            years: [{
+                name: "2016",
+                value: 138
+            }, {
+                name: "2017",
+                value: 182
+            }, {
+                name: "2018",
+                value: 171
+            }]
+        },
+        registrations: {
+            years: [{
+                name: "2016",
+                value: 6872
+            }, {
+                name: "2017",
+                value: 7019
+            }, {
+                name: "2018",
+                value: 4982
+            }]
+        },
+        participants: {
+            years: [{
+                name: "2016",
+                value: 3713
+            }, {
+                name: "2017",
+                value: 3487
+            }, {
+                name: "2018",
+                value: 2636
+            }]
+        },
+        completed: {
+            years: [{
+                name: "2017",
+                value: 392
+            }, {
+                name: "2018",
+                value: 443
+            }]
+        }
+    }],
     studentsFlowIDB: {
         registrations: {
             years: [{
                 name: "2016",
-                value: 190376
+                value: 241057
             }, {
                 name: "2017",
-                value: 307123
+                value: 386099
+
             }, {
                 name: "2018",
-                value: 208845
+                value: 278065
             }],
             value: 706344
         },
         participants: {
             years: [{
                 name: "2016",
-                value: 103691
+                value: 129829
             }, {
                 name: "2017",
-                value: 141390
+                value: 176355
             }, {
                 name: "2018",
-                value: 99145
+                value: 130093
             }],
             value: 344226
         },
         completed: {
             years: [{
                 name: "2016",
-                value: 20719
+                value: 25665
             }, {
                 name: "2017",
-                value: 27074
+                value: 33341
             }, {
                 name: "2018",
-                value: 12497
+                value: 16760
             }],
             value: 60290
         },
         certified: {
             years: [{
                 name: "2016",
-                value: 11558
+                value: 13649
             }, {
                 name: "2017",
-                value: 17279
+                value: 21051
             }, {
                 name: "2018",
-                value: 6406
+                value: 8737
             }],
             value: 35243
         }

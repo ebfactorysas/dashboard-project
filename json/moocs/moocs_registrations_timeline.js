@@ -1,8 +1,8 @@
 var moocsRegistrationTimeline = {
-    registrationTimelineDepartments: [{
+    registrationTimelineDepartments: [
+        {
             code: "CID",
-            data: [
-                {
+            data: [{
                     "date": "1-Apr-18",
                     "close": 6
                 },
@@ -110,10 +110,12 @@ var moocsRegistrationTimeline = {
         },
         {
             code: "CSC",
-            data: [
-                {
+            data: [{
                     "date": "1-Apr-18",
                     "close": 712
+                },{
+                    "date": "1-Dec-18",
+                    "close": 26
                 },
                 {
                     "date": "1-Aug-18",
@@ -275,10 +277,12 @@ var moocsRegistrationTimeline = {
         },
         {
             code: "CSD",
-            data: [
-                {
+            data: [{
                     "date": "1-Apr-18",
                     "close": 498
+                },{
+                    "date": "1-Dec-18",
+                    "close": 28
                 },
                 {
                     "date": "1-Aug-18",
@@ -484,10 +488,12 @@ var moocsRegistrationTimeline = {
         },
         {
             code: "IFD",
-            data: [
-                {
+            data: [{
                     "date": "1-Apr-18",
                     "close": 3241
+                },{
+                    "date": "1-Dec-18",
+                    "close": 342
                 },
                 {
                     "date": "1-Apr-14",
@@ -720,6 +726,9 @@ var moocsRegistrationTimeline = {
             data: [{
                     "date": "1-Apr-18",
                     "close": 1002
+                },{
+                    "date": "1-Dec-18",
+                    "close": 27
                 },
                 {
                     "date": "1-Aug-18",
@@ -891,6 +900,9 @@ var moocsRegistrationTimeline = {
             data: [{
                     "date": "1-Jan-18",
                     "close": 13247
+                },{
+                    "date": "1-Jan-18",
+                    "close": 7
                 },
                 {
                     "date": "1-Mar-17",
@@ -1365,6 +1377,10 @@ var moocsRegistrationTimeline = {
                     "close": 178
                 },
                 {
+                    "date": "1-Dec-18",
+                    "close": 24
+                },
+                {
                     "date": "1-Aug-17",
                     "close": 270
                 },
@@ -1393,6 +1409,9 @@ var moocsRegistrationTimeline = {
             data: [{
                     "date": "1-Aug-16",
                     "close": 103
+                }, {
+                    "date": "1-Dec-18",
+                    "close": 2
                 },
                 {
                     "date": "1-Jul-17",
@@ -1757,6 +1776,10 @@ var moocsRegistrationTimeline = {
                 {
                     "date": "1-Apr-18",
                     "close": 3395
+                },
+                {
+                    "date": "1-Dec-18",
+                    "close": 56
                 }
             ],
             code: "EDU"
@@ -1917,6 +1940,10 @@ var moocsRegistrationTimeline = {
             data: [{
                     "date": "1-Aug-16",
                     "close": 327
+                },
+                {
+                    "date": "1-Dec-18",
+                    "close": 25
                 },
                 {
                     "date": "1-Jul-17",
@@ -2285,6 +2312,10 @@ var moocsRegistrationTimeline = {
                 {
                     "date": "1-Apr-18",
                     "close": 270
+                },
+                {
+                    "date": "1-Dec-18",
+                    "close": 13
                 }
             ],
             code: "HUD"
@@ -2293,6 +2324,9 @@ var moocsRegistrationTimeline = {
             data: [{
                     "date": "1-Aug-16",
                     "close": 299
+                },{
+                    "date": "1-Aug-18",
+                    "close": 263
                 },
                 {
                     "date": "1-Mar-14",
@@ -2581,6 +2615,10 @@ var moocsRegistrationTimeline = {
                 {
                     "date": "1-April-17",
                     "close": 2720
+                },
+                {
+                    "date": "1-Dec-18",
+                    "close": 54
                 }
 
             ],
@@ -2590,6 +2628,9 @@ var moocsRegistrationTimeline = {
             data: [{
                     "date": "1-Jul-17",
                     "close": 273
+                },{
+                    "date": "1-Dec-18",
+                    "close": 7
                 },
                 {
                     "date": "1-Jul-18",
@@ -2899,6 +2940,10 @@ var moocsRegistrationTimeline = {
                 {
                     "date": "1-Apr-18",
                     "close": 541
+                },
+                {
+                    "date": "1-Dec-18",
+                    "close": 10
                 }
 
             ],
@@ -2906,6 +2951,9 @@ var moocsRegistrationTimeline = {
         },
         {
             data: [{
+                    "date": "1-Aug-16",
+                    "close": 215
+                },{
                     "date": "1-Aug-16",
                     "close": 215
                 },
@@ -3043,8 +3091,8 @@ var moocsRegistrationTimeline = {
         },
         {
             data: [{
-                    "date": "1-Aug-18",
-                    "close": 7967
+                    "date": "1-Dec-18",
+                    "close": 15
                 },
                 {
                     "date": "1-Apr-18",
@@ -3230,6 +3278,9 @@ var moocsRegistrationTimeline = {
             data: [{
                     "date": "1-Aug-17",
                     "close": 7095
+                },{
+                    "date": "1-Dec-17",
+                    "close": 24
                 },
                 {
                     "date": "1-Dec-16",
@@ -3402,6 +3453,9 @@ var moocsRegistrationTimeline = {
             data: [{
                     "date": "1-Nov-18",
                     "close": 211
+                },{
+                    "date": "1-Dec-18",
+                    "close": 7
                 },
                 {
                     "date": "1-Jan-18",
@@ -3470,6 +3524,9 @@ var moocsRegistrationTimeline = {
             data: [{
                     "date": "1-Apr-18",
                     "close": 552
+                },{
+                    "date": "1-Dec-18",
+                    "close": 7
                 },
                 {
                     "date": "1-Jun-18",
@@ -3635,138 +3692,205 @@ var moocsRegistrationTimeline = {
             code: "WSA"
         }
     ],
-    registrationTimelineIDB: [
-        {
-            "date": "30-Apr-18",
-            "close": 23378
-        },
-        {
+    registrationTimelineIDB: [{
             "date": "10-Apr-14",
             "close": 947
-        },
-        {
-            "date": "30-Aug-18",
-            "close": 26701
-        },
-        {
-            "date": "30-Feb-16",
-            "close": 20659
-        },
-        {
-            "date": "30-Jan-18",
-            "close": 18382
-        },
-        {
-            "date": "30-Mar-17",
-            "close": 19450
         },
         {
             "date": "30-Apr-15",
             "close": 8593
         },
         {
-            "date": "30-Dec-16",
-            "close": 3096
-        },
-        {
-            "date": "30-Aug-17",
-            "close": 39442
-        },
-        {
-            "date": "30-Nov-18",
-            "close": 6551
-        },
-        {
-            "date": "30-May-18",
-            "close": 16712
-        },
-        {
-            "date": "30-Jun-18",
-            "close": 19028
-        },
-        {
-            "date": "30-May-17",
-            "close": 43992
-        },
-        {
-            "date": "30-Jun-15",
-            "close": 27761
-        },
-        {
-            "date": "30-Feb-15",
-            "close": 4721
-        },
-        {
-            "date": "30-Jul-14",
-            "close": 724
-        },
-        {
-            "date": "30-Aug-15",
-            "close": 9561
-        },
-        {
-            "date": "30-Jun-17",
-            "close": 27596
+            "date": "30-Apr-16",
+            "close": 19965
         },
         {
             "date": "30-Apr-17",
             "close": 20540
         },
         {
-            "date": "30-Jul-15",
-            "close": 40418
-        },
-        {
-            "date": "30-Jun-16",
-            "close": 30108
-        },
-        {
-            "date": "30-Oct-15",
-            "close": 38966
-        },
-        {
-            "date": "30-Jun-14",
-            "close": 767
-        },
-        {
-            "date": "30-Nov-14",
-            "close": 847
+            "date": "30-Apr-18",
+            "close": 23378
         },
         {
             "date": "30-Aug-14",
             "close": 957
         },
         {
-            "date": "30-Sep-15",
-            "close": 23739
+            "date": "30-Aug-15",
+            "close": 9561
+        },
+        {
+            "date": "30-Aug-16",
+            "close": 18983
+        },
+        {
+            "date": "30-Aug-17",
+            "close": 39442
+        },
+        {
+            "date": "30-Aug-18",
+            "close": 26701
+        },
+        {
+            "date": "30-Dec-14",
+            "close": 858
+        },
+        {
+            "date": "30-Dec-15",
+            "close": 3060
+        },
+        {
+            "date": "30-Dec-16",
+            "close": 3096
+        },
+        {
+            "date": "30-Dec-17",
+            "close": 11717
+        },
+        {
+            "date": "30-Dec-18",
+            "close": 1070
+        },
+        {
+            "date": "30-Feb-15",
+            "close": 4721
+        },
+        {
+            "date": "30-Feb-16",
+            "close": 20659
         },
         {
             "date": "30-Feb-17",
             "close": 23869
         },
         {
-            "date": "30-May-16",
-            "close": 27053
+            "date": "30-Feb-18",
+            "close": 34298
         },
         {
-            "date": "30-May-14",
-            "close": 948
+            "date": "30-Jan-15",
+            "close": 1054
         },
         {
-            "date": "30-Nov-16",
-            "close": 4550
+            "date": "30-Jan-16",
+            "close": 4989
+        },
+        {
+            "date": "30-Jan-18",
+            "close": 18382
+        },
+        {
+            "date": "30-Jul-14",
+            "close": 724
+        },
+        {
+            "date": "30-Jul-15",
+            "close": 40418
         },
         {
             "date": "30-Jul-16",
             "close": 12324
         },
         {
+            "date": "30-Jul-17",
+            "close": 30087
+        },
+        {
+            "date": "30-Jul-18",
+            "close": 18140
+        },
+        {
+            "date": "30-Jun-14",
+            "close": 767
+        },
+        {
+            "date": "30-Jun-15",
+            "close": 27761
+        },
+        {
+            "date": "30-Jun-16",
+            "close": 30108
+        },
+        {
+            "date": "30-Jun-17",
+            "close": 27596
+        },
+        {
+            "date": "30-Jun-17",
+            "close": 9688
+        },
+        {
+            "date": "30-Jun-18",
+            "close": 19028
+        },
+        {
+            "date": "30-Mar-14",
+            "close": 1361
+        },
+        {
+            "date": "30-Mar-15",
+            "close": 12666
+        },
+        {
+            "date": "30-Mar-16",
+            "close": 26089
+        },
+        {
+            "date": "30-Mar-17",
+            "close": 19450
+        },
+        {
+            "date": "30-Mar-18",
+            "close": 45256
+        },
+        {
+            "date": "30-May-14",
+            "close": 948
+        },
+        {
             "date": "30-May-15",
             "close": 12316
         },
         {
-            "date": "30-Feb-18",
-            "close": 34298
+            "date": "30-May-16",
+            "close": 27053
+        },
+        {
+            "date": "30-May-17",
+            "close": 43992
+        },
+        {
+            "date": "30-May-18",
+            "close": 16712
+        },
+        {
+            "date": "30-Nov-14",
+            "close": 847
+        },
+        {
+            "date": "30-Nov-15",
+            "close": 17957
+        },
+        {
+            "date": "30-Nov-16",
+            "close": 4550
+        },
+        {
+            "date": "30-Nov-17",
+            "close": 28600
+        },
+        {
+            "date": "30-Nov-18",
+            "close": 6551
+        },
+        {
+            "date": "30-Oct-14",
+            "close": 1317
+        },
+        {
+            "date": "30-Oct-15",
+            "close": 38966
         },
         {
             "date": "30-Oct-16",
@@ -3781,88 +3905,24 @@ var moocsRegistrationTimeline = {
             "close": 12258
         },
         {
-            "date": "30-Mar-18",
-            "close": 45256
-        },
-        {
-            "date": "30-Apr-16",
-            "close": 19965
-        },
-        {
-            "date": "30-Sep-17",
-            "close": 48305
-        },
-        {
-            "date": "30-Mar-15",
-            "close": 12666
-        },
-        {
-            "date": "30-Sep-18",
-            "close": 25030
-        },
-        {
-            "date": "30-Dec-17",
-            "close": 11717
-        },
-        {
-            "date": "30-Nov-15",
-            "close": 17957
-        },
-        {
-            "date": "30-Jun-17",
-            "close": 9688
-        },
-        {
-            "date": "30-Dec-14",
-            "close": 858
-        },
-        {
-            "date": "30-Nov-17",
-            "close": 28600
-        },
-        {
             "date": "30-Sep-14",
             "close": 5189
         },
         {
-            "date": "30-Jan-16",
-            "close": 4989
-        },
-        {
-            "date": "30-Oct-14",
-            "close": 1317
-        },
-        {
-            "date": "30-Jul-18",
-            "close": 18140
+            "date": "30-Sep-15",
+            "close": 23739
         },
         {
             "date": "30-Sep-16",
             "close": 25738
         },
         {
-            "date": "30-Dec-15",
-            "close": 3060
+            "date": "30-Sep-17",
+            "close": 48305
         },
         {
-            "date": "30-Jan-15",
-            "close": 1054
-        },
-        {
-            "date": "30-Mar-16",
-            "close": 26089
-        },
-        {
-            "date": "30-Jul-17",
-            "close": 30087
-        },
-        {
-            "date": "30-Mar-14",
-            "close": 1361
-        },
-        {
-            "date": "30-Aug-16",
-            "close": 18983
+            "date": "30-Sep-18",
+            "close": 25030
         }
     ]
 };

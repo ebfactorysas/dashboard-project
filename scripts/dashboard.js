@@ -21,7 +21,6 @@ $("#deparmentSelect").on('change', function () {
     $("#divisionSelect").value = "";
     $('#blueAllTime').click();
     removePublicationsGauges();
-    removeMoocsGauges();
     removeGaugeCode();
 
     d3.select("#gauge-suscribers svg").remove();
@@ -130,6 +129,7 @@ function setDataIDBCode() {
 function setDataSubscribersIdb() {
     drawTreeSuscriber(subscribersGender.genderIDB);
     drawSuscribersChart(orderTopDataSuscribers(subscribersTopics));
+    drawAgeSuscribersChart(orderTopDataSuscribers(arraySuscribersSubTopics));
     drawInstitutionsChart(subscribersInstitution.institutionIDB);
     
     jsondataSubscriber = subscribersArray.subscribersIDB;
@@ -241,6 +241,13 @@ function setDataSuscribersByDivisions(sltValue) {
         return data.division_code == sltValue;
     });
     drawSuscribersChart(arraySuscribersTopics);
+
+//#suscribers-subtopics
+    var ObjectSubTopicBars = $.extend(true, [], subscribersSubTopics);
+    arraySuscribersSubTopics = ObjectSubTopicBars.filter(function (data) {
+        return data.division_code == sltValue;
+    });
+    drawAgeSuscribersChart(arraySuscribersSubTopics);
 
     //#institution-suscribers
     var objectInstitution = $.extend(true, [], subscribersInstitution.institutionDivisions);
