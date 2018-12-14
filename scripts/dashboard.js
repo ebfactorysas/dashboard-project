@@ -44,6 +44,7 @@ $("#divisionSelect").on('change', function (data) {
     removeCodeSvgAll();
     removeGaugeCode();
     removeSubscribersSvg();
+    
 
     if (this.value == "IDB") {
         $('.label-filter-select').text(this.value);
@@ -99,7 +100,7 @@ function setDataIDBPublications() {
     var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
     // gaugeIDB();
     initIndicators('', '');
-    dataPublicationGauge2018 = setPublicationGauge2018();
+    dataPublicationGauge2018 = setPublicationGauge2018('IDB');
     drawGaugePublicationChart(dataPublicationGauge2018);
     drawLinesChartPublication(dataLinesPublications);
     createChartTimelinePublication(downloadTimelineIDB, 'init');
@@ -135,7 +136,7 @@ function setDataSubscribersIdb() {
     subscribersAllTotalGlobal = (jsondataSubscriber.length > 0) ? jsondataSubscriber[0].subscribers : '0';
     subscribersAllDownloads = (jsondataSubscriber.length > 0) ? jsondataSubscriber[0].lac_subscribers : '0';
     subscribersAllDownloadsLac = (jsondataSubscriber.length > 0) ? (jsondataSubscriber[0].porcent_total_from_lac * 100).toFixed(0) : '0';
-    gaugeSuscribers = setSuscribersGauge2018();
+    gaugeSuscribers = setSuscribersGauge2018('IDB');
     drawGaugeSubscribersChart(gaugeSuscribers);
     // jsondataSubscriber = subscribersArray.subscribersDivisions.filter(function (data) {
     //     return data.Divisions == valueFilter
@@ -213,6 +214,12 @@ function setDataDataSetByDivisions(sltValue) {
     }else{
         drawDataTrendChart([]);
     }
+    
+    datasets2018TotalGlobal = (jsondataDatasets.length > 0) ? jsondataDatasets[0]['2018_datasets'] : '0';
+    datasets2018Downloads = (jsondataDatasets.length > 0) ? jsondataDatasets[0]['2018_downloads'] : '0';
+    datasets2018DownloadsLac = (jsondataDatasets.length > 0) ? (jsondataDatasets[0]['2018_porcent_total_lac_downloads'] * 100).toFixed(0) : '0';
+    gaugeSuscribers = setSuscribersGauge();
+    drawGaugeSubscribersChart(gaugeSuscribers);
 
 
 }

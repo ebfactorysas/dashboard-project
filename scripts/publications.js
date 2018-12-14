@@ -1,11 +1,11 @@
-function setPublicationGauge() {
+function setPublicationGauge(isIdb) {
     var publicationGauge = {
         "publication": {
-            "total": 100, //getPercentageTotal(publicationsAllTotalGlobal),
+            "total": (isIdb == 'IDB') ? 1 : getPercentageTotal(publicationsAllTotalGlobal),
             "allocated": publicationsAllTotalGlobal
         },
         "download": {
-            "total": 100, //getPercentageTotal(publicationsAllDownloads),
+            "total": (isIdb == 'IDB') ? 1 : getPercentageTotal(publicationsAllDownloads),
             "allocated": publicationsAllDownloads
         },
         "lac": {
@@ -16,14 +16,14 @@ function setPublicationGauge() {
     return publicationGauge;
 }
 
-function setPublicationGauge2018() {
+function setPublicationGauge2018($isIdb) {
     var publicationGauge2018 = {
         "publication": {
-            "total": getPercentageTotal(publications2018TotalGlobal),
+            "total": ($isIdb == 'IDB') ? 1 : getPercentageTotal(publications2018TotalGlobal),
             "allocated": publications2018TotalGlobal
         },
         "download": {
-            "total": getPercentageTotal(publications2018Downloads),
+            "total": ($isIdb == 'IDB') ? 1 : getPercentageTotal(publications2018Downloads),
             "allocated": publications2018Downloads
         },
         "lac": {
@@ -1160,8 +1160,8 @@ function removePublicationsGauges() {
 
 function initPublications() {
     removePublicationsSvg();
-    dataPublicationGauge = setPublicationGauge();
-    dataPublicationGauge2018 = setPublicationGauge2018();
+    dataPublicationGauge = setPublicationGauge('IDB');
+    dataPublicationGauge2018 = setPublicationGauge2018('IDB');
     var downloadTimelineIDB = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineIDB);
     var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
 

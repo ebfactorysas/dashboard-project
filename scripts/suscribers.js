@@ -263,14 +263,14 @@ function drawTreeSuscriber(dataTree) {
         .detectVisible(false)
         .render();
 }
-function setSuscribersGauge() {
+function setSuscribersGauge(isIdb) {
     var dataGaugeSubscribers = {
         "code": {
-            "total": getPercentageTotal(subscribersAllTotalGlobal),
+            "total": (isIdb == 'IDB') ? 1 : getPercentageTotal(subscribersAllTotalGlobal),
             "allocated": subscribersAllTotalGlobal
         },
         "pageview": {
-            "total": getPercentageTotal(subscribersAllDownloads),
+            "total": (isIdb == 'IDB') ? 1 : getPercentageTotal(subscribersAllDownloads),
             "allocated": subscribersAllDownloads
         },
         "lac": {
@@ -281,14 +281,14 @@ function setSuscribersGauge() {
     return dataGaugeSubscribers;
 }
 
-function setSuscribersGauge2018() {
+function setSuscribersGauge2018(isIdb) {
     var dataGaugeSubscribers2018 = {
         "code": {
-            "total": getPercentageTotal(subscribersAllTotalGlobal),
+            "total": (isIdb == 'IDB') ? 1 : getPercentageTotal(subscribersAllTotalGlobal),
             "allocated": subscribersAllTotalGlobal
         },
         "pageview": {
-            "total": getPercentageTotal(subscribersAllDownloads),
+            "total": (isIdb == 'IDB') ? 1 : getPercentageTotal(subscribersAllDownloads),
             "allocated": subscribersAllDownloads
         },
         "lac": {
@@ -304,6 +304,9 @@ function setSuscribersGauge2018() {
 
 
 function drawGaugeSubscribersChart(dataGauge) {
+    d3.select("#gauge-suscribers svg").remove();
+    d3.select("#gauge-lac-s svg").remove();
+    d3.select("#gauge-2018 svg").remove();
     var width = 150,
         height = 150,
         progress = 0,
@@ -539,7 +542,7 @@ function initSuscribers() {
     drawSuscribersChart(orderTopDataSuscribers(subscribersTopics));
     drawTreeSuscriber(subscribersGender.genderIDB);
     drawInstitutionsChart(subscribersInstitution.institutionIDB);
-    dataGaugeSubscribers2018 = setSuscribersGauge2018();
+    dataGaugeSubscribers2018 = setSuscribersGauge2018('IDB');
     drawGaugeSubscribersChart(dataGaugeSubscribers2018);
 }
 
@@ -549,9 +552,7 @@ function initSuscribers() {
 function removeSubscribersSvg() {
     d3.select("#institution-suscribers svg").remove();
     d3.select("#age-suscribers svg").remove();
-    d3.select("#gauge-suscribers svg").remove();
-    d3.select("#gauge-lac-s svg").remove();
-    d3.select("#gauge-2018 svg").remove();
+    
 
 }
 

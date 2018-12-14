@@ -955,15 +955,15 @@ function createChart(data) {
 
 
 
-function setMoocsGauge() {
+function setMoocsGauge(isIdb) {
 
     var dataGaugeMoocs = {
         "code": {
-            "total": 100, //getPercentageTotal(moocsAllTotalGlobal),
+            "total": (isIdb == 'IDB') ? 1 : moocsAllTotalGlobal,//getPercentageTotal(moocsAllTotalGlobal),
             "allocated": moocsAllTotalGlobal
         },
         "pageview": {
-            "total": 100, //getPercentageTotal(moocsAllDownloads),
+            "total": (isIdb == 'IDB') ? 1 : moocsAllDownloads,//getPercentageTotal(moocsAllDownloads),
             "allocated": moocsAllDownloads
         },
         "lac": {
@@ -974,15 +974,15 @@ function setMoocsGauge() {
     return dataGaugeMoocs;
 }
 
-function setMoocsGauge2018() {
+function setMoocsGauge2018(isIdb) {
 
     var dataGaugeMoocs2018 = {
         "code": {
-            "total": getPercentageTotal(moocs2018TotalGlobal),
+            "total": (isIdb == 'IDB') ? 1 : moocs2018TotalGlobal,//getPercentageTotal(moocs2018TotalGlobal),
             "allocated": moocs2018TotalGlobal
         },
         "pageview": {
-            "total": getPercentageTotal(moocs2018Downloads),
+            "total": (isIdb == 'IDB') ? 1 : moocs2018Downloads,//getPercentageTotal(moocs2018Downloads),
             "allocated": moocs2018Downloads
         },
         "lac": {
@@ -1651,7 +1651,7 @@ function moocsFilter() {
                 moocs2018TotalGlobal = (jsondataMoocs.length > 0) ? jsondataMoocs[0]['2018_courses'] : '0';
                 moocs2018Downloads = (jsondataMoocs.length > 0) ? jsondataMoocs[0]['2018_registrations'] : '0';
                 moocs2018DownloadsLac = (jsondataMoocs.length > 0) ? ((jsondataMoocs[0]['porcent_total_LAC'] * 100 == 100) ? "100%" : (jsondataMoocs[0]['porcent_total_LAC'] * 100).toFixed(1) + '%') : 0;
-                dataGaugeMoocs2018 = setMoocsGauge2018();
+                dataGaugeMoocs2018 = setMoocsGauge2018('IDB');
                 drawGaugeMoocsChart(dataGaugeMoocs2018);
 
                 createChart($.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB));
@@ -1727,8 +1727,8 @@ function initMoocs() {
     drawStudentCompletedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
     drawStudentCertifiedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
     createChart(TimeLineIDB);
-    dataGaugeMoocs2018 = setMoocsGauge2018();
-    drawGaugeMoocsChart(dataGaugeMoocs2018)
+    dataGaugeMoocs2018 = setMoocsGauge2018('IDB');
+    drawGaugeMoocsChart(dataGaugeMoocs2018);
 }
 
 

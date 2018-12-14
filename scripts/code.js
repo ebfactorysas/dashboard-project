@@ -69,14 +69,14 @@ var dataTree = {
         ]
     }]
 }
-function setCodeGauge() {
+function setCodeGauge(isIdb) {
     var dataGaugeCode = {
         "code": {
-            "total": 100,//getPercentageTotal(codeAllTotalGlobal),
+            "total": (isIdb == 'IDB') ? 1 : getPercentageTotal(codeAllTotalGlobal),
             "allocated": codeAllTotalGlobal
         },
         "pageview": {
-            "total": 100, //getPercentageTotal(codeAllDownloads),
+            "total": (isIdb == 'IDB') ? 1 : getPercentageTotal(codeAllDownloads),
             "allocated": codeAllDownloads
         },
         "lac": {
@@ -87,15 +87,15 @@ function setCodeGauge() {
     return dataGaugeCode;
 }
 
-function setCodeGauge2018() {
+function setCodeGauge2018(isIdb) {
     
     var dataGaugeCode2018 = {
         "code": {
-            "total": getPercentageTotal(code2018TotalGlobal),
+            "total": (isIdb == 'IDB') ? 1 : getPercentageTotal(code2018TotalGlobal),
             "allocated": code2018TotalGlobal
         },
         "pageview": {
-            "total": getPercentageTotal(code2018Downloads),
+            "total": (isIdb == 'IDB') ? 1 : getPercentageTotal(code2018Downloads),
             "allocated": code2018Downloads
         },
         "lac": {
@@ -900,7 +900,7 @@ function initCode() {
 
     drawLinesChart(dataLines);
     drawTreeCode(codePageviewsSourceArrays.pageviewSourceIDB, "2018");
-    dataGaugeCode2018 = setCodeGauge2018();
+    dataGaugeCode2018 = setCodeGauge2018('IDB');
     drawGaugeCodeChart(dataGaugeCode2018);
     drawPlotChart(ObjectcodeScatterploArrays);
     drawChartCodeTrend(ObjectTopIdb2018);

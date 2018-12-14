@@ -554,14 +554,14 @@ function createChartTimeLineDataSet(data) {
             }));
 }
 
-function setDatasetsGauge() {
+function setDatasetsGauge(isIdb) {
     var dataGaugeDatasets = {
         "code": {
-            "total": 100, //getPercentageTotal(datasetsAllTotalGlobal),
+            "total": (isIdb == 'IDB') ? 1 : getPercentageTotal(datasetsAllTotalGlobal),
             "allocated": datasetsAllTotalGlobal
         },
         "pageview": {
-            "total": 100, //getPercentageTotal(datasetsAllDownloads),
+            "total": (isIdb == 'IDB') ? 1 : getPercentageTotal(datasetsAllDownloads),
             "allocated": datasetsAllDownloads
         },
         "lac": {
@@ -572,14 +572,14 @@ function setDatasetsGauge() {
     return dataGaugeDatasets;
 }
 
-function setDatasetsGauge2018() {
+function setDatasetsGauge2018(isIdb) {
     var dataGaugeDatasets2018 = {
         "code": {
-            "total": getPercentageTotal(datasets2018TotalGlobal),
+            "total": (isIdb == 'IDB') ? 1 : getPercentageTotal(datasets2018TotalGlobal),
             "allocated": datasets2018TotalGlobal
         },
         "pageview": {
-            "total": getPercentageTotal(datasets2018Downloads),
+            "total": (isIdb == 'IDB') ? 1 : getPercentageTotal(datasets2018Downloads),
             "allocated": datasets2018Downloads
         },
         "lac": {
@@ -652,12 +652,12 @@ $("input[name*='dataSetTrend']").click(function () {
         if (this.id == "dataSetAllTime") {
             //treemap
             drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "2018");
-            dataDatasets = setDatasetsGauge();
+            dataDatasets = setDatasetsGauge('2018');
             drawGaugeDatasetChart(dataDatasets);
         } else {
             //tree map
             drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "AllTheTime");
-            dataDatasets2018 = setDatasetsGauge2018();
+            dataDatasets2018 = setDatasetsGauge2018('IDB');
             drawGaugeDatasetChart(dataDatasets2018);
         }
         //linechart
@@ -749,6 +749,6 @@ function initDataSet() {
     //old logic
     drawDataTrendChart(datasetsTopArrays.topIDB2018);
     drawPlotChartDataset(ObjectDataSetPlot);
-    dataGaugeDatasets = setDatasetsGauge2018();
+    dataGaugeDatasets = setDatasetsGauge2018('IDB');
     drawGaugeDatasetChart(dataGaugeDatasets);
 }
