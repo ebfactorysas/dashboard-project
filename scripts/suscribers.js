@@ -69,7 +69,7 @@ function drawInstitutionsChart(dataInstitution) {
         })
         .attr("fill", "#336577")
         .attr("font-family", "Gotham-Bold")
-        .attr("font-size", "12px")
+        .attr("font-size", "14px")
         .append("tspan")
         .attr("x", function (d, i) {
             return i * xInstitution.bandwidth() + 25; //Bar width of 20 plus 1 for padding
@@ -84,7 +84,7 @@ function drawInstitutionsChart(dataInstitution) {
         })
         .attr("dy", "1.2em")
         .attr("font-family", "Gotham-Book")
-        .attr("font-size", "10px")
+        .attr("font-size", "12px")
         .text(function (d) {
             return parseFloat(Math.round(d.value * 100 / dataInstitutionSum * 100) / 100).toFixed(1) +
                 "%";
@@ -98,7 +98,7 @@ function drawInstitutionsChart(dataInstitution) {
     svgInstitution.selectAll(".tick text")
         .call(wrap, xInstitution.bandwidth())
         .attr("font-family", "Gotham-Book")
-        .attr("font-size", "9px")
+        .attr("font-size", "12px")
         .attr("fill", "#336577");
 
 }
@@ -209,10 +209,10 @@ function drawAgeSuscribersChart(data) {
         })
         //x position is 3 pixels to the right of the bar
         .attr("x", function (d) {
-            return 16;
+            return -25;
         })
         .attr("font-family", "Gotham-Bold")
-        .attr("font-size", "12px")
+        .attr("font-size", "14px")
         .text(function (d) {
             var value = setSettingsNumber(d.value)
             return value.valueNumber + value.suffixNumber;
@@ -233,68 +233,64 @@ function drawTreeSuscriber(dataTree) {
     var div = d3.select("body").append("div")
         .attr("class", "tooltip")
         .style("opacity", 0);
-
+        var numbType =  d3.format('.0%');
     colours = chroma.scale(['#518a81', '#ffffff'])
         .mode('lch').colors(dataTree.length)
-
+    console.log(dataTree)
     dataTree.forEach(function (element, i) {
         element.color = colours[i]
     });
-
-    new d3plus.Treemap()
-        .select("#demographics-suscribers")
-        .width(630)
-        .height(200)
-        .data(dataTree)
-        .layoutPadding([0])
-        .groupBy(["subscribers", "gender"])
-        .sum("subscribers")
-        .shapeConfig({
-            fill: function (d) {
-                return d.color;
+    var visualization = d3plusOld.viz()
+        .container("#demographics-suscribers") // container DIV to hold the visualization
+        .data({
+            "value": dataTree, // results in larger padding between 'groups' in treemap
+            "stroke": {
+                "width": 2
+            } // gives each shape a border
+        }) // data to use with the visualization
+        .type("tree_map") // visualization type
+        .id("gender") // key for which our data is unique on
+        .size({
+            value: "subscribers" 
+        }) // sizing of blocks
+        .legend(false)
+        .color(function (d) {
+            return d.color;
+        })
+        .labels({
+            align: "left",
+            valign: "top",
+            value: true,
+            font: {
+                family: "Gotham-Bold",
+                size: "17"
+            },
+            resize: false
+        })
+        .tooltip({
+            font: {
+                family: "Gotham-Book"
+            },
+            value: ["subscribers" ]
+        })
+        .format({
+            "text": function (text, params) {
+                if (text === "share") {
+                    return "Percentage";
+                } else if (text === "value" ) {
+                    return "Subscribers"
+                } else {
+                    return d3plusOld.string.title(text, params);
+                }
             }
         })
-        .legend(false)
-        .detectVisible(false)
-        .render();
-
-        d3.selectAll("#demographics-suscribers rect")
-        .on("mouseover", function (d) {
-          
-            var pageX = d3.event.pageX;
-            var pageY = d3.event.pageY;
-            var value = d.data.subscribers;
-            div.transition()
-                .duration(200)
-                .style("opacity", .9);
-            div.html(d.data.gender + "<br/>" + value)
-                .style("left", pageX + "px")
-                .style("top", pageY - 28 + "px");
-        })
-        .on("mouseout", function (d) {
-            div.transition()
-                .duration(500)
-                .style("opacity", 0);
+        .text(function (d) {
+            var current_id = visualization.id();
+            return d[current_id] + "\n" + numbType(d.d3plusOld.share.toFixed(2));
         })
 
-    d3.selectAll("#demographics-suscribers  .d3plus-textBox")
-        .on("mouseover", function (d) {
-            var pageX = d3.event.pageX;
-            var pageY = d3.event.pageY;
-            var value = d.data.subscribers;
-            
-            div.transition()
-                .duration(200)
-                .style("opacity", .9);
-            div.html(d.data.gender + "<br/>" + value)
-                .style("left", pageX + "px")
-                .style("top", pageY - 28 + "px");
-        })
-        .on("mouseout", function (d) {
-            div.transition()
-                .duration(500)
-                .style("opacity", 0);
-        })
+    visualization.draw()
+      
 }
 function setSuscribersGauge(isIdb) {
     var dataGaugeSubscribers = {
@@ -483,6 +479,7 @@ function drawSuscribersChart(data) {
     
     d3.select("#suscribers-interested svg").remove();
     dataSet = data.sort(function (a, b) {
+        a.name = a.name.slice(0,30);
         return d3.ascending(a.value, b.value);
     });
 
@@ -559,10 +556,10 @@ function drawSuscribersChart(data) {
         })
         //x position is 3 pixels to the right of the bar
         .attr("x", function (d) {
-            return 16;
+            return -25;
         })
         .attr("font-family", "Gotham-Bold")
-        .attr("font-size", "12px")
+        .attr("font-size", "14px")
         .text(function (d) {
             var value = setSettingsNumber(d.value)
             return value.valueNumber + value.suffixNumber;

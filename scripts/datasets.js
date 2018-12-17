@@ -121,10 +121,7 @@ function drawTreeDataset(dataTree, filtertype, typeload) {
             }
         });
     }
-
-    var div = d3.select("body").append("div")
-        .attr("class", "tooltip")
-        .style("opacity", 0);
+    var numbType =  d3.format('.0%');
 
     coloursDataSet = chroma.scale(['#424488', '#ffffff'])
         .mode('lch').colors(dataTree.length)
@@ -135,70 +132,60 @@ function drawTreeDataset(dataTree, filtertype, typeload) {
 
     //if all values are zero clean array to avoid error (darker of undefined)
     count > 0 ? dataTree = dataTree : dataTree = [];
-
-    new d3plus.Treemap()
-        .select("#downloads-dataset")
-        .width(935)
-        .height(200)
-        .layoutPadding([0])
-        .data(dataTree)
-        .groupBy(["value" + filtertype, "name"])
-        .sum("value" + filtertype)
-        .shapeConfig({
-            fill: function (d) {
-                return d.color;
-            }
-        })
+    // instantiate d3plus
+    var visualization = d3plusOld.viz()
+        .container("#downloads-dataset") // container DIV to hold the visualization
+        .data({
+            "value": dataTree, // results in larger padding between 'groups' in treemap
+            "stroke": {
+                "width": 2
+            } // gives each shape a border
+        }) // data to use with the visualization
+        .type("tree_map") // visualization type
+        .id("name") // key for which our data is unique on
+        .size({
+            value: "value" + filtertype,
+            fill: "blue"
+        }) // sizing of blocks
         .legend(false)
-        .detectVisible(false)
-        .render();
-
-        d3.selectAll("#downloads-dataset rect")
-        .on("mouseover", function (d) {
-            var pageX = d3.event.pageX;
-            var pageY = d3.event.pageY;
-            var value = 0;
-            if ($("input[name*='datasetTrend']") == "datasetAllTime") {
-                value = d.data.valueAllTheTime;
-            } else {
-                value = d.data.value2018;
+        .color(function (d) {
+            return d.color;
+        })
+        .labels({
+            align: "left",
+            valign: "top",
+            value: true,
+            font: {
+                family: "Gotham-Bold",
+                size: "17"
+            },
+            resize: false
+        })
+        .tooltip({
+            font: {
+                family: "Gotham-Book"
+            },
+            value: ["value" + filtertype]
+        })
+        .format({
+            "text": function (text, params) {
+                if (text === "share") {
+                    return "Percentage";
+                } else if (text === "value" + filtertype) {
+                    return "Value"
+                } else {
+                    return d3plusOld.string.title(text, params);
+                }
             }
-            div.transition()
-                .duration(200)
-                .style("opacity", .9);
-            div.html(d.data.name + "<br/>" + value)
-                .style("left", pageX + "px")
-                .style("top", pageY - 28 + "px");
         })
-        .on("mouseout", function (d) {
-            div.transition()
-                .duration(500)
-                .style("opacity", 0);
+        .text(function (d) {
+            var current_id = visualization.id();
+            return d[current_id] + "\n" + numbType(d.d3plusOld.share.toFixed(2));
         })
 
-    d3.selectAll("#downloads-dataset  .d3plus-textBox")
-        .on("mouseover", function (d) {
-            var pageX = d3.event.pageX;
-            var pageY = d3.event.pageY;
-            var value = 0;
-            if ($("input[name*='datasetTrend']") == "datasetAllTime") {
-                value = d.data.valueAllTheTime;
-            } else {
-                value = d.data.value2018;
-            }
-            div.transition()
-                .duration(200)
-                .style("opacity", .9);
-            div.html(d.data.name + "<br/>" + value)
-                .style("left", pageX + "px")
-                .style("top", pageY - 28 + "px");
-        })
-        .on("mouseout", function (d) {
-            div.transition()
-                .duration(500)
-                .style("opacity", 0);
-        })
+    visualization.draw()
 
+    
         
 
 }

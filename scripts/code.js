@@ -1,74 +1,4 @@
-var dataTree = {
-    "name": "flare",
-    "children": [{
-        "name": "analytics",
-        "children": [{
-                "name": "graph",
-                "children": [{
-                    "name": "Google",
-                    "size": 66
-                }]
-            },
-            {
-                "name": "optimization",
-                "children": [{
-                    "name": "IDB Publications",
-                    "size": 18
-                }]
-            }, {
-                "name": "graph",
-                "children": [{
-                    "name": "Google",
-                    "size": 66
-                }]
-            },
-            {
-                "name": "optimization",
-                "children": [{
-                    "name": "IDB Publications",
-                    "size": 18
-                }]
-            },
-            {
-                "name": "optimization",
-                "children": [{
-                    "name": "AspectRatioBanker",
-                    "children": [{
-                        "children": [{
-                            "name": "Others",
-                            "size": 6
-                        }, {
-                            "name": "",
-                            "size": 3
-                        }],
-                        "name": "Others"
-                    }, {
-                        "children": [{
-                            "name": "IDB Blogs",
-                            "size": 3
-                        }, {
-                            "name": "",
-                            "size": 1
-                        }, {
-                            "name": "",
-                            "size": 1
-                        }, {
-                            "name": "",
-                            "size": 1
-                        }, {
-                            "name": "",
-                            "size": 1
-                        }, {
-                            "name": "",
-                            "size": 1
-                        }],
-                        "name": "IDB Blogs"
-                    }]
-                }]
-            }
-        ]
-    }]
-}
+
 function setCodeGauge(isIdb) {
     var dataGaugeCode = {
         "code": {
@@ -261,80 +191,64 @@ function drawTreeCode(dataTree, filtertype) {
             return d3.descending(a.valueAllTheTime, b.valueAllTheTime);
         });
     }
-
+    var numbType =  d3.format('.0%');
     colours = chroma.scale(['#ebb203', '#ffffff'])
         .mode('lch').colors(dataTree.length)
 
     dataTree.forEach(function (element, i) {
         element.color = colours[i]
     });
-    var div = d3.select("body").append("div")
-        .attr("class", "tooltip")
-        .style("opacity", 0);
-
-    new d3plus.Treemap()
-        .select("#downloads-code")
-        .width(935)
-        .height(200)
-        .layoutPadding([0])
-        .data(dataTree)
-        .groupBy(["value" + filtertype, "name"])
-        .sum("value" + filtertype)
-        .shapeConfig({
-            fill: function (d) {
-                return d.color;
-            }
-        })
+        var visualization = d3plusOld.viz()
+        .container("#downloads-code") // container DIV to hold the visualization
+        .data({
+            "value": dataTree, // results in larger padding between 'groups' in treemap
+            "stroke": {
+                "width": 2
+            } // gives each shape a border
+        }) // data to use with the visualization
+        .type("tree_map") // visualization type
+        .id("name") // key for which our data is unique on
+        .size({
+            value: "value" + filtertype,
+            fill: "blue"
+        }) // sizing of blocks
         .legend(false)
-        .detectVisible(false)
-        .render();
-
-        d3.selectAll("#downloads-code rect")
-        .on("mouseover", function (d) {
-            var pageX = d3.event.pageX;
-            var pageY = d3.event.pageY;
-            var value = 0;
-            if ($("input[name*='codeTrend']") == "codeAllTime") {
-                value = d.data.valueAllTheTime;
-            } else {
-                value = d.data.value2018;
+        .color(function (d) {
+            return d.color;
+        })
+        .labels({
+            align: "left",
+            valign: "top",
+            value: true,
+            font: {
+                family: "Gotham-Bold",
+                size: "17"
+            },
+            resize: false
+        })
+        .tooltip({
+            font: {
+                family: "Gotham-Book"
+            },
+            value: ["value" + filtertype]
+        })
+        .format({
+            "text": function (text, params) {
+                if (text === "share") {
+                    return "Percentage";
+                } else if (text === "value" + filtertype) {
+                    return "Value"
+                } else {
+                    return d3plusOld.string.title(text, params);
+                }
             }
-            div.transition()
-                .duration(200)
-                .style("opacity", .9);
-            div.html(d.data.name + "<br/>" + value)
-                .style("left", pageX + "px")
-                .style("top", pageY - 28 + "px");
         })
-        .on("mouseout", function (d) {
-            div.transition()
-                .duration(500)
-                .style("opacity", 0);
+        .text(function (d) {
+            var current_id = visualization.id();
+            return d[current_id] + "\n" + numbType(d.d3plusOld.share.toFixed(2));
         })
 
-    d3.selectAll("#downloads-code  .d3plus-textBox")
-        .on("mouseover", function (d) {
-            var pageX = d3.event.pageX;
-            var pageY = d3.event.pageY;
-            var value = 0;
-            if ($("input[name*='codeTrend']") == "codeAllTime") {
-                value = d.data.valueAllTheTime;
-            } else {
-                value = d.data.value2018;
-            }
-            div.transition()
-                .duration(200)
-                .style("opacity", .9);
-            div.html(d.data.name + "<br/>" + value)
-                .style("left", pageX + "px")
-                .style("top", pageY - 28 + "px");
-        })
-        .on("mouseout", function (d) {
-            div.transition()
-                .duration(500)
-                .style("opacity", 0);
-        })
-        
+    visualization.draw()    
 
 }
 
