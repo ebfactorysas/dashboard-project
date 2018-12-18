@@ -182,6 +182,7 @@ function drawChartCodeTrend(codeTrend) {
 }
 
 function drawTreeCode(dataTree, filtertype) {
+    d3.select("#downloads-code div").remove();
     if ($("#code2018").prop("checked")) {
         dataTree = dataTree.sort(function (a, b) {
             return d3.descending(a.value2018, b.value2018);
