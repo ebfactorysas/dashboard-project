@@ -600,7 +600,7 @@ function subscriberIndicatorAlltime(jsondata) {
         subscriberValue: (jsondata.length > 0) ? jsondata[0].subscribers : '0',
         // porcent_total_subscriber: (jsondata.length > 0) ? (jsondata[0].porcent_total_subscribers * 100).toFixed(1) + '%' : '',
         porcent_total_subscriber: (jsondata.length > 0) ? ((jsondata[0]['porcent_total_subscribers'] * 100 >= 100) ? "100%" : (jsondata[0]['porcent_total_subscribers'] * 100).toFixed(1) + '%') : '',
-        porcent_total_subscriber_2018: '100%', /** missing, se pone 100% por orden de rodrigo */
+        porcent_total_subscriber_2018: (jsondata.length > 0) ? '100%' : '0', /** missing, se pone 100% por orden de rodrigo */
         // porcent_subscriber_lac: (jsondata.length > 0) ? (jsondata[0]['porcent_total_from_lac'] * 100).toFixed(1) + '%' : ''
         porcent_subscriber_lac: (jsondata.length > 0) ? ((jsondata[0]['porcent_total_from_lac'] * 100 >= 100) ? "100%" : (jsondata[0]['porcent_total_from_lac'] * 100).toFixed(1) + '%') : '',
     }
@@ -613,7 +613,7 @@ function subscriberIndicator2018(jsondata) {
         subscriberValue: (jsondata.length > 0) ? jsondata[0].subscribers : '0',
         // porcent_total_subscriber: (jsondata.length > 0) ? (jsondata[0].porcent_total_subscribers * 100).toFixed(1) + '%' : '0',
         porcent_total_subscriber: (jsondata.length > 0) ? ((jsondata[0]['porcent_total_subscribers'] * 100 >= 100) ? "100%" : (jsondata[0]['porcent_total_subscribers'] * 100).toFixed(1) + '%') : '',
-        porcent_total_subscriber_2018: '100%', /** missing, se pone 100% por orden de rodrigo */
+        porcent_total_subscriber_2018: (jsondata.length > 0) ? '100%' : '0', /** missing, se pone 100% por orden de rodrigo */
         // porcent_subscriber_lac: (jsondata.length > 0) ? (jsondata[0]['porcent_total_from_lac'] * 100).toFixed(1) + '%' : ''
         porcent_subscriber_lac: (jsondata.length > 0) ? ((jsondata[0]['porcent_total_from_lac'] * 100 >= 100) ? "100%" : (jsondata[0]['porcent_total_from_lac'] * 100).toFixed(1) + '%') : '',
     }

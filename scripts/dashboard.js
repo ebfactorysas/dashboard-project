@@ -261,7 +261,7 @@ function setDataSuscribersByDivisions(sltValue) {
         return data.Divisions == sltValue
     });
     subscribersAllTotalGlobal = (jsondataSubscriber.length > 0) ? jsondataSubscriber[0].subscribers : '0';
-    subscribersAllDownloads = '100%'; /** missing, se pone 100% por orden de rodrigo */
+    subscribersAllDownloads = (jsondataSubscriber.length > 0) ? '100%' : '0'; /** missing, se pone 100% por orden de rodrigo */
     subscribersAllDownloadsLac = (jsondataSubscriber.length > 0) ? ((jsondataSubscriber[0]['porcent_total_from_lac'] * 100 >= 100) ? "100%" : (jsondataSubscriber[0]['porcent_total_from_lac'] * 100).toFixed(1)) : '';
     gaugeSuscribers = setSuscribersGauge();
     drawGaugeSubscribersChart(gaugeSuscribers);
