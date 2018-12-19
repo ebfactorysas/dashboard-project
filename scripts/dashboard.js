@@ -329,6 +329,4 @@ $(window).on('load', function () {
     initDataSet();
     initCode();
     initSuscribers();
-    $('.label-filter-restidb').hide();
-
 });
