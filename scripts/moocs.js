@@ -951,11 +951,11 @@ function setMoocsGauge(isIdb) {
 
     var dataGaugeMoocs = {
         "code": {
-            "total": (isIdb == 'IDB') ? 1 : moocsAllTotalGlobal,//getPercentageTotal(moocsAllTotalGlobal),
+            "total": (isIdb == 'IDB') ? 1 : getPercentageTotal(moocsAllTotalGlobal),
             "allocated": moocsAllTotalGlobal
         },
         "pageview": {
-            "total": (isIdb == 'IDB') ? 1 : moocsAllDownloads,//getPercentageTotal(moocsAllDownloads),
+            "total": (isIdb == 'IDB') ? 1 : getPercentageTotal(moocsAllDownloads),
             "allocated": moocsAllDownloads
         },
         "lac": {
@@ -970,11 +970,11 @@ function setMoocsGauge2018(isIdb) {
 
     var dataGaugeMoocs2018 = {
         "code": {
-            "total": (isIdb == 'IDB') ? 1 : moocs2018TotalGlobal,//getPercentageTotal(moocs2018TotalGlobal),
+            "total": (isIdb == 'IDB') ? 1 : getPercentageTotal(moocs2018TotalGlobal),
             "allocated": moocs2018TotalGlobal
         },
         "pageview": {
-            "total": (isIdb == 'IDB') ? 1 : moocs2018Downloads,//getPercentageTotal(moocs2018Downloads),
+            "total": (isIdb == 'IDB') ? 1 : getPercentageTotal(moocs2018Downloads),
             "allocated": moocs2018Downloads
         },
         "lac": {
@@ -1525,7 +1525,7 @@ function moocsFilter() {
                 moocsAllDownloads = (jsondataMoocs.length > 0) ? jsondataMoocs[0]['all_the_time_registrations'] : '0';
                 moocsAllDownloadsLac = (jsondataMoocs.length > 0) ? ((jsondataMoocs[0]['porcent_total_LAC'] * 100 >= 100) ? "100%" : (jsondataMoocs[0]['porcent_total_LAC'] * 100).toFixed(1)) : 0;
 
-                dataGaugeMoocs = setMoocsGauge();
+                dataGaugeMoocs = setMoocsGauge('');
                 drawGaugeMoocsChart(dataGaugeMoocs);
                 var timelineDivisions = divisionFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDivisions), $("select[id*='divisionSelect']").val());
                 if (timelineDivisions.length > 0) createChart(timelineDivisions[0].data)
@@ -1573,8 +1573,8 @@ function moocsFilter() {
                 jsondataMoocs = moocsIndicatorsArray.indicatorsIDB;
                 moocsAllTotalGlobal = (jsondataMoocs.length > 0) ? jsondataMoocs[0]['all_the_time_courses'] : '0';
                 moocsAllDownloads = (jsondataMoocs.length > 0) ? jsondataMoocs[0]['all_the_time_registrations'] : '0';
-                moocsAllDownloadsLac = (jsondataMoocs.length > 0) ? ((jsondataMoocs[0]['porcent_total_LAC'] * 100 == 100) ? "100%" : (jsondataMoocs[0]['porcent_total_LAC'] * 100).toFixed(1) + '%') : '';
-                dataGaugeMoocs = setMoocsGauge();
+                moocsAllDownloadsLac = (jsondataMoocs.length > 0) ? ((jsondataMoocs[0]['porcent_total_LAC'] * 100 == 100) ? "100%" : (jsondataMoocs[0]['porcent_total_LAC'] * 100).toFixed(1)) : '';
+                dataGaugeMoocs = setMoocsGauge('');
                 drawGaugeMoocsChart(dataGaugeMoocs);
                 createChart($.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB));
 
@@ -1602,8 +1602,8 @@ function moocsFilter() {
                 });
                 moocs2018TotalGlobal = (jsondataMoocs.length > 0) ? jsondataMoocs[0]['2018_courses'] : '0';
                 moocs2018Downloads = (jsondataMoocs.length > 0) ? jsondataMoocs[0]['2018_registrations'] : '0';
-                moocs2018DownloadsLac = (jsondataMoocs.length > 0) ? ((jsondataMoocs[0]['porcent_total_LAC'] * 100 == 100) ? "100%" : (jsondataMoocs[0]['porcent_total_LAC'] * 100).toFixed(1) + '%') : 0;
-                dataGaugeMoocs2018 = setMoocsGauge2018();
+                moocs2018DownloadsLac = (jsondataMoocs.length > 0) ? ((jsondataMoocs[0]['porcent_total_LAC'] * 100 == 100) ? "100%" : (jsondataMoocs[0]['porcent_total_LAC'] * 100).toFixed(1)) : 0;
+                dataGaugeMoocs2018 = setMoocsGauge2018('');
                 drawGaugeMoocsChart(dataGaugeMoocs2018);
                 var timelineDivisions = divisionFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDivisions), $("select[id*='divisionSelect']").val());
                 if (timelineDivisions.length > 0) createChart(timelineDivisions[0].data);
@@ -1651,7 +1651,7 @@ function moocsFilter() {
                 jsondataMoocs = moocsIndicatorsArray.indicatorsIDB;
                 moocs2018TotalGlobal = (jsondataMoocs.length > 0) ? jsondataMoocs[0]['2018_courses'] : '0';
                 moocs2018Downloads = (jsondataMoocs.length > 0) ? jsondataMoocs[0]['2018_registrations'] : '0';
-                moocs2018DownloadsLac = (jsondataMoocs.length > 0) ? ((jsondataMoocs[0]['porcent_total_LAC'] * 100 == 100) ? "100%" : (jsondataMoocs[0]['porcent_total_LAC'] * 100).toFixed(1) + '%') : 0;
+                moocs2018DownloadsLac = (jsondataMoocs.length > 0) ? ((jsondataMoocs[0]['porcent_total_LAC'] * 100 == 100) ? "100%" : (jsondataMoocs[0]['porcent_total_LAC'] * 100).toFixed(1)) : 0;
                 dataGaugeMoocs2018 = setMoocsGauge2018('IDB');
                 drawGaugeMoocsChart(dataGaugeMoocs2018);
 

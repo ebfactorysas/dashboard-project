@@ -1398,7 +1398,7 @@ $("input[name*='publicationTrend']").click(function () {
             // drawPlotChartPublication(ObjectpublicationsAttention);
             drawGaugePublicationChart(dataPublicationGauge);
         } else {
-            dataPublicationGauge2018 = setPublicationGauge2018();
+            dataPublicationGauge2018 = setPublicationGauge2018('IDB');
             $('.label-filter-restidb').show();
             drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "2018");
             // createChartTimelinePublication(downloadTimelineIDBTEST);

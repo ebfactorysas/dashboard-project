@@ -906,14 +906,14 @@ $("input[name*='codeTrend']").click(function () {
             drawChartCodeTrend(ObjectTopIdbAllTime);
             // createChartTimeline(ObjectPageViewsTimeLineAllTime);
             // drawPlotChart(ObjectcodeScatterploArrays);
-            dataGaugeCode = setCodeGauge();
+            dataGaugeCode = setCodeGauge('');
             drawGaugeCodeChart(dataGaugeCode);
         } else {
             drawTreeCode(codePageviewsSourceArrays.pageviewSourceIDB, "2018");
             drawChartCodeTrend(ObjectTopIdb2018);
             // createChartTimeline(ObjectPageViewsTimeLineAllTime);
             // drawPlotChart(ObjectcodeScatterploArrays);
-            dataGaugeCode2018 = setCodeGauge2018();
+            dataGaugeCode2018 = setCodeGauge2018('IDB');
             drawGaugeCodeChart(dataGaugeCode2018);
         }
     }
