@@ -412,11 +412,11 @@ section.publications .grid path {
     stroke-width: 0;
 }
 
-section.publications #publications-plot {
+/* section.publications #publications-plot {
     margin-top: -32px;
-}
+} */
 
-section.publications #publications-plot .legend text,
+/* section.publications #publications-plot .legend text,
 section.publications #publications-plot .axis text {
     font-size: 14px;
     fill: #333;
@@ -453,7 +453,7 @@ section.publications #publications-plot .legend rect {
 
 section.publications #publications-plot .legeng:hover rect {
     fill-opacity: 1;
-}
+} */
 
 
 .tooltip {
@@ -737,7 +737,7 @@ section.code .funds-allocated-meter .background {
     fill: #A17603;
 }
 
-section.datasets #dataset-publications-plot {
+ section.datasets #dataset-publications-plot {
     margin-top: -32px;
 }
 
@@ -779,7 +779,7 @@ section.datasets #dataset-publications-plot .legend rect {
 
 section.datasets #dataset-publications-plot .legeng:hover rect {
     fill-opacity: 1;
-}
+} 
 
 
 section.code #code-trend .y-code {
@@ -1904,7 +1904,7 @@ section.publications .grid path {
     stroke-width: 0;
 }
 
-section.publications #publications-plot {
+/* section.publications #publications-plot {
     margin-top: -32px;
 }
 
@@ -1945,7 +1945,7 @@ section.publications #publications-plot .legend rect {
 
 section.publications #publications-plot .legeng:hover rect {
     fill-opacity: 1;
-}
+} */
 
 
 .tooltip {
@@ -2884,6 +2884,10 @@ section.map select.form-control:not([size]):not([multiple]) {
         font-size: 14px;
         font-family: 'Gotham-Book';
         color: #555555
+    }
+
+    section.publications #publications-plot{
+        height: 425px;
     }
 
     section.publications .text-different b {

@@ -581,7 +581,7 @@ function drawTreePublication(dataTree, filtertype, typeload) {
             return d3.descending(a.value2018, b.value2018);
         });
     }
-    var numbType =  d3.format('.0%');
+    var numbType = d3.format('.0%');
     colours = chroma.scale(['#d1415a', '#ffffff'])
         .mode('lch').colors(dataTree.length)
 
@@ -1042,7 +1042,7 @@ function drawLinesChartPublication(data) {
 
 
 function drawPlotChartPublication(data, typeload) {
-    d3.select("#publications-plot svg").remove();
+    d3.select("#publications-plot div").remove();
     var margin = {
         top: 30,
         right: 50,
@@ -1054,139 +1054,210 @@ function drawPlotChartPublication(data, typeload) {
     var valueOfFilter = $('#idbLink')[0].text;
     var arrayAux = [];
     var arrayElements = [];
+    var maxValue = 0
     for (let i = 0; i < data.length; i++) {
+        data[i].FullCode = data[i].Code +" "+ data[i].departmentCode.toUpperCase();
+         
+        if (data[i].Downloads >= maxValue) {
+            maxValue = data[i].Downloads;
+        }
         if (valueOfFilter == data[i].departmentCode) {
-            arrayElements.push(data[i])
+            arrayElements.push($.extend(true, {}, data[i]))
         } else {
-            arrayAux.push(data[i])
+            arrayAux.push($.extend(true, {}, data[i]))
         }
     }
-    data = arrayAux.concat(arrayElements);
+    var newData = arrayAux.concat(arrayElements);
 
-    var div = d3.select("body").append("div")
-        .attr("class", "tooltip")
-        .style("opacity", 0);
-
-
-
-    var svg = d3.select('#publications-plot')
-        .append("svg")
-        .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-100 -60 750 600")
-        .append("g")
-        .classed("svg-content-responsive", true);
-
-    var opacityScale = d3.scaleLinear()
-        .domain([0.0, 30.0])
-        .range([0.10, .80]);
-
-    // The API for scales have changed in v4. There is a separate module d3-scale which can be used instead. The main change here is instead of d3.scale.linear, we have d3.scaleLinear.
-    var xScale = d3.scaleLinear()
-        .range([0, width]);
-
-    var yScale = d3.scaleLinear()
-        .range([height, 0]);
-
-    // square root scale.
-    var radius = d3.scaleSqrt()
-        .range([2, 5]);
-
-    // the axes are much cleaner and easier now. No need to rotate and orient the axis, just call axisBottom, axisLeft etc.
-    var xAxis = d3.axisBottom()
-        .scale(xScale)
-        .tickPadding(40)
-        .tickSize(0)
-        .ticks(5);
-
-    var yAxis = d3.axisLeft()
-        .scale(yScale)
-        .tickPadding(40)
-        .tickSize(0)
-        .ticks(5);
-
-    data.forEach(function (d) {
-        d.Downloads = +d.Downloads;
-        d.daysPublished = +d.daysPublished;
-        d.Code = d.Code;
-    });
-
-    xScale.domain(d3.extent(data, function (d) {
-        return d.Downloads;
-    })).nice();
-
-    yScale.domain(d3.extent(data, function (d) {
-        return d.daysPublished;
-    })).nice();
-
-    svg.append('g')
-        .attr('transform', 'translate(0,' + height + ')')
-        .attr('class', 'x axis')
-        .style("stroke-dasharray", "5,5")
-        .call(xAxis)
-        .append('text')
-        .attr('class', 'axis-label')
-        .attr('y', 70)
-        .attr('x', 300)
-        .attr('fill', 'black')
-        .text("Downloads");
-
-    // y-axis is translated to (0,0)
-    svg.append('g')
-        .attr('transform', 'translate(0,0)')
-        .attr('class', 'y axis')
-        .style("stroke-dasharray", "5,5")
-        .call(yAxis)
-        .append('text')
-        .attr('class', 'axis-label')
-        .attr('y', -80)
-        .attr('x', -180)
-        .attr('fill', 'black')
-        .attr('transform', "rotate(-90)")
-        .attr('text-anchor', 'middle')
-        .text("Published Days");
-
-    var mouseOver = function (d) {
-        d3.select(this).attr("stroke", "#555555").attr("stroke-width", "2");
-        div.transition()
-            .duration(0)
-            .style("opacity", .9);
-        div.html(
-                "<div><h4 class='text-center'><b>PUBLICATION DETAILS</b></h4><p class='pb-2'>" +
-                d.Code + "</p><p><b>" +
-                d.departmentCode + "</b></p><div class='pl-0'><p><span>Downloads:</span>&nbsp;&nbsp;&nbsp;<b>" + d.Downloads + "</b></p><p><span>Published Days:</span><b>" + d.daysPublished + "</b></p></div></div>")
-            .style("left", (d3.event.pageX - 200) + "px")
-            .style("top", (d3.event.pageY) + "px");
-
-    }
-
-    var mouseOut = function (d) {
-        d3.select(this).attr("stroke-width", "0");
-        div.transition()
-            .duration(0)
-            .style("opacity", 0);
-    }
-    var bubble = svg.selectAll('.bubble')
-        .data(data)
-        .enter().append('circle')
-        .attr('class', 'bubble')
-        .attr('cx', function (d) {
-            return xScale(d.Downloads);
+    var visualization = d3plusOld.viz()
+        .container("#publications-plot")
+        .data(newData)
+        .type("scatter")
+        .id({grouping:false,value:["FullCode"]})
+        .background("transparent")
+        .font({
+            family: "Gotham-Book"
         })
-        .attr('cy', function (d) {
-            return yScale(d.daysPublished);
+        .axes({
+            background: {
+                color: "transparent",
+                stroke: {
+                    width: 0
+                }
+            },
+            ticks: false
         })
-        .attr('r', function (d) {
-            return radius(20);
-        })
-        .style('fill', function (d) {
-
+        .size(10)
+        .legend(false)
+        .color(function (d) {
             if (d.departmentCode != valueOfFilter && valueOfFilter != "IDB") {
                 return "#d8d8d8"
             }
             return "#d65a70"
         })
-        .on("mouseover", mouseOver)
-        .on("mouseout", mouseOut);
+        .tooltip({large:400,small:500,anchor:"top left",value:["Downloads", "daysPublished", "pageviews", "publishedDate"]})
+        .x({
+            value:"Downloads" ,
+            axis: true,
+            ticks: {
+                size: 0,
+                width:2,
+                value:[0,200,400,600,800,1000]
+            },
+            grid: false,
+            mouse: {
+                dasharray: "4"
+            }
+        })
+        .text( "Code")
+        .y({
+            value: "daysPublished",
+            axis: true,
+            ticks: {
+                size: 0  ,width:2,value:[0,50,100,150,200]  },
+            grid: false,
+            mouse: {
+                dasharray: "4"
+            }
+        })
+        .format({
+            "text": function (text, params) {
+                //i made this cuz' this cant change anywhere
+                $("#d3plus_graph_xgrid line").css("stroke-dasharray","4");
+                $("#d3plus_graph_ygrid line").css("stroke-dasharray","4");
+                if (text === "daysPublished") {
+                    return "Published Days";
+                }else if(text === "pageviews"){
+                    return "Pageviews"
+                }else if(text=== "publishedDate"){
+                    return "Published Date"
+                }
+                 else {
+                    return d3plusOld.string.title(text, params);
+                }
+            }
+        })
+        .draw()
+        //.attr("stroke-dasharray",4)
+
+    // var svg = d3.select('#publications-plot')
+    //     .append("svg")
+    //     .attr("preserveAspectRatio", "xMinYMin meet")
+    //     .attr("viewBox", "-100 -60 750 600")
+    //     .append("g")
+    //     .classed("svg-content-responsive", true);
+
+    // var opacityScale = d3.scaleLinear()
+    //     .domain([0.0, 30.0])
+    //     .range([0.10, .80]);
+
+    // // The API for scales have changed in v4. There is a separate module d3-scale which can be used instead. The main change here is instead of d3.scale.linear, we have d3.scaleLinear.
+    // var xScale = d3.scaleLinear()
+    //     .range([0, width]);
+
+    // var yScale = d3.scaleLinear()
+    //     .range([height, 0]);
+
+    // // square root scale.
+    // var radius = d3.scaleSqrt()
+    //     .range([2, 5]);
+
+    // // the axes are much cleaner and easier now. No need to rotate and orient the axis, just call axisBottom, axisLeft etc.
+    // var xAxis = d3.axisBottom()
+    //     .scale(xScale)
+    //     .tickPadding(40)
+    //     .tickSize(0)
+    //     .ticks(5);
+
+    // var yAxis = d3.axisLeft()
+    //     .scale(yScale)
+    //     .tickPadding(40)
+    //     .tickSize(0)
+    //     .ticks(5);
+
+    // data.forEach(function (d) {
+    //     d.Downloads = +d.Downloads;
+    //     d.daysPublished = +d.daysPublished;
+    //     d.Code = d.Code;
+    // });
+
+    // xScale.domain(d3.extent(data, function (d) {
+    //     return d.Downloads;
+    // })).nice();
+
+    // yScale.domain(d3.extent(data, function (d) {
+    //     return d.daysPublished;
+    // })).nice();
+
+    // svg.append('g')
+    //     .attr('transform', 'translate(0,' + height + ')')
+    //     .attr('class', 'x axis')
+    //     .style("stroke-dasharray", "5,5")
+    //     .call(xAxis)
+    //     .append('text')
+    //     .attr('class', 'axis-label')
+    //     .attr('y', 70)
+    //     .attr('x', 300)
+    //     .attr('fill', 'black')
+    //     .text("Downloads");
+
+    // // y-axis is translated to (0,0)
+    // svg.append('g')
+    //     .attr('transform', 'translate(0,0)')
+    //     .attr('class', 'y axis')
+    //     .style("stroke-dasharray", "5,5")
+    //     .call(yAxis)
+    //     .append('text')
+    //     .attr('class', 'axis-label')
+    //     .attr('y', -80)
+    //     .attr('x', -180)
+    //     .attr('fill', 'black')
+    //     .attr('transform', "rotate(-90)")
+    //     .attr('text-anchor', 'middle')
+    //     .text("Published Days");
+
+    // var mouseOver = function (d) {
+    //     d3.select(this).attr("stroke", "#555555").attr("stroke-width", "2");
+    //     div.transition()
+    //         .duration(0)
+    //         .style("opacity", .9);
+    //     div.html(
+    //             "<div><h4 class='text-center'><b>PUBLICATION DETAILS</b></h4><p class='pb-2'>" +
+    //             d.Code + "</p><p><b>" +
+    //             d.departmentCode + "</b></p><div class='pl-0'><p><span>Downloads:</span>&nbsp;&nbsp;&nbsp;<b>" + d.Downloads + "</b></p><p><span>Published Days:</span><b>" + d.daysPublished + "</b></p></div></div>")
+    //         .style("left", (d3.event.pageX - 200) + "px")
+    //         .style("top", (d3.event.pageY) + "px");
+
+    // }
+
+    // var mouseOut = function (d) {
+    //     d3.select(this).attr("stroke-width", "0");
+    //     div.transition()
+    //         .duration(0)
+    //         .style("opacity", 0);
+    // }
+    // var bubble = svg.selectAll('.bubble')
+    //     .data(data)
+    //     .enter().append('circle')
+    //     .attr('class', 'bubble')
+    //     .attr('cx', function (d) {
+    //         return xScale(d.Downloads);
+    //     })
+    //     .attr('cy', function (d) {
+    //         return yScale(d.daysPublished);
+    //     })
+    //     .attr('r', function (d) {
+    //         return radius(20);
+    //     })
+    //     .style('fill', function (d) {
+
+    //         if (d.departmentCode != valueOfFilter && valueOfFilter != "IDB") {
+    //             return "#d8d8d8"
+    //         }
+    //         return "#d65a70"
+    //     })
+    //     .on("mouseover", mouseOver)
+    //     .on("mouseout", mouseOut);
     // .append('title')
     // .attr('x', function (d) {
     //     return radius(d.Downloads);
