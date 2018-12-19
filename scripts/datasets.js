@@ -87,7 +87,7 @@ function drawDataTrendChart(dataDataTrend) {
 }
 
 function drawTreeDataset(dataTree, filtertype, typeload) {
-    d3.select("#downloads-dataset svg").remove();
+    d3.select("#downloads-dataset div").remove();
 
     var count = 0;
 

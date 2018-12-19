@@ -225,7 +225,7 @@ function drawAgeSuscribersChart(data) {
 
 
 function drawTreeSuscriber(dataTree) {
-    d3.select("#demographics-suscribers svg").remove();
+    d3.select("#demographics-suscribers div").remove();
     dataTree = dataTree.sort(function (a, b) {
         return d3.descending(a.subscribers, b.subscribers);
     });

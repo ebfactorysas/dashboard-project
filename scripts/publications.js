@@ -565,6 +565,7 @@ function createChartTimelinePublication(data, typeload) {
 }
 
 function drawTreePublication(dataTree, filtertype, typeload) {
+    d3.select("#downloads-publications div").remove();
     if (typeload != "init") {
         if ($("#publication2018").prop("checked")) {
             dataTree = dataTree.sort(function (a, b) {
