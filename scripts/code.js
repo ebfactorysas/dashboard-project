@@ -907,7 +907,7 @@ $("input[name*='codeTrend']").click(function () {
             drawChartCodeTrend(ObjectTopIdbAllTime);
             // createChartTimeline(ObjectPageViewsTimeLineAllTime);
             // drawPlotChart(ObjectcodeScatterploArrays);
-            dataGaugeCode = setCodeGauge('');
+            dataGaugeCode = setCodeGauge('IDB');
             drawGaugeCodeChart(dataGaugeCode);
         } else {
             drawTreeCode(codePageviewsSourceArrays.pageviewSourceIDB, "2018");

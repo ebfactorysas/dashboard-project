@@ -1391,8 +1391,8 @@ $("input[name*='publicationTrend']").click(function () {
         removePublicationsSvg();
         removePublicationsGauges();
         if (this.id == "publicationAllTime") {
-            $('.label-filter-restidb').hide();
-            dataPublicationGauge = setPublicationGauge();
+            // $('.label-filter-restidb').hide();
+            dataPublicationGauge = setPublicationGauge('IDB');
             drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "AllTheTime");
             // createChartTimelinePublication(downloadTimelineIDBTEST);
             drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
@@ -1400,7 +1400,7 @@ $("input[name*='publicationTrend']").click(function () {
             drawGaugePublicationChart(dataPublicationGauge);
         } else {
             dataPublicationGauge2018 = setPublicationGauge2018('IDB');
-            $('.label-filter-restidb').show();
+            // $('.label-filter-restidb').show();
             drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "2018");
             // createChartTimelinePublication(downloadTimelineIDBTEST);
             drawTrendPublicationChart(publicationsTopArrays.topIDB2018);

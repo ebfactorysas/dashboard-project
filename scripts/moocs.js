@@ -1574,7 +1574,7 @@ function moocsFilter() {
                 moocsAllTotalGlobal = (jsondataMoocs.length > 0) ? jsondataMoocs[0]['all_the_time_courses'] : '0';
                 moocsAllDownloads = (jsondataMoocs.length > 0) ? jsondataMoocs[0]['all_the_time_registrations'] : '0';
                 moocsAllDownloadsLac = (jsondataMoocs.length > 0) ? ((jsondataMoocs[0]['porcent_total_LAC'] * 100 == 100) ? "100%" : (jsondataMoocs[0]['porcent_total_LAC'] * 100).toFixed(1)) : '';
-                dataGaugeMoocs = setMoocsGauge('');
+                dataGaugeMoocs = setMoocsGauge('IDB');
                 drawGaugeMoocsChart(dataGaugeMoocs);
                 createChart($.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB));
 

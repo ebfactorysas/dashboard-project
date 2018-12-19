@@ -691,7 +691,7 @@ $("input[name*='dataSetTrend']").click(function () {
         if (this.id == "dataSetAllTime") {
             //treemap
             drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "2018");
-            dataDatasets = setDatasetsGauge('2018');
+            dataDatasets = setDatasetsGauge('IDB');
             drawGaugeDatasetChart(dataDatasets);
         } else {
             //tree map
