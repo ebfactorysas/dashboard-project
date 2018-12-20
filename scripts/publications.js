@@ -34,7 +34,6 @@ function setPublicationGauge2018($isIdb) {
     return publicationGauge2018;
 }
 
-
 var dataLinesPublications = [{
         "date": "11/08/2018",
         "one": 93.4,
@@ -407,8 +406,8 @@ function sortByDateAscending(a, b) {
 }
 
 function createChartTimelinePublication(data, typeload) {
-
-
+    d3.select("#timeline-publication div").remove();
+ 
     var margin = {
             top: 20,
             right: 20,
@@ -417,10 +416,11 @@ function createChartTimelinePublication(data, typeload) {
         },
         width = 580 - margin.left - margin.right,
         height = 220 - margin.top - margin.bottom;
-
+    
+    var positions = {};
     // parse the date / time
     var parseTime = d3.timeParse("%d-%b-%y");
-
+    
     // set the ranges
     var x = d3.scaleTime().range([0, width]);
     var y = d3.scaleLinear().range([height, 0]);
@@ -445,28 +445,22 @@ function createChartTimelinePublication(data, typeload) {
             return y(d.close);
         });
 
-    // append the svg obgect to the body of the page
-    // appends a 'group' element to 'svg'
-    // moves the 'group' element to the top left margin
     var svg = d3.select("#timeline-publication")
         .append("svg")
-        //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
         .attr("viewBox", "-60 -28 600 300")
         .append("g")
-        // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
-
-        //class to make it responsive
         .classed("svg-content-responsive", true);
-    var totalAmount = 0;
+
     // format the data
     data.forEach(function (d) {
+        d.dateAux = d.date;
         d.date = parseTime(d.date);
 
     });
 
     data = data.sort(sortByDateAscending);
-
+    var totalAmount =0;
     for (var i = 0; i < data.length; i++) {
         data[i].close = +data[i].close;
         totalAmount += data[i].close;
@@ -476,7 +470,7 @@ function createChartTimelinePublication(data, typeload) {
             data[i]['CumulativeAmount'] = data[i].close;
         }
     }
-    //now calculate cumulative % from the cumulative amounts & total, round %
+    
     for (var i = 0; i < data.length; i++) {
         data[i]['CumulativePercentage'] = (data[i]['CumulativeAmount'] / totalAmount);
         data[i]['CumulativePercentage'] = parseFloat(data[i]['CumulativePercentage'].toFixed(2));
@@ -503,6 +497,12 @@ function createChartTimelinePublication(data, typeload) {
         .data([data])
         .attr("class", "area")
         .attr("d", area);
+
+    var testarea = d3Old.selectAll("#timeline-publication path")
+    .on("mousemove",function(d){
+        console.log(d)
+    });
+    console.log(testarea)
 
     // add the valueline path.
     svg.append("path")
@@ -548,8 +548,8 @@ function createChartTimelinePublication(data, typeload) {
     var textOfTotal = setSettingsNumber(totalAmount);
 
     svg.append("text")
-        .attr("x", (width - (margin.left / 2)))
-        .attr("y", positionText)
+    .attr("x", (width - (margin.left / 2)))
+    .attr("y", positionText)
         // .attr("text-anchor", "middle")  
         .style("font-size", "16px")
         .style("font-family", "Gotham-Bold")
@@ -561,6 +561,87 @@ function createChartTimelinePublication(data, typeload) {
         .style("font-size", "14px")
         .style("font-family", "Gotham-Book")
         .text("TOTAL");
+
+        var focus = svg.append("g")
+        .attr("class", "focus")
+        .style("display", "none");
+        focus.append("rect")
+        .attr("x", -28)
+        .attr("y", -18)
+        .attr("class", "tooltip-bg")
+        .attr("width", 80)
+        .attr("height", 40)
+        .attr("fill","#fff")
+    
+    var textFocus = focus.append("text")
+        .attr("x", -20)
+        .attr("dy", ".35em")
+        .style("font-size",15)
+        .style("font-family","Gotham-Book");
+
+        textFocus.append("tspan")
+        .attr("x", -20)
+        .attr("dy", ".35em")
+        .attr("class","value")
+        .style("font-size",15)
+        .style("font-family","Gotham-Book");
+
+        textFocus.append("tspan")
+        .attr("x", -20)
+        .attr("y", 15)
+        .attr("dy", ".35em")
+        .attr("class","date")
+        .style("font-size",15)
+        .style("font-family","Gotham-Book");
+        
+        
+    
+
+svg.append("rect")
+        .attr("class", "overlay")
+        .attr("width", width)
+        .attr("height", height)
+        .on("mouseover", function() {
+            focus.style("display", null);
+            // focus2.style("display", null);
+            // focus3.style("display", null);
+            // focus4.style("display", null);
+        })
+        .on("mouseout", function() {
+            focus.style("display", "none");
+            // focus2.style("display", "none");
+            // focus3.style("display", "none");
+            // focus4.style("display", "none");
+        })
+        .on("mousemove", mousemove);
+        var bisectDate = d3.bisector(function(d) {
+            return d.date;
+        }).left;
+
+    function mousemove() {
+        
+        var x0 = x.invert(d3.mouse(this)[0]),
+        
+            i = bisectDate(data, x0, 1),
+            d0 = data[i - 1],
+            d1 = data[i],
+            d= x0 - d0.date > d1.date - x0 ? d1 : d0;
+        
+          var depl=parseFloat(d.close);
+          // var depl2=parseFloat(d['Safari'])+parseFloat(d['Opera']);
+          // var depl3=parseFloat(d['Safari'])+parseFloat(d['Opera'])+parseFloat(d['Firefox'])+parseFloat(d['Chrome']);
+          // var depl4=parseFloat(d['Opera']);
+          focus.attr("transform", "translate(" + x(d.date) + "," + y(d.close)+ ")"); 
+          
+          // focus2.attr("transform", "translate(" + x(d.date) + "," + (500 - margin.top - margin.bottom)*depl2/100+ ")");   
+          // focus3.attr("transform", "translate(" + x(d.date) + "," + (500 - margin.top - margin.bottom)*depl3/100+ ")");   
+          // focus4.attr("transform", "translate(" + x(d.date) + "," + (500 - margin.top - margin.bottom)*depl4/100+ ")");   
+          focus.select(".value").text(d.close);
+          focus.select(".date").text(d.dateAux);
+          // focus2.select("text").text(d3.round(100-depl2, 1)+"%");
+          // focus3.select("text").text(d3.round(100-depl3, 1)+"%");
+          // focus4.select("text").text(d3.round(100-depl4, 1)+"%");
+    }
 
 }
 
@@ -622,7 +703,7 @@ function drawTreePublication(dataTree, filtertype, typeload) {
             font: {
                 family: "Gotham-Book"
             },
-            value: ["value" + filtertype]
+            value: "value" + filtertype
         })
         .format({
             "text": function (text, params) {
@@ -637,14 +718,14 @@ function drawTreePublication(dataTree, filtertype, typeload) {
         })
         .text(function (d) {
             var current_id = visualization.id();
-            return d[current_id] + "\n" + numbType(d.d3plusOld.share.toFixed(2));
+            return d[current_id] + "\n" + (d.d3plusOld.share*100).toFixed(1)+"%";
         })
 
     visualization.draw()
 }
 
 function drawTrendPublicationChart(dataPublicationTrend) {
-
+    d3.select("#publication-trend svg").remove();
     dataPublicationTrend = dataPublicationTrend.sort(function (a, b) {
         return d3.ascending(a.value, b.value);
     });
@@ -675,7 +756,7 @@ function drawTrendPublicationChart(dataPublicationTrend) {
 
     var yPublicationTrend = d3.scaleBand()
 
-        .rangeRound([heightPublicationTrend, 0], .1)
+        .rangeRound([40*dataPublicationTrend.length, 0], .1)
         .domain(dataPublicationTrend.map(function (d) {
             return d.value;
         }));
@@ -713,7 +794,7 @@ function drawTrendPublicationChart(dataPublicationTrend) {
         .attr("rx", 25)
         .attr("ry", 25)
         .attr("fill", "#dea6b0")
-        .attr("height", yPublicationTrend.bandwidth() - 6)
+        .attr("height",35)
         .attr("x", 16)
         .attr("width", function (d) {
             return xPublicationTrend(d.value);
@@ -723,7 +804,7 @@ function drawTrendPublicationChart(dataPublicationTrend) {
         .attr("class", "label")
         //y position of the label is halfway down the bar
         .attr("y", function (d) {
-            return yPublicationTrend(d.value) + yPublicationTrend.bandwidth() / 2 + 2;
+            return yPublicationTrend(d.value) +35 / 2 + 2;
         })
         //x position is 3 pixels to the right of the bar
         .attr("x", function (d) {
@@ -735,7 +816,66 @@ function drawTrendPublicationChart(dataPublicationTrend) {
         .text(function (d) {
             return d.name;
         });
+    var div = d3.select("body").append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
+    // var tooltipText = d3Old.selectAll("#publication-trend .text-inside")
+    //     .on("mouseover", function (d) {
+    //         div.transition()
+    //             .duration(200)
+    //             .style("opacity", .9);
+    //         div.html(d.value + "<br/>" + d.name)
+    //             .style("left", (d3Old.event.pageX) + "px")
+    //             .style("top", (d3Old.event.pageY - 28) + "px");
+    //     })
+    //     .on("mouseout", function (d) {
+    //         div.transition()
+    //             .duration(500)
+    //             .style("opacity", 0);
+    //     });
+
+    // var tooltipBar = d3Old.selectAll("#publication-trend bar")
+    //     .on("mouseover", function (d) {
+    //         div.transition()
+    //             .duration(200)
+    //             .style("opacity", .9);
+    //         div.html(d.value + "<br/>" + d.name)
+    //             .style("left", (d3Old.event.pageX) + "px")
+    //             .style("top", (d3Old.event.pageY - 28) + "px");
+    //     })
+    //     .on("mouseout", function (d) {
+    //         div.transition()
+    //             .duration(500)
+    //             .style("opacity", 0);
+    //     });
+
+    // var tooltipAxis = d3Old.selectAll("#publication-trend .tick")
+    //     .on("mouseover", function (d) {
+    //         div.transition()
+    //             .duration(200)
+    //             .style("opacity", .9);
+    //         div.html(d)
+    //             .style("left", (d3Old.event.pageX) + "px")
+    //             .style("top", (d3Old.event.pageY - 28) + "px");
+    //     })
+    //     .on("mouseout", function (d) {
+    //         div.transition()
+    //             .duration(500)
+    //             .style("opacity", 0);
+    //     });
 }
+
+function getNodePos(el) {
+    var body = d3.select('body').node();
+
+    for (var lx = 0, ly = 0; el != null && el != body; lx += (el.offsetLeft || el.clientLeft), ly += (el.offsetTop || el.clientTop), el = (el.offsetParent || el.parentNode))
+    ;
+    return {
+        x: lx,
+        y: ly
+    };
+}
+
 
 function drawGaugePublicationChart(dataGauge) {
     var width = 150,
@@ -771,9 +911,67 @@ function drawGaugePublicationChart(dataGauge) {
         .attr("text-anchor", "middle")
         .attr("class", "percent-complete")
         .attr("dy", "0.3em")
-        /*.text(setSettingsNumber(dataGauge.publication.allocated).valueNumber + setSettingsNumber(dataGauge.publication.allocated).suffixNumber);*/
         .text(setSettingsNumber(dataGauge.publication.allocated).valueNumber + setSettingsNumber(dataGauge.publication.allocated).suffixNumber);
+    var tooltip = d3.select("body")
+        .append("div")
+        .style("position", "absolute")        
+        .style("padding", "5px")
+        .style("background-color", "white")
+        .style("z-index", "100")
+        .style("visibility", "hidden")
 
+    var root = d3Old.select("#gauge-publications svg");
+
+    var scr = {
+        x: window.scrollX,
+        y: window.scrollY,
+        w: window.innerWidth,
+        h: window.innerHeight
+    };
+    var body_sel = d3Old.select('body');
+    var body = {
+        w: body_sel.node().offsetWidth,
+        h: body_sel.node().offsetHeight
+    };
+    var doc = {
+        w: document.width,
+        h: document.height
+    };
+    var svgpos = getNodePos(root.node());
+
+    var dist = {
+        x: 5,
+        y: 5
+    };
+    var element1 = d3Old.selectAll("#gauge-publications svg")
+        .on("mousemove", function () {
+            var m = d3Old.mouse(root.node());
+            scr.x = window.scrollX;
+            scr.y = window.scrollY;
+            m[0] += svgpos.x;
+            m[1] += svgpos.y;
+            tooltip.style("right", "");
+            tooltip.style("left", "");
+            tooltip.style("bottom", "");
+            tooltip.style("top", "");
+            
+            if (m[0] > scr.x + scr.w / 2) {
+                tooltip.style("right", (body.w - m[0] + dist.x) + "px");
+            } else {
+                tooltip.style("left", (m[0] + dist.x) + "px");
+            }
+
+            if (m[1] > scr.y + scr.h / 2) {
+                tooltip.style("bottom", (body.h - m[1] + dist.y) + "px");
+            } else {
+                tooltip.style("top", (m[1] + dist.y) + "px");
+            }
+            tooltip.style("visibility", "visible");
+            tooltip.text(dataGauge.publication.allocated);
+        })
+        .on("mouseout", function () {
+            tooltip.style("visibility", "hidden");
+        });
 
     var i4 = d3.interpolate(progress4, dataGauge.publication.allocated / dataGauge.publication.total);
     foreground4.attr("d", arc4.endAngle(twoPi * i4(1)));
@@ -805,6 +1003,37 @@ function drawGaugePublicationChart(dataGauge) {
         .attr("class", "percent-complete")
         .attr("dy", "0.3em")
         .text(setSettingsNumber(dataGauge.download.allocated).valueNumber + setSettingsNumber(dataGauge.download.allocated).suffixNumber);
+    var root2 = d3Old.select("#gauge-download-p svg");
+    var svgpos2 = getNodePos(root2.node());
+    var element2 = d3Old.selectAll("#gauge-download-p svg")
+        .on("mousemove", function () {
+            var m = d3Old.mouse(root2.node());
+            scr.x = window.scrollX;
+            scr.y = window.scrollY;
+            m[0] += svgpos2.x;
+            m[1] += svgpos2.y;
+            tooltip.style("right", "");
+            tooltip.style("left", "");
+            tooltip.style("bottom", "");
+            tooltip.style("top", "");
+            
+            if (m[0] > scr.x + scr.w / 2) {
+                tooltip.style("right", (body.w - m[0] + dist.x) + "px");
+            } else {
+                tooltip.style("left", (m[0] + dist.x) + "px");
+            }
+
+            if (m[1] > scr.y + scr.h / 2) {
+                tooltip.style("bottom", (body.h - m[1] + dist.y) + "px");
+            } else {
+                tooltip.style("top", (m[1] + dist.y) + "px");
+            }
+            tooltip.style("visibility", "visible");
+            tooltip.text(dataGauge.download.allocated);
+        })
+        .on("mouseout", function () {
+            tooltip.style("visibility", "hidden");
+        });
 
 
     var i2 = d3.interpolate(progress2, dataGauge.download.allocated / dataGauge.download.total);
@@ -845,7 +1074,7 @@ function drawGaugePublicationChart(dataGauge) {
 }
 
 function drawLinesChartPublication(data) {
-    // console.log(data);
+    
     margin = {
             top: 20,
             right: 0,
@@ -1056,8 +1285,8 @@ function drawPlotChartPublication(data, typeload) {
     var arrayElements = [];
     var maxValue = 0
     for (let i = 0; i < data.length; i++) {
-        data[i].FullCode = data[i].Code +" "+ data[i].departmentCode.toUpperCase();
-         
+        data[i].FullCode = data[i].Code + " " + data[i].departmentCode.toUpperCase();
+
         if (data[i].Downloads >= maxValue) {
             maxValue = data[i].Downloads;
         }
@@ -1073,7 +1302,10 @@ function drawPlotChartPublication(data, typeload) {
         .container("#publications-plot")
         .data(newData)
         .type("scatter")
-        .id({grouping:false,value:["FullCode"]})
+        .id({
+            grouping: false,
+            value: ["FullCode"]
+        })
         .background("transparent")
         .font({
             family: "Gotham-Book"
@@ -1095,26 +1327,34 @@ function drawPlotChartPublication(data, typeload) {
             }
             return "#d65a70"
         })
-        .tooltip({large:400,small:500,anchor:"top left",value:["Downloads", "daysPublished", "pageviews", "publishedDate"]})
+        .tooltip({
+            large: 400,
+            small: 500,
+            anchor: "top left",
+            value: ["Downloads", "daysPublished", "pageviews", "publishedDate"]
+        })
         .x({
-            value:"Downloads" ,
+            value: "Downloads",
             axis: true,
             ticks: {
                 size: 0,
-                width:2,
-                value:[0,200,400,600,800,1000]
+                width: 2,
+                value: [0, 200, 400, 600, 800, 1000]
             },
             grid: false,
             mouse: {
                 dasharray: "4"
             }
         })
-        .text( "Code")
+        .text("Code")
         .y({
             value: "daysPublished",
             axis: true,
             ticks: {
-                size: 0  ,width:2,value:[0,50,100,150,200]  },
+                size: 0,
+                width: 2,
+                value: [0, 50, 100, 150, 200]
+            },
             grid: false,
             mouse: {
                 dasharray: "4"
@@ -1123,148 +1363,20 @@ function drawPlotChartPublication(data, typeload) {
         .format({
             "text": function (text, params) {
                 //i made this cuz' this cant change anywhere
-                $("#d3plus_graph_xgrid line").css("stroke-dasharray","4");
-                $("#d3plus_graph_ygrid line").css("stroke-dasharray","4");
+                $("#d3plus_graph_xgrid line").css("stroke-dasharray", "4");
+                $("#d3plus_graph_ygrid line").css("stroke-dasharray", "4");
                 if (text === "daysPublished") {
                     return "Published Days";
-                }else if(text === "pageviews"){
+                } else if (text === "pageviews") {
                     return "Pageviews"
-                }else if(text=== "publishedDate"){
+                } else if (text === "publishedDate") {
                     return "Published Date"
-                }
-                 else {
+                } else {
                     return d3plusOld.string.title(text, params);
                 }
             }
         })
         .draw()
-        //.attr("stroke-dasharray",4)
-
-    // var svg = d3.select('#publications-plot')
-    //     .append("svg")
-    //     .attr("preserveAspectRatio", "xMinYMin meet")
-    //     .attr("viewBox", "-100 -60 750 600")
-    //     .append("g")
-    //     .classed("svg-content-responsive", true);
-
-    // var opacityScale = d3.scaleLinear()
-    //     .domain([0.0, 30.0])
-    //     .range([0.10, .80]);
-
-    // // The API for scales have changed in v4. There is a separate module d3-scale which can be used instead. The main change here is instead of d3.scale.linear, we have d3.scaleLinear.
-    // var xScale = d3.scaleLinear()
-    //     .range([0, width]);
-
-    // var yScale = d3.scaleLinear()
-    //     .range([height, 0]);
-
-    // // square root scale.
-    // var radius = d3.scaleSqrt()
-    //     .range([2, 5]);
-
-    // // the axes are much cleaner and easier now. No need to rotate and orient the axis, just call axisBottom, axisLeft etc.
-    // var xAxis = d3.axisBottom()
-    //     .scale(xScale)
-    //     .tickPadding(40)
-    //     .tickSize(0)
-    //     .ticks(5);
-
-    // var yAxis = d3.axisLeft()
-    //     .scale(yScale)
-    //     .tickPadding(40)
-    //     .tickSize(0)
-    //     .ticks(5);
-
-    // data.forEach(function (d) {
-    //     d.Downloads = +d.Downloads;
-    //     d.daysPublished = +d.daysPublished;
-    //     d.Code = d.Code;
-    // });
-
-    // xScale.domain(d3.extent(data, function (d) {
-    //     return d.Downloads;
-    // })).nice();
-
-    // yScale.domain(d3.extent(data, function (d) {
-    //     return d.daysPublished;
-    // })).nice();
-
-    // svg.append('g')
-    //     .attr('transform', 'translate(0,' + height + ')')
-    //     .attr('class', 'x axis')
-    //     .style("stroke-dasharray", "5,5")
-    //     .call(xAxis)
-    //     .append('text')
-    //     .attr('class', 'axis-label')
-    //     .attr('y', 70)
-    //     .attr('x', 300)
-    //     .attr('fill', 'black')
-    //     .text("Downloads");
-
-    // // y-axis is translated to (0,0)
-    // svg.append('g')
-    //     .attr('transform', 'translate(0,0)')
-    //     .attr('class', 'y axis')
-    //     .style("stroke-dasharray", "5,5")
-    //     .call(yAxis)
-    //     .append('text')
-    //     .attr('class', 'axis-label')
-    //     .attr('y', -80)
-    //     .attr('x', -180)
-    //     .attr('fill', 'black')
-    //     .attr('transform', "rotate(-90)")
-    //     .attr('text-anchor', 'middle')
-    //     .text("Published Days");
-
-    // var mouseOver = function (d) {
-    //     d3.select(this).attr("stroke", "#555555").attr("stroke-width", "2");
-    //     div.transition()
-    //         .duration(0)
-    //         .style("opacity", .9);
-    //     div.html(
-    //             "<div><h4 class='text-center'><b>PUBLICATION DETAILS</b></h4><p class='pb-2'>" +
-    //             d.Code + "</p><p><b>" +
-    //             d.departmentCode + "</b></p><div class='pl-0'><p><span>Downloads:</span>&nbsp;&nbsp;&nbsp;<b>" + d.Downloads + "</b></p><p><span>Published Days:</span><b>" + d.daysPublished + "</b></p></div></div>")
-    //         .style("left", (d3.event.pageX - 200) + "px")
-    //         .style("top", (d3.event.pageY) + "px");
-
-    // }
-
-    // var mouseOut = function (d) {
-    //     d3.select(this).attr("stroke-width", "0");
-    //     div.transition()
-    //         .duration(0)
-    //         .style("opacity", 0);
-    // }
-    // var bubble = svg.selectAll('.bubble')
-    //     .data(data)
-    //     .enter().append('circle')
-    //     .attr('class', 'bubble')
-    //     .attr('cx', function (d) {
-    //         return xScale(d.Downloads);
-    //     })
-    //     .attr('cy', function (d) {
-    //         return yScale(d.daysPublished);
-    //     })
-    //     .attr('r', function (d) {
-    //         return radius(20);
-    //     })
-    //     .style('fill', function (d) {
-
-    //         if (d.departmentCode != valueOfFilter && valueOfFilter != "IDB") {
-    //             return "#d8d8d8"
-    //         }
-    //         return "#d65a70"
-    //     })
-    //     .on("mouseover", mouseOver)
-    //     .on("mouseout", mouseOut);
-    // .append('title')
-    // .attr('x', function (d) {
-    //     return radius(d.Downloads);
-    // })
-    // .text(function (d) {
-    //     return d.Code;
-    // });
 
 }
 
@@ -1331,46 +1443,46 @@ function initPublications() {
     jsonResultAux = $.extend(true, [], jsonDataLines);
     jsonResultAux.length = 1;
     $.each(jsonResultAux[0].dates, function (y, val) {
-        // console.log(validarFormatoFecha(y));
+        
         if (validarFormatoFecha(val.date) == true) {
             jsonDates += '{"date":"' + val.date + '"},';
         }
     });
     jsonDates += "]}";
     jsonDates = eval(jsonDates);
-    // console.log(jsonDataLines);
+    
 
 
     var jsonLines = "[";
     jsonDates.forEach(function (dataDate, i) {
         jsonLines += '{';
         jsonLines += '"date":"' + dataDate.date + '",';
-        // console.log(jsonDataLines);
+        
         jsonDataLines.forEach(function (value, y, arr) {
             // $.each(internalJson, function (y, val) {
             // jsonLines += '"2018_downloads_' + y + '":"' + value['2018_downloads'] + '",';
             resultsDate = value.dates.filter(function (d, y) {
                 return d.date == dataDate.date
             });
-            // console.log(resultsDate);
+            
             jsonLines += '"' + y + '":' + (parseFloat(resultsDate[0].value) + (1000 * (y + 1))) + ',';
 
             // jsonDates = jsonDates.filter(function (datajson){
             //     return datajson.date == y
             // });
 
-            // console.log(val);
+            
         });
         jsonLines += "},"
     });
     jsonLines += "]";
-    // console.log(jsonLines);
+    
     jsonLines = eval(jsonLines);
 
     drawGaugePublicationChart(dataPublicationGauge2018);
     drawLinesChartPublication(dataLinesPublications);
     createChartTimelinePublication(downloadTimelineIDB, 'init');
-    drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
+    drawTrendPublicationChart(publicationsTopArrays.topIDB2018);
     drawPlotChartPublication(ObjectpublicationsAttention, 'init');
     drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "2018", 'init');
 }
@@ -1430,7 +1542,8 @@ $("input[name*='publicationTrend']").click(function () {
                 drawTrendPublicationChart(jsonPublicationsBarras);
             } else {
                 $('.label-filter-restidb').show();
-                jsonPublicationsBarras = publicationsTopArrays.topDivisions2018.filter(function (dataP) {
+                var jsonPublicationsBarras = $.extend(true, [], publicationsTopArrays.topDivisions2018);
+                jsonPublicationsBarras = jsonPublicationsBarras.filter(function (dataP) {
                     return dataP.division_codes == $("select[id*='divisionSelect']").val()
                 });
                 jsonTreePublications = publicationsDownloadSourceArrays.downloadSourceDivisions.filter(function (dataP) {
@@ -1491,97 +1604,3 @@ $("input[name*='publicationTrend']").click(function () {
 //     event.preventDefault();
 //     publicationFilter();
 // });
-
-var sample_data = [{
-        "provincia": "Buenos Aires",
-        "poblacion": 15625084
-    },
-    {
-        "provincia": "Córdoba",
-        "poblacion": 3308876
-    },
-    {
-        "provincia": "Santa Fe",
-        "poblacion": 3194537
-    },
-    {
-        "provincia": "Ciudad Autónoma de Buenos Aires",
-        "poblacion": 2890151
-    },
-    {
-        "provincia": "Mendoza",
-        "poblacion": 1738929
-    },
-    {
-        "provincia": "Tucumán",
-        "poblacion": 1448188
-    },
-    {
-        "provincia": "Entre Ríos",
-        "poblacion": 1235994
-    },
-    {
-        "provincia": "Salta",
-        "poblacion": 1214441
-    },
-    {
-        "provincia": "Misiones",
-        "poblacion": 111593
-    },
-    {
-        "provincia": "Chaco",
-        "poblacion": 1055259
-    },
-    {
-        "provincia": "Corrientes",
-        "poblacion": 992595
-    },
-    {
-        "provincia": "Santiago del Estero",
-        "poblacion": 874006
-    },
-    {
-        "provincia": "San Juan",
-        "poblacion": 681055
-    },
-    {
-        "provincia": "Jujuy",
-        "poblacion": 673307
-    },
-    {
-        "provincia": "Río Negro",
-        "poblacion": 638645
-    },
-    {
-        "provincia": "Neuquén",
-        "poblacion": 551266
-    },
-    {
-        "provincia": "Formosa",
-        "poblacion": 530162
-    },
-    {
-        "provincia": "Chubut",
-        "poblacion": 509108
-    },
-    {
-        "provincia": "San Luis",
-        "poblacion": 432310
-    },
-    {
-        "provincia": "Catamarca",
-        "poblacion": 367828
-    },
-    {
-        "provincia": "La Rioja",
-        "poblacion": 333642
-    },
-    {
-        "provincia": "La Pampa",
-        "poblacion": 318951
-    },
-    {
-        "provincia": "Santa Cruz",
-        "poblacion": 273964
-    },
-]

@@ -2880,6 +2880,15 @@ section.map select.form-control:not([size]):not([multiple]) {
         opacity: 0.5;
     }
 
+    section.publications #timeline-publication {
+        height: 220px !important;
+    }
+
+    section.publications #timeline-publication .overlay {
+        fill: none;
+        pointer-events: all;
+    }
+
     section.publications .text-different {
         font-size: 14px;
         font-family: 'Gotham-Book';

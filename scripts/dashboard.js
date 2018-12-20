@@ -37,6 +37,7 @@ $("#deparmentSelect").on('change', function () {
 $("#divisionSelect").on('change', function (data) {
     var sltValue = this.value;
     $('#idbLink').text(sltValue);
+    
 
     removePublicationsGauges();
     removePublicationsSvgAll();
@@ -153,6 +154,7 @@ function setDataSubscribersIdb() {
  * Funcion para actualizar la informacion de la seccion de publicaciones
  */
 function setDataPublicationsByDivisions(sltValue) {
+    $("#publication2018").prop("checked", true);
     // removePublicationsGauges();
     // removePublicationsSvgAll();
     dataPublicationGauge2018 = setPublicationGauge2018();
@@ -162,7 +164,7 @@ function setDataPublicationsByDivisions(sltValue) {
 
     // $("select[id*='deparmentSelect']").val("");
     $('#idbLink').text(sltValue);
-    jsonPublicationsBarras = publicationsTopArrays.topDivisionsAllTime.filter(function (dataP) {
+    jsonPublicationsBarras = publicationsTopArrays.topDivisions2018.filter(function (dataP) {
         return dataP.division_codes == sltValue
     });
     drawTrendPublicationChart(jsonPublicationsBarras, '2018', '');

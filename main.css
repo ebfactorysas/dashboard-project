@@ -2848,6 +2848,10 @@ section.map select.form-control:not([size]):not([multiple]) {
         height: 175px !important;
     }
 
+    section.publications #timeline-publication {
+        height: 175px !important;
+    }
+
     section.publications #downloads-publications .d3plus-Shape {
         stroke-width: 1;
     }
