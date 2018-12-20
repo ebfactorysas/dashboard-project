@@ -634,7 +634,7 @@ $("input[name*='dataSetTrend']").click(function () {
         if ($("select[id*='divisionSelect']").val().length > 0) {
 
             if (this.id == "dataSetAllTime") {
-                $('.label-filter-restidb').hide();
+                // $('.label-filter-restidb').hide();
 
                 //treemap
                 jsonDataSetTree = datasetsDownloadSource.downloadSourceDivisions.filter(function (dataT) {

@@ -1408,7 +1408,7 @@ $("input[name*='publicationTrend']").click(function () {
 
             var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
             if (this.id == "publicationAllTime") {
-                $('.label-filter-restidb').hide();
+                // $('.label-filter-restidb').hide();
                 jsondataPublications = bnPublicationsArrays.publicationsDivisions.filter(function (data) {
                     return data.division_codes == $("select[id*='divisionSelect']").val()
                 });
