@@ -21,7 +21,7 @@ function interpolateColors(color1, color2, steps) {
     for(var i = 0; i < steps; i++) {
     	var aux = interpolateColor(color1, color2, stepFactor * i);
         aux = "rgb("+aux[0]+","+aux[1]+","+aux[2]+")"
-        //console.log(aux);
+       
         interpolatedColorArray.push(aux);
     }
     return interpolatedColorArray;

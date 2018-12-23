@@ -32,7 +32,7 @@
 
     <script src="d3Old.js"></script>
     <script src="d3PlusOld.js"></script>
-    
+
 
     <!-- <script src="https://d3plus.org/js/d3plus-hierarchy.v0.8.full.min.js"></script> -->
 
@@ -369,9 +369,9 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-2">
-                            <div id="lines-publications"></div>
-                        </div>
+
+                        <div class="col-2" id="lines-publications"></div>
+
                         <div id="publication-trend" class="col-10"></div>
                     </div>
                 </div>
@@ -753,41 +753,42 @@
             <div class="row pb-4">
                 <div class="col-12 text-right">
                     <label class="container_radio green">
-                            2018 Data
-                        <input type="radio" class="2018" id="suscriber2018" name="suscribersTrend" value="2018Data" checked>
+                        2018 Data
+                        <input type="radio" class="2018" id="suscriber2018" name="suscribersTrend" value="2018Data"
+                            checked>
                         <span class="checkmark"></span>
                     </label>
                     <label class="container_radio green">
-                            All The Time
-                            <input type="radio" class="AllTime form-check-input green" id="suscriberAllTime" name="suscribersTrend"
-                            value="AllTheTime"  >
+                        All The Time
+                        <input type="radio" class="AllTime form-check-input green" id="suscriberAllTime" name="suscribersTrend"
+                            value="AllTheTime">
                         <span class="checkmark"></span>
                     </label>
                 </div>
 
                 <div class=" left-zone p-4">
                     <h4 class=" text-center green">
-                            IN WHICH TOPICS ARE 
-                         <label class="label-filter-select">IDB</label> SUBSCRIBERS INTERESTED ON?</h4>
+                        IN WHICH TOPICS ARE
+                        <label class="label-filter-select">IDB</label> SUBSCRIBERS INTERESTED ON?</h4>
                     <div id="suscribers-interested"></div>
                 </div>
                 <div class=" right-zone p-4">
                     <div class="top-zone  align-items-center">
                         <h4 class=" text-center green">DEMOGRAPHICS</h4>
                         <div class="col-12">
-                            
-                            <div  id="demographics-suscribers"></div>
+
+                            <div id="demographics-suscribers"></div>
                         </div>
                     </div>
                 </div>
                 <div class=" left-zone down p-4">
-                        <h4 class="green text-center">IN WHICH SUB-TOPICS ARE IDB SUBSCRIBERS INTERESTED ON?</h4>                        
-                        <div id="age-suscribers" class="pt-4 col"></div>
+                    <h4 class="green text-center">IN WHICH SUB-TOPICS ARE IDB SUBSCRIBERS INTERESTED ON?</h4>
+                    <div id="age-suscribers" class="pt-4 col"></div>
                 </div>
                 <div class=" right-zone down p-4">
-                        <h4 class="green text-center">FOR WHICH KIND OF INSTITUTION DO THEY WORK FOR?</h4>
-                        <div class="col-sm-12 " id="institution-suscribers"></div>
-                    
+                    <h4 class="green text-center">FOR WHICH KIND OF INSTITUTION DO THEY WORK FOR?</h4>
+                    <div class="col-sm-12 " id="institution-suscribers"></div>
+
                 </div>
             </div>
         </div>
@@ -888,6 +889,7 @@
             </div>
         </div>
     </section>
+    <div id="viz"></div>
 </body>
 <script src="json/bignumberData.js"></script>
 

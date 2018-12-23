@@ -129,7 +129,7 @@ var dataAgeSuscribers = [{
 
 
 function drawAgeSuscribersChart(data) {
-    console.log(data)
+    
     d3.select("#age-suscribers svg").remove();
     dataSet = data.sort(function (a, b) {
         a.name = a.name.slice(0,30);
@@ -235,8 +235,7 @@ function drawTreeSuscriber(dataTree) {
         .style("opacity", 0);
         var numbType =  d3.format('.0%');
     colours = chroma.scale(['#518a81', '#ffffff'])
-        .mode('lch').colors(dataTree.length)
-    console.log(dataTree)
+        .mode('lch').colors(dataTree.length);
     dataTree.forEach(function (element, i) {
         element.color = colours[i]
     });
@@ -605,7 +604,7 @@ function subscribersFilter() {
             //top registration chart
             if ($("select[id*='divisionSelect']").val().length > 0) {
 
-                // console.log("division subscriber=> ", divisionSubscriberFilter(subscribersInstitution.institutionDivisions, $("select[id*='divisionSelect']").val()))
+                
                 drawInstitutionsChart(divisionSubscriberFilter(subscribersInstitution.institutionDivisions, $("select[id*='divisionSelect']").val()));
 
                 // drawMoocsRegistrationsChart(orderTopMoocs(divisionFilter(moocsTopArrays.divisionsAlltime, $("select[id*='divisionSelect']").val())));
@@ -635,7 +634,7 @@ function subscribersFilter() {
                 // drawStudentParticipantsChart(moocsStudentsFlowArrays.studentsFlowIDB);
                 // drawStudentCompletedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
                 // drawStudentCertifiedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
-                console.log("ffdf");
+                
                 drawInstitutionsChart(subscribersInstitution.institutionIDB);
 
             }

@@ -10,6 +10,7 @@ $("#deparmentSelect").on('change', function () {
         return dataP.department_codes == this.value
     });
     drawTrendPublicationChart(jsonPublicationsBarras);
+    drawLinesChartPublication(jsonPublicationsBarras);
     jsonPublicTree = publicationsDownloadSourceArrays.downloadSourceDepartments.filter(function (dataT) {
         return dataT.department_codes == this.value
     });
@@ -105,6 +106,7 @@ function setDataIDBPublications() {
     drawLinesChartPublication(dataLinesPublications);
     createChartTimelinePublication(downloadTimelineIDB, 'init');
     drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
+    drawLinesChartPublication(publicationsTopArrays.topIDBAllTime);
     drawPlotChartPublication(ObjectpublicationsAttention, 'init');
     drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "2018", 'init');
 }
@@ -168,7 +170,7 @@ function setDataPublicationsByDivisions(sltValue) {
         return dataP.division_codes == sltValue
     });
     drawTrendPublicationChart(jsonPublicationsBarras, '2018', '');
-
+    drawLinesChartPublication(jsonPublicationsBarras, '2018', '');
     jsonPublicTree = publicationsDownloadSourceArrays.downloadSourceDivisions.filter(function (dataT) {
         return dataT.division_codes == sltValue
     });
@@ -210,7 +212,7 @@ function setDataDataSetByDivisions(sltValue) {
     jsonDataTrendDataSet = ObjectDataTrendDataSet.filter(function (dataT) {
         return dataT.division_codes == sltValue
     });
-    // console.log(jsonDataTrendDataSet)
+    
     if(jsonDataTrendDataSet.length>0){
         drawDataTrendChart(jsonDataTrendDataSet);
     }else{

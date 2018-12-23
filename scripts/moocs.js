@@ -411,7 +411,7 @@ function drawStudentRegistrationsChart(dataStudents) {
         return
     };
     dataStudents.registrations.value = 0;
-    dataStudents.registrations.years.forEach(element => {
+    dataStudents.registrations.years.forEach(function(element){
         dataStudents.registrations.value = dataStudents.registrations.value + element.value;
     }); 
 
@@ -505,7 +505,7 @@ function drawStudentParticipantsChart(dataStudents) {
         return
     };
     dataStudents.participants.value = 0;
-    dataStudents.participants.years.forEach(element => {
+    dataStudents.participants.years.forEach(function(element) {
         dataStudents.participants.value = dataStudents.participants.value + element.value;
     }); 
 
@@ -598,7 +598,7 @@ function drawStudentCompletedsChart(dataStudents) {
         return
     };
     dataStudents.completed.value = 0;
-    dataStudents.completed.years.forEach(element => {
+    dataStudents.completed.years.forEach(function(element)  {
         dataStudents.completed.value = dataStudents.completed.value + element.value;
     }); 
 
@@ -692,7 +692,7 @@ function drawStudentCertifiedsChart(dataStudents) {
     };
 
     dataStudents.certified.value = 0;
-    dataStudents.certified.years.forEach(element => {
+    dataStudents.certified.years.forEach(function(element) {
         dataStudents.certified.value = dataStudents.certified.value + element.value;
     }); 
 
@@ -1141,7 +1141,7 @@ function moocsGenderAddGray(moocsJson) {
     moocsJson.push(gray);
     return moocsJson;
 }
-// console.log()
+
 points(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Female")));
 points1(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Male")));
 points2(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Not Available")));

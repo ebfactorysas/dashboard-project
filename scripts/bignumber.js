@@ -1,4 +1,4 @@
-// console.log(bnPublicationsArrays.publicationsDepartments);
+
 var filterselect = "";
 // var valueFilter = "AUG"
 var valueFilter = ""
@@ -152,16 +152,16 @@ function initIndicators(filterselect, valueFilter) {
     var dataCodeResults = codeIndicator2018(jsondataCode);
     var dataSubscribersResults = subscriberIndicator2018(jsondataSubscriber);
 
-    // console.log(filterselect);
-    // console.log(valueFilter);
-    // console.log(jsondataPublications);
-    // console.log(dataPublicationsResults);
+    
+    
+    
+    
     setDataMain(dataPublicationsResults, dataMoocsResults, dataDatasetsResults, dataCodeResults, dataSubscribersResults);
     getDataBignumbers(jsondataPublications, jsondataMoocs, jsondataDatasets, jsondataCode, jsondataSubscriber);
     getDataTotalPercentage(jsondataPublications, jsondataMoocs, jsondataDatasets, jsondataCode, jsondataSubscriber);
 }
 $("input[name*='blueTrend']").click(function () {
-    // console.log(jsondata);
+    
 
     if (this.id == "blueAllTime") {
         dataResultsPublications = publicationsIndicatorAlltime(jsondataPublications);
@@ -179,8 +179,8 @@ $("input[name*='blueTrend']").click(function () {
         dataResultsSubscriber = subscriberIndicator2018(jsondataSubscriber);
     }
     
-    // console.log(jsondataPublications);
-    // console.log(dataResultsPublications);
+    
+    
     setDataMain(dataResultsPublications, dataResultsMoocs, dataResultsDatasets, dataResultsCode, dataResultsSubscriber);
 });
 
@@ -259,7 +259,7 @@ function publicationsIndicator2018(jsondata){
         porcent_total_downloads: (jsondata.length > 0) ? (jsondata[0]['2018_porcent_total_downloads'] * 100).toFixed(1) + '%': '', // no se enviaron en los datos para el porcentaje total de downloads filtrado por all time
         porcent_downloads_lac: (jsondata.length > 0) ? (jsondata[0]['2018_porcent_total_LAC_downloads'] * 100).toFixed(1) + '%' : ''
     }
-    // console.log(results);
+    
     return results;
 }
 
@@ -329,7 +329,7 @@ function moocsIndicatorAlltime(jsondata) {
         porcent_total_downloads: (jsondata.length > 0) ? ((jsondata[0]['all_the_time_porcent_total_registrations'] * 100 >= 100) ? "100%" : (jsondata[0]['all_the_time_porcent_total_registrations'] * 100).toFixed(1) + '%') : '', /*missing, rodrigo dice que si falta el dato que pongamos 100% para all the time*/
         porcent_downloads_lac: (jsondata.length > 0) ? ((jsondata[0]['porcent_total_LAC'] * 100 >= 100) ? "100%" : (jsondata[0]['porcent_total_LAC'] * 100).toFixed(1) + '%') : '',
     }
-    // console.log(results);
+    
     return results;
 }
 
@@ -346,7 +346,7 @@ function moocsIndicator2018(jsondata) {
         // porcent_downloads_lac: (jsondata.length > 0) ? (jsondata[0]['porcent_total_LAC'] * 100).toFixed(1) + '%' : ''
         porcent_downloads_lac: (jsondata.length > 0) ? ((jsondata[0]['porcent_total_LAC'] * 100 == 100) ? "100%" : (jsondata[0]['porcent_total_LAC'] * 100).toFixed(1) + '%') : '',
     }
-    // console.log(results);
+    
     return results;
 }
 
@@ -418,7 +418,7 @@ function datasetsIndicatorAlltime(jsondata) {
         porcent_total_downloads: "100%", /*missing, rodrigo dice que si falta el dato que pongamos 100% para all the time*/
         porcent_downloads_lac: (jsondata.length > 0) ? ((jsondata[0]['all_the_time_porcent_total_lac_downloads'] * 100 >= 100) ? "100%" : (jsondata[0]['all_the_time_porcent_total_lac_downloads'] * 100).toFixed(1) + '%') : '',
     }
-    // console.log(results);
+    
     return results;
 }
 
@@ -435,7 +435,7 @@ function datasetsIndicator2018(jsondata) {
         // porcent_downloads_lac: (jsondata.length > 0) ? (jsondata[0]['2018_porcent_total_lac_downloads'] * 100).toFixed(1) + '%' : ''
         porcent_downloads_lac: (jsondata.length > 0) ? ((jsondata[0]['2018_porcent_total_lac_downloads'] * 100 >= 100) ? "100%" : (jsondata[0]['2018_porcent_total_lac_downloads'] * 100).toFixed(1) + '%') : '',
     }
-    // console.log(results);
+    
     return results;
 }
 
@@ -473,7 +473,7 @@ function setDataDatasets(dataResults) {
     } else {
         console.error(publications_downloads.error);
     }
-    // console.log(dataResults.downloadsValue.endsWith("K"));
+    
     // $('.valuedatasets').text(dataResults.datasetsValue);
     $('#datasets_porcent').text(dataResults.porcent_total_publications);
     $('#datasets_compare_2017').text(dataResults.compare2017_2018_publications);
@@ -518,7 +518,7 @@ function codeIndicatorAlltime(jsondata) {
         // porcent_downloads_lac: (jsondata.length > 0) ? (jsondata[0]['porcent_total_lac'] * 100).toFixed(1) + '%' : ''
         porcent_downloads_lac: (jsondata.length > 0) ? ((jsondata[0]['porcent_total_lac'] * 100 >= 100) ? "100%" : (jsondata[0]['porcent_total_lac'] * 100).toFixed(1) + '%') : '',
     }
-    // console.log(results);
+    
     return results;
 }
 
@@ -533,7 +533,7 @@ function codeIndicator2018(jsondata) {
         porcent_total_downloads: (jsondata.length > 0) ? ((jsondata[0]['2018_porcent_total_pageviews'] * 100 >= 100) ? "100%" : (jsondata[0]['2018_porcent_total_pageviews'] * 100).toFixed(1) + '%') : '', // no se enviaron en los datos para el porcentaje total de downloads filtrado por all time
         porcent_downloads_lac: (jsondata.length > 0) ? (jsondata[0]['porcent_total_lac'] * 100).toFixed(1) + '%' : ''
     }
-    // console.log(results);
+    
     return results;
 }
 
@@ -563,7 +563,7 @@ function setCode(dataResults) {
     } else {
         console.error(publications_downloads.error);
     }
-    // console.log(dataResults.downloadsValue.endsWith("K"));
+    
     // $('.valuedatasets').text(dataResults.datasetsValue);
     $('#code_porcent').text(dataResults.porcent_total_publications);
     $('#code_compare_2017').text(dataResults.compare2017_2018_publications);
@@ -594,7 +594,7 @@ function updateGaugesCode() {
  * Columna de indicadores de SUBSCRIBER 
  */
 function subscriberIndicatorAlltime(jsondata) {
-    // console.log(jsondata);
+    
     
     var results = {
         subscriberValue: (jsondata.length > 0) ? jsondata[0].subscribers : '0',
@@ -604,7 +604,7 @@ function subscriberIndicatorAlltime(jsondata) {
         // porcent_subscriber_lac: (jsondata.length > 0) ? (jsondata[0]['porcent_total_from_lac'] * 100).toFixed(1) + '%' : ''
         porcent_subscriber_lac: (jsondata.length > 0) ? ((jsondata[0]['porcent_total_from_lac'] * 100 >= 100) ? "100%" : (jsondata[0]['porcent_total_from_lac'] * 100).toFixed(1) + '%') : '',
     }
-    // console.log(results);
+    
     return results;
 }
 
@@ -617,18 +617,18 @@ function subscriberIndicator2018(jsondata) {
         // porcent_subscriber_lac: (jsondata.length > 0) ? (jsondata[0]['porcent_total_from_lac'] * 100).toFixed(1) + '%' : ''
         porcent_subscriber_lac: (jsondata.length > 0) ? ((jsondata[0]['porcent_total_from_lac'] * 100 >= 100) ? "100%" : (jsondata[0]['porcent_total_from_lac'] * 100).toFixed(1) + '%') : '',
     }
-    // console.log(results);
+    
     return results;
 }
 
 function setSubscriber(dataResults) {
-    // console.log(dataResults);
+    
     // optionsUpdated = optionsAnimated("");
     // if (parseFloat(dataResults.subscriberValue) > 1000) {
     //     dataResults.subscriberValue = dataResults.subscriberValue / 1000;
     //     optionsUpdated = optionsAnimated("K");
     // }
-    // console.log(optionsAnimation);
+    
     optionsUpdated = optionsAnimated("");
     optionsUpdated = optionsAnimated(setSettingsNumber(dataResults.subscriberValue).suffixNumber);
     dataPublicationsNumber = setSettingsNumber(dataResults.subscriberValue).valueNumber;

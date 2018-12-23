@@ -412,6 +412,22 @@ section.publications .grid path {
     stroke-width: 0;
 }
 
+section.publications #timeline-publication .overlay {
+    fill: none;
+    pointer-events: all;
+}
+
+section.publications #lines-publications div:nth-child(n) {
+    /* height: 40px; */
+    margin-top: -38px 
+}
+section.publications #lines-publications{
+    padding-top: 55px;
+    margin-left: -40px;
+    margin-right: 40px;
+}
+
+
 /* section.publications #publications-plot {
     margin-top: -32px;
 } */

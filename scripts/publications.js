@@ -500,10 +500,9 @@ function createChartTimelinePublication(data, typeload) {
 
     var testarea = d3Old.selectAll("#timeline-publication path")
     .on("mousemove",function(d){
-        console.log(d)
+        
     });
-    console.log(testarea)
-
+    
     // add the valueline path.
     svg.append("path")
         .data([data])
@@ -804,7 +803,7 @@ function drawTrendPublicationChart(dataPublicationTrend) {
         .attr("class", "label")
         //y position of the label is halfway down the bar
         .attr("y", function (d) {
-            return yPublicationTrend(d.value) +35 / 2 + 2;
+            return yPublicationTrend(d.value) +40 / 2 + 2;
         })
         //x position is 3 pixels to the right of the bar
         .attr("x", function (d) {
@@ -1073,8 +1072,74 @@ function drawGaugePublicationChart(dataGauge) {
 
 }
 
-function drawLinesChartPublication(data) {
+function createLineChart(elements){
     
+    var parseTime = d3.timeParse("%m/%d/%Y");
+    
+    elements.trend.forEach(function(item) {
+        item.id=elements.name;
+        item.dateAux = item.date;
+        item.date = parseTime(item.date);
+    });
+    var data = elements.trend;
+    var attributes = [
+        {"id": elements.name, "hex": "#e39aa7"}
+      ]
+    var visualization = d3plusOld.viz()
+    .container("#lines-publications  ")  // container DIV to hold the visualization
+    .data(elements.trend)  // data to use with the visualization
+    .type("line")       // visualization type
+    .id({grouping:false,value:"id"})         // key for which our data is unique on
+    .background("transparent")
+    .text("id")       // key to use for display text
+    
+    .axes({
+            background: {
+                color: "transparent",
+                stroke: {
+                    width: 0
+                }
+            },
+            ticks: false
+        })
+     .tooltip({
+            value: ["dateAux"]
+        })
+    .y({value:"value",grid:false,axis: false,mouse:false})         // key to use for y-axis
+    .x({value:"date",grid:false,axis: false,mouse:false})    
+    .attrs(attributes)
+    .color("hex")
+    .format({
+            "text": function (text, params) {
+                if(text == "dateAux"){
+                    return "Date"
+                }
+                
+                if(text == "value"){
+                    return "Downloads"
+                }
+                //i made this cuz' this cant change anywhere
+                  d3.selectAll("#lines-publications #d3plus_graph_xticks").remove();
+                  d3.selectAll("#lines-publications #d3plus_graph_yticks").remove();
+                  d3.selectAll("#lines-publications #d3plus_graph_xlabel").remove();
+                  d3.selectAll("#lines-publications #d3plus_graph_ylabel").remove();
+                    return d3plusOld.string.title(text, params);
+                }
+            
+        })
+        .width({value:170,small:50})
+        .height({value:80,small:30})
+    .draw()             // finally, draw the visualization!
+    
+}
+
+function drawLinesChartPublication(data) {
+       
+    d3.selectAll("#lines-publications div").remove();
+
+    var parseTime = d3.timeParse("%m/%d/%Y");
+
+
     margin = {
             top: 20,
             right: 0,
@@ -1091,182 +1156,190 @@ function drawLinesChartPublication(data) {
         height = 350 - margin.top - margin.bottom,
         height2 = 400 - margin2.top - margin2.bottom;
 
-    var svg = d3.select("#lines-publications").append("svg")
-        .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-1 -10 105 400")
-        .append("g")
-        .classed("svg-content-responsive", true);
-
-
-
-    svg.append("rect")
-        .attr("width", "100%")
-        .attr("height", "100%")
-        .attr("fill", "transparent")
-
-    var parseTime = d3.timeParse("%m/%d/%Y");
-
-    var x = d3.scaleTime().range([0, width]),
-        x2 = d3.scaleTime().range([0, width]),
-        y = d3.scaleLinear().range([height, 0]),
-        y2 = d3.scaleLinear().range([height2, 0]),
-        z = d3.scaleOrdinal(d3.schemeCategory10);
-
-    var xAxis = d3.axisBottom(x),
-        xAxis2 = d3.axisBottom(x2),
-        yAxis = d3.axisLeft(y);
-
-    var brush = d3.brushX()
-        .extent([
-            [0, 0],
-            [width, height2]
-        ])
-        .on("brush end", brushed);
-
-
-    var line = d3.line()
-        .x(function (d) {
-            return x(new Date(d.date));
-        })
-        .y(function (d) {
-            return y(d.hours);
+    // var svg = d3.select("#lines-publications").append("svg")
+    //     .attr("preserveAspectRatio", "xMinYMin meet")
+    //     .attr("viewBox", "-1 -10 105 400")
+    //     .append("g")
+    //     .classed("svg-content-responsive", true);
+    // svg.append("rect")
+    //     .attr("width", "100%")
+    //     .attr("height", "100%")
+    //     .attr("fill", "transparent")
+    if(data.length>0){
+        data = data.sort(function (a, b) {
+            return d3.descending(a.value, b.value);
         });
-
-    var line2 = d3.line()
-        .x(function (d) {
-            return x2(new Date(d.date));
-        })
-        .y(function (d) {
-            return y2(d.hours);
-        })
-
-    var clip = svg.append("defs").append("svg:clipPath")
-        .attr("id", "clip")
-        .append("svg:rect")
-        .attr("width", width)
-        .attr("height", height)
-        .attr("x", 0)
-        .attr("y", 0);
-
-
-    var focus = svg.append("g")
-        .attr("class", "focus")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-    function getRandomColor() {
-        var letters = '0123456789ABCDEF';
-        var color = '#';
-        for (var i = 0; i < 6; i++) {
-            color += letters[Math.floor(Math.random() * 16)];
-        }
-        return color;
+        data.forEach(function(element) {
+            createLineChart($.extend(true, [], element));    
+        }); 
     }
+    
+        
+        
+
+    
+    //     data = $.extend(true, [], dataLinesPublications);
+    // var x = d3.scaleTime().range([0, width]),
+    //     x2 = d3.scaleTime().range([0, width]),
+    //     y = d3.scaleLinear().range([height, 0]),
+    //     y2 = d3.scaleLinear().range([height2, 0]),
+    //     z = d3.scaleOrdinal(d3.schemeCategory10);
+
+    // var xAxis = d3.axisBottom(x),
+    //     xAxis2 = d3.axisBottom(x2),
+    //     yAxis = d3.axisLeft(y);
+
+    // var brush = d3.brushX()
+    //     .extent([
+    //         [0, 0],
+    //         [width, height2]
+    //     ])
+    //     .on("brush end", brushed);
+
+
+    // var line = d3.line()
+    //     .x(function (d) {
+    //         return x(new Date(d.date));
+    //     })
+    //     .y(function (d) {
+    //         return y(d.hours);
+    //     });
+
+    // var line2 = d3.line()
+    //     .x(function (d) {
+    //         return x2(new Date(d.date));
+    //     })
+    //     .y(function (d) {
+    //         return y2(d.hours);
+    //     })
+
+    // var clip = svg.append("defs").append("svg:clipPath")
+    //     .attr("id", "clip")
+    //     .append("svg:rect")
+    //     .attr("width", width)
+    //     .attr("height", height)
+    //     .attr("x", 0)
+    //     .attr("y", 0);
+
+
+    // var focus = svg.append("g")
+    //     .attr("class", "focus")
+    //     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    // function getRandomColor() {
+    //     var letters = '0123456789ABCDEF';
+    //     var color = '#';
+    //     for (var i = 0; i < 6; i++) {
+    //         color += letters[Math.floor(Math.random() * 16)];
+    //     }
+    //     return color;
+    // }
 
 
 
-    var colors = [];
-    for (var i = 0; i < 50; i++) {
-        var xx = "#e4e4e4";
-        colors.push(xx);
-        colors.push(xx);
-    }
+    // var colors = [];
+    // for (var i = 0; i < 50; i++) {
+    //     var xx = "#e4e4e4";
+    //     colors.push(xx);
+    //     colors.push(xx);
+    // }
 
 
 
 
-    // gridlines in y axis function
-    function make_y_gridlines() {
-        return d3.axisLeft(y)
-            .ticks()
-    }
+    // // gridlines in y axis function
+    // function make_y_gridlines() {
+    //     return d3.axisLeft(y)
+    //         .ticks()
+    // }
 
-    z.domain(d3.keys(data[0]).filter(function (key) {
-        return key !== "date";
-    }));
+    // z.domain(d3.keys(data[0]).filter(function (key) {
+    //     return key !== "date";
+    // }));
 
-    data.forEach(function (d) {
-        d.date = parseTime(d.date);
-    });
+    // data.forEach(function (d) {
+    //     d.date = parseTime(d.date);
+    // });
 
-    var employees = z.domain().map(function (id) {
-        return {
-            id: id,
-            values: data.map(function (d) {
-                return {
-                    date: d.date,
-                    hours: +d[id]
-                };
-            })
-        };
-    });
-
-
-    var o1 = 0;
-    var o2 = 0;
-
-    x.domain(d3.extent(data, function (d) {
-        return d.date;
-    }));
-
-    y.domain([
-        0,
-        d3.max(employees, function (c) {
-            return d3.max(c.values, function (d) {
-                return d.hours;
-            });
-        })
-    ]);
-    x2.domain(x.domain());
-    y2.domain(y.domain());
-    z.domain(employees.map(function (c) {
-        return c.id;
-    }));
+    // var employees = z.domain().map(function (id) {
+    //     return {
+    //         id: id,
+    //         values: data.map(function (d) {
+    //             return {
+    //                 date: d.date,
+    //                 hours: +d[id]
+    //             };
+    //         })
+    //     };
+    // });
 
 
+    // var o1 = 0;
+    // var o2 = 0;
 
-    var focuslineGroups = focus.selectAll("g")
-        .data(employees)
-        .enter().append("g");
+    // x.domain(d3.extent(data, function (d) {
+    //     return d.date;
+    // }));
 
-    var focuslines = focuslineGroups.append("path")
-        .attr("class", "line")
-        .attr("d", function (d) {
-            return line(d.values);
-        })
-        .style("stroke", function (d) {
-            return "#e39aa7"
-        })
-        .attr("clip-path", "url(#clip)");
+    // y.domain([
+    //     0,
+    //     d3.max(employees, function (c) {
+    //         return d3.max(c.values, function (d) {
+    //             return d.hours;
+    //         });
+    //     })
+    // ]);
+    // x2.domain(x.domain());
+    // y2.domain(y.domain());
+    // z.domain(employees.map(function (c) {
+    //     return c.id;
+    // }));
 
-    /* will be evaluated 
-        var line = svg.append("line")
-        .attr("x1", 30)
-        .attr("x2", 30)
-        .attr("y1", 0)
-        .attr("y2", height)
-        .attr("stroke-width", 1)
-        .attr("stroke", "#c3c3c3")
-        .attr("stroke-dasharray", "2,2")
 
-    var line2 = svg.append("line")
-        .attr("x1", 80)
-        .attr("x2", 80)
-        .attr("y1", 0)
-        .attr("y2", height)
-        .attr("stroke-width", 1)
-        .attr("stroke", "#c3c3c3")
-        .attr("stroke-dasharray", "2,2")*/
 
-    function brushed() {
-        var extent = d3.event.selection;
-        var s = extent.map(x2.invert, x2);
-        x.domain(s);
-        focuslines.attr("d", function (d) {
-            return line(d.values)
-        });
-        focus.select(".axis--x").call(xAxis);
-        focus.select(".axis--y").call(yAxis);
-    }
+    // var focuslineGroups = focus.selectAll("g")
+    //     .data(employees)
+    //     .enter().append("g");
+
+    // var focuslines = focuslineGroups.append("path")
+    //     .attr("class", "line")
+    //     .attr("d", function (d) {
+    //         return line(d.values);
+    //     })
+    //     .style("stroke", function (d) {
+    //         return "#e39aa7"
+    //     })
+    //     .attr("clip-path", "url(#clip)");
+
+    // /* will be evaluated 
+    //     var line = svg.append("line")
+    //     .attr("x1", 30)
+    //     .attr("x2", 30)
+    //     .attr("y1", 0)
+    //     .attr("y2", height)
+    //     .attr("stroke-width", 1)
+    //     .attr("stroke", "#c3c3c3")
+    //     .attr("stroke-dasharray", "2,2")
+
+    // var line2 = svg.append("line")
+    //     .attr("x1", 80)
+    //     .attr("x2", 80)
+    //     .attr("y1", 0)
+    //     .attr("y2", height)
+    //     .attr("stroke-width", 1)
+    //     .attr("stroke", "#c3c3c3")
+    //     .attr("stroke-dasharray", "2,2")*/
+
+    // function brushed() {
+    //     var extent = d3.event.selection;
+    //     var s = extent.map(x2.invert, x2);
+    //     x.domain(s);
+    //     focuslines.attr("d", function (d) {
+    //         return line(d.values)
+    //     });
+    //     focus.select(".axis--x").call(xAxis);
+    //     focus.select(".axis--y").call(yAxis);
+    // }
 }
 
 
@@ -1480,9 +1553,9 @@ function initPublications() {
     jsonLines = eval(jsonLines);
 
     drawGaugePublicationChart(dataPublicationGauge2018);
-    drawLinesChartPublication(dataLinesPublications);
     createChartTimelinePublication(downloadTimelineIDB, 'init');
     drawTrendPublicationChart(publicationsTopArrays.topIDB2018);
+    drawLinesChartPublication(publicationsTopArrays.topIDB2018);
     drawPlotChartPublication(ObjectpublicationsAttention, 'init');
     drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "2018", 'init');
 }
@@ -1540,6 +1613,7 @@ $("input[name*='publicationTrend']").click(function () {
                 });
                 drawTreePublication(jsonTreePublications, "AllTheTime");
                 drawTrendPublicationChart(jsonPublicationsBarras);
+                drawLinesChartPublication(jsonPublicationsBarras)
             } else {
                 $('.label-filter-restidb').show();
                 var jsonPublicationsBarras = $.extend(true, [], publicationsTopArrays.topDivisions2018);
@@ -1551,8 +1625,8 @@ $("input[name*='publicationTrend']").click(function () {
                 });
                 // drawPlotChartPublication(ObjectpublicationsAttention);
                 drawTrendPublicationChart(jsonPublicationsBarras);
+                drawLinesChartPublication(jsonPublicationsBarras)
                 drawTreePublication(jsonTreePublications, "2018");
-                drawLinesChartPublication(dataLinesPublications);
 
                 jsondataPublications = bnPublicationsArrays.publicationsDivisions.filter(function (data) {
                     return data.division_codes == $("select[id*='divisionSelect']").val()
@@ -1580,6 +1654,7 @@ $("input[name*='publicationTrend']").click(function () {
             drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "AllTheTime");
             // createChartTimelinePublication(downloadTimelineIDBTEST);
             drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
+            drawLinesChartPublication(publicationsTopArrays.topIDBAllTime);
             // drawPlotChartPublication(ObjectpublicationsAttention);
             drawGaugePublicationChart(dataPublicationGauge);
         } else {
@@ -1588,6 +1663,7 @@ $("input[name*='publicationTrend']").click(function () {
             drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "2018");
             // createChartTimelinePublication(downloadTimelineIDBTEST);
             drawTrendPublicationChart(publicationsTopArrays.topIDB2018);
+            drawLinesChartPublication(publicationsTopArrays.topIDB2018);
             // drawPlotChartPublication(ObjectpublicationsAttention);
             drawGaugePublicationChart(dataPublicationGauge2018);
         }
