@@ -1974,6 +1974,19 @@ section.publications #publications-plot .legeng:hover rect {
     background-color: white;
 }
 
+.toolTip {
+    position: absolute;
+    display: none;
+    min-width: 80px;
+    height: auto;
+    background: none repeat scroll 0 0 #ffffff;
+    padding: 14px;
+    font-family: "Gotham-Bold";
+    font-size:"14px";
+    text-align: left;
+    z-index: 1;
+  }
+
 .tooltip p {
     margin: 0;
     padding: 0;

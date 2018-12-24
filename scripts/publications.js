@@ -34,371 +34,7 @@ function setPublicationGauge2018($isIdb) {
     return publicationGauge2018;
 }
 
-var dataLinesPublications = [{
-        "date": "11/08/2018",
-        "one": 93.4,
-        "two": 81.4,
-        "three": 74.3,
-        "four": 60.8,
-        "five": 50.7,
-        "six": 41.1,
-        "seven": 35,
-        "eight": 21.7,
-        "nine": 11.9,
-        "ten": 2.4
-    },
-    {
-        "date": "11/09/2018",
-        "one": 93.6,
-        "two": 82.3,
-        "three": 78.7,
-        "four": 61.1,
-        "five": 51.5,
-        "six": 41.8,
-        "seven": 35,
-        "eight": 22,
-        "nine": 14.5,
-        "ten": 2.2
-    },
-    {
-        "date": "11/10/2018",
-        "one": 93.7,
-        "two": 81.1,
-        "three": 73.9,
-        "four": 60.3,
-        "five": 50.4,
-        "six": 40.3,
-        "seven": 35,
-        "eight": 20.9,
-        "nine": 11.8,
-        "ten": 1
-    },
-    {
-        "date": "11/11/2018",
-        "one": 93.9,
-        "two": 80.8,
-        "three": 73.4,
-        "four": 60.5,
-        "five": 50.4,
-        "six": 40.2,
-        "seven": 35,
-        "eight": 21,
-        "nine": 11.2,
-        "ten": 1.2
-    },
-    {
-        "date": "11/12/2018",
-        "one": 94.3,
-        "two": 81.2,
-        "three": 73.1,
-        "four": 60.5,
-        "five": 50.6,
-        "six": 40.3,
-        "seven": 35,
-        "eight": 21,
-        "nine": 13.4,
-        "ten": 1.2
-    },
-    {
-        "date": "11/13/2018",
-        "one": 94.1,
-        "two": 81.7,
-        "three": 75,
-        "four": 60.9,
-        "five": 51.3,
-        "six": 40.4,
-        "seven": 35,
-        "eight": 21.6,
-        "nine": 19.7,
-        "ten": 2.5
-    },
-    {
-        "date": "11/14/2018",
-        "one": 95.5,
-        "two": 81.1,
-        "three": 73.2,
-        "four": 60.5,
-        "five": 51.2,
-        "six": 40.6,
-        "seven": 35,
-        "eight": 21.3,
-        "nine": 15.3,
-        "ten": 1.5
-    },
-    {
-        "date": "11/15/2018",
-        "one": 96.5,
-        "two": 81.7,
-        "three": 74.2,
-        "four": 60.9,
-        "five": 51.3,
-        "six": 40.4,
-        "seven": 35,
-        "eight": 21.7,
-        "nine": 16.6,
-        "ten": 2.5
-    },
-    {
-        "date": "11/16/2018",
-        "one": 94.5,
-        "two": 82.8,
-        "three": 78,
-        "four": 60.8,
-        "five": 52,
-        "six": 40.7,
-        "seven": 35,
-        "eight": 22.4,
-        "nine": 17.5,
-        "ten": 1.2
-    },
-    {
-        "date": "11/17/2018",
-        "one": 92.9,
-        "two": 81.3,
-        "three": 75.2,
-        "four": 60.5,
-        "five": 51,
-        "six": 40.5,
-        "seven": 35,
-        "eight": 21,
-        "nine": 16.8,
-        "ten": 1.4
-    },
-    {
-        "date": "11/18/2018",
-        "one": 94.4,
-        "two": 81.3,
-        "three": 74,
-        "four": 60.4,
-        "five": 50.7,
-        "six": 40.3,
-        "seven": 35,
-        "eight": 21.2,
-        "nine": 17.2,
-        "ten": 1.4
-    },
-    {
-        "date": "11/19/2018",
-        "one": 96.4,
-        "two": 81.3,
-        "three": 73.8,
-        "four": 60.6,
-        "five": 50.9,
-        "six": 40.2,
-        "seven": 35,
-        "eight": 21.4,
-        "nine": 15.6,
-        "ten": 1.6
-    },
-    {
-        "date": "11/20/2018",
-        "one": 93.4,
-        "two": 81.3,
-        "three": 73.4,
-        "four": 60.7,
-        "five": 50.7,
-        "six": 40.2,
-        "seven": 35,
-        "eight": 21.3,
-        "nine": 15.3,
-        "ten": 1.7
-    },
-    {
-        "date": "11/21/2018",
-        "one": 94.7,
-        "two": 81.7,
-        "three": 73.6,
-        "four": 60.9,
-        "five": 51.1,
-        "six": 45.4,
-        "seven": 35,
-        "eight": 22.1,
-        "nine": 14,
-        "ten": 1.9
-    },
-    {
-        "date": "11/22/2018",
-        "one": 92.4,
-        "two": 81.2,
-        "three": 73.1,
-        "four": 60.6,
-        "five": 51.2,
-        "six": 43,
-        "seven": 35,
-        "eight": 20.9,
-        "nine": 13.8,
-        "ten": 2.2
-    },
-    {
-        "date": "11/23/2018",
-        "one": 94.1,
-        "two": 83.1,
-        "three": 80,
-        "four": 62,
-        "five": 51.7,
-        "six": 47.9,
-        "seven": 35,
-        "eight": 22.9,
-        "nine": 15.9,
-        "ten": 2.7
-    },
-    {
-        "date": "11/24/2018",
-        "one": 96.6,
-        "two": 81.7,
-        "three": 74.3,
-        "four": 60.7,
-        "five": 50.9,
-        "six": 45.4,
-        "seven": 35,
-        "eight": 21.9,
-        "nine": 14.1,
-        "ten": 2.7
-    },
-    {
-        "date": "11/25/2018",
-        "one": 92.3,
-        "two": 80.9,
-        "three": 72.1,
-        "four": 60.3,
-        "five": 50.3,
-        "six": 41.4,
-        "seven": 35,
-        "eight": 20.6,
-        "nine": 12.6,
-        "ten": 2.3
-    },
-    {
-        "date": "11/26/2018",
-        "one": 98.9,
-        "two": 81.5,
-        "three": 72.1,
-        "four": 60.5,
-        "five": 50.7,
-        "six": 42.8,
-        "seven": 35,
-        "eight": 20.8,
-        "nine": 14.1,
-        "ten": 3
-    },
-    {
-        "date": "11/27/2018",
-        "one": 94.7,
-        "two": 81.1,
-        "three": 73,
-        "four": 60.7,
-        "five": 50.7,
-        "six": 48,
-        "seven": 35,
-        "eight": 21,
-        "nine": 13.3,
-        "ten": 2.4
-    },
-    {
-        "date": "11/28/2018",
-        "one": 97,
-        "two": 80.9,
-        "three": 75,
-        "four": 60.5,
-        "five": 50.9,
-        "six": 42.1,
-        "seven": 35,
-        "eight": 20.9,
-        "nine": 12.7,
-        "ten": 2.2
-    },
-    {
-        "date": "11/29/2018",
-        "one": 95.8,
-        "two": 81.2,
-        "three": 77.3,
-        "four": 60.7,
-        "five": 50.6,
-        "six": 40.6,
-        "seven": 35,
-        "eight": 21.2,
-        "nine": 13.1,
-        "ten": 2.4
-    },
-    {
-        "date": "11/30/2018",
-        "one": 100,
-        "two": 81.2,
-        "three": 74.2,
-        "four": 60.4,
-        "five": 50.9,
-        "six": 40.5,
-        "seven": 31,
-        "eight": 21.2,
-        "nine": 12.5,
-        "ten": 1.3
-    },
-    {
-        "date": "12/01/2018",
-        "one": 95.2,
-        "two": 81.5,
-        "three": 79.5,
-        "four": 60.2,
-        "five": 51.8,
-        "six": 40.5,
-        "seven": 35,
-        "eight": 21,
-        "nine": 13.8,
-        "ten": 2.2
-    },
-    {
-        "date": "12/02/2018",
-        "one": 93.4,
-        "two": 80.7,
-        "three": 76.7,
-        "four": 60.2,
-        "five": 50.7,
-        "six": 40.3,
-        "seven": 35,
-        "eight": 20.6,
-        "nine": 12.9,
-        "ten": 1.8
-    },
-    {
-        "date": "12/03/2018",
-        "one": 97.7,
-        "two": 81.4,
-        "three": 78.6,
-        "four": 60.6,
-        "five": 51.6,
-        "six": 40.7,
-        "seven": 35,
-        "eight": 21.3,
-        "nine": 14.2,
-        "ten": 2.2
-    },
-    {
-        "date": "12/04/2018",
-        "one": 97.1,
-        "two": 81.2,
-        "three": 78.1,
-        "four": 60.6,
-        "five": 51.8,
-        "six": 41,
-        "seven": 35,
-        "eight": 21,
-        "nine": 13.7,
-        "ten": 3
-    },
-    {
-        "date": "12/05/2018",
-        "one": 96.4,
-        "two": 81.1,
-        "three": 77.5,
-        "four": 60.6,
-        "five": 51.4,
-        "six": 40.4,
-        "seven": 35,
-        "eight": 21.1,
-        "nine": 12.5,
-        "ten": 2.5
-    }
-]
+
 
 function sortByDateAscending(a, b) {
     // Dates will be cast to numbers automagically:
@@ -627,19 +263,12 @@ svg.append("rect")
             d= x0 - d0.date > d1.date - x0 ? d1 : d0;
         
           var depl=parseFloat(d.close);
-          // var depl2=parseFloat(d['Safari'])+parseFloat(d['Opera']);
-          // var depl3=parseFloat(d['Safari'])+parseFloat(d['Opera'])+parseFloat(d['Firefox'])+parseFloat(d['Chrome']);
-          // var depl4=parseFloat(d['Opera']);
+          
           focus.attr("transform", "translate(" + x(d.date) + "," + y(d.close)+ ")"); 
           
-          // focus2.attr("transform", "translate(" + x(d.date) + "," + (500 - margin.top - margin.bottom)*depl2/100+ ")");   
-          // focus3.attr("transform", "translate(" + x(d.date) + "," + (500 - margin.top - margin.bottom)*depl3/100+ ")");   
-          // focus4.attr("transform", "translate(" + x(d.date) + "," + (500 - margin.top - margin.bottom)*depl4/100+ ")");   
+        
           focus.select(".value").text(d.close);
           focus.select(".date").text(d.dateAux);
-          // focus2.select("text").text(d3.round(100-depl2, 1)+"%");
-          // focus3.select("text").text(d3.round(100-depl3, 1)+"%");
-          // focus4.select("text").text(d3.round(100-depl4, 1)+"%");
     }
 
 }
@@ -816,52 +445,51 @@ function drawTrendPublicationChart(dataPublicationTrend) {
             return d.name;
         });
     var div = d3.select("body").append("div")
-        .attr("class", "tooltip")
-        .style("opacity", 0);
-    // var tooltipText = d3Old.selectAll("#publication-trend .text-inside")
-    //     .on("mouseover", function (d) {
-    //         div.transition()
-    //             .duration(200)
-    //             .style("opacity", .9);
-    //         div.html(d.value + "<br/>" + d.name)
-    //             .style("left", (d3Old.event.pageX) + "px")
-    //             .style("top", (d3Old.event.pageY - 28) + "px");
-    //     })
-    //     .on("mouseout", function (d) {
-    //         div.transition()
-    //             .duration(500)
-    //             .style("opacity", 0);
-    //     });
+        .attr("class", "toolTip");
+    var tooltipText = d3Old.selectAll("#publication-trend .text-inside")
+        .on("mouseover", function (d) {
+            div.transition()
+                .duration(0)
+                .style("display", "inline-block");
+            div.html(d.value + "<br/>" + d.name)
+                .style("left", (d3Old.event.pageX) + "px")
+                .style("top", (d3Old.event.pageY - 28) + "px");
+        })
+        .on("mouseout", function (d) {
+            div.transition()
+                .duration(0)
+                .style("display", "none");
+        });
 
-    // var tooltipBar = d3Old.selectAll("#publication-trend bar")
-    //     .on("mouseover", function (d) {
-    //         div.transition()
-    //             .duration(200)
-    //             .style("opacity", .9);
-    //         div.html(d.value + "<br/>" + d.name)
-    //             .style("left", (d3Old.event.pageX) + "px")
-    //             .style("top", (d3Old.event.pageY - 28) + "px");
-    //     })
-    //     .on("mouseout", function (d) {
-    //         div.transition()
-    //             .duration(500)
-    //             .style("opacity", 0);
-    //     });
+    var tooltipBar = d3Old.selectAll("#publication-trend .bar")
+        .on("mouseover", function (d) {
+            div.transition()
+                .duration(0)
+                .style("display", "inline-block");
+            div.html(d.value + "<br/>" + d.name)
+                .style("left", (d3Old.event.pageX) + "px")
+                .style("top", (d3Old.event.pageY - 28) + "px");
+        })
+        .on("mouseout", function (d) {
+            div.transition()
+                .duration(0)
+                .style("display", "none");
+        });
 
-    // var tooltipAxis = d3Old.selectAll("#publication-trend .tick")
-    //     .on("mouseover", function (d) {
-    //         div.transition()
-    //             .duration(200)
-    //             .style("opacity", .9);
-    //         div.html(d)
-    //             .style("left", (d3Old.event.pageX) + "px")
-    //             .style("top", (d3Old.event.pageY - 28) + "px");
-    //     })
-    //     .on("mouseout", function (d) {
-    //         div.transition()
-    //             .duration(500)
-    //             .style("opacity", 0);
-    //     });
+    var tooltipAxis = d3Old.selectAll("#publication-trend .tick")
+        .on("mouseover", function (d) {
+            div.transition()
+                .duration(0)
+                .style("display", "inline-block");
+            div.html(d)
+                .style("left", (d3Old.event.pageX) + "px")
+                .style("top", (d3Old.event.pageY - 28) + "px");
+        })
+        .on("mouseout", function (d) {
+            div.transition()
+                .duration(0)
+                .style("display", "none");
+        });
 }
 
 function getNodePos(el) {

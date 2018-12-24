@@ -94,8 +94,7 @@ $("#divisionSelect").on('change', function (data) {
  */
 
 function setDataIDBPublications() {
-    // dataPublicationGauge = setPublicationGauge();
-    // dataPublicationGauge2018 = setPublicationGauge2018();
+    $("#publication2018").prop("checked", true);
     removePublicationsSvgAll();
     var downloadTimelineIDB = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineIDB);
     var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
@@ -103,10 +102,9 @@ function setDataIDBPublications() {
     initIndicators('', '');
     dataPublicationGauge2018 = setPublicationGauge2018('IDB');
     drawGaugePublicationChart(dataPublicationGauge2018);
-    drawLinesChartPublication(dataLinesPublications);
     createChartTimelinePublication(downloadTimelineIDB, 'init');
-    drawTrendPublicationChart(publicationsTopArrays.topIDBAllTime);
-    drawLinesChartPublication(publicationsTopArrays.topIDBAllTime);
+    drawTrendPublicationChart(publicationsTopArrays.topIDB2018);
+    drawLinesChartPublication(publicationsTopArrays.topIDB2018);
     drawPlotChartPublication(ObjectpublicationsAttention, 'init');
     drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "2018", 'init');
 }

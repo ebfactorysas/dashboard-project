@@ -413,11 +413,27 @@ section.publications .grid path {
     stroke-width: 0;
 }
 
-section.publications #publications-plot {
-    margin-top: -32px;
+section.publications #timeline-publication .overlay {
+    fill: none;
+    pointer-events: all;
 }
 
-section.publications #publications-plot .legend text,
+section.publications #lines-publications div:nth-child(n) {
+    /* height: 40px; */
+    margin-top: -38px 
+}
+section.publications #lines-publications{
+    padding-top: 55px;
+    margin-left: -40px;
+    margin-right: 40px;
+}
+
+
+/* section.publications #publications-plot {
+    margin-top: -32px;
+} */
+
+/* section.publications #publications-plot .legend text,
 section.publications #publications-plot .axis text {
     font-size: 14px;
     fill: #333;
@@ -454,7 +470,7 @@ section.publications #publications-plot .legend rect {
 
 section.publications #publications-plot .legeng:hover rect {
     fill-opacity: 1;
-}
+} */
 
 
 .tooltip {
@@ -738,7 +754,7 @@ section.code .funds-allocated-meter .background {
     fill: #A17603;
 }
 
-section.datasets #dataset-publications-plot {
+ section.datasets #dataset-publications-plot {
     margin-top: -32px;
 }
 
@@ -780,7 +796,7 @@ section.datasets #dataset-publications-plot .legend rect {
 
 section.datasets #dataset-publications-plot .legeng:hover rect {
     fill-opacity: 1;
-}
+} 
 
 
 section.code #code-trend .y-code {
@@ -1905,7 +1921,7 @@ section.publications .grid path {
     stroke-width: 0;
 }
 
-section.publications #publications-plot {
+/* section.publications #publications-plot {
     margin-top: -32px;
 }
 
@@ -1946,7 +1962,7 @@ section.publications #publications-plot .legend rect {
 
 section.publications #publications-plot .legeng:hover rect {
     fill-opacity: 1;
-}
+} */
 
 
 .tooltip {
@@ -1958,6 +1974,19 @@ section.publications #publications-plot .legeng:hover rect {
     border: solid 1px #f5f5f5;
     background-color: white;
 }
+
+.toolTip {
+    position: absolute;
+    display: none;
+    min-width: 80px;
+    height: auto;
+    background: none repeat scroll 0 0 #ffffff;
+    padding: 14px;
+    font-family: "Gotham-Bold";
+    font-size:"14px";
+    text-align: left;
+    z-index: 1;
+  }
 
 .tooltip p {
     margin: 0;
@@ -2848,10 +2877,6 @@ section.map select.form-control:not([size]):not([multiple]) {
         height: 175px !important;
     }
 
-    section.publications #timeline-publication {
-        height: 175px !important;
-    }
-
     section.publications #downloads-publications .d3plus-Shape {
         stroke-width: 1;
     }
@@ -2885,10 +2910,23 @@ section.map select.form-control:not([size]):not([multiple]) {
         opacity: 0.5;
     }
 
+    section.publications #timeline-publication {
+        height: 220px !important;
+    }
+
+    section.publications #timeline-publication .overlay {
+        fill: none;
+        pointer-events: all;
+    }
+
     section.publications .text-different {
         font-size: 14px;
         font-family: 'Gotham-Book';
         color: #555555
+    }
+
+    section.publications #publications-plot{
+        height: 425px;
     }
 
     section.publications .text-different b {
