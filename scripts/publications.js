@@ -50,7 +50,7 @@ function createChartTimelinePublication(data, typeload) {
             bottom: 30,
             left: 50
         },
-        width = 580 - margin.left - margin.right,
+        width = 600 - margin.left - margin.right,
         height = 220 - margin.top - margin.bottom;
     
     var positions = {};
@@ -84,7 +84,7 @@ function createChartTimelinePublication(data, typeload) {
     var svg = d3.select("#timeline-publication")
         .append("svg")
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-60 -28 600 300")
+        .attr("viewBox", "-60 -28 610 250")
         .append("g")
         .classed("svg-content-responsive", true);
 

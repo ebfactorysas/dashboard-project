@@ -332,3 +332,10 @@ $(window).on('load', function () {
     initCode();
     initSuscribers();
 });
+
+$( document ).ready(function() {
+    var isIE = /*@cc_on!@*/false || !!document.documentMode;
+    if(isIE == true){
+        $(".body").css( "width",  screen.width+"px");
+    }
+});

@@ -1,8 +1,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">  -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="/sites/VPS/KIC/SiteAssets/Mockup/formdata.min.js"></script>
@@ -18,7 +20,7 @@
         };
       }</script>
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.find,Array.prototype.findIndex,"></script>
-    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+  
 
     <link rel="stylesheet" href="/sites/VPS/KIC/SiteAssets/Mockup/css/global.css" />
     <link rel="stylesheet" media="(min-width: 960px)" href="/sites/VPS/KIC/SiteAssets/Mockup/main.css" />
@@ -56,7 +58,7 @@
 
 </head>
 
-<body>
+<div class="body">
     <div class="container-fluid ">
         <div class="row">
             <nav id="nav-title" class="navbar navbar-expand-lg navbar-light ">
@@ -357,7 +359,7 @@
 
                 <div class="right-zone p-4">
                     <h4 class=" text-center">DOWNLOADS TIMELINE</h4>
-                    <div id="timeline-publication"></div>
+                    <div class="col-12" id="timeline-publication"></div>
                 </div>
 
                 <div class="left-zone p-4 down-zone">
@@ -382,7 +384,7 @@
 
                 <div class=" right-zone down-zone p-4">
                     <h4 class="pt-2">PUBLICATIONS THAT NEED YOUR ATTENTION</h4>
-                    <p class="text-different"> <b>red</b> circles below represent the <span><label class="label-filter-select">IDB</label></span>
+                    <p class="text-different"> <b>red</b> circles below represent the <span><label class="label-filter-select">IDB</label></label></span>
                         publications that are published for
                         least 200 days and that reached less than 1000 downloads</p>
                     <div id="publications-plot"></div>
@@ -450,7 +452,7 @@
 
                 <div class="left-zone pl-4 pr-4">
                     <h4 class=" text-center orange">REGISTRATIONS TIMELINE</h4>
-                    <div id="timeline-moocs"></div>
+                    <div class="col-12" id="timeline-moocs"></div>
                 </div>
 
                 <div class="right-zone pl-4 pr-4">
@@ -462,25 +464,25 @@
                                 <div class="col-3">
                                     <h2 id="waffle-registrations" class="text-center orange">21K</h2>
                                     <h3 id="waffle-gender" class="text-center orange waffle-gender">FEMALE 41.72%</h3>
-                                    <div id="waffle">
+                                    <div class="col" id="waffle">
                                     </div>
                                 </div>
                                 <div class="col-3">
                                     <h2 id="waffle1-registrations" class="text-center orange">21K</h2>
                                     <h3 id="waffle1-gender" class="text-center orange waffle-gender">FEMALE 41.72%</h3>
-                                    <div id="waffle1">
+                                    <div class="col" id="waffle1">
                                     </div>
                                 </div>
                                 <div class="col-3">
                                     <h2 id="waffle2-registrations" class="text-center orange">21K</h2>
                                     <h3 id="waffle2-gender" class="text-center orange waffle-gender">FEMALE 41.72%</h3>
-                                    <div id="waffle2">
+                                    <div class="col" id="waffle2">
                                     </div>
                                 </div>
                                 <div class="col-3">
                                     <h2 id="waffle3-registrations" class="text-center orange">21K</h2>
                                     <h3 id="waffle3-gender" class="text-center orange waffle-gender">FEMALE 41.72%</h3>
-                                    <div id="waffle3">
+                                    <div class="col" id="waffle3">
                                     </div>
                                 </div>
                             </div>
@@ -894,7 +896,7 @@
         </div>
     </section>
     <div id="viz"></div>
-</body>
+</div>
 
 <script src="/sites/VPS/KIC/SiteAssets/Mockup/json/bignumberData.js"></script>
 
