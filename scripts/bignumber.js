@@ -64,7 +64,6 @@ function gaugeIDB() {
     d3.select("#gauge-suscribers svg").remove();
     d3.select("#gauge-lac-s svg").remove();
     d3.select("#gauge-2018 svg").remove();
-    updateGaugesPublications();
     updateGaugesMoocs();
     updateGaugesDatasets();
     updateGaugesCode();
@@ -294,26 +293,6 @@ function setDataPublications(dataResults) {
     $('#publications_downloads_porcent').text(dataResults.porcent_total_downloads);
     $('#publications_downloads_lac').text(dataResults.porcent_downloads_lac);
 }
-
-function updateGaugesPublications(){
-    var dataPublicationGauge1 = {
-        "publication": {
-            "total": (publicationsAllTotalGlobal > 100) ? 1000 : 100,
-            "allocated": publicationsAllTotalGlobal
-        },
-        "download": {
-            "total": (publicationsAllDownloads > 100) ? 1000 : 100,
-            "allocated": publicationsAllDownloads
-        },
-        "lac": {
-            "total": (publicationsAllDownloads > 100) ? 1000 : 100,
-            "allocated": publicationsAllDownloadsLac
-        }
-    }
-    drawGaugePublicationChart(dataPublicationGauge1);
-}
-
-
 
 /**
  * Columna de indicadores de MOOCS 
