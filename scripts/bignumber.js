@@ -64,7 +64,6 @@ function gaugeIDB() {
     d3.select("#gauge-suscribers svg").remove();
     d3.select("#gauge-lac-s svg").remove();
     d3.select("#gauge-2018 svg").remove();
-    updateGaugesMoocs();
     updateGaugesDatasets();
     updateGaugesCode();
     updateGaugesSubscribers();
@@ -365,23 +364,7 @@ function setDataMoocs(dataResults) {
     $('#moocs_downloads_porcent').text(dataResults.porcent_total_downloads);
     $('#moocs_downloads_lac').text(dataResults.porcent_downloads_lac);
 }
-function updateGaugesMoocs() {
-    var dataGaugeMoocs = {
-        "code": {
-            "total": (moocsAllTotalGlobal > 0) ? ((moocsAllTotalGlobal > 100) ? 1000 : 100) : 100,
-            "allocated": moocsAllTotalGlobal
-        },
-        "pageview": {
-            "total": (moocsAllDownloads > 0) ? ((moocsAllDownloads > 100) ? 1000 : 100) : 100,
-            "allocated": moocsAllDownloads
-        },
-        "lac": {
-            "total": (moocsAllDownloadsLac > 0) ? ((moocsAllDownloadsLac > 100) ? 1000 : 100) : 100,
-            "allocated": moocsAllDownloadsLac
-        }
-    }
-    drawGaugeMoocsChart(dataGaugeMoocs);
-}
+
 
 
 /**

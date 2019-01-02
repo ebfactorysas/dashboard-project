@@ -441,197 +441,26 @@ function getNodePos(el) {
     };
 }
 
+function setEmptyGaugesPublication() {
+    return {
+        "publications": 0,
+        "percentagePublications": 0,
+        "downloads": 0,
+        "percentageDownloads": 0,
+        "percentageLAC": 0
+    }
+}
+
 function drawGaugePublicationChart(dataGauge) {
-    d3.select("#gauge-publications svg").remove();
-    d3.select("#gauge-download-p svg").remove();
-    d3.select("#gauge-lac-p svg").remove();
-    var width = 150,
-        height = 150,
-        progress4 = 0,
-        progress3 = 0,
-        progress2 = 0,
-        formatPercent = d3.format(".0%");
-    const twoPi = 2 * Math.PI;
+    
+    removeGauges(["#gauge-publications","#gauge-download-p","#gauge-lac-p"]);
 
-    var arc4 = d3.arc()
-        .startAngle(0)
-        .innerRadius(70)
-        .outerRadius(64);
-
-    var svg4 = d3.selectAll("#gauge-publications").append("svg")
-        .attr("width", width)
-        .attr("height", height)
-        .append("g")
-        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-
-    var meter4 = svg4.append("g")
-        .attr("class", "funds-allocated-meter");
-
-    meter4.append("path")
-        .attr("class", "background")
-        .attr("d", arc4.endAngle(twoPi));
-
-    var foreground4 = meter4.append("path")
-        .attr("class", "foreground");
-
-    var percentComplete4 = meter4.append("text")
-        .attr("text-anchor", "middle")
-        .attr("class", "percent-complete")
-        .attr("dy", "0.3em")
-        .text(setSettingsNumber(dataGauge.publications).valueNumber + setSettingsNumber(dataGauge.publications).suffixNumber);
-    var tooltip = d3.select("body")
-        .append("div")
-        .style("position", "absolute")
-        .style("padding", "5px")
-        .style("background-color", "white")
-        .style("z-index", "100")
-        .style("visibility", "hidden")
-        .style("font-size","12px")
-        .style("font-family","Gotham-Book");
-
-
-    var tooltip2 = d3.select("body")
-        .append("div")
-        .attr("class", "tooltip2-publications")
-        .style("position", "absolute")
-        .style("padding", "5px")
-        .style("background-color", "white")
-        .style("z-index", "100")
-        .style("visibility", "hidden")
-        .style("font-size","12px")
-        .style("font-family","Gotham-Book");
-        
-    var root = d3Old.select("#gauge-publications svg");
-
-    var scr = {
-        x: window.scrollX,
-        y: window.scrollY,
-        w: window.innerWidth,
-        h: window.innerHeight
-    };
-    var body_sel = d3Old.select('body');
-    var body = {
-        w: body_sel.node().offsetWidth,
-        h: body_sel.node().offsetHeight
-    };
-    var doc = {
-        w: document.width,
-        h: document.height
-    };
-    var svgpos = getNodePos(root.node());
-
-    var dist = {
-        x: 5,
-        y: 5
-    };
-    var element1 = d3Old.selectAll("#gauge-publications svg")
-        .on("mousemove", function () {
-            var m = d3Old.mouse(root.node());
-            scr.x = d3Old.event.pageX;
-            scr.y = d3Old.event.pageY;
-            m[0] += svgpos.x;
-            m[1] += svgpos.y;
-            tooltip.style("right", "");
-            tooltip.style("left", "");
-            tooltip.style("bottom", "");
-            tooltip.style("top", "");
-            tooltip.style("left", scr.x + 5 + "px");
-            tooltip.style("top", scr.y + 5 + "px");
-            tooltip.style("visibility", "visible");
-            tooltip.text(dataGauge.publications + " - " + dataGauge.percentagePublications + "%");
-        })
-        .on("mouseout", function () {
-            tooltip.style("visibility", "hidden");
-        });
-
-    var i4 = d3.interpolate(progress4, dataGauge.percentagePublications / 100);
-    foreground4.attr("d", arc4.endAngle(twoPi * i4(1)));
-    //gauge K
-
-    var arc2 = d3.arc()
-        .startAngle(0)
-        .innerRadius(70)
-        .outerRadius(64);
-
-    var svg2 = d3.selectAll("#gauge-download-p").append("svg")
-        .attr("width", width)
-        .attr("height", height)
-        .append("g")
-        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-
-    var meter2 = svg2.append("g")
-        .attr("class", "funds-allocated-meter");
-
-    meter2.append("path")
-        .attr("class", "background")
-        .attr("d", arc2.endAngle(twoPi));
-
-    var foreground2 = meter2.append("path")
-        .attr("class", "foreground");
-
-    var percentComplete2 = meter2.append("text")
-        .attr("text-anchor", "middle")
-        .attr("class", "percent-complete")
-        .attr("dy", "0.3em")
-        .text(setSettingsNumber(dataGauge.downloads).valueNumber + setSettingsNumber(dataGauge.downloads).suffixNumber);
-    var root2 = d3Old.select("#gauge-download-p svg");
-    var svgpos2 = getNodePos(root2.node());
-    var element2 = d3Old.selectAll("#gauge-download-p svg")
-        .on("mousemove", function () {
-            var m = d3Old.mouse(root2.node());
-            scr.x = d3Old.event.pageX;
-            scr.y = d3Old.event.pageY;
-            m[0] += svgpos2.x;
-            m[1] += svgpos2.y;
-            tooltip2.style("right", "");
-            tooltip2.style("left", "");
-            tooltip2.style("bottom", "");
-            tooltip2.style("top", "");
-            tooltip2.style("left", scr.x + 5 + "px");
-            tooltip2.style("top", scr.y + 5 + "px");
-            tooltip2.style("visibility", "visible");
-            tooltip2.text(dataGauge.downloads + " - " + dataGauge.percentageDownloads + "%");
-        })
-        .on("mouseout", function () {
-            tooltip2.style("visibility", "hidden");
-        });
-
-
-    var i2 = d3.interpolate(progress2, dataGauge.percentageDownloads / 100);
-    foreground2.attr("d", arc2.endAngle(twoPi * i2(1)));
-    //gauge %
-
-    var arc3 = d3.arc()
-        .startAngle(0)
-        .innerRadius(70)
-        .outerRadius(64);
-
-    var svg3 = d3.selectAll("#gauge-lac-p").append("svg")
-        .attr("width", width)
-        .attr("height", height)
-        .append("g")
-        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-
-    var meter3 = svg3.append("g")
-        .attr("class", "funds-allocated-meter");
-
-    meter3.append("path")
-        .attr("class", "background")
-        .attr("d", arc3.endAngle(twoPi));
-
-    var foreground3 = meter3.append("path")
-        .attr("class", "foreground");
-
-    var percentComplete3 = meter3.append("text")
-        .attr("text-anchor", "middle")
-        .attr("class", "percent-complete")
-        .attr("dy", "0.3em")
-        .text(dataGauge.percentageLAC.toFixed(1) + "%");
-
-
-    var i3 = d3.interpolate(progress3, dataGauge.percentageLAC / 100);
-    foreground3.attr("d", arc3.endAngle(twoPi * i3(1)));
-
+    if (dataGauge == undefined) {
+        dataGauge = setEmptyGaugesPublication();
+    }
+    drawGauge(dataGauge.publications, dataGauge.percentagePublications, "", "#gauge-publications");
+    drawGauge(dataGauge.downloads, dataGauge.percentageDownloads, "", "#gauge-download-p");
+    drawGauge(dataGauge.percentageLAC, dataGauge.percentageLAC, "%", "#gauge-lac-p");
 }
 
 function createLineChart(elements) {

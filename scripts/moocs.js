@@ -411,9 +411,9 @@ function drawStudentRegistrationsChart(dataStudents) {
         return
     };
     dataStudents.registrations.value = 0;
-    dataStudents.registrations.years.forEach(function(element){
+    dataStudents.registrations.years.forEach(function (element) {
         dataStudents.registrations.value = dataStudents.registrations.value + element.value;
-    }); 
+    });
 
     var formatNumber = setSettingsNumber(dataStudents.registrations ? dataStudents.registrations.value : 0);
     $('#student1-title').html(formatNumber.valueNumber + formatNumber.suffixNumber);
@@ -505,9 +505,9 @@ function drawStudentParticipantsChart(dataStudents) {
         return
     };
     dataStudents.participants.value = 0;
-    dataStudents.participants.years.forEach(function(element) {
+    dataStudents.participants.years.forEach(function (element) {
         dataStudents.participants.value = dataStudents.participants.value + element.value;
-    }); 
+    });
 
     var formatNumber = setSettingsNumber(dataStudents.participants.value);
     $('#student2-title').html(formatNumber.valueNumber + formatNumber.suffixNumber);
@@ -598,9 +598,9 @@ function drawStudentCompletedsChart(dataStudents) {
         return
     };
     dataStudents.completed.value = 0;
-    dataStudents.completed.years.forEach(function(element)  {
+    dataStudents.completed.years.forEach(function (element) {
         dataStudents.completed.value = dataStudents.completed.value + element.value;
-    }); 
+    });
 
     var formatNumber = setSettingsNumber(dataStudents.completed.value);
     $('#student3-title').html(formatNumber.valueNumber + formatNumber.suffixNumber);
@@ -692,9 +692,9 @@ function drawStudentCertifiedsChart(dataStudents) {
     };
 
     dataStudents.certified.value = 0;
-    dataStudents.certified.years.forEach(function(element) {
+    dataStudents.certified.years.forEach(function (element) {
         dataStudents.certified.value = dataStudents.certified.value + element.value;
-    }); 
+    });
 
     var formatNumber = setSettingsNumber(dataStudents.certified.value);
     $('#student4-title').html(formatNumber.valueNumber + formatNumber.suffixNumber);
@@ -939,172 +939,27 @@ function createChart(data) {
  * End timelines
  *  */
 
-/** 
- * Start Gauges
- */
-
-
-
-
-
-function setMoocsGauge(isIdb) {
-
-    var dataGaugeMoocs = {
-        "code": {
-            "total": (isIdb == 'IDB') ? 1 : getPercentageTotal(moocsAllTotalGlobal),
-            "allocated": moocsAllTotalGlobal
-        },
-        "pageview": {
-            "total": (isIdb == 'IDB') ? 1 : getPercentageTotal(moocsAllDownloads),
-            "allocated": moocsAllDownloads
-        },
-        "lac": {
-            "total": 100,
-            "allocated": moocsAllDownloadsLac
-        }
+function setEmptyGaugesMoocs() {
+    return {
+        "courses": 0,
+        "percentageCourses": 0,
+        "registrations": 0,
+        "percentageRegistrations": 0,
+        "percentageLAC": 0
     }
-    return dataGaugeMoocs;
-}
-
-function setMoocsGauge2018(isIdb) {
-
-    var dataGaugeMoocs2018 = {
-        "code": {
-            "total": (isIdb == 'IDB') ? 1 : getPercentageTotal(moocs2018TotalGlobal),
-            "allocated": moocs2018TotalGlobal
-        },
-        "pageview": {
-            "total": (isIdb == 'IDB') ? 1 : getPercentageTotal(moocs2018Downloads),
-            "allocated": moocs2018Downloads
-        },
-        "lac": {
-            "total": 100,
-            "allocated": moocs2018DownloadsLac
-        }
-    }
-    return dataGaugeMoocs2018;
 }
 
 function drawGaugeMoocsChart(dataGauge) {
-    d3.select("#gauge-moocs svg").remove();
-    d3.select("#gauge-registrations-m svg").remove();
-    d3.select("#gauge-lac-m svg").remove();
-    var width = 150,
-        height = 150,
-        progress = 0,
-        progress3 = 0,
-        progress2 = 0,
-        formatPercent = d3.format(".0%");
-    const twoPi = 2 * Math.PI;
+    
+    removeGauges(["#gauge-moocs","#gauge-registrations-m","#gauge-lac-m"]);
 
-    var arc = d3.arc()
-        .startAngle(0)
-        .innerRadius(70)
-        .outerRadius(64);
-
-    var svg = d3.selectAll("#gauge-moocs").append("svg")
-        .attr("width", width)
-        .attr("height", height)
-        .append("g")
-        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-
-    var meter = svg.append("g")
-        .attr("class", "funds-allocated-meter");
-
-    meter.append("path")
-        .attr("class", "background")
-        .attr("d", arc.endAngle(twoPi));
-
-    var foreground = meter.append("path")
-        .attr("class", "foreground");
-
-    var percentComplete = meter.append("text")
-        .attr("text-anchor", "middle")
-        .attr("class", "percent-complete")
-        .attr("dy", "0.3em")
-        .text(setSettingsNumber(dataGauge.code.allocated).valueNumber + setSettingsNumber(dataGauge.code.allocated).suffixNumber);
-
-
-    var i = d3.interpolate(progress, dataGauge.code.allocated / dataGauge.code.total);
-    foreground.attr("d", arc.endAngle(twoPi * i(1)));
-    //gauge K
-
-    var arc2 = d3.arc()
-        .startAngle(0)
-        .innerRadius(70)
-        .outerRadius(64);
-
-    var svg2 = d3.selectAll("#gauge-registrations-m").append("svg")
-        .attr("width", width)
-        .attr("height", height)
-        .append("g")
-        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-
-    var meter2 = svg2.append("g")
-        .attr("class", "funds-allocated-meter");
-
-    meter2.append("path")
-        .attr("class", "background")
-        .attr("d", arc2.endAngle(twoPi));
-
-    var foreground2 = meter2.append("path")
-        .attr("class", "foreground");
-
-    var percentComplete2 = meter2.append("text")
-        .attr("text-anchor", "middle")
-        .attr("class", "percent-complete")
-        .attr("dy", "0.3em")
-        .text(setSettingsNumber(dataGauge.pageview.allocated).valueNumber + setSettingsNumber(dataGauge.pageview.allocated).suffixNumber);
-
-
-    var i2 = d3.interpolate(progress2, dataGauge.pageview.allocated / dataGauge.pageview.total);
-    foreground2.attr("d", arc2.endAngle(twoPi * i2(1)));
-    //gauge %
-
-    var arc3 = d3.arc()
-        .startAngle(0)
-        .innerRadius(70)
-        .outerRadius(64);
-
-    var svg3 = d3.selectAll("#gauge-lac-m").append("svg")
-        .attr("width", width)
-        .attr("height", height)
-        .append("g")
-        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-
-    var meter3 = svg3.append("g")
-        .attr("class", "funds-allocated-meter");
-
-    meter3.append("path")
-        .attr("class", "background")
-        .attr("d", arc3.endAngle(twoPi));
-
-    var foreground3 = meter3.append("path")
-        .attr("class", "foreground");
-
-    var percentComplete3 = meter3.append("text")
-        .attr("text-anchor", "middle")
-        .attr("class", "percent-complete")
-        .attr("dy", "0.3em")
-        /*percentComplete3.text((dataGauge.lac.allocated + "%"));*/
-        .text(setSettingsNumber(dataGauge.lac.allocated).valueNumber + setSettingsNumber(dataGauge.lac.allocated).suffixNumber);
-
-
-    var i3 = d3.interpolate(progress3, dataGauge.lac.allocated / dataGauge.lac.total);
-    foreground3.attr("d", arc3.endAngle(twoPi * i3(1)));
+    if (dataGauge == undefined) {
+        dataGauge = setEmptyGaugesMoocs();
+    }
+    drawGauge(dataGauge.courses, dataGauge.percentageCourses, "", "#gauge-moocs");
+    drawGauge(dataGauge.registrations, dataGauge.percentageRegistrations, "", "#gauge-registrations-m");
+    drawGauge(dataGauge.percentageLAC, dataGauge.percentageLAC, "%", "#gauge-lac-m");
 }
-
-
-/**
- * End Gauges
- */
-// var datapoints = [{
-//     "age": "red",
-//     "population": 68
-// }, {
-//     "age": "gray",
-//     "population": 32
-// }]
 
 function moocsGenderFilter(moocsJson, gender) {
     return moocsJson.filter(function (entry) {
@@ -1524,9 +1379,12 @@ function moocsFilter() {
                 moocsAllTotalGlobal = (jsondataMoocs.length > 0) ? jsondataMoocs[0]['all_the_time_courses'] : '0';
                 moocsAllDownloads = (jsondataMoocs.length > 0) ? jsondataMoocs[0]['all_the_time_registrations'] : '0';
                 moocsAllDownloadsLac = (jsondataMoocs.length > 0) ? ((jsondataMoocs[0]['porcent_total_LAC'] * 100 >= 100) ? "100%" : (jsondataMoocs[0]['porcent_total_LAC'] * 100).toFixed(1)) : 0;
+                var jsonGaugesMoocs = $.extend(true, [], moocsGaugesIndicators.indicatorsDivisionsAllTheTime)
 
-                dataGaugeMoocs = setMoocsGauge('');
-                drawGaugeMoocsChart(dataGaugeMoocs);
+                jsonGaugesMoocs = jsonGaugesMoocs.filter(function (dataP) {
+                    return dataP.divisionCode == $("select[id*='divisionSelect']").val()
+                });
+                drawGaugeMoocsChart(jsonGaugesMoocs[0]);
                 var timelineDivisions = divisionFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDivisions), $("select[id*='divisionSelect']").val());
                 if (timelineDivisions.length > 0) createChart(timelineDivisions[0].data)
                 else createChart('Nodata');
@@ -1574,8 +1432,7 @@ function moocsFilter() {
                 moocsAllTotalGlobal = (jsondataMoocs.length > 0) ? jsondataMoocs[0]['all_the_time_courses'] : '0';
                 moocsAllDownloads = (jsondataMoocs.length > 0) ? jsondataMoocs[0]['all_the_time_registrations'] : '0';
                 moocsAllDownloadsLac = (jsondataMoocs.length > 0) ? ((jsondataMoocs[0]['porcent_total_LAC'] * 100 == 100) ? "100%" : (jsondataMoocs[0]['porcent_total_LAC'] * 100).toFixed(1)) : '';
-                dataGaugeMoocs = setMoocsGauge('IDB');
-                drawGaugeMoocsChart(dataGaugeMoocs);
+                drawGaugeMoocsChart($.extend(true, {}, moocsGaugesIndicators.indicatorsIDBAllTheTime[0]));
                 createChart($.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB));
 
                 drawMoocsRegistrationsChart(topAllMoocs);
@@ -1603,8 +1460,12 @@ function moocsFilter() {
                 moocs2018TotalGlobal = (jsondataMoocs.length > 0) ? jsondataMoocs[0]['2018_courses'] : '0';
                 moocs2018Downloads = (jsondataMoocs.length > 0) ? jsondataMoocs[0]['2018_registrations'] : '0';
                 moocs2018DownloadsLac = (jsondataMoocs.length > 0) ? ((jsondataMoocs[0]['porcent_total_LAC'] * 100 == 100) ? "100%" : (jsondataMoocs[0]['porcent_total_LAC'] * 100).toFixed(1)) : 0;
-                dataGaugeMoocs2018 = setMoocsGauge2018('');
-                drawGaugeMoocsChart(dataGaugeMoocs2018);
+                var jsonGaugesMoocs = $.extend(true, [], moocsGaugesIndicators.indicatorsDivisions2018)
+
+                jsonGaugesMoocs = jsonGaugesMoocs.filter(function (dataP) {
+                    return dataP.divisionCode == $("select[id*='divisionSelect']").val()
+                });
+                drawGaugeMoocsChart(jsonGaugesMoocs[0]);
                 var timelineDivisions = divisionFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDivisions), $("select[id*='divisionSelect']").val());
                 if (timelineDivisions.length > 0) createChart(timelineDivisions[0].data);
 
@@ -1652,8 +1513,7 @@ function moocsFilter() {
                 moocs2018TotalGlobal = (jsondataMoocs.length > 0) ? jsondataMoocs[0]['2018_courses'] : '0';
                 moocs2018Downloads = (jsondataMoocs.length > 0) ? jsondataMoocs[0]['2018_registrations'] : '0';
                 moocs2018DownloadsLac = (jsondataMoocs.length > 0) ? ((jsondataMoocs[0]['porcent_total_LAC'] * 100 == 100) ? "100%" : (jsondataMoocs[0]['porcent_total_LAC'] * 100).toFixed(1)) : 0;
-                dataGaugeMoocs2018 = setMoocsGauge2018('IDB');
-                drawGaugeMoocsChart(dataGaugeMoocs2018);
+                drawGaugeMoocsChart($.extend(true, {}, moocsGaugesIndicators.indicatorsIDB2018[0]));
 
                 createChart($.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB));
 
@@ -1687,8 +1547,7 @@ function initMoocs() {
     drawStudentCompletedsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
     drawStudentCertifiedsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
     createChart(TimeLineIDB);
-    dataGaugeMoocs2018 = setMoocsGauge2018('IDB');
-    drawGaugeMoocsChart(dataGaugeMoocs2018);
+    drawGaugeMoocsChart($.extend(true, {}, moocsGaugesIndicators.indicatorsIDB2018[0]));
 }
 
 
