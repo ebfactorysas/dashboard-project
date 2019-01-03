@@ -53,26 +53,6 @@ $("#divisionSelect").on('change', function (data) {
         setDataDataSetByDivisions(sltValue);
         setDataSuscribersByDivisions(sltValue);
         setDataCodeByDivisions(sltValue);
-
-        // d3.select("#gauge-moocs svg").remove();
-        // d3.select("#gauge-registrations-m svg").remove();
-        // d3.select("#gauge-lac-m svg").remove();
-
-
-
-        // d3.select("#gauge-code svg").remove();
-        // d3.select("#gauge-pageview svg").remove();
-        // d3.select("#gauge-lac svg").remove();
-
-        // d3.select("#gauge-suscribers svg").remove();
-        // d3.select("#gauge-lac-s svg").remove();
-        // d3.select("#gauge-2018 svg").remove();
-        // updateGaugesPublications();
-
-        // updateGaugesMoocs();
-        // updateGaugesDatasets();
-        // updateGaugesCode();
-        // updateGaugesSubscribers();
     }
     drawPlotChartDataset($.extend(true, [], datasetsScatterplotArrays));
     moocsFilter();
@@ -124,12 +104,6 @@ function setDataSubscribersIdb() {
     subscribersAllDownloadsLac = (jsondataSubscriber.length > 0) ? (jsondataSubscriber[0].porcent_total_from_lac * 100).toFixed(0) : '0';
     gaugeSuscribers = setSuscribersGauge2018('IDB');
     drawGaugeSubscribersChart(gaugeSuscribers);
-    // jsondataSubscriber = subscribersArray.subscribersDivisions.filter(function (data) {
-    //     return data.Divisions == valueFilter
-    // });
-    // subscriberValue: (jsondata.length > 0) ? jsondata[0].subscribers : '0',
-    // porcent_total_subscriber_2018: '100%', /** missing, se pone 100% por orden de rodrigo */
-    // porcent_subscriber_lac: (jsondata.length > 0) ? ((jsondata[0]['porcent_total_from_lac'] * 100 >= 100) ? "100%" : (jsondata[0]['porcent_total_from_lac'] * 100).toFixed(1) + '%') : '',
 }
 
 
@@ -172,7 +146,6 @@ function setDataPublicationsByDivisions(sltValue) {
  */
 
 function setDataDataSetByDivisions(sltValue) {
-    // debugger;
     $("#dataSet2018").prop("checked", true);
     //treemap
     jsonDataSetTree = datasetsDownloadSource.downloadSourceDivisions.filter(function (dataT) {
@@ -206,10 +179,12 @@ function setDataDataSetByDivisions(sltValue) {
     datasets2018TotalGlobal = (jsondataDatasets.length > 0) ? jsondataDatasets[0]['2018_datasets'] : '0';
     datasets2018Downloads = (jsondataDatasets.length > 0) ? jsondataDatasets[0]['2018_downloads'] : '0';
     datasets2018DownloadsLac = (jsondataDatasets.length > 0) ? (jsondataDatasets[0]['2018_porcent_total_lac_downloads'] * 100).toFixed(0) : '0';
-    gaugeSuscribers = setSuscribersGauge();
-    drawGaugeSubscribersChart(gaugeSuscribers);
-
-
+    
+    var ObjectGaugeDataSet = $.extend(true, [], datasetsGaugesIndicators.indicatorsDivisions2018);
+    ObjectGaugeDataSet = ObjectGaugeDataSet.filter(function (dataT) {
+        return dataT.divisionCode == sltValue
+    });
+    drawGaugeDatasetChart(ObjectGaugeDataSet[0]);
 }
 
 /**

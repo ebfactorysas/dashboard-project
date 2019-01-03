@@ -45,17 +45,6 @@ function gaugeIDB() {
     $("#divisionSelect").value = "";
     initIndicators('IDB', 'IDB');
     $('#blueAllTime').click();
-    d3.select("#gauge-publications svg").remove();
-    d3.select("#gauge-download-p svg").remove();
-    d3.select("#gauge-lac-p svg").remove();
-
-    d3.select("#gauge-moocs svg").remove();
-    d3.select("#gauge-registrations-m svg").remove();
-    d3.select("#gauge-lac-m svg").remove();
-
-    d3.select("#gauge-datasets svg").remove();
-    d3.select("#gauge-download-d svg").remove();
-    d3.select("#gauge-lac-d svg").remove();
 
     d3.select("#gauge-code svg").remove();
     d3.select("#gauge-pageview svg").remove();
@@ -64,7 +53,6 @@ function gaugeIDB() {
     d3.select("#gauge-suscribers svg").remove();
     d3.select("#gauge-lac-s svg").remove();
     d3.select("#gauge-2018 svg").remove();
-    updateGaugesDatasets();
     updateGaugesCode();
     updateGaugesSubscribers();
 };
@@ -150,10 +138,6 @@ function initIndicators(filterselect, valueFilter) {
     var dataCodeResults = codeIndicator2018(jsondataCode);
     var dataSubscribersResults = subscriberIndicator2018(jsondataSubscriber);
 
-    
-    
-    
-    
     setDataMain(dataPublicationsResults, dataMoocsResults, dataDatasetsResults, dataCodeResults, dataSubscribersResults);
     getDataBignumbers(jsondataPublications, jsondataMoocs, jsondataDatasets, jsondataCode, jsondataSubscriber);
     getDataTotalPercentage(jsondataPublications, jsondataMoocs, jsondataDatasets, jsondataCode, jsondataSubscriber);
@@ -176,8 +160,6 @@ $("input[name*='blueTrend']").click(function () {
         dataResultsCode = codeIndicator2018(jsondataCode);
         dataResultsSubscriber = subscriberIndicator2018(jsondataSubscriber);
     }
-    
-    
     
     setDataMain(dataResultsPublications, dataResultsMoocs, dataResultsDatasets, dataResultsCode, dataResultsSubscriber);
 });
@@ -443,23 +425,7 @@ function setDataDatasets(dataResults) {
     $('#datasets_downloads_porcent').text(dataResults.porcent_total_downloads);
     $('#datasets_downloads_lac').text(dataResults.porcent_downloads_lac);
 }
-function updateGaugesDatasets() {
-    var dataGaugeDatasets = {
-        "code": {
-            "total": (datasetsAllTotalGlobal > 0) ? ((datasetsAllTotalGlobal > 100) ? 1000 : 100) : 100,
-            "allocated": datasetsAllTotalGlobal
-        },
-        "pageview": {
-            "total": (datasetsAllDownloads > 0) ? ((datasetsAllDownloads > 100) ? 1000 : 100) : 100,
-            "allocated": datasetsAllDownloads
-        },
-        "lac": {
-            "total": (datasetsAllDownloadsLac > 0) ? ((datasetsAllDownloadsLac > 100) ? 1000 : 100) : 100,
-            "allocated": datasetsAllDownloadsLac
-        }
-    }
-    drawGaugeDatasetChart(dataGaugeDatasets);
-}
+
 
 
 

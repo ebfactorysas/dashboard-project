@@ -190,114 +190,26 @@ function drawTreeDataset(dataTree, filtertype, typeload) {
 
 }
 
+function setEmptyGaugesDatasets() {
+    return {
+        "datasets": 0,
+        "percentageDatasets": 0,
+        "downloads": 0,
+        "percentageDownloads": 0,
+        "percentageLAC": 0
+    }
+}
+
 function drawGaugeDatasetChart(dataGauge) {
-    d3.select("#gauge-datasets svg").remove();
-    d3.select("#gauge-download-d svg").remove();
-    d3.select("#gauge-lac-d svg").remove();
-    var width = 150,
-        height = 150,
-        progress = 0,
-        progress3 = 0,
-        progress2 = 0,
-        formatPercent = d3.format(".0%");
-    const twoPi = 2 * Math.PI;
+    
+    removeGauges(["#gauge-datasets","#gauge-download-d","#gauge-lac-d"]);
 
-    var arc = d3.arc()
-        .startAngle(0)
-        .innerRadius(70)
-        .outerRadius(64);
-
-    var svg = d3.selectAll("#gauge-datasets").append("svg")
-        .attr("width", width)
-        .attr("height", height)
-        .append("g")
-        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-
-    var meter = svg.append("g")
-        .attr("class", "funds-allocated-meter");
-
-    meter.append("path")
-        .attr("class", "background")
-        .attr("d", arc.endAngle(twoPi));
-
-    var foreground = meter.append("path")
-        .attr("class", "foreground");
-
-    var percentComplete = meter.append("text")
-        .attr("text-anchor", "middle")
-        .attr("class", "percent-complete")
-        .attr("dy", "0.3em")
-        .text(setSettingsNumber(dataGauge.code.allocated).valueNumber + setSettingsNumber(dataGauge.code.allocated).suffixNumber);
-
-
-
-    var i = d3.interpolate(progress, dataGauge.code.allocated / dataGauge.code.total);
-    foreground.attr("d", arc.endAngle(twoPi * i(1)));
-    //gauge K
-
-    var arc2 = d3.arc()
-        .startAngle(0)
-        .innerRadius(70)
-        .outerRadius(64);
-
-    var svg2 = d3.selectAll("#gauge-download-d").append("svg")
-        .attr("width", width)
-        .attr("height", height)
-        .append("g")
-        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-
-    var meter2 = svg2.append("g")
-        .attr("class", "funds-allocated-meter");
-
-    meter2.append("path")
-        .attr("class", "background")
-        .attr("d", arc2.endAngle(twoPi));
-
-    var foreground2 = meter2.append("path")
-        .attr("class", "foreground");
-
-    var percentComplete2 = meter2.append("text")
-        .attr("text-anchor", "middle")
-        .attr("class", "percent-complete")
-        .attr("dy", "0.3em")
-        .text(setSettingsNumber(dataGauge.pageview.allocated).valueNumber + setSettingsNumber(dataGauge.pageview.allocated).suffixNumber);
-
-
-    var i2 = d3.interpolate(progress2, dataGauge.pageview.allocated / dataGauge.pageview.total);
-    foreground2.attr("d", arc2.endAngle(twoPi * i2(1)));
-    //gauge %
-
-    var arc3 = d3.arc()
-        .startAngle(0)
-        .innerRadius(70)
-        .outerRadius(64);
-
-    var svg3 = d3.selectAll("#gauge-lac-d").append("svg")
-        .attr("width", width)
-        .attr("height", height)
-        .append("g")
-        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-
-    var meter3 = svg3.append("g")
-        .attr("class", "funds-allocated-meter");
-
-    meter3.append("path")
-        .attr("class", "background")
-        .attr("d", arc3.endAngle(twoPi));
-
-    var foreground3 = meter3.append("path")
-        .attr("class", "foreground");
-
-
-    var percentComplete3 = meter3.append("text")
-        .attr("text-anchor", "middle")
-        .attr("class", "percent-complete")
-        .attr("dy", "0.3em")
-        .text(dataGauge.lac.allocated + "%");
-
-
-    var i3 = d3.interpolate(progress3, dataGauge.lac.allocated / dataGauge.lac.total);
-    foreground3.attr("d", arc3.endAngle(twoPi * i3(1)));
+    if (dataGauge == undefined) {
+        dataGauge = setEmptyGaugesDatasets();
+    }
+    drawGauge(dataGauge.datasets, dataGauge.percentageDatasets, "", "#gauge-datasets");
+    drawGauge(dataGauge.downloads, dataGauge.percentageDownloads, "", "#gauge-download-d");
+    drawGauge(dataGauge.percentageLAC, dataGauge.percentageLAC, "%", "#gauge-lac-d");
 }
 
 function drawPlotChartDataset(data) {
@@ -593,41 +505,6 @@ function createChartTimeLineDataSet(data) {
             }));
 }
 
-function setDatasetsGauge(isIdb) {
-    var dataGaugeDatasets = {
-        "code": {
-            "total": (isIdb == 'IDB') ? 1 : getPercentageTotal(datasetsAllTotalGlobal),
-            "allocated": datasetsAllTotalGlobal
-        },
-        "pageview": {
-            "total": (isIdb == 'IDB') ? 1 : getPercentageTotal(datasetsAllDownloads),
-            "allocated": datasetsAllDownloads
-        },
-        "lac": {
-            "total": 100,
-            "allocated": datasetsAllDownloadsLac
-        }
-    }
-    return dataGaugeDatasets;
-}
-
-function setDatasetsGauge2018(isIdb) {
-    var dataGaugeDatasets2018 = {
-        "code": {
-            "total": (isIdb == 'IDB') ? 1 : getPercentageTotal(datasets2018TotalGlobal),
-            "allocated": datasets2018TotalGlobal
-        },
-        "pageview": {
-            "total": (isIdb == 'IDB') ? 1 : getPercentageTotal(datasets2018Downloads),
-            "allocated": datasets2018Downloads
-        },
-        "lac": {
-            "total": 100,
-            "allocated": datasets2018DownloadsLac
-        }
-    }
-    return dataGaugeDatasets2018;
-}
 
 $("input[name*='dataSetTrend']").click(function () {
     if ($("select[id*='divisionSelect']").val() != "IDB") {
@@ -641,8 +518,11 @@ $("input[name*='dataSetTrend']").click(function () {
                     return dataT.division_codes == $("select[id*='divisionSelect']").val()
                 });
                 drawTreeDataset(jsonDataSetTree, "AllTheTime");
-                dataDatasets = setDatasetsGauge();
-                drawGaugeDatasetChart(dataDatasets);
+                var jsonDataSetGauge = $.extend(true, [], datasetsGaugesIndicators.indicatorsDivisionsAllTheTime);
+                jsonDataSetGauge = jsonDataSetGauge.filter(function (dataT) {
+                    return dataT.divisionCode == $("select[id*='divisionSelect']").val()
+                });
+                drawGaugeDatasetChart(jsonDataSetGauge[0]);
 
                 //top 10
                 var ObjectDataTrendDataSet = $.extend(true, [], datasetsTopArrays.topDivisionsAllTime);
@@ -660,8 +540,11 @@ $("input[name*='dataSetTrend']").click(function () {
                     return dataT.division_codes == $("select[id*='divisionSelect']").val()
                 });
                 drawTreeDataset(jsonDataSetTree, "2018");
-                dataDatasets2018 = setDatasetsGauge2018();
-                drawGaugeDatasetChart(dataDatasets2018);
+                var jsonDataSetGauge = $.extend(true, [], datasetsGaugesIndicators.indicatorsDivisions2018);
+                jsonDataSetGauge = jsonDataSetGauge.filter(function (dataT) {
+                    return dataT.divisionCode == $("select[id*='divisionSelect']").val()
+                });
+                drawGaugeDatasetChart(jsonDataSetGauge[0]);
 
                 //top 10
                 var ObjectDataTrendDataSet = $.extend(true, [], datasetsTopArrays.topDivisions2018);
@@ -690,14 +573,12 @@ $("input[name*='dataSetTrend']").click(function () {
 
         if (this.id == "dataSetAllTime") {
             //treemap
-            drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "2018");
-            dataDatasets = setDatasetsGauge('IDB');
-            drawGaugeDatasetChart(dataDatasets);
+            drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "2018");            
+            drawGaugeDatasetChart( $.extend(true, {}, datasetsGaugesIndicators.indicatorsIDBAllTheTime[0]));
         } else {
             //tree map
             drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "AllTheTime");
-            dataDatasets2018 = setDatasetsGauge2018('IDB');
-            drawGaugeDatasetChart(dataDatasets2018);
+            drawGaugeDatasetChart( $.extend(true, {}, datasetsGaugesIndicators.indicatorsIDB2018[0]));
         }
         //linechart
         // var ObjectDataSetLineChart = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
@@ -738,41 +619,6 @@ function wrapData(text) {
         }
     });
 }
-//click radiobutton drawChart(id del click)
-// $("input[name*='dataSetTrend']").click(function () {
-//     removeDataSetsSvg();
-
-//     var ObjectTimeLineDataSet = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
-//     var ObjectDataSetPlot = $.extend(true, [], datasetsScatterplotArrays);
-
-//     // d3.select("#timeline-dataset svg").remove();
-//     d3.select("#data-trend svg").remove();
-//     // d3.select("#dataset-publications-plot svg").remove();
-//     d3.select("#downloads-dataset svg").remove();
-//     d3.select("#gauge-datasets svg").remove();
-//     d3.select("#gauge-download-d svg").remove();
-//     d3.select("#gauge-lac-d svg").remove();
-
-//     if (this.id == "dataSetAllTime") {
-//         createChartTimeLineDataSet(ObjectTimeLineDataSet);
-//         drawDataTrendChart(datasetsTopArrays.topIDBAllTime);
-//         drawPlotChartDataset(ObjectDataSetPlot);
-//         drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "AllTheTime");
-//         drawGaugeDatasetChart(dataGaugeDatasets);
-//     } else {
-//         createChartTimeLineDataSet(ObjectTimeLineDataSet);
-//         drawDataTrendChart(datasetsTopArrays.topIDB2018);
-//         drawPlotChartDataset(ObjectDataSetPlot);
-//         drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "2018");
-//         drawGaugeDatasetChart(dataGaugeDatasets2018);
-//     }
-// });
-
-
-/************************************************************** 
- * Nueva lógica
- */
-
 
 function initDataSet() {
     //init
@@ -784,10 +630,9 @@ function initDataSet() {
     //new logic
     drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "2018");
     // createChartTimeLineDataSet(ObjectDataSetLineChart);
+    drawGaugeDatasetChart( $.extend(true, {}, datasetsGaugesIndicators.indicatorsIDB2018[0]));
 
     //old logic
     drawDataTrendChart(datasetsTopArrays.topIDB2018);
-    drawPlotChartDataset(ObjectDataSetPlot);
-    dataGaugeDatasets = setDatasetsGauge2018('IDB');
-    drawGaugeDatasetChart(dataGaugeDatasets);
+    drawPlotChartDataset(ObjectDataSetPlot);    
 }
