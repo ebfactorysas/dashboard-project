@@ -266,20 +266,24 @@ function drawTreePublication(dataTree, filtertype, typeload) {
                 family: "Gotham-Bold",
                 size: "17"
             },
-            resize: false
+            resize: false,
+            text:function(d){
+                return d.name + "\n" + (d.d3plusOld.share * 100).toFixed(1) + "%";
+            }
         })
         .tooltip({
             font: {
                 family: "Gotham-Book"
             },
-            value: "value" + filtertype
+            value: "value" + filtertype,
+         
         })
         .format({
             "text": function (text, params) {
                 if (text === "share") {
-                    return "Percentage";
+                    return "% Total of IDB Downloads";
                 } else if (text === "value" + filtertype) {
-                    return "Value"
+                    return "Downloads"
                 } else {
                     return d3plusOld.string.title(text, params);
                 }
@@ -287,7 +291,7 @@ function drawTreePublication(dataTree, filtertype, typeload) {
         })
         .text(function (d) {
             var current_id = visualization.id();
-            return d[current_id] + "\n" + (d.d3plusOld.share * 100).toFixed(1) + "%";
+            return d[current_id]; //+ "\n" + (d.d3plusOld.share * 100).toFixed(1) + "%";
         })
 
     visualization.draw()
@@ -463,7 +467,7 @@ function drawGaugePublicationChart(dataGauge) {
     }
     drawGauge(dataGauge.publications, dataGauge.percentagePublications, "", "#gauge-publications",dataGauge.divisionCode);
     drawGauge(dataGauge.downloads, dataGauge.percentageDownloads, "", "#gauge-download-p",dataGauge.divisionCode);
-    drawGauge(dataGauge.percentageLAC, dataGauge.percentageLAC, "%", "#gauge-lac-p",dataGauge.divisionCode);
+    drawGauge(dataGauge.percentageLAC.toFixed(1), dataGauge.percentageLAC.toFixed(1), "%", "#gauge-lac-p",dataGauge.divisionCode);
 }
 
 function createLineChart(elements) {
