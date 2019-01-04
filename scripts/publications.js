@@ -161,19 +161,17 @@ function createChartTimelinePublication(data, typeload) {
         .attr("x", -100)
         .attr("dy", ".35em")
         .attr("class", "value")
-        .style("font-size", 15)
-        .style("font-family", "Gotham-Book");
+        .style("font-size", 16)
+        .style("font-family", "Gotham-Book")
+        .attr("fill","#d1415a");
 
     textFocus.append("tspan")
         .attr("x", -100)
         .attr("y", 17)
         .attr("dy", ".35em")
         .attr("class", "date")
-        .style("font-size", 15)
+        .style("font-size", 14)
         .style("font-family", "Gotham-Book");
-
-
-
 
     svg.append("rect")
         .attr("class", "overlay")

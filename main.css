@@ -104,6 +104,18 @@
 }
 
 
+.tooltip-gauges h3 {
+    font-size: 16px;
+    color: #d1415a;
+
+}
+
+
+
+.tooltip-gauges .border-top{
+    border-top: solid 1px rgb(221, 221, 221);
+}
+
 body {
     font-family: 'Gotham-Bold';
 }
