@@ -475,6 +475,9 @@ function createLineChart(elements) {
             grouping: false,
             value: "id"
         })
+        .font({
+            family: "Gotham-Book"
+        })
         .background("transparent")
         .text("id")
 
@@ -488,7 +491,8 @@ function createLineChart(elements) {
             ticks: false
         })
         .tooltip({
-            value: ["dateAux"]
+            value: ["dateAux"],
+            small: 450
         })
         .y({
             value: "value",
