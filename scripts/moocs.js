@@ -956,9 +956,13 @@ function drawGaugeMoocsChart(dataGauge) {
     if (dataGauge == undefined) {
         dataGauge = setEmptyGaugesMoocs();
     }
-    drawGauge(dataGauge.courses, dataGauge.percentageCourses, "", "#gauge-moocs");
-    drawGauge(dataGauge.registrations, dataGauge.percentageRegistrations, "", "#gauge-registrations-m");
-    drawGauge(dataGauge.percentageLAC, dataGauge.percentageLAC, "%", "#gauge-lac-m");
+
+    if(!dataGauge.divisionCode){
+        dataGauge.divisionCode = "IDB"
+    }
+    drawGauge(dataGauge.courses, dataGauge.percentageCourses, "", "#gauge-moocs",dataGauge.divisionCode);
+    drawGauge(dataGauge.registrations, dataGauge.percentageRegistrations, "", "#gauge-registrations-m",dataGauge.divisionCode);
+    drawGauge(dataGauge.percentageLAC, dataGauge.percentageLAC, "%", "#gauge-lac-m",dataGauge.divisionCode);
 }
 
 function moocsGenderFilter(moocsJson, gender) {

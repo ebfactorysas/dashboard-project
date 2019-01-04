@@ -103,6 +103,16 @@
     font-style: normal;
 }
 
+.tooltip-gauges h3 {
+    font-size: 16px;
+    color: #d1415a;
+
+}
+
+.tooltip-gauges > .row:nth-child(2){
+    border-bottom: solid 1px rgb(180, 180, 180);
+}
+
 body {
     font-family: 'Gotham-Bold';
 }

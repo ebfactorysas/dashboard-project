@@ -458,9 +458,12 @@ function drawGaugePublicationChart(dataGauge) {
     if (dataGauge == undefined) {
         dataGauge = setEmptyGaugesPublication();
     }
-    drawGauge(dataGauge.publications, dataGauge.percentagePublications, "", "#gauge-publications");
-    drawGauge(dataGauge.downloads, dataGauge.percentageDownloads, "", "#gauge-download-p");
-    drawGauge(dataGauge.percentageLAC, dataGauge.percentageLAC, "%", "#gauge-lac-p");
+    if(!dataGauge.divisionCode){
+        dataGauge.divisionCode = "IDB"
+    }
+    drawGauge(dataGauge.publications, dataGauge.percentagePublications, "", "#gauge-publications",dataGauge.divisionCode);
+    drawGauge(dataGauge.downloads, dataGauge.percentageDownloads, "", "#gauge-download-p",dataGauge.divisionCode);
+    drawGauge(dataGauge.percentageLAC, dataGauge.percentageLAC, "%", "#gauge-lac-p",dataGauge.divisionCode);
 }
 
 function createLineChart(elements) {
@@ -727,6 +730,7 @@ function initPublications() {
     drawLinesChartPublication(publicationsTopArrays.topIDB2018);
     drawPlotChartPublication(ObjectpublicationsAttention, 'init');
     drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "2018", 'init');
+    
 }
 
 function validarFormatoFecha(campo) {
