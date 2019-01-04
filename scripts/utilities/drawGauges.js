@@ -81,9 +81,9 @@ function gaugeTooltip(id, value, percentage,code,displayPercentage) {
 
     d3Old.selectAll(id + " svg")
         .on("mousemove", function () {
-            var textInnerHtml ="<div class='col tooltip-gauges'><h3 class='row'>Total from {{id}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>Publications</span><span class='col text-right' >{{value}}</div><div class='row pt-1'> <span class='col pl-0 pr-0'> % of All IDB Publications</span><span  class='col-3 text-right'>{{percentage}}%</span></p></div>";
+            var textInnerHtml ="<div class='col tooltip-gauges'><h3 class='row'>Total from {{id}} </h3> <div class='row  pb-1'><span class='col pl-0 pr-0'>Publications</span><span class='col text-right' >{{value}}</div><div class='row pt-1 border-top'> <span class='col pl-0 pr-0'> % of All IDB Publications</span><span  class='col-3 text-right'>{{percentage}}%</span></p></div>";
             if(displayPercentage =="%"){
-                textInnerHtml = textInnerHtml.replace("{{id}}","LAC");
+                textInnerHtml = "<div class='col tooltip-gauges'><h3 class='row'>Total from LAC </h3> <div class='row  pb-1'><span class='col pl-0 pr-0'>Publications</span><span class='col text-right' >{{value}}</div><div class='row pt-1 border-top'> <span class='col pl-0 pr-0'> % of All IDB Publications</span><span  class='col-3 text-right'>{{percentage}}%</span></p></div>";
             }else{
                 textInnerHtml = textInnerHtml.replace("{{id}}",code);
             }

@@ -109,8 +109,10 @@
 
 }
 
-.tooltip-gauges > .row:nth-child(2){
-    border-bottom: solid 1px rgb(221, 221, 221);
+
+
+.tooltip-gauges .border-top{
+    border-top: solid 1px rgb(221, 221, 221);
 }
 
 body {

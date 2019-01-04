@@ -198,12 +198,11 @@ function createChartTimelinePublication(data, typeload) {
             d0 = data[i - 1],
             d1 = data[i],
             d = x0 - d0.date > d1.date - x0 ? d1 : d0;
-        console.log(x(d.date))
         if (x(d.date) < 300) {
             focus.select("rect").attr("x", -10)
             focus.selectAll("text").attr("x", -5)
             focus.selectAll("tspan").attr("x", -5)
-        }else{
+        } else {
             focus.select("rect").attr("x", -140)
             focus.selectAll("text").attr("x", -135)
             focus.selectAll("tspan").attr("x", -135)
@@ -243,7 +242,6 @@ function drawTreePublication(dataTree, filtertype, typeload) {
     dataTree.forEach(function (element, i) {
         element.color = colours[i]
     });
-
     var visualization = d3plusOld.viz()
         .container("#downloads-publications")
         .data({
@@ -272,7 +270,10 @@ function drawTreePublication(dataTree, filtertype, typeload) {
             },
             resize: false,
             text: function (d) {
-                return d.name + "\n" + (d.d3plusOld.share * 100).toFixed(1) + "%";
+
+                if ((d.d3plusOld.share * 100).toFixed(1) >= 10) {
+                    return d.name + "\n" + (d.d3plusOld.share * 100).toFixed(1) + "%";
+                }
             }
         })
         .tooltip({
@@ -340,7 +341,7 @@ function drawTrendPublicationChart(dataPublicationTrend) {
 
     var yAxisPublicationTrend = d3.axisLeft(yPublicationTrend)
         .tickFormat(function (x) {
-            var value = setSettingsNumber(x);
+            var value = setSettingsNumber(x.toFixed(0));
             return value.valueNumber + suffixNumber;
         })
         .tickPadding(40)
@@ -388,16 +389,36 @@ function drawTrendPublicationChart(dataPublicationTrend) {
         .attr("font-family", "Gotham-Bold")
         .attr("font-size", "14px")
         .text(function (d) {
+            if (d.name.length > 90) {
+                return d.name.slice(0, 90) + "...";
+            }
             return d.name;
         });
     var div = d3.select("body").append("div")
-        .attr("class", "toolTip");
+        .attr("class", "toolTip")
+        .style("font-size", "12px");
     var tooltipText = d3Old.selectAll("#publication-trend .text-inside")
         .on("mouseover", function (d) {
+            var textHtml = "<div class='col tooltip-gauges'><h3 class='row'>{{title}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>Downloads</span><span class='col text-right' >{{value}}</div>";
+            textHtml = textHtml.replace('{{title}}', d.name)
+            textHtml = textHtml.replace('{{value}}', d.value)
+            if (d.division_codes) {
+                var addText = "<div class='row pt-1 border-top'><span class='col pl-0 pr-0 '> {{type}}</span><span  class='col-3 text-right'>{{code}}</span></div>"
+                addText = addText.replace('{{type}}', "Division")
+                addText = addText.replace('{{code}}', d.division_codes)
+                textHtml = textHtml + addText;
+            } else if (d.department_codes) {
+                var addText = "<div class='row pt-1 border-top'><span class='col-2 pl-0 pr-0 '> {{type}}</span><span  class='col text-right'>{{code}}</span></div>"
+                addText = addText.replace('{{type}}', "Department")
+                addText = addText.replace('{{code}}', d.department_codes);
+                textHtml = textHtml + addText;
+            }
+            textHtml = textHtml + "</div>";
             div.transition()
                 .duration(0)
-                .style("display", "inline-block");
-            div.html(d.value + "<br/>" + d.name)
+                .style("display", "inline-block")
+                .style("font-family", "Gotham-Book");
+            div.html(textHtml)
                 .style("left", (d3Old.event.pageX) + 5 + "px")
                 .style("top", (d3Old.event.pageY - 28) + 5 + "px");
         })
@@ -409,25 +430,27 @@ function drawTrendPublicationChart(dataPublicationTrend) {
 
     var tooltipBar = d3Old.selectAll("#publication-trend .bar")
         .on("mouseover", function (d) {
+            var textHtml = "<div class='col tooltip-gauges'><h3 class='row'>{{title}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>Downloads</span><span class='col text-right' >{{value}}</div>";
+            textHtml = textHtml.replace('{{title}}', d.name)
+            textHtml = textHtml.replace('{{value}}', d.value)
+            if (d.division_codes) {
+                var addText = "<div class='row pt-1 border-top'><span class='col pl-0 pr-0 '> {{type}}</span><span  class='col-3 text-right'>{{code}}</span></div>"
+                addText = addText.replace('{{type}}', "Division")
+                addText = addText.replace('{{code}}', d.division_codes)
+                textHtml = textHtml + addText;
+            } else if (d.department_codes) {
+                var addText = "<div class='row pt-1 border-top'><span class='col-2 pl-0 pr-0 '> {{type}}</span><span  class='col text-right'>{{code}}</span></div>"
+                addText = addText.replace('{{type}}', "Department")
+                addText = addText.replace('{{code}}', d.department_codes);
+                textHtml = textHtml + addText;
+            }
+            textHtml = textHtml + "</div>";
             div.transition()
                 .duration(0)
+                .style("font-family", "Gotham-Book")
                 .style("display", "inline-block");
-            div.html(d.value + "<br/>" + d.name)
-                .style("left", (d3Old.event.pageX) + 5 + "px")
-                .style("top", (d3Old.event.pageY - 28) + 5 + "px");
-        })
-        .on("mouseout", function (d) {
-            div.transition()
-                .duration(0)
-                .style("display", "none");
-        });
-
-    var tooltipAxis = d3Old.selectAll("#publication-trend .tick")
-        .on("mouseover", function (d) {
-            div.transition()
-                .duration(0)
-                .style("display", "inline-block");
-            div.html(d)
+            // div.html(d.value + "<br/>" + d.name)
+            div.html(textHtml)
                 .style("left", (d3Old.event.pageX) + 5 + "px")
                 .style("top", (d3Old.event.pageY - 28) + 5 + "px");
         })
@@ -615,7 +638,7 @@ function drawPlotChartPublication(data, typeload) {
             large: 600,
             small: 650,
             anchor: "top left",
-            value: ["Downloads", "daysPublished","divisionDepartment", "pageviews", "publishedDate"]
+            value: ["Downloads", "daysPublished", "divisionDepartment", "pageviews", "publishedDate"]
         })
         .x({
             value: "Downloads",
@@ -653,10 +676,9 @@ function drawPlotChartPublication(data, typeload) {
                     return "Published Days";
                 } else if (text === "pageviews") {
                     return "Downloads per Day"
-                }else if(text==="divisionDepartment"){
+                } else if (text === "divisionDepartment") {
                     return "Department/Division"
-                } 
-                else if (text === "publishedDate") {
+                } else if (text === "publishedDate") {
                     return "Published Date"
                 } else {
                     return text;

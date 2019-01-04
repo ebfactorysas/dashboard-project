@@ -26506,8 +26506,8 @@ var publicationsTopArrays = {
     {
         "division_codes": "GDI",
         "rank": 5,
-        "name": "Servicios integrados para el empoderamiento de la mujer: Herramienta 12: Sistema de información, registro y monitoreo",
-        "value": 99,
+        "name": "Servicios integrados para el empoderamiento de la mujer: Herramienta 12: Sistema de información, registro y monitoreo...",
+        "value": 99.1,
         "trend": [{
                 "date": "11/8/2018",
                 "value": 6
@@ -26573,7 +26573,7 @@ var publicationsTopArrays = {
     {
         "division_codes": "GDI",
         "rank": 6,
-        "name": "Social Interactions and Female Voting in Rural Paraguay: The Role of Urbanization Patterns on the Effectiveness of GOVT Campaigns",
+        "name": "Social Interactions and Female Voting in Rural Paraguay: The Role of Urbanization Patterns on the Effectiveness of GOVT Campaigns.",
         "value": 99,
         "trend": [{
                 "date": "11/8/2018",
@@ -41088,7 +41088,7 @@ var publicationsTopArrays = {
     topIDBAllTime: [
         {
           "name": "The Orange Economy: An Infinite Opportunity",
-          "Department": "Office of External Relations",
+          "department_codes": "Office of External Relations",
           "Published Date": "10/4/2013 2:37:11 PM",
           "value": 409486,
           "trend":[
@@ -41125,7 +41125,7 @@ var publicationsTopArrays = {
         },
         {
           "name": "Pautas para la elaboración de estudios de caso",
-          "Department": "Knowledge and Learning Sector",
+          "department_codes": "Knowledge and Learning Sector",
           "Published Date": "5/31/2011 3:48:47 PM",
           "value": 202303,
           "trend":[
@@ -41162,7 +41162,7 @@ var publicationsTopArrays = {
         },
         {
           "name": "How to Select an Instrument for Assessing Student Learning",
-          "Department": "Education Division",
+          "department_codes": "Education Division",
           "Published Date": "1/6/2015 3:47:32 PM",
           "value": 193587,
           "trend":[
@@ -41199,7 +41199,7 @@ var publicationsTopArrays = {
         },
         {
           "name": "Panorama de las Administraciones Públicas: América Latina y el Caribe 2017",
-          "Department": "Fiscal and Municipal Management Division",
+          "department_codes": "Fiscal and Municipal Management Division",
           "Published Date": "12/1/2016 3:57:14 PM",
           "value": 104273,
           "trend":[
@@ -41236,7 +41236,7 @@ var publicationsTopArrays = {
         },
         {
           "name": "The Road toward Smart Cities: Migrating from Traditional City Management to the Smart City",
-          "Department": "Housing and Urban Development Division",
+          "department_codes": "Housing and Urban Development Division",
           "Published Date": "7/7/2016 5:34:37 PM",
           "value": 97970,
           "trend":[
@@ -41273,7 +41273,7 @@ var publicationsTopArrays = {
         },
         {
           "name": "Orange Economy: Innovations you may not know were from Latin America and the Caribbean",
-          "Department": "Cultural, Solidarity and Creativity Affairs Division",
+          "department_codes": "Cultural, Solidarity and Creativity Affairs Division",
           "Published Date": "6/27/2017 4:59:00 PM",
           "value": 93870,
           "trend":[
@@ -41310,7 +41310,7 @@ var publicationsTopArrays = {
         },
         {
           "name": "The Early Years: Child Well-being and the Role of Public Policy",
-          "Department": "Department of Research and Chief Economist",
+          "department_codes": "Department of Research and Chief Economist",
           "Published Date": "10/26/2015 6:34:35 PM",
           "value": 92406,
           "trend":[
@@ -41347,7 +41347,7 @@ var publicationsTopArrays = {
         },
         {
           "name": "A Toolkit for the Measurement of Youth Risk Behavior",
-          "Department": "Social Protection and Health Division",
+          "department_codes": "Social Protection and Health Division",
           "Published Date": "12/26/2013 6:54:35 PM",
           "value": 79439,
           "trend":[
@@ -41384,7 +41384,7 @@ var publicationsTopArrays = {
         },
         {
           "name": "Learning Better: Public Policy for Skills Development",
-          "Department": "Department of Research and Chief Economist",
+          "department_codes": "Department of Research and Chief Economist",
           "Published Date": "8/28/2017 4:54:38 PM",
           "value": 75254,
           "trend":[
@@ -41421,7 +41421,7 @@ var publicationsTopArrays = {
         },
         {
           "name": "Distribución urbana de mercancías: Estrategias con centros logísticos",
-          "Department": "Transport Division",
+          "department_codes": "Transport Division",
           "Published Date": "3/5/2013 9:38:04 PM",
           "value": 73246,
           "trend":[
