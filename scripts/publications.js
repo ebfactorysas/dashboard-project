@@ -87,11 +87,6 @@ function createChartTimelinePublication(data, typeload) {
         .attr("class", "area")
         .attr("d", area);
 
-    var testarea = d3Old.selectAll("#timeline-publication path")
-        .on("mousemove", function (d) {
-
-        });
-
     svg.append("path")
         .data([data])
         .attr("class", "line")
@@ -149,29 +144,29 @@ function createChartTimelinePublication(data, typeload) {
         .attr("class", "focus")
         .style("display", "none");
     focus.append("rect")
-        .attr("x", -28)
+        .attr("x", -100)
         .attr("y", -18)
         .attr("class", "tooltip-bg")
-        .attr("width", 80)
-        .attr("height", 40)
+        .attr("width", 150)
+        .attr("height", 50)
         .attr("fill", "#fff")
 
     var textFocus = focus.append("text")
-        .attr("x", -20)
+        .attr("x", -100)
         .attr("dy", ".35em")
         .style("font-size", 15)
         .style("font-family", "Gotham-Book");
 
     textFocus.append("tspan")
-        .attr("x", -20)
+        .attr("x", -100)
         .attr("dy", ".35em")
         .attr("class", "value")
         .style("font-size", 15)
         .style("font-family", "Gotham-Book");
 
     textFocus.append("tspan")
-        .attr("x", -20)
-        .attr("y", 15)
+        .attr("x", -100)
+        .attr("y", 17)
         .attr("dy", ".35em")
         .attr("class", "date")
         .style("font-size", 15)
@@ -203,14 +198,23 @@ function createChartTimelinePublication(data, typeload) {
             d0 = data[i - 1],
             d1 = data[i],
             d = x0 - d0.date > d1.date - x0 ? d1 : d0;
+        console.log(x(d.date))
+        if (x(d.date) < 300) {
+            focus.select("rect").attr("x", -10)
+            focus.selectAll("text").attr("x", -5)
+            focus.selectAll("tspan").attr("x", -5)
+        }else{
+            focus.select("rect").attr("x", -140)
+            focus.selectAll("text").attr("x", -135)
+            focus.selectAll("tspan").attr("x", -135)
+        }
 
         var depl = parseFloat(d.close);
 
         focus.attr("transform", "translate(" + x(d.date) + "," + y(d.close) + ")");
 
-
-        focus.select(".value").text(d.close);
-        focus.select(".date").text(d.dateAux);
+        focus.select(".value").text(moment(d.date).format("MMM-YY"));
+        focus.select(".date").text(d.close + " downloads");
     }
 
 }
@@ -267,7 +271,7 @@ function drawTreePublication(dataTree, filtertype, typeload) {
                 size: "17"
             },
             resize: false,
-            text:function(d){
+            text: function (d) {
                 return d.name + "\n" + (d.d3plusOld.share * 100).toFixed(1) + "%";
             }
         })
@@ -276,7 +280,7 @@ function drawTreePublication(dataTree, filtertype, typeload) {
                 family: "Gotham-Book"
             },
             value: "value" + filtertype,
-         
+
         })
         .format({
             "text": function (text, params) {
@@ -394,8 +398,8 @@ function drawTrendPublicationChart(dataPublicationTrend) {
                 .duration(0)
                 .style("display", "inline-block");
             div.html(d.value + "<br/>" + d.name)
-                .style("left", (d3Old.event.pageX)+5 + "px")
-                .style("top", (d3Old.event.pageY - 28)+5 + "px");
+                .style("left", (d3Old.event.pageX) + 5 + "px")
+                .style("top", (d3Old.event.pageY - 28) + 5 + "px");
         })
         .on("mouseout", function (d) {
             div.transition()
@@ -409,8 +413,8 @@ function drawTrendPublicationChart(dataPublicationTrend) {
                 .duration(0)
                 .style("display", "inline-block");
             div.html(d.value + "<br/>" + d.name)
-                .style("left", (d3Old.event.pageX)+5 + "px")
-                .style("top", (d3Old.event.pageY - 28)+5 + "px");
+                .style("left", (d3Old.event.pageX) + 5 + "px")
+                .style("top", (d3Old.event.pageY - 28) + 5 + "px");
         })
         .on("mouseout", function (d) {
             div.transition()
@@ -424,8 +428,8 @@ function drawTrendPublicationChart(dataPublicationTrend) {
                 .duration(0)
                 .style("display", "inline-block");
             div.html(d)
-                .style("left", (d3Old.event.pageX)+5 + "px")
-                .style("top", (d3Old.event.pageY - 28)+5 + "px");
+                .style("left", (d3Old.event.pageX) + 5 + "px")
+                .style("top", (d3Old.event.pageY - 28) + 5 + "px");
         })
         .on("mouseout", function (d) {
             div.transition()
@@ -434,40 +438,19 @@ function drawTrendPublicationChart(dataPublicationTrend) {
         });
 }
 
-function getNodePos(el) {
-    var body = d3.select('body').node();
-
-    for (var lx = 0, ly = 0; el != null && el != body; lx += (el.offsetLeft || el.clientLeft), ly += (el.offsetTop || el.clientTop), el = (el.offsetParent || el.parentNode))
-    ;
-    return {
-        x: lx,
-        y: ly
-    };
-}
-
-function setEmptyGaugesPublication() {
-    return {
-        "publications": 0,
-        "percentagePublications": 0,
-        "downloads": 0,
-        "percentageDownloads": 0,
-        "percentageLAC": 0
-    }
-}
-
 function drawGaugePublicationChart(dataGauge) {
-    
-    removeGauges(["#gauge-publications","#gauge-download-p","#gauge-lac-p"]);
+
+    removeGauges(["#gauge-publications", "#gauge-download-p", "#gauge-lac-p"]);
 
     if (dataGauge == undefined) {
         dataGauge = setEmptyGaugesPublication();
     }
-    if(!dataGauge.divisionCode){
+    if (!dataGauge.divisionCode) {
         dataGauge.divisionCode = "IDB"
     }
-    drawGauge(dataGauge.publications, dataGauge.percentagePublications, "", "#gauge-publications",dataGauge.divisionCode);
-    drawGauge(dataGauge.downloads, dataGauge.percentageDownloads, "", "#gauge-download-p",dataGauge.divisionCode);
-    drawGauge(dataGauge.percentageLAC.toFixed(1), dataGauge.percentageLAC.toFixed(1), "%", "#gauge-lac-p",dataGauge.divisionCode);
+    drawGauge(dataGauge.publications, dataGauge.percentagePublications, "", "#gauge-publications", dataGauge.divisionCode);
+    drawGauge(dataGauge.downloads, dataGauge.percentageDownloads, "", "#gauge-download-p", dataGauge.divisionCode);
+    drawGauge(dataGauge.percentageLAC.toFixed(1), dataGauge.percentageLAC.toFixed(1), "%", "#gauge-lac-p", dataGauge.divisionCode);
 }
 
 function createLineChart(elements) {
@@ -677,6 +660,27 @@ function drawPlotChartPublication(data, typeload) {
 
 }
 
+function getNodePos(el) {
+    var body = d3.select('body').node();
+
+    for (var lx = 0, ly = 0; el != null && el != body; lx += (el.offsetLeft || el.clientLeft), ly += (el.offsetTop || el.clientTop), el = (el.offsetParent || el.parentNode))
+    ;
+    return {
+        x: lx,
+        y: ly
+    };
+}
+
+function setEmptyGaugesPublication() {
+    return {
+        "publications": 0,
+        "percentagePublications": 0,
+        "downloads": 0,
+        "percentageDownloads": 0,
+        "percentageLAC": 0
+    }
+}
+
 function initPublications() {
     dataPublicationGauge2018 = $.extend(true, {}, publicationsIndicators.indicatorsIDB2018[0]);
     var downloadTimelineIDB = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineIDB);
@@ -734,7 +738,7 @@ function initPublications() {
     drawLinesChartPublication(publicationsTopArrays.topIDB2018);
     drawPlotChartPublication(ObjectpublicationsAttention, 'init');
     drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "2018", 'init');
-    
+
 }
 
 function validarFormatoFecha(campo) {
