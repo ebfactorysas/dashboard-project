@@ -570,7 +570,7 @@ function drawPlotChartPublication(data, typeload) {
     var maxValue = 0
     for (let i = 0; i < data.length; i++) {
         data[i].FullCode = data[i].Code + " " + data[i].departmentCode.toUpperCase();
-
+        data[i].divisionDepartment = data[i].departmentCode + "/" + data[i].divisionCode;
         if (data[i].Downloads >= maxValue) {
             maxValue = data[i].Downloads;
         }
@@ -612,10 +612,10 @@ function drawPlotChartPublication(data, typeload) {
             return "#d65a70"
         })
         .tooltip({
-            large: 400,
-            small: 500,
+            large: 600,
+            small: 650,
             anchor: "top left",
-            value: ["Downloads", "daysPublished", "pageviews", "publishedDate"]
+            value: ["Downloads", "daysPublished","divisionDepartment", "pageviews", "publishedDate"]
         })
         .x({
             value: "Downloads",
@@ -652,11 +652,14 @@ function drawPlotChartPublication(data, typeload) {
                 if (text === "daysPublished") {
                     return "Published Days";
                 } else if (text === "pageviews") {
-                    return "Pageviews"
-                } else if (text === "publishedDate") {
+                    return "Downloads per Day"
+                }else if(text==="divisionDepartment"){
+                    return "Department/Division"
+                } 
+                else if (text === "publishedDate") {
                     return "Published Date"
                 } else {
-                    return d3plusOld.string.title(text, params);
+                    return text;
                 }
             }
         })
