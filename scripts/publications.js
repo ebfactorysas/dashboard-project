@@ -211,7 +211,7 @@ function createChartTimelinePublication(data, typeload) {
         focus.attr("transform", "translate(" + x(d.date) + "," + y(d.close) + ")");
 
         focus.select(".value").text(moment(d.date).format("MMM-YY"));
-        focus.select(".date").text(d.close + " downloads");
+        focus.select(".date").text(d.close.toLocaleString() + " downloads");
     }
 
 }
@@ -233,71 +233,21 @@ function drawTreePublication(dataTree, filtertype, typeload) {
             return d3.descending(a.value2018, b.value2018);
         });
     }
-    var numbType = d3.format('.0%');
-    colours = chroma.scale(['#d1415a', '#ffffff'])
-        .mode('lch').colors(dataTree.length)
 
-    dataTree.forEach(function (element, i) {
-        element.color = colours[i]
-    });
-    var visualization = d3plusOld.viz()
-        .container("#downloads-publications")
-        .data({
-            "value": dataTree,
-            "stroke": {
-                "width": 2
+    var text = {
+        "text": function (text, params) {
+            if (text === "share") {
+                return "% Total of IDB Downloads";
+            } else if (text === "value" + filtertype) {
+                return "Downloads"
+            } else {
+                return d3plusOld.string.title(text, params);
             }
-        })
-        .type("tree_map")
-        .id("name")
-        .size({
-            value: "value" + filtertype,
-            fill: "blue"
-        })
-        .legend(false)
-        .color(function (d) {
-            return d.color;
-        })
-        .labels({
-            align: "left",
-            valign: "top",
-            value: true,
-            font: {
-                family: "Gotham-Bold",
-                size: "17"
-            },
-            resize: false,
-            text: function (d) {
-
-                if ((d.d3plusOld.share * 100).toFixed(1) >= 10) {
-                    return d.name + "\n" + (d.d3plusOld.share * 100).toFixed(1) + "%";
-                }
-            }
-        })
-        .tooltip({
-            font: {
-                family: "Gotham-Book"
-            },
-            value: "value" + filtertype,
-
-        })
-        .format({
-            "text": function (text, params) {
-                if (text === "share") {
-                    return "% Total of IDB Downloads";
-                } else if (text === "value" + filtertype) {
-                    return "Downloads"
-                } else {
-                    return d3plusOld.string.title(text, params);
-                }
-            }
-        })
-        .text(function (d) {
-            var current_id = visualization.id();
-            return d[current_id]; //+ "\n" + (d.d3plusOld.share * 100).toFixed(1) + "%";
-        })
-
-    visualization.draw()
+        }
+    }
+   
+    drawTreeChart(dataTree,filtertype,"#downloads-publications",'#d1415a',text);
+   
 }
 
 function drawTrendPublicationChart(dataPublicationTrend) {
@@ -394,12 +344,13 @@ function drawTrendPublicationChart(dataPublicationTrend) {
         });
     var div = d3.select("body").append("div")
         .attr("class", "toolTip")
-        .style("font-size", "12px");
+        .style("font-size", "12px")
+        .style("width","450px");
     var tooltipText = d3Old.selectAll("#publication-trend .text-inside")
         .on("mouseover", function (d) {
             var textHtml = "<div class='col tooltip-gauges'><h3 class='row'>{{title}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>Downloads</span><span class='col text-right' >{{value}}</div>";
             textHtml = textHtml.replace('{{title}}', d.name)
-            textHtml = textHtml.replace('{{value}}', d.value)
+            textHtml = textHtml.replace('{{value}}', d.value.toLocaleString())
             if (d.division_codes) {
                 var addText = "<div class='row pt-1 border-top'><span class='col pl-0 pr-0 '> {{type}}</span><span  class='col-3 text-right'>{{code}}</span></div>"
                 addText = addText.replace('{{type}}', "Division")
@@ -430,7 +381,7 @@ function drawTrendPublicationChart(dataPublicationTrend) {
         .on("mouseover", function (d) {
             var textHtml = "<div class='col tooltip-gauges'><h3 class='row'>{{title}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>Downloads</span><span class='col text-right' >{{value}}</div>";
             textHtml = textHtml.replace('{{title}}', d.name)
-            textHtml = textHtml.replace('{{value}}', d.value)
+            textHtml = textHtml.replace('{{value}}', d.value.toLocaleString())
             if (d.division_codes) {
                 var addText = "<div class='row pt-1 border-top'><span class='col pl-0 pr-0 '> {{type}}</span><span  class='col-3 text-right'>{{code}}</span></div>"
                 addText = addText.replace('{{type}}', "Division")
@@ -469,9 +420,9 @@ function drawGaugePublicationChart(dataGauge) {
     if (!dataGauge.divisionCode) {
         dataGauge.divisionCode = "IDB"
     }
-    drawGauge(dataGauge.publications, dataGauge.percentagePublications, "", "#gauge-publications", dataGauge.divisionCode);
-    drawGauge(dataGauge.downloads, dataGauge.percentageDownloads, "", "#gauge-download-p", dataGauge.divisionCode);
-    drawGauge(dataGauge.percentageLAC.toFixed(1), dataGauge.percentageLAC.toFixed(1), "%", "#gauge-lac-p", dataGauge.divisionCode);
+    drawGauge(dataGauge.publications, dataGauge.percentagePublications, "", "#gauge-publications", dataGauge.divisionCode,"Publications");
+    drawGauge(dataGauge.downloads, dataGauge.percentageDownloads, "", "#gauge-download-p", dataGauge.divisionCode,"Downloads");
+    drawGauge(dataGauge.LAC, dataGauge.percentageLAC.toFixed(1), "%", "#gauge-lac-p", dataGauge.divisionCode,"Publications");
 }
 
 function createLineChart(elements) {
@@ -627,7 +578,7 @@ function drawPlotChartPublication(data, typeload) {
         .size(10)
         .legend(false)
         .color(function (d) {
-            if (d.departmentCode != valueOfFilter && valueOfFilter != "IDB") {
+            if (d.divisionCode != valueOfFilter && valueOfFilter != "IDB") {
                 return "#d8d8d8"
             }
             return "#d65a70"
@@ -636,7 +587,7 @@ function drawPlotChartPublication(data, typeload) {
             large: 600,
             small: 650,
             anchor: "top left",
-            value: ["Downloads", "daysPublished", "divisionDepartment", "pageviews", "publishedDate"]
+            value: ["divisionDepartment", "publishedDate", "Downloads", "daysPublished", "pageviews"]
         })
         .x({
             value: "Downloads",

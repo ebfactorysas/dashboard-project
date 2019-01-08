@@ -121,73 +121,18 @@ function drawTreeDataset(dataTree, filtertype, typeload) {
             }
         });
     }
-    var numbType =  d3.format('.0%');
-
-    coloursDataSet = chroma.scale(['#424488', '#ffffff'])
-        .mode('lch').colors(dataTree.length)
-
-    dataTree.forEach(function (element, i) {
-        element.color = coloursDataSet[i]
-    });
-
-    //if all values are zero clean array to avoid error (darker of undefined)
-    count > 0 ? dataTree = dataTree : dataTree = [];
-    // instantiate d3plus
-    var visualization = d3plusOld.viz()
-        .container("#downloads-dataset") // container DIV to hold the visualization
-        .data({
-            "value": dataTree, // results in larger padding between 'groups' in treemap
-            "stroke": {
-                "width": 2
-            } // gives each shape a border
-        }) // data to use with the visualization
-        .type("tree_map") // visualization type
-        .id("name") // key for which our data is unique on
-        .size({
-            value: "value" + filtertype,
-            fill: "blue"
-        }) // sizing of blocks
-        .legend(false)
-        .color(function (d) {
-            return d.color;
-        })
-        .labels({
-            align: "left",
-            valign: "top",
-            value: true,
-            font: {
-                family: "Gotham-Bold",
-                size: "17"
-            },
-            resize: false
-        })
-        .tooltip({
-            font: {
-                family: "Gotham-Book"
-            },
-            value: ["value" + filtertype]
-        })
-        .format({
-            "text": function (text, params) {
-                if (text === "share") {
-                    return "Percentage";
-                } else if (text === "value" + filtertype) {
-                    return "Value"
-                } else {
-                    return d3plusOld.string.title(text, params);
-                }
+    var text = {
+        "text": function (text, params) {
+            if (text === "share") {
+                return "Percentage";
+            } else if (text === "value" + filtertype) {
+                return "Value"
+            } else {
+                return d3plusOld.string.title(text, params);
             }
-        })
-        .text(function (d) {
-            var current_id = visualization.id();
-            return d[current_id] + "\n" + numbType(d.d3plusOld.share.toFixed(2));
-        })
-
-    visualization.draw()
-
-    
-        
-
+        }
+    }
+    drawTreeChart(dataTree, filtertype, "#downloads-dataset", '#424488',text);
 }
 
 function setEmptyGaugesDatasets() {
@@ -201,8 +146,8 @@ function setEmptyGaugesDatasets() {
 }
 
 function drawGaugeDatasetChart(dataGauge) {
-    
-    removeGauges(["#gauge-datasets","#gauge-download-d","#gauge-lac-d"]);
+
+    removeGauges(["#gauge-datasets", "#gauge-download-d", "#gauge-lac-d"]);
 
     if (dataGauge == undefined) {
         dataGauge = setEmptyGaugesDatasets();
@@ -573,12 +518,12 @@ $("input[name*='dataSetTrend']").click(function () {
 
         if (this.id == "dataSetAllTime") {
             //treemap
-            drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "2018");            
-            drawGaugeDatasetChart( $.extend(true, {}, datasetsGaugesIndicators.indicatorsIDBAllTheTime[0]));
+            drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "2018");
+            drawGaugeDatasetChart($.extend(true, {}, datasetsGaugesIndicators.indicatorsIDBAllTheTime[0]));
         } else {
             //tree map
             drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "AllTheTime");
-            drawGaugeDatasetChart( $.extend(true, {}, datasetsGaugesIndicators.indicatorsIDB2018[0]));
+            drawGaugeDatasetChart($.extend(true, {}, datasetsGaugesIndicators.indicatorsIDB2018[0]));
         }
         //linechart
         // var ObjectDataSetLineChart = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
@@ -630,9 +575,9 @@ function initDataSet() {
     //new logic
     drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "2018");
     // createChartTimeLineDataSet(ObjectDataSetLineChart);
-    drawGaugeDatasetChart( $.extend(true, {}, datasetsGaugesIndicators.indicatorsIDB2018[0]));
+    drawGaugeDatasetChart($.extend(true, {}, datasetsGaugesIndicators.indicatorsIDB2018[0]));
 
     //old logic
     drawDataTrendChart(datasetsTopArrays.topIDB2018);
-    drawPlotChartDataset(ObjectDataSetPlot);    
+    drawPlotChartDataset(ObjectDataSetPlot);
 }

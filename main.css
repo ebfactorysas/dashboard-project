@@ -110,6 +110,10 @@
 
 }
 
+.tooltip-gauges{
+    width: 300px
+}
+
 
 
 .tooltip-gauges .border-top{
@@ -1856,7 +1860,7 @@ section.map select.form-control:not([size]):not([multiple]) {
     .toolTip {
         position: absolute;
         display: none;
-        min-width: 80px;
+        min-width: 200px;
         height: auto;
         background: none repeat scroll 0 0 #ffffff;
         padding: 14px;

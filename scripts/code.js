@@ -199,58 +199,18 @@ function drawTreeCode(dataTree, filtertype) {
     dataTree.forEach(function (element, i) {
         element.color = colours[i]
     });
-        var visualization = d3plusOld.viz()
-        .container("#downloads-code") // container DIV to hold the visualization
-        .data({
-            "value": dataTree, // results in larger padding between 'groups' in treemap
-            "stroke": {
-                "width": 2
-            } // gives each shape a border
-        }) // data to use with the visualization
-        .type("tree_map") // visualization type
-        .id("name") // key for which our data is unique on
-        .size({
-            value: "value" + filtertype,
-            fill: "blue"
-        }) // sizing of blocks
-        .legend(false)
-        .color(function (d) {
-            return d.color;
-        })
-        .labels({
-            align: "left",
-            valign: "top",
-            value: true,
-            font: {
-                family: "Gotham-Bold",
-                size: "17"
-            },
-            resize: false
-        })
-        .tooltip({
-            font: {
-                family: "Gotham-Book"
-            },
-            value: ["value" + filtertype]
-        })
-        .format({
-            "text": function (text, params) {
-                if (text === "share") {
-                    return "Percentage";
-                } else if (text === "value" + filtertype) {
-                    return "Value"
-                } else {
-                    return d3plusOld.string.title(text, params);
-                }
+    var text = {
+        "text": function (text, params) {
+            if (text === "share") {
+                return "Percentage";
+            } else if (text === "value" + filtertype) {
+                return "Value"
+            } else {
+                return d3plusOld.string.title(text, params);
             }
-        })
-        .text(function (d) {
-            var current_id = visualization.id();
-            return d[current_id] + "\n" + numbType(d.d3plusOld.share.toFixed(2));
-        })
-
-    visualization.draw()    
-
+        }
+    }
+    drawTreeChart(dataTree, filtertype, "#downloads-code", '#ebb203',text);
 }
 
 function createChartTimeline(data) {
