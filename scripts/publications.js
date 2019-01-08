@@ -163,7 +163,7 @@ function createChartTimelinePublication(data, typeload) {
         .attr("class", "value")
         .style("font-size", 16)
         .style("font-family", "Gotham-Book")
-        .attr("fill","#d1415a");
+        .attr("fill", "#d1415a");
 
     textFocus.append("tspan")
         .attr("x", -100)
@@ -234,8 +234,8 @@ function drawTreePublication(dataTree, filtertype, typeload) {
         });
     }
 
-    var text = {
-        "text": function (text, params) {
+    var text =
+        function (text, params) {
             if (text === "share") {
                 return "% Total of IDB Downloads";
             } else if (text === "value" + filtertype) {
@@ -244,10 +244,10 @@ function drawTreePublication(dataTree, filtertype, typeload) {
                 return d3plusOld.string.title(text, params);
             }
         }
-    }
-   
-    drawTreeChart(dataTree,filtertype,"#downloads-publications",'#d1415a',text);
-   
+
+
+    drawTreeChart(dataTree, filtertype, "#downloads-publications", '#d1415a', text);
+
 }
 
 function drawTrendPublicationChart(dataPublicationTrend) {
@@ -345,7 +345,7 @@ function drawTrendPublicationChart(dataPublicationTrend) {
     var div = d3.select("body").append("div")
         .attr("class", "toolTip")
         .style("font-size", "12px")
-        .style("width","450px");
+        .style("width", "450px");
     var tooltipText = d3Old.selectAll("#publication-trend .text-inside")
         .on("mouseover", function (d) {
             var textHtml = "<div class='col tooltip-gauges'><h3 class='row'>{{title}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>Downloads</span><span class='col text-right' >{{value}}</div>";
@@ -420,9 +420,9 @@ function drawGaugePublicationChart(dataGauge) {
     if (!dataGauge.divisionCode) {
         dataGauge.divisionCode = "IDB"
     }
-    drawGauge(dataGauge.publications, dataGauge.percentagePublications, "", "#gauge-publications", dataGauge.divisionCode,"Publications");
-    drawGauge(dataGauge.downloads, dataGauge.percentageDownloads, "", "#gauge-download-p", dataGauge.divisionCode,"Downloads");
-    drawGauge(dataGauge.LAC, dataGauge.percentageLAC.toFixed(1), "%", "#gauge-lac-p", dataGauge.divisionCode,"Publications");
+    drawGauge(dataGauge.publications, dataGauge.percentagePublications, "", "#gauge-publications", dataGauge.divisionCode, "Publications");
+    drawGauge(dataGauge.downloads, dataGauge.percentageDownloads, "", "#gauge-download-p", dataGauge.divisionCode, "Downloads");
+    drawGauge(dataGauge.LAC, dataGauge.percentageLAC.toFixed(1), "%", "#gauge-lac-p", dataGauge.divisionCode, "Publications");
 }
 
 function createLineChart(elements) {
@@ -546,7 +546,7 @@ function drawPlotChartPublication(data, typeload) {
         if (data[i].Downloads >= maxValue) {
             maxValue = data[i].Downloads;
         }
-        if (valueOfFilter == data[i].departmentCode) {
+        if (valueOfFilter == data[i].divisionCode) {
             arrayElements.push($.extend(true, {}, data[i]))
         } else {
             arrayAux.push($.extend(true, {}, data[i]))

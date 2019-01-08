@@ -48,7 +48,18 @@ function drawTreeChart(dataTree, filtertype, id, color, text) {
             large: 600,
             small: 280,
         })
-        .format(text)
+        .format({ "number" : function( number , key ) {
+            console.log(key,number)
+            if (key.key === "share") {
+              return d3Old.round(number,1)+"%";
+            }
+            else if(key.key =="value" + filtertype) {
+              return number.toLocaleString();
+            }
+        
+          },"text": text
+        })
+        // .format(text)
         .text(function (d) {
             var current_id = visualization.id();
             return d[current_id]; //+ "\n" + (d.d3plusOld.share * 100).toFixed(1) + "%";
