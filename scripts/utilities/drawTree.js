@@ -49,7 +49,6 @@ function drawTreeChart(dataTree, filtertype, id, color, text) {
             small: 280,
         })
         .format({ "number" : function( number , key ) {
-            console.log(key,number)
             if (key.key === "share") {
               return d3Old.round(number,1)+"%";
             }
