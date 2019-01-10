@@ -54,7 +54,7 @@ $("#divisionSelect").on('change', function (data) {
         setDataSuscribersByDivisions(sltValue);
         setDataCodeByDivisions(sltValue);
     }
-    drawPlotChartDataset($.extend(true, [], datasetsScatterplotArrays));
+    
     moocsFilter();
 });
 
@@ -165,16 +165,8 @@ function setDataDataSetByDivisions(sltValue) {
     }
 
     //data-trend
-    var ObjectDataTrendDataSet = $.extend(true, [], datasetsTopArrays.topDivisions2018);
-    jsonDataTrendDataSet = ObjectDataTrendDataSet.filter(function (dataT) {
-        return dataT.division_codes == sltValue
-    });
-
-    if (jsonDataTrendDataSet.length > 0) {
-        drawDataTrendChart(jsonDataTrendDataSet);
-    } else {
-        drawDataTrendChart([]);
-    }
+    drawDataTrendChart($.extend(true, [], datasetsTopArrays.topIDB2018));
+    drawLinesChartDataset($.extend(true, [], datasetsTopArrays.topIDB2018));
 
     datasets2018TotalGlobal = (jsondataDatasets.length > 0) ? jsondataDatasets[0]['2018_datasets'] : '0';
     datasets2018Downloads = (jsondataDatasets.length > 0) ? jsondataDatasets[0]['2018_downloads'] : '0';
@@ -185,6 +177,7 @@ function setDataDataSetByDivisions(sltValue) {
         return dataT.divisionCode == sltValue
     });
     drawGaugeDatasetChart(ObjectGaugeDataSet[0]);
+    drawPlotChartDataset( $.extend(true, [], datasetsScatterplotArrays));
 }
 
 /**

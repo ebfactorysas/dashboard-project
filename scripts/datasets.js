@@ -1,7 +1,7 @@
 function drawDataTrendChart(dataDataTrend) {
     d3.select("#data-trend svg").remove();
     dataDataTrend = dataDataTrend.slice(0, 10).sort(function (a, b) {
-        return d3.ascending(a.value, b.value);
+        return d3.descending(a.Rank, b.Rank);
     })
     var marginDataTrend = {
         top: 15,
@@ -53,7 +53,13 @@ function drawDataTrendChart(dataDataTrend) {
         .attr("y", function (d) {
             return yDataTrend(d.name);
         })
-        .attr("fill", "#d3d3d3")
+        .attr("fill", function (d) {
+            var divisionSelected = $('#idbLink')[0].text;
+            if (divisionSelected == "IDB" || divisionSelected == d.Division) {
+                return "#424488";
+            }
+            return "#d3d3d3";
+        })
         .attr("height", 45)
         .attr("x", 8)
         .attr("width", function (d) {
@@ -84,11 +90,50 @@ function drawDataTrendChart(dataDataTrend) {
         .style("font-family", "Gotham-Medium")
         .style("font-size", "13px")
         .call(wrapData);
+
+    var div = d3.select("body").append("div")
+        .attr("class", "toolTip")
+        .style("font-size", "12px")
+        .style("width", "450px");
+
+
+    var tooltipBar = d3Old.selectAll("#data-trend .bar")
+        .on("mouseover", function (d) {
+            var textHtml = "<div class='col tooltip-gauges'><h3 class='row purple'>{{title}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>Downloads</span><span class='col text-right' >{{value}}</div>";
+            textHtml = textHtml.replace('{{title}}', d.name)
+            textHtml = textHtml.replace('{{value}}', d.value.toLocaleString())
+            if (d.Department) {
+                var addText = "<div class='row pt-1 border-top'><span class='col-2 pl-0 pr-0 '> {{type}}</span><span  class='col text-right'>{{code}}</span></div>"
+                addText = addText.replace('{{type}}', "Department")
+                addText = addText.replace('{{code}}', d.Department);
+                textHtml = textHtml + addText;
+            }
+            if (d.Division) {
+                var addText = "<div class='row pt-1 border-top'><span class='col pl-0 pr-0 '> {{type}}</span><span  class='col-3 text-right'>{{code}}</span></div>"
+                addText = addText.replace('{{type}}', "Division")
+                addText = addText.replace('{{code}}', d.Division)
+                textHtml = textHtml + addText;
+            }
+
+            textHtml = textHtml + "</div>";
+            div.transition()
+                .duration(0)
+                .style("font-family", "Gotham-Book")
+                .style("display", "inline-block");
+            // div.html(d.value + "<br/>" + d.name)
+            div.html(textHtml)
+                .style("left", (d3Old.event.pageX) + 5 + "px")
+                .style("top", (d3Old.event.pageY - 28) + 5 + "px");
+        })
+        .on("mouseout", function (d) {
+            div.transition()
+                .duration(0)
+                .style("display", "none");
+        });
 }
 
 function drawTreeDataset(dataTree, filtertype, typeload) {
     d3.select("#downloads-dataset div").remove();
-
     var count = 0;
 
     if (typeload != "init") {
@@ -96,43 +141,27 @@ function drawTreeDataset(dataTree, filtertype, typeload) {
             dataTree = dataTree.sort(function (a, b) {
                 return d3.descending(a.value2018, b.value2018);
             });
-            dataTree.forEach(function (element) {
-                if (element.value2018 > 0) {
-                    count++;
-                }
-            });
         } else {
             dataTree = dataTree.sort(function (a, b) {
                 return d3.descending(a.valueAllTheTime, b.valueAllTheTime);
-            });
-            dataTree.forEach(function (element) {
-                if (element.valueAllTheTime > 0) {
-                    count++;
-                }
             });
         }
     } else {
         dataTree = dataTree.sort(function (a, b) {
             return d3.descending(a.value2018, b.value2018);
         });
-        dataTree.forEach(function (element) {
-            if (element.value2018 > 0) {
-                count++;
-            }
-        });
     }
-    var text = {
-        "text": function (text, params) {
+    var text =
+        function (text, params) {
             if (text === "share") {
-                return "Percentage";
+                return "% Total of IDB Downloads";
             } else if (text === "value" + filtertype) {
-                return "Value"
+                return "Downloads"
             } else {
                 return d3plusOld.string.title(text, params);
             }
         }
-    }
-    drawTreeChart(dataTree, filtertype, "#downloads-dataset", '#424488',text);
+    drawTreeChart(dataTree, filtertype, "#downloads-dataset", '#424488', text);
 }
 
 function setEmptyGaugesDatasets() {
@@ -152,302 +181,131 @@ function drawGaugeDatasetChart(dataGauge) {
     if (dataGauge == undefined) {
         dataGauge = setEmptyGaugesDatasets();
     }
-    drawGauge(dataGauge.datasets, dataGauge.percentageDatasets, "", "#gauge-datasets");
-    drawGauge(dataGauge.downloads, dataGauge.percentageDownloads, "", "#gauge-download-d");
-    drawGauge(dataGauge.percentageLAC, dataGauge.percentageLAC, "%", "#gauge-lac-d");
+
+    if (!dataGauge.divisionCode) {
+        dataGauge.divisionCode = "IDB"
+    }
+    drawGauge(dataGauge.datasets, dataGauge.percentageDatasets, "", "#gauge-datasets", dataGauge.divisionCode, "Datasets", "#424488");
+    drawGauge(dataGauge.downloads, dataGauge.percentageDownloads, "", "#gauge-download-d", dataGauge.divisionCode, "Downloads", "#424488");
+    drawGauge(dataGauge.percentageLAC, dataGauge.percentageLAC, "%", "#gauge-lac-d", dataGauge.divisionCode, "Datasets", "#424488");
 }
 
 function drawPlotChartDataset(data) {
-    d3.select("#dataset-publications-plot svg").remove();
-    var margin = {
-        top: 30,
-        right: 50,
-        bottom: 60,
-        left: 100
-    };
-    var width = 750 - margin.left - margin.right;
-    var height = 580 - margin.top - margin.bottom;
-    var valueOfFilter = $('#idbLink')[0].text;
-    var arrayAux = [];
-    var arrayElements = [];
-    for (let i = 0; i < data.length; i++) {
-        if (valueOfFilter == data[i].departmentCode) {
-            arrayElements.push(data[i])
-        } else {
-            arrayAux.push(data[i])
-        }
-    }
-    data = arrayAux.concat(arrayElements);
-
-    var div = d3.select("body").append("div")
-        .attr("class", "tooltip")
-        .style("opacity", 0);
-
-    var svg = d3.select('#dataset-publications-plot')
-        .append("svg")
-        .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-100 -60 750 650")
-        .append("g")
-        .classed("svg-content-responsive", true);
-
-    var opacityScale = d3.scaleLinear()
-        .domain([0.0, 30.0])
-        .range([0.10, .80]);
-
-    // The API for scales have changed in v4. There is a separate module d3-scale which can be used instead. The main change here is instead of d3.scale.linear, we have d3.scaleLinear.
-    var xScale = d3.scaleLinear()
-        .range([0, width]);
-
-    var yScale = d3.scaleLinear()
-        .range([height, 0]);
-
-    // square root scale.
-    var radius = d3.scaleSqrt()
-        .range([2, 5]);
-
-    // the axes are much cleaner and easier now. No need to rotate and orient the axis, just call axisBottom, axisLeft etc.
-    var xAxis = d3.axisBottom()
-        .scale(xScale)
-        .tickPadding(40)
-        .tickSize(0)
-        .ticks(10)
-        .tickFormat(function (x) {
-            var value = setSettingsNumber(x);
-            return value.valueNumber + value.suffixNumber;
-        });
-
-    var yAxis = d3.axisLeft()
-        .scale(yScale)
-        .tickPadding(40)
-        .tickSize(0)
-        .ticks(10)
-        .tickFormat(function (x) {
-            var value = setSettingsNumber(x);
-            return value.valueNumber + value.suffixNumber;
-        });
-
-    data.forEach(function (d) {
-        d.downloadsByDepartment = +d.downloadsByDepartment;
-        d.daysPublished = +d.daysPublished;
-
-    });
-
-    xScale.domain(d3.extent(data, function (d) {
-        return d.daysPublished;
-    })).nice();
-
-    yScale.domain(d3.extent(data, function (d) {
-        return d.downloadsByDepartment;
-    })).nice();
-
-    svg.append('g')
-        .attr('transform', 'translate(0,' + height + ')')
-        .attr('class', 'x axis')
-        .style("stroke-dasharray", "5,5")
-        .call(xAxis)
-        .append('text')
-        .attr('class', 'axis-label')
-        .attr('y', 70)
-        .attr('x', 300)
-        .attr('fill', 'black')
-        .text("Published Days");
-
-    // y-axis is translated to (0,0)
-    svg.append('g')
-        .attr('transform', 'translate(0,0)')
-        .attr('class', 'y axis')
-        .style("stroke-dasharray", "5,5")
-        .call(yAxis)
-        .append('text')
-        .attr('class', 'axis-label')
-        .attr('y', -80)
-        .attr('x', -180)
-        .attr('fill', 'black')
-        .attr('transform', "rotate(-90)")
-        .attr('text-anchor', 'middle')
-        .text("Downloads by Department");
-
-    var mouseOver = function (d) {
-        d3.select(this).attr("stroke", "#555555").attr("stroke-width", "2");
-        div.transition()
-            .duration(0)
-            .style("opacity", .9);
-        div.html(
-                "<div><h4 class='text-center'><b>DATASETS DETAILS</b></h4><p class='pb-2'>" +
-                d.Code + "</p><p><b>" +
-                d.departmentCode + "</b></p><div class='pl-0'><p><span>Downloads by Department:</span>&nbsp;&nbsp;&nbsp;<b>" + d.downloadsByDepartment + "</b></p><p><span>Published Days:</span><b>" + d.daysPublished + "</b></p></div></div>")
-            .style("left", (d3.event.pageX) + "px")
-            .style("top", (d3.event.pageY) + "px");
-
-    }
-
-    var mouseOut = function (d) {
-        d3.select(this).attr("stroke-width", "0");
-        div.transition()
-            .duration(0)
-            .style("opacity", 0);
-    }
-    var bubble = svg.selectAll('.bubble')
-        .data(data)
-        .enter().append('circle')
-        .attr('class', 'bubble')
-        .attr('stroke-width', '2')
-        .attr('stroke', '#7879a9')
-        .attr('cx', function (d) {
-            return xScale(d.daysPublished);
-        })
-        .attr('cy', function (d) {
-            return yScale(d.downloadsByDepartment);
-        })
-        .attr('r', function (d) {
-            return radius(20);
-        })
-        .style('opacity', '.6')
-        .style('fill', function (d) {
-
-            if (d.departmentCode != valueOfFilter && valueOfFilter != "IDB") {
-                return "#d8d8d8"
-            }
-            return "#8889b3"
-        })
-        .on("mouseover", mouseOver)
-        .on("mouseout", mouseOut);
+    d3.select("#dataset-publications-plot div").remove();
+    createPlotChart(data, "#dataset-publications-plot", "#8889b3", "daysPublished", "Downloads", undefined, undefined, "Downloads by Department");
 }
 
 function createChartTimeLineDataSet(data) {
     d3.select("#timeline-dataset svg").remove();
-    var margin = {
-            top: 20,
-            right: 20,
-            bottom: 30,
-            left: 50
-        },
-        width = 580 - margin.left - margin.right,
-        height = 220 - margin.top - margin.bottom;
+    createTimelineChart(data, "#timeline-dataset", "#424488", "#dataset2018")
+}
 
-    // parse the date / time
-    var parseTime = d3.timeParse("%d-%b-%y");
+function createLineChartDataset(elements,color) {
 
-    // set the ranges
-    var x = d3.scaleTime().range([0, width]);
-    var y = d3.scaleLinear().range([height, 0]);
+    var parseTime = d3.timeParse("%m/%d/%Y");
 
-    // define the area
-    var area = d3.area()
-        .x(function (d) {
-            return x(d.date);
-        })
-        .y0(height)
-        .y1(function (d) {
-            return y(d.close);
-        });
-
-    // define the line
-    var valueline = d3.line()
-        .x(function (d) {
-            return x(d.date);
-        })
-        .y(function (d) {
-            return y(d.close);
-        });
-
-    // append the svg obgect to the body of the page
-    // appends a 'group' element to 'svg'
-    // moves the 'group' element to the top left margin
-    var svg = d3.select("#timeline-dataset").append("svg")
-        //responsive SVG needs these 2 attributes and no width and height attr
-        .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-60 -28 600 300")
-        .append("g")
-        // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
-
-        //class to make it responsive
-        .classed("svg-content-responsive", true);
-    var totalAmount = 0;
-    // format the data
-    data.forEach(function (d) {
-        d.date = parseTime(d.date);
+    elements.trend.forEach(function (item) {
+        item.id = elements.name;
+        item.dateAux = item.date;
+        item.date = parseTime(item.date);
     });
-
-    data = data.sort(sortByDateAscending);
-
-    for (var i = 0; i < data.length; i++) {
-        data[i].close = +data[i].close;
-        totalAmount += data[i].close;
-        if (i > 0) {
-            data[i]['CumulativeAmount'] = data[i].close + data[i - 1].close;
-        } else {
-            data[i]['CumulativeAmount'] = data[i].close;
-        }
-    }
-    //now calculate cumulative % from the cumulative amounts & total, round %
-    for (var i = 0; i < data.length; i++) {
-        data[i]['CumulativePercentage'] = (data[i]['CumulativeAmount'] / totalAmount);
-        data[i]['CumulativePercentage'] = parseFloat(data[i]['CumulativePercentage'].toFixed(2));
-    }
-
-    var lineGen = d3.line()
-        .x(function (d) {
-            return x(d.date);
+    var data = elements.trend;
+    var attributes = [{
+        "id": elements.name,
+        "hex": color
+    }]
+    var visualization = d3plusOld.viz()
+        .container("#lines-dataset  ")
+        .data(elements.trend)
+        .type("line")
+        .id({
+            grouping: false,
+            value: "id"
         })
-        .y(function (d) {
-            return y(d.CumulativeAmount);
+        .font({
+            family: "Gotham-Book"
+        })
+        .background("transparent")
+        .text("id")
+
+        .axes({
+            background: {
+                color: "transparent",
+                stroke: {
+                    width: 0
+                }
+            },
+            ticks: false
+        })
+        .tooltip({
+            value: ["dateAux"],
+            small: 450
+        })
+        .y({
+            value: "value",
+            grid: false,
+            axis: false,
+            mouse: false
+        })
+        .x({
+            value: "date",
+            grid: false,
+            axis: false,
+            mouse: false
+        })
+        .attrs(attributes)
+        .color("hex")
+        .format({
+            "text": function (text, params) {
+                if (text == "dateAux") {
+                    return "Date"
+                }
+
+                if (text == "value") {
+                    return "Downloads"
+                }
+                //i made this cuz' this cant change anywhere
+                d3.selectAll("#lines-dataset #d3plus_graph_xticks").remove();
+                d3.selectAll("#lines-dataset #d3plus_graph_yticks").remove();
+                d3.selectAll("#lines-dataset #d3plus_graph_xlabel").remove();
+                d3.selectAll("#lines-dataset #d3plus_graph_ylabel").remove();
+                return d3plusOld.string.title(text, params);
+            }
+
+        })
+        .width({
+            value: 170,
+            small: 50
+        })
+        .height({
+            value: 80,
+            small: 30
+        })
+        .draw()
+}
+
+function drawLinesChartDataset(data) {
+
+    d3.selectAll("#lines-dataset div").remove();
+
+    var parseTime = d3.timeParse("%m/%d/%Y");
+
+    if (data.length > 0) {
+        data = data.sort(function (a, b) {
+            return d3.ascending(a.Rank, b.Rank);
         });
+        data.forEach(function (element) {
+            var color = "";
+            var divisionSelected = $('#idbLink')[0].text;
+            if(divisionSelected=="IDB"|| divisionSelected==element.Division){
+                color="#424488";
+            }else{
+                color="#e6e6e6";
+            }
+            createLineChartDataset($.extend(true, [], element),color);
+        });
+    }
 
-    // scale the range of the data
-    x.domain(d3.extent(data, function (d) {
-        return d.date;
-    }));
-    y.domain([0, d3.max(data, function (d) {
-        return d.close;
-    })]);
-
-    // add the area
-    svg.append("path")
-        .data([data])
-        .attr("class", "area")
-        .attr("d", area);
-
-    // add the valueline path.
-    svg.append("path")
-        .data([data])
-        .attr("class", "line")
-        .attr("d", valueline);
-
-    //calculate path do not delete it
-    // svg.append('svg:path')
-    //     .attr('d', lineGen(data))
-    //     .attr('stroke', '#c3c3c3')
-    //     .attr("stroke-dasharray", "4")
-    //     .attr('stroke-width', 2)
-    //     .attr('fill', 'none');
-
-    // add the X Axis
-    svg.append("g")
-        .attr("transform", "translate(0," + height + ")")
-        .attr("class", "x-axis")
-        .style('stroke-width', '3px')
-        .style("font-family", "Gotham-Book")
-        .style("font-size", "13px")
-        .call(d3.axisBottom(x)
-            .ticks(d3.timeDay.filter(function (d) {
-                return $("#dataSet2018").prop("checked") ? d3.timeDay.count(0, d) % 60 === 0 : d3.timeDay.count(0, d) % 60 === 0
-            }))
-            .ticks(10)
-            .tickSizeOuter(0)
-        )
-
-    // add the Y Axis
-    svg.append("g")
-        .attr("class", "y-axis")
-        .style("font-family", "Gotham-Book")
-        .style("font-size", "13px")
-        .call(d3.axisLeft(y)
-            .ticks(3)
-            .tickFormat(function (x) {
-                var value = setSettingsNumber(x);
-                return Math.floor(value.valueNumber) + value.suffixNumber;
-            }));
 }
 
 
@@ -470,15 +328,8 @@ $("input[name*='dataSetTrend']").click(function () {
                 drawGaugeDatasetChart(jsonDataSetGauge[0]);
 
                 //top 10
-                var ObjectDataTrendDataSet = $.extend(true, [], datasetsTopArrays.topDivisionsAllTime);
-                jsonDataTrendDataSet = ObjectDataTrendDataSet.filter(function (dataT) {
-                    return dataT.division_codes == $("select[id*='divisionSelect']").val()
-                });
-                if (jsonDataTrendDataSet.length > 0) {
-                    drawDataTrendChart(jsonDataTrendDataSet);
-                } else {
-                    drawDataTrendChart([]);
-                }
+                drawDataTrendChart($.extend(true, [], datasetsTopArrays.topIDBAllTime));
+                drawLinesChartDataset($.extend(true, [], datasetsTopArrays.topIDBAllTime));
             } else {
                 //treemap
                 jsonDataSetTree = datasetsDownloadSource.downloadSourceDivisions.filter(function (dataT) {
@@ -492,15 +343,8 @@ $("input[name*='dataSetTrend']").click(function () {
                 drawGaugeDatasetChart(jsonDataSetGauge[0]);
 
                 //top 10
-                var ObjectDataTrendDataSet = $.extend(true, [], datasetsTopArrays.topDivisions2018);
-                jsonDataTrendDataSet = ObjectDataTrendDataSet.filter(function (dataT) {
-                    return dataT.division_codes == $("select[id*='divisionSelect']").val()
-                });
-                if (jsonDataTrendDataSet.length > 0) {
-                    drawDataTrendChart(jsonDataTrendDataSet);
-                } else {
-                    drawDataTrendChart([]);
-                }
+                drawLinesChartDataset($.extend(true, [], datasetsTopArrays.topIDB2018));
+                drawDataTrendChart($.extend(true, [], datasetsTopArrays.topIDB2018));
             }
 
             // //linechart
@@ -518,18 +362,18 @@ $("input[name*='dataSetTrend']").click(function () {
 
         if (this.id == "dataSetAllTime") {
             //treemap
-            drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "2018");
+            drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "AllTheTime");
             drawGaugeDatasetChart($.extend(true, {}, datasetsGaugesIndicators.indicatorsIDBAllTheTime[0]));
+            drawDataTrendChart($.extend(true, [], datasetsTopArrays.topIDBAllTime));
+            drawLinesChartDataset($.extend(true, [], datasetsTopArrays.topIDBAllTime));
         } else {
             //tree map
-            drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "AllTheTime");
+            drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "2018");
             drawGaugeDatasetChart($.extend(true, {}, datasetsGaugesIndicators.indicatorsIDB2018[0]));
+            drawDataTrendChart($.extend(true, [], datasetsTopArrays.topIDB2018));
+            drawLinesChartDataset($.extend(true, [], datasetsTopArrays.topIDB2018));
         }
-        //linechart
-        // var ObjectDataSetLineChart = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
-        // createChartTimeLineDataSet(ObjectDataSetLineChart);
-
-
+        
     }
 });
 
@@ -578,6 +422,7 @@ function initDataSet() {
     drawGaugeDatasetChart($.extend(true, {}, datasetsGaugesIndicators.indicatorsIDB2018[0]));
 
     //old logic
-    drawDataTrendChart(datasetsTopArrays.topIDB2018);
+    drawDataTrendChart($.extend(true, [], datasetsTopArrays.topIDB2018));
+    drawLinesChartDataset($.extend(true, [], datasetsTopArrays.topIDB2018));
     drawPlotChartDataset(ObjectDataSetPlot);
 }

@@ -2948,7 +2948,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-13",
+                    "date": "1-Jun-13",
                     "close": 0
                 },
                 {
@@ -2996,7 +2996,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-14",
+                    "date": "1-Jun-14",
                     "close": 0
                 },
                 {
@@ -3044,7 +3044,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-15",
+                    "date": "1-Jun-15",
                     "close": 0
                 },
                 {
@@ -3092,7 +3092,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-16",
+                    "date": "1-Jun-16",
                     "close": 0
                 },
                 {
@@ -3140,7 +3140,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 4
                 },
                 {
-                    "date": "1-Ju-17",
+                    "date": "1-Jun-17",
                     "close": 16
                 },
                 {
@@ -3188,7 +3188,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 25
                 },
                 {
-                    "date": "1-Ju-18",
+                    "date": "1-Jun-18",
                     "close": 120
                 },
                 {
@@ -3240,7 +3240,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-13",
+                    "date": "1-Jun-13",
                     "close": 0
                 },
                 {
@@ -3288,7 +3288,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-14",
+                    "date": "1-Jun-14",
                     "close": 0
                 },
                 {
@@ -3336,7 +3336,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-15",
+                    "date": "1-Jun-15",
                     "close": 0
                 },
                 {
@@ -3384,7 +3384,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 10
                 },
                 {
-                    "date": "1-Ju-16",
+                    "date": "1-Jun-16",
                     "close": 12
                 },
                 {
@@ -3432,7 +3432,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 13
                 },
                 {
-                    "date": "1-Ju-17",
+                    "date": "1-Jun-17",
                     "close": 3
                 },
                 {
@@ -3480,7 +3480,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-18",
+                    "date": "1-Jun-18",
                     "close": 0
                 },
                 {
@@ -3532,7 +3532,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-13",
+                    "date": "1-Jun-13",
                     "close": 0
                 },
                 {
@@ -3580,7 +3580,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-14",
+                    "date": "1-Jun-14",
                     "close": 0
                 },
                 {
@@ -3628,7 +3628,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-15",
+                    "date": "1-Jun-15",
                     "close": 0
                 },
                 {
@@ -3676,7 +3676,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 32
                 },
                 {
-                    "date": "1-Ju-16",
+                    "date": "1-Jun-16",
                     "close": 24
                 },
                 {
@@ -3724,7 +3724,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 63
                 },
                 {
-                    "date": "1-Ju-17",
+                    "date": "1-Jun-17",
                     "close": 17
                 },
                 {
@@ -3772,7 +3772,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 4
                 },
                 {
-                    "date": "1-Ju-18",
+                    "date": "1-Jun-18",
                     "close": 34
                 },
                 {
@@ -3825,7 +3825,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-13",
+                    "date": "1-Jun-13",
                     "close": 0
                 },
                 {
@@ -3873,7 +3873,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-14",
+                    "date": "1-Jun-14",
                     "close": 0
                 },
                 {
@@ -3921,7 +3921,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-15",
+                    "date": "1-Jun-15",
                     "close": 0
                 },
                 {
@@ -3969,7 +3969,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-16",
+                    "date": "1-Jun-16",
                     "close": 0
                 },
                 {
@@ -4017,7 +4017,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-17",
+                    "date": "1-Jun-17",
                     "close": 0
                 },
                 {
@@ -4065,7 +4065,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 6
                 },
                 {
-                    "date": "1-Ju-18",
+                    "date": "1-Jun-18",
                     "close": 11
                 },
                 {
@@ -4117,7 +4117,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-13",
+                    "date": "1-Jun-13",
                     "close": 0
                 },
                 {
@@ -4165,7 +4165,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 5
                 },
                 {
-                    "date": "1-Ju-14",
+                    "date": "1-Jun-14",
                     "close": 8
                 },
                 {
@@ -4213,7 +4213,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 9
                 },
                 {
-                    "date": "1-Ju-15",
+                    "date": "1-Jun-15",
                     "close": 6
                 },
                 {
@@ -4261,7 +4261,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 5
                 },
                 {
-                    "date": "1-Ju-16",
+                    "date": "1-Jun-16",
                     "close": 4
                 },
                 {
@@ -4309,7 +4309,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 25
                 },
                 {
-                    "date": "1-Ju-17",
+                    "date": "1-Jun-17",
                     "close": 8
                 },
                 {
@@ -4357,7 +4357,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 19
                 },
                 {
-                    "date": "1-Ju-18",
+                    "date": "1-Jun-18",
                     "close": 24
                 },
                 {
@@ -4409,7 +4409,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-13",
+                    "date": "1-Jun-13",
                     "close": 0
                 },
                 {
@@ -4457,7 +4457,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-14",
+                    "date": "1-Jun-14",
                     "close": 0
                 },
                 {
@@ -4505,7 +4505,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-15",
+                    "date": "1-Jun-15",
                     "close": 0
                 },
                 {
@@ -4553,7 +4553,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 44
                 },
                 {
-                    "date": "1-Ju-16",
+                    "date": "1-Jun-16",
                     "close": 57
                 },
                 {
@@ -4601,7 +4601,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 124
                 },
                 {
-                    "date": "1-Ju-17",
+                    "date": "1-Jun-17",
                     "close": 23
                 },
                 {
@@ -4649,7 +4649,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 1
                 },
                 {
-                    "date": "1-Ju-18",
+                    "date": "1-Jun-18",
                     "close": 0
                 },
                 {
@@ -4701,7 +4701,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-13",
+                    "date": "1-Jun-13",
                     "close": 0
                 },
                 {
@@ -4749,7 +4749,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-14",
+                    "date": "1-Jun-14",
                     "close": 119
                 },
                 {
@@ -4797,7 +4797,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 11
                 },
                 {
-                    "date": "1-Ju-15",
+                    "date": "1-Jun-15",
                     "close": 5
                 },
                 {
@@ -4845,7 +4845,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 2
                 },
                 {
-                    "date": "1-Ju-16",
+                    "date": "1-Jun-16",
                     "close": 5
                 },
                 {
@@ -4893,7 +4893,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 6
                 },
                 {
-                    "date": "1-Ju-17",
+                    "date": "1-Jun-17",
                     "close": 6
                 },
                 {
@@ -4941,7 +4941,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 6
                 },
                 {
-                    "date": "1-Ju-18",
+                    "date": "1-Jun-18",
                     "close": 11
                 },
                 {
@@ -4993,7 +4993,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-13",
+                    "date": "1-Jun-13",
                     "close": 0
                 },
                 {
@@ -5041,7 +5041,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-14",
+                    "date": "1-Jun-14",
                     "close": 0
                 },
                 {
@@ -5089,7 +5089,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 1
                 },
                 {
-                    "date": "1-Ju-15",
+                    "date": "1-Jun-15",
                     "close": 46
                 },
                 {
@@ -5137,7 +5137,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 84
                 },
                 {
-                    "date": "1-Ju-16",
+                    "date": "1-Jun-16",
                     "close": 72
                 },
                 {
@@ -5185,7 +5185,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 166
                 },
                 {
-                    "date": "1-Ju-17",
+                    "date": "1-Jun-17",
                     "close": 50
                 },
                 {
@@ -5233,7 +5233,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 148
                 },
                 {
-                    "date": "1-Ju-18",
+                    "date": "1-Jun-18",
                     "close": 52
                 },
                 {
@@ -5285,7 +5285,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-13",
+                    "date": "1-Jun-13",
                     "close": 0
                 },
                 {
@@ -5333,7 +5333,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 4
                 },
                 {
-                    "date": "1-Ju-14",
+                    "date": "1-Jun-14",
                     "close": 1
                 },
                 {
@@ -5381,7 +5381,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 2
                 },
                 {
-                    "date": "1-Ju-15",
+                    "date": "1-Jun-15",
                     "close": 2
                 },
                 {
@@ -5429,7 +5429,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 2
                 },
                 {
-                    "date": "1-Ju-16",
+                    "date": "1-Jun-16",
                     "close": 4
                 },
                 {
@@ -5477,7 +5477,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 59
                 },
                 {
-                    "date": "1-Ju-17",
+                    "date": "1-Jun-17",
                     "close": 17
                 },
                 {
@@ -5525,7 +5525,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 18
                 },
                 {
-                    "date": "1-Ju-18",
+                    "date": "1-Jun-18",
                     "close": 7
                 },
                 {
@@ -5577,7 +5577,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-13",
+                    "date": "1-Jun-13",
                     "close": 0
                 },
                 {
@@ -5625,7 +5625,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-14",
+                    "date": "1-Jun-14",
                     "close": 0
                 },
                 {
@@ -5673,7 +5673,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-15",
+                    "date": "1-Jun-15",
                     "close": 0
                 },
                 {
@@ -5721,7 +5721,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 74
                 },
                 {
-                    "date": "1-Ju-16",
+                    "date": "1-Jun-16",
                     "close": 107
                 },
                 {
@@ -5769,7 +5769,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 465
                 },
                 {
-                    "date": "1-Ju-17",
+                    "date": "1-Jun-17",
                     "close": 83
                 },
                 {
@@ -5817,7 +5817,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 1
                 },
                 {
-                    "date": "1-Ju-18",
+                    "date": "1-Jun-18",
                     "close": 1
                 },
                 {
@@ -5869,7 +5869,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-13",
+                    "date": "1-Jun-13",
                     "close": 0
                 },
                 {
@@ -5917,7 +5917,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-14",
+                    "date": "1-Jun-14",
                     "close": 8
                 },
                 {
@@ -5965,7 +5965,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 6
                 },
                 {
-                    "date": "1-Ju-15",
+                    "date": "1-Jun-15",
                     "close": 10
                 },
                 {
@@ -6013,7 +6013,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 67
                 },
                 {
-                    "date": "1-Ju-16",
+                    "date": "1-Jun-16",
                     "close": 87
                 },
                 {
@@ -6061,7 +6061,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 156
                 },
                 {
-                    "date": "1-Ju-17",
+                    "date": "1-Jun-17",
                     "close": 37
                 },
                 {
@@ -6109,7 +6109,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 34
                 },
                 {
-                    "date": "1-Ju-18",
+                    "date": "1-Jun-18",
                     "close": 58
                 },
                 {
@@ -6161,7 +6161,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-13",
+                    "date": "1-Jun-13",
                     "close": 0
                 },
                 {
@@ -6209,7 +6209,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-14",
+                    "date": "1-Jun-14",
                     "close": 0
                 },
                 {
@@ -6257,7 +6257,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-15",
+                    "date": "1-Jun-15",
                     "close": 0
                 },
                 {
@@ -6305,7 +6305,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-16",
+                    "date": "1-Jun-16",
                     "close": 0
                 },
                 {
@@ -6353,7 +6353,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 119
                 },
                 {
-                    "date": "1-Ju-17",
+                    "date": "1-Jun-17",
                     "close": 65
                 },
                 {
@@ -6401,7 +6401,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 29
                 },
                 {
-                    "date": "1-Ju-18",
+                    "date": "1-Jun-18",
                     "close": 28
                 },
                 {
@@ -6453,7 +6453,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-13",
+                    "date": "1-Jun-13",
                     "close": 0
                 },
                 {
@@ -6501,7 +6501,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-14",
+                    "date": "1-Jun-14",
                     "close": 2
                 },
                 {
@@ -6549,7 +6549,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 2
                 },
                 {
-                    "date": "1-Ju-15",
+                    "date": "1-Jun-15",
                     "close": 0
                 },
                 {
@@ -6597,7 +6597,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-16",
+                    "date": "1-Jun-16",
                     "close": 3
                 },
                 {
@@ -6645,7 +6645,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 3
                 },
                 {
-                    "date": "1-Ju-17",
+                    "date": "1-Jun-17",
                     "close": 2
                 },
                 {
@@ -6693,7 +6693,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 5
                 },
                 {
-                    "date": "1-Ju-18",
+                    "date": "1-Jun-18",
                     "close": 2
                 },
                 {
@@ -6745,7 +6745,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-13",
+                    "date": "1-Jun-13",
                     "close": 0
                 },
                 {
@@ -6793,7 +6793,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 2
                 },
                 {
-                    "date": "1-Ju-14",
+                    "date": "1-Jun-14",
                     "close": 1
                 },
                 {
@@ -6841,7 +6841,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 1
                 },
                 {
-                    "date": "1-Ju-15",
+                    "date": "1-Jun-15",
                     "close": 2
                 },
                 {
@@ -6889,7 +6889,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 3
                 },
                 {
-                    "date": "1-Ju-16",
+                    "date": "1-Jun-16",
                     "close": 2
                 },
                 {
@@ -6937,7 +6937,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 19
                 },
                 {
-                    "date": "1-Ju-17",
+                    "date": "1-Jun-17",
                     "close": 4
                 },
                 {
@@ -6985,7 +6985,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 1
                 },
                 {
-                    "date": "1-Ju-18",
+                    "date": "1-Jun-18",
                     "close": 1
                 },
                 {
@@ -7037,7 +7037,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-13",
+                    "date": "1-Jun-13",
                     "close": 0
                 },
                 {
@@ -7085,7 +7085,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-14",
+                    "date": "1-Jun-14",
                     "close": 0
                 },
                 {
@@ -7133,7 +7133,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-15",
+                    "date": "1-Jun-15",
                     "close": 0
                 },
                 {
@@ -7181,7 +7181,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 8
                 },
                 {
-                    "date": "1-Ju-16",
+                    "date": "1-Jun-16",
                     "close": 14
                 },
                 {
@@ -7229,7 +7229,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 81
                 },
                 {
-                    "date": "1-Ju-17",
+                    "date": "1-Jun-17",
                     "close": 45
                 },
                 {
@@ -7277,7 +7277,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 41
                 },
                 {
-                    "date": "1-Ju-18",
+                    "date": "1-Jun-18",
                     "close": 90
                 },
                 {
@@ -7329,7 +7329,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 1
                 },
                 {
-                    "date": "1-Ju-13",
+                    "date": "1-Jun-13",
                     "close": 1
                 },
                 {
@@ -7377,7 +7377,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 1
                 },
                 {
-                    "date": "1-Ju-14",
+                    "date": "1-Jun-14",
                     "close": 9
                 },
                 {
@@ -7425,7 +7425,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 1
                 },
                 {
-                    "date": "1-Ju-15",
+                    "date": "1-Jun-15",
                     "close": 1
                 },
                 {
@@ -7473,7 +7473,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 64
                 },
                 {
-                    "date": "1-Ju-16",
+                    "date": "1-Jun-16",
                     "close": 67
                 },
                 {
@@ -7521,7 +7521,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 104
                 },
                 {
-                    "date": "1-Ju-17",
+                    "date": "1-Jun-17",
                     "close": 81
                 },
                 {
@@ -7569,7 +7569,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 68
                 },
                 {
-                    "date": "1-Ju-18",
+                    "date": "1-Jun-18",
                     "close": 59
                 },
                 {
@@ -7621,7 +7621,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 15
                 },
                 {
-                    "date": "1-Ju-13",
+                    "date": "1-Jun-13",
                     "close": 14
                 },
                 {
@@ -7669,7 +7669,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 17
                 },
                 {
-                    "date": "1-Ju-14",
+                    "date": "1-Jun-14",
                     "close": 17
                 },
                 {
@@ -7717,7 +7717,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 188
                 },
                 {
-                    "date": "1-Ju-15",
+                    "date": "1-Jun-15",
                     "close": 133
                 },
                 {
@@ -7765,7 +7765,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 443
                 },
                 {
-                    "date": "1-Ju-16",
+                    "date": "1-Jun-16",
                     "close": 341
                 },
                 {
@@ -7813,7 +7813,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 816
                 },
                 {
-                    "date": "1-Ju-17",
+                    "date": "1-Jun-17",
                     "close": 617
                 },
                 {
@@ -7861,7 +7861,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 592
                 },
                 {
-                    "date": "1-Ju-18",
+                    "date": "1-Jun-18",
                     "close": 553
                 },
                 {
@@ -7913,7 +7913,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-13",
+                    "date": "1-Jun-13",
                     "close": 0
                 },
                 {
@@ -7961,7 +7961,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-14",
+                    "date": "1-Jun-14",
                     "close": 0
                 },
                 {
@@ -8009,7 +8009,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-15",
+                    "date": "1-Jun-15",
                     "close": 0
                 },
                 {
@@ -8057,7 +8057,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 4
                 },
                 {
-                    "date": "1-Ju-16",
+                    "date": "1-Jun-16",
                     "close": 21
                 },
                 {
@@ -8105,7 +8105,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 23
                 },
                 {
-                    "date": "1-Ju-17",
+                    "date": "1-Jun-17",
                     "close": 6
                 },
                 {
@@ -8153,7 +8153,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 5
                 },
                 {
-                    "date": "1-Ju-18",
+                    "date": "1-Jun-18",
                     "close": 7
                 },
                 {
@@ -8205,7 +8205,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-13",
+                    "date": "1-Jun-13",
                     "close": 0
                 },
                 {
@@ -8253,7 +8253,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 7
                 },
                 {
-                    "date": "1-Ju-14",
+                    "date": "1-Jun-14",
                     "close": 0
                 },
                 {
@@ -8301,7 +8301,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 6
                 },
                 {
-                    "date": "1-Ju-15",
+                    "date": "1-Jun-15",
                     "close": 3
                 },
                 {
@@ -8349,7 +8349,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 2
                 },
                 {
-                    "date": "1-Ju-16",
+                    "date": "1-Jun-16",
                     "close": 3
                 },
                 {
@@ -8397,7 +8397,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 2
                 },
                 {
-                    "date": "1-Ju-17",
+                    "date": "1-Jun-17",
                     "close": 3
                 },
                 {
@@ -8445,7 +8445,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 48
                 },
                 {
-                    "date": "1-Ju-18",
+                    "date": "1-Jun-18",
                     "close": 31
                 },
                 {
@@ -8497,7 +8497,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-13",
+                    "date": "1-Jun-13",
                     "close": 0
                 },
                 {
@@ -8545,7 +8545,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-14",
+                    "date": "1-Jun-14",
                     "close": 0
                 },
                 {
@@ -8593,7 +8593,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-15",
+                    "date": "1-Jun-15",
                     "close": 0
                 },
                 {
@@ -8641,7 +8641,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 13
                 },
                 {
-                    "date": "1-Ju-16",
+                    "date": "1-Jun-16",
                     "close": 21
                 },
                 {
@@ -8689,7 +8689,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 61
                 },
                 {
-                    "date": "1-Ju-17",
+                    "date": "1-Jun-17",
                     "close": 14
                 },
                 {
@@ -8737,7 +8737,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 1
                 },
                 {
-                    "date": "1-Ju-18",
+                    "date": "1-Jun-18",
                     "close": 0
                 },
                 {
@@ -8789,7 +8789,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-13",
+                    "date": "1-Jun-13",
                     "close": 0
                 },
                 {
@@ -8837,7 +8837,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-14",
+                    "date": "1-Jun-14",
                     "close": 0
                 },
                 {
@@ -8885,7 +8885,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-15",
+                    "date": "1-Jun-15",
                     "close": 0
                 },
                 {
@@ -8933,7 +8933,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-16",
+                    "date": "1-Jun-16",
                     "close": 0
                 },
                 {
@@ -8981,7 +8981,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 102
                 },
                 {
-                    "date": "1-Ju-17",
+                    "date": "1-Jun-17",
                     "close": 67
                 },
                 {
@@ -9029,7 +9029,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 92
                 },
                 {
-                    "date": "1-Ju-18",
+                    "date": "1-Jun-18",
                     "close": 67
                 },
                 {
@@ -9081,7 +9081,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-13",
+                    "date": "1-Jun-13",
                     "close": 0
                 },
                 {
@@ -9129,7 +9129,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-14",
+                    "date": "1-Jun-14",
                     "close": 0
                 },
                 {
@@ -9177,7 +9177,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 185
                 },
                 {
-                    "date": "1-Ju-15",
+                    "date": "1-Jun-15",
                     "close": 111
                 },
                 {
@@ -9225,7 +9225,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 131
                 },
                 {
-                    "date": "1-Ju-16",
+                    "date": "1-Jun-16",
                     "close": 128
                 },
                 {
@@ -9273,7 +9273,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 68
                 },
                 {
-                    "date": "1-Ju-17",
+                    "date": "1-Jun-17",
                     "close": 89
                 },
                 {
@@ -9321,7 +9321,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 106
                 },
                 {
-                    "date": "1-Ju-18",
+                    "date": "1-Jun-18",
                     "close": 64
                 },
                 {
@@ -9373,7 +9373,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-13",
+                    "date": "1-Jun-13",
                     "close": 0
                 },
                 {
@@ -9421,7 +9421,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-14",
+                    "date": "1-Jun-14",
                     "close": 0
                 },
                 {
@@ -9469,7 +9469,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-15",
+                    "date": "1-Jun-15",
                     "close": 0
                 },
                 {
@@ -9517,7 +9517,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-16",
+                    "date": "1-Jun-16",
                     "close": 0
                 },
                 {
@@ -9565,7 +9565,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 0
                 },
                 {
-                    "date": "1-Ju-17",
+                    "date": "1-Jun-17",
                     "close": 0
                 },
                 {
@@ -9613,7 +9613,7 @@ var datasetsDownloadsTimelineArrays = {
                     "close": 44
                 },
                 {
-                    "date": "1-Ju-18",
+                    "date": "1-Jun-18",
                     "close": 18
                 },
                 {

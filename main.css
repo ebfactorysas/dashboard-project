@@ -106,12 +106,7 @@
 
 .tooltip-gauges h3 {
     font-size: 16px;
-    color: #d1415a;
 
-}
-
-.tooltip-gauges{
-    width: 300px
 }
 
 
@@ -718,6 +713,11 @@ section.datasets #timeline-dataset {
     font-family: 'Gotham-Bold';
 }
 
+section.datasets #timeline-dataset .overlay {
+    fill: none;
+    pointer-events: all;
+}
+
 section.datasets #timeline-dataset .line {
     fill: none;
     stroke: #62649c;
@@ -743,11 +743,6 @@ section.datasets #timeline-dataset .y-axis .tick line {
 section.code .funds-allocated-meter .background {
     fill: #A17603;
 }
-
-section.datasets #dataset-publications-plot {
-    margin-top: -32px;
-}
-
 
 section.datasets #dataset-publications-plot .legend text,
 section.datasets #dataset-publications-plot .axis text {
@@ -1536,6 +1531,17 @@ section.map select.form-control:not([size]):not([multiple]) {
         height: 280px;
     }
 
+    section.datasets #lines-dataset div:nth-child(n) {
+        /* height: 40px; */
+        margin-top: -32px
+    }
+    
+    section.datasets #lines-dataset {
+        padding-top: 55px;
+        margin-left: -40px;
+        margin-right: 40px;
+    }
+
 
     section.code {
         min-height: 940px;
@@ -1860,7 +1866,7 @@ section.map select.form-control:not([size]):not([multiple]) {
     .toolTip {
         position: absolute;
         display: none;
-        min-width: 200px;
+        min-width: 80px;
         height: auto;
         background: none repeat scroll 0 0 #ffffff;
         padding: 14px;
@@ -2152,6 +2158,18 @@ section.map select.form-control:not([size]):not([multiple]) {
     section.datasets #timeline-dataset .y-axis .tick line {
         display: none;
     }
+
+    section.datasets #timeline-dataset {
+        height: 240px !important;
+    }
+
+
+    section.datasets #timeline-datasets .overlay {
+        fill: none;
+        pointer-events: all;
+    }
+
+   
 
     section.code .funds-allocated-meter .background {
         fill: #A17603;
@@ -3044,6 +3062,11 @@ section.map select.form-control:not([size]):not([multiple]) {
     section.datasets .left-zone {
         width: 1000px;
         height: 280px;
+    }
+
+    section.datasets #dataset-publications-plot {
+        height: 500px;
+        padding-top: 40px;
     }
 
     section.datasets .left-bar {

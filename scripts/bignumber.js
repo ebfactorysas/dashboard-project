@@ -228,16 +228,25 @@ function publicationsIndicatorAlltime(jsondata){
     }
     return results;
 }
+
+function checkDecimal(value) {
+    if (value.toFixed(1) % 1 != 0) {
+        return value.toFixed(1);
+    }
+    return value.toFixed(0);
+}
+
+
 function publicationsIndicator2018(jsondata){
     // publications2018TotalGlobal = (jsondata.length > 0) ? jsondata[0]['2018_publications'] : '0';
     // publications2018TotalGlobal = setSettingsNumber(publications2018TotalGlobal);
     var results = {
         publicationsValue: (jsondata.length > 0) ? jsondata[0]['2018_publications'] : '0',
-        porcent_total_publications: (jsondata.length > 0) ? (jsondata[0]['2018_porcent_total_publications'] * 100).toFixed(1) + '%': '',
+        porcent_total_publications: (jsondata.length > 0) ? checkDecimal((jsondata[0]['2018_porcent_total_publications'] * 100)) + '%': '',
         compare2017_2018_publications : (jsondata.length > 0) ? jsondata[0]['2017_2018_publications'] : '',
         downloadsValue: (jsondata.length > 0) ? jsondata[0]['2018_downloads'] : '0',
-        porcent_total_downloads: (jsondata.length > 0) ? (jsondata[0]['2018_porcent_total_downloads'] * 100).toFixed(1) + '%': '', // no se enviaron en los datos para el porcentaje total de downloads filtrado por all time
-        porcent_downloads_lac: (jsondata.length > 0) ? (jsondata[0]['2018_porcent_total_LAC_downloads'] * 100).toFixed(1) + '%' : ''
+        porcent_total_downloads: (jsondata.length > 0) ? checkDecimal((jsondata[0]['2018_porcent_total_downloads'] * 100)) + '%': '', // no se enviaron en los datos para el porcentaje total de downloads filtrado por all time
+        porcent_downloads_lac: (jsondata.length > 0) ? checkDecimal((jsondata[0]['2018_porcent_total_LAC_downloads'] * 100)) + '%' : ''
     }
     
     return results;

@@ -1686,10 +1686,10 @@ var bnPublicationsArrays = {
     publicationsIDB: [{
         "json_featuretype": "NewFeatureType",
         "2018_publications": "525",
-        "2018_porcent_total_publications": "1",
+        "2018_porcent_total_publications": 1,
         "2017_2018_publications": -38,
         "2018_downloads": "1043000",
-        "2018_porcent_total_downloads": "1",
+        "2018_porcent_total_downloads": 1,
         "2018_porcent_total_LAC_downloads": "0.765146692233941",
         "all_the_time_publications": 10226,
         "all_the_time_downloads": 13106769,
