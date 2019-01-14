@@ -75,7 +75,6 @@ function drawTreeCode(dataTree, filtertype, typeload) {
             return d3.descending(a.valueAllTheTime, b.valueAllTheTime);
         });
     }
-    console.log(dataTree);
     var text =
         function (text, params) {
             if (text === "share") {
@@ -127,7 +126,7 @@ function createLineChartCode(elements) {
     var data = elements.trend;
     var attributes = [{
         "id": elements.name,
-        "hex": "#eeae00"
+        "hex": "#f1d179"
     }]
     var visualization = d3plusOld.viz()
         .container("#lines-code  ")
