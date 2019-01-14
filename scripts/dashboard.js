@@ -15,15 +15,10 @@ $("#deparmentSelect").on('change', function () {
     $('.label-filter-select').text(this.value);
     $("#divisionSelect").value = "";
     $('#blueAllTime').click();
-    removeGaugeCode();
-
     d3.select("#gauge-suscribers svg").remove();
     d3.select("#gauge-lac-s svg").remove();
     d3.select("#gauge-2018 svg").remove();
-    // updateGaugesPublications();
-    // updateGaugesMoocs();
     updateGaugesDatasets();
-    updateGaugesCode();
     updateGaugesSubscribers();
 });
 
@@ -31,8 +26,6 @@ $("#deparmentSelect").on('change', function () {
 $("#divisionSelect").on('change', function (data) {
     var sltValue = this.value;
     $('#idbLink').text(sltValue);
-    removeCodeSvgAll();
-    removeGaugeCode();
     removeSubscribersSvg();
 
 
@@ -40,7 +33,7 @@ $("#divisionSelect").on('change', function (data) {
         $('.label-filter-select').text(this.value);
         setDataIDBPublications();
         setDataSubscribersIdb();
-        setDataIDBCode();
+        initCode();
         initDataSet();
     } else {
         initIndicators('divisions', sltValue);
@@ -85,11 +78,6 @@ function SetDataIDBDataSet() {
     var ObjectDataSetLineChart = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineIDB);
     createChartTimeLineDataSet(ObjectDataSetLineChart);
 
-}
-
-function setDataIDBCode() {
-    removeCodeSvgAll();
-    initCode();
 }
 
 function setDataSubscribersIdb() {
@@ -227,28 +215,29 @@ function setDataSuscribersByDivisions(sltValue) {
  * Funcion para actualizar la informacion de la seccion de Code
  */
 function setDataCodeByDivisions(sltValue) {
-    var ObjectTopIdb2018 = $.extend(true, [], codeTopArrays.codeTrend2018Divisions);
-    ObjectTopIdb2018 = ObjectTopIdb2018.filter(function (data) {
-        return data.divisionCodes == sltValue
-    });
+    $("#code2018").prop("checked", true);
+    var ObjectTopIdb2018 = $.extend(true, [], codeTopArrays.topIDB2018);
+   
     var ObjectPageViewsTimeLine2018 = $.extend(true, [], codePageviewsTimelineArrays.pageviewTimelineDivisions);
     ObjectPageViewsTimeLine2018 = ObjectPageViewsTimeLine2018.filter(function (data) {
         return data.division_codes == sltValue
     });
     var ObjectcodeScatterploArrays = $.extend(true, [], codeScatterploArrays);
-    ObjectcodeScatterploArrays = ObjectcodeScatterploArrays.filter(function (data) {
-        return data.department_codes == sltValue
-    });
     var ObjectCodePageViewSource = $.extend(true, [], codePageviewsSourceArrays.pageviewSourceDivisions);
     ObjectCodePageViewSource = ObjectCodePageViewSource.filter(function (data) {
         return data.division_codes == sltValue
     });
 
+    var ObjectGauges = $.extend(true, [], codeGaugesIndicators.indicatorsDivisions2018);
+    ObjectGauges = ObjectGauges.filter(function (data) {
+        return data.divisionCode == sltValue
+    });
+
     drawLinesChart(dataLines);
-    dataGaugeCode2018 = setCodeGauge2018();
-    drawGaugeCodeChart(dataGaugeCode2018);
+    drawGaugeCodeChart(ObjectGauges[0]);
     drawPlotChart(ObjectcodeScatterploArrays);
     drawChartCodeTrend(ObjectTopIdb2018);
+    drawLinesChartCode(ObjectTopIdb2018);
     if (ObjectPageViewsTimeLine2018.length > 0) {
         createChartTimeline(ObjectPageViewsTimeLine2018[0].data);
     } else {

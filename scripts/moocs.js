@@ -960,9 +960,9 @@ function drawGaugeMoocsChart(dataGauge) {
     if(!dataGauge.divisionCode){
         dataGauge.divisionCode = "IDB"
     }
-    drawGauge(dataGauge.courses, dataGauge.percentageCourses, "", "#gauge-moocs",dataGauge.divisionCode);
-    drawGauge(dataGauge.registrations, dataGauge.percentageRegistrations, "", "#gauge-registrations-m",dataGauge.divisionCode);
-    drawGauge(dataGauge.percentageLAC, dataGauge.percentageLAC, "%", "#gauge-lac-m",dataGauge.divisionCode);
+    drawGauge(dataGauge.courses, dataGauge.percentageCourses, "", "#gauge-moocs",dataGauge.divisionCode,"Moocs","#fa2e00");
+    drawGauge(dataGauge.registrations, dataGauge.percentageRegistrations, "", "#gauge-registrations-m",dataGauge.divisionCode,"Registrations","#fa2e00");
+    drawGauge(dataGauge.percentageLAC, dataGauge.percentageLAC, "%", "#gauge-lac-m",dataGauge.divisionCode,"Registrations","#fa2e00");
 }
 
 function moocsGenderFilter(moocsJson, gender) {

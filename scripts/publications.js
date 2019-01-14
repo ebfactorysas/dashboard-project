@@ -344,7 +344,8 @@ function setEmptyGaugesPublication() {
         "percentagePublications": 0,
         "downloads": 0,
         "percentageDownloads": 0,
-        "percentageLAC": 0
+        "percentageLAC": 0,
+        "LAC":0
     }
 }
 

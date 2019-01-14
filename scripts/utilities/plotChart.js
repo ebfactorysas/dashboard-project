@@ -1,20 +1,30 @@
 function createPlotChart(data,id,colorPlot,xA,yA,valueTicksX,valueTicksY,textForYAxis){
     var margin = {
-        top: 30,
+        top: 50,
         right: 50,
         bottom: 60,
-        left: 100
+        left: 150
     };
     var width = 750 - margin.left - margin.right;
     var height = 540 - margin.top - margin.bottom;
     var valueOfFilter = $('#idbLink')[0].text;
     var arrayAux = [];
     var arrayElements = [];
-    var maxValue = 0
+    var maxValue = 0;
+    var maxValueX = 0;
+    var maxValueY = 0;
 
     for (let i = 0; i < data.length; i++) {
         data[i].FullCode = data[i].Code + " " + data[i].departmentCode.toUpperCase();
         data[i].divisionDepartment = data[i].departmentCode + "/" + data[i].divisionCode;
+
+        if(maxValueX<=data[i][xA] ){
+            maxValueX = data[i][xA];
+        }
+        if(maxValueY<=data[i][yA] ){
+            maxValueY = data[i][yA];
+        }
+
         if (data[i].Downloads >= maxValue) {
             maxValue = data[i].Downloads;
         }
@@ -67,12 +77,12 @@ function createPlotChart(data,id,colorPlot,xA,yA,valueTicksX,valueTicksY,textFor
             ticks: {
                 size: 0,
                 width: 2,
-                value: valueTicksX
+                value: valueTicksX,
             },
             grid: false,
             mouse: {
                 dasharray: "4"
-            }
+            },"domain" : [0, maxValueX],"range":[0,maxValueX]
         })
         .text("Code")
         .y({
@@ -86,7 +96,8 @@ function createPlotChart(data,id,colorPlot,xA,yA,valueTicksX,valueTicksY,textFor
             grid: false,
             mouse: {
                 dasharray: "4"
-            }
+            },
+            "domain" : [-10, maxValueY],"range":[0,maxValueY]
         })
         .format({
             "text": function (text, params) {
@@ -94,7 +105,7 @@ function createPlotChart(data,id,colorPlot,xA,yA,valueTicksX,valueTicksY,textFor
                 $("#d3plus_graph_xgrid line").css("stroke-dasharray", "4");
                 $("#d3plus_graph_ygrid line").css("stroke-dasharray", "4");
                 if(textForYAxis.length>0 && text == yA){
-                    return "Downloads by Department"
+                    return textForYAxis
                 }
 
                 if (text === "daysPublished") {

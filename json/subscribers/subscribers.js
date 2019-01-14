@@ -104,211 +104,212 @@ var subscribersArray = {
             "porcent_total_from_lac": "1"
         }
     ],
-    subscribersDivisions: [{
-            "json_featuretype": "NewFeatureType",
-            "subscribers": "58711",
-            "lac_subscribers": "48750",
-            "porcent_total_subscribers": "0.097959912",
-            "porcent_total_from_lac": "0.830338437",
-            "Departments": "CSD",
-            "Divisions": "CCS"
+    subscribersDivisions: [
+        {
+          "Divisions": "CCS",
+          "subscribers": "51606",
+          "porcent_total_subscribers": "0.092800691",
+          "lac_subscribers": "43528",
+          "porcent_total_from_lac": "0.843467814",
+          "2018_new_subscribers": "9401",
+          "porcent_total_new_suscribers": "0.100358691"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "subscribers": "81595",
-            "lac_subscribers": "55755",
-            "porcent_total_subscribers": "0.136142104",
-            "porcent_total_from_lac": "0.683313929",
-            "Departments": "CSD",
-            "Divisions": "HUD"
+          "Divisions": "HUD",
+          "subscribers": "74040",
+          "porcent_total_subscribers": "0.133142718",
+          "lac_subscribers": "49081",
+          "porcent_total_from_lac": "0.662898433",
+          "2018_new_subscribers": "4396",
+          "porcent_total_new_suscribers": "0.04692871"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "subscribers": "31148",
-            "lac_subscribers": "28818",
-            "porcent_total_subscribers": "0.051970761",
-            "porcent_total_from_lac": "0.925195839",
-            "Departments": "IFD",
-            "Divisions": "CMF"
+          "Divisions": "CMF",
+          "subscribers": "29761",
+          "porcent_total_subscribers": "0.053517834",
+          "lac_subscribers": "27479",
+          "porcent_total_from_lac": "0.923322469",
+          "2018_new_subscribers": "6050",
+          "porcent_total_new_suscribers": "0.064585691"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "subscribers": "49015",
-            "lac_subscribers": "43438",
-            "porcent_total_subscribers": "0.081782036",
-            "porcent_total_from_lac": "0.886218505",
-            "Departments": "IFD",
-            "Divisions": "CTI"
+          "Divisions": "CTI",
+          "subscribers": "43536",
+          "porcent_total_subscribers": "0.078288782",
+          "lac_subscribers": "39541",
+          "porcent_total_from_lac": "0.908236861",
+          "2018_new_subscribers": "6259",
+          "porcent_total_new_suscribers": "0.066816833"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "subscribers": "56542",
-            "lac_subscribers": "50400",
-            "porcent_total_subscribers": "0.094340913",
-            "porcent_total_from_lac": "0.891372785",
-            "Departments": "IFD",
-            "Divisions": "ICS"
+          "Divisions": "ICS",
+          "subscribers": "48327",
+          "porcent_total_subscribers": "0.086904216",
+          "lac_subscribers": "43428",
+          "porcent_total_from_lac": "0.898628096",
+          "2018_new_subscribers": "6250",
+          "porcent_total_new_suscribers": "0.066720755"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "subscribers": "30755",
-            "lac_subscribers": "27818",
-            "porcent_total_subscribers": "0.051315036",
-            "porcent_total_from_lac": "0.904503333",
-            "Departments": "INE",
-            "Divisions": "ENE"
+          "Divisions": "ENE",
+          "subscribers": "27725",
+          "porcent_total_subscribers": "0.049856589",
+          "lac_subscribers": "25214",
+          "porcent_total_from_lac": "0.909431921",
+          "2018_new_subscribers": "5200",
+          "porcent_total_new_suscribers": "0.055511668"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "subscribers": "29691",
-            "lac_subscribers": "25094",
-            "porcent_total_subscribers": "0.049539741",
-            "porcent_total_from_lac": "0.845171938",
-            "Departments": "INE",
-            "Divisions": "TSP"
+          "Divisions": "TSP",
+          "subscribers": "27028",
+          "porcent_total_subscribers": "0.048603206",
+          "lac_subscribers": "22872",
+          "porcent_total_from_lac": "0.846233536",
+          "2018_new_subscribers": "5114",
+          "porcent_total_new_suscribers": "0.054593591"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "subscribers": "50471",
-            "lac_subscribers": "40352",
-            "porcent_total_subscribers": "0.084211387",
-            "porcent_total_from_lac": "0.799508629",
-            "Departments": "INE",
-            "Divisions": "WSA"
+          "Divisions": "WSA",
+          "subscribers": "46167",
+          "porcent_total_subscribers": "0.083019988",
+          "lac_subscribers": "36480",
+          "porcent_total_from_lac": "0.7901748",
+          "2018_new_subscribers": "7950",
+          "porcent_total_new_suscribers": "0.0848688"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "subscribers": "53100",
-            "lac_subscribers": "39012",
-            "porcent_total_subscribers": "0.088597901",
-            "porcent_total_from_lac": "0.734689266",
-            "Departments": "INT",
-            "Divisions": "TIN"
+          "Divisions": "TIN",
+          "subscribers": "43176",
+          "porcent_total_subscribers": "0.07764141",
+          "lac_subscribers": "34057",
+          "porcent_total_from_lac": "0.788794701",
+          "2018_new_subscribers": "5898",
+          "porcent_total_new_suscribers": "0.062963042"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "subscribers": "78845",
-            "lac_subscribers": "55591",
-            "porcent_total_subscribers": "0.131553700",
-            "porcent_total_from_lac": "0.705066903",
-            "Departments": "KIC",
-            "Divisions": "DCC"
+          "Divisions": "DCC",
+          "subscribers": "70238",
+          "porcent_total_subscribers": "0.126305757",
+          "lac_subscribers": "48714",
+          "porcent_total_from_lac": "0.693556195",
+          "2018_new_subscribers": "1243",
+          "porcent_total_new_suscribers": "0.013269424"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "subscribers": "51668",
-            "lac_subscribers": "44316",
-            "porcent_total_subscribers": "0.086208594",
-            "porcent_total_from_lac": "0.857706898",
-            "Departments": "KIC",
-            "Divisions": "ICD"
+          "Divisions": "ICD",
+          "subscribers": "42401",
+          "porcent_total_subscribers": "0.076247763",
+          "lac_subscribers": "37552",
+          "porcent_total_from_lac": "0.88563949",
+          "2018_new_subscribers": "0",
+          "porcent_total_new_suscribers": "0"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "subscribers": "371088",
-            "lac_subscribers": "183842",
-            "porcent_total_subscribers": "0.619164176",
-            "porcent_total_from_lac": "0.495413487",
-            "Departments": "KIC",
-            "Divisions": "KLD"
+          "Divisions": "KLD",
+          "subscribers": "354821",
+          "porcent_total_subscribers": "0.638058245",
+          "lac_subscribers": "171459",
+          "porcent_total_from_lac": "0.483226754",
+          "2018_new_subscribers": "47657",
+          "porcent_total_new_suscribers": "0.508753763"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "subscribers": "50450",
-            "lac_subscribers": "34279",
-            "porcent_total_subscribers": "0.084176348",
-            "porcent_total_from_lac": "0.679464817",
-            "Departments": "RES",
-            "Divisions": "RES"
+          "Divisions": "RES",
+          "subscribers": "47949",
+          "porcent_total_subscribers": "0.086224476",
+          "lac_subscribers": "32333",
+          "porcent_total_from_lac": "0.674320632",
+          "2018_new_subscribers": "11076",
+          "porcent_total_new_suscribers": "0.118239853"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "subscribers": "62839",
-            "lac_subscribers": "49492",
-            "porcent_total_subscribers": "0.104847523",
-            "porcent_total_from_lac": "0.787600057",
-            "Departments": "SCL",
-            "Divisions": "EDU"
+          "Divisions": "EDU",
+          "subscribers": "58235",
+          "porcent_total_subscribers": "0.104721316",
+          "lac_subscribers": "46154",
+          "porcent_total_from_lac": "0.792547437",
+          "2018_new_subscribers": "7170",
+          "porcent_total_new_suscribers": "0.07654205"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "subscribers": "34614",
-            "lac_subscribers": "31542",
-            "porcent_total_subscribers": "0.057753818",
-            "porcent_total_from_lac": "0.911249783",
-            "Departments": "SCL",
-            "Divisions": "GDI"
+          "Divisions": "GDI",
+          "subscribers": "30812",
+          "porcent_total_subscribers": "0.055407799",
+          "lac_subscribers": "28198",
+          "porcent_total_from_lac": "0.915162924",
+          "2018_new_subscribers": "2218",
+          "porcent_total_new_suscribers": "0.023677862"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "subscribers": "39076",
-            "lac_subscribers": "35216",
-            "porcent_total_subscribers": "0.065198711",
-            "porcent_total_from_lac": "0.901218139",
-            "Departments": "SCL",
-            "Divisions": "LMK"
+          "Divisions": "LMK",
+          "subscribers": "39080",
+          "porcent_total_subscribers": "0.070275762",
+          "lac_subscribers": "35946",
+          "porcent_total_from_lac": "0.919805527",
+          "2018_new_subscribers": "8250",
+          "porcent_total_new_suscribers": "0.088071397"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "subscribers": "73750",
-            "lac_subscribers": "60220",
-            "porcent_total_subscribers": "0.123052640",
-            "porcent_total_from_lac": "0.816542373",
-            "Departments": "SCL",
-            "Divisions": "SPH"
+          "Divisions": "SPH",
+          "subscribers": "68505",
+          "porcent_total_subscribers": "0.123189383",
+          "lac_subscribers": "56517",
+          "porcent_total_from_lac": "0.825005474",
+          "2018_new_subscribers": "8580",
+          "porcent_total_new_suscribers": "0.091594252"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "subscribers": "9080",
-            "lac_subscribers": "7642",
-            "porcent_total_subscribers": "0.015150074",
-            "porcent_total_from_lac": "0.841629956",
-            "Departments": "SPD",
-            "Divisions": "SPD"
+          "Divisions": "SPD",
+          "subscribers": "8568",
+          "porcent_total_subscribers": "0.015407439",
+          "lac_subscribers": "7210",
+          "porcent_total_from_lac": "0.841503268",
+          "2018_new_subscribers": "0",
+          "porcent_total_new_suscribers": "0"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "subscribers": "1993",
-            "lac_subscribers": "1972",
-            "porcent_total_subscribers": "0.003325341",
-            "porcent_total_from_lac": "0.989463121",
-            "Departments": "VPC",
-            "Divisions": "CUR"
+          "Divisions": "CAR",
+          "subscribers": "1",
+          "porcent_total_subscribers": "0.0000018",
+          "lac_subscribers": "0",
+          "porcent_total_from_lac": "0",
+          "2018_new_subscribers": "0",
+          "porcent_total_new_suscribers": "0"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "subscribers": "58711",
-            "lac_subscribers": "48750",
-            "porcent_total_subscribers": "0.097959912",
-            "porcent_total_from_lac": "0.830338437",
-            "Departments": "VPS",
-            "Divisions": "ESG"
+          "Divisions": "CHA",
+          "subscribers": "1",
+          "porcent_total_subscribers": "0.0000018",
+          "lac_subscribers": "0",
+          "porcent_total_from_lac": "0",
+          "2018_new_subscribers": "0",
+          "porcent_total_new_suscribers": "0"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "subscribers": "1",
-            "lac_subscribers": "",
-            "porcent_total_subscribers": "1.668510371e-06",
-            "porcent_total_from_lac": "",
-            "Departments": "VPC",
-            "Divisions": "CHA"
+          "Divisions": "CUR",
+          "subscribers": "2010",
+          "porcent_total_subscribers": "0.00361449",
+          "lac_subscribers": "1993",
+          "porcent_total_from_lac": "0.991542289",
+          "2018_new_subscribers": "0",
+          "porcent_total_new_suscribers": "0"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "subscribers": "1",
-            "lac_subscribers": "",
-            "porcent_total_subscribers": "1.668510371e-06",
-            "porcent_total_from_lac": "",
-            "Departments": "VPC",
-            "Divisions": "CAR"
+          "Divisions": "ESG",
+          "subscribers": "51606",
+          "porcent_total_subscribers": "0.092800691",
+          "lac_subscribers": "43528",
+          "porcent_total_from_lac": "0.843467814",
+          "2018_new_subscribers": "9401",
+          "porcent_total_new_suscribers": "0.100358691"
         }
-    ],
+      ],
     subscribersIDB: [{
         "json_featuretype": "NewFeatureType",
-        "subscribers": "599337",
-        "lac_subscribers": "333589",
+        "subscribers": "556095",
+        "lac_subscribers": "307527",
         "IDB": "IDB",
-        "porcent_total_from_lac": "0.556596706",
+        "porcent_total_from_lac": "0.553011626",
         "porcent_total_subscribers": "100"
     }]
 };

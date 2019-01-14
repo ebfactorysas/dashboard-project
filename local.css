@@ -743,6 +743,11 @@ section.code .funds-allocated-meter .background {
     fill: #A17603;
 }
 
+section.code #timeline-code .overlay {
+    fill: none;
+    pointer-events: all;
+}
+
 section.datasets #dataset-publications-plot .legend text,
 section.datasets #dataset-publications-plot .axis text {
     font-size: 14px;
@@ -800,6 +805,10 @@ section.code #code-trend .y-code .domain {
 
 section.code #code-plot {
     margin-top: -32px;
+}
+
+section.code #code-trend .y-data .domain {
+    display: none;
 }
 
 section.code #code-plot .legend text,
@@ -2312,6 +2321,17 @@ section.map select.form-control:not([size]):not([multiple]) {
         text-decoration: underline;
     }
 
+    section.code #lines-code div:nth-child(n) {
+        /* height: 40px; */
+        margin-top: -32px
+    }
+    
+    section.code #lines-code {
+        padding-top: 55px;
+        margin-left: -40px;
+        margin-right: 40px;
+    }
+
     section.code #publications {
         height: 325px;
     }
@@ -3094,6 +3114,12 @@ section.map select.form-control:not([size]):not([multiple]) {
     section.code {
         min-height: 940px;
     }
+
+    section.code #code-plot {
+        height: 500px;
+        padding-top: 40px;
+    }
+
 
     section.code .container_radio {
         margin-top: 0;
