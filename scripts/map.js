@@ -376,10 +376,6 @@ function new_updateFilter(isProduct) {
                     style: {
                         color: '#EEAE00'
                     }
-                },
-                tooltip: {
-                    backgroundColor: 'rgba(238, 174, 0,0.8)',
-                    borderColor: '#EEAE00'
                 }
             }, true);
             $('#bar-graph-sources').d32Bars().update({
@@ -387,10 +383,6 @@ function new_updateFilter(isProduct) {
                     style: {
                         color: '#EEAE00'
                     }
-                },
-                tooltip: {
-                    backgroundColor: 'rgba(238, 174, 0,0.8)',
-                    borderColor: '#EEAE00'
                 }
             }, true);
             $('#totales').css("color", '#EEAE00');
@@ -411,10 +403,6 @@ function new_updateFilter(isProduct) {
                     style: {
                         color: '#FA2E00'
                     }
-                },
-                tooltip: {
-                    backgroundColor: 'rgba(250, 46, 0,0.8)',
-                    borderColor: '#FA2E00'
                 }
             }, true);
             $('#bar-graph-sources').d32Bars().update({
@@ -422,10 +410,6 @@ function new_updateFilter(isProduct) {
                     style: {
                         color: '#FA2E00'
                     }
-                },
-                tooltip: {
-                    backgroundColor: 'rgba(250, 46, 0,0.8)',
-                    borderColor: '#FA2E00'
                 }
             }, true);
             
@@ -447,10 +431,6 @@ function new_updateFilter(isProduct) {
                     style: {
                         color: '#d1415a'
                     }
-                },
-                tooltip: {
-                    backgroundColor: 'rgba(209, 65, 90,0.8)',
-                    borderColor: '#d1415a'
                 }
             }, true);
             $('#totales').css("color", '#d1415a');
@@ -471,10 +451,6 @@ function new_updateFilter(isProduct) {
                     style: {
                         color: '#424488'
                     }
-                },
-                tooltip: {
-                    backgroundColor: 'rgba(66, 68, 136,0.8)',
-                    borderColor: '#424488'
                 }
             }, true);
             $('#bar-graph-sources').d32Bars().update({
@@ -482,10 +458,6 @@ function new_updateFilter(isProduct) {
                     style: {
                         color: '#424488'
                     }
-                },
-                tooltip: {
-                    backgroundColor: 'rgba(66, 68, 136,0.8)',
-                    borderColor: '#424488'
                 }
             }, true);
             $('#totales').css("color", '#424488');
@@ -506,10 +478,6 @@ function new_updateFilter(isProduct) {
                     style: {
                         color: '#518A81'
                     }
-                },
-                tooltip: {
-                    backgroundColor: 'rgba(81, 138, 129,0.8)',
-                    borderColor: '#518A81'
                 }
             }, true);
             $('#bar-graph-sources').d32Bars().update({
@@ -517,10 +485,6 @@ function new_updateFilter(isProduct) {
                     style: {
                         color: '#518A81'
                     }
-                },
-                tooltip: {
-                    backgroundColor: 'rgba(81, 138, 129,0.8)',
-                    borderColor: '#518A81'
                 }
             }, true);
             $('#totales').css("color", '#518A81');
@@ -1565,10 +1529,13 @@ function barGraph(selectorID, title) {
             enabled: false
         },
         tooltip: {
-            pointFormat: '<b>{point.y}</b>',
-            backgroundColor: 'rgba(209, 65, 90,0.5)', //'#d699a6',  // 'rgb(214, 153, 166)',
-            borderColor: colorText,
-            borderRadius: 20,
+            formatter: function () {
+                return '<b style="font-size: 16px;color:' + this.series.color + '">' + this.point.name + '</b><br>' +
+                    'Value: ' + this.point.y.toLocaleString();
+            },
+            backgroundColor: '#ffffff', //'#d699a6',  // 'rgb(214, 153, 166)',
+            borderColor: '#ffffff',
+            borderRadius: 0,
             borderWidth: 1
         },
 
