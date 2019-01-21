@@ -32,6 +32,14 @@ baseData = [
 
 var departments = ["SCL","ENE","CAN"];
 
+var metrics ={
+	"Publications":["All Downloads","2018 Downloads"],
+	"MOOCs":["All Registrations","2018 Registrations"],
+	"Datasets":["All Downloads","2018 Downloads"],
+	"Code":["All Pageviews","2018 Pageviews"],
+	"Subscribers":["All Subscribers"]
+}
+
 var MaterialTypes = ["Material_A", "Material_B", "Material_C"];
 
 var SourceTypes = ["Google", "Publications", "Facebook", "MOOCs", "INTAL", "RES", "Blogs", "Landing", "Other", "Unknown"];

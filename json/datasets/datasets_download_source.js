@@ -1,300 +1,300 @@
 //ya tienen la nueva data
 var datasetsDownloadSource = {
     downloadSourceDepartments: [{
-            "Department Codes": "CCB",
-            "Download Source": "Google",
+            "department_codes": "CCB",
+            "name": "Google",
             "All the time % total of downloads   along Download Source": "4.0%",
-            "All the time downloads": 46,
+            "valueAllTheTime": 46,
             "2018 % total downloads": "1.3%",
-            "2018 downloads": 9
+            "value2018": 9
         },
         {
-            "Department Codes": "CCB",
-            "Download Source": "IDB Publications",
+            "department_codes": "CCB",
+            "name": "IDB Publications",
             "All the time % total of downloads   along Download Source": "95.4%",
-            "All the time downloads": 1106,
+            "valueAllTheTime": 1106,
             "2018 % total downloads": "98.7%",
-            "2018 downloads": 660
+            "value2018": 660
         },
         {
-            "Department Codes": "CCB",
-            "Download Source": "Others",
+            "department_codes": "CCB",
+            "name": "Others",
             "All the time % total of downloads   along Download Source": "0.6%",
-            "All the time downloads": 7,
+            "valueAllTheTime": 7,
             "2018 % total downloads": "0.0%",
-            "2018 downloads": 0
+            "value2018": 0
         },
         {
-            "Department Codes": "CSD",
-            "Download Source": "Google",
+            "department_codes": "CSD",
+            "name": "Google",
             "All the time % total of downloads   along Download Source": "0.2%",
-            "All the time downloads": 7,
+            "valueAllTheTime": 7,
             "2018 % total downloads": "0.0%",
-            "2018 downloads": 0
+            "value2018": 0
         },
         {
-            "Department Codes": "CSD",
-            "Download Source": "IDB Publications",
+            "department_codes": "CSD",
+            "name": "IDB Publications",
             "All the time % total of downloads   along Download Source": "3.7%",
-            "All the time downloads": 170,
+            "valueAllTheTime": 170,
             "2018 % total downloads": "0.0%",
-            "2018 downloads": 0
+            "value2018": 0
         },
         {
-            "Department Codes": "CSD",
-            "Download Source": "Others",
+            "department_codes": "CSD",
+            "name": "Others",
             "All the time % total of downloads   along Download Source": "96.2%",
-            "All the time downloads": 4452,
+            "valueAllTheTime": 4452,
             "2018 % total downloads": "0.0%",
-            "2018 downloads": 0
+            "value2018": 0
         },
         {
-            "Department Codes": "Discontinued Departments",
-            "Download Source": "Google",
+            "department_codes": "Discontinued Departments",
+            "name": "Google",
             "All the time % total of downloads   along Download Source": "0.7%",
-            "All the time downloads": 7,
+            "valueAllTheTime": 7,
             "2018 % total downloads": "0.5%",
-            "2018 downloads": 2
+            "value2018": 2
         },
         {
-            "Department Codes": "Discontinued Departments",
-            "Download Source": "IDB Publications",
+            "department_codes": "Discontinued Departments",
+            "name": "IDB Publications",
             "All the time % total of downloads   along Download Source": "99.1%",
-            "All the time downloads": 967,
+            "valueAllTheTime": 967,
             "2018 % total downloads": "99.5%",
-            "2018 downloads": 378
+            "value2018": 378
         },
         {
-            "Department Codes": "Discontinued Departments",
-            "Download Source": "Others",
+            "department_codes": "Discontinued Departments",
+            "name": "Others",
             "All the time % total of downloads   along Download Source": "0.2%",
-            "All the time downloads": 2,
+            "valueAllTheTime": 2,
             "2018 % total downloads": "0.0%",
-            "2018 downloads": 0
+            "value2018": 0
         },
         {
-            "Department Codes": "IFD",
-            "Download Source": "Facebook",
+            "department_codes": "IFD",
+            "name": "Facebook",
             "All the time % total of downloads   along Download Source": "0.0%",
-            "All the time downloads": 2,
+            "valueAllTheTime": 2,
             "2018 % total downloads": "0.0%",
-            "2018 downloads": 0
+            "value2018": 0
         },
         {
-            "Department Codes": "IFD",
-            "Download Source": "Google",
+            "department_codes": "IFD",
+            "name": "Google",
             "All the time % total of downloads   along Download Source": "0.4%",
-            "All the time downloads": 29,
+            "valueAllTheTime": 29,
             "2018 % total downloads": "0.2%",
-            "2018 downloads": 1
+            "value2018": 1
         },
         {
-            "Department Codes": "IFD",
-            "Download Source": "IDB Publications",
+            "department_codes": "IFD",
+            "name": "IDB Publications",
             "All the time % total of downloads   along Download Source": "41.8%",
-            "All the time downloads": 3310,
+            "valueAllTheTime": 3310,
             "2018 % total downloads": "99.8%",
-            "2018 downloads": 459
+            "value2018": 459
         },
         {
-            "Department Codes": "IFD",
-            "Download Source": "Others",
+            "department_codes": "IFD",
+            "name": "Others",
             "All the time % total of downloads   along Download Source": "57.8%",
-            "All the time downloads": 4571,
+            "valueAllTheTime": 4571,
             "2018 % total downloads": "0.0%",
-            "2018 downloads": 0
+            "value2018": 0
         },
         {
-            "Department Codes": "INE",
-            "Download Source": "Bing",
+            "department_codes": "INE",
+            "name": "Bing",
             "All the time % total of downloads   along Download Source": "0.0%",
-            "All the time downloads": 2,
+            "valueAllTheTime": 2,
             "2018 % total downloads": "0.0%",
-            "2018 downloads": 0
+            "value2018": 0
         },
         {
-            "Department Codes": "INE",
-            "Download Source": "Facebook",
+            "department_codes": "INE",
+            "name": "Facebook",
             "All the time % total of downloads   along Download Source": "0.0%",
-            "All the time downloads": 1,
+            "valueAllTheTime": 1,
             "2018 % total downloads": "0.0%",
-            "2018 downloads": 0
+            "value2018": 0
         },
         {
-            "Department Codes": "INE",
-            "Download Source": "Google",
+            "department_codes": "INE",
+            "name": "Google",
             "All the time % total of downloads   along Download Source": "1.6%",
-            "All the time downloads": 80,
+            "valueAllTheTime": 80,
             "2018 % total downloads": "0.0%",
-            "2018 downloads": 0
+            "value2018": 0
         },
         {
-            "Department Codes": "INE",
-            "Download Source": "IDB Publications",
+            "department_codes": "INE",
+            "name": "IDB Publications",
             "All the time % total of downloads   along Download Source": "92.8%",
-            "All the time downloads": 4764,
+            "valueAllTheTime": 4764,
             "2018 % total downloads": "0.0%",
-            "2018 downloads": 0
+            "value2018": 0
         },
         {
-            "Department Codes": "INE",
-            "Download Source": "Others",
+            "department_codes": "INE",
+            "name": "Others",
             "All the time % total of downloads   along Download Source": "5.6%",
-            "All the time downloads": 289,
+            "valueAllTheTime": 289,
             "2018 % total downloads": "0.0%",
-            "2018 downloads": 0
+            "value2018": 0
         },
         {
-            "Department Codes": "INT",
-            "Download Source": "IDB Publications",
+            "department_codes": "INT",
+            "name": "IDB Publications",
             "All the time % total of downloads   along Download Source": "61.6%",
-            "All the time downloads": 218,
+            "valueAllTheTime": 218,
             "2018 % total downloads": "0.0%",
-            "2018 downloads": 0
+            "value2018": 0
         },
         {
-            "Department Codes": "INT",
-            "Download Source": "Others",
+            "department_codes": "INT",
+            "name": "Others",
             "All the time % total of downloads   along Download Source": "38.4%",
-            "All the time downloads": 136,
+            "valueAllTheTime": 136,
             "2018 % total downloads": "0.0%",
-            "2018 downloads": 0
+            "value2018": 0
         },
         {
-            "Department Codes": "MIF",
-            "Download Source": "Google",
+            "department_codes": "MIF",
+            "name": "Google",
             "All the time % total of downloads   along Download Source": "0.4%",
-            "All the time downloads": 5,
+            "valueAllTheTime": 5,
             "2018 % total downloads": "0.5%",
-            "2018 downloads": 2
+            "value2018": 2
         },
         {
-            "Department Codes": "MIF",
-            "Download Source": "IDB Publications",
+            "department_codes": "MIF",
+            "name": "IDB Publications",
             "All the time % total of downloads   along Download Source": "47.9%",
-            "All the time downloads": 541,
+            "valueAllTheTime": 541,
             "2018 % total downloads": "99.5%",
-            "2018 downloads": 378
+            "value2018": 378
         },
         {
-            "Department Codes": "MIF",
-            "Download Source": "Others",
+            "department_codes": "MIF",
+            "name": "Others",
             "All the time % total of downloads   along Download Source": "51.7%",
-            "All the time downloads": 584,
+            "valueAllTheTime": 584,
             "2018 % total downloads": "0.0%",
-            "2018 downloads": 0
+            "value2018": 0
         },
         {
-            "Department Codes": "RES",
-            "Download Source": "Facebook",
+            "department_codes": "RES",
+            "name": "Facebook",
             "All the time % total of downloads   along Download Source": "0.1%",
-            "All the time downloads": 27,
+            "valueAllTheTime": 27,
             "2018 % total downloads": "0.8%",
-            "2018 downloads": 27
+            "value2018": 27
         },
         {
-            "Department Codes": "RES",
-            "Download Source": "Google",
+            "department_codes": "RES",
+            "name": "Google",
             "All the time % total of downloads   along Download Source": "1.4%",
-            "All the time downloads": 284,
+            "valueAllTheTime": 284,
             "2018 % total downloads": "3.4%",
-            "2018 downloads": 118
+            "value2018": 118
         },
         {
-            "Department Codes": "RES",
-            "Download Source": "IDB Landing Page",
+            "department_codes": "RES",
+            "name": "IDB Landing Page",
             "All the time % total of downloads   along Download Source": "24.2%",
-            "All the time downloads": 4813,
+            "valueAllTheTime": 4813,
             "2018 % total downloads": "1.4%",
-            "2018 downloads": 49
+            "value2018": 49
         },
         {
-            "Department Codes": "RES",
-            "Download Source": "IDB Publications",
+            "department_codes": "RES",
+            "name": "IDB Publications",
             "All the time % total of downloads   along Download Source": "46.0%",
-            "All the time downloads": 9157,
+            "valueAllTheTime": 9157,
             "2018 % total downloads": "74.8%",
-            "2018 downloads": 2604
+            "value2018": 2604
         },
         {
-            "Department Codes": "RES",
-            "Download Source": "IDB RES",
+            "department_codes": "RES",
+            "name": "IDB RES",
             "All the time % total of downloads   along Download Source": "2.7%",
-            "All the time downloads": 536,
+            "valueAllTheTime": 536,
             "2018 % total downloads": "0.7%",
-            "2018 downloads": 23
+            "value2018": 23
         },
         {
-            "Department Codes": "RES",
-            "Download Source": "Others",
+            "department_codes": "RES",
+            "name": "Others",
             "All the time % total of downloads   along Download Source": "25.6%",
-            "All the time downloads": 5094,
+            "valueAllTheTime": 5094,
             "2018 % total downloads": "19.0%",
-            "2018 downloads": 662
+            "value2018": 662
         },
         {
-            "Department Codes": "SCL",
-            "Download Source": "Bing",
+            "department_codes": "SCL",
+            "name": "Bing",
             "All the time % total of downloads   along Download Source": "0.0%",
-            "All the time downloads": 3,
+            "valueAllTheTime": 3,
             "2018 % total downloads": "0.0%",
-            "2018 downloads": 0
+            "value2018": 0
         },
         {
-            "Department Codes": "SCL",
-            "Download Source": "Facebook",
+            "department_codes": "SCL",
+            "name": "Facebook",
             "All the time % total of downloads   along Download Source": "0.1%",
-            "All the time downloads": 6,
+            "valueAllTheTime": 6,
             "2018 % total downloads": "0.0%",
-            "2018 downloads": 0
+            "value2018": 0
         },
         {
-            "Department Codes": "SCL",
-            "Download Source": "Google",
+            "department_codes": "SCL",
+            "name": "Google",
             "All the time % total of downloads   along Download Source": "1.3%",
-            "All the time downloads": 103,
+            "valueAllTheTime": 103,
             "2018 % total downloads": "0.7%",
-            "2018 downloads": 2
+            "value2018": 2
         },
         {
-            "Department Codes": "SCL",
-            "Download Source": "IDB Publications",
+            "department_codes": "SCL",
+            "name": "IDB Publications",
             "All the time % total of downloads   along Download Source": "51.6%",
-            "All the time downloads": 4077,
+            "valueAllTheTime": 4077,
             "2018 % total downloads": "99.0%",
-            "2018 downloads": 295
+            "value2018": 295
         },
         {
-            "Department Codes": "SCL",
-            "Download Source": "LinkedIn",
+            "department_codes": "SCL",
+            "name": "LinkedIn",
             "All the time % total of downloads   along Download Source": "0.0%",
-            "All the time downloads": 1,
+            "valueAllTheTime": 1,
             "2018 % total downloads": "0.0%",
-            "2018 downloads": 0
+            "value2018": 0
         },
         {
-            "Department Codes": "SCL",
-            "Download Source": "Others",
+            "department_codes": "SCL",
+            "name": "Others",
             "All the time % total of downloads   along Download Source": "46.9%",
-            "All the time downloads": 3709,
+            "valueAllTheTime": 3709,
             "2018 % total downloads": "0.3%",
-            "2018 downloads": 1
+            "value2018": 1
         },
         {
-            "Department Codes": "SCL",
-            "Download Source": "Twitter",
+            "department_codes": "SCL",
+            "name": "Twitter",
             "All the time % total of downloads   along Download Source": "0.1%",
-            "All the time downloads": 9,
+            "valueAllTheTime": 9,
             "2018 % total downloads": "0.0%",
-            "2018 downloads": 0
+            "value2018": 0
         },
         {
-            "Department Codes": "SPD",
-            "Download Source": "Others",
+            "department_codes": "SPD",
+            "name": "Others",
             "All the time % total of downloads   along Download Source": "100.0%",
-            "All the time downloads": 717,
+            "valueAllTheTime": 717,
             "2018 % total downloads": "0.0%",
-            "2018 downloads": 0
+            "value2018": 0
         }
     ],
     downloadSourceDivisions: [{

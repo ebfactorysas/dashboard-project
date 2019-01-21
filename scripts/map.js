@@ -4,7 +4,8 @@ var newData = nuevoTest();
 new_graph(newData);
 
 barGraph('bar-graph-countries', 'TOP COUNTRIES');
-
+barGraph('bar-graph-sources', 'TOP SOURCES');
+new_updateFilter(true);
 
 
 
@@ -16,7 +17,6 @@ function nuevoTest() {
     updateProducts(testDatos);
 
     $('#drop-products').on('change', function () {
-
         var that = this;
         baseData = testDatos.filter(function (d) {
             return (d['fff'] == that.value)
@@ -30,7 +30,7 @@ function nuevoTest() {
         updateSegments(datosBySegmentType, 'IDB');
 
 
-        new_updateFilter();
+        new_updateFilter(true);
     });
 
     updateTypes(baseData);
@@ -65,7 +65,13 @@ function nuevoTest() {
         new_updateFilter();
     });
 
+
+
     $('#lac-checkbox').change(function () {
+        new_updateFilter();
+    });
+
+    $('#drop-downloads').on('change', function () {
         new_updateFilter();
     });
 
@@ -73,15 +79,28 @@ function nuevoTest() {
         return (d['segment name'] == 'IDB')
     });
 
+    var selectedMetric = $('#drop-downloads').find(":selected").val();
+    var datosMapeados = [];
+    if (selectedMetric.includes("All")) {
+        datosMapeados = datosBySegmentName.map(function (d) {
+            var nuevoDato = {
+                code3: getCoutryCode(d['Country']),
+                country: d['Country'],
+                z: Number(d['All downloads'])
+            };
+            return nuevoDato;
+        });
+    } else {
+        datosMapeados = datosBySegmentName.map(function (d) {
+            var nuevoDato = {
+                code3: getCoutryCode(d['Country']),
+                country: d['Country'],
+                z: Number(d['2018 downloads'])
+            };
+            return nuevoDato;
+        });
+    }
 
-    var datosMapeados = datosBySegmentName.map(function (d) {
-        var nuevoDato = {
-            code3: getCoutryCode(d['Country']),
-            country: d['Country'],
-            z: Number(d['2018 downloads'])
-        };
-        return nuevoDato;
-    });
 
 
     // var countryIso3 = getCoutryCode('Afghanistan');
@@ -146,10 +165,10 @@ function updateTypes(baseData) {
 
     $('#drop-departments').empty();
     // $('#drop-departments').append('<option value="all">Group by: ALL</option>');
-    
+
     for (let index = 0; index < types.length; index++) {
         var item = '<option value="' + types[index] + '">Group by: ' + types[index] + '</option>';
-        
+
         $('#drop-departments').append('<option value="' + types[index] + '">Group by: ' + types[index] + '</option>');
     }
     // types.forEach(function (item) {
@@ -161,9 +180,9 @@ function updateTypes(baseData) {
 
 function updateSegments(datosBySegmentType, splitSegment) {
 
-    
+
     var segmentos = getUniqueData(datosBySegmentType, 'segment name');
-    
+
 
     $('#drop-materials').empty();
     if (splitSegment != 'IDB') {
@@ -171,7 +190,7 @@ function updateSegments(datosBySegmentType, splitSegment) {
     }
     for (let index = 0; index < segmentos.length; index++) {
         var item = '<option value="' + segmentos[index] + '">' + splitSegment + ': ' + segmentos[index] + '</option>'
-        
+
         $('#drop-materials').append('<option value="' + segmentos[index] + '">' + splitSegment + ': ' + segmentos[index] + '</option>');
 
     }
@@ -189,23 +208,64 @@ function updateSegments(datosBySegmentType, splitSegment) {
 }
 
 function getUniqueData(array2reduce, property) {
-    
+
     var test = array2reduce.map(function (element) {
 
         return element[property]
     })
-    
+
     test = test.filter(function (item, pos, self) {
         return (self.indexOf(item) == pos)
     });
-    
+
     return test;
 
 }
 
+function appendItemsMetricsHtml(values) {
+    var html = [];
+
+    values.map(function (item) {
+        html.push('<option value="' + item + '">' + item + '</option>')
+    })
+
+    return html;
+}
+
+function setMetricsItems(section) {
 
 
-function new_updateFilter() {
+    switch (section) {
+
+        case "Publications":
+            $('#drop-downloads').append(appendItemsMetricsHtml(metrics.Publications));
+            $('#drop-downloads option[value="2018 Downloads"]').attr("selected", "selected");
+
+            break;
+        case "MOOCs":
+            $('#drop-downloads').append(appendItemsMetricsHtml(metrics.MOOCs));
+            $('#drop-downloads option[value="2018 Registrations"]').attr("selected", "selected");
+            break;
+        case "Datasets":
+            $('#drop-downloads').append(appendItemsMetricsHtml(metrics.Datasets));
+            $('#drop-downloads option[value="2018 Downloads"]').attr("selected", "selected");
+            break;
+        case "Code":
+            $('#drop-downloads').append(appendItemsMetricsHtml(metrics.Code));
+            $('#drop-downloads option[value="2018 Pageviews"]').attr("selected", "selected");
+            break;
+        case "Subscribers":
+            $('#drop-downloads').append(appendItemsMetricsHtml(metrics.Subscribers));
+            $('#drop-downloads option[value="All Subscribers"]').attr("selected", "selected");
+            break;
+        default:
+            break;
+    }
+}
+
+
+
+function new_updateFilter(isProduct) {
 
 
     // var dateSlider = document.getElementById('slider-download-date');
@@ -221,6 +281,13 @@ function new_updateFilter() {
 
     // var fromCreation = moment(vall_Creation[0],'x').format('YYYYMMDD');
     // var toCreation = moment(vall_Creation[1],'x').format('YYYYMMDD');
+    var selectedMaterial = $('#drop-materials').find(":selected").val();
+    var selectedSection = $('#drop-products').find(":selected").val();
+    if (isProduct) {
+        $('#drop-downloads').empty();
+
+        setMetricsItems(selectedSection);
+    }
 
 
     var lacCheck = $("#lac-checkbox").is(":checked");
@@ -228,8 +295,8 @@ function new_updateFilter() {
 
     var selectedDepartment = $('#drop-departments').find(":selected").val();
 
+    var selectedMetric = $('#drop-downloads').find(":selected").val();
 
-    var selectedMaterial = $('#drop-materials').find(":selected").val();
 
 
 
@@ -255,16 +322,27 @@ function new_updateFilter() {
 
 
     // var data2Graph = getCoutryTotals(dataFilteredCreationDate);
-
-
-    var datosMapeados = dataFilteredMaterials.map(function (d) {
-        var nuevoDato = {
-            code3: getCoutryCode(d['Country']),
-            country: d['Country'],
-            z: Number(d['2018 downloads'])
-        };
-        return nuevoDato;
-    });
+    var selectedMetric = $('#drop-downloads').find(":selected").val();
+    var datosMapeados = [];
+    if (selectedMetric.includes("All")) {
+        datosMapeados = dataFilteredMaterials.map(function (d) {
+            var nuevoDato = {
+                code3: getCoutryCode(d['Country']),
+                country: d['Country'],
+                z: Number(d['All downloads'])
+            };
+            return nuevoDato;
+        });
+    } else {
+        datosMapeados = dataFilteredMaterials.map(function (d) {
+            var nuevoDato = {
+                code3: getCoutryCode(d['Country']),
+                country: d['Country'],
+                z: Number(d['2018 downloads'])
+            };
+            return nuevoDato;
+        });
+    }
 
 
     var dataFilteredLAC = filterLACcountries(datosMapeados, lacCheck);
@@ -272,11 +350,187 @@ function new_updateFilter() {
 
 
     var data2Graph = getCoutryTotals(dataFilteredLAC, selectedMaterial);
+    console.log("test", selectedMetric);
+    setDataToSourceChart(selectedSection, selectedMaterial, selectedDepartment, selectedMetric);
 
     var serie1 = $('#graph-container').d32().get('series-1');
+    var serieCountry = $('#bar-graph-countries').d32Bars().get('series-2')
+    var serieSource = $('#bar-graph-sources').d32Bars().get('series-2')
     //serie1.setData(data2Graph, true, false, true);
     // serie1.setData(data2Graph, true, true, false);
-    serie1.setData(data2Graph, true, false, false);
+    serie1.setData(data2Graph, false, false, false);
+    switch (selectedSection) {
+        case "Code":
+            serie1.update({
+                color: "#EEAE00",
+                name: "Pageviews"
+            }, false);
+            serieCountry.update({
+                color: "#EEAE00",
+            }, true);
+            serieSource.update({
+                color: "#EEAE00",
+            }, true);
+            $('#bar-graph-countries').d32Bars().update({
+                title: {
+                    style: {
+                        color: '#EEAE00'
+                    }
+                },
+                tooltip: {
+                    backgroundColor: 'rgba(238, 174, 0,0.8)',
+                    borderColor: '#EEAE00'
+                }
+            }, true);
+            $('#bar-graph-sources').d32Bars().update({
+                title: {
+                    style: {
+                        color: '#EEAE00'
+                    }
+                },
+                tooltip: {
+                    backgroundColor: 'rgba(238, 174, 0,0.8)',
+                    borderColor: '#EEAE00'
+                }
+            }, true);
+            $('#totales').css("color", '#EEAE00');
+            break;
+        case "MOOCs":
+            serie1.update({
+                color: "#FA2E00",
+                name: "Registrations"
+            }, false);
+            serieCountry.update({
+                color: "#FA2E00",
+            }, true);
+            serieSource.update({
+                color: "#FA2E00",
+            }, true);
+            $('#bar-graph-countries').d32Bars().update({
+                title: {
+                    style: {
+                        color: '#FA2E00'
+                    }
+                },
+                tooltip: {
+                    backgroundColor: 'rgba(250, 46, 0,0.8)',
+                    borderColor: '#FA2E00'
+                }
+            }, true);
+            $('#bar-graph-sources').d32Bars().update({
+                title: {
+                    style: {
+                        color: '#FA2E00'
+                    }
+                },
+                tooltip: {
+                    backgroundColor: 'rgba(250, 46, 0,0.8)',
+                    borderColor: '#FA2E00'
+                }
+            }, true);
+            
+            $('#totales').css("color", '#FA2E00');
+            break;
+        case "Publications":
+            serie1.update({
+                color: "#d1415a",
+                name: "Downloads"
+            }, false);
+            serieCountry.update({
+                color: "#d1415a",
+            }, true);
+            serieSource.update({
+                color: "#d1415a",
+            }, true);
+            $('#bar-graph-countries').d32Bars().update({
+                title: {
+                    style: {
+                        color: '#d1415a'
+                    }
+                },
+                tooltip: {
+                    backgroundColor: 'rgba(209, 65, 90,0.8)',
+                    borderColor: '#d1415a'
+                }
+            }, true);
+            $('#totales').css("color", '#d1415a');
+            break;
+        case "Datasets":
+            serie1.update({
+                color: "#424488",
+                name: "Downloads"
+            }, false);
+            serieCountry.update({
+                color: "#424488",
+            }, true);
+            serieSource.update({
+                color: "#424488",
+            }, true);
+            $('#bar-graph-countries').d32Bars().update({
+                title: {
+                    style: {
+                        color: '#424488'
+                    }
+                },
+                tooltip: {
+                    backgroundColor: 'rgba(66, 68, 136,0.8)',
+                    borderColor: '#424488'
+                }
+            }, true);
+            $('#bar-graph-sources').d32Bars().update({
+                title: {
+                    style: {
+                        color: '#424488'
+                    }
+                },
+                tooltip: {
+                    backgroundColor: 'rgba(66, 68, 136,0.8)',
+                    borderColor: '#424488'
+                }
+            }, true);
+            $('#totales').css("color", '#424488');
+            break;
+        case "Subscribers":
+            serie1.update({
+                color: "#518A81",
+                name: "Subscribers"
+            }, false);
+            serieCountry.update({
+                color: "#518A81",
+            }, true);
+            serieSource.update({
+                color: "#518A81",
+            }, true);
+            $('#bar-graph-countries').d32Bars().update({
+                title: {
+                    style: {
+                        color: '#518A81'
+                    }
+                },
+                tooltip: {
+                    backgroundColor: 'rgba(81, 138, 129,0.8)',
+                    borderColor: '#518A81'
+                }
+            }, true);
+            $('#bar-graph-sources').d32Bars().update({
+                title: {
+                    style: {
+                        color: '#518A81'
+                    }
+                },
+                tooltip: {
+                    backgroundColor: 'rgba(81, 138, 129,0.8)',
+                    borderColor: '#518A81'
+                }
+            }, true);
+            $('#totales').css("color", '#518A81');
+            break;
+        default:
+            break;
+    }
+
+
+
     // var serie1 = $('#graph-container').d32().get('series-1');
     // //serie1.setData(datosMapeados, true, false, true);
     // //serie1.setData(datosMapeados, true, true, false);
@@ -288,6 +542,7 @@ function new_updateFilter() {
     // var serie1 = $('#graph-container').d32().get('series-1');
     // //serie1.setData(data2Graph, true, false, true);
     // serie1.setData(data2Graph, true, true, false);
+    $('#graph-container').d32().redraw();
 
 }
 
@@ -314,6 +569,11 @@ function init() {
     });
     $('#drop-materials').append(materialsItems);
 
+    var departmentsItems = [];
+    departments.map(function (item) {
+        departmentsItems.push('<option value="' + item + '">DEPARTMENT: ' + item + '</option>');
+    });
+    $('#drop-departments').append(departmentsItems);
 
 
 
@@ -322,9 +582,9 @@ function init() {
     // var data2Graph = getCoutryTotals(dataFilteredDownladDate);
     // graph(data2Graph);
 
-    barGraph('bar-graph-countries', 'TOP COUNTRIES');
+    //barGraph('bar-graph-countries', 'TOP COUNTRIES');
 
-    barGraph('bar-graph-sources', 'TOP SOURCES');
+    //barGraph('bar-graph-sources', 'TOP SOURCES');
 
     createDownloadSlider();
 
@@ -338,16 +598,14 @@ function init() {
     });
 
     $('#drop-departments').on('change', function () {
-
-
         updateFilter();
     });
 
     $('#drop-materials').on('change', function () {
-
-
         updateFilter();
     });
+
+
 
 }
 
@@ -891,33 +1149,330 @@ function getCoutryTotals(data, test_material) {
 
 
 
-    /*
+
     var countsSource = data.reduce((p, c) => {
-      var source = c.Source;
-      if (!p.hasOwnProperty(source)) {
-        p[source] = 0;
-      }
-      p[source] += 1;
+        var source = c.Source;
+        if (!p.hasOwnProperty(source)) {
+            p[source] = 0;
+        }
+        p[source] += 1;
         // p[source] += c.z;
-      return p;
+        return p;
     }, {});
-    
+
     var countsSourceExtended = Object.keys(countsSource).map(k => {
-      return { src: k, total: countsSource[k] }; });
+        return {
+            src: k,
+            total: countsSource[k]
+        };
+    });
 
-    
-
-    var serieTopSources = countsSourceExtended
-                              .sort(dynamicSort("-total"))
-                              .slice(0,10)
-                              .map(d => {return [d.src, d.total];});
-
-    var serie3 = $('#bar-graph-sources').d32Bars().get('series-2');
-    serie3.setData(serieTopSources, true, false, false);
-    */
 
 
     return countsExtended;
+}
+
+function setDataToSourceChart(section, divisionSelected, departmentOption, selectedMetric) {
+
+    var serieTopSources = [];
+    switch (section) {
+        case 'Publications':
+            if (selectedMetric.includes("All")) {
+                if (divisionSelected === "IDB" || divisionSelected === "all") {
+                    serieTopSources = publicationsDownloadSourceArrays.downloadSourceIDB
+                        .sort(dynamicSortSources("valueAllTheTime"))
+                        .slice(0, 10)
+                        .map(d => {
+                            return [d.name, d.valueAllTheTime];
+                        });
+                } else {
+                    if (departmentOption == "Department") {
+                        serieTopSources = publicationsDownloadSourceArrays.downloadSourceDepartments
+                            .filter(function (d) {
+                                return (d.department_codes == divisionSelected && d.valueAllTheTime > 0)
+                            })
+                            .sort(dynamicSortSources("valueAllTheTime"))
+                            .slice(0, 10)
+                            .map(d => {
+                                return [d.name, d.valueAllTheTime];
+                            });
+                    } else {
+                        serieTopSources = publicationsDownloadSourceArrays.downloadSourceDivisions
+                            .filter(function (d) {
+                                return (d.division_codes == divisionSelected && d.valueAllTheTime > 0)
+                            })
+                            .sort(dynamicSortSources("valueAllTheTime"))
+                            .slice(0, 10)
+                            .map(d => {
+                                return [d.name, d.valueAllTheTime];
+                            });
+                    }
+                }
+            } else {
+                if (divisionSelected === "IDB" || divisionSelected === "all") {
+                    serieTopSources = publicationsDownloadSourceArrays.downloadSourceIDB
+                        .sort(dynamicSortSources("value2018"))
+                        .slice(0, 10)
+                        .map(d => {
+                            return [d.name, d.value2018];
+                        });
+                } else {
+                    if (departmentOption == "Department") {
+                        serieTopSources = publicationsDownloadSourceArrays.downloadSourceDepartments
+                            .filter(function (d) {
+                                return (d.department_codes == divisionSelected && d.value2018 > 0)
+                            }).sort(dynamicSortSources("value2018"))
+                            .slice(0, 10)
+                            .map(d => {
+                                return [d.name, d.value2018];
+                            });
+                    } else {
+                        serieTopSources = publicationsDownloadSourceArrays.downloadSourceDivisions
+                            .filter(function (d) {
+                                return (d.division_codes == divisionSelected && d.value2018 > 0)
+                            })
+                            .sort(dynamicSortSources("value2018"))
+                            .slice(0, 10)
+                            .map(d => {
+                                return [d.name, d.value2018];
+                            });
+                    }
+                }
+            }
+            break;
+        case 'MOOCs':
+        if (selectedMetric.includes("All")) {
+            if (divisionSelected === "IDB" || divisionSelected === "all") {
+                serieTopSources = moocsEducationArrays.educationLevelIDBAllTheTime
+                    .sort(dynamicSortSources("registrations"))
+                    .slice(0, 10)
+                    .map(d => {
+                        return [d.name, d.registrations];
+                    });
+            } else {
+                if (departmentOption == "Department") {
+                    serieTopSources = moocsEducationArrays.educationLevelDepartmentsAllTheTime
+                        .filter(function (d) {
+                            return (d.department_code == divisionSelected )
+                        })
+                        .sort(dynamicSortSources("registrations"))
+                        .slice(0, 10)
+                        .map(d => {
+                            return [d.name, d.registrations];
+                        });
+                } else {
+                    serieTopSources = moocsEducationArrays.educationLevelDivisionsAllTheTime
+                        .filter(function (d) {
+                            return (d.division_code == divisionSelected)
+                        })
+                        .sort(dynamicSortSources("registrations"))
+                        .slice(0, 10)
+                        .map(d => {
+                            return [d.name, d.registrations];
+                        });
+                }
+            }
+        } else {
+            if (divisionSelected === "IDB" || divisionSelected === "all") {
+                serieTopSources = moocsEducationArrays.educationLevelIDB2018
+                    .sort(dynamicSortSources("registrations"))
+                    .slice(0, 10)
+                    .map(d => {
+                        return [d.name, d.registrations];
+                    });
+            } else {
+                if (departmentOption == "Department") {
+                    debugger;
+                    serieTopSources = moocsEducationArrays.educationLevelDepartments2018
+                        .filter(function (d) {
+                            return (d.department_code == divisionSelected)
+                        }).sort(dynamicSortSources("registrations"))
+                        .slice(0, 10)
+                        .map(d => {
+                            return [d.name, d.registrations];
+                        });
+                } else {
+                    serieTopSources = moocsEducationArrays.educationLevelDivisions2018
+                        .filter(function (d) {
+                            return (d.division_code == divisionSelected)
+                        })
+                        .sort(dynamicSortSources("registrations"))
+                        .slice(0, 10)
+                        .map(d => {
+                            return [d.name, d.registrations];
+                        });
+                }
+            }
+        }
+            break;
+        case 'Datasets':
+            if (selectedMetric.includes("All")) {
+                if (divisionSelected === "IDB" || divisionSelected === "all") {
+                    serieTopSources = datasetsDownloadSource.downloadSourceIDB
+                        .sort(dynamicSortSources("valueAllTheTime"))
+                        .slice(0, 10)
+                        .map(d => {
+                            return [d.name, d.valueAllTheTime];
+                        });
+                } else {
+                    if (departmentOption == "Department") {
+                        serieTopSources = datasetsDownloadSource.downloadSourceDepartments
+                            .filter(function (d) {
+                                return (d.department_codes == divisionSelected && d.valueAllTheTime > 0)
+                            })
+                            .sort(dynamicSortSources("valueAllTheTime"))
+                            .slice(0, 10)
+                            .map(d => {
+                                return [d.name, d.valueAllTheTime];
+                            });
+                    } else {
+                        serieTopSources = datasetsDownloadSource.downloadSourceDivisions
+                            .filter(function (d) {
+                                return (d.division_codes == divisionSelected && d.valueAllTheTime > 0)
+                            })
+                            .sort(dynamicSortSources("valueAllTheTime"))
+                            .slice(0, 10)
+                            .map(d => {
+                                return [d.name, d.valueAllTheTime];
+                            });
+                    }
+                }
+            } else {
+                if (divisionSelected === "IDB" || divisionSelected === "all") {
+                    serieTopSources = datasetsDownloadSource.downloadSourceIDB
+                        .sort(dynamicSortSources("value2018"))
+                        .slice(0, 10)
+                        .map(d => {
+                            return [d.name, d.value2018];
+                        });
+                } else {
+                    if (departmentOption == "Department") {
+                        debugger;
+                        serieTopSources = datasetsDownloadSource.downloadSourceDepartments
+                            .filter(function (d) {
+                                return (d.department_codes == divisionSelected && d.value2018 > 0)
+                            }).sort(dynamicSortSources("value2018"))
+                            .slice(0, 10)
+                            .map(d => {
+                                return [d.name, d.value2018];
+                            });
+                    } else {
+                        serieTopSources = datasetsDownloadSource.downloadSourceDivisions
+                            .filter(function (d) {
+                                return (d.division_codes == divisionSelected && d.value2018 > 0)
+                            })
+                            .sort(dynamicSortSources("value2018"))
+                            .slice(0, 10)
+                            .map(d => {
+                                return [d.name, d.value2018];
+                            });
+                    }
+                }
+            }
+            break;
+        case 'Code':
+            if (selectedMetric.includes("All")) {
+                if (divisionSelected === "IDB" || divisionSelected === "all") {
+                    serieTopSources = codePageviewsSourceArrays.pageviewSourceIDB
+                        .sort(dynamicSortSources("valueAllTheTime"))
+                        .slice(0, 10)
+                        .map(d => {
+                            return [d.name, d.valueAllTheTime];
+                        });
+                } else {
+                    if (departmentOption == "Department") {
+                        serieTopSources = codePageviewsSourceArrays.pageviewSourceDepartments
+                            .filter(function (d) {
+                                return (d.department_codes == divisionSelected && d.valueAllTheTime > 0)
+                            })
+                            .sort(dynamicSortSources("valueAllTheTime"))
+                            .slice(0, 10)
+                            .map(d => {
+                                return [d.name, d.valueAllTheTime];
+                            });
+                    } else {
+                        serieTopSources = codePageviewsSourceArrays.pageviewSourceDivisions
+                            .filter(function (d) {
+                                return (d.division_codes == divisionSelected && d.valueAllTheTime > 0)
+                            })
+                            .sort(dynamicSortSources("valueAllTheTime"))
+                            .slice(0, 10)
+                            .map(d => {
+                                return [d.name, d.valueAllTheTime];
+                            });
+                    }
+                }
+            } else {
+                if (divisionSelected === "IDB" || divisionSelected === "all") {
+                    serieTopSources = codePageviewsSourceArrays.pageviewSourceIDB
+                        .sort(dynamicSortSources("value2018"))
+                        .slice(0, 10)
+                        .map(d => {
+                            return [d.name, d.value2018];
+                        });
+                } else {
+                    if (departmentOption == "Department") {
+                        debugger;
+                        serieTopSources = codePageviewsSourceArrays.pageviewSourceDepartments
+                            .filter(function (d) {
+                                return (d.department_codes == divisionSelected && d.value2018 > 0)
+                            }).sort(dynamicSortSources("value2018"))
+                            .slice(0, 10)
+                            .map(d => {
+                                return [d.name, d.value2018];
+                            });
+                    } else {
+                        serieTopSources = codePageviewsSourceArrays.pageviewSourceDivisions
+                            .filter(function (d) {
+                                return (d.division_codes == divisionSelected && d.value2018 > 0)
+                            })
+                            .sort(dynamicSortSources("value2018"))
+                            .slice(0, 10)
+                            .map(d => {
+                                return [d.name, d.value2018];
+                            });
+                    }
+                }
+            }
+            break;
+        case 'Subscribers':
+            if (divisionSelected === "IDB" || divisionSelected === "all") {
+                serieTopSources = subscribersGender.genderIDB
+                    .sort(dynamicSortSources("subscribers"))
+                    .slice(0, 10)
+                    .map(d => {
+                        return [d.gender, d.subscribers];
+                    });
+            } else {
+                if (departmentOption == "Department") {
+                    serieTopSources = subscribersGender.genderDeparments
+                        .filter(function (d) {
+                            return (d.department == divisionSelected )
+                        })
+                        .sort(dynamicSortSources("subscribers"))
+                        .slice(0, 10)
+                        .map(d => {
+                            return [d.gender, d.subscribers];
+                        });
+                } else {
+                    serieTopSources = subscribersGender.genderDivisions
+                        .filter(function (d) {
+                            return (d.division_code == divisionSelected)
+                        })
+                        .sort(dynamicSortSources("subscribers"))
+                        .slice(0, 10)
+                        .map(d => {
+                            return [d.gender, d.subscribers];
+                        });
+                }
+            }
+            break;
+
+        default:
+            break;
+    }
+    var serie3 = $('#bar-graph-sources').d32Bars().get('series-2');
+    serie3.setData(serieTopSources, true, false, false);
 }
 
 
@@ -952,9 +1507,22 @@ function dynamicSort(property) {
     }
 }
 
+function dynamicSortSources(property) {
+    var sortOrder = 1;
+    if (property[0] === "-") {
+        sortOrder = -1;
+        property = property.substr(1);
+    }
+    return function (a, b) {
+        var result = (a[property] > b[property]) ? -1 : (a[property] < b[property]) ? 1 : 0;
+        return result * sortOrder;
+    }
+}
+
 
 
 function barGraph(selectorID, title) {
+    var colorText = '#d1415a';
 
     d32Bars.chart(selectorID, {
         chart: {
@@ -968,7 +1536,7 @@ function barGraph(selectorID, title) {
             style: {
                 fontFamily: 'Gotham-Bold',
                 fontSize: '12px',
-                color: '#c42a48'
+                color: colorText
             }
         },
         credits: {
@@ -981,7 +1549,7 @@ function barGraph(selectorID, title) {
                 rotation: 0,
                 style: {
                     fontSize: '13px',
-                    fontFamily: 'Verdana, sans-serif'
+                    fontFamily: 'Gotham-Book'
                 }
             }
         },
@@ -998,24 +1566,24 @@ function barGraph(selectorID, title) {
         },
         tooltip: {
             pointFormat: '<b>{point.y}</b>',
-            backgroundColor: '#F0C5CC', //'#d699a6',  // 'rgb(214, 153, 166)',
-            borderColor: '#c42a48',
+            backgroundColor: 'rgba(209, 65, 90,0.5)', //'#d699a6',  // 'rgb(214, 153, 166)',
+            borderColor: colorText,
             borderRadius: 20,
             borderWidth: 1
         },
-        
+
         plotOptions: {
             series: {
                 pointPadding: 0,
                 pointWidth: 18,
                 borderWidth: 1,
-                borderColor: '#c42a48'
+                borderColor: "#858585"
             }
         },
         series: [{
             id: 'series-2',
             name: 'Population',
-            color: 'rgb(214, 153, 166)', //'#c42a48',
+            color: colorText, //'#c42a48',
             dataLabels: {
                 enabled: true,
                 rotation: 0,
@@ -1026,7 +1594,7 @@ function barGraph(selectorID, title) {
                 //y: 10, // 10 pixels down from the top
                 style: {
                     fontSize: '10px',
-                    fontFamily: 'Verdana, sans-serif'
+                    fontFamily: 'Gotham-Book'
                 }
             }
         }]
@@ -1058,7 +1626,7 @@ function new_graph(data2Graph) {
             // spacingLeft: 300,
         },
         mapNavigation: {
-            enabled: false,           
+            enabled: false,
         },
         title: {
             text: ''
@@ -1076,14 +1644,19 @@ function new_graph(data2Graph) {
             enabled: true,
             buttonOptions: {
                 verticalAlign: 'bottom'
-            }
+            },
+            enableMouseWheelZoom: false
         },
         tooltip: {
             // pointFormat: '<b>{point.z}</b>',
-            backgroundColor: '#F0C5CC', //'#d699a6', // 'rgb(214, 153, 166)',
-            borderColor: '#c42a48',
-            borderRadius: 20,
-            borderWidth: 1
+            backgroundColor: '#ffffff',
+            borderColor: '#ffffff',
+            borderRadius: 0,
+            borderWidth: 1,
+            formatter: function () {
+                return '<b style="font-size: 16px;color:' + this.series.color + '">' + this.point.name + '</b><br>' +
+                    this.series.name + ': ' + this.point.z.toLocaleString();
+            },
         },
         // lang: {
         //     noData: "Nichts zu anzeigen"
@@ -1100,7 +1673,7 @@ function new_graph(data2Graph) {
         series: [{
             name: 'Countries',
             color: '#00FF00',
-            enableMouseTracking: false
+            enableMouseTracking: true
         }, {
             type: 'mapbubble',
             id: 'series-1',
@@ -1108,11 +1681,23 @@ function new_graph(data2Graph) {
             name: 'Downloads',
             joinBy: ['iso-a3', 'code3'],
             data: data2Graph, //getCoutryTotals(), // countsExtended, // baseData, // data,
-            minSize: 1,
-            maxSize: '4%', // '7%', // '15%', // '50', // '5%', // '12%',
+            minSize: 5,
+            maxSize: '6%', // '7%', // '15%', // '50', // '5%', // '12%',
             tooltip: {
-                pointFormat: '<b>{point.country}</b>:<br>{point.properties.hc-a2}: {point.z}'
+                formatter: function () {
+                    return '<b>Series name: ' + this.series.name + '</b><br>' +
+                        'Point name: ' + this.point.name + '<br>' +
+                        'Value: ' + this.point.value;
+                },
+                //'<b>{point.country}:</b><br>{point.properties}: {point.z}',
+                backgroundColor: '#ffffff',
+                borderColor: '#ffffff',
+                useHTML: true
                 // pointFormat: '{point.properties.hc-a2}: {point.z}'
+            },
+            marker: {
+                lineColor: '#858585',
+                fillOpacity: 0.25
             }
         }]
     });
@@ -1158,30 +1743,43 @@ function graph(data2Graph) {
             enabled: true,
             buttonOptions: {
                 verticalAlign: 'bottom'
-            }
+            },
+            enableMouseWheelZoom: false
         },
         tooltip: {
             // pointFormat: '<b>{point.z}</b>',
-            backgroundColor: '#F0C5CC', //'#d699a6', // 'rgb(214, 153, 166)',
-            borderColor: '#c42a48',
-            borderRadius: 20,
-            borderWidth: 1
+            backgroundColor: '#ffffff',
+            borderColor: '#ffffff',
+            borderRadius: 0,
+            borderWidth: 1,
+            formatter: function () {
+                return '<b style="font-size: 16px;color:' + this.series.color + '">' + this.point.name + '</b><br>' +
+                    this.series.name + ': ' + this.point.z.toLocaleString();
+            },
         },
         series: [{
             name: 'Countries',
             color: '#00FF00',
-            enableMouseTracking: false
         }, {
             type: 'mapbubble',
             id: 'series-1',
             color: '#c42a48',
+            borderColor: "#858585",
             name: 'Downloads',
             joinBy: ['iso-a3', 'code3'],
             data: data2Graph, //getCoutryTotals(), // countsExtended, // baseData, // data,
-            minSize: 1,
-            maxSize: '4%', // '7%', // '15%', // '50', // '5%', // '12%',
+            minSize: 5,
+            maxSize: '6%', // '7%', // '15%', // '50', // '5%', // '12%',
             tooltip: {
-                pointFormat: '{point.properties.hc-a2}: {point.z}'
+                formatter: function () {
+                    return '<b>Series name: ' + this.series.name + '</b><br>' +
+                        'Point name: ' + this.point.name + '<br>' +
+                        'Value: ' + this.point.value;
+                },
+                backgroundColor: '#ffffff',
+                borderColor: '#ffffff',
+                useHTML: true,
+                // pointFormat: '{point.properties.hc-a2}: {point.z}'
             }
         }]
     });

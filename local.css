@@ -102,13 +102,43 @@
     font-weight: normal;
     font-style: normal;
 }
-
 .tooltip-gauges h3 {
     font-size: 16px;
 
 }
 
 
+/** header in SP**/
+#vps-navigation{
+    flex-direction: row;
+}
+
+#s4-bodyContainer .container-fluid:first-child {
+    display: block;
+}
+
+#s4-bodyContainer .container-fluid:first-child  #vps-navigation .vps-nav{
+    display: block;
+}
+
+#s4-bodyContainer .navbar:nth-child(2){
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1040;
+    margin-top: 4.3%;
+}
+
+#s4-bodyContainer .container-fluid:first-child  #vps-navigation .navbar-nav>li>.dropdown-menu{
+    position: absolute;
+}
+
+
+
+.inner-nav{
+    margin-top: 8.5%;
+}
 
 .tooltip-gauges .border-top{
     border-top: solid 1px rgb(221, 221, 221);
@@ -227,6 +257,7 @@ section.big-numbers {
     background-color: #1156A1;
     font-family: 'Gotham-Bold';
     height: 38.1vw;
+    margin-top: 10.3%;
 }
 
 section.big-numbers h4 {
@@ -1073,6 +1104,7 @@ section.map .alert-map {
 
 section.map .temp-hide {
     opacity: .5;
+    display: none;
 }
 
 section.map #search {
@@ -1110,7 +1142,8 @@ section.map .side-filter {
 }
 
 section.map #drop-products {
-    color: #c42a48;
+    color: #000000;
+    text-transform: uppercase;
 }
 
 section.map #totales {
@@ -2533,6 +2566,7 @@ section.map select.form-control:not([size]):not([multiple]) {
 
     section.map .temp-hide {
         opacity: .5;
+        display: none;
     }
 
     section.map #search {
@@ -2569,9 +2603,6 @@ section.map select.form-control:not([size]):not([multiple]) {
         font-family: Gotham-Bold;
     }
 
-    section.map #drop-products {
-        color: #c42a48;
-    }
 
     section.map #totales {
         font-size: 44px;

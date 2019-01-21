@@ -110,6 +110,37 @@
 }
 
 
+/** header in SP**/
+#vps-navigation{
+    flex-direction: row;
+}
+
+#s4-bodyContainer .container-fluid:first-child {
+    display: block;
+}
+
+#s4-bodyContainer .container-fluid:first-child  #vps-navigation .vps-nav{
+    display: block;
+}
+
+#s4-bodyContainer .navbar:nth-child(2){
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1040;
+    margin-top: 4.3%;
+}
+
+#s4-bodyContainer .container-fluid:first-child  #vps-navigation .navbar-nav>li>.dropdown-menu{
+    position: absolute;
+}
+
+
+
+.inner-nav{
+    margin-top: 8.5%;
+}
 
 .tooltip-gauges .border-top{
     border-top: solid 1px rgb(221, 221, 221);
@@ -228,6 +259,7 @@ section.big-numbers {
     background-color: #1156A1;
     font-family: 'Gotham-Bold';
     height: 38.1vw;
+    margin-top: 10.3%;
 }
 
 section.big-numbers h4 {
@@ -744,6 +776,11 @@ section.code .funds-allocated-meter .background {
     fill: #A17603;
 }
 
+section.code #timeline-code .overlay {
+    fill: none;
+    pointer-events: all;
+}
+
 section.datasets #dataset-publications-plot .legend text,
 section.datasets #dataset-publications-plot .axis text {
     font-size: 14px;
@@ -801,6 +838,10 @@ section.code #code-trend .y-code .domain {
 
 section.code #code-plot {
     margin-top: -32px;
+}
+
+section.code #code-trend .y-data .domain {
+    display: none;
 }
 
 section.code #code-plot .legend text,
@@ -1102,7 +1143,8 @@ section.map .side-filter {
 }
 
 section.map #drop-products {
-    color: #c42a48;
+    color: #000000;
+    text-transform: uppercase;
 }
 
 section.map #totales {
@@ -2313,6 +2355,17 @@ section.map select.form-control:not([size]):not([multiple]) {
         text-decoration: underline;
     }
 
+    section.code #lines-code div:nth-child(n) {
+        /* height: 40px; */
+        margin-top: -32px
+    }
+    
+    section.code #lines-code {
+        padding-top: 55px;
+        margin-left: -40px;
+        margin-right: 40px;
+    }
+
     section.code #publications {
         height: 325px;
     }
@@ -3095,6 +3148,12 @@ section.map select.form-control:not([size]):not([multiple]) {
     section.code {
         min-height: 940px;
     }
+
+    section.code #code-plot {
+        height: 500px;
+        padding-top: 40px;
+    }
+
 
     section.code .container_radio {
         margin-top: 0;

@@ -23,7 +23,7 @@
   
 
     <link rel="stylesheet" href="/sites/VPS/KIC/SiteAssets/Mockup/css/global.css" />
-    <link rel="stylesheet" media="(min-width: 960px)" href="/sites/VPS/KIC/SiteAssets/Mockup/main.css" />
+    <link rel="stylesheet"  href="/sites/VPS/KIC/SiteAssets/Mockup/main.css" />
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
@@ -59,7 +59,7 @@
 </head>
 
 <div class="body">
-    <div class="container-fluid ">
+    <div class="container-fluid fixed-top bg-white inner-nav">
         <div class="row">
             <nav id="nav-title" class="navbar navbar-expand-lg navbar-light ">
 
@@ -611,7 +611,7 @@
                     <div class="row pt-2">
                         <div class="col-sm-2">
                             <h4>30 DAYS TREND</h4>
-                         
+
                         </div>
                         <div class="col">
                             <h4>TOP 10 IDB DATASETS - <span class="pr-2 purple-border-right"><label class="label-filter-select">IDB</label>
@@ -619,7 +619,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-2" id="lines-dataset" ></div>
+                        <div class="col-sm-2" id="lines-dataset"></div>
                         <div class="col-10" id="data-trend"></div>
                     </div>
                 </div>
@@ -706,7 +706,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-2"><svg id="lines-code" width="120" height="400"></svg></div>
+                        <div class="col-sm-2" id="lines-code"></div>
                         <div class="col-10" id="code-trend"></div>
                     </div>
                 </div>
@@ -715,7 +715,7 @@
                         COMPARED TO <span class="gray">OTHER DEPARTMENT's</span>? </h4>
                     <p class="small-letter gray">yellow circles bellow represent <span><label class="label-filter-select">IDB</label></span>
                         code(s)</p>
-                    <div id="code-plot"></div>
+                    <div class="col" id="code-plot"></div>
                 </div>
             </div>
         </div>
@@ -944,6 +944,7 @@
 <script src="/sites/VPS/KIC/SiteAssets/Mockup/scripts/utilities/drawTree.js"></script>
 <script src="/sites/VPS/KIC/SiteAssets/Mockup/scripts/utilities/timeLine.js"></script>
 <script src="/sites/VPS/KIC/SiteAssets/Mockup/scripts/utilities/plotChart.js"></script>
+<script src="/sites/VPS/KIC/SiteAssets/Mockup/scripts/utilities/top10rectBar.js"></script>
 <script src="/sites/VPS/KIC/SiteAssets/Mockup/scripts/bignumber.js"></script>
 <script src="/sites/VPS/KIC/SiteAssets/Mockup/scripts/treeMapColor.js"></script>
 <script src="/sites/VPS/KIC/SiteAssets/Mockup/main.js"></script>
