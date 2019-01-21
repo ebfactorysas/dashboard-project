@@ -1,26 +1,26 @@
-$("#deparmentSelect").on('change', function () {
-    $("select[id*='divisionSelect']").val("");
-    jsonPublicationsBarras = publicationsTopArrays.topDepartmentsAllTime.filter(function (dataP) {
-        return dataP.department_codes == this.value
-    });
-    drawTrendPublicationChart(jsonPublicationsBarras);
-    drawLinesChartPublication(jsonPublicationsBarras);
-    jsonPublicTree = publicationsDownloadSourceArrays.downloadSourceDepartments.filter(function (dataT) {
-        return dataT.department_codes == this.value
-    });
-    drawTreePublication(jsonPublicTree, "AllTheTime");
+// $("#deparmentSelect").on('change', function () {
+//     $("select[id*='divisionSelect']").val("");
+//     jsonPublicationsBarras = publicationsTopArrays.topDepartmentsAllTime.filter(function (dataP) {
+//         return dataP.department_codes == this.value
+//     });
+//     drawTrendPublicationChart(jsonPublicationsBarras);
+//     drawLinesChartPublication(jsonPublicationsBarras);
+//     jsonPublicTree = publicationsDownloadSourceArrays.downloadSourceDepartments.filter(function (dataT) {
+//         return dataT.department_codes == this.value
+//     });
+//     drawTreePublication(jsonPublicTree, "AllTheTime");
 
 
-    initIndicators('departments', this.value);
-    $('.label-filter-select').text(this.value);
-    $("#divisionSelect").value = "";
-    $('#blueAllTime').click();
-    d3.select("#gauge-suscribers svg").remove();
-    d3.select("#gauge-lac-s svg").remove();
-    d3.select("#gauge-2018 svg").remove();
-    updateGaugesDatasets();
-    updateGaugesSubscribers();
-});
+//     initIndicators('departments', this.value);
+//     $('.label-filter-select').text(this.value);
+//     $("#divisionSelect").value = "";
+//     $('#blueAllTime').click();
+//     d3.select("#gauge-suscribers svg").remove();
+//     d3.select("#gauge-lac-s svg").remove();
+//     d3.select("#gauge-2018 svg").remove();
+//     updateGaugesDatasets();
+//     updateGaugesSubscribers();
+// });
 
 //division filter
 $("#divisionSelect").on('change', function (data) {
@@ -28,27 +28,31 @@ $("#divisionSelect").on('change', function (data) {
     $('#idbLink').text(sltValue);
     removeSubscribersSvg();
 
+    if (this.value.includes("department")) {
 
-    if (this.value == "IDB") {
-        $('.label-filter-select').text(this.value);
-        setDataIDBPublications();
-        setDataSubscribersIdb();
-        initCode();
-        initDataSet();
     } else {
-        initIndicators('divisions', sltValue);
-        $('.label-filter-select').text(this.value);
-        $('#blue2018').click();
+        if (this.value == "IDB") {
+            $('.label-filter-select').text(this.value);
+            setDataIDBPublications();
+            setDataSubscribersIdb();
+            initCode();
+            initDataSet();
+        } else {
+            initIndicators('divisions', sltValue);
+            $('.label-filter-select').text(this.value);
+            $('#blue2018').click();
 
 
-        //Se llama la funcion para actulizar los datos con el valor de la division seleccionada
-        setDataPublicationsByDivisions(sltValue);
-        setDataDataSetByDivisions(sltValue);
-        setDataSuscribersByDivisions(sltValue);
-        setDataCodeByDivisions(sltValue);
+            //Se llama la funcion para actulizar los datos con el valor de la division seleccionada
+            setDataPublicationsByDivisions(sltValue);
+            setDataDataSetByDivisions(sltValue);
+            setDataSuscribersByDivisions(sltValue);
+            setDataCodeByDivisions(sltValue);
+        }
+
+        moocsFilter();
     }
-    
-    moocsFilter();
+
 });
 
 /**
@@ -159,13 +163,13 @@ function setDataDataSetByDivisions(sltValue) {
     datasets2018TotalGlobal = (jsondataDatasets.length > 0) ? jsondataDatasets[0]['2018_datasets'] : '0';
     datasets2018Downloads = (jsondataDatasets.length > 0) ? jsondataDatasets[0]['2018_downloads'] : '0';
     datasets2018DownloadsLac = (jsondataDatasets.length > 0) ? (jsondataDatasets[0]['2018_porcent_total_lac_downloads'] * 100).toFixed(0) : '0';
-    
+
     var ObjectGaugeDataSet = $.extend(true, [], datasetsGaugesIndicators.indicatorsDivisions2018);
     ObjectGaugeDataSet = ObjectGaugeDataSet.filter(function (dataT) {
         return dataT.divisionCode == sltValue
     });
     drawGaugeDatasetChart(ObjectGaugeDataSet[0]);
-    drawPlotChartDataset( $.extend(true, [], datasetsScatterplotArrays));
+    drawPlotChartDataset($.extend(true, [], datasetsScatterplotArrays));
 }
 
 /**
@@ -217,7 +221,7 @@ function setDataSuscribersByDivisions(sltValue) {
 function setDataCodeByDivisions(sltValue) {
     $("#code2018").prop("checked", true);
     var ObjectTopIdb2018 = $.extend(true, [], codeTopArrays.topIDB2018);
-   
+
     var ObjectPageViewsTimeLine2018 = $.extend(true, [], codePageviewsTimelineArrays.pageviewTimelineDivisions);
     ObjectPageViewsTimeLine2018 = ObjectPageViewsTimeLine2018.filter(function (data) {
         return data.division_codes == sltValue
@@ -280,20 +284,20 @@ $(document).ready(function () {
         $(".body").css("width", screen.width + "px");
     }
     moment.updateLocale('en', {
-        relativeTime : {
+        relativeTime: {
             future: "in %s",
-            past:   "%s ago",
-            s  : 'a few seconds',
-            ss : '%d seconds',
-            m:  "a minute",
+            past: "%s ago",
+            s: 'a few seconds',
+            ss: '%d seconds',
+            m: "a minute",
             mm: "%d minutes",
-            h:  "an hour",
+            h: "an hour",
             hh: "%d hours",
-            d:  "a day",
+            d: "a day",
             dd: "%d days",
-            M:  "a month",
+            M: "a month",
             MM: "%d months",
-            y:  "a year",
+            y: "a year",
             yy: "%d years"
         }
     });
