@@ -237,7 +237,7 @@ function setDataCodeByDivisions(sltValue) {
         return data.divisionCode == sltValue
     });
 
-    drawLinesChart(dataLines);
+    // drawLinesChart(dataLines);
     drawGaugeCodeChart(ObjectGauges[0]);
     drawPlotChart(ObjectcodeScatterploArrays);
     drawChartCodeTrend(ObjectTopIdb2018);
