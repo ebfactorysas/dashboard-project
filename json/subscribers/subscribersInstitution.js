@@ -3,27 +3,27 @@ var subscribersInstitution = {
     institutionDepartments: [{
             "code": "CSD",
             "name": "Not Reported",
-            "value": "70,597"
+            "value": 70597
         },
         {
             "code": "CSD",
             "name": "Academia",
-            "value": "13,165"
+            "value": 13165
         },
         {
             "code": "CSD",
             "name": "Civil Society",
-            "value": "8,723"
+            "value": 8723
         },
         {
             "code": "CSD",
             "name": "General",
-            "value": "8,880"
+            "value": 8880
         },
         {
             "code": "CSD",
             "name": "Government",
-            "value": "16,477"
+            "value": 16477
         },
         {
             "code": "CSD",
@@ -33,62 +33,62 @@ var subscribersInstitution = {
         {
             "code": "CSD",
             "name": "Multilateral Organization",
-            "value": "1,827"
+            "value": 1827
         },
         {
             "code": "CSD",
             "name": "Private Sector",
-            "value": "18,241"
+            "value": 18241
         },
         {
             "code": "CSD",
             "name": "Research Center",
-            "value": "2,593"
+            "value": 2593
         },
         {
             "code": "IFD",
             "name": "Not Reported",
-            "value": "32,829"
+            "value": 32829
         },
         {
             "code": "IFD",
             "name": "Academia",
-            "value": "15,564"
+            "value": 15564
         },
         {
             "code": "IFD",
             "name": "Civil Society",
-            "value": "8,380"
+            "value": 8380
         },
         {
             "code": "IFD",
             "name": "General",
-            "value": "12,705"
+            "value": 12705
         },
         {
             "code": "IFD",
             "name": "Government",
-            "value": "21,231"
+            "value": 21231
         },
         {
             "code": "IFD",
             "name": "Media",
-            "value": "1,241"
+            "value": 1241
         },
         {
             "code": "IFD",
             "name": "Multilateral Organization",
-            "value": "1,850"
+            "value": 1850
         },
         {
             "code": "IFD",
             "name": "Private Sector",
-            "value": "20,876"
+            "value": 20876
         },
         {
             "code": "IFD",
             "name": "Research Center",
-            "value": "2,988"
+            "value": 2988
         },
         {
             "code": "IIC",
@@ -138,27 +138,27 @@ var subscribersInstitution = {
         {
             "code": "INE",
             "name": "Not Reported",
-            "value": "24,689"
+            "value": 24689
         },
         {
             "code": "INE",
             "name": "Academia",
-            "value": "10,088"
+            "value": 10088
         },
         {
             "code": "INE",
             "name": "Civil Society",
-            "value": "7,168"
+            "value": 7168
         },
         {
             "code": "INE",
             "name": "General",
-            "value": "8,314"
+            "value": 8314
         },
         {
             "code": "INE",
             "name": "Government",
-            "value": "13,580"
+            "value": 13580
         },
         {
             "code": "INE",
@@ -168,42 +168,42 @@ var subscribersInstitution = {
         {
             "code": "INE",
             "name": "Multilateral Organization",
-            "value": "1,322"
+            "value": 1322
         },
         {
             "code": "INE",
             "name": "Private Sector",
-            "value": "16,627"
+            "value": 16627
         },
         {
             "code": "INE",
             "name": "Research Center",
-            "value": "2,110"
+            "value": 2110
         },
         {
             "code": "INT",
             "name": "Not Reported",
-            "value": "17,833"
+            "value": 17833
         },
         {
             "code": "INT",
             "name": "Academia",
-            "value": "7,217"
+            "value": 7217
         },
         {
             "code": "INT",
             "name": "Civil Society",
-            "value": "3,634"
+            "value": 3634
         },
         {
             "code": "INT",
             "name": "General",
-            "value": "6,014"
+            "value": 6014
         },
         {
             "code": "INT",
             "name": "Government",
-            "value": "8,289"
+            "value": 8289
         },
         {
             "code": "INT",
@@ -218,57 +218,57 @@ var subscribersInstitution = {
         {
             "code": "INT",
             "name": "Private Sector",
-            "value": "10,048"
+            "value": 10048
         },
         {
             "code": "INT",
             "name": "Research Center",
-            "value": "1,374"
+            "value": 1374
         },
         {
             "code": "KIC",
             "name": "Not Reported",
-            "value": "345,909"
+            "value": 345909
         },
         {
             "code": "KIC",
             "name": "Academia",
-            "value": "28,575"
+            "value": 28575
         },
         {
             "code": "KIC",
             "name": "Civil Society",
-            "value": "15,328"
+            "value": 15328
         },
         {
             "code": "KIC",
             "name": "General",
-            "value": "23,794"
+            "value": 23794
         },
         {
             "code": "KIC",
             "name": "Government",
-            "value": "35,940"
+            "value": 35940
         },
         {
             "code": "KIC",
             "name": "Media",
-            "value": "2,182"
+            "value": 2182
         },
         {
             "code": "KIC",
             "name": "Multilateral Organization",
-            "value": "3,855"
+            "value": 3855
         },
         {
             "code": "KIC",
             "name": "Private Sector",
-            "value": "31,744"
+            "value": 31744
         },
         {
             "code": "KIC",
             "name": "Research Center",
-            "value": "3,787"
+            "value": 3787
         },
         {
             "code": "MIF",
@@ -318,27 +318,27 @@ var subscribersInstitution = {
         {
             "code": "RES",
             "name": "Not Reported",
-            "value": "17,148"
+            "value": 17148
         },
         {
             "code": "RES",
             "name": "Academia",
-            "value": "6,990"
+            "value": 6990
         },
         {
             "code": "RES",
             "name": "Civil Society",
-            "value": "3,560"
+            "value": 3560
         },
         {
             "code": "RES",
             "name": "General",
-            "value": "5,200"
+            "value": 5200
         },
         {
             "code": "RES",
             "name": "Government",
-            "value": "6,706"
+            "value": 6706
         },
         {
             "code": "RES",
@@ -348,72 +348,72 @@ var subscribersInstitution = {
         {
             "code": "RES",
             "name": "Multilateral Organization",
-            "value": "3,495"
+            "value": 3495
         },
         {
             "code": "RES",
             "name": "Private Sector",
-            "value": "7,042"
+            "value": 7042
         },
         {
             "code": "RES",
             "name": "Research Center",
-            "value": "1,270"
+            "value": 1270
         },
         {
             "code": "SCL",
             "name": "Not Reported",
-            "value": "37,509"
+            "value": 37509
         },
         {
             "code": "SCL",
             "name": "Academia",
-            "value": "17,085"
+            "value": 17085
         },
         {
             "code": "SCL",
             "name": "Civil Society",
-            "value": "9,881"
+            "value": 9881
         },
         {
             "code": "SCL",
             "name": "General",
-            "value": "15,486"
+            "value": 15486
         },
         {
             "code": "SCL",
             "name": "Government",
-            "value": "18,914"
+            "value": 18914
         },
         {
             "code": "SCL",
             "name": "Media",
-            "value": "1,193"
+            "value": 1193
         },
         {
             "code": "SCL",
             "name": "Multilateral Organization",
-            "value": "2,162"
+            "value": 2162
         },
         {
             "code": "SCL",
             "name": "Private Sector",
-            "value": "17,309"
+            "value": 17309
         },
         {
             "code": "SCL",
             "name": "Research Center",
-            "value": "2,634"
+            "value": 2634
         },
         {
             "code": "SPD",
             "name": "Not Reported",
-            "value": "1,480"
+            "value": 1480
         },
         {
             "code": "SPD",
             "name": "Academia",
-            "value": "1,580"
+            "value": 1580
         },
         {
             "code": "SPD",
@@ -423,12 +423,12 @@ var subscribersInstitution = {
         {
             "code": "SPD",
             "name": "General",
-            "value": "1,159"
+            "value": 1159
         },
         {
             "code": "SPD",
             "name": "Government",
-            "value": "1,769"
+            "value": 1769
         },
         {
             "code": "SPD",
@@ -443,7 +443,7 @@ var subscribersInstitution = {
         {
             "code": "SPD",
             "name": "Private Sector",
-            "value": "1,833"
+            "value": 1833
         },
         {
             "code": "SPD",
@@ -586,7 +586,8 @@ var subscribersInstitution = {
             "value": 0
         }
     ],
-    institutionDivisions: [{
+    institutionDivisions: [
+        {
             "department_code": "CSD",
             "name": "Not Reported",
             "value": 18349,

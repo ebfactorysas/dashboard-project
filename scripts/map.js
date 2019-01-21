@@ -233,11 +233,10 @@ function appendItemsMetricsHtml(values) {
 }
 
 function setMetricsItems(section) {
-
-
     switch (section) {
 
         case "Publications":
+
             $('#drop-downloads').append(appendItemsMetricsHtml(metrics.Publications));
             $('#drop-downloads option[value="2018 Downloads"]').attr("selected", "selected");
 
@@ -362,8 +361,7 @@ function new_updateFilter(isProduct) {
     switch (selectedSection) {
         case "Code":
             serie1.update({
-                color: "#EEAE00",
-                name: "Pageviews"
+                color: "#EEAE00"
             }, false);
             serieCountry.update({
                 color: "#EEAE00",
@@ -389,8 +387,7 @@ function new_updateFilter(isProduct) {
             break;
         case "MOOCs":
             serie1.update({
-                color: "#FA2E00",
-                name: "Registrations"
+                color: "#FA2E00"
             }, false);
             serieCountry.update({
                 color: "#FA2E00",
@@ -417,8 +414,7 @@ function new_updateFilter(isProduct) {
             break;
         case "Publications":
             serie1.update({
-                color: "#d1415a",
-                name: "Downloads"
+                color: "#d1415a"
             }, false);
             serieCountry.update({
                 color: "#d1415a",
@@ -437,8 +433,7 @@ function new_updateFilter(isProduct) {
             break;
         case "Datasets":
             serie1.update({
-                color: "#424488",
-                name: "Downloads"
+                color: "#424488"
             }, false);
             serieCountry.update({
                 color: "#424488",
@@ -464,8 +459,7 @@ function new_updateFilter(isProduct) {
             break;
         case "Subscribers":
             serie1.update({
-                color: "#518A81",
-                name: "Subscribers"
+                color: "#518A81"
             }, false);
             serieCountry.update({
                 color: "#518A81",
@@ -506,6 +500,9 @@ function new_updateFilter(isProduct) {
     // var serie1 = $('#graph-container').d32().get('series-1');
     // //serie1.setData(data2Graph, true, false, true);
     // serie1.setData(data2Graph, true, true, false);
+    serie1.update({
+        name: selectedMetric
+    }, false);
     $('#graph-container').d32().redraw();
 
 }
@@ -1114,7 +1111,7 @@ function getCoutryTotals(data, test_material) {
 
 
 
-    var countsSource = data.reduce((p, c) => {
+    var countsSource = data.reduce(function(p, c)  {
         var source = c.Source;
         if (!p.hasOwnProperty(source)) {
             p[source] = 0;
@@ -1124,7 +1121,7 @@ function getCoutryTotals(data, test_material) {
         return p;
     }, {});
 
-    var countsSourceExtended = Object.keys(countsSource).map(k => {
+    var countsSourceExtended = Object.keys(countsSource).map(function(k) {
         return {
             src: k,
             total: countsSource[k]
@@ -1137,7 +1134,7 @@ function getCoutryTotals(data, test_material) {
 }
 
 function setDataToSourceChart(section, divisionSelected, departmentOption, selectedMetric) {
-
+    
     var serieTopSources = [];
     switch (section) {
         case 'Publications':
@@ -1146,7 +1143,7 @@ function setDataToSourceChart(section, divisionSelected, departmentOption, selec
                     serieTopSources = publicationsDownloadSourceArrays.downloadSourceIDB
                         .sort(dynamicSortSources("valueAllTheTime"))
                         .slice(0, 10)
-                        .map(d => {
+                        .map(function(d)  {
                             return [d.name, d.valueAllTheTime];
                         });
                 } else {
@@ -1157,7 +1154,7 @@ function setDataToSourceChart(section, divisionSelected, departmentOption, selec
                             })
                             .sort(dynamicSortSources("valueAllTheTime"))
                             .slice(0, 10)
-                            .map(d => {
+                            .map(function(d)  {
                                 return [d.name, d.valueAllTheTime];
                             });
                     } else {
@@ -1167,7 +1164,7 @@ function setDataToSourceChart(section, divisionSelected, departmentOption, selec
                             })
                             .sort(dynamicSortSources("valueAllTheTime"))
                             .slice(0, 10)
-                            .map(d => {
+                            .map(function(d)  {
                                 return [d.name, d.valueAllTheTime];
                             });
                     }
@@ -1177,7 +1174,7 @@ function setDataToSourceChart(section, divisionSelected, departmentOption, selec
                     serieTopSources = publicationsDownloadSourceArrays.downloadSourceIDB
                         .sort(dynamicSortSources("value2018"))
                         .slice(0, 10)
-                        .map(d => {
+                        .map(function(d)  {
                             return [d.name, d.value2018];
                         });
                 } else {
@@ -1187,7 +1184,7 @@ function setDataToSourceChart(section, divisionSelected, departmentOption, selec
                                 return (d.department_codes == divisionSelected && d.value2018 > 0)
                             }).sort(dynamicSortSources("value2018"))
                             .slice(0, 10)
-                            .map(d => {
+                            .map(function(d)  {
                                 return [d.name, d.value2018];
                             });
                     } else {
@@ -1197,7 +1194,7 @@ function setDataToSourceChart(section, divisionSelected, departmentOption, selec
                             })
                             .sort(dynamicSortSources("value2018"))
                             .slice(0, 10)
-                            .map(d => {
+                            .map(function(d)  {
                                 return [d.name, d.value2018];
                             });
                     }
@@ -1210,7 +1207,7 @@ function setDataToSourceChart(section, divisionSelected, departmentOption, selec
                 serieTopSources = moocsEducationArrays.educationLevelIDBAllTheTime
                     .sort(dynamicSortSources("registrations"))
                     .slice(0, 10)
-                    .map(d => {
+                    .map(function(d)  {
                         return [d.name, d.registrations];
                     });
             } else {
@@ -1221,7 +1218,7 @@ function setDataToSourceChart(section, divisionSelected, departmentOption, selec
                         })
                         .sort(dynamicSortSources("registrations"))
                         .slice(0, 10)
-                        .map(d => {
+                        .map(function(d)  {
                             return [d.name, d.registrations];
                         });
                 } else {
@@ -1231,7 +1228,7 @@ function setDataToSourceChart(section, divisionSelected, departmentOption, selec
                         })
                         .sort(dynamicSortSources("registrations"))
                         .slice(0, 10)
-                        .map(d => {
+                        .map(function(d)  {
                             return [d.name, d.registrations];
                         });
                 }
@@ -1241,7 +1238,7 @@ function setDataToSourceChart(section, divisionSelected, departmentOption, selec
                 serieTopSources = moocsEducationArrays.educationLevelIDB2018
                     .sort(dynamicSortSources("registrations"))
                     .slice(0, 10)
-                    .map(d => {
+                    .map(function(d) {
                         return [d.name, d.registrations];
                     });
             } else {
@@ -1252,7 +1249,7 @@ function setDataToSourceChart(section, divisionSelected, departmentOption, selec
                             return (d.department_code == divisionSelected)
                         }).sort(dynamicSortSources("registrations"))
                         .slice(0, 10)
-                        .map(d => {
+                        .map(function(d)  {
                             return [d.name, d.registrations];
                         });
                 } else {
@@ -1262,7 +1259,7 @@ function setDataToSourceChart(section, divisionSelected, departmentOption, selec
                         })
                         .sort(dynamicSortSources("registrations"))
                         .slice(0, 10)
-                        .map(d => {
+                        .map(function(d)  {
                             return [d.name, d.registrations];
                         });
                 }
@@ -1275,7 +1272,7 @@ function setDataToSourceChart(section, divisionSelected, departmentOption, selec
                     serieTopSources = datasetsDownloadSource.downloadSourceIDB
                         .sort(dynamicSortSources("valueAllTheTime"))
                         .slice(0, 10)
-                        .map(d => {
+                        .map(function(d)  {
                             return [d.name, d.valueAllTheTime];
                         });
                 } else {
@@ -1286,7 +1283,7 @@ function setDataToSourceChart(section, divisionSelected, departmentOption, selec
                             })
                             .sort(dynamicSortSources("valueAllTheTime"))
                             .slice(0, 10)
-                            .map(d => {
+                            .map(function(d)  {
                                 return [d.name, d.valueAllTheTime];
                             });
                     } else {
@@ -1296,7 +1293,7 @@ function setDataToSourceChart(section, divisionSelected, departmentOption, selec
                             })
                             .sort(dynamicSortSources("valueAllTheTime"))
                             .slice(0, 10)
-                            .map(d => {
+                            .map(function(d)  {
                                 return [d.name, d.valueAllTheTime];
                             });
                     }
@@ -1306,7 +1303,7 @@ function setDataToSourceChart(section, divisionSelected, departmentOption, selec
                     serieTopSources = datasetsDownloadSource.downloadSourceIDB
                         .sort(dynamicSortSources("value2018"))
                         .slice(0, 10)
-                        .map(d => {
+                        .map(function(d) {
                             return [d.name, d.value2018];
                         });
                 } else {
@@ -1317,7 +1314,7 @@ function setDataToSourceChart(section, divisionSelected, departmentOption, selec
                                 return (d.department_codes == divisionSelected && d.value2018 > 0)
                             }).sort(dynamicSortSources("value2018"))
                             .slice(0, 10)
-                            .map(d => {
+                            .map(function(d)  {
                                 return [d.name, d.value2018];
                             });
                     } else {
@@ -1327,7 +1324,7 @@ function setDataToSourceChart(section, divisionSelected, departmentOption, selec
                             })
                             .sort(dynamicSortSources("value2018"))
                             .slice(0, 10)
-                            .map(d => {
+                            .map(function(d)  {
                                 return [d.name, d.value2018];
                             });
                     }
@@ -1340,7 +1337,7 @@ function setDataToSourceChart(section, divisionSelected, departmentOption, selec
                     serieTopSources = codePageviewsSourceArrays.pageviewSourceIDB
                         .sort(dynamicSortSources("valueAllTheTime"))
                         .slice(0, 10)
-                        .map(d => {
+                        .map(function(d)  {
                             return [d.name, d.valueAllTheTime];
                         });
                 } else {
@@ -1351,7 +1348,7 @@ function setDataToSourceChart(section, divisionSelected, departmentOption, selec
                             })
                             .sort(dynamicSortSources("valueAllTheTime"))
                             .slice(0, 10)
-                            .map(d => {
+                            .map(function(d)  {
                                 return [d.name, d.valueAllTheTime];
                             });
                     } else {
@@ -1361,7 +1358,7 @@ function setDataToSourceChart(section, divisionSelected, departmentOption, selec
                             })
                             .sort(dynamicSortSources("valueAllTheTime"))
                             .slice(0, 10)
-                            .map(d => {
+                            .map(function(d)  {
                                 return [d.name, d.valueAllTheTime];
                             });
                     }
@@ -1371,7 +1368,7 @@ function setDataToSourceChart(section, divisionSelected, departmentOption, selec
                     serieTopSources = codePageviewsSourceArrays.pageviewSourceIDB
                         .sort(dynamicSortSources("value2018"))
                         .slice(0, 10)
-                        .map(d => {
+                        .map(function(d)  {
                             return [d.name, d.value2018];
                         });
                 } else {
@@ -1382,7 +1379,7 @@ function setDataToSourceChart(section, divisionSelected, departmentOption, selec
                                 return (d.department_codes == divisionSelected && d.value2018 > 0)
                             }).sort(dynamicSortSources("value2018"))
                             .slice(0, 10)
-                            .map(d => {
+                            .map(function(d)  {
                                 return [d.name, d.value2018];
                             });
                     } else {
@@ -1392,7 +1389,7 @@ function setDataToSourceChart(section, divisionSelected, departmentOption, selec
                             })
                             .sort(dynamicSortSources("value2018"))
                             .slice(0, 10)
-                            .map(d => {
+                            .map(function(d)  {
                                 return [d.name, d.value2018];
                             });
                     }
@@ -1401,32 +1398,32 @@ function setDataToSourceChart(section, divisionSelected, departmentOption, selec
             break;
         case 'Subscribers':
             if (divisionSelected === "IDB" || divisionSelected === "all") {
-                serieTopSources = subscribersGender.genderIDB
-                    .sort(dynamicSortSources("subscribers"))
+                serieTopSources = subscribersInstitution.institutionIDB
+                    .sort(dynamicSortSources("value"))
                     .slice(0, 10)
-                    .map(d => {
-                        return [d.gender, d.subscribers];
+                    .map(function(d) {
+                        return [d.name, d.value];
                     });
             } else {
                 if (departmentOption == "Department") {
-                    serieTopSources = subscribersGender.genderDeparments
+                    serieTopSources = subscribersInstitution.institutionDepartments
                         .filter(function (d) {
-                            return (d.department == divisionSelected )
+                            return (d.code == divisionSelected )
                         })
-                        .sort(dynamicSortSources("subscribers"))
+                        .sort(dynamicSortSources("value"))
                         .slice(0, 10)
-                        .map(d => {
-                            return [d.gender, d.subscribers];
+                        .map(function(d)  {
+                            return [d.name, d.value];
                         });
                 } else {
-                    serieTopSources = subscribersGender.genderDivisions
+                    serieTopSources = subscribersInstitution.institutionDivisions
                         .filter(function (d) {
                             return (d.division_code == divisionSelected)
                         })
-                        .sort(dynamicSortSources("subscribers"))
+                        .sort(dynamicSortSources("value"))
                         .slice(0, 10)
-                        .map(d => {
-                            return [d.gender, d.subscribers];
+                        .map(function(d)  {
+                            return [d.name, d.value];
                         });
                 }
             }
@@ -1436,6 +1433,7 @@ function setDataToSourceChart(section, divisionSelected, departmentOption, selec
             break;
     }
     var serie3 = $('#bar-graph-sources').d32Bars().get('series-2');
+    
     serie3.setData(serieTopSources, true, false, false);
 }
 

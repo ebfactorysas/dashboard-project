@@ -63,6 +63,7 @@ function drawTreeChart(dataTree, filtertype, id, color, text) {
             var current_id = visualization.id();
             return d[current_id]; //+ "\n" + (d.d3plusOld.share * 100).toFixed(1) + "%";
         })
+        .resize(true)
 
     visualization.draw()
 }

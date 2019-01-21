@@ -1106,6 +1106,7 @@ section.map .alert-map {
 
 section.map .temp-hide {
     opacity: .5;
+    display: none;
 }
 
 section.map #search {
@@ -2567,6 +2568,7 @@ section.map select.form-control:not([size]):not([multiple]) {
 
     section.map .temp-hide {
         opacity: .5;
+        display: none;
     }
 
     section.map #search {
@@ -2603,9 +2605,6 @@ section.map select.form-control:not([size]):not([multiple]) {
         font-family: Gotham-Bold;
     }
 
-    section.map #drop-products {
-        color: #c42a48;
-    }
 
     section.map #totales {
         font-size: 44px;
