@@ -3,7 +3,7 @@ function drawDataTrendChart(dataDataTrend) {
     dataDataTrend = dataDataTrend.slice(0, 10).sort(function (a, b) {
         return d3.descending(a.Rank, b.Rank);
     })
-    drawTrendChart(dataDataTrend,"#data-trend","#45509b","purple",false,"#000000");
+    drawTrendChart(dataDataTrend, "#data-trend", "#45509b", "purple", false, "#000000");
 }
 
 function drawTreeDataset(dataTree, filtertype, typeload) {
@@ -74,7 +74,7 @@ function createChartTimeLineDataSet(data) {
     createTimelineChart(data, "#timeline-dataset", "#424488", "#dataset2018")
 }
 
-function createLineChartDataset(elements,color) {
+function createLineChartDataset(elements, color) {
 
     var parseTime = d3.timeParse("%m/%d/%Y");
 
@@ -163,6 +163,7 @@ function drawLinesChartDataset(data) {
     d3.selectAll("#lines-dataset div").remove();
 
     var parseTime = d3.timeParse("%m/%d/%Y");
+    var valueOfFilter = $("#divisionSelect")[0].value;
 
     if (data.length > 0) {
         data = data.sort(function (a, b) {
@@ -171,12 +172,12 @@ function drawLinesChartDataset(data) {
         data.forEach(function (element) {
             var color = "";
             var divisionSelected = $('#idbLink')[0].text;
-            if(divisionSelected=="IDB"|| divisionSelected==element.Division){
-                color="#424488";
-            }else{
-                color="#e6e6e6";
+            if (divisionSelected == "IDB Group" || divisionSelected == element.Division || (valueOfFilter == "department" && element.Department == divisionSelected)) {
+                color = "#424488";
+            } else {
+                color = "#e6e6e6";
             }
-            createLineChartDataset($.extend(true, [], element),color);
+            createLineChartDataset($.extend(true, [], element), color);
         });
     }
 
@@ -185,7 +186,7 @@ function drawLinesChartDataset(data) {
 
 $("input[name*='dataSetTrend']").click(function () {
     if ($("select[id*='divisionSelect']").val() != "IDB") {
-        if ($("select[id*='divisionSelect']").val().length > 0) {
+        if ($("select[id*='divisionSelect']").val() != "department") {
 
             if (this.id == "dataSetAllTime") {
                 // $('.label-filter-restidb').hide();
@@ -228,8 +229,44 @@ $("input[name*='dataSetTrend']").click(function () {
             // });
             // createChartTimeLineDataSet(ObjectDataSetLineChart[0].data);
 
-        } else if ($("select[id*='deparmentSelect']").val().length > 0) {
-            //acá iría la lógica de departamentos
+        } else {
+            if (this.id == "dataSetAllTime") {
+                var departmentSelected = $("#divisionSelect option:selected").text();
+                //treemap
+                jsonDataSetTree = datasetsDownloadSource.downloadSourceDepartments.filter(function (dataT) {
+                    return dataT.division_codes == departmentSelected
+                });
+                drawTreeDataset(jsonDataSetTree, "AllTheTime");
+
+
+                var ObjectGaugeDataSet = $.extend(true, [], datasetsGaugesIndicators.indicatorsDepartmentsAllTheTime);
+                ObjectGaugeDataSet = ObjectGaugeDataSet.filter(function (dataT) {
+                    return dataT.departmentCode == departmentSelected
+                });
+                drawGaugeDatasetChart(ObjectGaugeDataSet[0]);
+
+                //top 10
+                drawLinesChartDataset($.extend(true, [], datasetsTopArrays.topIDBAllTime));
+                drawDataTrendChart($.extend(true, [], datasetsTopArrays.topIDBAllTime));
+            } else {
+                var departmentSelected = $("#divisionSelect option:selected").text();
+                //treemap
+                jsonDataSetTree = datasetsDownloadSource.downloadSourceDepartments.filter(function (dataT) {
+                    return dataT.division_codes == departmentSelected
+                });
+                drawTreeDataset(jsonDataSetTree, "2018");
+
+
+                var ObjectGaugeDataSet = $.extend(true, [], datasetsGaugesIndicators.indicatorsDepartments2018);
+                ObjectGaugeDataSet = ObjectGaugeDataSet.filter(function (dataT) {
+                    return dataT.departmentCode == departmentSelected
+                });
+                drawGaugeDatasetChart(ObjectGaugeDataSet[0]);
+
+                //top 10
+                drawLinesChartDataset($.extend(true, [], datasetsTopArrays.topIDB2018));
+                drawDataTrendChart($.extend(true, [], datasetsTopArrays.topIDB2018));
+            }
         }
 
     } else {
@@ -247,7 +284,7 @@ $("input[name*='dataSetTrend']").click(function () {
             drawDataTrendChart($.extend(true, [], datasetsTopArrays.topIDB2018));
             drawLinesChartDataset($.extend(true, [], datasetsTopArrays.topIDB2018));
         }
-        
+
     }
 });
 

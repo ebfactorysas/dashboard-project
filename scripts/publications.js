@@ -5,7 +5,7 @@ function sortByDateAscending(a, b) {
 
 function createChartTimelinePublication(data, typeload) {
     d3.select("#timeline-publication svg").remove();
-    createTimelineChart(data,"#timeline-publication","#d1415a","#publication2018")
+    createTimelineChart(data, "#timeline-publication", "#d1415a", "#publication2018")
 
 }
 
@@ -210,12 +210,12 @@ function drawGaugePublicationChart(dataGauge) {
     if (dataGauge == undefined) {
         dataGauge = setEmptyGaugesPublication();
     }
-    if (!dataGauge.divisionCode) {
-        dataGauge.divisionCode = "IDB"
-    }
-    drawGauge(dataGauge.publications, dataGauge.percentagePublications, "", "#gauge-publications", dataGauge.divisionCode, "Publications","#D1415A");
-    drawGauge(dataGauge.downloads, dataGauge.percentageDownloads, "", "#gauge-download-p", dataGauge.divisionCode, "Downloads","#D1415A");
-    drawGauge(dataGauge.LAC, dataGauge.percentageLAC.toFixed(1), "%", "#gauge-lac-p", dataGauge.divisionCode, "Publications","#D1415A");
+
+    var code = $('#idbLink')[0].text;
+
+    drawGauge(dataGauge.publications, dataGauge.percentagePublications, "", "#gauge-publications", code, "Publications", "#D1415A");
+    drawGauge(dataGauge.downloads, dataGauge.percentageDownloads, "", "#gauge-download-p", code, "Downloads", "#D1415A");
+    drawGauge(dataGauge.LAC, dataGauge.percentageLAC.toFixed(1), "%", "#gauge-lac-p", code, "Publications", "#D1415A");
 }
 
 function createLineChart(elements) {
@@ -320,10 +320,10 @@ function drawLinesChartPublication(data) {
 }
 
 function drawPlotChartPublication(data, typeload) {
-    d3.select("#publications-plot div").remove();    
-    xValue=[0, 200, 400, 600, 800, 1000];
-    yValue= [0, 50, 100, 150, 200];
-    createPlotChart(data,"#publications-plot","#d65a70","Downloads","daysPublished",xValue,yValue,"");
+    d3.select("#publications-plot div").remove();
+    xValue = [0, 200, 400, 600, 800, 1000];
+    yValue = [0, 50, 100, 150, 200];
+    createPlotChart(data, "#publications-plot", "#d65a70", "Downloads", "daysPublished", xValue, yValue, "");
 
 }
 
@@ -345,7 +345,7 @@ function setEmptyGaugesPublication() {
         "downloads": 0,
         "percentageDownloads": 0,
         "percentageLAC": 0,
-        "LAC":0
+        "LAC": 0
     }
 }
 
@@ -420,7 +420,7 @@ function validarFormatoFecha(campo) {
 //click radiobutton drawChart(id del click)
 $("input[name*='publicationTrend']").click(function () {
     if ($("select[id*='divisionSelect']").val() != "IDB") {
-        if ($("select[id*='divisionSelect']").val().length > 0) {
+        if ($("select[id*='divisionSelect']").val() != "department") {
             var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
             if (this.id == "publicationAllTime") {
                 jsondataPublications = bnPublicationsArrays.publicationsDivisions.filter(function (data) {
@@ -475,7 +475,54 @@ $("input[name*='publicationTrend']").click(function () {
                 publications2018DownloadsLac = (jsondataPublications.length > 0) ? ((jsondataPublications[0]['2018_porcent_total_LAC_downloads'] != "missing" && jsondataPublications[0]['2018_porcent_total_LAC_downloads'] > 0) ? (jsondataPublications[0]['2018_porcent_total_LAC_downloads'] * 100).toFixed(1) : jsondataPublications[0]['2018_porcent_total_LAC_downloads']) : '';
                 drawGaugePublicationChart(jsonGaugesPublications[0]);
             }
-        } else if ($("select[id*='deparmentSelect']").val().length > 0) {
+        } else {
+            sltValue= $('#idbLink')[0].text;
+            if (this.id == "publicationAllTime") {
+                // gauges
+                dataPublicationGauge = $.extend(true, [], publicationsIndicators.indicatorsDepartmentsAllTheTime)
+                dataPublicationGauge = dataPublicationGauge.filter(function (dataP) {
+                    return dataP.departmentCode == sltValue
+                });
+                drawGaugePublicationChart(dataPublicationGauge[0]);
+
+                
+
+                //data-trend
+                var jsonPublicationsBarras = publicationsTopArrays.topDepartmentsAllTime.filter(function (dataP) {
+                    return dataP.department_code == sltValue
+                });
+                drawTrendPublicationChart(jsonPublicationsBarras, '2018', '');
+                drawLinesChartPublication(jsonPublicationsBarras, '2018', '');
+
+                //tree
+                jsonPublicTree = publicationsDownloadSourceArrays.downloadSourceDepartments.filter(function (dataT) {
+                    return dataT.department_codes == sltValue
+                });
+
+                drawTreePublication(jsonPublicTree, "AllTheTime", '');
+
+            } else {
+                // gauges
+                dataPublicationGauge2018 = $.extend(true, [], publicationsIndicators.indicatorsDepartments2018)
+                dataPublicationGauge2018 = dataPublicationGauge2018.filter(function (dataP) {
+                    return dataP.departmentCode == sltValue
+                });
+                drawGaugePublicationChart(dataPublicationGauge2018[0]);
+
+                //data-trend
+                var jsonPublicationsBarras = publicationsTopArrays.topDepartments2018.filter(function (dataP) {
+                    return dataP.department_code == sltValue
+                });
+                drawTrendPublicationChart(jsonPublicationsBarras, '2018', '');
+                drawLinesChartPublication(jsonPublicationsBarras, '2018', '');
+
+                //tree
+                jsonPublicTree = publicationsDownloadSourceArrays.downloadSourceDepartments.filter(function (dataT) {
+                    return dataT.department_codes == sltValue
+                });
+
+                drawTreePublication(jsonPublicTree, "2018", 'init');
+            }
             var downloadTimelineDepartment = $.extend(true, [], publicationsDownloadTimelineArray.downloadTimelineDepartments);
             downloadTimelineDepartment = downloadTimelineDepartment.filter(function (downloadTimelineDepartment) {
                 return downloadTimelineDepartment.departmentCode == $("#deparmentSelect").val()

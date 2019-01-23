@@ -1,4 +1,4 @@
-function drawTrendChart(data,id,colorY,colorClass,inBar,textColor){
+function drawTrendChart(data, id, colorY, colorClass, inBar, textColor) {
     var marginDataTrend = {
         top: 15,
         right: 48,
@@ -8,7 +8,7 @@ function drawTrendChart(data,id,colorY,colorClass,inBar,textColor){
 
     var widthDataTrend = 800 - marginDataTrend.left - marginDataTrend.right,
         heightDataTrend = 520 - marginDataTrend.top - marginDataTrend.bottom;
-
+    var valueOfFilter = $("#divisionSelect")[0].value;
 
     var svgDataTrend = d3.select(id)
         .append("svg")
@@ -51,12 +51,13 @@ function drawTrendChart(data,id,colorY,colorClass,inBar,textColor){
         })
         .attr("fill", function (d) {
             var divisionSelected = $('#idbLink')[0].text;
-            if (divisionSelected == "IDB" || divisionSelected == d.Division) {
+
+            if (divisionSelected == "IDB Group" || divisionSelected == d.Division || (valueOfFilter == "department" && d.Department == divisionSelected)) {
                 return colorY;
             }
             return "#d3d3d3";
         })
-        .style("opacity",.8)
+        .style("opacity", .8)
         .attr("height", 45)
         .attr("x", 8)
         .attr("width", function (d) {
@@ -69,14 +70,14 @@ function drawTrendChart(data,id,colorY,colorClass,inBar,textColor){
             return yDataTrend(d.name) + 45 / 2 + 4;
         })
         .attr("x", function (d) {
-            if(inBar==true){
+            if (inBar == true) {
                 return 25;
             }
             return xDataTrend(d.value) + 10;
         })
         .attr("class", "text-inside")
-        .attr("fill",textColor)
-        .style("opacity",.8)
+        .attr("fill", textColor)
+        .style("opacity", .8)
         .attr("font-family", "Gotham-Bold")
         .attr("font-size", "13px")
         .text(function (d) {
@@ -99,9 +100,9 @@ function drawTrendChart(data,id,colorY,colorClass,inBar,textColor){
         .style("width", "450px");
 
 
-    var tooltipBar = d3Old.selectAll(id+ " .bar")
+    var tooltipBar = d3Old.selectAll(id + " .bar")
         .on("mouseover", function (d) {
-            var textHtml = "<div class='col tooltip-gauges'><h3 class='row "+colorClass +"'>{{title}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>Downloads</span><span class='col text-right' >{{value}}</div>";
+            var textHtml = "<div class='col tooltip-gauges'><h3 class='row " + colorClass + "'>{{title}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>Downloads</span><span class='col text-right' >{{value}}</div>";
             textHtml = textHtml.replace('{{title}}', d.name)
             textHtml = textHtml.replace('{{value}}', d.value.toLocaleString())
             if (d.Department) {

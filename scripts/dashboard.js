@@ -25,21 +25,23 @@
 //division filter
 $("#divisionSelect").on('change', function (data) {
     var sltValue = this.value;
-    $('#idbLink').text(sltValue);
+    $('#idbLink').text($("#divisionSelect option:selected").text());
+    $('.label-filter-select').text($("#divisionSelect option:selected").text());
     removeSubscribersSvg();
-
     if (this.value.includes("department")) {
-
+        var departmentSelected = $("#divisionSelect option:selected").text();
+        initIndicators('departments', departmentSelected);
+        setDataPublicationsByDepartment(departmentSelected);        
+        setDataDataSetByDepartment(departmentSelected);
     } else {
         if (this.value == "IDB") {
-            $('.label-filter-select').text(this.value);
+
             setDataIDBPublications();
             setDataSubscribersIdb();
             initCode();
             initDataSet();
         } else {
             initIndicators('divisions', sltValue);
-            $('.label-filter-select').text(this.value);
             $('#blue2018').click();
 
 
@@ -115,7 +117,7 @@ function setDataPublicationsByDivisions(sltValue) {
     drawPlotChartPublication(ObjectpublicationsAttention);
 
     // $("select[id*='deparmentSelect']").val("");
-    $('#idbLink').text(sltValue);
+
     jsonPublicationsBarras = publicationsTopArrays.topDivisions2018.filter(function (dataP) {
         return dataP.division_codes == sltValue
     });
@@ -132,6 +134,44 @@ function setDataPublicationsByDivisions(sltValue) {
     createChartTimelinePublication(auxDownloadTimelineDivisions, '');
 
     // d3.select("#publications-plot svg").remove();
+}
+
+function setDataPublicationsByDepartment(sltValue) {
+
+    $("#publication2018").prop("checked", true);
+
+    // gauges
+    dataPublicationGauge2018 = $.extend(true, [], publicationsIndicators.indicatorsDepartments2018)
+    dataPublicationGauge2018 = dataPublicationGauge2018.filter(function (dataP) {
+        return dataP.departmentCode == sltValue
+    });
+    drawGaugePublicationChart(dataPublicationGauge2018[0]);
+
+    //plot
+    var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
+    drawPlotChartPublication(ObjectpublicationsAttention);
+
+    //data-trend
+    var jsonPublicationsBarras = publicationsTopArrays.topDepartments2018.filter(function (dataP) {
+        return dataP.department_code == sltValue
+    });
+    drawTrendPublicationChart(jsonPublicationsBarras, '2018', '');
+    drawLinesChartPublication(jsonPublicationsBarras, '2018', '');
+
+    //tree
+    jsonPublicTree = publicationsDownloadSourceArrays.downloadSourceDepartments.filter(function (dataT) {
+        return dataT.department_codes == sltValue
+    });
+
+    drawTreePublication(jsonPublicTree, "2018", 'init');
+
+    //timeline
+    var auxDownloadTimelineDepartment = publicationsDownloadTimelineArray.downloadTimelineDepartments.filter(function (d) {
+        return d.department_code == sltValue
+    })
+    auxDownloadTimelineDepartment = $.extend(true, [], auxDownloadTimelineDepartment[0].data);
+    createChartTimelinePublication(auxDownloadTimelineDepartment, '');
+
 }
 /**
  * Funcion para actualizar la informacion de la seccion de dataset
@@ -170,6 +210,80 @@ function setDataDataSetByDivisions(sltValue) {
     });
     drawGaugeDatasetChart(ObjectGaugeDataSet[0]);
     drawPlotChartDataset($.extend(true, [], datasetsScatterplotArrays));
+}
+
+function setDataDataSetByDepartment(sltValue){
+    $("#dataSet2018").prop("checked", true);
+    //treemap
+    jsonDataSetTree = datasetsDownloadSource.downloadSourceDepartments.filter(function (dataT) {
+        return dataT.department_codes == sltValue
+    });
+    drawTreeDataset(jsonDataSetTree, "2018", 'init');
+
+    //chart time line
+    var ObjectDataSetTimeLine = $.extend(true, [], datasetsDownloadsTimelineArrays.downloadsTimelineDepartments);
+    jsonTimeLineDataSet = ObjectDataSetTimeLine.filter(function (dataT) {
+        return dataT.department_code == sltValue
+    });
+    if (jsonTimeLineDataSet.length > 0) {
+        createChartTimeLineDataSet(jsonTimeLineDataSet[0].data);
+    } else {
+        createChartTimeLineDataSet([]);
+    }
+
+    //data-trend
+    drawDataTrendChart($.extend(true, [], datasetsTopArrays.topIDB2018));
+    drawLinesChartDataset($.extend(true, [], datasetsTopArrays.topIDB2018));
+
+    //gauges
+    var ObjectGaugeDataSet = $.extend(true, [], datasetsGaugesIndicators.indicatorsDepartments2018);
+    ObjectGaugeDataSet = ObjectGaugeDataSet.filter(function (dataT) {
+        return dataT.departmentCode == sltValue
+    });
+    drawGaugeDatasetChart(ObjectGaugeDataSet[0]);
+    drawPlotChartDataset($.extend(true, [], datasetsScatterplotArrays));
+
+}
+
+
+/**
+ * Funcion para actualizar la informacion de la seccion de Code
+ */
+function setDataCodeByDivisions(sltValue) {
+    $("#code2018").prop("checked", true);
+    var ObjectTopIdb2018 = $.extend(true, [], codeTopArrays.topIDB2018);
+
+    var ObjectPageViewsTimeLine2018 = $.extend(true, [], codePageviewsTimelineArrays.pageviewTimelineDivisions);
+    ObjectPageViewsTimeLine2018 = ObjectPageViewsTimeLine2018.filter(function (data) {
+        return data.division_codes == sltValue
+    });
+    var ObjectcodeScatterploArrays = $.extend(true, [], codeScatterploArrays);
+    var ObjectCodePageViewSource = $.extend(true, [], codePageviewsSourceArrays.pageviewSourceDivisions);
+    ObjectCodePageViewSource = ObjectCodePageViewSource.filter(function (data) {
+        return data.division_codes == sltValue
+    });
+
+    var ObjectGauges = $.extend(true, [], codeGaugesIndicators.indicatorsDivisions2018);
+    ObjectGauges = ObjectGauges.filter(function (data) {
+        return data.divisionCode == sltValue
+    });
+
+    // drawLinesChart(dataLines);
+    drawGaugeCodeChart(ObjectGauges[0]);
+    drawPlotChart(ObjectcodeScatterploArrays);
+    drawChartCodeTrend(ObjectTopIdb2018);
+    drawLinesChartCode(ObjectTopIdb2018);
+    if (ObjectPageViewsTimeLine2018.length > 0) {
+        createChartTimeline(ObjectPageViewsTimeLine2018[0].data);
+    } else {
+        createChartTimeline([]);
+    }
+
+    drawTreeCode(ObjectCodePageViewSource, "2018");
+}
+
+function setDataCodeByDepartment(sltValue){
+
 }
 
 /**
@@ -216,43 +330,6 @@ function setDataSuscribersByDivisions(sltValue) {
 }
 
 /**
- * Funcion para actualizar la informacion de la seccion de Code
- */
-function setDataCodeByDivisions(sltValue) {
-    $("#code2018").prop("checked", true);
-    var ObjectTopIdb2018 = $.extend(true, [], codeTopArrays.topIDB2018);
-
-    var ObjectPageViewsTimeLine2018 = $.extend(true, [], codePageviewsTimelineArrays.pageviewTimelineDivisions);
-    ObjectPageViewsTimeLine2018 = ObjectPageViewsTimeLine2018.filter(function (data) {
-        return data.division_codes == sltValue
-    });
-    var ObjectcodeScatterploArrays = $.extend(true, [], codeScatterploArrays);
-    var ObjectCodePageViewSource = $.extend(true, [], codePageviewsSourceArrays.pageviewSourceDivisions);
-    ObjectCodePageViewSource = ObjectCodePageViewSource.filter(function (data) {
-        return data.division_codes == sltValue
-    });
-
-    var ObjectGauges = $.extend(true, [], codeGaugesIndicators.indicatorsDivisions2018);
-    ObjectGauges = ObjectGauges.filter(function (data) {
-        return data.divisionCode == sltValue
-    });
-
-    // drawLinesChart(dataLines);
-    drawGaugeCodeChart(ObjectGauges[0]);
-    drawPlotChart(ObjectcodeScatterploArrays);
-    drawChartCodeTrend(ObjectTopIdb2018);
-    drawLinesChartCode(ObjectTopIdb2018);
-    if (ObjectPageViewsTimeLine2018.length > 0) {
-        createChartTimeline(ObjectPageViewsTimeLine2018[0].data);
-    } else {
-        createChartTimeline([]);
-    }
-
-    drawTreeCode(ObjectCodePageViewSource, "2018");
-}
-
-
-/**
  * Funcion para actualizar la informacion de la seccion de suscribers department
  */
 function setDataSuscribersByDepartment(sltValue) {
@@ -271,6 +348,7 @@ function setDataSuscribersByDepartment(sltValue) {
 
 
 $(window).on('load', function () {
+    $('.label-filter-select').text($("#divisionSelect option:selected").text());
     initPublications();
     initMoocs();
     initDataSet();

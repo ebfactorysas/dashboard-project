@@ -1,4 +1,4 @@
-function createPlotChart(data,id,colorPlot,xA,yA,valueTicksX,valueTicksY,textForYAxis){
+function createPlotChart(data, id, colorPlot, xA, yA, valueTicksX, valueTicksY, textForYAxis) {
     var margin = {
         top: 50,
         right: 50,
@@ -7,28 +7,28 @@ function createPlotChart(data,id,colorPlot,xA,yA,valueTicksX,valueTicksY,textFor
     };
     var width = 750 - margin.left - margin.right;
     var height = 540 - margin.top - margin.bottom;
-    var valueOfFilter = $('#idbLink')[0].text;
+    var selectedValueText = $('#idbLink')[0].text;
     var arrayAux = [];
     var arrayElements = [];
     var maxValue = 0;
     var maxValueX = 0;
     var maxValueY = 0;
-
+    var valueOfFilter = $("#divisionSelect")[0].value;
     for (let i = 0; i < data.length; i++) {
         data[i].FullCode = data[i].Code + " " + data[i].departmentCode.toUpperCase();
         data[i].divisionDepartment = data[i].departmentCode + "/" + data[i].divisionCode;
 
-        if(maxValueX<=data[i][xA] ){
+        if (maxValueX <= data[i][xA]) {
             maxValueX = data[i][xA];
         }
-        if(maxValueY<=data[i][yA] ){
+        if (maxValueY <= data[i][yA]) {
             maxValueY = data[i][yA];
         }
 
         if (data[i].Downloads >= maxValue) {
             maxValue = data[i].Downloads;
         }
-        if (valueOfFilter == data[i].divisionCode) {
+        if (valueOfFilter == data[i].divisionCode || (valueOfFilter=="department" && data[i].departmentCode == selectedValueText ) ) {
             arrayElements.push($.extend(true, {}, data[i]))
         } else {
             arrayAux.push($.extend(true, {}, data[i]))
@@ -60,10 +60,11 @@ function createPlotChart(data,id,colorPlot,xA,yA,valueTicksX,valueTicksY,textFor
         .size(10)
         .legend(false)
         .color(function (d) {
-            if (d.divisionCode != valueOfFilter && valueOfFilter != "IDB") {
-                return "#d8d8d8"
-            }
-            return colorPlot
+            if(valueOfFilter == "IDB"||d.divisionCode == valueOfFilter || (valueOfFilter=="department" && d.departmentCode == selectedValueText )){
+                return colorPlot
+            }else{
+                return "#d8d8d8";
+            }            
         })
         .tooltip({
             large: 600,
@@ -82,7 +83,9 @@ function createPlotChart(data,id,colorPlot,xA,yA,valueTicksX,valueTicksY,textFor
             grid: false,
             mouse: {
                 dasharray: "4"
-            },"domain" : [0, maxValueX],"range":[0,maxValueX]
+            },
+            "domain": [0, maxValueX],
+            "range": [0, maxValueX]
         })
         .text("Code")
         .y({
@@ -97,14 +100,15 @@ function createPlotChart(data,id,colorPlot,xA,yA,valueTicksX,valueTicksY,textFor
             mouse: {
                 dasharray: "4"
             },
-            "domain" : [-10, maxValueY],"range":[0,maxValueY]
+            "domain": [-10, maxValueY],
+            "range": [0, maxValueY]
         })
         .format({
             "text": function (text, params) {
                 //i made this cuz' this cant change anywhere
                 $("#d3plus_graph_xgrid line").css("stroke-dasharray", "4");
                 $("#d3plus_graph_ygrid line").css("stroke-dasharray", "4");
-                if(textForYAxis.length>0 && text == yA){
+                if (textForYAxis.length > 0 && text == yA) {
                     return textForYAxis
                 }
 

@@ -1,7 +1,7 @@
 //ya tienen la nueva data
 var datasetsDownloadsTimelineArrays = {
     downloadsTimelineDepartments: [{
-            "Department Codes": "CCB",
+            "department_code": "CCB",
             "data": [{
                     "date": "1-Jan-13",
                     "close": 0
@@ -293,7 +293,7 @@ var datasetsDownloadsTimelineArrays = {
             ]
         },
         {
-            "Department Codes": "CSD",
+            "department_code": "CSD",
             "data": [{
                     "date": "1-Jan-13",
                     "close": 0
@@ -585,7 +585,7 @@ var datasetsDownloadsTimelineArrays = {
             ]
         },
         {
-            "Department Codes": "Discontinued Departments",
+            "department_code": "Discontinued Departments",
             "data": [{
                     "date": "1-Jan-13",
                     "close": 0
@@ -877,7 +877,7 @@ var datasetsDownloadsTimelineArrays = {
             ]
         },
         {
-            "Department Codes": "IFD",
+            "department_code": "IFD",
             "data": [{
                     "date": "1-Jan-13",
                     "close": 0
@@ -1169,7 +1169,7 @@ var datasetsDownloadsTimelineArrays = {
             ]
         },
         {
-            "Department Codes": "INE",
+            "department_code": "INE",
             "data": [{
                     "date": "1-Jan-13",
                     "close": 0
@@ -1461,7 +1461,7 @@ var datasetsDownloadsTimelineArrays = {
             ]
         },
         {
-            "Department Codes": "INT",
+            "department_code": "INT",
             "data": [{
                     "date": "1-Jan-13",
                     "close": 0
@@ -1753,7 +1753,7 @@ var datasetsDownloadsTimelineArrays = {
             ]
         },
         {
-            "Department Codes": "MIF",
+            "department_code": "MIF",
             "data": [{
                     "date": "1-Jan-13",
                     "close": 0
@@ -2045,7 +2045,7 @@ var datasetsDownloadsTimelineArrays = {
             ]
         },
         {
-            "Department Codes": "RES",
+            "department_code": "RES",
             "data": [{
                     "date": "1-Jan-13",
                     "close": 14
@@ -2337,7 +2337,7 @@ var datasetsDownloadsTimelineArrays = {
             ]
         },
         {
-            "Department Codes": "SCL",
+            "department_code": "SCL",
             "data": [{
                     "date": "1-Jan-13",
                     "close": 0
@@ -2629,7 +2629,7 @@ var datasetsDownloadsTimelineArrays = {
             ]
         },
         {
-            "Department Codes": "SPD",
+            "department_code": "SPD",
             "data": [{
                     "date": "1-Jan-13",
                     "close": 0

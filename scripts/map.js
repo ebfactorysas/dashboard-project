@@ -1243,7 +1243,6 @@ function setDataToSourceChart(section, divisionSelected, departmentOption, selec
                     });
             } else {
                 if (departmentOption == "Department") {
-                    debugger;
                     serieTopSources = moocsEducationArrays.educationLevelDepartments2018
                         .filter(function (d) {
                             return (d.department_code == divisionSelected)
@@ -1308,7 +1307,6 @@ function setDataToSourceChart(section, divisionSelected, departmentOption, selec
                         });
                 } else {
                     if (departmentOption == "Department") {
-                        debugger;
                         serieTopSources = datasetsDownloadSource.downloadSourceDepartments
                             .filter(function (d) {
                                 return (d.department_codes == divisionSelected && d.value2018 > 0)
@@ -1373,7 +1371,6 @@ function setDataToSourceChart(section, divisionSelected, departmentOption, selec
                         });
                 } else {
                     if (departmentOption == "Department") {
-                        debugger;
                         serieTopSources = codePageviewsSourceArrays.pageviewSourceDepartments
                             .filter(function (d) {
                                 return (d.department_codes == divisionSelected && d.value2018 > 0)
