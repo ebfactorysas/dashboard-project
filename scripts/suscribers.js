@@ -327,10 +327,6 @@ function setSuscribersGauge2018(isIdb) {
     return dataGaugeSubscribers2018;
 }
 
-
-
-
-
 function drawGaugeSubscribersChart(dataGauge) {
     d3.select("#gauge-suscribers svg").remove();
     d3.select("#gauge-lac-s svg").remove();

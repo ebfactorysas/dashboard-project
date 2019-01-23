@@ -33,6 +33,9 @@ $("#divisionSelect").on('change', function (data) {
         initIndicators('departments', departmentSelected);
         setDataPublicationsByDepartment(departmentSelected);        
         setDataDataSetByDepartment(departmentSelected);
+        setDataCodeByDepartment(departmentSelected);
+        setDataSuscribersByDepartment(departmentSelected);
+        moocsFilter();
     } else {
         if (this.value == "IDB") {
 
@@ -283,7 +286,36 @@ function setDataCodeByDivisions(sltValue) {
 }
 
 function setDataCodeByDepartment(sltValue){
+    $("#code2018").prop("checked", true);
+    var ObjectTopIdb2018 = $.extend(true, [], codeTopArrays.topIDB2018);
 
+    var ObjectPageViewsTimeLine2018 = $.extend(true, [], codePageviewsTimelineArrays.pageviewTimelineDepartments);
+    ObjectPageViewsTimeLine2018 = ObjectPageViewsTimeLine2018.filter(function (data) {
+        return data.departmentCode == sltValue
+    });
+    var ObjectcodeScatterploArrays = $.extend(true, [], codeScatterploArrays);
+    var ObjectCodePageViewSource = $.extend(true, [], codePageviewsSourceArrays.pageviewSourceDepartments);
+    ObjectCodePageViewSource = ObjectCodePageViewSource.filter(function (data) {
+        return data.department_codes == sltValue
+    });
+
+    var ObjectGauges = $.extend(true, [], codeGaugesIndicators.indicatorsDepartments2018);
+    ObjectGauges = ObjectGauges.filter(function (data) {
+        return data.departmentCode == sltValue
+    });
+
+    // drawLinesChart(dataLines);
+    drawGaugeCodeChart(ObjectGauges[0]);
+    drawPlotChart(ObjectcodeScatterploArrays);
+    drawChartCodeTrend(ObjectTopIdb2018);
+    drawLinesChartCode(ObjectTopIdb2018);
+    if (ObjectPageViewsTimeLine2018.length > 0) {
+        createChartTimeline(ObjectPageViewsTimeLine2018[0].data);
+    } else {
+        createChartTimeline([]);
+    }
+
+    drawTreeCode(ObjectCodePageViewSource, "2018");
 }
 
 /**
@@ -334,10 +366,42 @@ function setDataSuscribersByDivisions(sltValue) {
  */
 function setDataSuscribersByDepartment(sltValue) {
     //treemap
-    jsonSuscribersTree = subscribersGender.genderDeparments.filter(function (data) {
+    var ObjectGenderTreeMap = $.extend(true, [], subscribersGender.genderDeparments);
+    jsonSuscribersTree = ObjectGenderTreeMap.filter(function (data) {
         return data.department == sltValue;
     });
     drawTreeSuscriber(jsonSuscribersTree);
+
+    //#suscribers-interested
+    var ObjectTopicBars = $.extend(true, [], subscribersTopics);
+    arraySuscribersTopics = ObjectTopicBars.filter(function (data) {
+        return data.Department == sltValue;
+    });
+    drawSuscribersChart(arraySuscribersTopics);
+
+    //#suscribers-subtopics
+    var ObjectSubTopicBars = $.extend(true, [], subscribersSubTopics);
+    arraySuscribersSubTopics = ObjectSubTopicBars.filter(function (data) {
+        return data.Departments == sltValue;
+    });
+    drawAgeSuscribersChart(arraySuscribersSubTopics);
+
+    //#institution-suscribers
+    var objectInstitution = $.extend(true, [], subscribersInstitution.institutionDivisions);
+    arraySuscribersInstitution = objectInstitution.filter(function (data) {
+        return data.division_code == sltValue;
+    });
+    drawInstitutionsChart(arraySuscribersInstitution);
+
+
+    jsondataSubscriber = subscribersArray.subscribersDepartments.filter(function (data) {
+        return data.deparment_code == sltValue
+    });
+    subscribersAllTotalGlobal = (jsondataSubscriber.length > 0) ? jsondataSubscriber[0].subscribers : '0';
+    subscribersAllDownloads = (jsondataSubscriber.length > 0) ? '100%' : '0'; /** missing, se pone 100% por orden de rodrigo */
+    subscribersAllDownloadsLac = (jsondataSubscriber.length > 0) ? ((jsondataSubscriber[0]['porcent_total_from_lac'] * 100 >= 100) ? "100%" : (jsondataSubscriber[0]['porcent_total_from_lac'] * 100).toFixed(1)) : '';
+    gaugeSuscribers = setSuscribersGauge();
+    drawGaugeSubscribersChart(gaugeSuscribers);
 }
 
 
