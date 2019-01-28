@@ -1219,7 +1219,8 @@ var publicationsIndicators = {
       "percentageLAC": 75.77
     }
   ],
-  indicatorsDivisions2018: [{
+  indicatorsDivisions2018: [
+    {
       "divisionCode": "ATI",
       "publications": 0,
       "percentagePublications": 0,

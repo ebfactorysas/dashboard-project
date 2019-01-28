@@ -102,6 +102,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 .tooltip-gauges h3 {
     font-size: 16px;
 
@@ -109,7 +110,7 @@
 
 
 /** header in SP**/
-#vps-navigation{
+#vps-navigation {
     flex-direction: row;
 }
 
@@ -117,11 +118,11 @@
     display: block;
 }
 
-#s4-bodyContainer .container-fluid:first-child  #vps-navigation .vps-nav{
+#s4-bodyContainer .container-fluid:first-child #vps-navigation .vps-nav {
     display: block;
 }
 
-#s4-bodyContainer .navbar:nth-child(2){
+#s4-bodyContainer .navbar:nth-child(2) {
     position: fixed;
     top: 0;
     right: 0;
@@ -130,17 +131,17 @@
     margin-top: 4.3%;
 }
 
-#s4-bodyContainer .container-fluid:first-child  #vps-navigation .navbar-nav>li>.dropdown-menu{
+#s4-bodyContainer .container-fluid:first-child #vps-navigation .navbar-nav>li>.dropdown-menu {
     position: absolute;
 }
 
 
 
-.inner-nav{
+.inner-nav {
     margin-top: 8.5%;
 }
 
-.tooltip-gauges .border-top{
+.tooltip-gauges .border-top {
     border-top: solid 1px rgb(221, 221, 221);
 }
 
@@ -606,7 +607,7 @@ section.moocs .distribution-chart .tick text {
 
 section.moocs #moocs-registrations .y-data {
     font-family: 'Gotham-Bold';
-    font-size: 12px;
+    font-size: 11px;
 }
 
 section.moocs #moocs-registrations .text-inside {
@@ -617,8 +618,17 @@ section.moocs #moocs-registrations .y-data .domain {
     display: none;
 }
 
+section.moocs #moocs-registrations .y-data text {
+    font-family: 'Gotham-Bold';
+    font-size: 16px;
+}
+
+
+
+
 section.moocs #timeline-moocs {
     font-family: 'Gotham-Bold';
+    height: 240px !important;
 }
 
 section.moocs #timeline-moocs .line {
@@ -645,6 +655,11 @@ section.moocs #timeline-moocs .y-axis .tick line {
 
 section.moocs [id^="student"] .y-data path {
     display: none;
+}
+
+section.moocs #timeline-moocs .overlay {
+    fill: none;
+    pointer-events: all;
 }
 
 section.moocs [id^="student"] .y-data {
@@ -1576,7 +1591,7 @@ section.map select.form-control:not([size]):not([multiple]) {
         /* height: 40px; */
         margin-top: -32px
     }
-    
+
     section.datasets #lines-dataset {
         padding-top: 55px;
         margin-left: -40px;
@@ -2210,7 +2225,7 @@ section.map select.form-control:not([size]):not([multiple]) {
         pointer-events: all;
     }
 
-   
+
 
     section.code .funds-allocated-meter .background {
         fill: #A17603;
@@ -2358,7 +2373,7 @@ section.map select.form-control:not([size]):not([multiple]) {
         /* height: 40px; */
         margin-top: -32px
     }
-    
+
     section.code #lines-code {
         padding-top: 55px;
         margin-left: -40px;
@@ -2838,7 +2853,7 @@ section.map select.form-control:not([size]):not([multiple]) {
     }
 
     #moocs-registrations {
-        height: 545px;
+        height: 245px;
     }
 
     section.publications {
@@ -3021,8 +3036,9 @@ section.map select.form-control:not([size]):not([multiple]) {
         font-family: "Gotham-Book"
     }
 
-    section.moocs #timeline-moocs {
-        height: 310px;
+    section.moocs #timeline-moocs svg {
+        height: 270px;
+        width: 883px;
     }
 
     section.moocs #timeline-moocs .y-axis text {
@@ -3214,11 +3230,10 @@ section.map select.form-control:not([size]):not([multiple]) {
         min-height: 900px;
     }
 
-    #moocs-registrations {
-        height: 545px;
-    }
-
     section.publications {
         height: 100vh;
+    }
+    section.publications #publication-trend {
+        height: 600px;
     }
 }

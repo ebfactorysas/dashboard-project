@@ -1,59 +1,3 @@
-var dataLines = [{
-        "date": 201801,
-        "Paul Productive Code": 4.1 + 10,
-        "Paul Raw Code": 3.2 + 20,
-        "Michelle Productive Code": 2.2 + 30,
-        "Michelle Raw Code": 1.9 + 40,
-        "mario pro code": 7 + 50,
-        "mario raw code": 3 + 60
-    },
-    {
-        "date": 201802,
-        "Paul Productive Code": 6 + 10,
-        "Paul Raw Code": 3.5 + 20,
-        "Michelle Productive Code": 3.4 + 30,
-        "Michelle Raw Code": 1.9 + 40,
-        "mario pro code": 2 + 50,
-        "mario raw code": 3 + 60
-    },
-    {
-        "date": 201803,
-        "Paul Productive Code": 0 + 10,
-        "Paul Raw Code": 3.1 + 20,
-        "Michelle Productive Code": 3.1 + 30,
-        "Michelle Raw Code": 1.9 + 40,
-        "mario pro code": 2 + 50,
-        "mario raw code": 9 + 60
-    },
-    {
-        "date": 201804,
-        "Paul Productive Code": 7 + 10,
-        "Paul Raw Code": 3.8 + 20,
-        "Michelle Productive Code": 3.2 + 30,
-        "Michelle Raw Code": 2.3 + 40,
-        "mario pro code": 9 + 50,
-        "mario raw code": 0 + 60
-    },
-    {
-        "date": 201805,
-        "Paul Productive Code": 4 + 10,
-        "Paul Raw Code": 4.7 + 20,
-        "Michelle Productive Code": 3.7 + 30,
-        "Michelle Raw Code": 2.7 + 40,
-        "mario pro code": 5 + 50,
-        "mario raw code": 4 + 60
-    },
-    {
-        "date": 201806,
-        "Paul Productive Code": 9 + 10,
-        "Paul Raw Code": 5.5 + 20,
-        "Michelle Productive Code": 3.2 + 30,
-        "Michelle Raw Code": 2.2 + 40,
-        "mario pro code": 6 + 50,
-        "mario raw code": 2 + 60
-    }
-];
-
 function drawChartCodeTrend(codeTrend) {
     d3.select("#code-trend svg").remove();
     codeTrend = codeTrend.slice(0, 10).sort(function (a, b) {
@@ -91,7 +35,7 @@ function drawTreeCode(dataTree, filtertype, typeload) {
 
 function createChartTimeline(data) {
     d3.select("#timeline-code svg").remove();
-    createTimelineChart(data, "#timeline-code", "#EEAE00", "#code018")
+    createTimelineChart(data, "#timeline-code", "#EEAE00", "#code018",600)
 }
 
 function drawPlotChart(data) {

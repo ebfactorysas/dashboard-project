@@ -1,11 +1,11 @@
-function createTimelineChart(data, id,colorTitle,id2018) {
+function createTimelineChart(data, id,colorTitle,id2018,widthDef) {
     var margin = {
             top: 20,
             right: 20,
             bottom: 30,
             left: 50
         },
-        width = 600 - margin.left - margin.right,
+        width = widthDef - margin.left - margin.right,
         height = 220 - margin.top - margin.bottom;
     var parseTime = d3.timeParse("%d-%b-%y");
     var x = d3.scaleTime().range([0, width]);

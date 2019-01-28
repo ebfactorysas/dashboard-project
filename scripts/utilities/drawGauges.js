@@ -104,7 +104,7 @@ function gaugeTooltip(id, value, percentage, code, displayPercentage, tooltipTex
             }
 
             textInnerHtml = textInnerHtml.replace("{{value}}", value.toLocaleString());
-            textInnerHtml = textInnerHtml.replace("{{percentage}}", percentage);
+            textInnerHtml = textInnerHtml.replace("{{percentage}}", checkDecimal(percentage));
             textInnerHtml = textInnerHtml.replace(/{{tooltipText}}/g, tooltipText);
 
             var m = d3Old.mouse(root.node());

@@ -208,7 +208,7 @@ function optionsAnimated(suffixValue) {
 function publicationsIndicatorAlltime(jsondata) {
     publicationsAllTotalGlobal = (jsondataPublications.length > 0) ? jsondataPublications[0].all_the_time_publications : '0';
     publicationsAllDownloads = (jsondataPublications.length > 0) ? jsondataPublications[0].all_the_time_downloads : '0';
-    publicationsAllDownloadsLac = (jsondataPublications.length > 0) ? ((jsondataPublications[0].all_the_time_porcent_total_LAC_downloads != "missing" && jsondataPublications[0].all_the_time_porcent_total_LAC_downloads > 0) ? (jsondataPublications[0].all_the_time_porcent_total_LAC_downloads * 100).toFixed(1) : jsondataPublications[0].all_the_time_porcent_total_LAC_downloads) : 0;
+    publicationsAllDownloadsLac = (jsondataPublications.length > 0) ? ((jsondataPublications[0].all_the_time_porcent_total_LAC_downloads != "missing" && jsondataPublications[0].all_the_time_porcent_total_LAC_downloads > 0) ? (jsondataPublications[0].all_the_time_porcent_total_LAC_downloads ).toFixed(1) : jsondataPublications[0].all_the_time_porcent_total_LAC_downloads) : 0;
     var results = {
         publicationsValue: (jsondata.length > 0) ? jsondata[0].all_the_time_publications : '0',
         porcent_total_publications: "100%",
@@ -217,12 +217,15 @@ function publicationsIndicatorAlltime(jsondata) {
         downloadsValue: (jsondata.length > 0) ? jsondata[0]['all_the_time_downloads'] : '0',
         porcent_total_downloads: "100%",
         /*missing, rodrigo dice que si falta el dato que pongamos 100% para all the time*/
-        porcent_downloads_lac: (jsondata.length > 0) ? ((jsondata[0].all_the_time_porcent_total_LAC_downloads != "missing" && jsondata[0].all_the_time_porcent_total_LAC_downloads > 0) ? (jsondata[0].all_the_time_porcent_total_LAC_downloads * 100).toFixed(1) + '%' : jsondata[0].all_the_time_porcent_total_LAC_downloads) : 0, //falta en el archivo
+        porcent_downloads_lac: (jsondata.length > 0) ? ((jsondata[0].all_the_time_porcent_total_LAC_downloads != "missing" && jsondata[0].all_the_time_porcent_total_LAC_downloads > 0) ? (jsondata[0].all_the_time_porcent_total_LAC_downloads ).toFixed(1) + '%' : jsondata[0].all_the_time_porcent_total_LAC_downloads) : 0, //falta en el archivo
     }
     return results;
 }
 
 function checkDecimal(value) {
+    if (typeof (value) == "string") {
+        value = parseFloat(value);
+    }
     if (value.toFixed(1) % 1 != 0) {
         return value.toFixed(1);
     }
@@ -235,11 +238,11 @@ function publicationsIndicator2018(jsondata) {
     // publications2018TotalGlobal = setSettingsNumber(publications2018TotalGlobal);
     var results = {
         publicationsValue: (jsondata.length > 0) ? jsondata[0]['2018_publications'] : '0',
-        porcent_total_publications: (jsondata.length > 0) ? checkDecimal((jsondata[0]['2018_porcent_total_publications'] * 100)) + '%' : '',
+        porcent_total_publications: (jsondata.length > 0) ? checkDecimal((jsondata[0]['2018_porcent_total_publications'] )) + '%' : '',
         compare2017_2018_publications: (jsondata.length > 0) ? jsondata[0]['2017_2018_publications'] : '',
         downloadsValue: (jsondata.length > 0) ? jsondata[0]['2018_downloads'] : '0',
-        porcent_total_downloads: (jsondata.length > 0) ? checkDecimal((jsondata[0]['2018_porcent_total_downloads'] * 100)) + '%' : '', // no se enviaron en los datos para el porcentaje total de downloads filtrado por all time
-        porcent_downloads_lac: (jsondata.length > 0) ? checkDecimal((jsondata[0]['2018_porcent_total_LAC_downloads'] * 100)) + '%' : ''
+        porcent_total_downloads: (jsondata.length > 0) ? checkDecimal((jsondata[0]['2018_porcent_total_downloads'] )) + '%' : '', // no se enviaron en los datos para el porcentaje total de downloads filtrado por all time
+        porcent_downloads_lac: (jsondata.length > 0) ? checkDecimal((jsondata[0]['2018_porcent_total_LAC_downloads'] )) + '%' : ''
     }
 
     return results;

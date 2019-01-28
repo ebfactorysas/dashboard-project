@@ -1,962 +1,2352 @@
 var moocsAgeArrays = {
-    ageDepartments: [
-        {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
-            "Age": "<18",
-            "2018 registrations": "130",
-            "% of 2018 registrations ": "0.014420410427066",
-            "xlsx_row_id": 2
+    ageDepartmentsAllTheTime: [
+      {
+        "departmentCode": "CSD",
+        "name": "<18",
+        "value": 302,
+        "percentage": "0.19%",
+        "id": 1
+      },
+      {
+        "departmentCode": "CSD",
+        "name": "18 - 25",
+        "value": 17411,
+        "percentage": "11.21%",
+        "id": 2
+      },
+      {
+        "departmentCode": "CSD",
+        "name": "26 - 39",
+        "value": 82353,
+        "percentage": "53.04%",
+        "id": 3
+      },
+      {
+        "departmentCode": "CSD",
+        "name": "40 - 62",
+        "value": 41997,
+        "percentage": "27.05%",
+        "id": 4
+      },
+      {
+        "departmentCode": "CSD",
+        "name": ">63",
+        "value": 2649,
+        "percentage": "1.71%",
+        "id": 5
+      },
+      {
+        "departmentCode": "CSD",
+        "name": "Not Reported",
+        "value": 10551,
+        "percentage": "6.80%",
+        "id": 6
+      },
+      {
+        "departmentCode": "IFD",
+        "name": "<18",
+        "value": 500,
+        "percentage": "0.31%",
+        "id": 7
+      },
+      {
+        "departmentCode": "IFD",
+        "name": "18 - 25",
+        "value": 12564,
+        "percentage": "7.70%",
+        "id": 8
+      },
+      {
+        "departmentCode": "IFD",
+        "name": "26 - 39",
+        "value": 74059,
+        "percentage": "45.38%",
+        "id": 9
+      },
+      {
+        "departmentCode": "IFD",
+        "name": "40 - 62",
+        "value": 52941,
+        "percentage": "32.44%",
+        "id": 10
+      },
+      {
+        "departmentCode": "IFD",
+        "name": ">63",
+        "value": 2789,
+        "percentage": "1.71%",
+        "id": 11
+      },
+      {
+        "departmentCode": "IFD",
+        "name": "Not Reported",
+        "value": 20335,
+        "percentage": "12.46%",
+        "id": 12
+      },
+      {
+        "departmentCode": "INE",
+        "name": "<18",
+        "value": 341,
+        "percentage": "0.33%",
+        "id": 13
+      },
+      {
+        "departmentCode": "INE",
+        "name": "18 - 25",
+        "value": 10183,
+        "percentage": "9.81%",
+        "id": 14
+      },
+      {
+        "departmentCode": "INE",
+        "name": "26 - 39",
+        "value": 49068,
+        "percentage": "47.27%",
+        "id": 15
+      },
+      {
+        "departmentCode": "INE",
+        "name": "40 - 62",
+        "value": 32949,
+        "percentage": "31.74%",
+        "id": 16
+      },
+      {
+        "departmentCode": "INE",
+        "name": ">63",
+        "value": 2032,
+        "percentage": "1.96%",
+        "id": 17
+      },
+      {
+        "departmentCode": "INE",
+        "name": "Not Reported",
+        "value": 9237,
+        "percentage": "8.90%",
+        "id": 18
+      },
+      {
+        "departmentCode": "INT",
+        "name": "<18",
+        "value": 177,
+        "percentage": "0.33%",
+        "id": 19
+      },
+      {
+        "departmentCode": "INT",
+        "name": "18 - 25",
+        "value": 8769,
+        "percentage": "16.34%",
+        "id": 20
+      },
+      {
+        "departmentCode": "INT",
+        "name": "26 - 39",
+        "value": 22315,
+        "percentage": "41.57%",
+        "id": 21
+      },
+      {
+        "departmentCode": "INT",
+        "name": "40 - 62",
+        "value": 12216,
+        "percentage": "22.76%",
+        "id": 22
+      },
+      {
+        "departmentCode": "INT",
+        "name": ">63",
+        "value": 918,
+        "percentage": "1.71%",
+        "id": 23
+      },
+      {
+        "departmentCode": "INT",
+        "name": "Not Reported",
+        "value": 9285,
+        "percentage": "17.30%",
+        "id": 24
+      },
+      {
+        "departmentCode": "KIC",
+        "name": "<18",
+        "value": 1321,
+        "percentage": "0.28%",
+        "id": 25
+      },
+      {
+        "departmentCode": "KIC",
+        "name": "18 - 25",
+        "value": 46212,
+        "percentage": "9.67%",
+        "id": 26
+      },
+      {
+        "departmentCode": "KIC",
+        "name": "26 - 39",
+        "value": 225844,
+        "percentage": "47.25%",
+        "id": 27
+      },
+      {
+        "departmentCode": "KIC",
+        "name": "40 - 62",
+        "value": 126500,
+        "percentage": "26.46%",
+        "id": 28
+      },
+      {
+        "departmentCode": "KIC",
+        "name": ">63",
+        "value": 5789,
+        "percentage": "1.21%",
+        "id": 29
+      },
+      {
+        "departmentCode": "KIC",
+        "name": "Not Reported",
+        "value": 72346,
+        "percentage": "15.13%",
+        "id": 30
+      },
+      {
+        "departmentCode": "MIF",
+        "name": "<18",
+        "value": 30,
+        "percentage": "0.07%",
+        "id": 31
+      },
+      {
+        "departmentCode": "MIF",
+        "name": "18 - 25",
+        "value": 2732,
+        "percentage": "6.07%",
+        "id": 32
+      },
+      {
+        "departmentCode": "MIF",
+        "name": "26 - 39",
+        "value": 22557,
+        "percentage": "50.10%",
+        "id": 33
+      },
+      {
+        "departmentCode": "MIF",
+        "name": "40 - 62",
+        "value": 16370,
+        "percentage": "36.36%",
+        "id": 34
+      },
+      {
+        "departmentCode": "MIF",
+        "name": ">63",
+        "value": 874,
+        "percentage": "1.94%",
+        "id": 35
+      },
+      {
+        "departmentCode": "MIF",
+        "name": "Not Reported",
+        "value": 2465,
+        "percentage": "5.47%",
+        "id": 36
+      },
+      {
+        "departmentCode": "PRE",
+        "name": "<18",
+        "value": 234,
+        "percentage": "0.83%",
+        "id": 37
+      },
+      {
+        "departmentCode": "PRE",
+        "name": "18 - 25",
+        "value": 3076,
+        "percentage": "10.92%",
+        "id": 38
+      },
+      {
+        "departmentCode": "PRE",
+        "name": "26 - 39",
+        "value": 9922,
+        "percentage": "35.22%",
+        "id": 39
+      },
+      {
+        "departmentCode": "PRE",
+        "name": "40 - 62",
+        "value": 7922,
+        "percentage": "28.12%",
+        "id": 40
+      },
+      {
+        "departmentCode": "PRE",
+        "name": ">63",
+        "value": 479,
+        "percentage": "1.70%",
+        "id": 41
+      },
+      {
+        "departmentCode": "PRE",
+        "name": "Not Reported",
+        "value": 6542,
+        "percentage": "23.22%",
+        "id": 42
+      },
+      {
+        "departmentCode": "RES",
+        "name": "<18",
+        "value": 373,
+        "percentage": "0.72%",
+        "id": 43
+      },
+      {
+        "departmentCode": "RES",
+        "name": "18 - 25",
+        "value": 9092,
+        "percentage": "17.50%",
+        "id": 44
+      },
+      {
+        "departmentCode": "RES",
+        "name": "26 - 39",
+        "value": 23635,
+        "percentage": "45.48%",
+        "id": 45
+      },
+      {
+        "departmentCode": "RES",
+        "name": "40 - 62",
+        "value": 11262,
+        "percentage": "21.67%",
+        "id": 46
+      },
+      {
+        "departmentCode": "RES",
+        "name": ">63",
+        "value": 795,
+        "percentage": "1.53%",
+        "id": 47
+      },
+      {
+        "departmentCode": "RES",
+        "name": "Not Reported",
+        "value": 6810,
+        "percentage": "13.10%",
+        "id": 48
+      },
+      {
+        "departmentCode": "SCL",
+        "name": "<18",
+        "value": 892,
+        "percentage": "0.49%",
+        "id": 49
+      },
+      {
+        "departmentCode": "SCL",
+        "name": "18 - 25",
+        "value": 17140,
+        "percentage": "9.48%",
+        "id": 50
+      },
+      {
+        "departmentCode": "SCL",
+        "name": "26 - 39",
+        "value": 78218,
+        "percentage": "43.25%",
+        "id": 51
+      },
+      {
+        "departmentCode": "SCL",
+        "name": "40 - 62",
+        "value": 52171,
+        "percentage": "28.85%",
+        "id": 52
+      },
+      {
+        "departmentCode": "SCL",
+        "name": ">63",
+        "value": 2917,
+        "percentage": "1.61%",
+        "id": 53
+      },
+      {
+        "departmentCode": "SCL",
+        "name": "Not Reported",
+        "value": 29518,
+        "percentage": "16.32%",
+        "id": 54
+      },
+      {
+        "departmentCode": "VPC",
+        "name": "<18",
+        "value": 454,
+        "percentage": "0.42%",
+        "id": 55
+      },
+      {
+        "departmentCode": "VPC",
+        "name": "18 - 25",
+        "value": 10580,
+        "percentage": "9.88%",
+        "id": 56
+      },
+      {
+        "departmentCode": "VPC",
+        "name": "26 - 39",
+        "value": 45014,
+        "percentage": "42.03%",
+        "id": 57
+      },
+      {
+        "departmentCode": "VPC",
+        "name": "40 - 62",
+        "value": 26873,
+        "percentage": "25.09%",
+        "id": 58
+      },
+      {
+        "departmentCode": "VPC",
+        "name": ">63",
+        "value": 1270,
+        "percentage": "1.19%",
+        "id": 59
+      },
+      {
+        "departmentCode": "VPC",
+        "name": "Not Reported",
+        "value": 22900,
+        "percentage": "21.38%",
+        "id": 60
+      }
+    ],
+    ageDepartments2018:[
+      {
+        "departmentCode": "CSD",
+        "name": "<18",
+        "value": 26,
+        "percentage": "0.3%",
+        "id": 1
+      },
+      {
+        "departmentCode": "CSD",
+        "name": "18 - 25",
+        "value": 998,
+        "percentage": "10.1%",
+        "id": 2
+      },
+      {
+        "departmentCode": "CSD",
+        "name": "26 - 39",
+        "value": 3330,
+        "percentage": "33.7%",
+        "id": 3
+      },
+      {
+        "departmentCode": "CSD",
+        "name": "40 - 62",
+        "value": 2335,
+        "percentage": "23.6%",
+        "id": 4
+      },
+      {
+        "departmentCode": "CSD",
+        "name": ">63",
+        "value": 143,
+        "percentage": "1.4%",
+        "id": 5
+      },
+      {
+        "departmentCode": "CSD",
+        "name": "Not Reported",
+        "value": 3043,
+        "percentage": "30.8%",
+        "id": 6
+      },
+      {
+        "departmentCode": "IFD",
+        "name": "<18",
+        "value": 275,
+        "percentage": "0.8%",
+        "id": 7
+      },
+      {
+        "departmentCode": "IFD",
+        "name": "18 - 25",
+        "value": 3590,
+        "percentage": "10.3%",
+        "id": 8
+      },
+      {
+        "departmentCode": "IFD",
+        "name": "26 - 39",
+        "value": 11763,
+        "percentage": "33.9%",
+        "id": 9
+      },
+      {
+        "departmentCode": "IFD",
+        "name": "40 - 62",
+        "value": 8490,
+        "percentage": "24.5%",
+        "id": 10
+      },
+      {
+        "departmentCode": "IFD",
+        "name": ">63",
+        "value": 502,
+        "percentage": "1.4%",
+        "id": 11
+      },
+      {
+        "departmentCode": "IFD",
+        "name": "Not Reported",
+        "value": 10093,
+        "percentage": "29.1%",
+        "id": 12
+      },
+      {
+        "departmentCode": "INE",
+        "name": "<18",
+        "value": 85,
+        "percentage": "0.8%",
+        "id": 13
+      },
+      {
+        "departmentCode": "INE",
+        "name": "18 - 25",
+        "value": 1578,
+        "percentage": "14.7%",
+        "id": 14
+      },
+      {
+        "departmentCode": "INE",
+        "name": "26 - 39",
+        "value": 3541,
+        "percentage": "33.1%",
+        "id": 15
+      },
+      {
+        "departmentCode": "INE",
+        "name": "40 - 62",
+        "value": 1930,
+        "percentage": "18.0%",
+        "id": 16
+      },
+      {
+        "departmentCode": "INE",
+        "name": ">63",
+        "value": 129,
+        "percentage": "1.2%",
+        "id": 17
+      },
+      {
+        "departmentCode": "INE",
+        "name": "Not Reported",
+        "value": 3451,
+        "percentage": "32.2%",
+        "id": 18
+      },
+      {
+        "departmentCode": "INT",
+        "name": "<18",
+        "value": 114,
+        "percentage": "0.5%",
+        "id": 19
+      },
+      {
+        "departmentCode": "INT",
+        "name": "18 - 25",
+        "value": 3654,
+        "percentage": "15.3%",
+        "id": 20
+      },
+      {
+        "departmentCode": "INT",
+        "name": "26 - 39",
+        "value": 7545,
+        "percentage": "31.6%",
+        "id": 21
+      },
+      {
+        "departmentCode": "INT",
+        "name": "40 - 62",
+        "value": 4383,
+        "percentage": "18.4%",
+        "id": 22
+      },
+      {
+        "departmentCode": "INT",
+        "name": ">63",
+        "value": 317,
+        "percentage": "1.3%",
+        "id": 23
+      },
+      {
+        "departmentCode": "INT",
+        "name": "Not Reported",
+        "value": 7861,
+        "percentage": "32.9%",
+        "id": 24
+      },
+      {
+        "departmentCode": "KIC",
+        "name": "<18",
+        "value": 745,
+        "percentage": "0.7%",
+        "id": 25
+      },
+      {
+        "departmentCode": "KIC",
+        "name": "18 - 25",
+        "value": 12658,
+        "percentage": "11.1%",
+        "id": 26
+      },
+      {
+        "departmentCode": "KIC",
+        "name": "26 - 39",
+        "value": 41013,
+        "percentage": "35.9%",
+        "id": 27
+      },
+      {
+        "departmentCode": "KIC",
+        "name": "40 - 62",
+        "value": 22484,
+        "percentage": "19.7%",
+        "id": 28
+      },
+      {
+        "departmentCode": "KIC",
+        "name": ">63",
+        "value": 858,
+        "percentage": "0.8%",
+        "id": 29
+      },
+      {
+        "departmentCode": "KIC",
+        "name": "Not Reported",
+        "value": 36594,
+        "percentage": "32.0%",
+        "id": 30
+      },
+      {
+        "departmentCode": "MIF",
+        "name": "<18",
+        "value": 0,
+        "percentage": "0.0%",
+        "id": 31
+      },
+      {
+        "departmentCode": "MIF",
+        "name": "18 - 25",
+        "value": 0,
+        "percentage": "0.0%",
+        "id": 32
+      },
+      {
+        "departmentCode": "MIF",
+        "name": "26 - 39",
+        "value": 0,
+        "percentage": "0.0%",
+        "id": 33
+      },
+      {
+        "departmentCode": "MIF",
+        "name": "40 - 62",
+        "value": 0,
+        "percentage": "0.0%",
+        "id": 34
+      },
+      {
+        "departmentCode": "MIF",
+        "name": ">63",
+        "value": 0,
+        "percentage": "0.0%",
+        "id": 35
+      },
+      {
+        "departmentCode": "MIF",
+        "name": "Not Reported",
+        "value": 0,
+        "percentage": "0.0%",
+        "id": 36
+      },
+      {
+        "departmentCode": "PRE",
+        "name": "<18",
+        "value": 166,
+        "percentage": "1.3%",
+        "id": 37
+      },
+      {
+        "departmentCode": "PRE",
+        "name": "18 - 25",
+        "value": 1565,
+        "percentage": "12.3%",
+        "id": 38
+      },
+      {
+        "departmentCode": "PRE",
+        "name": "26 - 39",
+        "value": 3902,
+        "percentage": "30.6%",
+        "id": 39
+      },
+      {
+        "departmentCode": "PRE",
+        "name": "40 - 62",
+        "value": 2995,
+        "percentage": "23.5%",
+        "id": 40
+      },
+      {
+        "departmentCode": "PRE",
+        "name": ">63",
+        "value": 218,
+        "percentage": "1.7%",
+        "id": 41
+      },
+      {
+        "departmentCode": "PRE",
+        "name": "Not Reported",
+        "value": 3904,
+        "percentage": "30.6%",
+        "id": 42
+      },
+      {
+        "departmentCode": "RES",
+        "name": "<18",
+        "value": 248,
+        "percentage": "1.7%",
+        "id": 43
+      },
+      {
+        "departmentCode": "RES",
+        "name": "18 - 25",
+        "value": 2788,
+        "percentage": "19.6%",
+        "id": 44
+      },
+      {
+        "departmentCode": "RES",
+        "name": "26 - 39",
+        "value": 4602,
+        "percentage": "32.4%",
+        "id": 45
+      },
+      {
+        "departmentCode": "RES",
+        "name": "40 - 62",
+        "value": 2320,
+        "percentage": "16.3%",
+        "id": 46
+      },
+      {
+        "departmentCode": "RES",
+        "name": ">63",
+        "value": 151,
+        "percentage": "1.1%",
+        "id": 47
+      },
+      {
+        "departmentCode": "RES",
+        "name": "Not Reported",
+        "value": 4104,
+        "percentage": "28.9%",
+        "id": 48
+      },
+      {
+        "departmentCode": "SCL",
+        "name": "<18",
+        "value": 523,
+        "percentage": "1.0%",
+        "id": 49
+      },
+      {
+        "departmentCode": "SCL",
+        "name": "18 - 25",
+        "value": 5556,
+        "percentage": "10.5%",
+        "id": 50
+      },
+      {
+        "departmentCode": "SCL",
+        "name": "26 - 39",
+        "value": 16488,
+        "percentage": "31.1%",
+        "id": 51
+      },
+      {
+        "departmentCode": "SCL",
+        "name": "40 - 62",
+        "value": 10289,
+        "percentage": "19.4%",
+        "id": 52
+      },
+      {
+        "departmentCode": "SCL",
+        "name": ">63",
+        "value": 475,
+        "percentage": "0.9%",
+        "id": 53
+      },
+      {
+        "departmentCode": "SCL",
+        "name": "Not Reported",
+        "value": 19646,
+        "percentage": "37.1%",
+        "id": 54
+      },
+      {
+        "departmentCode": "VPC",
+        "name": "<18",
+        "value": 255,
+        "percentage": "1.0%",
+        "id": 55
+      },
+      {
+        "departmentCode": "VPC",
+        "name": "18 - 25",
+        "value": 2579,
+        "percentage": "9.7%",
+        "id": 56
+      },
+      {
+        "departmentCode": "VPC",
+        "name": "26 - 39",
+        "value": 8730,
+        "percentage": "32.9%",
+        "id": 57
+      },
+      {
+        "departmentCode": "VPC",
+        "name": "40 - 62",
+        "value": 5753,
+        "percentage": "21.7%",
+        "id": 58
+      },
+      {
+        "departmentCode": "VPC",
+        "name": ">63",
+        "value": 207,
+        "percentage": "0.8%",
+        "id": 59
+      },
+      {
+        "departmentCode": "VPC",
+        "name": "Not Reported",
+        "value": 9023,
+        "percentage": "34.0%",
+        "id": 60
+      }
+    ],
+    ageDivisionAllTheTime: [
+      {
+        "divisionCode": "EDU",
+        "name": "<18",
+        "value": 419,
+        "percentage": "1.05%",
+        "id": 1
+      },
+      {
+        "divisionCode": "EDU",
+        "name": "18 - 25",
+        "value": 4863,
+        "percentage": "12.18%",
+        "id": 2
+      },
+      {
+        "divisionCode": "EDU",
+        "name": "26 - 39",
+        "value": 14603,
+        "percentage": "36.59%",
+        "id": 3
+      },
+      {
+        "divisionCode": "EDU",
+        "name": "40 - 62",
+        "value": 9684,
+        "percentage": "24.26%",
+        "id": 4
+      },
+      {
+        "divisionCode": "EDU",
+        "name": ">63",
+        "value": 614,
+        "percentage": "1.54%",
+        "id": 5
+      },
+      {
+        "divisionCode": "EDU",
+        "name": "Not Reported",
+        "value": 9731,
+        "percentage": "24.38%",
+        "id": 6
+      },
+      {
+        "divisionCode": "FMM",
+        "name": "<18",
+        "value": 183,
+        "percentage": "0.26%",
+        "id": 7
+      },
+      {
+        "divisionCode": "FMM",
+        "name": "18 - 25",
+        "value": 5065,
+        "percentage": "7.17%",
+        "id": 8
+      },
+      {
+        "divisionCode": "FMM",
+        "name": "26 - 39",
+        "value": 32257,
+        "percentage": "45.68%",
+        "id": 9
+      },
+      {
+        "divisionCode": "FMM",
+        "name": "40 - 62",
+        "value": 24063,
+        "percentage": "34.08%",
+        "id": 10
+      },
+      {
+        "divisionCode": "FMM",
+        "name": ">63",
+        "value": 1302,
+        "percentage": "1.84%",
+        "id": 11
+      },
+      {
+        "divisionCode": "FMM",
+        "name": "Not Reported",
+        "value": 7746,
+        "percentage": "10.97%",
+        "id": 12
+      },
+      {
+        "divisionCode": "HUD",
+        "name": "<18",
+        "value": 217,
+        "percentage": "0.18%",
+        "id": 13
+      },
+      {
+        "divisionCode": "HUD",
+        "name": "18 - 25",
+        "value": 13362,
+        "percentage": "11.19%",
+        "id": 14
+      },
+      {
+        "divisionCode": "HUD",
+        "name": "26 - 39",
+        "value": 65714,
+        "percentage": "55.04%",
+        "id": 15
+      },
+      {
+        "divisionCode": "HUD",
+        "name": "40 - 62",
+        "value": 32121,
+        "percentage": "26.91%",
+        "id": 16
+      },
+      {
+        "divisionCode": "HUD",
+        "name": ">63",
+        "value": 2028,
+        "percentage": "1.70%",
+        "id": 17
+      },
+      {
+        "divisionCode": "HUD",
+        "name": "Not Reported",
+        "value": 5943,
+        "percentage": "4.98%",
+        "id": 18
+      },
+      {
+        "divisionCode": "ICS",
+        "name": "<18",
+        "value": 83,
+        "percentage": "0.13%",
+        "id": 19
+      },
+      {
+        "divisionCode": "ICS",
+        "name": "18 - 25",
+        "value": 4423,
+        "percentage": "6.87%",
+        "id": 20
+      },
+      {
+        "divisionCode": "ICS",
+        "name": "26 - 39",
+        "value": 31880,
+        "percentage": "49.51%",
+        "id": 21
+      },
+      {
+        "divisionCode": "ICS",
+        "name": "40 - 62",
+        "value": 20956,
+        "percentage": "32.54%",
+        "id": 22
+      },
+      {
+        "divisionCode": "ICS",
+        "name": ">63",
+        "value": 1008,
+        "percentage": "1.57%",
+        "id": 23
+      },
+      {
+        "divisionCode": "ICS",
+        "name": "Not Reported",
+        "value": 6047,
+        "percentage": "9.39%",
+        "id": 24
+      },
+      {
+        "divisionCode": "IFD Front Desk",
+        "name": "<18",
+        "value": 234,
+        "percentage": "0.83%",
+        "id": 25
+      },
+      {
+        "divisionCode": "IFD Front Desk",
+        "name": "18 - 25",
+        "value": 3076,
+        "percentage": "10.92%",
+        "id": 26
+      },
+      {
+        "divisionCode": "IFD Front Desk",
+        "name": "26 - 39",
+        "value": 9922,
+        "percentage": "35.22%",
+        "id": 27
+      },
+      {
+        "divisionCode": "IFD Front Desk",
+        "name": "40 - 62",
+        "value": 7922,
+        "percentage": "28.12%",
+        "id": 28
+      },
+      {
+        "divisionCode": "IFD Front Desk",
+        "name": ">63",
+        "value": 479,
+        "percentage": "1.70%",
+        "id": 29
+      },
+      {
+        "divisionCode": "IFD Front Desk",
+        "name": "Not Reported",
+        "value": 6542,
+        "percentage": "23.22%",
+        "id": 30
+      },
+      {
+        "divisionCode": "INE Front Desk",
+        "name": "<18",
+        "value": 93,
+        "percentage": "0.16%",
+        "id": 31
+      },
+      {
+        "divisionCode": "INE Front Desk",
+        "name": "18 - 25",
+        "value": 3772,
+        "percentage": "6.57%",
+        "id": 32
+      },
+      {
+        "divisionCode": "INE Front Desk",
+        "name": "26 - 39",
+        "value": 27960,
+        "percentage": "48.73%",
+        "id": 33
+      },
+      {
+        "divisionCode": "INE Front Desk",
+        "name": "40 - 62",
+        "value": 20695,
+        "percentage": "36.07%",
+        "id": 34
+      },
+      {
+        "divisionCode": "INE Front Desk",
+        "name": ">63",
+        "value": 1091,
+        "percentage": "1.90%",
+        "id": 35
+      },
+      {
+        "divisionCode": "INE Front Desk",
+        "name": "Not Reported",
+        "value": 3762,
+        "percentage": "6.56%",
+        "id": 36
+      },
+      {
+        "divisionCode": "INT",
+        "name": "<18",
+        "value": 177,
+        "percentage": "0.33%",
+        "id": 37
+      },
+      {
+        "divisionCode": "INT",
+        "name": "18 - 25",
+        "value": 8769,
+        "percentage": "16.34%",
+        "id": 38
+      },
+      {
+        "divisionCode": "INT",
+        "name": "26 - 39",
+        "value": 22315,
+        "percentage": "41.57%",
+        "id": 39
+      },
+      {
+        "divisionCode": "INT",
+        "name": "40 - 62",
+        "value": 12216,
+        "percentage": "22.76%",
+        "id": 40
+      },
+      {
+        "divisionCode": "INT",
+        "name": ">63",
+        "value": 918,
+        "percentage": "1.71%",
+        "id": 41
+      },
+      {
+        "divisionCode": "INT",
+        "name": "Not Reported",
+        "value": 9285,
+        "percentage": "17.30%",
+        "id": 42
+      },
+      {
+        "divisionCode": "KLD",
+        "name": "<18",
+        "value": 1321,
+        "percentage": "0.28%",
+        "id": 43
+      },
+      {
+        "divisionCode": "KLD",
+        "name": "18 - 25",
+        "value": 46212,
+        "percentage": "9.67%",
+        "id": 44
+      },
+      {
+        "divisionCode": "KLD",
+        "name": "26 - 39",
+        "value": 225844,
+        "percentage": "47.25%",
+        "id": 45
+      },
+      {
+        "divisionCode": "KLD",
+        "name": "40 - 62",
+        "value": 126500,
+        "percentage": "26.46%",
+        "id": 46
+      },
+      {
+        "divisionCode": "KLD",
+        "name": ">63",
+        "value": 5789,
+        "percentage": "1.21%",
+        "id": 47
+      },
+      {
+        "divisionCode": "KLD",
+        "name": "Not Reported",
+        "value": 72346,
+        "percentage": "15.13%",
+        "id": 48
+      },
+      {
+        "divisionCode": "LMK",
+        "name": "<18",
+        "value": 158,
+        "percentage": "0.63%",
+        "id": 49
+      },
+      {
+        "divisionCode": "LMK",
+        "name": "18 - 25",
+        "value": 3362,
+        "percentage": "13.42%",
+        "id": 50
+      },
+      {
+        "divisionCode": "LMK",
+        "name": "26 - 39",
+        "value": 11209,
+        "percentage": "44.75%",
+        "id": 51
+      },
+      {
+        "divisionCode": "LMK",
+        "name": "40 - 62",
+        "value": 6417,
+        "percentage": "25.62%",
+        "id": 52
+      },
+      {
+        "divisionCode": "LMK",
+        "name": ">63",
+        "value": 497,
+        "percentage": "1.98%",
+        "id": 53
+      },
+      {
+        "divisionCode": "LMK",
+        "name": "Not Reported",
+        "value": 3405,
+        "percentage": "13.59%",
+        "id": 54
+      },
+      {
+        "divisionCode": "MIF",
+        "name": "<18",
+        "value": 30,
+        "percentage": "0.07%",
+        "id": 55
+      },
+      {
+        "divisionCode": "MIF",
+        "name": "18 - 25",
+        "value": 2732,
+        "percentage": "6.07%",
+        "id": 56
+      },
+      {
+        "divisionCode": "MIF",
+        "name": "26 - 39",
+        "value": 22557,
+        "percentage": "50.10%",
+        "id": 57
+      },
+      {
+        "divisionCode": "MIF",
+        "name": "40 - 62",
+        "value": 16370,
+        "percentage": "36.36%",
+        "id": 58
+      },
+      {
+        "divisionCode": "MIF",
+        "name": ">63",
+        "value": 874,
+        "percentage": "1.94%",
+        "id": 59
+      },
+      {
+        "divisionCode": "MIF",
+        "name": "Not Reported",
+        "value": 2465,
+        "percentage": "5.47%",
+        "id": 60
+      },
+      {
+        "divisionCode": "PCY",
+        "name": "<18",
+        "value": 234,
+        "percentage": "0.83%",
+        "id": 61
+      },
+      {
+        "divisionCode": "PCY",
+        "name": "18 - 25",
+        "value": 3076,
+        "percentage": "10.92%",
+        "id": 62
+      },
+      {
+        "divisionCode": "PCY",
+        "name": "26 - 39",
+        "value": 9922,
+        "percentage": "35.22%",
+        "id": 63
+      },
+      {
+        "divisionCode": "PCY",
+        "name": "40 - 62",
+        "value": 7922,
+        "percentage": "28.12%",
+        "id": 64
+      },
+      {
+        "divisionCode": "PCY",
+        "name": ">63",
+        "value": 479,
+        "percentage": "1.70%",
+        "id": 65
+      },
+      {
+        "divisionCode": "PCY",
+        "name": "Not Reported",
+        "value": 6542,
+        "percentage": "23.22%",
+        "id": 66
+      },
+      {
+        "divisionCode": "RES",
+        "name": "<18",
+        "value": 373,
+        "percentage": "0.72%",
+        "id": 67
+      },
+      {
+        "divisionCode": "RES",
+        "name": "18 - 25",
+        "value": 9092,
+        "percentage": "17.50%",
+        "id": 68
+      },
+      {
+        "divisionCode": "RES",
+        "name": "26 - 39",
+        "value": 23635,
+        "percentage": "45.48%",
+        "id": 69
+      },
+      {
+        "divisionCode": "RES",
+        "name": "40 - 62",
+        "value": 11262,
+        "percentage": "21.67%",
+        "id": 70
+      },
+      {
+        "divisionCode": "RES",
+        "name": ">63",
+        "value": 795,
+        "percentage": "1.53%",
+        "id": 71
+      },
+      {
+        "divisionCode": "RES",
+        "name": "Not Reported",
+        "value": 6810,
+        "percentage": "13.10%",
+        "id": 72
+      },
+      {
+        "divisionCode": "RND",
+        "name": "<18",
+        "value": 85,
+        "percentage": "0.24%",
+        "id": 73
+      },
+      {
+        "divisionCode": "RND",
+        "name": "18 - 25",
+        "value": 4049,
+        "percentage": "11.29%",
+        "id": 74
+      },
+      {
+        "divisionCode": "RND",
+        "name": "26 - 39",
+        "value": 16639,
+        "percentage": "46.38%",
+        "id": 75
+      },
+      {
+        "divisionCode": "RND",
+        "name": "40 - 62",
+        "value": 9876,
+        "percentage": "27.53%",
+        "id": 76
+      },
+      {
+        "divisionCode": "RND",
+        "name": ">63",
+        "value": 621,
+        "percentage": "1.73%",
+        "id": 77
+      },
+      {
+        "divisionCode": "RND",
+        "name": "Not Reported",
+        "value": 4608,
+        "percentage": "12.84%",
+        "id": 78
+      },
+      {
+        "divisionCode": "SPH",
+        "name": "<18",
+        "value": 315,
+        "percentage": "0.27%",
+        "id": 79
+      },
+      {
+        "divisionCode": "SPH",
+        "name": "18 - 25",
+        "value": 8915,
+        "percentage": "7.69%",
+        "id": 80
+      },
+      {
+        "divisionCode": "SPH",
+        "name": "26 - 39",
+        "value": 52406,
+        "percentage": "45.22%",
+        "id": 81
+      },
+      {
+        "divisionCode": "SPH",
+        "name": "40 - 62",
+        "value": 36070,
+        "percentage": "31.12%",
+        "id": 82
+      },
+      {
+        "divisionCode": "SPH",
+        "name": ">63",
+        "value": 1806,
+        "percentage": "1.56%",
+        "id": 83
+      },
+      {
+        "divisionCode": "SPH",
+        "name": "Not Reported",
+        "value": 16382,
+        "percentage": "14.14%",
+        "id": 84
+      },
+      {
+        "divisionCode": "TSP",
+        "name": "<18",
+        "value": 60,
+        "percentage": "0.50%",
+        "id": 85
+      },
+      {
+        "divisionCode": "TSP",
+        "name": "18 - 25",
+        "value": 1308,
+        "percentage": "10.81%",
+        "id": 86
+      },
+      {
+        "divisionCode": "TSP",
+        "name": "26 - 39",
+        "value": 4653,
+        "percentage": "38.45%",
+        "id": 87
+      },
+      {
+        "divisionCode": "TSP",
+        "name": "40 - 62",
+        "value": 3299,
+        "percentage": "27.26%",
+        "id": 88
+      },
+      {
+        "divisionCode": "TSP",
+        "name": ">63",
+        "value": 178,
+        "percentage": "1.47%",
+        "id": 89
+      },
+      {
+        "divisionCode": "TSP",
+        "name": "Not Reported",
+        "value": 2603,
+        "percentage": "21.51%",
+        "id": 90
+      },
+      {
+        "divisionCode": "VPC Front Desk",
+        "name": "<18",
+        "value": 454,
+        "percentage": "0.42%",
+        "id": 91
+      },
+      {
+        "divisionCode": "VPC Front Desk",
+        "name": "18 - 25",
+        "value": 10580,
+        "percentage": "9.88%",
+        "id": 92
+      },
+      {
+        "divisionCode": "VPC Front Desk",
+        "name": "26 - 39",
+        "value": 45014,
+        "percentage": "42.03%",
+        "id": 93
+      },
+      {
+        "divisionCode": "VPC Front Desk",
+        "name": "40 - 62",
+        "value": 26873,
+        "percentage": "25.09%",
+        "id": 94
+      },
+      {
+        "divisionCode": "VPC Front Desk",
+        "name": ">63",
+        "value": 1270,
+        "percentage": "1.19%",
+        "id": 95
+      },
+      {
+        "divisionCode": "VPC Front Desk",
+        "name": "Not Reported",
+        "value": 22900,
+        "percentage": "21.38%",
+        "id": 96
+      },
+      {
+        "divisionCode": "WSA",
+        "name": "<18",
+        "value": 188,
+        "percentage": "0.55%",
+        "id": 97
+      },
+      {
+        "divisionCode": "WSA",
+        "name": "18 - 25",
+        "value": 5103,
+        "percentage": "14.86%",
+        "id": 98
+      },
+      {
+        "divisionCode": "WSA",
+        "name": "26 - 39",
+        "value": 16455,
+        "percentage": "47.92%",
+        "id": 99
+      },
+      {
+        "divisionCode": "WSA",
+        "name": "40 - 62",
+        "value": 8955,
+        "percentage": "26.08%",
+        "id": 100
+      },
+      {
+        "divisionCode": "WSA",
+        "name": ">63",
+        "value": 763,
+        "percentage": "2.22%",
+        "id": 101
+      },
+      {
+        "divisionCode": "WSA",
+        "name": "Not Reported",
+        "value": 2872,
+        "percentage": "8.36%",
+        "id": 102
+      }
+    ],
+    ageDivision2018: [
+      {
+        "divisionCode": "EDU",
+        "name": "<18",
+        "value": 290,
+        "percentage": "1.3%",
+        "id": 1
+      },
+      {
+        "divisionCode": "EDU",
+        "name": "18 - 25",
+        "value": 2754,
+        "percentage": "12.0%",
+        "id": 2
+      },
+      {
+        "divisionCode": "EDU",
+        "name": "26 - 39",
+        "value": 7145,
+        "percentage": "31.1%",
+        "id": 3
+      },
+      {
+        "divisionCode": "EDU",
+        "name": "40 - 62",
+        "value": 4594,
+        "percentage": "20.0%",
+        "id": 4
+      },
+      {
+        "divisionCode": "EDU",
+        "name": ">63",
+        "value": 223,
+        "percentage": "1.0%",
+        "id": 5
+      },
+      {
+        "divisionCode": "EDU",
+        "name": "Not Reported",
+        "value": 7977,
+        "percentage": "34.7%",
+        "id": 6
+      },
+      {
+        "divisionCode": "FMM",
+        "name": "<18",
+        "value": 89,
+        "percentage": "0.7%",
+        "id": 7
+      },
+      {
+        "divisionCode": "FMM",
+        "name": "18 - 25",
+        "value": 1290,
+        "percentage": "9.8%",
+        "id": 8
+      },
+      {
+        "divisionCode": "FMM",
+        "name": "26 - 39",
+        "value": 4288,
+        "percentage": "32.4%",
+        "id": 9
+      },
+      {
+        "divisionCode": "FMM",
+        "name": "40 - 62",
+        "value": 3364,
+        "percentage": "25.4%",
+        "id": 10
+      },
+      {
+        "divisionCode": "FMM",
+        "name": ">63",
+        "value": 211,
+        "percentage": "1.6%",
+        "id": 11
+      },
+      {
+        "divisionCode": "FMM",
+        "name": "Not Reported",
+        "value": 3977,
+        "percentage": "30.1%",
+        "id": 12
+      },
+      {
+        "divisionCode": "HUD",
+        "name": "<18",
+        "value": 0,
+        "percentage": "0.0%",
+        "id": 13
+      },
+      {
+        "divisionCode": "HUD",
+        "name": "18 - 25",
+        "value": 0,
+        "percentage": "0.0%",
+        "id": 14
+      },
+      {
+        "divisionCode": "HUD",
+        "name": "26 - 39",
+        "value": 0,
+        "percentage": "0.0%",
+        "id": 15
+      },
+      {
+        "divisionCode": "HUD",
+        "name": "40 - 62",
+        "value": 0,
+        "percentage": "0.0%",
+        "id": 16
+      },
+      {
+        "divisionCode": "HUD",
+        "name": ">63",
+        "value": 0,
+        "percentage": "0.0%",
+        "id": 17
+      },
+      {
+        "divisionCode": "HUD",
+        "name": "Not Reported",
+        "value": 0,
+        "percentage": "0.0%",
+        "id": 18
+      },
+      {
+        "divisionCode": "ICS",
+        "name": "<18",
+        "value": 20,
+        "percentage": "0.2%",
+        "id": 19
+      },
+      {
+        "divisionCode": "ICS",
+        "name": "18 - 25",
+        "value": 735,
+        "percentage": "8.4%",
+        "id": 20
+      },
+      {
+        "divisionCode": "ICS",
+        "name": "26 - 39",
+        "value": 3573,
+        "percentage": "40.9%",
+        "id": 21
+      },
+      {
+        "divisionCode": "ICS",
+        "name": "40 - 62",
+        "value": 2131,
+        "percentage": "24.4%",
+        "id": 22
+      },
+      {
+        "divisionCode": "ICS",
+        "name": ">63",
+        "value": 73,
+        "percentage": "0.8%",
+        "id": 23
+      },
+      {
+        "divisionCode": "ICS",
+        "name": "Not Reported",
+        "value": 2212,
+        "percentage": "25.3%",
+        "id": 24
+      },
+      {
+        "divisionCode": "IFD Front Desk",
+        "name": "<18",
+        "value": 166,
+        "percentage": "1.3%",
+        "id": 25
+      },
+      {
+        "divisionCode": "IFD Front Desk",
+        "name": "18 - 25",
+        "value": 1565,
+        "percentage": "12.3%",
+        "id": 26
+      },
+      {
+        "divisionCode": "IFD Front Desk",
+        "name": "26 - 39",
+        "value": 3902,
+        "percentage": "30.6%",
+        "id": 27
+      },
+      {
+        "divisionCode": "IFD Front Desk",
+        "name": "40 - 62",
+        "value": 2995,
+        "percentage": "23.5%",
+        "id": 28
+      },
+      {
+        "divisionCode": "IFD Front Desk",
+        "name": ">63",
+        "value": 218,
+        "percentage": "1.7%",
+        "id": 29
+      },
+      {
+        "divisionCode": "IFD Front Desk",
+        "name": "Not Reported",
+        "value": 3904,
+        "percentage": "30.6%",
+        "id": 30
+      },
+      {
+        "divisionCode": "INE Front Desk",
+        "name": "<18",
+        "value": 0,
+        "percentage": "0.0%",
+        "id": 31
+      },
+      {
+        "divisionCode": "INE Front Desk",
+        "name": "18 - 25",
+        "value": 0,
+        "percentage": "0.0%",
+        "id": 32
+      },
+      {
+        "divisionCode": "INE Front Desk",
+        "name": "26 - 39",
+        "value": 0,
+        "percentage": "0.0%",
+        "id": 33
+      },
+      {
+        "divisionCode": "INE Front Desk",
+        "name": "40 - 62",
+        "value": 0,
+        "percentage": "0.0%",
+        "id": 34
+      },
+      {
+        "divisionCode": "INE Front Desk",
+        "name": ">63",
+        "value": 0,
+        "percentage": "0.0%",
+        "id": 35
+      },
+      {
+        "divisionCode": "INE Front Desk",
+        "name": "Not Reported",
+        "value": 0,
+        "percentage": "0.0%",
+        "id": 36
+      },
+      {
+        "divisionCode": "INT",
+        "name": "<18",
+        "value": 114,
+        "percentage": "0.5%",
+        "id": 37
+      },
+      {
+        "divisionCode": "INT",
+        "name": "18 - 25",
+        "value": 3654,
+        "percentage": "15.3%",
+        "id": 38
+      },
+      {
+        "divisionCode": "INT",
+        "name": "26 - 39",
+        "value": 7545,
+        "percentage": "31.6%",
+        "id": 39
+      },
+      {
+        "divisionCode": "INT",
+        "name": "40 - 62",
+        "value": 4383,
+        "percentage": "18.4%",
+        "id": 40
+      },
+      {
+        "divisionCode": "INT",
+        "name": ">63",
+        "value": 317,
+        "percentage": "1.3%",
+        "id": 41
+      },
+      {
+        "divisionCode": "INT",
+        "name": "Not Reported",
+        "value": 7861,
+        "percentage": "32.9%",
+        "id": 42
+      },
+      {
+        "divisionCode": "KLD",
+        "name": "<18",
+        "value": 745,
+        "percentage": "0.7%",
+        "id": 43
+      },
+      {
+        "divisionCode": "KLD",
+        "name": "18 - 25",
+        "value": 12658,
+        "percentage": "11.1%",
+        "id": 44
+      },
+      {
+        "divisionCode": "KLD",
+        "name": "26 - 39",
+        "value": 41013,
+        "percentage": "35.9%",
+        "id": 45
+      },
+      {
+        "divisionCode": "KLD",
+        "name": "40 - 62",
+        "value": 22484,
+        "percentage": "19.7%",
+        "id": 46
+      },
+      {
+        "divisionCode": "KLD",
+        "name": ">63",
+        "value": 858,
+        "percentage": "0.8%",
+        "id": 47
+      },
+      {
+        "divisionCode": "KLD",
+        "name": "Not Reported",
+        "value": 36594,
+        "percentage": "32.0%",
+        "id": 48
+      },
+      {
+        "divisionCode": "LMK",
+        "name": "<18",
+        "value": 96,
+        "percentage": "1.7%",
+        "id": 49
+      },
+      {
+        "divisionCode": "LMK",
+        "name": "18 - 25",
+        "value": 894,
+        "percentage": "15.9%",
+        "id": 50
+      },
+      {
+        "divisionCode": "LMK",
+        "name": "26 - 39",
+        "value": 1895,
+        "percentage": "33.6%",
+        "id": 51
+      },
+      {
+        "divisionCode": "LMK",
+        "name": "40 - 62",
+        "value": 1107,
+        "percentage": "19.6%",
+        "id": 52
+      },
+      {
+        "divisionCode": "LMK",
+        "name": ">63",
+        "value": 67,
+        "percentage": "1.2%",
+        "id": 53
+      },
+      {
+        "divisionCode": "LMK",
+        "name": "Not Reported",
+        "value": 1579,
+        "percentage": "28.0%",
+        "id": 54
+      },
+      {
+        "divisionCode": "MIF",
+        "name": "<18",
+        "value": 0,
+        "percentage": "0.0%",
+        "id": 55
+      },
+      {
+        "divisionCode": "MIF",
+        "name": "18 - 25",
+        "value": 0,
+        "percentage": "0.0%",
+        "id": 56
+      },
+      {
+        "divisionCode": "MIF",
+        "name": "26 - 39",
+        "value": 0,
+        "percentage": "0.0%",
+        "id": 57
+      },
+      {
+        "divisionCode": "MIF",
+        "name": "40 - 62",
+        "value": 0,
+        "percentage": "0.0%",
+        "id": 58
+      },
+      {
+        "divisionCode": "MIF",
+        "name": ">63",
+        "value": 0,
+        "percentage": "0.0%",
+        "id": 59
+      },
+      {
+        "divisionCode": "MIF",
+        "name": "Not Reported",
+        "value": 0,
+        "percentage": "0.0%",
+        "id": 60
+      },
+      {
+        "divisionCode": "PCY",
+        "name": "<18",
+        "value": 166,
+        "percentage": "1.3%",
+        "id": 61
+      },
+      {
+        "divisionCode": "PCY",
+        "name": "18 - 25",
+        "value": 1565,
+        "percentage": "12.3%",
+        "id": 62
+      },
+      {
+        "divisionCode": "PCY",
+        "name": "26 - 39",
+        "value": 3902,
+        "percentage": "30.6%",
+        "id": 63
+      },
+      {
+        "divisionCode": "PCY",
+        "name": "40 - 62",
+        "value": 2995,
+        "percentage": "23.5%",
+        "id": 64
+      },
+      {
+        "divisionCode": "PCY",
+        "name": ">63",
+        "value": 218,
+        "percentage": "1.7%",
+        "id": 65
+      },
+      {
+        "divisionCode": "PCY",
+        "name": "Not Reported",
+        "value": 3904,
+        "percentage": "30.6%",
+        "id": 66
+      },
+      {
+        "divisionCode": "RES",
+        "name": "<18",
+        "value": 248,
+        "percentage": "1.7%",
+        "id": 67
+      },
+      {
+        "divisionCode": "RES",
+        "name": "18 - 25",
+        "value": 2788,
+        "percentage": "19.6%",
+        "id": 68
+      },
+      {
+        "divisionCode": "RES",
+        "name": "26 - 39",
+        "value": 4602,
+        "percentage": "32.4%",
+        "id": 69
+      },
+      {
+        "divisionCode": "RES",
+        "name": "40 - 62",
+        "value": 2320,
+        "percentage": "16.3%",
+        "id": 70
+      },
+      {
+        "divisionCode": "RES",
+        "name": ">63",
+        "value": 151,
+        "percentage": "1.1%",
+        "id": 71
+      },
+      {
+        "divisionCode": "RES",
+        "name": "Not Reported",
+        "value": 4104,
+        "percentage": "28.9%",
+        "id": 72
+      },
+      {
+        "divisionCode": "RND",
+        "name": "<18",
+        "value": 26,
+        "percentage": "0.3%",
+        "id": 73
+      },
+      {
+        "divisionCode": "RND",
+        "name": "18 - 25",
+        "value": 998,
+        "percentage": "10.1%",
+        "id": 74
+      },
+      {
+        "divisionCode": "RND",
+        "name": "26 - 39",
+        "value": 3330,
+        "percentage": "33.7%",
+        "id": 75
+      },
+      {
+        "divisionCode": "RND",
+        "name": "40 - 62",
+        "value": 2335,
+        "percentage": "23.6%",
+        "id": 76
+      },
+      {
+        "divisionCode": "RND",
+        "name": ">63",
+        "value": 143,
+        "percentage": "1.4%",
+        "id": 77
+      },
+      {
+        "divisionCode": "RND",
+        "name": "Not Reported",
+        "value": 3043,
+        "percentage": "30.8%",
+        "id": 78
+      },
+      {
+        "divisionCode": "SPH",
+        "name": "<18",
+        "value": 137,
+        "percentage": "0.6%",
+        "id": 79
+      },
+      {
+        "divisionCode": "SPH",
+        "name": "18 - 25",
+        "value": 1908,
+        "percentage": "7.8%",
+        "id": 80
+      },
+      {
+        "divisionCode": "SPH",
+        "name": "26 - 39",
+        "value": 7448,
+        "percentage": "30.6%",
+        "id": 81
+      },
+      {
+        "divisionCode": "SPH",
+        "name": "40 - 62",
+        "value": 4588,
+        "percentage": "18.8%",
+        "id": 82
+      },
+      {
+        "divisionCode": "SPH",
+        "name": ">63",
+        "value": 185,
+        "percentage": "0.8%",
+        "id": 83
+      },
+      {
+        "divisionCode": "SPH",
+        "name": "Not Reported",
+        "value": 10090,
+        "percentage": "41.4%",
+        "id": 84
+      },
+      {
+        "divisionCode": "TSP",
+        "name": "<18",
+        "value": 39,
+        "percentage": "0.7%",
+        "id": 85
+      },
+      {
+        "divisionCode": "TSP",
+        "name": "18 - 25",
+        "value": 709,
+        "percentage": "13.0%",
+        "id": 86
+      },
+      {
+        "divisionCode": "TSP",
+        "name": "26 - 39",
+        "value": 1812,
+        "percentage": "33.2%",
+        "id": 87
+      },
+      {
+        "divisionCode": "TSP",
+        "name": "40 - 62",
+        "value": 1069,
+        "percentage": "19.6%",
+        "id": 88
+      },
+      {
+        "divisionCode": "TSP",
+        "name": ">63",
+        "value": 55,
+        "percentage": "1.0%",
+        "id": 89
+      },
+      {
+        "divisionCode": "TSP",
+        "name": "Not Reported",
+        "value": 1770,
+        "percentage": "32.5%",
+        "id": 90
+      },
+      {
+        "divisionCode": "VPC Front Desk",
+        "name": "<18",
+        "value": 255,
+        "percentage": "1.0%",
+        "id": 91
+      },
+      {
+        "divisionCode": "VPC Front Desk",
+        "name": "18 - 25",
+        "value": 2579,
+        "percentage": "9.7%",
+        "id": 92
+      },
+      {
+        "divisionCode": "VPC Front Desk",
+        "name": "26 - 39",
+        "value": 8730,
+        "percentage": "32.9%",
+        "id": 93
+      },
+      {
+        "divisionCode": "VPC Front Desk",
+        "name": "40 - 62",
+        "value": 5753,
+        "percentage": "21.7%",
+        "id": 94
+      },
+      {
+        "divisionCode": "VPC Front Desk",
+        "name": ">63",
+        "value": 207,
+        "percentage": "0.8%",
+        "id": 95
+      },
+      {
+        "divisionCode": "VPC Front Desk",
+        "name": "Not Reported",
+        "value": 9023,
+        "percentage": "34.0%",
+        "id": 96
+      },
+      {
+        "divisionCode": "WSA",
+        "name": "<18",
+        "value": 46,
+        "percentage": "0.9%",
+        "id": 97
+      },
+      {
+        "divisionCode": "WSA",
+        "name": "18 - 25",
+        "value": 869,
+        "percentage": "16.5%",
+        "id": 98
+      },
+      {
+        "divisionCode": "WSA",
+        "name": "26 - 39",
+        "value": 1729,
+        "percentage": "32.9%",
+        "id": 99
+      },
+      {
+        "divisionCode": "WSA",
+        "name": "40 - 62",
+        "value": 861,
+        "percentage": "16.4%",
+        "id": 100
+      },
+      {
+        "divisionCode": "WSA",
+        "name": ">63",
+        "value": 74,
+        "percentage": "1.4%",
+        "id": 101
+      },
+      {
+        "divisionCode": "WSA",
+        "name": "Not Reported",
+        "value": 1681,
+        "percentage": "32.0%",
+        "id": 102
+      }
+    ],
+    ageIDBAllTheTime: [{
+            "value": 3165,
+            "name": "<18",
+            "id": 1,
+            "percentage": "0.31%"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
-            "Age": "18 - 25",
-            "2018 registrations": "762",
-            "% of 2018 registrations ": "0.0845257903494176",
-            "xlsx_row_id": 3
+            "value": 105669,
+            "name": "18 - 25",
+            "id": 2,
+            "percentage": "10.47%"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
-            "Age": "26 - 39",
-            "2018 registrations": "2726",
-            "% of 2018 registrations ": "0.302384914032169",
-            "xlsx_row_id": 4
+            "value": 474892,
+            "name": "26 - 39",
+            "id": 3,
+            "percentage": "47.04%"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
-            "Age": "40 - 62",
-            "2018 registrations": "1978",
-            "% of 2018 registrations ": "0.219412090959512",
-            "xlsx_row_id": 5
+            "value": 273101,
+            "name": "40 - 62",
+            "id": 4,
+            "percentage": "27.05%"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
-            "Age": ">63",
-            "2018 registrations": "75",
-            "% of 2018 registrations ": "0.00831946755407654",
-            "xlsx_row_id": 6
+            "value": 14714,
+            "name": ">63",
+            "id": 5,
+            "percentage": "1.46%"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
-            "Age": "Not Reported",
-            "2018 registrations": "3344",
-            "% of 2018 registrations ": "0.370937326677759",
-            "xlsx_row_id": 7
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
-            "Age": "<18",
-            "2018 registrations": "26",
-            "% of 2018 registrations ": "0.00270974465867639",
-            "xlsx_row_id": 8
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
-            "Age": "18 - 25",
-            "2018 registrations": "946",
-            "% of 2018 registrations ": "0.0985930171964565",
-            "xlsx_row_id": 9
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
-            "Age": "26 - 39",
-            "2018 registrations": "3227",
-            "% of 2018 registrations ": "0.336321000521105",
-            "xlsx_row_id": 10
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
-            "Age": "40 - 62",
-            "2018 registrations": "2295",
-            "% of 2018 registrations ": "0.239187076602397",
-            "xlsx_row_id": 11
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
-            "Age": ">63",
-            "2018 registrations": "141",
-            "% of 2018 registrations ": "0.0146951537258989",
-            "xlsx_row_id": 12
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
-            "Age": "Not Reported",
-            "2018 registrations": "2960",
-            "% of 2018 registrations ": "0.308494007295466",
-            "xlsx_row_id": 13
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
-            "Age": "<18",
-            "2018 registrations": "245",
-            "% of 2018 registrations ": "0.00757997648660355",
-            "xlsx_row_id": 14
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
-            "Age": "18 - 25",
-            "2018 registrations": "3310",
-            "% of 2018 registrations ": "0.102407029267991",
-            "xlsx_row_id": 15
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
-            "Age": "26 - 39",
-            "2018 registrations": "11002",
-            "% of 2018 registrations ": "0.340387352267805",
-            "xlsx_row_id": 16
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
-            "Age": "40 - 62",
-            "2018 registrations": "7952",
-            "% of 2018 registrations ": "0.246024379679475",
-            "xlsx_row_id": 17
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
-            "Age": ">63",
-            "2018 registrations": "472",
-            "% of 2018 registrations ": "0.0146030567415383",
-            "xlsx_row_id": 18
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
-            "Age": "Not Reported",
-            "2018 registrations": "9341",
-            "% of 2018 registrations ": "0.288998205556587",
-            "xlsx_row_id": 19
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
-            "Age": "<18",
-            "2018 registrations": "78",
-            "% of 2018 registrations ": "0.00770446463848281",
-            "xlsx_row_id": 20
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
-            "Age": "18 - 25",
-            "2018 registrations": "1480",
-            "% of 2018 registrations ": "0.146187277755828",
-            "xlsx_row_id": 21
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
-            "Age": "26 - 39",
-            "2018 registrations": "3342",
-            "% of 2018 registrations ": "0.330106677202687",
-            "xlsx_row_id": 22
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
-            "Age": "40 - 62",
-            "2018 registrations": "1849",
-            "% of 2018 registrations ": "0.182635322007112",
-            "xlsx_row_id": 23
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
-            "Age": ">63",
-            "2018 registrations": "125",
-            "% of 2018 registrations ": "0.0123468984591071",
-            "xlsx_row_id": 24
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
-            "Age": "Not Reported",
-            "2018 registrations": "3250",
-            "% of 2018 registrations ": "0.321019359936784",
-            "xlsx_row_id": 25
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "KNL",
-            "Age": "<18",
-            "2018 registrations": "626",
-            "% of 2018 registrations ": "0.00646747665096289",
-            "xlsx_row_id": 26
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "KNL",
-            "Age": "18 - 25",
-            "2018 registrations": "10866",
-            "% of 2018 registrations ": "0.11226134391272",
-            "xlsx_row_id": 27
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "KNL",
-            "Age": "26 - 39",
-            "2018 registrations": "35195",
-            "% of 2018 registrations ": "0.363614761550541",
-            "xlsx_row_id": 28
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "KNL",
-            "Age": "40 - 62",
-            "2018 registrations": "18630",
-            "% of 2018 registrations ": "0.19247458467642",
-            "xlsx_row_id": 29
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "KNL",
-            "Age": ">63",
-            "2018 registrations": "728",
-            "% of 2018 registrations ": "0.00752128275064055",
-            "xlsx_row_id": 30
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "KNL",
-            "Age": "Not Reported",
-            "2018 registrations": "30747",
-            "% of 2018 registrations ": "0.317660550458716",
-            "xlsx_row_id": 31
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
-            "Age": "<18",
-            "2018 registrations": "497",
-            "% of 2018 registrations ": "0.00974567131399886",
-            "xlsx_row_id": 32
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
-            "Age": "18 - 25",
-            "2018 registrations": "5212",
-            "% of 2018 registrations ": "0.102202090319038",
-            "xlsx_row_id": 33
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
-            "Age": "26 - 39",
-            "2018 registrations": "15874",
-            "% of 2018 registrations ": "0.311273212149734",
-            "xlsx_row_id": 34
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
-            "Age": "40 - 62",
-            "2018 registrations": "9948",
-            "% of 2018 registrations ": "0.195070298252838",
-            "xlsx_row_id": 35
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
-            "Age": ">63",
-            "2018 registrations": "450",
-            "% of 2018 registrations ": "0.00882404847343962",
-            "xlsx_row_id": 36
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
-            "Age": "Not Reported",
-            "2018 registrations": "19016",
-            "% of 2018 registrations ": "0.37288467949095",
-            "xlsx_row_id": 37
+            "value": 137979,
+            "name": "Not Reported",
+            "id": 6,
+            "percentage": "13.67%"
         }
     ],
-    ageDivisions: [
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "<18",
-            "2018 registrations": "130",
-            "% of 2018 registrations ": "0.014420410427066",
-            "Division Codes": "CBD",
-            "xlsx_row_id": 2
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "18 - 25",
-            "2018 registrations": "762",
-            "% of 2018 registrations ": "0.0845257903494176",
-            "Division Codes": "CBD",
-            "xlsx_row_id": 3
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "26 - 39",
-            "2018 registrations": "2726",
-            "% of 2018 registrations ": "0.302384914032169",
-            "Division Codes": "CBD",
-            "xlsx_row_id": 4
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "40 - 62",
-            "2018 registrations": "1978",
-            "% of 2018 registrations ": "0.219412090959512",
-            "Division Codes": "CBD",
-            "xlsx_row_id": 5
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": ">63",
-            "2018 registrations": "75",
-            "% of 2018 registrations ": "0.00831946755407654",
-            "Division Codes": "CBD",
-            "xlsx_row_id": 6
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "Not Reported",
-            "2018 registrations": "3344",
-            "% of 2018 registrations ": "0.370937326677759",
-            "Division Codes": "CBD",
-            "xlsx_row_id": 7
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "<18",
-            "2018 registrations": "272",
-            "% of 2018 registrations ": "0.0124845091109377",
-            "Division Codes": "EDU",
-            "xlsx_row_id": 8
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "18 - 25",
-            "2018 registrations": "2560",
-            "% of 2018 registrations ": "0.11750126222059",
-            "Division Codes": "EDU",
-            "xlsx_row_id": 9
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "26 - 39",
-            "2018 registrations": "6785",
-            "% of 2018 registrations ": "0.311424243815119",
-            "Division Codes": "EDU",
-            "xlsx_row_id": 10
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "40 - 62",
-            "2018 registrations": "4377",
-            "% of 2018 registrations ": "0.200899619038876",
-            "Division Codes": "EDU",
-            "xlsx_row_id": 11
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": ">63",
-            "2018 registrations": "207",
-            "% of 2018 registrations ": "0.00950107862486804",
-            "Division Codes": "EDU",
-            "xlsx_row_id": 12
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "Not Reported",
-            "2018 registrations": "7586",
-            "% of 2018 registrations ": "0.348189287189609",
-            "Division Codes": "EDU",
-            "xlsx_row_id": 13
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "<18",
-            "2018 registrations": "81",
-            "% of 2018 registrations ": "0.00487188740526886",
-            "Division Codes": "FHL",
-            "xlsx_row_id": 14
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "18 - 25",
-            "2018 registrations": "1747",
-            "% of 2018 registrations ": "0.105076386382774",
-            "Division Codes": "FHL",
-            "xlsx_row_id": 15
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "26 - 39",
-            "2018 registrations": "6589",
-            "% of 2018 registrations ": "0.39630698905329",
-            "Division Codes": "FHL",
-            "xlsx_row_id": 16
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "40 - 62",
-            "2018 registrations": "3774",
-            "% of 2018 registrations ": "0.226993865030675",
-            "Division Codes": "FHL",
-            "xlsx_row_id": 17
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": ">63",
-            "2018 registrations": "145",
-            "% of 2018 registrations ": "0.00872127992301215",
-            "Division Codes": "FHL",
-            "xlsx_row_id": 18
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "Not Reported",
-            "2018 registrations": "4290",
-            "% of 2018 registrations ": "0.25802959220498",
-            "Division Codes": "FHL",
-            "xlsx_row_id": 19
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "<18",
-            "2018 registrations": "86",
-            "% of 2018 registrations ": "0.00666408368849283",
-            "Division Codes": "FMM",
-            "xlsx_row_id": 20
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "18 - 25",
-            "2018 registrations": "1237",
-            "% of 2018 registrations ": "0.0958543200309957",
-            "Division Codes": "FMM",
-            "xlsx_row_id": 21
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "26 - 39",
-            "2018 registrations": "4182",
-            "% of 2018 registrations ": "0.324060441689268",
-            "Division Codes": "FMM",
-            "xlsx_row_id": 22
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "40 - 62",
-            "2018 registrations": "3305",
-            "% of 2018 registrations ": "0.256102285935684",
-            "Division Codes": "FMM",
-            "xlsx_row_id": 23
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": ">63",
-            "2018 registrations": "210",
-            "% of 2018 registrations ": "0.0162727624951569",
-            "Division Codes": "FMM",
-            "xlsx_row_id": 24
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "Not Reported",
-            "2018 registrations": "3885",
-            "% of 2018 registrations ": "0.301046106160403",
-            "Division Codes": "FMM",
-            "xlsx_row_id": 25
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "<18",
-            "2018 registrations": "18",
-            "% of 2018 registrations ": "0.00217417562507549",
-            "Division Codes": "ICS",
-            "xlsx_row_id": 26
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "18 - 25",
-            "2018 registrations": "681",
-            "% of 2018 registrations ": "0.0822563111486895",
-            "Division Codes": "ICS",
-            "xlsx_row_id": 27
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "26 - 39",
-            "2018 registrations": "3380",
-            "% of 2018 registrations ": "0.408261867375287",
-            "Division Codes": "ICS",
-            "xlsx_row_id": 28
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "40 - 62",
-            "2018 registrations": "2014",
-            "% of 2018 registrations ": "0.243266094939002",
-            "Division Codes": "ICS",
-            "xlsx_row_id": 29
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": ">63",
-            "2018 registrations": "70",
-            "% of 2018 registrations ": "0.00845512743084914",
-            "Division Codes": "ICS",
-            "xlsx_row_id": 30
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "Not Reported",
-            "2018 registrations": "2116",
-            "% of 2018 registrations ": "0.255586423481097",
-            "Division Codes": "ICS",
-            "xlsx_row_id": 31
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "<18",
-            "2018 registrations": "141",
-            "% of 2018 registrations ": "0.0126593643383013",
-            "Division Codes": "IFD",
-            "xlsx_row_id": 32
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "18 - 25",
-            "2018 registrations": "1392",
-            "% of 2018 registrations ": "0.124977554318549",
-            "Division Codes": "IFD",
-            "xlsx_row_id": 33
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "26 - 39",
-            "2018 registrations": "3440",
-            "% of 2018 registrations ": "0.308852576764231",
-            "Division Codes": "IFD",
-            "xlsx_row_id": 34
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "40 - 62",
-            "2018 registrations": "2633",
-            "% of 2018 registrations ": "0.236397917040761",
-            "Division Codes": "IFD",
-            "xlsx_row_id": 35
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": ">63",
-            "2018 registrations": "192",
-            "% of 2018 registrations ": "0.0172382833542826",
-            "Division Codes": "IFD",
-            "xlsx_row_id": 36
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "Not Reported",
-            "2018 registrations": "3340",
-            "% of 2018 registrations ": "0.299874304183875",
-            "Division Codes": "IFD",
-            "xlsx_row_id": 37
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "<18",
-            "2018 registrations": "92",
-            "% of 2018 registrations ": "0.0172220142268813",
-            "Division Codes": "KNM",
-            "xlsx_row_id": 38
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "18 - 25",
-            "2018 registrations": "833",
-            "% of 2018 registrations ": "0.155934107076002",
-            "Division Codes": "KNM",
-            "xlsx_row_id": 39
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "26 - 39",
-            "2018 registrations": "1803",
-            "% of 2018 registrations ": "0.337514039685511",
-            "Division Codes": "KNM",
-            "xlsx_row_id": 40
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "40 - 62",
-            "2018 registrations": "1060",
-            "% of 2018 registrations ": "0.198427555222763",
-            "Division Codes": "KNM",
-            "xlsx_row_id": 41
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": ">63",
-            "2018 registrations": "63",
-            "% of 2018 registrations ": "0.0117933358292774",
-            "Division Codes": "KNM",
-            "xlsx_row_id": 42
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "Not Reported",
-            "2018 registrations": "1491",
-            "% of 2018 registrations ": "0.279108947959566",
-            "Division Codes": "KNM",
-            "xlsx_row_id": 43
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "<18",
-            "2018 registrations": "92",
-            "% of 2018 registrations ": "0.0172220142268813",
-            "Division Codes": "LMK",
-            "xlsx_row_id": 44
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "18 - 25",
-            "2018 registrations": "833",
-            "% of 2018 registrations ": "0.155934107076002",
-            "Division Codes": "LMK",
-            "xlsx_row_id": 45
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "26 - 39",
-            "2018 registrations": "1803",
-            "% of 2018 registrations ": "0.337514039685511",
-            "Division Codes": "LMK",
-            "xlsx_row_id": 46
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "40 - 62",
-            "2018 registrations": "1060",
-            "% of 2018 registrations ": "0.198427555222763",
-            "Division Codes": "LMK",
-            "xlsx_row_id": 47
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": ">63",
-            "2018 registrations": "63",
-            "% of 2018 registrations ": "0.0117933358292774",
-            "Division Codes": "LMK",
-            "xlsx_row_id": 48
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "Not Reported",
-            "2018 registrations": "1491",
-            "% of 2018 registrations ": "0.279108947959566",
-            "Division Codes": "LMK",
-            "xlsx_row_id": 49
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "<18",
-            "2018 registrations": "26",
-            "% of 2018 registrations ": "0.00270974465867639",
-            "Division Codes": "RND",
-            "xlsx_row_id": 50
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "18 - 25",
-            "2018 registrations": "946",
-            "% of 2018 registrations ": "0.0985930171964565",
-            "Division Codes": "RND",
-            "xlsx_row_id": 51
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "26 - 39",
-            "2018 registrations": "3227",
-            "% of 2018 registrations ": "0.336321000521105",
-            "Division Codes": "RND",
-            "xlsx_row_id": 52
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "40 - 62",
-            "2018 registrations": "2295",
-            "% of 2018 registrations ": "0.239187076602397",
-            "Division Codes": "RND",
-            "xlsx_row_id": 53
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": ">63",
-            "2018 registrations": "141",
-            "% of 2018 registrations ": "0.0146951537258989",
-            "Division Codes": "RND",
-            "xlsx_row_id": 54
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "Not Reported",
-            "2018 registrations": "2960",
-            "% of 2018 registrations ": "0.308494007295466",
-            "Division Codes": "RND",
-            "xlsx_row_id": 55
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "<18",
-            "2018 registrations": "453",
-            "% of 2018 registrations ": "0.00605420720624399",
-            "Division Codes": "SDI",
-            "xlsx_row_id": 56
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "18 - 25",
-            "2018 registrations": "8286",
-            "% of 2018 registrations ": "0.110739869560569",
-            "Division Codes": "SDI",
-            "xlsx_row_id": 57
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "26 - 39",
-            "2018 registrations": "26803",
-            "% of 2018 registrations ": "0.358213942050679",
-            "Division Codes": "SDI",
-            "xlsx_row_id": 58
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "40 - 62",
-            "2018 registrations": "13796",
-            "% of 2018 registrations ": "0.184379343526141",
-            "Division Codes": "SDI",
-            "xlsx_row_id": 59
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": ">63",
-            "2018 registrations": "520",
-            "% of 2018 registrations ": "0.00694964182615204",
-            "Division Codes": "SDI",
-            "xlsx_row_id": 60
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "Not Reported",
-            "2018 registrations": "24966",
-            "% of 2018 registrations ": "0.333662995830215",
-            "Division Codes": "SDI",
-            "xlsx_row_id": 61
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "<18",
-            "2018 registrations": "133",
-            "% of 2018 registrations ": "0.00557231439584381",
-            "Division Codes": "SPH",
-            "xlsx_row_id": 62
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "18 - 25",
-            "2018 registrations": "1819",
-            "% of 2018 registrations ": "0.0762108262108262",
-            "Division Codes": "SPH",
-            "xlsx_row_id": 63
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "26 - 39",
-            "2018 registrations": "7286",
-            "% of 2018 registrations ": "0.305262275850511",
-            "Division Codes": "SPH",
-            "xlsx_row_id": 64
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "40 - 62",
-            "2018 registrations": "4511",
-            "% of 2018 registrations ": "0.188997821350763",
-            "Division Codes": "SPH",
-            "xlsx_row_id": 65
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": ">63",
-            "2018 registrations": "180",
-            "% of 2018 registrations ": "0.00754147812971342",
-            "Division Codes": "SPH",
-            "xlsx_row_id": 66
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "Not Reported",
-            "2018 registrations": "9939",
-            "% of 2018 registrations ": "0.416415284062343",
-            "Division Codes": "SPH",
-            "xlsx_row_id": 67
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "<18",
-            "2018 registrations": "36",
-            "% of 2018 registrations ": "0.00700116686114352",
-            "Division Codes": "TSP",
-            "xlsx_row_id": 68
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "18 - 25",
-            "2018 registrations": "669",
-            "% of 2018 registrations ": "0.130105017502917",
-            "Division Codes": "TSP",
-            "xlsx_row_id": 69
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "26 - 39",
-            "2018 registrations": "1698",
-            "% of 2018 registrations ": "0.33022170361727",
-            "Division Codes": "TSP",
-            "xlsx_row_id": 70
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "40 - 62",
-            "2018 registrations": "1018",
-            "% of 2018 registrations ": "0.197977440684559",
-            "Division Codes": "TSP",
-            "xlsx_row_id": 71
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": ">63",
-            "2018 registrations": "52",
-            "% of 2018 registrations ": "0.0101127965772073",
-            "Division Codes": "TSP",
-            "xlsx_row_id": 72
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "Not Reported",
-            "2018 registrations": "1669",
-            "% of 2018 registrations ": "0.324581874756904",
-            "Division Codes": "TSP",
-            "xlsx_row_id": 73
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "<18",
-            "2018 registrations": "42",
-            "% of 2018 registrations ": "0.00843034925732638",
-            "Division Codes": "WSA",
-            "xlsx_row_id": 74
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "18 - 25",
-            "2018 registrations": "811",
-            "% of 2018 registrations ": "0.162786029706945",
-            "Division Codes": "WSA",
-            "xlsx_row_id": 75
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "26 - 39",
-            "2018 registrations": "1644",
-            "% of 2018 registrations ": "0.329987956643918",
-            "Division Codes": "WSA",
-            "xlsx_row_id": 76
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "40 - 62",
-            "2018 registrations": "831",
-            "% of 2018 registrations ": "0.166800481734243",
-            "Division Codes": "WSA",
-            "xlsx_row_id": 77
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": ">63",
-            "2018 registrations": "73",
-            "% of 2018 registrations ": "0.0146527498996387",
-            "Division Codes": "WSA",
-            "xlsx_row_id": 78
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "Not Reported",
-            "2018 registrations": "1581",
-            "% of 2018 registrations ": "0.317342432757929",
-            "Division Codes": "WSA",
-            "xlsx_row_id": 79
-        }
-    ],
-    ageIDB: [
-        {
-            "json_featuretype": "NewFeatureType",
-            "Age": "<18",
-            "2018 registrations": "1602",
-            "% of 2018 registrations": "0.00767076061193708",
-            "xlsx_row_id": 2
+    ageIDB2018: [{
+            "value": 1632,
+            "name": "<18",
+            "id": 1,
+            "percentage": "0.69%"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Age": "18 - 25",
-            "2018 registrations": "22576",
-            "% of 2018 registrations": "0.108099308099308",
-            "xlsx_row_id": 3
+            "value": 27246,
+            "name": "18 - 25",
+            "id": 2,
+            "percentage": "11.44%"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Age": "26 - 39",
-            "2018 registrations": "71366",
-            "% of 2018 registrations": "0.341717541717542",
-            "xlsx_row_id": 4
+            "value": 80702,
+            "name": "26 - 39",
+            "id": 3,
+            "percentage": "33.88%"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Age": "40 - 62",
-            "2018 registrations": "42652",
-            "% of 2018 registrations": "0.204228015992722",
-            "xlsx_row_id": 5
+            "value": 47803,
+            "name": "40 - 62",
+            "id": 4,
+            "percentage": "20.07%"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Age": ">63",
-            "2018 registrations": "1991",
-            "% of 2018 registrations": "0.00953338600397424",
-            "xlsx_row_id": 6
+            "value": 2307,
+            "name": ">63",
+            "id": 5,
+            "percentage": "0.97%"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Age": "Not Reported",
-            "2018 registrations": "68658",
-            "% of 2018 registrations": "0.328750987574517",
-            "xlsx_row_id": 7
+            "value": 78476,
+            "name": "Not Reported",
+            "id": 6,
+            "percentage": "32.95%"
         }
     ]
-};
+}

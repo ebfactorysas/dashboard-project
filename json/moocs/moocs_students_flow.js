@@ -1,1179 +1,1771 @@
 //updated idb and divisions
 var moocsStudentsFlowArrays = {
     studentsFlowDepartments: [{
-            registrations: {
-                years: [{
-                    name: "2016",
-                    value: 7718
-                }, {
-                    name: "2017",
-                    value: 4411
-                }],
-                value: 12129
+        "code": "CSD",
+        "certified": {
+            "years": [{
+                    "name": "2016",
+                    "value": 42393
+                },
+                {
+                    "name": "2017",
+                    "value": 29094
+                },
+                {
+                    "name": "2018",
+                    "value": 9875
+                }
+            ]
+        },
+        "registrations": {
+            "years": [{
+                    "name": "2016",
+                    "value": 21308
+                },
+                {
+                    "name": "2017",
+                    "value": 12498
+                },
+                {
+                    "name": "2018",
+                    "value": 2805
+                }
+            ]
+        },
+        "participants": {
+            "years": [{
+                    "name": "2016",
+                    "value": 2916
+                },
+                {
+                    "name": "2017",
+                    "value": 1542
+                },
+                {
+                    "name": "2018",
+                    "value": 317
+                }
+            ]
+        },
+        "completed": {
+            "years": [{
+                    "name": "2016",
+                    "value": 1487
+                },
+                {
+                    "name": "2017",
+                    "value": 866
+                },
+                {
+                    "name": "2018",
+                    "value": 189
+                }
+            ]
+        }
+    },
+    {
+        "code": "IFD",
+        "certified": {
+            "years": [{
+                    "name": "2016",
+                    "value": 20652
+                },
+                {
+                    "name": "2017",
+                    "value": 40200
+                },
+                {
+                    "name": "2018",
+                    "value": 34713
+                }
+            ]
+        },
+        "registrations": {
+            "years": [{
+                    "name": "2016",
+                    "value": 10977
+                },
+                {
+                    "name": "2017",
+                    "value": 17817
+                },
+                {
+                    "name": "2018",
+                    "value": 16975
+                }
+            ]
+        },
+        "participants": {
+            "years": [{
+                    "name": "2016",
+                    "value": 2328
+                },
+                {
+                    "name": "2017",
+                    "value": 4204
+                },
+                {
+                    "name": "2018",
+                    "value": 2529
+                }
+            ]
+        },
+        "completed": {
+            "years": [{
+                    "name": "2016",
+                    "value": 1142
+                },
+                {
+                    "name": "2017",
+                    "value": 2625
+                },
+                {
+                    "name": "2018",
+                    "value": 1543
+                }
+            ]
+        }
+    },
+    {
+        "code": "INE",
+        "certified": {
+            "years": [{
+                    "name": "2016",
+                    "value": 16317
+                },
+                {
+                    "name": "2017",
+                    "value": 33057
+                },
+                {
+                    "name": "2018",
+                    "value": 10714
+                }
+            ]
+        },
+        "registrations": {
+            "years": [{
+                    "name": "2016",
+                    "value": 8751
+                },
+                {
+                    "name": "2017",
+                    "value": 16549
+                },
+                {
+                    "name": "2018",
+                    "value": 5914
+                }
+            ]
+        },
+        "participants": {
+            "years": [{
+                    "name": "2016",
+                    "value": 1552
+                },
+                {
+                    "name": "2017",
+                    "value": 3702
+                },
+                {
+                    "name": "2018",
+                    "value": 874
+                }
+            ]
+        },
+        "completed": {
+            "years": [{
+                    "name": "2016",
+                    "value": 705
+                },
+                {
+                    "name": "2017",
+                    "value": 2224
+                },
+                {
+                    "name": "2018",
+                    "value": 435
+                }
+            ]
+        }
+    },
+    {
+        "code": "INT",
+        "certified": {
+            "years": [{
+                    "name": "2016",
+                    "value": 16980
+                },
+                {
+                    "name": "2017",
+                    "value": 11112
+                },
+                {
+                    "name": "2018",
+                    "value": 23874
+                }
+            ]
+        },
+        "registrations": {
+            "years": [{
+                    "name": "2016",
+                    "value": 8518
+                },
+                {
+                    "name": "2017",
+                    "value": 4733
+                },
+                {
+                    "name": "2018",
+                    "value": 8722
+                }
+            ]
+        },
+        "participants": {
+            "years": [{
+                    "name": "2016",
+                    "value": 1608
+                },
+                {
+                    "name": "2017",
+                    "value": 902
+                },
+                {
+                    "name": "2018",
+                    "value": 1753
+                }
+            ]
+        },
+        "completed": {
+            "years": [{
+                    "name": "2016",
+                    "value": 595
+                },
+                {
+                    "name": "2017",
+                    "value": 428
+                },
+                {
+                    "name": "2018",
+                    "value": 1117
+                }
+            ]
+        }
+    },
+    {
+        "code": "KIC",
+        "certified": {
+            "years": [{
+                    "name": "2016",
+                    "value": 95136
+                },
+                {
+                    "name": "2017",
+                    "value": 172534
+                },
+                {
+                    "name": "2018",
+                    "value": 114352
+                }
+            ]
+        },
+        "registrations": {
+            "years": [{
+                    "name": "2016",
+                    "value": 52876
+                },
+                {
+                    "name": "2017",
+                    "value": 79552
+                },
+                {
+                    "name": "2018",
+                    "value": 58291
+                }
+            ]
+        },
+        "participants": {
+            "years": [{
+                    "name": "2016",
+                    "value": 10911
+                },
+                {
+                    "name": "2017",
+                    "value": 13363
+                },
+                {
+                    "name": "2018",
+                    "value": 7202
+                }
+            ]
+        },
+        "completed": {
+            "years": [{
+                    "name": "2016",
+                    "value": 6074
+                },
+                {
+                    "name": "2017",
+                    "value": 9124
+                },
+                {
+                    "name": "2018",
+                    "value": 4015
+                }
+            ]
+        }
+    },
+    {
+        "code": "MIF",
+        "certified": {
+            "years": [{
+                    "name": "2016",
+                    "value": 9262
+                },
+                {
+                    "name": "2017",
+                    "value": 11500
+                },
+                {
+                    "name": "2018",
+                    "value": 0
+                }
+            ]
+        },
+        "registrations": {
+            "years": [{
+                    "name": "2016",
+                    "value": 4962
+                },
+                {
+                    "name": "2017",
+                    "value": 5236
+                },
+                {
+                    "name": "2018",
+                    "value": 0
+                }
+            ]
+        },
+        "participants": {
+            "years": [{
+                    "name": "2016",
+                    "value": 1126
+                },
+                {
+                    "name": "2017",
+                    "value": 1135
+                },
+                {
+                    "name": "2018",
+                    "value": 0
+                }
+            ]
+        },
+        "completed": {
+            "years": [{
+                    "name": "2016",
+                    "value": 567
+                },
+                {
+                    "name": "2017",
+                    "value": 747
+                },
+                {
+                    "name": "2018",
+                    "value": 0
+                }
+            ]
+        }
+    },
+    {
+        "code": "PRE",
+        "certified": {
+            "years": [{
+                    "name": "2016",
+                    "value": 0
+                },
+                {
+                    "name": "2017",
+                    "value": 13000
+                },
+                {
+                    "name": "2018",
+                    "value": 12750
+                }
+            ]
+        },
+        "registrations": {
+            "years": [{
+                    "name": "2016",
+                    "value": 0
+                },
+                {
+                    "name": "2017",
+                    "value": 4870
+                },
+                {
+                    "name": "2018",
+                    "value": 6230
+                }
+            ]
+        },
+        "participants": {
+            "years": [{
+                    "name": "2016",
+                    "value": 0
+                },
+                {
+                    "name": "2017",
+                    "value": 856
+                },
+                {
+                    "name": "2018",
+                    "value": 891
+                }
+            ]
+        },
+        "completed": {
+            "years": [{
+                    "name": "2016",
+                    "value": 0
+                },
+                {
+                    "name": "2017",
+                    "value": 462
+                },
+                {
+                    "name": "2018",
+                    "value": 364
+                }
+            ]
+        }
+    },
+    {
+        "code": "RES",
+        "certified": {
+            "years": [{
+                    "name": "2016",
+                    "value": 9639
+                },
+                {
+                    "name": "2017",
+                    "value": 12910
+                },
+                {
+                    "name": "2018",
+                    "value": 14213
+                }
+            ]
+        },
+        "registrations": {
+            "years": [{
+                    "name": "2016",
+                    "value": 4754
+                },
+                {
+                    "name": "2017",
+                    "value": 5801
+                },
+                {
+                    "name": "2018",
+                    "value": 7995
+                }
+            ]
+        },
+        "participants": {
+            "years": [{
+                    "name": "2016",
+                    "value": 691
+                },
+                {
+                    "name": "2017",
+                    "value": 797
+                },
+                {
+                    "name": "2018",
+                    "value": 886
+                }
+            ]
+        },
+        "completed": {
+            "years": [{
+                    "name": "2016",
+                    "value": 237
+                },
+                {
+                    "name": "2017",
+                    "value": 453
+                },
+                {
+                    "name": "2018",
+                    "value": 407
+                }
+            ]
+        }
+    },
+    {
+        "code": "SCL",
+        "certified": {
+            "years": [{
+                    "name": "2016",
+                    "value": 22892
+                },
+                {
+                    "name": "2017",
+                    "value": 67480
+                },
+                {
+                    "name": "2018",
+                    "value": 52977
+                }
+            ]
+        },
+        "registrations": {
+            "years": [{
+                    "name": "2016",
+                    "value": 12070
+                },
+                {
+                    "name": "2017",
+                    "value": 31981
+                },
+                {
+                    "name": "2018",
+                    "value": 22900
+                }
+            ]
+        },
+        "participants": {
+            "years": [{
+                    "name": "2016",
+                    "value": 2417
+                },
+                {
+                    "name": "2017",
+                    "value": 5753
+                },
+                {
+                    "name": "2018",
+                    "value": 2899
+                }
+            ]
+        },
+        "completed": {
+            "years": [{
+                    "name": "2016",
+                    "value": 1315
+                },
+                {
+                    "name": "2017",
+                    "value": 3250
+                },
+                {
+                    "name": "2018",
+                    "value": 1314
+                }
+            ]
+        }
+    },
+    {
+        "code": "VPC",
+        "certified": {
+            "years": [{
+                    "name": "2016",
+                    "value": 8106
+                },
+                {
+                    "name": "2017",
+                    "value": 54076
+                },
+                {
+                    "name": "2018",
+                    "value": 26547
+                }
+            ]
+        },
+        "registrations": {
+            "years": [{
+                    "name": "2016",
+                    "value": 5925
+                },
+                {
+                    "name": "2017",
+                    "value": 25841
+                },
+                {
+                    "name": "2018",
+                    "value": 12118
+                }
+            ]
+        },
+        "participants": {
+            "years": [{
+                    "name": "2016",
+                    "value": 1781
+                },
+                {
+                    "name": "2017",
+                    "value": 3961
+                },
+                {
+                    "name": "2018",
+                    "value": 1448
+                }
+            ]
+        },
+        "completed": {
+            "years": [{
+                    "name": "2016",
+                    "value": 1422
+                },
+                {
+                    "name": "2017",
+                    "value": 2589
+                },
+                {
+                    "name": "2018",
+                    "value": 666
+                }
+            ]
+        }
+    }
+],
+    studentsFlowDivisions: [{
+            "code": "EDU",
+            "certified": {
+                "years": [{
+                        "name": "2016",
+                        "value": 0
+                    },
+                    {
+                        "name": "2017",
+                        "value": 15844
+                    },
+                    {
+                        "name": "2018",
+                        "value": 22983
+                    }
+                ]
             },
-            participants: {
-                years: [{
-                    name: "2016",
-                    value: 5678
-                }, {
-                    name: "2017",
-                    value: 2599
-                }],
-                value: 8277
+            "registrations": {
+                "years": [{
+                        "name": "2016",
+                        "value": 0
+                    },
+                    {
+                        "name": "2017",
+                        "value": 7433
+                    },
+                    {
+                        "name": "2018",
+                        "value": 10140
+                    }
+                ]
             },
-            completed: {
-                years: [{
-                    name: "2016",
-                    value: 1781
-                }, {
-                    name: "2017",
-                    value: 542
-                }],
-                value: 2323
+            "participants": {
+                "years": [{
+                        "name": "2016",
+                        "value": 0
+                    },
+                    {
+                        "name": "2017",
+                        "value": 751
+                    },
+                    {
+                        "name": "2018",
+                        "value": 1093
+                    }
+                ]
             },
-            certified: {
-                years: [{
-                    name: "2016",
-                    value: 1421
-                }, {
-                    name: "2017",
-                    value: 396
-                }],
-                value: 1817
-            },
-            code: "CID"
+            "completed": {
+                "years": [{
+                        "name": "2016",
+                        "value": 0
+                    },
+                    {
+                        "name": "2017",
+                        "value": 366
+                    },
+                    {
+                        "name": "2018",
+                        "value": 490
+                    }
+                ]
+            }
         },
         {
-            registrations: {
-                years: [{
-                    name: "2017",
-                    value: 16600
-                }, {
-                    name: "2018",
-                    value: 9015
-                }],
-                value: 25615
+            "code": "FMM",
+            "certified": {
+                "years": [{
+                        "name": "2016",
+                        "value": 9262
+                    },
+                    {
+                        "name": "2017",
+                        "value": 19448
+                    },
+                    {
+                        "name": "2018",
+                        "value": 13219
+                    }
+                ]
             },
-            participants: {
-                years: [{
-                    name: "2017",
-                    value: 7828
-                }, {
-                    name: "2018",
-                    value: 3835
-                }],
-                value: 11663
+            "registrations": {
+                "years": [{
+                        "name": "2016",
+                        "value": 4962
+                    },
+                    {
+                        "name": "2017",
+                        "value": 9379
+                    },
+                    {
+                        "name": "2018",
+                        "value": 6291
+                    }
+                ]
             },
-            completed: {
-                years: [{
-                    name: "2017",
-                    value: 2028
-                }, {
-                    name: "2018",
-                    value: 690
-                }],
-                value: 2718
+            "participants": {
+                "years": [{
+                        "name": "2016",
+                        "value": 1126
+                    },
+                    {
+                        "name": "2017",
+                        "value": 2291
+                    },
+                    {
+                        "name": "2018",
+                        "value": 644
+                    }
+                ]
             },
-            certified: {
-                years: [{
-                    name: "2017",
-                    value: 1211
-                }, {
-                    name: "2018",
-                    value: 180
-                }],
-                value: 1391
-            },
-            code: "CSC"
+            "completed": {
+                "years": [{
+                        "name": "2016",
+                        "value": 567
+                    },
+                    {
+                        "name": "2017",
+                        "value": 1395
+                    },
+                    {
+                        "name": "2018",
+                        "value": 417
+                    }
+                ]
+            }
         },
         {
-            registrations: {
-                years: [{
-                    name: "2016",
-                    value: 40854
-                }, {
-                    name: "2017",
-                    value: 28323
-                }, {
-                    name: "2018",
-                    value: 9595
-                }],
-                value: 78772
+            "code": "HUD",
+            "certified": {
+                "years": [{
+                        "name": "2016",
+                        "value": 27545
+                    },
+                    {
+                        "name": "2017",
+                        "value": 19645
+                    },
+                    {
+                        "name": "2018",
+                        "value": 0
+                    }
+                ]
             },
-            participants: {
-                years: [{
-                    name: "2016",
-                    value: 20523
-                }, {
-                    name: "2017",
-                    value: 12140
-                }, {
-                    name: "2018",
-                    value: 2680
-                }],
-                value: 35343
+            "registrations": {
+                "years": [{
+                        "name": "2016",
+                        "value": 13415
+                    },
+                    {
+                        "name": "2017",
+                        "value": 8272
+                    },
+                    {
+                        "name": "2018",
+                        "value": 0
+                    }
+                ]
             },
-            completed: {
-                years: [{
-                    name: "2016",
-                    value: 2901
-                }, {
-                    name: "2017",
-                    value: 1542
-                }, {
-                    name: "2018",
-                    value: 317
-                }],
-                value: 4760
+            "participants": {
+                "years": [{
+                        "name": "2016",
+                        "value": 1697
+                    },
+                    {
+                        "name": "2017",
+                        "value": 1001
+                    },
+                    {
+                        "name": "2018",
+                        "value": 0
+                    }
+                ]
             },
-            certified: {
-                years: [{
-                    name: "2016",
-                    value: 1481
-                }, {
-                    name: "2017",
-                    value: 866
-                }, {
-                    name: "2018",
-                    value: 188
-                }],
-                value: 2535
-            },
-            code: "CSD"
+            "completed": {
+                "years": [{
+                        "name": "2016",
+                        "value": 925
+                    },
+                    {
+                        "name": "2017",
+                        "value": 594
+                    },
+                    {
+                        "name": "2018",
+                        "value": 0
+                    }
+                ]
+            }
         },
         {
-            registrations: {
-                years: [{
-                    name: "2016",
-                    value: 20177
-                }, {
-                    name: "2017",
-                    value: 25293
-                }, {
-                    name: "2018",
-                    value: 32322
-                }],
-                value: 77792
+            "code": "ICS",
+            "certified": {
+                "years": [{
+                        "name": "2016",
+                        "value": 11390
+                    },
+                    {
+                        "name": "2017",
+                        "value": 7752
+                    },
+                    {
+                        "name": "2018",
+                        "value": 8744
+                    }
+                ]
             },
-            participants: {
-                years: [{
-                    name: "2016",
-                    value: 10747
-                }, {
-                    name: "2017",
-                    value: 11926
-                }, {
-                    name: "2018",
-                    value: 15502
-                }],
-                value: 38175
+            "registrations": {
+                "years": [{
+                        "name": "2016",
+                        "value": 6015
+                    },
+                    {
+                        "name": "2017",
+                        "value": 3568
+                    },
+                    {
+                        "name": "2018",
+                        "value": 4454
+                    }
+                ]
             },
-            completed: {
-                years: [{
-                    name: "2016",
-                    value: 2328
-                }, {
-                    name: "2017",
-                    value: 3263
-                }, {
-                    name: "2018",
-                    value: 2002
-                }],
-                value: 7593
+            "participants": {
+                "years": [{
+                        "name": "2016",
+                        "value": 1202
+                    },
+                    {
+                        "name": "2017",
+                        "value": 1057
+                    },
+                    {
+                        "name": "2018",
+                        "value": 994
+                    }
+                ]
             },
-            certified: {
-                years: [{
-                    name: "2016",
-                    value: 1142
-                }, {
-                    name: "2017",
-                    value: 2115
-                }, {
-                    name: "2018",
-                    value: 1221
-                }],
-                value: 4478
-            },
-            code: "IFD"
+            "completed": {
+                "years": [{
+                        "name": "2016",
+                        "value": 575
+                    },
+                    {
+                        "name": "2017",
+                        "value": 768
+                    },
+                    {
+                        "name": "2018",
+                        "value": 762
+                    }
+                ]
+            }
         },
         {
-            registrations: {
-                years: [{
-                    name: "2016",
-                    value: 6872
-                }, {
-                    name: "2017",
-                    value: 12131
-                }, {
-                    name: "2018",
-                    value: 10124
-                }],
-                value: 29127
+            "code": "IFD",
+            "certified": {
+                "years": [{
+                        "name": "2016",
+                        "value": 0
+                    },
+                    {
+                        "name": "2017",
+                        "value": 13000
+                    },
+                    {
+                        "name": "2018",
+                        "value": 12750
+                    }
+                ]
             },
-            participants: {
-                years: [{
-                    name: "2016",
-                    value: 3713
-                }, {
-                    name: "2017",
-                    value: 6288
-                }, {
-                    name: "2018",
-                    value: 5539
-                }],
-                value: 15540
+            "registrations": {
+                "years": [{
+                        "name": "2016",
+                        "value": 0
+                    },
+                    {
+                        "name": "2017",
+                        "value": 4870
+                    },
+                    {
+                        "name": "2018",
+                        "value": 6230
+                    }
+                ]
             },
-            completed: {
-                years: [{
-                    name: "2016",
-                    value: 426
-                }, {
-                    name: "2017",
-                    value: 1291
-                }, {
-                    name: "2018",
-                    value: 808
-                }],
-                value: 2525
+            "participants": {
+                "years": [{
+                        "name": "2016",
+                        "value": 0
+                    },
+                    {
+                        "name": "2017",
+                        "value": 856
+                    },
+                    {
+                        "name": "2018",
+                        "value": 891
+                    }
+                ]
             },
-            certified: {
-                years: [{
-                    name: "2016",
-                    value: 138
-                }, {
-                    name: "2017",
-                    value: 765
-                }, {
-                    name: "2018",
-                    value: 402
-                }],
-                value: 1305
-            },
-            code: "INE"
+            "completed": {
+                "years": [{
+                        "name": "2016",
+                        "value": 0
+                    },
+                    {
+                        "name": "2017",
+                        "value": 462
+                    },
+                    {
+                        "name": "2018",
+                        "value": 364
+                    }
+                ]
+            }
         },
         {
-            registrations: {
-                years: [{
-                    name: "2016",
-                    value: 92376
-                }, {
-                    name: "2017",
-                    value: 155860
-                }, {
-                    name: "2018",
-                    value: 96792
-                }],
-                value: 345028
+            "code": "INE",
+            "certified": {
+                "years": [{
+                        "name": "2016",
+                        "value": 9262
+                    },
+                    {
+                        "name": "2017",
+                        "value": 19448
+                    },
+                    {
+                        "name": "2018",
+                        "value": 0
+                    }
+                ]
             },
-            participants: {
-                years: [{
-                    name: "2016",
-                    value: 51228
-                }, {
-                    name: "2017",
-                    value: 70129
-                }, {
-                    name: "2018",
-                    value: 49854
-                }],
-                value: 171211
+            "registrations": {
+                "years": [{
+                        "name": "2016",
+                        "value": 4962
+                    },
+                    {
+                        "name": "2017",
+                        "value": 9379
+                    },
+                    {
+                        "name": "2018",
+                        "value": 0
+                    }
+                ]
             },
-            completed: {
-                years: [{
-                    name: "2016",
-                    value: 10866
-                }, {
-                    name: "2017",
-                    value: 12743
-                }, {
-                    name: "2018",
-                    value: 6107
-                }],
-                value: 29716
+            "participants": {
+                "years": [{
+                        "name": "2016",
+                        "value": 1126
+                    },
+                    {
+                        "name": "2017",
+                        "value": 2291
+                    },
+                    {
+                        "name": "2018",
+                        "value": 0
+                    }
+                ]
             },
-            certified: {
-                years: [{
-                    name: "2016",
-                    value: 6061
-                }, {
-                    name: "2017",
-                    value: 8723
-                }, {
-                    name: "2018",
-                    value: 3295
-                }],
-                value: 18079
-            },
-            code: "KNL"
+            "completed": {
+                "years": [{
+                        "name": "2016",
+                        "value": 567
+                    },
+                    {
+                        "name": "2017",
+                        "value": 1395
+                    },
+                    {
+                        "name": "2018",
+                        "value": 0
+                    }
+                ]
+            }
         },
         {
-            registrations: {
-                years: [{
-                    name: "2016",
-                    value: 22379
-                }, {
-                    name: "2017",
-                    value: 64505
-                }, {
-                    name: "2018",
-                    value: 50997
-                }],
-                value: 137881
+            "code": "INT",
+            "certified": {
+                "years": [{
+                        "name": "2016",
+                        "value": 16980
+                    },
+                    {
+                        "name": "2017",
+                        "value": 11112
+                    },
+                    {
+                        "name": "2018",
+                        "value": 23874
+                    }
+                ]
             },
-            participants: {
-                years: [{
-                    name: "2016",
-                    value: 11802
-                }, {
-                    name: "2017",
-                    value: 30480
-                }, {
-                    name: "2018",
-                    value: 21735
-                }],
-                value: 64017
+            "registrations": {
+                "years": [{
+                        "name": "2016",
+                        "value": 8518
+                    },
+                    {
+                        "name": "2017",
+                        "value": 4733
+                    },
+                    {
+                        "name": "2018",
+                        "value": 8722
+                    }
+                ]
             },
-            completed: {
-                years: [{
-                    name: "2016",
-                    value: 2417
-                }, {
-                    name: "2017",
-                    value: 5665
-                }, {
-                    name: "2018",
-                    value: 2573
-                }],
-                value: 10655
+            "participants": {
+                "years": [{
+                        "name": "2016",
+                        "value": 1608
+                    },
+                    {
+                        "name": "2017",
+                        "value": 902
+                    },
+                    {
+                        "name": "2018",
+                        "value": 1753
+                    }
+                ]
             },
-            certified: {
-                years: [{
-                    name: "2016",
-                    value: 1315
-                }, {
-                    name: "2017",
-                    value: 3203
-                }, {
-                    name: "2018",
-                    value: 1120
-                }],
-                value: 5638
-            },
-            code: "SCL"
+            "completed": {
+                "years": [{
+                        "name": "2016",
+                        "value": 595
+                    },
+                    {
+                        "name": "2017",
+                        "value": 428
+                    },
+                    {
+                        "name": "2018",
+                        "value": 1117
+                    }
+                ]
+            }
         },
+        {
+            "code": "KLD",
+            "certified": {
+                "years": [{
+                        "name": "2016",
+                        "value": 95136
+                    },
+                    {
+                        "name": "2017",
+                        "value": 172534
+                    },
+                    {
+                        "name": "2018",
+                        "value": 114352
+                    }
+                ]
+            },
+            "registrations": {
+                "years": [{
+                        "name": "2016",
+                        "value": 52876
+                    },
+                    {
+                        "name": "2017",
+                        "value": 79552
+                    },
+                    {
+                        "name": "2018",
+                        "value": 58291
+                    }
+                ]
+            },
+            "participants": {
+                "years": [{
+                        "name": "2016",
+                        "value": 10911
+                    },
+                    {
+                        "name": "2017",
+                        "value": 13363
+                    },
+                    {
+                        "name": "2018",
+                        "value": 7202
+                    }
+                ]
+            },
+            "completed": {
+                "years": [{
+                        "name": "2016",
+                        "value": 6074
+                    },
+                    {
+                        "name": "2017",
+                        "value": 9124
+                    },
+                    {
+                        "name": "2018",
+                        "value": 4015
+                    }
+                ]
+            }
+        },
+        {
+            "code": "LMK",
+            "certified": {
+                "years": [{
+                        "name": "2016",
+                        "value": 3376
+                    },
+                    {
+                        "name": "2017",
+                        "value": 9475
+                    },
+                    {
+                        "name": "2018",
+                        "value": 5638
+                    }
+                ]
+            },
+            "registrations": {
+                "years": [{
+                        "name": "2016",
+                        "value": 1638
+                    },
+                    {
+                        "name": "2017",
+                        "value": 4247
+                    },
+                    {
+                        "name": "2018",
+                        "value": 3099
+                    }
+                ]
+            },
+            "participants": {
+                "years": [{
+                        "name": "2016",
+                        "value": 233
+                    },
+                    {
+                        "name": "2017",
+                        "value": 629
+                    },
+                    {
+                        "name": "2018",
+                        "value": 332
+                    }
+                ]
+            },
+            "completed": {
+                "years": [{
+                        "name": "2016",
+                        "value": 129
+                    },
+                    {
+                        "name": "2017",
+                        "value": 347
+                    },
+                    {
+                        "name": "2018",
+                        "value": 142
+                    }
+                ]
+            }
+        },
+        {
+            "code": "MIF",
+            "certified": {
+                "years": [{
+                        "name": "2016",
+                        "value": 9262
+                    },
+                    {
+                        "name": "2017",
+                        "value": 11500
+                    },
+                    {
+                        "name": "2018",
+                        "value": 0
+                    }
+                ]
+            },
+            "registrations": {
+                "years": [{
+                        "name": "2016",
+                        "value": 4962
+                    },
+                    {
+                        "name": "2017",
+                        "value": 5236
+                    },
+                    {
+                        "name": "2018",
+                        "value": 0
+                    }
+                ]
+            },
+            "participants": {
+                "years": [{
+                        "name": "2016",
+                        "value": 1126
+                    },
+                    {
+                        "name": "2017",
+                        "value": 1135
+                    },
+                    {
+                        "name": "2018",
+                        "value": 0
+                    }
+                ]
+            },
+            "completed": {
+                "years": [{
+                        "name": "2016",
+                        "value": 567
+                    },
+                    {
+                        "name": "2017",
+                        "value": 747
+                    },
+                    {
+                        "name": "2018",
+                        "value": 0
+                    }
+                ]
+            }
+        },
+        {
+            "code": "PCY",
+            "certified": {
+                "years": [{
+                        "name": "2016",
+                        "value": 0
+                    },
+                    {
+                        "name": "2017",
+                        "value": 13000
+                    },
+                    {
+                        "name": "2018",
+                        "value": 12750
+                    }
+                ]
+            },
+            "registrations": {
+                "years": [{
+                        "name": "2016",
+                        "value": 0
+                    },
+                    {
+                        "name": "2017",
+                        "value": 4870
+                    },
+                    {
+                        "name": "2018",
+                        "value": 6230
+                    }
+                ]
+            },
+            "participants": {
+                "years": [{
+                        "name": "2016",
+                        "value": 0
+                    },
+                    {
+                        "name": "2017",
+                        "value": 856
+                    },
+                    {
+                        "name": "2018",
+                        "value": 891
+                    }
+                ]
+            },
+            "completed": {
+                "years": [{
+                        "name": "2016",
+                        "value": 0
+                    },
+                    {
+                        "name": "2017",
+                        "value": 462
+                    },
+                    {
+                        "name": "2018",
+                        "value": 364
+                    }
+                ]
+            }
+        },
+        {
+            "code": "RES",
+            "certified": {
+                "years": [{
+                        "name": "2016",
+                        "value": 9639
+                    },
+                    {
+                        "name": "2017",
+                        "value": 12910
+                    },
+                    {
+                        "name": "2018",
+                        "value": 14213
+                    }
+                ]
+            },
+            "registrations": {
+                "years": [{
+                        "name": "2016",
+                        "value": 4754
+                    },
+                    {
+                        "name": "2017",
+                        "value": 5801
+                    },
+                    {
+                        "name": "2018",
+                        "value": 7995
+                    }
+                ]
+            },
+            "participants": {
+                "years": [{
+                        "name": "2016",
+                        "value": 691
+                    },
+                    {
+                        "name": "2017",
+                        "value": 797
+                    },
+                    {
+                        "name": "2018",
+                        "value": 886
+                    }
+                ]
+            },
+            "completed": {
+                "years": [{
+                        "name": "2016",
+                        "value": 237
+                    },
+                    {
+                        "name": "2017",
+                        "value": 453
+                    },
+                    {
+                        "name": "2018",
+                        "value": 407
+                    }
+                ]
+            }
+        },
+        {
+            "code": "RND",
+            "certified": {
+                "years": [{
+                        "name": "2016",
+                        "value": 14848
+                    },
+                    {
+                        "name": "2017",
+                        "value": 9449
+                    },
+                    {
+                        "name": "2018",
+                        "value": 9875
+                    }
+                ]
+            },
+            "registrations": {
+                "years": [{
+                        "name": "2016",
+                        "value": 7893
+                    },
+                    {
+                        "name": "2017",
+                        "value": 4226
+                    },
+                    {
+                        "name": "2018",
+                        "value": 2805
+                    }
+                ]
+            },
+            "participants": {
+                "years": [{
+                        "name": "2016",
+                        "value": 1219
+                    },
+                    {
+                        "name": "2017",
+                        "value": 541
+                    },
+                    {
+                        "name": "2018",
+                        "value": 317
+                    }
+                ]
+            },
+            "completed": {
+                "years": [{
+                        "name": "2016",
+                        "value": 562
+                    },
+                    {
+                        "name": "2017",
+                        "value": 272
+                    },
+                    {
+                        "name": "2018",
+                        "value": 189
+                    }
+                ]
+            }
+        },
+        {
+            "code": "SPH",
+            "certified": {
+                "years": [{
+                        "name": "2016",
+                        "value": 19516
+                    },
+                    {
+                        "name": "2017",
+                        "value": 42161
+                    },
+                    {
+                        "name": "2018",
+                        "value": 24356
+                    }
+                ]
+            },
+            "registrations": {
+                "years": [{
+                        "name": "2016",
+                        "value": 10432
+                    },
+                    {
+                        "name": "2017",
+                        "value": 20301
+                    },
+                    {
+                        "name": "2018",
+                        "value": 9661
+                    }
+                ]
+            },
+            "participants": {
+                "years": [{
+                        "name": "2016",
+                        "value": 2184
+                    },
+                    {
+                        "name": "2017",
+                        "value": 4373
+                    },
+                    {
+                        "name": "2018",
+                        "value": 1474
+                    }
+                ]
+            },
+            "completed": {
+                "years": [{
+                        "name": "2016",
+                        "value": 1186
+                    },
+                    {
+                        "name": "2017",
+                        "value": 2537
+                    },
+                    {
+                        "name": "2018",
+                        "value": 682
+                    }
+                ]
+            }
+        },
+        {
+            "code": "TSP",
+            "certified": {
+                "years": [{
+                        "name": "2016",
+                        "value": 0
+                    },
+                    {
+                        "name": "2017",
+                        "value": 6397
+                    },
+                    {
+                        "name": "2018",
+                        "value": 5454
+                    }
+                ]
+            },
+            "registrations": {
+                "years": [{
+                        "name": "2016",
+                        "value": 0
+                    },
+                    {
+                        "name": "2017",
+                        "value": 3599
+                    },
+                    {
+                        "name": "2018",
+                        "value": 3129
+                    }
+                ]
+            },
+            "participants": {
+                "years": [{
+                        "name": "2016",
+                        "value": 0
+                    },
+                    {
+                        "name": "2017",
+                        "value": 1019
+                    },
+                    {
+                        "name": "2018",
+                        "value": 424
+                    }
+                ]
+            },
+            "completed": {
+                "years": [{
+                        "name": "2016",
+                        "value": 0
+                    },
+                    {
+                        "name": "2017",
+                        "value": 646
+                    },
+                    {
+                        "name": "2018",
+                        "value": 263
+                    }
+                ]
+            }
+        },
+        {
+            "code": "VPC",
+            "certified": {
+                "years": [{
+                        "name": "2016",
+                        "value": 8106
+                    },
+                    {
+                        "name": "2017",
+                        "value": 54076
+                    },
+                    {
+                        "name": "2018",
+                        "value": 26547
+                    }
+                ]
+            },
+            "registrations": {
+                "years": [{
+                        "name": "2016",
+                        "value": 5925
+                    },
+                    {
+                        "name": "2017",
+                        "value": 25841
+                    },
+                    {
+                        "name": "2018",
+                        "value": 12118
+                    }
+                ]
+            },
+            "participants": {
+                "years": [{
+                        "name": "2016",
+                        "value": 1781
+                    },
+                    {
+                        "name": "2017",
+                        "value": 3961
+                    },
+                    {
+                        "name": "2018",
+                        "value": 1448
+                    }
+                ]
+            },
+            "completed": {
+                "years": [{
+                        "name": "2016",
+                        "value": 1422
+                    },
+                    {
+                        "name": "2017",
+                        "value": 2589
+                    },
+                    {
+                        "name": "2018",
+                        "value": 666
+                    }
+                ]
+            }
+        },
+        {
+            "code": "WSA",
+            "certified": {
+                "years": [{
+                        "name": "2016",
+                        "value": 7055
+                    },
+                    {
+                        "name": "2017",
+                        "value": 7212
+                    },
+                    {
+                        "name": "2018",
+                        "value": 5260
+                    }
+                ]
+            },
+            "registrations": {
+                "years": [{
+                        "name": "2016",
+                        "value": 3789
+                    },
+                    {
+                        "name": "2017",
+                        "value": 3571
+                    },
+                    {
+                        "name": "2018",
+                        "value": 2785
+                    }
+                ]
+            },
+            "participants": {
+                "years": [{
+                        "name": "2016",
+                        "value": 426
+                    },
+                    {
+                        "name": "2017",
+                        "value": 392
+                    },
+                    {
+                        "name": "2018",
+                        "value": 450
+                    }
+                ]
+            },
+            "completed": {
+                "years": [{
+                        "name": "2016",
+                        "value": 138
+                    },
+                    {
+                        "name": "2017",
+                        "value": 183
+                    },
+                    {
+                        "name": "2018",
+                        "value": 172
+                    }
+                ]
+            }
+        }
     ],
-    studentsFlowDivisions: [
-        {
-            code: "CBD",
-            certified: {
-                years: [{
-                    name: "2016",
-                    value: 0
-                }, {
-                    name: "2017",
-                    value: 564
-                }, {
-                    name: "2018",
-                    value: 213
-                }]
-            },
-            registrations: {
-                years: [{
-                    name: "2016",
-                    value: 0
-                }, {
-                    name: "2017",
-                    value: 8819
-                }, {
-                    name: "2018",
-                    value: 9015
-                }]
-            },
-            participants: {
-                years: [{
-                    name: "2016",
-                    value: 0
-                }, {
-                    name: "2017",
-                    value: 3784
-                }, {
-                    name: "2018",
-                    value: 3872
-                }]
-            },
-            completed: {
-                years: [{
-                    name: "2016",
-                    value: 0
-                }, {
-                    name: "2017",
-                    value: 872
-                }, {
-                    name: "2018",
-                    value: 724
-                }]
-            }
-        },
-        {
-            code: "CBR",
-            certified: {
-                years: [{
-                    name: "2016",
-                    value: 0
-                }, {
-                    name: "2017",
-                    value: 647
-                }, {
-                    name: "2018",
-                    value: 0
-                }]
-            },
-            registrations: {
-                years: [{
-                    name: "2016",
-                    value: 0
-                }, {
-                    name: "2017",
-                    value: 7781
-                }, {
-                    name: "2018",
-                    value: 0
-                }]
-            },
-            participants: {
-                years: [{
-                    name: "2016",
-                    value: 0
-                }, {
-                    name: "2017",
-                    value: 4047
-                }, {
-                    name: "2018",
-                    value: 0
-                }]
-            },
-            completed: {
-                years: [{
-                    name: "2016",
-                    value: 0
-                }, {
-                    name: "2017",
-                    value: 1156
-                }, {
-                    name: "2018",
-                    value: 0
-                }]
-            }
-        },
-        {
-            code: "CHA",
-            certified: {
-                years: [{
-                    name: "2016",
-                    value: 1421
-                }, {
-                    name: "2017",
-                    value: 396
-                }, {
-                    name: "2018",
-                    value: 0
-                }]
-            },
-            registrations: {
-                years: [{
-                    name: "2016",
-                    value: 7718
-                }, {
-                    name: "2017",
-                    value: 4411
-                }, {
-                    name: "2018",
-                    value: 0
-                }]
-            },
-            participants: {
-                years: [{
-                    name: "2016",
-                    value: 5678
-                }, {
-                    name: "2017",
-                    value: 2600
-                }, {
-                    name: "2018",
-                    value: 0
-                }]
-            },
-            completed: {
-                years: [{
-                    name: "2016",
-                    value: 1781
-                }, {
-                    name: "2017",
-                    value: 542
-                }, {
-                    name: "2018",
-                    value: 0
-                }]
-            }
-        },
-        {
-            code: "EDU",
-            certified: {
-                years: [{
-                    name: "2016",
-                    value: 0
-                }, {
-                    name: "2017",
-                    value: 366
-                }, {
-                    name: "2018",
-                    value: 412
-                }]
-            },
-            registrations: {
-                years: [{
-                    name: "2016",
-                    value: 0
-                }, {
-                    name: "2017",
-                    value: 15398
-                }, {
-                    name: "2018",
-                    value: 21787
-                }]
-            },
-            participants: {
-                years: [{
-                    name: "2016",
-                    value: 0
-                }, {
-                    name: "2017",
-                    value: 7254
-                }, {
-                    name: "2018",
-                    value: 9445
-                }]
-            },
-            completed: {
-                years: [{
-                    name: "2016",
-                    value: 0
-                }, {
-                    name: "2017",
-                    value: 751
-                }, {
-                    name: "2018",
-                    value: 933
-                }]
-            }
-        },
-        {
-            code: "FMM",
-            certified: {
-                years: [{
-                    name: "2016",
-                    value: 567
-                }, {
-                    name: "2017",
-                    value: 1348
-                }, {
-                    name: "2018",
-                    value: 415
-                }]
-            },
-            registrations: {
-                years: [{
-                    name: "2016",
-                    value: 9040
-                }, {
-                    name: "2017",
-                    value: 17727
-                }, {
-                    name: "2018",
-                    value: 12905
-                }]
-            },
-            participants: {
-                years: [{
-                    name: "2016",
-                    value: 4838
-                }, {
-                    name: "2017",
-                    value: 8431
-                }, {
-                    name: "2018",
-                    value: 6141
-                }]
-            },
-            completed: {
-                years: [{
-                    name: "2016",
-                    value: 1126
-                }, {
-                    name: "2017",
-                    value: 2206
-                }, {
-                    name: "2018",
-                    value: 642
-                }]
-            }
-        },
-        {
-            code: "HUD",
-            certified: {
-                years: [{
-                    name: "2016",
-                    value: 924
-                }, {
-                    name: "2017",
-                    value: 594
-                }, {
-                    name: "2018",
-                    value: 0
-                }]
-            },
-            registrations: {
-                years: [{
-                    name: "2016",
-                    value: 26640
-                }, {
-                    name: "2017",
-                    value: 19118
-                }, {
-                    name: "2018",
-                    value: 0
-                }]
-            },
-            participants: {
-                years: [{
-                    name: "2016",
-                    value: 12961
-                }, {
-                    name: "2017",
-                    value: 8022
-                }, {
-                    name: "2018",
-                    value: 0
-                }]
-            },
-            completed: {
-                years: [{
-                    name: "2016",
-                    value: 1694
-                }, {
-                    name: "2017",
-                    value: 1001
-                }, {
-                    name: "2018",
-                    value: 0
-                }]
-            }
-        },
-        {
-            code: "ICS",
-            certified: {
-                years: [{
-                    name: "2016",
-                    value: 575
-                }, {
-                    name: "2017",
-                    value: 767
-                }, {
-                    name: "2018",
-                    value: 597
-                }]
-            },
-            registrations: {
-                years: [{
-                    name: "2016",
-                    value: 11137
-                }, {
-                    name: "2017",
-                    value: 7566
-                }, {
-                    name: "2018",
-                    value: 8279
-                }]
-            },
-            participants: {
-                years: [{
-                    name: "2016",
-                    value: 5909
-                }, {
-                    name: "2017",
-                    value: 3500
-                }, {
-                    name: "2018",
-                    value: 4131
-                }]
-            },
-            completed: {
-                years: [{
-                    name: "2016",
-                    value: 1202
-                }, {
-                    name: "2017",
-                    value: 1057
-                }, {
-                    name: "2018",
-                    value: 787
-                }]
-            }
-        },
-        {
-            code: "IFD",
-            certified: {
-                years: [{
-                    name: "2016",
-                    value: 0
-                }, {
-                    name: "2017",
-                    value: 0
-                }, {
-                    name: "2018",
-                    value: 280
-                }]
-            },
-            registrations: {
-                years: [{
-                    name: "2016",
-                    value: 0
-                }, {
-                    name: "2017",
-                    value: 0
-                }, {
-                    name: "2018",
-                    value: 11138
-                }]
-            },
-            participants: {
-                years: [{
-                    name: "2016",
-                    value: 0
-                }, {
-                    name: "2017",
-                    value: 0
-                }, {
-                    name: "2018",
-                    value: 5332
-                }]
-            },
-            completed: {
-                years: [{
-                    name: "2016",
-                    value: 0
-                }, {
-                    name: "2017",
-                    value: 0
-                }, {
-                    name: "2018",
-                    value: 669
-                }]
-            }
-        },
-        {
-            code: "KLD",
-            certified: {
-                years: [{
-                    name: "2016",
-                    value: 6062
-                }, {
-                    name: "2017",
-                    value: 8448
-                }, {
-                    name: "2018",
-                    value: 3356
-                }]
-            },
-            registrations: {
-                years: [{
-                    name: "2016",
-                    value: 92376
-                }, {
-                    name: "2017",
-                    value: 148342
-                }, {
-                    name: "2018",
-                    value: 97531
-                }]
-            },
-            participants: {
-                years: [{
-                    name: "2016",
-                    value: 51233
-                }, {
-                    name: "2017",
-                    value: 66807
-                }, {
-                    name: "2018",
-                    value: 49345
-                }]
-            },
-            completed: {
-                years: [{
-                    name: "2016",
-                    value: 10866
-                }, {
-                    name: "2017",
-                    value: 12248
-                }, {
-                    name: "2018",
-                    value: 6065
-                }]
-            }
-        },
-        {
-            code: "KNM",
-            certified: {
-                years: [{
-                    name: "2016",
-                    value: 0
-                }, {
-                    name: "2017",
-                    value: 275
-                }, {
-                    name: "2018",
-                    value: 112
-                }]
-            },
-            registrations: {
-                years: [{
-                    name: "2016",
-                    value: 0
-                }, {
-                    name: "2017",
-                    value: 7518
-                }, {
-                    name: "2018",
-                    value: 5342
-                }]
-            },
-            participants: {
-                years: [{
-                    name: "2016",
-                    value: 0
-                }, {
-                    name: "2017",
-                    value: 3345
-                }, {
-                    name: "2018",
-                    value: 2948
-                }]
-            },
-            completed: {
-                years: [{
-                    name: "2016",
-                    value: 0
-                }, {
-                    name: "2017",
-                    value: 495
-                }, {
-                    name: "2018",
-                    value: 288
-                }]
-            }
-        },
-        {
-            code: "LMK",
-            certified: {
-                years: [{
-                    name: "2016",
-                    value: 129
-                }, {
-                    name: "2017",
-                    value: 347
-                }, {
-                    name: "2018",
-                    value: 112
-                }]
-            },
-            registrations: {
-                years: [{
-                    name: "2016",
-                    value: 3269
-                }, {
-                    name: "2017",
-                    value: 9166
-                }, {
-                    name: "2018",
-                    value: 5342
-                }]
-            },
-            participants: {
-                years: [{
-                    name: "2016",
-                    value: 1598
-                }, {
-                    name: "2017",
-                    value: 4119
-                }, {
-                    name: "2018",
-                    value: 2948
-                }]
-            },
-            completed: {
-                years: [{
-                    name: "2016",
-                    value: 233
-                }, {
-                    name: "2017",
-                    value: 629
-                }, {
-                    name: "2018",
-                    value: 288
-                }]
-            }
-        },
-        {
-            code: "RND",
-            certified: {
-                years: [{
-                    name: "2016",
-                    value: 557
-                }, {
-                    name: "2017",
-                    value: 272
-                }, {
-                    name: "2018",
-                    value: 189
-                }]
-            },
-            registrations: {
-                years: [{
-                    name: "2016",
-                    value: 14214
-                }, {
-                    name: "2017",
-                    value: 9205
-                }, {
-                    name: "2018",
-                    value: 9595
-                }]
-            },
-            participants: {
-                years: [{
-                    name: "2016",
-                    value: 7563
-                }, {
-                    name: "2017",
-                    value: 4120
-                }, {
-                    name: "2018",
-                    value: 2684
-                }]
-            },
-            completed: {
-                years: [{
-                    name: "2016",
-                    value: 1207
-                }, {
-                    name: "2017",
-                    value: 541
-                }, {
-                    name: "2018",
-                    value: 317
-                }]
-            }
-        },
-        {
-            code: "SPH",
-            certified: {
-                years: [{
-                    name: "2016",
-                    value: 1186
-                }, {
-                    name: "2017",
-                    value: 2490
-                }, {
-                    name: "2018",
-                    value: 652
-                }]
-            },
-            registrations: {
-                years: [{
-                    name: "2016",
-                    value: 19110
-                }, {
-                    name: "2017",
-                    value: 39941
-                }, {
-                    name: "2018",
-                    value: 23868
-                }]
-            },
-            participants: {
-                years: [{
-                    name: "2016",
-                    value: 10204
-                }, {
-                    name: "2017",
-                    value: 19116
-                }, {
-                    name: "2018",
-                    value: 9422
-                }]
-            },
-            completed: {
-                years: [{
-                    name: "2016",
-                    value: 2184
-                }, {
-                    name: "2017",
-                    value: 4285
-                }, {
-                    name: "2018",
-                    value: 1430
-                }]
-            }
-        },
-        {
-            code: "TSP",
-            certified: {
-                years: [{
-                    name: "2016",
-                    value: 0
-                }, {
-                    name: "2017",
-                    value: 583
-                }, {
-                    name: "2018",
-                    value: 260
-                }]
-            },
-            registrations: {
-                years: [{
-                    name: "2016",
-                    value: 0
-                }, {
-                    name: "2017",
-                    value: 5112
-                }, {
-                    name: "2018",
-                    value: 5142
-                }]
-            }
-        ,
-        participants: {
-            years: [{
-                name: "2016",
-                value: 0
-            }, {
-                name: "2017",
-                value: 2802
-            }, {
-                name: "2018",
-                value: 2946
-            }]
-        },
-        completed: {
-            years: [{
-                name: "2017",
-                value: 899
-            }, {
-                name: "2018",
-                value: 417
-            }]
-        }
-    }, {
-        code: "WSA",
-        certified: {
-            years: [{
-                name: "2016",
-                value: 138
-            }, {
-                name: "2017",
-                value: 182
-            }, {
-                name: "2018",
-                value: 171
-            }]
-        },
-        registrations: {
-            years: [{
-                name: "2016",
-                value: 6872
-            }, {
-                name: "2017",
-                value: 7019
-            }, {
-                name: "2018",
-                value: 4982
-            }]
-        },
-        participants: {
-            years: [{
-                name: "2016",
-                value: 3713
-            }, {
-                name: "2017",
-                value: 3487
-            }, {
-                name: "2018",
-                value: 2636
-            }]
-        },
-        completed: {
-            years: [{
-                name: "2017",
-                value: 392
-            }, {
-                name: "2018",
-                value: 443
-            }]
-        }
-    }],
     studentsFlowIDB: {
         registrations: {
             years: [{
-                name: "2016",
-                value: 241057
-            }, {
-                name: "2017",
-                value: 386099
-
-            }, {
-                name: "2018",
-                value: 278065
-            }],
+                    "name": "2016",
+                    "value": 248432
+                },
+                {
+                    "name": "2017",
+                    "value": 452175
+                },
+                {
+                    "name": "2018",
+                    "value": 305275
+                }
+            ],
             value: 706344
         },
         participants: {
             years: [{
-                name: "2016",
-                value: 129829
-            }, {
-                name: "2017",
-                value: 176355
-            }, {
-                name: "2018",
-                value: 130093
-            }],
+                    "name": "2016",
+                    "value": 133930
+                },
+                {
+                    "name": "2017",
+                    "value": 208449
+                },
+                {
+                    "name": "2018",
+                    "value": 144735
+                }
+            ],
             value: 344226
         },
         completed: {
             years: [{
-                name: "2016",
-                value: 25665
-            }, {
-                name: "2017",
-                value: 33341
-            }, {
-                name: "2018",
-                value: 16760
-            }],
+                    "name": "2016",
+                    "value": 25756
+                },
+                {
+                    "name": "2017",
+                    "value": 36607
+                },
+                {
+                    "name": "2018",
+                    "value": 19249
+                }
+            ],
             value: 60290
         },
         certified: {
             years: [{
-                name: "2016",
-                value: 13649
-            }, {
-                name: "2017",
-                value: 21051
-            }, {
-                name: "2018",
-                value: 8737
-            }],
+                    "name": "2016",
+                    "value": 13682
+                },
+                {
+                    "name": "2017",
+                    "value": 22951
+                },
+                {
+                    "name": "2018",
+                    "value": 10222
+                }
+            ],
             value: 35243
         }
     }

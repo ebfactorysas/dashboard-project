@@ -5,8 +5,6 @@ function orderTopMoocs(data) {
     return dataMoocs;
 }
 
-var topAllMoocs = orderTopMoocs(moocsTopArrays.IDBAlltime)
-var top2018Moocs = orderTopMoocs(moocsTopArrays.IDB2018)
 
 /**
  * Start distribution-moocs
@@ -71,7 +69,7 @@ function drawDistributionChart(dataDistribution) {
         return d.name
     }));
     yDistribution.domain([0, d3.max(dataDistribution, function (d) {
-        return d.value
+        return d.registrations
     })]);
 
     svgDistribution.selectAll(".bar")
@@ -85,14 +83,14 @@ function drawDistributionChart(dataDistribution) {
         .attr("rx", 25)
         .attr("ry", 25)
         .attr("y", function (d) {
-            return yDistribution(d.value + 3);
+            return yDistribution(d.registrations + 3);
         })
         .attr("x", function (d, i) {
             return i * xDistribution.bandwidth() + 15; //Bar width of 20 plus 1 for padding
         })
         .attr("fill", "#eea08d")
         .attr("height", function (d) {
-            return heightDistribution - yDistribution(d.value + 3);
+            return heightDistribution - yDistribution(d.registrations + 3);
         });
 
     svgDistribution.selectAll("text")
@@ -110,6 +108,7 @@ function drawDistributionChart(dataDistribution) {
             return i * xDistribution.bandwidth() + 21; //Bar width of 20 plus 1 for padding
         })
         .attr("font-family", "Gotham-Bold")
+        .attr("class","textInsideDist")
         .attr("padding-bottom", "10px")
         .attr("font-size", "12px");
 
@@ -123,6 +122,75 @@ function drawDistributionChart(dataDistribution) {
         .attr("font-family", "Gotham-Bold")
         .attr("font-size", "12px");
 
+        var div = d3.select("body").append("div")
+        .attr("class", "toolTip")
+        .style("font-size", "12px")
+        .style("width", "250px");
+
+        var tooltipBarText = d3Old.selectAll("#distribution-moocs .textInsideDist")
+        .on("mouseover", function (d) {
+            var textHtml = "<div class='col tooltip-gauges'><h3 class='row orange'>{{title}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>Amount</span><span class='col text-right' >{{value}}</div>";
+            textHtml = textHtml.replace('{{title}}', d.name)
+            textHtml = textHtml.replace('{{value}}', d.registrations.toFixed(0).toLocaleString())
+            if (d.value) {
+                var addText = "<div class='row pt-1 border-top'><span class='col pl-0 pr-0 '> {{type}}</span><span  class='col-3 text-right'>{{code}}</span></div>"
+                addText = addText.replace('{{type}}', "Percentage")
+                addText = addText.replace('{{code}}', d.value)
+                textHtml = textHtml + addText;
+            } else if (d.department_codes) {
+                var addText = "<div class='row pt-1 border-top'><span class='col-2 pl-0 pr-0 '> {{type}}</span><span  class='col text-right'>{{code}}</span></div>"
+                addText = addText.replace('{{type}}', "Department")
+                addText = addText.replace('{{code}}', d.department_codes);
+                textHtml = textHtml + addText;
+            }
+            textHtml = textHtml + "</div>";
+            div.transition()
+                .duration(0)
+                .style("font-family", "Gotham-Book")
+                .style("display", "inline-block");
+            // div.html(d.value + "<br/>" + d.name)
+            div.html(textHtml)
+                .style("left", (d3Old.event.pageX-200) + 35 + "px")
+                .style("top", (d3Old.event.pageY - 28) + 35+ "px");
+        })
+        .on("mouseout", function (d) {
+            div.transition()
+                .duration(0)
+                .style("display", "none");
+        });
+        
+        var tooltipBar = d3Old.selectAll("#distribution-moocs .bar")
+        .on("mouseover", function (d) {
+            var textHtml = "<div class='col tooltip-gauges'><h3 class='row orange'>{{title}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>Amount</span><span class='col text-right' >{{value}}</div>";
+            textHtml = textHtml.replace('{{title}}', d.name)
+            textHtml = textHtml.replace('{{value}}', d.registrations.toFixed(0).toLocaleString())
+            if (d.value) {
+                var addText = "<div class='row pt-1 border-top'><span class='col pl-0 pr-0 '> {{type}}</span><span  class='col-3 text-right'>{{code}}</span></div>"
+                addText = addText.replace('{{type}}', "Percentage")
+                addText = addText.replace('{{code}}', d.value)
+                textHtml = textHtml + addText;
+            } else if (d.department_codes) {
+                var addText = "<div class='row pt-1 border-top'><span class='col-2 pl-0 pr-0 '> {{type}}</span><span  class='col text-right'>{{code}}</span></div>"
+                addText = addText.replace('{{type}}', "Department")
+                addText = addText.replace('{{code}}', d.department_codes);
+                textHtml = textHtml + addText;
+            }
+            textHtml = textHtml + "</div>";
+            div.transition()
+                .duration(0)
+                .style("font-family", "Gotham-Book")
+                .style("display", "inline-block");
+            // div.html(d.value + "<br/>" + d.name)
+            div.html(textHtml)
+                .style("left", (d3Old.event.pageX-200) + 35 + "px")
+                .style("top", (d3Old.event.pageY - 28) + 35 + "px");
+        })
+        .on("mouseout", function (d) {
+            div.transition()
+                .duration(0)
+                .style("display", "none");
+        });
+
 }
 /**
  * End distribution-moocs
@@ -133,102 +201,12 @@ function drawDistributionChart(dataDistribution) {
  * Start registration-moocs
  */
 
-
 function drawMoocsRegistrationsChart(dataMoocs) {
     d3.select("#moocs-registrations svg").remove();
-    var marginMoocs = {
-        top: 15,
-        right: 25,
-        bottom: 15,
-        left: 55
-    };
+    drawTrendChartRectBar(dataMoocs, "#moocs-registrations", "#f1a592", "orange", "Registrations");
 
-    var widthMoocs = 800 - marginMoocs.left - marginMoocs.right,
-        heightMoocs = 230 - marginMoocs.top - marginMoocs.bottom;
-
-
-    var svgMoocs = d3.select("#moocs-registrations")
-        .append("svg")
-        //responsive SVG needs these 2 attributes and no width and height attr
-        .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-55 0 800 200")
-        .append("g")
-        // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
-
-        //class to make it responsive
-        .classed("svg-content-responsive", true);
-    // .append("svg")
-    // .attr("width", widthMoocs + marginMoocs.left + marginMoocs.right)
-    // .attr("height", heightMoocs + marginMoocs.top + marginMoocs.bottom)
-    // .append("g")
-    // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")");
-
-    var xMoocs = d3.scaleLinear()
-        .range([0, widthMoocs])
-        .domain([0, d3.max(dataMoocs, function (d) {
-            return d.value;
-        })]);
-
-    var yMoocs = d3.scaleBand()
-        .rangeRound([heightMoocs, 0], .1)
-        .domain(dataMoocs.map(function (d) {
-            return d.value;
-        }));
-
-    var yAxisMoocs = d3.axisLeft(yMoocs)
-        //no tick marks
-        .tickPadding(50)
-        .tickSize(0)
-        .tickFormat(function (x) {
-            var value = setSettingsNumber(x);
-            return value.valueNumber + value.suffixNumber;
-        });
-
-    var gyMoocs = svgMoocs.append("g")
-        .style("text-anchor", "start")
-        .style("color", "#555555")
-        .style("font-family", "Gotham-Bold")
-        .style("font-size", "14px")
-        .attr("class", "y-data")
-        .attr("transform", "translate( 0 ,-7)")
-        .call(yAxisMoocs)
-
-    var barsMoocs = svgMoocs.selectAll(".bar")
-        .data(dataMoocs)
-        .enter()
-        .append("g")
-
-    barsMoocs.append("rect")
-        .attr("class", "bar")
-        .attr("y", function (d) {
-            return yMoocs(d.value);
-        })
-        .attr("rx", 20)
-        .attr("ry", 20)
-        .attr("fill", "#f1a592")
-        .attr("height", 26)
-        .attr("x", 8)
-        .attr("width", function (d) {
-            return xMoocs(d.value);
-        });
-
-    barsMoocs.append("text")
-        .attr("class", "label")
-        //y position of the label is halfway down the bar
-        .attr("y", function (d) {
-            return yMoocs(d.value) + yMoocs.bandwidth() / 2 - 2;
-        })
-        //x position is 3 pixels to the right of the bar
-        .attr("x", function (d) {
-            return 12;
-        })
-        .attr("class", "text-inside")
-        .attr("font-family", "Gotham-Bold")
-        .attr("font-size", "12px")
-        .text(function (d) {
-            return d.name;
-        });
 }
+
 /**
  * End registration-moocs
  */
@@ -237,34 +215,8 @@ function drawMoocsRegistrationsChart(dataMoocs) {
  */
 
 
-var data = [{
-    value: 0,
-    name: "<18",
-    id: 0
-}, {
-    value: 5000,
-    name: "18 - 25",
-    id: 1
-}, {
-    value: 16000,
-    name: "26 - 39",
-    id: 2
-}, {
-    value: 10000,
-    name: "40 - 62",
-    id: 3
-}, {
-    value: 0,
-    name: "> 63",
-    id: 4
-}, {
-    value: 19000,
-    name: "Not Reported",
-    id: 5
-}];
-
-
 function drawMoocsAgeDistributionChart(data) {
+    d3.select("#age-distribution-moocs svg").remove();
     data = data.sort(function (a, b) {
         return d3.descending(a.id, b.id);
     })
@@ -382,6 +334,109 @@ function drawMoocsAgeDistributionChart(data) {
         .call(wrap, y.bandwidth(), 10)
         .attr("font-family", "Gotham-Bold")
         .attr("font-size", "12px");
+
+        var div = d3.select("body").append("div")
+        .attr("class", "toolTip")
+        .style("font-size", "12px")
+        .style("width", "250px");
+
+        var tooltipBarText = d3Old.selectAll("#age-distribution-moocs .label")
+        .on("mouseover", function (d) {
+            
+            var textHtml = "<div class='col tooltip-gauges'><h3 class='row orange'>{{title}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>Amount</span><span class='col text-right' >{{value}}</div>";
+            textHtml = textHtml.replace('{{title}}', d.name)
+            textHtml = textHtml.replace('{{value}}', d.value.toFixed(0).toLocaleString())
+            if (d.percentage) {
+                var addText = "<div class='row pt-1 border-top'><span class='col pl-0 pr-0 '> {{type}}</span><span  class='col-3 text-right'>{{code}}</span></div>"
+                addText = addText.replace('{{type}}', "Percentage")
+                addText = addText.replace('{{code}}', d.percentage)
+                textHtml = textHtml + addText;
+            } else if (d.department_codes) {
+                var addText = "<div class='row pt-1 border-top'><span class='col-2 pl-0 pr-0 '> {{type}}</span><span  class='col text-right'>{{code}}</span></div>"
+                addText = addText.replace('{{type}}', "Department")
+                addText = addText.replace('{{code}}', d.department_codes);
+                textHtml = textHtml + addText;
+            }
+            textHtml = textHtml + "</div>";
+            div.transition()
+                .duration(0)
+                .style("font-family", "Gotham-Book")
+                .style("display", "inline-block");
+            // div.html(d.value + "<br/>" + d.name)
+            div.html(textHtml)
+                .style("left", (d3Old.event.pageX) + 5 + "px")
+                .style("top", (d3Old.event.pageY - 28) + 5 + "px");
+        })
+        .on("mouseout", function (d) {
+            div.transition()
+                .duration(0)
+                .style("display", "none");
+        });
+        
+        var tooltipBar = d3Old.selectAll("#age-distribution-moocs .bar")
+        .on("mouseover", function (d) {
+            
+            var textHtml = "<div class='col tooltip-gauges'><h3 class='row orange'>{{title}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>Amount</span><span class='col text-right' >{{value}}</div>";
+            textHtml = textHtml.replace('{{title}}', d.name)
+            textHtml = textHtml.replace('{{value}}', d.value.toFixed(0).toLocaleString())
+            if (d.percentage) {
+                var addText = "<div class='row pt-1 border-top'><span class='col pl-0 pr-0 '> {{type}}</span><span  class='col-3 text-right'>{{code}}</span></div>"
+                addText = addText.replace('{{type}}', "Percentage")
+                addText = addText.replace('{{code}}', d.percentage)
+                textHtml = textHtml + addText;
+            } else if (d.department_codes) {
+                var addText = "<div class='row pt-1 border-top'><span class='col-2 pl-0 pr-0 '> {{type}}</span><span  class='col text-right'>{{code}}</span></div>"
+                addText = addText.replace('{{type}}', "Department")
+                addText = addText.replace('{{code}}', d.department_codes);
+                textHtml = textHtml + addText;
+            }
+            textHtml = textHtml + "</div>";
+            div.transition()
+                .duration(0)
+                .style("font-family", "Gotham-Book")
+                .style("display", "inline-block");
+            // div.html(d.value + "<br/>" + d.name)
+            div.html(textHtml)
+                .style("left", (d3Old.event.pageX) + 5 + "px")
+                .style("top", (d3Old.event.pageY - 28) + 5 + "px");
+        })
+        .on("mouseout", function (d) {
+            div.transition()
+                .duration(0)
+                .style("display", "none");
+        });
+        var tooltipBarBack = d3Old.selectAll("#age-distribution-moocs .bar-back")
+        .on("mouseover", function (d) {
+            
+            var textHtml = "<div class='col tooltip-gauges'><h3 class='row orange'>{{title}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>Amount</span><span class='col text-right' >{{value}}</div>";
+            textHtml = textHtml.replace('{{title}}', d.name)
+            textHtml = textHtml.replace('{{value}}', d.value.toFixed(0).toLocaleString())
+            if (d.percentage) {
+                var addText = "<div class='row pt-1 border-top'><span class='col pl-0 pr-0 '> {{type}}</span><span  class='col-3 text-right'>{{code}}</span></div>"
+                addText = addText.replace('{{type}}', "Percentage")
+                addText = addText.replace('{{code}}', d.percentage)
+                textHtml = textHtml + addText;
+            } else if (d.department_codes) {
+                var addText = "<div class='row pt-1 border-top'><span class='col-2 pl-0 pr-0 '> {{type}}</span><span  class='col text-right'>{{code}}</span></div>"
+                addText = addText.replace('{{type}}', "Department")
+                addText = addText.replace('{{code}}', d.department_codes);
+                textHtml = textHtml + addText;
+            }
+            textHtml = textHtml + "</div>";
+            div.transition()
+                .duration(0)
+                .style("font-family", "Gotham-Book")
+                .style("display", "inline-block");
+            // div.html(d.value + "<br/>" + d.name)
+            div.html(textHtml)
+                .style("left", (d3Old.event.pageX) + 5 + "px")
+                .style("top", (d3Old.event.pageY - 28) + 5 + "px");
+        })
+        .on("mouseout", function (d) {
+            div.transition()
+                .duration(0)
+                .style("display", "none");
+        });
 }
 /**
  * End age-distribution-moocs
@@ -774,165 +829,9 @@ function drawStudentCertifiedsChart(dataStudents) {
 /**
  * Start timelines
  *  */
-
-function sortByDateAscending(a, b) {
-    // Dates will be cast to numbers automagically:
-    return new Date(b.date) - new Date(a.date);
-}
-// var TimeLineIDB = $.extend([], moocsRegistrationTimeline.registrationTimelineIDB);
-var TimeLineIDB = $.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB);
-
-
-function createChart(data) {
-    // if ($("#moocs2018").prop("checked")) {
-    //     data = data.filter(function (data) {
-    //         return data.date.indexOf("-18") > -1
-    //     });
-    // }
+function createChartTimelineMoocs(data, typeload) {
     d3.select("#timeline-moocs svg").remove();
-    if (data !== "Nodata") {
-        var margin = {
-                top: 20,
-                right: 20,
-                bottom: 30,
-                left: 50
-            },
-            width = 850 - margin.left - margin.right,
-            height = 230 - margin.top - margin.bottom;
-
-        // parse the date / time
-        var parseTime = d3.timeParse("%d-%b-%y");
-
-        // set the ranges
-        var x = d3.scaleTime().range([0, width]);
-        var y = d3.scaleLinear().range([height, 0]);
-        var positionText = 0;
-        // define the area
-        var area = d3.area()
-            .x(function (d) {
-                return x(d.date);
-            })
-            .y0(height)
-            .y1(function (d) {
-                positionText = y(d.close);
-                return y(d.close);
-            });
-
-        // define the line
-        var valueline = d3.line()
-            .x(function (d) {
-                return x(d.date);
-            })
-            .y(function (d) {
-                return y(d.close);
-            });
-
-        // append the svg obgect to the body of the page
-        // appends a 'group' element to 'svg'
-        // moves the 'group' element to the top left margin
-        var svg = d3.select("#timeline-moocs").append("svg")
-            .attr("preserveAspectRatio", "xMinYMin meet")
-            .attr("viewBox", "-50 -22 850 300")
-            .append("g")
-            .classed("svg-content-responsive", true);
-        var totalAmount = 0;
-        // format the data
-        data.forEach(function (d) {
-            d.date = parseTime(d.date);
-        });
-
-        data = data.sort(sortByDateAscending);
-
-        for (var i = 0; i < data.length; i++) {
-            data[i].close = +data[i].close;
-            totalAmount += data[i].close;
-            if (i > 0) {
-                data[i]['CumulativeAmount'] = data[i].close + data[i - 1].close;
-            } else {
-                data[i]['CumulativeAmount'] = data[i].close;
-            }
-        }
-        //now calculate cumulative % from the cumulative amounts & total, round %
-        for (var i = 0; i < data.length; i++) {
-            data[i]['CumulativePercentage'] = (data[i]['CumulativeAmount'] / totalAmount);
-            data[i]['CumulativePercentage'] = parseFloat(data[i]['CumulativePercentage'].toFixed(2));
-        }
-
-        var lineGen = d3.line()
-            .x(function (d) {
-                return x(d.date);
-            })
-            .y(function (d) {
-                return y(d.CumulativeAmount);
-            });
-
-        // scale the range of the data
-        x.domain(d3.extent(data, function (d) {
-            return d.date;
-        }));
-        y.domain([0, d3.max(data, function (d) {
-            return d.close;
-        })]);
-
-        // add the area
-        svg.append("path")
-            .data([data])
-            .attr("class", "area")
-            .attr("d", area);
-
-        // add the valueline path.
-        svg.append("path")
-            .data([data])
-            .attr("class", "line")
-            .attr("d", valueline);
-        //calculate path do not delete it
-        /*svg.append('svg:path')
-            .attr('d', lineGen(data))
-            .attr('stroke', '#c3c3c3')
-            .attr("stroke-dasharray", "4")
-            .attr('stroke-width', 2)
-            .attr('fill', 'none');*/
-
-        // add the X Axis
-        svg.append("g")
-            .attr("transform", "translate(0," + height + ")")
-            .attr("class", "x-axis")
-            .style('stroke-width', '3px')
-            .style("font-family", "Gotham-Book")
-            .style("font-size", "13px")
-            .call(d3.axisBottom(x)
-                .ticks(8)
-                .tickSizeOuter(0)
-            )
-
-        // add the Y Axis
-        svg.append("g")
-            .attr("class", "y-axis")
-            .style("font-family", "Gotham-Book")
-            .style("font-size", "13px")
-            .call(d3.axisLeft(y)
-                .ticks(3)
-                .tickFormat(function (x) {
-                    var value = setSettingsNumber(x);
-                    return Math.floor(value.valueNumber) + suffixNumber;
-                }));
-        var textOfTotal = setSettingsNumber(totalAmount);
-        svg.append("text")
-            .attr("x", (width - (40)))
-            .attr("y", positionText - 10)
-            // .attr("text-anchor", "middle")  
-            .style("font-size", "16px")
-            .style("font-family", "Gotham-Bold")
-            .text(textOfTotal.valueNumber + textOfTotal.suffixNumber);
-        svg.append("text")
-            .attr("x", (width - (40)))
-            .attr("y", positionText + 5)
-            // .attr("text-anchor", "middle")  
-            .style("font-size", "14px")
-            .style("font-family", "Gotham-Book")
-            .text("TOTAL");
-    }
-
+    createTimelineChart(data, "#timeline-moocs", "#f1a592", "#moocs2018", 800)
 }
 
 /**
@@ -950,19 +849,17 @@ function setEmptyGaugesMoocs() {
 }
 
 function drawGaugeMoocsChart(dataGauge) {
-    
-    removeGauges(["#gauge-moocs","#gauge-registrations-m","#gauge-lac-m"]);
+
+    removeGauges(["#gauge-moocs", "#gauge-registrations-m", "#gauge-lac-m"]);
 
     if (dataGauge == undefined) {
         dataGauge = setEmptyGaugesMoocs();
     }
 
-    if(!dataGauge.divisionCode){
-        dataGauge.divisionCode = "IDB"
-    }
-    drawGauge(dataGauge.courses, dataGauge.percentageCourses, "", "#gauge-moocs",dataGauge.divisionCode,"Moocs","#fa2e00");
-    drawGauge(dataGauge.registrations, dataGauge.percentageRegistrations, "", "#gauge-registrations-m",dataGauge.divisionCode,"Registrations","#fa2e00");
-    drawGauge(dataGauge.percentageLAC, dataGauge.percentageLAC, "%", "#gauge-lac-m",dataGauge.divisionCode,"Registrations","#fa2e00");
+    var code = $('#idbLink')[0].text;
+    drawGauge(dataGauge.courses, dataGauge.percentageCourses, "", "#gauge-moocs", code, "Moocs", "#fa2e00");
+    drawGauge(dataGauge.registrations, dataGauge.percentageRegistrations, "", "#gauge-registrations-m", code, "Registrations", "#fa2e00");
+    drawGauge(dataGauge.percentageLAC, dataGauge.percentageLAC, "%", "#gauge-lac-m", code, "Registrations", "#fa2e00");
 }
 
 function moocsGenderFilter(moocsJson, gender) {
@@ -1000,11 +897,6 @@ function moocsGenderAddGray(moocsJson) {
     moocsJson.push(gray);
     return moocsJson;
 }
-
-points(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Female")));
-points1(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Male")));
-points2(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Not Available")));
-points3(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Other")));
 
 function points(data) {
     d3.select("#waffle svg").remove();
@@ -1089,6 +981,81 @@ function points(data) {
             col = Math.floor(i / heightSquares);
             return -(heightSquares * squareSize) + ((col * squareSize) + (col * 50)) + 5
         })
+        setTooltipToPoints("#waffle",true,data[0].registrations.toLocaleString(),checkDecimal(data[0].realpopulation * 100),"Female");
+        setTooltipToPoints("#waffle-registrations",false,data[0].registrations.toLocaleString(),checkDecimal(data[0].realpopulation * 100),"Female");
+        setTooltipToPoints("#waffle-gender",false,data[0].registrations.toLocaleString(),checkDecimal(data[0].realpopulation * 100),"Female");
+        
+}
+
+function setTooltipToPoints(id,isSvg,value,percentage,name){
+    var tooltip = d3.select("body")
+        .append("div")
+        .attr("class", "toolTip")
+        .style("position", "absolute")
+        .style("padding", "5px")
+        .style("background-color", "white")
+        .style("z-index", "100")
+        .attr("width", "1000")
+        .style("width", "1000")
+        .style("font-size", "12px")
+        .style("font-family", "Gotham-Book");
+        var root;
+        var selected;
+    if(isSvg){
+        selected = d3Old.selectAll(id+" svg");
+        root = d3Old.select( id +" svg");
+    }else{
+        root = d3Old.select(id);
+        selected = d3Old.selectAll(id);
+    }
+    
+    var scr = {
+        x: window.scrollX,
+        y: window.scrollY,
+        w: window.innerWidth,
+        h: window.innerHeight
+    };
+
+    var body_sel = d3Old.select('body');
+    var body = {
+        w: body_sel.node().offsetWidth,
+        h: body_sel.node().offsetHeight
+    };
+    var doc = {
+        w: document.width,
+        h: document.height
+    };
+    var svgpos = getNodePos(root.node());
+        selected
+        .on("mousemove", function () {
+            var textInnerHtml = "<div class='col tooltip-gauges'><h3 class='row orange'>"+ name +"</h3> <div class='row  pb-1'><span class='col pl-0 pr-0'>Value</span><span class='col text-right' >{{value}}</div><div class='row pt-1 border-top'> <span class='col pl-0 pr-0'> Percentage</span><span  class='col-3 text-right'>{{percentage}}%</span></div>";
+            
+
+            textInnerHtml = textInnerHtml.replace("{{value}}", value);
+            textInnerHtml = textInnerHtml.replace("{{percentage}}", percentage);
+            
+
+            var m = d3Old.mouse(root.node());
+            scr.x = d3Old.event.pageX;
+            scr.y = d3Old.event.pageY;
+            m[0] += svgpos.x;
+            m[1] += svgpos.y;
+            tooltip.style("right", "");
+            tooltip.style("left", "");
+            tooltip.style("bottom", "");
+            tooltip.style("top", "");
+            tooltip.style("left", scr.x + 5 + "px");
+            tooltip.style("top", scr.y + 5 + "px");
+            
+            tooltip.html(textInnerHtml)
+                .style("display", "inline-block");
+
+        })
+        .on("mouseout", function () {
+            tooltip.transition()
+                .duration(0)
+                .style("display", "none");
+        });
 }
 
 
@@ -1179,6 +1146,10 @@ function points1(data) {
             col = Math.floor(i / heightSquares);
             return -(heightSquares * squareSize) + ((col * squareSize) + (col * 50)) + 5
         })
+
+        setTooltipToPoints("#waffle1",true,data[0].registrations.toLocaleString(),checkDecimal(data[0].realpopulation * 100),"Male");
+        setTooltipToPoints("#waffle1-registrations",false,data[0].registrations.toLocaleString(),checkDecimal(data[0].realpopulation * 100),"Male");
+        setTooltipToPoints("#waffle1-gender",false,data[0].registrations.toLocaleString(),checkDecimal(data[0].realpopulation * 100),"Male");
 }
 
 function points2(data) {
@@ -1265,6 +1236,9 @@ function points2(data) {
             col = Math.floor(i / heightSquares);
             return -(heightSquares * squareSize) + ((col * squareSize) + (col * 50)) + 5
         })
+        setTooltipToPoints("#waffle2",true,data[0].registrations.toLocaleString(),checkDecimal(data[0].realpopulation * 100),"Not Available");
+        setTooltipToPoints("#waffle2-registrations",false,data[0].registrations.toLocaleString(),checkDecimal(data[0].realpopulation * 100),"Not Available");
+        setTooltipToPoints("#waffle2-gender",false,data[0].registrations.toLocaleString(),checkDecimal(data[0].realpopulation * 100),"Not Available");
 }
 
 function points3(data) {
@@ -1349,6 +1323,9 @@ function points3(data) {
             col = Math.floor(i / heightSquares);
             return -(heightSquares * squareSize) + ((col * squareSize) + (col * 50)) + 5
         })
+        setTooltipToPoints("#waffle3",true,data[0].registrations.toLocaleString(),checkDecimal(data[0].realpopulation * 100),"Other");
+        setTooltipToPoints("#waffle3-registrations",false,data[0].registrations.toLocaleString(),checkDecimal(data[0].realpopulation * 100),"Other");
+        setTooltipToPoints("#waffle3-gender",false,data[0].registrations.toLocaleString(),checkDecimal(data[0].realpopulation * 100),"Other");
 }
 
 /**
@@ -1370,82 +1347,71 @@ function departmentFilter(moocsJson, filterBy) {
 }
 
 function moocsFilter() {
-
+    $('#moocs2018').attr('checked');
     //Load the json
     switch ($("input[name*='moocsTrend']:checked").val()) {
         case 'all':
-
             //top registration chart
             if ($("select[id*='divisionSelect']").val().length > 0 && $("select[id*='divisionSelect']").val() !== "IDB") {
-                jsondataMoocs = moocsIndicatorsArray.indicatorsDivisions.filter(function (data) {
-                    return data.division_codes == $("select[id*='divisionSelect']").val()
-                });
-                moocsAllTotalGlobal = (jsondataMoocs.length > 0) ? jsondataMoocs[0]['all_the_time_courses'] : '0';
-                moocsAllDownloads = (jsondataMoocs.length > 0) ? jsondataMoocs[0]['all_the_time_registrations'] : '0';
-                moocsAllDownloadsLac = (jsondataMoocs.length > 0) ? ((jsondataMoocs[0]['porcent_total_LAC'] * 100 >= 100) ? "100%" : (jsondataMoocs[0]['porcent_total_LAC'] * 100).toFixed(1)) : 0;
-                var jsonGaugesMoocs = $.extend(true, [], moocsGaugesIndicators.indicatorsDivisionsAllTheTime)
+                if ($("select[id*='divisionSelect']").val() == "department") {
+                    var sltValue = $("#divisionSelect option:selected").text();
+                    var jsonGaugesMoocs = $.extend(true, [], moocsGaugesIndicators.indicatorsDepartmentsAllTheTime)
 
-                jsonGaugesMoocs = jsonGaugesMoocs.filter(function (dataP) {
-                    return dataP.divisionCode == $("select[id*='divisionSelect']").val()
-                });
-                drawGaugeMoocsChart(jsonGaugesMoocs[0]);
-                var timelineDivisions = divisionFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDivisions), $("select[id*='divisionSelect']").val());
-                if (timelineDivisions.length > 0) createChart(timelineDivisions[0].data)
-                else createChart('Nodata');
+                    jsonGaugesMoocs = jsonGaugesMoocs.filter(function (dataP) {
+                        return dataP.departmentCode == sltValue
+                    });
+                    drawGaugeMoocsChart(jsonGaugesMoocs[0]);
 
 
-                drawMoocsRegistrationsChart(orderTopMoocs(divisionFilter(moocsTopArrays.divisionsAlltime, $("select[id*='divisionSelect']").val())));
-                drawDistributionChart(orderTopMoocs(divisionFilter(moocsEducationArrays.educationLevelDivisions, $("select[id*='divisionSelect']").val())));
+                    var jsonAgeMoocs = $.extend(true, [], moocsAgeArrays.ageDepartmentsAllTheTime);
+                    jsonAgeMoocs = jsonAgeMoocs.filter(function (dataP) {
+                        return dataP.departmentCode == sltValue
+                    });
+                    drawMoocsAgeDistributionChart(jsonAgeMoocs);
 
-                var students = divisionFilter(moocsStudentsFlowArrays.studentsFlowDivisions, $("select[id*='divisionSelect']").val());
-                drawStudentRegistrationsChart($.extend(true, [], students[0]));
-                drawStudentParticipantsChart($.extend(true, [], students[0]));
-                drawStudentCompletedsChart($.extend(true, [], students[0]));
-                drawStudentCertifiedsChart($.extend(true, [], students[0]));
 
-                // Gender
-                var gender = divisionFilter($.extend(true, [], moocsGenderArrays.genderDivisions), $("select[id*='divisionSelect']").val());
-                points(moocsGenderAddGray(moocsGenderFilter(gender, "Female")));
-                points1(moocsGenderAddGray(moocsGenderFilter(gender, "Male")));
-                points2(moocsGenderAddGray(moocsGenderFilter(gender, "Not Available")));
-                points3(moocsGenderAddGray(moocsGenderFilter(gender, "Other")));
+                    drawMoocsRegistrationsChart(orderTopMoocs(divisionFilter(moocsTopArrays.departmentsAllTime, sltValue)));
+                    drawDistributionChart(orderTopMoocs(divisionFilter(moocsEducationArrays.educationLevelDepartmentsAllTheTime, sltValue)));
 
-                // Por ahora se deshabilita
-            } else if ( $("select[id*='divisionSelect']").val() == "department") {
-
-                    var timelineDivisions = orderTopMoocs(departmentFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDepartments), $("select[id*='deparmentSelect']").val()));
-                    if (timelineDivisions.length > 0) createChart(timelineDivisions[0].data);
-
-                    drawMoocsRegistrationsChart(orderTopMoocs(departmentFilter(moocsTopArrays.departmentsAllTime, $("select[id*='divisionSelect']").val())));
-                    drawDistributionChart(orderTopMoocs(departmentFilter(moocsEducationArrays.educationLevelDepartments, $("select[id*='divisionSelect']").val())));
-
-                    var students = divisionFilter(moocsStudentsFlowArrays.studentsFlowDepartments, $("select[id*='divisionSelect']").val());
-                    drawStudentRegistrationsChart($.extend(true, [], students[0]));
-                    drawStudentParticipantsChart($.extend(true, [], students[0]));
-                    drawStudentCompletedsChart($.extend(true, [], students[0]));
-                    drawStudentCertifiedsChart($.extend(true, [], students[0]));
 
                     // Gender
-                    var gender = departmentFilter($.extend(true, [], moocsGenderArrays.genderDepartments), $("select[id*='divisionSelect']").val());
+                    var gender = divisionFilter($.extend(true, [], moocsGenderArrays.genderDepartments), sltValue);
                     points(moocsGenderAddGray(moocsGenderFilter(gender, "Female")));
                     points1(moocsGenderAddGray(moocsGenderFilter(gender, "Male")));
                     points2(moocsGenderAddGray(moocsGenderFilter(gender, "Not Available")));
                     points3(moocsGenderAddGray(moocsGenderFilter(gender, "Other")));
-            } else {
-                jsondataMoocs = moocsIndicatorsArray.indicatorsIDB;
-                moocsAllTotalGlobal = (jsondataMoocs.length > 0) ? jsondataMoocs[0]['all_the_time_courses'] : '0';
-                moocsAllDownloads = (jsondataMoocs.length > 0) ? jsondataMoocs[0]['all_the_time_registrations'] : '0';
-                moocsAllDownloadsLac = (jsondataMoocs.length > 0) ? ((jsondataMoocs[0]['porcent_total_LAC'] * 100 == 100) ? "100%" : (jsondataMoocs[0]['porcent_total_LAC'] * 100).toFixed(1)) : '';
-                drawGaugeMoocsChart($.extend(true, {}, moocsGaugesIndicators.indicatorsIDBAllTheTime[0]));
-                createChart($.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB));
+                } else {
+                    var sltValue = $("select[id*='divisionSelect']").val();
+                    var jsonGaugesMoocs = $.extend(true, [], moocsGaugesIndicators.indicatorsDivisionsAllTheTime)
 
-                drawMoocsRegistrationsChart(topAllMoocs);
-                drawDistributionChart(moocsEducationArrays.educationLevelIDB);
-                // same data for all and 2018
-                drawStudentRegistrationsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
-                drawStudentParticipantsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
-                drawStudentCompletedsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
-                drawStudentCertifiedsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
+                    jsonGaugesMoocs = jsonGaugesMoocs.filter(function (dataP) {
+                        return dataP.divisionCode == sltValue
+                    });
+                    drawGaugeMoocsChart(jsonGaugesMoocs[0]);
+
+                    var jsonAgeMoocs = $.extend(true, [], moocsAgeArrays.ageDivisionAllTheTime);
+                    jsonAgeMoocs = jsonAgeMoocs.filter(function (dataP) {
+                        return dataP.divisionCode == sltValue
+                    });
+                    drawMoocsAgeDistributionChart(jsonAgeMoocs);
+
+                    drawMoocsRegistrationsChart(orderTopMoocs(divisionFilter(moocsTopArrays.divisionsAlltime, sltValue)));
+                    drawDistributionChart(orderTopMoocs(divisionFilter(moocsEducationArrays.educationLevelDivisionsAllTheTime, sltValue)));
+
+                    // Gender
+                    var gender = divisionFilter($.extend(true, [], moocsGenderArrays.genderDivisions), sltValue);
+                    points(moocsGenderAddGray(moocsGenderFilter(gender, "Female")));
+                    points1(moocsGenderAddGray(moocsGenderFilter(gender, "Male")));
+                    points2(moocsGenderAddGray(moocsGenderFilter(gender, "Not Available")));
+                    points3(moocsGenderAddGray(moocsGenderFilter(gender, "Other")));
+                }
+            } else {
+
+                drawGaugeMoocsChart($.extend(true, {}, moocsGaugesIndicators.indicatorsIDBAllTheTime[0]));
+                //createChartTimelineMoocs($.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB));
+                drawMoocsRegistrationsChart($.extend(true, [], moocsTopArrays.IDBAlltime));
+                drawMoocsAgeDistributionChart($.extend(true, [], moocsAgeArrays.ageIDBAllTheTime));
+                drawDistributionChart(moocsEducationArrays.educationLevelIDBAllTheTime);
 
                 // Gender
                 points(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Female")));
@@ -1458,78 +1424,16 @@ function moocsFilter() {
 
             //top registration chart
             if ($("select[id*='divisionSelect']").val().length > 0 && $("select[id*='divisionSelect']").val() !== "IDB") {
-                jsondataMoocs = moocsIndicatorsArray.indicatorsDivisions.filter(function (data) {
-                    return data.division_codes == $("select[id*='divisionSelect']").val()
-                });
-                moocs2018TotalGlobal = (jsondataMoocs.length > 0) ? jsondataMoocs[0]['2018_courses'] : '0';
-                moocs2018Downloads = (jsondataMoocs.length > 0) ? jsondataMoocs[0]['2018_registrations'] : '0';
-                moocs2018DownloadsLac = (jsondataMoocs.length > 0) ? ((jsondataMoocs[0]['porcent_total_LAC'] * 100 == 100) ? "100%" : (jsondataMoocs[0]['porcent_total_LAC'] * 100).toFixed(1)) : 0;
-                var jsonGaugesMoocs = $.extend(true, [], moocsGaugesIndicators.indicatorsDivisions2018)
-
-                jsonGaugesMoocs = jsonGaugesMoocs.filter(function (dataP) {
-                    return dataP.divisionCode == $("select[id*='divisionSelect']").val()
-                });
-                drawGaugeMoocsChart(jsonGaugesMoocs[0]);
-                var timelineDivisions = divisionFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDivisions), $("select[id*='divisionSelect']").val());
-                if (timelineDivisions.length > 0) createChart(timelineDivisions[0].data);
-
-                drawMoocsRegistrationsChart(orderTopMoocs(divisionFilter(moocsTopArrays.divisions2018, $("select[id*='divisionSelect']").val())));
-                drawDistributionChart(orderTopMoocs(divisionFilter(moocsEducationArrays.educationLevelDivisions, $("select[id*='divisionSelect']").val())));
-                var students = divisionFilter(moocsStudentsFlowArrays.studentsFlowDivisions, $("select[id*='divisionSelect']").val());
-                drawStudentRegistrationsChart($.extend(true, [], students[0]));
-                drawStudentParticipantsChart($.extend(true, [], students[0]));
-                drawStudentCompletedsChart($.extend(true, [], students[0]));
-                drawStudentCertifiedsChart($.extend(true, [], students[0]));
-
-
-
-                // Gender
-                var gender = divisionFilter($.extend(true, [], moocsGenderArrays.genderDivisions), $("select[id*='divisionSelect']").val());
-                points(moocsGenderAddGray(moocsGenderFilter(gender, "Female")));
-                points1(moocsGenderAddGray(moocsGenderFilter(gender, "Male")));
-                points2(moocsGenderAddGray(moocsGenderFilter(gender, "Not Available")));
-                points3(moocsGenderAddGray(moocsGenderFilter(gender, "Other")));
-
-                // Por ahora se deshabilita
-                // } else if ($("select[id*='deparmentSelect']").val().length > 0) {
-
-
-                //     var timelineDivisions = orderTopMoocs(departmentFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDepartments), $("select[id*='deparmentSelect']").val()));
-                //     if (timelineDivisions.length > 0) createChart(timelineDivisions[0].data);
-
-                //     drawMoocsRegistrationsChart(orderTopMoocs(departmentFilter(moocsTopArrays.departments2018, $("select[id*='deparmentSelect']").val())));
-                //     drawDistributionChart(orderTopMoocs(departmentFilter(moocsEducationArrays.educationLevelDepartments, $("select[id*='deparmentSelect']").val())));
-
-                //     var students = divisionFilter(moocsStudentsFlowArrays.studentsFlowDepartments, $("select[id*='deparmentSelect']").val());
-                //     drawStudentRegistrationsChart($.extend(true, [], students[0]));
-                //     drawStudentParticipantsChart($.extend(true, [], students[0]));
-                //     drawStudentCompletedsChart($.extend(true, [], students[0]));
-                //     drawStudentCertifiedsChart($.extend(true, [], students[0]));
-
-                //     // Gender
-                //     var gender = departmentFilter($.extend(true, [], moocsGenderArrays.genderDepartments), $("select[id*='deparmentSelect']").val());
-                //     points(moocsGenderAddGray(moocsGenderFilter(gender, "Female")));
-                //     points1(moocsGenderAddGray(moocsGenderFilter(gender, "Male")));
-                //     points2(moocsGenderAddGray(moocsGenderFilter(gender, "Not Available")));
-                //     points3(moocsGenderAddGray(moocsGenderFilter(gender, "Other")));
+                if ($("select[id*='divisionSelect']").val() == "department") {
+                    setDataMoocsByDepartment($("#divisionSelect option:selected").text());
+                } else {
+                    setDataMoocsByDivisions($("select[id*='divisionSelect']").val());
+                }
             } else {
-                jsondataMoocs = moocsIndicatorsArray.indicatorsIDB;
-                moocs2018TotalGlobal = (jsondataMoocs.length > 0) ? jsondataMoocs[0]['2018_courses'] : '0';
-                moocs2018Downloads = (jsondataMoocs.length > 0) ? jsondataMoocs[0]['2018_registrations'] : '0';
-                moocs2018DownloadsLac = (jsondataMoocs.length > 0) ? ((jsondataMoocs[0]['porcent_total_LAC'] * 100 == 100) ? "100%" : (jsondataMoocs[0]['porcent_total_LAC'] * 100).toFixed(1)) : 0;
                 drawGaugeMoocsChart($.extend(true, {}, moocsGaugesIndicators.indicatorsIDB2018[0]));
-
-                createChart($.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB));
-
-                drawMoocsRegistrationsChart(top2018Moocs);
-                drawDistributionChart(moocsEducationArrays.educationLevelIDB);
-                // same data for all and 2018
-                // drawStudentRegistrationsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
-                // drawStudentParticipantsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
-                // drawStudentCompletedsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
-                // drawStudentCertifiedsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
-
-                // Gender
+                drawDistributionChart(moocsEducationArrays.educationLevelIDB2018);
+                drawMoocsRegistrationsChart($.extend(true, [], moocsTopArrays.IDB2018));
+                drawMoocsAgeDistributionChart($.extend(true, [], moocsAgeArrays.ageIDB2018));
                 points(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Female")));
                 points1(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Male")));
                 points2(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Not Available")));
@@ -1537,44 +1441,25 @@ function moocsFilter() {
             }
             break;
     }
-
-
-
 }
 
 function initMoocs() {
-    drawDistributionChart(moocsEducationArrays.educationLevelIDB);
-    drawMoocsRegistrationsChart(topAllMoocs);
-    drawMoocsAgeDistributionChart(data);
+    $("#moocs2018").prop("checked", true);
+    drawGaugeMoocsChart($.extend(true, {}, moocsGaugesIndicators.indicatorsIDB2018[0]));
+    drawDistributionChart(moocsEducationArrays.educationLevelIDB2018);
+    drawMoocsRegistrationsChart($.extend(true, [], moocsTopArrays.IDB2018));
+    drawMoocsAgeDistributionChart($.extend(true, [], moocsAgeArrays.ageIDB2018));
     drawStudentRegistrationsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
     drawStudentParticipantsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
     drawStudentCompletedsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
     drawStudentCertifiedsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
-    createChart(TimeLineIDB);
-    drawGaugeMoocsChart($.extend(true, {}, moocsGaugesIndicators.indicatorsIDB2018[0]));
+    createChartTimelineMoocs($.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB));
+    points(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Female")));
+    points1(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Male")));
+    points2(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Not Available")));
+    points3(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Other")));
+
 }
-
-
-
-
-// Divisions select filter
-$("select[id*='divisionSelect']").change(function () {
-    //  moocsFilter();
-    $('#moocs2018').attr('checked');
-});
-
-// // Deparment select filter
-// $("select[id*='deparmentSelect']").change(function () {
-//     $("select[id*='divisionSelect']").val("");
-//     moocsFilter();
-// });
-
-// $("#idbLink").click(function () {
-//     $("select[id*='deparmentSelect']").val("");
-//     $("select[id*='divisionSelect']").val("");
-//     moocsFilter();
-// });
-
 
 
 $("input[name*='moocsTrend']").click(function () {

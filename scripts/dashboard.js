@@ -1,27 +1,3 @@
-// $("#deparmentSelect").on('change', function () {
-//     $("select[id*='divisionSelect']").val("");
-//     jsonPublicationsBarras = publicationsTopArrays.topDepartmentsAllTime.filter(function (dataP) {
-//         return dataP.department_codes == this.value
-//     });
-//     drawTrendPublicationChart(jsonPublicationsBarras);
-//     drawLinesChartPublication(jsonPublicationsBarras);
-//     jsonPublicTree = publicationsDownloadSourceArrays.downloadSourceDepartments.filter(function (dataT) {
-//         return dataT.department_codes == this.value
-//     });
-//     drawTreePublication(jsonPublicTree, "AllTheTime");
-
-
-//     initIndicators('departments', this.value);
-//     $('.label-filter-select').text(this.value);
-//     $("#divisionSelect").value = "";
-//     $('#blueAllTime').click();
-//     d3.select("#gauge-suscribers svg").remove();
-//     d3.select("#gauge-lac-s svg").remove();
-//     d3.select("#gauge-2018 svg").remove();
-//     updateGaugesDatasets();
-//     updateGaugesSubscribers();
-// });
-
 //division filter
 $("#divisionSelect").on('change', function (data) {
     var sltValue = this.value;
@@ -30,32 +6,33 @@ $("#divisionSelect").on('change', function (data) {
     removeSubscribersSvg();
     if (this.value.includes("department")) {
         var departmentSelected = $("#divisionSelect option:selected").text();
+        $("#publication2018").prop("checked", true);
+        $("#moocs2018").prop("checked", true);
         initIndicators('departments', departmentSelected);
-        setDataPublicationsByDepartment(departmentSelected);        
+        setDataPublicationsByDepartment(departmentSelected);
+        setDataMoocsByDepartment(departmentSelected);
         setDataDataSetByDepartment(departmentSelected);
         setDataCodeByDepartment(departmentSelected);
         setDataSuscribersByDepartment(departmentSelected);
-        moocsFilter();
     } else {
         if (this.value == "IDB") {
-
             setDataIDBPublications();
             setDataSubscribersIdb();
             initCode();
             initDataSet();
+            initMoocs();
         } else {
             initIndicators('divisions', sltValue);
             $('#blue2018').click();
-
-
+            $("#moocs2018").prop("checked", true);
             //Se llama la funcion para actulizar los datos con el valor de la division seleccionada
             setDataPublicationsByDivisions(sltValue);
+            setDataMoocsByDivisions(sltValue);
             setDataDataSetByDivisions(sltValue);
             setDataSuscribersByDivisions(sltValue);
             setDataCodeByDivisions(sltValue);
+            
         }
-
-        moocsFilter();
     }
 
 });
@@ -77,6 +54,8 @@ function setDataIDBPublications() {
     drawPlotChartPublication(ObjectpublicationsAttention, 'init');
     drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "2018", 'init');
 }
+
+
 
 
 function SetDataIDBDataSet() {
@@ -101,6 +80,28 @@ function setDataSubscribersIdb() {
     subscribersAllDownloadsLac = (jsondataSubscriber.length > 0) ? (jsondataSubscriber[0].porcent_total_from_lac * 100).toFixed(0) : '0';
     gaugeSuscribers = setSuscribersGauge2018('IDB');
     drawGaugeSubscribersChart(gaugeSuscribers);
+}
+
+function setDataMoocsIdb() {
+    $('#moocs2018').attr('checked');
+
+    drawGaugeMoocsChart($.extend(true, {}, moocsGaugesIndicators.indicatorsIDB2018[0]));
+    createChartTimelineMoocs($.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB));
+    //    createChart($.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB));
+
+    drawMoocsRegistrationsChart(top2018Moocs);
+    drawDistributionChart(moocsEducationArrays.educationLevelIDB);
+    // same data for all and 2018
+    // drawStudentRegistrationsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
+    // drawStudentParticipantsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
+    // drawStudentCompletedsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
+    // drawStudentCertifiedsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
+
+    // Gender
+    points(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Female")));
+    points1(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Male")));
+    points2(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Not Available")));
+    points3(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Other")));
 }
 
 
@@ -133,7 +134,12 @@ function setDataPublicationsByDivisions(sltValue) {
     var auxDownloadTimelineDivisions = publicationsDownloadTimelineArray.downloadTimelineDivisions.filter(function (d) {
         return d.division_codes == sltValue
     })
-    auxDownloadTimelineDivisions = $.extend(true, [], auxDownloadTimelineDivisions[0].data);
+    if(auxDownloadTimelineDivisions.length>0){
+        auxDownloadTimelineDivisions = $.extend(true, [], auxDownloadTimelineDivisions[0].data);
+    }else{
+        auxDownloadTimelineDivisions = [];
+    }
+    
     createChartTimelinePublication(auxDownloadTimelineDivisions, '');
 
     // d3.select("#publications-plot svg").remove();
@@ -141,7 +147,7 @@ function setDataPublicationsByDivisions(sltValue) {
 
 function setDataPublicationsByDepartment(sltValue) {
 
-    $("#publication2018").prop("checked", true);
+    
 
     // gauges
     dataPublicationGauge2018 = $.extend(true, [], publicationsIndicators.indicatorsDepartments2018)
@@ -175,6 +181,102 @@ function setDataPublicationsByDepartment(sltValue) {
     auxDownloadTimelineDepartment = $.extend(true, [], auxDownloadTimelineDepartment[0].data);
     createChartTimelinePublication(auxDownloadTimelineDepartment, '');
 
+}
+
+/**
+ * Funcion para actualizar la informacion de la seccion de publicaciones
+ */
+
+ /**
+  * Funcion para actualizar la informacion de la seccion de Moocs
+  */
+function setDataMoocsByDivisions(sltValue){
+    
+    
+    var jsonGaugesMoocs = $.extend(true, [], moocsGaugesIndicators.indicatorsDivisions2018)
+
+    jsonGaugesMoocs = jsonGaugesMoocs.filter(function (dataP) {
+        return dataP.divisionCode == sltValue
+    });
+    drawGaugeMoocsChart(jsonGaugesMoocs[0]);
+    
+    var auxDownloadTimelineDivisions = moocsRegistrationTimeline.registrationTimelineDivisions.filter(function (d) {
+        return d.code == sltValue
+    })
+    if(auxDownloadTimelineDivisions.length>0){
+        auxDownloadTimelineDivisions = $.extend(true, [], auxDownloadTimelineDivisions[0].data);
+    }else{
+        auxDownloadTimelineDivisions = [];
+    }
+    
+    createChartTimelineMoocs(auxDownloadTimelineDivisions, '');
+
+    var jsonAgeMoocs =$.extend(true, [],  moocsAgeArrays.ageDivision2018);
+    jsonAgeMoocs = jsonAgeMoocs.filter(function (dataP) {
+        return dataP.divisionCode == sltValue
+    });
+    drawMoocsAgeDistributionChart(jsonAgeMoocs);
+
+
+    drawMoocsRegistrationsChart(orderTopMoocs(divisionFilter(moocsTopArrays.divisions2018,sltValue)));
+    drawDistributionChart(orderTopMoocs(divisionFilter(moocsEducationArrays.educationLevelDivisions2018,sltValue)));
+    var students = divisionFilter(moocsStudentsFlowArrays.studentsFlowDivisions, sltValue);
+    drawStudentRegistrationsChart($.extend(true, [], students[0]));
+    drawStudentParticipantsChart($.extend(true, [], students[0]));
+    drawStudentCompletedsChart($.extend(true, [], students[0]));
+    drawStudentCertifiedsChart($.extend(true, [], students[0]));
+
+    // Gender
+    var gender = divisionFilter($.extend(true, [], moocsGenderArrays.genderDivisions), sltValue);
+    points(moocsGenderAddGray(moocsGenderFilter(gender, "Female")));
+    points1(moocsGenderAddGray(moocsGenderFilter(gender, "Male")));
+    points2(moocsGenderAddGray(moocsGenderFilter(gender, "Not Available")));
+    points3(moocsGenderAddGray(moocsGenderFilter(gender, "Other")));
+
+}
+
+function setDataMoocsByDepartment(sltValue){
+   
+    
+    var jsonGaugesMoocs = $.extend(true, [], moocsGaugesIndicators.indicatorsDepartments2018)
+
+    jsonGaugesMoocs = jsonGaugesMoocs.filter(function (dataP) {
+        return dataP.departmentCode == sltValue
+    });
+    drawGaugeMoocsChart(jsonGaugesMoocs[0]);
+    
+    var auxDownloadTimelineDepartment = moocsRegistrationTimeline.registrationTimelineDepartments.filter(function (d) {
+        return d.code == sltValue
+    })
+    if(auxDownloadTimelineDepartment.length>0){
+        auxDownloadTimelineDepartment = $.extend(true, [], auxDownloadTimelineDepartment[0].data);
+    }else{
+        auxDownloadTimelineDepartment = [];
+    }
+    
+    createChartTimelineMoocs(auxDownloadTimelineDepartment, '');
+
+    var jsonAgeMoocs =$.extend(true, [],  moocsAgeArrays.ageDepartments2018);
+    jsonAgeMoocs = jsonAgeMoocs.filter(function (dataP) {
+        return dataP.departmentCode == sltValue
+    });
+    drawMoocsAgeDistributionChart(jsonAgeMoocs);
+
+
+    drawMoocsRegistrationsChart(orderTopMoocs(divisionFilter(moocsTopArrays.departments2018,sltValue)));
+    drawDistributionChart(orderTopMoocs(divisionFilter(moocsEducationArrays.educationLevelDepartments2018,sltValue)));
+    var students = divisionFilter(moocsStudentsFlowArrays.studentsFlowDepartments, sltValue);
+    drawStudentRegistrationsChart($.extend(true, [], students[0]));
+    drawStudentParticipantsChart($.extend(true, [], students[0]));
+    drawStudentCompletedsChart($.extend(true, [], students[0]));
+    drawStudentCertifiedsChart($.extend(true, [], students[0]));
+
+    // Gender
+    var gender = divisionFilter($.extend(true, [], moocsGenderArrays.genderDepartments), sltValue);
+    points(moocsGenderAddGray(moocsGenderFilter(gender, "Female")));
+    points1(moocsGenderAddGray(moocsGenderFilter(gender, "Male")));
+    points2(moocsGenderAddGray(moocsGenderFilter(gender, "Not Available")));
+    points3(moocsGenderAddGray(moocsGenderFilter(gender, "Other")));
 }
 /**
  * Funcion para actualizar la informacion de la seccion de dataset
@@ -215,7 +317,7 @@ function setDataDataSetByDivisions(sltValue) {
     drawPlotChartDataset($.extend(true, [], datasetsScatterplotArrays));
 }
 
-function setDataDataSetByDepartment(sltValue){
+function setDataDataSetByDepartment(sltValue) {
     $("#dataSet2018").prop("checked", true);
     //treemap
     jsonDataSetTree = datasetsDownloadSource.downloadSourceDepartments.filter(function (dataT) {
@@ -285,7 +387,7 @@ function setDataCodeByDivisions(sltValue) {
     drawTreeCode(ObjectCodePageViewSource, "2018");
 }
 
-function setDataCodeByDepartment(sltValue){
+function setDataCodeByDepartment(sltValue) {
     $("#code2018").prop("checked", true);
     var ObjectTopIdb2018 = $.extend(true, [], codeTopArrays.topIDB2018);
 
