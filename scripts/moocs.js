@@ -10,9 +10,6 @@ function orderTopMoocs(data) {
  * Start distribution-moocs
  **/
 
-// drawDistributionChart(dataDistribution);
-
-
 function wrap(text, width) {
     text.each(function () {
         var text = d3.select(this),
@@ -457,6 +454,58 @@ var widthStudents = 100 - marginStudents.left - marginStudents.right,
  * Start student-registrations-moocs
  */
 
+ function tooltipStudentFlow(id,type){
+    var div = d3.select("body").append("div")
+    .attr("class", "toolTip")
+    .style("font-size", "12px")
+    .style("width", "200px");
+
+    var tooltipBarText = d3Old.selectAll( id+ " .text-inside")
+    .on("mouseover", function (d) {
+        
+        var textHtml = "<div class='col tooltip-gauges'><h3 class='row orange'>{{title}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>"+type+"</span><span class='col text-right' >{{value}}</div>";
+        textHtml = textHtml.replace('{{title}}', d.name)
+        textHtml = textHtml.replace('{{value}}', d.value.toFixed(0).toLocaleString())
+        
+        textHtml = textHtml + "</div>";
+        div.transition()
+            .duration(0)
+            .style("font-family", "Gotham-Book")
+            .style("display", "inline-block");
+        // div.html(d.value + "<br/>" + d.name)
+        div.html(textHtml)
+            .style("left", (d3Old.event.pageX) + 5 + "px")
+            .style("top", (d3Old.event.pageY - 28) + 5 + "px");
+    })
+    .on("mouseout", function (d) {
+        div.transition()
+            .duration(0)
+            .style("display", "none");
+    });
+    
+    var tooltipBar = d3Old.selectAll(id+" .bar")
+    .on("mouseover", function (d) {
+        
+        var textHtml = "<div class='col tooltip-gauges'><h3 class='row orange'>{{title}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>"+type+"</span><span class='col text-right' >{{value}}</div>";
+        textHtml = textHtml.replace('{{title}}', d.name)
+        textHtml = textHtml.replace('{{value}}', d.value.toFixed(0).toLocaleString())
+        textHtml = textHtml + "</div>";
+        div.transition()
+            .duration(0)
+            .style("font-family", "Gotham-Book")
+            .style("display", "inline-block");
+        // div.html(d.value + "<br/>" + d.name)
+        div.html(textHtml)
+            .style("left", (d3Old.event.pageX) + 5 + "px")
+            .style("top", (d3Old.event.pageY - 28) + 5 + "px");
+    })
+    .on("mouseout", function (d) {
+        div.transition()
+            .duration(0)
+            .style("display", "none");
+    });
+   
+ }
 
 function drawStudentRegistrationsChart(dataStudents) {
     d3.select("#student1 svg").remove();
@@ -540,6 +589,9 @@ function drawStudentRegistrationsChart(dataStudents) {
             var value = setSettingsNumber(d.value);
             return value.valueNumber + value.suffixNumber;
         });
+
+        setTooltipToPoints("#student1-title",false,dataStudents.registrations ? dataStudents.registrations.value : 0,undefined,"Registrations");
+        tooltipStudentFlow("#student1","Registrations");
 }
 /**
  * End student-registrations-moocs
@@ -633,6 +685,9 @@ function drawStudentParticipantsChart(dataStudents) {
             var value = setSettingsNumber(d.value);
             return value.valueNumber + value.suffixNumber;
         });
+
+        setTooltipToPoints("#student2-title",false,dataStudents.participants.value,undefined,"Participants");
+        tooltipStudentFlow("#student2","Participants");
 }
 /**
  * End student-participants-moocs
@@ -726,6 +781,9 @@ function drawStudentCompletedsChart(dataStudents) {
             var value = setSettingsNumber(d.value);
             return value.valueNumber + value.suffixNumber;
         });
+
+        setTooltipToPoints("#student3-title",false,dataStudents.completed.value,undefined,"Completed");
+        tooltipStudentFlow("#student3","Completed");
 }
 
 /**
@@ -821,6 +879,9 @@ function drawStudentCertifiedsChart(dataStudents) {
             var value = setSettingsNumber(d.value);
             return value.valueNumber + value.suffixNumber;
         });
+
+        setTooltipToPoints("#student4-title",false,dataStudents.certified.value,undefined,"Certified");
+        tooltipStudentFlow("#student4","Certified");
 }
 /**
  * End student-certified-moocs
@@ -1028,12 +1089,16 @@ function setTooltipToPoints(id,isSvg,value,percentage,name){
     var svgpos = getNodePos(root.node());
         selected
         .on("mousemove", function () {
-            var textInnerHtml = "<div class='col tooltip-gauges'><h3 class='row orange'>"+ name +"</h3> <div class='row  pb-1'><span class='col pl-0 pr-0'>Value</span><span class='col text-right' >{{value}}</div><div class='row pt-1 border-top'> <span class='col pl-0 pr-0'> Percentage</span><span  class='col-3 text-right'>{{percentage}}%</span></div>";
-            
-
+            var textInnerHtml = "<div class='col tooltip-gauges'><h3 class='row orange'>"+ name +"</h3> <div class='row  pb-1'><span class='col pl-0 pr-0'>Value</span><span class='col text-right' >{{value}}</div>";
             textInnerHtml = textInnerHtml.replace("{{value}}", value);
-            textInnerHtml = textInnerHtml.replace("{{percentage}}", percentage);
-            
+            if(percentage){
+                var textToAppend = "<div class='row pt-1 border-top'> <span class='col pl-0 pr-0'> Percentage</span><span  class='col-3 text-right'>{{percentage}}%</span>"
+                textToAppend = textToAppend.replace("{{percentage}}", percentage);
+                textInnerHtml = textInnerHtml +textToAppend;
+            }
+
+            textInnerHtml = textInnerHtml +"</div>"
+                       
 
             var m = d3Old.mouse(root.node());
             scr.x = d3Old.event.pageX;

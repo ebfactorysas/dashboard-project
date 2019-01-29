@@ -1427,49 +1427,49 @@ var moocsTopArrays = {
             "Rank": 3,
             "name": "Asociaciones Publico Privadas: Implementando Soluciones en Latinoamérica y el Caribe (2ed.)",
             "startDate": "10/27/2015",
-            "value": 0
+            "value": 0.4
         },
         {
             "code": "FMM",
             "Rank": 4,
             "name": "Asociaciones Publico Privadas: Implementando Soluciones en Latinoamérica y el Caribe (3ed.)",
             "startDate": "6/14/2016",
-            "value": 0
+            "value": 0.3
         },
         {
             "code": "FMM",
             "Rank": 5,
             "name": "Asociaciones Publico Privadas: Implementando Soluciones en Latinoamérica y el Caribe (4ed.)",
             "startDate": "5/18/2017",
-            "value": 0
+            "value": 0.2
         },
         {
             "code": "HUD",
             "Rank": 1,
             "name": "Desarrollo Urbano y Vivienda (1ed.)",
             "startDate": "7/14/2015",
-            "value": 0
+            "value": 0.4
         },
         {
             "code": "HUD",
             "Rank": 2,
             "name": "Desarrollo Urbano y Vivienda (2ed.)",
             "startDate": "7/21/2016",
-            "value": 0
+            "value": 0.3
         },
         {
             "code": "HUD",
             "Rank": 3,
             "name": "Desarrollo Urbano y Vivienda (3ed.)",
             "startDate": "5/9/2017",
-            "value": 0
+            "value": 0.2
         },
         {
             "code": "HUD",
             "Rank": 4,
             "name": "Liderando el Desarrollo Sostenible de las Ciudades (1ed.)",
             "startDate": "3/17/2015",
-            "value": 0
+            "value": 0.1
         },
         {
             "code": "HUD",
@@ -1490,28 +1490,28 @@ var moocsTopArrays = {
             "Rank": 2,
             "name": "Big Data sin misterios",
             "startDate": "2/14/2019",
-            "value": 0
+            "value": 0.4
         },
         {
             "code": "ICS",
             "Rank": 3,
             "name": "Gestión por resultados para gobiernos subnacionales (1ed.)",
             "startDate": "9/30/2014",
-            "value": 0
+            "value": 0.3
         },
         {
             "code": "ICS",
             "Rank": 4,
             "name": "Gestión por resultados para gobiernos subnacionales (2ed.)",
             "startDate": "5/19/2015",
-            "value": 0
+            "value": 0.2
         },
         {
             "code": "ICS",
             "Rank": 5,
             "name": "Gestión por resultados para gobiernos subnacionales (3ed.)",
             "startDate": "6/7/2016",
-            "value": 0
+            "value": 0.1
         },
         {
             "code": "IFD",
@@ -1539,28 +1539,28 @@ var moocsTopArrays = {
             "Rank": 1,
             "name": "Asociaciones Publico Privadas: Implementando Soluciones en Latinoamérica y el Caribe (1ed.)",
             "startDate": "6/30/2015",
-            "value": 0
+            "value": 0.4
         },
         {
             "code": "INE",
             "Rank": 2,
             "name": "Asociaciones Publico Privadas: Implementando Soluciones en Latinoamérica y el Caribe (2ed.)",
             "startDate": "10/27/2015",
-            "value": 0
+            "value": 0.3
         },
         {
             "code": "INE",
             "Rank": 3,
             "name": "Asociaciones Publico Privadas: Implementando Soluciones en Latinoamérica y el Caribe (3ed.)",
             "startDate": "6/14/2016",
-            "value": 0
+            "value": 0.2
         },
         {
             "code": "INE",
             "Rank": 4,
             "name": "Asociaciones Publico Privadas: Implementando Soluciones en Latinoamérica y el Caribe (4ed.)",
             "startDate": "5/18/2017",
-            "value": 0
+            "value": 0.1
         },
         {
             "code": "INE",
@@ -1595,7 +1595,7 @@ var moocsTopArrays = {
             "Rank": 4,
             "name": "New Trends in Trade Agreements in Latin America & the Caribbean (1ed.)",
             "startDate": "10/25/2016",
-            "value": 0
+            "value": 0.1
         },
         {
             "code": "INT",
@@ -1651,14 +1651,14 @@ var moocsTopArrays = {
             "Rank": 2,
             "name": "La realidad del desarollo social latinoamericano (1ed.)",
             "startDate": "9/14/2017",
-            "value": 0
+            "value": 0.2
         },
         {
             "code": "LMK",
             "Rank": 3,
             "name": "Pensiones en América Latina y el Caribe (1ed.)",
             "startDate": "3/10/2015",
-            "value": 0
+            "value": 0.1
         },
         {
             "code": "LMK",
@@ -1679,28 +1679,28 @@ var moocsTopArrays = {
             "Rank": 1,
             "name": "Asociaciones Publico Privadas: Implementando Soluciones en Latinoamérica y el Caribe (1ed.)",
             "startDate": "6/30/2015",
-            "value": 0
+            "value": 0.4
         },
         {
             "code": "MIF",
             "Rank": 2,
             "name": "Asociaciones Publico Privadas: Implementando Soluciones en Latinoamérica y el Caribe (2ed.)",
             "startDate": "10/27/2015",
-            "value": 0
+            "value": 0.3
         },
         {
             "code": "MIF",
             "Rank": 3,
             "name": "Asociaciones Publico Privadas: Implementando Soluciones en Latinoamérica y el Caribe (3ed.)",
             "startDate": "6/14/2016",
-            "value": 0
+            "value": 0.2
         },
         {
             "code": "MIF",
             "Rank": 4,
             "name": "Asociaciones Publico Privadas: Implementando Soluciones en Latinoamérica y el Caribe (4ed.)",
             "startDate": "5/18/2017",
-            "value": 0
+            "value": 0.1
         },
         {
             "code": "MIF",

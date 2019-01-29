@@ -61,7 +61,7 @@ function drawGaugePublicationChart(dataGauge) {
 
     drawGauge(dataGauge.publications, dataGauge.percentagePublications.toFixed(1), "", "#gauge-publications", code, "Publications", "#D1415A");
     drawGauge(dataGauge.downloads, dataGauge.percentageDownloads.toFixed(1), "", "#gauge-download-p", code, "Downloads", "#D1415A");
-    drawGauge(dataGauge.LAC, dataGauge.percentageLAC.toFixed(1), "%", "#gauge-lac-p", code, "Publications", "#D1415A");
+    drawGauge(dataGauge.LAC, dataGauge.percentageLAC.toFixed(1), "%", "#gauge-lac-p", code, "Downloads", "#D1415A");
 }
 
 function createLineChart(elements) {

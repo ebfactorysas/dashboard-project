@@ -4,7 +4,7 @@ function drawChartCodeTrend(codeTrend) {
         return d3.descending(a.Rank, b.Rank);
     })
 
-    drawTrendChart(codeTrend, "#code-trend", "#eeae00", "yellow", true, "#858585");
+    drawTrendChart(codeTrend, "#code-trend", "#eeae00", "yellow", true, "#ffffff");
 }
 
 function drawTreeCode(dataTree, filtertype, typeload) {

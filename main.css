@@ -839,6 +839,9 @@ section.code #code-trend .y-code {
     font-family: 'Gotham-Bold';
     font-size: 11px;
 }
+section.code #downloads-code .d3plus_label  tspan {
+    fill: white !important;
+}
 
 
 
