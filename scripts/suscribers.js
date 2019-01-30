@@ -1,22 +1,23 @@
 function drawInstitutionsChart(dataInstitution) {
+    d3.select("#institution-suscribers svg").remove();
     var dataInstitutionSum = d3.sum(dataInstitution, function (d) {
         return d.value;
     });
 
     var marginInstitution = {
         top: 50,
-        right: 50,
+        right: 40,
         bottom: 50,
-        left: 50
+        left: 40
     }
 
-    var widthInstitution = 650 - marginInstitution.left - marginInstitution.right;
-    var heightInstitution = 400 - marginInstitution.top - marginInstitution.bottom;
+    var widthInstitution = 700 - marginInstitution.left - marginInstitution.right;
+    var heightInstitution = 515 - marginInstitution.top - marginInstitution.bottom;
     var svgInstitution = d3.select('#institution-suscribers')
         .append("svg")
         //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-60 -60 700 400")
+        .attr("viewBox", "-25 -73 650 520")
         .append("g")
 
         //class to make it responsive
@@ -41,12 +42,12 @@ function drawInstitutionsChart(dataInstitution) {
         .attr("x", function (d) {
             return xInstitution(d.name);
         })
-        .attr("width", xInstitution.bandwidth() - 15)
+        .attr("width", xInstitution.bandwidth() - 30)
         .attr("y", function (d) {
             return yInstitution(d.value + 3);
         })
         .attr("x", function (d, i) {
-            return i * xInstitution.bandwidth() + 10; //Bar width of 20 plus 1 for padding
+            return i * xInstitution.bandwidth() + 15; //Bar width of 20 plus 1 for padding
         })
         .attr("fill", "#9ebbc2")
         .attr("stroke-width", 1)
@@ -61,29 +62,29 @@ function drawInstitutionsChart(dataInstitution) {
         .append("text")
         .text(null)
         .attr("y", function (d) {
-            return yInstitution(d.value + 5);
+            return yInstitution(d.value) - 20;
         })
         .attr("x", function (d, i) {
-            return i * xInstitution.bandwidth() + 12; //Bar width of 20 plus 1 for padding
+            return i * xInstitution.bandwidth() + 50; //Bar width of 20 plus 1 for padding
         })
         .attr("fill", "#336577")
         .attr("font-family", "Gotham-Bold")
-        .attr("font-size", "12px")
+        .attr("font-size", "14px")
         .append("tspan")
         .attr("x", function (d, i) {
-            return i * xInstitution.bandwidth() + 12; //Bar width of 20 plus 1 for padding
+            return i * xInstitution.bandwidth() + 25; //Bar width of 20 plus 1 for padding
         })
         .text(function (d) {
-
-            return d.value < 1000 ? d.value : (Math.round(d.value / 1000).toFixed(0)) + "K";
+            var number = setSettingsNumber(d.value)
+            return number.valueNumber + number.suffixNumber;
         })
         .append("tspan")
         .attr("x", function (d, i) {
-            return i * xInstitution.bandwidth() + 12; //Bar width of 20 plus 1 for padding
+            return i * xInstitution.bandwidth() + 25; //Bar width of 20 plus 1 for padding
         })
         .attr("dy", "1.2em")
         .attr("font-family", "Gotham-Book")
-        .attr("font-size", "10px")
+        .attr("font-size", "12px")
         .text(function (d) {
             return parseFloat(Math.round(d.value * 100 / dataInstitutionSum * 100) / 100).toFixed(1) +
                 "%";
@@ -97,7 +98,7 @@ function drawInstitutionsChart(dataInstitution) {
     svgInstitution.selectAll(".tick text")
         .call(wrap, xInstitution.bandwidth())
         .attr("font-family", "Gotham-Book")
-        .attr("font-size", "9px")
+        .attr("font-size", "12px")
         .attr("fill", "#336577");
 
 }
@@ -125,185 +126,211 @@ var dataAgeSuscribers = [{
     "value": 67.5
 }];
 
-drawAgeSuscribersChart(dataAgeSuscribers);
 
-function drawAgeSuscribersChart(dataAgeSuscribers) {
-    var marginAgeSuscribers = {
-        top: 50,
-        right: 50,
-        bottom: 50,
-        left: 50
-    }
 
-    var widthAgeSuscribers = 450 - marginAgeSuscribers.left - marginAgeSuscribers.right;
-    var heightAgeSuscribers = 400 - marginAgeSuscribers.top - marginAgeSuscribers.bottom;
-
-    var sumDataAgeSuscribers = d3.sum(dataAgeSuscribers, function (d) {
-        return d.value;
+function drawAgeSuscribersChart(data) {
+    
+    d3.select("#age-suscribers svg").remove();
+    dataSet = data.sort(function (a, b) {
+        a.name = a.name.slice(0,30);
+        return d3.ascending(a.value, b.value);
     });
-    var svgAgeSuscribers = d3.select('#age-suscribers').append("svg")
-        //responsive SVG needs these 2 attributes and no width and height attr
-        .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-40 -40 400 400")
-        .append("g")
-        // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
 
+    dataSet = dataSet.slice(0, 10);
+
+    var marginSuscriber = {
+        top: 15,
+        right: 25,
+        bottom: 15,
+        left: 205
+    };
+
+    var widthSuscriber = 750 - marginSuscriber.left - marginSuscriber.right,
+        heightSuscriber = 220 - marginSuscriber.top - marginSuscriber.bottom;
+
+    var svgSuscribers = d3.select("#age-suscribers").append("svg")
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-265 -28 800 430")
+        .append("g")
         //class to make it responsive
         .classed("svg-content-responsive", true);
 
-    var xAgeSuscribers = d3.scaleBand()
-        .range([0, widthAgeSuscribers]);
-    var yAgeSuscribers = d3.scaleLinear()
-        .range([heightAgeSuscribers, 0]);
+    var xSuscribers = d3.scaleLinear()
+        .range([0, widthSuscriber])
+        .domain([0, d3.max(dataSet, function (d) {
+            return d.value;
+        })]);
 
-    xAgeSuscribers.domain(dataAgeSuscribers.map(function (d) {
-        return d.name
-    }));
-    yAgeSuscribers.domain([0, d3.max(dataAgeSuscribers, function (d) {
-        return d.value
-    })]);
+    var ySuscribers = d3.scaleBand()
 
-    svgAgeSuscribers.selectAll(".bar")
-        .data(dataAgeSuscribers)
-        .enter().append("rect")
+        .rangeRound([40*dataSet.length, 0], .1)
+        .domain(dataSet.map(function (d) {
+            return d.name;
+        }));
+
+    var yAxisSuscribers = d3.axisLeft(ySuscribers)
+        //no tick marks
+        .tickPadding(260)
+        .tickSize(0);
+
+    var gySuscribers = svgSuscribers.append("g")
+        .style("text-anchor", "start")
+        .style("color", "#1e6577")
+        .style("font-family", "Gotham-Medium")
+        .style("font-size", "13px")
+        .attr("class", "y-suscribers")
+        .call(yAxisSuscribers)
+
+    var barsSuscribers = svgSuscribers.selectAll(".bar")
+        .data(dataSet)
+        .enter()
+        .append("g")
+
+    barsSuscribers.append("rect")
         .attr("class", "bar")
-        .attr("x", function (d) {
-            return xAgeSuscribers(d.name);
-        })
-        .attr("width", xAgeSuscribers.bandwidth() - 15)
         .attr("y", function (d) {
-            return yAgeSuscribers(d.value + 3);
-        })
-        .attr("x", function (d, i) {
-            return i * xAgeSuscribers.bandwidth() + 10; //Bar width of 20 plus 1 for padding
+            return ySuscribers(d.name);
         })
         .attr("fill", "#9ebbc2")
         .attr("stroke-width", 1)
-        .attr("stroke", "#337384")
-        .attr("height", function (d) {
-            return heightAgeSuscribers - yAgeSuscribers(d.value + 3);
+        .attr("stroke", "#337384")        
+        .attr("height", 35)
+        .attr("x", 8)
+        .attr("width", function (d) {
+            return xSuscribers(d.value);
         });
 
-    svgAgeSuscribers.selectAll("text")
-        .data(dataAgeSuscribers)
-        .enter()
-        .append("text")
-        .text(null)
+
+    barsSuscribers.append("text")
+        .attr("class", "label")
+        //y position of the label is halfway down the bar
         .attr("y", function (d) {
-            return yAgeSuscribers(d.value + 7);
+            return ySuscribers(d.name) + 35 / 2 + 4;
         })
-        .attr("x", function (d, i) {
-            return i * xAgeSuscribers.bandwidth() + 20; //Bar width of 20 plus 1 for padding
+        //x position is 3 pixels to the right of the bar
+        .attr("x", function (d) {
+            return -25;
         })
-        .attr("fill", "#336577")
         .attr("font-family", "Gotham-Bold")
-        .attr("font-size", "12px")
-        .append("tspan")
-        .attr("x", function (d, i) {
-            return i * xAgeSuscribers.bandwidth() + 20; //Bar width of 20 plus 1 for padding
-        })
+        .attr("font-size", "14px")
         .text(function (d) {
-
-            return d.value + "K";
+            var value = setSettingsNumber(d.value)
+            return value.valueNumber + value.suffixNumber;
         })
-        .append("tspan")
-        .attr("x", function (d, i) {
-            return i * xAgeSuscribers.bandwidth() + 20; //Bar width of 20 plus 1 for padding
-        })
-        .attr("dy", "1.2em")
-        .attr("font-family", "Gotham-Book")
-        .attr("font-size", "10px")
-        .text(function (d) {
-            return parseFloat(Math.round((d.value * 100 / sumDataAgeSuscribers) * 100) / 100).toFixed(2) +
-                "%";
-        });
-
-    svgAgeSuscribers.append("g")
-        .attr("transform", "translate(0," + heightAgeSuscribers + ")")
-        .attr("class", "suscriber-AgeChart")
-        .call(d3.axisBottom(xAgeSuscribers));
-
-    svgAgeSuscribers.selectAll(".tick text")
-        .call(wrap, xAgeSuscribers.bandwidth())
-        .attr("font-family", "Gotham-Book")
-        .attr("font-size", "9px")
-        .attr("fill", "#336577");
+        .style("fill", "#336577")
+        .style("font-family", "Gotham-Bold")
+        .style("font-size", "11px");
 }
 
 
 
 function drawTreeSuscriber(dataTree) {
-    if ($("#code2018").prop("checked")) {
-        dataTree = dataTree.sort(function (a, b) {
-            return d3.descending(a.Subscribers, b.Subscribers);
-        });
-    } else {
-        dataTree = dataTree.sort(function (a, b) {
-            return d3.descending(a.Subscribers, b.Subscribers);
-        });
-    }
+    d3.select("#demographics-suscribers div").remove();
+    dataTree = dataTree.sort(function (a, b) {
+        return d3.descending(a.subscribers, b.subscribers);
+    });
 
+    var div = d3.select("body").append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
+        var numbType =  d3.format('.0%');
     colours = chroma.scale(['#518a81', '#ffffff'])
-        .mode('lch').colors(dataTree.length)
-
+        .mode('lch').colors(dataTree.length);
     dataTree.forEach(function (element, i) {
         element.color = colours[i]
     });
-
-    var groupData = ["Gender", "Subscribers"];
-    var colorParam = "Subscribers";
-    var sizeMeasure = "Subscribers";
-    var indexColor = 0;
-    new d3plus.Treemap()
-        .data(dataTree)
-        .groupBy(["Subscribers", "Gender"])
-        .sum("Subscribers")
-        .shapeConfig({
-            fill: function (d) {
-                return d.color;
+    var visualization = d3plusOld.viz()
+        .container("#demographics-suscribers") // container DIV to hold the visualization
+        .data({
+            "value": dataTree, // results in larger padding between 'groups' in treemap
+            "stroke": {
+                "width": 2
+            } // gives each shape a border
+        }) // data to use with the visualization
+        .type("tree_map") // visualization type
+        .id("gender") // key for which our data is unique on
+        .size({
+            value: "subscribers" 
+        }) // sizing of blocks
+        .legend(false)
+        .color(function (d) {
+            return d.color;
+        })
+        .labels({
+            align: "left",
+            valign: "top",
+            value: true,
+            font: {
+                family: "Gotham-Bold",
+                size: "17"
             },
-            labelConfig: {
-                fontFamily: 'Gotham-Bold',
-                fontMax: 20,
+            resize: false
+        })
+        .tooltip({
+            font: {
+                family: "Gotham-Book"
+            },
+            value: ["subscribers" ]
+        })
+        .format({
+            "text": function (text, params) {
+                if (text === "share") {
+                    return "Percentage";
+                } else if (text === "value" ) {
+                    return "Subscribers"
+                } else {
+                    return d3plusOld.string.title(text, params);
+                }
             }
         })
-        .legend(false)
-        .select("#demographics-suscribers")
-        .render();
+        .text(function (d) {
+            var current_id = visualization.id();
+            return d[current_id] + "\n" + numbType(d.d3plusOld.share.toFixed(2));
+        })
+
+    visualization.draw()
+      
+}
+function setSuscribersGauge(isIdb) {
+    var dataGaugeSubscribers = {
+        "code": {
+            "total": (isIdb == 'IDB') ? 1 : getPercentageTotal(subscribersAllTotalGlobal),
+            "allocated": subscribersAllTotalGlobal
+        },
+        "pageview": {
+            "total": (isIdb == 'IDB') ? 1 : getPercentageTotal(subscribersAllDownloads),
+            "allocated": subscribersAllDownloads
+        },
+        "lac": {
+            "total": 100,
+            "allocated": subscribersAllDownloadsLac
+        }
+    }
+    return dataGaugeSubscribers;
 }
 
-var dataGaugeSubscribers = {
-    "code": {
-        "total": getPercentageTotal(subscribersAllTotalGlobal),
-        "allocated": subscribersAllTotalGlobal
-    },
-    "pageview": {
-        "total": getPercentageTotal(subscribersAllDownloads),
-        "allocated": subscribersAllDownloads
-    },
-    "lac": {
-        "total": 100,
-        "allocated": subscribersAllDownloadsLac
+function setSuscribersGauge2018(isIdb) {
+    var dataGaugeSubscribers2018 = {
+        "code": {
+            "total": (isIdb == 'IDB') ? 1 : getPercentageTotal(subscribersAllTotalGlobal),
+            "allocated": subscribersAllTotalGlobal
+        },
+        "pageview": {
+            "total": (isIdb == 'IDB') ? 1 : getPercentageTotal(subscribersAllDownloads),
+            "allocated": subscribersAllDownloads
+        },
+        "lac": {
+            "total": 100,
+            "allocated": subscribersAllDownloadsLac
+        }
     }
+    return dataGaugeSubscribers2018;
 }
-var dataGaugeSubscribers2018 = {
-    "code": {
-        "total": getPercentageTotal(subscribersAllTotalGlobal),
-        "allocated": subscribersAllTotalGlobal
-    },
-    "pageview": {
-        "total": getPercentageTotal(subscribersAllDownloads),
-        "allocated": subscribersAllDownloads
-    },
-    "lac": {
-        "total": 100,
-        "allocated": subscribersAllDownloadsLac
-    }
-}
-drawGaugeSubscribersChart(dataGaugeSubscribers);
-
 
 function drawGaugeSubscribersChart(dataGauge) {
+    d3.select("#gauge-suscribers svg").remove();
+    d3.select("#gauge-lac-s svg").remove();
+    d3.select("#gauge-2018 svg").remove();
     var width = 150,
         height = 150,
         progress = 0,
@@ -444,9 +471,10 @@ function orderTopDataSuscribers(data) {
 }
 
 function drawSuscribersChart(data) {
-
-
+    
+    d3.select("#suscribers-interested svg").remove();
     dataSet = data.sort(function (a, b) {
+        a.name = a.name.slice(0,30);
         return d3.ascending(a.value, b.value);
     });
 
@@ -454,19 +482,20 @@ function drawSuscribersChart(data) {
 
     var marginSuscriber = {
         top: 15,
-        right: 50,
+        right: 25,
         bottom: 15,
-        left: 15
+        left: 205
     };
 
-    var widthSuscriber = 560 - marginSuscriber.left - marginSuscriber.right,
-        heightSuscriber = 250 - marginSuscriber.top - marginSuscriber.bottom;
+    var widthSuscriber = 750 - marginSuscriber.left - marginSuscriber.right,
+        heightSuscriber = 220 - marginSuscriber.top - marginSuscriber.bottom;
 
     var svgSuscribers = d3.select("#suscribers-interested").append("svg")
-        .attr("width", widthSuscriber + marginSuscriber.left + marginSuscriber.right)
-        .attr("height", heightSuscriber + marginSuscriber.top + marginSuscriber.bottom)
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-265 -28 800 220")
         .append("g")
-        .attr("transform", "translate(" + marginSuscriber.left + "," + marginSuscriber.top + ")");
+        //class to make it responsive
+        .classed("svg-content-responsive", true);
 
     var xSuscribers = d3.scaleLinear()
         .range([0, widthSuscriber])
@@ -476,15 +505,23 @@ function drawSuscribersChart(data) {
 
     var ySuscribers = d3.scaleBand()
 
-        .rangeRound([heightSuscriber, 0], .1)
+        .rangeRound([30*dataSet.length, 0], .1)
         .domain(dataSet.map(function (d) {
-            return d.value;
+            return d.name;
         }));
 
     var yAxisSuscribers = d3.axisLeft(ySuscribers)
         //no tick marks
-        .tickPadding(55)
+        .tickPadding(260)
         .tickSize(0);
+
+    var gySuscribers = svgSuscribers.append("g")
+        .style("text-anchor", "start")
+        .style("color", "#1e6577")
+        .style("font-family", "Gotham-Medium")
+        .style("font-size", "13px")
+        .attr("class", "y-suscribers")
+        .call(yAxisSuscribers)
 
     var barsSuscribers = svgSuscribers.selectAll(".bar")
         .data(dataSet)
@@ -494,64 +531,56 @@ function drawSuscribersChart(data) {
     barsSuscribers.append("rect")
         .attr("class", "bar")
         .attr("y", function (d) {
-            return ySuscribers(d.value);
+            return ySuscribers(d.name);
         })
         .attr("fill", "#9ebbc2")
         .attr("stroke-width", 1)
-        .attr("stroke", "#337384")
-        .attr("height", ySuscribers.bandwidth() - 5)
+        .attr("stroke", "#337384")        
+        .attr("height", 25)
         .attr("x", 8)
         .attr("width", function (d) {
             return xSuscribers(d.value);
         });
 
+
     barsSuscribers.append("text")
         .attr("class", "label")
         //y position of the label is halfway down the bar
         .attr("y", function (d) {
-            return ySuscribers(d.value) + ySuscribers.bandwidth() / 2 + 4;
+            return ySuscribers(d.name) + 25 / 2 + 4;
         })
         //x position is 3 pixels to the right of the bar
         .attr("x", function (d) {
-            return 12;
-        })
-        .attr("class", "text-inside")
-        .attr("font-family", "Gotham-Bold")
-        .attr("font-size", "12px")
-        .text(function (d) {
-            return d.name;
-        });
-    barsSuscribers.append("text")
-        .attr("class", "label")
-        //y position of the label is halfway down the bar
-        .attr("y", function (d) {
-            return ySuscribers(d.value) + ySuscribers.bandwidth() / 2 + 4;
-        })
-        //x position is 3 pixels to the right of the bar
-        .attr("x", function (d) {
-            return xSuscribers(d.value) + 10;
+            return -25;
         })
         .attr("font-family", "Gotham-Bold")
-        .attr("font-size", "12px")
+        .attr("font-size", "14px")
         .text(function (d) {
-            return d.value / 1000 + "K";
-        });
+            var value = setSettingsNumber(d.value)
+            return value.valueNumber + value.suffixNumber;
+        })
+        .style("fill", "#336577")
+        .style("font-family", "Gotham-Bold")
+        .style("font-size", "11px");
 }
 
 //init
+function initSuscribers() {
+    drawAgeSuscribersChart(subscribersSubTopics);
+    drawSuscribersChart(orderTopDataSuscribers(subscribersTopics));
+    drawTreeSuscriber(subscribersGender.genderIDB);
+    drawInstitutionsChart(subscribersInstitution.institutionIDB);
+    dataGaugeSubscribers2018 = setSuscribersGauge2018('IDB');
+    drawGaugeSubscribersChart(dataGaugeSubscribers2018);
+}
 
-drawSuscribersChart(orderTopDataSuscribers(subscribersTopics));
-drawTreeSuscriber(subscribersGender.genderIDB);
-drawInstitutionsChart(subscribersInstitution.institutionIDB);
 
 
 // Filters
 function removeSubscribersSvg() {
     d3.select("#institution-suscribers svg").remove();
     d3.select("#age-suscribers svg").remove();
-    d3.select("#gauge-suscribers svg").remove();
-    d3.select("#gauge-lac-s svg").remove();
-    d3.select("#gauge-2018 svg").remove();
+    
 
 }
 
@@ -571,7 +600,7 @@ function subscribersFilter() {
             //top registration chart
             if ($("select[id*='divisionSelect']").val().length > 0) {
 
-                // console.log("division subscriber=> ", divisionSubscriberFilter(subscribersInstitution.institutionDivisions, $("select[id*='divisionSelect']").val()))
+                
                 drawInstitutionsChart(divisionSubscriberFilter(subscribersInstitution.institutionDivisions, $("select[id*='divisionSelect']").val()));
 
                 // drawMoocsRegistrationsChart(orderTopMoocs(divisionFilter(moocsTopArrays.divisionsAlltime, $("select[id*='divisionSelect']").val())));
@@ -601,7 +630,7 @@ function subscribersFilter() {
                 // drawStudentParticipantsChart(moocsStudentsFlowArrays.studentsFlowIDB);
                 // drawStudentCompletedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
                 // drawStudentCertifiedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
-                console.log("ffdf");
+                
                 drawInstitutionsChart(subscribersInstitution.institutionIDB);
 
             }
@@ -610,7 +639,7 @@ function subscribersFilter() {
             break;
         case "2018":
             drawGaugeSubscribersChart(dataGaugeSubscribers2018);
-        break;
+            break;
         default:
             //top registration chart
             if ($("select[id*='divisionSelect']").val().length > 0) {
@@ -671,5 +700,5 @@ function subscribersFilter() {
 // });
 
 $("input[name*='suscribersTrend']").click(function () {
-    subscribersFilter();
+    //subscribersFilter();
 });

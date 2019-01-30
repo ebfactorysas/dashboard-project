@@ -1,2004 +1,1924 @@
+//updated
 var subscribersInstitution = {
     institutionDepartments: [{
-            "json_featuretype": "NewFeatureType",
-            "value": "69384",
-            "code": "CSD ",
-            "name": "Not Reported"
+            "code": "CSD",
+            "name": "Not Reported",
+            "value": 70597
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "12556",
-            "code": "CSD ",
-            "name": "Academia"
+            "code": "CSD",
+            "name": "Academia",
+            "value": 13165
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "8339",
-            "code": "CSD ",
-            "name": "Civil Society"
+            "code": "CSD",
+            "name": "Civil Society",
+            "value": 8723
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "8642",
-            "code": "CSD ",
-            "name": "General"
+            "code": "CSD",
+            "name": "General",
+            "value": 8880
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "15431",
-            "code": "CSD ",
-            "name": "Government"
+            "code": "CSD",
+            "name": "Government",
+            "value": 16477
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "772",
-            "code": "CSD ",
-            "name": "Media"
+            "code": "CSD",
+            "name": "Media",
+            "value": 811
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1731",
-            "code": "CSD ",
-            "name": "Multilateral Organization"
+            "code": "CSD",
+            "name": "Multilateral Organization",
+            "value": 1827
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "17248",
-            "code": "CSD ",
-            "name": "Private Sector"
+            "code": "CSD",
+            "name": "Private Sector",
+            "value": 18241
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "2484",
-            "code": "CSD ",
-            "name": "Research Center"
+            "code": "CSD",
+            "name": "Research Center",
+            "value": 2593
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "31844",
-            "code": "IFD ",
-            "name": "Not Reported"
+            "code": "IFD",
+            "name": "Not Reported",
+            "value": 32829
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "14862",
-            "code": "IFD ",
-            "name": "Academia"
+            "code": "IFD",
+            "name": "Academia",
+            "value": 15564
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "8003",
-            "code": "IFD ",
-            "name": "Civil Society"
+            "code": "IFD",
+            "name": "Civil Society",
+            "value": 8380
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "12376",
-            "code": "IFD ",
-            "name": "General"
+            "code": "IFD",
+            "name": "General",
+            "value": 12705
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "19952",
-            "code": "IFD ",
-            "name": "Government"
+            "code": "IFD",
+            "name": "Government",
+            "value": 21231
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1200",
-            "code": "IFD ",
-            "name": "Media"
+            "code": "IFD",
+            "name": "Media",
+            "value": 1241
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1760",
-            "code": "IFD ",
-            "name": "Multilateral Organization"
+            "code": "IFD",
+            "name": "Multilateral Organization",
+            "value": 1850
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "19761",
-            "code": "IFD ",
-            "name": "Private Sector"
+            "code": "IFD",
+            "name": "Private Sector",
+            "value": 20876
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "2869",
-            "code": "IFD ",
-            "name": "Research Center"
+            "code": "IFD",
+            "name": "Research Center",
+            "value": 2988
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "3",
-            "code": "IIC ",
-            "name": "Not Reported"
+            "code": "IIC",
+            "name": "Not Reported",
+            "value": 3
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1",
-            "code": "IIC ",
-            "name": "Academia"
+            "code": "IIC",
+            "name": "Academia",
+            "value": 1
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "IIC ",
-            "name": "Civil Society"
+            "code": "IIC",
+            "name": "Civil Society",
+            "value": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "2",
-            "code": "IIC ",
-            "name": "General"
+            "code": "IIC",
+            "name": "General",
+            "value": 2
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "IIC ",
-            "name": "Government"
+            "code": "IIC",
+            "name": "Government",
+            "value": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "IIC ",
-            "name": "Media"
+            "code": "IIC",
+            "name": "Media",
+            "value": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "IIC ",
-            "name": "Multilateral Organization"
+            "code": "IIC",
+            "name": "Multilateral Organization",
+            "value": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1",
-            "code": "IIC ",
-            "name": "Private Sector"
+            "code": "IIC",
+            "name": "Private Sector",
+            "value": 1
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "IIC ",
-            "name": "Research Center"
+            "code": "IIC",
+            "name": "Research Center",
+            "value": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "24058",
-            "code": "INE ",
-            "name": "Not Reported"
+            "code": "INE",
+            "name": "Not Reported",
+            "value": 24689
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "9628",
-            "code": "INE ",
-            "name": "Academia"
+            "code": "INE",
+            "name": "Academia",
+            "value": 10088
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "6896",
-            "code": "INE ",
-            "name": "Civil Society"
+            "code": "INE",
+            "name": "Civil Society",
+            "value": 7168
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "8104",
-            "code": "INE ",
-            "name": "General"
+            "code": "INE",
+            "name": "General",
+            "value": 8314
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "12764",
-            "code": "INE ",
-            "name": "Government"
+            "code": "INE",
+            "name": "Government",
+            "value": 13580
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "711",
-            "code": "INE ",
-            "name": "Media"
+            "code": "INE",
+            "name": "Media",
+            "value": 738
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1268",
-            "code": "INE ",
-            "name": "Multilateral Organization"
+            "code": "INE",
+            "name": "Multilateral Organization",
+            "value": 1322
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "15825",
-            "code": "INE ",
-            "name": "Private Sector"
+            "code": "INE",
+            "name": "Private Sector",
+            "value": 16627
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "2034",
-            "code": "INE ",
-            "name": "Research Center"
+            "code": "INE",
+            "name": "Research Center",
+            "value": 2110
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "17181",
-            "code": "INT ",
-            "name": "Not Reported"
+            "code": "INT",
+            "name": "Not Reported",
+            "value": 17833
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "6880",
-            "code": "INT ",
-            "name": "Academia"
+            "code": "INT",
+            "name": "Academia",
+            "value": 7217
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "3436",
-            "code": "INT ",
-            "name": "Civil Society"
+            "code": "INT",
+            "name": "Civil Society",
+            "value": 3634
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "5834",
-            "code": "INT ",
-            "name": "General"
+            "code": "INT",
+            "name": "General",
+            "value": 6014
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "7612",
-            "code": "INT ",
-            "name": "Government"
+            "code": "INT",
+            "name": "Government",
+            "value": 8289
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "522",
-            "code": "INT ",
-            "name": "Media"
+            "code": "INT",
+            "name": "Media",
+            "value": 552
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "782",
-            "code": "INT ",
-            "name": "Multilateral Organization"
+            "code": "INT",
+            "name": "Multilateral Organization",
+            "value": 830
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "9557",
-            "code": "INT ",
-            "name": "Private Sector"
+            "code": "INT",
+            "name": "Private Sector",
+            "value": 10048
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1308",
-            "code": "INT ",
-            "name": "Research Center"
+            "code": "INT",
+            "name": "Research Center",
+            "value": 1374
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "343045",
-            "code": "KIC ",
-            "name": "Not Reported"
+            "code": "KIC",
+            "name": "Not Reported",
+            "value": 345909
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "27673",
-            "code": "KIC ",
-            "name": "Academia"
+            "code": "KIC",
+            "name": "Academia",
+            "value": 28575
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "14766",
-            "code": "KIC ",
-            "name": "Civil Society"
+            "code": "KIC",
+            "name": "Civil Society",
+            "value": 15328
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "23316",
-            "code": "KIC ",
-            "name": "General"
+            "code": "KIC",
+            "name": "General",
+            "value": 23794
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "34110",
-            "code": "KIC ",
-            "name": "Government"
+            "code": "KIC",
+            "name": "Government",
+            "value": 35940
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "2116",
-            "code": "KIC ",
-            "name": "Media"
+            "code": "KIC",
+            "name": "Media",
+            "value": 2182
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "3694",
-            "code": "KIC ",
-            "name": "Multilateral Organization"
+            "code": "KIC",
+            "name": "Multilateral Organization",
+            "value": 3855
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "30390",
-            "code": "KIC ",
-            "name": "Private Sector"
+            "code": "KIC",
+            "name": "Private Sector",
+            "value": 31744
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "3644",
-            "code": "KIC ",
-            "name": "Research Center"
+            "code": "KIC",
+            "name": "Research Center",
+            "value": 3787
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1",
-            "code": "MIF ",
-            "name": "Not Reported"
+            "code": "MIF",
+            "name": "Not Reported",
+            "value": 1
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "2",
-            "code": "MIF ",
-            "name": "Academia"
+            "code": "MIF",
+            "name": "Academia",
+            "value": 2
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1",
-            "code": "MIF ",
-            "name": "Civil Society"
+            "code": "MIF",
+            "name": "Civil Society",
+            "value": 1
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "2",
-            "code": "MIF ",
-            "name": "General"
+            "code": "MIF",
+            "name": "General",
+            "value": 2
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "MIF ",
-            "name": "Government"
+            "code": "MIF",
+            "name": "Government",
+            "value": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "MIF ",
-            "name": "Media"
+            "code": "MIF",
+            "name": "Media",
+            "value": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1",
-            "code": "MIF ",
-            "name": "Multilateral Organization"
+            "code": "MIF",
+            "name": "Multilateral Organization",
+            "value": 1
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1",
-            "code": "MIF ",
-            "name": "Private Sector"
+            "code": "MIF",
+            "name": "Private Sector",
+            "value": 1
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "MIF ",
-            "name": "Research Center"
+            "code": "MIF",
+            "name": "Research Center",
+            "value": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "16885",
-            "code": "RES ",
-            "name": "Not Reported"
+            "code": "RES",
+            "name": "Not Reported",
+            "value": 17148
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "6808",
-            "code": "RES ",
-            "name": "Academia"
+            "code": "RES",
+            "name": "Academia",
+            "value": 6990
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "3464",
-            "code": "RES ",
-            "name": "Civil Society"
+            "code": "RES",
+            "name": "Civil Society",
+            "value": 3560
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "5032",
-            "code": "RES ",
-            "name": "General"
+            "code": "RES",
+            "name": "General",
+            "value": 5200
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "6510",
-            "code": "RES ",
-            "name": "Government"
+            "code": "RES",
+            "name": "Government",
+            "value": 6706
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "444",
-            "code": "RES ",
-            "name": "Media"
+            "code": "RES",
+            "name": "Media",
+            "value": 458
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "3205",
-            "code": "RES ",
-            "name": "Multilateral Organization"
+            "code": "RES",
+            "name": "Multilateral Organization",
+            "value": 3495
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "6867",
-            "code": "RES ",
-            "name": "Private Sector"
+            "code": "RES",
+            "name": "Private Sector",
+            "value": 7042
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1236",
-            "code": "RES ",
-            "name": "Research Center"
+            "code": "RES",
+            "name": "Research Center",
+            "value": 1270
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "36368",
-            "code": "SCL ",
-            "name": "Not Reported"
+            "code": "SCL",
+            "name": "Not Reported",
+            "value": 37509
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "16304",
-            "code": "SCL ",
-            "name": "Academia"
+            "code": "SCL",
+            "name": "Academia",
+            "value": 17085
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "9372",
-            "code": "SCL ",
-            "name": "Civil Society"
+            "code": "SCL",
+            "name": "Civil Society",
+            "value": 9881
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "14996",
-            "code": "SCL ",
-            "name": "General"
+            "code": "SCL",
+            "name": "General",
+            "value": 15486
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "17571",
-            "code": "SCL ",
-            "name": "Government"
+            "code": "SCL",
+            "name": "Government",
+            "value": 18914
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1137",
-            "code": "SCL ",
-            "name": "Media"
+            "code": "SCL",
+            "name": "Media",
+            "value": 1193
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "2027",
-            "code": "SCL ",
-            "name": "Multilateral Organization"
+            "code": "SCL",
+            "name": "Multilateral Organization",
+            "value": 2162
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "16229",
-            "code": "SCL ",
-            "name": "Private Sector"
+            "code": "SCL",
+            "name": "Private Sector",
+            "value": 17309
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "2512",
-            "code": "SCL ",
-            "name": "Research Center"
+            "code": "SCL",
+            "name": "Research Center",
+            "value": 2634
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1468",
-            "code": "SPD ",
-            "name": "Not Reported"
+            "code": "SPD",
+            "name": "Not Reported",
+            "value": 1480
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1557",
-            "code": "SPD ",
-            "name": "Academia"
+            "code": "SPD",
+            "name": "Academia",
+            "value": 1580
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "952",
-            "code": "SPD ",
-            "name": "Civil Society"
+            "code": "SPD",
+            "name": "Civil Society",
+            "value": 972
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1137",
-            "code": "SPD ",
-            "name": "General"
+            "code": "SPD",
+            "name": "General",
+            "value": 1159
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1749",
-            "code": "SPD ",
-            "name": "Government"
+            "code": "SPD",
+            "name": "Government",
+            "value": 1769
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "95",
-            "code": "SPD ",
-            "name": "Media"
+            "code": "SPD",
+            "name": "Media",
+            "value": 95
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "268",
-            "code": "SPD ",
-            "name": "Multilateral Organization"
+            "code": "SPD",
+            "name": "Multilateral Organization",
+            "value": 278
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1814",
-            "code": "SPD ",
-            "name": "Private Sector"
+            "code": "SPD",
+            "name": "Private Sector",
+            "value": 1833
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "306",
-            "code": "SPD ",
-            "name": "Research Center"
+            "code": "SPD",
+            "name": "Research Center",
+            "value": 308
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "2",
-            "code": "VPC ",
-            "name": "Not Reported"
+            "code": "VPC",
+            "name": "Not Reported",
+            "value": 2
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1",
-            "code": "VPC ",
-            "name": "Academia"
+            "code": "VPC",
+            "name": "Academia",
+            "value": 1
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "2",
-            "code": "VPC ",
-            "name": "Civil Society"
+            "code": "VPC",
+            "name": "Civil Society",
+            "value": 2
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "4",
-            "code": "VPC ",
-            "name": "General"
+            "code": "VPC",
+            "name": "General",
+            "value": 4
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "VPC ",
-            "name": "Government"
+            "code": "VPC",
+            "name": "Government",
+            "value": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1",
-            "code": "VPC ",
-            "name": "Media"
+            "code": "VPC",
+            "name": "Media",
+            "value": 1
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "2",
-            "code": "VPC ",
-            "name": "Multilateral Organization"
+            "code": "VPC",
+            "name": "Multilateral Organization",
+            "value": 2
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1",
-            "code": "VPC ",
-            "name": "Private Sector"
+            "code": "VPC",
+            "name": "Private Sector",
+            "value": 1
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "3",
-            "code": "VPC ",
-            "name": "Research Center"
+            "code": "VPC",
+            "name": "Research Center",
+            "value": 3
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1",
-            "code": "VPF ",
-            "name": "Not Reported"
+            "code": "VPF",
+            "name": "Not Reported",
+            "value": 1
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "2",
-            "code": "VPF ",
-            "name": "Academia"
+            "code": "VPF",
+            "name": "Academia",
+            "value": 2
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "VPF ",
-            "name": "Civil Society"
+            "code": "VPF",
+            "name": "Civil Society",
+            "value": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "2",
-            "code": "VPF ",
-            "name": "General"
+            "code": "VPF",
+            "name": "General",
+            "value": 2
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "VPF ",
-            "name": "Government"
+            "code": "VPF",
+            "name": "Government",
+            "value": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "VPF ",
-            "name": "Media"
+            "code": "VPF",
+            "name": "Media",
+            "value": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "VPF ",
-            "name": "Multilateral Organization"
+            "code": "VPF",
+            "name": "Multilateral Organization",
+            "value": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "VPF ",
-            "name": "Private Sector"
+            "code": "VPF",
+            "name": "Private Sector",
+            "value": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "VPF ",
-            "name": "Research Center"
+            "code": "VPF",
+            "name": "Research Center",
+            "value": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "3",
-            "code": "VPS ",
-            "name": "Not Reported"
+            "code": "VPS",
+            "name": "Not Reported",
+            "value": 3
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "2",
-            "code": "VPS ",
-            "name": "Academia"
+            "code": "VPS",
+            "name": "Academia",
+            "value": 2
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "VPS ",
-            "name": "Civil Society"
+            "code": "VPS",
+            "name": "Civil Society",
+            "value": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "2",
-            "code": "VPS ",
-            "name": "General"
+            "code": "VPS",
+            "name": "General",
+            "value": 2
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "VPS ",
-            "name": "Government"
+            "code": "VPS",
+            "name": "Government",
+            "value": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "VPS ",
-            "name": "Media"
+            "code": "VPS",
+            "name": "Media",
+            "value": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "VPS ",
-            "name": "Multilateral Organization"
+            "code": "VPS",
+            "name": "Multilateral Organization",
+            "value": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "VPS ",
-            "name": "Private Sector"
+            "code": "VPS",
+            "name": "Private Sector",
+            "value": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "VPS ",
-            "name": "Research Center"
+            "code": "VPS",
+            "name": "Research Center",
+            "value": 0
         }
     ],
     institutionDivisions: [
         {
-            "json_featuretype": "NewFeatureType",
-            "value": 17628,
-            "code": "CSD/CCS",
-            "name": "Not Reported"
+            "department_code": "CSD",
+            "name": "Not Reported",
+            "value": 18349,
+            "division_code": "CCS"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "7680",
-            "code": "CSD/CCS",
-            "name": "Academia"
+            "department_code": "CSD",
+            "name": "Academia",
+            "value": 8142,
+            "division_code": "CCS"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "5345",
-            "code": "CSD/CCS",
-            "name": "Civil Society"
+            "department_code": "CSD",
+            "name": "Civil Society",
+            "value": 5639,
+            "division_code": "CCS"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "4694",
-            "code": "CSD/CCS",
-            "name": "General"
+            "department_code": "CSD",
+            "name": "General",
+            "value": 4871,
+            "division_code": "CCS"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "9594",
-            "code": "CSD/CCS",
-            "name": "Government"
+            "department_code": "CSD",
+            "name": "Government",
+            "value": 10378,
+            "division_code": "CCS"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "502",
-            "code": "CSD/CCS",
-            "name": "Media"
+            "department_code": "CSD",
+            "name": "Media",
+            "value": 529,
+            "division_code": "CCS"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1021",
-            "code": "CSD/CCS",
-            "name": "Multilateral Organization"
+            "department_code": "CSD",
+            "name": "Multilateral Organization",
+            "value": 1081,
+            "division_code": "CCS"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "10623",
-            "code": "CSD/CCS",
-            "name": "Private Sector"
+            "department_code": "CSD",
+            "name": "Private Sector",
+            "value": 11359,
+            "division_code": "CCS"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1624",
-            "code": "CSD/CCS",
-            "name": "Research Center"
+            "department_code": "CSD",
+            "name": "Research Center",
+            "value": 1700,
+            "division_code": "CCS"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "45396",
-            "code": "CSD/HUD",
-            "name": "Not Reported"
+            "department_code": "CSD",
+            "name": "Not Reported",
+            "value": 45989,
+            "division_code": "HUD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "6645",
-            "code": "CSD/HUD",
-            "name": "Academia"
+            "department_code": "CSD",
+            "name": "Academia",
+            "value": 7010,
+            "division_code": "HUD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "4336",
-            "code": "CSD/HUD",
-            "name": "Civil Society"
+            "department_code": "CSD",
+            "name": "Civil Society",
+            "value": 4570,
+            "division_code": "HUD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "4348",
-            "code": "CSD/HUD",
-            "name": "General"
+            "department_code": "CSD",
+            "name": "General",
+            "value": 4491,
+            "division_code": "HUD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "8924",
-            "code": "CSD/HUD",
-            "name": "Government"
+            "department_code": "CSD",
+            "name": "Government",
+            "value": 9593,
+            "division_code": "HUD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "420",
-            "code": "CSD/HUD",
-            "name": "Media"
+            "department_code": "CSD",
+            "name": "Media",
+            "value": 442,
+            "division_code": "HUD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "790",
-            "code": "CSD/HUD",
-            "name": "Multilateral Organization"
+            "department_code": "CSD",
+            "name": "Multilateral Organization",
+            "value": 828,
+            "division_code": "HUD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "9548",
-            "code": "CSD/HUD",
-            "name": "Private Sector"
+            "department_code": "CSD",
+            "name": "Private Sector",
+            "value": 10193,
+            "division_code": "HUD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1188",
-            "code": "CSD/HUD",
-            "name": "Research Center"
+            "department_code": "CSD",
+            "name": "Research Center",
+            "value": 1259,
+            "division_code": "HUD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "32272",
-            "code": "CSD/RND",
-            "name": "Not Reported"
+            "department_code": "CSD",
+            "name": "Not Reported",
+            "value": 33288,
+            "division_code": "RND"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "9514",
-            "code": "CSD/RND",
-            "name": "Academia"
+            "department_code": "CSD",
+            "name": "Academia",
+            "value": 10062,
+            "division_code": "RND"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "6476",
-            "code": "CSD/RND",
-            "name": "Civil Society"
+            "department_code": "CSD",
+            "name": "Civil Society",
+            "value": 6816,
+            "division_code": "RND"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "5950",
-            "code": "CSD/RND",
-            "name": "General"
+            "department_code": "CSD",
+            "name": "General",
+            "value": 6152,
+            "division_code": "RND"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "11980",
-            "code": "CSD/RND",
-            "name": "Government"
+            "department_code": "CSD",
+            "name": "Government",
+            "value": 12900,
+            "division_code": "RND"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "594",
-            "code": "CSD/RND",
-            "name": "Media"
+            "department_code": "CSD",
+            "name": "Media",
+            "value": 623,
+            "division_code": "RND"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1425",
-            "code": "CSD/RND",
-            "name": "Multilateral Organization"
+            "department_code": "CSD",
+            "name": "Multilateral Organization",
+            "value": 1511,
+            "division_code": "RND"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "13347",
-            "code": "CSD/RND",
-            "name": "Private Sector"
+            "department_code": "CSD",
+            "name": "Private Sector",
+            "value": 14225,
+            "division_code": "RND"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "2052",
-            "code": "CSD/RND",
-            "name": "Research Center"
+            "department_code": "CSD",
+            "name": "Research Center",
+            "value": 2148,
+            "division_code": "RND"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "6165",
-            "code": "IFD/CMF",
-            "name": "Not Reported"
+            "department_code": "IFD",
+            "name": "Not Reported",
+            "value": 6515,
+            "division_code": "CMF"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "4156",
-            "code": "IFD/CMF",
-            "name": "Academia"
+            "department_code": "IFD",
+            "name": "Academia",
+            "value": 4442,
+            "division_code": "CMF"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "2157",
-            "code": "IFD/CMF",
-            "name": "Civil Society"
+            "department_code": "IFD",
+            "name": "Civil Society",
+            "value": 2290,
+            "division_code": "CMF"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "2993",
-            "code": "IFD/CMF",
-            "name": "General"
+            "department_code": "IFD",
+            "name": "General",
+            "value": 3095,
+            "division_code": "CMF"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "5838",
-            "code": "IFD/CMF",
-            "name": "Government"
+            "department_code": "IFD",
+            "name": "Government",
+            "value": 6294,
+            "division_code": "CMF"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "382",
-            "code": "IFD/CMF",
-            "name": "Media"
+            "department_code": "IFD",
+            "name": "Media",
+            "value": 399,
+            "division_code": "CMF"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "535",
-            "code": "IFD/CMF",
-            "name": "Multilateral Organization"
+            "department_code": "IFD",
+            "name": "Multilateral Organization",
+            "value": 567,
+            "division_code": "CMF"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "8050",
-            "code": "IFD/CMF",
-            "name": "Private Sector"
+            "department_code": "IFD",
+            "name": "Private Sector",
+            "value": 8601,
+            "division_code": "CMF"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "872",
-            "code": "IFD/CMF",
-            "name": "Research Center"
+            "department_code": "IFD",
+            "name": "Research Center",
+            "value": 922,
+            "division_code": "CMF"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "10648",
-            "code": "IFD/CTI",
-            "name": "Not Reported"
+            "department_code": "IFD",
+            "name": "Not Reported",
+            "value": 11276,
+            "division_code": "CTI"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "7544",
-            "code": "IFD/CTI",
-            "name": "Academia"
+            "department_code": "IFD",
+            "name": "Academia",
+            "value": 8074,
+            "division_code": "CTI"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "3743",
-            "code": "IFD/CTI",
-            "name": "Civil Society"
+            "department_code": "IFD",
+            "name": "Civil Society",
+            "value": 3995,
+            "division_code": "CTI"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "4805",
-            "code": "IFD/CTI",
-            "name": "General"
+            "department_code": "IFD",
+            "name": "General",
+            "value": 5045,
+            "division_code": "CTI"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "8695",
-            "code": "IFD/CTI",
-            "name": "Government"
+            "department_code": "IFD",
+            "name": "Government",
+            "value": 9448,
+            "division_code": "CTI"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "583",
-            "code": "IFD/CTI",
-            "name": "Media"
+            "department_code": "IFD",
+            "name": "Media",
+            "value": 610,
+            "division_code": "CTI"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "838",
-            "code": "IFD/CTI",
-            "name": "Multilateral Organization"
+            "department_code": "IFD",
+            "name": "Multilateral Organization",
+            "value": 886,
+            "division_code": "CTI"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "10594",
-            "code": "IFD/CTI",
-            "name": "Private Sector"
+            "department_code": "IFD",
+            "name": "Private Sector",
+            "value": 11439,
+            "division_code": "CTI"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1565",
-            "code": "IFD/CTI",
-            "name": "Research Center"
+            "department_code": "IFD",
+            "name": "Research Center",
+            "value": 1658,
+            "division_code": "CTI"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "15681",
-            "code": "IFD/FMM",
-            "name": "Not Reported"
+            "department_code": "IFD",
+            "name": "Not Reported",
+            "value": 16130,
+            "division_code": "FMM"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "6528",
-            "code": "IFD/FMM",
-            "name": "Academia"
+            "department_code": "IFD",
+            "name": "Academia",
+            "value": 6876,
+            "division_code": "FMM"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "3556",
-            "code": "IFD/FMM",
-            "name": "Civil Society"
+            "department_code": "IFD",
+            "name": "Civil Society",
+            "value": 3752,
+            "division_code": "FMM"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "5290",
-            "code": "IFD/FMM",
-            "name": "General"
+            "department_code": "IFD",
+            "name": "General",
+            "value": 5452,
+            "division_code": "FMM"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "11169",
-            "code": "IFD/FMM",
-            "name": "Government"
+            "department_code": "IFD",
+            "name": "Government",
+            "value": 12078,
+            "division_code": "FMM"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "459",
-            "code": "IFD/FMM",
-            "name": "Media"
+            "department_code": "IFD",
+            "name": "Media",
+            "value": 476,
+            "division_code": "FMM"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "764",
-            "code": "IFD/FMM",
-            "name": "Multilateral Organization"
+            "department_code": "IFD",
+            "name": "Multilateral Organization",
+            "value": 817,
+            "division_code": "FMM"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "7623",
-            "code": "IFD/FMM",
-            "name": "Private Sector"
+            "department_code": "IFD",
+            "name": "Private Sector",
+            "value": 8131,
+            "division_code": "FMM"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1184",
-            "code": "IFD/FMM",
-            "name": "Research Center"
+            "department_code": "IFD",
+            "name": "Research Center",
+            "value": 1240,
+            "division_code": "FMM"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "16346",
-            "code": "IFD/ICS",
-            "name": "Not Reported"
+            "department_code": "IFD",
+            "name": "Not Reported",
+            "value": 16909,
+            "division_code": "ICS"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "6937",
-            "code": "IFD/ICS",
-            "name": "Academia"
+            "department_code": "IFD",
+            "name": "Academia",
+            "value": 7319,
+            "division_code": "ICS"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "4182",
-            "code": "IFD/ICS",
-            "name": "Civil Society"
+            "department_code": "IFD",
+            "name": "Civil Society",
+            "value": 4412,
+            "division_code": "ICS"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "5462",
-            "code": "IFD/ICS",
-            "name": "General"
+            "department_code": "IFD",
+            "name": "General",
+            "value": 5652,
+            "division_code": "ICS"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "12637",
-            "code": "IFD/ICS",
-            "name": "Government"
+            "department_code": "IFD",
+            "name": "Government",
+            "value": 13565,
+            "division_code": "ICS"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "554",
-            "code": "IFD/ICS",
-            "name": "Media"
+            "department_code": "IFD",
+            "name": "Media",
+            "value": 578,
+            "division_code": "ICS"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "934",
-            "code": "IFD/ICS",
-            "name": "Multilateral Organization"
+            "department_code": "IFD",
+            "name": "Multilateral Organization",
+            "value": 990,
+            "division_code": "ICS"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "8075",
-            "code": "IFD/ICS",
-            "name": "Private Sector"
+            "department_code": "IFD",
+            "name": "Private Sector",
+            "value": 8592,
+            "division_code": "ICS"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1415",
-            "code": "IFD/ICS",
-            "name": "Research Center"
+            "department_code": "IFD",
+            "name": "Research Center",
+            "value": 1469,
+            "division_code": "ICS"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "5636",
-            "code": "INE/ENE",
-            "name": "Not Reported"
+            "department_code": "INE",
+            "name": "Not Reported",
+            "value": 5991,
+            "division_code": "ENE"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "4255",
-            "code": "INE/ENE",
-            "name": "Academia"
+            "department_code": "INE",
+            "name": "Academia",
+            "value": 4529,
+            "division_code": "ENE"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "2589",
-            "code": "INE/ENE",
-            "name": "Civil Society"
+            "department_code": "INE",
+            "name": "Civil Society",
+            "value": 2720,
+            "division_code": "ENE"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "3199",
-            "code": "INE/ENE",
-            "name": "General"
+            "department_code": "INE",
+            "name": "General",
+            "value": 3324,
+            "division_code": "ENE"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "5249",
-            "code": "INE/ENE",
-            "name": "Government"
+            "department_code": "INE",
+            "name": "Government",
+            "value": 5671,
+            "division_code": "ENE"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "286",
-            "code": "INE/ENE",
-            "name": "Media"
+            "department_code": "INE",
+            "name": "Media",
+            "value": 305,
+            "division_code": "ENE"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "525",
-            "code": "INE/ENE",
-            "name": "Multilateral Organization"
+            "department_code": "INE",
+            "name": "Multilateral Organization",
+            "value": 553,
+            "division_code": "ENE"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "8108",
-            "code": "INE/ENE",
-            "name": "Private Sector"
+            "department_code": "INE",
+            "name": "Private Sector",
+            "value": 8596,
+            "division_code": "ENE"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "908",
-            "code": "INE/ENE",
-            "name": "Research Center"
+            "department_code": "INE",
+            "name": "Research Center",
+            "value": 956,
+            "division_code": "ENE"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "7109",
-            "code": "INE/TSP",
-            "name": "Not Reported"
+            "department_code": "INE",
+            "name": "Not Reported",
+            "value": 7383,
+            "division_code": "TSP"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "3736",
-            "code": "INE/TSP",
-            "name": "Academia"
+            "department_code": "INE",
+            "name": "Academia",
+            "value": 3987,
+            "division_code": "TSP"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "2232",
-            "code": "INE/TSP",
-            "name": "Civil Society"
+            "department_code": "INE",
+            "name": "Civil Society",
+            "value": 2345,
+            "division_code": "TSP"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "3271",
-            "code": "INE/TSP",
-            "name": "General"
+            "department_code": "INE",
+            "name": "General",
+            "value": 3374,
+            "division_code": "TSP"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "5324",
-            "code": "INE/TSP",
-            "name": "Government"
+            "department_code": "INE",
+            "name": "Government",
+            "value": 5729,
+            "division_code": "TSP"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "365",
-            "code": "INE/TSP",
-            "name": "Media"
+            "department_code": "INE",
+            "name": "Media",
+            "value": 375,
+            "division_code": "TSP"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "490",
-            "code": "INE/TSP",
-            "name": "Multilateral Organization"
+            "department_code": "INE",
+            "name": "Multilateral Organization",
+            "value": 510,
+            "division_code": "TSP"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "6382",
-            "code": "INE/TSP",
-            "name": "Private Sector"
+            "department_code": "INE",
+            "name": "Private Sector",
+            "value": 6806,
+            "division_code": "TSP"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "782",
-            "code": "INE/TSP",
-            "name": "Research Center"
+            "department_code": "INE",
+            "name": "Research Center",
+            "value": 827,
+            "division_code": "TSP"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "16857",
-            "code": "INE/WSA",
-            "name": "Not Reported"
+            "department_code": "INE",
+            "name": "Not Reported",
+            "value": 17309,
+            "division_code": "WSA"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "5641",
-            "code": "INE/WSA",
-            "name": "Academia"
+            "department_code": "INE",
+            "name": "Academia",
+            "value": 5960,
+            "division_code": "WSA"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "4615",
-            "code": "INE/WSA",
-            "name": "Civil Society"
+            "department_code": "INE",
+            "name": "Civil Society",
+            "value": 4839,
+            "division_code": "WSA"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "3593",
-            "code": "INE/WSA",
-            "name": "General"
+            "department_code": "INE",
+            "name": "General",
+            "value": 3719,
+            "division_code": "WSA"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "8280",
-            "code": "INE/WSA",
-            "name": "Government"
+            "department_code": "INE",
+            "name": "Government",
+            "value": 8888,
+            "division_code": "WSA"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "340",
-            "code": "INE/WSA",
-            "name": "Media"
+            "department_code": "INE",
+            "name": "Media",
+            "value": 360,
+            "division_code": "WSA"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "779",
-            "code": "INE/WSA",
-            "name": "Multilateral Organization"
+            "department_code": "INE",
+            "name": "Multilateral Organization",
+            "value": 819,
+            "division_code": "WSA"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "9158",
-            "code": "INE/WSA",
-            "name": "Private Sector"
+            "department_code": "INE",
+            "name": "Private Sector",
+            "value": 9704,
+            "division_code": "WSA"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1208",
-            "code": "INE/WSA",
-            "name": "Research Center"
+            "department_code": "INE",
+            "name": "Research Center",
+            "value": 1268,
+            "division_code": "WSA"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "17177",
-            "code": "INT/TIN",
-            "name": "Not Reported"
+            "department_code": "INT",
+            "name": "Not Reported",
+            "value": 17829,
+            "division_code": "TIN"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "6876",
-            "code": "INT/TIN",
-            "name": "Academia"
+            "department_code": "INT",
+            "name": "Academia",
+            "value": 7213,
+            "division_code": "TIN"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "3435",
-            "code": "INT/TIN",
-            "name": "Civil Society"
+            "department_code": "INT",
+            "name": "Civil Society",
+            "value": 3633,
+            "division_code": "TIN"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "5833",
-            "code": "INT/TIN",
-            "name": "General"
+            "department_code": "INT",
+            "name": "General",
+            "value": 6013,
+            "division_code": "TIN"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "7612",
-            "code": "INT/TIN",
-            "name": "Government"
+            "department_code": "INT",
+            "name": "Government",
+            "value": 8289,
+            "division_code": "TIN"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "522",
-            "code": "INT/TIN",
-            "name": "Media"
+            "department_code": "INT",
+            "name": "Media",
+            "value": 552,
+            "division_code": "TIN"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "782",
-            "code": "INT/TIN",
-            "name": "Multilateral Organization"
+            "department_code": "INT",
+            "name": "Multilateral Organization",
+            "value": 830,
+            "division_code": "TIN"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "9557",
-            "code": "INT/TIN",
-            "name": "Private Sector"
+            "department_code": "INT",
+            "name": "Private Sector",
+            "value": 10048,
+            "division_code": "TIN"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1306",
-            "code": "INT/TIN",
-            "name": "Research Center"
+            "department_code": "INT",
+            "name": "Research Center",
+            "value": 1372,
+            "division_code": "TIN"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "52916",
-            "code": "KIC/DCC",
-            "name": "Not Reported"
+            "department_code": "KIC",
+            "name": "Not Reported",
+            "value": 52917,
+            "division_code": "DCC"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "4192",
-            "code": "KIC/DCC",
-            "name": "Academia"
+            "department_code": "KIC",
+            "name": "Academia",
+            "value": 4194,
+            "division_code": "DCC"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "2328",
-            "code": "KIC/DCC",
-            "name": "Civil Society"
+            "department_code": "KIC",
+            "name": "Civil Society",
+            "value": 2329,
+            "division_code": "DCC"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "7659",
-            "code": "KIC/DCC",
-            "name": "General"
+            "department_code": "KIC",
+            "name": "General",
+            "value": 7660,
+            "division_code": "DCC"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "5132",
-            "code": "KIC/DCC",
-            "name": "Government"
+            "department_code": "KIC",
+            "name": "Government",
+            "value": 5134,
+            "division_code": "DCC"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "715",
-            "code": "KIC/DCC",
-            "name": "Media"
+            "department_code": "KIC",
+            "name": "Media",
+            "value": 715,
+            "division_code": "DCC"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "725",
-            "code": "KIC/DCC",
-            "name": "Multilateral Organization"
+            "department_code": "KIC",
+            "name": "Multilateral Organization",
+            "value": 725,
+            "division_code": "DCC"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "4687",
-            "code": "KIC/DCC",
-            "name": "Private Sector"
+            "department_code": "KIC",
+            "name": "Private Sector",
+            "value": 4692,
+            "division_code": "DCC"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "491",
-            "code": "KIC/DCC",
-            "name": "Research Center"
+            "department_code": "KIC",
+            "name": "Research Center",
+            "value": 492,
+            "division_code": "DCC"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "17023",
-            "code": "KIC/ICD",
-            "name": "Not Reported"
+            "department_code": "KIC",
+            "name": "Not Reported",
+            "value": 17469,
+            "division_code": "ICD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "5916",
-            "code": "KIC/ICD",
-            "name": "Academia"
+            "department_code": "KIC",
+            "name": "Academia",
+            "value": 6024,
+            "division_code": "ICD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "6146",
-            "code": "KIC/ICD",
-            "name": "Civil Society"
+            "department_code": "KIC",
+            "name": "Civil Society",
+            "value": 6282,
+            "division_code": "ICD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "5954",
-            "code": "KIC/ICD",
-            "name": "General"
+            "department_code": "KIC",
+            "name": "General",
+            "value": 6075,
+            "division_code": "ICD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "4296",
-            "code": "KIC/ICD",
-            "name": "Government"
+            "department_code": "KIC",
+            "name": "Government",
+            "value": 4439,
+            "division_code": "ICD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "881",
-            "code": "KIC/ICD",
-            "name": "Media"
+            "department_code": "KIC",
+            "name": "Media",
+            "value": 907,
+            "division_code": "ICD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "831",
-            "code": "KIC/ICD",
-            "name": "Multilateral Organization"
+            "department_code": "KIC",
+            "name": "Multilateral Organization",
+            "value": 863,
+            "division_code": "ICD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "9459",
-            "code": "KIC/ICD",
-            "name": "Private Sector"
+            "department_code": "KIC",
+            "name": "Private Sector",
+            "value": 9633,
+            "division_code": "ICD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1162",
-            "code": "KIC/ICD",
-            "name": "Research Center"
+            "department_code": "KIC",
+            "name": "Research Center",
+            "value": 1188,
+            "division_code": "ICD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "277897",
-            "code": "KIC/KLD",
-            "name": "Not Reported"
+            "department_code": "KIC",
+            "name": "Not Reported",
+            "value": 280520,
+            "division_code": "KLD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "19845",
-            "code": "KIC/KLD",
-            "name": "Academia"
+            "department_code": "KIC",
+            "name": "Academia",
+            "value": 20726,
+            "division_code": "KLD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "9262",
-            "code": "KIC/KLD",
-            "name": "Civil Society"
+            "department_code": "KIC",
+            "name": "Civil Society",
+            "value": 9794,
+            "division_code": "KLD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "9662",
-            "code": "KIC/KLD",
-            "name": "General"
+            "department_code": "KIC",
+            "name": "General",
+            "value": 10092,
+            "division_code": "KLD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "28166",
-            "code": "KIC/KLD",
-            "name": "Government"
+            "department_code": "KIC",
+            "name": "Government",
+            "value": 29960,
+            "division_code": "KLD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "908",
-            "code": "KIC/KLD",
-            "name": "Media"
+            "department_code": "KIC",
+            "name": "Media",
+            "value": 960,
+            "division_code": "KLD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "2571",
-            "code": "KIC/KLD",
-            "name": "Multilateral Organization"
+            "department_code": "KIC",
+            "name": "Multilateral Organization",
+            "value": 2713,
+            "division_code": "KLD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "20187",
-            "code": "KIC/KLD",
-            "name": "Private Sector"
+            "department_code": "KIC",
+            "name": "Private Sector",
+            "value": 21482,
+            "division_code": "KLD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "2590",
-            "code": "KIC/KLD",
-            "name": "Research Center"
+            "department_code": "KIC",
+            "name": "Research Center",
+            "value": 2722,
+            "division_code": "KLD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "16883",
-            "code": "RES/RES",
-            "name": "Not Reported"
+            "department_code": "RES",
+            "name": "Not Reported",
+            "value": 17146,
+            "division_code": "RES"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "6808",
-            "code": "RES/RES",
-            "name": "Academia"
+            "department_code": "RES",
+            "name": "Academia",
+            "value": 6990,
+            "division_code": "RES"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "3464",
-            "code": "RES/RES",
-            "name": "Civil Society"
+            "department_code": "RES",
+            "name": "Civil Society",
+            "value": 3560,
+            "division_code": "RES"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "5032",
-            "code": "RES/RES",
-            "name": "General"
+            "department_code": "RES",
+            "name": "General",
+            "value": 5200,
+            "division_code": "RES"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "6510",
-            "code": "RES/RES",
-            "name": "Government"
+            "department_code": "RES",
+            "name": "Government",
+            "value": 6706,
+            "division_code": "RES"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "444",
-            "code": "RES/RES",
-            "name": "Media"
+            "department_code": "RES",
+            "name": "Media",
+            "value": 458,
+            "division_code": "RES"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "3206",
-            "code": "RES/RES",
-            "name": "Multilateral Organization"
+            "department_code": "RES",
+            "name": "Multilateral Organization",
+            "value": 3496,
+            "division_code": "RES"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "6867",
-            "code": "RES/RES",
-            "name": "Private Sector"
+            "department_code": "RES",
+            "name": "Private Sector",
+            "value": 7042,
+            "division_code": "RES"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1236",
-            "code": "RES/RES",
-            "name": "Research Center"
+            "department_code": "RES",
+            "name": "Research Center",
+            "value": 1270,
+            "division_code": "RES"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "21104",
-            "code": "SCL/EDU",
-            "name": "Not Reported"
+            "department_code": "SCL",
+            "name": "Not Reported",
+            "value": 21697,
+            "division_code": "EDU"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "10247",
-            "code": "SCL/EDU",
-            "name": "Academia"
+            "department_code": "SCL",
+            "name": "Academia",
+            "value": 10858,
+            "division_code": "EDU"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "4862",
-            "code": "SCL/EDU",
-            "name": "Civil Society"
+            "department_code": "SCL",
+            "name": "Civil Society",
+            "value": 5216,
+            "division_code": "EDU"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "6266",
-            "code": "SCL/EDU",
-            "name": "General"
+            "department_code": "SCL",
+            "name": "General",
+            "value": 6600,
+            "division_code": "EDU"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "9297",
-            "code": "SCL/EDU",
-            "name": "Government"
+            "department_code": "SCL",
+            "name": "Government",
+            "value": 10144,
+            "division_code": "EDU"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "510",
-            "code": "SCL/EDU",
-            "name": "Media"
+            "department_code": "SCL",
+            "name": "Media",
+            "value": 546,
+            "division_code": "EDU"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "769",
-            "code": "SCL/EDU",
-            "name": "Multilateral Organization"
+            "department_code": "SCL",
+            "name": "Multilateral Organization",
+            "value": 842,
+            "division_code": "EDU"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "8366",
-            "code": "SCL/EDU",
-            "name": "Private Sector"
+            "department_code": "SCL",
+            "name": "Private Sector",
+            "value": 9116,
+            "division_code": "EDU"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1418",
-            "code": "SCL/EDU",
-            "name": "Research Center"
+            "department_code": "SCL",
+            "name": "Research Center",
+            "value": 1508,
+            "division_code": "EDU"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "5521",
-            "code": "SCL/GDI",
-            "name": "Not Reported"
+            "department_code": "SCL",
+            "name": "Not Reported",
+            "value": 6028,
+            "division_code": "GDI"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "4608",
-            "code": "SCL/GDI",
-            "name": "Academia"
+            "department_code": "SCL",
+            "name": "Academia",
+            "value": 5023,
+            "division_code": "GDI"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "3966",
-            "code": "SCL/GDI",
-            "name": "Civil Society"
+            "department_code": "SCL",
+            "name": "Civil Society",
+            "value": 4317,
+            "division_code": "GDI"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "3912",
-            "code": "SCL/GDI",
-            "name": "General"
+            "department_code": "SCL",
+            "name": "General",
+            "value": 4079,
+            "division_code": "GDI"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "7969",
-            "code": "SCL/GDI",
-            "name": "Government"
+            "department_code": "SCL",
+            "name": "Government",
+            "value": 8865,
+            "division_code": "GDI"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "400",
-            "code": "SCL/GDI",
-            "name": "Media"
+            "department_code": "SCL",
+            "name": "Media",
+            "value": 425,
+            "division_code": "GDI"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1183",
-            "code": "SCL/GDI",
-            "name": "Multilateral Organization"
+            "department_code": "SCL",
+            "name": "Multilateral Organization",
+            "value": 1269,
+            "division_code": "GDI"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "6166",
-            "code": "SCL/GDI",
-            "name": "Private Sector"
+            "department_code": "SCL",
+            "name": "Private Sector",
+            "value": 6867,
+            "division_code": "GDI"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "889",
-            "code": "SCL/GDI",
-            "name": "Research Center"
+            "department_code": "SCL",
+            "name": "Research Center",
+            "value": 970,
+            "division_code": "GDI"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "7186",
-            "code": "SCL/LMK",
-            "name": "Not Reported"
+            "department_code": "SCL",
+            "name": "Not Reported",
+            "value": 7710,
+            "division_code": "LMK"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "5781",
-            "code": "SCL/LMK",
-            "name": "Academia"
+            "department_code": "SCL",
+            "name": "Academia",
+            "value": 6208,
+            "division_code": "LMK"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "3962",
-            "code": "SCL/LMK",
-            "name": "Civil Society"
+            "department_code": "SCL",
+            "name": "Civil Society",
+            "value": 4293,
+            "division_code": "LMK"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "3850",
-            "code": "SCL/LMK",
-            "name": "General"
+            "department_code": "SCL",
+            "name": "General",
+            "value": 4018,
+            "division_code": "LMK"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "8128",
-            "code": "SCL/LMK",
-            "name": "Government"
+            "department_code": "SCL",
+            "name": "Government",
+            "value": 9032,
+            "division_code": "LMK"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "470",
-            "code": "SCL/LMK",
-            "name": "Media"
+            "department_code": "SCL",
+            "name": "Media",
+            "value": 496,
+            "division_code": "LMK"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "791",
-            "code": "SCL/LMK",
-            "name": "Multilateral Organization"
+            "department_code": "SCL",
+            "name": "Multilateral Organization",
+            "value": 849,
+            "division_code": "LMK"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "7833",
-            "code": "SCL/LMK",
-            "name": "Private Sector"
+            "department_code": "SCL",
+            "name": "Private Sector",
+            "value": 8544,
+            "division_code": "LMK"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1075",
-            "code": "SCL/LMK",
-            "name": "Research Center"
+            "department_code": "SCL",
+            "name": "Research Center",
+            "value": 1158,
+            "division_code": "LMK"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "24890",
-            "code": "SCL/SPH",
-            "name": "Not Reported"
+            "department_code": "SCL",
+            "name": "Not Reported",
+            "value": 25848,
+            "division_code": "SPH"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "8793",
-            "code": "SCL/SPH",
-            "name": "Academia"
+            "department_code": "SCL",
+            "name": "Academia",
+            "value": 9368,
+            "division_code": "SPH"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "6127",
-            "code": "SCL/SPH",
-            "name": "Civil Society"
+            "department_code": "SCL",
+            "name": "Civil Society",
+            "value": 6555,
+            "division_code": "SPH"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "7810",
-            "code": "SCL/SPH",
-            "name": "General"
+            "department_code": "SCL",
+            "name": "General",
+            "value": 8174,
+            "division_code": "SPH"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "12469",
-            "code": "SCL/SPH",
-            "name": "Government"
+            "department_code": "SCL",
+            "name": "Government",
+            "value": 13619,
+            "division_code": "SPH"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "686",
-            "code": "SCL/SPH",
-            "name": "Media"
+            "department_code": "SCL",
+            "name": "Media",
+            "value": 719,
+            "division_code": "SPH"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1168",
-            "code": "SCL/SPH",
-            "name": "Multilateral Organization"
+            "department_code": "SCL",
+            "name": "Multilateral Organization",
+            "value": 1250,
+            "division_code": "SPH"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "10314",
-            "code": "SCL/SPH",
-            "name": "Private Sector"
+            "department_code": "SCL",
+            "name": "Private Sector",
+            "value": 11209,
+            "division_code": "SPH"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1493",
-            "code": "SCL/SPH",
-            "name": "Research Center"
+            "department_code": "SCL",
+            "name": "Research Center",
+            "value": 1600,
+            "division_code": "SPH"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1411",
-            "code": "SPD/SPD",
-            "name": "Not Reported"
+            "department_code": "SPD",
+            "name": "Not Reported",
+            "value": 1423,
+            "division_code": "SPD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1524",
-            "code": "SPD/SPD",
-            "name": "Academia"
+            "department_code": "SPD",
+            "name": "Academia",
+            "value": 1547,
+            "division_code": "SPD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "936",
-            "code": "SPD/SPD",
-            "name": "Civil Society"
+            "department_code": "SPD",
+            "name": "Civil Society",
+            "value": 956,
+            "division_code": "SPD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1114",
-            "code": "SPD/SPD",
-            "name": "General"
+            "department_code": "SPD",
+            "name": "General",
+            "value": 1136,
+            "division_code": "SPD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1697",
-            "code": "SPD/SPD",
-            "name": "Government"
+            "department_code": "SPD",
+            "name": "Government",
+            "value": 1717,
+            "division_code": "SPD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "92",
-            "code": "SPD/SPD",
-            "name": "Media"
+            "department_code": "SPD",
+            "name": "Media",
+            "value": 92,
+            "division_code": "SPD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "265",
-            "code": "SPD/SPD",
-            "name": "Multilateral Organization"
+            "department_code": "SPD",
+            "name": "Multilateral Organization",
+            "value": 275,
+            "division_code": "SPD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1739",
-            "code": "SPD/SPD",
-            "name": "Private Sector"
+            "department_code": "SPD",
+            "name": "Private Sector",
+            "value": 1758,
+            "division_code": "SPD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "302",
-            "code": "SPD/SPD",
-            "name": "Research Center"
+            "department_code": "SPD",
+            "name": "Research Center",
+            "value": 304,
+            "division_code": "SPD"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "VPC/CAR",
-            "name": "Not Reported"
+            "department_code": "VPC",
+            "name": "Not Reported",
+            "value": 0,
+            "division_code": "CAR"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "VPC/CAR",
-            "name": "Academia"
+            "department_code": "VPC",
+            "name": "Academia",
+            "value": 0,
+            "division_code": "CAR"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "VPC/CAR",
-            "name": "Civil Society"
+            "department_code": "VPC",
+            "name": "Civil Society",
+            "value": 0,
+            "division_code": "CAR"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "VPC/CAR",
-            "name": "General"
+            "department_code": "VPC",
+            "name": "General",
+            "value": 0,
+            "division_code": "CAR"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "VPC/CAR",
-            "name": "Government"
+            "department_code": "VPC",
+            "name": "Government",
+            "value": 0,
+            "division_code": "CAR"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "VPC/CAR",
-            "name": "Media"
+            "department_code": "VPC",
+            "name": "Media",
+            "value": 0,
+            "division_code": "CAR"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "VPC/CAR",
-            "name": "Multilateral Organization"
+            "department_code": "VPC",
+            "name": "Multilateral Organization",
+            "value": 0,
+            "division_code": "CAR"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1",
-            "code": "VPC/CAR",
-            "name": "Private Sector"
+            "department_code": "VPC",
+            "name": "Private Sector",
+            "value": 1,
+            "division_code": "CAR"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "VPC/CAR",
-            "name": "Research Center"
+            "department_code": "VPC",
+            "name": "Research Center",
+            "value": 0,
+            "division_code": "CAR"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "VPC/CHA",
-            "name": "Not Reported"
+            "department_code": "CHA",
+            "name": "Not Reported",
+            "value": 0,
+            "division_code": "CHA"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "VPC/CHA",
-            "name": "Academia"
+            "department_code": "CHA",
+            "name": "Academia",
+            "value": 0,
+            "division_code": "CHA"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "VPC/CHA",
-            "name": "Civil Society"
+            "department_code": "CHA",
+            "name": "Civil Society",
+            "value": 0,
+            "division_code": "CHA"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "VPC/CHA",
-            "name": "General"
+            "department_code": "CHA",
+            "name": "General",
+            "value": 0,
+            "division_code": "CHA"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "VPC/CHA",
-            "name": "Government"
+            "department_code": "CHA",
+            "name": "Government",
+            "value": 0,
+            "division_code": "CHA"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "VPC/CHA",
-            "name": "Media"
+            "department_code": "CHA",
+            "name": "Media",
+            "value": 0,
+            "division_code": "CHA"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "VPC/CHA",
-            "name": "Multilateral Organization"
+            "department_code": "CHA",
+            "name": "Multilateral Organization",
+            "value": 0,
+            "division_code": "CHA"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1",
-            "code": "VPC/CHA",
-            "name": "Private Sector"
+            "department_code": "CHA",
+            "name": "Private Sector",
+            "value": 1,
+            "division_code": "CHA"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "code": "VPC/CHA",
-            "name": "Research Center"
+            "department_code": "CHA",
+            "name": "Research Center",
+            "value": 0,
+            "division_code": "CHA"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "769",
-            "code": "VPC/CUR",
-            "name": "Not Reported"
+            "department_code": "VPC",
+            "name": "Not Reported",
+            "value": 769,
+            "division_code": "CUR"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "181",
-            "code": "VPC/CUR",
-            "name": "Academia"
+            "department_code": "VPC",
+            "name": "Academia",
+            "value": 181,
+            "division_code": "CUR"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "124",
-            "code": "VPC/CUR",
-            "name": "Civil Society"
+            "department_code": "VPC",
+            "name": "Civil Society",
+            "value": 124,
+            "division_code": "CUR"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "211",
-            "code": "VPC/CUR",
-            "name": "General"
+            "department_code": "VPC",
+            "name": "General",
+            "value": 211,
+            "division_code": "CUR"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "379",
-            "code": "VPC/CUR",
-            "name": "Government"
+            "department_code": "VPC",
+            "name": "Government",
+            "value": 379,
+            "division_code": "CUR"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "24",
-            "code": "VPC/CUR",
-            "name": "Media"
+            "department_code": "VPC",
+            "name": "Media",
+            "value": 24,
+            "division_code": "CUR"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "32",
-            "code": "VPC/CUR",
-            "name": "Multilateral Organization"
+            "department_code": "VPC",
+            "name": "Multilateral Organization",
+            "value": 32,
+            "division_code": "CUR"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "236",
-            "code": "VPC/CUR",
-            "name": "Private Sector"
+            "department_code": "VPC",
+            "name": "Private Sector",
+            "value": 236,
+            "division_code": "CUR"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "37",
-            "code": "VPC/CUR",
-            "name": "Research Center"
+            "department_code": "VPC",
+            "name": "Research Center",
+            "value": 37,
+            "division_code": "CUR"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "17628",
-            "code": "VPS/ESG",
-            "name": "Not Reported"
+            "department_code": "VPS",
+            "name": "Not Reported",
+            "value": 18349,
+            "division_code": "ESG"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "7680",
-            "code": "VPS/ESG",
-            "name": "Academia"
+            "department_code": "VPS",
+            "name": "Academia",
+            "value": 8142,
+            "division_code": "ESG"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "5345",
-            "code": "VPS/ESG",
-            "name": "Civil Society"
+            "department_code": "VPS",
+            "name": "Civil Society",
+            "value": 5639,
+            "division_code": "ESG"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "4694",
-            "code": "VPS/ESG",
-            "name": "General"
+            "department_code": "VPS",
+            "name": "General",
+            "value": 4871,
+            "division_code": "ESG"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "9594",
-            "code": "VPS/ESG",
-            "name": "Government"
+            "department_code": "VPS",
+            "name": "Government",
+            "value": 10378,
+            "division_code": "ESG"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "502",
-            "code": "VPS/ESG",
-            "name": "Media"
+            "department_code": "VPS",
+            "name": "Media",
+            "value": 529,
+            "division_code": "ESG"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1021",
-            "code": "VPS/ESG",
-            "name": "Multilateral Organization"
+            "department_code": "VPS",
+            "name": "Multilateral Organization",
+            "value": 1081,
+            "division_code": "ESG"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "10623",
-            "code": "VPS/ESG",
-            "name": "Private Sector"
+            "department_code": "VPS",
+            "name": "Private Sector",
+            "value": 11359,
+            "division_code": "ESG"
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "value": "1624",
-            "code": "VPS/ESG",
-            "name": "Research Center"
+            "department_code": "VPS",
+            "name": "Research Center",
+            "value": 1700,
+            "division_code": "ESG"
         }
     ],
-    institutionIDB: [
-        {
-            "value": 385303,
-            "name": "Not Reported"
+    institutionIDB: [{
+            "name": "Not Reported",
+            "value": 389330
         },
         {
-            "value": 41502,
-            "name": "Academia"
+            "name": "Academia",
+            "value": 42591
         },
         {
-            "value": 23124,
-            "name": "Civil Society"
+            "name": "Civil Society",
+            "value": 23766
         },
         {
-            "value": 41077,
-            "name": "General"
+            "name": "General",
+            "value": 41832
         },
         {
-            "value": 45551,
-            "name": "Government"
+            "name": "Government",
+            "value": 47544
         },
         {
-            "value": 3581,
-            "name": "Media"
+            "name": "Media",
+            "value": 3666
         },
         {
-            "value": 6955,
-            "name": "Multilateral Organization"
+            "name": "Multilateral Organization",
+            "value": 7387
         },
         {
-            "value": 46050,
-            "name": "Private Sector"
+            "name": "Private Sector",
+            "value": 47555
         },
         {
-            "value": 6194,
-            "name": "Research Center"
+            "name": "Research Center",
+            "value": 6357
         }
     ]
 };

@@ -1,1298 +1,703 @@
 var codePageviewsSourceArrays = {
     pageviewSourceDepartments: [{
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "NA",
-            "All the time pageviews": 15,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "% of Total Pageviews along Department Codes": "0.294117647058824",
-            "Pageview Source": "Bing",
-            "xlsx_row_id": 2
+            "department_codes": "IFD",
+            "name": "Bing",
+            "valueAllTheTime": 1,
+            "value2018": 0
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "NA",
-            "All the time pageviews": 3643,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "% of Total Pageviews along Department Codes": "0.220680881996608",
-            "Pageview Source": "Code Website",
-            "xlsx_row_id": 3
+            "department_codes": "IFD",
+            "name": "Code Website",
+            "valueAllTheTime": 1126,
+            "value2018": 429
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "NA",
-            "All the time pageviews": 234,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "% of Total Pageviews along Department Codes": "0.0549295774647887",
-            "Pageview Source": "Facebook",
-            "xlsx_row_id": 4
+            "department_codes": "IFD",
+            "name": "Facebook",
+            "valueAllTheTime": 42,
+            "value2018": 6
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "NA",
-            "All the time pageviews": 704,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "% of Total Pageviews along Department Codes": "0.137071651090343",
-            "Pageview Source": "Google",
-            "xlsx_row_id": 5
+            "department_codes": "IFD",
+            "name": "Google",
+            "valueAllTheTime": 468,
+            "value2018": 198
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "NA",
-            "All the time pageviews": 1,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "% of Total Pageviews along Department Codes": "0.166666666666667",
-            "Pageview Source": "IDB Blogs",
-            "xlsx_row_id": 6
+            "department_codes": "IFD",
+            "name": "IDB Blogs",
+            "valueAllTheTime": 1,
+            "value2018": 0
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "NA",
-            "All the time pageviews": 1,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "% of Total Pageviews along Department Codes": "0.0384615384615385",
-            "Pageview Source": "LinkedIn",
-            "xlsx_row_id": 7
+            "department_codes": "IFD",
+            "name": "Others",
+            "valueAllTheTime": 323,
+            "value2018": 112
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "NA",
-            "All the time pageviews": 977,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "% of Total Pageviews along Department Codes": "0.172889754025836",
-            "Pageview Source": "Others",
-            "xlsx_row_id": 8
+            "department_codes": "IFD",
+            "name": "Twitter",
+            "valueAllTheTime": 120,
+            "value2018": 100
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "NA",
-            "All the time pageviews": 65,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "% of Total Pageviews along Department Codes": "0.0218781555031976",
-            "Pageview Source": "Twitter",
-            "xlsx_row_id": 9
+            "department_codes": "INE",
+            "name": "Bing",
+            "valueAllTheTime": 13,
+            "value2018": 0
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "IFD",
-            "All the time pageviews": 1,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "% of Total Pageviews along Department Codes": "0.0196078431372549",
-            "Pageview Source": "Bing",
-            "xlsx_row_id": 10
+            "department_codes": "INE",
+            "name": "Code Website",
+            "valueAllTheTime": 2875,
+            "value2018": 0
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "IFD",
-            "All the time pageviews": 1076,
-            "2018 pageviews": "429",
-            "2018 % total pageviews": "0.168037602820212",
-            "% of Total Pageviews along Department Codes": "0.0651805185364672",
-            "Pageview Source": "Code Website",
-            "xlsx_row_id": 11
+            "department_codes": "INE",
+            "name": "Facebook",
+            "valueAllTheTime": 1557,
+            "value2018": 0
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "IFD",
-            "All the time pageviews": 42,
-            "2018 pageviews": "6",
-            "2018 % total pageviews": "0.00235017626321974",
-            "% of Total Pageviews along Department Codes": "0.00985915492957747",
-            "Pageview Source": "Facebook",
-            "xlsx_row_id": 12
+            "department_codes": "INE",
+            "name": "Google",
+            "valueAllTheTime": 1998,
+            "value2018": 0
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "IFD",
-            "All the time pageviews": 435,
-            "2018 pageviews": "198",
-            "2018 % total pageviews": "0.0775558166862515",
-            "% of Total Pageviews along Department Codes": "0.084696261682243",
-            "Pageview Source": "Google",
-            "xlsx_row_id": 13
+            "department_codes": "INE",
+            "name": "LinkedIn",
+            "valueAllTheTime": 5,
+            "value2018": 0
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "IFD",
-            "All the time pageviews": 1,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "% of Total Pageviews along Department Codes": "0.166666666666667",
-            "Pageview Source": "IDB Blogs",
-            "xlsx_row_id": 14
+            "department_codes": "INE",
+            "name": "Others",
+            "valueAllTheTime": 1326,
+            "value2018": 0
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "IFD",
-            "All the time pageviews": 306,
-            "2018 pageviews": "112",
-            "2018 % total pageviews": "0.0438699569134352",
-            "% of Total Pageviews along Department Codes": "0.0541497080162803",
-            "Pageview Source": "Others",
-            "xlsx_row_id": 15
+            "department_codes": "INE",
+            "name": "Twitter",
+            "valueAllTheTime": 324,
+            "value2018": 0
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "IFD",
-            "All the time pageviews": 116,
-            "2018 pageviews": "100",
-            "2018 % total pageviews": "0.0391696043869957",
-            "% of Total Pageviews along Department Codes": "0.0390440928980141",
-            "Pageview Source": "Twitter",
-            "xlsx_row_id": 16
+            "department_codes": "KIC",
+            "name": "Bing",
+            "valueAllTheTime": 13,
+            "value2018": 1
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "INE",
-            "All the time pageviews": 13,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "% of Total Pageviews along Department Codes": "0.254901960784314",
-            "Pageview Source": "Bing",
-            "xlsx_row_id": 17
+            "department_codes": "KIC",
+            "name": "Code Website",
+            "valueAllTheTime": 6467,
+            "value2018": 626
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "INE",
-            "All the time pageviews": 2829,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "% of Total Pageviews along Department Codes": "0.17137145626363",
-            "Pageview Source": "Code Website",
-            "xlsx_row_id": 18
+            "department_codes": "KIC",
+            "name": "Facebook",
+            "valueAllTheTime": 1579,
+            "value2018": 155
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "INE",
-            "All the time pageviews": 1548,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "% of Total Pageviews along Department Codes": "0.363380281690141",
-            "Pageview Source": "Facebook",
-            "xlsx_row_id": 19
+            "department_codes": "KIC",
+            "name": "Google",
+            "valueAllTheTime": 1512,
+            "value2018": 242
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "INE",
-            "All the time pageviews": 1881,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "% of Total Pageviews along Department Codes": "0.366238317757009",
-            "Pageview Source": "Google",
-            "xlsx_row_id": 20
+            "department_codes": "KIC",
+            "name": "IDB Blogs",
+            "valueAllTheTime": 2,
+            "value2018": 0
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "INE",
-            "All the time pageviews": 5,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "% of Total Pageviews along Department Codes": "0.192307692307692",
-            "Pageview Source": "LinkedIn",
-            "xlsx_row_id": 21
+            "department_codes": "KIC",
+            "name": "IDB Publications",
+            "valueAllTheTime": 6,
+            "value2018": 0
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "INE",
-            "All the time pageviews": 1298,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "% of Total Pageviews along Department Codes": "0.229693859493895",
-            "Pageview Source": "Others",
-            "xlsx_row_id": 22
+            "department_codes": "KIC",
+            "name": "LinkedIn",
+            "valueAllTheTime": 16,
+            "value2018": 0
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "INE",
-            "All the time pageviews": 322,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "% of Total Pageviews along Department Codes": "0.108381016492763",
-            "Pageview Source": "Twitter",
-            "xlsx_row_id": 23
+            "department_codes": "KIC",
+            "name": "Others",
+            "valueAllTheTime": 2230,
+            "value2018": 176
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "KIC",
-            "All the time pageviews": 13,
-            "2018 pageviews": "1",
-            "2018 % total pageviews": "0.000391696043869957",
-            "% of Total Pageviews along Department Codes": "0.254901960784314",
-            "Pageview Source": "Bing",
-            "xlsx_row_id": 24
+            "department_codes": "KIC",
+            "name": "Twitter",
+            "valueAllTheTime": 1319,
+            "value2018": 130
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "KIC",
-            "All the time pageviews": 6146,
-            "2018 pageviews": "626",
-            "2018 % total pageviews": "0.245201723462593",
-            "% of Total Pageviews along Department Codes": "0.37230433729101",
-            "Pageview Source": "Code Website",
-            "xlsx_row_id": 25
+            "department_codes": "KIC",
+            "name": "Yahoo",
+            "valueAllTheTime": 2,
+            "value2018": 2
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "KIC",
-            "All the time pageviews": 1577,
-            "2018 pageviews": "155",
-            "2018 % total pageviews": "0.0607128867998433",
-            "% of Total Pageviews along Department Codes": "0.37018779342723",
-            "Pageview Source": "Facebook",
-            "xlsx_row_id": 26
+            "department_codes": "MIF",
+            "name": "Bing",
+            "valueAllTheTime": 6,
+            "value2018": 0
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "KIC",
-            "All the time pageviews": 1416,
-            "2018 pageviews": "242",
-            "2018 % total pageviews": "0.0947904426165296",
-            "% of Total Pageviews along Department Codes": "0.275700934579439",
-            "Pageview Source": "Google",
-            "xlsx_row_id": 27
+            "department_codes": "MIF",
+            "name": "Code Website",
+            "valueAllTheTime": 1315,
+            "value2018": 0
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "KIC",
-            "All the time pageviews": 2,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "% of Total Pageviews along Department Codes": "0.333333333333333",
-            "Pageview Source": "IDB Blogs",
-            "xlsx_row_id": 28
+            "department_codes": "MIF",
+            "name": "Facebook",
+            "valueAllTheTime": 70,
+            "value2018": 0
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "KIC",
-            "All the time pageviews": 6,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "% of Total Pageviews along Department Codes": "1",
-            "Pageview Source": "IDB Publications",
-            "xlsx_row_id": 29
+            "department_codes": "MIF",
+            "name": "Google",
+            "valueAllTheTime": 597,
+            "value2018": 0
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "KIC",
-            "All the time pageviews": 16,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "% of Total Pageviews along Department Codes": "0.615384615384615",
-            "Pageview Source": "LinkedIn",
-            "xlsx_row_id": 30
+            "department_codes": "MIF",
+            "name": "IDB Blogs",
+            "valueAllTheTime": 2,
+            "value2018": 0
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "KIC",
-            "All the time pageviews": 2179,
-            "2018 pageviews": "176",
-            "2018 % total pageviews": "0.0689385037211124",
-            "% of Total Pageviews along Department Codes": "0.385595469828349",
-            "Pageview Source": "Others",
-            "xlsx_row_id": 31
+            "department_codes": "MIF",
+            "name": "Others",
+            "valueAllTheTime": 244,
+            "value2018": 0
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "KIC",
-            "All the time pageviews": 1314,
-            "2018 pageviews": "130",
-            "2018 % total pageviews": "0.0509204857030944",
-            "% of Total Pageviews along Department Codes": "0.442275328172333",
-            "Pageview Source": "Twitter",
-            "xlsx_row_id": 32
+            "department_codes": "MIF",
+            "name": "Twitter",
+            "valueAllTheTime": 13,
+            "value2018": 0
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "KIC",
-            "All the time pageviews": 2,
-            "2018 pageviews": "2",
-            "2018 % total pageviews": "0.000783392087739914",
-            "% of Total Pageviews along Department Codes": "1",
-            "Pageview Source": "Yahoo",
-            "xlsx_row_id": 33
+            "department_codes": "SCL",
+            "name": "Bing",
+            "valueAllTheTime": 1,
+            "value2018": 1
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "MIF",
-            "All the time pageviews": 6,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "% of Total Pageviews along Department Codes": "0.117647058823529",
-            "Pageview Source": "Bing",
-            "xlsx_row_id": 34
+            "department_codes": "SCL",
+            "name": "Code Website",
+            "valueAllTheTime": 323,
+            "value2018": 252
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "MIF",
-            "All the time pageviews": 1289,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "% of Total Pageviews along Department Codes": "0.0780833535255634",
-            "Pageview Source": "Code Website",
-            "xlsx_row_id": 35
+            "department_codes": "SCL",
+            "name": "Facebook",
+            "valueAllTheTime": 2,
+            "value2018": 1
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "MIF",
-            "All the time pageviews": 70,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "% of Total Pageviews along Department Codes": "0.0164319248826291",
-            "Pageview Source": "Facebook",
-            "xlsx_row_id": 36
+            "department_codes": "SCL",
+            "name": "Google",
+            "valueAllTheTime": 62,
+            "value2018": 56
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "MIF",
-            "All the time pageviews": 552,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "% of Total Pageviews along Department Codes": "0.107476635514019",
-            "Pageview Source": "Google",
-            "xlsx_row_id": 37
+            "department_codes": "SCL",
+            "name": "LinkedIn",
+            "valueAllTheTime": 3,
+            "value2018": 3
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "MIF",
-            "All the time pageviews": 2,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "% of Total Pageviews along Department Codes": "0.333333333333333",
-            "Pageview Source": "IDB Blogs",
-            "xlsx_row_id": 38
+            "department_codes": "SCL",
+            "name": "Others",
+            "valueAllTheTime": 62,
+            "value2018": 58
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "MIF",
-            "All the time pageviews": 243,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "% of Total Pageviews along Department Codes": "0.0430012387188108",
-            "Pageview Source": "Others",
-            "xlsx_row_id": 39
+            "department_codes": "SCL",
+            "name": "Twitter",
+            "valueAllTheTime": 6,
+            "value2018": 5
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "MIF",
-            "All the time pageviews": 9,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "% of Total Pageviews along Department Codes": "0.00302928306967351",
-            "Pageview Source": "Twitter",
-            "xlsx_row_id": 40
+            "department_codes": "SPD",
+            "name": "Bing",
+            "valueAllTheTime": 2,
+            "value2018": 0
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "SCL",
-            "All the time pageviews": 1,
-            "2018 pageviews": "1",
-            "2018 % total pageviews": "0.000391696043869957",
-            "% of Total Pageviews along Department Codes": "0.0196078431372549",
-            "Pageview Source": "Bing",
-            "xlsx_row_id": 41
+            "department_codes": "SPD",
+            "name": "Code Website",
+            "valueAllTheTime": 1315,
+            "value2018": 0
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "SCL",
-            "All the time pageviews": 255,
-            "2018 pageviews": "252",
-            "2018 % total pageviews": "0.0987074030552291",
-            "% of Total Pageviews along Department Codes": "0.0154470559728616",
-            "Pageview Source": "Code Website",
-            "xlsx_row_id": 42
+            "department_codes": "SPD",
+            "name": "Facebook",
+            "valueAllTheTime": 788,
+            "value2018": 0
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "SCL",
-            "All the time pageviews": 1,
-            "2018 pageviews": "1",
-            "2018 % total pageviews": "0.0391696043869957",
-            "% of Total Pageviews along Department Codes": "0.0234741784037559",
-            "Pageview Source": "Facebook",
-            "xlsx_row_id": 43
+            "department_codes": "SPD",
+            "name": "Google",
+            "valueAllTheTime": 98,
+            "value2018": 0
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "SCL",
-            "All the time pageviews": 58,
-            "2018 pageviews": "56",
-            "2018 % total pageviews": "0.0219349784567176",
-            "% of Total Pageviews along Department Codes": "0.0112928348909657",
-            "Pageview Source": "Google",
-            "xlsx_row_id": 44
+            "department_codes": "SPD",
+            "name": "LinkedIn",
+            "valueAllTheTime": 1,
+            "value2018": 0
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "SCL",
-            "All the time pageviews": 3,
-            "2018 pageviews": "3",
-            "2018 % total pageviews": "0.00117508813160987",
-            "% of Total Pageviews along Department Codes": "0.115384615384615",
-            "Pageview Source": "LinkedIn",
-            "xlsx_row_id": 45
+            "department_codes": "SPD",
+            "name": "Others",
+            "valueAllTheTime": 592,
+            "value2018": 0
         },
         {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "SCL",
-            "All the time pageviews": 58,
-            "2018 pageviews": "58",
-            "2018 % total pageviews": "0.0227183705444575",
-            "% of Total Pageviews along Department Codes": "0.0102636701468767",
-            "Pageview Source": "Others",
-            "xlsx_row_id": 46
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "SCL",
-            "All the time pageviews": 5,
-            "2018 pageviews": "5",
-            "2018 % total pageviews": "0.00195848021934978",
-            "% of Total Pageviews along Department Codes": "0.00168293503870751",
-            "Pageview Source": "Twitter",
-            "xlsx_row_id": 47
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "SPD",
-            "All the time pageviews": 2,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "% of Total Pageviews along Department Codes": "0.0392156862745098",
-            "Pageview Source": "Bing",
-            "xlsx_row_id": 48
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "SPD",
-            "All the time pageviews": 1270,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "% of Total Pageviews along Department Codes": "0.07693239641386",
-            "Pageview Source": "Code Website",
-            "xlsx_row_id": 49
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "SPD",
-            "All the time pageviews": 788,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "% of Total Pageviews along Department Codes": "0.184976525821596",
-            "Pageview Source": "Facebook",
-            "xlsx_row_id": 50
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "SPD",
-            "All the time pageviews": 90,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "% of Total Pageviews along Department Codes": "0.0175233644859813",
-            "Pageview Source": "Google",
-            "xlsx_row_id": 51
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "SPD",
-            "All the time pageviews": 1,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "% of Total Pageviews along Department Codes": "0.0384615384615385",
-            "Pageview Source": "LinkedIn",
-            "xlsx_row_id": 52
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "SPD",
-            "All the time pageviews": 590,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "% of Total Pageviews along Department Codes": "0.104406299769952",
-            "All the time pageviews": 590,
-            "All the time pageviews": "590",
-            "Pageview Source": "Others",
-            "xlsx_row_id": 53
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "Department Codes": "SPD",
-            "All the time pageviews": 1140,
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "% of Total Pageviews along Department Codes": "0.383709188825311",
-            "Pageview Source": "Twitter",
-            "xlsx_row_id": 54
+            "department_codes": "SPD",
+            "name": "Twitter",
+            "valueAllTheTime": 1142,
+            "value2018": 0
         }
     ],
     pageviewSourceDivisions: [{
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "NA",
-            "All the time pageviews": 15,
-            "% of Total Pageviews along Division Codes": "0.294117647058824",
-            "Pageview Source": "Bing",
-            "xlsx_row_id": 2
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "NA",
-            "All the time pageviews": 3643,
-            "% of Total Pageviews along Division Codes": "0.220680881996608",
-            "Pageview Source": "Code Website",
-            "xlsx_row_id": 3
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "NA",
-            "All the time pageviews": 234,
-            "% of Total Pageviews along Division Codes": "0.0549295774647887",
-            "Pageview Source": "Facebook",
-            "xlsx_row_id": 4
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "NA",
-            "All the time pageviews": 704,
-            "% of Total Pageviews along Division Codes": "0.137071651090343",
-            "Pageview Source": "Google",
-            "xlsx_row_id": 5
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "NA",
-            "% of Total Pageviews along Division Codes": "0.166666666666667",
-            "All the time pageviews": "1",
-            "Pageview Source": "IDB Blogs",
-            "xlsx_row_id": 6
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "NA",
-            "All the time pageviews": 1,
-            "% of Total Pageviews along Division Codes": "0.0384615384615385",
-            "Pageview Source": "LinkedIn",
-            "xlsx_row_id": 7
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "NA",
-            "% of Total Pageviews along Division Codes": "0.172889754025836",
-            "All the time pageviews": "977",
-            "Pageview Source": "Others",
-            "xlsx_row_id": 8
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "NA",
-            "% of Total Pageviews along Division Codes": "0.0218781555031976",
-            "All the time pageviews": "65",
-            "Pageview Source": "Twitter",
-            "xlsx_row_id": 9
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "429",
-            "2018 % total pageviews": "0.168037602820212",
-            "Division Codes": "FMM",
-            "% of Total Pageviews along Division Codes": "0.0266537436394475",
-            "All the time pageviews": "440",
-            "Pageview Source": "Code Website",
-            "xlsx_row_id": 10
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "6",
-            "2018 % total pageviews": "0.00235017626321974",
-            "Division Codes": "FMM",
-            "% of Total Pageviews along Division Codes": "0.00140845070422535",
-            "All the time pageviews": "6",
-            "Pageview Source": "Facebook",
-            "xlsx_row_id": 11
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "198",
-            "2018 % total pageviews": "0.0775558166862515",
-            "Division Codes": "FMM",
-            "% of Total Pageviews along Division Codes": "0.0399143302180685",
-            "All the time pageviews": "205",
-            "Pageview Source": "Google",
-            "xlsx_row_id": 12
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "112",
-            "2018 % total pageviews": "0.0438699569134352",
-            "Division Codes": "FMM",
-            "% of Total Pageviews along Division Codes": "0.0214121394443461",
-            "All the time pageviews": "121",
-            "Pageview Source": "Others",
-            "xlsx_row_id": 13
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "100",
-            "2018 % total pageviews": "0.0391696043869957",
-            "Division Codes": "FMM",
-            "% of Total Pageviews along Division Codes": "0.0336587007741501",
-            "All the time pageviews": "100",
-            "Pageview Source": "Twitter",
-            "xlsx_row_id": 14
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "ICS",
-            "% of Total Pageviews along Division Codes": "0.0196078431372549",
-            "All the time pageviews": "1",
-            "Pageview Source": "Bing",
-            "xlsx_row_id": 15
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "ICS",
-            "% of Total Pageviews along Division Codes": "0.0385267748970196",
-            "All the time pageviews": "636",
-            "Pageview Source": "Code Website",
-            "xlsx_row_id": 16
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "ICS",
-            "% of Total Pageviews along Division Codes": "0.00845070422535211",
-            "All the time pageviews": "36",
-            "Pageview Source": "Facebook",
-            "xlsx_row_id": 17
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "ICS",
-            "% of Total Pageviews along Division Codes": "0.0447819314641745",
-            "All the time pageviews": "230",
-            "Pageview Source": "Google",
-            "xlsx_row_id": 18
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "ICS",
-            "% of Total Pageviews along Division Codes": "0.166666666666667",
-            "All the time pageviews": "1",
-            "Pageview Source": "IDB Blogs",
-            "xlsx_row_id": 19
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "ICS",
-            "% of Total Pageviews along Division Codes": "0.0327375685719342",
-            "All the time pageviews": "185",
-            "Pageview Source": "Others",
-            "xlsx_row_id": 20
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "ICS",
-            "% of Total Pageviews along Division Codes": "0.00538539212386402",
-            "All the time pageviews": "16",
-            "Pageview Source": "Twitter",
-            "xlsx_row_id": 21
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "ISU",
-            "% of Total Pageviews along Division Codes": "0.0392156862745098",
-            "All the time pageviews": "2",
-            "Pageview Source": "Bing",
-            "xlsx_row_id": 22
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "ISU",
-            "% of Total Pageviews along Division Codes": "0.0325902592682336",
-            "All the time pageviews": "538",
-            "Pageview Source": "Code Website",
-            "xlsx_row_id": 23
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "ISU",
-            "% of Total Pageviews along Division Codes": "0.00633802816901409",
-            "All the time pageviews": "27",
-            "Pageview Source": "Facebook",
-            "xlsx_row_id": 24
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "ISU",
-            "% of Total Pageviews along Division Codes": "0.0342679127725857",
-            "All the time pageviews": "176",
-            "Pageview Source": "Google",
-            "xlsx_row_id": 25
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "ISU",
-            "% of Total Pageviews along Division Codes": "1",
-            "All the time pageviews": "6",
-            "Pageview Source": "IDB Publications",
-            "xlsx_row_id": 26
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "ISU",
-            "% of Total Pageviews along Division Codes": "0.021058219784109",
-            "All the time pageviews": "119",
-            "Pageview Source": "Others",
-            "xlsx_row_id": 27
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "ISU",
-            "% of Total Pageviews along Division Codes": "0.00235610905419051",
-            "All the time pageviews": "7",
-            "Pageview Source": "Twitter",
-            "xlsx_row_id": 28
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "KIC",
-            "% of Total Pageviews along Division Codes": "0.0392156862745098",
-            "All the time pageviews": "2",
-            "Pageview Source": "Bing",
-            "xlsx_row_id": 29
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "KIC",
-            "% of Total Pageviews along Division Codes": "0.0334989096195784",
-            "All the time pageviews": "553",
-            "Pageview Source": "Code Website",
-            "xlsx_row_id": 30
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "KIC",
-            "% of Total Pageviews along Division Codes": "0.00469483568075117",
-            "All the time pageviews": "20",
-            "Pageview Source": "Facebook",
-            "xlsx_row_id": 31
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "KIC",
-            "% of Total Pageviews along Division Codes": "0.0330996884735202",
-            "All the time pageviews": "170",
-            "Pageview Source": "Google",
-            "xlsx_row_id": 32
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "KIC",
-            "% of Total Pageviews along Division Codes": "0.166666666666667",
-            "All the time pageviews": "1",
-            "Pageview Source": "IDB Blogs",
-            "xlsx_row_id": 33
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "KIC",
-            "% of Total Pageviews along Division Codes": "0.0161033445407892",
-            "All the time pageviews": "91",
-            "Pageview Source": "Others",
-            "xlsx_row_id": 34
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "KIC",
-            "% of Total Pageviews along Division Codes": "0.000336587007741501",
-            "All the time pageviews": "1",
-            "Pageview Source": "Twitter",
-            "xlsx_row_id": 35
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "1",
-            "2018 % total pageviews": "0.000391696043869957",
-            "Division Codes": "KLD",
-            "% of Total Pageviews along Division Codes": "0.176470588235294",
-            "All the time pageviews": "9",
-            "Pageview Source": "Bing",
-            "xlsx_row_id": 36
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "626",
-            "2018 % total pageviews": "0.245201723462593",
-            "Division Codes": "KLD",
-            "% of Total Pageviews along Division Codes": "0.306215168403198",
-            "All the time pageviews": "5055",
-            "Pageview Source": "Code Website",
-            "xlsx_row_id": 37
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "155",
-            "2018 % total pageviews": "0.0607128867998433",
-            "Division Codes": "KLD",
-            "% of Total Pageviews along Division Codes": "0.359154929577465",
-            "All the time pageviews": "1530",
-            "Pageview Source": "Facebook",
-            "xlsx_row_id": 38
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "242",
-            "2018 % total pageviews": "0.0947904426165296",
-            "Division Codes": "KLD",
-            "% of Total Pageviews along Division Codes": "0.208333333333333",
-            "All the time pageviews": "1070",
-            "Pageview Source": "Google",
-            "xlsx_row_id": 39
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "KLD",
-            "% of Total Pageviews along Division Codes": "0.166666666666667",
-            "All the time pageviews": "1",
-            "Pageview Source": "IDB Blogs",
-            "xlsx_row_id": 40
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "KLD",
-            "% of Total Pageviews along Division Codes": "0.615384615384615",
-            "All the time pageviews": "16",
-            "Pageview Source": "LinkedIn",
-            "xlsx_row_id": 41
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "176",
-            "2018 % total pageviews": "0.0689385037211124",
-            "Division Codes": "KLD",
-            "% of Total Pageviews along Division Codes": "0.348433905503451",
-            "All the time pageviews": "1969",
-            "Pageview Source": "Others",
-            "xlsx_row_id": 42
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "130",
-            "2018 % total pageviews": "0.0509204857030944",
-            "Division Codes": "KLD",
-            "% of Total Pageviews along Division Codes": "0.439582632110401",
-            "All the time pageviews": "1306",
-            "Pageview Source": "Twitter",
-            "xlsx_row_id": 43
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "2",
-            "2018 % total pageviews": "0.000783392087739914",
-            "Division Codes": "KLD",
-            "% of Total Pageviews along Division Codes": "1",
-            "All the time pageviews": "2",
-            "Pageview Source": "Yahoo",
-            "xlsx_row_id": 44
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "MIF",
-            "% of Total Pageviews along Division Codes": "0.117647058823529",
-            "All the time pageviews": "6",
-            "Pageview Source": "Bing",
-            "xlsx_row_id": 45
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "MIF",
-            "% of Total Pageviews along Division Codes": "0.0780833535255634",
-            "All the time pageviews": "1289",
-            "Pageview Source": "Code Website",
-            "xlsx_row_id": 46
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "MIF",
-            "% of Total Pageviews along Division Codes": "0.0164319248826291",
-            "All the time pageviews": "70",
-            "Pageview Source": "Facebook",
-            "xlsx_row_id": 47
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "MIF",
-            "% of Total Pageviews along Division Codes": "0.107476635514019",
-            "All the time pageviews": "552",
-            "Pageview Source": "Google",
-            "xlsx_row_id": 48
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "MIF",
-            "% of Total Pageviews along Division Codes": "0.333333333333333",
-            "All the time pageviews": "2",
-            "Pageview Source": "IDB Blogs",
-            "xlsx_row_id": 49
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "MIF",
-            "% of Total Pageviews along Division Codes": "0.0430012387188108",
-            "All the time pageviews": "243",
-            "Pageview Source": "Others",
-            "xlsx_row_id": 50
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "MIF",
-            "% of Total Pageviews along Division Codes": "0.00302928306967351",
-            "All the time pageviews": "9",
-            "Pageview Source": "Twitter",
-            "xlsx_row_id": 51
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "SPD",
-            "% of Total Pageviews along Division Codes": "0.0392156862745098",
-            "All the time pageviews": "2",
-            "Pageview Source": "Bing",
-            "xlsx_row_id": 52
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "SPD",
-            "% of Total Pageviews along Division Codes": "0.07693239641386",
-            "All the time pageviews": "1270",
-            "Pageview Source": "Code Website",
-            "xlsx_row_id": 53
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "SPD",
-            "% of Total Pageviews along Division Codes": "0.184976525821596",
-            "All the time pageviews": "788",
-            "Pageview Source": "Facebook",
-            "xlsx_row_id": 54
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "SPD",
-            "% of Total Pageviews along Division Codes": "0.0175233644859813",
-            "All the time pageviews": "90",
-            "Pageview Source": "Google",
-            "xlsx_row_id": 55
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "SPD",
-            "% of Total Pageviews along Division Codes": "0.0384615384615385",
-            "All the time pageviews": "1",
-            "Pageview Source": "LinkedIn",
-            "xlsx_row_id": 56
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "SPD",
-            "% of Total Pageviews along Division Codes": "0.104406299769952",
-            "All the time pageviews": "590",
-            "Pageview Source": "Others",
-            "xlsx_row_id": 57
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "SPD",
-            "% of Total Pageviews along Division Codes": "0.383709188825311",
-            "All the time pageviews": "1140",
-            "Pageview Source": "Twitter",
-            "xlsx_row_id": 58
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "1",
-            "2018 % total pageviews": "0.000391696043869957",
-            "Division Codes": "SPH",
-            "% of Total Pageviews along Division Codes": "0.0196078431372549",
-            "All the time pageviews": "1",
-            "Pageview Source": "Bing",
-            "xlsx_row_id": 59
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "252",
-            "2018 % total pageviews": "0.0987074030552291",
-            "Division Codes": "SPH",
-            "% of Total Pageviews along Division Codes": "0.0154470559728616",
-            "All the time pageviews": "255",
-            "Pageview Source": "Code Website",
-            "xlsx_row_id": 60
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "1",
-            "2018 % total pageviews": "0.000391696043869957",
-            "Division Codes": "SPH",
-            "% of Total Pageviews along Division Codes": "0.000234741784037559",
-            "All the time pageviews": "1",
-            "Pageview Source": "Facebook",
-            "xlsx_row_id": 61
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "56",
-            "2018 % total pageviews": "0.0219349784567176",
-            "Division Codes": "SPH",
-            "% of Total Pageviews along Division Codes": "0.0112928348909657",
-            "All the time pageviews": "58",
-            "Pageview Source": "Google",
-            "xlsx_row_id": 62
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "3",
-            "2018 % total pageviews": "0.00117508813160987",
-            "Division Codes": "SPH",
-            "% of Total Pageviews along Division Codes": "0.115384615384615",
-            "All the time pageviews": "3",
-            "Pageview Source": "LinkedIn",
-            "xlsx_row_id": 63
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "58",
-            "2018 % total pageviews": "0.0227183705444575",
-            "Division Codes": "SPH",
-            "% of Total Pageviews along Division Codes": "0.0102636701468767",
-            "All the time pageviews": "58",
-            "Pageview Source": "Others",
-            "xlsx_row_id": 64
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "5",
-            "2018 % total pageviews": "0.00195848021934978",
-            "Division Codes": "SPH",
-            "% of Total Pageviews along Division Codes": "0.00168293503870751",
-            "All the time pageviews": "5",
-            "Pageview Source": "Twitter",
-            "xlsx_row_id": 65
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "WSA",
-            "% of Total Pageviews along Division Codes": "0.254901960784314",
-            "All the time pageviews": "13",
-            "Pageview Source": "Bing",
-            "xlsx_row_id": 66
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "WSA",
-            "% of Total Pageviews along Division Codes": "0.17137145626363",
-            "All the time pageviews": "2829",
-            "Pageview Source": "Code Website",
-            "xlsx_row_id": 67
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "WSA",
-            "% of Total Pageviews along Division Codes": "0.363380281690141",
-            "All the time pageviews": "1548",
-            "Pageview Source": "Facebook",
-            "xlsx_row_id": 68
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "WSA",
-            "% of Total Pageviews along Division Codes": "0.366238317757009",
-            "All the time pageviews": "1881",
-            "Pageview Source": "Google",
-            "xlsx_row_id": 69
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "WSA",
-            "% of Total Pageviews along Division Codes": "0.192307692307692",
-            "All the time pageviews": "5",
-            "Pageview Source": "LinkedIn",
-            "xlsx_row_id": 70
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "WSA",
-            "% of Total Pageviews along Division Codes": "0.229693859493895",
-            "All the time pageviews": "1298",
-            "Pageview Source": "Others",
-            "xlsx_row_id": 71
-        },
-        {
-            "json_featuretype": "Sheet 1",
-            "2018 pageviews": "0",
-            "2018 % total pageviews": "0",
-            "Division Codes": "WSA",
-            "% of Total Pageviews along Division Codes": "0.108381016492763",
-            "All the time pageviews": "322",
-            "Pageview Source": "Twitter",
-            "xlsx_row_id": 72
+            "division_codes": "FMM",
+            "name": "Code Website",
+            "valueAllTheTime": 476,
+            "value2018": 429
+        },
+        {
+            "division_codes": "FMM",
+            "name": "Facebook",
+            "valueAllTheTime": 6,
+            "value2018": 6
+        },
+        {
+            "division_codes": "FMM",
+            "name": "Google",
+            "valueAllTheTime": 223,
+            "value2018": 198
+        },
+        {
+            "division_codes": "FMM",
+            "name": "Others",
+            "valueAllTheTime": 132,
+            "value2018": 112
+        },
+        {
+            "division_codes": "FMM",
+            "name": "Twitter",
+            "valueAllTheTime": 103,
+            "value2018": 100
+        },
+        {
+            "division_codes": "ICS",
+            "name": "Bing",
+            "valueAllTheTime": 1,
+            "value2018": 0
+        },
+        {
+            "division_codes": "ICS",
+            "name": "Code Website",
+            "valueAllTheTime": 650,
+            "value2018": 0
+        },
+        {
+            "division_codes": "ICS",
+            "name": "Facebook",
+            "valueAllTheTime": 36,
+            "value2018": 0
+        },
+        {
+            "division_codes": "ICS",
+            "name": "Google",
+            "valueAllTheTime": 245,
+            "value2018": 0
+        },
+        {
+            "division_codes": "ICS",
+            "name": "IDB Blogs",
+            "valueAllTheTime": 1,
+            "value2018": 0
+        },
+        {
+            "division_codes": "ICS",
+            "name": "Others",
+            "valueAllTheTime": 191,
+            "value2018": 0
+        },
+        {
+            "division_codes": "ICS",
+            "name": "Twitter",
+            "valueAllTheTime": 17,
+            "value2018": 0
+        },
+        {
+            "division_codes": "ISU",
+            "name": "Bing",
+            "valueAllTheTime": 2,
+            "value2018": 0
+        },
+        {
+            "division_codes": "ISU",
+            "name": "Code Website",
+            "valueAllTheTime": 566,
+            "value2018": 0
+        },
+        {
+            "division_codes": "ISU",
+            "name": "Facebook",
+            "valueAllTheTime": 27,
+            "value2018": 0
+        },
+        {
+            "division_codes": "ISU",
+            "name": "Google",
+            "valueAllTheTime": 184,
+            "value2018": 0
+        },
+        {
+            "division_codes": "ISU",
+            "name": "IDB Publications",
+            "valueAllTheTime": 6,
+            "value2018": 0
+        },
+        {
+            "division_codes": "ISU",
+            "name": "Others",
+            "valueAllTheTime": 120,
+            "value2018": 0
+        },
+        {
+            "division_codes": "ISU",
+            "name": "Twitter",
+            "valueAllTheTime": 7,
+            "value2018": 0
+        },
+        {
+            "division_codes": "KIC",
+            "name": "Bing",
+            "valueAllTheTime": 2,
+            "value2018": 0
+        },
+        {
+            "division_codes": "KIC",
+            "name": "Code Website",
+            "valueAllTheTime": 567,
+            "value2018": 0
+        },
+        {
+            "division_codes": "KIC",
+            "name": "Facebook",
+            "valueAllTheTime": 20,
+            "value2018": 0
+        },
+        {
+            "division_codes": "KIC",
+            "name": "Google",
+            "valueAllTheTime": 173,
+            "value2018": 0
+        },
+        {
+            "division_codes": "KIC",
+            "name": "IDB Blogs",
+            "valueAllTheTime": 1,
+            "value2018": 0
+        },
+        {
+            "division_codes": "KIC",
+            "name": "Others",
+            "valueAllTheTime": 95,
+            "value2018": 0
+        },
+        {
+            "division_codes": "KIC",
+            "name": "Twitter",
+            "valueAllTheTime": 2,
+            "value2018": 0
+        },
+        {
+            "division_codes": "KLD",
+            "name": "Bing",
+            "valueAllTheTime": 9,
+            "value2018": 1
+        },
+        {
+            "division_codes": "KLD",
+            "name": "Code Website",
+            "valueAllTheTime": 5334,
+            "value2018": 626
+        },
+        {
+            "division_codes": "KLD",
+            "name": "Facebook",
+            "valueAllTheTime": 1532,
+            "value2018": 155
+        },
+        {
+            "division_codes": "KLD",
+            "name": "Google",
+            "valueAllTheTime": 1155,
+            "value2018": 242
+        },
+        {
+            "division_codes": "KLD",
+            "name": "IDB Blogs",
+            "valueAllTheTime": 1,
+            "value2018": 0
+        },
+        {
+            "division_codes": "KLD",
+            "name": "LinkedIn",
+            "valueAllTheTime": 16,
+            "value2018": 0
+        },
+        {
+            "division_codes": "KLD",
+            "name": "Others",
+            "valueAllTheTime": 2015,
+            "value2018": 176
+        },
+        {
+            "division_codes": "KLD",
+            "name": "Twitter",
+            "valueAllTheTime": 1310,
+            "value2018": 130
+        },
+        {
+            "division_codes": "KLD",
+            "name": "Yahoo",
+            "valueAllTheTime": 2,
+            "value2018": 2
+        },
+        {
+            "division_codes": "MIF",
+            "name": "Bing",
+            "valueAllTheTime": 6,
+            "value2018": 0
+        },
+        {
+            "division_codes": "MIF",
+            "name": "Code Website",
+            "valueAllTheTime": 1315,
+            "value2018": 0
+        },
+        {
+            "division_codes": "MIF",
+            "name": "Facebook",
+            "valueAllTheTime": 70,
+            "value2018": 0
+        },
+        {
+            "division_codes": "MIF",
+            "name": "Google",
+            "valueAllTheTime": 597,
+            "value2018": 0
+        },
+        {
+            "division_codes": "MIF",
+            "name": "IDB Blogs",
+            "valueAllTheTime": 2,
+            "value2018": 0
+        },
+        {
+            "division_codes": "MIF",
+            "name": "Others",
+            "valueAllTheTime": 244,
+            "value2018": 0
+        },
+        {
+            "division_codes": "MIF",
+            "name": "Twitter",
+            "valueAllTheTime": 13,
+            "value2018": 0
+        },
+        {
+            "division_codes": "SPD",
+            "name": "Bing",
+            "valueAllTheTime": 2,
+            "value2018": 0
+        },
+        {
+            "division_codes": "SPD",
+            "name": "Code Website",
+            "valueAllTheTime": 1315,
+            "value2018": 0
+        },
+        {
+            "division_codes": "SPD",
+            "name": "Facebook",
+            "valueAllTheTime": 788,
+            "value2018": 0
+        },
+        {
+            "division_codes": "SPD",
+            "name": "Google",
+            "valueAllTheTime": 98,
+            "value2018": 0
+        },
+        {
+            "division_codes": "SPD",
+            "name": "LinkedIn",
+            "valueAllTheTime": 1,
+            "value2018": 0
+        },
+        {
+            "division_codes": "SPD",
+            "name": "Others",
+            "valueAllTheTime": 592,
+            "value2018": 0
+        },
+        {
+            "division_codes": "SPD",
+            "name": "Twitter",
+            "valueAllTheTime": 1142,
+            "value2018": 0
+        },
+        {
+            "division_codes": "SPH",
+            "name": "Bing",
+            "valueAllTheTime": 1,
+            "value2018": 1
+        },
+        {
+            "division_codes": "SPH",
+            "name": "Code Website",
+            "valueAllTheTime": 323,
+            "value2018": 252
+        },
+        {
+            "division_codes": "SPH",
+            "name": "Facebook",
+            "valueAllTheTime": 2,
+            "value2018": 1
+        },
+        {
+            "division_codes": "SPH",
+            "name": "Google",
+            "valueAllTheTime": 62,
+            "value2018": 56
+        },
+        {
+            "division_codes": "SPH",
+            "name": "LinkedIn",
+            "valueAllTheTime": 3,
+            "value2018": 3
+        },
+        {
+            "division_codes": "SPH",
+            "name": "Others",
+            "valueAllTheTime": 62,
+            "value2018": 58
+        },
+        {
+            "division_codes": "SPH",
+            "name": "Twitter",
+            "valueAllTheTime": 6,
+            "value2018": 5
+        },
+        {
+            "division_codes": "WSA",
+            "name": "Bing",
+            "valueAllTheTime": 13,
+            "value2018": 0
+        },
+        {
+            "division_codes": "WSA",
+            "name": "Code Website",
+            "valueAllTheTime": 2875,
+            "value2018": 0
+        },
+        {
+            "division_codes": "WSA",
+            "name": "Facebook",
+            "valueAllTheTime": 1557,
+            "value2018": 0
+        },
+        {
+            "division_codes": "WSA",
+            "name": "Google",
+            "valueAllTheTime": 1998,
+            "value2018": 0
+        },
+        {
+            "division_codes": "WSA",
+            "name": "LinkedIn",
+            "valueAllTheTime": 5,
+            "value2018": 0
+        },
+        {
+            "division_codes": "WSA",
+            "name": "Others",
+            "valueAllTheTime": 1326,
+            "value2018": 0
+        },
+        {
+            "division_codes": "WSA",
+            "name": "Twitter",
+            "valueAllTheTime": 324,
+            "value2018": 0
         }
     ],
-    pageviewSourceIDB: [
-        {
-            "valueAllTheTime" : 51,
-            "value2018" : 2,
-            "name" : "Bing"
+    pageviewSourceIDB: [{
+            "name": "Bing",
+            "valueAllTheTime": 51,
+            "value2018": 2
         },
         {
-            "valueAllTheTime" : 16508,
-            "value2018" : 1307,
-            "name" : "Code Website"
+            "name": "Code Website",
+            "valueAllTheTime": 17447,
+            "value2018": 1307
         },
         {
-            "valueAllTheTime" : 4260,
-            "value2018" : 162,
-            "name" : "Facebook"
+            "name": "Facebook",
+            "valueAllTheTime": 4278,
+            "value2018": 162
         },
         {
-            "valueAllTheTime" : 5136,
-            "value2018" : 496,
-            "name" : "Google"
+            "name": "Google",
+            "valueAllTheTime": 5546,
+            "value2018": 496
         },
         {
-            "valueAllTheTime" : 6,
-            "value2018" : 0,
-            "name" : "IDB Blogs"
+            "name": "IDB Blogs",
+            "valueAllTheTime": 6,
+            "value2018": 0
         },
         {
-            "valueAllTheTime" : 6,
-            "value2018" : 0,
-            "name" : "IDB Publications"
+            "name": "IDB Publications",
+            "valueAllTheTime": 6,
+            "value2018": 0
         },
         {
-            "valueAllTheTime" : 26,
-            "value2018" : 3,
-            "name" : "LinkedIn"
+            "name": "LinkedIn",
+            "valueAllTheTime": 26,
+            "value2018": 3
         },
         {
-            "valueAllTheTime" : 5651,
-            "value2018" : 346,
-            "name" : "Others"
+            "name": "Others",
+            "valueAllTheTime": 5817,
+            "value2018": 346
         },
         {
-            "valueAllTheTime" : 2971,
-            "value2018" : 235,
-            "name" : "Twitter"
+            "name": "Twitter",
+            "valueAllTheTime": 2990,
+            "value2018": 235
         },
         {
-            "valueAllTheTime" : 2,
-            "value2018" : 2,
-            "name" : "Yahoo"
+            "name": "Yahoo",
+            "valueAllTheTime": 2,
+            "value2018": 2
         }
     ]
 };

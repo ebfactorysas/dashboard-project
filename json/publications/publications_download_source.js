@@ -1,3187 +1,2646 @@
 var publicationsDownloadSourceArrays = {
     downloadSourceDepartments: [{
-            "json_featuretype": "NewFeatureType",
             "department_codes": "AUG",
+            "name": "Google",
+            "All the time % total of downloads": "22.1%",
             "valueAllTheTime": 21,
-            "value2018": 0,
-            "All the time % total of downloads": "0.223404255319149",
-            "2018 % total downloads ": "0",
-            "name": "Google",
-            "xlsx_row_id": 2
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "AUG",
-            "valueAllTheTime": 72,
-            "value2018": 0,
-            "All the time % total of downloads": "0.765957446808511",
-            "2018 % total downloads ": "0",
+            "department_codes": "SEP",
             "name": "IDB Publications",
-            "xlsx_row_id": 3
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "AUG",
-            "valueAllTheTime": 1,
-            "value2018": 0,
-            "All the time % total of downloads": "0.0106382978723404",
-            "2018 % total downloads ": "0",
-            "name": "Others",
-            "xlsx_row_id": 4
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "BOG",
-            "valueAllTheTime": 3,
-            "value2018": 0,
-            "All the time % total of downloads": "0.0101010101010101",
-            "2018 % total downloads ": "0",
-            "name": "Facebook",
-            "xlsx_row_id": 5
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "BOG",
-            "valueAllTheTime": 51,
-            "value2018": 0,
-            "All the time % total of downloads": "0.171717171717172",
-            "2018 % total downloads ": "0",
-            "name": "Google",
-            "xlsx_row_id": 6
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "BOG",
-            "valueAllTheTime": 239,
-            "value2018": 0,
-            "All the time % total of downloads": "0.804713804713805",
-            "2018 % total downloads ": "0",
-            "name": "IDB Publications",
-            "xlsx_row_id": 7
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "BOG",
-            "valueAllTheTime": 1,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00336700336700337",
-            "2018 % total downloads ": "0",
-            "name": "Others",
-            "xlsx_row_id": 8
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "BOG",
-            "valueAllTheTime": 3,
-            "value2018": 0,
-            "All the time % total of downloads": "0.0101010101010101",
-            "2018 % total downloads ": "0",
-            "name": "RePec",
-            "xlsx_row_id": 9
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CAN",
-            "valueAllTheTime": 278,
-            "value2018": 7,
-            "All the time % total of downloads": "0.00254385403036154",
-            "2018 % total downloads ": "0.000363014053829798",
-            "name": "Bing",
-            "xlsx_row_id": 10
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CAN",
-            "valueAllTheTime": 1157,
-            "value2018": 683,
-            "All the time % total of downloads": "0.0105871910544183",
-            "2018 % total downloads ": "0.0354197998236789",
-            "name": "Facebook",
-            "xlsx_row_id": 11
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CAN",
-            "valueAllTheTime": 72607,
-            "value2018": 600,
-            "All the time % total of downloads": "0.664394279073598",
-            "2018 % total downloads ": "0.0311154903282684",
-            "name": "Google",
-            "xlsx_row_id": 12
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CAN",
-            "valueAllTheTime": 1,
-            "value2018": 0,
-            "All the time % total of downloads": "9.1505540660487e-6",
-            "2018 % total downloads ": "0",
-            "name": "IDB Blogs",
-            "xlsx_row_id": 13
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CAN",
-            "valueAllTheTime": 7558,
-            "value2018": 7393,
-            "All the time % total of downloads": "0.0691598876311961",
-            "2018 % total downloads ": "0.383394699994814",
-            "name": "IDB Landing Page",
-            "xlsx_row_id": 14
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CAN",
-            "valueAllTheTime": 20682,
-            "value2018": 6531,
-            "All the time % total of downloads": "0.189251759194019",
-            "2018 % total downloads ": "0.338692112223202",
-            "name": "IDB Publications",
-            "xlsx_row_id": 15
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CAN",
-            "valueAllTheTime": 6,
-            "value2018": 0,
-            "All the time % total of downloads": "5.49033243962922e-5",
-            "2018 % total downloads ": "0",
-            "name": "IDB RES",
-            "xlsx_row_id": 16
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CAN",
-            "valueAllTheTime": 27,
-            "value2018": 0,
-            "All the time % total of downloads": "0.000247064959783315",
-            "2018 % total downloads ": "0",
-            "name": "Indes Virtual",
-            "xlsx_row_id": 17
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CAN",
-            "valueAllTheTime": 1,
-            "value2018": 0,
-            "All the time % total of downloads": "9.1505540660487e-6",
-            "2018 % total downloads ": "0",
-            "name": "INTAL",
-            "xlsx_row_id": 18
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CAN",
-            "valueAllTheTime": 125,
-            "value2018": 69,
-            "All the time % total of downloads": "0.00114381925825609",
-            "2018 % total downloads ": "0.00357828138775087",
-            "name": "LinkedIn",
-            "xlsx_row_id": 19
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CAN",
-            "valueAllTheTime": 5437,
-            "value2018": 3103,
-            "All the time % total of downloads": "0.0497515624571068",
-            "2018 % total downloads ": "0.160918944147695",
-            "name": "Others",
-            "xlsx_row_id": 20
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CAN",
-            "valueAllTheTime": 138,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00126277646111472",
-            "2018 % total downloads ": "0",
-            "name": "RePec",
-            "xlsx_row_id": 21
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CAN",
-            "valueAllTheTime": 1144,
-            "value2018": 897,
-            "All the time % total of downloads": "0.0104682338515597",
-            "2018 % total downloads ": "0.0465176580407613",
-            "name": "Twitter",
-            "xlsx_row_id": 22
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CAN",
-            "valueAllTheTime": 122,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00111636759605794",
-            "2018 % total downloads ": "0",
-            "name": "Yahoo",
-            "xlsx_row_id": 23
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CCB",
-            "valueAllTheTime": 1645,
-            "value2018": 0,
-            "All the time % total of downloads": "0.0130961953363214",
-            "2018 % total downloads ": "0",
-            "name": "Bing",
-            "xlsx_row_id": 24
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CCB",
-            "valueAllTheTime": 2964,
-            "value2018": 1395,
-            "All the time % total of downloads": "0.0235970352442898",
-            "2018 % total downloads ": "0.165657285358033",
-            "name": "Facebook",
-            "xlsx_row_id": 25
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CCB",
-            "valueAllTheTime": 60457,
-            "value2018": 1636,
-            "All the time % total of downloads": "0.481311052551967",
-            "2018 % total downloads ": "0.194276214226339",
-            "name": "Google",
-            "xlsx_row_id": 26
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CCB",
-            "valueAllTheTime": 2359,
-            "value2018": 10,
-            "All the time % total of downloads": "0.0187805013971929",
-            "2018 % total downloads ": "0.00118750742192139",
-            "name": "IDB Blogs",
-            "xlsx_row_id": 27
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CCB",
-            "valueAllTheTime": 1044,
-            "value2018": 196,
-            "All the time % total of downloads": "0.00831150634110613",
-            "2018 % total downloads ": "0.0232751454696592",
-            "name": "IDB Landing Page",
-            "xlsx_row_id": 28
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CCB",
-            "valueAllTheTime": 307,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00244409238191531",
-            "2018 % total downloads ": "0",
-            "name": "IDB MOOCs",
-            "xlsx_row_id": 29
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CCB",
-            "valueAllTheTime": 51189,
-            "value2018": 5039,
-            "All the time % total of downloads": "0.407526530742224",
-            "2018 % total downloads ": "0.598384989906187",
-            "name": "IDB Publications",
-            "xlsx_row_id": 30
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CCB",
-            "valueAllTheTime": 1,
-            "value2018": 0,
-            "All the time % total of downloads": "7.96121297040817e-6",
-            "2018 % total downloads ": "0",
-            "name": "IDB RES",
-            "xlsx_row_id": 31
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CCB",
-            "valueAllTheTime": 15,
-            "value2018": 0,
-            "All the time % total of downloads": "0.000119418194556123",
-            "2018 % total downloads ": "0",
-            "name": "INTAL",
-            "xlsx_row_id": 32
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CCB",
-            "valueAllTheTime": 301,
-            "value2018": 59,
-            "All the time % total of downloads": "0.00239632510409286",
-            "2018 % total downloads ": "0.00700629378933618",
-            "name": "LinkedIn",
-            "xlsx_row_id": 33
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CCB",
-            "valueAllTheTime": 4339,
-            "value2018": 68,
-            "All the time % total of downloads": "0.0345437030786011",
-            "2018 % total downloads ": "0.00807505046906543",
-            "name": "Others",
-            "xlsx_row_id": 34
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CCB",
-            "valueAllTheTime": 122,
-            "value2018": 7,
-            "All the time % total of downloads": "0.000971267982389797",
-            "2018 % total downloads ": "0.000831255195344971",
-            "name": "RePec",
-            "xlsx_row_id": 35
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CCB",
-            "valueAllTheTime": 202,
-            "value2018": 5,
-            "All the time % total of downloads": "0.00160816502002245",
-            "2018 % total downloads ": "0.000593753710960694",
-            "name": "Twitter",
-            "xlsx_row_id": 36
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CCB",
-            "valueAllTheTime": 664,
-            "value2018": 6,
-            "All the time % total of downloads": "0.00528624541235103",
-            "2018 % total downloads ": "0.000712504453152832",
-            "name": "Yahoo",
-            "xlsx_row_id": 37
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CID",
-            "valueAllTheTime": 564,
-            "value2018": 9,
-            "All the time % total of downloads": "0.00708694067828556",
-            "2018 % total downloads ": "0.000812494357678072",
-            "name": "Bing",
-            "xlsx_row_id": 38
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CID",
-            "valueAllTheTime": 1294,
-            "value2018": 479,
-            "All the time % total of downloads": "0.0162597539675559",
-            "2018 % total downloads ": "0.043242755258644",
-            "name": "Facebook",
-            "xlsx_row_id": 39
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CID",
-            "valueAllTheTime": 43806,
-            "value2018": 1225,
-            "All the time % total of downloads": "0.550444190342159",
-            "2018 % total downloads ": "0.110589509795071",
-            "name": "Google",
-            "xlsx_row_id": 40
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CID",
-            "valueAllTheTime": 26,
-            "value2018": 0,
-            "All the time % total of downloads": "0.000326702939069902",
-            "2018 % total downloads ": "0",
-            "name": "IDB Blogs",
-            "xlsx_row_id": 41
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CID",
-            "valueAllTheTime": 6894,
-            "value2018": 3182,
-            "All the time % total of downloads": "0.0866265408441501",
-            "2018 % total downloads ": "0.287261894014625",
-            "name": "IDB Landing Page",
-            "xlsx_row_id": 42
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CID",
-            "valueAllTheTime": 24669,
-            "value2018": 5920,
-            "All the time % total of downloads": "0.309978261689054",
-            "2018 % total downloads ": "0.534440733050465",
-            "name": "IDB Publications",
-            "xlsx_row_id": 43
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CID",
-            "valueAllTheTime": 22,
-            "value2018": 0,
-            "All the time % total of downloads": "0.000276440948443763",
-            "2018 % total downloads ": "0",
-            "name": "IDB RES",
-            "xlsx_row_id": 44
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CID",
-            "valueAllTheTime": 15,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00018848246484802",
-            "2018 % total downloads ": "0",
-            "name": "Indes Virtual",
-            "xlsx_row_id": 45
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CID",
-            "valueAllTheTime": 1,
-            "value2018": 0,
-            "All the time % total of downloads": "1.25654976565347e-5",
-            "2018 % total downloads ": "0",
-            "name": "INTAL",
-            "xlsx_row_id": 46
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CID",
-            "valueAllTheTime": 72,
-            "value2018": 57,
-            "All the time % total of downloads": "0.000904715831270498",
-            "2018 % total downloads ": "0.00514579759862779",
-            "name": "LinkedIn",
-            "xlsx_row_id": 47
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CID",
-            "valueAllTheTime": 1685,
-            "value2018": 135,
-            "All the time % total of downloads": "0.0211728635512609",
-            "2018 % total downloads ": "0.0121874153651711",
-            "name": "Others",
-            "xlsx_row_id": 48
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CID",
-            "valueAllTheTime": 57,
-            "value2018": 3,
-            "All the time % total of downloads": "0.000716233366422477",
-            "2018 % total downloads ": "0.000270831452559357",
-            "name": "RePec",
-            "xlsx_row_id": 49
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CID",
-            "valueAllTheTime": 236,
-            "value2018": 64,
-            "All the time % total of downloads": "0.00296545744694219",
-            "2018 % total downloads ": "0.00577773765459962",
-            "name": "Twitter",
-            "xlsx_row_id": 50
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CID",
-            "valueAllTheTime": 242,
-            "value2018": 3,
-            "All the time % total of downloads": "0.00304085043288139",
-            "2018 % total downloads ": "0.000270831452559357",
-            "name": "Yahoo",
-            "xlsx_row_id": 51
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CSC",
-            "valueAllTheTime": 220,
-            "value2018": 2,
-            "All the time % total of downloads": "0.0096461612662779",
-            "2018 % total downloads ": "0.00126502213788741",
-            "name": "Bing",
-            "xlsx_row_id": 52
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CSC",
-            "valueAllTheTime": 147,
-            "value2018": 18,
-            "All the time % total of downloads": "0.0064453895733766",
-            "2018 % total downloads ": "0.0113851992409867",
-            "name": "Facebook",
-            "xlsx_row_id": 53
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CSC",
-            "valueAllTheTime": 15003,
-            "value2018": 379,
-            "All the time % total of downloads": "0.657824352172579",
-            "2018 % total downloads ": "0.239721695129665",
-            "name": "Google",
-            "xlsx_row_id": 54
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CSC",
-            "valueAllTheTime": 46,
-            "value2018": 46,
-            "All the time % total of downloads": "0.00201692462840356",
-            "2018 % total downloads ": "0.0290955091714105",
-            "name": "IDB Landing Page",
-            "xlsx_row_id": 55
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CSC",
-            "valueAllTheTime": 6433,
-            "value2018": 1119,
-            "All the time % total of downloads": "0.282062524663481",
-            "2018 % total downloads ": "0.707779886148008",
-            "name": "IDB Publications",
-            "xlsx_row_id": 56
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CSC",
-            "valueAllTheTime": 15,
-            "value2018": 0,
-            "All the time % total of downloads": "0.000657692813609857",
-            "2018 % total downloads ": "0",
-            "name": "Indes Virtual",
-            "xlsx_row_id": 57
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CSC",
-            "valueAllTheTime": 3,
-            "value2018": 2,
-            "All the time % total of downloads": "0.000131538562721971",
-            "2018 % total downloads ": "0.00126502213788741",
-            "name": "LinkedIn",
-            "xlsx_row_id": 58
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CSC",
-            "valueAllTheTime": 801,
-            "value2018": 14,
-            "All the time % total of downloads": "0.0351207962467663",
-            "2018 % total downloads ": "0.00885515496521189",
-            "name": "Others",
-            "xlsx_row_id": 59
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CSC",
-            "valueAllTheTime": 37,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00162230894023765",
-            "2018 % total downloads ": "0",
-            "name": "RePec",
-            "xlsx_row_id": 60
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CSC",
-            "valueAllTheTime": 9,
-            "value2018": 0,
-            "All the time % total of downloads": "0.000394615688165914",
-            "2018 % total downloads ": "0",
-            "name": "Twitter",
-            "xlsx_row_id": 61
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CSC",
-            "valueAllTheTime": 93,
-            "value2018": 1,
-            "All the time % total of downloads": "0.00407769544438111",
-            "2018 % total downloads ": "0.000632511068943707",
-            "name": "Yahoo",
-            "xlsx_row_id": 62
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CSD",
-            "valueAllTheTime": 1148,
-            "value2018": 3,
-            "All the time % total of downloads": "0.00361873419955995",
-            "2018 % total downloads ": "7.81127948758007e-5",
-            "name": "Bing",
-            "xlsx_row_id": 63
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CSD",
-            "valueAllTheTime": 8983,
-            "value2018": 1542,
-            "All the time % total of downloads": "0.0283162798908075",
-            "2018 % total downloads ": "0.0401499765661615",
-            "name": "Facebook",
-            "xlsx_row_id": 64
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CSD",
-            "valueAllTheTime": 84125,
-            "value2018": 4228,
-            "All the time % total of downloads": "0.265179455172457",
-            "2018 % total downloads ": "0.110086965578295",
-            "name": "Google",
-            "xlsx_row_id": 65
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CSD",
-            "valueAllTheTime": 1687,
-            "value2018": 1,
-            "All the time % total of downloads": "0.00531777403715822",
-            "2018 % total downloads ": "2.60375982919336e-5",
-            "name": "IDB Blogs",
-            "xlsx_row_id": 66
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CSD",
-            "valueAllTheTime": 16165,
-            "value2018": 0,
-            "All the time % total of downloads": "0.0509554340904936",
-            "2018 % total downloads ": "0",
-            "name": "IDB Landing Page",
-            "xlsx_row_id": 67
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CSD",
-            "valueAllTheTime": 954,
-            "value2018": 72,
-            "All the time % total of downloads": "0.00300720594632421",
-            "2018 % total downloads ": "0.00187470707701922",
-            "name": "IDB MOOCs",
-            "xlsx_row_id": 68
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CSD",
-            "valueAllTheTime": 161334,
-            "value2018": 13644,
-            "All the time % total of downloads": "0.508558243337809",
-            "2018 % total downloads ": "0.355256991095141",
-            "name": "IDB Publications",
-            "xlsx_row_id": 69
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CSD",
-            "valueAllTheTime": 2,
-            "value2018": 0,
-            "All the time % total of downloads": "6.30441498181176e-6",
-            "2018 % total downloads ": "0",
-            "name": "IDB RES",
-            "xlsx_row_id": 70
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CSD",
-            "valueAllTheTime": 117,
-            "value2018": 0,
-            "All the time % total of downloads": "0.000368808276435988",
-            "2018 % total downloads ": "0",
-            "name": "Indes Virtual",
-            "xlsx_row_id": 71
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CSD",
-            "valueAllTheTime": 6,
-            "value2018": 0,
-            "All the time % total of downloads": "1.89132449454353e-5",
-            "2018 % total downloads ": "0",
-            "name": "INTAL",
-            "xlsx_row_id": 72
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CSD",
-            "valueAllTheTime": 778,
-            "value2018": 92,
-            "All the time % total of downloads": "0.00245241742792478",
-            "2018 % total downloads ": "0.00239545904285789",
-            "name": "LinkedIn",
-            "xlsx_row_id": 73
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CSD",
-            "valueAllTheTime": 39828,
-            "value2018": 18656,
-            "All the time % total of downloads": "0.125546119947799",
-            "2018 % total downloads ": "0.485757433734312",
-            "name": "Others",
-            "xlsx_row_id": 74
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CSD",
-            "valueAllTheTime": 59,
-            "value2018": 0,
-            "All the time % total of downloads": "0.000185980241963447",
-            "2018 % total downloads ": "0",
-            "name": "RePec",
-            "xlsx_row_id": 75
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CSD",
-            "valueAllTheTime": 1673,
-            "value2018": 164,
-            "All the time % total of downloads": "0.00527364313228554",
-            "2018 % total downloads ": "0.0042701661198771",
-            "name": "Twitter",
-            "xlsx_row_id": 76
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "CSD",
-            "valueAllTheTime": 379,
-            "value2018": 4,
-            "All the time % total of downloads": "0.00119468663905333",
-            "2018 % total downloads ": "0.000104150393167734",
-            "name": "Yahoo",
-            "xlsx_row_id": 77
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "Discontinued Departments",
-            "valueAllTheTime": 6803,
-            "value2018": 5,
-            "All the time % total of downloads": "0.00824995058275963",
-            "2018 % total downloads ": "0.00128106584678452",
-            "name": "Bing",
-            "xlsx_row_id": 78
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "Discontinued Departments",
-            "valueAllTheTime": 8379,
-            "value2018": 92,
-            "All the time % total of downloads": "0.0101611547747968",
-            "2018 % total downloads ": "0.0235716115808353",
-            "name": "Facebook",
-            "xlsx_row_id": 79
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "Discontinued Departments",
-            "valueAllTheTime": 415369,
-            "value2018": 1660,
-            "All the time % total of downloads": "0.503715085052225",
-            "2018 % total downloads ": "0.425313861132462",
-            "name": "Google",
-            "xlsx_row_id": 80
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "Discontinued Departments",
-            "valueAllTheTime": 15815,
-            "value2018": 0,
-            "All the time % total of downloads": "0.019178740036211",
-            "2018 % total downloads ": "0",
-            "name": "IDB Blogs",
-            "xlsx_row_id": 81
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "Discontinued Departments",
-            "valueAllTheTime": 1530,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00185542031333562",
-            "2018 % total downloads ": "0",
-            "name": "IDB Landing Page",
-            "xlsx_row_id": 82
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "Discontinued Departments",
-            "valueAllTheTime": 4354,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00528006538840738",
-            "2018 % total downloads ": "0",
-            "name": "IDB MOOCs",
-            "xlsx_row_id": 83
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "Discontinued Departments",
-            "valueAllTheTime": 330618,
-            "value2018": 1917,
-            "All the time % total of downloads": "0.400938139316599",
-            "2018 % total downloads ": "0.491160645657187",
-            "name": "IDB Publications",
-            "xlsx_row_id": 84
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "Discontinued Departments",
-            "valueAllTheTime": 841,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00101987482582697",
-            "2018 % total downloads ": "0",
-            "name": "IDB RES",
-            "xlsx_row_id": 85
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "Discontinued Departments",
-            "valueAllTheTime": 5,
-            "value2018": 0,
-            "All the time % total of downloads": "6.0634650762602e-6",
-            "2018 % total downloads ": "0",
-            "name": "INTAL",
-            "xlsx_row_id": 86
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "Discontinued Departments",
-            "valueAllTheTime": 568,
-            "value2018": 141,
-            "All the time % total of downloads": "0.000688809632663159",
-            "2018 % total downloads ": "0.0361260568793236",
-            "name": "LinkedIn",
-            "xlsx_row_id": 87
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "Discontinued Departments",
-            "valueAllTheTime": 34782,
-            "value2018": 65,
-            "All the time % total of downloads": "0.0421798884564965",
-            "2018 % total downloads ": "0.0166538560081988",
-            "name": "Others",
-            "xlsx_row_id": 88
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "Discontinued Departments",
-            "valueAllTheTime": 1043,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00126483881490788",
-            "2018 % total downloads ": "0",
-            "name": "RePec",
-            "xlsx_row_id": 89
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "Discontinued Departments",
-            "valueAllTheTime": 1350,
-            "value2018": 21,
-            "All the time % total of downloads": "0.00163713557059025",
-            "2018 % total downloads ": "0.005380476556495",
-            "name": "Twitter",
-            "xlsx_row_id": 90
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "Discontinued Departments",
-            "valueAllTheTime": 3154,
-            "value2018": 2,
-            "All the time % total of downloads": "0.00382483377010493",
-            "2018 % total downloads ": "0.00051242633871381",
-            "name": "Yahoo",
-            "xlsx_row_id": 91
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "ESG",
-            "valueAllTheTime": 743,
-            "value2018": 1,
-            "All the time % total of downloads": "0.00629564981612974",
-            "2018 % total downloads ": "7.13063320022818e-5",
-            "name": "Bing",
-            "xlsx_row_id": 92
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "ESG",
-            "valueAllTheTime": 1533,
-            "value2018": 1085,
-            "All the time % total of downloads": "0.0129895439678693",
-            "2018 % total downloads ": "0.0773673702224758",
-            "name": "Facebook",
-            "xlsx_row_id": 93
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "ESG",
-            "valueAllTheTime": 47936,
-            "value2018": 984,
-            "All the time % total of downloads": "0.406175329187073",
-            "2018 % total downloads ": "0.0701654306902453",
-            "name": "Google",
-            "xlsx_row_id": 94
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "ESG",
-            "valueAllTheTime": 1119,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00948160450100832",
-            "2018 % total downloads ": "0",
-            "name": "IDB Blogs",
-            "xlsx_row_id": 95
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "ESG",
-            "valueAllTheTime": 603,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00510939009303666",
-            "2018 % total downloads ": "0",
-            "name": "IDB Landing Page",
-            "xlsx_row_id": 96
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "ESG",
-            "valueAllTheTime": 203,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00172007659848498",
-            "2018 % total downloads ": "0",
-            "name": "IDB MOOCs",
-            "xlsx_row_id": 97
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "ESG",
-            "valueAllTheTime": 52202,
-            "value2018": 5131,
-            "All the time % total of downloads": "0.442322357606467",
-            "2018 % total downloads ": "0.365872789503708",
-            "name": "IDB Publications",
-            "xlsx_row_id": 98
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "ESG",
-            "valueAllTheTime": 1,
-            "value2018": 0,
-            "All the time % total of downloads": "8.4732837363792e-6",
-            "2018 % total downloads ": "0",
-            "name": "IDB RES",
-            "xlsx_row_id": 99
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "ESG",
-            "valueAllTheTime": 1390,
-            "value2018": 3,
-            "All the time % total of downloads": "0.0117778643935671",
-            "2018 % total downloads ": "0.000213918996006845",
-            "name": "Indes Virtual",
-            "xlsx_row_id": 100
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "ESG",
-            "valueAllTheTime": 28,
-            "value2018": 0,
-            "All the time % total of downloads": "0.000237251944618618",
-            "2018 % total downloads ": "0",
-            "name": "INTAL",
-            "xlsx_row_id": 101
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "ESG",
-            "valueAllTheTime": 468,
-            "value2018": 210,
-            "All the time % total of downloads": "0.00396549678862546",
-            "2018 % total downloads ": "0.0149743297204792",
-            "name": "LinkedIn",
-            "xlsx_row_id": 102
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "ESG",
-            "valueAllTheTime": 11396,
-            "value2018": 6573,
-            "All the time % total of downloads": "0.0965615414597773",
-            "2018 % total downloads ": "0.468696520250998",
-            "name": "Others",
-            "xlsx_row_id": 103
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "ESG",
-            "valueAllTheTime": 5,
-            "value2018": 0,
-            "All the time % total of downloads": "4.2366418681896e-5",
-            "2018 % total downloads ": "0",
-            "name": "RePec",
-            "xlsx_row_id": 104
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "ESG",
-            "valueAllTheTime": 66,
-            "value2018": 36,
-            "All the time % total of downloads": "0.000559236726601027",
-            "2018 % total downloads ": "0.00256702795208214",
-            "name": "Twitter",
-            "xlsx_row_id": 105
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "ESG",
-            "valueAllTheTime": 325,
-            "value2018": 1,
-            "All the time % total of downloads": "0.00275381721432324",
-            "2018 % total downloads ": "7.13063320022818e-5",
-            "name": "Yahoo",
-            "xlsx_row_id": 106
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "FMP",
-            "valueAllTheTime": 50,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00804117079446767",
-            "2018 % total downloads ": "0",
-            "name": "Bing",
-            "xlsx_row_id": 107
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "FMP",
-            "valueAllTheTime": 2845,
-            "value2018": 0,
-            "All the time % total of downloads": "0.457542618205211",
-            "2018 % total downloads ": "0",
-            "name": "Google",
-            "xlsx_row_id": 108
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "FMP",
-            "valueAllTheTime": 2,
-            "value2018": 0,
-            "All the time % total of downloads": "0.000321646831778707",
-            "2018 % total downloads ": "0",
-            "name": "IDB Blogs",
-            "xlsx_row_id": 109
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "FMP",
-            "valueAllTheTime": 3181,
-            "value2018": 139,
-            "All the time % total of downloads": "0.511579285944033",
-            "2018 % total downloads ": "1",
-            "name": "IDB Publications",
-            "xlsx_row_id": 110
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "FMP",
-            "valueAllTheTime": 10,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00160823415889354",
-            "2018 % total downloads ": "0",
-            "name": "LinkedIn",
-            "xlsx_row_id": 111
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "FMP",
-            "valueAllTheTime": 111,
-            "value2018": 0,
-            "All the time % total of downloads": "0.0178513991637182",
-            "2018 % total downloads ": "0",
-            "name": "Others",
-            "xlsx_row_id": 112
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "FMP",
-            "valueAllTheTime": 19,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00305564490189772",
-            "2018 % total downloads ": "0",
-            "name": "Yahoo",
-            "xlsx_row_id": 113
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "HRD",
-            "valueAllTheTime": 2,
-            "value2018": 0,
-            "All the time % total of downloads": "0.0161290322580645",
-            "2018 % total downloads ": "0",
-            "name": "Google",
-            "xlsx_row_id": 114
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "HRD",
-            "valueAllTheTime": 108,
-            "value2018": 0,
-            "All the time % total of downloads": "0.870967741935484",
-            "2018 % total downloads ": "0",
-            "name": "IDB Publications",
-            "xlsx_row_id": 115
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "HRD",
-            "valueAllTheTime": 14,
-            "value2018": 0,
-            "All the time % total of downloads": "0.112903225806452",
-            "2018 % total downloads ": "0",
-            "name": "Others",
-            "xlsx_row_id": 116
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "IFD",
-            "valueAllTheTime": 5728,
-            "value2018": 12,
-            "All the time % total of downloads": "0.00463638232670631",
-            "2018 % total downloads ": "0.00013044045393278",
-            "name": "Bing",
-            "xlsx_row_id": 117
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "IFD",
-            "valueAllTheTime": 24570,
-            "value2018": 2829,
-            "All the time % total of downloads": "0.0198875547777887",
-            "2018 % total downloads ": "0.0307513370146528",
-            "name": "Facebook",
-            "xlsx_row_id": 118
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "IFD",
-            "valueAllTheTime": 501272,
-            "value2018": 9397,
-            "All the time % total of downloads": "0.405741732135601",
-            "2018 % total downloads ": "0.102145745467194",
-            "name": "Google",
-            "xlsx_row_id": 119
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "IFD",
-            "valueAllTheTime": 10993,
-            "value2018": 962,
-            "All the time % total of downloads": "0.00889800120766104",
-            "2018 % total downloads ": "0.0104569763902778",
-            "name": "IDB Blogs",
-            "xlsx_row_id": 120
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "IFD",
-            "valueAllTheTime": 42327,
-            "value2018": 0,
-            "All the time % total of downloads": "0.0342605018754361",
-            "2018 % total downloads ": "0",
-            "name": "IDB Landing Page",
-            "xlsx_row_id": 121
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "IFD",
-            "valueAllTheTime": 17546,
-            "value2018": 359,
-            "All the time % total of downloads": "0.0142021585726936",
-            "2018 % total downloads ": "0.00390234358015566",
-            "name": "IDB MOOCs",
-            "xlsx_row_id": 122
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "IFD",
-            "valueAllTheTime": 512101,
-            "value2018": 53030,
-            "All the time % total of downloads": "0.414506987759886",
-            "2018 % total downloads ": "0.576438106004609",
-            "name": "IDB Publications",
-            "xlsx_row_id": 123
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "IFD",
-            "valueAllTheTime": 210,
-            "value2018": 0,
-            "All the time % total of downloads": "0.000169979100664861",
-            "2018 % total downloads ": "0",
-            "name": "IDB RES",
-            "xlsx_row_id": 124
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "IFD",
-            "valueAllTheTime": 47,
-            "value2018": 0,
-            "All the time % total of downloads": "3.80429415773737e-5",
-            "2018 % total downloads ": "0",
-            "name": "Indes Virtual",
-            "xlsx_row_id": 125
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "IFD",
-            "valueAllTheTime": 95,
-            "value2018": 0,
-            "All the time % total of downloads": "7.68953074436277e-5",
-            "2018 % total downloads ": "0",
-            "name": "INTAL",
-            "xlsx_row_id": 126
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "IFD",
-            "valueAllTheTime": 2948,
-            "value2018": 757,
-            "All the time % total of downloads": "0.0023861828036191",
-            "2018 % total downloads ": "0.00822861863559285",
-            "name": "LinkedIn",
-            "xlsx_row_id": 127
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "IFD",
-            "valueAllTheTime": 109632,
-            "value2018": 24086,
-            "All the time % total of downloads": "0.0887388036385241",
-            "2018 % total downloads ": "0.261815731118744",
-            "name": "Others",
-            "xlsx_row_id": 128
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "IFD",
-            "valueAllTheTime": 882,
-            "value2018": 5,
-            "All the time % total of downloads": "0.000713912222792417",
-            "2018 % total downloads ": "5.43501891386582e-5",
-            "name": "RePec",
-            "xlsx_row_id": 129
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "IFD",
-            "valueAllTheTime": 4395,
-            "value2018": 552,
-            "All the time % total of downloads": "0.00355741974962888",
-            "2018 % total downloads ": "0.00600026088090787",
-            "name": "Twitter",
-            "xlsx_row_id": 130
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "IFD",
-            "valueAllTheTime": 2700,
-            "value2018": 7,
-            "All the time % total of downloads": "0.00218544557997679",
-            "2018 % total downloads ": "7.60902647941215e-5",
-            "name": "Yahoo",
-            "xlsx_row_id": 131
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "INE",
-            "valueAllTheTime": 3461,
-            "value2018": 19,
-            "All the time % total of downloads": "0.00395227578457413",
-            "2018 % total downloads ": "0.000317433798346003",
-            "name": "Bing",
-            "xlsx_row_id": 132
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "INE",
-            "valueAllTheTime": 9752,
-            "value2018": 1775,
-            "All the time % total of downloads": "0.0111362593040066",
-            "2018 % total downloads ": "0.029654999582324",
-            "name": "Facebook",
-            "xlsx_row_id": 133
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "INE",
-            "valueAllTheTime": 512011,
-            "value2018": 7840,
-            "All the time % total of downloads": "0.584689013792426",
-            "2018 % total downloads ": "0.130983209422772",
-            "name": "Google",
-            "xlsx_row_id": 134
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "INE",
-            "valueAllTheTime": 6480,
-            "value2018": 288,
-            "All the time % total of downloads": "0.00739981135048841",
-            "2018 % total downloads ": "0.00481162810124468",
-            "name": "IDB Blogs",
-            "xlsx_row_id": 135
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "INE",
-            "valueAllTheTime": 12052,
-            "value2018": 225,
-            "All the time % total of downloads": "0.0137627355549516",
-            "2018 % total downloads ": "0.0037590844540974",
-            "name": "IDB Landing Page",
-            "xlsx_row_id": 136
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "INE",
-            "valueAllTheTime": 4844,
-            "value2018": 0,
-            "All the time % total of downloads": "0.0055315873737293",
-            "2018 % total downloads ": "0",
-            "name": "IDB MOOCs",
-            "xlsx_row_id": 137
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "INE",
-            "valueAllTheTime": 257812,
-            "value2018": 22260,
-            "All the time % total of downloads": "0.294407432699401",
-            "2018 % total downloads ": "0.37189875532537",
-            "name": "IDB Publications",
-            "xlsx_row_id": 138
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "INE",
-            "valueAllTheTime": 175,
-            "value2018": 118,
-            "All the time % total of downloads": "0.00019984058431103",
-            "2018 % total downloads ": "0.00197143095814886",
-            "name": "Indes Virtual",
-            "xlsx_row_id": 139
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "INE",
-            "valueAllTheTime": 28,
-            "value2018": 0,
-            "All the time % total of downloads": "3.19744934897647e-5",
-            "2018 % total downloads ": "0",
-            "name": "INTAL",
-            "xlsx_row_id": 140
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "INE",
-            "valueAllTheTime": 529,
-            "value2018": 226,
-            "All the time % total of downloads": "0.000604089537717341",
-            "2018 % total downloads ": "0.00377579149611561",
-            "name": "LinkedIn",
-            "xlsx_row_id": 141
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "INE",
-            "valueAllTheTime": 63725,
-            "value2018": 26921,
-            "All the time % total of downloads": "0.0727705213441164",
-            "2018 % total downloads ": "0.44977027817225",
-            "name": "Others",
-            "xlsx_row_id": 142
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "INE",
-            "valueAllTheTime": 129,
-            "value2018": 3,
-            "All the time % total of downloads": "0.00014731105929213",
-            "2018 % total downloads ": "5.0121126054632e-5",
-            "name": "RePec",
-            "xlsx_row_id": 143
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "INE",
-            "valueAllTheTime": 2951,
-            "value2018": 173,
-            "All the time % total of downloads": "0.00336988322458199",
-            "2018 % total downloads ": "0.00289031826915045",
-            "name": "Twitter",
-            "xlsx_row_id": 144
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "INE",
-            "valueAllTheTime": 1749,
-            "value2018": 7,
-            "All the time % total of downloads": "0.00199726389691423",
-            "2018 % total downloads ": "0.000116949294127475",
-            "name": "Yahoo",
-            "xlsx_row_id": 145
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "INT",
-            "valueAllTheTime": 2407,
-            "value2018": 12,
-            "All the time % total of downloads": "0.00440371470807781",
-            "2018 % total downloads ": "0.000170010200612037",
-            "name": "Bing",
-            "xlsx_row_id": 146
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "INT",
-            "valueAllTheTime": 11480,
-            "value2018": 1165,
-            "All the time % total of downloads": "0.0210031760900429",
-            "2018 % total downloads ": "0.0165051569760852",
-            "name": "Facebook",
-            "xlsx_row_id": 147
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "INT",
-            "valueAllTheTime": 192248,
-            "value2018": 5583,
-            "All the time % total of downloads": "0.351726358620084",
-            "2018 % total downloads ": "0.0790972458347501",
-            "name": "Google",
-            "xlsx_row_id": 148
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "INT",
-            "valueAllTheTime": 720,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00131727236801663",
-            "2018 % total downloads ": "0",
-            "name": "IDB Blogs",
-            "xlsx_row_id": 149
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "INT",
-            "valueAllTheTime": 14135,
-            "value2018": 0,
-            "All the time % total of downloads": "0.0258606179471042",
-            "2018 % total downloads ": "0",
-            "name": "IDB Landing Page",
-            "xlsx_row_id": 150
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "INT",
-            "valueAllTheTime": 2006,
-            "value2018": 2,
-            "All the time % total of downloads": "0.00367006718089077",
-            "2018 % total downloads ": "2.83350334353395e-5",
-            "name": "IDB MOOCs",
-            "xlsx_row_id": 151
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "INT",
-            "valueAllTheTime": 207944,
-            "value2018": 21872,
-            "All the time % total of downloads": "0.380442896242847",
-            "2018 % total downloads ": "0.309871925648872",
-            "name": "IDB Publications",
-            "xlsx_row_id": 152
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "INT",
-            "valueAllTheTime": 1,
-            "value2018": 0,
-            "All the time % total of downloads": "1.82954495557865e-6",
-            "2018 % total downloads ": "0",
-            "name": "IDB RES",
-            "xlsx_row_id": 153
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "INT",
-            "valueAllTheTime": 290,
-            "value2018": 0,
-            "All the time % total of downloads": "0.000530568037117808",
-            "2018 % total downloads ": "0",
-            "name": "Indes Virtual",
-            "xlsx_row_id": 154
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "INT",
-            "valueAllTheTime": 69285,
-            "value2018": 30185,
-            "All the time % total of downloads": "0.126760022247267",
-            "2018 % total downloads ": "0.427646492122861",
-            "name": "INTAL",
-            "xlsx_row_id": 155
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "INT",
-            "valueAllTheTime": 458,
-            "value2018": 95,
-            "All the time % total of downloads": "0.000837931589655021",
-            "2018 % total downloads ": "0.00134591408817862",
-            "name": "LinkedIn",
-            "xlsx_row_id": 156
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "INT",
-            "valueAllTheTime": 40817,
-            "value2018": 11465,
-            "All the time % total of downloads": "0.0746765364518537",
-            "2018 % total downloads ": "0.162430579168083",
-            "name": "Others",
-            "xlsx_row_id": 157
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "INT",
-            "valueAllTheTime": 900,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00164659046002078",
-            "2018 % total downloads ": "0",
-            "name": "RePec",
-            "xlsx_row_id": 158
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "INT",
-            "valueAllTheTime": 2839,
-            "value2018": 203,
-            "All the time % total of downloads": "0.00519407812888778",
-            "2018 % total downloads ": "0.00287600589368695",
-            "name": "Twitter",
-            "xlsx_row_id": 159
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "INT",
-            "valueAllTheTime": 1054,
-            "value2018": 2,
-            "All the time % total of downloads": "0.0019283403831799",
-            "2018 % total downloads ": "2.83350334353395e-5",
-            "name": "Yahoo",
-            "xlsx_row_id": 160
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "ITE",
-            "valueAllTheTime": 4,
-            "value2018": 4,
-            "All the time % total of downloads": "0.000801442596674013",
-            "2018 % total downloads ": "0.000807591358772461",
-            "name": "Bing",
-            "xlsx_row_id": 161
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "ITE",
-            "valueAllTheTime": 100,
-            "value2018": 100,
-            "All the time % total of downloads": "0.0200360649168503",
-            "2018 % total downloads ": "0.0201897839693115",
-            "name": "Facebook",
-            "xlsx_row_id": 162
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "ITE",
-            "valueAllTheTime": 1233,
-            "value2018": 1219,
-            "All the time % total of downloads": "0.247044680424765",
-            "2018 % total downloads ": "0.246113466585908",
-            "name": "Google",
-            "xlsx_row_id": 163
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "ITE",
-            "valueAllTheTime": 3398,
-            "value2018": 3377,
-            "All the time % total of downloads": "0.680825485874574",
-            "2018 % total downloads ": "0.68180900464365",
-            "name": "IDB Publications",
-            "xlsx_row_id": 164
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "ITE",
-            "valueAllTheTime": 70,
-            "value2018": 70,
-            "All the time % total of downloads": "0.0140252454417952",
-            "2018 % total downloads ": "0.0141328487785181",
-            "name": "LinkedIn",
-            "xlsx_row_id": 165
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "ITE",
-            "valueAllTheTime": 186,
-            "value2018": 183,
-            "All the time % total of downloads": "0.0372670807453416",
-            "2018 % total downloads ": "0.0369473046638401",
-            "name": "Others",
-            "xlsx_row_id": 166
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "KIC",
-            "valueAllTheTime": 2941,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00367722446448309",
-            "2018 % total downloads ": "0",
-            "name": "Bing",
-            "xlsx_row_id": 167
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "KIC",
-            "valueAllTheTime": 22070,
-            "value2018": 965,
-            "All the time % total of downloads": "0.0275948126253457",
-            "2018 % total downloads ": "0.0265044357164437",
-            "name": "Facebook",
-            "xlsx_row_id": 168
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "KIC",
-            "valueAllTheTime": 381145,
-            "value2018": 863,
-            "All the time % total of downloads": "0.476557537747503",
-            "2018 % total downloads ": "0.0237029305940839",
-            "name": "Google",
-            "xlsx_row_id": 169
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "KIC",
-            "valueAllTheTime": 172,
-            "value2018": 0,
-            "All the time % total of downloads": "0.000215056990102377",
-            "2018 % total downloads ": "0",
-            "name": "IDB Blogs",
-            "xlsx_row_id": 170
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "KIC",
-            "valueAllTheTime": 41326,
-            "value2018": 0,
-            "All the time % total of downloads": "0.0516711928661095",
-            "2018 % total downloads ": "0",
-            "name": "IDB Landing Page",
-            "xlsx_row_id": 171
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "KIC",
-            "valueAllTheTime": 1228,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00153540688282395",
-            "2018 % total downloads ": "0",
-            "name": "IDB MOOCs",
-            "xlsx_row_id": 172
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "KIC",
-            "valueAllTheTime": 279885,
-            "value2018": 15055,
-            "All the time % total of downloads": "0.349948986481418",
-            "2018 % total downloads ": "0.413496662913016",
-            "name": "IDB Publications",
-            "xlsx_row_id": 173
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "KIC",
-            "valueAllTheTime": 423,
-            "value2018": 0,
-            "All the time % total of downloads": "0.000528890155891311",
-            "2018 % total downloads ": "0",
-            "name": "IDB RES",
-            "xlsx_row_id": 174
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "KIC",
-            "valueAllTheTime": 2,
-            "value2018": 0,
-            "All the time % total of downloads": "2.50066267560904e-6",
-            "2018 % total downloads ": "0",
-            "name": "Indes Virtual",
-            "xlsx_row_id": 175
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "KIC",
-            "valueAllTheTime": 27,
-            "value2018": 0,
-            "All the time % total of downloads": "3.3758946120722e-5",
-            "2018 % total downloads ": "0",
-            "name": "INTAL",
-            "xlsx_row_id": 176
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "KIC",
-            "valueAllTheTime": 602,
-            "value2018": 25,
-            "All the time % total of downloads": "0.00075269946535832",
-            "2018 % total downloads ": "0.000686643412343102",
-            "name": "LinkedIn",
-            "xlsx_row_id": 177
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "KIC",
-            "valueAllTheTime": 67170,
-            "value2018": 19486,
-            "All the time % total of downloads": "0.0839847559603295",
-            "2018 % total downloads ": "0.535197341316707",
-            "name": "Others",
-            "xlsx_row_id": 178
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "KIC",
-            "valueAllTheTime": 417,
-            "value2018": 0,
-            "All the time % total of downloads": "0.000521388167864484",
-            "2018 % total downloads ": "0",
-            "name": "RePec",
-            "xlsx_row_id": 179
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "KIC",
-            "valueAllTheTime": 1081,
-            "value2018": 12,
-            "All the time % total of downloads": "0.00135160817616668",
-            "2018 % total downloads ": "0.000329588837924689",
-            "name": "Twitter",
-            "xlsx_row_id": 180
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "KIC",
-            "valueAllTheTime": 1299,
-            "value2018": 3,
-            "All the time % total of downloads": "0.00162418040780807",
-            "2018 % total downloads ": "8.23972094811722e-5",
-            "name": "Yahoo",
-            "xlsx_row_id": 181
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "MICI",
-            "valueAllTheTime": 8,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00547195622435021",
-            "2018 % total downloads ": "0",
-            "name": "Bing",
-            "xlsx_row_id": 182
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "MICI",
-            "valueAllTheTime": 65,
-            "value2018": 0,
-            "All the time % total of downloads": "0.0444596443228454",
-            "2018 % total downloads ": "0",
-            "name": "Google",
-            "xlsx_row_id": 183
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "MICI",
-            "valueAllTheTime": 1373,
-            "value2018": 0,
-            "All the time % total of downloads": "0.939124487004104",
-            "2018 % total downloads ": "0",
-            "name": "IDB Publications",
-            "xlsx_row_id": 184
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "MICI",
-            "valueAllTheTime": 9,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00615595075239398",
-            "2018 % total downloads ": "0",
-            "name": "INTAL",
-            "xlsx_row_id": 185
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "MICI",
-            "valueAllTheTime": 7,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00478796169630643",
-            "2018 % total downloads ": "0",
-            "name": "Others",
-            "xlsx_row_id": 186
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "MIF",
-            "valueAllTheTime": 1826,
-            "value2018": 4,
-            "All the time % total of downloads": "0.00982518065741543",
-            "2018 % total downloads ": "0.00173988690735102",
-            "name": "Bing",
-            "xlsx_row_id": 187
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "MIF",
-            "valueAllTheTime": 1465,
-            "value2018": 92,
-            "All the time % total of downloads": "0.00788274351758686",
-            "2018 % total downloads ": "0.0400173988690735",
-            "name": "Facebook",
-            "xlsx_row_id": 188
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "MIF",
-            "valueAllTheTime": 90468,
-            "value2018": 551,
-            "All the time % total of downloads": "0.486782280238258",
-            "2018 % total downloads ": "0.239669421487603",
-            "name": "Google",
-            "xlsx_row_id": 189
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "MIF",
-            "valueAllTheTime": 2,
-            "value2018": 0,
-            "All the time % total of downloads": "1.07614245973882e-5",
-            "2018 % total downloads ": "0",
-            "name": "IDB Blogs",
-            "xlsx_row_id": 190
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "MIF",
-            "valueAllTheTime": 2419,
-            "value2018": 0,
-            "All the time % total of downloads": "0.013015943050541",
-            "2018 % total downloads ": "0",
-            "name": "IDB Landing Page",
-            "xlsx_row_id": 191
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "MIF",
-            "valueAllTheTime": 633,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00340599088507337",
-            "2018 % total downloads ": "0",
-            "name": "IDB MOOCs",
-            "xlsx_row_id": 192
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "MIF",
-            "valueAllTheTime": 80556,
-            "value2018": 1455,
-            "All the time % total of downloads": "0.433448659933602",
-            "2018 % total downloads ": "0.632883862548934",
-            "name": "IDB Publications",
-            "xlsx_row_id": 193
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "MIF",
-            "valueAllTheTime": 2,
-            "value2018": 0,
-            "All the time % total of downloads": "1.07614245973882e-5",
-            "2018 % total downloads ": "0",
-            "name": "INTAL",
-            "xlsx_row_id": 194
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "MIF",
-            "valueAllTheTime": 213,
-            "value2018": 146,
-            "All the time % total of downloads": "0.00114609171962184",
-            "2018 % total downloads ": "0.0635058721183123",
-            "name": "LinkedIn",
-            "xlsx_row_id": 195
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "MIF",
-            "valueAllTheTime": 7244,
-            "value2018": 29,
-            "All the time % total of downloads": "0.0389778798917401",
-            "2018 % total downloads ": "0.0126141800782949",
-            "name": "Others",
-            "xlsx_row_id": 196
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "MIF",
-            "valueAllTheTime": 115,
-            "value2018": 0,
-            "All the time % total of downloads": "0.000618781914349822",
-            "2018 % total downloads ": "0",
-            "name": "RePec",
-            "xlsx_row_id": 197
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "MIF",
-            "valueAllTheTime": 148,
-            "value2018": 21,
-            "All the time % total of downloads": "0.000796345420206727",
-            "2018 % total downloads ": "0.00913440626359287",
-            "name": "Twitter",
-            "xlsx_row_id": 198
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "MIF",
-            "valueAllTheTime": 758,
-            "value2018": 1,
-            "All the time % total of downloads": "0.00407857992241013",
-            "2018 % total downloads ": "0.000434971726837756",
-            "name": "Yahoo",
-            "xlsx_row_id": 199
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "OII",
-            "valueAllTheTime": 72,
-            "value2018": 0,
-            "All the time % total of downloads": "0.035946080878682",
-            "2018 % total downloads ": "0",
-            "name": "Bing",
-            "xlsx_row_id": 200
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "OII",
-            "valueAllTheTime": 460,
-            "value2018": 0,
-            "All the time % total of downloads": "0.229655516724913",
-            "2018 % total downloads ": "0",
-            "name": "Google",
-            "xlsx_row_id": 201
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "OII",
-            "valueAllTheTime": 16,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00798801797304044",
-            "2018 % total downloads ": "0",
-            "name": "IDB Blogs",
-            "xlsx_row_id": 202
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "OII",
-            "valueAllTheTime": 1413,
-            "value2018": 0,
-            "All the time % total of downloads": "0.705441837244134",
-            "2018 % total downloads ": "0",
-            "name": "IDB Publications",
-            "xlsx_row_id": 203
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "OII",
-            "valueAllTheTime": 22,
-            "value2018": 0,
-            "All the time % total of downloads": "0.0109835247129306",
-            "2018 % total downloads ": "0",
-            "name": "Others",
-            "xlsx_row_id": 204
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "OII",
-            "valueAllTheTime": 20,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00998502246630055",
-            "2018 % total downloads ": "0",
-            "name": "Yahoo",
-            "xlsx_row_id": 205
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "ORP",
-            "valueAllTheTime": 66,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00263378426912487",
-            "2018 % total downloads ": "0",
-            "name": "Bing",
-            "xlsx_row_id": 206
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "ORP",
+            "All the time % total of downloads": "76.8%",
             "valueAllTheTime": 73,
-            "value2018": 17,
-            "All the time % total of downloads": "0.00291312502494114",
-            "2018 % total downloads ": "0.00893796004206099",
-            "name": "Facebook",
-            "xlsx_row_id": 207
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "ORP",
-            "valueAllTheTime": 5662,
-            "value2018": 84,
-            "All the time % total of downloads": "0.225946765633106",
-            "2018 % total downloads ": "0.0441640378548896",
-            "name": "Google",
-            "xlsx_row_id": 208
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "ORP",
-            "valueAllTheTime": 3,
-            "value2018": 0,
-            "All the time % total of downloads": "0.000119717466778403",
-            "2018 % total downloads ": "0",
-            "name": "IDB Blogs",
-            "xlsx_row_id": 209
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "ORP",
-            "valueAllTheTime": 1031,
-            "value2018": 1031,
-            "All the time % total of downloads": "0.0411429027495112",
-            "2018 % total downloads ": "0.542060988433228",
-            "name": "IDB Landing Page",
-            "xlsx_row_id": 210
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "ORP",
-            "valueAllTheTime": 633,
-            "value2018": 0,
-            "All the time % total of downloads": "0.025260385490243",
-            "2018 % total downloads ": "0",
-            "name": "IDB MOOCs",
-            "xlsx_row_id": 211
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "ORP",
-            "valueAllTheTime": 15101,
-            "value2018": 763,
-            "All the time % total of downloads": "0.602617821940221",
-            "2018 % total downloads ": "0.401156677181914",
-            "name": "IDB Publications",
-            "xlsx_row_id": 212
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "ORP",
-            "valueAllTheTime": 19,
-            "value2018": 0,
-            "All the time % total of downloads": "0.000758210622929886",
-            "2018 % total downloads ": "0",
-            "name": "INTAL",
-            "xlsx_row_id": 213
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "ORP",
-            "valueAllTheTime": 2323,
-            "value2018": 7,
-            "All the time % total of downloads": "0.0927012251087434",
-            "2018 % total downloads ": "0.00368033648790747",
+            "department_codes": "OCT",
             "name": "Others",
-            "xlsx_row_id": 214
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "ORP",
-            "valueAllTheTime": 10,
-            "value2018": 0,
-            "All the time % total of downloads": "0.000399058222594677",
-            "2018 % total downloads ": "0",
-            "name": "RePec",
-            "xlsx_row_id": 215
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "ORP",
-            "valueAllTheTime": 82,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00327227742527635",
-            "2018 % total downloads ": "0",
-            "name": "Twitter",
-            "xlsx_row_id": 216
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "ORP",
-            "valueAllTheTime": 56,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00223472604653019",
-            "2018 % total downloads ": "0",
-            "name": "Yahoo",
-            "xlsx_row_id": 217
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "OVE",
-            "valueAllTheTime": 1853,
-            "value2018": 2,
-            "All the time % total of downloads": "0.00726023210801407",
-            "2018 % total downloads ": "0.000208441896821261",
-            "name": "Bing",
-            "xlsx_row_id": 218
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "OVE",
-            "valueAllTheTime": 840,
-            "value2018": 32,
-            "All the time % total of downloads": "0.00329120073973655",
-            "2018 % total downloads ": "0.00333507034914018",
-            "name": "Facebook",
-            "xlsx_row_id": 219
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "OVE",
-            "valueAllTheTime": 144220,
-            "value2018": 6940,
-            "All the time % total of downloads": "0.565067822243815",
-            "2018 % total downloads ": "0.723293381969776",
-            "name": "Google",
-            "xlsx_row_id": 220
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "OVE",
-            "valueAllTheTime": 463,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00181407850297384",
-            "2018 % total downloads ": "0",
-            "name": "IDB Blogs",
-            "xlsx_row_id": 221
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "OVE",
-            "valueAllTheTime": 11,
-            "value2018": 0,
-            "All the time % total of downloads": "4.30990573060738e-5",
-            "2018 % total downloads ": "0",
-            "name": "IDB Landing Page",
-            "xlsx_row_id": 222
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "OVE",
-            "valueAllTheTime": 1338,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00524241260686607",
-            "2018 % total downloads ": "0",
-            "name": "IDB MOOCs",
-            "xlsx_row_id": 223
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "OVE",
-            "valueAllTheTime": 98806,
-            "value2018": 2512,
-            "All the time % total of downloads": "0.38713140510763",
-            "2018 % total downloads ": "0.261803022407504",
-            "name": "IDB Publications",
-            "xlsx_row_id": 224
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "OVE",
-            "valueAllTheTime": 3,
-            "value2018": 0,
-            "All the time % total of downloads": "1.1754288356202e-5",
-            "2018 % total downloads ": "0",
-            "name": "IDB RES",
-            "xlsx_row_id": 225
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "OVE",
-            "valueAllTheTime": 104,
-            "value2018": 0,
-            "All the time % total of downloads": "0.000407481996348334",
-            "2018 % total downloads ": "0",
-            "name": "LinkedIn",
-            "xlsx_row_id": 226
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "OVE",
-            "valueAllTheTime": 6218,
-            "value2018": 105,
-            "All the time % total of downloads": "0.0243627216662879",
-            "2018 % total downloads ": "0.0109431995831162",
-            "name": "Others",
-            "xlsx_row_id": 227
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "OVE",
-            "valueAllTheTime": 146,
-            "value2018": 0,
-            "All the time % total of downloads": "0.000572042033335162",
-            "2018 % total downloads ": "0",
-            "name": "RePec",
-            "xlsx_row_id": 228
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "OVE",
-            "valueAllTheTime": 378,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00148104033288145",
-            "2018 % total downloads ": "0",
-            "name": "Twitter",
-            "xlsx_row_id": 229
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "OVE",
-            "valueAllTheTime": 846,
-            "value2018": 4,
-            "All the time % total of downloads": "0.00331470931644895",
-            "2018 % total downloads ": "0.000416883793642522",
-            "name": "Yahoo",
-            "xlsx_row_id": 230
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "PRE",
-            "valueAllTheTime": 4,
-            "value2018": 0,
-            "All the time % total of downloads": "0.0015748031496063",
-            "2018 % total downloads ": "0",
-            "name": "Bing",
-            "xlsx_row_id": 231
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "PRE",
-            "valueAllTheTime": 26,
-            "value2018": 0,
-            "All the time % total of downloads": "0.0102362204724409",
-            "2018 % total downloads ": "0",
-            "name": "Facebook",
-            "xlsx_row_id": 232
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "PRE",
-            "valueAllTheTime": 175,
-            "value2018": 0,
-            "All the time % total of downloads": "0.0688976377952756",
-            "2018 % total downloads ": "0",
-            "name": "Google",
-            "xlsx_row_id": 233
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "PRE",
-            "valueAllTheTime": 2316,
-            "value2018": 0,
-            "All the time % total of downloads": "0.911811023622047",
-            "2018 % total downloads ": "0",
-            "name": "IDB Publications",
-            "xlsx_row_id": 234
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "PRE",
-            "valueAllTheTime": 15,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00590551181102362",
-            "2018 % total downloads ": "0",
-            "name": "Others",
-            "xlsx_row_id": 235
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "PRE",
-            "valueAllTheTime": 4,
-            "value2018": 0,
-            "All the time % total of downloads": "0.0015748031496063",
-            "2018 % total downloads ": "0",
-            "name": "Yahoo",
-            "xlsx_row_id": 236
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "RES",
-            "valueAllTheTime": 4314,
-            "value2018": 16,
-            "All the time % total of downloads": "0.00545126463274095",
-            "2018 % total downloads ": "0.000335704244560542",
-            "name": "Bing",
-            "xlsx_row_id": 237
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "RES",
-            "valueAllTheTime": 22033,
-            "value2018": 2739,
-            "All the time % total of downloads": "0.0278413800772326",
-            "2018 % total downloads ": "0.0574683703657078",
-            "name": "Facebook",
-            "xlsx_row_id": 238
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "RES",
-            "valueAllTheTime": 293413,
-            "value2018": 10694,
-            "All the time % total of downloads": "0.370763075958836",
-            "2018 % total downloads ": "0.224376324458152",
-            "name": "Google",
-            "xlsx_row_id": 239
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "RES",
-            "valueAllTheTime": 5003,
-            "value2018": 37,
-            "All the time % total of downloads": "0.00632190008289359",
-            "2018 % total downloads ": "0.000776316065546254",
-            "name": "IDB Blogs",
-            "xlsx_row_id": 240
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "RES",
-            "valueAllTheTime": 87150,
-            "value2018": 5821,
-            "All the time % total of downloads": "0.11012464365864",
-            "2018 % total downloads ": "0.122133400474182",
-            "name": "IDB Landing Page",
-            "xlsx_row_id": 241
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "RES",
-            "valueAllTheTime": 9756,
-            "value2018": 26,
-            "All the time % total of downloads": "0.012327894704919",
-            "2018 % total downloads ": "0.000545519397410881",
-            "name": "IDB MOOCs",
-            "xlsx_row_id": 242
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "RES",
-            "valueAllTheTime": 221230,
-            "value2018": 7589,
-            "All the time % total of downloads": "0.279551060431451",
-            "2018 % total downloads ": "0.159228719498122",
-            "name": "IDB Publications",
-            "xlsx_row_id": 243
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "RES",
-            "valueAllTheTime": 77790,
-            "value2018": 1997,
-            "All the time % total of downloads": "0.0982971432037363",
-            "2018 % total downloads ": "0.0419000860242127",
-            "name": "IDB RES",
-            "xlsx_row_id": 244
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "RES",
-            "valueAllTheTime": 83,
-            "value2018": 0,
-            "All the time % total of downloads": "0.000104880613008229",
-            "2018 % total downloads ": "0",
-            "name": "Indes Virtual",
-            "xlsx_row_id": 245
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "RES",
-            "valueAllTheTime": 78,
-            "value2018": 0,
-            "All the time % total of downloads": "9.85625037908655e-5",
-            "2018 % total downloads ": "0",
-            "name": "INTAL",
-            "xlsx_row_id": 246
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "RES",
-            "valueAllTheTime": 539,
-            "value2018": 219,
-            "All the time % total of downloads": "0.00068109217363175",
-            "2018 % total downloads ": "0.00459495184742242",
-            "name": "LinkedIn",
-            "xlsx_row_id": 247
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "RES",
-            "valueAllTheTime": 60619,
-            "value2018": 17874,
-            "All the time % total of downloads": "0.0765994925294677",
-            "2018 % total downloads ": "0.375023604204696",
-            "name": "Others",
-            "xlsx_row_id": 248
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "RES",
-            "valueAllTheTime": 3188,
-            "value2018": 43,
-            "All the time % total of downloads": "0.00402842643699076",
-            "2018 % total downloads ": "0.000902205157256457",
-            "name": "RePec",
-            "xlsx_row_id": 249
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "RES",
-            "valueAllTheTime": 4356,
-            "value2018": 603,
-            "All the time % total of downloads": "0.0055043367501668",
-            "2018 % total downloads ": "0.0126518537168754",
-            "name": "Twitter",
-            "xlsx_row_id": 250
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "RES",
-            "valueAllTheTime": 1824,
-            "value2018": 3,
-            "All the time % total of downloads": "0.00230484624249409",
-            "2018 % total downloads ": "6.29445458551017e-5",
-            "name": "Yahoo",
-            "xlsx_row_id": 251
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "RMG",
-            "valueAllTheTime": 39,
-            "value2018": 0,
-            "All the time % total of downloads": "0.342105263157895",
-            "2018 % total downloads ": "0",
-            "name": "Google",
-            "xlsx_row_id": 252
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "RMG",
-            "valueAllTheTime": 75,
-            "value2018": 0,
-            "All the time % total of downloads": "0.657894736842105",
-            "2018 % total downloads ": "0",
-            "name": "IDB Publications",
-            "xlsx_row_id": 253
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SCL",
-            "valueAllTheTime": 5601,
-            "value2018": 25,
-            "All the time % total of downloads": "0.00408070187197918",
-            "2018 % total downloads ": "0.000258512827406496",
-            "name": "Bing",
-            "xlsx_row_id": 254
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SCL",
-            "valueAllTheTime": 59183,
-            "value2018": 16762,
-            "All the time % total of downloads": "0.0431187607372512",
-            "2018 % total downloads ": "0.173327680519507",
-            "name": "Facebook",
-            "xlsx_row_id": 255
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SCL",
-            "valueAllTheTime": 778743,
-            "value2018": 9986,
-            "All the time % total of downloads": "0.567366187804086",
-            "2018 % total downloads ": "0.103260363779251",
-            "name": "Google",
-            "xlsx_row_id": 256
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SCL",
-            "valueAllTheTime": 43330,
-            "value2018": 2622,
-            "All the time % total of downloads": "0.0315687934498943",
-            "2018 % total downloads ": "0.0271128253383933",
-            "name": "IDB Blogs",
-            "xlsx_row_id": 257
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SCL",
-            "valueAllTheTime": 30940,
-            "value2018": 0,
-            "All the time % total of downloads": "0.0225418525118793",
-            "2018 % total downloads ": "0",
-            "name": "IDB Landing Page",
-            "xlsx_row_id": 258
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SCL",
-            "valueAllTheTime": 13974,
-            "value2018": 0,
-            "All the time % total of downloads": "0.0101809905300905",
-            "2018 % total downloads ": "0",
-            "name": "IDB MOOCs",
-            "xlsx_row_id": 259
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SCL",
-            "valueAllTheTime": 322158,
-            "value2018": 26711,
-            "All the time % total of downloads": "0.2347135785883",
-            "2018 % total downloads ": "0.276205445314197",
-            "name": "IDB Publications",
-            "xlsx_row_id": 260
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SCL",
-            "valueAllTheTime": 9,
-            "value2018": 0,
-            "All the time % total of downloads": "6.55709995497458e-6",
-            "2018 % total downloads ": "0",
-            "name": "IDB RES",
-            "xlsx_row_id": 261
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SCL",
-            "valueAllTheTime": 15,
-            "value2018": 0,
-            "All the time % total of downloads": "1.09284999249576e-5",
-            "2018 % total downloads ": "0",
-            "name": "Indes Virtual",
-            "xlsx_row_id": 262
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SCL",
-            "valueAllTheTime": 28,
-            "value2018": 0,
-            "All the time % total of downloads": "2.03998665265876e-5",
-            "2018 % total downloads ": "0",
-            "name": "INTAL",
-            "xlsx_row_id": 263
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SCL",
-            "valueAllTheTime": 861,
-            "value2018": 580,
-            "All the time % total of downloads": "0.000627295895692568",
-            "2018 % total downloads ": "0.00599749759583071",
-            "name": "LinkedIn",
-            "xlsx_row_id": 264
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SCL",
-            "valueAllTheTime": 107892,
-            "value2018": 37683,
-            "All the time % total of downloads": "0.0786065142602353",
-            "2018 % total downloads ": "0.389661555006359",
-            "name": "Others",
-            "xlsx_row_id": 265
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SCL",
-            "valueAllTheTime": 663,
-            "value2018": 49,
-            "All the time % total of downloads": "0.000483039696683127",
-            "2018 % total downloads ": "0.000506685141716732",
-            "name": "RePec",
-            "xlsx_row_id": 266
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SCL",
-            "valueAllTheTime": 6629,
-            "value2018": 2282,
-            "All the time % total of downloads": "0.00482966840016961",
-            "2018 % total downloads ": "0.0235970508856649",
-            "name": "Twitter",
-            "xlsx_row_id": 267
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SCL",
-            "valueAllTheTime": 2532,
-            "value2018": 7,
-            "All the time % total of downloads": "0.00184473078733285",
-            "2018 % total downloads ": "7.23835916738189e-5",
-            "name": "Yahoo",
-            "xlsx_row_id": 268
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SEC",
-            "valueAllTheTime": 8,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00213675213675214",
-            "2018 % total downloads ": "0",
-            "name": "Bing",
-            "xlsx_row_id": 269
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SEC",
-            "valueAllTheTime": 12,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00320512820512821",
-            "2018 % total downloads ": "0",
-            "name": "Facebook",
-            "xlsx_row_id": 270
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SEC",
-            "valueAllTheTime": 496,
-            "value2018": 0,
-            "All the time % total of downloads": "0.132478632478632",
-            "2018 % total downloads ": "0",
-            "name": "Google",
-            "xlsx_row_id": 271
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SEC",
-            "valueAllTheTime": 3206,
-            "value2018": 0,
-            "All the time % total of downloads": "0.856303418803419",
-            "2018 % total downloads ": "0",
-            "name": "IDB Publications",
-            "xlsx_row_id": 272
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SEC",
-            "valueAllTheTime": 12,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00320512820512821",
-            "2018 % total downloads ": "0",
-            "name": "Others",
-            "xlsx_row_id": 273
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SEC",
-            "valueAllTheTime": 4,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00106837606837607",
-            "2018 % total downloads ": "0",
-            "name": "RePec",
-            "xlsx_row_id": 274
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SEC",
-            "valueAllTheTime": 6,
-            "value2018": 0,
-            "All the time % total of downloads": "0.0016025641025641",
-            "2018 % total downloads ": "0",
-            "name": "Yahoo",
-            "xlsx_row_id": 275
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SPD",
-            "valueAllTheTime": 413,
-            "value2018": 15,
-            "All the time % total of downloads": "0.00314640296813219",
-            "2018 % total downloads ": "0.000949307005885703",
-            "name": "Bing",
-            "xlsx_row_id": 276
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SPD",
-            "valueAllTheTime": 5384,
-            "value2018": 4275,
-            "All the time % total of downloads": "0.0410175147225756",
-            "2018 % total downloads ": "0.270552496677425",
-            "name": "Facebook",
-            "xlsx_row_id": 277
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SPD",
-            "valueAllTheTime": 39707,
-            "value2018": 1567,
-            "All the time % total of downloads": "0.302504171078995",
-            "2018 % total downloads ": "0.0991709385481932",
-            "name": "Google",
-            "xlsx_row_id": 278
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SPD",
-            "valueAllTheTime": 2297,
-            "value2018": 34,
-            "All the time % total of downloads": "0.0174994857573841",
-            "2018 % total downloads ": "0.00215176254667426",
-            "name": "IDB Blogs",
-            "xlsx_row_id": 279
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SPD",
-            "valueAllTheTime": 3283,
-            "value2018": 0,
-            "All the time % total of downloads": "0.0250112371534576",
-            "2018 % total downloads ": "0",
-            "name": "IDB Landing Page",
-            "xlsx_row_id": 280
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SPD",
-            "valueAllTheTime": 1719,
-            "value2018": 0,
-            "All the time % total of downloads": "0.0130960452838238",
-            "2018 % total downloads ": "0",
-            "name": "IDB MOOCs",
-            "xlsx_row_id": 281
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SPD",
-            "valueAllTheTime": 61271,
-            "value2018": 8319,
-            "All the time % total of downloads": "0.466787545424764",
-            "2018 % total downloads ": "0.526485665464211",
-            "name": "IDB Publications",
-            "xlsx_row_id": 282
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SPD",
+            "All the time % total of downloads": "1.1%",
             "valueAllTheTime": 1,
-            "value2018": 0,
-            "All the time % total of downloads": "7.61840912380677e-6",
-            "2018 % total downloads ": "0",
-            "name": "Indes Virtual",
-            "xlsx_row_id": 283
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SPD",
-            "valueAllTheTime": 20,
-            "value2018": 0,
-            "All the time % total of downloads": "0.000152368182476135",
-            "2018 % total downloads ": "0",
-            "name": "INTAL",
-            "xlsx_row_id": 284
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SPD",
-            "valueAllTheTime": 91,
-            "value2018": 43,
-            "All the time % total of downloads": "0.000693275230266416",
-            "2018 % total downloads ": "0.00272134675020568",
-            "name": "LinkedIn",
-            "xlsx_row_id": 285
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SPD",
-            "valueAllTheTime": 15884,
-            "value2018": 1068,
-            "All the time % total of downloads": "0.121010810522547",
-            "2018 % total downloads ": "0.0675906588190621",
-            "name": "Others",
-            "xlsx_row_id": 286
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SPD",
-            "valueAllTheTime": 311,
-            "value2018": 27,
-            "All the time % total of downloads": "0.0023693252375039",
-            "2018 % total downloads ": "0.00170875261059427",
-            "name": "RePec",
-            "xlsx_row_id": 287
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SPD",
-            "valueAllTheTime": 697,
-            "value2018": 451,
-            "All the time % total of downloads": "0.00531003115929332",
-            "2018 % total downloads ": "0.0285424973102968",
-            "name": "Twitter",
-            "xlsx_row_id": 288
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "SPD",
-            "valueAllTheTime": 183,
-            "value2018": 2,
-            "All the time % total of downloads": "0.00139416886965664",
-            "2018 % total downloads ": "0.000126574267451427",
-            "name": "Yahoo",
-            "xlsx_row_id": 289
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "Strategic Core",
-            "valueAllTheTime": 17,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00162679425837321",
-            "2018 % total downloads ": "0",
-            "name": "Bing",
-            "xlsx_row_id": 290
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "Strategic Core",
-            "valueAllTheTime": 314,
-            "value2018": 0,
-            "All the time % total of downloads": "0.0300478468899522",
-            "2018 % total downloads ": "0",
+            "department_codes": "BOG",
             "name": "Facebook",
-            "xlsx_row_id": 291
+            "All the time % total of downloads": "1.0%",
+            "valueAllTheTime": 3,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "Strategic Core",
-            "valueAllTheTime": 4864,
-            "value2018": 0,
-            "All the time % total of downloads": "0.465454545454545",
-            "2018 % total downloads ": "0",
+            "department_codes": "BOG",
             "name": "Google",
-            "xlsx_row_id": 292
+            "All the time % total of downloads": "17.2%",
+            "valueAllTheTime": 51,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "Strategic Core",
-            "valueAllTheTime": 158,
-            "value2018": 0,
-            "All the time % total of downloads": "0.0151196172248804",
-            "2018 % total downloads ": "0",
-            "name": "IDB Blogs",
-            "xlsx_row_id": 293
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "Strategic Core",
-            "valueAllTheTime": 3113,
-            "value2018": 0,
-            "All the time % total of downloads": "0.297894736842105",
-            "2018 % total downloads ": "0",
+            "department_codes": "BOG",
             "name": "IDB Publications",
-            "xlsx_row_id": 294
+            "All the time % total of downloads": "80.5%",
+            "valueAllTheTime": 239,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "Strategic Core",
-            "valueAllTheTime": 2,
-            "value2018": 0,
-            "All the time % total of downloads": "0.000191387559808612",
-            "2018 % total downloads ": "0",
-            "name": "LinkedIn",
-            "xlsx_row_id": 295
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "Strategic Core",
-            "valueAllTheTime": 1892,
-            "value2018": 0,
-            "All the time % total of downloads": "0.181052631578947",
-            "2018 % total downloads ": "0",
+            "department_codes": "BOG",
             "name": "Others",
-            "xlsx_row_id": 296
+            "All the time % total of downloads": "0.3%",
+            "valueAllTheTime": 1,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "Strategic Core",
-            "valueAllTheTime": 84,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00803827751196172",
-            "2018 % total downloads ": "0",
-            "name": "Twitter",
-            "xlsx_row_id": 297
+            "department_codes": "BOG",
+            "name": "RePec",
+            "All the time % total of downloads": "1.0%",
+            "valueAllTheTime": 3,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "Strategic Core",
+            "department_codes": "CAN",
+            "name": "Bing",
+            "All the time % total of downloads": "0.3%",
+            "valueAllTheTime": 282,
+            "2018 % total downloads": "0.0%",
+            "value2018": 7
+        },
+        {
+            "department_codes": "CAN",
+            "name": "Facebook",
+            "All the time % total of downloads": "1.1%",
+            "valueAllTheTime": 1203,
+            "2018 % total downloads": "3.4%",
+            "value2018": 733
+        },
+        {
+            "department_codes": "CAN",
+            "name": "Google",
+            "All the time % total of downloads": "65.2%",
+            "valueAllTheTime": 73518,
+            "2018 % total downloads": "3.1%",
+            "value2018": 677
+        },
+        {
+            "department_codes": "CAN",
+            "name": "IDB Blogs",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 1,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "CAN",
+            "name": "IDB Landing Page",
+            "All the time % total of downloads": "8.5%",
+            "valueAllTheTime": 9534,
+            "2018 % total downloads": "43.2%",
+            "value2018": 9404
+        },
+        {
+            "department_codes": "CAN",
+            "name": "IDB Publications",
+            "All the time % total of downloads": "18.7%",
+            "valueAllTheTime": 21121,
+            "2018 % total downloads": "31.4%",
+            "value2018": 6833
+        },
+        {
+            "department_codes": "CAN",
+            "name": "IDB RES",
+            "All the time % total of downloads": "0.0%",
             "valueAllTheTime": 6,
-            "value2018": 0,
-            "All the time % total of downloads": "0.000574162679425837",
-            "2018 % total downloads ": "0",
-            "name": "Yahoo",
-            "xlsx_row_id": 298
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "VPC",
-            "valueAllTheTime": 62,
-            "value2018": 1,
-            "All the time % total of downloads": "0.00404093071759108",
-            "2018 % total downloads ": "0.0031055900621118",
-            "name": "Bing",
-            "xlsx_row_id": 299
+            "department_codes": "CAN",
+            "name": "Indes Virtual",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 27,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "VPC",
-            "valueAllTheTime": 619,
-            "value2018": 6,
-            "All the time % total of downloads": "0.0403441308740142",
-            "2018 % total downloads ": "0.0186335403726708",
-            "name": "Facebook",
-            "xlsx_row_id": 300
+            "department_codes": "CAN",
+            "name": "Instagram",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 14,
+            "2018 % total downloads": "0.1%",
+            "value2018": 14
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "VPC",
-            "valueAllTheTime": 7278,
-            "value2018": 50,
-            "All the time % total of downloads": "0.474353125203676",
-            "2018 % total downloads ": "0.15527950310559",
-            "name": "Google",
-            "xlsx_row_id": 301
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "VPC",
-            "valueAllTheTime": 92,
-            "value2018": 0,
-            "All the time % total of downloads": "0.00599621977449",
-            "2018 % total downloads ": "0",
-            "name": "IDB Blogs",
-            "xlsx_row_id": 302
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "VPC",
-            "valueAllTheTime": 6853,
-            "value2018": 261,
-            "All the time % total of downloads": "0.446653196897608",
-            "2018 % total downloads ": "0.81055900621118",
-            "name": "IDB Publications",
-            "xlsx_row_id": 303
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "VPC",
-            "valueAllTheTime": 8,
-            "value2018": 0,
-            "All the time % total of downloads": "0.000521410415173043",
-            "2018 % total downloads ": "0",
-            "name": "LinkedIn",
-            "xlsx_row_id": 304
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "VPC",
-            "valueAllTheTime": 393,
-            "value2018": 4,
-            "All the time % total of downloads": "0.0256142866453757",
-            "2018 % total downloads ": "0.0124223602484472",
-            "name": "Others",
-            "xlsx_row_id": 305
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "VPC",
-            "valueAllTheTime": 23,
-            "value2018": 0,
-            "All the time % total of downloads": "0.0014990549436225",
-            "2018 % total downloads ": "0",
-            "name": "Twitter",
-            "xlsx_row_id": 306
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "VPC",
-            "valueAllTheTime": 15,
-            "value2018": 0,
-            "All the time % total of downloads": "0.000977644528449456",
-            "2018 % total downloads ": "0",
-            "name": "Yahoo",
-            "xlsx_row_id": 307
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "VPS",
-            "valueAllTheTime": 123,
-            "value2018": 13,
-            "All the time % total of downloads": "0.00263090349075975",
-            "2018 % total downloads ": "0.000551314673452078",
-            "name": "Bing",
-            "xlsx_row_id": 308
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "VPS",
-            "valueAllTheTime": 3108,
-            "value2018": 2965,
-            "All the time % total of downloads": "0.0664784394250513",
-            "2018 % total downloads ": "0.125742154368109",
-            "name": "Facebook",
-            "xlsx_row_id": 309
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "VPS",
-            "valueAllTheTime": 16397,
-            "value2018": 6026,
-            "All the time % total of downloads": "0.350722963723477",
-            "2018 % total downloads ": "0.255555555555556",
-            "name": "Google",
-            "xlsx_row_id": 310
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "VPS",
-            "valueAllTheTime": 519,
-            "value2018": 0,
-            "All the time % total of downloads": "0.0111011293634497",
-            "2018 % total downloads ": "0",
-            "name": "IDB Blogs",
-            "xlsx_row_id": 311
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "VPS",
-            "valueAllTheTime": 1383,
-            "value2018": 0,
-            "All the time % total of downloads": "0.0295816221765914",
-            "2018 % total downloads ": "0",
-            "name": "IDB MOOCs",
-            "xlsx_row_id": 312
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "VPS",
-            "valueAllTheTime": 12475,
-            "value2018": 3545,
-            "All the time % total of downloads": "0.266833504449008",
-            "2018 % total downloads ": "0.150339270568278",
-            "name": "IDB Publications",
-            "xlsx_row_id": 313
-        },
-        {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "VPS",
-            "valueAllTheTime": 2,
-            "value2018": 0,
-            "All the time % total of downloads": "4.27789185489391e-5",
-            "2018 % total downloads ": "0",
+            "department_codes": "CAN",
             "name": "INTAL",
-            "xlsx_row_id": 314
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 1,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "VPS",
-            "valueAllTheTime": 16,
-            "value2018": 16,
-            "All the time % total of downloads": "0.000342231348391513",
-            "2018 % total downloads ": "0.000678541136556404",
+            "department_codes": "CAN",
             "name": "LinkedIn",
-            "xlsx_row_id": 315
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 125,
+            "2018 % total downloads": "0.3%",
+            "value2018": 69
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "VPS",
-            "valueAllTheTime": 11519,
-            "value2018": 9900,
-            "All the time % total of downloads": "0.246385181382615",
-            "2018 % total downloads ": "0.419847328244275",
+            "department_codes": "CAN",
             "name": "Others",
-            "xlsx_row_id": 316
+            "All the time % total of downloads": "4.8%",
+            "valueAllTheTime": 5453,
+            "2018 % total downloads": "14.3%",
+            "value2018": 3106
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "VPS",
-            "valueAllTheTime": 7,
-            "value2018": 0,
-            "All the time % total of downloads": "0.000149726214921287",
-            "2018 % total downloads ": "0",
+            "department_codes": "CAN",
             "name": "RePec",
-            "xlsx_row_id": 317
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 138,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "VPS",
-            "valueAllTheTime": 1132,
-            "value2018": 1085,
-            "All the time % total of downloads": "0.0242128678986995",
-            "2018 % total downloads ": "0.0460135708227311",
+            "department_codes": "CAN",
             "name": "Twitter",
-            "xlsx_row_id": 318
+            "All the time % total of downloads": "1.0%",
+            "valueAllTheTime": 1163,
+            "2018 % total downloads": "4.2%",
+            "value2018": 916
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "department_codes": "VPS",
-            "valueAllTheTime": 71,
-            "value2018": 30,
-            "All the time % total of downloads": "0.00151865160848734",
-            "2018 % total downloads ": "0.00127226463104326",
+            "department_codes": "CAN",
             "name": "Yahoo",
-            "xlsx_row_id": 319
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 122,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "CCB",
+            "name": "Bing",
+            "All the time % total of downloads": "1.4%",
+            "valueAllTheTime": 1776,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "CCB",
+            "name": "Facebook",
+            "All the time % total of downloads": "2.3%",
+            "valueAllTheTime": 2975,
+            "2018 % total downloads": "15.4%",
+            "value2018": 1397
+        },
+        {
+            "department_codes": "CCB",
+            "name": "Google",
+            "All the time % total of downloads": "48.6%",
+            "valueAllTheTime": 62425,
+            "2018 % total downloads": "21.3%",
+            "value2018": 1927
+        },
+        {
+            "department_codes": "CCB",
+            "name": "IDB Blogs",
+            "All the time % total of downloads": "1.9%",
+            "valueAllTheTime": 2378,
+            "2018 % total downloads": "0.1%",
+            "value2018": 10
+        },
+        {
+            "department_codes": "CCB",
+            "name": "IDB Landing Page",
+            "All the time % total of downloads": "0.8%",
+            "valueAllTheTime": 1083,
+            "2018 % total downloads": "2.6%",
+            "value2018": 237
+        },
+        {
+            "department_codes": "CCB",
+            "name": "IDB MOOCs",
+            "All the time % total of downloads": "0.2%",
+            "valueAllTheTime": 307,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "CCB",
+            "name": "IDB Publications",
+            "All the time % total of downloads": "40.3%",
+            "valueAllTheTime": 51816,
+            "2018 % total downloads": "58.9%",
+            "value2018": 5340
+        },
+        {
+            "department_codes": "CCB",
+            "name": "IDB RES",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 1,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "CCB",
+            "name": "INTAL",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 15,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "CCB",
+            "name": "LinkedIn",
+            "All the time % total of downloads": "0.2%",
+            "valueAllTheTime": 302,
+            "2018 % total downloads": "0.7%",
+            "value2018": 59
+        },
+        {
+            "department_codes": "CCB",
+            "name": "Others",
+            "All the time % total of downloads": "3.4%",
+            "valueAllTheTime": 4428,
+            "2018 % total downloads": "0.9%",
+            "value2018": 79
+        },
+        {
+            "department_codes": "CCB",
+            "name": "RePec",
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 125,
+            "2018 % total downloads": "0.1%",
+            "value2018": 8
+        },
+        {
+            "department_codes": "CCB",
+            "name": "Twitter",
+            "All the time % total of downloads": "0.2%",
+            "valueAllTheTime": 202,
+            "2018 % total downloads": "0.1%",
+            "value2018": 5
+        },
+        {
+            "department_codes": "CCB",
+            "name": "Yahoo",
+            "All the time % total of downloads": "0.5%",
+            "valueAllTheTime": 680,
+            "2018 % total downloads": "0.1%",
+            "value2018": 6
+        },
+        {
+            "department_codes": "CID",
+            "name": "Bing",
+            "All the time % total of downloads": "0.7%",
+            "valueAllTheTime": 584,
+            "2018 % total downloads": "0.1%",
+            "value2018": 17
+        },
+        {
+            "department_codes": "CID",
+            "name": "Facebook",
+            "All the time % total of downloads": "1.6%",
+            "valueAllTheTime": 1303,
+            "2018 % total downloads": "4.1%",
+            "value2018": 480
+        },
+        {
+            "department_codes": "CID",
+            "name": "Google",
+            "All the time % total of downloads": "55.5%",
+            "valueAllTheTime": 45233,
+            "2018 % total downloads": "12.4%",
+            "value2018": 1444
+        },
+        {
+            "department_codes": "CID",
+            "name": "IDB Blogs",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 27,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "CID",
+            "name": "IDB Landing Page",
+            "All the time % total of downloads": "8.5%",
+            "valueAllTheTime": 6904,
+            "2018 % total downloads": "27.4%",
+            "value2018": 3187
+        },
+        {
+            "department_codes": "CID",
+            "name": "IDB Publications",
+            "All the time % total of downloads": "30.8%",
+            "valueAllTheTime": 25115,
+            "2018 % total downloads": "53.3%",
+            "value2018": 6204
+        },
+        {
+            "department_codes": "CID",
+            "name": "IDB RES",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 22,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "CID",
+            "name": "Indes Virtual",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 15,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "CID",
+            "name": "INTAL",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 1,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "CID",
+            "name": "LinkedIn",
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 72,
+            "2018 % total downloads": "0.5%",
+            "value2018": 57
+        },
+        {
+            "department_codes": "CID",
+            "name": "Others",
+            "All the time % total of downloads": "2.1%",
+            "valueAllTheTime": 1752,
+            "2018 % total downloads": "1.5%",
+            "value2018": 170
+        },
+        {
+            "department_codes": "CID",
+            "name": "RePec",
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 59,
+            "2018 % total downloads": "0.0%",
+            "value2018": 4
+        },
+        {
+            "department_codes": "CID",
+            "name": "Twitter",
+            "All the time % total of downloads": "0.3%",
+            "valueAllTheTime": 237,
+            "2018 % total downloads": "0.6%",
+            "value2018": 65
+        },
+        {
+            "department_codes": "CID",
+            "name": "Yahoo",
+            "All the time % total of downloads": "0.3%",
+            "valueAllTheTime": 243,
+            "2018 % total downloads": "0.0%",
+            "value2018": 3
+        },
+        {
+            "department_codes": "CSC",
+            "name": "Bing",
+            "All the time % total of downloads": "0.9%",
+            "valueAllTheTime": 220,
+            "2018 % total downloads": "0.1%",
+            "value2018": 2
+        },
+        {
+            "department_codes": "CSC",
+            "name": "Facebook",
+            "All the time % total of downloads": "0.6%",
+            "valueAllTheTime": 147,
+            "2018 % total downloads": "1.0%",
+            "value2018": 18
+        },
+        {
+            "department_codes": "CSC",
+            "name": "Google",
+            "All the time % total of downloads": "65.7%",
+            "valueAllTheTime": 15303,
+            "2018 % total downloads": "25.2%",
+            "value2018": 457
+        },
+        {
+            "department_codes": "CSC",
+            "name": "IDB Landing Page",
+            "All the time % total of downloads": "0.2%",
+            "valueAllTheTime": 46,
+            "2018 % total downloads": "2.5%",
+            "value2018": 46
+        },
+        {
+            "department_codes": "CSC",
+            "name": "IDB Publications",
+            "All the time % total of downloads": "28.4%",
+            "valueAllTheTime": 6606,
+            "2018 % total downloads": "70.1%",
+            "value2018": 1272
+        },
+        {
+            "department_codes": "CSC",
+            "name": "Indes Virtual",
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 15,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "CSC",
+            "name": "LinkedIn",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 3,
+            "2018 % total downloads": "0.2%",
+            "value2018": 3
+        },
+        {
+            "department_codes": "CSC",
+            "name": "Others",
+            "All the time % total of downloads": "3.5%",
+            "valueAllTheTime": 805,
+            "2018 % total downloads": "0.8%",
+            "value2018": 15
+        },
+        {
+            "department_codes": "CSC",
+            "name": "RePec",
+            "All the time % total of downloads": "0.2%",
+            "valueAllTheTime": 37,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "CSC",
+            "name": "Twitter",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 9,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "CSC",
+            "name": "Yahoo",
+            "All the time % total of downloads": "0.4%",
+            "valueAllTheTime": 93,
+            "2018 % total downloads": "0.1%",
+            "value2018": 1
+        },
+        {
+            "department_codes": "CSD",
+            "name": "Bing",
+            "All the time % total of downloads": "0.4%",
+            "valueAllTheTime": 1208,
+            "2018 % total downloads": "0.0%",
+            "value2018": 5
+        },
+        {
+            "department_codes": "CSD",
+            "name": "Facebook",
+            "All the time % total of downloads": "2.8%",
+            "valueAllTheTime": 9139,
+            "2018 % total downloads": "3.8%",
+            "value2018": 1592
+        },
+        {
+            "department_codes": "CSD",
+            "name": "Google",
+            "All the time % total of downloads": "26.8%",
+            "valueAllTheTime": 87329,
+            "2018 % total downloads": "12.0%",
+            "value2018": 5050
+        },
+        {
+            "department_codes": "CSD",
+            "name": "IDB Blogs",
+            "All the time % total of downloads": "0.5%",
+            "valueAllTheTime": 1696,
+            "2018 % total downloads": "0.0%",
+            "value2018": 1
+        },
+        {
+            "department_codes": "CSD",
+            "name": "IDB Landing Page",
+            "All the time % total of downloads": "5.0%",
+            "valueAllTheTime": 16167,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "CSD",
+            "name": "IDB MOOCs",
+            "All the time % total of downloads": "0.3%",
+            "valueAllTheTime": 1006,
+            "2018 % total downloads": "0.2%",
+            "value2018": 73
+        },
+        {
+            "department_codes": "CSD",
+            "name": "IDB Publications",
+            "All the time % total of downloads": "50.2%",
+            "valueAllTheTime": 163311,
+            "2018 % total downloads": "33.9%",
+            "value2018": 14290
+        },
+        {
+            "department_codes": "CSD",
+            "name": "IDB RES",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 2,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "CSD",
+            "name": "Indes Virtual",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 117,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "CSD",
+            "name": "Instagram",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 41,
+            "2018 % total downloads": "0.0%",
+            "value2018": 6
+        },
+        {
+            "department_codes": "CSD",
+            "name": "INTAL",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 6,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "CSD",
+            "name": "LinkedIn",
+            "All the time % total of downloads": "0.2%",
+            "valueAllTheTime": 804,
+            "2018 % total downloads": "0.2%",
+            "value2018": 99
+        },
+        {
+            "department_codes": "CSD",
+            "name": "Others",
+            "All the time % total of downloads": "13.0%",
+            "valueAllTheTime": 42395,
+            "2018 % total downloads": "49.5%",
+            "value2018": 20904
+        },
+        {
+            "department_codes": "CSD",
+            "name": "RePec",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 61,
+            "2018 % total downloads": "0.0%",
+            "value2018": 1
+        },
+        {
+            "department_codes": "CSD",
+            "name": "Twitter",
+            "All the time % total of downloads": "0.5%",
+            "valueAllTheTime": 1695,
+            "2018 % total downloads": "0.4%",
+            "value2018": 172
+        },
+        {
+            "department_codes": "CSD",
+            "name": "Yahoo",
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 382,
+            "2018 % total downloads": "0.0%",
+            "value2018": 4
+        },
+        {
+            "department_codes": "Discontinued Departments",
+            "name": "Bing",
+            "All the time % total of downloads": "0.8%",
+            "valueAllTheTime": 6930,
+            "2018 % total downloads": "0.1%",
+            "value2018": 5
+        },
+        {
+            "department_codes": "Discontinued Departments",
+            "name": "Facebook",
+            "All the time % total of downloads": "1.0%",
+            "valueAllTheTime": 8467,
+            "2018 % total downloads": "2.8%",
+            "value2018": 120
+        },
+        {
+            "department_codes": "Discontinued Departments",
+            "name": "Google",
+            "All the time % total of downloads": "50.6%",
+            "valueAllTheTime": 423506,
+            "2018 % total downloads": "42.8%",
+            "value2018": 1849
+        },
+        {
+            "department_codes": "Discontinued Departments",
+            "name": "IDB Blogs",
+            "All the time % total of downloads": "1.9%",
+            "valueAllTheTime": 15848,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "Discontinued Departments",
+            "name": "IDB Landing Page",
+            "All the time % total of downloads": "0.2%",
+            "valueAllTheTime": 1530,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "Discontinued Departments",
+            "name": "IDB MOOCs",
+            "All the time % total of downloads": "0.5%",
+            "valueAllTheTime": 4376,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "Discontinued Departments",
+            "name": "IDB Publications",
+            "All the time % total of downloads": "39.9%",
+            "valueAllTheTime": 333864,
+            "2018 % total downloads": "46.9%",
+            "value2018": 2026
+        },
+        {
+            "department_codes": "Discontinued Departments",
+            "name": "IDB RES",
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 841,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "Discontinued Departments",
+            "name": "INTAL",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 5,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "Discontinued Departments",
+            "name": "LinkedIn",
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 598,
+            "2018 % total downloads": "4.6%",
+            "value2018": 199
+        },
+        {
+            "department_codes": "Discontinued Departments",
+            "name": "Others",
+            "All the time % total of downloads": "4.2%",
+            "valueAllTheTime": 35169,
+            "2018 % total downloads": "2.3%",
+            "value2018": 99
+        },
+        {
+            "department_codes": "Discontinued Departments",
+            "name": "RePec",
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 1054,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "Discontinued Departments",
+            "name": "Twitter",
+            "All the time % total of downloads": "0.2%",
+            "valueAllTheTime": 1350,
+            "2018 % total downloads": "0.5%",
+            "value2018": 21
+        },
+        {
+            "department_codes": "Discontinued Departments",
+            "name": "Yahoo",
+            "All the time % total of downloads": "0.4%",
+            "valueAllTheTime": 3171,
+            "2018 % total downloads": "0.0%",
+            "value2018": 2
+        },
+        {
+            "department_codes": "ESG",
+            "name": "Bing",
+            "All the time % total of downloads": "0.6%",
+            "valueAllTheTime": 758,
+            "2018 % total downloads": "0.0%",
+            "value2018": 1
+        },
+        {
+            "department_codes": "ESG",
+            "name": "Facebook",
+            "All the time % total of downloads": "1.3%",
+            "valueAllTheTime": 1554,
+            "2018 % total downloads": "7.1%",
+            "value2018": 1106
+        },
+        {
+            "department_codes": "ESG",
+            "name": "Google",
+            "All the time % total of downloads": "40.8%",
+            "valueAllTheTime": 49424,
+            "2018 % total downloads": "8.7%",
+            "value2018": 1363
+        },
+        {
+            "department_codes": "ESG",
+            "name": "IDB Blogs",
+            "All the time % total of downloads": "0.9%",
+            "valueAllTheTime": 1119,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "ESG",
+            "name": "IDB Landing Page",
+            "All the time % total of downloads": "0.5%",
+            "valueAllTheTime": 603,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "ESG",
+            "name": "IDB MOOCs",
+            "All the time % total of downloads": "0.2%",
+            "valueAllTheTime": 211,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "ESG",
+            "name": "IDB Publications",
+            "All the time % total of downloads": "43.7%",
+            "valueAllTheTime": 52951,
+            "2018 % total downloads": "35.4%",
+            "value2018": 5543
+        },
+        {
+            "department_codes": "ESG",
+            "name": "IDB RES",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 1,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "ESG",
+            "name": "Indes Virtual",
+            "All the time % total of downloads": "1.2%",
+            "valueAllTheTime": 1398,
+            "2018 % total downloads": "0.0%",
+            "value2018": 3
+        },
+        {
+            "department_codes": "ESG",
+            "name": "Instagram",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 1,
+            "2018 % total downloads": "0.0%",
+            "value2018": 1
+        },
+        {
+            "department_codes": "ESG",
+            "name": "INTAL",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 28,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "ESG",
+            "name": "LinkedIn",
+            "All the time % total of downloads": "0.4%",
+            "valueAllTheTime": 522,
+            "2018 % total downloads": "1.5%",
+            "value2018": 241
+        },
+        {
+            "department_codes": "ESG",
+            "name": "Others",
+            "All the time % total of downloads": "10.1%",
+            "valueAllTheTime": 12228,
+            "2018 % total downloads": "47.1%",
+            "value2018": 7372
+        },
+        {
+            "department_codes": "ESG",
+            "name": "RePec",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 5,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "ESG",
+            "name": "Twitter",
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 66,
+            "2018 % total downloads": "0.2%",
+            "value2018": 36
+        },
+        {
+            "department_codes": "ESG",
+            "name": "Yahoo",
+            "All the time % total of downloads": "0.3%",
+            "valueAllTheTime": 326,
+            "2018 % total downloads": "0.0%",
+            "value2018": 1
+        },
+        {
+            "department_codes": "FMP",
+            "name": "Bing",
+            "All the time % total of downloads": "0.8%",
+            "valueAllTheTime": 50,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "FMP",
+            "name": "Google",
+            "All the time % total of downloads": "46.6%",
+            "valueAllTheTime": 2982,
+            "2018 % total downloads": "0.6%",
+            "value2018": 1
+        },
+        {
+            "department_codes": "FMP",
+            "name": "IDB Blogs",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 2,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "FMP",
+            "name": "IDB Publications",
+            "All the time % total of downloads": "50.5%",
+            "valueAllTheTime": 3232,
+            "2018 % total downloads": "99.4%",
+            "value2018": 153
+        },
+        {
+            "department_codes": "FMP",
+            "name": "LinkedIn",
+            "All the time % total of downloads": "0.2%",
+            "valueAllTheTime": 10,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "FMP",
+            "name": "Others",
+            "All the time % total of downloads": "1.7%",
+            "valueAllTheTime": 111,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "FMP",
+            "name": "Yahoo",
+            "All the time % total of downloads": "0.3%",
+            "valueAllTheTime": 19,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "HRD",
+            "name": "Google",
+            "All the time % total of downloads": "1.6%",
+            "valueAllTheTime": 2,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "HRD",
+            "name": "IDB Publications",
+            "All the time % total of downloads": "87.1%",
+            "valueAllTheTime": 108,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "HRD",
+            "name": "Others",
+            "All the time % total of downloads": "11.3%",
+            "valueAllTheTime": 14,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "IFD",
+            "name": "Bing",
+            "All the time % total of downloads": "0.5%",
+            "valueAllTheTime": 5983,
+            "2018 % total downloads": "0.0%",
+            "value2018": 18
+        },
+        {
+            "department_codes": "IFD",
+            "name": "Facebook",
+            "All the time % total of downloads": "2.0%",
+            "valueAllTheTime": 24774,
+            "2018 % total downloads": "2.9%",
+            "value2018": 2947
+        },
+        {
+            "department_codes": "IFD",
+            "name": "Google",
+            "All the time % total of downloads": "40.7%",
+            "valueAllTheTime": 515272,
+            "2018 % total downloads": "11.0%",
+            "value2018": 11047
+        },
+        {
+            "department_codes": "IFD",
+            "name": "IDB Blogs",
+            "All the time % total of downloads": "0.9%",
+            "valueAllTheTime": 11136,
+            "2018 % total downloads": "1.0%",
+            "value2018": 982
+        },
+        {
+            "department_codes": "IFD",
+            "name": "IDB Landing Page",
+            "All the time % total of downloads": "3.3%",
+            "valueAllTheTime": 42332,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "IFD",
+            "name": "IDB MOOCs",
+            "All the time % total of downloads": "1.4%",
+            "valueAllTheTime": 18119,
+            "2018 % total downloads": "0.4%",
+            "value2018": 407
+        },
+        {
+            "department_codes": "IFD",
+            "name": "IDB Publications",
+            "All the time % total of downloads": "41.2%",
+            "valueAllTheTime": 521413,
+            "2018 % total downloads": "56.8%",
+            "value2018": 56790
+        },
+        {
+            "department_codes": "IFD",
+            "name": "IDB RES",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 210,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "IFD",
+            "name": "Indes Virtual",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 47,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "IFD",
+            "name": "Instagram",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 52,
+            "2018 % total downloads": "0.0%",
+            "value2018": 2
+        },
+        {
+            "department_codes": "IFD",
+            "name": "INTAL",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 95,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "IFD",
+            "name": "LinkedIn",
+            "All the time % total of downloads": "0.3%",
+            "valueAllTheTime": 3263,
+            "2018 % total downloads": "1.1%",
+            "value2018": 1054
+        },
+        {
+            "department_codes": "IFD",
+            "name": "Others",
+            "All the time % total of downloads": "9.0%",
+            "valueAllTheTime": 114437,
+            "2018 % total downloads": "26.2%",
+            "value2018": 26228
+        },
+        {
+            "department_codes": "IFD",
+            "name": "RePec",
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 893,
+            "2018 % total downloads": "0.0%",
+            "value2018": 10
+        },
+        {
+            "department_codes": "IFD",
+            "name": "Twitter",
+            "All the time % total of downloads": "0.4%",
+            "valueAllTheTime": 4467,
+            "2018 % total downloads": "0.6%",
+            "value2018": 576
+        },
+        {
+            "department_codes": "IFD",
+            "name": "Yahoo",
+            "All the time % total of downloads": "0.2%",
+            "valueAllTheTime": 2738,
+            "2018 % total downloads": "0.0%",
+            "value2018": 9
+        },
+        {
+            "department_codes": "INE",
+            "name": "Bing",
+            "All the time % total of downloads": "0.4%",
+            "valueAllTheTime": 3553,
+            "2018 % total downloads": "0.0%",
+            "value2018": 19
+        },
+        {
+            "department_codes": "INE",
+            "name": "Facebook",
+            "All the time % total of downloads": "1.1%",
+            "valueAllTheTime": 9827,
+            "2018 % total downloads": "2.8%",
+            "value2018": 1796
+        },
+        {
+            "department_codes": "INE",
+            "name": "Google",
+            "All the time % total of downloads": "58.7%",
+            "valueAllTheTime": 525798,
+            "2018 % total downloads": "14.3%",
+            "value2018": 9161
+        },
+        {
+            "department_codes": "INE",
+            "name": "IDB Blogs",
+            "All the time % total of downloads": "0.7%",
+            "valueAllTheTime": 6565,
+            "2018 % total downloads": "0.5%",
+            "value2018": 314
+        },
+        {
+            "department_codes": "INE",
+            "name": "IDB Landing Page",
+            "All the time % total of downloads": "1.3%",
+            "valueAllTheTime": 12055,
+            "2018 % total downloads": "0.4%",
+            "value2018": 225
+        },
+        {
+            "department_codes": "INE",
+            "name": "IDB MOOCs",
+            "All the time % total of downloads": "0.5%",
+            "valueAllTheTime": 4891,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "INE",
+            "name": "IDB Publications",
+            "All the time % total of downloads": "29.3%",
+            "valueAllTheTime": 262148,
+            "2018 % total downloads": "37.2%",
+            "value2018": 23775
+        },
+        {
+            "department_codes": "INE",
+            "name": "Indes Virtual",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 175,
+            "2018 % total downloads": "0.2%",
+            "value2018": 118
+        },
+        {
+            "department_codes": "INE",
+            "name": "Instagram",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 285,
+            "2018 % total downloads": "0.0%",
+            "value2018": 1
+        },
+        {
+            "department_codes": "INE",
+            "name": "INTAL",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 28,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "INE",
+            "name": "LinkedIn",
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 558,
+            "2018 % total downloads": "0.4%",
+            "value2018": 252
+        },
+        {
+            "department_codes": "INE",
+            "name": "Others",
+            "All the time % total of downloads": "7.2%",
+            "valueAllTheTime": 64726,
+            "2018 % total downloads": "43.9%",
+            "value2018": 28049
+        },
+        {
+            "department_codes": "INE",
+            "name": "RePec",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 130,
+            "2018 % total downloads": "0.0%",
+            "value2018": 3
+        },
+        {
+            "department_codes": "INE",
+            "name": "Twitter",
+            "All the time % total of downloads": "0.3%",
+            "valueAllTheTime": 2973,
+            "2018 % total downloads": "0.3%",
+            "value2018": 195
+        },
+        {
+            "department_codes": "INE",
+            "name": "Yahoo",
+            "All the time % total of downloads": "0.2%",
+            "valueAllTheTime": 1763,
+            "2018 % total downloads": "0.0%",
+            "value2018": 9
+        },
+        {
+            "department_codes": "INT",
+            "name": "Bing",
+            "All the time % total of downloads": "0.4%",
+            "valueAllTheTime": 2460,
+            "2018 % total downloads": "0.0%",
+            "value2018": 12
+        },
+        {
+            "department_codes": "INT",
+            "name": "Facebook",
+            "All the time % total of downloads": "2.1%",
+            "valueAllTheTime": 11989,
+            "2018 % total downloads": "1.8%",
+            "value2018": 1323
+        },
+        {
+            "department_codes": "INT",
+            "name": "Google",
+            "All the time % total of downloads": "35.4%",
+            "valueAllTheTime": 197882,
+            "2018 % total downloads": "8.5%",
+            "value2018": 6405
+        },
+        {
+            "department_codes": "INT",
+            "name": "IDB Blogs",
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 727,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "INT",
+            "name": "IDB Landing Page",
+            "All the time % total of downloads": "2.5%",
+            "valueAllTheTime": 14136,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "INT",
+            "name": "IDB MOOCs",
+            "All the time % total of downloads": "0.4%",
+            "valueAllTheTime": 2048,
+            "2018 % total downloads": "0.0%",
+            "value2018": 2
+        },
+        {
+            "department_codes": "INT",
+            "name": "IDB Publications",
+            "All the time % total of downloads": "38.2%",
+            "valueAllTheTime": 213740,
+            "2018 % total downloads": "33.9%",
+            "value2018": 25574
+        },
+        {
+            "department_codes": "INT",
+            "name": "IDB RES",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 1,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "INT",
+            "name": "Indes Virtual",
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 290,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "INT",
+            "name": "Instagram",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 25,
+            "2018 % total downloads": "0.0%",
+            "value2018": 12
+        },
+        {
+            "department_codes": "INT",
+            "name": "INTAL",
+            "All the time % total of downloads": "12.4%",
+            "valueAllTheTime": 69372,
+            "2018 % total downloads": "40.1%",
+            "value2018": 30273
+        },
+        {
+            "department_codes": "INT",
+            "name": "LinkedIn",
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 495,
+            "2018 % total downloads": "0.1%",
+            "value2018": 98
+        },
+        {
+            "department_codes": "INT",
+            "name": "Others",
+            "All the time % total of downloads": "7.4%",
+            "valueAllTheTime": 41155,
+            "2018 % total downloads": "15.4%",
+            "value2018": 11599
+        },
+        {
+            "department_codes": "INT",
+            "name": "RePec",
+            "All the time % total of downloads": "0.2%",
+            "valueAllTheTime": 922,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "INT",
+            "name": "Twitter",
+            "All the time % total of downloads": "0.5%",
+            "valueAllTheTime": 2843,
+            "2018 % total downloads": "0.3%",
+            "value2018": 206
+        },
+        {
+            "department_codes": "INT",
+            "name": "Yahoo",
+            "All the time % total of downloads": "0.2%",
+            "valueAllTheTime": 1062,
+            "2018 % total downloads": "0.0%",
+            "value2018": 5
+        },
+        {
+            "department_codes": "ITE",
+            "name": "Bing",
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 4,
+            "2018 % total downloads": "0.1%",
+            "value2018": 4
+        },
+        {
+            "department_codes": "ITE",
+            "name": "Facebook",
+            "All the time % total of downloads": "1.9%",
+            "valueAllTheTime": 102,
+            "2018 % total downloads": "1.9%",
+            "value2018": 102
+        },
+        {
+            "department_codes": "ITE",
+            "name": "Google",
+            "All the time % total of downloads": "29.2%",
+            "valueAllTheTime": 1589,
+            "2018 % total downloads": "29.1%",
+            "value2018": 1577
+        },
+        {
+            "department_codes": "ITE",
+            "name": "IDB Publications",
+            "All the time % total of downloads": "64.1%",
+            "valueAllTheTime": 3496,
+            "2018 % total downloads": "64.2%",
+            "value2018": 3479
+        },
+        {
+            "department_codes": "ITE",
+            "name": "LinkedIn",
+            "All the time % total of downloads": "1.3%",
+            "valueAllTheTime": 71,
+            "2018 % total downloads": "1.3%",
+            "value2018": 71
+        },
+        {
+            "department_codes": "ITE",
+            "name": "Others",
+            "All the time % total of downloads": "3.5%",
+            "valueAllTheTime": 189,
+            "2018 % total downloads": "3.5%",
+            "value2018": 188
+        },
+        {
+            "department_codes": "KIC",
+            "name": "Bing",
+            "All the time % total of downloads": "0.4%",
+            "valueAllTheTime": 3014,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "KIC",
+            "name": "Facebook",
+            "All the time % total of downloads": "2.7%",
+            "valueAllTheTime": 22151,
+            "2018 % total downloads": "2.5%",
+            "value2018": 984
+        },
+        {
+            "department_codes": "KIC",
+            "name": "Google",
+            "All the time % total of downloads": "48.0%",
+            "valueAllTheTime": 392551,
+            "2018 % total downloads": "3.0%",
+            "value2018": 1187
+        },
+        {
+            "department_codes": "KIC",
+            "name": "IDB Blogs",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 175,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "KIC",
+            "name": "IDB Landing Page",
+            "All the time % total of downloads": "5.1%",
+            "valueAllTheTime": 41347,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "KIC",
+            "name": "IDB MOOCs",
+            "All the time % total of downloads": "0.2%",
+            "valueAllTheTime": 1308,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "KIC",
+            "name": "IDB Publications",
+            "All the time % total of downloads": "34.7%",
+            "valueAllTheTime": 283632,
+            "2018 % total downloads": "40.7%",
+            "value2018": 16092
+        },
+        {
+            "department_codes": "KIC",
+            "name": "IDB RES",
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 423,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "KIC",
+            "name": "Indes Virtual",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 2,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "KIC",
+            "name": "Instagram",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 121,
+            "2018 % total downloads": "0.0%",
+            "value2018": 9
+        },
+        {
+            "department_codes": "KIC",
+            "name": "INTAL",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 27,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "KIC",
+            "name": "LinkedIn",
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 603,
+            "2018 % total downloads": "0.1%",
+            "value2018": 25
+        },
+        {
+            "department_codes": "KIC",
+            "name": "Others",
+            "All the time % total of downloads": "8.6%",
+            "valueAllTheTime": 69959,
+            "2018 % total downloads": "53.7%",
+            "value2018": 21246
+        },
+        {
+            "department_codes": "KIC",
+            "name": "RePec",
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 418,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "KIC",
+            "name": "Twitter",
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 1081,
+            "2018 % total downloads": "0.0%",
+            "value2018": 12
+        },
+        {
+            "department_codes": "KIC",
+            "name": "Yahoo",
+            "All the time % total of downloads": "0.2%",
+            "valueAllTheTime": 1321,
+            "2018 % total downloads": "0.0%",
+            "value2018": 3
+        },
+        {
+            "department_codes": "MICI",
+            "name": "Bing",
+            "All the time % total of downloads": "0.5%",
+            "valueAllTheTime": 8,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "MICI",
+            "name": "Google",
+            "All the time % total of downloads": "4.4%",
+            "valueAllTheTime": 65,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "MICI",
+            "name": "IDB Publications",
+            "All the time % total of downloads": "93.9%",
+            "valueAllTheTime": 1373,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "MICI",
+            "name": "INTAL",
+            "All the time % total of downloads": "0.6%",
+            "valueAllTheTime": 9,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "MICI",
+            "name": "Others",
+            "All the time % total of downloads": "0.5%",
+            "valueAllTheTime": 7,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "MIF",
+            "name": "Bing",
+            "All the time % total of downloads": "1.0%",
+            "valueAllTheTime": 1843,
+            "2018 % total downloads": "0.2%",
+            "value2018": 5
+        },
+        {
+            "department_codes": "MIF",
+            "name": "Facebook",
+            "All the time % total of downloads": "0.8%",
+            "valueAllTheTime": 1512,
+            "2018 % total downloads": "4.7%",
+            "value2018": 120
+        },
+        {
+            "department_codes": "MIF",
+            "name": "Google",
+            "All the time % total of downloads": "48.9%",
+            "valueAllTheTime": 92827,
+            "2018 % total downloads": "23.1%",
+            "value2018": 586
+        },
+        {
+            "department_codes": "MIF",
+            "name": "IDB Blogs",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 2,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "MIF",
+            "name": "IDB Landing Page",
+            "All the time % total of downloads": "1.3%",
+            "valueAllTheTime": 2420,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "MIF",
+            "name": "IDB MOOCs",
+            "All the time % total of downloads": "0.3%",
+            "valueAllTheTime": 635,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "MIF",
+            "name": "IDB Publications",
+            "All the time % total of downloads": "43.1%",
+            "valueAllTheTime": 81844,
+            "2018 % total downloads": "60.4%",
+            "value2018": 1529
+        },
+        {
+            "department_codes": "MIF",
+            "name": "Instagram",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 5,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "MIF",
+            "name": "INTAL",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 2,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "MIF",
+            "name": "LinkedIn",
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 244,
+            "2018 % total downloads": "8.1%",
+            "value2018": 204
+        },
+        {
+            "department_codes": "MIF",
+            "name": "Others",
+            "All the time % total of downloads": "3.9%",
+            "valueAllTheTime": 7343,
+            "2018 % total downloads": "2.6%",
+            "value2018": 67
+        },
+        {
+            "department_codes": "MIF",
+            "name": "RePec",
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 116,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "MIF",
+            "name": "Twitter",
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 148,
+            "2018 % total downloads": "0.8%",
+            "value2018": 21
+        },
+        {
+            "department_codes": "MIF",
+            "name": "Yahoo",
+            "All the time % total of downloads": "0.4%",
+            "valueAllTheTime": 767,
+            "2018 % total downloads": "0.0%",
+            "value2018": 1
+        },
+        {
+            "department_codes": "OII",
+            "name": "Bing",
+            "All the time % total of downloads": "3.6%",
+            "valueAllTheTime": 73,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "OII",
+            "name": "Google",
+            "All the time % total of downloads": "23.2%",
+            "valueAllTheTime": 468,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "OII",
+            "name": "IDB Blogs",
+            "All the time % total of downloads": "0.8%",
+            "valueAllTheTime": 16,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "OII",
+            "name": "IDB Publications",
+            "All the time % total of downloads": "70.3%",
+            "valueAllTheTime": 1420,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "OII",
+            "name": "Others",
+            "All the time % total of downloads": "1.1%",
+            "valueAllTheTime": 23,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "OII",
+            "name": "Yahoo",
+            "All the time % total of downloads": "1.0%",
+            "valueAllTheTime": 20,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "ORP",
+            "name": "Bing",
+            "All the time % total of downloads": "0.3%",
+            "valueAllTheTime": 67,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "ORP",
+            "name": "Facebook",
+            "All the time % total of downloads": "0.3%",
+            "valueAllTheTime": 73,
+            "2018 % total downloads": "0.9%",
+            "value2018": 17
+        },
+        {
+            "department_codes": "ORP",
+            "name": "Google",
+            "All the time % total of downloads": "22.6%",
+            "valueAllTheTime": 5737,
+            "2018 % total downloads": "4.5%",
+            "value2018": 88
+        },
+        {
+            "department_codes": "ORP",
+            "name": "IDB Blogs",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 3,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "ORP",
+            "name": "IDB Landing Page",
+            "All the time % total of downloads": "4.1%",
+            "valueAllTheTime": 1036,
+            "2018 % total downloads": "53.1%",
+            "value2018": 1036
+        },
+        {
+            "department_codes": "ORP",
+            "name": "IDB MOOCs",
+            "All the time % total of downloads": "2.5%",
+            "valueAllTheTime": 635,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "ORP",
+            "name": "IDB Publications",
+            "All the time % total of downloads": "60.4%",
+            "valueAllTheTime": 15288,
+            "2018 % total downloads": "41.2%",
+            "value2018": 804
+        },
+        {
+            "department_codes": "ORP",
+            "name": "INTAL",
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 19,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "ORP",
+            "name": "Others",
+            "All the time % total of downloads": "9.2%",
+            "valueAllTheTime": 2326,
+            "2018 % total downloads": "0.4%",
+            "value2018": 7
+        },
+        {
+            "department_codes": "ORP",
+            "name": "RePec",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 10,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "ORP",
+            "name": "Twitter",
+            "All the time % total of downloads": "0.3%",
+            "valueAllTheTime": 82,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "ORP",
+            "name": "Yahoo",
+            "All the time % total of downloads": "0.2%",
+            "valueAllTheTime": 56,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "OVE",
+            "name": "Bing",
+            "All the time % total of downloads": "0.7%",
+            "valueAllTheTime": 1884,
+            "2018 % total downloads": "0.0%",
+            "value2018": 3
+        },
+        {
+            "department_codes": "OVE",
+            "name": "Facebook",
+            "All the time % total of downloads": "0.3%",
+            "valueAllTheTime": 856,
+            "2018 % total downloads": "0.4%",
+            "value2018": 40
+        },
+        {
+            "department_codes": "OVE",
+            "name": "Google",
+            "All the time % total of downloads": "57.0%",
+            "valueAllTheTime": 148668,
+            "2018 % total downloads": "74.8%",
+            "value2018": 8240
+        },
+        {
+            "department_codes": "OVE",
+            "name": "IDB Blogs",
+            "All the time % total of downloads": "0.2%",
+            "valueAllTheTime": 463,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "OVE",
+            "name": "IDB Landing Page",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 11,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "OVE",
+            "name": "IDB MOOCs",
+            "All the time % total of downloads": "0.5%",
+            "valueAllTheTime": 1349,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "OVE",
+            "name": "IDB Publications",
+            "All the time % total of downloads": "38.3%",
+            "valueAllTheTime": 99793,
+            "2018 % total downloads": "23.7%",
+            "value2018": 2611
+        },
+        {
+            "department_codes": "OVE",
+            "name": "IDB RES",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 3,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "OVE",
+            "name": "Instagram",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 1,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "OVE",
+            "name": "LinkedIn",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 104,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "OVE",
+            "name": "Others",
+            "All the time % total of downloads": "2.4%",
+            "valueAllTheTime": 6278,
+            "2018 % total downloads": "1.0%",
+            "value2018": 114
+        },
+        {
+            "department_codes": "OVE",
+            "name": "RePec",
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 146,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "OVE",
+            "name": "Twitter",
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 380,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "OVE",
+            "name": "Yahoo",
+            "All the time % total of downloads": "0.3%",
+            "valueAllTheTime": 853,
+            "2018 % total downloads": "0.0%",
+            "value2018": 4
+        },
+        {
+            "department_codes": "PRE",
+            "name": "Bing",
+            "All the time % total of downloads": "0.2%",
+            "valueAllTheTime": 4,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "PRE",
+            "name": "Facebook",
+            "All the time % total of downloads": "1.0%",
+            "valueAllTheTime": 26,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "PRE",
+            "name": "Google",
+            "All the time % total of downloads": "7.1%",
+            "valueAllTheTime": 180,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "PRE",
+            "name": "IDB Publications",
+            "All the time % total of downloads": "91.0%",
+            "valueAllTheTime": 2321,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "PRE",
+            "name": "Others",
+            "All the time % total of downloads": "0.6%",
+            "valueAllTheTime": 15,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "PRE",
+            "name": "Yahoo",
+            "All the time % total of downloads": "0.2%",
+            "valueAllTheTime": 4,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "RES",
+            "name": "Bing",
+            "All the time % total of downloads": "0.5%",
+            "valueAllTheTime": 4398,
+            "2018 % total downloads": "0.0%",
+            "value2018": 26
+        },
+        {
+            "department_codes": "RES",
+            "name": "Facebook",
+            "All the time % total of downloads": "2.8%",
+            "valueAllTheTime": 22098,
+            "2018 % total downloads": "5.2%",
+            "value2018": 2772
+        },
+        {
+            "department_codes": "RES",
+            "name": "Google",
+            "All the time % total of downloads": "37.2%",
+            "valueAllTheTime": 298532,
+            "2018 % total downloads": "22.5%",
+            "value2018": 12017
+        },
+        {
+            "department_codes": "RES",
+            "name": "IDB Blogs",
+            "All the time % total of downloads": "0.6%",
+            "valueAllTheTime": 5075,
+            "2018 % total downloads": "0.1%",
+            "value2018": 38
+        },
+        {
+            "department_codes": "RES",
+            "name": "IDB Landing Page",
+            "All the time % total of downloads": "10.9%",
+            "valueAllTheTime": 87452,
+            "2018 % total downloads": "11.4%",
+            "value2018": 6083
+        },
+        {
+            "department_codes": "RES",
+            "name": "IDB MOOCs",
+            "All the time % total of downloads": "1.2%",
+            "valueAllTheTime": 9826,
+            "2018 % total downloads": "0.0%",
+            "value2018": 26
+        },
+        {
+            "department_codes": "RES",
+            "name": "IDB Publications",
+            "All the time % total of downloads": "27.9%",
+            "valueAllTheTime": 223934,
+            "2018 % total downloads": "15.4%",
+            "value2018": 8214
+        },
+        {
+            "department_codes": "RES",
+            "name": "IDB RES",
+            "All the time % total of downloads": "9.7%",
+            "valueAllTheTime": 78089,
+            "2018 % total downloads": "4.0%",
+            "value2018": 2157
+        },
+        {
+            "department_codes": "RES",
+            "name": "Indes Virtual",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 83,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "RES",
+            "name": "Instagram",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 13,
+            "2018 % total downloads": "0.0%",
+            "value2018": 4
+        },
+        {
+            "department_codes": "RES",
+            "name": "INTAL",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 78,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "RES",
+            "name": "LinkedIn",
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 541,
+            "2018 % total downloads": "0.4%",
+            "value2018": 221
+        },
+        {
+            "department_codes": "RES",
+            "name": "Others",
+            "All the time % total of downloads": "8.0%",
+            "valueAllTheTime": 63977,
+            "2018 % total downloads": "39.6%",
+            "value2018": 21136
+        },
+        {
+            "department_codes": "RES",
+            "name": "RePec",
+            "All the time % total of downloads": "0.4%",
+            "valueAllTheTime": 3233,
+            "2018 % total downloads": "0.1%",
+            "value2018": 46
+        },
+        {
+            "department_codes": "RES",
+            "name": "Twitter",
+            "All the time % total of downloads": "0.5%",
+            "valueAllTheTime": 4379,
+            "2018 % total downloads": "1.2%",
+            "value2018": 622
+        },
+        {
+            "department_codes": "RES",
+            "name": "Yahoo",
+            "All the time % total of downloads": "0.2%",
+            "valueAllTheTime": 1841,
+            "2018 % total downloads": "0.0%",
+            "value2018": 3
+        },
+        {
+            "department_codes": "RMG",
+            "name": "Google",
+            "All the time % total of downloads": "35.3%",
+            "valueAllTheTime": 41,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "RMG",
+            "name": "IDB Publications",
+            "All the time % total of downloads": "64.7%",
+            "valueAllTheTime": 75,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "SCL",
+            "name": "Bing",
+            "All the time % total of downloads": "0.4%",
+            "valueAllTheTime": 5804,
+            "2018 % total downloads": "0.0%",
+            "value2018": 27
+        },
+        {
+            "department_codes": "SCL",
+            "name": "Facebook",
+            "All the time % total of downloads": "4.4%",
+            "valueAllTheTime": 62157,
+            "2018 % total downloads": "15.4%",
+            "value2018": 19645
+        },
+        {
+            "department_codes": "SCL",
+            "name": "Google",
+            "All the time % total of downloads": "55.9%",
+            "valueAllTheTime": 796027,
+            "2018 % total downloads": "9.3%",
+            "value2018": 11803
+        },
+        {
+            "department_codes": "SCL",
+            "name": "IDB Blogs",
+            "All the time % total of downloads": "3.1%",
+            "valueAllTheTime": 43989,
+            "2018 % total downloads": "2.1%",
+            "value2018": 2718
+        },
+        {
+            "department_codes": "SCL",
+            "name": "IDB Landing Page",
+            "All the time % total of downloads": "2.2%",
+            "valueAllTheTime": 30965,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "SCL",
+            "name": "IDB MOOCs",
+            "All the time % total of downloads": "1.0%",
+            "valueAllTheTime": 14068,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "SCL",
+            "name": "IDB Publications",
+            "All the time % total of downloads": "23.2%",
+            "valueAllTheTime": 330995,
+            "2018 % total downloads": "25.5%",
+            "value2018": 32371
+        },
+        {
+            "department_codes": "SCL",
+            "name": "IDB RES",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 9,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "SCL",
+            "name": "Indes Virtual",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 16,
+            "2018 % total downloads": "0.0%",
+            "value2018": 1
+        },
+        {
+            "department_codes": "SCL",
+            "name": "Instagram",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 462,
+            "2018 % total downloads": "0.4%",
+            "value2018": 450
+        },
+        {
+            "department_codes": "SCL",
+            "name": "INTAL",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 28,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "SCL",
+            "name": "LinkedIn",
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 967,
+            "2018 % total downloads": "0.5%",
+            "value2018": 684
+        },
+        {
+            "department_codes": "SCL",
+            "name": "Others",
+            "All the time % total of downloads": "9.0%",
+            "valueAllTheTime": 128073,
+            "2018 % total downloads": "44.7%",
+            "value2018": 56792
+        },
+        {
+            "department_codes": "SCL",
+            "name": "RePec",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 669,
+            "2018 % total downloads": "0.0%",
+            "value2018": 55
+        },
+        {
+            "department_codes": "SCL",
+            "name": "Twitter",
+            "All the time % total of downloads": "0.5%",
+            "valueAllTheTime": 6974,
+            "2018 % total downloads": "2.1%",
+            "value2018": 2616
+        },
+        {
+            "department_codes": "SCL",
+            "name": "Yahoo",
+            "All the time % total of downloads": "0.2%",
+            "valueAllTheTime": 2558,
+            "2018 % total downloads": "0.0%",
+            "value2018": 7
+        },
+        {
+            "department_codes": "SEC",
+            "name": "Bing",
+            "All the time % total of downloads": "0.2%",
+            "valueAllTheTime": 8,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "SEC",
+            "name": "Facebook",
+            "All the time % total of downloads": "0.3%",
+            "valueAllTheTime": 12,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "SEC",
+            "name": "Google",
+            "All the time % total of downloads": "13.8%",
+            "valueAllTheTime": 520,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "SEC",
+            "name": "IDB Publications",
+            "All the time % total of downloads": "85.1%",
+            "valueAllTheTime": 3212,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "SEC",
+            "name": "Others",
+            "All the time % total of downloads": "0.3%",
+            "valueAllTheTime": 12,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "SEC",
+            "name": "RePec",
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 4,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "SEC",
+            "name": "Yahoo",
+            "All the time % total of downloads": "0.2%",
+            "valueAllTheTime": 6,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "SPD",
+            "name": "Bing",
+            "All the time % total of downloads": "0.3%",
+            "valueAllTheTime": 428,
+            "2018 % total downloads": "0.1%",
+            "value2018": 15
+        },
+        {
+            "department_codes": "SPD",
+            "name": "Facebook",
+            "All the time % total of downloads": "4.0%",
+            "valueAllTheTime": 5390,
+            "2018 % total downloads": "24.6%",
+            "value2018": 4277
+        },
+        {
+            "department_codes": "SPD",
+            "name": "Google",
+            "All the time % total of downloads": "30.6%",
+            "valueAllTheTime": 41102,
+            "2018 % total downloads": "10.9%",
+            "value2018": 1897
+        },
+        {
+            "department_codes": "SPD",
+            "name": "IDB Blogs",
+            "All the time % total of downloads": "1.7%",
+            "valueAllTheTime": 2331,
+            "2018 % total downloads": "0.2%",
+            "value2018": 34
+        },
+        {
+            "department_codes": "SPD",
+            "name": "IDB Landing Page",
+            "All the time % total of downloads": "2.4%",
+            "valueAllTheTime": 3283,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "SPD",
+            "name": "IDB MOOCs",
+            "All the time % total of downloads": "1.3%",
+            "valueAllTheTime": 1725,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "SPD",
+            "name": "IDB Publications",
+            "All the time % total of downloads": "46.6%",
+            "valueAllTheTime": 62635,
+            "2018 % total downloads": "53.9%",
+            "value2018": 9351
+        },
+        {
+            "department_codes": "SPD",
+            "name": "Indes Virtual",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 2,
+            "2018 % total downloads": "0.0%",
+            "value2018": 1
+        },
+        {
+            "department_codes": "SPD",
+            "name": "Instagram",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 43,
+            "2018 % total downloads": "0.2%",
+            "value2018": 43
+        },
+        {
+            "department_codes": "SPD",
+            "name": "INTAL",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 20,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "SPD",
+            "name": "LinkedIn",
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 110,
+            "2018 % total downloads": "0.2%",
+            "value2018": 43
+        },
+        {
+            "department_codes": "SPD",
+            "name": "Others",
+            "All the time % total of downloads": "12.0%",
+            "valueAllTheTime": 16090,
+            "2018 % total downloads": "7.0%",
+            "value2018": 1211
+        },
+        {
+            "department_codes": "SPD",
+            "name": "RePec",
+            "All the time % total of downloads": "0.2%",
+            "valueAllTheTime": 314,
+            "2018 % total downloads": "0.2%",
+            "value2018": 27
+        },
+        {
+            "department_codes": "SPD",
+            "name": "Twitter",
+            "All the time % total of downloads": "0.5%",
+            "valueAllTheTime": 707,
+            "2018 % total downloads": "2.6%",
+            "value2018": 460
+        },
+        {
+            "department_codes": "SPD",
+            "name": "Yahoo",
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 185,
+            "2018 % total downloads": "0.0%",
+            "value2018": 2
+        },
+        {
+            "department_codes": "Strategic Core",
+            "name": "Bing",
+            "All the time % total of downloads": "0.2%",
+            "valueAllTheTime": 17,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "Strategic Core",
+            "name": "Facebook",
+            "All the time % total of downloads": "3.0%",
+            "valueAllTheTime": 314,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "Strategic Core",
+            "name": "Google",
+            "All the time % total of downloads": "46.6%",
+            "valueAllTheTime": 4933,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "Strategic Core",
+            "name": "IDB Blogs",
+            "All the time % total of downloads": "1.5%",
+            "valueAllTheTime": 161,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "Strategic Core",
+            "name": "IDB Publications",
+            "All the time % total of downloads": "29.7%",
+            "valueAllTheTime": 3140,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "Strategic Core",
+            "name": "LinkedIn",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 2,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "Strategic Core",
+            "name": "Others",
+            "All the time % total of downloads": "18.2%",
+            "valueAllTheTime": 1928,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "Strategic Core",
+            "name": "Twitter",
+            "All the time % total of downloads": "0.8%",
+            "valueAllTheTime": 84,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "Strategic Core",
+            "name": "Yahoo",
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 6,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "VPC",
+            "name": "Bing",
+            "All the time % total of downloads": "0.4%",
+            "valueAllTheTime": 64,
+            "2018 % total downloads": "0.1%",
+            "value2018": 1
+        },
+        {
+            "department_codes": "VPC",
+            "name": "Facebook",
+            "All the time % total of downloads": "4.0%",
+            "valueAllTheTime": 635,
+            "2018 % total downloads": "0.9%",
+            "value2018": 6
+        },
+        {
+            "department_codes": "VPC",
+            "name": "Google",
+            "All the time % total of downloads": "47.4%",
+            "valueAllTheTime": 7549,
+            "2018 % total downloads": "11.2%",
+            "value2018": 75
+        },
+        {
+            "department_codes": "VPC",
+            "name": "IDB Blogs",
+            "All the time % total of downloads": "0.6%",
+            "valueAllTheTime": 99,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "VPC",
+            "name": "IDB Publications",
+            "All the time % total of downloads": "44.9%",
+            "valueAllTheTime": 7151,
+            "2018 % total downloads": "86.4%",
+            "value2018": 579
+        },
+        {
+            "department_codes": "VPC",
+            "name": "LinkedIn",
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 8,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "VPC",
+            "name": "Others",
+            "All the time % total of downloads": "2.5%",
+            "valueAllTheTime": 396,
+            "2018 % total downloads": "1.3%",
+            "value2018": 9
+        },
+        {
+            "department_codes": "VPC",
+            "name": "Twitter",
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 23,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "VPC",
+            "name": "Yahoo",
+            "All the time % total of downloads": "0.1%",
+            "valueAllTheTime": 15,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "VPS",
+            "name": "Bing",
+            "All the time % total of downloads": "0.3%",
+            "valueAllTheTime": 125,
+            "2018 % total downloads": "0.1%",
+            "value2018": 13
+        },
+        {
+            "department_codes": "VPS",
+            "name": "Facebook",
+            "All the time % total of downloads": "6.5%",
+            "valueAllTheTime": 3112,
+            "2018 % total downloads": "12.3%",
+            "value2018": 2969
+        },
+        {
+            "department_codes": "VPS",
+            "name": "Google",
+            "All the time % total of downloads": "35.6%",
+            "valueAllTheTime": 16949,
+            "2018 % total downloads": "26.2%",
+            "value2018": 6315
+        },
+        {
+            "department_codes": "VPS",
+            "name": "IDB Blogs",
+            "All the time % total of downloads": "1.1%",
+            "valueAllTheTime": 523,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "VPS",
+            "name": "IDB MOOCs",
+            "All the time % total of downloads": "2.9%",
+            "valueAllTheTime": 1388,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "VPS",
+            "name": "IDB Publications",
+            "All the time % total of downloads": "26.6%",
+            "valueAllTheTime": 12649,
+            "2018 % total downloads": "15.0%",
+            "value2018": 3621
+        },
+        {
+            "department_codes": "VPS",
+            "name": "INTAL",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 2,
+            "2018 % total downloads": "0.0%",
+            "value2018": 0
+        },
+        {
+            "department_codes": "VPS",
+            "name": "LinkedIn",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 16,
+            "2018 % total downloads": "0.1%",
+            "value2018": 16
+        },
+        {
+            "department_codes": "VPS",
+            "name": "Others",
+            "All the time % total of downloads": "24.4%",
+            "valueAllTheTime": 11642,
+            "2018 % total downloads": "41.6%",
+            "value2018": 10028
+        },
+        {
+            "department_codes": "VPS",
+            "name": "RePec",
+            "All the time % total of downloads": "0.0%",
+            "valueAllTheTime": 8,
+            "2018 % total downloads": "0.0%",
+            "value2018": 1
+        },
+        {
+            "department_codes": "VPS",
+            "name": "Twitter",
+            "All the time % total of downloads": "2.4%",
+            "valueAllTheTime": 1134,
+            "2018 % total downloads": "4.5%",
+            "value2018": 1087
+        },
+        {
+            "department_codes": "VPS",
+            "name": "Yahoo",
+            "All the time % total of downloads": "0.2%",
+            "valueAllTheTime": 75,
+            "2018 % total downloads": "0.1%",
+            "value2018": 31
         }
     ],
-    downloadSourceDivisions: [
-        {
+    downloadSourceDivisions: [{
             "json_featuretype": "NewFeatureType",
             "valueAllTheTime": 1,
             "value2018": 0,
@@ -10138,7 +9597,7 @@ var publicationsDownloadSourceArrays = {
             "name": "Bing",
         },
         {
-            "valueAllTheTime": 185489,   
+            "valueAllTheTime": 185489,
             "value2018": 39016,
             "name": "Facebook",
         },

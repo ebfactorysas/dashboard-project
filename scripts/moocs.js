@@ -5,15 +5,10 @@ function orderTopMoocs(data) {
     return dataMoocs;
 }
 
-var topAllMoocs = orderTopMoocs(moocsTopArrays.IDBAlltime)
-var top2018Moocs = orderTopMoocs(moocsTopArrays.IDB2018)
 
 /**
  * Start distribution-moocs
  **/
-
-// drawDistributionChart(dataDistribution);
-drawDistributionChart(moocsEducationArrays.educationLevelIDB);
 
 function wrap(text, width) {
     text.each(function () {
@@ -41,6 +36,7 @@ function wrap(text, width) {
 }
 
 function drawDistributionChart(dataDistribution) {
+    d3.select("#distribution-moocs svg").remove();
     var marginDistribution = {
         top: 50,
         right: 50,
@@ -48,13 +44,13 @@ function drawDistributionChart(dataDistribution) {
         left: 50
     }
 
-    var widthDistribution = 650 - marginDistribution.left - marginDistribution.right;
+    var widthDistribution = 800 - marginDistribution.left - marginDistribution.right;
     var heightDistribution = 400 - marginDistribution.top - marginDistribution.bottom;
     var svgDistribution = d3.select('#distribution-moocs')
         .append("svg")
         //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "0 0 500 500")
+        .attr("viewBox", "0 0 720 500")
         .append("g")
         // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
 
@@ -70,7 +66,7 @@ function drawDistributionChart(dataDistribution) {
         return d.name
     }));
     yDistribution.domain([0, d3.max(dataDistribution, function (d) {
-        return d.value
+        return d.registrations
     })]);
 
     svgDistribution.selectAll(".bar")
@@ -80,18 +76,18 @@ function drawDistributionChart(dataDistribution) {
         .attr("x", function (d) {
             return xDistribution(d.name);
         })
-        .attr("width", xDistribution.bandwidth() - 15)
-        .attr("rx", 15)
-        .attr("ry", 15)
+        .attr("width", xDistribution.bandwidth() - 35)
+        .attr("rx", 25)
+        .attr("ry", 25)
         .attr("y", function (d) {
-            return yDistribution(d.value + 3);
+            return yDistribution(d.registrations + 3);
         })
         .attr("x", function (d, i) {
             return i * xDistribution.bandwidth() + 15; //Bar width of 20 plus 1 for padding
         })
         .attr("fill", "#eea08d")
         .attr("height", function (d) {
-            return heightDistribution - yDistribution(d.value + 3);
+            return heightDistribution - yDistribution(d.registrations + 3);
         });
 
     svgDistribution.selectAll("text")
@@ -99,16 +95,17 @@ function drawDistributionChart(dataDistribution) {
         .enter()
         .append("text")
         .text(function (d) {
-
-            return (Math.round(d.value / 1000).toFixed(0)) + "K";
+            var formatNumber = setSettingsNumber(d.registrations);
+            return formatNumber.valueNumber + formatNumber.suffixNumber;
         })
         .attr("y", function (d) {
-            return yDistribution(1);
+            return yDistribution(0.01);
         })
         .attr("x", function (d, i) {
             return i * xDistribution.bandwidth() + 21; //Bar width of 20 plus 1 for padding
         })
         .attr("font-family", "Gotham-Bold")
+        .attr("class","textInsideDist")
         .attr("padding-bottom", "10px")
         .attr("font-size", "12px");
 
@@ -119,8 +116,77 @@ function drawDistributionChart(dataDistribution) {
 
     svgDistribution.selectAll(".tick text")
         .call(wrap, xDistribution.bandwidth())
-        .attr("font-family", "Gotham-Book")
-        .attr("font-size", "10px");
+        .attr("font-family", "Gotham-Bold")
+        .attr("font-size", "12px");
+
+        var div = d3.select("body").append("div")
+        .attr("class", "toolTip")
+        .style("font-size", "12px")
+        .style("width", "250px");
+
+        var tooltipBarText = d3Old.selectAll("#distribution-moocs .textInsideDist")
+        .on("mouseover", function (d) {
+            var textHtml = "<div class='col tooltip-gauges'><h3 class='row orange'>{{title}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>Amount</span><span class='col text-right' >{{value}}</div>";
+            textHtml = textHtml.replace('{{title}}', d.name)
+            textHtml = textHtml.replace('{{value}}', d.registrations.toFixed(0).toLocaleString())
+            if (d.value) {
+                var addText = "<div class='row pt-1 border-top'><span class='col pl-0 pr-0 '> {{type}}</span><span  class='col-3 text-right'>{{code}}</span></div>"
+                addText = addText.replace('{{type}}', "Percentage")
+                addText = addText.replace('{{code}}', d.value)
+                textHtml = textHtml + addText;
+            } else if (d.department_codes) {
+                var addText = "<div class='row pt-1 border-top'><span class='col-2 pl-0 pr-0 '> {{type}}</span><span  class='col text-right'>{{code}}</span></div>"
+                addText = addText.replace('{{type}}', "Department")
+                addText = addText.replace('{{code}}', d.department_codes);
+                textHtml = textHtml + addText;
+            }
+            textHtml = textHtml + "</div>";
+            div.transition()
+                .duration(0)
+                .style("font-family", "Gotham-Book")
+                .style("display", "inline-block");
+            // div.html(d.value + "<br/>" + d.name)
+            div.html(textHtml)
+                .style("left", (d3Old.event.pageX-200) + 35 + "px")
+                .style("top", (d3Old.event.pageY - 28) + 35+ "px");
+        })
+        .on("mouseout", function (d) {
+            div.transition()
+                .duration(0)
+                .style("display", "none");
+        });
+        
+        var tooltipBar = d3Old.selectAll("#distribution-moocs .bar")
+        .on("mouseover", function (d) {
+            var textHtml = "<div class='col tooltip-gauges'><h3 class='row orange'>{{title}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>Amount</span><span class='col text-right' >{{value}}</div>";
+            textHtml = textHtml.replace('{{title}}', d.name)
+            textHtml = textHtml.replace('{{value}}', d.registrations.toFixed(0).toLocaleString())
+            if (d.value) {
+                var addText = "<div class='row pt-1 border-top'><span class='col pl-0 pr-0 '> {{type}}</span><span  class='col-3 text-right'>{{code}}</span></div>"
+                addText = addText.replace('{{type}}', "Percentage")
+                addText = addText.replace('{{code}}', d.value)
+                textHtml = textHtml + addText;
+            } else if (d.department_codes) {
+                var addText = "<div class='row pt-1 border-top'><span class='col-2 pl-0 pr-0 '> {{type}}</span><span  class='col text-right'>{{code}}</span></div>"
+                addText = addText.replace('{{type}}', "Department")
+                addText = addText.replace('{{code}}', d.department_codes);
+                textHtml = textHtml + addText;
+            }
+            textHtml = textHtml + "</div>";
+            div.transition()
+                .duration(0)
+                .style("font-family", "Gotham-Book")
+                .style("display", "inline-block");
+            // div.html(d.value + "<br/>" + d.name)
+            div.html(textHtml)
+                .style("left", (d3Old.event.pageX-200) + 35 + "px")
+                .style("top", (d3Old.event.pageY - 28) + 35 + "px");
+        })
+        .on("mouseout", function (d) {
+            div.transition()
+                .duration(0)
+                .style("display", "none");
+        });
 
 }
 /**
@@ -131,199 +197,242 @@ function drawDistributionChart(dataDistribution) {
 /**
  * Start registration-moocs
  */
-drawMoocsRegistrationsChart(topAllMoocs);
 
 function drawMoocsRegistrationsChart(dataMoocs) {
+    d3.select("#moocs-registrations svg").remove();
+    drawTrendChartRectBar(dataMoocs, "#moocs-registrations", "#f1a592", "orange", "Registrations");
 
-    var marginMoocs = {
-        top: 15,
-        right: 25,
-        bottom: 15,
-        left: 55
-    };
-
-    var widthMoocs = 560 - marginMoocs.left - marginMoocs.right,
-        heightMoocs = 200 - marginMoocs.top - marginMoocs.bottom;
-
-
-    var svgMoocs = d3.select("#moocs-registrations")
-        .append("svg")
-        //responsive SVG needs these 2 attributes and no width and height attr
-        .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-55 -25 700 200")
-        .append("g")
-        // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
-
-        //class to make it responsive
-        .classed("svg-content-responsive", true);
-    // .append("svg")
-    // .attr("width", widthMoocs + marginMoocs.left + marginMoocs.right)
-    // .attr("height", heightMoocs + marginMoocs.top + marginMoocs.bottom)
-    // .append("g")
-    // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")");
-
-    var xMoocs = d3.scaleLinear()
-        .range([0, widthMoocs])
-        .domain([0, d3.max(dataMoocs, function (d) {
-            return d.value;
-        })]);
-
-    var yMoocs = d3.scaleBand()
-
-        .rangeRound([heightMoocs, 0], .1)
-        .domain(dataMoocs.map(function (d) {
-            return d.value;
-        }));
-
-    var yAxisMoocs = d3.axisLeft(yMoocs)
-        //no tick marks
-        .tickPadding(55)
-        .tickSize(0);
-
-    var gyMoocs = svgMoocs.append("g")
-        .style("text-anchor", "start")
-        .style("color", "#555555")
-        .attr("class", "y-data")
-
-        .call(yAxisMoocs)
-
-    var barsMoocs = svgMoocs.selectAll(".bar")
-        .data(dataMoocs)
-        .enter()
-        .append("g")
-
-    barsMoocs.append("rect")
-        .attr("class", "bar")
-        .attr("y", function (d) {
-            return yMoocs(d.value);
-        })
-        .attr("rx", 25)
-        .attr("ry", 25)
-        .attr("fill", "#dea692")
-        .attr("height", yMoocs.bandwidth() - 2)
-        .attr("x", 8)
-        .attr("width", function (d) {
-            return xMoocs(d.value);
-        });
-
-    barsMoocs.append("text")
-        .attr("class", "label")
-        //y position of the label is halfway down the bar
-        .attr("y", function (d) {
-            return yMoocs(d.value) + yMoocs.bandwidth() / 2 + 4;
-        })
-        //x position is 3 pixels to the right of the bar
-        .attr("x", function (d) {
-            return 12;
-        })
-        .attr("class", "text-inside")
-        .attr("font-family", "Gotham-Bold")
-        .attr("font-size", "12px")
-        .text(function (d) {
-            return d.name;
-        });
 }
+
 /**
  * End registration-moocs
  */
 /**
  * Start age-distribution-moocs
  */
-drawMoocsAgeDistributionChart(topAllMoocs);
 
-var data = [{
-    value: 0,
-    name: "<18"
-}]
 
-function drawMoocsAgeDistributionChart(dataMoocs) {
+function drawMoocsAgeDistributionChart(data) {
+    d3.select("#age-distribution-moocs svg").remove();
+    data = data.sort(function (a, b) {
+        return d3.descending(a.id, b.id);
+    })
 
-    var marginMoocs = {
+    //set up svg using margin conventions - we'll need plenty of room on the left for labels
+    var margin = {
         top: 15,
         right: 25,
         bottom: 15,
-        left: 55
+        left: 100
     };
 
-    var widthMoocs = 560 - marginMoocs.left - marginMoocs.right,
-        heightMoocs = 200 - marginMoocs.top - marginMoocs.bottom;
 
+    var width = 625 - margin.left - margin.right,
+        height = 290 - margin.top - margin.bottom;
 
-    var svgMoocs = d3.select("#age-distribution-moocs")
-        .append("svg")
-        //responsive SVG needs these 2 attributes and no width and height attr
-        .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-55 -25 700 200")
+    var svg = d3.select("#age-distribution-moocs").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
         .append("g")
-        // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-        //class to make it responsive
-        .classed("svg-content-responsive", true);
-    // .append("svg")
-    // .attr("width", widthMoocs + marginMoocs.left + marginMoocs.right)
-    // .attr("height", heightMoocs + marginMoocs.top + marginMoocs.bottom)
-    // .append("g")
-    // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")");
-
-    var xMoocs = d3.scaleLinear()
-        .range([0, widthMoocs])
-        .domain([0, d3.max(dataMoocs, function (d) {
+    var x = d3.scaleLinear()
+        .range([0, width])
+        .domain([0, d3.max(data, function (d) {
             return d.value;
         })]);
 
-    var yMoocs = d3.scaleBand()
-
-        .rangeRound([heightMoocs, 0], .1)
-        .domain(dataMoocs.map(function (d) {
-            return d.value;
+    var y = d3.scaleBand()
+        .rangeRound([height, 0], .1)
+        .domain(data.map(function (d) {
+            return d.name;
         }));
-
-    var yAxisMoocs = d3.axisLeft(yMoocs)
-        //no tick marks
-        .tickPadding(55)
-        .tickSize(0);
-
-    var gyMoocs = svgMoocs.append("g")
-        .style("text-anchor", "start")
-        .style("color", "#555555")
-        .attr("class", "y-data")
-
-        .call(yAxisMoocs)
-
-    var barsMoocs = svgMoocs.selectAll(".bar")
-        .data(dataMoocs)
+    var bars = svg.selectAll(".bar")
+        .data(data)
         .enter()
         .append("g")
-
-    barsMoocs.append("rect")
-        .attr("class", "bar")
+    bars.append("rect")
+        .attr("class", "bar-back")
         .attr("y", function (d) {
-            return yMoocs(d.value);
+            return y(d.name);
         })
-        .attr("rx", 25)
-        .attr("ry", 25)
-        .attr("fill", "#dea692")
-        .attr("height", yMoocs.bandwidth() - 2)
-        .attr("x", 8)
+        .attr("height", y.bandwidth() - 15)
+        .attr("x", 0)
+        .attr("fill", "#efefef")
         .attr("width", function (d) {
-            return xMoocs(d.value);
+            return width;
         });
 
-    barsMoocs.append("text")
+    bars.append("rect")
+        .attr("class", "bar")
+        .attr("y", function (d) {
+            return y(d.name);
+        })
+        .attr("height", y.bandwidth() - 15)
+        .attr("x", 0)
+        .attr("width", function (d) {
+            if ((x(d.value) - 20) <= 0) {
+                return 0;
+            } else {
+                return x(d.value) - 20;
+            }
+        });
+
+
+    //append rects
+    bars.append("rect")
+        .attr("class", "bar")
+        .attr("y", function (d) {
+            return y(d.name);
+        })
+        .attr("height", y.bandwidth() - 15)
+        .attr("x", 0)
+        .attr("rx", 30)
+        .attr("ry", 30)
+        .attr("width", function (d) {
+            return x(d.value) + 10;
+        });
+
+    //make y axis to show bar names
+    var yAxis = d3.axisLeft(y)
+        .tickPadding(50)
+        //no tick marks
+        .tickSize(0);
+
+
+    var gy = svg.append("g")
+        .attr("class", "y axis")
+        .call(yAxis)
+        .attr("transform", "translate(-10,-12 )")
+
+    var path = svg.select(".y .domain")
+        .attr("transform", "translate(10,0 )")
+
+
+
+    //add a value label to the right of each bar
+    bars.append("text")
         .attr("class", "label")
         //y position of the label is halfway down the bar
         .attr("y", function (d) {
-            return yMoocs(d.value) + yMoocs.bandwidth() / 2 + 4;
+            return y(d.name) + y.bandwidth() / 2 - 5;
         })
         //x position is 3 pixels to the right of the bar
         .attr("x", function (d) {
-            return 12;
+            return 10;
         })
-        .attr("class", "text-inside")
-        .attr("font-family", "Gotham-Bold")
-        .attr("font-size", "12px")
         .text(function (d) {
-            return d.name;
+            var value = setSettingsNumber(d.value);
+            return value.valueNumber + value.suffixNumber;
+        })
+        .style("font-family", "Gotham-Bold");
+
+    svg.selectAll(".tick text")
+        .call(wrap, y.bandwidth(), 10)
+        .attr("font-family", "Gotham-Bold")
+        .attr("font-size", "12px");
+
+        var div = d3.select("body").append("div")
+        .attr("class", "toolTip")
+        .style("font-size", "12px")
+        .style("width", "250px");
+
+        var tooltipBarText = d3Old.selectAll("#age-distribution-moocs .label")
+        .on("mouseover", function (d) {
+            
+            var textHtml = "<div class='col tooltip-gauges'><h3 class='row orange'>{{title}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>Amount</span><span class='col text-right' >{{value}}</div>";
+            textHtml = textHtml.replace('{{title}}', d.name)
+            textHtml = textHtml.replace('{{value}}', d.value.toFixed(0).toLocaleString())
+            if (d.percentage) {
+                var addText = "<div class='row pt-1 border-top'><span class='col pl-0 pr-0 '> {{type}}</span><span  class='col-3 text-right'>{{code}}</span></div>"
+                addText = addText.replace('{{type}}', "Percentage")
+                addText = addText.replace('{{code}}', d.percentage)
+                textHtml = textHtml + addText;
+            } else if (d.department_codes) {
+                var addText = "<div class='row pt-1 border-top'><span class='col-2 pl-0 pr-0 '> {{type}}</span><span  class='col text-right'>{{code}}</span></div>"
+                addText = addText.replace('{{type}}', "Department")
+                addText = addText.replace('{{code}}', d.department_codes);
+                textHtml = textHtml + addText;
+            }
+            textHtml = textHtml + "</div>";
+            div.transition()
+                .duration(0)
+                .style("font-family", "Gotham-Book")
+                .style("display", "inline-block");
+            // div.html(d.value + "<br/>" + d.name)
+            div.html(textHtml)
+                .style("left", (d3Old.event.pageX) + 5 + "px")
+                .style("top", (d3Old.event.pageY - 28) + 5 + "px");
+        })
+        .on("mouseout", function (d) {
+            div.transition()
+                .duration(0)
+                .style("display", "none");
+        });
+        
+        var tooltipBar = d3Old.selectAll("#age-distribution-moocs .bar")
+        .on("mouseover", function (d) {
+            
+            var textHtml = "<div class='col tooltip-gauges'><h3 class='row orange'>{{title}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>Amount</span><span class='col text-right' >{{value}}</div>";
+            textHtml = textHtml.replace('{{title}}', d.name)
+            textHtml = textHtml.replace('{{value}}', d.value.toFixed(0).toLocaleString())
+            if (d.percentage) {
+                var addText = "<div class='row pt-1 border-top'><span class='col pl-0 pr-0 '> {{type}}</span><span  class='col-3 text-right'>{{code}}</span></div>"
+                addText = addText.replace('{{type}}', "Percentage")
+                addText = addText.replace('{{code}}', d.percentage)
+                textHtml = textHtml + addText;
+            } else if (d.department_codes) {
+                var addText = "<div class='row pt-1 border-top'><span class='col-2 pl-0 pr-0 '> {{type}}</span><span  class='col text-right'>{{code}}</span></div>"
+                addText = addText.replace('{{type}}', "Department")
+                addText = addText.replace('{{code}}', d.department_codes);
+                textHtml = textHtml + addText;
+            }
+            textHtml = textHtml + "</div>";
+            div.transition()
+                .duration(0)
+                .style("font-family", "Gotham-Book")
+                .style("display", "inline-block");
+            // div.html(d.value + "<br/>" + d.name)
+            div.html(textHtml)
+                .style("left", (d3Old.event.pageX) + 5 + "px")
+                .style("top", (d3Old.event.pageY - 28) + 5 + "px");
+        })
+        .on("mouseout", function (d) {
+            div.transition()
+                .duration(0)
+                .style("display", "none");
+        });
+        var tooltipBarBack = d3Old.selectAll("#age-distribution-moocs .bar-back")
+        .on("mouseover", function (d) {
+            
+            var textHtml = "<div class='col tooltip-gauges'><h3 class='row orange'>{{title}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>Amount</span><span class='col text-right' >{{value}}</div>";
+            textHtml = textHtml.replace('{{title}}', d.name)
+            textHtml = textHtml.replace('{{value}}', d.value.toFixed(0).toLocaleString())
+            if (d.percentage) {
+                var addText = "<div class='row pt-1 border-top'><span class='col pl-0 pr-0 '> {{type}}</span><span  class='col-3 text-right'>{{code}}</span></div>"
+                addText = addText.replace('{{type}}', "Percentage")
+                addText = addText.replace('{{code}}', d.percentage)
+                textHtml = textHtml + addText;
+            } else if (d.department_codes) {
+                var addText = "<div class='row pt-1 border-top'><span class='col-2 pl-0 pr-0 '> {{type}}</span><span  class='col text-right'>{{code}}</span></div>"
+                addText = addText.replace('{{type}}', "Department")
+                addText = addText.replace('{{code}}', d.department_codes);
+                textHtml = textHtml + addText;
+            }
+            textHtml = textHtml + "</div>";
+            div.transition()
+                .duration(0)
+                .style("font-family", "Gotham-Book")
+                .style("display", "inline-block");
+            // div.html(d.value + "<br/>" + d.name)
+            div.html(textHtml)
+                .style("left", (d3Old.event.pageX) + 5 + "px")
+                .style("top", (d3Old.event.pageY - 28) + 5 + "px");
+        })
+        .on("mouseout", function (d) {
+            div.transition()
+                .duration(0)
+                .style("display", "none");
         });
 }
 /**
@@ -338,25 +447,87 @@ var marginStudents = {
     left: 20
 };
 
-var widthStudents = 80 - marginStudents.left - marginStudents.right,
-    heightStudents = 80 - marginStudents.top - marginStudents.bottom;
+var widthStudents = 100 - marginStudents.left - marginStudents.right,
+    heightStudents = 60 - marginStudents.top - marginStudents.bottom;
 
 /**
  * Start student-registrations-moocs
  */
-drawStudentRegistrationsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+
+ function tooltipStudentFlow(id,type){
+    var div = d3.select("body").append("div")
+    .attr("class", "toolTip")
+    .style("font-size", "12px")
+    .style("width", "200px");
+
+    var tooltipBarText = d3Old.selectAll( id+ " .text-inside")
+    .on("mouseover", function (d) {
+        
+        var textHtml = "<div class='col tooltip-gauges'><h3 class='row orange'>{{title}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>"+type+"</span><span class='col text-right' >{{value}}</div>";
+        textHtml = textHtml.replace('{{title}}', d.name)
+        textHtml = textHtml.replace('{{value}}', d.value.toFixed(0).toLocaleString())
+        
+        textHtml = textHtml + "</div>";
+        div.transition()
+            .duration(0)
+            .style("font-family", "Gotham-Book")
+            .style("display", "inline-block");
+        // div.html(d.value + "<br/>" + d.name)
+        div.html(textHtml)
+            .style("left", (d3Old.event.pageX) + 5 + "px")
+            .style("top", (d3Old.event.pageY - 28) + 5 + "px");
+    })
+    .on("mouseout", function (d) {
+        div.transition()
+            .duration(0)
+            .style("display", "none");
+    });
+    
+    var tooltipBar = d3Old.selectAll(id+" .bar")
+    .on("mouseover", function (d) {
+        
+        var textHtml = "<div class='col tooltip-gauges'><h3 class='row orange'>{{title}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>"+type+"</span><span class='col text-right' >{{value}}</div>";
+        textHtml = textHtml.replace('{{title}}', d.name)
+        textHtml = textHtml.replace('{{value}}', d.value.toFixed(0).toLocaleString())
+        textHtml = textHtml + "</div>";
+        div.transition()
+            .duration(0)
+            .style("font-family", "Gotham-Book")
+            .style("display", "inline-block");
+        // div.html(d.value + "<br/>" + d.name)
+        div.html(textHtml)
+            .style("left", (d3Old.event.pageX) + 5 + "px")
+            .style("top", (d3Old.event.pageY - 28) + 5 + "px");
+    })
+    .on("mouseout", function (d) {
+        div.transition()
+            .duration(0)
+            .style("display", "none");
+    });
+   
+ }
 
 function drawStudentRegistrationsChart(dataStudents) {
-    if (typeof dataStudents == "undefined") {
+    d3.select("#student1 svg").remove();
+
+    if (typeof dataStudents == "undefined" || typeof dataStudents.registrations == "undefined") {
         $('#student1-title').html("0");
         return
     };
-    $('#student1-title').html(dataStudents.registrations.value < 1000 ? dataStudents.registrations.value : (Math.round(dataStudents.registrations.value / 1000).toFixed(0)) + "K");
-    var svgStudent1 = d3.select("#student1").append("svg")
-        .attr("width", widthStudents + marginStudents.left + marginStudents.right)
-        .attr("height", heightStudents + marginStudents.top + marginStudents.bottom)
+    dataStudents.registrations.value = 0;
+    dataStudents.registrations.years.forEach(function (element) {
+        dataStudents.registrations.value = dataStudents.registrations.value + element.value;
+    });
+
+    var formatNumber = setSettingsNumber(dataStudents.registrations ? dataStudents.registrations.value : 0);
+    $('#student1-title').html(formatNumber.valueNumber + formatNumber.suffixNumber);
+
+    var svgStudent1 = d3.select("#student1")
+        .append("svg")
+        //responsive SVG needs these 2 attributes and no width and height attr
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-20 -7 100 60")
         .append("g")
-        .attr("transform", "translate(" + marginStudents.left + "," + marginStudents.top + ")");
 
     var xStudent1 = d3.scaleLinear()
         .range([0, widthStudents])
@@ -365,7 +536,7 @@ function drawStudentRegistrationsChart(dataStudents) {
         })]);
 
     var yStudent1 = d3.scaleBand()
-        .rangeRound([heightStudents, 0], .1)
+        .rangeRound([18 * dataStudents.registrations.years.length, 0], .1)
         .domain(dataStudents.registrations.years.map(function (d) {
             return d.name;
         }));
@@ -376,9 +547,13 @@ function drawStudentRegistrationsChart(dataStudents) {
 
     var gyStudent1 = svgStudent1.append("g")
         .style("text-anchor", "start")
-        .style("color", "#000")
+        .style("color", "#fff")
+        .style("font-family", "Gotham-Book")
+        .style("font-size", "9px")
         .attr("class", "y-data")
+        .attr("transform", "translate(0,-4 )")
         .call(yAxisStudent1)
+
 
 
     var barsStudent1 = svgStudent1.selectAll(".bar")
@@ -392,7 +567,7 @@ function drawStudentRegistrationsChart(dataStudents) {
             return yStudent1(d.name);
         })
         .attr("fill", "#fff")
-        .attr("height", yStudent1.bandwidth() - 8)
+        .attr("height", 10)
         .attr("x", 8)
         .attr("width", function (d) {
             return xStudent1(d.value);
@@ -402,18 +577,21 @@ function drawStudentRegistrationsChart(dataStudents) {
         .attr("class", "label")
         //y position of the label is halfway down the bar
         .attr("y", function (d) {
-            return yStudent1(d.name) + yStudent1.bandwidth() / 2;
+            return yStudent1(d.name) + 16 / 2;
         })
-        //x position is 3 pixels to the right of the bar
         .attr("x", function (d) {
             return xStudent1(d.value) - 6;
         })
         .attr("class", "text-inside")
         .attr("font-family", "Gotham-Book")
-        .attr("font-size", "10px")
+        .attr("font-size", "8px")
         .text(function (d) {
-            return d.value < 1000 ? d.value : (Math.round(d.value / 1000).toFixed(0)) + "K";
+            var value = setSettingsNumber(d.value);
+            return value.valueNumber + value.suffixNumber;
         });
+
+        setTooltipToPoints("#student1-title",false,dataStudents.registrations ? dataStudents.registrations.value : 0,undefined,"Registrations");
+        tooltipStudentFlow("#student1","Registrations");
 }
 /**
  * End student-registrations-moocs
@@ -424,19 +602,29 @@ function drawStudentRegistrationsChart(dataStudents) {
  * Start student-participants-moocs
  */
 
-drawStudentParticipantsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+
 
 function drawStudentParticipantsChart(dataStudents) {
-    if (typeof dataStudents == "undefined") {
+    d3.select("#student2 svg").remove();
+
+    if (typeof dataStudents == "undefined" || typeof dataStudents.participants == "undefined") {
         $('#student2-title').html("0");
         return
     };
-    $('#student2-title').html(dataStudents.participants.value < 1000 ? dataStudents.participants.value : (Math.round(dataStudents.participants.value / 1000).toFixed(0)) + "K");
-    var svgStudent2 = d3.select("#student2").append("svg")
-        .attr("width", widthStudents + marginStudents.left + marginStudents.right)
-        .attr("height", heightStudents + marginStudents.top + marginStudents.bottom)
-        .append("g")
-        .attr("transform", "translate(" + marginStudents.left + "," + marginStudents.top + ")");
+    dataStudents.participants.value = 0;
+    dataStudents.participants.years.forEach(function (element) {
+        dataStudents.participants.value = dataStudents.participants.value + element.value;
+    });
+
+    var formatNumber = setSettingsNumber(dataStudents.participants.value);
+    $('#student2-title').html(formatNumber.valueNumber + formatNumber.suffixNumber);
+
+    var svgStudent2 = d3.select("#student2")
+        .append("svg")
+        //responsive SVG needs these 2 attributes and no width and height attr
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-20 -7 100 60")
+        .append("g");
 
     var xStudent2 = d3.scaleLinear()
         .range([0, widthStudents])
@@ -445,7 +633,7 @@ function drawStudentParticipantsChart(dataStudents) {
         })]);
 
     var yStudent2 = d3.scaleBand()
-        .rangeRound([heightStudents, 0], .1)
+        .rangeRound([18 * dataStudents.participants.years.length, 0], .1)
         .domain(dataStudents.participants.years.map(function (d) {
             return d.name;
         }));
@@ -456,8 +644,11 @@ function drawStudentParticipantsChart(dataStudents) {
 
     var gyStudent2 = svgStudent2.append("g")
         .style("text-anchor", "start")
-        .style("color", "#000")
+        .style("color", "#fff")
+        .style("font-family", "Gotham-Book")
+        .style("font-size", "9px")
         .attr("class", "y-data")
+        .attr("transform", "translate(0,-4 )")
         .call(yAxisStudent2)
 
     var barsStudent2 = svgStudent2.selectAll(".bar")
@@ -471,7 +662,7 @@ function drawStudentParticipantsChart(dataStudents) {
             return yStudent2(d.name);
         })
         .attr("fill", "#fff")
-        .attr("height", yStudent2.bandwidth() - 8)
+        .attr("height", 10)
         .attr("x", 8)
         .attr("width", function (d) {
             return xStudent2(d.value);
@@ -481,7 +672,7 @@ function drawStudentParticipantsChart(dataStudents) {
         .attr("class", "label")
         //y position of the label is halfway down the bar
         .attr("y", function (d) {
-            return yStudent2(d.name) + yStudent2.bandwidth() / 2;
+            return yStudent2(d.name) + 16 / 2;
         })
         //x position is 3 pixels to the right of the bar
         .attr("x", function (d) {
@@ -489,10 +680,14 @@ function drawStudentParticipantsChart(dataStudents) {
         })
         .attr("class", "text-inside")
         .attr("font-family", "Gotham-Book")
-        .attr("font-size", "10px")
+        .attr("font-size", "8px")
         .text(function (d) {
-            return d.value < 1000 ? d.value : (Math.round(d.value / 1000).toFixed(0)) + "K";
+            var value = setSettingsNumber(d.value);
+            return value.valueNumber + value.suffixNumber;
         });
+
+        setTooltipToPoints("#student2-title",false,dataStudents.participants.value,undefined,"Participants");
+        tooltipStudentFlow("#student2","Participants");
 }
 /**
  * End student-participants-moocs
@@ -503,19 +698,29 @@ function drawStudentParticipantsChart(dataStudents) {
  * Start student-completed-moocs
  */
 
-drawStudentCompletedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+
 
 function drawStudentCompletedsChart(dataStudents) {
-    if (typeof dataStudents == "undefined") {
+    d3.select("#student3 svg").remove();
+
+    if (typeof dataStudents == "undefined" || typeof dataStudents.completed == "undefined") {
         $('#student3-title').html("0");
         return
     };
-    $('#student3-title').html(dataStudents.completed.value < 1000 ? dataStudents.completed.value : (Math.round(dataStudents.completed.value / 1000).toFixed(0)) + "K");
-    var svgStudent3 = d3.select("#student3").append("svg")
-        .attr("width", widthStudents + marginStudents.left + marginStudents.right)
-        .attr("height", heightStudents + marginStudents.top + marginStudents.bottom)
+    dataStudents.completed.value = 0;
+    dataStudents.completed.years.forEach(function (element) {
+        dataStudents.completed.value = dataStudents.completed.value + element.value;
+    });
+
+    var formatNumber = setSettingsNumber(dataStudents.completed.value);
+    $('#student3-title').html(formatNumber.valueNumber + formatNumber.suffixNumber);
+
+    var svgStudent3 = d3.select("#student3")
+        .append("svg")
+        //responsive SVG needs these 2 attributes and no width and height attr
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-20 -7 100 60")
         .append("g")
-        .attr("transform", "translate(" + marginStudents.left + "," + marginStudents.top + ")");
 
     var xStudent3 = d3.scaleLinear()
         .range([0, widthStudents])
@@ -524,7 +729,7 @@ function drawStudentCompletedsChart(dataStudents) {
         })]);
 
     var yStudent3 = d3.scaleBand()
-        .rangeRound([heightStudents, 0], .1)
+        .rangeRound([18 * dataStudents.completed.years.length, 0], .1)
         .domain(dataStudents.completed.years.map(function (d) {
             return d.name;
         }));
@@ -536,7 +741,10 @@ function drawStudentCompletedsChart(dataStudents) {
     var gyStudent3 = svgStudent3.append("g")
         .style("text-anchor", "start")
         .style("color", "#000")
+        .style("font-family", "Gotham-Book")
+        .style("font-size", "9px")
         .attr("class", "y-data")
+        .attr("transform", "translate(0,-4 )")
         .call(yAxisStudent3)
 
     var barsStudent3 = svgStudent3.selectAll(".bar")
@@ -550,7 +758,7 @@ function drawStudentCompletedsChart(dataStudents) {
             return yStudent3(d.name);
         })
         .attr("fill", "#fff")
-        .attr("height", yStudent3.bandwidth() - 8)
+        .attr("height", 10)
         .attr("x", 8)
         .attr("width", function (d) {
             return xStudent3(d.value);
@@ -560,7 +768,7 @@ function drawStudentCompletedsChart(dataStudents) {
         .attr("class", "label")
         //y position of the label is halfway down the bar
         .attr("y", function (d) {
-            return yStudent3(d.name) + yStudent3.bandwidth() / 2;
+            return yStudent3(d.name) + 16 / 2;
         })
         //x position is 3 pixels to the right of the bar
         .attr("x", function (d) {
@@ -568,10 +776,14 @@ function drawStudentCompletedsChart(dataStudents) {
         })
         .attr("class", "text-inside")
         .attr("font-family", "Gotham-Book")
-        .attr("font-size", "10px")
+        .attr("font-size", "8px")
         .text(function (d) {
-            return d.value < 1000 ? d.value : (Math.round(d.value / 1000).toFixed(0)) + "K";
+            var value = setSettingsNumber(d.value);
+            return value.valueNumber + value.suffixNumber;
         });
+
+        setTooltipToPoints("#student3-title",false,dataStudents.completed.value,undefined,"Completed");
+        tooltipStudentFlow("#student3","Completed");
 }
 
 /**
@@ -583,19 +795,29 @@ function drawStudentCompletedsChart(dataStudents) {
  * Start student-certified-moocs 
  */
 
-drawStudentCertifiedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+
 
 function drawStudentCertifiedsChart(dataStudents) {
-    if (typeof dataStudents == "undefined") {
+    d3.select("#student4 svg").remove();
+    if (typeof dataStudents == "undefined" || typeof dataStudents.certified == "undefined") {
         $('#student4-title').html("0");
         return
     };
-    $('#student4-title').html(dataStudents.certified.value < 1000 ? dataStudents.certified.value : (Math.round(dataStudents.certified.value / 1000).toFixed(0)) + "K");
-    var svgStudent4 = d3.select("#student4").append("svg")
-        .attr("width", widthStudents + marginStudents.left + marginStudents.right)
-        .attr("height", heightStudents + marginStudents.top + marginStudents.bottom)
+
+    dataStudents.certified.value = 0;
+    dataStudents.certified.years.forEach(function (element) {
+        dataStudents.certified.value = dataStudents.certified.value + element.value;
+    });
+
+    var formatNumber = setSettingsNumber(dataStudents.certified.value);
+    $('#student4-title').html(formatNumber.valueNumber + formatNumber.suffixNumber);
+
+    var svgStudent4 = d3.select("#student4")
+        .append("svg")
+        //responsive SVG needs these 2 attributes and no width and height attr
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "-20 -7 100 60")
         .append("g")
-        .attr("transform", "translate(" + marginStudents.left + "," + marginStudents.top + ")");
 
     var xStudent4 = d3.scaleLinear()
         .range([0, widthStudents])
@@ -604,7 +826,7 @@ function drawStudentCertifiedsChart(dataStudents) {
         })]);
 
     var yStudent4 = d3.scaleBand()
-        .rangeRound([heightStudents, 0], .1)
+        .rangeRound([18 * dataStudents.certified.years.length, 0], .1)
         .domain(dataStudents.certified.years.map(function (d) {
             return d.name;
         }));
@@ -617,7 +839,10 @@ function drawStudentCertifiedsChart(dataStudents) {
     var gyStudent4 = svgStudent4.append("g")
         .style("text-anchor", "start")
         .style("color", "#000")
+        .style("font-family", "Gotham-Book")
+        .style("font-size", "9px")
         .attr("class", "y-data")
+        .attr("transform", "translate(0,-4 )")
         .call(yAxisStudent4)
 
     var barsStudent4 = svgStudent4.selectAll(".bar")
@@ -631,7 +856,7 @@ function drawStudentCertifiedsChart(dataStudents) {
             return yStudent4(d.name);
         })
         .attr("fill", "#fff")
-        .attr("height", yStudent4.bandwidth() - 8)
+        .attr("height", 10)
         .attr("x", 8)
         .attr("width", function (d) {
             return xStudent4(d.value);
@@ -641,7 +866,7 @@ function drawStudentCertifiedsChart(dataStudents) {
         .attr("class", "label")
         //y position of the label is halfway down the bar
         .attr("y", function (d) {
-            return yStudent4(d.name) + yStudent4.bandwidth() / 2;
+            return yStudent4(d.name) + 16 / 2;
         })
         //x position is 3 pixels to the right of the bar
         .attr("x", function (d) {
@@ -649,10 +874,14 @@ function drawStudentCertifiedsChart(dataStudents) {
         })
         .attr("class", "text-inside")
         .attr("font-family", "Gotham-Book")
-        .attr("font-size", "10px")
+        .attr("font-size", "8px")
         .text(function (d) {
-            return d.value < 1000 ? d.value : (Math.round(d.value / 1000).toFixed(0)) + "K";
+            var value = setSettingsNumber(d.value);
+            return value.valueNumber + value.suffixNumber;
         });
+
+        setTooltipToPoints("#student4-title",false,dataStudents.certified.value,undefined,"Certified");
+        tooltipStudentFlow("#student4","Certified");
 }
 /**
  * End student-certified-moocs
@@ -661,360 +890,42 @@ function drawStudentCertifiedsChart(dataStudents) {
 /**
  * Start timelines
  *  */
-
-function sortByDateAscending(a, b) {
-    // Dates will be cast to numbers automagically:
-    return new Date(b.date) - new Date(a.date);
-}
-// var TimeLineIDB = $.extend([], moocsRegistrationTimeline.registrationTimelineIDB);
-var TimeLineIDB = $.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB);
-createChart(TimeLineIDB);
-
-function createChart(data) {
-    if ($("#moocs2018").prop("checked")) {
-        data = data.filter(function (data) {
-            return data.date.indexOf("-18") > -1
-        });
-    }
-
-    var margin = {
-            top: 20,
-            right: 20,
-            bottom: 30,
-            left: 50
-        },
-        width = 580 - margin.left - margin.right,
-        height = 220 - margin.top - margin.bottom;
-
-    // parse the date / time
-    var parseTime = d3.timeParse("%d-%b-%y");
-
-    // set the ranges
-    var x = d3.scaleTime().range([0, width]);
-    var y = d3.scaleLinear().range([height, 0]);
-
-    // define the area
-    var area = d3.area()
-        .x(function (d) {
-            return x(d.date);
-        })
-        .y0(height)
-        .y1(function (d) {
-            return y(d.close);
-        });
-
-    // define the line
-    var valueline = d3.line()
-        .x(function (d) {
-            return x(d.date);
-        })
-        .y(function (d) {
-            return y(d.close);
-        });
-
-    // append the svg obgect to the body of the page
-    // appends a 'group' element to 'svg'
-    // moves the 'group' element to the top left margin
-    var svg = d3.select("#timeline-moocs").append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
-        .append("g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-    var totalAmount = 0;
-    // format the data
-    data.forEach(function (d) {
-        d.date = parseTime(d.date);
-    });
-
-    data = data.sort(sortByDateAscending);
-
-    for (var i = 0; i < data.length; i++) {
-        data[i].close = +data[i].close;
-        totalAmount += data[i].close;
-        if (i > 0) {
-            data[i]['CumulativeAmount'] = data[i].close + data[i - 1].close;
-        } else {
-            data[i]['CumulativeAmount'] = data[i].close;
-        }
-    }
-    //now calculate cumulative % from the cumulative amounts & total, round %
-    for (var i = 0; i < data.length; i++) {
-        data[i]['CumulativePercentage'] = (data[i]['CumulativeAmount'] / totalAmount);
-        data[i]['CumulativePercentage'] = parseFloat(data[i]['CumulativePercentage'].toFixed(2));
-    }
-
-    var lineGen = d3.line()
-        .x(function (d) {
-            return x(d.date);
-        })
-        .y(function (d) {
-            return y(d.CumulativeAmount);
-        });
-
-    // scale the range of the data
-    x.domain(d3.extent(data, function (d) {
-        return d.date;
-    }));
-    y.domain([0, d3.max(data, function (d) {
-        return d.close;
-    })]);
-
-    // add the area
-    svg.append("path")
-        .data([data])
-        .attr("class", "area")
-        .attr("d", area);
-
-    // add the valueline path.
-    svg.append("path")
-        .data([data])
-        .attr("class", "line")
-        .attr("d", valueline);
-    //
-    svg.append('svg:path')
-        .attr('d', lineGen(data))
-        .attr('stroke', '#c3c3c3')
-        .attr("stroke-dasharray", "4")
-        .attr('stroke-width', 2)
-        .attr('fill', 'none');
-
-    // add the X Axis
-    svg.append("g")
-        .attr("transform", "translate(0," + height + ")")
-        .attr("class", "x-axis")
-        .style('stroke-width', '3px')
-        .style("font-family", "Gotham-Book")
-        .style("font-size", "13px")
-        .call(d3.axisBottom(x)
-            //.ticks(d3.timeDay.filter(d {return } d3.timeDay.count(0, d) % 100 === 0))
-            .ticks(d3.timeDay.filter(function (d) {
-                return $("#moocs2018").prop("checked") ? d3.timeDay.count(0, d) % 60 === 0 : d3.timeDay.count(0, d) % 300 === 0
-            }))
-            .tickFormat(function (x) {
-                // get the milliseconds since Epoch for the date
-                var milli = (x.getTime() - 10000);
-
-                // calculate new date 10 seconds earlier. Could be one second, 
-                // but I like a little buffer for my neuroses
-                var vanilli = new Date(milli);
-
-                // calculate the month (0-11) based on the new date
-                var mon = vanilli.getMonth();
-                var yr = vanilli.getFullYear();
-
-                // return appropriate quarter for that month
-                if ($("#moocs2018").prop("checked")) {
-                    if (mon <= 2 && yr == 2018) {
-                        return "Q1 " + yr;
-                    } else if (mon <= 5 && yr == 2018) {
-                        return "Q2 " + yr;
-                    } else if (mon <= 8 && yr == 2018) {
-                        return "Q3 " + yr;
-                    } else if (yr == 2018) {
-                        return "Q4 " + yr;
-                    }
-                } else {
-                    if (mon <= 2) {
-                        return yr;
-                    } else if (mon <= 5) {
-                        return yr;
-                    } else if (mon <= 8) {
-                        return yr;
-                    } else {
-                        return yr;
-                    }
-                }
-
-
-            })
-            .tickSizeOuter(0)
-        )
-    //.call(d3.axisBottom(x));
-
-    // add the Y Axis
-    svg.append("g")
-        .attr("class", "y-axis")
-        .style("font-family", "Gotham-Book")
-        .style("font-size", "13px")
-        .call(d3.axisLeft(y)
-            .tickFormat(d3.format(".2s")));
+function createChartTimelineMoocs(data, typeload) {
+    d3.select("#timeline-moocs svg").remove();
+    createTimelineChart(data, "#timeline-moocs", "#f1a592", "#moocs2018", 800)
 }
 
 /**
  * End timelines
  *  */
 
-/** 
- * Start Gauges
- */
-
-
-var dataGaugeMoocs = {
-    "code": {
-        "total": getPercentageTotal(moocsAllTotalGlobal),
-        "allocated": moocsAllTotalGlobal
-    },
-    "pageview": {
-        "total": getPercentageTotal(moocsAllDownloads),
-        "allocated": moocsAllDownloads
-    },
-    "lac": {
-        "total": 100,
-        "allocated": moocsAllDownloadsLac
+function setEmptyGaugesMoocs() {
+    return {
+        "courses": 0,
+        "percentageCourses": 0,
+        "registrations": 0,
+        "percentageRegistrations": 0,
+        "percentageLAC": 0
     }
 }
-var dataGaugeMoocs2018 = {
-    "code": {
-        "total": getPercentageTotal(moocs2018TotalGlobal),
-        "allocated": moocs2018TotalGlobal
-    },
-    "pageview": {
-        "total": getPercentageTotal(moocs2018Downloads),
-        "allocated": moocs2018Downloads
-    },
-    "lac": {
-        "total": 100,
-        "allocated": moocs2018DownloadsLac
-    }
-}
-
-drawGaugeMoocsChart(dataGaugeMoocs)
 
 function drawGaugeMoocsChart(dataGauge) {
-    var width = 150,
-        height = 150,
-        progress = 0,
-        progress3 = 0,
-        progress2 = 0,
-        formatPercent = d3.format(".0%");
-    const twoPi = 2 * Math.PI;
 
-    var arc = d3.arc()
-        .startAngle(0)
-        .innerRadius(70)
-        .outerRadius(64);
+    removeGauges(["#gauge-moocs", "#gauge-registrations-m", "#gauge-lac-m"]);
 
-    var svg = d3.selectAll("#gauge-moocs").append("svg")
-        .attr("width", width)
-        .attr("height", height)
-        .append("g")
-        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+    if (dataGauge == undefined) {
+        dataGauge = setEmptyGaugesMoocs();
+    }
 
-    var meter = svg.append("g")
-        .attr("class", "funds-allocated-meter");
-
-    meter.append("path")
-        .attr("class", "background")
-        .attr("d", arc.endAngle(twoPi));
-
-    var foreground = meter.append("path")
-        .attr("class", "foreground");
-
-    var percentComplete = meter.append("text")
-        .attr("text-anchor", "middle")
-        .attr("class", "percent-complete")
-        .attr("dy", "0.3em")
-        .text(setSettingsNumber(dataGauge.code.allocated).valueNumber + setSettingsNumber(dataGauge.code.allocated).suffixNumber);
-
-
-    var i = d3.interpolate(progress, dataGauge.code.allocated / dataGauge.code.total);
-    foreground.attr("d", arc.endAngle(twoPi * i(1)));
-    //gauge K
-
-    var arc2 = d3.arc()
-        .startAngle(0)
-        .innerRadius(70)
-        .outerRadius(64);
-
-    var svg2 = d3.selectAll("#gauge-registrations-m").append("svg")
-        .attr("width", width)
-        .attr("height", height)
-        .append("g")
-        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-
-    var meter2 = svg2.append("g")
-        .attr("class", "funds-allocated-meter");
-
-    meter2.append("path")
-        .attr("class", "background")
-        .attr("d", arc2.endAngle(twoPi));
-
-    var foreground2 = meter2.append("path")
-        .attr("class", "foreground");
-
-    var percentComplete2 = meter2.append("text")
-        .attr("text-anchor", "middle")
-        .attr("class", "percent-complete")
-        .attr("dy", "0.3em")
-        .text(setSettingsNumber(dataGauge.pageview.allocated).valueNumber + setSettingsNumber(dataGauge.pageview.allocated).suffixNumber);
-
-
-    var i2 = d3.interpolate(progress2, dataGauge.pageview.allocated / dataGauge.pageview.total);
-    foreground2.attr("d", arc2.endAngle(twoPi * i2(1)));
-    //gauge %
-
-    var arc3 = d3.arc()
-        .startAngle(0)
-        .innerRadius(70)
-        .outerRadius(64);
-
-    var svg3 = d3.selectAll("#gauge-lac-m").append("svg")
-        .attr("width", width)
-        .attr("height", height)
-        .append("g")
-        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-
-    var meter3 = svg3.append("g")
-        .attr("class", "funds-allocated-meter");
-
-    meter3.append("path")
-        .attr("class", "background")
-        .attr("d", arc3.endAngle(twoPi));
-
-    var foreground3 = meter3.append("path")
-        .attr("class", "foreground");
-
-    var percentComplete3 = meter3.append("text")
-        .attr("text-anchor", "middle")
-        .attr("class", "percent-complete")
-        .attr("dy", "0.3em")
-        /*percentComplete3.text((dataGauge.lac.allocated + "%"));*/
-        .text(setSettingsNumber(dataGauge.lac.allocated).valueNumber + setSettingsNumber(dataGauge.lac.allocated).suffixNumber);
-
-
-    var i3 = d3.interpolate(progress3, dataGauge.lac.allocated / dataGauge.lac.total);
-    foreground3.attr("d", arc3.endAngle(twoPi * i3(1)));
-    // d3.transition().duration(1000).tween("progress", function () {
-    //     return function (t) {
-    //         progress = i(t);
-    //         foreground.attr("d", arc.endAngle(twoPi * progress));
-    //         percentComplete.text((progress * 100).toFixed(0));
-    //         progress2 = i2(t);
-    //         foreground2.attr("d", arc2.endAngle(twoPi * progress2));
-    //         percentComplete2.text((progress2 * 1000).toFixed(0) + "K");
-    //         progress3 = i3(t);
-    //         foreground3.attr("d", arc3.endAngle(twoPi * progress3));
-    //         percentComplete3.text((progress3 * 100).toFixed(0) + "%");
-
-    //     };
-    // });
+    var code = $('#idbLink')[0].text;
+    drawGauge(dataGauge.courses, dataGauge.percentageCourses, "", "#gauge-moocs", code, "Moocs", "#fa2e00");
+    drawGauge(dataGauge.registrations, dataGauge.percentageRegistrations, "", "#gauge-registrations-m", code, "Registrations", "#fa2e00");
+    drawGauge(dataGauge.percentageLAC, dataGauge.percentageLAC, "%", "#gauge-lac-m", code, "Registrations", "#fa2e00");
 }
-
-
-/**
- * End Gauges
- */
-// var datapoints = [{
-//     "age": "red",
-//     "population": 68
-// }, {
-//     "age": "gray",
-//     "population": 32
-// }]
 
 function moocsGenderFilter(moocsJson, gender) {
     return moocsJson.filter(function (entry) {
-        return entry.Gender === gender;
+        return entry.gender === gender;
     });
 }
 
@@ -1030,8 +941,16 @@ function moocsGenderAddGray(moocsJson) {
         }];
 
     }
-    moocsJson[0].realpopulation = moocsJson[0].population;
-    moocsJson[0].population = (moocsJson[0].population * 100).toFixed(0);
+    if ($("input[name*='moocsTrend']:checked").val() === "all") {
+        moocsJson[0].registrations = moocsJson[0].all_registrations;
+        moocsJson[0].realpopulation = moocsJson[0].all_population;
+        moocsJson[0].population = (moocsJson[0].all_population * 100).toFixed(0);
+    } else {
+        moocsJson[0].registrations = moocsJson[0]["2018_registrations"];
+        moocsJson[0].realpopulation = moocsJson[0]["2018_population"];
+        moocsJson[0].population = (moocsJson[0]["2018_population"] * 100).toFixed(0);
+    }
+
     var gray = {
         "age": "gray",
         "population": 100 - moocsJson[0].population
@@ -1039,19 +958,16 @@ function moocsGenderAddGray(moocsJson) {
     moocsJson.push(gray);
     return moocsJson;
 }
-// console.log()
-points(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Female")));
-points1(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Male")));
-points2(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Not Available")));
-points3(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Other")));
 
 function points(data) {
+    d3.select("#waffle svg").remove();
+
     var formatNumber = setSettingsNumber(data[0].registrations);
     $('#waffle-registrations').html(formatNumber.valueNumber + formatNumber.suffixNumber);
-    if (typeof data[0].Gender == "undefined") {
-        $('#waffle-gender').html("Female 0%");
+    if (typeof data[0].gender == "undefined") {
+        $('#waffle-gender').html("FEMALE 0%");
     } else {
-        $('#waffle-gender').html(data[0].Gender + " " + (data[0].realpopulation * 100).toFixed(2) + "%");
+        $('#waffle-gender').html(data[0].gender.toUpperCase() + " " + (data[0].realpopulation * 100).toFixed(2) + "%");
     }
 
     var total = 100;
@@ -1059,7 +975,7 @@ function points(data) {
         heightSquares = 10,
         squareSize = 10,
         squareValue = 0,
-        gap = 50,
+        gap = 35,
         theData = [];
 
 
@@ -1097,7 +1013,7 @@ function points(data) {
         .append("svg")
         //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-40 -300 600 1000")
+        .attr("viewBox", "-80 -140 600 1000")
         //class to make it responsive
         .classed("svg-content-responsive", true)
         .append("g")
@@ -1124,19 +1040,100 @@ function points(data) {
         })
         .attr("cy", function (d, i) {
             col = Math.floor(i / heightSquares);
-            return -(heightSquares * squareSize) + ((col * squareSize) + (col * gap)) + 5
+            return -(heightSquares * squareSize) + ((col * squareSize) + (col * 50)) + 5
         })
+        setTooltipToPoints("#waffle",true,data[0].registrations.toLocaleString(),checkDecimal(data[0].realpopulation * 100),"Female");
+        setTooltipToPoints("#waffle-registrations",false,data[0].registrations.toLocaleString(),checkDecimal(data[0].realpopulation * 100),"Female");
+        setTooltipToPoints("#waffle-gender",false,data[0].registrations.toLocaleString(),checkDecimal(data[0].realpopulation * 100),"Female");
+        
+}
+
+function setTooltipToPoints(id,isSvg,value,percentage,name){
+    var tooltip = d3.select("body")
+        .append("div")
+        .attr("class", "toolTip")
+        .style("position", "absolute")
+        .style("padding", "5px")
+        .style("background-color", "white")
+        .style("z-index", "100")
+        .attr("width", "1000")
+        .style("width", "1000")
+        .style("font-size", "12px")
+        .style("font-family", "Gotham-Book");
+        var root;
+        var selected;
+    if(isSvg){
+        selected = d3Old.selectAll(id+" svg");
+        root = d3Old.select( id +" svg");
+    }else{
+        root = d3Old.select(id);
+        selected = d3Old.selectAll(id);
+    }
+    
+    var scr = {
+        x: window.scrollX,
+        y: window.scrollY,
+        w: window.innerWidth,
+        h: window.innerHeight
+    };
+
+    var body_sel = d3Old.select('body');
+    var body = {
+        w: body_sel.node().offsetWidth,
+        h: body_sel.node().offsetHeight
+    };
+    var doc = {
+        w: document.width,
+        h: document.height
+    };
+    var svgpos = getNodePos(root.node());
+        selected
+        .on("mousemove", function () {
+            var textInnerHtml = "<div class='col tooltip-gauges'><h3 class='row orange'>"+ name +"</h3> <div class='row  pb-1'><span class='col pl-0 pr-0'>Value</span><span class='col text-right' >{{value}}</div>";
+            textInnerHtml = textInnerHtml.replace("{{value}}", value);
+            if(percentage){
+                var textToAppend = "<div class='row pt-1 border-top'> <span class='col pl-0 pr-0'> Percentage</span><span  class='col-3 text-right'>{{percentage}}%</span>"
+                textToAppend = textToAppend.replace("{{percentage}}", percentage);
+                textInnerHtml = textInnerHtml +textToAppend;
+            }
+
+            textInnerHtml = textInnerHtml +"</div>"
+                       
+
+            var m = d3Old.mouse(root.node());
+            scr.x = d3Old.event.pageX;
+            scr.y = d3Old.event.pageY;
+            m[0] += svgpos.x;
+            m[1] += svgpos.y;
+            tooltip.style("right", "");
+            tooltip.style("left", "");
+            tooltip.style("bottom", "");
+            tooltip.style("top", "");
+            tooltip.style("left", scr.x + 5 + "px");
+            tooltip.style("top", scr.y + 5 + "px");
+            
+            tooltip.html(textInnerHtml)
+                .style("display", "inline-block");
+
+        })
+        .on("mouseout", function () {
+            tooltip.transition()
+                .duration(0)
+                .style("display", "none");
+        });
 }
 
 
 
 function points1(data) {
+    d3.select("#waffle1 svg").remove();
+
     var formatNumber = setSettingsNumber(data[0].registrations);
     $('#waffle1-registrations').html(formatNumber.valueNumber + formatNumber.suffixNumber);
-    if (typeof data[0].Gender == "undefined") {
-        $('#waffle1-gender').html("Male 0%");
+    if (typeof data[0].gender == "undefined") {
+        $('#waffle1-gender').html("MALE 0%");
     } else {
-        $('#waffle1-gender').html(data[0].Gender + " " + (data[0].realpopulation * 100).toFixed(2) + "%");
+        $('#waffle1-gender').html(data[0].gender.toUpperCase() + " " + (data[0].realpopulation * 100).toFixed(2) + "%");
     }
 
     var total = 100;
@@ -1144,7 +1141,7 @@ function points1(data) {
         heightSquares = 10,
         squareSize = 10,
         squareValue = 0,
-        gap = 50,
+        gap = 35,
         theData = [];
 
 
@@ -1185,7 +1182,7 @@ function points1(data) {
         .append("svg")
         //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-40 -300 600 1000")
+        .attr("viewBox", "-80 -140 600 1000")
         //class to make it responsive
         .classed("svg-content-responsive", true)
         .append("g")
@@ -1212,24 +1209,30 @@ function points1(data) {
         })
         .attr("cy", function (d, i) {
             col = Math.floor(i / heightSquares);
-            return -(heightSquares * squareSize) + ((col * squareSize) + (col * gap)) + 5
+            return -(heightSquares * squareSize) + ((col * squareSize) + (col * 50)) + 5
         })
+
+        setTooltipToPoints("#waffle1",true,data[0].registrations.toLocaleString(),checkDecimal(data[0].realpopulation * 100),"Male");
+        setTooltipToPoints("#waffle1-registrations",false,data[0].registrations.toLocaleString(),checkDecimal(data[0].realpopulation * 100),"Male");
+        setTooltipToPoints("#waffle1-gender",false,data[0].registrations.toLocaleString(),checkDecimal(data[0].realpopulation * 100),"Male");
 }
 
 function points2(data) {
+    d3.select("#waffle2 svg").remove();
+
     var formatNumber = setSettingsNumber(data[0].registrations);
     $('#waffle2-registrations').html(formatNumber.valueNumber + formatNumber.suffixNumber);
-    if (typeof data[0].Gender == "undefined") {
-        $('#waffle2-gender').html("Not Available 0%");
+    if (typeof data[0].gender == "undefined") {
+        $('#waffle2-gender').html("NOT INFORMED 0%");
     } else {
-        $('#waffle2-gender').html(data[0].Gender + " " + (data[0].realpopulation * 100).toFixed(2) + "%");
+        $('#waffle2-gender').html(data[0].gender.toUpperCase() + " " + (data[0].realpopulation * 100).toFixed(2) + "%");
     }
     var total = 100;
     var widthSquares = 10,
         heightSquares = 10,
         squareSize = 10,
         squareValue = 0,
-        gap = 50,
+        gap = 35,
         theData = [];
 
 
@@ -1269,7 +1272,7 @@ function points2(data) {
         .append("svg")
         //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-40 -300 600 1000")
+        .attr("viewBox", "-80 -140 600 1000")
         //class to make it responsive
         .classed("svg-content-responsive", true)
         .append("g")
@@ -1296,17 +1299,21 @@ function points2(data) {
         })
         .attr("cy", function (d, i) {
             col = Math.floor(i / heightSquares);
-            return -(heightSquares * squareSize) + ((col * squareSize) + (col * gap)) + 5
+            return -(heightSquares * squareSize) + ((col * squareSize) + (col * 50)) + 5
         })
+        setTooltipToPoints("#waffle2",true,data[0].registrations.toLocaleString(),checkDecimal(data[0].realpopulation * 100),"Not Available");
+        setTooltipToPoints("#waffle2-registrations",false,data[0].registrations.toLocaleString(),checkDecimal(data[0].realpopulation * 100),"Not Available");
+        setTooltipToPoints("#waffle2-gender",false,data[0].registrations.toLocaleString(),checkDecimal(data[0].realpopulation * 100),"Not Available");
 }
 
 function points3(data) {
+    d3.select("#waffle3 svg").remove();
     var formatNumber = setSettingsNumber(data[0].registrations);
     $('#waffle3-registrations').html(formatNumber.valueNumber + formatNumber.suffixNumber);
-    if (typeof data[0].Gender == "undefined") {
-        $('#waffle3-gender').html("Not Available 0%");
+    if (typeof data[0].gender == "undefined") {
+        $('#waffle3-gender').html("OTHER 0%");
     } else {
-        $('#waffle3-gender').html(data[0].Gender + " " + (data[0].realpopulation * 100).toFixed(2) + "%");
+        $('#waffle3-gender').html(data[0].gender.toUpperCase() + " " + (data[0].realpopulation * 100).toFixed(2) + "%");
     }
 
     var total = 100;
@@ -1314,7 +1321,7 @@ function points3(data) {
         heightSquares = 10,
         squareSize = 10,
         squareValue = 0,
-        gap = 50,
+        gap = 35,
         theData = [];
 
 
@@ -1352,7 +1359,7 @@ function points3(data) {
         .append("svg")
         //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-40 -300 600 1000")
+        .attr("viewBox", "-80 -140 600 1000")
         //class to make it responsive
         .classed("svg-content-responsive", true)
         .append("g")
@@ -1379,35 +1386,17 @@ function points3(data) {
         })
         .attr("cy", function (d, i) {
             col = Math.floor(i / heightSquares);
-            return -(heightSquares * squareSize) + ((col * squareSize) + (col * gap)) + 5
+            return -(heightSquares * squareSize) + ((col * squareSize) + (col * 50)) + 5
         })
+        setTooltipToPoints("#waffle3",true,data[0].registrations.toLocaleString(),checkDecimal(data[0].realpopulation * 100),"Other");
+        setTooltipToPoints("#waffle3-registrations",false,data[0].registrations.toLocaleString(),checkDecimal(data[0].realpopulation * 100),"Other");
+        setTooltipToPoints("#waffle3-gender",false,data[0].registrations.toLocaleString(),checkDecimal(data[0].realpopulation * 100),"Other");
 }
 
 /**
  * Start Filters
  */
-function removeMoocsSvg() {
 
-    d3.select("#timeline-moocs svg").remove();
-    d3.select("#moocs-registrations svg").remove();
-    d3.select("#distribution-moocs svg").remove();
-    d3.select("#student1 svg").remove();
-    d3.select("#student2 svg").remove();
-    d3.select("#student3 svg").remove();
-    d3.select("#student4 svg").remove();
-
-    d3.select("#waffle svg").remove();
-    d3.select("#waffle1 svg").remove();
-    d3.select("#waffle2 svg").remove();
-    d3.select("#waffle3 svg").remove();
-
-    d3.select("#gauge-moocs svg").remove();
-    d3.select("#gauge-registrations-m svg").remove();
-    d3.select("#gauge-lac-m svg").remove();
-
-
-
-}
 
 function divisionFilter(moocsJson, filterBy) {
     return moocsJson.filter(function (entry) {
@@ -1423,135 +1412,71 @@ function departmentFilter(moocsJson, filterBy) {
 }
 
 function moocsFilter() {
-    removeMoocsSvg();
+    $('#moocs2018').attr('checked');
     //Load the json
     switch ($("input[name*='moocsTrend']:checked").val()) {
         case 'all':
-            removeMoocsSvg();
             //top registration chart
-            if ($("select[id*='divisionSelect']").val().length > 0) {
-                drawGaugeMoocsChart(dataGaugeMoocs);
-                var timelineDivisions = divisionFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDivisions), $("select[id*='divisionSelect']").val());
-                if (timelineDivisions.length > 0) createChart(timelineDivisions[0].data);
+            if ($("select[id*='divisionSelect']").val().length > 0 && $("select[id*='divisionSelect']").val() !== "IDB") {
+                if ($("select[id*='divisionSelect']").val() == "department") {
+                    var sltValue = $("#divisionSelect option:selected").text();
+                    var jsonGaugesMoocs = $.extend(true, [], moocsGaugesIndicators.indicatorsDepartmentsAllTheTime)
+
+                    jsonGaugesMoocs = jsonGaugesMoocs.filter(function (dataP) {
+                        return dataP.departmentCode == sltValue
+                    });
+                    drawGaugeMoocsChart(jsonGaugesMoocs[0]);
 
 
-                drawMoocsRegistrationsChart(orderTopMoocs(divisionFilter(moocsTopArrays.divisionsAlltime, $("select[id*='divisionSelect']").val())));
-                drawDistributionChart(orderTopMoocs(divisionFilter(moocsEducationArrays.educationLevelDivisions, $("select[id*='divisionSelect']").val())));
+                    var jsonAgeMoocs = $.extend(true, [], moocsAgeArrays.ageDepartmentsAllTheTime);
+                    jsonAgeMoocs = jsonAgeMoocs.filter(function (dataP) {
+                        return dataP.departmentCode == sltValue
+                    });
+                    drawMoocsAgeDistributionChart(jsonAgeMoocs);
 
-                var students = divisionFilter(moocsStudentsFlowArrays.studentsFlowDivisions, $("select[id*='divisionSelect']").val());
-                drawStudentRegistrationsChart(students[0]);
-                drawStudentParticipantsChart(students[0]);
-                drawStudentCompletedsChart(students[0]);
-                drawStudentCertifiedsChart(students[0]);
 
-                // Gender
-                var gender = divisionFilter($.extend(true, [], moocsGenderArrays.genderDivisions), $("select[id*='divisionSelect']").val());
-                points(moocsGenderAddGray(moocsGenderFilter(gender, "Female")));
-                points1(moocsGenderAddGray(moocsGenderFilter(gender, "Male")));
-                points2(moocsGenderAddGray(moocsGenderFilter(gender, "Not Available")));
-                points3(moocsGenderAddGray(moocsGenderFilter(gender, "Other")));
+                    drawMoocsRegistrationsChart(orderTopMoocs(divisionFilter(moocsTopArrays.departmentsAllTime, sltValue)));
+                    drawDistributionChart(orderTopMoocs(divisionFilter(moocsEducationArrays.educationLevelDepartmentsAllTheTime, sltValue)));
 
-            } else if ($("select[id*='deparmentSelect']").val().length > 0) {
-                drawGaugeMoocsChart(dataGaugeMoocs);
-                var timelineDivisions = orderTopMoocs(departmentFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDepartments), $("select[id*='deparmentSelect']").val()));
-                if (timelineDivisions.length > 0) createChart(timelineDivisions[0].data);
 
-                drawMoocsRegistrationsChart(orderTopMoocs(departmentFilter(moocsTopArrays.departmentsAllTime, $("select[id*='deparmentSelect']").val())));
-                drawDistributionChart(orderTopMoocs(departmentFilter(moocsEducationArrays.educationLevelDepartments, $("select[id*='deparmentSelect']").val())));
+                    // Gender
+                    var gender = divisionFilter($.extend(true, [], moocsGenderArrays.genderDepartments), sltValue);
+                    points(moocsGenderAddGray(moocsGenderFilter(gender, "Female")));
+                    points1(moocsGenderAddGray(moocsGenderFilter(gender, "Male")));
+                    points2(moocsGenderAddGray(moocsGenderFilter(gender, "Not Available")));
+                    points3(moocsGenderAddGray(moocsGenderFilter(gender, "Other")));
+                } else {
+                    var sltValue = $("select[id*='divisionSelect']").val();
+                    var jsonGaugesMoocs = $.extend(true, [], moocsGaugesIndicators.indicatorsDivisionsAllTheTime)
 
-                var students = divisionFilter(moocsStudentsFlowArrays.studentsFlowDepartments, $("select[id*='deparmentSelect']").val());
-                drawStudentRegistrationsChart(students[0]);
-                drawStudentParticipantsChart(students[0]);
-                drawStudentCompletedsChart(students[0]);
-                drawStudentCertifiedsChart(students[0]);
+                    jsonGaugesMoocs = jsonGaugesMoocs.filter(function (dataP) {
+                        return dataP.divisionCode == sltValue
+                    });
+                    drawGaugeMoocsChart(jsonGaugesMoocs[0]);
 
-                // Gender
-                var gender = departmentFilter($.extend(true, [], moocsGenderArrays.genderDepartments), $("select[id*='deparmentSelect']").val());
-                points(moocsGenderAddGray(moocsGenderFilter(gender, "Female")));
-                points1(moocsGenderAddGray(moocsGenderFilter(gender, "Male")));
-                points2(moocsGenderAddGray(moocsGenderFilter(gender, "Not Available")));
-                points3(moocsGenderAddGray(moocsGenderFilter(gender, "Other")));
+                    var jsonAgeMoocs = $.extend(true, [], moocsAgeArrays.ageDivisionAllTheTime);
+                    jsonAgeMoocs = jsonAgeMoocs.filter(function (dataP) {
+                        return dataP.divisionCode == sltValue
+                    });
+                    drawMoocsAgeDistributionChart(jsonAgeMoocs);
+
+                    drawMoocsRegistrationsChart(orderTopMoocs(divisionFilter(moocsTopArrays.divisionsAlltime, sltValue)));
+                    drawDistributionChart(orderTopMoocs(divisionFilter(moocsEducationArrays.educationLevelDivisionsAllTheTime, sltValue)));
+
+                    // Gender
+                    var gender = divisionFilter($.extend(true, [], moocsGenderArrays.genderDivisions), sltValue);
+                    points(moocsGenderAddGray(moocsGenderFilter(gender, "Female")));
+                    points1(moocsGenderAddGray(moocsGenderFilter(gender, "Male")));
+                    points2(moocsGenderAddGray(moocsGenderFilter(gender, "Not Available")));
+                    points3(moocsGenderAddGray(moocsGenderFilter(gender, "Other")));
+                }
             } else {
-                drawGaugeMoocsChart(dataGaugeMoocs);
-                createChart($.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB));
 
-                drawMoocsRegistrationsChart(topAllMoocs);
-                drawDistributionChart(moocsEducationArrays.educationLevelIDB);
-                // same data for all and 2018
-                drawStudentRegistrationsChart(moocsStudentsFlowArrays.studentsFlowIDB);
-                drawStudentParticipantsChart(moocsStudentsFlowArrays.studentsFlowIDB);
-                drawStudentCompletedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
-                drawStudentCertifiedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
-
-                // Gender
-                points(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Female")));
-                points1(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Male")));
-                points2(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Not Available")));
-                points3(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Other")));
-            }
-        break;
-        case '2018':
-            removeMoocsSvg();
-            //top registration chart
-            if ($("select[id*='divisionSelect']").val().length > 0) {
-                drawGaugeMoocsChart(dataGaugeMoocs2018);
-            } else if ($("select[id*='deparmentSelect']").val().length > 0) {
-                drawGaugeMoocsChart(dataGaugeMoocs2018);
-            }
-            else {
-                drawGaugeMoocsChart(dataGaugeMoocs2018);
-            }
-        break;
-        default:
-            //top registration chart
-            if ($("select[id*='divisionSelect']").val().length > 0) {
-                var timelineDivisions = divisionFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDivisions), $("select[id*='divisionSelect']").val());
-                if (timelineDivisions.length > 0) createChart(timelineDivisions[0].data);
-
-                drawMoocsRegistrationsChart(orderTopMoocs(divisionFilter(moocsTopArrays.divisions2018, $("select[id*='divisionSelect']").val())));
-                drawDistributionChart(orderTopMoocs(divisionFilter(moocsEducationArrays.educationLevelDivisions, $("select[id*='divisionSelect']").val())));
-
-                var students = divisionFilter(moocsStudentsFlowArrays.studentsFlowDivisions, $("select[id*='divisionSelect']").val());
-                drawStudentRegistrationsChart(students[0]);
-                drawStudentParticipantsChart(students[0]);
-                drawStudentCompletedsChart(students[0]);
-                drawStudentCertifiedsChart(students[0]);
-
-                // Gender
-                var gender = divisionFilter($.extend(true, [], moocsGenderArrays.genderDivisions), $("select[id*='divisionSelect']").val());
-                points(moocsGenderAddGray(moocsGenderFilter(gender, "Female")));
-                points1(moocsGenderAddGray(moocsGenderFilter(gender, "Male")));
-                points2(moocsGenderAddGray(moocsGenderFilter(gender, "Not Available")));
-                points3(moocsGenderAddGray(moocsGenderFilter(gender, "Other")));
-            } else if ($("select[id*='deparmentSelect']").val().length > 0) {
-                var timelineDivisions = orderTopMoocs(departmentFilter($.extend(true, [], moocsRegistrationTimeline.registrationTimelineDepartments), $("select[id*='deparmentSelect']").val()));
-                if (timelineDivisions.length > 0) createChart(timelineDivisions[0].data);
-
-                drawMoocsRegistrationsChart(orderTopMoocs(departmentFilter(moocsTopArrays.departments2018, $("select[id*='deparmentSelect']").val())));
-                drawDistributionChart(orderTopMoocs(departmentFilter(moocsEducationArrays.educationLevelDepartments, $("select[id*='deparmentSelect']").val())));
-
-                var students = divisionFilter(moocsStudentsFlowArrays.studentsFlowDepartments, $("select[id*='deparmentSelect']").val());
-                drawStudentRegistrationsChart(students[0]);
-                drawStudentParticipantsChart(students[0]);
-                drawStudentCompletedsChart(students[0]);
-                drawStudentCertifiedsChart(students[0]);
-
-                // Gender
-                var gender = departmentFilter($.extend(true, [], moocsGenderArrays.genderDepartments), $("select[id*='deparmentSelect']").val());
-                points(moocsGenderAddGray(moocsGenderFilter(gender, "Female")));
-                points1(moocsGenderAddGray(moocsGenderFilter(gender, "Male")));
-                points2(moocsGenderAddGray(moocsGenderFilter(gender, "Not Available")));
-                points3(moocsGenderAddGray(moocsGenderFilter(gender, "Other")));
-            } else {
-                createChart($.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB));
-
-                drawMoocsRegistrationsChart(top2018Moocs);
-                drawDistributionChart(moocsEducationArrays.educationLevelIDB);
-                // same data for all and 2018
-                drawStudentRegistrationsChart(moocsStudentsFlowArrays.studentsFlowIDB);
-                drawStudentParticipantsChart(moocsStudentsFlowArrays.studentsFlowIDB);
-                drawStudentCompletedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
-                drawStudentCertifiedsChart(moocsStudentsFlowArrays.studentsFlowIDB);
+                drawGaugeMoocsChart($.extend(true, {}, moocsGaugesIndicators.indicatorsIDBAllTheTime[0]));
+                //createChartTimelineMoocs($.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB));
+                drawMoocsRegistrationsChart($.extend(true, [], moocsTopArrays.IDBAlltime));
+                drawMoocsAgeDistributionChart($.extend(true, [], moocsAgeArrays.ageIDBAllTheTime));
+                drawDistributionChart(moocsEducationArrays.educationLevelIDBAllTheTime);
 
                 // Gender
                 points(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Female")));
@@ -1560,29 +1485,46 @@ function moocsFilter() {
                 points3(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Other")));
             }
             break;
+        default:
+
+            //top registration chart
+            if ($("select[id*='divisionSelect']").val().length > 0 && $("select[id*='divisionSelect']").val() !== "IDB") {
+                if ($("select[id*='divisionSelect']").val() == "department") {
+                    setDataMoocsByDepartment($("#divisionSelect option:selected").text());
+                } else {
+                    setDataMoocsByDivisions($("select[id*='divisionSelect']").val());
+                }
+            } else {
+                drawGaugeMoocsChart($.extend(true, {}, moocsGaugesIndicators.indicatorsIDB2018[0]));
+                drawDistributionChart(moocsEducationArrays.educationLevelIDB2018);
+                drawMoocsRegistrationsChart($.extend(true, [], moocsTopArrays.IDB2018));
+                drawMoocsAgeDistributionChart($.extend(true, [], moocsAgeArrays.ageIDB2018));
+                points(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Female")));
+                points1(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Male")));
+                points2(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Not Available")));
+                points3(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Other")));
+            }
+            break;
     }
+}
 
-
+function initMoocs() {
+    $("#moocs2018").prop("checked", true);
+    drawGaugeMoocsChart($.extend(true, {}, moocsGaugesIndicators.indicatorsIDB2018[0]));
+    drawDistributionChart(moocsEducationArrays.educationLevelIDB2018);
+    drawMoocsRegistrationsChart($.extend(true, [], moocsTopArrays.IDB2018));
+    drawMoocsAgeDistributionChart($.extend(true, [], moocsAgeArrays.ageIDB2018));
+    drawStudentRegistrationsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
+    drawStudentParticipantsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
+    drawStudentCompletedsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
+    drawStudentCertifiedsChart($.extend(true, [], moocsStudentsFlowArrays.studentsFlowIDB));
+    createChartTimelineMoocs($.extend(true, [], moocsRegistrationTimeline.registrationTimelineIDB));
+    points(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Female")));
+    points1(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Male")));
+    points2(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Not Available")));
+    points3(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Other")));
 
 }
-// // Divisions select filter
-// $("select[id*='divisionSelect']").change(function () {
-//     $("select[id*='deparmentSelect']").val("");
-//     moocsFilter();
-// });
-
-// // Deparment select filter
-// $("select[id*='deparmentSelect']").change(function () {
-//     $("select[id*='divisionSelect']").val("");
-//     moocsFilter();
-// });
-
-// $("#idbLink").click(function () {
-//     $("select[id*='deparmentSelect']").val("");
-//     $("select[id*='divisionSelect']").val("");
-//     moocsFilter();
-// });
-
 
 
 $("input[name*='moocsTrend']").click(function () {
