@@ -17,7 +17,7 @@ function drawTrendChartRectBar(data, id, color, colorClass, indicator) {
 
     var svgPublicationTrend = d3.select(id)
         .append("svg")
-        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("preserveAspectRatio", "xMaxYMax slice")
         .attr("viewBox", "-40 -20 " + widthInherith + " " + heightInherith + "")
         .append("g")
         .classed("svg-content-responsive", true);

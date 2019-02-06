@@ -1,10 +1,13 @@
 //division filter
 $("#divisionSelect").on('change', function (data) {
-    var sltValue = this.value;
+    changeFilterDashboard(this.value);
+});
+
+function changeFilterDashboard(sltValue){
     $('#idbLink').text($("#divisionSelect option:selected").text());
     $('.label-filter-select').text($("#divisionSelect option:selected").text());
     removeSubscribersSvg();
-    if (this.value.includes("department")) {
+    if (sltValue.includes("department")) {
         var departmentSelected = $("#divisionSelect option:selected").text();
         $("#publication2018").prop("checked", true);
         $("#moocs2018").prop("checked", true);
@@ -15,7 +18,7 @@ $("#divisionSelect").on('change', function (data) {
         setDataCodeByDepartment(departmentSelected);
         setDataSuscribersByDepartment(departmentSelected);
     } else {
-        if (this.value == "IDB") {
+        if (sltValue == "IDB") {
             setDataIDBPublications();
             setDataSubscribersIdb();
             initCode();
@@ -34,8 +37,7 @@ $("#divisionSelect").on('change', function (data) {
             
         }
     }
-
-});
+}
 
 /**
  * Funciones para cuando se cambia de division para IDB
@@ -55,9 +57,6 @@ function setDataIDBPublications() {
     drawTreePublication(publicationsDownloadSourceArrays.downloadSourceIDB, "2018", 'init');
 }
 
-
-
-
 function SetDataIDBDataSet() {
     //treemap
     drawTreeDataset(datasetsDownloadSource.downloadSourceIDB, "2018");
@@ -70,8 +69,8 @@ function SetDataIDBDataSet() {
 
 function setDataSubscribersIdb() {
     drawTreeSuscriber(subscribersGender.genderIDB);
-    drawSuscribersChart(orderTopDataSuscribers(subscribersTopics));
-    drawAgeSuscribersChart(orderTopDataSuscribers(arraySuscribersSubTopics));
+    drawSuscribersChart(subscribersTopics);
+    drawAgeSuscribersChart(arraySuscribersSubTopics);
     drawInstitutionsChart(subscribersInstitution.institutionIDB);
 
     jsondataSubscriber = subscribersArray.subscribersIDB;
@@ -103,9 +102,6 @@ function setDataMoocsIdb() {
     points2(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Not Available")));
     points3(moocsGenderAddGray(moocsGenderFilter($.extend(true, [], moocsGenderArrays.genderIDB), "Other")));
 }
-
-
-
 
 /**
  * Funcion para actualizar la informacion de la seccion de publicaciones
@@ -350,7 +346,6 @@ function setDataDataSetByDepartment(sltValue) {
 
 }
 
-
 /**
  * Funcion para actualizar la informacion de la seccion de Code
  */
@@ -507,7 +502,6 @@ function setDataSuscribersByDepartment(sltValue) {
 }
 
 
-
 /**
  * bignumbers
  */
@@ -545,11 +539,30 @@ $(document).ready(function () {
             yy: "%d years"
         }
     });
+    
 });
+var $win = $('#s4-workspace');
+
+    $win.scroll(function () {
+        if ($win.scrollTop() == 0){
+            $('#s4-bodyContainer .navbar:nth-child(2)').css("position", "fixed");
+            $('#s4-bodyContainer .navbar:nth-child(2)').css('margin-top','8rem');
+            $('.inner-nav').css('margin-top','8rem');
+        }else{
+            $('.inner-nav').css('margin-top','8rem');
+            $('#s4-bodyContainer .navbar:nth-child(2)').css('margin-top','0');
+            $('#s4-bodyContainer .navbar:nth-child(2)').css("position", "absolute");
+        }            
+        
+    });
+
 
 $(window).resize(function () {
     var isIE = /*@cc_on!@*/ false || !!document.documentMode;
     if (isIE == true) {
         $(".body").css("width", screen.width + "px");
     }
+
+    changeFilterDashboard($("select[id*='divisionSelect']").val());
+    
 });

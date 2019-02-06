@@ -14,6 +14,7 @@ function drawTreeChart(dataTree, filtertype, id, color, text) {
                 "width": 2
             }
         })
+        .height({"small": 100,value:$(id).height()})
         .type("tree_map")
         .id("name")
         .size({

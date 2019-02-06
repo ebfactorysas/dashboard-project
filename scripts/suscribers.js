@@ -133,10 +133,14 @@ function drawAgeSuscribersChart(data) {
     d3.select("#age-suscribers svg").remove();
     dataSet = data.sort(function (a, b) {
         a.name = a.name.slice(0,30);
-        return d3.ascending(a.value, b.value);
+        return d3.descending(a.value, b.value);
     });
 
     dataSet = dataSet.slice(0, 10);
+    dataSet = dataSet.sort(function (a, b) {
+        a.name = a.name.slice(0,30);
+        return d3.ascending(a.value, b.value);
+    });
 
     var marginSuscriber = {
         top: 15,
@@ -465,7 +469,7 @@ var testData = [{
 
 function orderTopDataSuscribers(data) {
     var dataSet = data.sort(function (a, b) {
-        return d3.ascending(a.value, b.value);
+        return d3.descending(a.value, b.value);
     });
     return dataSet;
 }
@@ -475,10 +479,14 @@ function drawSuscribersChart(data) {
     d3.select("#suscribers-interested svg").remove();
     dataSet = data.sort(function (a, b) {
         a.name = a.name.slice(0,30);
-        return d3.ascending(a.value, b.value);
+        return d3.descending(a.value, b.value);
     });
+    console.log(dataSet);
 
     dataSet = dataSet.slice(0, 6);
+    dataSet = dataSet.sort(function (a, b) {
+        return d3.ascending(a.value, b.value);
+    });
 
     var marginSuscriber = {
         top: 15,
@@ -567,7 +575,7 @@ function drawSuscribersChart(data) {
 //init
 function initSuscribers() {
     drawAgeSuscribersChart(subscribersSubTopics);
-    drawSuscribersChart(orderTopDataSuscribers(subscribersTopics));
+    drawSuscribersChart(subscribersTopics);
     drawTreeSuscriber(subscribersGender.genderIDB);
     drawInstitutionsChart(subscribersInstitution.institutionIDB);
     dataGaugeSubscribers2018 = setSuscribersGauge2018('IDB');

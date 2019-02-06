@@ -1,16 +1,19 @@
 function createTimelineChart(data, id,colorTitle,id2018,widthDef) {
     var margin = {
             top: 20,
-            right: 20,
+            right: 0,
             bottom: 30,
-            left: 50
+            left: 0
         },
-        width = widthDef - margin.left - margin.right,
-        height = 220 - margin.top - margin.bottom;
+         widthInherith = $(id).width(),
+     heightInherith = $(id).height(),
+        width = widthInherith - margin.left - margin.right,
+        height = heightInherith - margin.top - margin.bottom;
     var parseTime = d3.timeParse("%d-%b-%y");
     var x = d3.scaleTime().range([0, width]);
     var y = d3.scaleLinear().range([height, 0]);
     var positionText = 0;
+    var viewBoxWidth = (widthInherith+65).toFixed(0);
 
     var area = d3.area()
         .x(function (d) {
@@ -33,7 +36,7 @@ function createTimelineChart(data, id,colorTitle,id2018,widthDef) {
     var svg = d3.select(id)
         .append("svg")
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-60 -28 610 250")
+        .attr("viewBox", "-60 -28 "+viewBoxWidth +" 250")
         .append("g")
         .classed("svg-content-responsive", true);
 
@@ -120,13 +123,13 @@ function createTimelineChart(data, id,colorTitle,id2018,widthDef) {
     var textOfTotal = setSettingsNumber(totalAmount);
 
     svg.append("text")
-        .attr("x", (width - (margin.left / 2)))
+        .attr("x", (width -40))
         .attr("y", positionText)
         .style("font-size", "16px")
         .style("font-family", "Gotham-Bold")
         .text(textOfTotal.valueNumber + textOfTotal.suffixNumber);
     svg.append("text")
-        .attr("x", (width - (margin.left / 2)))
+        .attr("x", (width - 40))
         .attr("y", positionText + 20)
         .style("font-size", "14px")
         .style("font-family", "Gotham-Book")

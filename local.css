@@ -102,7 +102,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
 .tooltip-gauges h3 {
     font-size: 16px;
 
@@ -128,7 +127,7 @@
     right: 0;
     left: 0;
     z-index: 1040;
-    margin-top: 4.3%;
+    margin-top: 8rem;
 }
 
 #s4-bodyContainer .container-fluid:first-child #vps-navigation .navbar-nav>li>.dropdown-menu {
@@ -138,7 +137,7 @@
 
 
 .inner-nav {
-    margin-top: 8.5%;
+    margin-top:16rem;
 }
 
 .tooltip-gauges .border-top {
@@ -257,8 +256,8 @@ section.big-numbers {
     color: #FFFFFF;
     background-color: #1156A1;
     font-family: 'Gotham-Bold';
-    height: 38.1vw;
-    margin-top: 10.3%;
+    /* height: 38.1vw; */
+    margin-top: 21rem;
 }
 
 section.big-numbers h4 {
@@ -272,11 +271,14 @@ section.big-numbers h1 {
     color: #ffffff;
 }
 
-section.big-numbers .border-right-dash {
+section.big-numbers label {
+    font-weight: 100;
+}
+/* section.big-numbers .border-right-dash {
     border-right: 2px solid #0f5095;
     padding-left: .5vw;
     padding-right: .5vw;
-}
+} */
 
 section.big-numbers .last-panel {
     padding-left: 1vw;
@@ -290,6 +292,18 @@ section.big-numbers p {
 
 section.big-numbers img {
     max-width: 55px;
+}
+
+
+section.big-numbers .border-right-dash:before {
+    content: "";
+    height: 95%;
+    width: 2px;
+    position: absolute;
+    right: 0;
+    left: 98%;
+    z-index: 3;
+    background: #0f5095;
 }
 
 section.publications {
@@ -348,6 +362,14 @@ section.publications .left-bar span:nth-child(2n) {
     font-size: 10px;
 }
 
+section.publications .up-zone{
+    height: 30vh;
+}
+
+section.publications .down-zone{
+    height: 65vh;
+}
+
 section.publications .left-bar span:nth-child(2n+1) {
     color: #AA0206;
     font-size: 10px;
@@ -404,6 +426,10 @@ section.publications .down-zone h4 span label {
     border-right: none;
 }
 
+section.publications #publication-trend{
+    height: 58vh;
+}
+
 section.publications #publication-trend .y-data {
     font-family: 'Gotham-Bold';
     font-size: 11px;
@@ -426,6 +452,10 @@ section.publications #publication-trend .y-data .domain {
 
 section.publications #timeline-publication {
     font-family: 'Gotham-Bold';
+}
+
+section.publications #timeline-publication {
+    height: 25vh;
 }
 
 section.publications #timeline-publication .line {
@@ -461,6 +491,10 @@ section.publications .axis--y path {
 section.publications .line {
     fill: none;
     stroke-width: 1.5px;
+}
+
+section.publications #publications-plot {
+    height: 49vh;
 }
 
 section.publications .grid line {
@@ -793,6 +827,7 @@ section.code #timeline-code .overlay {
     fill: none;
     pointer-events: all;
 }
+
 
 section.datasets #dataset-publications-plot .legend text,
 section.datasets #dataset-publications-plot .axis text {
@@ -1237,12 +1272,38 @@ section.map select.form-control:not([size]):not([multiple]) {
 }
 
 #demographics-suscribers,
-#downloads-code,
-#downloads-publications {
+#downloads-code{
     min-width: 300px;
     max-width: 100%;
     margin: 0 auto;
     min-height: 220px;
+}
+
+
+
+section.publications #downloads-publications {
+    height: 23vh !important;
+}
+
+section.publications #downloads-publications .tooltip-table {
+    width: 100%;
+    height: auto;
+}
+
+section.publications #downloads-publications .tooltip-table .data {
+    text-align: right;
+}  
+
+section.publications #downloads-publications .d3plus-Shape {
+    stroke-width: 1;
+}
+
+section.publications #downloads-publications .d3plus-textBox text {
+    font-family: 'Gotham-Bold' !important;
+}
+
+section.publications #downloads-publications .tooltip-footer {
+    opacity: 0.5;
 }
 
 #downloads-publications rect {
@@ -1253,6 +1314,8 @@ section.map select.form-control:not([size]):not([multiple]) {
 #downloads-publications .d3plus_rect .d3plus_share {
     display: none;
 }
+
+
 
 #moocs-registrations {
     height: 245px;
@@ -1323,13 +1386,25 @@ section.map select.form-control:not([size]):not([multiple]) {
 
 @media all and (min-width: 1890px) {
     .left-bar {
-        width: 250px;
+        width: 250px !important;
+        max-width: 250px!important;
+    }
+    .right-bar{
+        width: 1550px !important;
+        flex: auto !important;  
+        max-width: fit-content!important;      
+    }
+    section.datasets .right-bar {
+        height: 940px;
     }
 
     section.publications .left-zone {
         width: 1000px;
         height: 280px;
     }
+    /* section.publications .left-bar{
+        
+    } */
 
     section.publications .right-zone {
         width: 648px;
@@ -1349,43 +1424,9 @@ section.map select.form-control:not([size]):not([multiple]) {
         padding-top: 0;
     }
 
-    section.publications #downloads-publications {
-        width: 935px !important;
-        height: 175px !important;
-    }
+    
 
-    section.publications #downloads-publications .d3plus-Shape {
-        stroke-width: 1;
-    }
-
-    section.publications #downloads-publications .d3plus-textBox text {
-        font-family: 'Gotham-Bold' !important;
-    }
-
-    section.publications #downloads-publications .tooltip-table {
-        width: 100%;
-    }
-
-    section.publications #downloads-publications .tooltip-table .data {
-        text-align: right;
-    }
-
-    section.publications #downloads-publications .tooltip-footer {
-        opacity: 0.5;
-    }
-
-    section.publications #downloads-publications .tooltip-table {
-        width: 100%;
-        height: auto;
-    }
-
-    section.publications #downloads-publications .tooltip-table .data {
-        text-align: right;
-    }
-
-    section.publications #downloads-publications .tooltip-footer {
-        opacity: 0.5;
-    }
+    
 
     section.publications .text-different {
         font-size: 14px;
@@ -1699,7 +1740,7 @@ section.map select.form-control:not([size]):not([multiple]) {
         color: #FFFFFF;
         background-color: #1156A1;
         font-family: 'Gotham-Bold';
-        height: 38.1vw;
+        /* height: 38.1vw; */
     }
 
     section.big-numbers h4 {
@@ -1711,12 +1752,6 @@ section.map select.form-control:not([size]):not([multiple]) {
         font-size: 5.5vw;
         font-family: 'Gotham-Book';
         color: #ffffff;
-    }
-
-    section.big-numbers .border-right-dash {
-        border-right: 2px solid #0f5095;
-        padding-left: .5vw;
-        padding-right: .5vw;
     }
 
     section.big-numbers .last-panel {
@@ -2726,12 +2761,6 @@ section.map select.form-control:not([size]):not([multiple]) {
         letter-spacing: -0.03em;
     }
 
-
-
-    #downloads-publications {
-        padding-bottom: 1rem;
-    }
-
     .d-border-left {
         border-left: solid 1.5px #b4b4b4;
     }
@@ -2893,48 +2922,7 @@ section.map select.form-control:not([size]):not([multiple]) {
         margin-top: 0;
         padding-top: 0;
     }
-
-    section.publications #downloads-publications {
-        width: 935px !important;
-        height: 175px !important;
-    }
-
-    section.publications #downloads-publications .d3plus-Shape {
-        stroke-width: 1;
-    }
-
-    section.publications #downloads-publications .d3plus-textBox text {
-        font-family: 'Gotham-Bold' !important;
-    }
-
-    section.publications #downloads-publications .tooltip-table {
-        width: 100%;
-    }
-
-    section.publications #downloads-publications .tooltip-table .data {
-        text-align: right;
-    }
-
-    section.publications #downloads-publications .tooltip-footer {
-        opacity: 0.5;
-    }
-
-    section.publications #downloads-publications .tooltip-table {
-        width: 100%;
-        height: auto;
-    }
-
-    section.publications #downloads-publications .tooltip-table .data {
-        text-align: right;
-    }
-
-    section.publications #downloads-publications .tooltip-footer {
-        opacity: 0.5;
-    }
-
-    section.publications #timeline-publication {
-        height: 240px !important;
-    }
+    
 
     section.publications #timeline-publication .overlay {
         fill: none;
@@ -2947,9 +2935,7 @@ section.map select.form-control:not([size]):not([multiple]) {
         color: #555555
     }
 
-    section.publications #publications-plot {
-        height: 425px;
-    }
+    
 
     section.publications .text-different b {
         font-family: 'Gotham-Bold';
@@ -3233,10 +3219,7 @@ section.map select.form-control:not([size]):not([multiple]) {
         min-height: 900px;
     }
 
-    section.publications {
+    /* section.publications {
         height: 100vh;
-    }
-    section.publications #publication-trend {
-        height: 600px;
-    }
+    } */
 }
