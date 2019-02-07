@@ -367,6 +367,11 @@ section.publications .left-bar span:nth-child(2n) {
     font-size: 10px;
 }
 
+section.publications .left-bar span:nth-child(2n+1) {
+    color: #AA0206;
+    font-size: 10px;
+}
+
 section.publications .up-zone{
     height: 30vh;
 }
@@ -375,10 +380,7 @@ section.publications .down-zone{
     height: 74vh;
 }
 
-section.publications .left-bar span:nth-child(2n+1) {
-    color: #AA0206;
-    font-size: 10px;
-}
+
 
 
 section.publications .d-border-left p {
@@ -566,8 +568,17 @@ section.publications #lines-publications {
 
 
 
+section.moocs .left-bar {
+    text-align: center;
+}
+
+section.moocs .left-bar .gauge-1 {
+    padding-top: 4rem;
+}
+
+
 section.moocs .left-bar h4 {
-    font-size: 17px;
+    font-size: 1.4rem;
     color: white;
     margin-bottom: 0;
 }
@@ -668,12 +679,9 @@ section.moocs #moocs-registrations .y-data text {
     font-size: 16px;
 }
 
-
-
-
 section.moocs #timeline-moocs {
     font-family: 'Gotham-Bold';
-    height: 240px !important;
+    height: 23rem;
 }
 
 section.moocs #timeline-moocs .line {
@@ -2112,10 +2120,6 @@ section.publications #downloads-publications .tooltip-footer {
         display: none;
     }
 
-    section.moocs #timeline-moocs {
-        font-family: 'Gotham-Bold';
-    }
-
     section.moocs #timeline-moocs .line {
         fill: none;
         stroke: #ef8166;
@@ -3048,10 +3052,10 @@ section.publications #downloads-publications .tooltip-footer {
         font-family: "Gotham-Book"
     }
 
-    section.moocs #timeline-moocs svg {
+    /* section.moocs #timeline-moocs svg {
         height: 270px;
         width: 883px;
-    }
+    } */
 
     section.moocs #timeline-moocs .y-axis text {
         font-size: 14px;
