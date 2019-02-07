@@ -352,9 +352,6 @@ section.publications .left-bar .gauge-1 {
     padding-top: 4rem;
 }
 
-section.publications .left-bar {
-    text-align: center;
-}
 
 section.publications .left-bar h4 {
     font-size: 1.4rem;
@@ -373,11 +370,11 @@ section.publications .left-bar span:nth-child(2n+1) {
 }
 
 section.publications .up-zone{
-    height: 30vh;
+    height: 26rem;
 }
 
 section.publications .down-zone{
-    height: 74vh;
+    height: 61rem;
 }
 
 
@@ -507,7 +504,7 @@ section.publications .line {
 }
 
 section.publications #publications-plot {
-    height: 47rem;
+    height: 53rem;
 }
 
 section.publications .grid line {
@@ -566,11 +563,6 @@ section.publications #lines-publications {
     font-family: "Gotham-Bold"
 }
 
-
-
-section.moocs .left-bar {
-    text-align: center;
-}
 
 section.moocs .left-bar .gauge-1 {
     padding-top: 4rem;
@@ -1428,17 +1420,12 @@ section.publications #downloads-publications .tooltip-footer {
         
     } */
 
-    section.publications .right-zone {
-        width: 648px;
-        height: 280px;
-    }
-
     section.publications .right-bar label {
         margin-bottom: 2px;
     }
 
     section.publications .down-zone {
-        height: 550px;
+        height: 61rem;
     }
 
     section.publications .container_radio {
@@ -2927,22 +2914,8 @@ section.publications #downloads-publications .tooltip-footer {
         width: 250px;
     }
 
-    section.publications .left-zone {
-        width: 1000px;
-        height: 280px;
-    }
-
-    section.publications .right-zone {
-        width: 648px;
-        height: 280px;
-    }
-
     section.publications .right-bar label {
         margin-bottom: 2px;
-    }
-
-    section.publications .down-zone {
-        height: 550px;
     }
 
     section.publications .container_radio {
