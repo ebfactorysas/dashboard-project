@@ -1,92 +1,140 @@
 var moocsIndicatorsArray = {
   indicatorsDepartments: [
     {
+      "department_codes": "CCB",
+      "all_the_time_courses": 3,
+      "all_the_time_porcent_total_courses": 0.03,
+      "all_the_time_registrations": 9477,
+      "all_the_time_porcent_total_registrations": 0.01,
+      "all_the_time_registrations_from_LAC": 2640,
+      "all_the_time_porcent_total_LAC": 0.28,
+      "2018_courses": 1,
+      "porcent_total_courses": 0.04,
+      "2017_2018_courses": 0,
+      "2018_registrations": 4495,
+      "porcent_total_registrations": 0.02,
+      "LAC_Registrations": 916,
+      "porcent_total_LAC": 0.2
+    },
+    {
+      "department_codes": "CID",
+      "all_the_time_courses": 2,
+      "all_the_time_porcent_total_courses": 0.02,
+      "all_the_time_registrations": 13936,
+      "all_the_time_porcent_total_registrations": 0.01,
+      "all_the_time_registrations_from_LAC": 8975,
+      "all_the_time_porcent_total_LAC": 0.64,
+      "2018_courses": 0,
+      "porcent_total_courses": 0,
+      "2017_2018_courses": -1,
+      "2018_registrations": 0,
+      "porcent_total_registrations": 0,
+      "LAC_Registrations": 0,
+      "porcent_total_LAC": 0
+    },
+    {
+      "department_codes": "CSC",
+      "all_the_time_courses": 4,
+      "all_the_time_porcent_total_courses": 0.04,
+      "all_the_time_registrations": 32572,
+      "all_the_time_porcent_total_registrations": 0.02,
+      "all_the_time_registrations_from_LAC": 30159,
+      "all_the_time_porcent_total_LAC": 0.93,
+      "2018_courses": 1,
+      "porcent_total_courses": 0.04,
+      "2017_2018_courses": -1,
+      "2018_registrations": 9743,
+      "porcent_total_registrations": 0.04,
+      "LAC_Registrations": 9024,
+      "porcent_total_LAC": 0.93
+    },
+    {
       "department_codes": "CSD",
       "all_the_time_courses": 16,
-      "all_the_time_porcent_total_courses": 0.17,
-      "all_the_time_registrations": 155263,
+      "all_the_time_porcent_total_courses": 0.16,
+      "all_the_time_registrations": 155398,
       "all_the_time_porcent_total_registrations": 0.11,
-      "all_the_time_registrations_from_LAC": 135176,
+      "all_the_time_registrations_from_LAC": 135297,
       "all_the_time_porcent_total_LAC": 0.87,
       "2018_courses": 2,
       "porcent_total_courses": 0.08,
       "2017_2018_courses": -3,
       "2018_registrations": 9875,
       "porcent_total_registrations": 0.04,
-      "LAC_Registrations": 8705,
+      "LAC_Registrations": 8706,
       "porcent_total_LAC": 0.88
     },
     {
       "department_codes": "IFD",
-      "all_the_time_courses": 19,
-      "all_the_time_porcent_total_courses": 0.21,
-      "all_the_time_registrations": 163188,
+      "all_the_time_courses": 21,
+      "all_the_time_porcent_total_courses": 0.2,
+      "all_the_time_registrations": 168295,
       "all_the_time_porcent_total_registrations": 0.12,
-      "all_the_time_registrations_from_LAC": 141773,
+      "all_the_time_registrations_from_LAC": 145852,
       "all_the_time_porcent_total_LAC": 0.87,
       "2018_courses": 5,
       "porcent_total_courses": 0.19,
       "2017_2018_courses": 1,
-      "2018_registrations": 34713,
+      "2018_registrations": 34723,
       "porcent_total_registrations": 0.15,
-      "LAC_Registrations": 32195,
+      "LAC_Registrations": 32200,
       "porcent_total_LAC": 0.93
     },
     {
       "department_codes": "INE",
-      "all_the_time_courses": 14,
+      "all_the_time_courses": 15,
       "all_the_time_porcent_total_courses": 0.15,
-      "all_the_time_registrations": 103810,
+      "all_the_time_registrations": 104205,
       "all_the_time_porcent_total_registrations": 0.07,
-      "all_the_time_registrations_from_LAC": 94060,
+      "all_the_time_registrations_from_LAC": 94432,
       "all_the_time_porcent_total_LAC": 0.91,
       "2018_courses": 2,
       "porcent_total_courses": 0.08,
       "2017_2018_courses": -3,
       "2018_registrations": 10714,
       "porcent_total_registrations": 0.04,
-      "LAC_Registrations": 9785,
+      "LAC_Registrations": 9784,
       "porcent_total_LAC": 0.91
     },
     {
       "department_codes": "INT",
       "all_the_time_courses": 6,
-      "all_the_time_porcent_total_courses": 0.07,
-      "all_the_time_registrations": 53680,
+      "all_the_time_porcent_total_courses": 0.06,
+      "all_the_time_registrations": 53761,
       "all_the_time_porcent_total_registrations": 0.04,
-      "all_the_time_registrations_from_LAC": 47799,
+      "all_the_time_registrations_from_LAC": 47864,
       "all_the_time_porcent_total_LAC": 0.89,
       "2018_courses": 3,
       "porcent_total_courses": 0.12,
       "2017_2018_courses": 2,
       "2018_registrations": 23874,
       "porcent_total_registrations": 0.1,
-      "LAC_Registrations": 22349,
+      "LAC_Registrations": 22348,
       "porcent_total_LAC": 0.94
     },
     {
       "department_codes": "KIC",
-      "all_the_time_courses": 29,
-      "all_the_time_porcent_total_courses": 0.32,
-      "all_the_time_registrations": 478012,
+      "all_the_time_courses": 32,
+      "all_the_time_porcent_total_courses": 0.31,
+      "all_the_time_registrations": 485727,
       "all_the_time_porcent_total_registrations": 0.34,
-      "all_the_time_registrations_from_LAC": 395003,
+      "all_the_time_registrations_from_LAC": 401055,
       "all_the_time_porcent_total_LAC": 0.83,
       "2018_courses": 8,
       "porcent_total_courses": 0.31,
       "2017_2018_courses": -5,
       "2018_registrations": 114352,
       "porcent_total_registrations": 0.48,
-      "LAC_Registrations": 88616,
+      "LAC_Registrations": 88619,
       "porcent_total_LAC": 0.77
     },
     {
       "department_codes": "MIF",
       "all_the_time_courses": 6,
-      "all_the_time_porcent_total_courses": 0.07,
+      "all_the_time_porcent_total_courses": 0.06,
       "all_the_time_registrations": 45028,
       "all_the_time_porcent_total_registrations": 0.03,
-      "all_the_time_registrations_from_LAC": 40445,
+      "all_the_time_registrations_from_LAC": 40451,
       "all_the_time_porcent_total_LAC": 0.9,
       "2018_courses": 0,
       "porcent_total_courses": 0,
@@ -98,43 +146,43 @@ var moocsIndicatorsArray = {
     },
     {
       "department_codes": "PRE",
-      "all_the_time_courses": 3,
-      "all_the_time_porcent_total_courses": 0.03,
-      "all_the_time_registrations": 28175,
+      "all_the_time_courses": 4,
+      "all_the_time_porcent_total_courses": 0.04,
+      "all_the_time_registrations": 30238,
       "all_the_time_porcent_total_registrations": 0.02,
-      "all_the_time_registrations_from_LAC": 25433,
+      "all_the_time_registrations_from_LAC": 27316,
       "all_the_time_porcent_total_LAC": 0.9,
       "2018_courses": 2,
       "porcent_total_courses": 0.08,
       "2017_2018_courses": 2,
-      "2018_registrations": 12750,
+      "2018_registrations": 12760,
       "porcent_total_registrations": 0.05,
-      "LAC_Registrations": 11418,
+      "LAC_Registrations": 11422,
       "porcent_total_LAC": 0.9
     },
     {
       "department_codes": "RES",
-      "all_the_time_courses": 6,
+      "all_the_time_courses": 7,
       "all_the_time_porcent_total_courses": 0.07,
-      "all_the_time_registrations": 51967,
+      "all_the_time_registrations": 52672,
       "all_the_time_porcent_total_registrations": 0.04,
-      "all_the_time_registrations_from_LAC": 44551,
+      "all_the_time_registrations_from_LAC": 45156,
       "all_the_time_porcent_total_LAC": 0.86,
       "2018_courses": 2,
       "porcent_total_courses": 0.08,
       "2017_2018_courses": 0,
       "2018_registrations": 14213,
       "porcent_total_registrations": 0.06,
-      "LAC_Registrations": 12344,
+      "LAC_Registrations": 12346,
       "porcent_total_LAC": 0.87
     },
     {
       "department_codes": "SCL",
-      "all_the_time_courses": 23,
-      "all_the_time_porcent_total_courses": 0.25,
-      "all_the_time_registrations": 180856,
+      "all_the_time_courses": 29,
+      "all_the_time_porcent_total_courses": 0.28,
+      "all_the_time_registrations": 186091,
       "all_the_time_porcent_total_registrations": 0.13,
-      "all_the_time_registrations_from_LAC": 132884,
+      "all_the_time_registrations_from_LAC": 136257,
       "all_the_time_porcent_total_LAC": 0.87,
       "2018_courses": 6,
       "porcent_total_courses": 0.23,
@@ -146,19 +194,19 @@ var moocsIndicatorsArray = {
     },
     {
       "department_codes": "VPC",
-      "all_the_time_courses": 10,
-      "all_the_time_porcent_total_courses": 0.11,
-      "all_the_time_registrations": 107091,
-      "all_the_time_porcent_total_registrations": 0.08,
-      "all_the_time_registrations_from_LAC": 88843,
-      "all_the_time_porcent_total_LAC": 0.83,
-      "2018_courses": 3,
-      "porcent_total_courses": 0.12,
-      "2017_2018_courses": -2,
-      "2018_registrations": 26547,
-      "porcent_total_registrations": 0.11,
-      "LAC_Registrations": 21274,
-      "porcent_total_LAC": 0.8
+      "all_the_time_courses": 2,
+      "all_the_time_porcent_total_courses": 0.02,
+      "all_the_time_registrations": 51857,
+      "all_the_time_porcent_total_registrations": 0.04,
+      "all_the_time_registrations_from_LAC": 47554,
+      "all_the_time_porcent_total_LAC": 0.92,
+      "2018_courses": 1,
+      "porcent_total_courses": 0.04,
+      "2017_2018_courses": 0,
+      "2018_registrations": 12309,
+      "porcent_total_registrations": 0.05,
+      "LAC_Registrations": 11336,
+      "porcent_total_LAC": 0.92
     }
   ],
   indicatorsDivisions: [
@@ -455,114 +503,170 @@ var moocsIndicatorsArray = {
 };
 
 var moocsGaugesIndicators = {
-  indicatorsDepartmentsAllTheTime: [{
+  indicatorsDepartmentsAllTheTime: [
+    {
+      "departmentCode": "CCB",
+      "courses": 3,
+      "percentageCourses": 2.91,
+      "registrations": 9477,
+      "percentageRegistrations": 0.01,
+      "LAC": 2640,
+      "percentageLAC": 27.86
+    },
+    {
+      "departmentCode": "CID",
+      "courses": 2,
+      "percentageCourses": 1.94,
+      "registrations": 13936,
+      "percentageRegistrations": 0.97,
+      "LAC": 8975,
+      "percentageLAC": 64.4
+    },
+    {
+      "departmentCode": "CSC",
+      "courses": 4,
+      "percentageCourses": 3.88,
+      "registrations": 32572,
+      "percentageRegistrations": 2.27,
+      "LAC": 30159,
+      "percentageLAC": 92.59
+    },
+    {
       "departmentCode": "CSD",
       "courses": 16,
-      "percentageCourses": 17.39,
-      "registrations": 155263,
-      "percentageRegistrations": 11.03,
-      "LAC": 135176,
+      "percentageCourses": 15.53,
+      "registrations": 155398,
+      "percentageRegistrations": 10.85,
+      "LAC": 135297,
       "percentageLAC": 87.06
     },
     {
       "departmentCode": "IFD",
-      "courses": 19,
-      "percentageCourses": 20.65,
-      "registrations": 163188,
-      "percentageRegistrations": 11.6,
-      "LAC": 141773,
-      "percentageLAC": 86.88
+      "courses": 21,
+      "percentageCourses": 20.39,
+      "registrations": 168295,
+      "percentageRegistrations": 11.75,
+      "LAC": 145852,
+      "percentageLAC": 86.66
     },
     {
       "departmentCode": "INE",
-      "courses": 14,
-      "percentageCourses": 15.22,
-      "registrations": 103810,
-      "percentageRegistrations": 7.38,
-      "LAC": 94060,
-      "percentageLAC": 90.61
+      "courses": 15,
+      "percentageCourses": 14.56,
+      "registrations": 104205,
+      "percentageRegistrations": 7.28,
+      "LAC": 94432,
+      "percentageLAC": 90.62
     },
     {
       "departmentCode": "INT",
       "courses": 6,
-      "percentageCourses": 6.52,
-      "registrations": 53680,
-      "percentageRegistrations": 3.82,
-      "LAC": 47799,
-      "percentageLAC": 89.04
+      "percentageCourses": 5.83,
+      "registrations": 53761,
+      "percentageRegistrations": 3.75,
+      "LAC": 47864,
+      "percentageLAC": 89.03
     },
     {
       "departmentCode": "KIC",
-      "courses": 29,
-      "percentageCourses": 31.52,
-      "registrations": 478012,
-      "percentageRegistrations": 33.97,
-      "LAC": 395003,
-      "percentageLAC": 82.63
+      "courses": 32,
+      "percentageCourses": 31.07,
+      "registrations": 485727,
+      "percentageRegistrations": 33.92,
+      "LAC": 401055,
+      "percentageLAC": 82.57
     },
     {
       "departmentCode": "MIF",
       "courses": 6,
-      "percentageCourses": 6.52,
+      "percentageCourses": 5.83,
       "registrations": 45028,
-      "percentageRegistrations": 3.2,
-      "LAC": 40445,
-      "percentageLAC": 89.82
+      "percentageRegistrations": 3.14,
+      "LAC": 40451,
+      "percentageLAC": 89.84
     },
     {
       "departmentCode": "PRE",
-      "courses": 3,
-      "percentageCourses": 3.26,
-      "registrations": 28175,
-      "percentageRegistrations": 2,
-      "LAC": 25433,
-      "percentageLAC": 90.27
+      "courses": 4,
+      "percentageCourses": 3.88,
+      "registrations": 30238,
+      "percentageRegistrations": 2.11,
+      "LAC": 27316,
+      "percentageLAC": 90.34
     },
     {
       "departmentCode": "RES",
-      "courses": 6,
-      "percentageCourses": 6.52,
-      "registrations": 51967,
-      "percentageRegistrations": 3.69,
-      "LAC": 44551,
+      "courses": 7,
+      "percentageCourses": 6.8,
+      "registrations": 52672,
+      "percentageRegistrations": 3.68,
+      "LAC": 45156,
       "percentageLAC": 85.73
     },
     {
       "departmentCode": "SCL",
-      "courses": 23,
-      "percentageCourses": 25,
-      "registrations": 180856,
-      "percentageRegistrations": 12.85,
-      "LAC": 132884,
-      "percentageLAC": 87.18
+      "courses": 29,
+      "percentageCourses": 28.16,
+      "registrations": 186091,
+      "percentageRegistrations": 13,
+      "LAC": 136257,
+      "percentageLAC": 87.11
     },
     {
       "departmentCode": "VPC",
-      "courses": 10,
-      "percentageCourses": 10.87,
-      "registrations": 107091,
-      "percentageRegistrations": 7.61,
-      "LAC": 88843,
-      "percentageLAC": 82.96
+      "courses": 2,
+      "percentageCourses": 1.94,
+      "registrations": 51857,
+      "percentageRegistrations": 3.62,
+      "LAC": 47554,
+      "percentageLAC": 91.7
     }
   ],
-  indicatorsDepartments2018: [{
+  indicatorsDepartments2018: [
+    {
+      "departmentCode": "CCB",
+      "courses": 1,
+      "percentageCourses": 3.85,
+      "registrations": 4495,
+      "percentageRegistrations": 1.89,
+      "LAC": 916,
+      "percentageLAC": 20.38
+    },
+    {
+      "departmentCode": "CID",
+      "courses": 0,
+      "percentageCourses": 0,
+      "registrations": 0,
+      "percentageRegistrations": 0,
+      "LAC": 0,
+      "percentageLAC": 0
+    },
+    {
+      "departmentCode": "CSC",
+      "courses": 1,
+      "percentageCourses": 3.85,
+      "registrations": 9743,
+      "percentageRegistrations": 4.09,
+      "LAC": 9024,
+      "percentageLAC": 92.62
+    },
+    {
       "departmentCode": "CSD",
       "courses": 2,
       "percentageCourses": 7.69,
       "registrations": 9875,
       "percentageRegistrations": 4.15,
-      "LAC": 8705,
-      "percentageLAC": 88.15
+      "LAC": 8706,
+      "percentageLAC": 88.16
     },
     {
       "departmentCode": "IFD",
       "courses": 5,
       "percentageCourses": 19.23,
-      "registrations": 34713,
+      "registrations": 34723,
       "percentageRegistrations": 14.58,
-      "LAC": 32195,
-      "percentageLAC": 92.75
+      "LAC": 32200,
+      "percentageLAC": 92.73
     },
     {
       "departmentCode": "INE",
@@ -570,8 +674,8 @@ var moocsGaugesIndicators = {
       "percentageCourses": 7.69,
       "registrations": 10714,
       "percentageRegistrations": 4.5,
-      "LAC": 9785,
-      "percentageLAC": 91.33
+      "LAC": 9784,
+      "percentageLAC": 91.32
     },
     {
       "departmentCode": "INT",
@@ -579,7 +683,7 @@ var moocsGaugesIndicators = {
       "percentageCourses": 11.54,
       "registrations": 23874,
       "percentageRegistrations": 10.02,
-      "LAC": 22349,
+      "LAC": 22348,
       "percentageLAC": 93.61
     },
     {
@@ -588,8 +692,8 @@ var moocsGaugesIndicators = {
       "percentageCourses": 30.77,
       "registrations": 114352,
       "percentageRegistrations": 48.01,
-      "LAC": 88616,
-      "percentageLAC": 77.49
+      "LAC": 88619,
+      "percentageLAC": 77.5
     },
     {
       "departmentCode": "MIF",
@@ -604,10 +708,10 @@ var moocsGaugesIndicators = {
       "departmentCode": "PRE",
       "courses": 2,
       "percentageCourses": 7.69,
-      "registrations": 12750,
-      "percentageRegistrations": 5.35,
-      "LAC": 11418,
-      "percentageLAC": 89.55
+      "registrations": 12760,
+      "percentageRegistrations": 5.36,
+      "LAC": 11422,
+      "percentageLAC": 89.51
     },
     {
       "departmentCode": "RES",
@@ -615,8 +719,8 @@ var moocsGaugesIndicators = {
       "percentageCourses": 7.69,
       "registrations": 14213,
       "percentageRegistrations": 5.97,
-      "LAC": 12344,
-      "percentageLAC": 86.85
+      "LAC": 12346,
+      "percentageLAC": 86.86
     },
     {
       "departmentCode": "SCL",
@@ -629,15 +733,52 @@ var moocsGaugesIndicators = {
     },
     {
       "departmentCode": "VPC",
-      "courses": 3,
-      "percentageCourses": 11.54,
-      "registrations": 26547,
-      "percentageRegistrations": 11.15,
-      "LAC": 21274,
-      "percentageLAC": 80.14
+      "courses": 1,
+      "percentageCourses": 3.85,
+      "registrations": 12309,
+      "percentageRegistrations": 5.17,
+      "LAC": 11336,
+      "percentageLAC": 92.1
     }
   ],
-  indicatorsDivisions2018: [{
+  indicatorsDivisions2018: [
+    {
+      "divisionCode": "CBD",
+      "courses": 1,
+      "percentageCourses": 3.85,
+      "registrations": 9743,
+      "percentageRegistrations": 4.09,
+      "LAC": 9024,
+      "percentageLAC": 92.62
+    },
+    {
+      "divisionCode": "CBR",
+      "courses": 0,
+      "percentageCourses": 0,
+      "registrations": 0,
+      "percentageRegistrations": 0,
+      "LAC": 0,
+      "percentageLAC": 0
+    },
+    {
+      "divisionCode": "CCB",
+      "courses": 1,
+      "percentageCourses": 3.85,
+      "registrations": 4495,
+      "percentageRegistrations": 1.89,
+      "LAC": 916,
+      "percentageLAC": 20.38
+    },
+    {
+      "divisionCode": "CHA",
+      "courses": 0,
+      "percentageCourses": 0,
+      "registrations": 0,
+      "percentageRegistrations": 0,
+      "LAC": 0,
+      "percentageLAC": 0
+    },
+    {
       "divisionCode": "EDU",
       "courses": 4,
       "percentageCourses": 15.38,
@@ -652,8 +793,8 @@ var moocsGaugesIndicators = {
       "percentageCourses": 7.69,
       "registrations": 13219,
       "percentageRegistrations": 5.55,
-      "LAC": 12537,
-      "percentageLAC": 94.84
+      "LAC": 12538,
+      "percentageLAC": 94.85
     },
     {
       "divisionCode": "HUD",
@@ -677,10 +818,10 @@ var moocsGaugesIndicators = {
       "divisionCode": "IFD",
       "courses": 2,
       "percentageCourses": 7.69,
-      "registrations": 12750,
-      "percentageRegistrations": 5.35,
-      "LAC": 11418,
-      "percentageLAC": 89.55
+      "registrations": 12760,
+      "percentageRegistrations": 5.36,
+      "LAC": 11422,
+      "percentageLAC": 89.51
     },
     {
       "divisionCode": "INE",
@@ -697,7 +838,7 @@ var moocsGaugesIndicators = {
       "percentageCourses": 11.54,
       "registrations": 23874,
       "percentageRegistrations": 10.02,
-      "LAC": 22349,
+      "LAC": 22348,
       "percentageLAC": 93.61
     },
     {
@@ -706,8 +847,8 @@ var moocsGaugesIndicators = {
       "percentageCourses": 30.77,
       "registrations": 114352,
       "percentageRegistrations": 48.01,
-      "LAC": 88616,
-      "percentageLAC": 77.49
+      "LAC": 88619,
+      "percentageLAC": 77.5
     },
     {
       "divisionCode": "LMK",
@@ -731,10 +872,10 @@ var moocsGaugesIndicators = {
       "divisionCode": "PCY",
       "courses": 2,
       "percentageCourses": 7.69,
-      "registrations": 12750,
-      "percentageRegistrations": 5.35,
-      "LAC": 11418,
-      "percentageLAC": 89.55
+      "registrations": 12760,
+      "percentageRegistrations": 5.36,
+      "LAC": 11422,
+      "percentageLAC": 89.51
     },
     {
       "divisionCode": "RES",
@@ -742,8 +883,8 @@ var moocsGaugesIndicators = {
       "percentageCourses": 7.69,
       "registrations": 14213,
       "percentageRegistrations": 5.97,
-      "LAC": 12344,
-      "percentageLAC": 86.85
+      "LAC": 12346,
+      "percentageLAC": 86.86
     },
     {
       "divisionCode": "RND",
@@ -751,8 +892,8 @@ var moocsGaugesIndicators = {
       "percentageCourses": 7.69,
       "registrations": 9875,
       "percentageRegistrations": 4.15,
-      "LAC": 8705,
-      "percentageLAC": 88.15
+      "LAC": 8706,
+      "percentageLAC": 88.16
     },
     {
       "divisionCode": "SPH",
@@ -774,12 +915,12 @@ var moocsGaugesIndicators = {
     },
     {
       "divisionCode": "VPC",
-      "courses": 3,
-      "percentageCourses": 11.54,
-      "registrations": 26547,
-      "percentageRegistrations": 11.15,
-      "LAC": 21274,
-      "percentageLAC": 80.14
+      "courses": 1,
+      "percentageCourses": 3.85,
+      "registrations": 12309,
+      "percentageRegistrations": 5.17,
+      "LAC": 11336,
+      "percentageLAC": 92.1
     },
     {
       "divisionCode": "WSA",
@@ -787,178 +928,219 @@ var moocsGaugesIndicators = {
       "percentageCourses": 3.85,
       "registrations": 5260,
       "percentageRegistrations": 2.21,
-      "LAC": 4717,
-      "percentageLAC": 89.68
+      "LAC": 4716,
+      "percentageLAC": 89.66
     }
   ],
-  indicatorsDivisionsAllTheTime: [{
+  indicatorsDivisionsAllTheTime: [
+    {
+      "divisionCode": "CBD",
+      "courses": 2,
+      "percentageCourses": 1.94,
+      "registrations": 20190,
+      "percentageRegistrations": 1.41,
+      "LAC": 18697,
+      "percentageLAC": 92.61
+    },
+    {
+      "divisionCode": "CBR",
+      "courses": 2,
+      "percentageCourses": 1.94,
+      "registrations": 12382,
+      "percentageRegistrations": 0.86,
+      "LAC": 11462,
+      "percentageLAC": 92.57
+    },
+    {
+      "divisionCode": "CCB",
+      "courses": 3,
+      "percentageCourses": 2.91,
+      "registrations": 9477,
+      "percentageRegistrations": 0.66,
+      "LAC": 2640,
+      "percentageLAC": 27.86
+    },
+    {
+      "divisionCode": "CHA",
+      "courses": 2,
+      "percentageCourses": 1.94,
+      "registrations": 13936,
+      "percentageRegistrations": 0.97,
+      "LAC": 8975,
+      "percentageLAC": 64.4
+    },
+    {
       "divisionCode": "EDU",
-      "courses": 7,
-      "percentageCourses": 7.61,
-      "registrations": 39914,
-      "percentageRegistrations": 2.84,
-      "LAC": 31873,
-      "percentageLAC": 79.85
+      "courses": 13,
+      "percentageCourses": 12.62,
+      "registrations": 43826,
+      "percentageRegistrations": 3.06,
+      "LAC": 35156,
+      "percentageLAC": 80.22
     },
     {
       "divisionCode": "FMM",
-      "courses": 10,
-      "percentageCourses": 10.87,
-      "registrations": 70616,
-      "percentageRegistrations": 5.02,
-      "LAC": 64433,
-      "percentageLAC": 91.24
+      "courses": 11,
+      "percentageCourses": 10.68,
+      "registrations": 71077,
+      "percentageRegistrations": 4.96,
+      "LAC": 64863,
+      "percentageLAC": 91.26
     },
     {
       "divisionCode": "HUD",
       "courses": 10,
-      "percentageCourses": 10.87,
-      "registrations": 119385,
-      "percentageRegistrations": 8.48,
-      "LAC": 106426,
-      "percentageLAC": 89.15
+      "percentageCourses": 9.71,
+      "registrations": 119457,
+      "percentageRegistrations": 8.34,
+      "LAC": 106504,
+      "percentageLAC": 89.16
     },
     {
       "divisionCode": "ICS",
       "courses": 6,
-      "percentageCourses": 6.52,
-      "registrations": 64397,
-      "percentageRegistrations": 4.58,
-      "LAC": 51907,
-      "percentageLAC": 80.6
+      "percentageCourses": 5.83,
+      "registrations": 66980,
+      "percentageRegistrations": 4.68,
+      "LAC": 53673,
+      "percentageLAC": 80.13
     },
     {
-      "divisionCode": "IFD Front Desk",
-      "courses": 3,
-      "percentageCourses": 3.26,
-      "registrations": 28175,
-      "percentageRegistrations": 2,
-      "LAC": 25433,
-      "percentageLAC": 90.27
+      "divisionCode": "IFD",
+      "courses": 4,
+      "percentageCourses": 3.88,
+      "registrations": 30238,
+      "percentageRegistrations": 2.11,
+      "LAC": 27316,
+      "percentageLAC": 90.34
     },
     {
-      "divisionCode": "INE Front Desk",
+      "divisionCode": "INE",
       "courses": 8,
-      "percentageCourses": 8.7,
-      "registrations": 57373,
-      "percentageRegistrations": 4.08,
-      "LAC": 51874,
-      "percentageLAC": 90.42
+      "percentageCourses": 7.77,
+      "registrations": 57410,
+      "percentageRegistrations": 4.01,
+      "LAC": 51913,
+      "percentageLAC": 90.43
     },
     {
       "divisionCode": "INT",
       "courses": 6,
-      "percentageCourses": 6.52,
-      "registrations": 53680,
-      "percentageRegistrations": 3.82,
-      "LAC": 47799,
-      "percentageLAC": 89.04
+      "percentageCourses": 5.83,
+      "registrations": 53761,
+      "percentageRegistrations": 3.75,
+      "LAC": 47864,
+      "percentageLAC": 89.03
     },
     {
       "divisionCode": "KLD",
-      "courses": 29,
-      "percentageCourses": 31.52,
-      "registrations": 478012,
-      "percentageRegistrations": 33.97,
-      "LAC": 395003,
-      "percentageLAC": 82.63
+      "courses": 32,
+      "percentageCourses": 31.07,
+      "registrations": 485727,
+      "percentageRegistrations": 33.92,
+      "LAC": 401055,
+      "percentageLAC": 82.57
     },
     {
       "divisionCode": "LMK",
-      "courses": 5,
-      "percentageCourses": 5.43,
-      "registrations": 25048,
-      "percentageRegistrations": 1.78,
-      "LAC": 19938,
-      "percentageLAC": 79.6
+      "courses": 6,
+      "percentageCourses": 5.83,
+      "registrations": 25683,
+      "percentageRegistrations": 1.79,
+      "LAC": 20478,
+      "percentageLAC": 79.73
     },
     {
       "divisionCode": "MIF",
       "courses": 6,
-      "percentageCourses": 6.52,
+      "percentageCourses": 5.83,
       "registrations": 45028,
-      "percentageRegistrations": 3.2,
-      "LAC": 40445,
-      "percentageLAC": 89.82
+      "percentageRegistrations": 3.14,
+      "LAC": 40451,
+      "percentageLAC": 89.84
     },
     {
       "divisionCode": "PCY",
-      "courses": 3,
-      "percentageCourses": 3.26,
-      "registrations": 28175,
-      "percentageRegistrations": 2,
-      "LAC": 25433,
-      "percentageLAC": 90.27
+      "courses": 4,
+      "percentageCourses": 3.88,
+      "registrations": 30238,
+      "percentageRegistrations": 2.11,
+      "LAC": 27316,
+      "percentageLAC": 90.34
     },
     {
       "divisionCode": "RES",
-      "courses": 6,
-      "percentageCourses": 6.52,
-      "registrations": 51967,
-      "percentageRegistrations": 3.69,
-      "LAC": 44551,
+      "courses": 7,
+      "percentageCourses": 6.8,
+      "registrations": 52672,
+      "percentageRegistrations": 3.68,
+      "LAC": 45156,
       "percentageLAC": 85.73
     },
     {
       "divisionCode": "RND",
       "courses": 6,
-      "percentageCourses": 6.52,
-      "registrations": 35878,
-      "percentageRegistrations": 2.55,
-      "LAC": 28750,
-      "percentageLAC": 80.13
+      "percentageCourses": 5.83,
+      "registrations": 35941,
+      "percentageRegistrations": 2.51,
+      "LAC": 28793,
+      "percentageLAC": 80.11
     },
     {
       "divisionCode": "SPH",
-      "courses": 15,
-      "percentageCourses": 16.3,
-      "registrations": 115894,
-      "percentageRegistrations": 8.24,
-      "LAC": 106159,
-      "percentageLAC": 91.6
+      "courses": 16,
+      "percentageCourses": 15.53,
+      "registrations": 116582,
+      "percentageRegistrations": 8.14,
+      "LAC": 106747,
+      "percentageLAC": 91.56
     },
     {
       "divisionCode": "TSP",
-      "courses": 2,
-      "percentageCourses": 2.17,
-      "registrations": 12101,
-      "percentageRegistrations": 0.86,
-      "LAC": 11383,
-      "percentageLAC": 94.07
+      "courses": 3,
+      "percentageCourses": 2.91,
+      "registrations": 12431,
+      "percentageRegistrations": 0.87,
+      "LAC": 11687,
+      "percentageLAC": 94.01
     },
     {
-      "divisionCode": "VPC Front Desk",
-      "courses": 10,
-      "percentageCourses": 10.87,
-      "registrations": 107091,
-      "percentageRegistrations": 7.61,
-      "LAC": 88843,
-      "percentageLAC": 82.96
+      "divisionCode": "VPC",
+      "courses": 2,
+      "percentageCourses": 1.94,
+      "registrations": 51857,
+      "percentageRegistrations": 3.62,
+      "LAC": 47554,
+      "percentageLAC": 91.7
     },
     {
       "divisionCode": "WSA",
       "courses": 4,
-      "percentageCourses": 4.35,
-      "registrations": 34336,
-      "percentageRegistrations": 2.44,
-      "LAC": 30803,
-      "percentageLAC": 89.71
+      "percentageCourses": 3.88,
+      "registrations": 34364,
+      "percentageRegistrations": 2.4,
+      "LAC": 30832,
+      "percentageLAC": 89.72
     }
   ],
-  indicatorsIDBAllTheTime: [{
-    "courses": 92,
-    "percentageCourses": 100,
-    "registrations": 1009520,
-    "percentageRegistrations": 100,
-    "LAC": 857526,
-    "percentageLAC": 84.94
-  }],
-  indicatorsIDB2018: [{
-    "courses": 26,
-    "percentageCourses": 100,
-    "registrations": 238166,
-    "percentageRegistrations": 100,
-    "LAC": 200972,
-    "percentageLAC": 84.38
-  }],
+  indicatorsIDBAllTheTime: [
+    {
+      "courses": 103,
+      "percentageCourses": 100,
+      "registrations": 1023763,
+      "percentageRegistrations": 100,
+      "LAC": 869326,
+      "percentageLAC": 85
+    }
+  ],
+  indicatorsIDB2018: [
+    {
+      "courses": 26,
+      "percentageCourses": 100,
+      "registrations": 238176,
+      "percentageRegistrations": 100,
+      "LAC": 200981,
+      "percentageLAC": 84.4
+    }
+  ],
 }

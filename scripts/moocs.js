@@ -1013,7 +1013,7 @@ function points(data) {
         .append("svg")
         //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-80 -140 600 1000")
+        .attr("viewBox", "-120 -140 650 1000")
         //class to make it responsive
         .classed("svg-content-responsive", true)
         .append("g")
@@ -1182,7 +1182,7 @@ function points1(data) {
         .append("svg")
         //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-80 -140 600 1000")
+        .attr("viewBox", "-120 -140 650 1000")
         //class to make it responsive
         .classed("svg-content-responsive", true)
         .append("g")
@@ -1272,7 +1272,7 @@ function points2(data) {
         .append("svg")
         //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-80 -140 600 1000")
+        .attr("viewBox", "-120 -140 650 1000")
         //class to make it responsive
         .classed("svg-content-responsive", true)
         .append("g")
@@ -1359,7 +1359,7 @@ function points3(data) {
         .append("svg")
         //responsive SVG needs these 2 attributes and no width and height attr
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-80 -140 600 1000")
+        .attr("viewBox", "-120 -140 650 1000")
         //class to make it responsive
         .classed("svg-content-responsive", true)
         .append("g")

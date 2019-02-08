@@ -563,6 +563,10 @@ section.publications #lines-publications {
     font-family: "Gotham-Bold"
 }
 
+section.moocs{
+    height: 95vh;
+}
+
 
 section.moocs .left-bar .gauge-1 {
     padding-top: 4rem;
@@ -600,16 +604,12 @@ section.moocs h4 {
 }
 
 section.moocs h3 {
-    font-size: 12px;
+    font-size: 1rem;
     font-family: 'Gotham-Bold';
 }
 
 section.moocs h1 {
     font-size: 48px;
-}
-
-section.moocs {
-    height: 940px;
 }
 
 section.moocs .left-zone {
@@ -658,9 +658,42 @@ section.moocs #moocs-registrations .y-data {
     font-size: 11px;
 }
 
+section.moocs .waffles {
+    height: 22rem;
+}
+
+section.moocs #waffle1 {
+    height: 14rem;
+}
+
+section.moocs #waffle2 {
+    height: 14rem;
+}
+
+
+section.moocs #waffle3 {
+    height: 14rem;
+}
+
+section.moocs #waffle {
+    height: 14rem;
+}
+
+section.moocs .waffles h3 {
+    font-family: "Gotham-Book";
+    font-size: .9rem;
+}
+
+section.moocs .waffles h2 {
+    font-family: "Gotham-Book";
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
 section.moocs #moocs-registrations .text-inside {
     color: #8a858d
 }
+
 
 section.moocs #moocs-registrations .y-data .domain {
     display: none;
@@ -714,6 +747,7 @@ section.moocs [id^="student"] .y-data {
 
 section.datasets {
     font-family: 'Gotham-Bold';
+    height: 100vh;
 }
 
 section.datasets .container_radio {
@@ -830,16 +864,6 @@ section.datasets #timeline-dataset .y-axis .tick line {
     display: none;
 }
 
-section.code .funds-allocated-meter .background {
-    fill: #A17603;
-}
-
-section.code #timeline-code .overlay {
-    fill: none;
-    pointer-events: all;
-}
-
-
 section.datasets #dataset-publications-plot .legend text,
 section.datasets #dataset-publications-plot .axis text {
     font-size: 14px;
@@ -877,6 +901,19 @@ section.datasets #dataset-publications-plot .legend rect {
 
 section.datasets #dataset-publications-plot .legeng:hover rect {
     fill-opacity: 1;
+}
+
+section.code {
+    height: 100vh;
+}
+
+section.code .funds-allocated-meter .background {
+    fill: #A17603;
+}
+
+section.code #timeline-code .overlay {
+    fill: none;
+    pointer-events: all;
 }
 
 
@@ -1051,6 +1088,7 @@ section.code .grid path {
 
 section.suscribers {
     font-family: 'Gotham-Bold';
+    height: 100vh;
 }
 
 section.suscribers .right-bar .left-zone {
@@ -1392,9 +1430,9 @@ section.publications #downloads-publications .tooltip-footer {
     background-color: #f5f5f5;
 }
 
-.waffle-gender {
+/* .waffle-gender {
     min-height: 31px;
-}
+} */
 
 /** red-section***/
 
@@ -1545,17 +1583,6 @@ section.publications #downloads-publications .tooltip-footer {
         font-family: "Gotham-Book"
     }
 
-    section.moocs .waffles h2 {
-        font-family: "Gotham-Book";
-        font-size: 35px;
-        margin-bottom: 0;
-    }
-
-    section.moocs .waffles h3 {
-        font-family: "Gotham-Book";
-        font-size: 10px;
-    }
-
     section.moocs .down .vertical-text {
         -ms-writing-mode: tb-lr;
         writing-mode: vertical-lr;
@@ -1660,10 +1687,6 @@ section.publications #downloads-publications .tooltip-footer {
         margin-right: 40px;
     }
 
-
-    section.code {
-        min-height: 940px;
-    }
 
     section.code .container_radio {
         margin-top: 0;
@@ -2040,10 +2063,6 @@ section.publications #downloads-publications .tooltip-footer {
         font-family: 'Gotham-Bold';
     }
 
-    section.moocs h3 {
-        font-size: 12px;
-        font-family: 'Gotham-Bold';
-    }
 
     section.moocs h1 {
         font-size: 48px;
@@ -2842,9 +2861,9 @@ section.publications #downloads-publications .tooltip-footer {
 
 
 
-    .waffle-gender {
+    /* .waffle-gender {
         min-height: 31px;
-    }
+    } */
 
     /** red-section***/
 
@@ -3033,17 +3052,6 @@ section.publications #downloads-publications .tooltip-footer {
     section.moocs #timeline-moocs .y-axis text {
         font-size: 14px;
         font-family: "Gotham-Book"
-    }
-
-    section.moocs .waffles h2 {
-        font-family: "Gotham-Book";
-        font-size: 35px;
-        margin-bottom: 0;
-    }
-
-    section.moocs .waffles h3 {
-        font-family: "Gotham-Book";
-        font-size: 10px;
     }
 
     section.moocs .down .vertical-text {

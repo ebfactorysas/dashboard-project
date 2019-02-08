@@ -1,2167 +1,1101 @@
 var moocsRegistrationTimeline = {
-    registrationTimelineDepartments: [{
+    registrationTimelineDepartments: [
+        {
+            "code": "CCB",
+            "data": [
+                { "date": "01-Mar-14", "close": 0 },
+                { "date": "01-Apr-14", "close": 0 },
+                { "date": "01-May-14", "close": 0 },
+                { "date": "01-Jun-14", "close": 0 },
+                { "date": "01-Jul-14", "close": 0 },
+                { "date": "01-Aug-14", "close": 0 },
+                { "date": "01-Sep-14", "close": 0 },
+                { "date": "01-Oct-14", "close": 0 },
+                { "date": "01-Nov-14", "close": 0 },
+                { "date": "01-Dec-14", "close": 0 },
+                { "date": "01-Jan-15", "close": 0 },
+                { "date": "01-Feb-15", "close": 0 },
+                { "date": "01-Mar-15", "close": 0 },
+                { "date": "01-Apr-15", "close": 0 },
+                { "date": "01-May-15", "close": 0 },
+                { "date": "01-Jun-15", "close": 0 },
+                { "date": "01-Jul-15", "close": 0 },
+                { "date": "01-Aug-15", "close": 0 },
+                { "date": "01-Sep-15", "close": 0 },
+                { "date": "01-Oct-15", "close": 0 },
+                { "date": "01-Nov-15", "close": 0 },
+                { "date": "01-Dec-15", "close": 0 },
+                { "date": "01-Jan-16", "close": 0 },
+                { "date": "01-Feb-16", "close": 0 },
+                { "date": "01-Mar-16", "close": 0 },
+                { "date": "01-Apr-16", "close": 0 },
+                { "date": "01-May-16", "close": 0 },
+                { "date": "01-Jun-16", "close": 0 },
+                { "date": "01-Jul-16", "close": 0 },
+                { "date": "01-Aug-16", "close": 0 },
+                { "date": "01-Sep-16", "close": 0 },
+                { "date": "01-Oct-16", "close": 0 },
+                { "date": "01-Nov-16", "close": 0 },
+                { "date": "01-Dec-16", "close": 0 },
+                { "date": "01-Jan-17", "close": 0 },
+                { "date": "01-Feb-17", "close": 0 },
+                { "date": "01-Mar-17", "close": 0 },
+                { "date": "01-Apr-17", "close": 4 },
+                { "date": "01-May-17", "close": 0 },
+                { "date": "01-Jun-17", "close": 0 },
+                { "date": "01-Jul-17", "close": 4 },
+                { "date": "01-Aug-17", "close": 0 },
+                { "date": "01-Sep-17", "close": 159 },
+                { "date": "01-Oct-17", "close": 1965 },
+                { "date": "01-Nov-17", "close": 2229 },
+                { "date": "01-Dec-17", "close": 224 },
+                { "date": "01-Jan-18", "close": 139 },
+                { "date": "01-Feb-18", "close": 790 },
+                { "date": "01-Mar-18", "close": 1257 },
+                { "date": "01-Apr-18", "close": 603 },
+                { "date": "01-May-18", "close": 373 },
+                { "date": "01-Jun-18", "close": 292 },
+                { "date": "01-Jul-18", "close": 223 },
+                { "date": "01-Aug-18", "close": 263 },
+                { "date": "01-Sep-18", "close": 252 },
+                { "date": "01-Oct-18", "close": 255 },
+                { "date": "01-Nov-18", "close": 159 },
+                { "date": "01-Dec-18", "close": 108 },
+                { "date": "01-Jan-19", "close": 163 },
+                { "date": "01-Feb-19", "close": 15 }
+            ]
+        },
+        {
+            "code": "CID",
+            "data": [
+                { "date": "01-Mar-14", "close": 0 },
+                { "date": "01-Apr-14", "close": 0 },
+                { "date": "01-May-14", "close": 0 },
+                { "date": "01-Jun-14", "close": 0 },
+                { "date": "01-Jul-14", "close": 0 },
+                { "date": "01-Aug-14", "close": 0 },
+                { "date": "01-Sep-14", "close": 0 },
+                { "date": "01-Oct-14", "close": 0 },
+                { "date": "01-Nov-14", "close": 0 },
+                { "date": "01-Dec-14", "close": 0 },
+                { "date": "01-Jan-15", "close": 0 },
+                { "date": "01-Feb-15", "close": 0 },
+                { "date": "01-Mar-15", "close": 0 },
+                { "date": "01-Apr-15", "close": 0 },
+                { "date": "01-May-15", "close": 0 },
+                { "date": "01-Jun-15", "close": 0 },
+                { "date": "01-Jul-15", "close": 0 },
+                { "date": "01-Aug-15", "close": 0 },
+                { "date": "01-Sep-15", "close": 0 },
+                { "date": "01-Oct-15", "close": 0 },
+                { "date": "01-Nov-15", "close": 0 },
+                { "date": "01-Dec-15", "close": 0 },
+                { "date": "01-Jan-16", "close": 0 },
+                { "date": "01-Feb-16", "close": 0 },
+                { "date": "01-Mar-16", "close": 0 },
+                { "date": "01-Apr-16", "close": 0 },
+                { "date": "01-May-16", "close": 0 },
+                { "date": "01-Jun-16", "close": 3 },
+                { "date": "01-Jul-16", "close": 151 },
+                { "date": "01-Aug-16", "close": 3380 },
+                { "date": "01-Sep-16", "close": 3627 },
+                { "date": "01-Oct-16", "close": 515 },
+                { "date": "01-Nov-16", "close": 243 },
+                { "date": "01-Dec-16", "close": 187 },
+                { "date": "01-Jan-17", "close": 214 },
+                { "date": "01-Feb-17", "close": 214 },
+                { "date": "01-Mar-17", "close": 221 },
+                { "date": "01-Apr-17", "close": 186 },
+                { "date": "01-May-17", "close": 225 },
+                { "date": "01-Jun-17", "close": 327 },
+                { "date": "01-Jul-17", "close": 390 },
+                { "date": "01-Aug-17", "close": 1542 },
+                { "date": "01-Sep-17", "close": 1616 },
+                { "date": "01-Oct-17", "close": 436 },
+                { "date": "01-Nov-17", "close": 248 },
+                { "date": "01-Dec-17", "close": 190 },
+                { "date": "01-Jan-18", "close": 5 },
+                { "date": "01-Feb-18", "close": 0 },
+                { "date": "01-Mar-18", "close": 0 },
+                { "date": "01-Apr-18", "close": 6 },
+                { "date": "01-May-18", "close": 0 },
+                { "date": "01-Jun-18", "close": 0 },
+                { "date": "01-Jul-18", "close": 3 },
+                { "date": "01-Aug-18", "close": 1 },
+                { "date": "01-Sep-18", "close": 2 },
+                { "date": "01-Oct-18", "close": 2 },
+                { "date": "01-Nov-18", "close": 1 },
+                { "date": "01-Dec-18", "close": 1 },
+                { "date": "01-Jan-19", "close": 0 },
+                { "date": "01-Feb-19", "close": 0 }
+            ]
+        },
+        {
+            "code": "CSC",
+            "data": [
+                { "date": "01-Mar-14", "close": 0 },
+                { "date": "01-Apr-14", "close": 0 },
+                { "date": "01-May-14", "close": 0 },
+                { "date": "01-Jun-14", "close": 0 },
+                { "date": "01-Jul-14", "close": 0 },
+                { "date": "01-Aug-14", "close": 0 },
+                { "date": "01-Sep-14", "close": 0 },
+                { "date": "01-Oct-14", "close": 0 },
+                { "date": "01-Nov-14", "close": 0 },
+                { "date": "01-Dec-14", "close": 0 },
+                { "date": "01-Jan-15", "close": 0 },
+                { "date": "01-Feb-15", "close": 0 },
+                { "date": "01-Mar-15", "close": 0 },
+                { "date": "01-Apr-15", "close": 0 },
+                { "date": "01-May-15", "close": 0 },
+                { "date": "01-Jun-15", "close": 0 },
+                { "date": "01-Jul-15", "close": 0 },
+                { "date": "01-Aug-15", "close": 14 },
+                { "date": "01-Sep-15", "close": 1 },
+                { "date": "01-Oct-15", "close": 15 },
+                { "date": "01-Nov-15", "close": 1574 },
+                { "date": "01-Dec-15", "close": 139 },
+                { "date": "01-Jan-16", "close": 211 },
+                { "date": "01-Feb-16", "close": 205 },
+                { "date": "01-Mar-16", "close": 133 },
+                { "date": "01-Apr-16", "close": 76 },
+                { "date": "01-May-16", "close": 161 },
+                { "date": "01-Jun-16", "close": 78 },
+                { "date": "01-Jul-16", "close": 47 },
+                { "date": "01-Aug-16", "close": 103 },
+                { "date": "01-Sep-16", "close": 105 },
+                { "date": "01-Oct-16", "close": 127 },
+                { "date": "01-Nov-16", "close": 120 },
+                { "date": "01-Dec-16", "close": 84 },
+                { "date": "01-Jan-17", "close": 104 },
+                { "date": "01-Feb-17", "close": 67 },
+                { "date": "01-Mar-17", "close": 101 },
+                { "date": "01-Apr-17", "close": 686 },
+                { "date": "01-May-17", "close": 870 },
+                { "date": "01-Jun-17", "close": 953 },
+                { "date": "01-Jul-17", "close": 2940 },
+                { "date": "01-Aug-17", "close": 2217 },
+                { "date": "01-Sep-17", "close": 3651 },
+                { "date": "01-Oct-17", "close": 5248 },
+                { "date": "01-Nov-17", "close": 619 },
+                { "date": "01-Dec-17", "close": 285 },
+                { "date": "01-Jan-18", "close": 434 },
+                { "date": "01-Feb-18", "close": 1556 },
+                { "date": "01-Mar-18", "close": 4443 },
+                { "date": "01-Apr-18", "close": 712 },
+                { "date": "01-May-18", "close": 1230 },
+                { "date": "01-Jun-18", "close": 655 },
+                { "date": "01-Jul-18", "close": 486 },
+                { "date": "01-Aug-18", "close": 390 },
+                { "date": "01-Sep-18", "close": 316 },
+                { "date": "01-Oct-18", "close": 275 },
+                { "date": "01-Nov-18", "close": 703 },
+                { "date": "01-Dec-18", "close": 175 },
+                { "date": "01-Jan-19", "close": 246 },
+                { "date": "01-Feb-19", "close": 17 }
+            ]
+        },
+        {
             "code": "CSD",
-            "data": [{
-                    "date": "01-Mar-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Apr-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-May-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Jun-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Jul-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Aug-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Sep-14",
-                    "close": 99
-                },
-                {
-                    "date": "01-Oct-14",
-                    "close": 368
-                },
-                {
-                    "date": "01-Nov-14",
-                    "close": 512
-                },
-                {
-                    "date": "01-Dec-14",
-                    "close": 494
-                },
-                {
-                    "date": "01-Jan-15",
-                    "close": 547
-                },
-                {
-                    "date": "01-Feb-15",
-                    "close": 4024
-                },
-                {
-                    "date": "01-Mar-15",
-                    "close": 11143
-                },
-                {
-                    "date": "01-Apr-15",
-                    "close": 988
-                },
-                {
-                    "date": "01-May-15",
-                    "close": 1336
-                },
-                {
-                    "date": "01-Jun-15",
-                    "close": 8779
-                },
-                {
-                    "date": "01-Jul-15",
-                    "close": 7515
-                },
-                {
-                    "date": "01-Aug-15",
-                    "close": 1145
-                },
-                {
-                    "date": "01-Sep-15",
-                    "close": 2083
-                },
-                {
-                    "date": "01-Oct-15",
-                    "close": 14405
-                },
-                {
-                    "date": "01-Nov-15",
-                    "close": 5766
-                },
-                {
-                    "date": "01-Dec-15",
-                    "close": 968
-                },
-                {
-                    "date": "01-Jan-16",
-                    "close": 1926
-                },
-                {
-                    "date": "01-Feb-16",
-                    "close": 1765
-                },
-                {
-                    "date": "01-Mar-16",
-                    "close": 1348
-                },
-                {
-                    "date": "01-Apr-16",
-                    "close": 696
-                },
-                {
-                    "date": "01-May-16",
-                    "close": 6772
-                },
-                {
-                    "date": "01-Jun-16",
-                    "close": 9683
-                },
-                {
-                    "date": "01-Jul-16",
-                    "close": 3170
-                },
-                {
-                    "date": "01-Aug-16",
-                    "close": 5428
-                },
-                {
-                    "date": "01-Sep-16",
-                    "close": 10423
-                },
-                {
-                    "date": "01-Oct-16",
-                    "close": 6008
-                },
-                {
-                    "date": "01-Nov-16",
-                    "close": 1142
-                },
-                {
-                    "date": "01-Dec-16",
-                    "close": 591
-                },
-                {
-                    "date": "01-Jan-17",
-                    "close": 1128
-                },
-                {
-                    "date": "01-Feb-17",
-                    "close": 1693
-                },
-                {
-                    "date": "01-Mar-17",
-                    "close": 1522
-                },
-                {
-                    "date": "01-Apr-17",
-                    "close": 5516
-                },
-                {
-                    "date": "01-May-17",
-                    "close": 9758
-                },
-                {
-                    "date": "01-Jun-17",
-                    "close": 5945
-                },
-                {
-                    "date": "01-Jul-17",
-                    "close": 1302
-                },
-                {
-                    "date": "01-Aug-17",
-                    "close": 701
-                },
-                {
-                    "date": "01-Sep-17",
-                    "close": 2767
-                },
-                {
-                    "date": "01-Oct-17",
-                    "close": 692
-                },
-                {
-                    "date": "01-Nov-17",
-                    "close": 473
-                },
-                {
-                    "date": "01-Dec-17",
-                    "close": 354
-                },
-                {
-                    "date": "01-Jan-18",
-                    "close": 708
-                },
-                {
-                    "date": "01-Feb-18",
-                    "close": 811
-                },
-                {
-                    "date": "01-Mar-18",
-                    "close": 728
-                },
-                {
-                    "date": "01-Apr-18",
-                    "close": 498
-                },
-                {
-                    "date": "01-May-18",
-                    "close": 510
-                },
-                {
-                    "date": "01-Jun-18",
-                    "close": 484
-                },
-                {
-                    "date": "01-Jul-18",
-                    "close": 2006
-                },
-                {
-                    "date": "01-Aug-18",
-                    "close": 6108
-                },
-                {
-                    "date": "01-Sep-18",
-                    "close": 1248
-                },
-                {
-                    "date": "01-Oct-18",
-                    "close": 436
-                },
-                {
-                    "date": "01-Nov-18",
-                    "close": 387
-                },
-                {
-                    "date": "01-Dec-18",
-                    "close": 214
-                },
-                {
-                    "date": "01-Jan-19",
-                    "close": 150
-                }
+            "data": [
+                { "date": "01-Mar-14", "close": 0 },
+                { "date": "01-Apr-14", "close": 0 },
+                { "date": "01-May-14", "close": 0 },
+                { "date": "01-Jun-14", "close": 0 },
+                { "date": "01-Jul-14", "close": 0 },
+                { "date": "01-Aug-14", "close": 0 },
+                { "date": "01-Sep-14", "close": 99 },
+                { "date": "01-Oct-14", "close": 368 },
+                { "date": "01-Nov-14", "close": 512 },
+                { "date": "01-Dec-14", "close": 494 },
+                { "date": "01-Jan-15", "close": 547 },
+                { "date": "01-Feb-15", "close": 4024 },
+                { "date": "01-Mar-15", "close": 11143 },
+                { "date": "01-Apr-15", "close": 988 },
+                { "date": "01-May-15", "close": 1336 },
+                { "date": "01-Jun-15", "close": 8779 },
+                { "date": "01-Jul-15", "close": 7515 },
+                { "date": "01-Aug-15", "close": 1145 },
+                { "date": "01-Sep-15", "close": 2083 },
+                { "date": "01-Oct-15", "close": 14405 },
+                { "date": "01-Nov-15", "close": 5766 },
+                { "date": "01-Dec-15", "close": 968 },
+                { "date": "01-Jan-16", "close": 1926 },
+                { "date": "01-Feb-16", "close": 1765 },
+                { "date": "01-Mar-16", "close": 1348 },
+                { "date": "01-Apr-16", "close": 696 },
+                { "date": "01-May-16", "close": 6772 },
+                { "date": "01-Jun-16", "close": 9683 },
+                { "date": "01-Jul-16", "close": 3170 },
+                { "date": "01-Aug-16", "close": 5428 },
+                { "date": "01-Sep-16", "close": 10423 },
+                { "date": "01-Oct-16", "close": 6008 },
+                { "date": "01-Nov-16", "close": 1142 },
+                { "date": "01-Dec-16", "close": 591 },
+                { "date": "01-Jan-17", "close": 1128 },
+                { "date": "01-Feb-17", "close": 1693 },
+                { "date": "01-Mar-17", "close": 1522 },
+                { "date": "01-Apr-17", "close": 5516 },
+                { "date": "01-May-17", "close": 9758 },
+                { "date": "01-Jun-17", "close": 5945 },
+                { "date": "01-Jul-17", "close": 1302 },
+                { "date": "01-Aug-17", "close": 701 },
+                { "date": "01-Sep-17", "close": 2767 },
+                { "date": "01-Oct-17", "close": 692 },
+                { "date": "01-Nov-17", "close": 473 },
+                { "date": "01-Dec-17", "close": 354 },
+                { "date": "01-Jan-18", "close": 708 },
+                { "date": "01-Feb-18", "close": 811 },
+                { "date": "01-Mar-18", "close": 728 },
+                { "date": "01-Apr-18", "close": 498 },
+                { "date": "01-May-18", "close": 510 },
+                { "date": "01-Jun-18", "close": 484 },
+                { "date": "01-Jul-18", "close": 2006 },
+                { "date": "01-Aug-18", "close": 6108 },
+                { "date": "01-Sep-18", "close": 1248 },
+                { "date": "01-Oct-18", "close": 436 },
+                { "date": "01-Nov-18", "close": 387 },
+                { "date": "01-Dec-18", "close": 214 },
+                { "date": "01-Jan-19", "close": 261 },
+                { "date": "01-Feb-19", "close": 24 }
             ]
         },
         {
             "code": "IFD",
-            "data": [{
-                    "date": "01-Mar-14",
-                    "close": 980
-                },
-                {
-                    "date": "01-Apr-14",
-                    "close": 649
-                },
-                {
-                    "date": "01-May-14",
-                    "close": 539
-                },
-                {
-                    "date": "01-Jun-14",
-                    "close": 501
-                },
-                {
-                    "date": "01-Jul-14",
-                    "close": 533
-                },
-                {
-                    "date": "01-Aug-14",
-                    "close": 788
-                },
-                {
-                    "date": "01-Sep-14",
-                    "close": 4738
-                },
-                {
-                    "date": "01-Oct-14",
-                    "close": 833
-                },
-                {
-                    "date": "01-Nov-14",
-                    "close": 220
-                },
-                {
-                    "date": "01-Dec-14",
-                    "close": 119
-                },
-                {
-                    "date": "01-Jan-15",
-                    "close": 123
-                },
-                {
-                    "date": "01-Feb-15",
-                    "close": 181
-                },
-                {
-                    "date": "01-Mar-15",
-                    "close": 629
-                },
-                {
-                    "date": "01-Apr-15",
-                    "close": 6150
-                },
-                {
-                    "date": "01-May-15",
-                    "close": 8952
-                },
-                {
-                    "date": "01-Jun-15",
-                    "close": 7785
-                },
-                {
-                    "date": "01-Jul-15",
-                    "close": 2176
-                },
-                {
-                    "date": "01-Aug-15",
-                    "close": 671
-                },
-                {
-                    "date": "01-Sep-15",
-                    "close": 5303
-                },
-                {
-                    "date": "01-Oct-15",
-                    "close": 5781
-                },
-                {
-                    "date": "01-Nov-15",
-                    "close": 2423
-                },
-                {
-                    "date": "01-Dec-15",
-                    "close": 427
-                },
-                {
-                    "date": "01-Jan-16",
-                    "close": 578
-                },
-                {
-                    "date": "01-Feb-16",
-                    "close": 920
-                },
-                {
-                    "date": "01-Mar-16",
-                    "close": 1295
-                },
-                {
-                    "date": "01-Apr-16",
-                    "close": 2391
-                },
-                {
-                    "date": "01-May-16",
-                    "close": 7508
-                },
-                {
-                    "date": "01-Jun-16",
-                    "close": 8322
-                },
-                {
-                    "date": "01-Jul-16",
-                    "close": 754
-                },
-                {
-                    "date": "01-Aug-16",
-                    "close": 626
-                },
-                {
-                    "date": "01-Sep-16",
-                    "close": 445
-                },
-                {
-                    "date": "01-Oct-16",
-                    "close": 525
-                },
-                {
-                    "date": "01-Nov-16",
-                    "close": 403
-                },
-                {
-                    "date": "01-Dec-16",
-                    "close": 311
-                },
-                {
-                    "date": "01-Jan-17",
-                    "close": 438
-                },
-                {
-                    "date": "01-Feb-17",
-                    "close": 417
-                },
-                {
-                    "date": "01-Mar-17",
-                    "close": 394
-                },
-                {
-                    "date": "01-Apr-17",
-                    "close": 1264
-                },
-                {
-                    "date": "01-May-17",
-                    "close": 7083
-                },
-                {
-                    "date": "01-Jun-17",
-                    "close": 2434
-                },
-                {
-                    "date": "01-Jul-17",
-                    "close": 6213
-                },
-                {
-                    "date": "01-Aug-17",
-                    "close": 3635
-                },
-                {
-                    "date": "01-Sep-17",
-                    "close": 837
-                },
-                {
-                    "date": "01-Oct-17",
-                    "close": 4580
-                },
-                {
-                    "date": "01-Nov-17",
-                    "close": 11692
-                },
-                {
-                    "date": "01-Dec-17",
-                    "close": 2809
-                },
-                {
-                    "date": "01-Jan-18",
-                    "close": 2311
-                },
-                {
-                    "date": "01-Feb-18",
-                    "close": 4493
-                },
-                {
-                    "date": "01-Mar-18",
-                    "close": 1794
-                },
-                {
-                    "date": "01-Apr-18",
-                    "close": 3535
-                },
-                {
-                    "date": "01-May-18",
-                    "close": 2839
-                },
-                {
-                    "date": "01-Jun-18",
-                    "close": 7246
-                },
-                {
-                    "date": "01-Jul-18",
-                    "close": 6643
-                },
-                {
-                    "date": "01-Aug-18",
-                    "close": 3133
-                },
-                {
-                    "date": "01-Sep-18",
-                    "close": 2784
-                },
-                {
-                    "date": "01-Oct-18",
-                    "close": 3011
-                },
-                {
-                    "date": "01-Nov-18",
-                    "close": 2548
-                },
-                {
-                    "date": "01-Dec-18",
-                    "close": 4861
-                },
-                {
-                    "date": "01-Jan-19",
-                    "close": 1615
-                }
+            "data": [
+                { "date": "01-Mar-14", "close": 980 },
+                { "date": "01-Apr-14", "close": 649 },
+                { "date": "01-May-14", "close": 539 },
+                { "date": "01-Jun-14", "close": 501 },
+                { "date": "01-Jul-14", "close": 533 },
+                { "date": "01-Aug-14", "close": 788 },
+                { "date": "01-Sep-14", "close": 4738 },
+                { "date": "01-Oct-14", "close": 833 },
+                { "date": "01-Nov-14", "close": 220 },
+                { "date": "01-Dec-14", "close": 119 },
+                { "date": "01-Jan-15", "close": 123 },
+                { "date": "01-Feb-15", "close": 181 },
+                { "date": "01-Mar-15", "close": 629 },
+                { "date": "01-Apr-15", "close": 6150 },
+                { "date": "01-May-15", "close": 8952 },
+                { "date": "01-Jun-15", "close": 7785 },
+                { "date": "01-Jul-15", "close": 2176 },
+                { "date": "01-Aug-15", "close": 671 },
+                { "date": "01-Sep-15", "close": 5303 },
+                { "date": "01-Oct-15", "close": 5781 },
+                { "date": "01-Nov-15", "close": 2423 },
+                { "date": "01-Dec-15", "close": 427 },
+                { "date": "01-Jan-16", "close": 578 },
+                { "date": "01-Feb-16", "close": 920 },
+                { "date": "01-Mar-16", "close": 1295 },
+                { "date": "01-Apr-16", "close": 2391 },
+                { "date": "01-May-16", "close": 7508 },
+                { "date": "01-Jun-16", "close": 8322 },
+                { "date": "01-Jul-16", "close": 754 },
+                { "date": "01-Aug-16", "close": 626 },
+                { "date": "01-Sep-16", "close": 445 },
+                { "date": "01-Oct-16", "close": 525 },
+                { "date": "01-Nov-16", "close": 403 },
+                { "date": "01-Dec-16", "close": 311 },
+                { "date": "01-Jan-17", "close": 438 },
+                { "date": "01-Feb-17", "close": 417 },
+                { "date": "01-Mar-17", "close": 394 },
+                { "date": "01-Apr-17", "close": 1264 },
+                { "date": "01-May-17", "close": 7083 },
+                { "date": "01-Jun-17", "close": 2434 },
+                { "date": "01-Jul-17", "close": 6213 },
+                { "date": "01-Aug-17", "close": 3635 },
+                { "date": "01-Sep-17", "close": 837 },
+                { "date": "01-Oct-17", "close": 4580 },
+                { "date": "01-Nov-17", "close": 11692 },
+                { "date": "01-Dec-17", "close": 2809 },
+                { "date": "01-Jan-18", "close": 2311 },
+                { "date": "01-Feb-18", "close": 4493 },
+                { "date": "01-Mar-18", "close": 1794 },
+                { "date": "01-Apr-18", "close": 3535 },
+                { "date": "01-May-18", "close": 2839 },
+                { "date": "01-Jun-18", "close": 7246 },
+                { "date": "01-Jul-18", "close": 6643 },
+                { "date": "01-Aug-18", "close": 3133 },
+                { "date": "01-Sep-18", "close": 2784 },
+                { "date": "01-Oct-18", "close": 3011 },
+                { "date": "01-Nov-18", "close": 2558 },
+                { "date": "01-Dec-18", "close": 4869 },
+                { "date": "01-Jan-19", "close": 5770 },
+                { "date": "01-Feb-19", "close": 934 }
             ]
         },
         {
             "code": "INE",
-            "data": [{
-                    "date": "01-Mar-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Apr-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-May-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Jun-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Jul-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Aug-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Sep-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Oct-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Nov-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Dec-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Jan-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-Feb-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-Mar-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-Apr-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-May-15",
-                    "close": 58
-                },
-                {
-                    "date": "01-Jun-15",
-                    "close": 6999
-                },
-                {
-                    "date": "01-Jul-15",
-                    "close": 1639
-                },
-                {
-                    "date": "01-Aug-15",
-                    "close": 2188
-                },
-                {
-                    "date": "01-Sep-15",
-                    "close": 14795
-                },
-                {
-                    "date": "01-Oct-15",
-                    "close": 6852
-                },
-                {
-                    "date": "01-Nov-15",
-                    "close": 2571
-                },
-                {
-                    "date": "01-Dec-15",
-                    "close": 440
-                },
-                {
-                    "date": "01-Jan-16",
-                    "close": 575
-                },
-                {
-                    "date": "01-Feb-16",
-                    "close": 893
-                },
-                {
-                    "date": "01-Mar-16",
-                    "close": 943
-                },
-                {
-                    "date": "01-Apr-16",
-                    "close": 4824
-                },
-                {
-                    "date": "01-May-16",
-                    "close": 5428
-                },
-                {
-                    "date": "01-Jun-16",
-                    "close": 4255
-                },
-                {
-                    "date": "01-Jul-16",
-                    "close": 767
-                },
-                {
-                    "date": "01-Aug-16",
-                    "close": 494
-                },
-                {
-                    "date": "01-Sep-16",
-                    "close": 373
-                },
-                {
-                    "date": "01-Oct-16",
-                    "close": 417
-                },
-                {
-                    "date": "01-Nov-16",
-                    "close": 379
-                },
-                {
-                    "date": "01-Dec-16",
-                    "close": 338
-                },
-                {
-                    "date": "01-Jan-17",
-                    "close": 4173
-                },
-                {
-                    "date": "01-Feb-17",
-                    "close": 1809
-                },
-                {
-                    "date": "01-Mar-17",
-                    "close": 702
-                },
-                {
-                    "date": "01-Apr-17",
-                    "close": 1236
-                },
-                {
-                    "date": "01-May-17",
-                    "close": 6130
-                },
-                {
-                    "date": "01-Jun-17",
-                    "close": 1368
-                },
-                {
-                    "date": "01-Jul-17",
-                    "close": 3196
-                },
-                {
-                    "date": "01-Aug-17",
-                    "close": 2186
-                },
-                {
-                    "date": "01-Sep-17",
-                    "close": 1777
-                },
-                {
-                    "date": "01-Oct-17",
-                    "close": 7449
-                },
-                {
-                    "date": "01-Nov-17",
-                    "close": 3238
-                },
-                {
-                    "date": "01-Dec-17",
-                    "close": 568
-                },
-                {
-                    "date": "01-Jan-18",
-                    "close": 698
-                },
-                {
-                    "date": "01-Feb-18",
-                    "close": 1154
-                },
-                {
-                    "date": "01-Mar-18",
-                    "close": 3985
-                },
-                {
-                    "date": "01-Apr-18",
-                    "close": 1369
-                },
-                {
-                    "date": "01-May-18",
-                    "close": 1227
-                },
-                {
-                    "date": "01-Jun-18",
-                    "close": 897
-                },
-                {
-                    "date": "01-Jul-18",
-                    "close": 946
-                },
-                {
-                    "date": "01-Aug-18",
-                    "close": 1143
-                },
-                {
-                    "date": "01-Sep-18",
-                    "close": 649
-                },
-                {
-                    "date": "01-Oct-18",
-                    "close": 1467
-                },
-                {
-                    "date": "01-Nov-18",
-                    "close": 738
-                },
-                {
-                    "date": "01-Dec-18",
-                    "close": 299
-                },
-                {
-                    "date": "01-Jan-19",
-                    "close": 178
-                }
+            "data": [
+                { "date": "01-Mar-14", "close": 0 },
+                { "date": "01-Apr-14", "close": 0 },
+                { "date": "01-May-14", "close": 0 },
+                { "date": "01-Jun-14", "close": 0 },
+                { "date": "01-Jul-14", "close": 0 },
+                { "date": "01-Aug-14", "close": 0 },
+                { "date": "01-Sep-14", "close": 0 },
+                { "date": "01-Oct-14", "close": 0 },
+                { "date": "01-Nov-14", "close": 0 },
+                { "date": "01-Dec-14", "close": 0 },
+                { "date": "01-Jan-15", "close": 0 },
+                { "date": "01-Feb-15", "close": 0 },
+                { "date": "01-Mar-15", "close": 0 },
+                { "date": "01-Apr-15", "close": 0 },
+                { "date": "01-May-15", "close": 58 },
+                { "date": "01-Jun-15", "close": 6999 },
+                { "date": "01-Jul-15", "close": 1639 },
+                { "date": "01-Aug-15", "close": 2188 },
+                { "date": "01-Sep-15", "close": 14795 },
+                { "date": "01-Oct-15", "close": 6852 },
+                { "date": "01-Nov-15", "close": 2571 },
+                { "date": "01-Dec-15", "close": 440 },
+                { "date": "01-Jan-16", "close": 575 },
+                { "date": "01-Feb-16", "close": 893 },
+                { "date": "01-Mar-16", "close": 943 },
+                { "date": "01-Apr-16", "close": 4824 },
+                { "date": "01-May-16", "close": 5428 },
+                { "date": "01-Jun-16", "close": 4255 },
+                { "date": "01-Jul-16", "close": 767 },
+                { "date": "01-Aug-16", "close": 494 },
+                { "date": "01-Sep-16", "close": 373 },
+                { "date": "01-Oct-16", "close": 417 },
+                { "date": "01-Nov-16", "close": 379 },
+                { "date": "01-Dec-16", "close": 338 },
+                { "date": "01-Jan-17", "close": 4173 },
+                { "date": "01-Feb-17", "close": 1809 },
+                { "date": "01-Mar-17", "close": 702 },
+                { "date": "01-Apr-17", "close": 1236 },
+                { "date": "01-May-17", "close": 6130 },
+                { "date": "01-Jun-17", "close": 1368 },
+                { "date": "01-Jul-17", "close": 3196 },
+                { "date": "01-Aug-17", "close": 2186 },
+                { "date": "01-Sep-17", "close": 1777 },
+                { "date": "01-Oct-17", "close": 7449 },
+                { "date": "01-Nov-17", "close": 3238 },
+                { "date": "01-Dec-17", "close": 568 },
+                { "date": "01-Jan-18", "close": 698 },
+                { "date": "01-Feb-18", "close": 1154 },
+                { "date": "01-Mar-18", "close": 3985 },
+                { "date": "01-Apr-18", "close": 1369 },
+                { "date": "01-May-18", "close": 1227 },
+                { "date": "01-Jun-18", "close": 897 },
+                { "date": "01-Jul-18", "close": 946 },
+                { "date": "01-Aug-18", "close": 1143 },
+                { "date": "01-Sep-18", "close": 649 },
+                { "date": "01-Oct-18", "close": 1467 },
+                { "date": "01-Nov-18", "close": 738 },
+                { "date": "01-Dec-18", "close": 310 },
+                { "date": "01-Jan-19", "close": 532 },
+                { "date": "01-Feb-19", "close": 30 }
             ]
         },
         {
             "code": "INT",
-            "data": [{
-                    "date": "01-Mar-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Apr-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-May-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Jun-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Jul-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Aug-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Sep-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Oct-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Nov-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Dec-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Jan-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-Feb-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-Mar-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-Apr-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-May-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-Jun-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-Jul-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-Aug-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-Sep-15",
-                    "close": 2
-                },
-                {
-                    "date": "01-Oct-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-Nov-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-Dec-15",
-                    "close": 2
-                },
-                {
-                    "date": "01-Jan-16",
-                    "close": 0
-                },
-                {
-                    "date": "01-Feb-16",
-                    "close": 6
-                },
-                {
-                    "date": "01-Mar-16",
-                    "close": 6189
-                },
-                {
-                    "date": "01-Apr-16",
-                    "close": 6087
-                },
-                {
-                    "date": "01-May-16",
-                    "close": 500
-                },
-                {
-                    "date": "01-Jun-16",
-                    "close": 232
-                },
-                {
-                    "date": "01-Jul-16",
-                    "close": 194
-                },
-                {
-                    "date": "01-Aug-16",
-                    "close": 567
-                },
-                {
-                    "date": "01-Sep-16",
-                    "close": 975
-                },
-                {
-                    "date": "01-Oct-16",
-                    "close": 1777
-                },
-                {
-                    "date": "01-Nov-16",
-                    "close": 292
-                },
-                {
-                    "date": "01-Dec-16",
-                    "close": 168
-                },
-                {
-                    "date": "01-Jan-17",
-                    "close": 557
-                },
-                {
-                    "date": "01-Feb-17",
-                    "close": 5222
-                },
-                {
-                    "date": "01-Mar-17",
-                    "close": 4498
-                },
-                {
-                    "date": "01-Apr-17",
-                    "close": 296
-                },
-                {
-                    "date": "01-May-17",
-                    "close": 178
-                },
-                {
-                    "date": "01-Jun-17",
-                    "close": 132
-                },
-                {
-                    "date": "01-Jul-17",
-                    "close": 176
-                },
-                {
-                    "date": "01-Aug-17",
-                    "close": 181
-                },
-                {
-                    "date": "01-Sep-17",
-                    "close": 184
-                },
-                {
-                    "date": "01-Oct-17",
-                    "close": 286
-                },
-                {
-                    "date": "01-Nov-17",
-                    "close": 269
-                },
-                {
-                    "date": "01-Dec-17",
-                    "close": 291
-                },
-                {
-                    "date": "01-Jan-18",
-                    "close": 947
-                },
-                {
-                    "date": "01-Feb-18",
-                    "close": 4444
-                },
-                {
-                    "date": "01-Mar-18",
-                    "close": 4242
-                },
-                {
-                    "date": "01-Apr-18",
-                    "close": 506
-                },
-                {
-                    "date": "01-May-18",
-                    "close": 409
-                },
-                {
-                    "date": "01-Jun-18",
-                    "close": 312
-                },
-                {
-                    "date": "01-Jul-18",
-                    "close": 2852
-                },
-                {
-                    "date": "01-Aug-18",
-                    "close": 7192
-                },
-                {
-                    "date": "01-Sep-18",
-                    "close": 2229
-                },
-                {
-                    "date": "01-Oct-18",
-                    "close": 454
-                },
-                {
-                    "date": "01-Nov-18",
-                    "close": 501
-                },
-                {
-                    "date": "01-Dec-18",
-                    "close": 193
-                },
-                {
-                    "date": "01-Jan-19",
-                    "close": 138
-                }
+            "data": [
+                { "date": "01-Mar-14", "close": 0 },
+                { "date": "01-Apr-14", "close": 0 },
+                { "date": "01-May-14", "close": 0 },
+                { "date": "01-Jun-14", "close": 0 },
+                { "date": "01-Jul-14", "close": 0 },
+                { "date": "01-Aug-14", "close": 0 },
+                { "date": "01-Sep-14", "close": 0 },
+                { "date": "01-Oct-14", "close": 0 },
+                { "date": "01-Nov-14", "close": 0 },
+                { "date": "01-Dec-14", "close": 0 },
+                { "date": "01-Jan-15", "close": 0 },
+                { "date": "01-Feb-15", "close": 0 },
+                { "date": "01-Mar-15", "close": 0 },
+                { "date": "01-Apr-15", "close": 0 },
+                { "date": "01-May-15", "close": 0 },
+                { "date": "01-Jun-15", "close": 0 },
+                { "date": "01-Jul-15", "close": 0 },
+                { "date": "01-Aug-15", "close": 0 },
+                { "date": "01-Sep-15", "close": 2 },
+                { "date": "01-Oct-15", "close": 0 },
+                { "date": "01-Nov-15", "close": 0 },
+                { "date": "01-Dec-15", "close": 2 },
+                { "date": "01-Jan-16", "close": 0 },
+                { "date": "01-Feb-16", "close": 6 },
+                { "date": "01-Mar-16", "close": 6189 },
+                { "date": "01-Apr-16", "close": 6087 },
+                { "date": "01-May-16", "close": 500 },
+                { "date": "01-Jun-16", "close": 232 },
+                { "date": "01-Jul-16", "close": 194 },
+                { "date": "01-Aug-16", "close": 567 },
+                { "date": "01-Sep-16", "close": 975 },
+                { "date": "01-Oct-16", "close": 1777 },
+                { "date": "01-Nov-16", "close": 292 },
+                { "date": "01-Dec-16", "close": 168 },
+                { "date": "01-Jan-17", "close": 557 },
+                { "date": "01-Feb-17", "close": 5222 },
+                { "date": "01-Mar-17", "close": 4498 },
+                { "date": "01-Apr-17", "close": 296 },
+                { "date": "01-May-17", "close": 178 },
+                { "date": "01-Jun-17", "close": 132 },
+                { "date": "01-Jul-17", "close": 176 },
+                { "date": "01-Aug-17", "close": 181 },
+                { "date": "01-Sep-17", "close": 184 },
+                { "date": "01-Oct-17", "close": 286 },
+                { "date": "01-Nov-17", "close": 269 },
+                { "date": "01-Dec-17", "close": 291 },
+                { "date": "01-Jan-18", "close": 947 },
+                { "date": "01-Feb-18", "close": 4444 },
+                { "date": "01-Mar-18", "close": 4242 },
+                { "date": "01-Apr-18", "close": 506 },
+                { "date": "01-May-18", "close": 409 },
+                { "date": "01-Jun-18", "close": 312 },
+                { "date": "01-Jul-18", "close": 2852 },
+                { "date": "01-Aug-18", "close": 7192 },
+                { "date": "01-Sep-18", "close": 2229 },
+                { "date": "01-Oct-18", "close": 454 },
+                { "date": "01-Nov-18", "close": 501 },
+                { "date": "01-Dec-18", "close": 193 },
+                { "date": "01-Jan-19", "close": 207 },
+                { "date": "01-Feb-19", "close": 12 }
             ]
         },
         {
             "code": "KIC",
-            "data": [{
-                    "date": "01-Mar-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Apr-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-May-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Jun-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Jul-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Aug-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Sep-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Oct-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Nov-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Dec-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Jan-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-Feb-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-Mar-15",
-                    "close": 1
-                },
-                {
-                    "date": "01-Apr-15",
-                    "close": 1267
-                },
-                {
-                    "date": "01-May-15",
-                    "close": 1970
-                },
-                {
-                    "date": "01-Jun-15",
-                    "close": 4160
-                },
-                {
-                    "date": "01-Jul-15",
-                    "close": 28997
-                },
-                {
-                    "date": "01-Aug-15",
-                    "close": 5461
-                },
-                {
-                    "date": "01-Sep-15",
-                    "close": 1435
-                },
-                {
-                    "date": "01-Oct-15",
-                    "close": 11834
-                },
-                {
-                    "date": "01-Nov-15",
-                    "close": 5581
-                },
-                {
-                    "date": "01-Dec-15",
-                    "close": 1059
-                },
-                {
-                    "date": "01-Jan-16",
-                    "close": 1667
-                },
-                {
-                    "date": "01-Feb-16",
-                    "close": 16830
-                },
-                {
-                    "date": "01-Mar-16",
-                    "close": 22301
-                },
-                {
-                    "date": "01-Apr-16",
-                    "close": 11934
-                },
-                {
-                    "date": "01-May-16",
-                    "close": 6526
-                },
-                {
-                    "date": "01-Jun-16",
-                    "close": 2130
-                },
-                {
-                    "date": "01-Jul-16",
-                    "close": 1613
-                },
-                {
-                    "date": "01-Aug-16",
-                    "close": 8266
-                },
-                {
-                    "date": "01-Sep-16",
-                    "close": 10484
-                },
-                {
-                    "date": "01-Oct-16",
-                    "close": 15406
-                },
-                {
-                    "date": "01-Nov-16",
-                    "close": 2093
-                },
-                {
-                    "date": "01-Dec-16",
-                    "close": 1405
-                },
-                {
-                    "date": "01-Jan-17",
-                    "close": 2914
-                },
-                {
-                    "date": "01-Feb-17",
-                    "close": 14553
-                },
-                {
-                    "date": "01-Mar-17",
-                    "close": 10144
-                },
-                {
-                    "date": "01-Apr-17",
-                    "close": 8722
-                },
-                {
-                    "date": "01-May-17",
-                    "close": 19230
-                },
-                {
-                    "date": "01-Jun-17",
-                    "close": 16199
-                },
-                {
-                    "date": "01-Jul-17",
-                    "close": 14587
-                },
-                {
-                    "date": "01-Aug-17",
-                    "close": 16540
-                },
-                {
-                    "date": "01-Sep-17",
-                    "close": 22965
-                },
-                {
-                    "date": "01-Oct-17",
-                    "close": 30901
-                },
-                {
-                    "date": "01-Nov-17",
-                    "close": 11527
-                },
-                {
-                    "date": "01-Dec-17",
-                    "close": 6978
-                },
-                {
-                    "date": "01-Jan-18",
-                    "close": 13247
-                },
-                {
-                    "date": "01-Feb-18",
-                    "close": 24153
-                },
-                {
-                    "date": "01-Mar-18",
-                    "close": 21555
-                },
-                {
-                    "date": "01-Apr-18",
-                    "close": 9619
-                },
-                {
-                    "date": "01-May-18",
-                    "close": 8522
-                },
-                {
-                    "date": "01-Jun-18",
-                    "close": 7214
-                },
-                {
-                    "date": "01-Jul-18",
-                    "close": 5960
-                },
-                {
-                    "date": "01-Aug-18",
-                    "close": 9128
-                },
-                {
-                    "date": "01-Sep-18",
-                    "close": 10308
-                },
-                {
-                    "date": "01-Oct-18",
-                    "close": 10199
-                },
-                {
-                    "date": "01-Nov-18",
-                    "close": 8319
-                },
-                {
-                    "date": "01-Dec-18",
-                    "close": 8608
-                },
-                {
-                    "date": "01-Jan-19",
-                    "close": 3500
-                }
+            "data": [
+                { "date": "01-Mar-14", "close": 0 },
+                { "date": "01-Apr-14", "close": 0 },
+                { "date": "01-May-14", "close": 0 },
+                { "date": "01-Jun-14", "close": 0 },
+                { "date": "01-Jul-14", "close": 0 },
+                { "date": "01-Aug-14", "close": 0 },
+                { "date": "01-Sep-14", "close": 0 },
+                { "date": "01-Oct-14", "close": 0 },
+                { "date": "01-Nov-14", "close": 0 },
+                { "date": "01-Dec-14", "close": 0 },
+                { "date": "01-Jan-15", "close": 0 },
+                { "date": "01-Feb-15", "close": 0 },
+                { "date": "01-Mar-15", "close": 1 },
+                { "date": "01-Apr-15", "close": 1267 },
+                { "date": "01-May-15", "close": 1970 },
+                { "date": "01-Jun-15", "close": 4160 },
+                { "date": "01-Jul-15", "close": 28997 },
+                { "date": "01-Aug-15", "close": 5461 },
+                { "date": "01-Sep-15", "close": 1435 },
+                { "date": "01-Oct-15", "close": 11834 },
+                { "date": "01-Nov-15", "close": 5581 },
+                { "date": "01-Dec-15", "close": 1059 },
+                { "date": "01-Jan-16", "close": 1667 },
+                { "date": "01-Feb-16", "close": 16830 },
+                { "date": "01-Mar-16", "close": 22301 },
+                { "date": "01-Apr-16", "close": 11934 },
+                { "date": "01-May-16", "close": 6526 },
+                { "date": "01-Jun-16", "close": 2130 },
+                { "date": "01-Jul-16", "close": 1613 },
+                { "date": "01-Aug-16", "close": 8266 },
+                { "date": "01-Sep-16", "close": 10484 },
+                { "date": "01-Oct-16", "close": 15406 },
+                { "date": "01-Nov-16", "close": 2093 },
+                { "date": "01-Dec-16", "close": 1405 },
+                { "date": "01-Jan-17", "close": 2914 },
+                { "date": "01-Feb-17", "close": 14553 },
+                { "date": "01-Mar-17", "close": 10144 },
+                { "date": "01-Apr-17", "close": 8722 },
+                { "date": "01-May-17", "close": 19230 },
+                { "date": "01-Jun-17", "close": 16199 },
+                { "date": "01-Jul-17", "close": 14587 },
+                { "date": "01-Aug-17", "close": 16540 },
+                { "date": "01-Sep-17", "close": 22965 },
+                { "date": "01-Oct-17", "close": 30901 },
+                { "date": "01-Nov-17", "close": 11527 },
+                { "date": "01-Dec-17", "close": 6978 },
+                { "date": "01-Jan-18", "close": 13247 },
+                { "date": "01-Feb-18", "close": 24153 },
+                { "date": "01-Mar-18", "close": 21555 },
+                { "date": "01-Apr-18", "close": 9619 },
+                { "date": "01-May-18", "close": 8522 },
+                { "date": "01-Jun-18", "close": 7214 },
+                { "date": "01-Jul-18", "close": 5960 },
+                { "date": "01-Aug-18", "close": 9128 },
+                { "date": "01-Sep-18", "close": 10308 },
+                { "date": "01-Oct-18", "close": 10211 },
+                { "date": "01-Nov-18", "close": 8395 },
+                { "date": "01-Dec-18", "close": 9263 },
+                { "date": "01-Jan-19", "close": 9460 },
+                { "date": "01-Feb-19", "close": 1012 }
             ]
         },
         {
             "code": "MIF",
-            "data": [{
-                    "date": "01-Mar-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Apr-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-May-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Jun-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Jul-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Aug-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Sep-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Oct-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Nov-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Dec-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Jan-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-Feb-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-Mar-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-Apr-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-May-15",
-                    "close": 58
-                },
-                {
-                    "date": "01-Jun-15",
-                    "close": 6997
-                },
-                {
-                    "date": "01-Jul-15",
-                    "close": 1636
-                },
-                {
-                    "date": "01-Aug-15",
-                    "close": 299
-                },
-                {
-                    "date": "01-Sep-15",
-                    "close": 4770
-                },
-                {
-                    "date": "01-Oct-15",
-                    "close": 5448
-                },
-                {
-                    "date": "01-Nov-15",
-                    "close": 687
-                },
-                {
-                    "date": "01-Dec-15",
-                    "close": 156
-                },
-                {
-                    "date": "01-Jan-16",
-                    "close": 173
-                },
-                {
-                    "date": "01-Feb-16",
-                    "close": 311
-                },
-                {
-                    "date": "01-Mar-16",
-                    "close": 398
-                },
-                {
-                    "date": "01-Apr-16",
-                    "close": 738
-                },
-                {
-                    "date": "01-May-16",
-                    "close": 3634
-                },
-                {
-                    "date": "01-Jun-16",
-                    "close": 3875
-                },
-                {
-                    "date": "01-Jul-16",
-                    "close": 303
-                },
-                {
-                    "date": "01-Aug-16",
-                    "close": 224
-                },
-                {
-                    "date": "01-Sep-16",
-                    "close": 165
-                },
-                {
-                    "date": "01-Oct-16",
-                    "close": 165
-                },
-                {
-                    "date": "01-Nov-16",
-                    "close": 130
-                },
-                {
-                    "date": "01-Dec-16",
-                    "close": 107
-                },
-                {
-                    "date": "01-Jan-17",
-                    "close": 161
-                },
-                {
-                    "date": "01-Feb-17",
-                    "close": 138
-                },
-                {
-                    "date": "01-Mar-17",
-                    "close": 142
-                },
-                {
-                    "date": "01-Apr-17",
-                    "close": 363
-                },
-                {
-                    "date": "01-May-17",
-                    "close": 5136
-                },
-                {
-                    "date": "01-Jun-17",
-                    "close": 316
-                },
-                {
-                    "date": "01-Jul-17",
-                    "close": 154
-                },
-                {
-                    "date": "01-Aug-17",
-                    "close": 121
-                },
-                {
-                    "date": "01-Sep-17",
-                    "close": 221
-                },
-                {
-                    "date": "01-Oct-17",
-                    "close": 3396
-                },
-                {
-                    "date": "01-Nov-17",
-                    "close": 1627
-                },
-                {
-                    "date": "01-Dec-17",
-                    "close": 177
-                },
-                {
-                    "date": "01-Jan-18",
-                    "close": 157
-                },
-                {
-                    "date": "01-Feb-18",
-                    "close": 269
-                },
-                {
-                    "date": "01-Mar-18",
-                    "close": 182
-                },
-                {
-                    "date": "01-Apr-18",
-                    "close": 293
-                },
-                {
-                    "date": "01-May-18",
-                    "close": 236
-                },
-                {
-                    "date": "01-Jun-18",
-                    "close": 185
-                },
-                {
-                    "date": "01-Jul-18",
-                    "close": 249
-                },
-                {
-                    "date": "01-Aug-18",
-                    "close": 229
-                },
-                {
-                    "date": "01-Sep-18",
-                    "close": 218
-                },
-                {
-                    "date": "01-Oct-18",
-                    "close": 425
-                },
-                {
-                    "date": "01-Nov-18",
-                    "close": 186
-                },
-                {
-                    "date": "01-Dec-18",
-                    "close": 100
-                },
-                {
-                    "date": "01-Jan-19",
-                    "close": 73
-                }
+            "data": [
+                { "date": "01-Mar-14", "close": 0 },
+                { "date": "01-Apr-14", "close": 0 },
+                { "date": "01-May-14", "close": 0 },
+                { "date": "01-Jun-14", "close": 0 },
+                { "date": "01-Jul-14", "close": 0 },
+                { "date": "01-Aug-14", "close": 0 },
+                { "date": "01-Sep-14", "close": 0 },
+                { "date": "01-Oct-14", "close": 0 },
+                { "date": "01-Nov-14", "close": 0 },
+                { "date": "01-Dec-14", "close": 0 },
+                { "date": "01-Jan-15", "close": 0 },
+                { "date": "01-Feb-15", "close": 0 },
+                { "date": "01-Mar-15", "close": 0 },
+                { "date": "01-Apr-15", "close": 0 },
+                { "date": "01-May-15", "close": 58 },
+                { "date": "01-Jun-15", "close": 6997 },
+                { "date": "01-Jul-15", "close": 1636 },
+                { "date": "01-Aug-15", "close": 299 },
+                { "date": "01-Sep-15", "close": 4770 },
+                { "date": "01-Oct-15", "close": 5448 },
+                { "date": "01-Nov-15", "close": 687 },
+                { "date": "01-Dec-15", "close": 156 },
+                { "date": "01-Jan-16", "close": 173 },
+                { "date": "01-Feb-16", "close": 311 },
+                { "date": "01-Mar-16", "close": 398 },
+                { "date": "01-Apr-16", "close": 738 },
+                { "date": "01-May-16", "close": 3634 },
+                { "date": "01-Jun-16", "close": 3875 },
+                { "date": "01-Jul-16", "close": 303 },
+                { "date": "01-Aug-16", "close": 224 },
+                { "date": "01-Sep-16", "close": 165 },
+                { "date": "01-Oct-16", "close": 165 },
+                { "date": "01-Nov-16", "close": 130 },
+                { "date": "01-Dec-16", "close": 107 },
+                { "date": "01-Jan-17", "close": 161 },
+                { "date": "01-Feb-17", "close": 138 },
+                { "date": "01-Mar-17", "close": 142 },
+                { "date": "01-Apr-17", "close": 363 },
+                { "date": "01-May-17", "close": 5136 },
+                { "date": "01-Jun-17", "close": 316 },
+                { "date": "01-Jul-17", "close": 154 },
+                { "date": "01-Aug-17", "close": 121 },
+                { "date": "01-Sep-17", "close": 221 },
+                { "date": "01-Oct-17", "close": 3396 },
+                { "date": "01-Nov-17", "close": 1627 },
+                { "date": "01-Dec-17", "close": 177 },
+                { "date": "01-Jan-18", "close": 157 },
+                { "date": "01-Feb-18", "close": 269 },
+                { "date": "01-Mar-18", "close": 182 },
+                { "date": "01-Apr-18", "close": 293 },
+                { "date": "01-May-18", "close": 236 },
+                { "date": "01-Jun-18", "close": 185 },
+                { "date": "01-Jul-18", "close": 249 },
+                { "date": "01-Aug-18", "close": 229 },
+                { "date": "01-Sep-18", "close": 218 },
+                { "date": "01-Oct-18", "close": 425 },
+                { "date": "01-Nov-18", "close": 186 },
+                { "date": "01-Dec-18", "close": 100 },
+                { "date": "01-Jan-19", "close": 73 },
+                { "date": "01-Feb-19", "close": 0 }
             ]
         },
         {
             "code": "PRE",
-            "data": [{
-                    "date": "01-Mar-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Apr-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-May-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Jun-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Jul-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Aug-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Sep-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Oct-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Nov-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Dec-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Jan-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-Feb-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-Mar-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-Apr-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-May-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-Jun-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-Jul-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-Aug-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-Sep-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-Oct-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-Nov-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-Dec-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-Jan-16",
-                    "close": 0
-                },
-                {
-                    "date": "01-Feb-16",
-                    "close": 0
-                },
-                {
-                    "date": "01-Mar-16",
-                    "close": 0
-                },
-                {
-                    "date": "01-Apr-16",
-                    "close": 0
-                },
-                {
-                    "date": "01-May-16",
-                    "close": 0
-                },
-                {
-                    "date": "01-Jun-16",
-                    "close": 0
-                },
-                {
-                    "date": "01-Jul-16",
-                    "close": 0
-                },
-                {
-                    "date": "01-Aug-16",
-                    "close": 0
-                },
-                {
-                    "date": "01-Sep-16",
-                    "close": 0
-                },
-                {
-                    "date": "01-Oct-16",
-                    "close": 0
-                },
-                {
-                    "date": "01-Nov-16",
-                    "close": 0
-                },
-                {
-                    "date": "01-Dec-16",
-                    "close": 0
-                },
-                {
-                    "date": "01-Jan-17",
-                    "close": 0
-                },
-                {
-                    "date": "01-Feb-17",
-                    "close": 0
-                },
-                {
-                    "date": "01-Mar-17",
-                    "close": 0
-                },
-                {
-                    "date": "01-Apr-17",
-                    "close": 0
-                },
-                {
-                    "date": "01-May-17",
-                    "close": 0
-                },
-                {
-                    "date": "01-Jun-17",
-                    "close": 0
-                },
-                {
-                    "date": "01-Jul-17",
-                    "close": 0
-                },
-                {
-                    "date": "01-Aug-17",
-                    "close": 7
-                },
-                {
-                    "date": "01-Sep-17",
-                    "close": 0
-                },
-                {
-                    "date": "01-Oct-17",
-                    "close": 765
-                },
-                {
-                    "date": "01-Nov-17",
-                    "close": 9795
-                },
-                {
-                    "date": "01-Dec-17",
-                    "close": 2442
-                },
-                {
-                    "date": "01-Jan-18",
-                    "close": 1579
-                },
-                {
-                    "date": "01-Feb-18",
-                    "close": 1003
-                },
-                {
-                    "date": "01-Mar-18",
-                    "close": 343
-                },
-                {
-                    "date": "01-Apr-18",
-                    "close": 2720
-                },
-                {
-                    "date": "01-May-18",
-                    "close": 1978
-                },
-                {
-                    "date": "01-Jun-18",
-                    "close": 908
-                },
-                {
-                    "date": "01-Jul-18",
-                    "close": 710
-                },
-                {
-                    "date": "01-Aug-18",
-                    "close": 1535
-                },
-                {
-                    "date": "01-Sep-18",
-                    "close": 1604
-                },
-                {
-                    "date": "01-Oct-18",
-                    "close": 995
-                },
-                {
-                    "date": "01-Nov-18",
-                    "close": 1180
-                },
-                {
-                    "date": "01-Dec-18",
-                    "close": 519
-                },
-                {
-                    "date": "01-Jan-19",
-                    "close": 92
-                }
+            "data": [
+                { "date": "01-Mar-14", "close": 0 },
+                { "date": "01-Apr-14", "close": 0 },
+                { "date": "01-May-14", "close": 0 },
+                { "date": "01-Jun-14", "close": 0 },
+                { "date": "01-Jul-14", "close": 0 },
+                { "date": "01-Aug-14", "close": 0 },
+                { "date": "01-Sep-14", "close": 0 },
+                { "date": "01-Oct-14", "close": 0 },
+                { "date": "01-Nov-14", "close": 0 },
+                { "date": "01-Dec-14", "close": 0 },
+                { "date": "01-Jan-15", "close": 0 },
+                { "date": "01-Feb-15", "close": 0 },
+                { "date": "01-Mar-15", "close": 0 },
+                { "date": "01-Apr-15", "close": 0 },
+                { "date": "01-May-15", "close": 0 },
+                { "date": "01-Jun-15", "close": 0 },
+                { "date": "01-Jul-15", "close": 0 },
+                { "date": "01-Aug-15", "close": 0 },
+                { "date": "01-Sep-15", "close": 0 },
+                { "date": "01-Oct-15", "close": 0 },
+                { "date": "01-Nov-15", "close": 0 },
+                { "date": "01-Dec-15", "close": 0 },
+                { "date": "01-Jan-16", "close": 0 },
+                { "date": "01-Feb-16", "close": 0 },
+                { "date": "01-Mar-16", "close": 0 },
+                { "date": "01-Apr-16", "close": 0 },
+                { "date": "01-May-16", "close": 0 },
+                { "date": "01-Jun-16", "close": 0 },
+                { "date": "01-Jul-16", "close": 0 },
+                { "date": "01-Aug-16", "close": 0 },
+                { "date": "01-Sep-16", "close": 0 },
+                { "date": "01-Oct-16", "close": 0 },
+                { "date": "01-Nov-16", "close": 0 },
+                { "date": "01-Dec-16", "close": 0 },
+                { "date": "01-Jan-17", "close": 0 },
+                { "date": "01-Feb-17", "close": 0 },
+                { "date": "01-Mar-17", "close": 0 },
+                { "date": "01-Apr-17", "close": 0 },
+                { "date": "01-May-17", "close": 0 },
+                { "date": "01-Jun-17", "close": 0 },
+                { "date": "01-Jul-17", "close": 0 },
+                { "date": "01-Aug-17", "close": 7 },
+                { "date": "01-Sep-17", "close": 0 },
+                { "date": "01-Oct-17", "close": 765 },
+                { "date": "01-Nov-17", "close": 9795 },
+                { "date": "01-Dec-17", "close": 2442 },
+                { "date": "01-Jan-18", "close": 1579 },
+                { "date": "01-Feb-18", "close": 1003 },
+                { "date": "01-Mar-18", "close": 343 },
+                { "date": "01-Apr-18", "close": 2720 },
+                { "date": "01-May-18", "close": 1978 },
+                { "date": "01-Jun-18", "close": 908 },
+                { "date": "01-Jul-18", "close": 710 },
+                { "date": "01-Aug-18", "close": 1535 },
+                { "date": "01-Sep-18", "close": 1604 },
+                { "date": "01-Oct-18", "close": 995 },
+                { "date": "01-Nov-18", "close": 1186 },
+                { "date": "01-Dec-18", "close": 523 },
+                { "date": "01-Jan-19", "close": 1975 },
+                { "date": "01-Feb-19", "close": 170 }
             ]
         },
         {
             "code": "RES",
-            "data": [{
-                    "date": "01-Mar-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Apr-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-May-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Jun-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Jul-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Aug-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Sep-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Oct-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Nov-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Dec-14",
-                    "close": 0
-                },
-                {
-                    "date": "01-Jan-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-Feb-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-Mar-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-Apr-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-May-15",
-                    "close": 3354
-                },
-                {
-                    "date": "01-Jun-15",
-                    "close": 6513
-                },
-                {
-                    "date": "01-Jul-15",
-                    "close": 1637
-                },
-                {
-                    "date": "01-Aug-15",
-                    "close": 23
-                },
-                {
-                    "date": "01-Sep-15",
-                    "close": 0
-                },
-                {
-                    "date": "01-Oct-15",
-                    "close": 1
-                },
-                {
-                    "date": "01-Nov-15",
-                    "close": 124
-                },
-                {
-                    "date": "01-Dec-15",
-                    "close": 136
-                },
-                {
-                    "date": "01-Jan-16",
-                    "close": 193
-                },
-                {
-                    "date": "01-Feb-16",
-                    "close": 304
-                },
-                {
-                    "date": "01-Mar-16",
-                    "close": 356
-                },
-                {
-                    "date": "01-Apr-16",
-                    "close": 260
-                },
-                {
-                    "date": "01-May-16",
-                    "close": 187
-                },
-                {
-                    "date": "01-Jun-16",
-                    "close": 235
-                },
-                {
-                    "date": "01-Jul-16",
-                    "close": 412
-                },
-                {
-                    "date": "01-Aug-16",
-                    "close": 1749
-                },
-                {
-                    "date": "01-Sep-16",
-                    "close": 4346
-                },
-                {
-                    "date": "01-Oct-16",
-                    "close": 2722
-                },
-                {
-                    "date": "01-Nov-16",
-                    "close": 357
-                },
-                {
-                    "date": "01-Dec-16",
-                    "close": 186
-                },
-                {
-                    "date": "01-Jan-17",
-                    "close": 206
-                },
-                {
-                    "date": "01-Feb-17",
-                    "close": 223
-                },
-                {
-                    "date": "01-Mar-17",
-                    "close": 185
-                },
-                {
-                    "date": "01-Apr-17",
-                    "close": 141
-                },
-                {
-                    "date": "01-May-17",
-                    "close": 289
-                },
-                {
-                    "date": "01-Jun-17",
-                    "close": 2489
-                },
-                {
-                    "date": "01-Jul-17",
-                    "close": 1828
-                },
-                {
-                    "date": "01-Aug-17",
-                    "close": 4095
-                },
-                {
-                    "date": "01-Sep-17",
-                    "close": 3291
-                },
-                {
-                    "date": "01-Oct-17",
-                    "close": 509
-                },
-                {
-                    "date": "01-Nov-17",
-                    "close": 261
-                },
-                {
-                    "date": "01-Dec-17",
-                    "close": 194
-                },
-                {
-                    "date": "01-Jan-18",
-                    "close": 628
-                },
-                {
-                    "date": "01-Feb-18",
-                    "close": 1093
-                },
-                {
-                    "date": "01-Mar-18",
-                    "close": 2692
-                },
-                {
-                    "date": "01-Apr-18",
-                    "close": 1885
-                },
-                {
-                    "date": "01-May-18",
-                    "close": 1821
-                },
-                {
-                    "date": "01-Jun-18",
-                    "close": 1576
-                },
-                {
-                    "date": "01-Jul-18",
-                    "close": 1047
-                },
-                {
-                    "date": "01-Aug-18",
-                    "close": 1072
-                },
-                {
-                    "date": "01-Sep-18",
-                    "close": 1371
-                },
-                {
-                    "date": "01-Oct-18",
-                    "close": 849
-                },
-                {
-                    "date": "01-Nov-18",
-                    "close": 781
-                },
-                {
-                    "date": "01-Dec-18",
-                    "close": 241
-                },
-                {
-                    "date": "01-Jan-19",
-                    "close": 105
-                }
+            "data": [
+                { "date": "01-Mar-14", "close": 0 },
+                { "date": "01-Apr-14", "close": 0 },
+                { "date": "01-May-14", "close": 0 },
+                { "date": "01-Jun-14", "close": 0 },
+                { "date": "01-Jul-14", "close": 0 },
+                { "date": "01-Aug-14", "close": 0 },
+                { "date": "01-Sep-14", "close": 0 },
+                { "date": "01-Oct-14", "close": 0 },
+                { "date": "01-Nov-14", "close": 0 },
+                { "date": "01-Dec-14", "close": 0 },
+                { "date": "01-Jan-15", "close": 0 },
+                { "date": "01-Feb-15", "close": 0 },
+                { "date": "01-Mar-15", "close": 0 },
+                { "date": "01-Apr-15", "close": 0 },
+                { "date": "01-May-15", "close": 3354 },
+                { "date": "01-Jun-15", "close": 6513 },
+                { "date": "01-Jul-15", "close": 1637 },
+                { "date": "01-Aug-15", "close": 23 },
+                { "date": "01-Sep-15", "close": 0 },
+                { "date": "01-Oct-15", "close": 1 },
+                { "date": "01-Nov-15", "close": 124 },
+                { "date": "01-Dec-15", "close": 136 },
+                { "date": "01-Jan-16", "close": 193 },
+                { "date": "01-Feb-16", "close": 304 },
+                { "date": "01-Mar-16", "close": 356 },
+                { "date": "01-Apr-16", "close": 260 },
+                { "date": "01-May-16", "close": 187 },
+                { "date": "01-Jun-16", "close": 235 },
+                { "date": "01-Jul-16", "close": 412 },
+                { "date": "01-Aug-16", "close": 1749 },
+                { "date": "01-Sep-16", "close": 4346 },
+                { "date": "01-Oct-16", "close": 2722 },
+                { "date": "01-Nov-16", "close": 357 },
+                { "date": "01-Dec-16", "close": 186 },
+                { "date": "01-Jan-17", "close": 206 },
+                { "date": "01-Feb-17", "close": 223 },
+                { "date": "01-Mar-17", "close": 185 },
+                { "date": "01-Apr-17", "close": 141 },
+                { "date": "01-May-17", "close": 289 },
+                { "date": "01-Jun-17", "close": 2489 },
+                { "date": "01-Jul-17", "close": 1828 },
+                { "date": "01-Aug-17", "close": 4095 },
+                { "date": "01-Sep-17", "close": 3291 },
+                { "date": "01-Oct-17", "close": 509 },
+                { "date": "01-Nov-17", "close": 261 },
+                { "date": "01-Dec-17", "close": 194 },
+                { "date": "01-Jan-18", "close": 628 },
+                { "date": "01-Feb-18", "close": 1093 },
+                { "date": "01-Mar-18", "close": 2692 },
+                { "date": "01-Apr-18", "close": 1885 },
+                { "date": "01-May-18", "close": 1821 },
+                { "date": "01-Jun-18", "close": 1576 },
+                { "date": "01-Jul-18", "close": 1047 },
+                { "date": "01-Aug-18", "close": 1072 },
+                { "date": "01-Sep-18", "close": 1371 },
+                { "date": "01-Oct-18", "close": 849 },
+                { "date": "01-Nov-18", "close": 781 },
+                { "date": "01-Dec-18", "close": 303 },
+                { "date": "01-Jan-19", "close": 676 },
+                { "date": "01-Feb-19", "close": 72 }
             ]
         },
         {
             "code": "SCL",
-            "data": [{
-                    "date": "01-Mar-14",
-                    "close": 381
-                },
-                {
-                    "date": "01-Apr-14",
-                    "close": 298
-                },
-                {
-                    "date": "01-May-14",
-                    "close": 409
-                },
-                {
-                    "date": "01-Jun-14",
-                    "close": 266
-                },
-                {
-                    "date": "01-Jul-14",
-                    "close": 191
-                },
-                {
-                    "date": "01-Aug-14",
-                    "close": 169
-                },
-                {
-                    "date": "01-Sep-14",
-                    "close": 352
-                },
-                {
-                    "date": "01-Oct-14",
-                    "close": 116
-                },
-                {
-                    "date": "01-Nov-14",
-                    "close": 115
-                },
-                {
-                    "date": "01-Dec-14",
-                    "close": 245
-                },
-                {
-                    "date": "01-Jan-15",
-                    "close": 384
-                },
-                {
-                    "date": "01-Feb-15",
-                    "close": 516
-                },
-                {
-                    "date": "01-Mar-15",
-                    "close": 893
-                },
-                {
-                    "date": "01-Apr-15",
-                    "close": 188
-                },
-                {
-                    "date": "01-May-15",
-                    "close": 58
-                },
-                {
-                    "date": "01-Jun-15",
-                    "close": 7035
-                },
-                {
-                    "date": "01-Jul-15",
-                    "close": 1727
-                },
-                {
-                    "date": "01-Aug-15",
-                    "close": 395
-                },
-                {
-                    "date": "01-Sep-15",
-                    "close": 4893
-                },
-                {
-                    "date": "01-Oct-15",
-                    "close": 5542
-                },
-                {
-                    "date": "01-Nov-15",
-                    "close": 2303
-                },
-                {
-                    "date": "01-Dec-15",
-                    "close": 322
-                },
-                {
-                    "date": "01-Jan-16",
-                    "close": 416
-                },
-                {
-                    "date": "01-Feb-16",
-                    "close": 562
-                },
-                {
-                    "date": "01-Mar-16",
-                    "close": 600
-                },
-                {
-                    "date": "01-Apr-16",
-                    "close": 858
-                },
-                {
-                    "date": "01-May-16",
-                    "close": 4453
-                },
-                {
-                    "date": "01-Jun-16",
-                    "close": 9590
-                },
-                {
-                    "date": "01-Jul-16",
-                    "close": 6172
-                },
-                {
-                    "date": "01-Aug-16",
-                    "close": 1013
-                },
-                {
-                    "date": "01-Sep-16",
-                    "close": 551
-                },
-                {
-                    "date": "01-Oct-16",
-                    "close": 561
-                },
-                {
-                    "date": "01-Nov-16",
-                    "close": 420
-                },
-                {
-                    "date": "01-Dec-16",
-                    "close": 369
-                },
-                {
-                    "date": "01-Jan-17",
-                    "close": 982
-                },
-                {
-                    "date": "01-Feb-17",
-                    "close": 5319
-                },
-                {
-                    "date": "01-Mar-17",
-                    "close": 6609
-                },
-                {
-                    "date": "01-Apr-17",
-                    "close": 3979
-                },
-                {
-                    "date": "01-May-17",
-                    "close": 6702
-                },
-                {
-                    "date": "01-Jun-17",
-                    "close": 1639
-                },
-                {
-                    "date": "01-Jul-17",
-                    "close": 4553
-                },
-                {
-                    "date": "01-Aug-17",
-                    "close": 14689
-                },
-                {
-                    "date": "01-Sep-17",
-                    "close": 15163
-                },
-                {
-                    "date": "01-Oct-17",
-                    "close": 5328
-                },
-                {
-                    "date": "01-Nov-17",
-                    "close": 2537
-                },
-                {
-                    "date": "01-Dec-17",
-                    "close": 781
-                },
-                {
-                    "date": "01-Jan-18",
-                    "close": 1220
-                },
-                {
-                    "date": "01-Feb-18",
-                    "close": 2917
-                },
-                {
-                    "date": "01-Mar-18",
-                    "close": 13404
-                },
-                {
-                    "date": "01-Apr-18",
-                    "close": 8594
-                },
-                {
-                    "date": "01-May-18",
-                    "close": 3173
-                },
-                {
-                    "date": "01-Jun-18",
-                    "close": 3162
-                },
-                {
-                    "date": "01-Jul-18",
-                    "close": 2910
-                },
-                {
-                    "date": "01-Aug-18",
-                    "close": 7543
-                },
-                {
-                    "date": "01-Sep-18",
-                    "close": 10839
-                },
-                {
-                    "date": "01-Oct-18",
-                    "close": 3547
-                },
-                {
-                    "date": "01-Nov-18",
-                    "close": 1944
-                },
-                {
-                    "date": "01-Dec-18",
-                    "close": 696
-                },
-                {
-                    "date": "01-Jan-19",
-                    "close": 263
-                }
+            "data": [
+                { "date": "01-Mar-14", "close": 381 },
+                { "date": "01-Apr-14", "close": 298 },
+                { "date": "01-May-14", "close": 409 },
+                { "date": "01-Jun-14", "close": 266 },
+                { "date": "01-Jul-14", "close": 191 },
+                { "date": "01-Aug-14", "close": 169 },
+                { "date": "01-Sep-14", "close": 352 },
+                { "date": "01-Oct-14", "close": 116 },
+                { "date": "01-Nov-14", "close": 115 },
+                { "date": "01-Dec-14", "close": 245 },
+                { "date": "01-Jan-15", "close": 384 },
+                { "date": "01-Feb-15", "close": 516 },
+                { "date": "01-Mar-15", "close": 893 },
+                { "date": "01-Apr-15", "close": 188 },
+                { "date": "01-May-15", "close": 58 },
+                { "date": "01-Jun-15", "close": 7035 },
+                { "date": "01-Jul-15", "close": 1727 },
+                { "date": "01-Aug-15", "close": 395 },
+                { "date": "01-Sep-15", "close": 4893 },
+                { "date": "01-Oct-15", "close": 5542 },
+                { "date": "01-Nov-15", "close": 2303 },
+                { "date": "01-Dec-15", "close": 322 },
+                { "date": "01-Jan-16", "close": 416 },
+                { "date": "01-Feb-16", "close": 562 },
+                { "date": "01-Mar-16", "close": 600 },
+                { "date": "01-Apr-16", "close": 858 },
+                { "date": "01-May-16", "close": 4453 },
+                { "date": "01-Jun-16", "close": 9590 },
+                { "date": "01-Jul-16", "close": 6172 },
+                { "date": "01-Aug-16", "close": 1013 },
+                { "date": "01-Sep-16", "close": 551 },
+                { "date": "01-Oct-16", "close": 561 },
+                { "date": "01-Nov-16", "close": 420 },
+                { "date": "01-Dec-16", "close": 369 },
+                { "date": "01-Jan-17", "close": 982 },
+                { "date": "01-Feb-17", "close": 5319 },
+                { "date": "01-Mar-17", "close": 6609 },
+                { "date": "01-Apr-17", "close": 3979 },
+                { "date": "01-May-17", "close": 6702 },
+                { "date": "01-Jun-17", "close": 1639 },
+                { "date": "01-Jul-17", "close": 4553 },
+                { "date": "01-Aug-17", "close": 14689 },
+                { "date": "01-Sep-17", "close": 15163 },
+                { "date": "01-Oct-17", "close": 5328 },
+                { "date": "01-Nov-17", "close": 2537 },
+                { "date": "01-Dec-17", "close": 781 },
+                { "date": "01-Jan-18", "close": 1220 },
+                { "date": "01-Feb-18", "close": 2917 },
+                { "date": "01-Mar-18", "close": 13404 },
+                { "date": "01-Apr-18", "close": 8602 },
+                { "date": "01-May-18", "close": 3173 },
+                { "date": "01-Jun-18", "close": 3162 },
+                { "date": "01-Jul-18", "close": 2911 },
+                { "date": "01-Aug-18", "close": 7543 },
+                { "date": "01-Sep-18", "close": 10839 },
+                { "date": "01-Oct-18", "close": 3553 },
+                { "date": "01-Nov-18", "close": 1948 },
+                { "date": "01-Dec-18", "close": 904 },
+                { "date": "01-Jan-19", "close": 4644 },
+                { "date": "01-Feb-19", "close": 627 }
             ]
         },
         {
             "code": "VPC",
-            "data": [{
+            "data": [
+                { "date": "01-Mar-14", "close": 0 },
+                { "date": "01-Apr-14", "close": 0 },
+                { "date": "01-May-14", "close": 0 },
+                { "date": "01-Jun-14", "close": 0 },
+                { "date": "01-Jul-14", "close": 0 },
+                { "date": "01-Aug-14", "close": 0 },
+                { "date": "01-Sep-14", "close": 0 },
+                { "date": "01-Oct-14", "close": 0 },
+                { "date": "01-Nov-14", "close": 0 },
+                { "date": "01-Dec-14", "close": 0 },
+                { "date": "01-Jan-15", "close": 0 },
+                { "date": "01-Feb-15", "close": 0 },
+                { "date": "01-Mar-15", "close": 0 },
+                { "date": "01-Apr-15", "close": 0 },
+                { "date": "01-May-15", "close": 0 },
+                { "date": "01-Jun-15", "close": 0 },
+                { "date": "01-Jul-15", "close": 0 },
+                { "date": "01-Aug-15", "close": 0 },
+                { "date": "01-Sep-15", "close": 0 },
+                { "date": "01-Oct-15", "close": 0 },
+                { "date": "01-Nov-15", "close": 0 },
+                { "date": "01-Dec-15", "close": 0 },
+                { "date": "01-Jan-16", "close": 0 },
+                { "date": "01-Feb-16", "close": 0 },
+                { "date": "01-Mar-16", "close": 0 },
+                { "date": "01-Apr-16", "close": 0 },
+                { "date": "01-May-16", "close": 0 },
+                { "date": "01-Jun-16", "close": 0 },
+                { "date": "01-Jul-16", "close": 0 },
+                { "date": "01-Aug-16", "close": 0 },
+                { "date": "01-Sep-16", "close": 0 },
+                { "date": "01-Oct-16", "close": 0 },
+                { "date": "01-Nov-16", "close": 0 },
+                { "date": "01-Dec-16", "close": 0 },
+                { "date": "01-Jan-17", "close": 0 },
+                { "date": "01-Feb-17", "close": 0 },
+                { "date": "01-Mar-17", "close": 0 },
+                { "date": "01-Apr-17", "close": 0 },
+                { "date": "01-May-17", "close": 0 },
+                { "date": "01-Jun-17", "close": 0 },
+                { "date": "01-Jul-17", "close": 4 },
+                { "date": "01-Aug-17", "close": 0 },
+                { "date": "01-Sep-17", "close": 1818 },
+                { "date": "01-Oct-17", "close": 15683 },
+                { "date": "01-Nov-17", "close": 5181 },
+                { "date": "01-Dec-17", "close": 4552 },
+                { "date": "01-Jan-18", "close": 4729 },
+                { "date": "01-Feb-18", "close": 1836 },
+                { "date": "01-Mar-18", "close": 878 },
+                { "date": "01-Apr-18", "close": 1013 },
+                { "date": "01-May-18", "close": 602 },
+                { "date": "01-Jun-18", "close": 514 },
+                { "date": "01-Jul-18", "close": 489 },
+                { "date": "01-Aug-18", "close": 437 },
+                { "date": "01-Sep-18", "close": 756 },
+                { "date": "01-Oct-18", "close": 5356 },
+                { "date": "01-Nov-18", "close": 3622 },
+                { "date": "01-Dec-18", "close": 2910 },
+                { "date": "01-Jan-19", "close": 1438 },
+                { "date": "01-Feb-19", "close": 39 }
+            ]
+        }
+    ],
+    registrationTimelineDivisions: [
+        {
+            "code": "CBD",
+            "data": [
+                {
+                    "date": "01-Mar-14",
+                    "close": 0
+                },
+                {
+                    "date": "01-Apr-14",
+                    "close": 0
+                },
+                {
+                    "date": "01-May-14",
+                    "close": 0
+                },
+                {
+                    "date": "01-Jun-14",
+                    "close": 0
+                },
+                {
+                    "date": "01-Jul-14",
+                    "close": 0
+                },
+                {
+                    "date": "01-Aug-14",
+                    "close": 0
+                },
+                {
+                    "date": "01-Sep-14",
+                    "close": 0
+                },
+                {
+                    "date": "01-Oct-14",
+                    "close": 0
+                },
+                {
+                    "date": "01-Nov-14",
+                    "close": 0
+                },
+                {
+                    "date": "01-Dec-14",
+                    "close": 0
+                },
+                {
+                    "date": "01-Jan-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-Feb-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-Mar-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-Apr-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-May-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-Jun-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-Jul-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-Aug-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-Sep-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-Oct-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-Nov-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-Dec-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-Jan-16",
+                    "close": 0
+                },
+                {
+                    "date": "01-Feb-16",
+                    "close": 0
+                },
+                {
+                    "date": "01-Mar-16",
+                    "close": 0
+                },
+                {
+                    "date": "01-Apr-16",
+                    "close": 0
+                },
+                {
+                    "date": "01-May-16",
+                    "close": 0
+                },
+                {
+                    "date": "01-Jun-16",
+                    "close": 0
+                },
+                {
+                    "date": "01-Jul-16",
+                    "close": 0
+                },
+                {
+                    "date": "01-Aug-16",
+                    "close": 0
+                },
+                {
+                    "date": "01-Sep-16",
+                    "close": 0
+                },
+                {
+                    "date": "01-Oct-16",
+                    "close": 0
+                },
+                {
+                    "date": "01-Nov-16",
+                    "close": 0
+                },
+                {
+                    "date": "01-Dec-16",
+                    "close": 2
+                },
+                {
+                    "date": "01-Jan-17",
+                    "close": 0
+                },
+                {
+                    "date": "01-Feb-17",
+                    "close": 2
+                },
+                {
+                    "date": "01-Mar-17",
+                    "close": 0
+                },
+                {
+                    "date": "01-Apr-17",
+                    "close": 0
+                },
+                {
+                    "date": "01-May-17",
+                    "close": 0
+                },
+                {
+                    "date": "01-Jun-17",
+                    "close": 0
+                },
+                {
+                    "date": "01-Jul-17",
+                    "close": 0
+                },
+                {
+                    "date": "01-Aug-17",
+                    "close": 270
+                },
+                {
+                    "date": "01-Sep-17",
+                    "close": 3401
+                },
+                {
+                    "date": "01-Oct-17",
+                    "close": 5088
+                },
+                {
+                    "date": "01-Nov-17",
+                    "close": 512
+                },
+                {
+                    "date": "01-Dec-17",
+                    "close": 214
+                },
+                {
+                    "date": "01-Jan-18",
+                    "close": 352
+                },
+                {
+                    "date": "01-Feb-18",
+                    "close": 1449
+                },
+                {
+                    "date": "01-Mar-18",
+                    "close": 4336
+                },
+                {
+                    "date": "01-Apr-18",
+                    "close": 638
+                },
+                {
+                    "date": "01-May-18",
+                    "close": 1147
+                },
+                {
+                    "date": "01-Jun-18",
+                    "close": 588
+                },
+                {
+                    "date": "01-Jul-18",
+                    "close": 413
+                },
+                {
+                    "date": "01-Aug-18",
+                    "close": 330
+                },
+                {
+                    "date": "01-Sep-18",
+                    "close": 264
+                },
+                {
+                    "date": "01-Oct-18",
+                    "close": 212
+                },
+                {
+                    "date": "01-Nov-18",
+                    "close": 640
+                },
+                {
+                    "date": "01-Dec-18",
+                    "close": 133
+                },
+                {
+                    "date": "01-Jan-19",
+                    "close": 187
+                },
+                {
+                    "date": "01-Feb-19",
+                    "close": 12
+                }
+            ]
+        },
+        {
+            "code": "CBR",
+            "data": [
+                {
                     "date": "01-Mar-14",
                     "close": 0
                 },
@@ -2271,138 +1205,632 @@ var moocsRegistrationTimeline = {
                 },
                 {
                     "date": "01-Jun-16",
-                    "close": 81
+                    "close": 78
                 },
                 {
                     "date": "01-Jul-16",
-                    "close": 198
+                    "close": 47
                 },
                 {
                     "date": "01-Aug-16",
-                    "close": 3483
+                    "close": 103
                 },
                 {
                     "date": "01-Sep-16",
-                    "close": 3732
+                    "close": 105
                 },
                 {
                     "date": "01-Oct-16",
-                    "close": 642
+                    "close": 127
                 },
                 {
                     "date": "01-Nov-16",
-                    "close": 363
+                    "close": 120
                 },
                 {
                     "date": "01-Dec-16",
-                    "close": 271
+                    "close": 82
                 },
                 {
                     "date": "01-Jan-17",
-                    "close": 318
+                    "close": 104
                 },
                 {
                     "date": "01-Feb-17",
-                    "close": 281
+                    "close": 65
                 },
                 {
                     "date": "01-Mar-17",
-                    "close": 322
+                    "close": 101
                 },
                 {
                     "date": "01-Apr-17",
-                    "close": 876
+                    "close": 686
                 },
                 {
                     "date": "01-May-17",
-                    "close": 1095
+                    "close": 870
                 },
                 {
                     "date": "01-Jun-17",
-                    "close": 1280
+                    "close": 953
                 },
                 {
                     "date": "01-Jul-17",
-                    "close": 3338
+                    "close": 2940
                 },
                 {
                     "date": "01-Aug-17",
-                    "close": 3759
+                    "close": 1947
                 },
                 {
                     "date": "01-Sep-17",
-                    "close": 7244
+                    "close": 250
                 },
                 {
                     "date": "01-Oct-17",
-                    "close": 23332
+                    "close": 160
                 },
                 {
                     "date": "01-Nov-17",
-                    "close": 8277
+                    "close": 107
                 },
                 {
                     "date": "01-Dec-17",
-                    "close": 5251
+                    "close": 71
                 },
                 {
                     "date": "01-Jan-18",
-                    "close": 5307
+                    "close": 82
                 },
                 {
                     "date": "01-Feb-18",
-                    "close": 4182
+                    "close": 107
                 },
                 {
                     "date": "01-Mar-18",
-                    "close": 6578
+                    "close": 107
                 },
                 {
                     "date": "01-Apr-18",
-                    "close": 2334
+                    "close": 74
                 },
                 {
                     "date": "01-May-18",
-                    "close": 2205
+                    "close": 83
                 },
                 {
                     "date": "01-Jun-18",
-                    "close": 1461
+                    "close": 67
                 },
                 {
                     "date": "01-Jul-18",
-                    "close": 1201
+                    "close": 73
                 },
                 {
                     "date": "01-Aug-18",
-                    "close": 1091
+                    "close": 60
                 },
                 {
                     "date": "01-Sep-18",
-                    "close": 1326
+                    "close": 52
                 },
                 {
                     "date": "01-Oct-18",
-                    "close": 5882
+                    "close": 63
                 },
                 {
                     "date": "01-Nov-18",
-                    "close": 4445
+                    "close": 63
                 },
                 {
                     "date": "01-Dec-18",
-                    "close": 3086
+                    "close": 42
                 },
                 {
                     "date": "01-Jan-19",
-                    "close": 1321
+                    "close": 59
+                },
+                {
+                    "date": "01-Feb-19",
+                    "close": 5
                 }
             ]
-        }
-    ],
-    registrationTimelineDivisions: [{
+        },
+        {
+            "code": "CCB",
+            "data": [
+                {
+                    "date": "01-Mar-14",
+                    "close": 0
+                },
+                {
+                    "date": "01-Apr-14",
+                    "close": 0
+                },
+                {
+                    "date": "01-May-14",
+                    "close": 0
+                },
+                {
+                    "date": "01-Jun-14",
+                    "close": 0
+                },
+                {
+                    "date": "01-Jul-14",
+                    "close": 0
+                },
+                {
+                    "date": "01-Aug-14",
+                    "close": 0
+                },
+                {
+                    "date": "01-Sep-14",
+                    "close": 0
+                },
+                {
+                    "date": "01-Oct-14",
+                    "close": 0
+                },
+                {
+                    "date": "01-Nov-14",
+                    "close": 0
+                },
+                {
+                    "date": "01-Dec-14",
+                    "close": 0
+                },
+                {
+                    "date": "01-Jan-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-Feb-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-Mar-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-Apr-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-May-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-Jun-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-Jul-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-Aug-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-Sep-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-Oct-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-Nov-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-Dec-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-Jan-16",
+                    "close": 0
+                },
+                {
+                    "date": "01-Feb-16",
+                    "close": 0
+                },
+                {
+                    "date": "01-Mar-16",
+                    "close": 0
+                },
+                {
+                    "date": "01-Apr-16",
+                    "close": 0
+                },
+                {
+                    "date": "01-May-16",
+                    "close": 0
+                },
+                {
+                    "date": "01-Jun-16",
+                    "close": 0
+                },
+                {
+                    "date": "01-Jul-16",
+                    "close": 0
+                },
+                {
+                    "date": "01-Aug-16",
+                    "close": 0
+                },
+                {
+                    "date": "01-Sep-16",
+                    "close": 0
+                },
+                {
+                    "date": "01-Oct-16",
+                    "close": 0
+                },
+                {
+                    "date": "01-Nov-16",
+                    "close": 0
+                },
+                {
+                    "date": "01-Dec-16",
+                    "close": 0
+                },
+                {
+                    "date": "01-Jan-17",
+                    "close": 0
+                },
+                {
+                    "date": "01-Feb-17",
+                    "close": 0
+                },
+                {
+                    "date": "01-Mar-17",
+                    "close": 0
+                },
+                {
+                    "date": "01-Apr-17",
+                    "close": 4
+                },
+                {
+                    "date": "01-May-17",
+                    "close": 0
+                },
+                {
+                    "date": "01-Jun-17",
+                    "close": 0
+                },
+                {
+                    "date": "01-Jul-17",
+                    "close": 4
+                },
+                {
+                    "date": "01-Aug-17",
+                    "close": 0
+                },
+                {
+                    "date": "01-Sep-17",
+                    "close": 159
+                },
+                {
+                    "date": "01-Oct-17",
+                    "close": 1965
+                },
+                {
+                    "date": "01-Nov-17",
+                    "close": 2229
+                },
+                {
+                    "date": "01-Dec-17",
+                    "close": 224
+                },
+                {
+                    "date": "01-Jan-18",
+                    "close": 139
+                },
+                {
+                    "date": "01-Feb-18",
+                    "close": 790
+                },
+                {
+                    "date": "01-Mar-18",
+                    "close": 1257
+                },
+                {
+                    "date": "01-Apr-18",
+                    "close": 603
+                },
+                {
+                    "date": "01-May-18",
+                    "close": 373
+                },
+                {
+                    "date": "01-Jun-18",
+                    "close": 292
+                },
+                {
+                    "date": "01-Jul-18",
+                    "close": 223
+                },
+                {
+                    "date": "01-Aug-18",
+                    "close": 263
+                },
+                {
+                    "date": "01-Sep-18",
+                    "close": 252
+                },
+                {
+                    "date": "01-Oct-18",
+                    "close": 255
+                },
+                {
+                    "date": "01-Nov-18",
+                    "close": 159
+                },
+                {
+                    "date": "01-Dec-18",
+                    "close": 108
+                },
+                {
+                    "date": "01-Jan-19",
+                    "close": 163
+                },
+                {
+                    "date": "01-Feb-19",
+                    "close": 15
+                }
+            ]
+        },
+        {
+            "code": "CHA",
+            "data": [
+                {
+                    "date": "01-Mar-14",
+                    "close": 0
+                },
+                {
+                    "date": "01-Apr-14",
+                    "close": 0
+                },
+                {
+                    "date": "01-May-14",
+                    "close": 0
+                },
+                {
+                    "date": "01-Jun-14",
+                    "close": 0
+                },
+                {
+                    "date": "01-Jul-14",
+                    "close": 0
+                },
+                {
+                    "date": "01-Aug-14",
+                    "close": 0
+                },
+                {
+                    "date": "01-Sep-14",
+                    "close": 0
+                },
+                {
+                    "date": "01-Oct-14",
+                    "close": 0
+                },
+                {
+                    "date": "01-Nov-14",
+                    "close": 0
+                },
+                {
+                    "date": "01-Dec-14",
+                    "close": 0
+                },
+                {
+                    "date": "01-Jan-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-Feb-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-Mar-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-Apr-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-May-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-Jun-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-Jul-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-Aug-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-Sep-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-Oct-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-Nov-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-Dec-15",
+                    "close": 0
+                },
+                {
+                    "date": "01-Jan-16",
+                    "close": 0
+                },
+                {
+                    "date": "01-Feb-16",
+                    "close": 0
+                },
+                {
+                    "date": "01-Mar-16",
+                    "close": 0
+                },
+                {
+                    "date": "01-Apr-16",
+                    "close": 0
+                },
+                {
+                    "date": "01-May-16",
+                    "close": 0
+                },
+                {
+                    "date": "01-Jun-16",
+                    "close": 3
+                },
+                {
+                    "date": "01-Jul-16",
+                    "close": 151
+                },
+                {
+                    "date": "01-Aug-16",
+                    "close": 3380
+                },
+                {
+                    "date": "01-Sep-16",
+                    "close": 3627
+                },
+                {
+                    "date": "01-Oct-16",
+                    "close": 515
+                },
+                {
+                    "date": "01-Nov-16",
+                    "close": 243
+                },
+                {
+                    "date": "01-Dec-16",
+                    "close": 187
+                },
+                {
+                    "date": "01-Jan-17",
+                    "close": 214
+                },
+                {
+                    "date": "01-Feb-17",
+                    "close": 214
+                },
+                {
+                    "date": "01-Mar-17",
+                    "close": 221
+                },
+                {
+                    "date": "01-Apr-17",
+                    "close": 186
+                },
+                {
+                    "date": "01-May-17",
+                    "close": 225
+                },
+                {
+                    "date": "01-Jun-17",
+                    "close": 327
+                },
+                {
+                    "date": "01-Jul-17",
+                    "close": 390
+                },
+                {
+                    "date": "01-Aug-17",
+                    "close": 1542
+                },
+                {
+                    "date": "01-Sep-17",
+                    "close": 1616
+                },
+                {
+                    "date": "01-Oct-17",
+                    "close": 436
+                },
+                {
+                    "date": "01-Nov-17",
+                    "close": 248
+                },
+                {
+                    "date": "01-Dec-17",
+                    "close": 190
+                },
+                {
+                    "date": "01-Jan-18",
+                    "close": 5
+                },
+                {
+                    "date": "01-Feb-18",
+                    "close": 0
+                },
+                {
+                    "date": "01-Mar-18",
+                    "close": 0
+                },
+                {
+                    "date": "01-Apr-18",
+                    "close": 6
+                },
+                {
+                    "date": "01-May-18",
+                    "close": 0
+                },
+                {
+                    "date": "01-Jun-18",
+                    "close": 0
+                },
+                {
+                    "date": "01-Jul-18",
+                    "close": 3
+                },
+                {
+                    "date": "01-Aug-18",
+                    "close": 1
+                },
+                {
+                    "date": "01-Sep-18",
+                    "close": 2
+                },
+                {
+                    "date": "01-Oct-18",
+                    "close": 2
+                },
+                {
+                    "date": "01-Nov-18",
+                    "close": 1
+                },
+                {
+                    "date": "01-Dec-18",
+                    "close": 1
+                },
+                {
+                    "date": "01-Jan-19",
+                    "close": 0
+                },
+                {
+                    "date": "01-Feb-19",
+                    "close": 0
+                }
+            ]
+        },
+        {
             "code": "EDU",
-            "data": [{
+            "data": [
+                {
                     "date": "01-Mar-14",
                     "close": 0
                 },
@@ -2600,7 +2028,7 @@ var moocsRegistrationTimeline = {
                 },
                 {
                     "date": "01-Apr-18",
-                    "close": 3395
+                    "close": 3403
                 },
                 {
                     "date": "01-May-18",
@@ -2612,7 +2040,7 @@ var moocsRegistrationTimeline = {
                 },
                 {
                     "date": "01-Jul-18",
-                    "close": 1350
+                    "close": 1351
                 },
                 {
                     "date": "01-Aug-18",
@@ -2624,25 +2052,30 @@ var moocsRegistrationTimeline = {
                 },
                 {
                     "date": "01-Oct-18",
-                    "close": 2048
+                    "close": 2054
                 },
                 {
                     "date": "01-Nov-18",
-                    "close": 972
+                    "close": 976
                 },
                 {
                     "date": "01-Dec-18",
-                    "close": 322
+                    "close": 406
                 },
                 {
                     "date": "01-Jan-19",
-                    "close": 50
+                    "close": 3343
+                },
+                {
+                    "date": "01-Feb-19",
+                    "close": 516
                 }
             ]
         },
         {
             "code": "FMM",
-            "data": [{
+            "data": [
+                {
                     "date": "01-Mar-14",
                     "close": 0
                 },
@@ -2868,21 +2301,26 @@ var moocsRegistrationTimeline = {
                 },
                 {
                     "date": "01-Nov-18",
-                    "close": 468
+                    "close": 472
                 },
                 {
                     "date": "01-Dec-18",
-                    "close": 257
+                    "close": 261
                 },
                 {
                     "date": "01-Jan-19",
-                    "close": 124
+                    "close": 525
+                },
+                {
+                    "date": "01-Feb-19",
+                    "close": 52
                 }
             ]
         },
         {
             "code": "HUD",
-            "data": [{
+            "data": [
+                {
                     "date": "01-Mar-14",
                     "close": 0
                 },
@@ -3116,13 +2554,18 @@ var moocsRegistrationTimeline = {
                 },
                 {
                     "date": "01-Jan-19",
-                    "close": 74
+                    "close": 133
+                },
+                {
+                    "date": "01-Feb-19",
+                    "close": 13
                 }
             ]
         },
         {
             "code": "ICS",
-            "data": [{
+            "data": [
+                {
                     "date": "01-Mar-14",
                     "close": 980
                 },
@@ -3356,13 +2799,18 @@ var moocsRegistrationTimeline = {
                 },
                 {
                     "date": "01-Jan-19",
-                    "close": 1399
+                    "close": 3270
+                },
+                {
+                    "date": "01-Feb-19",
+                    "close": 712
                 }
             ]
         },
         {
             "code": "IFD",
-            "data": [{
+            "data": [
+                {
                     "date": "01-Mar-14",
                     "close": 0
                 },
@@ -3588,21 +3036,26 @@ var moocsRegistrationTimeline = {
                 },
                 {
                     "date": "01-Nov-18",
-                    "close": 1180
+                    "close": 1186
                 },
                 {
                     "date": "01-Dec-18",
-                    "close": 519
+                    "close": 523
                 },
                 {
                     "date": "01-Jan-19",
-                    "close": 92
+                    "close": 1975
+                },
+                {
+                    "date": "01-Feb-19",
+                    "close": 170
                 }
             ]
         },
         {
             "code": "INE",
-            "data": [{
+            "data": [
+                {
                     "date": "01-Mar-14",
                     "close": 0
                 },
@@ -3836,13 +3289,18 @@ var moocsRegistrationTimeline = {
                 },
                 {
                     "date": "01-Jan-19",
-                    "close": 100
+                    "close": 132
+                },
+                {
+                    "date": "01-Feb-19",
+                    "close": 5
                 }
             ]
         },
         {
             "code": "INT",
-            "data": [{
+            "data": [
+                {
                     "date": "01-Mar-14",
                     "close": 0
                 },
@@ -4076,13 +3534,18 @@ var moocsRegistrationTimeline = {
                 },
                 {
                     "date": "01-Jan-19",
-                    "close": 138
+                    "close": 207
+                },
+                {
+                    "date": "01-Feb-19",
+                    "close": 12
                 }
             ]
         },
         {
             "code": "KLD",
-            "data": [{
+            "data": [
+                {
                     "date": "01-Mar-14",
                     "close": 0
                 },
@@ -4304,25 +3767,30 @@ var moocsRegistrationTimeline = {
                 },
                 {
                     "date": "01-Oct-18",
-                    "close": 10199
+                    "close": 10211
                 },
                 {
                     "date": "01-Nov-18",
-                    "close": 8319
+                    "close": 8395
                 },
                 {
                     "date": "01-Dec-18",
-                    "close": 8608
+                    "close": 9263
                 },
                 {
                     "date": "01-Jan-19",
-                    "close": 3500
+                    "close": 9460
+                },
+                {
+                    "date": "01-Feb-19",
+                    "close": 1012
                 }
             ]
         },
         {
             "code": "LMK",
-            "data": [{
+            "data": [
+                {
                     "date": "01-Mar-14",
                     "close": 381
                 },
@@ -4552,17 +4020,22 @@ var moocsRegistrationTimeline = {
                 },
                 {
                     "date": "01-Dec-18",
-                    "close": 91
+                    "close": 153
                 },
                 {
                     "date": "01-Jan-19",
-                    "close": 31
+                    "close": 552
+                },
+                {
+                    "date": "01-Feb-19",
+                    "close": 52
                 }
             ]
         },
         {
             "code": "MIF",
-            "data": [{
+            "data": [
+                {
                     "date": "01-Mar-14",
                     "close": 0
                 },
@@ -4797,12 +4270,17 @@ var moocsRegistrationTimeline = {
                 {
                     "date": "01-Jan-19",
                     "close": 73
+                },
+                {
+                    "date": "01-Feb-19",
+                    "close": 0
                 }
             ]
         },
         {
             "code": "PCY",
-            "data": [{
+            "data": [
+                {
                     "date": "01-Mar-14",
                     "close": 0
                 },
@@ -5028,21 +4506,26 @@ var moocsRegistrationTimeline = {
                 },
                 {
                     "date": "01-Nov-18",
-                    "close": 1180
+                    "close": 1186
                 },
                 {
                     "date": "01-Dec-18",
-                    "close": 519
+                    "close": 523
                 },
                 {
                     "date": "01-Jan-19",
-                    "close": 92
+                    "close": 1975
+                },
+                {
+                    "date": "01-Feb-19",
+                    "close": 170
                 }
             ]
         },
         {
             "code": "RES",
-            "data": [{
+            "data": [
+                {
                     "date": "01-Mar-14",
                     "close": 0
                 },
@@ -5272,17 +4755,22 @@ var moocsRegistrationTimeline = {
                 },
                 {
                     "date": "01-Dec-18",
-                    "close": 241
+                    "close": 303
                 },
                 {
                     "date": "01-Jan-19",
-                    "close": 105
+                    "close": 676
+                },
+                {
+                    "date": "01-Feb-19",
+                    "close": 72
                 }
             ]
         },
         {
             "code": "RND",
-            "data": [{
+            "data": [
+                {
                     "date": "01-Mar-14",
                     "close": 0
                 },
@@ -5516,13 +5004,18 @@ var moocsRegistrationTimeline = {
                 },
                 {
                     "date": "01-Jan-19",
-                    "close": 76
+                    "close": 128
+                },
+                {
+                    "date": "01-Feb-19",
+                    "close": 11
                 }
             ]
         },
         {
             "code": "SPH",
-            "data": [{
+            "data": [
+                {
                     "date": "01-Mar-14",
                     "close": 0
                 },
@@ -5752,17 +5245,22 @@ var moocsRegistrationTimeline = {
                 },
                 {
                     "date": "01-Dec-18",
-                    "close": 283
+                    "close": 345
                 },
                 {
                     "date": "01-Jan-19",
-                    "close": 182
+                    "close": 749
+                },
+                {
+                    "date": "01-Feb-19",
+                    "close": 59
                 }
             ]
         },
         {
             "code": "TSP",
-            "data": [{
+            "data": [
+                {
                     "date": "01-Mar-14",
                     "close": 0
                 },
@@ -5992,17 +5490,22 @@ var moocsRegistrationTimeline = {
                 },
                 {
                     "date": "01-Dec-18",
-                    "close": 87
+                    "close": 98
                 },
                 {
                     "date": "01-Jan-19",
-                    "close": 23
+                    "close": 317
+                },
+                {
+                    "date": "01-Feb-19",
+                    "close": 25
                 }
             ]
         },
         {
             "code": "VPC",
-            "data": [{
+            "data": [
+                {
                     "date": "01-Mar-14",
                     "close": 0
                 },
@@ -6072,177 +5575,182 @@ var moocsRegistrationTimeline = {
                 },
                 {
                     "date": "01-Aug-15",
-                    "close": 14
+                    "close": 0
                 },
                 {
                     "date": "01-Sep-15",
-                    "close": 1
+                    "close": 0
                 },
                 {
                     "date": "01-Oct-15",
-                    "close": 15
+                    "close": 0
                 },
                 {
                     "date": "01-Nov-15",
-                    "close": 1574
+                    "close": 0
                 },
                 {
                     "date": "01-Dec-15",
-                    "close": 139
+                    "close": 0
                 },
                 {
                     "date": "01-Jan-16",
-                    "close": 211
+                    "close": 0
                 },
                 {
                     "date": "01-Feb-16",
-                    "close": 205
+                    "close": 0
                 },
                 {
                     "date": "01-Mar-16",
-                    "close": 133
+                    "close": 0
                 },
                 {
                     "date": "01-Apr-16",
-                    "close": 76
+                    "close": 0
                 },
                 {
                     "date": "01-May-16",
-                    "close": 161
+                    "close": 0
                 },
                 {
                     "date": "01-Jun-16",
-                    "close": 81
+                    "close": 0
                 },
                 {
                     "date": "01-Jul-16",
-                    "close": 198
+                    "close": 0
                 },
                 {
                     "date": "01-Aug-16",
-                    "close": 3483
+                    "close": 0
                 },
                 {
                     "date": "01-Sep-16",
-                    "close": 3732
+                    "close": 0
                 },
                 {
                     "date": "01-Oct-16",
-                    "close": 642
+                    "close": 0
                 },
                 {
                     "date": "01-Nov-16",
-                    "close": 363
+                    "close": 0
                 },
                 {
                     "date": "01-Dec-16",
-                    "close": 271
+                    "close": 0
                 },
                 {
                     "date": "01-Jan-17",
-                    "close": 318
+                    "close": 0
                 },
                 {
                     "date": "01-Feb-17",
-                    "close": 281
+                    "close": 0
                 },
                 {
                     "date": "01-Mar-17",
-                    "close": 322
+                    "close": 0
                 },
                 {
                     "date": "01-Apr-17",
-                    "close": 876
+                    "close": 0
                 },
                 {
                     "date": "01-May-17",
-                    "close": 1095
+                    "close": 0
                 },
                 {
                     "date": "01-Jun-17",
-                    "close": 1280
+                    "close": 0
                 },
                 {
                     "date": "01-Jul-17",
-                    "close": 3338
+                    "close": 4
                 },
                 {
                     "date": "01-Aug-17",
-                    "close": 3759
+                    "close": 0
                 },
                 {
                     "date": "01-Sep-17",
-                    "close": 7244
+                    "close": 1818
                 },
                 {
                     "date": "01-Oct-17",
-                    "close": 23332
+                    "close": 15683
                 },
                 {
                     "date": "01-Nov-17",
-                    "close": 8277
+                    "close": 5181
                 },
                 {
                     "date": "01-Dec-17",
-                    "close": 5251
+                    "close": 4552
                 },
                 {
                     "date": "01-Jan-18",
-                    "close": 5307
+                    "close": 4729
                 },
                 {
                     "date": "01-Feb-18",
-                    "close": 4182
+                    "close": 1836
                 },
                 {
                     "date": "01-Mar-18",
-                    "close": 6578
+                    "close": 878
                 },
                 {
                     "date": "01-Apr-18",
-                    "close": 2334
+                    "close": 1013
                 },
                 {
                     "date": "01-May-18",
-                    "close": 2205
+                    "close": 602
                 },
                 {
                     "date": "01-Jun-18",
-                    "close": 1461
+                    "close": 514
                 },
                 {
                     "date": "01-Jul-18",
-                    "close": 1201
+                    "close": 489
                 },
                 {
                     "date": "01-Aug-18",
-                    "close": 1091
+                    "close": 437
                 },
                 {
                     "date": "01-Sep-18",
-                    "close": 1326
+                    "close": 756
                 },
                 {
                     "date": "01-Oct-18",
-                    "close": 5882
+                    "close": 5356
                 },
                 {
                     "date": "01-Nov-18",
-                    "close": 4445
+                    "close": 3622
                 },
                 {
                     "date": "01-Dec-18",
-                    "close": 3086
+                    "close": 2910
                 },
                 {
                     "date": "01-Jan-19",
-                    "close": 1321
+                    "close": 1438
+                },
+                {
+                    "date": "01-Feb-19",
+                    "close": 39
                 }
             ]
         },
         {
             "code": "WSA",
-            "data": [{
+            "data": [
+                {
                     "date": "01-Mar-14",
                     "close": 0
                 },
@@ -6476,242 +5984,255 @@ var moocsRegistrationTimeline = {
                 },
                 {
                     "date": "01-Jan-19",
-                    "close": 55
+                    "close": 83
+                },
+                {
+                    "date": "01-Feb-19",
+                    "close": 0
                 }
             ]
         }
     ],
-    registrationTimelineIDB: [{
-            "date": "10-Apr-14",
-            "close": 947
-        },
+    registrationTimelineIDB: [
         {
-            "date": "30-Apr-15",
-            "close": 8593
-        },
-        {
-            "date": "30-Apr-16",
-            "close": 19965
-        },
-        {
-            "date": "30-Apr-17",
-            "close": 20540
-        },
-        {
-            "date": "30-Apr-18",
-            "close": 23378
-        },
-        {
-            "date": "30-Aug-14",
-            "close": 957
-        },
-        {
-            "date": "30-Aug-15",
-            "close": 9561
-        },
-        {
-            "date": "30-Aug-16",
-            "close": 18983
-        },
-        {
-            "date": "30-Aug-17",
-            "close": 39442
-        },
-        {
-            "date": "30-Aug-18",
-            "close": 26701
-        },
-        {
-            "date": "30-Dec-14",
-            "close": 858
-        },
-        {
-            "date": "30-Dec-15",
-            "close": 3060
-        },
-        {
-            "date": "30-Dec-16",
-            "close": 3096
-        },
-        {
-            "date": "30-Dec-17",
-            "close": 11717
-        },
-        {
-            "date": "30-Dec-18",
-            "close": 1070
-        },
-        {
-            "date": "30-Feb-15",
-            "close": 4721
-        },
-        {
-            "date": "30-Feb-16",
-            "close": 20659
-        },
-        {
-            "date": "30-Feb-17",
-            "close": 23869
-        },
-        {
-            "date": "30-Feb-18",
-            "close": 34298
-        },
-        {
-            "date": "30-Jan-15",
-            "close": 1054
-        },
-        {
-            "date": "30-Jan-16",
-            "close": 4989
-        },
-        {
-            "date": "30-Jan-18",
-            "close": 18382
-        },
-        {
-            "date": "30-Jul-14",
-            "close": 724
-        },
-        {
-            "date": "30-Jul-15",
-            "close": 40418
-        },
-        {
-            "date": "30-Jul-16",
-            "close": 12324
-        },
-        {
-            "date": "30-Jul-17",
-            "close": 30087
-        },
-        {
-            "date": "30-Jul-18",
-            "close": 18140
-        },
-        {
-            "date": "30-Jun-14",
-            "close": 767
-        },
-        {
-            "date": "30-Jun-15",
-            "close": 27761
-        },
-        {
-            "date": "30-Jun-16",
-            "close": 30108
-        },
-        {
-            "date": "30-Jun-17",
-            "close": 27596
-        },
-        {
-            "date": "30-Jun-17",
-            "close": 9688
-        },
-        {
-            "date": "30-Jun-18",
-            "close": 19028
-        },
-        {
-            "date": "30-Mar-14",
+            "date": "01-Mar-14",
             "close": 1361
         },
         {
-            "date": "30-Mar-15",
-            "close": 12666
+            "date": "01-Apr-14",
+            "close": 947
         },
         {
-            "date": "30-Mar-16",
-            "close": 26089
-        },
-        {
-            "date": "30-Mar-17",
-            "close": 19450
-        },
-        {
-            "date": "30-Mar-18",
-            "close": 45256
-        },
-        {
-            "date": "30-May-14",
+            "date": "01-May-14",
             "close": 948
         },
         {
-            "date": "30-May-15",
-            "close": 12316
+            "date": "01-Jun-14",
+            "close": 767
         },
         {
-            "date": "30-May-16",
-            "close": 27053
+            "date": "01-Jul-14",
+            "close": 724
         },
         {
-            "date": "30-May-17",
-            "close": 43992
+            "date": "01-Aug-14",
+            "close": 957
         },
         {
-            "date": "30-May-18",
-            "close": 16712
-        },
-        {
-            "date": "30-Nov-14",
-            "close": 847
-        },
-        {
-            "date": "30-Nov-15",
-            "close": 17957
-        },
-        {
-            "date": "30-Nov-16",
-            "close": 4550
-        },
-        {
-            "date": "30-Nov-17",
-            "close": 28600
-        },
-        {
-            "date": "30-Nov-18",
-            "close": 6551
-        },
-        {
-            "date": "30-Oct-14",
-            "close": 1317
-        },
-        {
-            "date": "30-Oct-15",
-            "close": 38966
-        },
-        {
-            "date": "30-Oct-16",
-            "close": 23267
-        },
-        {
-            "date": "30-Oct-17",
-            "close": 51078
-        },
-        {
-            "date": "30-Oct-18",
-            "close": 12258
-        },
-        {
-            "date": "30-Sep-14",
+            "date": "01-Sep-14",
             "close": 5189
         },
         {
-            "date": "30-Sep-15",
-            "close": 23739
+            "date": "01-Oct-14",
+            "close": 1317
         },
         {
-            "date": "30-Sep-16",
-            "close": 25738
+            "date": "01-Nov-14",
+            "close": 847
         },
         {
-            "date": "30-Sep-17",
-            "close": 48305
+            "date": "01-Dec-14",
+            "close": 858
         },
         {
-            "date": "30-Sep-18",
-            "close": 25030
+            "date": "01-Jan-15",
+            "close": 1054
+        },
+        {
+            "date": "01-Feb-15",
+            "close": 4721
+        },
+        {
+            "date": "01-Mar-15",
+            "close": 12666
+        },
+        {
+            "date": "01-Apr-15",
+            "close": 8593
+        },
+        {
+            "date": "01-May-15",
+            "close": 15612
+        },
+        {
+            "date": "01-Jun-15",
+            "close": 27277
+        },
+        {
+            "date": "01-Jul-15",
+            "close": 40419
+        },
+        {
+            "date": "01-Aug-15",
+            "close": 9257
+        },
+        {
+            "date": "01-Sep-15",
+            "close": 18969
+        },
+        {
+            "date": "01-Oct-15",
+            "close": 33489
+        },
+        {
+            "date": "01-Nov-15",
+            "close": 14246
+        },
+        {
+            "date": "01-Dec-15",
+            "close": 2764
+        },
+        {
+            "date": "01-Jan-16",
+            "close": 4587
+        },
+        {
+            "date": "01-Feb-16",
+            "close": 20248
+        },
+        {
+            "date": "01-Mar-16",
+            "close": 31970
+        },
+        {
+            "date": "01-Apr-16",
+            "close": 25422
+        },
+        {
+            "date": "01-May-16",
+            "close": 23784
+        },
+        {
+            "date": "01-Jun-16",
+            "close": 26541
+        },
+        {
+            "date": "01-Jul-16",
+            "close": 12382
+        },
+        {
+            "date": "01-Aug-16",
+            "close": 17489
+        },
+        {
+            "date": "01-Sep-16",
+            "close": 27057
+        },
+        {
+            "date": "01-Oct-16",
+            "close": 26832
+        },
+        {
+            "date": "01-Nov-16",
+            "close": 4586
+        },
+        {
+            "date": "01-Dec-16",
+            "close": 2990
+        },
+        {
+            "date": "01-Jan-17",
+            "close": 9868
+        },
+        {
+            "date": "01-Feb-17",
+            "close": 28810
+        },
+        {
+            "date": "01-Mar-17",
+            "close": 23560
+        },
+        {
+            "date": "01-Apr-17",
+            "close": 19032
+        },
+        {
+            "date": "01-May-17",
+            "close": 37346
+        },
+        {
+            "date": "01-Jun-17",
+            "close": 27668
+        },
+        {
+            "date": "01-Jul-17",
+            "close": 24575
+        },
+        {
+            "date": "01-Aug-17",
+            "close": 23039
+        },
+        {
+            "date": "01-Sep-17",
+            "close": 33598
+        },
+        {
+            "date": "01-Oct-17",
+            "close": 41077
+        },
+        {
+            "date": "01-Nov-17",
+            "close": 25813
+        },
+        {
+            "date": "01-Dec-17",
+            "close": 11071
+        },
+        {
+            "date": "01-Jan-18",
+            "close": 18477
+        },
+        {
+            "date": "01-Feb-18",
+            "close": 35649
+        },
+        {
+            "date": "01-Mar-18",
+            "close": 40750
+        },
+        {
+            "date": "01-Apr-18",
+            "close": 23238
+        },
+        {
+            "date": "01-May-18",
+            "close": 16307
+        },
+        {
+            "date": "01-Jun-18",
+            "close": 17619
+        },
+        {
+            "date": "01-Jul-18",
+            "close": 19920
+        },
+        {
+            "date": "01-Aug-18",
+            "close": 33024
+        },
+        {
+            "date": "01-Sep-18",
+            "close": 26216
+        },
+        {
+            "date": "01-Oct-18",
+            "close": 17765
+        },
+        {
+            "date": "01-Nov-18",
+            "close": 13362
+        },
+        {
+            "date": "01-Dec-18",
+            "close": 11298
+        },
+        {
+            "date": "01-Jan-19",
+            "close": 16026
+        },
+        {
+            "date": "01-Feb-19",
+            "close": 1785
         }
     ]
 };
