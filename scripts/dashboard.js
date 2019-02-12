@@ -516,7 +516,32 @@ $(window).on('load', function () {
     initSuscribers();
 });
 
+function getItems() {
+
+    $.ajax({
+ 
+        async: true, // Async by default is set to “true” load the script asynchronously
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/SP.UserProfiles.PeopleManager/GetMyProperties", // URL to fetch data from sharepoint list
+        method: "GET", //Specifies the operation to fetch the list item
+ 
+        headers: {
+            "accept": "application/json;odata=verbose", //It defines the Data format
+            "content-type": "application/json;odata=verbose" //It defines the content type as JSON
+        },
+        success: function (data) {
+            //data = data.d.results;
+            //Iterate the data
+            console.log(data);
+        },
+        error: function (error) {
+            console.log(JSON.stringify(error));
+ 
+        }
+    });
+ }
+
 $(document).ready(function () {
+    getItems();
     var isIE = /*@cc_on!@*/ false || !!document.documentMode;
     if (isIE == true) {
         $(".body").css("width", screen.width + "px");

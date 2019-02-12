@@ -1,5 +1,78 @@
 var moocsTopArrays = {
-    departmentsAllTime: [{
+    departmentsAllTime: [
+        {
+            "code": "CCB",
+            "Rank": 1,
+            "name": "Data for Effective Policy Making (1ed.)",
+            "Departament": "VPS/KIC/KLD/ISU, VPC/CCB",
+            "startDate": "10/5/2017",
+            "value": 4649
+        },
+        {
+            "code": "CCB",
+            "Rank": 2,
+            "name": "Data for Effective Policy Making (2ed.)",
+            "Departament": "VPS/KIC/KLD/ISU, VPC/CCB",
+            "startDate": "3/15/2018",
+            "value": 4496
+        },
+        {
+            "code": "CCB",
+            "Rank": 3,
+            "name": "Data for Effective Policy Making (3ed.)",
+            "Departament": "VPS/KIC/KLD/ISU, VPC/CCB",
+            "startDate": "3/14/2019",
+            "value": 332
+        },
+        {
+            "code": "CID",
+            "Rank": 1,
+            "name": "Gestion de projets de développement (1ed.)",
+            "Departament": "VPS/KIC/KLD/SDI, VPC/CID/CHA",
+            "startDate": "9/6/2016",
+            "value": 9092
+        },
+        {
+            "code": "CID",
+            "Rank": 2,
+            "name": "Gestion de projets de développement (2ed.)",
+            "Departament": "VPS/KIC/KLD/SDI, VPC/CID/CHA",
+            "startDate": "9/7/2017",
+            "value": 4844
+        },
+        {
+            "code": "CSC",
+            "Rank": 1,
+            "name": "Gestão de Projetos de Desenvolvimento (1ed.)",
+            "Departament": "VPS/KIC/KLD/SDI, VPC/CSC/CBD",
+            "startDate": "10/19/2017",
+            "value": 10243
+        },
+        {
+            "code": "CSC",
+            "Rank": 2,
+            "name": "Gestão de Projetos de Desenvolvimento (2ed.)",
+            "Departament": "VPS/KIC/KLD/SDI, VPC/CSC/CBD",
+            "startDate": "3/29/2018",
+            "value": 9947
+        },
+        {
+            "code": "CSC",
+            "Rank": 3,
+            "name": "Parcerias Público Privadas para o Desenvolvimento: Implementando Soluções no Brasil (2ed.)",
+            "Departament": "VPS/INE, VPS/IFD/FMM, VPS/SCL/SPH, VPC/CSC/CBR",
+            "startDate": "8/3/2017",
+            "value": 8884
+        },
+        {
+            "code": "CSC",
+            "Rank": 4,
+            "name": "Parcerias Público Privadas para o Desenvolvimento: Implementando Soluções no Brasil (1ed.)",
+            "Departament": "VPS/INE, VPS/IFD/FMM, VPS/SCL/SPH, VPC/CSC/CBR",
+            "startDate": "11/17/2015",
+            "value": 3498
+        },
+        {
             "code": "CSD",
             "Rank": 1,
             "name": "Liderando el Desarrollo Sostenible de las Ciudades (2ed.)",
@@ -77,7 +150,7 @@ var moocsTopArrays = {
             "name": "Gestión por resultados para gobiernos subnacionales (3ed.)",
             "Departament": "VPS/IFD/ICS",
             "startDate": "6/7/2016",
-            "value": 12066
+            "value": 12067
         },
         {
             "code": "INE",
@@ -85,7 +158,7 @@ var moocsTopArrays = {
             "name": "Agua en América Latina: Abundancia en medio de la escasez mundial (1ed.)",
             "Departament": "VPS/INE/WSA, Universidad de los Andes",
             "startDate": "9/29/2015",
-            "value": 14631
+            "value": 14632
         },
         {
             "code": "INE",
@@ -109,7 +182,7 @@ var moocsTopArrays = {
             "name": "Parcerias Público Privadas para o Desenvolvimento: Implementando Soluções no Brasil (2ed.)",
             "Departament": "VPS/INE, VPS/IFD/FMM, VPS/SCL/SPH, VPC/CSC/CBR",
             "startDate": "8/3/2017",
-            "value": 8847
+            "value": 8884
         },
         {
             "code": "INE",
@@ -133,7 +206,7 @@ var moocsTopArrays = {
             "name": "Nuevas tendencias en tratados comerciales en América Latina (3ed.)",
             "Departament": "VPS/INT",
             "startDate": "8/16/2018",
-            "value": 11970
+            "value": 12019
         },
         {
             "code": "INT",
@@ -141,7 +214,7 @@ var moocsTopArrays = {
             "name": "Nuevas tendencias en tratados comerciales en América Latina (2ed.)",
             "Departament": "VPS/INT",
             "startDate": "3/14/2017",
-            "value": 11176
+            "value": 11177
         },
         {
             "code": "INT",
@@ -157,7 +230,7 @@ var moocsTopArrays = {
             "name": "New Trends in Trade Agreements in Latin America & the Caribbean (1ed.)",
             "Departament": "VPS/INT",
             "startDate": "10/25/2016",
-            "value": 4275
+            "value": 4282
         },
         {
             "code": "KIC",
@@ -173,7 +246,7 @@ var moocsTopArrays = {
             "name": "Gestión de Proyectos de Desarrollo (7ed.)",
             "Departament": "VPS/KIC/KLD/SDI",
             "startDate": "2/22/2018",
-            "value": 45560
+            "value": 45688
         },
         {
             "code": "KIC",
@@ -189,7 +262,7 @@ var moocsTopArrays = {
             "name": "Gestión de Proyectos de Desarrollo (5ed.)",
             "Departament": "VPS/KIC/KLD/SDI",
             "startDate": "7/6/2017",
-            "value": 39272
+            "value": 39380
         },
         {
             "code": "KIC",
@@ -261,7 +334,15 @@ var moocsTopArrays = {
             "name": "Desafios e oportunidades na economia digital (1ed.)",
             "Departament": "VPS/IFD/IFD, PCY",
             "startDate": "5/20/2018",
-            "value": 2280
+            "value": 2301
+        },
+        {
+            "code": "PRE",
+            "Rank": 4,
+            "name": "Desafíos y oportunidades en la economía digital (3ed.)",
+            "Departament": "VPS/IFD/IFD, PCY",
+            "startDate": "5/20/2018",
+            "value": 2042
         },
         {
             "code": "RES",
@@ -285,7 +366,7 @@ var moocsTopArrays = {
             "name": "Realidad Macroeconómica Latinoamericana (4ed.)",
             "Departament": "VPS/RES",
             "startDate": "4/12/2018",
-            "value": 8672
+            "value": 8756
         },
         {
             "code": "RES",
@@ -293,7 +374,7 @@ var moocsTopArrays = {
             "name": "La realidad del desarollo social latinoamericano (1ed.)",
             "Departament": "VPS/KNL/KNM, VPS/RES, VPS/SCL/SPH, VPS/SCL/EDU, VPS/SCL/LMK",
             "startDate": "9/14/2017",
-            "value": 8574
+            "value": 8578
         },
         {
             "code": "RES",
@@ -309,7 +390,7 @@ var moocsTopArrays = {
             "name": "La realidad del desarollo social latinoamericano (1ed.)",
             "Departament": "VPS/KNL/KNM, VPS/RES, VPS/SCL/SPH, VPS/SCL/EDU, VPS/SCL/LMK",
             "startDate": "9/14/2017",
-            "value": 25722
+            "value": 25734
         },
         {
             "code": "SCL",
@@ -341,7 +422,7 @@ var moocsTopArrays = {
             "name": "Políticas efectivas de desarrollo infantil (5ed.)",
             "Departament": "VPS/SCL/SPH",
             "startDate": "9/20/2018",
-            "value": 10038
+            "value": 10068
         },
         {
             "code": "VPC",
@@ -357,46 +438,86 @@ var moocsTopArrays = {
             "name": "Gestión de Proyectos Sociales para ONGs y Organizaciones de la Sociedad Civil (2ed.)",
             "Departament": "VPS/KIC/KLD/SDI, VPC",
             "startDate": "10/25/2018",
-            "value": 13509
+            "value": 13786
+        }
+    ],
+    departments2018: [
+        {
+            "code": "CCB",
+            "Rank": 1,
+            "name": "Data for Effective Policy Making (2ed.)",
+            "startDate": "3/15/2018",
+            "value": 4496
         },
         {
-            "code": "VPC",
+            "code": "CCB",
+            "Rank": 2,
+            "name": "Data for Effective Policy Making (1ed.)",
+            "startDate": "10/5/2017",
+            "value": 4649
+        },
+        {
+            "code": "CCB",
             "Rank": 3,
+            "name": "Data for Effective Policy Making (3ed.)",
+            "startDate": "3/14/2019",
+            "value": 332
+        },
+        {
+            "code": "CID",
+            "Rank": 1,
+            "name": "Gestion de projets de développement (1ed.)",
+            "startDate": "9/6/2016",
+            "value": 9092
+        },
+        {
+            "code": "CID",
+            "Rank": 2,
+            "name": "Gestion de projets de développement (2ed.)",
+            "startDate": "9/7/2017",
+            "value": 4844
+        },
+        {
+            "code": "CSC",
+            "Rank": 1,
+            "name": "Gestão de Projetos de Desenvolvimento (2ed.)",
+            "startDate": "3/29/2018",
+            "value": 9947
+        },
+        {
+            "code": "CSC",
+            "Rank": 2,
             "name": "Gestão de Projetos de Desenvolvimento (1ed.)",
-            "Departament": "VPS/KIC/KLD/SDI, VPC/CSC/CBD",
             "startDate": "10/19/2017",
             "value": 10243
         },
         {
-            "code": "VPC",
-            "Rank": 4,
-            "name": "Gestão de Projetos de Desenvolvimento (2ed.)",
-            "Departament": "VPS/KIC/KLD/SDI, VPC/CSC/CBD",
-            "startDate": "3/29/2018",
-            "value": 9842
+            "code": "CSC",
+            "Rank": 3,
+            "name": "Parcerias Público Privadas para o Desenvolvimento: Implementando Soluções no Brasil (1ed.)",
+            "startDate": "11/17/2015",
+            "value": 3498
         },
         {
-            "code": "VPC",
-            "Rank": 5,
-            "name": "Gestion de projets de développement (1ed.)",
-            "Departament": "VPS/KIC/KLD/SDI, VPC/CID/CHA",
-            "startDate": "9/6/2016",
-            "value": 9092
-        }
-    ],
-    departments2018: [{
+            "code": "CSC",
+            "Rank": 4,
+            "name": "Parcerias Público Privadas para o Desenvolvimento: Implementando Soluções no Brasil (2ed.)",
+            "startDate": "8/3/2017",
+            "value": 8884
+        },
+        {
             "code": "CSD",
             "Rank": 1,
             "name": "AGRIMONITOR: Política agropecuaria, seguridad alimentaria y cambio climático (3ed.)",
             "startDate": "9/6/2018",
-            "value": 8423
+            "value": 8461
         },
         {
             "code": "CSD",
             "Rank": 2,
             "name": "AGRIMONITOR: Agricultural Policy, Food Security and Climate Change - Experiences in the Caribbean (3ed.)",
             "startDate": "9/6/2018",
-            "value": 1528
+            "value": 1553
         },
         {
             "code": "CSD",
@@ -424,14 +545,14 @@ var moocsTopArrays = {
             "Rank": 1,
             "name": "Agua en América Latina: Abundancia en medio de la escasez mundial (4ed.)",
             "startDate": "3/22/2018",
-            "value": 5321
+            "value": 5348
         },
         {
             "code": "External Organization",
             "Rank": 2,
             "name": "Agua en América Latina: Abundancia en medio de la escasez mundial (1ed.)",
             "startDate": "9/29/2015",
-            "value": 14631
+            "value": 14632
         },
         {
             "code": "External Organization",
@@ -452,7 +573,7 @@ var moocsTopArrays = {
             "Rank": 5,
             "name": "Big Data sin misterios",
             "startDate": "2/14/2019",
-            "value": 5662
+            "value": 8234
         },
         {
             "code": "IFD",
@@ -473,35 +594,35 @@ var moocsTopArrays = {
             "Rank": 3,
             "name": "Gestión por resultados para gobiernos subnacionales (5ed.)",
             "startDate": "3/1/2018",
-            "value": 8807
+            "value": 8816
         },
         {
             "code": "IFD",
             "Rank": 4,
             "name": "Desafios e oportunidades na economia digital (1ed.)",
             "startDate": "5/20/2018",
-            "value": 2280
+            "value": 2301
         },
         {
             "code": "IFD",
             "Rank": 5,
             "name": "Enseñanza temprana de matemáticas y ciencias (1ed.)",
             "startDate": "8/16/2018",
-            "value": 67
+            "value": 68
         },
         {
             "code": "INE",
             "Rank": 1,
             "name": "Seguridad Vial en América Latina y el Caribe: De la Teoría a la Acción (2ed.)",
             "startDate": "3/15/2018",
-            "value": 5475
+            "value": 5477
         },
         {
             "code": "INE",
             "Rank": 2,
             "name": "Agua en América Latina: Abundancia en medio de la escasez mundial (4ed.)",
             "startDate": "3/22/2018",
-            "value": 5321
+            "value": 5348
         },
         {
             "code": "INE",
@@ -529,7 +650,7 @@ var moocsTopArrays = {
             "Rank": 1,
             "name": "Nuevas tendencias en tratados comerciales en América Latina (3ed.)",
             "startDate": "8/16/2018",
-            "value": 11970
+            "value": 12019
         },
         {
             "code": "INT",
@@ -543,14 +664,14 @@ var moocsTopArrays = {
             "Rank": 3,
             "name": "Inversión extranjera como motor del desarrollo para América Latina y el Caribe (2ed.)",
             "startDate": "9/4/2018",
-            "value": 2784
+            "value": 2808
         },
         {
             "code": "INT",
             "Rank": 4,
             "name": "New Trends in Trade Agreements in Latin America & the Caribbean (1ed.)",
             "startDate": "10/25/2016",
-            "value": 4275
+            "value": 4282
         },
         {
             "code": "INT",
@@ -564,35 +685,35 @@ var moocsTopArrays = {
             "Rank": 1,
             "name": "Gestión de Proyectos de Desarrollo (7ed.)",
             "startDate": "2/22/2018",
-            "value": 45560
+            "value": 45688
         },
         {
             "code": "KIC",
             "Rank": 2,
             "name": "Project Management Techniques for Development Professionals (4ed.)",
             "startDate": "3/8/2018",
-            "value": 15424
+            "value": 15542
         },
         {
             "code": "KIC",
             "Rank": 3,
             "name": "Datos para la Efectividad de Políticas Públicas (6ed.)",
             "startDate": "3/1/2018",
-            "value": 13465
+            "value": 13494
         },
         {
             "code": "KIC",
             "Rank": 4,
             "name": "Gestión de Proyectos Sociales para ONGs y Organizaciones de la Sociedad Civil (2ed.)",
             "startDate": "10/25/2018",
-            "value": 13509
+            "value": 13786
         },
         {
             "code": "KIC",
             "Rank": 5,
             "name": "Gestão de Projetos de Desenvolvimento (2ed.)",
             "startDate": "3/29/2018",
-            "value": 9842
+            "value": 9947
         },
         {
             "code": "MIF",
@@ -641,11 +762,18 @@ var moocsTopArrays = {
             "Rank": 2,
             "name": "Desafios e oportunidades na economia digital (1ed.)",
             "startDate": "5/20/2018",
-            "value": 2280
+            "value": 2301
         },
         {
             "code": "PRE",
             "Rank": 3,
+            "name": "Desafíos y oportunidades en la economía digital (3ed.)",
+            "startDate": "5/20/2018",
+            "value": 2042
+        },
+        {
+            "code": "PRE",
+            "Rank": 4,
             "name": "Desafíos y oportunidades en la economía digital (1ed.)",
             "startDate": "11/30/2017",
             "value": 15326
@@ -655,7 +783,7 @@ var moocsTopArrays = {
             "Rank": 1,
             "name": "Realidad Macroeconómica Latinoamericana (4ed.)",
             "startDate": "4/12/2018",
-            "value": 8672
+            "value": 8756
         },
         {
             "code": "RES",
@@ -667,16 +795,16 @@ var moocsTopArrays = {
         {
             "code": "RES",
             "Rank": 3,
-            "name": "La realidad del desarollo social latinoamericano (1ed.)",
-            "startDate": "9/14/2017",
-            "value": 8574
+            "name": "La realidad del desarollo social latinoamericano (3ed.)",
+            "startDate": "2/7/2019",
+            "value": 617
         },
         {
             "code": "RES",
             "Rank": 4,
-            "name": "Realidad Macroeconómica Latinoamericana (1ed.)",
-            "startDate": "6/23/2015",
-            "value": 13461
+            "name": "La realidad del desarollo social latinoamericano (1ed.)",
+            "startDate": "9/14/2017",
+            "value": 8578
         },
         {
             "code": "RES",
@@ -697,14 +825,14 @@ var moocsTopArrays = {
             "Rank": 2,
             "name": "Políticas efectivas de desarrollo infantil (5ed.)",
             "startDate": "9/20/2018",
-            "value": 10038
+            "value": 10068
         },
         {
             "code": "SCL",
             "Rank": 3,
             "name": "Educación sobre el Cambio Climático (2ed.)",
             "startDate": "4/12/2018",
-            "value": 9020
+            "value": 9022
         },
         {
             "code": "SCL",
@@ -718,51 +846,103 @@ var moocsTopArrays = {
             "Rank": 5,
             "name": "¿Qué funciona en educación?: Políticas educativas basadas en evidencia (1ed.)",
             "startDate": "9/13/2018",
-            "value": 5172
+            "value": 5191
         },
         {
             "code": "VPC",
             "Rank": 1,
             "name": "Gestión de Proyectos Sociales para ONGs y Organizaciones de la Sociedad Civil (2ed.)",
             "startDate": "10/25/2018",
-            "value": 13509
+            "value": 13786
         },
         {
             "code": "VPC",
             "Rank": 2,
-            "name": "Gestão de Projetos de Desenvolvimento (2ed.)",
-            "startDate": "3/29/2018",
-            "value": 9842
-        },
+            "name": "Gestión de Proyectos Sociales para ONGs y Organizaciones de la Sociedad Civil (1ed.)",
+            "startDate": "10/26/2017",
+            "value": 38071
+        }
+    ],
+    divisionsAlltime: [
         {
-            "code": "VPC",
-            "Rank": 3,
-            "name": "Data for Effective Policy Making (2ed.)",
-            "startDate": "3/15/2018",
-            "value": 4496
-        },
-        {
-            "code": "VPC",
-            "Rank": 4,
+            "code": "CBD",
+            "Rank": 1,
             "name": "Gestão de Projetos de Desenvolvimento (1ed.)",
+            "Departament": "VPS/KIC/KLD/SDI, VPC/CSC/CBD",
             "startDate": "10/19/2017",
             "value": 10243
         },
         {
-            "code": "VPC",
-            "Rank": 5,
+            "code": "CBD",
+            "Rank": 2,
+            "name": "Gestão de Projetos de Desenvolvimento (2ed.)",
+            "Departament": "VPS/KIC/KLD/SDI, VPC/CSC/CBD",
+            "startDate": "3/29/2018",
+            "value": 9947
+        },
+        {
+            "code": "CBR",
+            "Rank": 1,
+            "name": "Parcerias Público Privadas para o Desenvolvimento: Implementando Soluções no Brasil (2ed.)",
+            "Departament": "VPS/INE, VPS/IFD/FMM, VPS/SCL/SPH, VPC/CSC/CBR",
+            "startDate": "8/3/2017",
+            "value": 8884
+        },
+        {
+            "code": "CBR",
+            "Rank": 2,
+            "name": "Parcerias Público Privadas para o Desenvolvimento: Implementando Soluções no Brasil (1ed.)",
+            "Departament": "VPS/INE, VPS/IFD/FMM, VPS/SCL/SPH, VPC/CSC/CBR",
+            "startDate": "11/17/2015",
+            "value": 3498
+        },
+        {
+            "code": "CCB",
+            "Rank": 1,
+            "name": "Data for Effective Policy Making (1ed.)",
+            "Departament": "VPS/KIC/KLD/ISU, VPC/CCB",
+            "startDate": "10/5/2017",
+            "value": 4649
+        },
+        {
+            "code": "CCB",
+            "Rank": 2,
+            "name": "Data for Effective Policy Making (2ed.)",
+            "Departament": "VPS/KIC/KLD/ISU, VPC/CCB",
+            "startDate": "3/15/2018",
+            "value": 4496
+        },
+        {
+            "code": "CCB",
+            "Rank": 3,
+            "name": "Data for Effective Policy Making (3ed.)",
+            "Departament": "VPS/KIC/KLD/ISU, VPC/CCB",
+            "startDate": "3/14/2019",
+            "value": 332
+        },
+        {
+            "code": "CHA",
+            "Rank": 1,
             "name": "Gestion de projets de développement (1ed.)",
+            "Departament": "VPS/KIC/KLD/SDI, VPC/CID/CHA",
             "startDate": "9/6/2016",
             "value": 9092
-        }
-    ],
-    divisionsAlltime: [{
+        },
+        {
+            "code": "CHA",
+            "Rank": 2,
+            "name": "Gestion de projets de développement (2ed.)",
+            "Departament": "VPS/KIC/KLD/SDI, VPC/CID/CHA",
+            "startDate": "9/7/2017",
+            "value": 4844
+        },
+        {
             "code": "EDU",
             "Rank": 1,
             "name": "Educación sobre el Cambio Climático (2ed.)",
             "Departament": "VPS/SCL/EDU",
             "startDate": "4/12/2018",
-            "value": 9020
+            "value": 9022
         },
         {
             "code": "EDU",
@@ -770,7 +950,7 @@ var moocsTopArrays = {
             "name": "La realidad del desarollo social latinoamericano (1ed.)",
             "Departament": "VPS/KNL/KNM, VPS/RES, VPS/SCL/SPH, VPS/SCL/EDU, VPS/SCL/LMK",
             "startDate": "9/14/2017",
-            "value": 8574
+            "value": 8578
         },
         {
             "code": "EDU",
@@ -786,7 +966,7 @@ var moocsTopArrays = {
             "name": "¿Qué funciona en educación?: Políticas educativas basadas en evidencia (1ed.)",
             "Departament": "VPS/SCL/EDU",
             "startDate": "9/13/2018",
-            "value": 5172
+            "value": 5191
         },
         {
             "code": "EDU",
@@ -826,7 +1006,7 @@ var moocsTopArrays = {
             "name": "Parcerias Público Privadas para o Desenvolvimento: Implementando Soluções no Brasil (2ed.)",
             "Departament": "VPS/INE, VPS/IFD/FMM, VPS/SCL/SPH, VPC/CSC/CBR",
             "startDate": "8/3/2017",
-            "value": 8847
+            "value": 8884
         },
         {
             "code": "FMM",
@@ -890,7 +1070,7 @@ var moocsTopArrays = {
             "name": "Gestión por resultados para gobiernos subnacionales (3ed.)",
             "Departament": "VPS/IFD/ICS",
             "startDate": "6/7/2016",
-            "value": 12066
+            "value": 12067
         },
         {
             "code": "ICS",
@@ -898,7 +1078,7 @@ var moocsTopArrays = {
             "name": "Gestión por resultados para gobiernos subnacionales (1ed.)",
             "Departament": "VPS/IFD/ICS",
             "startDate": "9/30/2014",
-            "value": 10524
+            "value": 10525
         },
         {
             "code": "ICS",
@@ -906,18 +1086,18 @@ var moocsTopArrays = {
             "name": "Gestión por resultados para gobiernos subnacionales (5ed.)",
             "Departament": "VPS/IFD/ICS",
             "startDate": "3/1/2018",
-            "value": 8807
+            "value": 8816
         },
         {
             "code": "ICS",
             "Rank": 5,
-            "name": "Gestión por resultados para gobiernos subnacionales (4ed.)",
-            "Departament": "VPS/IFD/ICS",
-            "startDate": "8/3/2017",
-            "value": 7929
+            "name": "Big Data sin misterios",
+            "Departament": "VPS/KIC/KLD/SDI, VPS/IFD/ICS, Telefónica",
+            "startDate": "2/14/2019",
+            "value": 8234
         },
         {
-            "code": "IFD Front Desk",
+            "code": "IFD",
             "Rank": 1,
             "name": "Desafíos y oportunidades en la economía digital (1ed.)",
             "Departament": "VPS/IFD/IFD, PCY",
@@ -925,7 +1105,7 @@ var moocsTopArrays = {
             "value": 15326
         },
         {
-            "code": "IFD Front Desk",
+            "code": "IFD",
             "Rank": 2,
             "name": "Desafíos y oportunidades en la economía digital (2ed.)",
             "Departament": "VPS/IFD/IFD, PCY",
@@ -933,15 +1113,23 @@ var moocsTopArrays = {
             "value": 10569
         },
         {
-            "code": "IFD Front Desk",
+            "code": "IFD",
             "Rank": 3,
             "name": "Desafios e oportunidades na economia digital (1ed.)",
             "Departament": "VPS/IFD/IFD, PCY",
             "startDate": "5/20/2018",
-            "value": 2280
+            "value": 2301
         },
         {
-            "code": "INE Front Desk",
+            "code": "IFD",
+            "Rank": 4,
+            "name": "Desafíos y oportunidades en la economía digital (3ed.)",
+            "Departament": "VPS/IFD/IFD, PCY",
+            "startDate": "5/20/2018",
+            "value": 2042
+        },
+        {
+            "code": "INE",
             "Rank": 1,
             "name": "Asociaciones Publico Privadas: Implementando Soluciones en Latinoamérica y el Caribe (2ed.)",
             "Departament": "VPS/INE, VPS/IFD/FMM, VPS/SCL/SPH, MIF",
@@ -949,7 +1137,7 @@ var moocsTopArrays = {
             "value": 12186
         },
         {
-            "code": "INE Front Desk",
+            "code": "INE",
             "Rank": 2,
             "name": "Asociaciones Publico Privadas: Implementando Soluciones en Latinoamérica y el Caribe (3ed.)",
             "Departament": "VPS/INE, VPS/IFD/FMM, VPS/SCL/SPH, MIF",
@@ -957,15 +1145,15 @@ var moocsTopArrays = {
             "value": 9716
         },
         {
-            "code": "INE Front Desk",
+            "code": "INE",
             "Rank": 3,
             "name": "Parcerias Público Privadas para o Desenvolvimento: Implementando Soluções no Brasil (2ed.)",
             "Departament": "VPS/INE, VPS/IFD/FMM, VPS/SCL/SPH, VPC/CSC/CBR",
             "startDate": "8/3/2017",
-            "value": 8847
+            "value": 8884
         },
         {
-            "code": "INE Front Desk",
+            "code": "INE",
             "Rank": 4,
             "name": "Asociaciones Publico Privadas: Implementando Soluciones en Latinoamérica y el Caribe (1ed.)",
             "Departament": "VPS/INE, VPS/IFD/FMM, VPS/SCL/SPH, MIF",
@@ -973,7 +1161,7 @@ var moocsTopArrays = {
             "value": 8831
         },
         {
-            "code": "INE Front Desk",
+            "code": "INE",
             "Rank": 5,
             "name": "Asociaciones Publico Privadas: Implementando Soluciones en Latinoamérica y el Caribe (4ed.)",
             "Departament": "VPS/INE, VPS/IFD/FMM, VPS/SCL/SPH, MIF",
@@ -994,7 +1182,7 @@ var moocsTopArrays = {
             "name": "Nuevas tendencias en tratados comerciales en América Latina (3ed.)",
             "Departament": "VPS/INT",
             "startDate": "8/16/2018",
-            "value": 11970
+            "value": 12019
         },
         {
             "code": "INT",
@@ -1002,7 +1190,7 @@ var moocsTopArrays = {
             "name": "Nuevas tendencias en tratados comerciales en América Latina (2ed.)",
             "Departament": "VPS/INT",
             "startDate": "3/14/2017",
-            "value": 11176
+            "value": 11177
         },
         {
             "code": "INT",
@@ -1018,7 +1206,7 @@ var moocsTopArrays = {
             "name": "New Trends in Trade Agreements in Latin America & the Caribbean (1ed.)",
             "Departament": "VPS/INT",
             "startDate": "10/25/2016",
-            "value": 4275
+            "value": 4282
         },
         {
             "code": "KLD",
@@ -1034,7 +1222,7 @@ var moocsTopArrays = {
             "name": "Gestión de Proyectos de Desarrollo (7ed.)",
             "Departament": "VPS/KIC/KLD/SDI",
             "startDate": "2/22/2018",
-            "value": 45560
+            "value": 45688
         },
         {
             "code": "KLD",
@@ -1050,7 +1238,7 @@ var moocsTopArrays = {
             "name": "Gestión de Proyectos de Desarrollo (5ed.)",
             "Departament": "VPS/KIC/KLD/SDI",
             "startDate": "7/6/2017",
-            "value": 39272
+            "value": 39380
         },
         {
             "code": "KLD",
@@ -1066,7 +1254,7 @@ var moocsTopArrays = {
             "name": "La realidad del desarollo social latinoamericano (1ed.)",
             "Departament": "VPS/KNL/KNM, VPS/RES, VPS/SCL/SPH, VPS/SCL/EDU, VPS/SCL/LMK",
             "startDate": "9/14/2017",
-            "value": 8574
+            "value": 8578
         },
         {
             "code": "LMK",
@@ -1098,7 +1286,7 @@ var moocsTopArrays = {
             "name": "Pensiones en América Latina y el Caribe (3ed.)",
             "Departament": "VPS/SCL/LMK",
             "startDate": "3/28/2017",
-            "value": 2233
+            "value": 2247
         },
         {
             "code": "MIF",
@@ -1162,7 +1350,15 @@ var moocsTopArrays = {
             "name": "Desafios e oportunidades na economia digital (1ed.)",
             "Departament": "VPS/IFD/IFD, PCY",
             "startDate": "5/20/2018",
-            "value": 2280
+            "value": 2301
+        },
+        {
+            "code": "PCY",
+            "Rank": 4,
+            "name": "Desafíos y oportunidades en la economía digital (3ed.)",
+            "Departament": "VPS/IFD/IFD, PCY",
+            "startDate": "5/20/2018",
+            "value": 2042
         },
         {
             "code": "RES",
@@ -1186,7 +1382,7 @@ var moocsTopArrays = {
             "name": "Realidad Macroeconómica Latinoamericana (4ed.)",
             "Departament": "VPS/RES",
             "startDate": "4/12/2018",
-            "value": 8672
+            "value": 8756
         },
         {
             "code": "RES",
@@ -1194,7 +1390,7 @@ var moocsTopArrays = {
             "name": "La realidad del desarollo social latinoamericano (1ed.)",
             "Departament": "VPS/KNL/KNM, VPS/RES, VPS/SCL/SPH, VPS/SCL/EDU, VPS/SCL/LMK",
             "startDate": "9/14/2017",
-            "value": 8574
+            "value": 8578
         },
         {
             "code": "RES",
@@ -1218,7 +1414,7 @@ var moocsTopArrays = {
             "name": "AGRIMONITOR: Política agropecuaria, seguridad alimentaria y cambio climático (3ed.)",
             "Departament": "VPS/CSD/RND",
             "startDate": "9/6/2018",
-            "value": 8423
+            "value": 8461
         },
         {
             "code": "RND",
@@ -1266,7 +1462,7 @@ var moocsTopArrays = {
             "name": "Políticas efectivas de desarrollo infantil (5ed.)",
             "Departament": "VPS/SCL/SPH",
             "startDate": "9/20/2018",
-            "value": 10038
+            "value": 10068
         },
         {
             "code": "SPH",
@@ -1282,7 +1478,7 @@ var moocsTopArrays = {
             "name": "Parcerias Público Privadas para o Desenvolvimento: Implementando Soluções no Brasil (2ed.)",
             "Departament": "VPS/INE, VPS/IFD/FMM, VPS/SCL/SPH, VPC/CSC/CBR",
             "startDate": "8/3/2017",
-            "value": 8847
+            "value": 8884
         },
         {
             "code": "TSP",
@@ -1298,10 +1494,18 @@ var moocsTopArrays = {
             "name": "Seguridad Vial en América Latina y el Caribe: De la Teoría a la Acción (2ed.)",
             "Departament": "VPS/INE/TSP",
             "startDate": "3/15/2018",
-            "value": 5475
+            "value": 5477
         },
         {
-            "code": "VPC Front Desk",
+            "code": "TSP",
+            "Rank": 3,
+            "name": "Seguridad Vial en América Latina y el Caribe: De la Teoría a la Acción (3ed.)",
+            "Departament": "VPS/INE/TSP",
+            "startDate": "2/21/2019",
+            "value": 328
+        },
+        {
+            "code": "VPC",
             "Rank": 1,
             "name": "Gestión de Proyectos Sociales para ONGs y Organizaciones de la Sociedad Civil (1ed.)",
             "Departament": "VPS/KIC/KLD/SDI, VPC",
@@ -1309,36 +1513,12 @@ var moocsTopArrays = {
             "value": 38071
         },
         {
-            "code": "VPC Front Desk",
+            "code": "VPC",
             "Rank": 2,
             "name": "Gestión de Proyectos Sociales para ONGs y Organizaciones de la Sociedad Civil (2ed.)",
             "Departament": "VPS/KIC/KLD/SDI, VPC",
             "startDate": "10/25/2018",
-            "value": 13509
-        },
-        {
-            "code": "VPC Front Desk",
-            "Rank": 3,
-            "name": "Gestão de Projetos de Desenvolvimento (1ed.)",
-            "Departament": "VPS/KIC/KLD/SDI, VPC/CSC/CBD",
-            "startDate": "10/19/2017",
-            "value": 10243
-        },
-        {
-            "code": "VPC Front Desk",
-            "Rank": 4,
-            "name": "Gestão de Projetos de Desenvolvimento (2ed.)",
-            "Departament": "VPS/KIC/KLD/SDI, VPC/CSC/CBD",
-            "startDate": "3/29/2018",
-            "value": 9842
-        },
-        {
-            "code": "VPC Front Desk",
-            "Rank": 5,
-            "name": "Gestion de projets de développement (1ed.)",
-            "Departament": "VPS/KIC/KLD/SDI, VPC/CID/CHA",
-            "startDate": "9/6/2016",
-            "value": 9092
+            "value": 13786
         },
         {
             "code": "WSA",
@@ -1346,7 +1526,7 @@ var moocsTopArrays = {
             "name": "Agua en América Latina: Abundancia en medio de la escasez mundial (1ed.)",
             "Departament": "VPS/INE/WSA, Universidad de los Andes",
             "startDate": "9/29/2015",
-            "value": 14631
+            "value": 14632
         },
         {
             "code": "WSA",
@@ -1370,10 +1550,74 @@ var moocsTopArrays = {
             "name": "Agua en América Latina: Abundancia en medio de la escasez mundial (4ed.)",
             "Departament": "VPS/INE/WSA, Universidad de los Andes",
             "startDate": "3/22/2018",
-            "value": 5321
+            "value": 5348
         }
     ],
-    divisions2018: [{
+    divisions2018: [
+        {
+            "code": "CBD",
+            "Rank": 1,
+            "name": "Gestão de Projetos de Desenvolvimento (2ed.)",
+            "startDate": "3/29/2018",
+            "value": 9743
+        },
+        {
+            "code": "CBD",
+            "Rank": 2,
+            "name": "Gestão de Projetos de Desenvolvimento (1ed.)",
+            "startDate": "10/19/2017",
+            "value": 0
+        },
+        {
+            "code": "CBR",
+            "Rank": 1,
+            "name": "Parcerias Público Privadas para o Desenvolvimento: Implementando Soluções no Brasil (1ed.)",
+            "startDate": "11/17/2015",
+            "value": 0
+        },
+        {
+            "code": "CBR",
+            "Rank": 2,
+            "name": "Parcerias Público Privadas para o Desenvolvimento: Implementando Soluções no Brasil (2ed.)",
+            "startDate": "8/3/2017",
+            "value": 0
+        },
+        {
+            "code": "CCB",
+            "Rank": 1,
+            "name": "Data for Effective Policy Making (2ed.)",
+            "startDate": "3/15/2018",
+            "value": 4495
+        },
+        {
+            "code": "CCB",
+            "Rank": 2,
+            "name": "Data for Effective Policy Making (1ed.)",
+            "startDate": "10/5/2017",
+            "value": 0
+        },
+        {
+            "code": "CCB",
+            "Rank": 3,
+            "name": "Data for Effective Policy Making (3ed.)",
+            "startDate": "3/14/2019",
+            "value": 0
+        },
+        {
+            "code": "CHA",
+            "Rank": 1,
+            "name": "Gestion de projets de développement (1ed.)",
+            "startDate": "9/6/2016",
+            "value": 0
+        },
+        {
+            "code": "CHA",
+            "Rank": 2,
+            "name": "Gestion de projets de développement (2ed.)",
+            "startDate": "9/7/2017",
+            "value": 0
+        },
+        {
             "code": "EDU",
             "Rank": 1,
             "name": "Educación sobre el Cambio Climático (2ed.)",
@@ -1404,8 +1648,8 @@ var moocsTopArrays = {
         {
             "code": "EDU",
             "Rank": 5,
-            "name": "Climate Change Education (1ed.)",
-            "startDate": "4/27/2017",
+            "name": "Climate Change Education (3ed.)",
+            "startDate": "3/28/2019",
             "value": 0
         },
         {
@@ -1425,51 +1669,51 @@ var moocsTopArrays = {
         {
             "code": "FMM",
             "Rank": 3,
-            "name": "Asociaciones Publico Privadas: Implementando Soluciones en Latinoamérica y el Caribe (2ed.)",
-            "startDate": "10/27/2015",
-            "value": 0.4
+            "name": "Asociaciones Publico Privadas: Implementando Soluciones en Latinoamérica y el Caribe (1ed.)",
+            "startDate": "6/30/2015",
+            "value": 0
         },
         {
             "code": "FMM",
             "Rank": 4,
-            "name": "Asociaciones Publico Privadas: Implementando Soluciones en Latinoamérica y el Caribe (3ed.)",
-            "startDate": "6/14/2016",
-            "value": 0.3
+            "name": "Asociaciones Publico Privadas: Implementando Soluciones en Latinoamérica y el Caribe (2ed.)",
+            "startDate": "10/27/2015",
+            "value": 0
         },
         {
             "code": "FMM",
             "Rank": 5,
-            "name": "Asociaciones Publico Privadas: Implementando Soluciones en Latinoamérica y el Caribe (4ed.)",
-            "startDate": "5/18/2017",
-            "value": 0.2
+            "name": "Asociaciones Publico Privadas: Implementando Soluciones en Latinoamérica y el Caribe (3ed.)",
+            "startDate": "6/14/2016",
+            "value": 0
         },
         {
             "code": "HUD",
             "Rank": 1,
             "name": "Desarrollo Urbano y Vivienda (1ed.)",
             "startDate": "7/14/2015",
-            "value": 0.4
+            "value": 0
         },
         {
             "code": "HUD",
             "Rank": 2,
             "name": "Desarrollo Urbano y Vivienda (2ed.)",
             "startDate": "7/21/2016",
-            "value": 0.3
+            "value": 0
         },
         {
             "code": "HUD",
             "Rank": 3,
             "name": "Desarrollo Urbano y Vivienda (3ed.)",
             "startDate": "5/9/2017",
-            "value": 0.2
+            "value": 0
         },
         {
             "code": "HUD",
             "Rank": 4,
             "name": "Liderando el Desarrollo Sostenible de las Ciudades (1ed.)",
             "startDate": "3/17/2015",
-            "value": 0.1
+            "value": 0
         },
         {
             "code": "HUD",
@@ -1490,28 +1734,28 @@ var moocsTopArrays = {
             "Rank": 2,
             "name": "Big Data sin misterios",
             "startDate": "2/14/2019",
-            "value": 0.4
+            "value": 0
         },
         {
             "code": "ICS",
             "Rank": 3,
             "name": "Gestión por resultados para gobiernos subnacionales (1ed.)",
             "startDate": "9/30/2014",
-            "value": 0.3
+            "value": 0
         },
         {
             "code": "ICS",
             "Rank": 4,
             "name": "Gestión por resultados para gobiernos subnacionales (2ed.)",
             "startDate": "5/19/2015",
-            "value": 0.2
+            "value": 0
         },
         {
             "code": "ICS",
             "Rank": 5,
             "name": "Gestión por resultados para gobiernos subnacionales (3ed.)",
             "startDate": "6/7/2016",
-            "value": 0.1
+            "value": 0
         },
         {
             "code": "IFD",
@@ -1530,6 +1774,13 @@ var moocsTopArrays = {
         {
             "code": "IFD",
             "Rank": 3,
+            "name": "Desafíos y oportunidades en la economía digital (3ed.)",
+            "startDate": "5/20/2018",
+            "value": 10
+        },
+        {
+            "code": "IFD",
+            "Rank": 4,
             "name": "Desafíos y oportunidades en la economía digital (1ed.)",
             "startDate": "11/30/2017",
             "value": 0
@@ -1539,28 +1790,28 @@ var moocsTopArrays = {
             "Rank": 1,
             "name": "Asociaciones Publico Privadas: Implementando Soluciones en Latinoamérica y el Caribe (1ed.)",
             "startDate": "6/30/2015",
-            "value": 0.4
+            "value": 0
         },
         {
             "code": "INE",
             "Rank": 2,
             "name": "Asociaciones Publico Privadas: Implementando Soluciones en Latinoamérica y el Caribe (2ed.)",
             "startDate": "10/27/2015",
-            "value": 0.3
+            "value": 0
         },
         {
             "code": "INE",
             "Rank": 3,
             "name": "Asociaciones Publico Privadas: Implementando Soluciones en Latinoamérica y el Caribe (3ed.)",
             "startDate": "6/14/2016",
-            "value": 0.2
+            "value": 0
         },
         {
             "code": "INE",
             "Rank": 4,
             "name": "Asociaciones Publico Privadas: Implementando Soluciones en Latinoamérica y el Caribe (4ed.)",
             "startDate": "5/18/2017",
-            "value": 0.1
+            "value": 0
         },
         {
             "code": "INE",
@@ -1595,7 +1846,7 @@ var moocsTopArrays = {
             "Rank": 4,
             "name": "New Trends in Trade Agreements in Latin America & the Caribbean (1ed.)",
             "startDate": "10/25/2016",
-            "value": 0.1
+            "value": 0
         },
         {
             "code": "INT",
@@ -1651,27 +1902,27 @@ var moocsTopArrays = {
             "Rank": 2,
             "name": "La realidad del desarollo social latinoamericano (1ed.)",
             "startDate": "9/14/2017",
-            "value": 0.2
+            "value": 0
         },
         {
             "code": "LMK",
             "Rank": 3,
-            "name": "Pensiones en América Latina y el Caribe (1ed.)",
-            "startDate": "3/10/2015",
-            "value": 0.1
+            "name": "La realidad del desarollo social latinoamericano (3ed.)",
+            "startDate": "2/7/2019",
+            "value": 0
         },
         {
             "code": "LMK",
             "Rank": 4,
-            "name": "Pensiones en América Latina y el Caribe (2ed.)",
-            "startDate": "7/12/2016",
+            "name": "Pensiones en América Latina y el Caribe (1ed.)",
+            "startDate": "3/10/2015",
             "value": 0
         },
         {
             "code": "LMK",
             "Rank": 5,
-            "name": "Pensiones en América Latina y el Caribe (3ed.)",
-            "startDate": "3/28/2017",
+            "name": "Pensiones en América Latina y el Caribe (2ed.)",
+            "startDate": "7/12/2016",
             "value": 0
         },
         {
@@ -1679,28 +1930,28 @@ var moocsTopArrays = {
             "Rank": 1,
             "name": "Asociaciones Publico Privadas: Implementando Soluciones en Latinoamérica y el Caribe (1ed.)",
             "startDate": "6/30/2015",
-            "value": 0.4
+            "value": 0
         },
         {
             "code": "MIF",
             "Rank": 2,
             "name": "Asociaciones Publico Privadas: Implementando Soluciones en Latinoamérica y el Caribe (2ed.)",
             "startDate": "10/27/2015",
-            "value": 0.3
+            "value": 0
         },
         {
             "code": "MIF",
             "Rank": 3,
             "name": "Asociaciones Publico Privadas: Implementando Soluciones en Latinoamérica y el Caribe (3ed.)",
             "startDate": "6/14/2016",
-            "value": 0.2
+            "value": 0
         },
         {
             "code": "MIF",
             "Rank": 4,
             "name": "Asociaciones Publico Privadas: Implementando Soluciones en Latinoamérica y el Caribe (4ed.)",
             "startDate": "5/18/2017",
-            "value": 0.1
+            "value": 0
         },
         {
             "code": "MIF",
@@ -1726,6 +1977,13 @@ var moocsTopArrays = {
         {
             "code": "PCY",
             "Rank": 3,
+            "name": "Desafíos y oportunidades en la economía digital (3ed.)",
+            "startDate": "5/20/2018",
+            "value": 10
+        },
+        {
+            "code": "PCY",
+            "Rank": 4,
             "name": "Desafíos y oportunidades en la economía digital (1ed.)",
             "startDate": "11/30/2017",
             "value": 0
@@ -1747,16 +2005,16 @@ var moocsTopArrays = {
         {
             "code": "RES",
             "Rank": 3,
-            "name": "La realidad del desarollo social latinoamericano (1ed.)",
-            "startDate": "9/14/2017",
-            "value": 0.2
+            "name": "La realidad del desarollo social latinoamericano (3ed.)",
+            "startDate": "2/7/2019",
+            "value": 0
         },
         {
             "code": "RES",
             "Rank": 4,
-            "name": "Realidad Macroeconómica Latinoamericana (1ed.)",
-            "startDate": "6/23/2015",
-            "value": 0.1
+            "name": "La realidad del desarollo social latinoamericano (1ed.)",
+            "startDate": "9/14/2017",
+            "value": 0
         },
         {
             "code": "RES",
@@ -1784,14 +2042,14 @@ var moocsTopArrays = {
             "Rank": 3,
             "name": "AGRIMONITOR: Agricultural Policy, Food Security and Climate Change - Experiences in the Caribbean (2ed.)",
             "startDate": "5/25/2017",
-            "value": 0.2
+            "value": 0
         },
         {
             "code": "RND",
             "Rank": 4,
             "name": "AGRIMONITOR: Agricultural Policy, Food Security and Climate Change (1ed.)",
             "startDate": "10/25/2016",
-            "value": 0.1
+            "value": 0
         },
         {
             "code": "RND",
@@ -1826,7 +2084,7 @@ var moocsTopArrays = {
             "Rank": 4,
             "name": "Asociaciones Publico Privadas: Implementando Soluciones en Latinoamérica y el Caribe (4ed.)",
             "startDate": "5/18/2017",
-            "value": 0.1
+            "value": 0
         },
         {
             "code": "SPH",
@@ -1850,6 +2108,13 @@ var moocsTopArrays = {
             "value": 0
         },
         {
+            "code": "TSP",
+            "Rank": 3,
+            "name": "Seguridad Vial en América Latina y el Caribe: De la Teoría a la Acción (3ed.)",
+            "startDate": "2/21/2019",
+            "value": 0
+        },
+        {
             "code": "VPC",
             "Rank": 1,
             "name": "Gestión de Proyectos Sociales para ONGs y Organizaciones de la Sociedad Civil (2ed.)",
@@ -1859,29 +2124,8 @@ var moocsTopArrays = {
         {
             "code": "VPC",
             "Rank": 2,
-            "name": "Gestão de Projetos de Desenvolvimento (2ed.)",
-            "startDate": "3/29/2018",
-            "value": 9743
-        },
-        {
-            "code": "VPC",
-            "Rank": 3,
-            "name": "Data for Effective Policy Making (2ed.)",
-            "startDate": "3/15/2018",
-            "value": 4495
-        },
-        {
-            "code": "VPC",
-            "Rank": 4,
-            "name": "Gestão de Projetos de Desenvolvimento (1ed.)",
-            "startDate": "10/19/2017",
-            "value": 0.1
-        },
-        {
-            "code": "VPC",
-            "Rank": 5,
-            "name": "Gestion de projets de développement (1ed.)",
-            "startDate": "9/6/2016",
+            "name": "Gestión de Proyectos Sociales para ONGs y Organizaciones de la Sociedad Civil (1ed.)",
+            "startDate": "10/26/2017",
             "value": 0
         },
         {
@@ -1896,14 +2140,14 @@ var moocsTopArrays = {
             "Rank": 2,
             "name": "Agua en América Latina: Abundancia en medio de la escasez mundial (1ed.)",
             "startDate": "9/29/2015",
-            "value": 0.2
+            "value": 0
         },
         {
             "code": "WSA",
             "Rank": 3,
             "name": "Agua en América Latina: Abundancia en medio de la escasez mundial (2ed.)",
             "startDate": "5/3/2016",
-            "value": 0.1
+            "value": 0
         },
         {
             "code": "WSA",
@@ -1913,7 +2157,8 @@ var moocsTopArrays = {
             "value": 0
         }
     ],
-    IDB2018: [{
+    IDB2018: [
+        {
             "Rank": 1,
             "name": "Gestión de Proyectos de Desarrollo (7ed.)",
             "Departament": "VPS/KIC/KLD/SDI",
@@ -1949,40 +2194,41 @@ var moocsTopArrays = {
             "value": 12309
         }
     ],
-    IDBAlltime: [{
+    IDBAlltime: [
+        {
             "Rank": 1,
             "name": "Gestión de Proyectos de Desarrollo (7ed.)",
             "Departament": "VPS/KIC/KLD/SDI",
             "startDate": "2/22/2018",
-            "value": 42546
+            "value": 42664
         },
         {
             "Rank": 2,
             "name": "Gestión de Proyectos de Desarrollo (1ed.)",
             "Departament": "VPS/KIC/KLD/SDI",
             "startDate": "7/28/2015",
-            "value": 39957
+            "value": 39961
         },
         {
             "Rank": 3,
             "name": "Gestión de Proyectos de Desarrollo (2ed.)",
             "Departament": "VPS/KIC/KLD/SDI",
             "startDate": "3/29/2016",
-            "value": 39747
+            "value": 39748
         },
         {
             "Rank": 4,
             "name": "Gestión de Proyectos de Desarrollo (5ed.)",
             "Departament": "VPS/KIC/KLD/SDI",
             "startDate": "7/6/2017",
-            "value": 37239
+            "value": 37344
         },
         {
             "Rank": 5,
             "name": "Gestión de Proyectos Sociales para ONGs y Organizaciones de la Sociedad Civil (1ed.)",
             "Departament": "VPS/KIC/KLD/SDI, VPC",
             "startDate": "10/26/2017",
-            "value": 34865
+            "value": 34868
         }
     ]
 };

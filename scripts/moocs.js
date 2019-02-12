@@ -580,6 +580,9 @@ function drawStudentRegistrationsChart(dataStudents) {
             return yStudent1(d.name) + 16 / 2;
         })
         .attr("x", function (d) {
+            if(d.value < 6){
+                return xStudent1(d.value)+6;
+            }            
             return xStudent1(d.value) - 6;
         })
         .attr("class", "text-inside")
@@ -676,6 +679,9 @@ function drawStudentParticipantsChart(dataStudents) {
         })
         //x position is 3 pixels to the right of the bar
         .attr("x", function (d) {
+            if(d.value < 6){
+                return xStudent2(d.value)+6;
+            }            
             return xStudent2(d.value) - 6;
         })
         .attr("class", "text-inside")
@@ -772,6 +778,9 @@ function drawStudentCompletedsChart(dataStudents) {
         })
         //x position is 3 pixels to the right of the bar
         .attr("x", function (d) {
+            if(d.value < 6){
+                return xStudent3(d.value)+6;
+            }            
             return xStudent3(d.value) - 6;
         })
         .attr("class", "text-inside")
@@ -870,6 +879,9 @@ function drawStudentCertifiedsChart(dataStudents) {
         })
         //x position is 3 pixels to the right of the bar
         .attr("x", function (d) {
+            if(d.value < 6){
+                return xStudent4(d.value)+6;
+            }            
             return xStudent4(d.value) - 6;
         })
         .attr("class", "text-inside")

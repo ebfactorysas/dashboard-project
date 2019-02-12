@@ -2,6 +2,7 @@ function drawTrendChartRectBar(data, id, color, colorClass, indicator) {
     data = data.sort(function (a, b) {
         return d3.ascending(a.value, b.value);
     });
+    var indices = d3.range(0, data.length);
     var marginPublicationTrend = {
         top: 15,
         right: 25,
@@ -10,60 +11,55 @@ function drawTrendChartRectBar(data, id, color, colorClass, indicator) {
     };
     var widthInherith = $(id).width();
     var heightInherith = $(id).height();
-
+  
     var widthPublicationTrend = widthInherith - marginPublicationTrend.left - marginPublicationTrend.right,
         heightPublicationTrend = heightInherith - marginPublicationTrend.top - marginPublicationTrend.bottom;
-
-
+  
+  
     var svgPublicationTrend = d3.select(id)
         .append("svg")
         .attr("preserveAspectRatio", "xMaxYMax slice")
         .attr("viewBox", "-40 -20 " + widthInherith + " " + heightInherith + "")
         .append("g")
         .classed("svg-content-responsive", true);
-
+  
     var xPublicationTrend = d3.scaleLinear()
         .range([0, widthPublicationTrend])
         .domain([0, d3.max(data, function (d) {
             return d.value;
         })]);
-
+  
     var yPublicationTrend = d3.scaleBand()
-
         .rangeRound([45 * data.length, 0], .1)
-        .domain(data.map(function (d) {
-            return d.value;
-        }));
-
+        .domain(indices);
+  
     var yAxisPublicationTrend = d3.axisLeft(yPublicationTrend)
         .tickFormat(function (x) {
-            var value = setSettingsNumber(x.toFixed(0));
+            var value = setSettingsNumber(data[x].value.toFixed(0));
             return value.valueNumber + suffixNumber;
         })
         .tickPadding(40)
         .tickSize(0)
-
-
-
+  
+  
+  
     var gyPublicationTrend = svgPublicationTrend.append("g")
         .style("text-anchor", "start")
         .style("color", "#555555")
         .attr("class", "y-data")
         .call(yAxisPublicationTrend)
-
+  
     var textInAxis = d3.selectAll("#publication-trend .y-data text")
         .attr("dy", ".2em")
-
+  
     var barsPublicationTrend = svgPublicationTrend.selectAll(".bar")
         .data(data)
         .enter()
         .append("g")
-
+  
     barsPublicationTrend.append("rect")
         .attr("class", "bar")
-        .attr("y", function (d) {
-            return yPublicationTrend(d.value);
-        })
+        .attr("y", function (value, index) { return yPublicationTrend(index); })
         .attr("rx", 25)
         .attr("ry", 25)
         .attr("fill", color)
@@ -72,12 +68,13 @@ function drawTrendChartRectBar(data, id, color, colorClass, indicator) {
         .attr("width", function (d) {
             return xPublicationTrend(d.value);
         });
-
+  
     barsPublicationTrend.append("text")
         .attr("class", "label")
-        .attr("y", function (d) {
-            return yPublicationTrend(d.value) + 40 / 2 + 2;
-        })
+        .attr("y", function (value, index) { return yPublicationTrend(index) + 40 / 2 + 2; })
+        // .attr("y", function (d) {
+        //     return yPublicationTrend(d.value) + 40 / 2 + 2;
+        // })
         .attr("x", function (d) {
             return 25;
         })
@@ -124,7 +121,7 @@ function drawTrendChartRectBar(data, id, color, colorClass, indicator) {
                 .duration(0)
                 .style("display", "none");
         });
-
+  
     var tooltipBar = d3Old.selectAll(id+" .bar")
         .on("mouseover", function (d) {
             var textHtml = "<div class='col tooltip-gauges'><h3 class='row " + colorClass + "'>{{title}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>" + indicator + "</span><span class='col text-right' >{{value}}</div>";
@@ -156,4 +153,4 @@ function drawTrendChartRectBar(data, id, color, colorClass, indicator) {
                 .duration(0)
                 .style("display", "none");
         });
-}
+  }
