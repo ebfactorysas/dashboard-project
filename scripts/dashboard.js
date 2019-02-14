@@ -68,17 +68,7 @@ function SetDataIDBDataSet() {
 }
 
 function setDataSubscribersIdb() {
-    drawTreeSuscriber(subscribersGender.genderIDB);
-    drawSuscribersChart(subscribersTopics);
-    drawAgeSuscribersChart(arraySuscribersSubTopics);
-    drawInstitutionsChart(subscribersInstitution.institutionIDB);
-
-    jsondataSubscriber = subscribersArray.subscribersIDB;
-    subscribersAllTotalGlobal = (jsondataSubscriber.length > 0) ? jsondataSubscriber[0].subscribers : '0';
-    subscribersAllDownloads = (jsondataSubscriber.length > 0) ? jsondataSubscriber[0].lac_subscribers : '0';
-    subscribersAllDownloadsLac = (jsondataSubscriber.length > 0) ? (jsondataSubscriber[0].porcent_total_from_lac * 100).toFixed(0) : '0';
-    gaugeSuscribers = setSuscribersGauge2018('IDB');
-    drawGaugeSubscribersChart(gaugeSuscribers);
+   initSuscribers();
 }
 
 function setDataMoocsIdb() {
@@ -435,7 +425,7 @@ function setDataSuscribersByDivisions(sltValue) {
 
     //#suscribers-subtopics
     var ObjectSubTopicBars = $.extend(true, [], subscribersSubTopics);
-    arraySuscribersSubTopics = ObjectSubTopicBars.filter(function (data) {
+    var arraySuscribersSubTopics = ObjectSubTopicBars.filter(function (data) {
         return data.division_code == sltValue;
     });
     drawAgeSuscribersChart(arraySuscribersSubTopics);
@@ -516,12 +506,13 @@ $(window).on('load', function () {
     initSuscribers();
 });
 
-function getItems() {
+function getItems() {   
+    console.log(_spPageContextInfo.webAbsoluteUrl);
 
     $.ajax({
  
         async: true, // Async by default is set to “true” load the script asynchronously
-        url: _spPageContextInfo.webAbsoluteUrl + "/_api/SP.UserProfiles.PeopleManager/GetMyProperties", // URL to fetch data from sharepoint list
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/SP.UserProfiles.PeopleManager/GetPropertiesFor(accountName=@v)?@v='i:0%23.f|membership|JOSEA@iadb.org'", // URL to fetch data from sharepoint list
         method: "GET", //Specifies the operation to fetch the list item
  
         headers: {
@@ -541,7 +532,7 @@ function getItems() {
  }
 
 $(document).ready(function () {
-    getItems();
+    //getItems();
     var isIE = /*@cc_on!@*/ false || !!document.documentMode;
     if (isIE == true) {
         $(".body").css("width", screen.width + "px");
@@ -588,6 +579,6 @@ $(window).resize(function () {
         $(".body").css("width", screen.width + "px");
     }
 
-    changeFilterDashboard($("select[id*='divisionSelect']").val());
+    // changeFilterDashboard($("select[id*='divisionSelect']").val());
     
 });

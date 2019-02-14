@@ -1,109 +1,242 @@
 @font-face {
-    font-family: 'Gotham-Black';
-    src: url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Black.eot?#iefix') format('embedded-opentype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Black.otf') format('opentype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Black.woff') format('woff'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Black.ttf') format('truetype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Black.svg#Gotham-Black') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Gotham-Black";
+  src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Black.eot?#iefix")
+      format("embedded-opentype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Black.otf")
+      format("opentype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Black.woff")
+      format("woff"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Black.ttf")
+      format("truetype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Black.svg#Gotham-Black")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gotham-BlackItalic';
-    src: url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BlackItalic.eot?#iefix') format('embedded-opentype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BlackItalic.otf') format('opentype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BlackItalic.woff') format('woff'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BlackItalic.ttf') format('truetype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BlackItalic.svg#Gotham-BlackItalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Gotham-BlackItalic";
+  src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BlackItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BlackItalic.otf")
+      format("opentype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BlackItalic.woff")
+      format("woff"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BlackItalic.ttf")
+      format("truetype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BlackItalic.svg#Gotham-BlackItalic")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gotham-Bold';
-    src: url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Bold.otf') format('opentype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Bold.woff') format('woff'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Bold.ttf') format('truetype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Bold.svg#Gotham-Bold') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Gotham-Bold";
+  src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Bold.otf")
+      format("opentype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Bold.woff")
+      format("woff"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Bold.ttf")
+      format("truetype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Bold.svg#Gotham-Bold")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gotham-BoldItalic';
-    src: url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BoldItalic.eot?#iefix') format('embedded-opentype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BoldItalic.otf') format('opentype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BoldItalic.woff') format('woff'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BoldItalic.ttf') format('truetype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BoldItalic.svg#Gotham-BoldItalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Gotham-BoldItalic";
+  src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BoldItalic.otf")
+      format("opentype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BoldItalic.woff")
+      format("woff"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BoldItalic.ttf")
+      format("truetype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BoldItalic.svg#Gotham-BoldItalic")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gotham-Book';
-    src: url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Book.otf') format('opentype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Book.woff') format('woff'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Book.ttf') format('truetype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Book.svg#Gotham-Book') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Gotham-Book";
+  src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Book.eot?#iefix")
+      format("embedded-opentype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Book.otf")
+      format("opentype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Book.woff")
+      format("woff"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Book.ttf")
+      format("truetype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Book.svg#Gotham-Book")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gotham-BookItalic';
-    src: url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BookItalic.eot?#iefix') format('embedded-opentype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BookItalic.otf') format('opentype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BookItalic.woff') format('woff'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BookItalic.ttf') format('truetype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BookItalic.svg#Gotham-BookItalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Gotham-BookItalic";
+  src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BookItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BookItalic.otf")
+      format("opentype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BookItalic.woff")
+      format("woff"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BookItalic.ttf")
+      format("truetype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BookItalic.svg#Gotham-BookItalic")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gotham-ExtraLight';
-    src: url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLight.eot?#iefix') format('embedded-opentype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLight.otf') format('opentype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLight.woff') format('woff'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLight.ttf') format('truetype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLight.svg#Gotham-ExtraLight') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Gotham-ExtraLight";
+  src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLight.eot?#iefix")
+      format("embedded-opentype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLight.otf")
+      format("opentype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLight.woff")
+      format("woff"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLight.ttf")
+      format("truetype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLight.svg#Gotham-ExtraLight")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gotham-ExtraLightItalic';
-    src: url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLightItalic.eot?#iefix') format('embedded-opentype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLightItalic.otf') format('opentype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLightItalic.woff') format('woff'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLightItalic.ttf') format('truetype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLightItalic.svg#Gotham-ExtraLightItalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Gotham-ExtraLightItalic";
+  src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLightItalic.otf")
+      format("opentype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLightItalic.woff")
+      format("woff"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLightItalic.ttf")
+      format("truetype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLightItalic.svg#Gotham-ExtraLightItalic")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gotham-Light';
-    src: url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Light.eot?#iefix') format('embedded-opentype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Light.otf') format('opentype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Light.woff') format('woff'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Light.ttf') format('truetype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Light.svg#Gotham-Light') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Gotham-Light";
+  src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Light.otf")
+      format("opentype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Light.woff")
+      format("woff"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Light.ttf")
+      format("truetype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Light.svg#Gotham-Light")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gotham-LightItalic';
-    src: url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-LightItalic.eot?#iefix') format('embedded-opentype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-LightItalic.otf') format('opentype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-LightItalic.woff') format('woff'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-LightItalic.ttf') format('truetype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-LightItalic.svg#Gotham-LightItalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Gotham-LightItalic";
+  src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-LightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-LightItalic.otf")
+      format("opentype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-LightItalic.woff")
+      format("woff"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-LightItalic.ttf")
+      format("truetype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-LightItalic.svg#Gotham-LightItalic")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gotham-Medium';
-    src: url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Medium.otf') format('opentype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Medium.woff') format('woff'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Medium.ttf') format('truetype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Medium.svg#Gotham-Medium') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Gotham-Medium";
+  src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Medium.otf")
+      format("opentype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Medium.woff")
+      format("woff"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Medium.ttf")
+      format("truetype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Medium.svg#Gotham-Medium")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gotham-MediumItalic';
-    src: url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-MediumItalic.eot?#iefix') format('embedded-opentype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-MediumItalic.otf') format('opentype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-MediumItalic.woff') format('woff'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-MediumItalic.ttf') format('truetype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-MediumItalic.svg#Gotham-MediumItalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Gotham-MediumItalic";
+  src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-MediumItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-MediumItalic.otf")
+      format("opentype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-MediumItalic.woff")
+      format("woff"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-MediumItalic.ttf")
+      format("truetype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-MediumItalic.svg#Gotham-MediumItalic")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gotham-Thin';
-    src: url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Thin.eot?#iefix') format('embedded-opentype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Thin.otf') format('opentype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Thin.woff') format('woff'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Thin.ttf') format('truetype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Thin.svg#Gotham-Thin') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Gotham-Thin";
+  src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Thin.eot?#iefix")
+      format("embedded-opentype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Thin.otf")
+      format("opentype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Thin.woff")
+      format("woff"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Thin.ttf")
+      format("truetype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Thin.svg#Gotham-Thin")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gotham-ThinItalic';
-    src: url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ThinItalic.eot?#iefix') format('embedded-opentype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ThinItalic.otf') format('opentype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ThinItalic.woff') format('woff'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ThinItalic.ttf') format('truetype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ThinItalic.svg#Gotham-ThinItalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Gotham-ThinItalic";
+  src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ThinItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ThinItalic.otf")
+      format("opentype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ThinItalic.woff")
+      format("woff"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ThinItalic.ttf")
+      format("truetype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ThinItalic.svg#Gotham-ThinItalic")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gotham-Ultra';
-    src: url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Ultra.eot?#iefix') format('embedded-opentype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Ultra.otf') format('opentype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Ultra.woff') format('woff'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Ultra.ttf') format('truetype'), url('/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Ultra.svg#Gotham-Ultra') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Gotham-Ultra";
+  src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Ultra.eot?#iefix")
+      format("embedded-opentype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Ultra.otf")
+      format("opentype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Ultra.woff")
+      format("woff"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Ultra.ttf")
+      format("truetype"),
+    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Ultra.svg#Gotham-Ultra")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
-
-
 .tooltip-gauges h3 {
     font-size: 16px;
 
@@ -370,7 +503,7 @@ section.publications .left-bar span:nth-child(2n+1) {
 }
 
 section.publications .up-zone{
-    height: 26rem;
+    height: 28rem;
 }
 
 section.publications .down-zone{
@@ -524,7 +657,7 @@ section.publications #timeline-publication .overlay {
 
 section.publications #lines-publications div:nth-child(n) {
     /* height: 40px; */
-    margin-top: -38px
+    margin-top: -3rem;
 }
 
 section.publications #lines-publications {
@@ -541,6 +674,19 @@ section.publications #lines-publications {
     font-weight: bold;
     border: solid 1px #f5f5f5;
     background-color: white;
+}
+
+.toolTip {
+    position: absolute;
+    display: none;
+    min-width: 80px;
+    height: auto;
+    background: none repeat scroll 0 0 #ffffff;
+    padding: 14px;
+    font-family: "Gotham-Bold";
+    font-size: 14px;
+    text-align: left;
+    z-index: 1;
 }
 
 .tooltip p {
@@ -608,18 +754,23 @@ section.moocs h3 {
     font-family: 'Gotham-Bold';
 }
 
+
+section.moocs .left-bar .gauge-3 {
+
+    padding-top: 3.5rem;
+}
+
 section.moocs h1 {
-    font-size: 48px;
+    font-size: 2.5rem;
 }
 
 section.moocs .left-zone {
-    width: 950px;
-    height: 280px;
+    /* width: 950px; */
+    height: 30rem;
 }
 
 section.moocs .right-zone {
-    width: 690px;
-    height: 280px;
+    height: 30rem;
 }
 
 section.moocs .down-zone span {
@@ -653,13 +804,31 @@ section.moocs .distribution-chart .tick text {
     width: 10px;
 }
 
+section.moocs #age-distribution-moocs .bar {
+    fill: #f1a592;
+}
+
+section.moocs #age-distribution-moocs .axis {
+    font-size: 13px;
+}
+
+section.moocs #age-distribution-moocs .axis path,
+section.moocs #age-distribution-moocs .axis line {
+    fill: black;
+    stroke-width: 1.5
+}
+
+section.moocs #age-distribution-moocs .label {
+    font-size: 13px;
+}
+
 section.moocs #moocs-registrations .y-data {
     font-family: 'Gotham-Bold';
     font-size: 11px;
 }
 
 section.moocs .waffles {
-    height: 22rem;
+    height: 24rem;
 }
 
 section.moocs #waffle1 {
@@ -690,9 +859,18 @@ section.moocs .waffles h2 {
     margin-bottom: 0;
 }
 
+section.moocs #moocs-registrations {
+    height: 23rem;
+}
+
 section.moocs #moocs-registrations .text-inside {
     color: #8a858d
 }
+
+section.moocs #distribution-moocs{
+    height: 28rem;
+}
+
 
 
 section.moocs #moocs-registrations .y-data .domain {
@@ -706,7 +884,7 @@ section.moocs #moocs-registrations .y-data text {
 
 section.moocs #timeline-moocs {
     font-family: 'Gotham-Bold';
-    height: 23rem;
+    height: 25rem;
 }
 
 section.moocs #timeline-moocs .line {
@@ -761,6 +939,10 @@ section.datasets .left-bar h4 {
     margin-bottom: 0;
 }
 
+section.datasets .up-zone{
+    height: 28rem;
+}
+
 section.datasets .left-bar span:nth-child(2n) {
     color: white;
     font-size: 10px;
@@ -792,6 +974,10 @@ section.datasets h4 {
 section.datasets h4 span {
     font-size: 16px;
     font-family: 'Gotham-Bold';
+}
+
+section.datasets .down{
+    height: 61rem;
 }
 
 section.datasets h4 span:nth-child(1) {
@@ -835,6 +1021,7 @@ section.datasets #data-trend .y-data .domain {
 
 section.datasets #timeline-dataset {
     font-family: 'Gotham-Bold';
+    /* height: 28rem; */
 }
 
 section.datasets #timeline-dataset .overlay {
@@ -862,6 +1049,14 @@ section.datasets #timeline-dataset .y-axis path {
 
 section.datasets #timeline-dataset .y-axis .tick line {
     display: none;
+}
+
+section.datasets #downloads-dataset{
+    height: 22rem;
+}
+
+section.datasets #timeline-dataset{
+    height: 22rem;
 }
 
 section.datasets #dataset-publications-plot .legend text,
@@ -1364,10 +1559,16 @@ section.publications #downloads-publications .tooltip-footer {
     display: none;
 }
 
+section.datasets #downloads-dataset .d3plus_rect .d3plus_share {
+    display: none;
+}
+section.datasets #downloads-dataset .d3plus_rect .d3plus_share {
+    display: none;
+}
 
+section.datasets #downloads-dataset rect {
 
-#moocs-registrations {
-    height: 245px;
+    stroke: #424488 !important;
 }
 
 
@@ -1440,6 +1641,11 @@ section.publications #downloads-publications .tooltip-footer {
     .left-bar {
         width: 250px !important;
         max-width: 250px!important;
+    }
+
+    section.moocs .left-bar .gauge-3 {
+
+        padding-top: 0rem;
     }
     .right-bar{
         width: 1550px !important;
@@ -1542,7 +1748,7 @@ section.publications #downloads-publications .tooltip-footer {
 
     section.moocs .left-zone {
         width: 950px;
-        height: 275px;
+        height: 27.5rem;
     }
 
     section.moocs .right-bar label {
@@ -1567,6 +1773,10 @@ section.publications #downloads-publications .tooltip-footer {
     section.moocs .container_radio {
         margin-top: 0;
         padding-top: 0;
+    }
+
+    section.moocs .waffles {
+        height: 22rem;
     }
 
     section.moocs #moocs-registration .y-data {
@@ -1612,28 +1822,6 @@ section.publications #downloads-publications .tooltip-footer {
         margin-left: -40px;
     }
 
-    section.moocs #age-distribution-moocs .bar {
-        fill: #f1a592;
-    }
-
-    section.moocs #age-distribution-moocs .axis {
-        font-size: 13px;
-    }
-
-    section.moocs #age-distribution-moocs .axis path,
-    section.moocs #age-distribution-moocs .axis line {
-        fill: black;
-        stroke-width: 1.5
-    }
-
-    section.moocs #age-distribution-moocs .label {
-        font-size: 13px;
-    }
-
-    section.moocs .gauge-3 {
-        padding-top: 50px;
-    }
-
     .ms-fullscreenmode #contentBox {
         margin-left: 0 !important;
     }
@@ -1649,6 +1837,7 @@ section.publications #downloads-publications .tooltip-footer {
     section.datasets {
         min-height: 940px;
     }
+    
 
     section.datasets .left-zone {
         width: 1000px;
@@ -2034,7 +2223,7 @@ section.publications #downloads-publications .tooltip-footer {
 
 
     section.moocs .left-bar h4 {
-        font-size: 17px;
+        font-size: 1.7rem;
         color: white;
         margin-bottom: 0;
     }
@@ -2065,21 +2254,11 @@ section.publications #downloads-publications .tooltip-footer {
 
 
     section.moocs h1 {
-        font-size: 48px;
+        font-size: 4.8rem;
     }
 
     section.moocs {
         height: 940px;
-    }
-
-    section.moocs .left-zone {
-        width: 950px;
-        height: 280px;
-    }
-
-    section.moocs .right-zone {
-        width: 690px;
-        height: 280px;
     }
 
     section.moocs .down-zone span {
@@ -2113,6 +2292,10 @@ section.publications #downloads-publications .tooltip-footer {
         width: 10px;
     }
 
+    section.moocs #moocs-registrations {
+        height: 245px;
+    }
+
     section.moocs #moocs-registrations .y-data {
         font-family: 'Gotham-Bold';
         font-size: 12px;
@@ -2134,6 +2317,10 @@ section.publications #downloads-publications .tooltip-footer {
 
     section.moocs #timeline-moocs .area {
         fill: #f1a592;
+    }
+
+    section.moocs #timeline-moocs {
+        height: 24rem;
     }
 
     section.moocs #timeline-moocs .x-axis .tick {
@@ -2250,14 +2437,7 @@ section.publications #downloads-publications .tooltip-footer {
         height: 220px;
     }
 
-    #downloads-dataset .d3plus_rect .d3plus_share {
-        display: none;
-    }
-
-    section.datasets #downloads-dataset rect {
-
-        stroke: #424488 !important;
-    }
+    
 
 
     section.datasets #timeline-dataset {
@@ -2771,13 +2951,6 @@ section.publications #downloads-publications .tooltip-footer {
         min-height: 220px;
     }
 
-
-
-    #moocs-registrations {
-        height: 245px;
-    }
-
-
     /***gauges ***/
     .funds-allocated-meter .background {
         fill: #AA0206;
@@ -2917,10 +3090,6 @@ section.publications #downloads-publications .tooltip-footer {
         min-height: 900px;
     }
 
-    #moocs-registrations {
-        height: 245px;
-    }
-
     section.publications {
         height: 100vh;
     }
@@ -3005,12 +3174,6 @@ section.publications #downloads-publications .tooltip-footer {
     section.moocs {
         height: 95vh;
     }
-
-    section.moocs .left-zone {
-        width: 950px;
-        height: 275px;
-    }
-
     section.moocs .right-bar label {
         margin-bottom: 2px;
     }
@@ -3081,29 +3244,6 @@ section.publications #downloads-publications .tooltip-footer {
 
     section.moocs #distribution-moocs {
         margin-left: -40px;
-        height: 450px;
-    }
-
-    section.moocs #age-distribution-moocs .bar {
-        fill: #f1a592;
-    }
-
-    section.moocs #age-distribution-moocs .axis {
-        font-size: 13px;
-    }
-
-    section.moocs #age-distribution-moocs .axis path,
-    section.moocs #age-distribution-moocs .axis line {
-        fill: black;
-        stroke-width: 1.5
-    }
-
-    section.moocs #age-distribution-moocs .label {
-        font-size: 13px;
-    }
-
-    section.moocs .gauge-3 {
-        padding-top: 50px;
     }
 
     .ms-fullscreenmode #contentBox {
@@ -3142,10 +3282,6 @@ section.publications #downloads-publications .tooltip-footer {
 
     section.datasets .right-bar label {
         margin-bottom: 2px;
-    }
-
-    section.datasets .down {
-        height: 600px;
     }
 
     section.datasets .right-zone {

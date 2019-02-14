@@ -679,9 +679,6 @@ section {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-    @media (min-width: 960px) {
-      section.publications, section.moocs, section.datasets, section.code, section.suscribers, section.map {
-        min-height: 960px; } }
 
 .vertical-text {
   -ms-writing-mode: tb-lr;

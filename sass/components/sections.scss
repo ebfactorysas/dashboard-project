@@ -9,7 +9,7 @@ section {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     @include breakpoint($desk) {
-      min-height: 960px;
+      // min-height: 960px;
     }
   }
 }
