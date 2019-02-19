@@ -534,7 +534,7 @@ function getItems() {
 $(document).ready(function () {
     //getItems();
     var isIE = /*@cc_on!@*/ false || !!document.documentMode;
-    if (isIE == true) {
+    if (isIE == true || screen.width<980) {
         $(".body").css("width", screen.width + "px");
     }
     moment.updateLocale('en', {

@@ -6,14 +6,17 @@ function drawTrendChart(data, id, colorY, colorClass, inBar, textColor) {
         left: 300
     };
 
-    var widthDataTrend = 800 - marginDataTrend.left - marginDataTrend.right,
-        heightDataTrend = 520 - marginDataTrend.top - marginDataTrend.bottom;
+    var widthInherith = $(id).width();
+  var heightInherith = $(id).height();
+
+    var widthDataTrend = widthInherith - marginDataTrend.left - marginDataTrend.right,
+        heightDataTrend = heightInherith - marginDataTrend.top - marginDataTrend.bottom;
     var valueOfFilter = $("#divisionSelect")[0].value;
 
     var svgDataTrend = d3.select(id)
         .append("svg")
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "-290 -28 800 550")
+        .attr("viewBox", "-290 -28 "+ widthInherith + " " + heightInherith)
         .append("g")
         .classed("svg-content-responsive", true);
 

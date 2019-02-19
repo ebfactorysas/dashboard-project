@@ -432,8 +432,8 @@ function drawMoocsAgeDistributionChart(data) {
       // div.html(d.value + "<br/>" + d.name)
       div
         .html(textHtml)
-        .style("left", d3Old.event.pageX + 5 + "px")
-        .style("top", d3Old.event.pageY - 28 + 5 + "px");
+        .style("left", d3Old.event.pageX - 200 + 35 + "px")
+        .style("top", d3Old.event.pageY - 28 + 35 + "px");
     })
     .on("mouseout", function(d) {
       div
@@ -474,8 +474,8 @@ function drawMoocsAgeDistributionChart(data) {
       // div.html(d.value + "<br/>" + d.name)
       div
         .html(textHtml)
-        .style("left", d3Old.event.pageX + 5 + "px")
-        .style("top", d3Old.event.pageY - 28 + 5 + "px");
+        .style("left", d3Old.event.pageX - 200 + 35 + "px")
+        .style("top", d3Old.event.pageY - 28 + 35 + "px");
     })
     .on("mouseout", function(d) {
       div
@@ -515,8 +515,8 @@ function drawMoocsAgeDistributionChart(data) {
       // div.html(d.value + "<br/>" + d.name)
       div
         .html(textHtml)
-        .style("left", d3Old.event.pageX + 5 + "px")
-        .style("top", d3Old.event.pageY - 28 + 5 + "px");
+        .style("left", d3Old.event.pageX - 200 + 35 + "px")
+        .style("top", d3Old.event.pageY - 28 + 35 + "px");
     })
     .on("mouseout", function(d) {
       div

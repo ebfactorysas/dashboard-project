@@ -1,249 +1,114 @@
 @font-face {
-  font-family: "Gotham-Black";
-  src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Black.eot?#iefix")
-      format("embedded-opentype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Black.otf")
-      format("opentype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Black.woff")
-      format("woff"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Black.ttf")
-      format("truetype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Black.svg#Gotham-Black")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "Gotham-Black";
+    src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Black.eot?#iefix") format("embedded-opentype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Black.otf") format("opentype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Black.woff") format("woff"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Black.ttf") format("truetype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Black.svg#Gotham-Black") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Gotham-BlackItalic";
-  src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BlackItalic.eot?#iefix")
-      format("embedded-opentype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BlackItalic.otf")
-      format("opentype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BlackItalic.woff")
-      format("woff"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BlackItalic.ttf")
-      format("truetype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BlackItalic.svg#Gotham-BlackItalic")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "Gotham-BlackItalic";
+    src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BlackItalic.eot?#iefix") format("embedded-opentype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BlackItalic.otf") format("opentype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BlackItalic.woff") format("woff"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BlackItalic.ttf") format("truetype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BlackItalic.svg#Gotham-BlackItalic") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Gotham-Bold";
-  src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Bold.eot?#iefix")
-      format("embedded-opentype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Bold.otf")
-      format("opentype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Bold.woff")
-      format("woff"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Bold.ttf")
-      format("truetype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Bold.svg#Gotham-Bold")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "Gotham-Bold";
+    src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Bold.eot?#iefix") format("embedded-opentype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Bold.otf") format("opentype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Bold.woff") format("woff"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Bold.ttf") format("truetype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Bold.svg#Gotham-Bold") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Gotham-BoldItalic";
-  src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BoldItalic.eot?#iefix")
-      format("embedded-opentype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BoldItalic.otf")
-      format("opentype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BoldItalic.woff")
-      format("woff"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BoldItalic.ttf")
-      format("truetype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BoldItalic.svg#Gotham-BoldItalic")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "Gotham-BoldItalic";
+    src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BoldItalic.eot?#iefix") format("embedded-opentype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BoldItalic.otf") format("opentype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BoldItalic.woff") format("woff"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BoldItalic.ttf") format("truetype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BoldItalic.svg#Gotham-BoldItalic") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Gotham-Book";
-  src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Book.eot?#iefix")
-      format("embedded-opentype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Book.otf")
-      format("opentype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Book.woff")
-      format("woff"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Book.ttf")
-      format("truetype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Book.svg#Gotham-Book")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "Gotham-Book";
+    src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Book.eot?#iefix") format("embedded-opentype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Book.otf") format("opentype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Book.woff") format("woff"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Book.ttf") format("truetype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Book.svg#Gotham-Book") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Gotham-BookItalic";
-  src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BookItalic.eot?#iefix")
-      format("embedded-opentype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BookItalic.otf")
-      format("opentype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BookItalic.woff")
-      format("woff"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BookItalic.ttf")
-      format("truetype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BookItalic.svg#Gotham-BookItalic")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "Gotham-BookItalic";
+    src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BookItalic.eot?#iefix") format("embedded-opentype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BookItalic.otf") format("opentype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BookItalic.woff") format("woff"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BookItalic.ttf") format("truetype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-BookItalic.svg#Gotham-BookItalic") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Gotham-ExtraLight";
-  src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLight.eot?#iefix")
-      format("embedded-opentype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLight.otf")
-      format("opentype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLight.woff")
-      format("woff"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLight.ttf")
-      format("truetype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLight.svg#Gotham-ExtraLight")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "Gotham-ExtraLight";
+    src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLight.eot?#iefix") format("embedded-opentype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLight.otf") format("opentype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLight.woff") format("woff"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLight.ttf") format("truetype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLight.svg#Gotham-ExtraLight") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Gotham-ExtraLightItalic";
-  src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLightItalic.eot?#iefix")
-      format("embedded-opentype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLightItalic.otf")
-      format("opentype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLightItalic.woff")
-      format("woff"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLightItalic.ttf")
-      format("truetype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLightItalic.svg#Gotham-ExtraLightItalic")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "Gotham-ExtraLightItalic";
+    src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLightItalic.eot?#iefix") format("embedded-opentype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLightItalic.otf") format("opentype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLightItalic.woff") format("woff"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLightItalic.ttf") format("truetype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ExtraLightItalic.svg#Gotham-ExtraLightItalic") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Gotham-Light";
-  src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Light.eot?#iefix")
-      format("embedded-opentype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Light.otf")
-      format("opentype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Light.woff")
-      format("woff"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Light.ttf")
-      format("truetype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Light.svg#Gotham-Light")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "Gotham-Light";
+    src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Light.eot?#iefix") format("embedded-opentype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Light.otf") format("opentype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Light.woff") format("woff"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Light.ttf") format("truetype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Light.svg#Gotham-Light") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Gotham-LightItalic";
-  src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-LightItalic.eot?#iefix")
-      format("embedded-opentype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-LightItalic.otf")
-      format("opentype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-LightItalic.woff")
-      format("woff"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-LightItalic.ttf")
-      format("truetype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-LightItalic.svg#Gotham-LightItalic")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "Gotham-LightItalic";
+    src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-LightItalic.eot?#iefix") format("embedded-opentype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-LightItalic.otf") format("opentype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-LightItalic.woff") format("woff"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-LightItalic.ttf") format("truetype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-LightItalic.svg#Gotham-LightItalic") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Gotham-Medium";
-  src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Medium.eot?#iefix")
-      format("embedded-opentype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Medium.otf")
-      format("opentype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Medium.woff")
-      format("woff"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Medium.ttf")
-      format("truetype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Medium.svg#Gotham-Medium")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "Gotham-Medium";
+    src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Medium.eot?#iefix") format("embedded-opentype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Medium.otf") format("opentype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Medium.woff") format("woff"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Medium.ttf") format("truetype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Medium.svg#Gotham-Medium") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Gotham-MediumItalic";
-  src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-MediumItalic.eot?#iefix")
-      format("embedded-opentype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-MediumItalic.otf")
-      format("opentype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-MediumItalic.woff")
-      format("woff"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-MediumItalic.ttf")
-      format("truetype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-MediumItalic.svg#Gotham-MediumItalic")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "Gotham-MediumItalic";
+    src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-MediumItalic.eot?#iefix") format("embedded-opentype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-MediumItalic.otf") format("opentype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-MediumItalic.woff") format("woff"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-MediumItalic.ttf") format("truetype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-MediumItalic.svg#Gotham-MediumItalic") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Gotham-Thin";
-  src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Thin.eot?#iefix")
-      format("embedded-opentype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Thin.otf")
-      format("opentype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Thin.woff")
-      format("woff"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Thin.ttf")
-      format("truetype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Thin.svg#Gotham-Thin")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "Gotham-Thin";
+    src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Thin.eot?#iefix") format("embedded-opentype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Thin.otf") format("opentype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Thin.woff") format("woff"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Thin.ttf") format("truetype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Thin.svg#Gotham-Thin") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Gotham-ThinItalic";
-  src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ThinItalic.eot?#iefix")
-      format("embedded-opentype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ThinItalic.otf")
-      format("opentype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ThinItalic.woff")
-      format("woff"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ThinItalic.ttf")
-      format("truetype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ThinItalic.svg#Gotham-ThinItalic")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "Gotham-ThinItalic";
+    src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ThinItalic.eot?#iefix") format("embedded-opentype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ThinItalic.otf") format("opentype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ThinItalic.woff") format("woff"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ThinItalic.ttf") format("truetype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-ThinItalic.svg#Gotham-ThinItalic") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Gotham-Ultra";
-  src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Ultra.eot?#iefix")
-      format("embedded-opentype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Ultra.otf")
-      format("opentype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Ultra.woff")
-      format("woff"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Ultra.ttf")
-      format("truetype"),
-    url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Ultra.svg#Gotham-Ultra")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "Gotham-Ultra";
+    src: url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Ultra.eot?#iefix") format("embedded-opentype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Ultra.otf") format("opentype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Ultra.woff") format("woff"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Ultra.ttf") format("truetype"), url("/sites/VPS/KIC/SiteAssets/Mockup/fonts/Gotham-Ultra.svg#Gotham-Ultra") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
+
 .tooltip-gauges h3 {
     font-size: 16px;
-
 }
 
-
 /** header in SP**/
+
 #vps-navigation {
     flex-direction: row;
 }
@@ -259,8 +124,8 @@
 #s4-bodyContainer .navbar:nth-child(2) {
     position: fixed;
     transition-property: position;
-  transition-duration: 4s;
-  transition-delay: 2s;
+    transition-duration: 4s;
+    transition-delay: 2s;
     top: 0;
     right: 0;
     left: 0;
@@ -272,10 +137,8 @@
     position: absolute;
 }
 
-
-
 .inner-nav {
-    margin-top:16rem;
+    margin-top: 16rem;
 }
 
 .tooltip-gauges .border-top {
@@ -288,7 +151,6 @@ body {
 
 .red-background {
     background-color: #D1415A;
-
 }
 
 .orange-background {
@@ -363,7 +225,6 @@ body {
 
 #nav-title .navbar-nav a {
     font-size: 13px;
-
 }
 
 #deparmentSelect option {
@@ -389,6 +250,124 @@ body {
     border: none;
 }
 
+.tooltip {
+    position: absolute;
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    border: solid 1px #f5f5f5;
+    background-color: white;
+}
+
+.toolTip {
+    position: absolute;
+    display: none;
+    min-width: 80px;
+    height: auto;
+    background: none repeat scroll 0 0 #ffffff;
+    padding: 14px;
+    font-family: "Gotham-Bold";
+    font-size: 14px;
+    text-align: left;
+    z-index: 1;
+}
+
+.tooltip p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: "Gotham-Bold"
+}
+
+.tooltip p span {
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+    font-family: "Gotham-Book"
+}
+
+.tooltip h4 {
+    font-size: 12px;
+    font-family: "Gotham-Bold"
+}
+
+#demographics {
+    height: 250px;
+}
+
+#gender {
+    height: 250px;
+}
+
+#registrations {
+    height: 250px;
+}
+
+#demographics-suscribers, #downloads-code {
+    min-width: 300px;
+    max-width: 100%;
+    margin: 0 auto;
+    min-height: 220px;
+}
+
+#downloads-publications rect {
+    stroke: #d1415a !important;
+}
+
+#downloads-publications .d3plus_rect .d3plus_share {
+    display: none;
+}
+
+/***gauges ***/
+
+.funds-allocated-meter text.percent-complete {
+    font-family: "Gotham-Book";
+    font-size: 45px;
+    fill: #FFF;
+    letter-spacing: -0.03em;
+}
+
+#downloads-publications {
+    padding-bottom: 1rem;
+}
+
+.d-border-left {
+    border-left: solid 1.5px #b4b4b4;
+}
+
+.d-border-bottom {
+    border-bottom: solid 1.5px #b4b4b4;
+}
+
+.red-title {
+    font-size: 1rem;
+    color: #d1415a;
+}
+
+.dropdown-bg {
+    background-color: #f5f5f5;
+    margin: auto 0;
+    padding-left: 0;
+    padding-right: 0;
+    font-family: "Gotham-Bold";
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+#dropdownMenuButton {
+    padding-left: 0;
+}
+
+.lightgray-background {
+    background-color: #f1f1f1;
+}
+
+.grayr-background {
+    background-color: #f5f5f5;
+}
+
+/** red-section***/
 
 section.big-numbers {
     color: #FFFFFF;
@@ -404,7 +383,7 @@ section.big-numbers h4 {
 }
 
 section.big-numbers h1 {
-    font-size: 5.5vw;
+    font-size: 10rem;
     font-family: 'Gotham-Book';
     color: #ffffff;
 }
@@ -412,11 +391,6 @@ section.big-numbers h1 {
 section.big-numbers label {
     font-weight: 100;
 }
-/* section.big-numbers .border-right-dash {
-    border-right: 2px solid #0f5095;
-    padding-left: .5vw;
-    padding-right: .5vw;
-} */
 
 section.big-numbers .last-panel {
     padding-left: 1vw;
@@ -427,11 +401,9 @@ section.big-numbers p {
     font-size: 0.9vw;
 }
 
-
 section.big-numbers img {
     max-width: 55px;
 }
-
 
 section.big-numbers .border-right-dash:before {
     content: "";
@@ -444,11 +416,6 @@ section.big-numbers .border-right-dash:before {
     background: #0f5095;
 }
 
-section.publications {
-    font-family: 'Gotham-Bold';
-}
-
-
 .d3-tip {
     line-height: 1;
     font-weight: bold;
@@ -459,6 +426,7 @@ section.publications {
 }
 
 /* Creates a small triangle extender for the tooltip */
+
 .d3-tip:after {
     box-sizing: border-box;
     display: inline;
@@ -472,19 +440,28 @@ section.publications {
 }
 
 /* Style northward tooltips differently */
+
 .d3-tip.n:after {
     margin: -1px 0 0 0;
     top: 100%;
     left: 0;
 }
 
-
-
-section.publications .left-bar .gauge-1 {
-
-    padding-top: 4rem;
+section.publications {
+    font-family: 'Gotham-Bold';
 }
 
+section.publications .funds-allocated-meter .background {
+    fill: #AA0206;
+}
+
+section.publications .funds-allocated-meter .foreground {
+    fill: #FFF;
+}
+
+section.publications .left-bar .gauge-1 {
+    padding-top: 4rem;
+}
 
 section.publications .left-bar h4 {
     font-size: 1.4rem;
@@ -502,16 +479,17 @@ section.publications .left-bar span:nth-child(2n+1) {
     font-size: 10px;
 }
 
-section.publications .up-zone{
+section.publications .text-different b {
+    font-family: 'Gotham-Bold';
+}
+
+section.publications .up-zone {
     height: 28rem;
 }
 
-section.publications .down-zone{
+section.publications .down-zone {
     height: 61rem;
 }
-
-
-
 
 section.publications .d-border-left p {
     font-size: 11px;
@@ -527,10 +505,9 @@ section.publications #kic p {
     font-family: 'Gotham-Book';
     color: #555555;
     font-size: 1.7rem;
-    
 }
 
-section.publications .daysTrend{
+section.publications .daysTrend {
     font-size: 1rem;
 }
 
@@ -540,15 +517,13 @@ section.publications .right-bar h4 {
     color: #d1415a;
 }
 
-
-section.publications .label-filter-select section.publications .down-zone span {
+section.publications .down-zone span {
     font-size: 16px;
     font-family: 'Gotham-Bold';
     color: #d1415a;
 }
 
 section.publications .down-zone .special span:nth-child(1) {
-
     border-right: 1px solid #d1415a;
     color: #d1415a;
 }
@@ -568,7 +543,7 @@ section.publications .down-zone h4 span label {
     border-right: none;
 }
 
-section.publications #publication-trend{
+section.publications #publication-trend {
     height: 56rem;
     margin-left: 2rem;
 }
@@ -578,12 +553,10 @@ section.publications #publication-trend .y-data {
     font-size: 11px;
 }
 
-
 section.publications #publication-trend .y-data text {
     font-family: 'Gotham-Bold';
     font-size: 16px;
 }
-
 
 section.publications #publication-trend .text-inside {
     color: #8a858d
@@ -598,7 +571,7 @@ section.publications #timeline-publication {
 }
 
 section.publications #timeline-publication {
-    height: 25vh;
+    height: 22rem;
 }
 
 section.publications #timeline-publication .line {
@@ -666,65 +639,40 @@ section.publications #lines-publications {
     margin-right: 40px;
 }
 
-.tooltip {
-    position: absolute;
-    text-align: center;
-    padding: 5px;
-    font-size: 12px;
-    font-weight: bold;
-    border: solid 1px #f5f5f5;
-    background-color: white;
+section.publications #downloads-publications {
+    height: 22rem;
 }
 
-.toolTip {
-    position: absolute;
-    display: none;
-    min-width: 80px;
+section.publications #downloads-publications .tooltip-table {
+    width: 100%;
     height: auto;
-    background: none repeat scroll 0 0 #ffffff;
-    padding: 14px;
-    font-family: "Gotham-Bold";
-    font-size: 14px;
-    text-align: left;
-    z-index: 1;
 }
 
-.tooltip p {
-    margin: 0;
-    padding: 0;
-    font-size: 12px;
-    font-family: "Gotham-Bold"
+section.publications #downloads-publications .tooltip-table .data {
+    text-align: right;
 }
 
-.tooltip p span {
-    margin: 0;
-    padding: 0;
-    font-size: 11px;
-    font-family: "Gotham-Book"
+section.publications #downloads-publications .d3plus-Shape {
+    stroke-width: 1;
 }
 
-
-.tooltip h4 {
-    font-size: 12px;
-    font-family: "Gotham-Bold"
+section.publications #downloads-publications .d3plus-textBox text {
+    font-family: 'Gotham-Bold' !important;
 }
 
-section.moocs{
-    height: 95vh;
+section.publications #downloads-publications .tooltip-footer {
+    opacity: 0.5;
 }
-
 
 section.moocs .left-bar .gauge-1 {
     padding-top: 4rem;
 }
-
 
 section.moocs .left-bar h4 {
     font-size: 1.4rem;
     color: white;
     margin-bottom: 0;
 }
-
 
 section.moocs .left-bar span:nth-child(2n) {
     color: white;
@@ -754,9 +702,7 @@ section.moocs h3 {
     font-family: 'Gotham-Bold';
 }
 
-
 section.moocs .left-bar .gauge-3 {
-
     padding-top: 3.5rem;
 }
 
@@ -779,11 +725,9 @@ section.moocs .down-zone span {
 
 section.moocs .down-zone .special span:nth-child(1) {
     border-right: 1px solid #b4b4b4;
-
 }
 
 section.moocs .down-zone .special span {
-
     font-family: 'Gotham-Bold';
 }
 
@@ -812,8 +756,7 @@ section.moocs #age-distribution-moocs .axis {
     font-size: 13px;
 }
 
-section.moocs #age-distribution-moocs .axis path,
-section.moocs #age-distribution-moocs .axis line {
+section.moocs #age-distribution-moocs .axis path, section.moocs #age-distribution-moocs .axis line {
     fill: black;
     stroke-width: 1.5
 }
@@ -838,7 +781,6 @@ section.moocs #waffle1 {
 section.moocs #waffle2 {
     height: 14rem;
 }
-
 
 section.moocs #waffle3 {
     height: 14rem;
@@ -867,11 +809,9 @@ section.moocs #moocs-registrations .text-inside {
     color: #8a858d
 }
 
-section.moocs #distribution-moocs{
+section.moocs #distribution-moocs {
     height: 28rem;
 }
-
-
 
 section.moocs #moocs-registrations .y-data .domain {
     display: none;
@@ -934,12 +874,12 @@ section.datasets .container_radio {
 }
 
 section.datasets .left-bar h4 {
-    font-size: 18px;
+    font-size: 1.4rem;
     color: white;
     margin-bottom: 0;
 }
 
-section.datasets .up-zone{
+section.datasets .up-zone {
     height: 28rem;
 }
 
@@ -966,29 +906,27 @@ section.datasets p {
 }
 
 section.datasets h4 {
-    font-size: 16px;
+    font-size: 1.4rem;
     font-family: 'Gotham-Bold';
     color: #424488;
 }
 
 section.datasets h4 span {
-    font-size: 16px;
+    font-size: 1.4rem;
     font-family: 'Gotham-Bold';
 }
 
-section.datasets .down{
+section.datasets .down {
     height: 61rem;
 }
 
 section.datasets h4 span:nth-child(1) {
     text-decoration: underline;
-
 }
 
 section.datasets .purple-border-right {
     border-right: solid 1px #2E305F;
 }
-
 
 section.datasets #publications {
     height: 325px;
@@ -1004,6 +942,10 @@ section.datasets .small-letter span {
     text-decoration: underline;
 }
 
+section.datasets #data-trend {
+    height: 55rem;
+}
+
 section.datasets #data-trend .y-data {
     font-family: 'Gotham-Bold';
     font-size: 11px;
@@ -1017,10 +959,9 @@ section.datasets #data-trend .y-data .domain {
     display: none;
 }
 
-
-
 section.datasets #timeline-dataset {
     font-family: 'Gotham-Bold';
+    height: 22rem;
     /* height: 28rem; */
 }
 
@@ -1051,23 +992,32 @@ section.datasets #timeline-dataset .y-axis .tick line {
     display: none;
 }
 
-section.datasets #downloads-dataset{
+section.datasets #downloads-dataset {
     height: 22rem;
 }
 
-section.datasets #timeline-dataset{
-    height: 22rem;
+section.datasets #lines-dataset div:nth-child(n) {
+    /* height: 40px; */
+    margin-top: -3rem;
 }
 
-section.datasets #dataset-publications-plot .legend text,
-section.datasets #dataset-publications-plot .axis text {
+section.datasets #lines-dataset {
+    padding-top: 55px;
+    margin-left: -6rem;
+    margin-right: 40px;
+}
+
+section.datasets #dataset-publications-plot {
+    height: 49rem;
+}
+
+section.datasets #dataset-publications-plot .legend text, section.datasets #dataset-publications-plot .axis text {
     font-size: 14px;
     fill: #333;
     font-family: 'Gotham-Book'
 }
 
-section.datasets #dataset-publications-plot .axis path,
-section.datasets #dataset-publications-plot .axis line {
+section.datasets #dataset-publications-plot .axis path, section.datasets #dataset-publications-plot .axis line {
     fill: none;
     stroke-width: 3px;
     stroke: #555555;
@@ -1098,8 +1048,25 @@ section.datasets #dataset-publications-plot .legeng:hover rect {
     fill-opacity: 1;
 }
 
+section.datasets #downloads-dataset .d3plus_rect .d3plus_share {
+    display: none;
+}
+
+section.datasets #downloads-dataset .d3plus_rect .d3plus_share {
+    display: none;
+}
+
+section.datasets #downloads-dataset rect {
+    stroke: #424488 !important;
+}
+
 section.code {
     height: 100vh;
+}
+
+section.code h4 {
+    font-size: 1.4remº;
+    font-family: 'Gotham-Bold';
 }
 
 section.code .funds-allocated-meter .background {
@@ -1111,16 +1078,34 @@ section.code #timeline-code .overlay {
     pointer-events: all;
 }
 
+section.code #code-trend {
+    height: 55rem;
+}
 
 section.code #code-trend .y-code {
     font-family: 'Gotham-Bold';
     font-size: 11px;
 }
-section.code #downloads-code .d3plus_label  tspan {
+
+section.code #downloads-code .d3plus_label tspan {
     fill: white !important;
 }
 
+section.code #downloads-code rect {
+    stroke: #ebb203 !important;
+}
 
+#downloads-code .d3plus_rect .d3plus_share {
+    display: none;
+}
+
+section.code #downloads-code .d3plus-Shape {
+    stroke-width: 1;
+}
+
+section.code #downloads-code .d3plus-textBox text {
+    font-family: 'Gotham-Bold' !important;
+}
 
 section.code #code-trend .text-inside {
     color: #8a858d
@@ -1131,22 +1116,20 @@ section.code #code-trend .y-code .domain {
 }
 
 section.code #code-plot {
-    margin-top: -32px;
+    height: 49rem;
 }
 
 section.code #code-trend .y-data .domain {
     display: none;
 }
 
-section.code #code-plot .legend text,
-section.code #code-plot .axis text {
+section.code #code-plot .legend text, section.code #code-plot .axis text {
     font-size: 14px;
     fill: #333;
     font-family: 'Gotham-Book'
 }
 
-section.code #code-plot .axis path,
-section.code #code-plot .axis line {
+section.code #code-plot .axis path, section.code #code-plot .axis line {
     fill: none;
     stroke-width: 3px;
     stroke: #555555;
@@ -1204,6 +1187,14 @@ section.code h4 {
     font-family: 'Gotham-Bold';
 }
 
+section.code .left-zone {
+    height: 28rem;
+}
+
+section.code .down {
+    height: 61rem;
+}
+
 section.code .small-letter {
     font-size: 12px;
     font-family: 'Gotham-Medium';
@@ -1219,7 +1210,6 @@ section.code #publications {
 }
 
 section.code #downloads-code rect {
-
     stroke: #ebb203;
 }
 
@@ -1231,9 +1221,9 @@ section.code #downloads-code .d3plus-textBox text {
     font-family: 'Gotham-Bold' !important;
 }
 
-
 section.code #timeline-code {
     font-family: 'Gotham-Bold';
+    height: 22rem;
 }
 
 section.code #timeline-code .line {
@@ -1266,6 +1256,17 @@ section.code .axis--y path {
     display: none;
 }
 
+section.code #lines-code {
+    padding-top: 55px;
+    margin-left: -6rem;
+    margin-right: 40px;
+}
+
+section.code #lines-code div:nth-child(n) {
+    /* height: 40px; */
+    margin-top: -3rem;
+}
+
 section.code .line {
     fill: none;
     stroke-width: 1.5px;
@@ -1286,6 +1287,14 @@ section.suscribers {
     height: 100vh;
 }
 
+section.suscribers .up {
+    height: 28rem;
+}
+
+section.suscribers .down {
+    height: 60rem;
+}
+
 section.suscribers .right-bar .left-zone {
     width: 940px;
 }
@@ -1301,7 +1310,6 @@ section.suscribers .left-bar {
 section.suscribers .left-bar .gauge-1 {
     padding-top: 4rem;
 }
-
 
 section.suscribers .left-bar h4 {
     font-size: 16px;
@@ -1361,6 +1369,22 @@ section.suscribers #demographics-suscribers .node {
     text-indent: 9px;
 }
 
+section.suscribers #demographics-suscribers rect {
+    stroke: #518a81 !important;
+}
+
+section.suscribers #demographics-suscribers .d3plus-Shape {
+    stroke-width: 1;
+}
+
+section.suscribers #demographics-suscribers .d3plus-textBox text {
+    font-family: 'Gotham-Bold' !important;
+}
+
+#demographics-suscribers .d3plus_rect .d3plus_share {
+    display: none;
+}
+
 section.suscribers .container_radio {
     margin-top: 0;
     padding-top: 0;
@@ -1370,21 +1394,16 @@ section.suscribers #age-suscribers .y-suscribers path {
     display: none;
 }
 
+section.suscribers #age-suscribers, section.suscribers #institution-suscribers {
+    height: 56rem;
+}
+
 section.suscribers #suscribers-interested .y-suscribers path {
     display: none;
 }
 
-section.suscribers #demographics-suscribers rect {
-
-    stroke: #518a81;
-}
-
-section.suscribers #demographics-suscribers .d3plus-Shape {
-    stroke-width: 1;
-}
-
-section.suscribers #demographics-suscribers .d3plus-textBox text {
-    font-family: 'Gotham-Bold' !important;
+section.suscribers #suscribers-interested {
+    height: 22rem;
 }
 
 section.map .fa {
@@ -1397,8 +1416,6 @@ section.map .alert-map {
     border-color: #c42948;
 }
 
-
-
 section.map .temp-hide {
     opacity: .5;
     display: none;
@@ -1410,7 +1427,6 @@ section.map #search {
 
 section.map .stylish-input-group .input-group-addon {
     background: white !important;
-
 }
 
 section.map .stylish-input-group .form-control {
@@ -1424,9 +1440,6 @@ section.map .stylish-input-group button {
     border: 0;
     background: transparent;
 }
-
-
-
 
 section.map .side-filter {
     width: 100%;
@@ -1476,8 +1489,7 @@ section.map .noUi-handle {
     background: #313131;
 }
 
-section.map .noUi-handle:before,
-.noUi-handle:after {
+section.map .noUi-handle:before, .noUi-handle:after {
     height: 8px;
     width: 1px;
     left: 3px;
@@ -1501,406 +1513,22 @@ section.map select.form-control:not([size]):not([multiple]) {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAMCAYAAABSgIzaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDZFNDEwNjlGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDZFNDEwNkFGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0NkU0MTA2N0Y3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0NkU0MTA2OEY3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PuGsgwQAAAA5SURBVHjaYvz//z8DOYCJgUxAf42MQIzTk0D/M+KzkRGPoQSdykiKJrBGpOhgJFYTWNEIiEeAAAMAzNENEOH+do8AAAAASUVORK5CYII=);
 }
 
-
-
-#demographics {
-    height: 250px;
-}
-
-#gender {
-    height: 250px;
-}
-
-#registrations {
-    height: 250px;
-}
-
-#demographics-suscribers,
-#downloads-code{
-    min-width: 300px;
-    max-width: 100%;
-    margin: 0 auto;
-    min-height: 220px;
-}
-
-
-
-section.publications #downloads-publications {
-    height: 23vh !important;
-}
-
-section.publications #downloads-publications .tooltip-table {
-    width: 100%;
-    height: auto;
-}
-
-section.publications #downloads-publications .tooltip-table .data {
-    text-align: right;
-}  
-
-section.publications #downloads-publications .d3plus-Shape {
-    stroke-width: 1;
-}
-
-section.publications #downloads-publications .d3plus-textBox text {
-    font-family: 'Gotham-Bold' !important;
-}
-
-section.publications #downloads-publications .tooltip-footer {
-    opacity: 0.5;
-}
-
-#downloads-publications rect {
-
-    stroke: #d1415a !important;
-}
-
-#downloads-publications .d3plus_rect .d3plus_share {
-    display: none;
-}
-
-section.datasets #downloads-dataset .d3plus_rect .d3plus_share {
-    display: none;
-}
-section.datasets #downloads-dataset .d3plus_rect .d3plus_share {
-    display: none;
-}
-
-section.datasets #downloads-dataset rect {
-
-    stroke: #424488 !important;
-}
-
-
-/***gauges ***/
-.funds-allocated-meter .background {
-    fill: #AA0206;
-}
-
-.funds-allocated-meter .foreground {
-    fill: #FFF;
-}
-
-.funds-allocated-meter text.percent-complete {
-    font-family: "Gotham-Book";
-    font-size: 45px;
-    fill: #FFF;
-    letter-spacing: -0.03em;
-}
-
-
-
-#downloads-publications {
-    padding-bottom: 1rem;
-}
-
-.d-border-left {
-    border-left: solid 1.5px #b4b4b4;
-}
-
-.d-border-bottom {
-    border-bottom: solid 1.5px #b4b4b4;
-}
-
-.red-title {
-    font-size: 1rem;
-    color: #d1415a;
-}
-
-.dropdown-bg {
-    background-color: #f5f5f5;
-    margin: auto 0;
-    padding-left: 0;
-    padding-right: 0;
-    font-family: "Gotham-Bold";
-    text-align: center;
-    font-size: 1.6rem;
-}
-
-#dropdownMenuButton {
-    padding-left: 0;
-}
-
-
-
-.lightgray-background {
-    background-color: #f1f1f1;
-}
-
-.grayr-background {
-    background-color: #f5f5f5;
-}
-
-/* .waffle-gender {
-    min-height: 31px;
-} */
-
-/** red-section***/
-
 @media all and (min-width: 1890px) {
     .left-bar {
         width: 250px !important;
         max-width: 250px!important;
     }
-
-    section.moocs .left-bar .gauge-3 {
-
-        padding-top: 0rem;
-    }
-    .right-bar{
-        width: 1550px !important;
-        flex: auto !important;  
-        max-width: fit-content!important;      
-    }
-    section.datasets .right-bar {
-        height: 940px;
-    }
-
-    section.publications .left-zone {
-        width: 1000px;
-        height: 280px;
-    }
-    /* section.publications .left-bar{
-        
-    } */
-
-    section.publications .right-bar label {
-        margin-bottom: 2px;
-    }
-
-    section.publications .down-zone {
-        height: 61rem;
-    }
-
-    section.publications .container_radio {
-        margin-top: 0;
-        padding-top: 0;
-    }
-
-    section.publications #lines-publications {
-        padding-top: 55px;
-        margin-left: -4rem;
-        margin-right: 40px;
-    }    
-
-    
-
-    section.publications .text-different {
-        font-size: 14px;
-        font-family: 'Gotham-Book';
-        color: #555555
-    }
-
-    section.publications .text-different b {
-        font-family: 'Gotham-Bold';
-    }
-
-    section.publications {
-        height: 100vh;
-    }
-
-    section .right-bar>.row>div:nth-child(2):before {
-        content: "";
-        height: 2px;
-        width: 96%;
-        position: absolute;
-        bottom: 0;
-        left: 2%;
-        z-index: 3;
-        background: #b4b4b4;
-    }
-
-    section .right-bar>.row>div:nth-child(3):before {
-        content: "";
-        height: 2px;
-        width: 96%;
-        position: absolute;
-        bottom: 0;
-        left: 2%;
-        z-index: 3;
-        background: #b4b4b4;
-    }
-
-    .publications .right-bar #kic:before {
-        content: "";
-        height: 2px;
-        width: 96%;
-        position: absolute;
-        bottom: 0;
-        left: 2%;
-        z-index: 3;
-        background: #b4b4b4;
-    }
-
-    section.publications #publication-trend{
-        height: 56rem;
-        margin-left: 0rem;
-    }
-
-    section.publications .gauge-2 {
-        height: 335px;
-        padding-top: 20px
-    }
-
-    section.moocs {
-        height: 95vh;
-    }
-
-    section.moocs .left-zone {
-        width: 950px;
-        height: 27.5rem;
-    }
-
-    section.moocs .right-bar label {
-        margin-bottom: 2px;
-    }
-
-    section.moocs .middle-left {
-        width: 950px;
-        height: 310px;
-    }
-
-    section.moocs .right-zone {
-        width: 690px;
-        height: 275px;
-    }
-
-    section.moocs .middle-right {
-        width: 690px;
-        height: 310px;
-    }
-
-    section.moocs .container_radio {
-        margin-top: 0;
-        padding-top: 0;
-    }
-
-    section.moocs .waffles {
-        height: 22rem;
-    }
-
-    section.moocs #moocs-registration .y-data {
-        margin-top: -10px;
-    }
-
-    section.moocs #timeline-moocs .x-axis text {
-        font-size: 14px;
-        font-family: "Gotham-Book"
-    }
-
-    section.moocs #timeline-moocs .y-axis text {
-        font-size: 14px;
-        font-family: "Gotham-Book"
-    }
-
-    section.moocs .down .vertical-text {
-        -ms-writing-mode: tb-lr;
-        writing-mode: vertical-lr;
-        transform: rotate(180deg);
-        text-orientation: sideways;
-        text-align: center;
-        text-orientation: sideways;
-        margin: 1rem;
-        font-size: 12px;
-        font-family: 'Gotham-Book';
-        position: relative;
-        top: -67px;
-        left: -21px;
-    }
-
-    section.moocs .down .left-zone {
-        width: 690px;
-        height: 305px;
-    }
-
-    section.moocs .down .right-zone {
-        width: 690px;
-        height: 305px;
-    }
-
-    section.moocs #distribution-moocs {
-        margin-left: -40px;
-    }
-
-    .ms-fullscreenmode #contentBox {
-        margin-left: 0 !important;
-    }
-
-    .left-text-drop select {
-        color: #1658a1
-    }
-
-    #idbLink {
-        color: #1658a1;
-    }
-
-    section.datasets {
-        min-height: 940px;
-    }
-    
-
-    section.datasets .left-zone {
-        width: 1000px;
-        height: 280px;
-    }
-
-    section.datasets .left-bar {
-        height: 940px;
-    }
-
-    section.datasets .right-bar {
-        height: 940px;
-    }
-
-    section.datasets .right-bar label {
-        margin-bottom: 2px;
-    }
-
-    section.datasets .down {
-        height: 600px;
-    }
-
-    section.datasets .right-zone {
-        width: 648px;
-        height: 280px;
-    }
-
-    section.datasets #lines-dataset div:nth-child(n) {
-        /* height: 40px; */
-        margin-top: -32px
-    }
-
-    section.datasets #lines-dataset {
-        padding-top: 55px;
-        margin-left: -40px;
-        margin-right: 40px;
-    }
-
-
-    section.code .container_radio {
-        margin-top: 0;
-        padding-top: 0;
-    }
-
-    section.code .right-zone {
-        width: 648px;
-        height: 280px;
-    }
-
     body {
         font-family: 'Gotham-Bold';
     }
-
     .container {
         max-width: 100%;
     }
-
     .title-text h1 {
         font-family: "Gotham-Book";
         font-size: 4rem;
         text-align: center;
     }
-
     .left-text-drop {
         color: #1658a1;
         font-family: "Gotham-Bold";
@@ -1910,99 +1538,51 @@ section.datasets #downloads-dataset rect {
         padding-bottom: .5rem;
         font-size: 19px;
     }
-
-    .left-text-drop select {
-        border: none;
-        background-color: transparent;
-    }
-
     #nav-title .navbar-nav .active {
         color: #5a5a5d !important;
         border-bottom: solid 6px #006ab4;
     }
-
     #nav-title .navbar-nav .nav-item {
         color: #3396cf;
     }
-
     #nav-title {
         width: 100%;
         border-bottom: none;
     }
-
     #nav-title .navbar-nav {
         width: 100%;
         font-size: 13px;
         text-align: center;
         font-family: 'Gotham-Bold';
     }
-
     #nav-title .navbar-nav a {
         font-size: 13px;
-
     }
-
     #deparmentSelect option {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         max-width: 40px;
     }
-
-    .title-text select {
+    .title-text select,.title-text select:focus,.title-text select:visited,.title-text select:active  {
         border: none;
     }
-
-    .title-text select:focus {
+    .right-bar {
+        width: 1550px !important;
+        flex: auto !important;
+        max-width: fit-content!important;
+    }
+    .ms-fullscreenmode #contentBox {
+        margin-left: 0 !important;
+    }
+    .left-text-drop select {
+        color: #1658a1;
         border: none;
+        background-color: transparent;
     }
-
-    .title-text select:visited {
-        border: none;
+    #idbLink {
+        color: #1658a1;
     }
-
-    .title-text select:active {
-        border: none;
-    }
-
-
-    section.big-numbers {
-        color: #FFFFFF;
-        background-color: #1156A1;
-        font-family: 'Gotham-Bold';
-        /* height: 38.1vw; */
-    }
-
-    section.big-numbers h4 {
-        font-size: 24px;
-        color: #ffffff;
-    }
-
-    section.big-numbers h1 {
-        font-size: 5.5vw;
-        font-family: 'Gotham-Book';
-        color: #ffffff;
-    }
-
-    section.big-numbers .last-panel {
-        padding-left: 1vw;
-        padding-right: 1vw;
-    }
-
-    section.big-numbers p {
-        font-size: 0.9vw;
-    }
-
-
-    section.big-numbers img {
-        max-width: 55px;
-    }
-
-    section.publications {
-        font-family: 'Gotham-Bold';
-    }
-
-
     .d3-tip {
         line-height: 1;
         font-weight: bold;
@@ -2011,8 +1591,6 @@ section.datasets #downloads-dataset rect {
         color: #fff;
         border-radius: 2px;
     }
-
-    /* Creates a small triangle extender for the tooltip */
     .d3-tip:after {
         box-sizing: border-box;
         display: inline;
@@ -2024,159 +1602,11 @@ section.datasets #downloads-dataset rect {
         position: absolute;
         text-align: center;
     }
-
-    /* Style northward tooltips differently */
     .d3-tip.n:after {
         margin: -1px 0 0 0;
         top: 100%;
         left: 0;
     }
-
-    section.publications .left-bar .gauge-1 {
-
-        padding-top: 4rem;
-    }
-
-    section.publications .left-bar {
-        text-align: center;
-    }
-
-    section.publications .left-bar h4 {
-        font-size: 1.7rem;
-        color: white;
-        margin-bottom: 0;
-    }
-
-    section.publications .left-bar span:nth-child(2n) {
-        color: white;
-        font-size: 10px;
-    }
-
-    section.publications .left-bar span:nth-child(2n+1) {
-        color: #AA0206;
-        font-size: 10px;
-    }
-
-
-    section.publications .d-border-left p {
-        font-size: 11px;
-        font-family: 'Gotham-Book';
-        color: #555555;
-    }
-
-    section.publications .d-border-left p span {
-        text-decoration: underline;
-    }
-
-    section.publications #kic p {
-        font-family: 'Gotham-Book';
-        color: #555555;
-        font-size: 19px;
-    }
-
-    section.publications .right-bar h4 {
-        font-size: 16px;
-        font-family: 'Gotham-Bold';
-        color: #d1415a;
-    }
-
-
-    section.publications .label-filter-select section.publications .down-zone span {
-        font-size: 16px;
-        font-family: 'Gotham-Bold';
-        color: #d1415a;
-    }
-
-    section.publications .down-zone .special span:nth-child(1) {
-
-        border-right: 1px solid #d1415a;
-        color: #d1415a;
-    }
-
-    section.publications .down-zone .special span:nth-child(2) {
-        border-right: 1px solid #b4b4b4;
-        color: #b4b4b4;
-    }
-
-    section.publications .down-zone .special span:nth-child(3) {
-        color: #b4b4b4;
-    }
-
-    section.publications .down-zone h4 span label {
-        font-size: 16px;
-        text-decoration: underline;
-        border-right: none;
-    }
-
-    section.publications #publication-trend .y-data {
-        font-family: 'Gotham-Bold';
-        font-size: 11px;
-    }
-
-
-    section.publications #publication-trend .y-data text {
-        font-family: 'Gotham-Bold';
-        font-size: 16px;
-    }
-
-
-    section.publications #publication-trend .text-inside {
-        color: #8a858d
-    }
-
-    section.publications #publication-trend .y-data .domain {
-        display: none;
-    }
-
-    section.publications #timeline-publication {
-        font-family: 'Gotham-Bold';
-    }
-
-    section.publications #timeline-publication .line {
-        fill: none;
-        stroke: #d96d80;
-        stroke-width: 2px;
-    }
-
-    section.publications #timeline-publication .area {
-        fill: #df8897;
-    }
-
-    section.publications #timeline-publication .x-axis .tick {
-        stroke-width: 1px;
-    }
-
-    section.publications #timeline-publication .y-axis path {
-        display: none;
-    }
-
-    section.publications #timeline-publication .y-axis .tick line {
-        display: none;
-    }
-
-    section.publications .axis--x path {
-        display: none;
-    }
-
-    section.publications .axis--y path {
-        display: none;
-    }
-
-    section.publications .line {
-        fill: none;
-        stroke-width: 1.5px;
-    }
-
-    section.publications .grid line {
-        stroke: lightgrey;
-        stroke-opacity: 0.7;
-        shape-rendering: crispEdges;
-    }
-
-    section.publications .grid path {
-        stroke-width: 0;
-    }
-
     .tooltip {
         position: absolute;
         text-align: center;
@@ -2186,7 +1616,6 @@ section.datasets #downloads-dataset rect {
         border: solid 1px #f5f5f5;
         background-color: white;
     }
-
     .toolTip {
         position: absolute;
         display: none;
@@ -2199,940 +1628,241 @@ section.datasets #downloads-dataset rect {
         text-align: left;
         z-index: 1;
     }
-
     .tooltip p {
         margin: 0;
         padding: 0;
         font-size: 12px;
         font-family: "Gotham-Bold"
     }
-
     .tooltip p span {
         margin: 0;
         padding: 0;
         font-size: 11px;
         font-family: "Gotham-Book"
     }
-
-
     .tooltip h4 {
         font-size: 12px;
         font-family: "Gotham-Bold"
     }
-
-
-
-    section.moocs .left-bar h4 {
-        font-size: 1.7rem;
-        color: white;
-        margin-bottom: 0;
-    }
-
-
-    section.moocs .left-bar span:nth-child(2n) {
-        color: white;
-        font-size: 10px;
-        font-family: 'Gotham-Bold';
-    }
-
-    section.moocs .left-bar span:nth-child(2n+1) {
-        color: #AB3018;
-        font-size: 10px;
-        font-family: 'Gotham-Bold';
-    }
-
-    section.moocs p {
-        font-size: 18px;
-        font-family: 'Gotham-Bold';
-        color: #FA2E00;
-    }
-
-    section.moocs h4 {
-        font-size: 16px;
-        font-family: 'Gotham-Bold';
-    }
-
-
-    section.moocs h1 {
-        font-size: 4.8rem;
-    }
-
-    section.moocs {
-        height: 940px;
-    }
-
-    section.moocs .down-zone span {
-        font-size: 10px;
-    }
-
-    section.moocs .down-zone .special span:nth-child(1) {
-        border-right: 1px solid #b4b4b4;
-
-    }
-
-    section.moocs .down-zone .special span {
-
-        font-family: 'Gotham-Bold';
-    }
-
-    section.moocs .small-letter {
-        font-size: 10px;
-        font-family: 'Gotham-Bold';
-    }
-
-    section.moocs .distribution-chart path {
-        display: none;
-    }
-
-    section.moocs .distribution-chart .tick line {
-        display: none;
-    }
-
-    section.moocs .distribution-chart .tick text {
-        width: 10px;
-    }
-
-    section.moocs #moocs-registrations {
-        height: 245px;
-    }
-
-    section.moocs #moocs-registrations .y-data {
-        font-family: 'Gotham-Bold';
-        font-size: 12px;
-    }
-
-    section.moocs #moocs-registrations .text-inside {
-        color: #8a858d
-    }
-
-    section.moocs #moocs-registrations .y-data .domain {
-        display: none;
-    }
-
-    section.moocs #timeline-moocs .line {
-        fill: none;
-        stroke: #ef8166;
-        stroke-width: 2px;
-    }
-
-    section.moocs #timeline-moocs .area {
-        fill: #f1a592;
-    }
-
-    section.moocs #timeline-moocs {
-        height: 24rem;
-    }
-
-    section.moocs #timeline-moocs .x-axis .tick {
-        stroke-width: 1px;
-    }
-
-    section.moocs #timeline-moocs .y-axis path {
-        display: none;
-    }
-
-    section.moocs #timeline-moocs .y-axis .tick line {
-        display: none;
-    }
-
-    section.moocs [id^="student"] .y-data path {
-        display: none;
-    }
-
-    section.moocs [id^="student"] .y-data {
-        font-size: 10px;
-        font-family: 'Gotham-Bold'
-    }
-
-    section.datasets {
-        font-family: 'Gotham-Bold';
-    }
-
-    section.datasets .container_radio {
-        margin-top: 0;
-        padding-top: 0;
-    }
-
-    section.datasets .left-bar h4 {
-        font-size: 18px;
-        color: white;
-        margin-bottom: 0;
-    }
-
-    section.datasets .left-bar span:nth-child(2n) {
-        color: white;
-        font-size: 10px;
-        font-family: 'Gotham-Bold';
-    }
-
-    section.datasets .left-bar span:nth-child(2n+1) {
-        color: #2E305F;
-        font-size: 10px;
-        font-family: 'Gotham-Bold';
-    }
-
-    section.datasets .funds-allocated-meter .background {
-        fill: #2E305F;
-    }
-
-    section.datasets p {
-        font-size: 18px;
-        font-family: 'Gotham-Bold';
-        color: #424488;
-    }
-
-    section.datasets h4 {
-        font-size: 16px;
-        font-family: 'Gotham-Bold';
-        color: #424488;
-    }
-
-    section.datasets h4 span {
-        font-size: 16px;
-        font-family: 'Gotham-Bold';
-    }
-
-    section.datasets h4 span:nth-child(1) {
-        text-decoration: underline;
-
-    }
-
-    section.datasets .purple-border-right {
-        border-right: solid 1px #2E305F;
-    }
-
-
-    section.datasets #publications {
-        height: 325px;
-    }
-
-    section.datasets .small-letter {
-        font-size: 12px;
-        font-family: 'Gotham-Bold';
-        color: #b4b4b4;
-    }
-
-    section.datasets .small-letter span {
-        text-decoration: underline;
-    }
-
-    section.datasets #data-trend .y-data {
-        font-family: 'Gotham-Bold';
-        font-size: 11px;
-    }
-
-    section.datasets #data-trend .text-inside {
-        color: #8a858d
-    }
-
-    section.datasets #data-trend .y-data .domain {
-        display: none;
-    }
-
-
-    section.datasets #downloads-dataset {
-        min-width: 300px;
-        max-width: 100%;
-        margin: 0 auto;
-        height: 220px;
-    }
-
-    
-
-
-    section.datasets #timeline-dataset {
-        font-family: 'Gotham-Bold';
-    }
-
-    section.datasets #timeline-dataset .line {
-        fill: none;
-        stroke: #62649c;
-        stroke-width: 2px;
-    }
-
-    section.datasets #timeline-dataset .area {
-        fill: #8889b3;
-    }
-
-    section.datasets #timeline-dataset .x-axis .tick {
-        stroke-width: 1px;
-    }
-
-    section.datasets #timeline-dataset .y-axis path {
-        display: none;
-    }
-
-    section.datasets #timeline-dataset .y-axis .tick line {
-        display: none;
-    }
-
-    section.datasets #timeline-dataset {
-        height: 240px !important;
-    }
-
-
-    section.datasets #timeline-datasets .overlay {
-        fill: none;
-        pointer-events: all;
-    }
-
-
-
-    section.code .funds-allocated-meter .background {
-        fill: #A17603;
-    }
-
-    section.datasets #dataset-publications-plot {
-        margin-top: -32px;
-    }
-
-    section.datasets #dataset-publications-plot .legend text,
-    section.datasets #dataset-publications-plot .axis text {
-        font-size: 14px;
-        fill: #333;
-        font-family: 'Gotham-Book'
-    }
-
-    section.datasets #dataset-publications-plot .axis path,
-    section.datasets #dataset-publications-plot .axis line {
-        fill: none;
-        stroke-width: 3px;
-        stroke: #555555;
-    }
-
-    section.datasets #dataset-publications-plot .circle {
-        fill-opacity: 0.65;
-    }
-
-    section.datasets #dataset-publications-plot .bubble {
-        opacity: 1;
-        transition: opacity 0.3s;
-    }
-
-    section.datasets #dataset-publications-plot .bubble:hover text {
-        opacity: 1;
-    }
-
-    section.datasets #dataset-publications-plot .bubble:hover circle {
-        fill-opacity: 1;
-    }
-
-    section.datasets #dataset-publications-plot .legend rect {
-        fill-opacity: 0.75;
-    }
-
-    section.datasets #dataset-publications-plot .legeng:hover rect {
-        fill-opacity: 1;
-    }
-
-
-    section.code #code-trend .y-code {
-        font-family: 'Gotham-Bold';
-        font-size: 11px;
-    }
-
-
-    section.code #code-trend .text-inside {
-        color: #8a858d
-    }
-
-    section.code #code-trend .y-code .domain {
-        display: none;
-    }
-
-    section.code #code-plot {
-        margin-top: -32px;
-    }
-
-    section.code #code-plot .legend text,
-    section.code #code-plot .axis text {
-        font-size: 14px;
-        fill: #333;
-        font-family: 'Gotham-Book'
-    }
-
-    section.code #code-plot .axis path,
-    section.code #code-plot .axis line {
-        fill: none;
-        stroke-width: 3px;
-        stroke: #555555;
-    }
-
-    section.code #code-plot .circle {
-        fill-opacity: 0.65;
-    }
-
-    section.code #code-plot .bubble {
-        opacity: 1;
-        transition: opacity 0.3s;
-    }
-
-    section.code #code-plot .bubble:hover text {
-        opacity: 1;
-    }
-
-    section.code #code-plot .bubble:hover circle {
-        fill-opacity: 1;
-    }
-
-    section.code #code-plot .legend rect {
-        fill-opacity: 0.75;
-    }
-
-    section.code #code-plot .legeng:hover rect {
-        fill-opacity: 1;
-    }
-
-    section.code .left-bar h4 {
-        font-size: 16px;
-        color: white;
-    }
-
-    section.code .left-bar span:nth-child(2n) {
-        color: white;
-        font-size: 10px;
-        font-family: 'Gotham-Bold';
-    }
-
-    section.code .left-bar span:nth-child(2n+1) {
-        color: #A17603;
-        font-size: 10px;
-        font-family: 'Gotham-Bold';
-    }
-
-    section.code .right-bar .left-zone .top-zone {
-        height: 265px;
-        padding-top: 1rem;
-    }
-
-    section.code h4 {
-        font-size: 16px;
-        font-family: 'Gotham-Bold';
-    }
-
-    section.code .small-letter {
-        font-size: 12px;
-        font-family: 'Gotham-Medium';
-        color: #b4b4b4;
-    }
-
-    section.code .small-letter span {
-        text-decoration: underline;
-    }
-
-    section.code #lines-code div:nth-child(n) {
-        /* height: 40px; */
-        margin-top: -32px
-    }
-
-    section.code #lines-code {
-        padding-top: 55px;
-        margin-left: -40px;
-        margin-right: 40px;
-    }
-
-    section.code #publications {
-        height: 325px;
-    }
-
-    /* section.code #downloads-code .node {
-    border: solid .5px #ebb203;
-    font: 18px;
-    font-family: 'Gotham-Bold';
-    line-height: 24px;
-    overflow: hidden;
-    position: absolute;
-    text-indent: 9px;
-} */
-
-    section.code #downloads-code rect {
-
-        stroke: #ebb203 !important;
-    }
-
-
-    #downloads-code .d3plus_rect .d3plus_share {
-        display: none;
-    }
-
-    section.code #downloads-code .d3plus-Shape {
-        stroke-width: 1;
-    }
-
-    section.code #downloads-code .d3plus-textBox text {
-        font-family: 'Gotham-Bold' !important;
-    }
-
-
-    section.code #timeline-code {
-        font-family: 'Gotham-Bold';
-    }
-
-    section.code #timeline-code .line {
-        fill: none;
-        stroke: #efbd34;
-        stroke-width: 2px;
-    }
-
-    section.code #timeline-code .area {
-        fill: #f1ca60;
-    }
-
-    section.code #timeline-code .x-axis .tick {
-        stroke-width: 1px;
-    }
-
-    section.code #timeline-code .y-axis path {
-        display: none;
-    }
-
-    section.code #timeline-code .y-axis .tick line {
-        display: none;
-    }
-
-    section.code .axis--x path {
-        display: none;
-    }
-
-    section.code .axis--y path {
-        display: none;
-    }
-
-    section.code .line {
-        fill: none;
-        stroke-width: 1.5px;
-    }
-
-    section.code .grid line {
-        stroke: lightgrey;
-        stroke-opacity: 0.7;
-        shape-rendering: crispEdges;
-    }
-
-    section.code .grid path {
-        stroke-width: 0;
-    }
-
-    section.suscribers {
-        font-family: 'Gotham-Bold';
-    }
-
-    section.suscribers .right-bar .left-zone {
-        width: 940px;
-    }
-
-    section.suscribers .right-bar .right-zone {
-        width: 665px;
-    }
-
-    section.suscribers .left-bar {
-        text-align: center;
-    }
-
-    section.suscribers .left-bar .gauge-1 {
-        padding-top: 4rem;
-    }
-
-
-    section.suscribers .left-bar h4 {
-        font-size: 16px;
-        color: white;
-        margin-bottom: 0;
-    }
-
-    section.suscribers .left-bar span:nth-child(2n) {
-        color: white;
-        font-size: 10px;
-        font-family: 'Gotham-Bold';
-    }
-
-    section.suscribers .left-bar span:nth-child(2n+1) {
-        color: #027B8E;
-        font-size: 10px;
-        font-family: 'Gotham-Bold';
-    }
-
-    section.suscribers .funds-allocated-meter .background {
-        fill: #027B8E;
-    }
-
-    section.suscribers .right-bar label {
-        padding-bottom: 0px;
-        margin-bottom: 0;
-    }
-
-    section.suscribers h4 {
-        font-size: 16px;
-        font-family: 'Gotham-Bold';
-    }
-
-    section.suscribers #demographics {
-        height: 397px;
-    }
-
-    section.suscribers #gender {
-        height: 379px;
-    }
-
-    section.suscribers .institution-chart .tick line {
-        display: none;
-    }
-
-    section.suscribers .suscriber-AgeChart .tick line {
-        display: none;
-    }
-
-    section.suscribers #demographics-suscribers .node {
-        border: solid .5px #518a81;
-        font: 18px;
-        font-family: 'Gotham-Bold';
-        line-height: 24px;
-        overflow: hidden;
-        position: absolute;
-        text-indent: 9px;
-    }
-
-    #demographics-suscribers .d3plus_rect .d3plus_share {
-        display: none;
-    }
-
-    section.suscribers .container_radio {
-        margin-top: 0;
-        padding-top: 0;
-    }
-
-    section.suscribers #suscribers-interested .y-suscribers path {
-        display: none;
-    }
-
-    section.suscribers #demographics-suscribers rect {
-
-        stroke: #518a81 !important;
-    }
-
-    section.suscribers #demographics-suscribers .d3plus-Shape {
-        stroke-width: 1;
-    }
-
-    section.suscribers #demographics-suscribers .d3plus-textBox text {
-        font-family: 'Gotham-Bold' !important;
-    }
-
-    section.map .fa {
-        font-size: 14px;
-    }
-
-    section.map .alert-map {
-        color: #ffffff;
-        background-color: #f7899f;
-        border-color: #c42948;
-    }
-
-
-
-    section.map .temp-hide {
-        opacity: .5;
-        display: none;
-    }
-
-    section.map #search {
-        border: none;
-    }
-
-    section.map .stylish-input-group .input-group-addon {
-        background: white !important;
-
-    }
-
-    section.map .stylish-input-group .form-control {
-        border-right: 0;
-        box-shadow: 0 0 0;
-        border-color: #ccc;
-    }
-
-    section.map .stylish-input-group button {
-        margin-top: 5px;
-        border: 0;
-        background: transparent;
-    }
-
-
-
-
-    section.map .side-filter {
-        width: 100%;
-        border-bottom: 2px solid #000;
-        margin-bottom: 10px;
-        padding: 5px;
-        text-align: center;
-        font-size: 14px;
-        font-family: Gotham-Bold;
-    }
-
-
-    section.map #totales {
-        font-size: 44px;
-        color: #c42a48;
-    }
-
-    section.map .no-pad-marg {
-        padding-right: 0px;
-        margin-left: 0px;
-    }
-
-    section.map .form-control {
-        border: 1px solid #000000;
-        border-radius: 0;
-        font-size: 13px;
-        color: #000000;
-    }
-
-    section.map .slider-date {
-        font-size: 10px;
-        margin-top: 10px;
-        color: #9e9e9e;
-    }
-
-    section.map .noUi-horizontal {
-        height: 4px;
-    }
-
-    section.map .noUi-handle {
-        width: 10px !important;
-        height: 14px !important;
-        background: #313131;
-    }
-
-    section.map .noUi-handle:before,
-    .noUi-handle:after {
-        height: 8px;
-        width: 1px;
-        left: 3px;
-        top: 2px;
-    }
-
-    section.map .noUi-handle:after {
-        left: 5px;
-    }
-
-    section.map html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
-        right: -5px;
-        left: auto;
-    }
-
-    section.map select.form-control:not([size]):not([multiple]) {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        background-position: right 50%;
-        background-repeat: no-repeat;
-        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAMCAYAAABSgIzaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDZFNDEwNjlGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDZFNDEwNkFGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0NkU0MTA2N0Y3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0NkU0MTA2OEY3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PuGsgwQAAAA5SURBVHjaYvz//z8DOYCJgUxAf42MQIzTk0D/M+KzkRGPoQSdykiKJrBGpOhgJFYTWNEIiEeAAAMAzNENEOH+do8AAAAASUVORK5CYII=);
-    }
-
-
-
-    #demographics {
-        height: 250px;
-    }
-
-    #gender {
-        height: 250px;
-    }
-
-    #registrations {
-        height: 250px;
-    }
-
-    #demographics-suscribers,
-    #downloads-code,
-    #downloads-publications {
+    #demographics-suscribers, #downloads-code, #downloads-publications {
         min-width: 300px;
         max-width: 100%;
         margin: 0 auto;
         min-height: 220px;
     }
-
-    /***gauges ***/
-    .funds-allocated-meter .background {
-        fill: #AA0206;
-    }
-
-    .funds-allocated-meter .foreground {
-        fill: #FFF;
-    }
-
+    
     .funds-allocated-meter text.percent-complete {
         font-family: "Gotham-Book";
         font-size: 45px;
         fill: #FFF;
         letter-spacing: -0.03em;
     }
-
     .d-border-left {
         border-left: solid 1.5px #b4b4b4;
     }
-
     .d-border-bottom {
         border-bottom: solid 1.5px #b4b4b4;
     }
-
     .red-title {
         font-size: 1rem;
         color: #d1415a;
     }
-
-    .red-background {
-        background-color: #D1415A;
-
-    }
-
-    .orange-background {
-        background-color: #FA2E00;
-    }
-
-    .purple-background {
-        background-color: #424488;
-    }
-
-    .yellow-background {
-        background-color: #EEAE00;
-    }
-
-    .green-background {
-        background-color: #518A81;
-    }
-
-    .lightorange-background {
-        background-color: #eea08d;
-    }
-
-    .gray-background {
-        background-color: #f1edec;
-    }
-
     .dropdown-bg {
         background-color: #f5f5f5;
         margin: auto 0;
         padding-left: 0;
         font-family: "Gotham-Bold";
     }
-
     #dropdownMenuButton {
         padding-left: 0;
     }
-
-
-
     .lightgray-background {
         background-color: #f1f1f1;
     }
-
     .grayr-background {
         background-color: #f5f5f5;
     }
-
-
-
-
-
-    /* .waffle-gender {
-        min-height: 31px;
-    } */
-
-    /** red-section***/
-
-
-
-    section.code .left-zone {
-        width: 1000px;
-        height: 280px;
-    }
-
-    section.code .down {
-        height: 600px;
-    }
-
-
-    section.suscribers .right-zone {
-        width: 648px;
-        height: 300px;
-    }
-
-    section.suscribers .left-zone {
-        width: 950px;
-        height: 300px;
-    }
-
-    section.suscribers .down {
-        height: 550px;
-    }
-
-    section.suscribers .down .vertical-text {
-        position: static;
-    }
-
-    section.suscribers .right-bar .right-zone {
-        width: 700px;
-    }
-
-    section.suscribers .left-bar {
-        min-height: 900px;
-    }
-
-    section.suscribers .right-bar {
-        min-height: 900px;
-    }
-
-    section.suscribers .right-bar label {
-        margin-bottom: 2px;
-    }
-
-    section.suscribers {
-        min-height: 900px;
-    }
-
-    section.publications {
-        height: 100vh;
-    }
-
     .label-filter-select {
         margin-bottom: 2px;
     }
-
-    .left-bar {
-        width: 250px;
+    section.big-numbers {
+        color: #FFFFFF;
+        background-color: #1156A1;
+        font-family: 'Gotham-Bold';
     }
-
+    section.big-numbers h4 {
+        font-size: 24px;
+        color: #ffffff;
+    }
+    section.big-numbers h1 {
+        font-size: 5.5vw;
+        font-family: 'Gotham-Book';
+        color: #ffffff;
+    }
+    section.big-numbers .last-panel {
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+    section.big-numbers p {
+        font-size: 0.9vw;
+    }
+    section.big-numbers img {
+        max-width: 55px;
+    }
+    section.publications {
+        height: 100vh;
+    }
+    section.publications .left-zone {
+        width: 1000px;
+    }
+    section.publications .up-zone {
+        height: 280px;
+    }
     section.publications .right-bar label {
         margin-bottom: 2px;
     }
-
     section.publications .container_radio {
         margin-top: 0;
         padding-top: 0;
     }
-    
-
-    section.publications #timeline-publication .overlay {
-        fill: none;
-        pointer-events: all;
+    section.publications.funds-allocated-meter .background {
+        fill: #AA0206;
     }
-
+    section.publications.funds-allocated-meter .foreground {
+        fill: #FFF;
+    }
+    section.publications #lines-publications {
+        padding-top: 55px;
+        margin-left: -4rem;
+        margin-right: 40px;
+    }
     section.publications .text-different {
         font-size: 14px;
         font-family: 'Gotham-Book';
         color: #555555
     }
-
-    
-
-    section.publications .text-different b {
+    section.publications .left-bar {
+        text-align: center;
+    }
+    section.publications .left-bar .gauge-1 {
+        padding-top: 4rem;
+    }
+    section.publications .left-bar h4 {
+        font-size: 1.7rem;
+        color: white;
+        margin-bottom: 0;
+    }
+    section.publications .left-bar span:nth-child(2n) {
+        color: white;
+        font-size: 10px;
+    }
+    section.publications .left-bar span:nth-child(2n+1) {
+        color: #AA0206;
+        font-size: 10px;
+    }
+    section.publications .d-border-left p {
+        font-size: 11px;
+        font-family: 'Gotham-Book';
+        color: #555555;
+    }
+    section.publications .d-border-left p span {
+        text-decoration: underline;
+    }
+    section.publications #kic p {
+        font-family: 'Gotham-Book';
+        color: #555555;
+        font-size: 19px;
+    }
+    section.publications .right-bar h4 {
+        font-size: 16px;
+        font-family: 'Gotham-Bold';
+        color: #d1415a;
+    }
+    section.publications .down-zone span {
+        font-size: 16px;
+        font-family: 'Gotham-Bold';
+        color: #d1415a;
+    }
+    section.publications .down-zone .special span:nth-child(1) {
+        border-right: 1px solid #d1415a;
+        color: #d1415a;
+    }
+    section.publications .down-zone .special span:nth-child(2) {
+        border-right: 1px solid #b4b4b4;
+        color: #b4b4b4;
+    }
+    section.publications .down-zone .special span:nth-child(3) {
+        color: #b4b4b4;
+    }
+    section.publications .down-zone h4 span label {
+        font-size: 16px;
+        text-decoration: underline;
+        border-right: none;
+    }
+    section.publications #publication-trend .y-data {
+        font-family: 'Gotham-Bold';
+        font-size: 11px;
+    }
+    section.publications #publication-trend .y-data text {
+        font-family: 'Gotham-Bold';
+        font-size: 16px;
+    }
+    section.publications #publication-trend .text-inside {
+        color: #8a858d
+    }
+    section.publications #publication-trend .y-data .domain {
+        display: none;
+    }
+    section.publications #timeline-publication {
         font-family: 'Gotham-Bold';
     }
-
-    section.publications {
-        height: 100vh;
+    section.publications #timeline-publication .line {
+        fill: none;
+        stroke: #d96d80;
+        stroke-width: 2px;
     }
-
+    section.publications #timeline-publication .area {
+        fill: #df8897;
+    }
+    section.publications #timeline-publication .x-axis .tick {
+        stroke-width: 1px;
+    }
+    section.publications #timeline-publication .y-axis path {
+        display: none;
+    }
+    section.publications #timeline-publication .y-axis .tick line {
+        display: none;
+    }
+    section.publications .axis--x path {
+        display: none;
+    }
+    section.publications .axis--y path {
+        display: none;
+    }
+    section.publications .line {
+        fill: none;
+        stroke-width: 1.5px;
+    }
+    section.publications .grid line {
+        stroke: lightgrey;
+        stroke-opacity: 0.7;
+        shape-rendering: crispEdges;
+    }
+    section.publications .grid path {
+        stroke-width: 0;
+    }
+    section.publications #publication-trend {
+        height: 56rem;
+        margin-left: 0rem;
+    }
+    section.publications .gauge-2 {
+        height: 335px;
+        padding-top: 20px
+    }
+    section.publications #timeline-publication .overlay {
+        fill: none;
+        pointer-events: all;
+    }
     section .right-bar>.row>div:nth-child(2):before {
         content: "";
         height: 2px;
@@ -3143,7 +1873,6 @@ section.datasets #downloads-dataset rect {
         z-index: 3;
         background: #b4b4b4;
     }
-
     section .right-bar>.row>div:nth-child(3):before {
         content: "";
         height: 2px;
@@ -3154,8 +1883,7 @@ section.datasets #downloads-dataset rect {
         z-index: 3;
         background: #b4b4b4;
     }
-
-    .publications .right-bar #kic:before {
+    section.publications .right-bar #kic:before {
         content: "";
         height: 2px;
         width: 96%;
@@ -3165,58 +1893,46 @@ section.datasets #downloads-dataset rect {
         z-index: 3;
         background: #b4b4b4;
     }
-
-    section.publications .gauge-2 {
-        height: 335px;
-        padding-top: 20px
-    }
-
-    section.moocs {
-        height: 95vh;
+    section.moocs .left-zone {
+        width: 950px;
+        height: 27.5rem;
     }
     section.moocs .right-bar label {
         margin-bottom: 2px;
     }
-
     section.moocs .middle-left {
         width: 950px;
         height: 310px;
     }
-
+    section.moocs .left-bar .gauge-3 {
+        padding-top: 0rem;
+    }
     section.moocs .right-zone {
         width: 690px;
         height: 275px;
     }
-
     section.moocs .middle-right {
         width: 690px;
         height: 310px;
     }
-
     section.moocs .container_radio {
         margin-top: 0;
         padding-top: 0;
     }
-
+    section.moocs .waffles {
+        height: 22rem;
+    }
     section.moocs #moocs-registration .y-data {
         margin-top: -10px;
     }
-
     section.moocs #timeline-moocs .x-axis text {
         font-size: 14px;
         font-family: "Gotham-Book"
     }
-
-    /* section.moocs #timeline-moocs svg {
-        height: 270px;
-        width: 883px;
-    } */
-
     section.moocs #timeline-moocs .y-axis text {
         font-size: 14px;
         font-family: "Gotham-Book"
     }
-
     section.moocs .down .vertical-text {
         -ms-writing-mode: tb-lr;
         writing-mode: vertical-lr;
@@ -3231,139 +1947,583 @@ section.datasets #downloads-dataset rect {
         top: -67px;
         left: -21px;
     }
-
     section.moocs .down .left-zone {
         width: 690px;
         height: 305px;
     }
-
     section.moocs .down .right-zone {
         width: 690px;
         height: 305px;
     }
-
     section.moocs #distribution-moocs {
         margin-left: -40px;
     }
-
-    .ms-fullscreenmode #contentBox {
-        margin-left: 0 !important;
+    section.moocs .left-bar h4 {
+        font-size: 1.7rem;
+        color: white;
+        margin-bottom: 0;
     }
-
-    .left-text-drop select {
-        color: #1658a1
+    section.moocs .left-bar span:nth-child(2n) {
+        color: white;
+        font-size: 10px;
+        font-family: 'Gotham-Bold';
     }
-
-    #idbLink {
-        color: #1658a1;
+    section.moocs .left-bar span:nth-child(2n+1) {
+        color: #AB3018;
+        font-size: 10px;
+        font-family: 'Gotham-Bold';
     }
-
+    section.moocs p {
+        font-size: 18px;
+        font-family: 'Gotham-Bold';
+        color: #FA2E00;
+    }
+    section.moocs h4 {
+        font-size: 16px;
+        font-family: 'Gotham-Bold';
+    }
+    section.moocs h1 {
+        font-size: 4.8rem;
+    }
+    section.moocs .down-zone span {
+        font-size: 10px;
+    }
+    section.moocs .down-zone .special span:nth-child(1) {
+        border-right: 1px solid #b4b4b4;
+    }
+    section.moocs .down-zone .special span {
+        font-family: 'Gotham-Bold';
+    }
+    section.moocs .small-letter {
+        font-size: 10px;
+        font-family: 'Gotham-Bold';
+    }
+    section.moocs .distribution-chart path {
+        display: none;
+    }
+    section.moocs .distribution-chart .tick line {
+        display: none;
+    }
+    section.moocs .distribution-chart .tick text {
+        width: 10px;
+    }
+    section.moocs #moocs-registrations {
+        height: 245px;
+    }
+    section.moocs #moocs-registrations .y-data {
+        font-family: 'Gotham-Bold';
+        font-size: 12px;
+    }
+    section.moocs #moocs-registrations .text-inside {
+        color: #8a858d
+    }
+    section.moocs #moocs-registrations .y-data .domain {
+        display: none;
+    }
+    section.moocs #timeline-moocs .line {
+        fill: none;
+        stroke: #ef8166;
+        stroke-width: 2px;
+    }
+    section.moocs #timeline-moocs .area {
+        fill: #f1a592;
+    }
+    section.moocs #timeline-moocs {
+        height: 24rem;
+    }
+    section.moocs #timeline-moocs .x-axis .tick {
+        stroke-width: 1px;
+    }
+    section.moocs #timeline-moocs .y-axis path {
+        display: none;
+    }
+    section.moocs #timeline-moocs .y-axis .tick line {
+        display: none;
+    }
+    section.moocs [id^="student"] .y-data path {
+        display: none;
+    }
+    section.moocs [id^="student"] .y-data {
+        font-size: 10px;
+        font-family: 'Gotham-Bold'
+    }
     section.datasets {
         min-height: 940px;
+        font-family: 'Gotham-Bold';
     }
-
-    section.datasets .left-zone {
-        width: 1000px;
-        height: 280px;
-    }
-
-    section.datasets #dataset-publications-plot {
-        height: 500px;
-        padding-top: 40px;
-    }
-
     section.datasets .left-bar {
         height: 940px;
     }
-
-    section.datasets .right-bar {
-        height: 940px;
-    }
-
     section.datasets .right-bar label {
         margin-bottom: 2px;
     }
-
+    section.datasets .down {
+        height: 600px;
+    }
     section.datasets .right-zone {
         width: 648px;
         height: 280px;
     }
-
-
-
+    section.datasets #lines-dataset div:nth-child(n) {
+        margin-top: -32px
+    }
+    section.datasets #lines-dataset {
+        padding-top: 55px;
+        margin-left: -4rem;
+        margin-right: 40px;
+    }
+    section.datasets .right-bar {
+        height: 940px;
+    }
+    section.datasets .container_radio {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    section.datasets .left-bar h4 {
+        font-size: 1.7rem;
+        color: white;
+        margin-bottom: 0;
+    }
+    section.datasets .left-bar span:nth-child(2n) {
+        color: white;
+        font-size: 10px;
+        font-family: 'Gotham-Bold';
+    }
+    section.datasets .left-bar span:nth-child(2n+1) {
+        color: #2E305F;
+        font-size: 10px;
+        font-family: 'Gotham-Bold';
+    }
+    section.datasets .funds-allocated-meter .background {
+        fill: #2E305F;
+    }
+    section.datasets p {
+        font-size: 18px;
+        font-family: 'Gotham-Bold';
+        color: #424488;
+    }
+    section.datasets h4 {
+        font-size: 16px;
+        font-family: 'Gotham-Bold';
+        color: #424488;
+    }
+    section.datasets h4 span {
+        font-size: 16px;
+        font-family: 'Gotham-Bold';
+    }
+    section.datasets h4 span:nth-child(1) {
+        text-decoration: underline;
+    }
+    section.datasets .purple-border-right {
+        border-right: solid 1px #2E305F;
+    }
+    section.datasets #publications {
+        height: 325px;
+    }
+    section.datasets .small-letter {
+        font-size: 12px;
+        font-family: 'Gotham-Bold';
+        color: #b4b4b4;
+    }
+    section.datasets .small-letter span {
+        text-decoration: underline;
+    }
+    section.datasets #data-trend .y-data {
+        font-family: 'Gotham-Bold';
+        font-size: 11px;
+    }
+    section.datasets #data-trend .text-inside {
+        color: #8a858d
+    }
+    section.datasets #data-trend .y-data .domain {
+        display: none;
+    }
+    section.datasets #downloads-dataset {
+        min-width: 300px;
+        max-width: 100%;
+        margin: 0 auto;
+        height: 220px;
+    }
+    section.datasets #timeline-dataset {
+        font-family: 'Gotham-Bold';
+        height: 240px !important;
+    }
+    section.datasets #timeline-dataset .line {
+        fill: none;
+        stroke: #62649c;
+        stroke-width: 2px;
+    }
+    section.datasets #timeline-dataset .area {
+        fill: #8889b3;
+    }
+    section.datasets #timeline-dataset .x-axis .tick {
+        stroke-width: 1px;
+    }
+    section.datasets #timeline-dataset .y-axis path {
+        display: none;
+    }
+    section.datasets #timeline-dataset .y-axis .tick line {
+        display: none;
+    }
+    section.datasets #timeline-datasets .overlay {
+        fill: none;
+        pointer-events: all;
+    }
+    section.datasets .left-zone {
+        width: 1000px;
+    }
+    section.datasets .up-zone {
+        height: 280px;
+    }
+    section.datasets #dataset-publications-plot {
+        height: 500px;
+        padding-top: 40px;
+        margin-top: -32px;
+    }
+    section.datasets #dataset-publications-plot .legend text, section.datasets #dataset-publications-plot .axis text {
+        font-size: 14px;
+        fill: #333;
+        font-family: 'Gotham-Book'
+    }
+    section.datasets #dataset-publications-plot .axis path, section.datasets #dataset-publications-plot .axis line {
+        fill: none;
+        stroke-width: 3px;
+        stroke: #555555;
+    }
+    section.datasets #dataset-publications-plot .circle {
+        fill-opacity: 0.65;
+    }
+    section.datasets #dataset-publications-plot .bubble {
+        opacity: 1;
+        transition: opacity 0.3s;
+    }
+    section.datasets #dataset-publications-plot .bubble:hover text {
+        opacity: 1;
+    }
+    section.datasets #dataset-publications-plot .bubble:hover circle {
+        fill-opacity: 1;
+    }
+    section.datasets #dataset-publications-plot .legend rect {
+        fill-opacity: 0.75;
+    }
+    section.datasets #dataset-publications-plot .legeng:hover rect {
+        fill-opacity: 1;
+    }
     section.code {
         min-height: 940px;
     }
-
-    section.code #code-plot {
-        height: 500px;
-        padding-top: 40px;
+    section.code .down {
+        height: 600px;
     }
-
-
     section.code .container_radio {
         margin-top: 0;
         padding-top: 0;
     }
-
     section.code .right-zone {
         width: 648px;
         height: 280px;
     }
-
+    section.code .funds-allocated-meter .background {
+        fill: #A17603;
+    }
+    
+    section.code #code-plot {
+        height: 500px;
+        padding-top: 40px;
+        margin-top: -32px;
+    }
     section.code .right-bar label {
         margin-bottom: 2px;
     }
-
     section.code .left-zone {
         width: 1000px;
+        
+    }
+    section.code .up{
         height: 280px;
     }
-
-    section.code .down {
-        height: 600px;
+    section.code #code-trend .y-code {
+        font-family: 'Gotham-Bold';
+        font-size: 11px;
     }
-
-
+    section.code #code-trend .text-inside {
+        color: #8a858d
+    }
+    section.code #code-trend .y-code .domain {
+        display: none;
+    }
+    section.code #code-plot .legend text, section.code #code-plot .axis text {
+        font-size: 14px;
+        fill: #333;
+        font-family: 'Gotham-Book'
+    }
+    section.code #code-plot .axis path, section.code #code-plot .axis line {
+        fill: none;
+        stroke-width: 3px;
+        stroke: #555555;
+    }
+    section.code #code-plot .circle {
+        fill-opacity: 0.65;
+    }
+    section.code #code-plot .bubble {
+        opacity: 1;
+        transition: opacity 0.3s;
+    }
+    section.code #code-plot .bubble:hover text {
+        opacity: 1;
+    }
+    section.code #code-plot .bubble:hover circle {
+        fill-opacity: 1;
+    }
+    section.code #code-plot .legend rect {
+        fill-opacity: 0.75;
+    }
+    section.code #code-plot .legeng:hover rect {
+        fill-opacity: 1;
+    }
+    section.code .left-bar h4 {
+        font-size: 16px;
+        color: white;
+    }
+    section.code .left-bar span:nth-child(2n) {
+        color: white;
+        font-size: 10px;
+        font-family: 'Gotham-Bold';
+    }
+    section.code .left-bar span:nth-child(2n+1) {
+        color: #A17603;
+        font-size: 10px;
+        font-family: 'Gotham-Bold';
+    }
+    section.code .right-bar .left-zone .top-zone {
+        height: 265px;
+        padding-top: 1rem;
+    }
+    section.code h4 {
+        font-size: 16px;
+        font-family: 'Gotham-Bold';
+    }
+    section.code .small-letter {
+        font-size: 12px;
+        font-family: 'Gotham-Medium';
+        color: #b4b4b4;
+    }
+    section.code .small-letter span {
+        text-decoration: underline;
+    }
+    section.code #lines-code div:nth-child(n) {
+        margin-top: -32px
+    }
+    section.code #lines-code {
+        padding-top: 55px;
+        margin-left: -40px;
+        margin-right: 40px;
+    }
+    section.code #publications {
+        height: 325px;
+    }
+    section.code #timeline-code {
+        font-family: 'Gotham-Bold';
+    }
+    section.code #timeline-code .line {
+        fill: none;
+        stroke: #efbd34;
+        stroke-width: 2px;
+    }
+    section.code #timeline-code .area {
+        fill: #f1ca60;
+    }
+    section.code #timeline-code .x-axis .tick {
+        stroke-width: 1px;
+    }
+    section.code #timeline-code .y-axis path {
+        display: none;
+    }
+    section.code #timeline-code .y-axis .tick line {
+        display: none;
+    }
+    section.code .axis--x path {
+        display: none;
+    }
+    section.code .axis--y path {
+        display: none;
+    }
+    section.code .line {
+        fill: none;
+        stroke-width: 1.5px;
+    }
+    section.code .grid line {
+        stroke: lightgrey;
+        stroke-opacity: 0.7;
+        shape-rendering: crispEdges;
+    }
+    section.code .grid path {
+        stroke-width: 0;
+    }
     section.suscribers .right-zone {
         width: 648px;
         height: 300px;
     }
-
     section.suscribers .left-zone {
         width: 950px;
         height: 300px;
     }
-
     section.suscribers .down {
         height: 550px;
     }
-
     section.suscribers .down .vertical-text {
         position: static;
     }
-
     section.suscribers .right-bar .right-zone {
         width: 700px;
     }
-
     section.suscribers .left-bar {
         min-height: 900px;
+        text-align: center;
     }
-
     section.suscribers .right-bar {
         min-height: 900px;
     }
-
-    section.suscribers .right-bar label {
-        margin-bottom: 2px;
-    }
-
     section.suscribers {
         min-height: 900px;
+        font-family: 'Gotham-Bold';
     }
-
-    /* section.publications {
-        height: 100vh;
-    } */
+    section.suscribers .right-bar .left-zone {
+        width: 940px;
+    }
+    section.suscribers .left-bar .gauge-1 {
+        padding-top: 4rem;
+    }
+    section.suscribers .left-bar h4 {
+        font-size: 16px;
+        color: white;
+        margin-bottom: 0;
+    }
+    section.suscribers .left-bar span:nth-child(2n) {
+        color: white;
+        font-size: 10px;
+        font-family: 'Gotham-Bold';
+    }
+    section.suscribers .left-bar span:nth-child(2n+1) {
+        color: #027B8E;
+        font-size: 10px;
+        font-family: 'Gotham-Bold';
+    }
+    section.suscribers .funds-allocated-meter .background {
+        fill: #027B8E;
+    }
+    section.suscribers .right-bar label {
+        padding-bottom: 0px;
+        margin-bottom: 0;
+    }
+    section.suscribers h4 {
+        font-size: 16px;
+        font-family: 'Gotham-Bold';
+    }
+    section.suscribers #gender {
+        height: 379px;
+    }
+    section.suscribers .institution-chart .tick line,section.suscribers .suscriber-AgeChart .tick line {
+        display: none;
+    }
+    section.suscribers #demographics-suscribers .node {
+        border: solid .5px #518a81;
+        font: 18px;
+        font-family: 'Gotham-Bold';
+        line-height: 24px;
+        overflow: hidden;
+        position: absolute;
+        text-indent: 9px;
+    }
+    section.suscribers .container_radio {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    section.suscribers #suscribers-interested .y-suscribers path {
+        display: none;
+    }
+    section.map .fa {
+        font-size: 14px;
+    }
+    section.map .alert-map {
+        color: #ffffff;
+        background-color: #f7899f;
+        border-color: #c42948;
+    }
+    section.map .temp-hide {
+        opacity: .5;
+        display: none;
+    }
+    section.map #search {
+        border: none;
+    }
+    section.map .stylish-input-group .input-group-addon {
+        background: white !important;
+    }
+    section.map .stylish-input-group .form-control {
+        border-right: 0;
+        box-shadow: 0 0 0;
+        border-color: #ccc;
+    }
+    section.map .stylish-input-group button {
+        margin-top: 5px;
+        border: 0;
+        background: transparent;
+    }
+    section.map .side-filter {
+        width: 100%;
+        border-bottom: 2px solid #000;
+        margin-bottom: 10px;
+        padding: 5px;
+        text-align: center;
+        font-size: 14px;
+        font-family: Gotham-Bold;
+    }
+    section.map #totales {
+        font-size: 44px;
+        color: #c42a48;
+    }
+    section.map .no-pad-marg {
+        padding-right: 0px;
+        margin-left: 0px;
+    }
+    section.map .form-control {
+        border: 1px solid #000000;
+        border-radius: 0;
+        font-size: 13px;
+        color: #000000;
+    }
+    section.map .slider-date {
+        font-size: 10px;
+        margin-top: 10px;
+        color: #9e9e9e;
+    }
+    section.map .noUi-horizontal {
+        height: 4px;
+    }
+    section.map .noUi-handle {
+        width: 10px !important;
+        height: 14px !important;
+        background: #313131;
+    }
+    section.map .noUi-handle:before, .noUi-handle:after {
+        height: 8px;
+        width: 1px;
+        left: 3px;
+        top: 2px;
+    }
+    section.map .noUi-handle:after {
+        left: 5px;
+    }
+    section.map html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
+        right: -5px;
+        left: auto;
+    }
+    section.map select.form-control:not([size]):not([multiple]) {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-position: right 50%;
+        background-repeat: no-repeat;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAMCAYAAABSgIzaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDZFNDEwNjlGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDZFNDEwNkFGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0NkU0MTA2N0Y3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0NkU0MTA2OEY3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PuGsgwQAAAA5SURBVHjaYvz//z8DOYCJgUxAf42MQIzTk0D/M+KzkRGPoQSdykiKJrBGpOhgJFYTWNEIiEeAAAMAzNENEOH+do8AAAAASUVORK5CYII=);
+    }
 }
