@@ -155,10 +155,18 @@ function drawTrendChartRectBar(data, id, color, colorClass, indicator) {
         .duration(0)
         .style("display", "inline-block")
         .style("font-family", "Gotham-Book");
-      div
-        .html(textHtml)
-        .style("left", d3Old.event.pageX + 5 + "px")
-        .style("top", d3Old.event.pageY - 28 + 5 + "px");
+      if (screen.width <= 480) {
+        div
+          .html(textHtml)
+          .style("left", "0px")
+          .style("top", d3Old.event.pageY - 28 + 5 + "px")
+          .style("width", screen.width+"px");
+      } else {
+        div
+          .html(textHtml)
+          .style("left", d3Old.event.pageX + 5 + "px")
+          .style("top", d3Old.event.pageY - 28 + 5 + "px");
+      }
     })
     .on("mouseout", function(d) {
       div
@@ -201,10 +209,18 @@ function drawTrendChartRectBar(data, id, color, colorClass, indicator) {
         .style("font-family", "Gotham-Book")
         .style("display", "inline-block");
       // div.html(d.value + "<br/>" + d.name)
-      div
-        .html(textHtml)
-        .style("left", d3Old.event.pageX + 5 + "px")
-        .style("top", d3Old.event.pageY - 28 + 5 + "px");
+      if (screen.width <= 480) {
+        div
+          .html(textHtml)
+          .style("left", "0px")
+          .style("top", d3Old.event.pageY - 28 + 5 + "px")
+          .style("width", screen.width+"px");
+      } else {
+        div
+          .html(textHtml)
+          .style("left", d3Old.event.pageX + 5 + "px")
+          .style("top", d3Old.event.pageY - 28 + 5 + "px");
+      }
     })
     .on("mouseout", function(d) {
       div

@@ -292,9 +292,14 @@ function wrapData(text) {
     text.each(function () {
         var text = d3.select(this);
         text.text(text.text().slice(0, 80));
+        var lineHeight = 17;
+        if(screen.width<=480){
+            text.text(text.text().slice(0, 33));
+            lineHeight=14;
+        }  
 
         var words = text.text().split(/\s+/).reverse();
-        var lineHeight = 17;
+        
         var width = parseFloat(text.attr('width'));
         var y = parseFloat(text.attr('y'));
         var x = text.attr('x');

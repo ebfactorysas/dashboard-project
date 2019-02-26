@@ -34,6 +34,10 @@ function createPlotChart(data, id, colorPlot, xA, yA, valueTicksX, valueTicksY, 
             arrayAux.push($.extend(true, {}, data[i]))
         }
     }
+    var minTooltipValue = 640;
+    if(screen.width<=480){
+        minTooltipValue = screen.width;
+    }
 
     var newData = arrayAux.concat(arrayElements);
     var visualization = d3plusOld.viz()
@@ -67,8 +71,8 @@ function createPlotChart(data, id, colorPlot, xA, yA, valueTicksX, valueTicksY, 
             }            
         })
         .tooltip({
-            large: 600,
-            small: 650,
+            large: minTooltipValue-10,
+            small: minTooltipValue+20,
             anchor: "top left",
             value: ["divisionDepartment", "publishedDate", "Downloads", "daysPublished", "pageviews"]
         })

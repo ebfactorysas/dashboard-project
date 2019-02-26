@@ -563,8 +563,14 @@ var $win = $('#s4-workspace');
         if ($win.scrollTop() == 0){
             $('#s4-bodyContainer .navbar:nth-child(2)').css("position", "fixed");
             $('#s4-bodyContainer .navbar:nth-child(2)').css('margin-top','8rem');
-            $('.inner-nav').css('margin-top','8rem');
+            $('.inner-nav').css('margin-top','16rem');
+            if(screen.width<=480){
+                $('section.big-numbers').css('margin-top','16rem');
+            }
         }else{
+            if(screen.width<=480){
+                $('section.big-numbers').css('margin-top','8rem');
+            }
             $('.inner-nav').css('margin-top','8rem');
             $('#s4-bodyContainer .navbar:nth-child(2)').css('margin-top','0');
             $('#s4-bodyContainer .navbar:nth-child(2)').css("position", "absolute");

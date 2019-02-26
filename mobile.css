@@ -1,0 +1,122 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .title-text h1 {
+        font-size: 2.5rem;
+    }
+    .inner-nav {
+        margin-top: 16rem;
+        z-index: 10;
+    }
+    #nav-title {
+        display: none;
+    }
+    section.big-numbers {
+        margin-top: 16rem;
+    }
+    section.big-numbers .border-right-dash:before {
+        display: none;
+    }
+    section.publications #publication-trend {
+        margin-left: 0;
+    }
+    section.publications #lines-publications {
+        display: none;
+    }
+    section.publications .title-30 {
+        display: none;
+    }
+    section.publications #publications-plot {
+        height: 46rem;
+    }
+    section.publications #kic p {
+        font-size: 1.2rem;
+    }
+    section.moocs .up-zone:nth-child(3) {
+        height: 51rem;
+    }
+    section.moocs #waffle2-registrations {
+        padding-top: 1.5rem;
+    }
+    section.moocs #waffle3-registrations {
+        padding-top: 1.5rem;
+    }
+    section.moocs .row:before{
+        display: none;
+    }
+
+    section .moocs .left-zone:nth-child(6) {
+        height: 80rem;
+    }
+    section.datasets #lines-dataset {
+        display: none;
+    }
+    section.datasets .title-30 {
+        display: none;
+    }
+    section.datasets #downloads-dataset{
+        height: 20rem;
+    }
+    section.datasets #timeline-dataset {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    section.datasets #dataset-publications-plot{
+        height: 45rem;
+    }
+    section.code #downloads-code{
+        height: 20rem;
+    }
+    section.code #timeline-code {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    section.code #code-plot{
+        height: 45rem;
+    }
+    section.code #lines-code{
+        display: none;
+    }
+    section.code .title-30 {
+        display: none;
+    }
+    section.suscribers #demographics-suscribers{
+        height: 22rem;
+    }
+    section.suscribers .up.left-zone{
+        height: 39rem;
+    }    
+    
+    section.suscribers .up.right-zone{
+        height: 28rem;
+    }
+
+    section.suscribers .down.left-zone {
+        height: 80rem;
+    }
+
+    section.suscribers .down.right-zone {
+        height: 40rem;
+    }
+
+    section.suscribers #age-suscribers .y-suscribers,section.suscribers #age-suscribers .label{
+        font-size: .85rem;
+    }
+    
+    section.suscribers #suscribers-interested .y-suscribers,section.suscribers #suscribers-interested .label{
+        font-size: .85rem;
+    }
+
+    section.map .no-pad-marg{
+        margin: 1rem 0rem;
+        padding: 1rem 0rem;
+    }
+    section.map{
+        padding-bottom: 3rem;
+    }
+    .site-title{
+        font-size: 12px;
+    }
+}

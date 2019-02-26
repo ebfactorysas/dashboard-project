@@ -303,13 +303,13 @@ body {
 #registrations {
     height: 250px;
 }
-
+/* 
 #demographics-suscribers, #downloads-code {
     min-width: 300px;
     max-width: 100%;
     margin: 0 auto;
     min-height: 220px;
-}
+} */
 
 #downloads-publications rect {
     stroke: #d1415a !important;
@@ -378,7 +378,7 @@ section.big-numbers {
 }
 
 section.big-numbers h4 {
-    font-size: 24px;
+    font-size: 2.4rem;
     color: #ffffff;
 }
 
@@ -398,7 +398,7 @@ section.big-numbers .last-panel {
 }
 
 section.big-numbers p {
-    font-size: 0.9vw;
+    font-size: 1.7rem;
 }
 
 section.big-numbers img {
@@ -423,6 +423,10 @@ section.big-numbers .border-right-dash:before {
     background: rgba(0, 0, 0, 0.8);
     color: #fff;
     border-radius: 2px;
+}
+
+.funds-allocated-meter .foreground {
+    fill: #FFF;
 }
 
 /* Creates a small triangle extender for the tooltip */
@@ -455,9 +459,7 @@ section.publications .funds-allocated-meter .background {
     fill: #AA0206;
 }
 
-section.publications .funds-allocated-meter .foreground {
-    fill: #FFF;
-}
+
 
 section.publications .left-bar .gauge-1 {
     padding-top: 4rem;
@@ -723,6 +725,10 @@ section.moocs .down-zone span {
     font-size: 10px;
 }
 
+section.moocs .funds-allocated-meter .background {
+    fill: #a33c27;
+}
+
 section.moocs .down-zone .special span:nth-child(1) {
     border-right: 1px solid #b4b4b4;
 }
@@ -848,6 +854,9 @@ section.moocs #timeline-moocs .y-axis path {
 section.moocs #timeline-moocs .y-axis .tick line {
     display: none;
 }
+section.moocs .student-chart{
+    height: 9rem;
+}
 
 section.moocs [id^="student"] .y-data path {
     display: none;
@@ -862,6 +871,11 @@ section.moocs [id^="student"] .y-data {
     font-size: 10px;
     font-family: 'Gotham-Bold'
 }
+section.moocs .funds-allocated-meter .foreground {
+    fill: #FFF;
+}
+
+
 
 section.datasets {
     font-family: 'Gotham-Bold';
@@ -1114,6 +1128,9 @@ section.code #code-trend .text-inside {
 section.code #code-trend .y-code .domain {
     display: none;
 }
+section.code #downloads-code{
+    height: 22rem;
+}
 
 section.code #code-plot {
     height: 49rem;
@@ -1357,6 +1374,16 @@ section.suscribers .institution-chart .tick line {
 
 section.suscribers .suscriber-AgeChart .tick line {
     display: none;
+}
+
+section.suscribers #demographics-suscribers{
+    height: 24rem;
+}
+section.suscribers #age-suscribers .y-suscribers,section.suscribers #age-suscribers .label{
+    font-size: 1.3rem;
+}
+section.suscribers #suscribers-interested .y-suscribers,section.suscribers #suscribers-interested .label{
+    font-size: 1.3rem;
 }
 
 section.suscribers #demographics-suscribers .node {
@@ -1644,12 +1671,12 @@ section.map select.form-control:not([size]):not([multiple]) {
         font-size: 12px;
         font-family: "Gotham-Bold"
     }
-    #demographics-suscribers, #downloads-code, #downloads-publications {
+    /* #demographics-suscribers, #downloads-code, #downloads-publications {
         min-width: 300px;
         max-width: 100%;
         margin: 0 auto;
         min-height: 220px;
-    }
+    } */
     
     .funds-allocated-meter text.percent-complete {
         font-family: "Gotham-Book";
@@ -1690,10 +1717,6 @@ section.map select.form-control:not([size]):not([multiple]) {
         background-color: #1156A1;
         font-family: 'Gotham-Bold';
     }
-    section.big-numbers h4 {
-        font-size: 24px;
-        color: #ffffff;
-    }
     section.big-numbers h1 {
         font-size: 5.5vw;
         font-family: 'Gotham-Book';
@@ -1702,9 +1725,6 @@ section.map select.form-control:not([size]):not([multiple]) {
     section.big-numbers .last-panel {
         padding-left: 1vw;
         padding-right: 1vw;
-    }
-    section.big-numbers p {
-        font-size: 0.9vw;
     }
     section.big-numbers img {
         max-width: 55px;
@@ -1724,9 +1744,6 @@ section.map select.form-control:not([size]):not([multiple]) {
     section.publications .container_radio {
         margin-top: 0;
         padding-top: 0;
-    }
-    section.publications.funds-allocated-meter .background {
-        fill: #AA0206;
     }
     section.publications.funds-allocated-meter .foreground {
         fill: #FFF;
@@ -1944,8 +1961,8 @@ section.map select.form-control:not([size]):not([multiple]) {
         font-size: 12px;
         font-family: 'Gotham-Book';
         position: relative;
-        top: -67px;
-        left: -21px;
+        top: -1rem;
+        left: -1rem;
     }
     section.moocs .down .left-zone {
         width: 690px;
@@ -2094,9 +2111,6 @@ section.map select.form-control:not([size]):not([multiple]) {
         font-size: 10px;
         font-family: 'Gotham-Bold';
     }
-    section.datasets .funds-allocated-meter .background {
-        fill: #2E305F;
-    }
     section.datasets p {
         font-size: 18px;
         font-family: 'Gotham-Bold';
@@ -2222,9 +2236,6 @@ section.map select.form-control:not([size]):not([multiple]) {
     section.code .right-zone {
         width: 648px;
         height: 280px;
-    }
-    section.code .funds-allocated-meter .background {
-        fill: #A17603;
     }
     
     section.code #code-plot {
@@ -2408,9 +2419,6 @@ section.map select.form-control:not([size]):not([multiple]) {
         color: #027B8E;
         font-size: 10px;
         font-family: 'Gotham-Bold';
-    }
-    section.suscribers .funds-allocated-meter .background {
-        fill: #027B8E;
     }
     section.suscribers .right-bar label {
         padding-bottom: 0px;

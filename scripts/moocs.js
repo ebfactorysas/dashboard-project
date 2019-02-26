@@ -49,13 +49,17 @@ function wrap(text, width) {
 
 function drawDistributionChart(dataDistribution) {
   d3.select("#distribution-moocs svg").remove();
-  
+  var widthInherith = $("#distribution-moocs").width();
+  var heightInherith = $("#distribution-moocs").height();
+  console.log(widthInherith,heightInherith)
   var marginDistribution = {
     top: 50,
     right: 50,
     bottom: 50,
     left: 50
   };
+  
+
 
   var widthDistribution =
     800 - marginDistribution.left - marginDistribution.right;
@@ -129,7 +133,7 @@ function drawDistributionChart(dataDistribution) {
     .attr("font-family", "Gotham-Bold")
     .attr("class", "textInsideDist")
     .attr("padding-bottom", "10px")
-    .attr("font-size", "12px");
+    .attr("font-size", "1.3rem");
 
   svgDistribution
     .append("g")
@@ -141,7 +145,7 @@ function drawDistributionChart(dataDistribution) {
     .selectAll(".tick text")
     .call(wrap, xDistribution.bandwidth())
     .attr("font-family", "Gotham-Bold")
-    .attr("font-size", "12px");
+    .attr("font-size", "1.3rem");
 
   var div = d3
     .select("body")
@@ -180,10 +184,18 @@ function drawDistributionChart(dataDistribution) {
         .style("font-family", "Gotham-Book")
         .style("display", "inline-block");
       // div.html(d.value + "<br/>" + d.name)
-      div
+      if (screen.width <= 480) {
+        div
+          .html(textHtml)
+          .style("left", "0px")
+          .style("top", d3Old.event.pageY - 28 + 5 + "px")
+          .style("width", screen.width+"px");
+      } else {
+        div
         .html(textHtml)
         .style("left", d3Old.event.pageX - 200 + 35 + "px")
         .style("top", d3Old.event.pageY - 28 + 35 + "px");
+      }
     })
     .on("mouseout", function(d) {
       div
@@ -222,10 +234,18 @@ function drawDistributionChart(dataDistribution) {
         .style("font-family", "Gotham-Book")
         .style("display", "inline-block");
       // div.html(d.value + "<br/>" + d.name)
-      div
+      if (screen.width <= 480) {
+        div
+          .html(textHtml)
+          .style("left", "0px")
+          .style("top", d3Old.event.pageY - 28 + 5 + "px")
+          .style("width", screen.width+"px");
+      } else {
+        div
         .html(textHtml)
         .style("left", d3Old.event.pageX - 200 + 35 + "px")
         .style("top", d3Old.event.pageY - 28 + 35 + "px");
+      }
     })
     .on("mouseout", function(d) {
       div
@@ -618,6 +638,8 @@ function tooltipStudentFlow(id, type) {
 function drawStudentRegistrationsChart(dataStudents) {
   d3.select("#student1 svg").remove();
 
+  var widthInherith = $("#student1").width()-50;
+  var heightInherith = $("#student1").height();
   if (
     typeof dataStudents == "undefined" ||
     typeof dataStudents.registrations == "undefined"
@@ -643,7 +665,7 @@ function drawStudentRegistrationsChart(dataStudents) {
     .append("svg")
     //responsive SVG needs these 2 attributes and no width and height attr
     .attr("preserveAspectRatio", "xMinYMin meet")
-    .attr("viewBox", "-20 -7 100 60")
+    .attr("viewBox", "-20 -7 "+ widthInherith+ " "+ heightInherith)
     .append("g");
 
   var xStudent1 = d3
@@ -739,7 +761,8 @@ function drawStudentRegistrationsChart(dataStudents) {
 
 function drawStudentParticipantsChart(dataStudents) {
   d3.select("#student2 svg").remove();
-
+  var widthInherith = $("#student2").width()-50;
+  var heightInherith = $("#student2").height();
   if (
     typeof dataStudents == "undefined" ||
     typeof dataStudents.participants == "undefined"
@@ -763,7 +786,7 @@ function drawStudentParticipantsChart(dataStudents) {
     .append("svg")
     //responsive SVG needs these 2 attributes and no width and height attr
     .attr("preserveAspectRatio", "xMinYMin meet")
-    .attr("viewBox", "-20 -7 100 60")
+    .attr("viewBox", "-20 -7 "+ widthInherith+ " "+ heightInherith)
     .append("g");
 
   var xStudent2 = d3
@@ -860,7 +883,8 @@ function drawStudentParticipantsChart(dataStudents) {
 
 function drawStudentCompletedsChart(dataStudents) {
   d3.select("#student3 svg").remove();
-
+  var widthInherith = $("#student3").width()-50;
+  var heightInherith = $("#student3").height();
   if (
     typeof dataStudents == "undefined" ||
     typeof dataStudents.completed == "undefined"
@@ -883,7 +907,7 @@ function drawStudentCompletedsChart(dataStudents) {
     .append("svg")
     //responsive SVG needs these 2 attributes and no width and height attr
     .attr("preserveAspectRatio", "xMinYMin meet")
-    .attr("viewBox", "-20 -7 100 60")
+    .attr("viewBox", "-20 -7 "+ widthInherith+ " "+ heightInherith)
     .append("g");
 
   var xStudent3 = d3
@@ -981,6 +1005,8 @@ function drawStudentCompletedsChart(dataStudents) {
 
 function drawStudentCertifiedsChart(dataStudents) {
   d3.select("#student4 svg").remove();
+  var widthInherith = $("#student4").width()-50;
+  var heightInherith = $("#student4").height();
   if (
     typeof dataStudents == "undefined" ||
     typeof dataStudents.certified == "undefined"
@@ -1003,9 +1029,9 @@ function drawStudentCertifiedsChart(dataStudents) {
     .select("#student4")
     .append("svg")
     //responsive SVG needs these 2 attributes and no width and height attr
-    .attr("preserveAspectRatio", "xMinYMin meet")
-    .attr("viewBox", "-20 -7 100 60")
-    .append("g");
+    .attr("preserveAspectRatio", "xMidYMid meet")
+    .attr("viewBox", "-20 -7 "+ widthInherith+ " "+ heightInherith)
+    //.append("g");
 
   var xStudent4 = d3
     .scaleLinear()
@@ -1019,7 +1045,7 @@ function drawStudentCertifiedsChart(dataStudents) {
 
   var yStudent4 = d3
     .scaleBand()
-    .rangeRound([18 * dataStudents.certified.years.length, 0], 0.1)
+    .rangeRound([(heightInherith/dataStudents.certified.years.length*2), 0], 0.1)
     .domain(
       dataStudents.certified.years.map(function(d) {
         return d.name;

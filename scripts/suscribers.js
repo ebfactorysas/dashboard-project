@@ -68,6 +68,7 @@ function drawInstitutionsChart(dataInstitution) {
     .data(dataInstitution)
     .enter()
     .append("text")
+    .attr("class","labels")
     .text(null)
     .attr("y", function(d) {
       return yInstitution(d.value) - 20;
@@ -124,7 +125,6 @@ function drawInstitutionsChart(dataInstitution) {
   var tooltipBar = d3Old
     .selectAll("#institution-suscribers" + " .bar")
     .on("mouseover", function(d) {
-        console.log(d)
       var textHtml =
         "<div class='col tooltip-gauges'><h3 class='row green'>{{title}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>Subscribers</span><span class='col text-right' >{{value}}</div>";
       textHtml = textHtml.replace("{{title}}", d.name);
@@ -137,10 +137,19 @@ function drawInstitutionsChart(dataInstitution) {
         .style("font-family", "Gotham-Book")
         .style("display", "inline-block");
       // div.html(d.value + "<br/>" + d.name)
-      div
+      if (screen.width <= 480) {
+        div
+          .html(textHtml)
+          .style("left", "0px")
+          .style("top", d3Old.event.pageY - 28 + 5 + "px")
+          .style("width", screen.width+"px");
+      } else {
+        div
         .html(textHtml)
         .style("left", d3Old.event.pageX - 200 + 35 + "px")
         .style("top", d3Old.event.pageY - 28 + 35 + "px");
+      }
+      
     })
     .on("mouseout", function(d) {
       div
@@ -148,6 +157,42 @@ function drawInstitutionsChart(dataInstitution) {
         .duration(0)
         .style("display", "none");
     });
+    var tooltipText = d3Old
+    .selectAll("#institution-suscribers" + " .labels")
+    .on("mouseover", function(d) {
+      var textHtml =
+        "<div class='col tooltip-gauges'><h3 class='row green'>{{title}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>Subscribers</span><span class='col text-right' >{{value}}</div>";
+      textHtml = textHtml.replace("{{title}}", d.name);
+      textHtml = textHtml.replace("{{value}}", d.value.toLocaleString());
+
+      textHtml = textHtml + "</div>";
+      div
+        .transition()
+        .duration(0)
+        .style("font-family", "Gotham-Book")
+        .style("display", "inline-block");
+      // div.html(d.value + "<br/>" + d.name)
+      if (screen.width <= 480) {
+        div
+          .html(textHtml)
+          .style("left", "0px")
+          .style("top", d3Old.event.pageY - 28 + 5 + "px")
+          .style("width", screen.width+"px");
+      } else {
+        div
+        .html(textHtml)
+        .style("left", d3Old.event.pageX - 200 + 35 + "px")
+        .style("top", d3Old.event.pageY - 28 + 35 + "px");
+      }
+      
+    })
+    .on("mouseout", function(d) {
+      div
+        .transition()
+        .duration(0)
+        .style("display", "none");
+    });
+    
 }
 
 function drawAgeSuscribersChart(data) {
@@ -160,8 +205,14 @@ function drawAgeSuscribersChart(data) {
   });
 
   dataSet = dataSet.slice(0, 10);
+  var sliceCharacters = 30;
+  var paddingTicks = 265;
+  if(screen.width<=480){
+    sliceCharacters = 15;
+    paddingTicks = 100;
+  }
   dataSet = dataSet.sort(function(a, b) {
-    a.name = a.name.slice(0, 30);
+    a.name = a.name.slice(0, sliceCharacters);
     return d3.ascending(a.value, b.value);
   });
   var widthInherith = $("#age-suscribers").width();
@@ -171,7 +222,7 @@ function drawAgeSuscribersChart(data) {
     top: 15,
     right: 75,
     bottom: 15,
-    left: 205
+    left: paddingTicks
   };
 
   var widthSuscriber =
@@ -182,8 +233,8 @@ function drawAgeSuscribersChart(data) {
   var svgSuscribers = d3
     .select("#age-suscribers")
     .append("svg")
-    .attr("preserveAspectRatio", "xMaxYMax meet")
-    .attr("viewBox", "-265 -28 " + widthInherith + " " + heightInherith)
+    .attr("preserveAspectRatio", "xMinYMin meet")
+    .attr("viewBox", -1* paddingTicks+" -5 " + (widthInherith-60) + " " + heightInherith)
     .append("g")
     //class to make it responsive
     .classed("svg-content-responsive", true);
@@ -201,7 +252,7 @@ function drawAgeSuscribersChart(data) {
   var ySuscribers = d3
     .scaleBand()
 
-    .rangeRound([40 * dataSet.length, 0], 0.1)
+    .rangeRound([heightSuscriber-30, 0], 0.1)
     .domain(
       dataSet.map(function(d) {
         return d.name;
@@ -211,7 +262,7 @@ function drawAgeSuscribersChart(data) {
   var yAxisSuscribers = d3
     .axisLeft(ySuscribers)
     //no tick marks
-    .tickPadding(260)
+    .tickPadding(paddingTicks)
     .tickSize(0);
 
   var gySuscribers = svgSuscribers
@@ -219,7 +270,6 @@ function drawAgeSuscribersChart(data) {
     .style("text-anchor", "start")
     .style("color", "#1e6577")
     .style("font-family", "Gotham-Medium")
-    .style("font-size", "13px")
     .attr("class", "y-suscribers")
     .call(yAxisSuscribers);
 
@@ -253,17 +303,19 @@ function drawAgeSuscribersChart(data) {
     })
     //x position is 3 pixels to the right of the bar
     .attr("x", function(d) {
-      return -25;
+      if(screen.width<=480){
+        return 10;
+      }
+      return -34;
     })
     .attr("font-family", "Gotham-Bold")
-    .attr("font-size", "14px")
     .text(function(d) {
       var value = setSettingsNumber(d.value);
       return value.valueNumber + value.suffixNumber;
     })
     .style("fill", "#336577")
-    .style("font-family", "Gotham-Bold")
-    .style("font-size", "11px");
+    .style("font-family", "Gotham-Bold");
+
   var div = d3
     .select("body")
     .append("div")
@@ -307,10 +359,73 @@ function drawAgeSuscribersChart(data) {
         .style("font-family", "Gotham-Book")
         .style("display", "inline-block");
       // div.html(d.value + "<br/>" + d.name)
+      if (screen.width <= 480) {
+        div
+          .html(textHtml)
+          .style("left", "0px")
+          .style("top", d3Old.event.pageY - 28 + 5 + "px")
+          .style("width", screen.width+"px");
+      } else {
+        div
+          .html(textHtml)
+          .style("left", d3Old.event.pageX + 5 + "px")
+          .style("top", d3Old.event.pageY - 28 + 5 + "px");
+      }
+    })
+    .on("mouseout", function(d) {
       div
-        .html(textHtml)
-        .style("left", d3Old.event.pageX + 5 + "px")
-        .style("top", d3Old.event.pageY - 28 + 5 + "px");
+        .transition()
+        .duration(0)
+        .style("display", "none");
+    });
+    var tooltipText = d3Old
+    .selectAll("#age-suscribers" + " .label")
+    .on("mouseover", function(d) {
+      var textHtml =
+        "<div class='col tooltip-gauges'><h3 class='row green'>{{title}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>Subscribers</span><span class='col text-right' >{{value}}</div>";
+      textHtml = textHtml.replace("{{title}}", d.nameAux);
+      textHtml = textHtml.replace("{{value}}", d.value.toLocaleString());
+      if (d.Departments) {
+        var addText =
+          "<div class='row pt-1 border-top'><span class='col-2 pl-0 pr-0 '> {{type}}</span><span  class='col text-right'>{{code}}</span></div>";
+        addText = addText.replace("{{type}}", "Department");
+        addText = addText.replace("{{code}}", d.Departments);
+        textHtml = textHtml + addText;
+      }
+      if (d.division_code) {
+        var addText =
+          "<div class='row pt-1 border-top'><span class='col-2 pl-0 pr-0 '> {{type}}</span><span  class='col text-right'>{{code}}</span></div>";
+        addText = addText.replace("{{type}}", "Division");
+        addText = addText.replace("{{code}}", d.division_code);
+        textHtml = textHtml + addText;
+      }
+      if (d.Topics) {
+        var addText =
+          "<div class='row pt-1 border-top'><span class='col-2 pl-0 pr-0 '> {{type}}</span><span  class='col text-right'>{{code}}</span></div>";
+        addText = addText.replace("{{type}}", "Topics");
+        addText = addText.replace("{{code}}", d.Topics);
+        textHtml = textHtml + addText;
+      }
+
+      textHtml = textHtml + "</div>";
+      div
+        .transition()
+        .duration(0)
+        .style("font-family", "Gotham-Book")
+        .style("display", "inline-block");
+      // div.html(d.value + "<br/>" + d.name)
+      if (screen.width <= 480) {
+        div
+          .html(textHtml)
+          .style("left", "0px")
+          .style("top", d3Old.event.pageY - 28 + 5 + "px")
+          .style("width", screen.width+"px");
+      } else {
+        div
+          .html(textHtml)
+          .style("left", d3Old.event.pageX + 5 + "px")
+          .style("top", d3Old.event.pageY - 28 + 5 + "px");
+      }
     })
     .on("mouseout", function(d) {
       div
@@ -573,8 +688,14 @@ function drawSuscribersChart(data) {
   });
 
   dataSet = dataSet.slice(0, 6);
+  var sliceCharacters = 30;
+  var paddingTicks = 265;
+  if(screen.width<=480){
+    sliceCharacters = 15;
+    paddingTicks = 100;
+  }
   dataSet = dataSet.sort(function(a, b) {
-    a.name = a.name.slice(0, 30);
+    a.name = a.name.slice(0, sliceCharacters);
     return d3.ascending(a.value, b.value);
   });
 
@@ -582,7 +703,7 @@ function drawSuscribersChart(data) {
     top: 15,
     right: 80,
     bottom: 15,
-    left: 205
+    left: paddingTicks
   };
   var widthInherith = $("#suscribers-interested").width();
   var heightInherith = $("#suscribers-interested").height();
@@ -595,8 +716,8 @@ function drawSuscribersChart(data) {
   var svgSuscribers = d3
     .select("#suscribers-interested")
     .append("svg")
-    .attr("preserveAspectRatio", "xMaxYMax meet")
-    .attr("viewBox", "-265 -28 " + widthInherith + " " + heightInherith)
+    .attr("preserveAspectRatio", "xMinYMin meet")
+    .attr("viewBox", -1* paddingTicks+" -10 " + (widthInherith-70) + " " + heightInherith)
     .append("g")
     //class to make it responsive
     .classed("svg-content-responsive", true);
@@ -614,7 +735,7 @@ function drawSuscribersChart(data) {
   var ySuscribers = d3
     .scaleBand()
 
-    .rangeRound([30 * dataSet.length, 0], 0.1)
+    .rangeRound([heightSuscriber, 0], 0.1)
     .domain(
       dataSet.map(function(d) {
         return d.name;
@@ -624,7 +745,7 @@ function drawSuscribersChart(data) {
   var yAxisSuscribers = d3
     .axisLeft(ySuscribers)
     //no tick marks
-    .tickPadding(260)
+    .tickPadding(paddingTicks)
     .tickSize(0);
 
   var gySuscribers = svgSuscribers
@@ -632,7 +753,6 @@ function drawSuscribersChart(data) {
     .style("text-anchor", "start")
     .style("color", "#1e6577")
     .style("font-family", "Gotham-Medium")
-    .style("font-size", "13px")
     .attr("class", "y-suscribers")
     .call(yAxisSuscribers);
 
@@ -666,17 +786,18 @@ function drawSuscribersChart(data) {
     })
     //x position is 3 pixels to the right of the bar
     .attr("x", function(d) {
-      return -25;
+      if(screen.width<=480){
+        return 10;
+      }
+      return -32;
     })
     .attr("font-family", "Gotham-Bold")
-    .attr("font-size", "14px")
     .text(function(d) {
       var value = setSettingsNumber(d.value);
       return value.valueNumber + value.suffixNumber;
     })
     .style("fill", "#336577")
     .style("font-family", "Gotham-Bold")
-    .style("font-size", "11px");
 
   var div = d3
     .select("body")
@@ -688,7 +809,30 @@ function drawSuscribersChart(data) {
   var tooltipBar = d3Old
     .selectAll("#suscribers-interested" + " .bar")
     .on("mouseover", function(d) {
-      var textHtml =
+      onTooltipHover(d,div)
+    })
+    .on("mouseout", function(d) {
+      div
+        .transition()
+        .duration(0)
+        .style("display", "none");
+    });
+
+    var tooltipText = d3Old
+    .selectAll("#suscribers-interested" + " .label")
+    .on("mouseover", function(d) {
+      onTooltipHover(d,div)
+    })
+    .on("mouseout", function(d) {
+      div
+        .transition()
+        .duration(0)
+        .style("display", "none");
+    });
+}
+
+function onTooltipHover(d,div){
+  var textHtml =
         "<div class='col tooltip-gauges'><h3 class='row green'>{{title}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>Subscribers</span><span class='col text-right' >{{value}}</div>";
       textHtml = textHtml.replace("{{title}}", d.nameAux);
       textHtml = textHtml.replace("{{value}}", d.value.toLocaleString());
@@ -714,17 +858,18 @@ function drawSuscribersChart(data) {
         .style("font-family", "Gotham-Book")
         .style("display", "inline-block");
       // div.html(d.value + "<br/>" + d.name)
-      div
-        .html(textHtml)
-        .style("left", d3Old.event.pageX + 5 + "px")
-        .style("top", d3Old.event.pageY - 28 + 5 + "px");
-    })
-    .on("mouseout", function(d) {
-      div
-        .transition()
-        .duration(0)
-        .style("display", "none");
-    });
+      if (screen.width <= 480) {
+        div
+          .html(textHtml)
+          .style("left", "0px")
+          .style("top", d3Old.event.pageY - 28 + 5 + "px")
+          .style("width", screen.width+"px");
+      } else {
+        div
+          .html(textHtml)
+          .style("left", d3Old.event.pageX + 5 + "px")
+          .style("top", d3Old.event.pageY - 28 + 5 + "px");
+      }
 }
 
 //init
