@@ -507,12 +507,11 @@ $(window).on('load', function () {
 });
 
 function getItems() {   
-    console.log(_spPageContextInfo.webAbsoluteUrl);
-
     $.ajax({
  
         async: true, // Async by default is set to “true” load the script asynchronously
-        url: _spPageContextInfo.webAbsoluteUrl + "/_api/SP.UserProfiles.PeopleManager/GetPropertiesFor(accountName=@v)?@v='i:0%23.f|membership|JOSEA@iadb.org'", // URL to fetch data from sharepoint list
+        //url: _spPageContextInfo.webAbsoluteUrl + "/_api/SP.UserProfiles.PeopleManager/GetPropertiesFor(accountName=@v)?@v='i:0%23.f|membership|JOSEA@iadb.org'", // URL to fetch data from sharepoint list
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/SP.UserProfiles.PeopleManager/GetMyProperties", // URL to fetch data from sharepoint list
         method: "GET", //Specifies the operation to fetch the list item
  
         headers: {
@@ -531,12 +530,16 @@ function getItems() {
     });
  }
 
-$(document).ready(function () {
-    //getItems();
+ function updateResolution(){
     var isIE = /*@cc_on!@*/ false || !!document.documentMode;
     if (isIE == true || screen.width<980) {
         $(".body").css("width", screen.width + "px");
     }
+ }
+
+$(document).ready(function () {
+    //getItems();
+    
     moment.updateLocale('en', {
         relativeTime: {
             future: "in %s",
@@ -584,7 +587,7 @@ $(window).resize(function () {
     if (isIE == true) {
         $(".body").css("width", screen.width + "px");
     }
-
-    // changeFilterDashboard($("select[id*='divisionSelect']").val());
+    updateResolution();
+    changeFilterDashboard($("select[id*='divisionSelect']").val());
     
 });

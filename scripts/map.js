@@ -349,7 +349,6 @@ function new_updateFilter(isProduct) {
 
 
     var data2Graph = getCoutryTotals(dataFilteredLAC, selectedMaterial);
-    console.log("test", selectedMetric);
     setDataToSourceChart(selectedSection, selectedMaterial, selectedDepartment, selectedMetric);
 
     var serie1 = $('#graph-container').d32().get('series-1');

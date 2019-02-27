@@ -18,7 +18,7 @@
     position: relative;
     padding-top: 55px !important;
     min-height: 45px;
-    font-family: 'Gotham-Bold';
+    font-family: "Gotham-Bold";
     color: #b4b4b4;
     font-size: 20px;
     z-index: 2;
@@ -47,6 +47,15 @@
         border: 0;
         -ms-flex: auto;
         flex: auto;
+      }
+      a {
+        color: #b4b4b4;
+        &:hover {
+          text-decoration: none;
+        }
+        &:visited {
+          color: #b4b4b4;
+        }
       }
 
       &.first {

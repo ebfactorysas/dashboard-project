@@ -51,7 +51,6 @@ function drawDistributionChart(dataDistribution) {
   d3.select("#distribution-moocs svg").remove();
   var widthInherith = $("#distribution-moocs").width();
   var heightInherith = $("#distribution-moocs").height();
-  console.log(widthInherith,heightInherith)
   var marginDistribution = {
     top: 50,
     right: 50,

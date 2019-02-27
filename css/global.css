@@ -184,7 +184,7 @@ section.moocs .right-bar > .row > div:nth-child(5) {
   position: relative;
   padding-top: 55px !important;
   min-height: 45px;
-  font-family: 'Gotham-Bold';
+  font-family: "Gotham-Bold";
   color: #b4b4b4;
   font-size: 20px;
   z-index: 2; }
@@ -217,6 +217,12 @@ section.moocs .right-bar > .row > div:nth-child(5) {
         border: 0;
         -ms-flex: auto;
         flex: auto; } }
+    .menu ul li a {
+      color: #b4b4b4; }
+      .menu ul li a:hover {
+        text-decoration: none; }
+      .menu ul li a:visited {
+        color: #b4b4b4; }
     .menu ul li.first {
       position: absolute;
       top: 10px;
