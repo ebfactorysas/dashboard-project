@@ -36,7 +36,7 @@ var subscribersAllDownloads = 0;
 var subscribersAllDownloadsLac = 0;
 //FIN - variables globales para usar en los gauges
 
-initIndicators(filterselect, valueFilter);
+//initIndicators(filterselect, valueFilter);
 
 
 function gaugeIDB() {

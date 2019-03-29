@@ -1,1915 +1,1828 @@
 var publicationsIndicators = {
   indicatorsDepartmentsAllTheTime: [
-    {
-      "departmentCode": "AUG",
-      "publications": 1,
-      "percentagePublications": 0.0,
-      "downloads": 141,
-      "percentageDownloads": 0.0,
-      "LAC": 32,
-      "percentageLAC": 22.7
-    },
-    {
-      "departmentCode": "BOG",
-      "publications": 4,
-      "percentagePublications": 0.0,
-      "downloads": 1085,
-      "percentageDownloads": 0.0,
-      "LAC": 172,
-      "percentageLAC": 15.9
-    },
-    {
-      "departmentCode": "CAN",
-      "publications": 67,
-      "percentagePublications": 0.7,
-      "downloads": 180548,
-      "percentageDownloads": 1.3,
-      "LAC": 136425,
-      "percentageLAC": 75.6
-    },
-    {
-      "departmentCode": "CCB",
-      "publications": 153,
-      "percentagePublications": 1.5,
-      "downloads": 236840,
-      "percentageDownloads": 1.7,
-      "LAC": 106524,
-      "percentageLAC": 45.0
-    },
-    {
-      "departmentCode": "CID",
-      "publications": 104,
-      "percentagePublications": 1.0,
-      "downloads": 142861,
-      "percentageDownloads": 1.0,
-      "LAC": 93962,
-      "percentageLAC": 65.8
-    },
-    {
-      "departmentCode": "CSC",
-      "publications": 54,
-      "percentagePublications": 0.5,
-      "downloads": 38631,
-      "percentageDownloads": 0.3,
-      "LAC": 26268,
-      "percentageLAC": 68.0
-    },
-    {
-      "departmentCode": "CSD",
-      "publications": 249,
-      "percentagePublications": 2.4,
-      "downloads": 558966,
-      "percentageDownloads": 4.1,
-      "LAC": 384720,
-      "percentageLAC": 68.8
-    },
-    {
-      "departmentCode": "Discontinued Departments",
-      "publications": 2252,
-      "percentagePublications": 22.0,
-      "downloads": 1454697,
-      "percentageDownloads": 10.6,
-      "LAC": 792528,
-      "percentageLAC": 54.5
-    },
-    {
-      "departmentCode": "ESG",
-      "publications": 171,
-      "percentagePublications": 1.7,
-      "downloads": 203548,
-      "percentageDownloads": 1.5,
-      "LAC": 93591,
-      "percentageLAC": 46.0
-    },
-    {
-      "departmentCode": "FMP",
-      "publications": 10,
-      "percentagePublications": 0.1,
-      "downloads": 10229,
-      "percentageDownloads": 0.1,
-      "LAC": 4575,
-      "percentageLAC": 44.7
-    },
-    {
-      "departmentCode": "HRD",
-      "publications": 2,
-      "percentagePublications": 0.0,
-      "downloads": 164,
-      "percentageDownloads": 0.0,
-      "LAC": 53,
-      "percentageLAC": 32.3
-    },
-    {
-      "departmentCode": "IFD",
-      "publications": 983,
-      "percentagePublications": 9.6,
-      "downloads": 2093541,
-      "percentageDownloads": 15.3,
-      "LAC": 1331387,
-      "percentageLAC": 63.6
-    },
-    {
-      "departmentCode": "INE",
-      "publications": 555,
-      "percentagePublications": 5.4,
-      "downloads": 1378205,
-      "percentageDownloads": 10.0,
-      "LAC": 973777,
-      "percentageLAC": 70.7
-    },
-    {
-      "departmentCode": "INT",
-      "publications": 1122,
-      "percentagePublications": 11.0,
-      "downloads": 1029695,
-      "percentageDownloads": 7.5,
-      "LAC": 607540,
-      "percentageLAC": 59.0
-    },
-    {
-      "departmentCode": "ITE",
-      "publications": 3,
-      "percentagePublications": 0.0,
-      "downloads": 7936,
-      "percentageDownloads": 0.1,
-      "LAC": 5781,
-      "percentageLAC": 72.8
-    },
-    {
-      "departmentCode": "KIC",
-      "publications": 451,
-      "percentagePublications": 4.4,
-      "downloads": 1400816,
-      "percentageDownloads": 10.2,
-      "LAC": 1000381,
-      "percentageLAC": 71.4
-    },
-    {
-      "departmentCode": "MICI",
-      "publications": 12,
-      "percentagePublications": 0.1,
-      "downloads": 3919,
-      "percentageDownloads": 0.0,
-      "LAC": 606,
-      "percentageLAC": 15.5
-    },
-    {
-      "departmentCode": "MIF",
-      "publications": 1084,
-      "percentagePublications": 10.6,
-      "downloads": 366180,
-      "percentageDownloads": 2.7,
-      "LAC": 175405,
-      "percentageLAC": 47.9
-    },
-    {
-      "departmentCode": "OII",
-      "publications": 26,
-      "percentagePublications": 0.3,
-      "downloads": 5169,
-      "percentageDownloads": 0.0,
-      "LAC": 829,
-      "percentageLAC": 16.0
-    },
-    {
-      "departmentCode": "ORP",
-      "publications": 37,
-      "percentagePublications": 0.4,
-      "downloads": 41420,
-      "percentageDownloads": 0.3,
-      "LAC": 16640,
-      "percentageLAC": 40.2
-    },
-    {
-      "departmentCode": "OVE",
-      "publications": 733,
-      "percentagePublications": 7.2,
-      "downloads": 466022,
-      "percentageDownloads": 3.4,
-      "LAC": 201575,
-      "percentageLAC": 43.3
-    },
-    {
-      "departmentCode": "PRE",
-      "publications": 8,
-      "percentagePublications": 0.1,
-      "downloads": 8246,
-      "percentageDownloads": 0.1,
-      "LAC": 2896,
-      "percentageLAC": 35.1
-    },
-    {
-      "departmentCode": "RES",
-      "publications": 1288,
-      "percentagePublications": 12.6,
-      "downloads": 1501523,
-      "percentageDownloads": 10.9,
-      "LAC": 704984,
-      "percentageLAC": 47.0
-    },
-    {
-      "departmentCode": "RMG",
-      "publications": 1,
-      "percentagePublications": 0.0,
-      "downloads": 147,
-      "percentageDownloads": 0.0,
-      "LAC": 9,
-      "percentageLAC": 6.1
-    },
-    {
-      "departmentCode": "SCL",
-      "publications": 817,
-      "percentagePublications": 8.0,
-      "downloads": 2181292,
-      "percentageDownloads": 15.9,
-      "LAC": 1542743,
-      "percentageLAC": 70.7
-    },
-    {
-      "departmentCode": "SEC",
-      "publications": 31,
-      "percentagePublications": 0.3,
-      "downloads": 8217,
-      "percentageDownloads": 0.1,
-      "LAC": 3469,
-      "percentageLAC": 42.2
-    },
-    {
-      "departmentCode": "SPD",
-      "publications": 152,
-      "percentagePublications": 1.5,
-      "downloads": 244712,
-      "percentageDownloads": 1.8,
-      "LAC": 106767,
-      "percentageLAC": 43.6
-    },
-    {
-      "departmentCode": "Strategic Core",
-      "publications": 1,
-      "percentagePublications": 0.0,
-      "downloads": 19721,
-      "percentageDownloads": 0.1,
-      "LAC": 16370,
-      "percentageLAC": 83.0
-    },
-    {
-      "departmentCode": "VPC",
-      "publications": 31,
-      "percentagePublications": 0.3,
-      "downloads": 33446,
-      "percentageDownloads": 0.2,
-      "LAC": 23990,
-      "percentageLAC": 71.7
-    },
-    {
-      "departmentCode": "VPS",
-      "publications": 24,
-      "percentagePublications": 0.2,
-      "downloads": 97629,
-      "percentageDownloads": 0.7,
-      "LAC": 73225,
-      "percentageLAC": 75.0
-    }
+	{
+	  "departmentCode": "AUG",
+	  "publications": 1,
+	  "percentagePublications": 0.01,
+	  "downloads": 158,
+	  "percentageDownloads": 0.001,
+	  "LAC": 37,
+	  "percentageLAC": 23.418
+	},
+	{
+	  "departmentCode": "BOG",
+	  "publications": 4,
+	  "percentagePublications": 0.038,
+	  "downloads": 932,
+	  "percentageDownloads": 0.007,
+	  "LAC": 175,
+	  "percentageLAC": 18.777
+	},
+	{
+	  "departmentCode": "CAN",
+	  "publications": 63,
+	  "percentagePublications": 0.602,
+	  "downloads": 177092,
+	  "percentageDownloads": 1.259,
+	  "LAC": 134791,
+	  "percentageLAC": 76.114
+	},
+	{
+	  "departmentCode": "CCB",
+	  "publications": 149,
+	  "percentagePublications": 1.424,
+	  "downloads": 189300,
+	  "percentageDownloads": 1.346,
+	  "LAC": 68950,
+	  "percentageLAC": 36.424
+	},
+	{
+	  "departmentCode": "CID",
+	  "publications": 102,
+	  "percentagePublications": 0.975,
+	  "downloads": 139091,
+	  "percentageDownloads": 0.989,
+	  "LAC": 94458,
+	  "percentageLAC": 67.911
+	},
+	{
+	  "departmentCode": "CSC",
+	  "publications": 48,
+	  "percentagePublications": 0.459,
+	  "downloads": 41108,
+	  "percentageDownloads": 0.292,
+	  "LAC": 27760,
+	  "percentageLAC": 67.529
+	},
+	{
+	  "departmentCode": "CSD",
+	  "publications": 239,
+	  "percentagePublications": 2.284,
+	  "downloads": 591300,
+	  "percentageDownloads": 4.204,
+	  "LAC": 392985,
+	  "percentageLAC": 66.461
+	},
+	{
+	  "departmentCode": "Discontinued Departments",
+	  "publications": 2020,
+	  "percentagePublications": 19.308,
+	  "downloads": 1228934,
+	  "percentageDownloads": 8.736,
+	  "LAC": 682577,
+	  "percentageLAC": 55.542
+	},
+	{
+	  "departmentCode": "ESG",
+	  "publications": 145,
+	  "percentagePublications": 1.386,
+	  "downloads": 234362,
+	  "percentageDownloads": 1.666,
+	  "LAC": 118803,
+	  "percentageLAC": 50.692
+	},
+	{
+	  "departmentCode": "FMP",
+	  "publications": 10,
+	  "percentagePublications": 0.096,
+	  "downloads": 11733,
+	  "percentageDownloads": 0.083,
+	  "LAC": 5409,
+	  "percentageLAC": 46.101
+	},
+	{
+	  "departmentCode": "IDB LAB",
+	  "publications": 1073,
+	  "percentagePublications": 10.256,
+	  "downloads": 341902,
+	  "percentageDownloads": 2.431,
+	  "LAC": 162433,
+	  "percentageLAC": 47.509
+	},
+	{
+	  "departmentCode": "IFD",
+	  "publications": 1015,
+	  "percentagePublications": 9.702,
+	  "downloads": 2241375,
+	  "percentageDownloads": 15.934,
+	  "LAC": 1418067,
+	  "percentageLAC": 63.268
+	},
+	{
+	  "departmentCode": "INE",
+	  "publications": 567,
+	  "percentagePublications": 5.42,
+	  "downloads": 1410624,
+	  "percentageDownloads": 10.028,
+	  "LAC": 986917,
+	  "percentageLAC": 69.963
+	},
+	{
+	  "departmentCode": "INT",
+	  "publications": 1105,
+	  "percentagePublications": 10.562,
+	  "downloads": 1053366,
+	  "percentageDownloads": 7.488,
+	  "LAC": 619688,
+	  "percentageLAC": 58.829
+	},
+	{
+	  "departmentCode": "ITE",
+	  "publications": 6,
+	  "percentagePublications": 0.057,
+	  "downloads": 11870,
+	  "percentageDownloads": 0.084,
+	  "LAC": 8346,
+	  "percentageLAC": 70.312
+	},
+	{
+	  "departmentCode": "KIC",
+	  "publications": 435,
+	  "percentagePublications": 4.158,
+	  "downloads": 1444410,
+	  "percentageDownloads": 10.268,
+	  "LAC": 1026004,
+	  "percentageLAC": 71.033
+	},
+	{
+	  "departmentCode": "MICI",
+	  "publications": 12,
+	  "percentagePublications": 0.115,
+	  "downloads": 3849,
+	  "percentageDownloads": 0.027,
+	  "LAC": 612,
+	  "percentageLAC": 15.9
+	},
+	{
+	  "departmentCode": "OII",
+	  "publications": 26,
+	  "percentagePublications": 0.249,
+	  "downloads": 6107,
+	  "percentageDownloads": 0.043,
+	  "LAC": 1297,
+	  "percentageLAC": 21.238
+	},
+	{
+	  "departmentCode": "ORP",
+	  "publications": 33,
+	  "percentagePublications": 0.315,
+	  "downloads": 18364,
+	  "percentageDownloads": 0.131,
+	  "LAC": 5515,
+	  "percentageLAC": 30.032
+	},
+	{
+	  "departmentCode": "OVE",
+	  "publications": 717,
+	  "percentagePublications": 6.853,
+	  "downloads": 489076,
+	  "percentageDownloads": 3.477,
+	  "LAC": 215488,
+	  "percentageLAC": 44.06
+	},
+	{
+	  "departmentCode": "PRE",
+	  "publications": 4,
+	  "percentagePublications": 0.038,
+	  "downloads": 4332,
+	  "percentageDownloads": 0.031,
+	  "LAC": 2130,
+	  "percentageLAC": 49.169
+	},
+	{
+	  "departmentCode": "RES",
+	  "publications": 1284,
+	  "percentagePublications": 12.273,
+	  "downloads": 1568910,
+	  "percentageDownloads": 11.153,
+	  "LAC": 729764,
+	  "percentageLAC": 46.514
+	},
+	{
+	  "departmentCode": "RMG",
+	  "publications": 1,
+	  "percentagePublications": 0.01,
+	  "downloads": 225,
+	  "percentageDownloads": 0.002,
+	  "LAC": 10,
+	  "percentageLAC": 4.444
+	},
+	{
+	  "departmentCode": "SCL",
+	  "publications": 829,
+	  "percentagePublications": 7.924,
+	  "downloads": 2334955,
+	  "percentageDownloads": 16.599,
+	  "LAC": 1635677,
+	  "percentageLAC": 70.052
+	},
+	{
+	  "departmentCode": "SEC",
+	  "publications": 27,
+	  "percentagePublications": 0.258,
+	  "downloads": 3656,
+	  "percentageDownloads": 0.026,
+	  "LAC": 1480,
+	  "percentageLAC": 40.481
+	},
+	{
+	  "departmentCode": "SPD",
+	  "publications": 142,
+	  "percentagePublications": 1.357,
+	  "downloads": 201342,
+	  "percentageDownloads": 1.431,
+	  "LAC": 75112,
+	  "percentageLAC": 37.306
+	},
+	{
+	  "departmentCode": "Strategic Core",
+	  "publications": 1,
+	  "percentagePublications": 0.01,
+	  "downloads": 20663,
+	  "percentageDownloads": 0.147,
+	  "LAC": 17143,
+	  "percentageLAC": 82.965
+	},
+	{
+	  "departmentCode": "VPC",
+	  "publications": 41,
+	  "percentagePublications": 0.392,
+	  "downloads": 37069,
+	  "percentageDownloads": 0.264,
+	  "LAC": 26036,
+	  "percentageLAC": 70.237
+	},
+	{
+	  "departmentCode": "VPS",
+	  "publications": 23,
+	  "percentagePublications": 0.22,
+	  "downloads": 105158,
+	  "percentageDownloads": 0.748,
+	  "LAC": 78807,
+	  "percentageLAC": 74.942
+	}
   ],
   indicatorsDepartments2018: [
-    {
-      "departmentCode": "AUG",
-      "publications": 0,
-      "percentagePublications": 0.0,
-      "downloads": 0,
-      "percentageDownloads": 0.0,
-      "LAC": 0,
-      "percentageLAC": 0.0
-    },
-    {
-      "departmentCode": "BOG",
-      "publications": 0,
-      "percentagePublications": 0.0,
-      "downloads": 0,
-      "percentageDownloads": 0.0,
-      "LAC": 0,
-      "percentageLAC": 0.0
-    },
-    {
-      "departmentCode": "CAN",
-      "publications": 16,
-      "percentagePublications": 3.0,
-      "downloads": 33609,
-      "percentageDownloads": 3.2,
-      "LAC": 25888,
-      "percentageLAC": 77.0
-    },
-    {
-      "departmentCode": "CCB",
-      "publications": 32,
-      "percentagePublications": 6.1,
-      "downloads": 12777,
-      "percentageDownloads": 1.2,
-      "LAC": 5787,
-      "percentageLAC": 45.3
-    },
-    {
-      "departmentCode": "CID",
-      "publications": 22,
-      "percentagePublications": 4.2,
-      "downloads": 17747,
-      "percentageDownloads": 1.7,
-      "LAC": 14078,
-      "percentageLAC": 79.3
-    },
-    {
-      "departmentCode": "CSC",
-      "publications": 13,
-      "percentagePublications": 2.5,
-      "downloads": 3010,
-      "percentageDownloads": 0.3,
-      "LAC": 1425,
-      "percentageLAC": 47.3
-    },
-    {
-      "departmentCode": "CSD",
-      "publications": 49,
-      "percentagePublications": 9.3,
-      "downloads": 74074,
-      "percentageDownloads": 7.1,
-      "LAC": 59662,
-      "percentageLAC": 80.5
-    },
-    {
-      "departmentCode": "Discontinued Departments",
-      "publications": 7,
-      "percentagePublications": 1.3,
-      "downloads": 5583,
-      "percentageDownloads": 0.5,
-      "LAC": 2714,
-      "percentageLAC": 48.6
-    },
-    {
-      "departmentCode": "ESG",
-      "publications": 5,
-      "percentagePublications": 1.0,
-      "downloads": 21973,
-      "percentageDownloads": 2.1,
-      "LAC": 19055,
-      "percentageLAC": 86.7
-    },
-    {
-      "departmentCode": "FMP",
-      "publications": 2,
-      "percentagePublications": 0.4,
-      "downloads": 207,
-      "percentageDownloads": 0.0,
-      "LAC": 75,
-      "percentageLAC": 36.2
-    },
-    {
-      "departmentCode": "HRD",
-      "publications": 0,
-      "percentagePublications": 0.0,
-      "downloads": 0,
-      "percentageDownloads": 0.0,
-      "LAC": 0,
-      "percentageLAC": 0.0
-    },
-    {
-      "departmentCode": "IFD",
-      "publications": 98,
-      "percentagePublications": 18.7,
-      "downloads": 151007,
-      "percentageDownloads": 14.5,
-      "LAC": 112298,
-      "percentageLAC": 74.4
-    },
-    {
-      "departmentCode": "INE",
-      "publications": 66,
-      "percentagePublications": 12.6,
-      "downloads": 93222,
-      "percentageDownloads": 8.9,
-      "LAC": 77386,
-      "percentageLAC": 83.0
-    },
-    {
-      "departmentCode": "INT",
-      "publications": 42,
-      "percentagePublications": 8.0,
-      "downloads": 120368,
-      "percentageDownloads": 11.5,
-      "LAC": 98369,
-      "percentageLAC": 81.7
-    },
-    {
-      "departmentCode": "ITE",
-      "publications": 2,
-      "percentagePublications": 0.4,
-      "downloads": 7791,
-      "percentageDownloads": 0.7,
-      "LAC": 5768,
-      "percentageLAC": 74.0
-    },
-    {
-      "departmentCode": "KIC",
-      "publications": 10,
-      "percentagePublications": 1.9,
-      "downloads": 81297,
-      "percentageDownloads": 7.8,
-      "LAC": 45770,
-      "percentageLAC": 56.3
-    },
-    {
-      "departmentCode": "MICI",
-      "publications": 0,
-      "percentagePublications": 0.0,
-      "downloads": 0,
-      "percentageDownloads": 0.0,
-      "LAC": 0,
-      "percentageLAC": 0.0
-    },
-    {
-      "departmentCode": "MIF",
-      "publications": 13,
-      "percentagePublications": 2.5,
-      "downloads": 3929,
-      "percentageDownloads": 0.4,
-      "LAC": 1628,
-      "percentageLAC": 41.4
-    },
-    {
-      "departmentCode": "OII",
-      "publications": 0,
-      "percentagePublications": 0.0,
-      "downloads": 0,
-      "percentageDownloads": 0.0,
-      "LAC": 0,
-      "percentageLAC": 0.0
-    },
-    {
-      "departmentCode": "ORP",
-      "publications": 1,
-      "percentagePublications": 0.2,
-      "downloads": 2672,
-      "percentageDownloads": 0.3,
-      "LAC": 1618,
-      "percentageLAC": 60.6
-    },
-    {
-      "departmentCode": "OVE",
-      "publications": 30,
-      "percentagePublications": 5.7,
-      "downloads": 13879,
-      "percentageDownloads": 1.3,
-      "LAC": 9323,
-      "percentageLAC": 67.2
-    },
-    {
-      "departmentCode": "PRE",
-      "publications": 0,
-      "percentagePublications": 0.0,
-      "downloads": 0,
-      "percentageDownloads": 0.0,
-      "LAC": 0,
-      "percentageLAC": 0.0
-    },
-    {
-      "departmentCode": "RES",
-      "publications": 34,
-      "percentagePublications": 6.5,
-      "downloads": 79095,
-      "percentageDownloads": 7.6,
-      "LAC": 58999,
-      "percentageLAC": 74.6
-    },
-    {
-      "departmentCode": "RMG",
-      "publications": 0,
-      "percentagePublications": 0.0,
-      "downloads": 0,
-      "percentageDownloads": 0.0,
-      "LAC": 0,
-      "percentageLAC": 0.0
-    },
-    {
-      "departmentCode": "SCL",
-      "publications": 74,
-      "percentagePublications": 14.1,
-      "downloads": 242419,
-      "percentageDownloads": 23.2,
-      "LAC": 202383,
-      "percentageLAC": 83.5
-    },
-    {
-      "departmentCode": "SEC",
-      "publications": 0,
-      "percentagePublications": 0.0,
-      "downloads": 0,
-      "percentageDownloads": 0.0,
-      "LAC": 0,
-      "percentageLAC": 0.0
-    },
-    {
-      "departmentCode": "SPD",
-      "publications": 29,
-      "percentagePublications": 5.5,
-      "downloads": 23325,
-      "percentageDownloads": 2.2,
-      "LAC": 13801,
-      "percentageLAC": 59.2
-    },
-    {
-      "departmentCode": "Strategic Core",
-      "publications": 0,
-      "percentagePublications": 0.0,
-      "downloads": 0,
-      "percentageDownloads": 0.0,
-      "LAC": 0,
-      "percentageLAC": 0.0
-    },
-    {
-      "departmentCode": "VPC",
-      "publications": 4,
-      "percentagePublications": 0.8,
-      "downloads": 1274,
-      "percentageDownloads": 0.1,
-      "LAC": 769,
-      "percentageLAC": 60.4
-    },
-    {
-      "departmentCode": "VPS",
-      "publications": 9,
-      "percentagePublications": 1.7,
-      "downloads": 47489,
-      "percentageDownloads": 4.6,
-      "LAC": 38866,
-      "percentageLAC": 81.8
-    }
+	{
+	  "departmentCode": "AUG",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "departmentCode": "BOG",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "departmentCode": "CAN",
+	  "publications": 16,
+	  "percentagePublications": 2.395,
+	  "downloads": 34405,
+	  "percentageDownloads": 3.429,
+	  "LAC": 26541,
+	  "percentageLAC": 77.143
+	},
+	{
+	  "departmentCode": "CCB",
+	  "publications": 29,
+	  "percentagePublications": 4.341,
+	  "downloads": 10229,
+	  "percentageDownloads": 1.02,
+	  "LAC": 4429,
+	  "percentageLAC": 43.298
+	},
+	{
+	  "departmentCode": "CID",
+	  "publications": 25,
+	  "percentagePublications": 3.743,
+	  "downloads": 17927,
+	  "percentageDownloads": 1.787,
+	  "LAC": 14160,
+	  "percentageLAC": 78.987
+	},
+	{
+	  "departmentCode": "CSC",
+	  "publications": 15,
+	  "percentagePublications": 2.246,
+	  "downloads": 3144,
+	  "percentageDownloads": 0.313,
+	  "LAC": 1468,
+	  "percentageLAC": 46.692
+	},
+	{
+	  "departmentCode": "CSD",
+	  "publications": 43,
+	  "percentagePublications": 6.437,
+	  "downloads": 56163,
+	  "percentageDownloads": 5.598,
+	  "LAC": 43807,
+	  "percentageLAC": 78
+	},
+	{
+	  "departmentCode": "Discontinued Departments",
+	  "publications": 15,
+	  "percentagePublications": 2.246,
+	  "downloads": 10407,
+	  "percentageDownloads": 1.037,
+	  "LAC": 7055,
+	  "percentageLAC": 67.791
+	},
+	{
+	  "departmentCode": "ESG",
+	  "publications": 8,
+	  "percentagePublications": 1.198,
+	  "downloads": 22306,
+	  "percentageDownloads": 2.223,
+	  "LAC": 19254,
+	  "percentageLAC": 86.318
+	},
+	{
+	  "departmentCode": "FMP",
+	  "publications": 2,
+	  "percentagePublications": 0.299,
+	  "downloads": 227,
+	  "percentageDownloads": 0.023,
+	  "LAC": 78,
+	  "percentageLAC": 34.361
+	},
+	{
+	  "departmentCode": "IDB LAB",
+	  "publications": 26,
+	  "percentagePublications": 3.892,
+	  "downloads": 4236,
+	  "percentageDownloads": 0.422,
+	  "LAC": 1696,
+	  "percentageLAC": 40.038
+	},
+	{
+	  "departmentCode": "IFD",
+	  "publications": 114,
+	  "percentagePublications": 17.066,
+	  "downloads": 154766,
+	  "percentageDownloads": 15.426,
+	  "LAC": 115057,
+	  "percentageLAC": 74.343
+	},
+	{
+	  "departmentCode": "INE",
+	  "publications": 94,
+	  "percentagePublications": 14.072,
+	  "downloads": 93125,
+	  "percentageDownloads": 9.282,
+	  "LAC": 76918,
+	  "percentageLAC": 82.597
+	},
+	{
+	  "departmentCode": "INT",
+	  "publications": 47,
+	  "percentagePublications": 7.036,
+	  "downloads": 120410,
+	  "percentageDownloads": 12.002,
+	  "LAC": 98329,
+	  "percentageLAC": 81.662
+	},
+	{
+	  "departmentCode": "ITE",
+	  "publications": 2,
+	  "percentagePublications": 0.299,
+	  "downloads": 7900,
+	  "percentageDownloads": 0.787,
+	  "LAC": 5829,
+	  "percentageLAC": 73.785
+	},
+	{
+	  "departmentCode": "KIC",
+	  "publications": 7,
+	  "percentagePublications": 1.048,
+	  "downloads": 72679,
+	  "percentageDownloads": 7.244,
+	  "LAC": 37454,
+	  "percentageLAC": 51.533
+	},
+	{
+	  "departmentCode": "MICI",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "departmentCode": "OII",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "departmentCode": "ORP",
+	  "publications": 1,
+	  "percentagePublications": 0.15,
+	  "downloads": 2700,
+	  "percentageDownloads": 0.269,
+	  "LAC": 1621,
+	  "percentageLAC": 60.037
+	},
+	{
+	  "departmentCode": "OVE",
+	  "publications": 30,
+	  "percentagePublications": 4.491,
+	  "downloads": 14228,
+	  "percentageDownloads": 1.418,
+	  "LAC": 9518,
+	  "percentageLAC": 66.896
+	},
+	{
+	  "departmentCode": "PRE",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "departmentCode": "RES",
+	  "publications": 37,
+	  "percentagePublications": 5.539,
+	  "downloads": 80406,
+	  "percentageDownloads": 8.014,
+	  "LAC": 59892,
+	  "percentageLAC": 74.487
+	},
+	{
+	  "departmentCode": "RMG",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "departmentCode": "SCL",
+	  "publications": 88,
+	  "percentagePublications": 13.174,
+	  "downloads": 240998,
+	  "percentageDownloads": 24.022,
+	  "LAC": 203931,
+	  "percentageLAC": 84.619
+	},
+	{
+	  "departmentCode": "SEC",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "departmentCode": "SPD",
+	  "publications": 25,
+	  "percentagePublications": 3.743,
+	  "downloads": 6427,
+	  "percentageDownloads": 0.641,
+	  "LAC": 2651,
+	  "percentageLAC": 41.248
+	},
+	{
+	  "departmentCode": "Strategic Core",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "departmentCode": "VPC",
+	  "publications": 7,
+	  "percentagePublications": 1.048,
+	  "downloads": 1398,
+	  "percentageDownloads": 0.139,
+	  "LAC": 842,
+	  "percentageLAC": 60.229
+	},
+	{
+	  "departmentCode": "VPS",
+	  "publications": 9,
+	  "percentagePublications": 1.347,
+	  "downloads": 47598,
+	  "percentageDownloads": 4.744,
+	  "LAC": 39038,
+	  "percentageLAC": 82.016
+	}
   ],
-  indicatorsDivisionsAllTheTime: [{
-      "divisionCode": "ATI",
-      "publications": 4,
-      "percentagePublications": 0.04,
-      "downloads": 4359,
-      "percentageDownloads": 0.03,
-      "LAC": 2040,
-      "percentageLAC": 46.8
-    },
-    {
-      "divisionCode": "AUG",
-      "publications": 1,
-      "percentagePublications": 0.01,
-      "downloads": 141,
-      "percentageDownloads": 0,
-      "LAC": 32,
-      "percentageLAC": 22.7
-    },
-    {
-      "divisionCode": "BOG",
-      "publications": 4,
-      "percentagePublications": 0.04,
-      "downloads": 1085,
-      "percentageDownloads": 0.01,
-      "LAC": 172,
-      "percentageLAC": 15.85
-    },
-    {
-      "divisionCode": "CAN",
-      "publications": 58,
-      "percentagePublications": 0.57,
-      "downloads": 165270,
-      "percentageDownloads": 1.2,
-      "LAC": 125294,
-      "percentageLAC": 75.81
-    },
-    {
-      "divisionCode": "CAR",
-      "publications": 1,
-      "percentagePublications": 0.01,
-      "downloads": 2232,
-      "percentageDownloads": 0.02,
-      "LAC": 1663,
-      "percentageLAC": 74.51
-    },
-    {
-      "divisionCode": "CBH",
-      "publications": 1,
-      "percentagePublications": 0.01,
-      "downloads": 315,
-      "percentageDownloads": 0,
-      "LAC": 42,
-      "percentageLAC": 13.33
-    },
-    {
-      "divisionCode": "CBL",
-      "publications": 3,
-      "percentagePublications": 0.03,
-      "downloads": 3760,
-      "percentageDownloads": 0.03,
-      "LAC": 937,
-      "percentageLAC": 24.92
-    },
-    {
-      "divisionCode": "CBO",
-      "publications": 2,
-      "percentagePublications": 0.02,
-      "downloads": 507,
-      "percentageDownloads": 0,
-      "LAC": 246,
-      "percentageLAC": 48.52
-    },
-    {
-      "divisionCode": "CBR",
-      "publications": 1,
-      "percentagePublications": 0.01,
-      "downloads": 206,
-      "percentageDownloads": 0,
-      "LAC": 89,
-      "percentageLAC": 43.2
-    },
-    {
-      "divisionCode": "CCB",
-      "publications": 149,
-      "percentagePublications": 1.46,
-      "downloads": 234439,
-      "percentageDownloads": 1.71,
-      "LAC": 106184,
-      "percentageLAC": 45.29
-    },
-    {
-      "divisionCode": "CCH",
-      "publications": 18,
-      "percentagePublications": 0.18,
-      "downloads": 3877,
-      "percentageDownloads": 0.03,
-      "LAC": 2002,
-      "percentageLAC": 51.64
-    },
-    {
-      "divisionCode": "CCO",
-      "publications": 2,
-      "percentagePublications": 0.02,
-      "downloads": 1407,
-      "percentageDownloads": 0.01,
-      "LAC": 379,
-      "percentageLAC": 26.94
-    },
-    {
-      "divisionCode": "CCS",
-      "publications": 44,
-      "percentagePublications": 0.43,
-      "downloads": 67296,
-      "percentageDownloads": 0.49,
-      "LAC": 40080,
-      "percentageLAC": 59.56
-    },
-    {
-      "divisionCode": "CDR",
-      "publications": 3,
-      "percentagePublications": 0.03,
-      "downloads": 5826,
-      "percentageDownloads": 0.04,
-      "LAC": 4547,
-      "percentageLAC": 78.05
-    },
-    {
-      "divisionCode": "CGY",
-      "publications": 1,
-      "percentagePublications": 0.01,
-      "downloads": 868,
-      "percentageDownloads": 0.01,
-      "LAC": 98,
-      "percentageLAC": 11.29
-    },
-    {
-      "divisionCode": "CHO",
-      "publications": 1,
-      "percentagePublications": 0.01,
-      "downloads": 1102,
-      "percentageDownloads": 0.01,
-      "LAC": 892,
-      "percentageLAC": 80.94
-    },
-    {
-      "divisionCode": "CID",
-      "publications": 90,
-      "percentagePublications": 0.88,
-      "downloads": 125646,
-      "percentageDownloads": 0.92,
-      "LAC": 82638,
-      "percentageLAC": 65.77
-    },
-    {
-      "divisionCode": "CJA",
-      "publications": 2,
-      "percentagePublications": 0.02,
-      "downloads": 1218,
-      "percentageDownloads": 0.01,
-      "LAC": 200,
-      "percentageLAC": 16.42
-    },
-    {
-      "divisionCode": "CME",
-      "publications": 5,
-      "percentagePublications": 0.05,
-      "downloads": 6071,
-      "percentageDownloads": 0.04,
-      "LAC": 4692,
-      "percentageLAC": 77.29
-    },
-    {
-      "divisionCode": "CMF",
-      "publications": 196,
-      "percentagePublications": 1.92,
-      "downloads": 296081,
-      "percentageDownloads": 2.16,
-      "LAC": 170930,
-      "percentageLAC": 57.73
-    },
-    {
-      "divisionCode": "CMG",
-      "publications": 26,
-      "percentagePublications": 0.25,
-      "downloads": 44707,
-      "percentageDownloads": 0.33,
-      "LAC": 21679,
-      "percentageLAC": 48.49
-    },
-    {
-      "divisionCode": "CNI",
-      "publications": 1,
-      "percentagePublications": 0.01,
-      "downloads": 392,
-      "percentageDownloads": 0,
-      "LAC": 250,
-      "percentageLAC": 63.78
-    },
-    {
-      "divisionCode": "CPE",
-      "publications": 5,
-      "percentagePublications": 0.05,
-      "downloads": 13364,
-      "percentageDownloads": 0.1,
-      "LAC": 10506,
-      "percentageLAC": 78.61
-    },
-    {
-      "divisionCode": "CPR",
-      "publications": 1,
-      "percentagePublications": 0.01,
-      "downloads": 137,
-      "percentageDownloads": 0,
-      "LAC": 50,
-      "percentageLAC": 36.5
-    },
-    {
-      "divisionCode": "CSC",
-      "publications": 32,
-      "percentagePublications": 0.31,
-      "downloads": 32051,
-      "percentageDownloads": 0.23,
-      "LAC": 22361,
-      "percentageLAC": 69.77
-    },
-    {
-      "divisionCode": "CSD",
-      "publications": 5,
-      "percentagePublications": 0.05,
-      "downloads": 17719,
-      "percentageDownloads": 0.13,
-      "LAC": 15172,
-      "percentageLAC": 85.63
-    },
-    {
-      "divisionCode": "CSO",
-      "publications": 66,
-      "percentagePublications": 0.65,
-      "downloads": 147038,
-      "percentageDownloads": 1.07,
-      "LAC": 120751,
-      "percentageLAC": 82.12
-    },
-    {
-      "divisionCode": "CTI",
-      "publications": 187,
-      "percentagePublications": 1.83,
-      "downloads": 371102,
-      "percentageDownloads": 2.71,
-      "LAC": 242111,
-      "percentageLAC": 65.24
-    },
-    {
-      "divisionCode": "CUR",
-      "publications": 1,
-      "percentagePublications": 0.01,
-      "downloads": 128,
-      "percentageDownloads": 0,
-      "LAC": 103,
-      "percentageLAC": 80.47
-    },
-    {
-      "divisionCode": "Discontinued Divisions",
-      "publications": 2252,
-      "percentagePublications": 22.02,
-      "downloads": 1454697,
-      "percentageDownloads": 10.61,
-      "LAC": 792528,
-      "percentageLAC": 54.48
-    },
-    {
-      "divisionCode": "EDU",
-      "publications": 245,
-      "percentagePublications": 2.4,
-      "downloads": 741843,
-      "percentageDownloads": 5.41,
-      "LAC": 575425,
-      "percentageLAC": 77.57
-    },
-    {
-      "divisionCode": "ENE",
-      "publications": 149,
-      "percentagePublications": 1.46,
-      "downloads": 365465,
-      "percentageDownloads": 2.66,
-      "LAC": 222849,
-      "percentageLAC": 60.98
-    },
-    {
-      "divisionCode": "ESG",
-      "publications": 171,
-      "percentagePublications": 1.67,
-      "downloads": 203548,
-      "percentageDownloads": 1.48,
-      "LAC": 93591,
-      "percentageLAC": 45.98
-    },
-    {
-      "divisionCode": "EUR",
-      "publications": 5,
-      "percentagePublications": 0.05,
-      "downloads": 4664,
-      "percentageDownloads": 0.03,
-      "LAC": 1379,
-      "percentageLAC": 29.57
-    },
-    {
-      "divisionCode": "FHL",
-      "publications": 30,
-      "percentagePublications": 0.29,
-      "downloads": 11790,
-      "percentageDownloads": 0.09,
-      "LAC": 6924,
-      "percentageLAC": 58.73
-    },
-    {
-      "divisionCode": "FMM",
-      "publications": 193,
-      "percentagePublications": 1.89,
-      "downloads": 500416,
-      "percentageDownloads": 3.65,
-      "LAC": 319740,
-      "percentageLAC": 63.89
-    },
-    {
-      "divisionCode": "FMP",
-      "publications": 10,
-      "percentagePublications": 0.1,
-      "downloads": 10229,
-      "percentageDownloads": 0.07,
-      "LAC": 4575,
-      "percentageLAC": 44.73
-    },
-    {
-      "divisionCode": "GCM",
-      "publications": 21,
-      "percentagePublications": 0.21,
-      "downloads": 4349,
-      "percentageDownloads": 0.03,
-      "LAC": 1248,
-      "percentageLAC": 28.7
-    },
-    {
-      "divisionCode": "GDI",
-      "publications": 67,
-      "percentagePublications": 0.66,
-      "downloads": 60284,
-      "percentageDownloads": 0.44,
-      "LAC": 39839,
-      "percentageLAC": 66.09
-    },
-    {
-      "divisionCode": "HRD",
-      "publications": 2,
-      "percentagePublications": 0.02,
-      "downloads": 164,
-      "percentageDownloads": 0,
-      "LAC": 53,
-      "percentageLAC": 32.32
-    },
-    {
-      "divisionCode": "HUD",
-      "publications": 76,
-      "percentagePublications": 0.74,
-      "downloads": 378294,
-      "percentageDownloads": 2.76,
-      "LAC": 266852,
-      "percentageLAC": 70.54
-    },
-    {
-      "divisionCode": "ICD",
-      "publications": 1,
-      "percentagePublications": 0.01,
-      "downloads": 4563,
-      "percentageDownloads": 0.03,
-      "LAC": 4125,
-      "percentageLAC": 90.4
-    },
-    {
-      "divisionCode": "ICS",
-      "publications": 330,
-      "percentagePublications": 3.23,
-      "downloads": 790453,
-      "percentageDownloads": 5.76,
-      "LAC": 525009,
-      "percentageLAC": 66.42
-    },
-    {
-      "divisionCode": "IFD",
-      "publications": 78,
-      "percentagePublications": 0.76,
-      "downloads": 135489,
-      "percentageDownloads": 0.99,
-      "LAC": 73597,
-      "percentageLAC": 54.32
-    },
-    {
-      "divisionCode": "INE",
-      "publications": 63,
-      "percentagePublications": 0.62,
-      "downloads": 149465,
-      "percentageDownloads": 1.09,
-      "LAC": 86887,
-      "percentageLAC": 58.13
-    },
-    {
-      "divisionCode": "INL",
-      "publications": 502,
-      "percentagePublications": 4.91,
-      "downloads": 454087,
-      "percentageDownloads": 3.31,
-      "LAC": 318719,
-      "percentageLAC": 70.19
-    },
-    {
-      "divisionCode": "INT",
-      "publications": 621,
-      "percentagePublications": 6.07,
-      "downloads": 575608,
-      "percentageDownloads": 4.2,
-      "LAC": 288821,
-      "percentageLAC": 50.18
-    },
-    {
-      "divisionCode": "ITE",
-      "publications": 3,
-      "percentagePublications": 0.03,
-      "downloads": 7936,
-      "percentageDownloads": 0.06,
-      "LAC": 5781,
-      "percentageLAC": 72.85
-    },
-    {
-      "divisionCode": "KIC",
-      "publications": 170,
-      "percentagePublications": 1.66,
-      "downloads": 932852,
-      "percentageDownloads": 6.8,
-      "LAC": 650768,
-      "percentageLAC": 69.76
-    },
-    {
-      "divisionCode": "KNM",
-      "publications": 23,
-      "percentagePublications": 0.22,
-      "downloads": 21359,
-      "percentageDownloads": 0.16,
-      "LAC": 13965,
-      "percentageLAC": 65.38
-    },
-    {
-      "divisionCode": "LMK",
-      "publications": 164,
-      "percentagePublications": 1.6,
-      "downloads": 393568,
-      "percentageDownloads": 2.87,
-      "LAC": 265139,
-      "percentageLAC": 67.37
-    },
-    {
-      "divisionCode": "MICI",
-      "publications": 12,
-      "percentagePublications": 0.12,
-      "downloads": 3919,
-      "percentageDownloads": 0.03,
-      "LAC": 606,
-      "percentageLAC": 15.46
-    },
-    {
-      "divisionCode": "MIF",
-      "publications": 1084,
-      "percentagePublications": 10.6,
-      "downloads": 366180,
-      "percentageDownloads": 2.67,
-      "LAC": 175405,
-      "percentageLAC": 47.9
-    },
-    {
-      "divisionCode": "OII",
-      "publications": 26,
-      "percentagePublications": 0.25,
-      "downloads": 5169,
-      "percentageDownloads": 0.04,
-      "LAC": 829,
-      "percentageLAC": 16.04
-    },
-    {
-      "divisionCode": "ORP",
-      "publications": 12,
-      "percentagePublications": 0.12,
-      "downloads": 32407,
-      "percentageDownloads": 0.24,
-      "LAC": 14013,
-      "percentageLAC": 43.24
-    },
-    {
-      "divisionCode": "OVE",
-      "publications": 733,
-      "percentagePublications": 7.17,
-      "downloads": 466022,
-      "percentageDownloads": 3.4,
-      "LAC": 201575,
-      "percentageLAC": 43.25
-    },
-    {
-      "divisionCode": "PCY",
-      "publications": 2,
-      "percentagePublications": 0.02,
-      "downloads": 255,
-      "percentageDownloads": 0,
-      "LAC": 63,
-      "percentageLAC": 24.71
-    },
-    {
-      "divisionCode": "PRE",
-      "publications": 6,
-      "percentagePublications": 0.06,
-      "downloads": 7991,
-      "percentageDownloads": 0.06,
-      "LAC": 2833,
-      "percentageLAC": 35.45
-    },
-    {
-      "divisionCode": "PRO",
-      "publications": 1,
-      "percentagePublications": 0.01,
-      "downloads": 143,
-      "percentageDownloads": 0,
-      "LAC": 8,
-      "percentageLAC": 5.59
-    },
-    {
-      "divisionCode": "RES",
-      "publications": 1288,
-      "percentagePublications": 12.6,
-      "downloads": 1501523,
-      "percentageDownloads": 10.95,
-      "LAC": 704984,
-      "percentageLAC": 46.95
-    },
-    {
-      "divisionCode": "RMG",
-      "publications": 1,
-      "percentagePublications": 0.01,
-      "downloads": 147,
-      "percentageDownloads": 0,
-      "LAC": 9,
-      "percentageLAC": 6.12
-    },
-    {
-      "divisionCode": "RND",
-      "publications": 124,
-      "percentagePublications": 1.21,
-      "downloads": 95657,
-      "percentageDownloads": 0.7,
-      "LAC": 62616,
-      "percentageLAC": 65.46
-    },
-    {
-      "divisionCode": "SCL",
-      "publications": 53,
-      "percentagePublications": 0.52,
-      "downloads": 119949,
-      "percentageDownloads": 0.87,
-      "LAC": 77398,
-      "percentageLAC": 64.53
-    },
-    {
-      "divisionCode": "SDI",
-      "publications": 134,
-      "percentagePublications": 1.31,
-      "downloads": 210131,
-      "percentageDownloads": 1.53,
-      "LAC": 155290,
-      "percentageLAC": 73.9
-    },
-    {
-      "divisionCode": "SDV",
-      "publications": 20,
-      "percentagePublications": 0.2,
-      "downloads": 43721,
-      "percentageDownloads": 0.32,
-      "LAC": 5970,
-      "percentageLAC": 13.65
-    },
-    {
-      "divisionCode": "SEC",
-      "publications": 26,
-      "percentagePublications": 0.25,
-      "downloads": 3715,
-      "percentageDownloads": 0.03,
-      "LAC": 1421,
-      "percentageLAC": 38.25
-    },
-    {
-      "divisionCode": "SMO",
-      "publications": 2,
-      "percentagePublications": 0.02,
-      "downloads": 547,
-      "percentageDownloads": 0,
-      "LAC": 128,
-      "percentageLAC": 23.4
-    },
-    {
-      "divisionCode": "SPD",
-      "publications": 130,
-      "percentagePublications": 1.27,
-      "downloads": 200444,
-      "percentageDownloads": 1.46,
-      "LAC": 100669,
-      "percentageLAC": 50.22
-    },
-    {
-      "divisionCode": "SPH",
-      "publications": 289,
-      "percentagePublications": 2.83,
-      "downloads": 865648,
-      "percentageDownloads": 6.31,
-      "LAC": 584942,
-      "percentageLAC": 67.57
-    },
-    {
-      "divisionCode": "Strategic Core",
-      "publications": 1,
-      "percentagePublications": 0.01,
-      "downloads": 19721,
-      "percentageDownloads": 0.14,
-      "LAC": 16370,
-      "percentageLAC": 83.01
-    },
-    {
-      "divisionCode": "TSP",
-      "publications": 171,
-      "percentagePublications": 1.67,
-      "downloads": 427170,
-      "percentageDownloads": 3.11,
-      "LAC": 333593,
-      "percentageLAC": 78.09
-    },
-    {
-      "divisionCode": "UCC",
-      "publications": 2,
-      "percentagePublications": 0.02,
-      "downloads": 28376,
-      "percentageDownloads": 0.21,
-      "LAC": 26879,
-      "percentageLAC": 94.72
-    },
-    {
-      "divisionCode": "VPC",
-      "publications": 31,
-      "percentagePublications": 0.3,
-      "downloads": 33446,
-      "percentageDownloads": 0.24,
-      "LAC": 23990,
-      "percentageLAC": 71.73
-    },
-    {
-      "divisionCode": "VPS",
-      "publications": 24,
-      "percentagePublications": 0.23,
-      "downloads": 97629,
-      "percentageDownloads": 0.71,
-      "LAC": 73225,
-      "percentageLAC": 75
-    },
-    {
-      "divisionCode": "WSA",
-      "publications": 173,
-      "percentagePublications": 1.69,
-      "downloads": 436105,
-      "percentageDownloads": 3.18,
-      "LAC": 330448,
-      "percentageLAC": 75.77
-    }
+  indicatorsDivisionsAllTheTime: [
+	{
+	  "divisionCode": "AUG",
+	  "publications": 1,
+	  "percentagePublications": 0.01,
+	  "downloads": 158,
+	  "percentageDownloads": 0.001,
+	  "LAC": 37,
+	  "percentageLAC": 23.418
+	},
+	{
+	  "divisionCode": "BOG",
+	  "publications": 4,
+	  "percentagePublications": 0.038,
+	  "downloads": 932,
+	  "percentageDownloads": 0.007,
+	  "LAC": 175,
+	  "percentageLAC": 18.777
+	},
+	{
+	  "divisionCode": "CAN",
+	  "publications": 53,
+	  "percentagePublications": 0.507,
+	  "downloads": 161216,
+	  "percentageDownloads": 1.146,
+	  "LAC": 123350,
+	  "percentageLAC": 76.512
+	},
+	{
+	  "divisionCode": "CAR",
+	  "publications": 1,
+	  "percentagePublications": 0.01,
+	  "downloads": 2281,
+	  "percentageDownloads": 0.016,
+	  "LAC": 1690,
+	  "percentageLAC": 74.09
+	},
+	{
+	  "divisionCode": "CBH",
+	  "publications": 1,
+	  "percentagePublications": 0.01,
+	  "downloads": 348,
+	  "percentageDownloads": 0.002,
+	  "LAC": 42,
+	  "percentageLAC": 12.069
+	},
+	{
+	  "divisionCode": "CBL",
+	  "publications": 3,
+	  "percentagePublications": 0.029,
+	  "downloads": 3956,
+	  "percentageDownloads": 0.028,
+	  "LAC": 1007,
+	  "percentageLAC": 25.455
+	},
+	{
+	  "divisionCode": "CBO",
+	  "publications": 2,
+	  "percentagePublications": 0.019,
+	  "downloads": 795,
+	  "percentageDownloads": 0.006,
+	  "LAC": 327,
+	  "percentageLAC": 41.132
+	},
+	{
+	  "divisionCode": "CBR",
+	  "publications": 1,
+	  "percentagePublications": 0.01,
+	  "downloads": 194,
+	  "percentageDownloads": 0.001,
+	  "LAC": 89,
+	  "percentageLAC": 45.876
+	},
+	{
+	  "divisionCode": "CCB",
+	  "publications": 145,
+	  "percentagePublications": 1.386,
+	  "downloads": 186803,
+	  "percentageDownloads": 1.328,
+	  "LAC": 68597,
+	  "percentageLAC": 36.722
+	},
+	{
+	  "divisionCode": "CCH",
+	  "publications": 15,
+	  "percentagePublications": 0.143,
+	  "downloads": 3599,
+	  "percentageDownloads": 0.026,
+	  "LAC": 2033,
+	  "percentageLAC": 56.488
+	},
+	{
+	  "divisionCode": "CCO",
+	  "publications": 3,
+	  "percentagePublications": 0.029,
+	  "downloads": 1468,
+	  "percentageDownloads": 0.01,
+	  "LAC": 387,
+	  "percentageLAC": 26.362
+	},
+	{
+	  "divisionCode": "CCR",
+	  "publications": 3,
+	  "percentagePublications": 0.029,
+	  "downloads": 5944,
+	  "percentageDownloads": 0.042,
+	  "LAC": 4628,
+	  "percentageLAC": 77.86
+	},
+	{
+	  "divisionCode": "CCS",
+	  "publications": 44,
+	  "percentagePublications": 0.421,
+	  "downloads": 76768,
+	  "percentageDownloads": 0.546,
+	  "LAC": 44064,
+	  "percentageLAC": 57.399
+	},
+	{
+	  "divisionCode": "CGY",
+	  "publications": 1,
+	  "percentagePublications": 0.01,
+	  "downloads": 892,
+	  "percentageDownloads": 0.006,
+	  "LAC": 102,
+	  "percentageLAC": 11.435
+	},
+	{
+	  "divisionCode": "CHA",
+	  "publications": 2,
+	  "percentagePublications": 0.019,
+	  "downloads": 528,
+	  "percentageDownloads": 0.004,
+	  "LAC": 143,
+	  "percentageLAC": 27.083
+	},
+	{
+	  "divisionCode": "CHO",
+	  "publications": 1,
+	  "percentagePublications": 0.01,
+	  "downloads": 1227,
+	  "percentageDownloads": 0.009,
+	  "LAC": 971,
+	  "percentageLAC": 79.136
+	},
+	{
+	  "divisionCode": "CID",
+	  "publications": 87,
+	  "percentagePublications": 0.832,
+	  "downloads": 120774,
+	  "percentageDownloads": 0.859,
+	  "LAC": 82625,
+	  "percentageLAC": 68.413
+	},
+	{
+	  "divisionCode": "CJA",
+	  "publications": 2,
+	  "percentagePublications": 0.019,
+	  "downloads": 1257,
+	  "percentageDownloads": 0.009,
+	  "LAC": 209,
+	  "percentageLAC": 16.627
+	},
+	{
+	  "divisionCode": "CME",
+	  "publications": 5,
+	  "percentagePublications": 0.048,
+	  "downloads": 6248,
+	  "percentageDownloads": 0.044,
+	  "LAC": 4830,
+	  "percentageLAC": 77.305
+	},
+	{
+	  "divisionCode": "CMF",
+	  "publications": 219,
+	  "percentagePublications": 2.093,
+	  "downloads": 358198,
+	  "percentageDownloads": 2.546,
+	  "LAC": 213194,
+	  "percentageLAC": 59.518
+	},
+	{
+	  "divisionCode": "CNI",
+	  "publications": 1,
+	  "percentagePublications": 0.01,
+	  "downloads": 414,
+	  "percentageDownloads": 0.003,
+	  "LAC": 254,
+	  "percentageLAC": 61.353
+	},
+	{
+	  "divisionCode": "CPE",
+	  "publications": 5,
+	  "percentagePublications": 0.048,
+	  "downloads": 13613,
+	  "percentageDownloads": 0.097,
+	  "LAC": 10727,
+	  "percentageLAC": 78.8
+	},
+	{
+	  "divisionCode": "CPR",
+	  "publications": 1,
+	  "percentagePublications": 0.01,
+	  "downloads": 270,
+	  "percentageDownloads": 0.002,
+	  "LAC": 101,
+	  "percentageLAC": 37.407
+	},
+	{
+	  "divisionCode": "CSC",
+	  "publications": 29,
+	  "percentagePublications": 0.277,
+	  "downloads": 34186,
+	  "percentageDownloads": 0.243,
+	  "LAC": 23570,
+	  "percentageLAC": 68.946
+	},
+	{
+	  "divisionCode": "CSD",
+	  "publications": 5,
+	  "percentagePublications": 0.048,
+	  "downloads": 20418,
+	  "percentageDownloads": 0.145,
+	  "LAC": 16210,
+	  "percentageLAC": 79.391
+	},
+	{
+	  "divisionCode": "CTI",
+	  "publications": 57,
+	  "percentagePublications": 0.545,
+	  "downloads": 184476,
+	  "percentageDownloads": 1.311,
+	  "LAC": 141345,
+	  "percentageLAC": 76.62
+	},
+	{
+	  "divisionCode": "CUR",
+	  "publications": 1,
+	  "percentagePublications": 0.01,
+	  "downloads": 578,
+	  "percentageDownloads": 0.004,
+	  "LAC": 277,
+	  "percentageLAC": 47.924
+	},
+	{
+	  "divisionCode": "DCC",
+	  "publications": 25,
+	  "percentagePublications": 0.239,
+	  "downloads": 38183,
+	  "percentageDownloads": 0.271,
+	  "LAC": 13681,
+	  "percentageLAC": 35.83
+	},
+	{
+	  "divisionCode": "Discontinued Divisions",
+	  "publications": 1859,
+	  "percentagePublications": 17.769,
+	  "downloads": 1144789,
+	  "percentageDownloads": 8.138,
+	  "LAC": 635903,
+	  "percentageLAC": 55.548
+	},
+	{
+	  "divisionCode": "EDU",
+	  "publications": 246,
+	  "percentagePublications": 2.351,
+	  "downloads": 776199,
+	  "percentageDownloads": 5.518,
+	  "LAC": 595177,
+	  "percentageLAC": 76.678
+	},
+	{
+	  "divisionCode": "ENE",
+	  "publications": 152,
+	  "percentagePublications": 1.453,
+	  "downloads": 393515,
+	  "percentageDownloads": 2.797,
+	  "LAC": 236462,
+	  "percentageLAC": 60.09
+	},
+	{
+	  "divisionCode": "ESG",
+	  "publications": 145,
+	  "percentagePublications": 1.386,
+	  "downloads": 234362,
+	  "percentageDownloads": 1.666,
+	  "LAC": 118803,
+	  "percentageLAC": 50.692
+	},
+	{
+	  "divisionCode": "EUR",
+	  "publications": 4,
+	  "percentagePublications": 0.038,
+	  "downloads": 2423,
+	  "percentageDownloads": 0.017,
+	  "LAC": 907,
+	  "percentageLAC": 37.433
+	},
+	{
+	  "divisionCode": "FMM",
+	  "publications": 330,
+	  "percentagePublications": 3.154,
+	  "downloads": 689582,
+	  "percentageDownloads": 4.902,
+	  "LAC": 413869,
+	  "percentageLAC": 60.017
+	},
+	{
+	  "divisionCode": "FMP",
+	  "publications": 10,
+	  "percentagePublications": 0.096,
+	  "downloads": 11733,
+	  "percentageDownloads": 0.083,
+	  "LAC": 5409,
+	  "percentageLAC": 46.101
+	},
+	{
+	  "divisionCode": "GCM",
+	  "publications": 21,
+	  "percentagePublications": 0.201,
+	  "downloads": 4214,
+	  "percentageDownloads": 0.03,
+	  "LAC": 1328,
+	  "percentageLAC": 31.514
+	},
+	{
+	  "divisionCode": "GDI",
+	  "publications": 64,
+	  "percentagePublications": 0.612,
+	  "downloads": 67018,
+	  "percentageDownloads": 0.476,
+	  "LAC": 44639,
+	  "percentageLAC": 66.607
+	},
+	{
+	  "divisionCode": "HUD",
+	  "publications": 80,
+	  "percentagePublications": 0.765,
+	  "downloads": 407747,
+	  "percentageDownloads": 2.899,
+	  "LAC": 283683,
+	  "percentageLAC": 69.573
+	},
+	{
+	  "divisionCode": "ICD",
+	  "publications": 60,
+	  "percentagePublications": 0.574,
+	  "downloads": 174523,
+	  "percentageDownloads": 1.241,
+	  "LAC": 145303,
+	  "percentageLAC": 83.257
+	},
+	{
+	  "divisionCode": "ICS",
+	  "publications": 332,
+	  "percentagePublications": 3.173,
+	  "downloads": 865059,
+	  "percentageDownloads": 6.15,
+	  "LAC": 571055,
+	  "percentageLAC": 66.013
+	},
+	{
+	  "divisionCode": "IDB LAB",
+	  "publications": 65,
+	  "percentagePublications": 0.621,
+	  "downloads": 6154,
+	  "percentageDownloads": 0.044,
+	  "LAC": 2603,
+	  "percentageLAC": 42.298
+	},
+	{
+	  "divisionCode": "IFD",
+	  "publications": 77,
+	  "percentagePublications": 0.736,
+	  "downloads": 144060,
+	  "percentageDownloads": 1.024,
+	  "LAC": 78604,
+	  "percentageLAC": 54.563
+	},
+	{
+	  "divisionCode": "INE",
+	  "publications": 65,
+	  "percentagePublications": 0.621,
+	  "downloads": 132016,
+	  "percentageDownloads": 0.938,
+	  "LAC": 77024,
+	  "percentageLAC": 58.344
+	},
+	{
+	  "divisionCode": "INL",
+	  "publications": 504,
+	  "percentagePublications": 4.817,
+	  "downloads": 470650,
+	  "percentageDownloads": 3.346,
+	  "LAC": 329866,
+	  "percentageLAC": 70.087
+	},
+	{
+	  "divisionCode": "INT",
+	  "publications": 601,
+	  "percentagePublications": 5.745,
+	  "downloads": 582716,
+	  "percentageDownloads": 4.142,
+	  "LAC": 289822,
+	  "percentageLAC": 49.736
+	},
+	{
+	  "divisionCode": "ITE",
+	  "publications": 4,
+	  "percentagePublications": 0.038,
+	  "downloads": 9837,
+	  "percentageDownloads": 0.07,
+	  "LAC": 6766,
+	  "percentageLAC": 68.781
+	},
+	{
+	  "divisionCode": "KIC",
+	  "publications": 163,
+	  "percentagePublications": 1.558,
+	  "downloads": 958117,
+	  "percentageDownloads": 6.811,
+	  "LAC": 664125,
+	  "percentageLAC": 69.316
+	},
+	{
+	  "divisionCode": "KLD",
+	  "publications": 157,
+	  "percentagePublications": 1.501,
+	  "downloads": 237821,
+	  "percentageDownloads": 1.691,
+	  "LAC": 173055,
+	  "percentageLAC": 72.767
+	},
+	{
+	  "divisionCode": "LMK",
+	  "publications": 171,
+	  "percentagePublications": 1.634,
+	  "downloads": 447493,
+	  "percentageDownloads": 3.181,
+	  "LAC": 300868,
+	  "percentageLAC": 67.234
+	},
+	{
+	  "divisionCode": "MICI",
+	  "publications": 12,
+	  "percentagePublications": 0.115,
+	  "downloads": 3849,
+	  "percentageDownloads": 0.027,
+	  "LAC": 612,
+	  "percentageLAC": 15.9
+	},
+	{
+	  "divisionCode": "MIF",
+	  "publications": 1003,
+	  "percentagePublications": 9.587,
+	  "downloads": 323646,
+	  "percentageDownloads": 2.301,
+	  "LAC": 150452,
+	  "percentageLAC": 46.487
+	},
+	{
+	  "divisionCode": "OII",
+	  "publications": 26,
+	  "percentagePublications": 0.249,
+	  "downloads": 6107,
+	  "percentageDownloads": 0.043,
+	  "LAC": 1297,
+	  "percentageLAC": 21.238
+	},
+	{
+	  "divisionCode": "ORP",
+	  "publications": 6,
+	  "percentagePublications": 0.057,
+	  "downloads": 11388,
+	  "percentageDownloads": 0.081,
+	  "LAC": 3063,
+	  "percentageLAC": 26.897
+	},
+	{
+	  "divisionCode": "OVE",
+	  "publications": 713,
+	  "percentagePublications": 6.815,
+	  "downloads": 488083,
+	  "percentageDownloads": 3.47,
+	  "LAC": 215349,
+	  "percentageLAC": 44.121
+	},
+	{
+	  "divisionCode": "PRE",
+	  "publications": 4,
+	  "percentagePublications": 0.038,
+	  "downloads": 4332,
+	  "percentageDownloads": 0.031,
+	  "LAC": 2130,
+	  "percentageLAC": 49.169
+	},
+	{
+	  "divisionCode": "PRO",
+	  "publications": 1,
+	  "percentagePublications": 0.01,
+	  "downloads": 149,
+	  "percentageDownloads": 0.001,
+	  "LAC": 8,
+	  "percentageLAC": 5.369
+	},
+	{
+	  "divisionCode": "RES",
+	  "publications": 1284,
+	  "percentagePublications": 12.273,
+	  "downloads": 1568910,
+	  "percentageDownloads": 11.153,
+	  "LAC": 729764,
+	  "percentageLAC": 46.514
+	},
+	{
+	  "divisionCode": "RMG",
+	  "publications": 1,
+	  "percentagePublications": 0.01,
+	  "downloads": 225,
+	  "percentageDownloads": 0.002,
+	  "LAC": 10,
+	  "percentageLAC": 4.444
+	},
+	{
+	  "divisionCode": "RND",
+	  "publications": 110,
+	  "percentagePublications": 1.051,
+	  "downloads": 86367,
+	  "percentageDownloads": 0.614,
+	  "LAC": 49028,
+	  "percentageLAC": 56.767
+	},
+	{
+	  "divisionCode": "SCL",
+	  "publications": 46,
+	  "percentagePublications": 0.44,
+	  "downloads": 126627,
+	  "percentageDownloads": 0.9,
+	  "LAC": 80962,
+	  "percentageLAC": 63.937
+	},
+	{
+	  "divisionCode": "SDV",
+	  "publications": 21,
+	  "percentagePublications": 0.201,
+	  "downloads": 46620,
+	  "percentageDownloads": 0.331,
+	  "LAC": 6572,
+	  "percentageLAC": 14.097
+	},
+	{
+	  "divisionCode": "SEC",
+	  "publications": 26,
+	  "percentagePublications": 0.249,
+	  "downloads": 3507,
+	  "percentageDownloads": 0.025,
+	  "LAC": 1472,
+	  "percentageLAC": 41.973
+	},
+	{
+	  "divisionCode": "SMO",
+	  "publications": 2,
+	  "percentagePublications": 0.019,
+	  "downloads": 595,
+	  "percentageDownloads": 0.004,
+	  "LAC": 129,
+	  "percentageLAC": 21.681
+	},
+	{
+	  "divisionCode": "SPD",
+	  "publications": 119,
+	  "percentagePublications": 1.137,
+	  "downloads": 154127,
+	  "percentageDownloads": 1.096,
+	  "LAC": 68411,
+	  "percentageLAC": 44.386
+	},
+	{
+	  "divisionCode": "SPH",
+	  "publications": 302,
+	  "percentagePublications": 2.887,
+	  "downloads": 917618,
+	  "percentageDownloads": 6.523,
+	  "LAC": 614031,
+	  "percentageLAC": 66.916
+	},
+	{
+	  "divisionCode": "Strategic Core",
+	  "publications": 1,
+	  "percentagePublications": 0.01,
+	  "downloads": 20663,
+	  "percentageDownloads": 0.147,
+	  "LAC": 17143,
+	  "percentageLAC": 82.965
+	},
+	{
+	  "divisionCode": "TSP",
+	  "publications": 174,
+	  "percentagePublications": 1.663,
+	  "downloads": 423031,
+	  "percentageDownloads": 3.007,
+	  "LAC": 324876,
+	  "percentageLAC": 76.797
+	},
+	{
+	  "divisionCode": "UCC",
+	  "publications": 2,
+	  "percentagePublications": 0.019,
+	  "downloads": 30595,
+	  "percentageDownloads": 0.217,
+	  "LAC": 28748,
+	  "percentageLAC": 93.963
+	},
+	{
+	  "divisionCode": "VPC",
+	  "publications": 41,
+	  "percentagePublications": 0.392,
+	  "downloads": 37069,
+	  "percentageDownloads": 0.264,
+	  "LAC": 26036,
+	  "percentageLAC": 70.237
+	},
+	{
+	  "divisionCode": "VPS",
+	  "publications": 23,
+	  "percentagePublications": 0.22,
+	  "downloads": 105158,
+	  "percentageDownloads": 0.748,
+	  "LAC": 78807,
+	  "percentageLAC": 74.942
+	},
+	{
+	  "divisionCode": "WSA",
+	  "publications": 176,
+	  "percentagePublications": 1.682,
+	  "downloads": 462062,
+	  "percentageDownloads": 3.285,
+	  "LAC": 348555,
+	  "percentageLAC": 75.435
+	}
   ],
   indicatorsDivisions2018: [
-    {
-      "divisionCode": "ATI",
-      "publications": 0,
-      "percentagePublications": 0,
-      "downloads": 0,
-      "percentageDownloads": 0,
-      "LAC": 0,
-      "percentageLAC": 0
-    },
-    {
-      "divisionCode": "AUG",
-      "publications": 0,
-      "percentagePublications": 0,
-      "downloads": 0,
-      "percentageDownloads": 0,
-      "LAC": 0,
-      "percentageLAC": 0
-    },
-    {
-      "divisionCode": "BOG",
-      "publications": 0,
-      "percentagePublications": 0,
-      "downloads": 0,
-      "percentageDownloads": 0,
-      "LAC": 0,
-      "percentageLAC": 0
-    },
-    {
-      "divisionCode": "CAN",
-      "publications": 14,
-      "percentagePublications": 2.67,
-      "downloads": 33102,
-      "percentageDownloads": 3.17,
-      "LAC": 25642,
-      "percentageLAC": 77.46
-    },
-    {
-      "divisionCode": "CAR",
-      "publications": 0,
-      "percentagePublications": 0,
-      "downloads": 0,
-      "percentageDownloads": 0,
-      "LAC": 0,
-      "percentageLAC": 0
-    },
-    {
-      "divisionCode": "CBH",
-      "publications": 0,
-      "percentagePublications": 0,
-      "downloads": 0,
-      "percentageDownloads": 0,
-      "LAC": 0,
-      "percentageLAC": 0
-    },
-    {
-      "divisionCode": "CBL",
-      "publications": 0,
-      "percentagePublications": 0,
-      "downloads": 0,
-      "percentageDownloads": 0,
-      "LAC": 0,
-      "percentageLAC": 0
-    },
-    {
-      "divisionCode": "CBO",
-      "publications": 2,
-      "percentagePublications": 0.38,
-      "downloads": 507,
-      "percentageDownloads": 0.05,
-      "LAC": 246,
-      "percentageLAC": 48.52
-    },
-    {
-      "divisionCode": "CBR",
-      "publications": 0,
-      "percentagePublications": 0,
-      "downloads": 0,
-      "percentageDownloads": 0,
-      "LAC": 0,
-      "percentageLAC": 0
-    },
-    {
-      "divisionCode": "CCB",
-      "publications": 32,
-      "percentagePublications": 6.1,
-      "downloads": 12777,
-      "percentageDownloads": 1.23,
-      "LAC": 5787,
-      "percentageLAC": 45.29
-    },
-    {
-      "divisionCode": "CCH",
-      "publications": 0,
-      "percentagePublications": 0,
-      "downloads": 0,
-      "percentageDownloads": 0,
-      "LAC": 0,
-      "percentageLAC": 0
-    },
-    {
-      "divisionCode": "CCO",
-      "publications": 0,
-      "percentagePublications": 0,
-      "downloads": 0,
-      "percentageDownloads": 0,
-      "LAC": 0,
-      "percentageLAC": 0
-    },
-    {
-      "divisionCode": "CCS",
-      "publications": 11,
-      "percentagePublications": 2.1,
-      "downloads": 22966,
-      "percentageDownloads": 2.2,
-      "LAC": 17075,
-      "percentageLAC": 74.35
-    },
-    {
-      "divisionCode": "CDR",
-      "publications": 0,
-      "percentagePublications": 0,
-      "downloads": 0,
-      "percentageDownloads": 0,
-      "LAC": 0,
-      "percentageLAC": 0
-    },
-    {
-      "divisionCode": "CGY",
-      "publications": 0,
-      "percentagePublications": 0,
-      "downloads": 0,
-      "percentageDownloads": 0,
-      "LAC": 0,
-      "percentageLAC": 0
-    },
-    {
-      "divisionCode": "CHO",
-      "publications": 0,
-      "percentagePublications": 0,
-      "downloads": 0,
-      "percentageDownloads": 0,
-      "LAC": 0,
-      "percentageLAC": 0
-    },
-    {
-      "divisionCode": "CID",
-      "publications": 20,
-      "percentagePublications": 3.81,
-      "downloads": 17559,
-      "percentageDownloads": 1.68,
-      "LAC": 13949,
-      "percentageLAC": 79.44
-    },
-    {
-      "divisionCode": "CJA",
-      "publications": 0,
-      "percentagePublications": 0,
-      "downloads": 0,
-      "percentageDownloads": 0,
-      "LAC": 0,
-      "percentageLAC": 0
-    },
-    {
-      "divisionCode": "CME",
-      "publications": 2,
-      "percentagePublications": 0.38,
-      "downloads": 188,
-      "percentageDownloads": 0.02,
-      "LAC": 129,
-      "percentageLAC": 68.62
-    },
-    {
-      "divisionCode": "CMF",
-      "publications": 19,
-      "percentagePublications": 3.62,
-      "downloads": 26770,
-      "percentageDownloads": 2.57,
-      "LAC": 19934,
-      "percentageLAC": 74.46
-    },
-    {
-      "divisionCode": "CMG",
-      "publications": 3,
-      "percentagePublications": 0.57,
-      "downloads": 9853,
-      "percentageDownloads": 0.94,
-      "LAC": 8803,
-      "percentageLAC": 89.34
-    },
-    {
-      "divisionCode": "CNI",
-      "publications": 0,
-      "percentagePublications": 0,
-      "downloads": 0,
-      "percentageDownloads": 0,
-      "LAC": 0,
-      "percentageLAC": 0
-    },
-    {
-      "divisionCode": "CPE",
-      "publications": 0,
-      "percentagePublications": 0,
-      "downloads": 0,
-      "percentageDownloads": 0,
-      "LAC": 0,
-      "percentageLAC": 0
-    },
-    {
-      "divisionCode": "CPR",
-      "publications": 1,
-      "percentagePublications": 0.19,
-      "downloads": 137,
-      "percentageDownloads": 0.01,
-      "LAC": 50,
-      "percentageLAC": 36.5
-    },
-    {
-      "divisionCode": "CSC",
-      "publications": 12,
-      "percentagePublications": 2.29,
-      "downloads": 2745,
-      "percentageDownloads": 0.26,
-      "LAC": 1272,
-      "percentageLAC": 46.34
-    },
-    {
-      "divisionCode": "CSD",
-      "publications": 4,
-      "percentagePublications": 0.76,
-      "downloads": 17169,
-      "percentageDownloads": 1.65,
-      "LAC": 15044,
-      "percentageLAC": 87.62
-    },
-    {
-      "divisionCode": "CSO",
-      "publications": 0,
-      "percentagePublications": 0,
-      "downloads": 0,
-      "percentageDownloads": 0,
-      "LAC": 0,
-      "percentageLAC": 0
-    },
-    {
-      "divisionCode": "CTI",
-      "publications": 7,
-      "percentagePublications": 1.33,
-      "downloads": 7327,
-      "percentageDownloads": 0.7,
-      "LAC": 5470,
-      "percentageLAC": 74.66
-    },
-    {
-      "divisionCode": "CUR",
-      "publications": 0,
-      "percentagePublications": 0,
-      "downloads": 128,
-      "percentageDownloads": 0.01,
-      "LAC": 103,
-      "percentageLAC": 80.47
-    },
-    {
-      "divisionCode": "Discontinued Divisions",
-      "publications": 7,
-      "percentagePublications": 1.33,
-      "downloads": 5583,
-      "percentageDownloads": 0.54,
-      "LAC": 2714,
-      "percentageLAC": 48.61
-    },
-    {
-      "divisionCode": "EDU",
-      "publications": 20,
-      "percentagePublications": 3.81,
-      "downloads": 52864,
-      "percentageDownloads": 5.07,
-      "LAC": 48182,
-      "percentageLAC": 91.14
-    },
-    {
-      "divisionCode": "ENE",
-      "publications": 4,
-      "percentagePublications": 0.76,
-      "downloads": 12520,
-      "percentageDownloads": 1.2,
-      "LAC": 11014,
-      "percentageLAC": 87.97
-    },
-    {
-      "divisionCode": "ESG",
-      "publications": 5,
-      "percentagePublications": 0.95,
-      "downloads": 21973,
-      "percentageDownloads": 2.11,
-      "LAC": 19055,
-      "percentageLAC": 86.72
-    },
-    {
-      "divisionCode": "EUR",
-      "publications": 0,
-      "percentagePublications": 0,
-      "downloads": 0,
-      "percentageDownloads": 0,
-      "LAC": 0,
-      "percentageLAC": 0
-    },
-    {
-      "divisionCode": "FHL",
-      "publications": 0,
-      "percentagePublications": 0,
-      "downloads": 0,
-      "percentageDownloads": 0,
-      "LAC": 0,
-      "percentageLAC": 0
-    },
-    {
-      "divisionCode": "FMM",
-      "publications": 23,
-      "percentagePublications": 4.38,
-      "downloads": 29137,
-      "percentageDownloads": 2.79,
-      "LAC": 19920,
-      "percentageLAC": 68.37
-    },
-    {
-      "divisionCode": "FMP",
-      "publications": 2,
-      "percentagePublications": 0.38,
-      "downloads": 207,
-      "percentageDownloads": 0.02,
-      "LAC": 75,
-      "percentageLAC": 36.23
-    },
-    {
-      "divisionCode": "GCM",
-      "publications": 0,
-      "percentagePublications": 0,
-      "downloads": 0,
-      "percentageDownloads": 0,
-      "LAC": 0,
-      "percentageLAC": 0
-    },
-    {
-      "divisionCode": "GDI",
-      "publications": 6,
-      "percentagePublications": 1.14,
-      "downloads": 1505,
-      "percentageDownloads": 0.14,
-      "LAC": 627,
-      "percentageLAC": 41.66
-    },
-    {
-      "divisionCode": "HRD",
-      "publications": 0,
-      "percentagePublications": 0,
-      "downloads": 0,
-      "percentageDownloads": 0,
-      "LAC": 0,
-      "percentageLAC": 0
-    },
-    {
-      "divisionCode": "HUD",
-      "publications": 9,
-      "percentagePublications": 1.71,
-      "downloads": 15264,
-      "percentageDownloads": 1.46,
-      "LAC": 12623,
-      "percentageLAC": 82.7
-    },
-    {
-      "divisionCode": "ICD",
-      "publications": 1,
-      "percentagePublications": 0.19,
-      "downloads": 4563,
-      "percentageDownloads": 0.44,
-      "LAC": 4125,
-      "percentageLAC": 90.4
-    },
-    {
-      "divisionCode": "ICS",
-      "publications": 48,
-      "percentagePublications": 9.14,
-      "downloads": 87714,
-      "percentageDownloads": 8.41,
-      "LAC": 66957,
-      "percentageLAC": 76.34
-    },
-    {
-      "divisionCode": "IFD",
-      "publications": 1,
-      "percentagePublications": 0.19,
-      "downloads": 59,
-      "percentageDownloads": 0.01,
-      "LAC": 17,
-      "percentageLAC": 28.81
-    },
-    {
-      "divisionCode": "INE",
-      "publications": 17,
-      "percentagePublications": 3.24,
-      "downloads": 7666,
-      "percentageDownloads": 0.73,
-      "LAC": 4600,
-      "percentageLAC": 60.01
-    },
-    {
-      "divisionCode": "INL",
-      "publications": 14,
-      "percentagePublications": 2.67,
-      "downloads": 90165,
-      "percentageDownloads": 8.64,
-      "LAC": 81799,
-      "percentageLAC": 90.72
-    },
-    {
-      "divisionCode": "INT",
-      "publications": 28,
-      "percentagePublications": 5.33,
-      "downloads": 30203,
-      "percentageDownloads": 2.9,
-      "LAC": 16570,
-      "percentageLAC": 54.86
-    },
-    {
-      "divisionCode": "ITE",
-      "publications": 2,
-      "percentagePublications": 0.38,
-      "downloads": 7791,
-      "percentageDownloads": 0.75,
-      "LAC": 5768,
-      "percentageLAC": 74.03
-    },
-    {
-      "divisionCode": "KIC",
-      "publications": 4,
-      "percentagePublications": 0.76,
-      "downloads": 38505,
-      "percentageDownloads": 3.69,
-      "LAC": 5963,
-      "percentageLAC": 15.49
-    },
-    {
-      "divisionCode": "KNM",
-      "publications": 0,
-      "percentagePublications": 0,
-      "downloads": 0,
-      "percentageDownloads": 0,
-      "LAC": 0,
-      "percentageLAC": 0
-    },
-    {
-      "divisionCode": "LMK",
-      "publications": 14,
-      "percentagePublications": 2.67,
-      "downloads": 75788,
-      "percentageDownloads": 7.27,
-      "LAC": 65248,
-      "percentageLAC": 86.09
-    },
-    {
-      "divisionCode": "MICI",
-      "publications": 0,
-      "percentagePublications": 0,
-      "downloads": 0,
-      "percentageDownloads": 0,
-      "LAC": 0,
-      "percentageLAC": 0
-    },
-    {
-      "divisionCode": "MIF",
-      "publications": 13,
-      "percentagePublications": 2.48,
-      "downloads": 3929,
-      "percentageDownloads": 0.38,
-      "LAC": 1628,
-      "percentageLAC": 41.44
-    },
-    {
-      "divisionCode": "OII",
-      "publications": 0,
-      "percentagePublications": 0,
-      "downloads": 0,
-      "percentageDownloads": 0,
-      "LAC": 0,
-      "percentageLAC": 0
-    },
-    {
-      "divisionCode": "ORP",
-      "publications": 1,
-      "percentagePublications": 0.19,
-      "downloads": 2672,
-      "percentageDownloads": 0.26,
-      "LAC": 1618,
-      "percentageLAC": 60.55
-    },
-    {
-      "divisionCode": "OVE",
-      "publications": 30,
-      "percentagePublications": 5.71,
-      "downloads": 13879,
-      "percentageDownloads": 1.33,
-      "LAC": 9323,
-      "percentageLAC": 67.17
-    },
-    {
-      "divisionCode": "PCY",
-      "publications": 0,
-      "percentagePublications": 0,
-      "downloads": 0,
-      "percentageDownloads": 0,
-      "LAC": 0,
-      "percentageLAC": 0
-    },
-    {
-      "divisionCode": "PRE",
-      "publications": 0,
-      "percentagePublications": 0,
-      "downloads": 0,
-      "percentageDownloads": 0,
-      "LAC": 0,
-      "percentageLAC": 0
-    },
-    {
-      "divisionCode": "PRO",
-      "publications": 0,
-      "percentagePublications": 0,
-      "downloads": 0,
-      "percentageDownloads": 0,
-      "LAC": 0,
-      "percentageLAC": 0
-    },
-    {
-      "divisionCode": "RES",
-      "publications": 34,
-      "percentagePublications": 6.48,
-      "downloads": 79095,
-      "percentageDownloads": 7.58,
-      "LAC": 58999,
-      "percentageLAC": 74.59
-    },
-    {
-      "divisionCode": "RMG",
-      "publications": 0,
-      "percentagePublications": 0,
-      "downloads": 0,
-      "percentageDownloads": 0,
-      "LAC": 0,
-      "percentageLAC": 0
-    },
-    {
-      "divisionCode": "RND",
-      "publications": 25,
-      "percentagePublications": 4.76,
-      "downloads": 18675,
-      "percentageDownloads": 1.79,
-      "LAC": 14920,
-      "percentageLAC": 79.89
-    },
-    {
-      "divisionCode": "SCL",
-      "publications": 9,
-      "percentagePublications": 1.71,
-      "downloads": 48822,
-      "percentageDownloads": 4.68,
-      "LAC": 42244,
-      "percentageLAC": 86.53
-    },
-    {
-      "divisionCode": "SDI",
-      "publications": 0,
-      "percentagePublications": 0,
-      "downloads": 0,
-      "percentageDownloads": 0,
-      "LAC": 0,
-      "percentageLAC": 0
-    },
-    {
-      "divisionCode": "SDV",
-      "publications": 0,
-      "percentagePublications": 0,
-      "downloads": 0,
-      "percentageDownloads": 0,
-      "LAC": 0,
-      "percentageLAC": 0
-    },
-    {
-      "divisionCode": "SEC",
-      "publications": 0,
-      "percentagePublications": 0,
-      "downloads": 0,
-      "percentageDownloads": 0,
-      "LAC": 0,
-      "percentageLAC": 0
-    },
-    {
-      "divisionCode": "SMO",
-      "publications": 0,
-      "percentagePublications": 0,
-      "downloads": 0,
-      "percentageDownloads": 0,
-      "LAC": 0,
-      "percentageLAC": 0
-    },
-    {
-      "divisionCode": "SPD",
-      "publications": 29,
-      "percentagePublications": 5.52,
-      "downloads": 23325,
-      "percentageDownloads": 2.24,
-      "LAC": 13801,
-      "percentageLAC": 59.17
-    },
-    {
-      "divisionCode": "SPH",
-      "publications": 25,
-      "percentagePublications": 4.76,
-      "downloads": 63440,
-      "percentageDownloads": 6.08,
-      "LAC": 46082,
-      "percentageLAC": 72.64
-    },
-    {
-      "divisionCode": "Strategic Core",
-      "publications": 0,
-      "percentagePublications": 0,
-      "downloads": 0,
-      "percentageDownloads": 0,
-      "LAC": 0,
-      "percentageLAC": 0
-    },
-    {
-      "divisionCode": "TSP",
-      "publications": 16,
-      "percentagePublications": 3.05,
-      "downloads": 12584,
-      "percentageDownloads": 1.21,
-      "LAC": 9001,
-      "percentageLAC": 71.53
-    },
-    {
-      "divisionCode": "UCC",
-      "publications": 2,
-      "percentagePublications": 0.38,
-      "downloads": 28376,
-      "percentageDownloads": 2.72,
-      "LAC": 26879,
-      "percentageLAC": 94.72
-    },
-    {
-      "divisionCode": "VPC",
-      "publications": 4,
-      "percentagePublications": 0.76,
-      "downloads": 1274,
-      "percentageDownloads": 0.12,
-      "LAC": 769,
-      "percentageLAC": 60.36
-    },
-    {
-      "divisionCode": "VPS",
-      "publications": 9,
-      "percentagePublications": 1.71,
-      "downloads": 47489,
-      "percentageDownloads": 4.55,
-      "LAC": 38866,
-      "percentageLAC": 81.84
-    },
-    {
-      "divisionCode": "WSA",
-      "publications": 30,
-      "percentagePublications": 5.71,
-      "downloads": 60452,
-      "percentageDownloads": 5.8,
-      "LAC": 52771,
-      "percentageLAC": 87.29
-    }
+	{
+	  "divisionCode": "AUG",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "divisionCode": "BOG",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "divisionCode": "CAN",
+	  "publications": 14,
+	  "percentagePublications": 2.1,
+	  "downloads": 33883,
+	  "percentageDownloads": 3.4,
+	  "LAC": 26294,
+	  "percentageLAC": 77.6
+	},
+	{
+	  "divisionCode": "CAR",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "divisionCode": "CBH",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "divisionCode": "CBL",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "divisionCode": "CBO",
+	  "publications": 2,
+	  "percentagePublications": 0.3,
+	  "downloads": 522,
+	  "percentageDownloads": 0.1,
+	  "LAC": 247,
+	  "percentageLAC": 47.3
+	},
+	{
+	  "divisionCode": "CBR",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "divisionCode": "CCB",
+	  "publications": 29,
+	  "percentagePublications": 4.3,
+	  "downloads": 10229,
+	  "percentageDownloads": 1,
+	  "LAC": 4429,
+	  "percentageLAC": 43.3
+	},
+	{
+	  "divisionCode": "CCH",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "divisionCode": "CCO",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "divisionCode": "CCR",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "divisionCode": "CCS",
+	  "publications": 12,
+	  "percentagePublications": 1.8,
+	  "downloads": 23485,
+	  "percentageDownloads": 2.3,
+	  "LAC": 17260,
+	  "percentageLAC": 73.5
+	},
+	{
+	  "divisionCode": "CGY",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "divisionCode": "CHA",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "divisionCode": "CHO",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "divisionCode": "CID",
+	  "publications": 23,
+	  "percentagePublications": 3.4,
+	  "downloads": 17734,
+	  "percentageDownloads": 1.8,
+	  "LAC": 14030,
+	  "percentageLAC": 79.1
+	},
+	{
+	  "divisionCode": "CJA",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "divisionCode": "CME",
+	  "publications": 2,
+	  "percentagePublications": 0.3,
+	  "downloads": 193,
+	  "percentageDownloads": 0,
+	  "LAC": 130,
+	  "percentageLAC": 67.4
+	},
+	{
+	  "divisionCode": "CMF",
+	  "publications": 18,
+	  "percentagePublications": 2.7,
+	  "downloads": 28874,
+	  "percentageDownloads": 2.9,
+	  "LAC": 21918,
+	  "percentageLAC": 75.9
+	},
+	{
+	  "divisionCode": "CNI",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "divisionCode": "CPE",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "divisionCode": "CPR",
+	  "publications": 1,
+	  "percentagePublications": 0.1,
+	  "downloads": 139,
+	  "percentageDownloads": 0,
+	  "LAC": 51,
+	  "percentageLAC": 36.7
+	},
+	{
+	  "divisionCode": "CSC",
+	  "publications": 13,
+	  "percentagePublications": 1.9,
+	  "downloads": 2865,
+	  "percentageDownloads": 0.3,
+	  "LAC": 1308,
+	  "percentageLAC": 45.7
+	},
+	{
+	  "divisionCode": "CSD",
+	  "publications": 4,
+	  "percentagePublications": 0.6,
+	  "downloads": 17260,
+	  "percentageDownloads": 1.7,
+	  "LAC": 15079,
+	  "percentageLAC": 87.4
+	},
+	{
+	  "divisionCode": "CTI",
+	  "publications": 10,
+	  "percentagePublications": 1.5,
+	  "downloads": 7661,
+	  "percentageDownloads": 0.8,
+	  "LAC": 5614,
+	  "percentageLAC": 73.3
+	},
+	{
+	  "divisionCode": "CUR",
+	  "publications": 1,
+	  "percentagePublications": 0.1,
+	  "downloads": 140,
+	  "percentageDownloads": 0,
+	  "LAC": 109,
+	  "percentageLAC": 77.9
+	},
+	{
+	  "divisionCode": "DCC",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "divisionCode": "Discontinued Divisions",
+	  "publications": 15,
+	  "percentagePublications": 2.2,
+	  "downloads": 10407,
+	  "percentageDownloads": 1,
+	  "LAC": 7055,
+	  "percentageLAC": 67.8
+	},
+	{
+	  "divisionCode": "EDU",
+	  "publications": 31,
+	  "percentagePublications": 4.6,
+	  "downloads": 54578,
+	  "percentageDownloads": 5.4,
+	  "LAC": 49491,
+	  "percentageLAC": 90.7
+	},
+	{
+	  "divisionCode": "ENE",
+	  "publications": 8,
+	  "percentagePublications": 1.2,
+	  "downloads": 12578,
+	  "percentageDownloads": 1.3,
+	  "LAC": 11024,
+	  "percentageLAC": 87.6
+	},
+	{
+	  "divisionCode": "ESG",
+	  "publications": 8,
+	  "percentagePublications": 1.2,
+	  "downloads": 22306,
+	  "percentageDownloads": 2.2,
+	  "LAC": 19254,
+	  "percentageLAC": 86.3
+	},
+	{
+	  "divisionCode": "EUR",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "divisionCode": "FMM",
+	  "publications": 24,
+	  "percentagePublications": 3.6,
+	  "downloads": 29226,
+	  "percentageDownloads": 2.9,
+	  "LAC": 20004,
+	  "percentageLAC": 68.4
+	},
+	{
+	  "divisionCode": "FMP",
+	  "publications": 2,
+	  "percentagePublications": 0.3,
+	  "downloads": 227,
+	  "percentageDownloads": 0,
+	  "LAC": 78,
+	  "percentageLAC": 34.4
+	},
+	{
+	  "divisionCode": "GCM",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "divisionCode": "GDI",
+	  "publications": 5,
+	  "percentagePublications": 0.7,
+	  "downloads": 1325,
+	  "percentageDownloads": 0.1,
+	  "LAC": 579,
+	  "percentageLAC": 43.7
+	},
+	{
+	  "divisionCode": "HUD",
+	  "publications": 6,
+	  "percentagePublications": 0.9,
+	  "downloads": 11955,
+	  "percentageDownloads": 1.2,
+	  "LAC": 9803,
+	  "percentageLAC": 82
+	},
+	{
+	  "divisionCode": "ICD",
+	  "publications": 1,
+	  "percentagePublications": 0.1,
+	  "downloads": 4638,
+	  "percentageDownloads": 0.5,
+	  "LAC": 4181,
+	  "percentageLAC": 90.1
+	},
+	{
+	  "divisionCode": "ICS",
+	  "publications": 60,
+	  "percentagePublications": 9,
+	  "downloads": 88936,
+	  "percentageDownloads": 8.9,
+	  "LAC": 67502,
+	  "percentageLAC": 75.9
+	},
+	{
+	  "divisionCode": "IDB LAB",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "divisionCode": "IFD",
+	  "publications": 2,
+	  "percentagePublications": 0.3,
+	  "downloads": 69,
+	  "percentageDownloads": 0,
+	  "LAC": 19,
+	  "percentageLAC": 27.5
+	},
+	{
+	  "divisionCode": "INE",
+	  "publications": 21,
+	  "percentagePublications": 3.1,
+	  "downloads": 7915,
+	  "percentageDownloads": 0.8,
+	  "LAC": 4675,
+	  "percentageLAC": 59.1
+	},
+	{
+	  "divisionCode": "INL",
+	  "publications": 19,
+	  "percentagePublications": 2.8,
+	  "downloads": 90903,
+	  "percentageDownloads": 9.1,
+	  "LAC": 82257,
+	  "percentageLAC": 90.5
+	},
+	{
+	  "divisionCode": "INT",
+	  "publications": 28,
+	  "percentagePublications": 4.2,
+	  "downloads": 29507,
+	  "percentageDownloads": 2.9,
+	  "LAC": 16072,
+	  "percentageLAC": 54.5
+	},
+	{
+	  "divisionCode": "ITE",
+	  "publications": 2,
+	  "percentagePublications": 0.3,
+	  "downloads": 7900,
+	  "percentageDownloads": 0.8,
+	  "LAC": 5829,
+	  "percentageLAC": 73.8
+	},
+	{
+	  "divisionCode": "KIC",
+	  "publications": 4,
+	  "percentagePublications": 0.6,
+	  "downloads": 39350,
+	  "percentageDownloads": 3.9,
+	  "LAC": 6107,
+	  "percentageLAC": 15.5
+	},
+	{
+	  "divisionCode": "KLD",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "divisionCode": "LMK",
+	  "publications": 22,
+	  "percentagePublications": 3.3,
+	  "downloads": 81593,
+	  "percentageDownloads": 8.1,
+	  "LAC": 69915,
+	  "percentageLAC": 85.7
+	},
+	{
+	  "divisionCode": "MICI",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "divisionCode": "MIF",
+	  "publications": 21,
+	  "percentagePublications": 3.1,
+	  "downloads": 4192,
+	  "percentageDownloads": 0.4,
+	  "LAC": 1683,
+	  "percentageLAC": 40.1
+	},
+	{
+	  "divisionCode": "OII",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "divisionCode": "ORP",
+	  "publications": 1,
+	  "percentagePublications": 0.1,
+	  "downloads": 2700,
+	  "percentageDownloads": 0.3,
+	  "LAC": 1621,
+	  "percentageLAC": 60
+	},
+	{
+	  "divisionCode": "OVE",
+	  "publications": 30,
+	  "percentagePublications": 4.5,
+	  "downloads": 14228,
+	  "percentageDownloads": 1.4,
+	  "LAC": 9518,
+	  "percentageLAC": 66.9
+	},
+	{
+	  "divisionCode": "PRE",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "divisionCode": "PRO",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "divisionCode": "RES",
+	  "publications": 37,
+	  "percentagePublications": 5.5,
+	  "downloads": 80406,
+	  "percentageDownloads": 8,
+	  "LAC": 59892,
+	  "percentageLAC": 74.5
+	},
+	{
+	  "divisionCode": "RMG",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "divisionCode": "RND",
+	  "publications": 21,
+	  "percentagePublications": 3.1,
+	  "downloads": 3463,
+	  "percentageDownloads": 0.3,
+	  "LAC": 1665,
+	  "percentageLAC": 48.1
+	},
+	{
+	  "divisionCode": "SCL",
+	  "publications": 4,
+	  "percentagePublications": 0.6,
+	  "downloads": 49179,
+	  "percentageDownloads": 4.9,
+	  "LAC": 42888,
+	  "percentageLAC": 87.2
+	},
+	{
+	  "divisionCode": "SDV",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "divisionCode": "SEC",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "divisionCode": "SMO",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "divisionCode": "SPD",
+	  "publications": 25,
+	  "percentagePublications": 3.7,
+	  "downloads": 6427,
+	  "percentageDownloads": 0.6,
+	  "LAC": 2651,
+	  "percentageLAC": 41.2
+	},
+	{
+	  "divisionCode": "SPH",
+	  "publications": 26,
+	  "percentagePublications": 3.9,
+	  "downloads": 54323,
+	  "percentageDownloads": 5.4,
+	  "LAC": 41058,
+	  "percentageLAC": 75.6
+	},
+	{
+	  "divisionCode": "Strategic Core",
+	  "publications": 0,
+	  "percentagePublications": 0,
+	  "downloads": 0,
+	  "percentageDownloads": 0,
+	  "LAC": 0,
+	  "percentageLAC": 0
+	},
+	{
+	  "divisionCode": "TSP",
+	  "publications": 31,
+	  "percentagePublications": 4.6,
+	  "downloads": 11400,
+	  "percentageDownloads": 1.1,
+	  "LAC": 7941,
+	  "percentageLAC": 69.7
+	},
+	{
+	  "divisionCode": "UCC",
+	  "publications": 2,
+	  "percentagePublications": 0.3,
+	  "downloads": 28691,
+	  "percentageDownloads": 2.9,
+	  "LAC": 27166,
+	  "percentageLAC": 94.7
+	},
+	{
+	  "divisionCode": "VPC",
+	  "publications": 7,
+	  "percentagePublications": 1,
+	  "downloads": 1398,
+	  "percentageDownloads": 0.1,
+	  "LAC": 842,
+	  "percentageLAC": 60.2
+	},
+	{
+	  "divisionCode": "VPS",
+	  "publications": 9,
+	  "percentagePublications": 1.3,
+	  "downloads": 47598,
+	  "percentageDownloads": 4.7,
+	  "LAC": 39038,
+	  "percentageLAC": 82
+	},
+	{
+	  "divisionCode": "WSA",
+	  "publications": 34,
+	  "percentagePublications": 5.1,
+	  "downloads": 61232,
+	  "percentageDownloads": 6.1,
+	  "LAC": 53278,
+	  "percentageLAC": 87
+	}
   ],
-  indicatorsIDBAllTheTime: [{
-    "publications": 10226,
+  indicatorsIDBAllTheTime: [
+  {
+    "publications": 10462,
     "percentagePublications": 100,
-    "downloads": 13106769,
+    "downloads": 14066805,
     "percentageDownloads": 100,
-    "LAC": 8058432,
-    "percentageLAC": 61.5
+    "LAC": 8623067,
+    "percentageLAC": 61.3
   }],
   indicatorsIDB2018: [{
-    "publications": 525,
+    "publications": 629,
     "percentagePublications": 100,
-    "downloads": 1043000,
+    "downloads": 1003257,
     "percentageDownloads": 100,
-    "LAC": 798048,
-    "percentageLAC": 76.5
-  }]
+    "LAC": 770431,
+    "percentageLAC": 76.8
+  }
+  ]
 };

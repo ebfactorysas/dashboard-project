@@ -636,7 +636,7 @@ function tooltipStudentFlow(id, type) {
 
 function drawStudentRegistrationsChart(dataStudents) {
   d3.select("#student1 svg").remove();
-
+  
   var widthInherith = $("#student1").width()-50;
   var heightInherith = $("#student1").height();
   if (
@@ -728,10 +728,7 @@ function drawStudentRegistrationsChart(dataStudents) {
       return yStudent1(d.name) + 16 / 2;
     })
     .attr("x", function(d) {
-      if (d.value < 6) {
-        return xStudent1(d.value) + 6;
-      }
-      return xStudent1(d.value) - 6;
+        return 8;
     })
     .attr("class", "text-inside")
     .attr("font-family", "Gotham-Book")
@@ -850,11 +847,8 @@ function drawStudentParticipantsChart(dataStudents) {
     })
     //x position is 3 pixels to the right of the bar
     .attr("x", function(d) {
-      if (d.value < 6) {
-        return xStudent2(d.value) + 6;
-      }
-      return xStudent2(d.value) - 6;
-    })
+      return 8;
+  })
     .attr("class", "text-inside")
     .attr("font-family", "Gotham-Book")
     .attr("font-size", "8px")
@@ -971,11 +965,8 @@ function drawStudentCompletedsChart(dataStudents) {
     })
     //x position is 3 pixels to the right of the bar
     .attr("x", function(d) {
-      if (d.value < 6) {
-        return xStudent3(d.value) + 6;
-      }
-      return xStudent3(d.value) - 6;
-    })
+      return 8;
+  })
     .attr("class", "text-inside")
     .attr("font-family", "Gotham-Book")
     .attr("font-size", "8px")
@@ -1094,11 +1085,8 @@ function drawStudentCertifiedsChart(dataStudents) {
     })
     //x position is 3 pixels to the right of the bar
     .attr("x", function(d) {
-      if (d.value < 6) {
-        return xStudent4(d.value) + 6;
-      }
-      return xStudent4(d.value) - 6;
-    })
+      return 8;
+  })
     .attr("class", "text-inside")
     .attr("font-family", "Gotham-Book")
     .attr("font-size", "8px")

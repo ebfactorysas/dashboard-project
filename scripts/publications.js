@@ -67,12 +67,19 @@ function drawGaugePublicationChart(dataGauge) {
 function createLineChart(elements) {
 
     var parseTime = d3.timeParse("%m/%d/%Y");
-
+    var allSumOfValues = 0;
     elements.trend.forEach(function (item) {
         item.id = elements.name;
         item.dateAux = item.date;
         item.date = parseTime(item.date);
+        allSumOfValues += item.value;
     });
+    if(allSumOfValues==0){
+        elements.trend.forEach(function (item) {
+            item.value = 0.001;
+        });
+        
+    }
     var data = elements.trend;
     var attributes = [{
         "id": elements.name,
@@ -134,6 +141,13 @@ function createLineChart(elements) {
                 d3.selectAll("#lines-publications #d3plus_graph_xlabel").remove();
                 d3.selectAll("#lines-publications #d3plus_graph_ylabel").remove();
                 return d3plusOld.string.title(text, params);
+            },
+            "number": function(number,params){
+                var formatted = d3plusOld.number.format(number, params);
+                if(formatted==0.001){
+                    return 0;
+                }
+                return formatted; 
             }
 
         })
@@ -156,7 +170,7 @@ function drawLinesChartPublication(data) {
 
     if (data.length > 0) {
         data = data.sort(function (a, b) {
-            return d3.descending(a.value, b.value);
+            return d3.ascending(a.rank, b.rank);
         });
         data.forEach(function (element) {
             createLineChart($.extend(true, [], element));
