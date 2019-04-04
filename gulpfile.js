@@ -1,5 +1,9 @@
 // Include gulp
-var gulp = require('gulp');
+const {
+  series,
+  src,
+  dest
+} = require('gulp');
 
 // Include Our Plugins
 var jshint = require('gulp-jshint');
@@ -14,6 +18,9 @@ var cssmin = require('gulp-cssmin');
 var plumber = require('gulp-plumber');
 var autoprefixer = require('autoprefixer');
 var notify = require('gulp-notify');
+const hash = require('gulp-hash-filename');
+const htmlreplace = require('gulp-html-replace');
+var clean = require('gulp-clean');
 var scsslint = require('gulp-scss-lint');
 var scssLintStylish = require('gulp-scss-lint-stylish');
 var imagemin = require('gulp-imagemin');
@@ -27,10 +34,11 @@ var sass_config = {
   ]
 };
 // var ngTemplateStrings = require('gulp-ng-template-strings');
+var hashedJS = [];
 
 // Compile Our Sass
-gulp.task('sass', function () {
-  return gulp.src('sass/global.scss')
+function sass() {
+  return src('sass/global.scss')
     .pipe(sourcemaps.init())
     // Globbing all imported files with the path /**/*.scss from global.scss
     .pipe(sassGlob())
@@ -42,23 +50,48 @@ gulp.task('sass', function () {
       browsers: ['last 2 versions']
     })]))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('css'));
-});
+    .pipe(dest('css'));
+};
 
+function script() {
+  return src('./json/**/*.js')
+    .pipe(plumber({
+      errorHandler: notify.onError("Error: <%= error.message %>")
+    }))
+    .pipe(hash({
+      "format": "{name}-{hash}.{ctime}{ext}"
+    }))
+    .pipe(rename(function (path) {
+      console.log(path);
+      hashedJS.push(path.dirname +'/'+path.basename + '.js');
+      //console.log("hashedJS = " + hashedJS);
+    }))
+    .pipe(dest('./dist/js'));
+}
 
-gulp.task('watch', function(){
-  gulp.watch('sass/**/*.scss', gulp.parallel('sass'))
-  .on('change', function(path, stats) {
-      console.log('File ' + path + ' was changed');
-  })
-  .on('unlink', function(path, stats) {
-      console.log('File ' + path + ' was removed');
-  });
-});
+function html() {
+  return src('mockup.html')
+    .pipe(htmlreplace({
+      // 'css': {
+      //   src: hashedCSS,
+      //   tpl: '<link rel="stylesheet" href="vendor/public/css/%s">'
+      // },
+      'js': {
+        src: hashedJS,
+        tpl: '<script src="/sites/VPS/KIC/SiteAssets/mockUpDev/json/%s"></script>'
+      }
+    },
+  {
+    keepBlockTags: true,
+  }))
+    .pipe(rename('mockup.html'))
+    .pipe(dest('./'));
+};
 
-
-// Default Task
-gulp.task('default', gulp.series('sass','watch', function (done) {
-  // task code here
-  done();
-}));
+//Delete public folder
+function deletePublic(){
+  return src('dist', {allowEmpty:true})
+  .pipe(clean())
+}
+exports.default = series(deletePublic, script,html);
+exports.script = script;

@@ -33,9 +33,17 @@
     "gulp-scss-lint-stylish": "^1.0.1",
     "gulp-sourcemaps": "^2.6.0",
     "gulp-uglify": "^2.0.0",
+    "gulp-cachebust": "0.0.10",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-clean-dest": "^0.2.0",
+    "gulp-hash-filename": "^2.0.1",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-rev": "^9.0.0",
     "jshint": "^2.9.6",
     "jshint-stylish": "^2.2.1",
-    "yargs": "^11.1.0"
+    "yargs": "^11.1.0",
+    "browser-sync": "2.24.6"
   },
   "dependencies": {
     "gulp-cli": "^2.0.1",

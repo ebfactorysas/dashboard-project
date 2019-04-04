@@ -1,641 +1,1156 @@
 var moocsGenderArrays = {
-    genderDepartments: [{
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
-            "2018 registrations": "2599",
-            "% 2018 registrations": "0.288297282307266",
-            "Gender": "Female",
-            "xlsx_row_id": 2
+    genderDepartments: [
+        {
+            "code": "CCB",
+            "gender": "Female",
+            "all_registrations": 3400,
+            "all_population": 0.36,
+            "2018_registrations": 1454,
+            "2018_population": 0.32
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
-            "2018 registrations": "3114",
-            "% 2018 registrations": "0.345424292845258",
-            "Gender": "Male",
-            "xlsx_row_id": 3
+            "code": "CCB",
+            "gender": "Male",
+            "all_registrations": 4009,
+            "all_population": 0.42,
+            "2018_registrations": 1766,
+            "2018_population": 0.39
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
-            "2018 registrations": "3292",
-            "% 2018 registrations": "0.365169162506933",
-            "Gender": "Not Available",
-            "xlsx_row_id": 4
+            "code": "CCB",
+            "gender": "Not Available",
+            "all_registrations": 2038,
+            "all_population": 0.22,
+            "2018_registrations": 1265,
+            "2018_population": 0.28
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSC",
-            "2018 registrations": "10",
-            "% 2018 registrations": "0.00110926234054354",
-            "Gender": "Other",
-            "xlsx_row_id": 5
+            "code": "CCB",
+            "gender": "Other",
+            "all_registrations": 30,
+            "all_population": 0,
+            "2018_registrations": 10,
+            "2018_population": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
-            "2018 registrations": "2735",
-            "% 2018 registrations": "0.285044293903075",
-            "Gender": "Female",
-            "xlsx_row_id": 6
+            "code": "CID",
+            "gender": "Female",
+            "all_registrations": 4125,
+            "all_population": 0.3,
+            "2018_registrations": 0,
+            "2018_population": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
-            "2018 registrations": "4112",
-            "% 2018 registrations": "0.428556539864513",
-            "Gender": "Male",
-            "xlsx_row_id": 7
+            "code": "CID",
+            "gender": "Male",
+            "all_registrations": 8942,
+            "all_population": 0.64,
+            "2018_registrations": 0,
+            "2018_population": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
-            "2018 registrations": "2736",
-            "% 2018 registrations": "0.285148514851485",
-            "Gender": "Not Available",
-            "xlsx_row_id": 8
+            "code": "CID",
+            "gender": "Not Available",
+            "all_registrations": 855,
+            "all_population": 0.06,
+            "2018_registrations": 0,
+            "2018_population": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "CSD",
-            "2018 registrations": "12",
-            "% 2018 registrations": "0.00125065138092757",
-            "Gender": "Other",
-            "xlsx_row_id": 9
+            "code": "CID",
+            "gender": "Other",
+            "all_registrations": 14,
+            "all_population": 0,
+            "2018_registrations": 0,
+            "2018_population": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
-            "2018 registrations": "9318",
-            "% 2018 registrations": "0.288286615927232",
-            "Gender": "Female",
-            "xlsx_row_id": 10
+            "code": "CSC",
+            "gender": "Female",
+            "all_registrations": 11401,
+            "all_population": 0.35,
+            "2018_registrations": 2770,
+            "2018_population": 0.28
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
-            "2018 registrations": "14067",
-            "% 2018 registrations": "0.435214405049193",
-            "Gender": "Male",
-            "xlsx_row_id": 11
+            "code": "CSC",
+            "gender": "Male",
+            "all_registrations": 14520,
+            "all_population": 0.45,
+            "2018_registrations": 3430,
+            "2018_population": 0.35
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
-            "2018 registrations": "8883",
-            "% 2018 registrations": "0.274828290328569",
-            "Gender": "Not Available",
-            "xlsx_row_id": 12
+            "code": "CSC",
+            "gender": "Not Available",
+            "all_registrations": 6591,
+            "all_population": 0.2,
+            "2018_registrations": 3531,
+            "2018_population": 0.36
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "IFD",
-            "2018 registrations": "54",
-            "% 2018 registrations": "0.0016706886950065",
-            "Gender": "Other",
-            "xlsx_row_id": 13
+            "code": "CSC",
+            "gender": "Other",
+            "all_registrations": 60,
+            "all_population": 0,
+            "2018_registrations": 12,
+            "2018_population": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
-            "2018 registrations": "2904",
-            "% 2018 registrations": "0.286843145001976",
-            "Gender": "Female",
-            "xlsx_row_id": 14
+            "code": "CSD",
+            "gender": "Female",
+            "all_registrations": 68209,
+            "all_population": 0.44,
+            "2018_registrations": 2823,
+            "2018_population": 0.29
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
-            "2018 registrations": "4132",
-            "% 2018 registrations": "0.408139075464243",
-            "Gender": "Male",
-            "xlsx_row_id": 15
+            "code": "CSD",
+            "gender": "Male",
+            "all_registrations": 78016,
+            "all_population": 0.5,
+            "2018_registrations": 4223,
+            "2018_population": 0.43
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
-            "2018 registrations": "3079",
-            "% 2018 registrations": "0.304128802844725",
-            "Gender": "Not Available",
-            "xlsx_row_id": 16
+            "code": "CSD",
+            "gender": "Not Available",
+            "all_registrations": 8848,
+            "all_population": 0.06,
+            "2018_registrations": 2815,
+            "2018_population": 0.29
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "INE",
-            "2018 registrations": "9",
-            "% 2018 registrations": "0.000888976689055709",
-            "Gender": "Other",
-            "xlsx_row_id": 17
+            "code": "CSD",
+            "gender": null,
+            "all_registrations": 1,
+            "all_population": 0,
+            "2018_registrations": 0,
+            "2018_population": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "KNL",
-            "2018 registrations": "28922",
-            "% 2018 registrations": "0.298805686420365",
-            "Gender": "Female",
-            "xlsx_row_id": 18
+            "code": "CSD",
+            "gender": "Other",
+            "all_registrations": 324,
+            "all_population": 0,
+            "2018_registrations": 14,
+            "2018_population": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "KNL",
-            "2018 registrations": "38407",
-            "% 2018 registrations": "0.396799322258038",
-            "Gender": "Male",
-            "xlsx_row_id": 19
+            "code": "IFD",
+            "gender": "Female",
+            "all_registrations": 60334,
+            "all_population": 0.36,
+            "2018_registrations": 9975,
+            "2018_population": 0.29
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "KNL",
-            "2018 registrations": "29296",
-            "% 2018 registrations": "0.302669642119183",
-            "Gender": "Not Available",
-            "xlsx_row_id": 20
+            "code": "IFD",
+            "gender": "Male",
+            "all_registrations": 87911,
+            "all_population": 0.52,
+            "2018_registrations": 15035,
+            "2018_population": 0.43
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "KNL",
-            "2018 registrations": "167",
-            "% 2018 registrations": "0.00172534920241342",
-            "Gender": "Other",
-            "xlsx_row_id": 21
+            "code": "IFD",
+            "gender": "Not Available",
+            "all_registrations": 19747,
+            "all_population": 0.12,
+            "2018_registrations": 9656,
+            "2018_population": 0.28
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
-            "2018 registrations": "21269",
-            "% 2018 registrations": "0.417063748847971",
-            "Gender": "Female",
-            "xlsx_row_id": 22
+            "code": "IFD",
+            "gender": "Other",
+            "all_registrations": 303,
+            "all_population": 0,
+            "2018_registrations": 57,
+            "2018_population": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
-            "2018 registrations": "11603",
-            "% 2018 registrations": "0.227523187638489",
-            "Gender": "Male",
-            "xlsx_row_id": 23
+            "code": "INE",
+            "gender": "Female",
+            "all_registrations": 39925,
+            "all_population": 0.38,
+            "2018_registrations": 3063,
+            "2018_population": 0.29
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
-            "2018 registrations": "18018",
-            "% 2018 registrations": "0.353314900876522",
-            "Gender": "Not Available",
-            "xlsx_row_id": 24
+            "code": "INE",
+            "gender": "Male",
+            "all_registrations": 56181,
+            "all_population": 0.54,
+            "2018_registrations": 4368,
+            "2018_population": 0.41
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Department Codes": "SCL",
-            "2018 registrations": "107",
-            "% 2018 registrations": "0.00209816263701786",
-            "Gender": "Other",
-            "xlsx_row_id": 25
+            "code": "INE",
+            "gender": "Not Available",
+            "all_registrations": 7936,
+            "all_population": 0.08,
+            "2018_registrations": 3272,
+            "2018_population": 0.31
+        },
+        {
+            "code": "INE",
+            "gender": "Other",
+            "all_registrations": 163,
+            "all_population": 0,
+            "2018_registrations": 11,
+            "2018_population": 0
+        },
+        {
+            "code": "INT",
+            "gender": "Female",
+            "all_registrations": 20790,
+            "all_population": 0.39,
+            "2018_registrations": 7267,
+            "2018_population": 0.3
+        },
+        {
+            "code": "INT",
+            "gender": "Male",
+            "all_registrations": 24286,
+            "all_population": 0.45,
+            "2018_registrations": 9153,
+            "2018_population": 0.38
+        },
+        {
+            "code": "INT",
+            "gender": "Not Available",
+            "all_registrations": 8579,
+            "all_population": 0.16,
+            "2018_registrations": 7418,
+            "2018_population": 0.31
+        },
+        {
+            "code": "INT",
+            "gender": "Other",
+            "all_registrations": 106,
+            "all_population": 0,
+            "2018_registrations": 36,
+            "2018_population": 0
+        },
+        {
+            "code": "KIC",
+            "gender": "Female",
+            "all_registrations": 186409,
+            "all_population": 0.38,
+            "2018_registrations": 34836,
+            "2018_population": 0.3
+        },
+        {
+            "code": "KIC",
+            "gender": "Male",
+            "all_registrations": 232461,
+            "all_population": 0.48,
+            "2018_registrations": 44396,
+            "2018_population": 0.39
+        },
+        {
+            "code": "KIC",
+            "gender": "Not Available",
+            "all_registrations": 65924,
+            "all_population": 0.14,
+            "2018_registrations": 34915,
+            "2018_population": 0.31
+        },
+        {
+            "code": "KIC",
+            "gender": null,
+            "all_registrations": 4,
+            "all_population": 0,
+            "2018_registrations": 0,
+            "2018_population": 0
+        },
+        {
+            "code": "KIC",
+            "gender": "Other",
+            "all_registrations": 929,
+            "all_population": 0,
+            "2018_registrations": 205,
+            "2018_population": 0
+        },
+        {
+            "code": "MIF",
+            "gender": "Female",
+            "all_registrations": 17033,
+            "all_population": 0.38,
+            "2018_registrations": 0,
+            "2018_population": 0
+        },
+        {
+            "code": "MIF",
+            "gender": "Male",
+            "all_registrations": 25987,
+            "all_population": 0.58,
+            "2018_registrations": 0,
+            "2018_population": 0
+        },
+        {
+            "code": "MIF",
+            "gender": "Not Available",
+            "all_registrations": 1946,
+            "all_population": 0.04,
+            "2018_registrations": 0,
+            "2018_population": 0
+        },
+        {
+            "code": "MIF",
+            "gender": "Other",
+            "all_registrations": 62,
+            "all_population": 0,
+            "2018_registrations": 0,
+            "2018_population": 0
+        },
+        {
+            "code": "PRE",
+            "gender": "Female",
+            "all_registrations": 8068,
+            "all_population": 0.27,
+            "2018_registrations": 3305,
+            "2018_population": 0.26
+        },
+        {
+            "code": "PRE",
+            "gender": "Male",
+            "all_registrations": 15635,
+            "all_population": 0.52,
+            "2018_registrations": 5622,
+            "2018_population": 0.44
+        },
+        {
+            "code": "PRE",
+            "gender": "Not Available",
+            "all_registrations": 6472,
+            "all_population": 0.21,
+            "2018_registrations": 3815,
+            "2018_population": 0.3
+        },
+        {
+            "code": "PRE",
+            "gender": "Other",
+            "all_registrations": 63,
+            "all_population": 0,
+            "2018_registrations": 18,
+            "2018_population": 0
+        },
+        {
+            "code": "RES",
+            "gender": "Female",
+            "all_registrations": 20299,
+            "all_population": 0.39,
+            "2018_registrations": 4849,
+            "2018_population": 0.34
+        },
+        {
+            "code": "RES",
+            "gender": "Male",
+            "all_registrations": 25934,
+            "all_population": 0.49,
+            "2018_registrations": 5364,
+            "2018_population": 0.38
+        },
+        {
+            "code": "RES",
+            "gender": "Not Available",
+            "all_registrations": 6316,
+            "all_population": 0.12,
+            "2018_registrations": 3975,
+            "2018_population": 0.28
+        },
+        {
+            "code": "RES",
+            "gender": "Other",
+            "all_registrations": 123,
+            "all_population": 0,
+            "2018_registrations": 25,
+            "2018_population": 0
+        },
+        {
+            "code": "SCL",
+            "gender": "Female",
+            "all_registrations": 85781,
+            "all_population": 0.46,
+            "2018_registrations": 22067,
+            "2018_population": 0.42
+        },
+        {
+            "code": "SCL",
+            "gender": "Male",
+            "all_registrations": 72447,
+            "all_population": 0.39,
+            "2018_registrations": 12160,
+            "2018_population": 0.23
+        },
+        {
+            "code": "SCL",
+            "gender": "Not Available",
+            "all_registrations": 27469,
+            "all_population": 0.15,
+            "2018_registrations": 18638,
+            "2018_population": 0.35
+        },
+        {
+            "code": "SCL",
+            "gender": "Other",
+            "all_registrations": 394,
+            "all_population": 0,
+            "2018_registrations": 112,
+            "2018_population": 0
+        },
+        {
+            "code": "VPC",
+            "gender": "Female",
+            "all_registrations": 21975,
+            "all_population": 0.42,
+            "2018_registrations": 4486,
+            "2018_population": 0.36
+        },
+        {
+            "code": "VPC",
+            "gender": "Male",
+            "all_registrations": 18597,
+            "all_population": 0.36,
+            "2018_registrations": 3907,
+            "2018_population": 0.32
+        },
+        {
+            "code": "VPC",
+            "gender": "Not Available",
+            "all_registrations": 11136,
+            "all_population": 0.21,
+            "2018_registrations": 3886,
+            "2018_population": 0.32
+        },
+        {
+            "code": "VPC",
+            "gender": "Other",
+            "all_registrations": 149,
+            "all_population": 0,
+            "2018_registrations": 30,
+            "2018_population": 0
         }
     ],
-    genderDivisions: [{
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "2599",
-            "Division Codes": "CBD",
-            "% 2018 registrations": "0.288297282307266",
-            "Gender": "Female",
-            "xlsx_row_id": 2
+    genderDivisions: [
+        {
+            "code": "CBD",
+            "gender": "Female",
+            "all_registrations": 6859,
+            "all_population": 0.34,
+            "2018_registrations": 2770,
+            "2018_population": 0.28
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "3114",
-            "Division Codes": "CBD",
-            "% 2018 registrations": "0.345424292845258",
-            "Gender": "Male",
-            "xlsx_row_id": 3
+            "code": "CBD",
+            "gender": "Male",
+            "all_registrations": 7799,
+            "all_population": 0.39,
+            "2018_registrations": 3430,
+            "2018_population": 0.35
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "3292",
-            "Division Codes": "CBD",
-            "% 2018 registrations": "0.365169162506933",
-            "Gender": "Not Available",
-            "xlsx_row_id": 4
+            "code": "CBD",
+            "gender": "Not Available",
+            "all_registrations": 5491,
+            "all_population": 0.27,
+            "2018_registrations": 3531,
+            "2018_population": 0.36
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "10",
-            "Division Codes": "CBD",
-            "% 2018 registrations": "0.00110926234054354",
-            "Gender": "Other",
-            "xlsx_row_id": 5
+            "code": "CBD",
+            "gender": "Other",
+            "all_registrations": 41,
+            "all_population": 0,
+            "2018_registrations": 12,
+            "2018_population": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "8240",
-            "Division Codes": "EDU",
-            "% 2018 registrations": "0.378207187772525",
-            "Gender": "Female",
-            "xlsx_row_id": 6
+            "code": "CBR",
+            "gender": "Female",
+            "all_registrations": 4542,
+            "all_population": 0.37,
+            "2018_registrations": 0,
+            "2018_population": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "6294",
-            "Division Codes": "EDU",
-            "% 2018 registrations": "0.288887868912654",
-            "Gender": "Male",
-            "xlsx_row_id": 7
+            "code": "CBR",
+            "gender": "Male",
+            "all_registrations": 6721,
+            "all_population": 0.54,
+            "2018_registrations": 0,
+            "2018_population": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "7198",
-            "Division Codes": "EDU",
-            "% 2018 registrations": "0.3303805021343",
-            "Gender": "Not Available",
-            "xlsx_row_id": 8
+            "code": "CBR",
+            "gender": "Not Available",
+            "all_registrations": 1100,
+            "all_population": 0.09,
+            "2018_registrations": 0,
+            "2018_population": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "55",
-            "Division Codes": "EDU",
-            "% 2018 registrations": "0.00252444118052049",
-            "Gender": "Other",
-            "xlsx_row_id": 9
+            "code": "CBR",
+            "gender": "Other",
+            "all_registrations": 19,
+            "all_population": 0,
+            "2018_registrations": 0,
+            "2018_population": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "5393",
-            "Division Codes": "FHL",
-            "% 2018 registrations": "0.324371466377962",
-            "Gender": "Female",
-            "xlsx_row_id": 10
+            "code": "CCB",
+            "gender": "Female",
+            "all_registrations": 3400,
+            "all_population": 0.36,
+            "2018_registrations": 1454,
+            "2018_population": 0.32
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "7181",
-            "Division Codes": "FHL",
-            "% 2018 registrations": "0.431913869842416",
-            "Gender": "Male",
-            "xlsx_row_id": 11
+            "code": "CCB",
+            "gender": "Male",
+            "all_registrations": 4009,
+            "all_population": 0.42,
+            "2018_registrations": 1766,
+            "2018_population": 0.39
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "4025",
-            "Division Codes": "FHL",
-            "% 2018 registrations": "0.242090701311199",
-            "Gender": "Not Available",
-            "xlsx_row_id": 12
+            "code": "CCB",
+            "gender": "Not Available",
+            "all_registrations": 2038,
+            "all_population": 0.22,
+            "2018_registrations": 1265,
+            "2018_population": 0.28
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "27",
-            "Division Codes": "FHL",
-            "% 2018 registrations": "0.00162396246842295",
-            "Gender": "Other",
-            "xlsx_row_id": 13
+            "code": "CCB",
+            "gender": "Other",
+            "all_registrations": 30,
+            "all_population": 0,
+            "2018_registrations": 10,
+            "2018_population": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "3787",
-            "Division Codes": "FMM",
-            "% 2018 registrations": "0.29345215032933",
-            "Gender": "Female",
-            "xlsx_row_id": 14
+            "code": "CHA",
+            "gender": "Female",
+            "all_registrations": 4125,
+            "all_population": 0.3,
+            "2018_registrations": 0,
+            "2018_population": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "5427",
-            "Division Codes": "FMM",
-            "% 2018 registrations": "0.420534676481984",
-            "Gender": "Male",
-            "xlsx_row_id": 15
+            "code": "CHA",
+            "gender": "Male",
+            "all_registrations": 8942,
+            "all_population": 0.64,
+            "2018_registrations": 0,
+            "2018_population": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "3667",
-            "Division Codes": "FMM",
-            "% 2018 registrations": "0.284153428903526",
-            "Gender": "Not Available",
-            "xlsx_row_id": 16
+            "code": "CHA",
+            "gender": "Not Available",
+            "all_registrations": 855,
+            "all_population": 0.06,
+            "2018_registrations": 0,
+            "2018_population": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "24",
-            "Division Codes": "FMM",
-            "% 2018 registrations": "0.00185974428516079",
-            "Gender": "Other",
-            "xlsx_row_id": 17
+            "code": "CHA",
+            "gender": "Other",
+            "all_registrations": 14,
+            "all_population": 0,
+            "2018_registrations": 0,
+            "2018_population": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "2644",
-            "Division Codes": "ICS",
-            "% 2018 registrations": "0.319362241816645",
-            "Gender": "Female",
-            "xlsx_row_id": 18
+            "code": "EDU",
+            "gender": "Female",
+            "all_registrations": 18455,
+            "all_population": 0.42,
+            "2018_registrations": 8683,
+            "2018_population": 0.38
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "3650",
-            "Division Codes": "ICS",
-            "% 2018 registrations": "0.440874501751419",
-            "Gender": "Male",
-            "xlsx_row_id": 19
+            "code": "EDU",
+            "gender": "Male",
+            "all_registrations": 15328,
+            "all_population": 0.35,
+            "2018_registrations": 6651,
+            "2018_population": 0.29
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "1970",
-            "Division Codes": "ICS",
-            "% 2018 registrations": "0.23795144341104",
-            "Gender": "Not Available",
-            "xlsx_row_id": 20
+            "code": "EDU",
+            "gender": "Not Available",
+            "all_registrations": 9910,
+            "all_population": 0.23,
+            "2018_registrations": 7589,
+            "2018_population": 0.33
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "15",
-            "Division Codes": "ICS",
-            "% 2018 registrations": "0.00181181302089624",
-            "Gender": "Other",
-            "xlsx_row_id": 21
+            "code": "EDU",
+            "gender": "Other",
+            "all_registrations": 133,
+            "all_population": 0,
+            "2018_registrations": 60,
+            "2018_population": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "2887",
-            "Division Codes": "IFD",
-            "% 2018 registrations": "0.259202729394864",
-            "Gender": "Female",
-            "xlsx_row_id": 22
+            "code": "FMM",
+            "gender": "Female",
+            "all_registrations": 25586,
+            "all_population": 0.36,
+            "2018_registrations": 3872,
+            "2018_population": 0.29
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "4990",
-            "Division Codes": "IFD",
-            "% 2018 registrations": "0.448015801759741",
-            "Gender": "Male",
-            "xlsx_row_id": 23
+            "code": "FMM",
+            "gender": "Male",
+            "all_registrations": 38455,
+            "all_population": 0.54,
+            "2018_registrations": 5553,
+            "2018_population": 0.42
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "3246",
-            "Division Codes": "IFD",
-            "% 2018 registrations": "0.291434727958341",
-            "Gender": "Not Available",
-            "xlsx_row_id": 24
+            "code": "FMM",
+            "gender": "Not Available",
+            "all_registrations": 6930,
+            "all_population": 0.1,
+            "2018_registrations": 3770,
+            "2018_population": 0.29
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "15",
-            "Division Codes": "IFD",
-            "% 2018 registrations": "0.00134674088705333",
-            "Gender": "Other",
-            "xlsx_row_id": 25
+            "code": "FMM",
+            "gender": "Other",
+            "all_registrations": 106,
+            "all_population": 0,
+            "2018_registrations": 24,
+            "2018_population": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "2170",
-            "Division Codes": "KNM",
-            "% 2018 registrations": "0.406214900786222",
-            "Gender": "Female",
-            "xlsx_row_id": 26
+            "code": "HUD",
+            "gender": "Female",
+            "all_registrations": 55425,
+            "all_population": 0.46,
+            "2018_registrations": 0,
+            "2018_population": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "1718",
-            "Division Codes": "KNM",
-            "% 2018 registrations": "0.321602396106327",
-            "Gender": "Male",
-            "xlsx_row_id": 27
+            "code": "HUD",
+            "gender": "Male",
+            "all_registrations": 59028,
+            "all_population": 0.49,
+            "2018_registrations": 0,
+            "2018_population": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "1442",
-            "Division Codes": "KNM",
-            "% 2018 registrations": "0.269936353425683",
-            "Gender": "Not Available",
-            "xlsx_row_id": 28
+            "code": "HUD",
+            "gender": "Not Available",
+            "all_registrations": 4756,
+            "all_population": 0.04,
+            "2018_registrations": 0,
+            "2018_population": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "12",
-            "Division Codes": "KNM",
-            "% 2018 registrations": "0.00224634968176713",
-            "Gender": "Other",
-            "xlsx_row_id": 29
+            "code": "HUD",
+            "gender": null,
+            "all_registrations": 1,
+            "all_population": 0,
+            "2018_registrations": 0,
+            "2018_population": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "2170",
-            "Division Codes": "LMK",
-            "% 2018 registrations": "0.406214900786222",
-            "Gender": "Female",
-            "xlsx_row_id": 30
+            "code": "HUD",
+            "gender": "Other",
+            "all_registrations": 247,
+            "all_population": 0,
+            "2018_registrations": 0,
+            "2018_population": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "1718",
-            "Division Codes": "LMK",
-            "% 2018 registrations": "0.321602396106327",
-            "Gender": "Male",
-            "xlsx_row_id": 31
+            "code": "ICS",
+            "gender": "Female",
+            "all_registrations": 26680,
+            "all_population": 0.4,
+            "2018_registrations": 2798,
+            "2018_population": 0.32
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "1442",
-            "Division Codes": "LMK",
-            "% 2018 registrations": "0.269936353425683",
-            "Gender": "Not Available",
-            "xlsx_row_id": 32
+            "code": "ICS",
+            "gender": "Male",
+            "all_registrations": 33821,
+            "all_population": 0.5,
+            "2018_registrations": 3860,
+            "2018_population": 0.44
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "12",
-            "Division Codes": "LMK",
-            "% 2018 registrations": "0.00224634968176713",
-            "Gender": "Other",
-            "xlsx_row_id": 33
+            "code": "ICS",
+            "gender": "Not Available",
+            "all_registrations": 6345,
+            "all_population": 0.09,
+            "2018_registrations": 2071,
+            "2018_population": 0.24
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "2735",
-            "Division Codes": "RND",
-            "% 2018 registrations": "0.285044293903075",
-            "Gender": "Female",
-            "xlsx_row_id": 34
+            "code": "ICS",
+            "gender": "Other",
+            "all_registrations": 134,
+            "all_population": 0,
+            "2018_registrations": 15,
+            "2018_population": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "4112",
-            "Division Codes": "RND",
-            "% 2018 registrations": "0.428556539864513",
-            "Gender": "Male",
-            "xlsx_row_id": 35
+            "code": "IFD",
+            "gender": "Female",
+            "all_registrations": 8068,
+            "all_population": 0.27,
+            "2018_registrations": 3305,
+            "2018_population": 0.26
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "2736",
-            "Division Codes": "RND",
-            "% 2018 registrations": "0.285148514851485",
-            "Gender": "Not Available",
-            "xlsx_row_id": 36
+            "code": "IFD",
+            "gender": "Male",
+            "all_registrations": 15635,
+            "all_population": 0.52,
+            "2018_registrations": 5622,
+            "2018_population": 0.44
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "12",
-            "Division Codes": "RND",
-            "% 2018 registrations": "0.00125065138092757",
-            "Gender": "Other",
-            "xlsx_row_id": 37
+            "code": "IFD",
+            "gender": "Not Available",
+            "all_registrations": 6472,
+            "all_population": 0.21,
+            "2018_registrations": 3815,
+            "2018_population": 0.3
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "21359",
-            "Division Codes": "SDI",
-            "% 2018 registrations": "0.285456538009195",
-            "Gender": "Female",
-            "xlsx_row_id": 38
+            "code": "IFD",
+            "gender": "Other",
+            "all_registrations": 63,
+            "all_population": 0,
+            "2018_registrations": 18,
+            "2018_population": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "29508",
-            "Division Codes": "SDI",
-            "% 2018 registrations": "0.394365444242489",
-            "Gender": "Male",
-            "xlsx_row_id": 39
+            "code": "INE",
+            "gender": "Female",
+            "all_registrations": 21575,
+            "all_population": 0.38,
+            "2018_registrations": 0,
+            "2018_population": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "23829",
-            "Division Codes": "SDI",
-            "% 2018 registrations": "0.318467336683417",
-            "Gender": "Not Available",
-            "xlsx_row_id": 40
+            "code": "INE",
+            "gender": "Male",
+            "all_registrations": 32708,
+            "all_population": 0.57,
+            "2018_registrations": 0,
+            "2018_population": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "128",
-            "Division Codes": "SDI",
-            "% 2018 registrations": "0.00171068106489896",
-            "Gender": "Other",
-            "xlsx_row_id": 41
+            "code": "INE",
+            "gender": "Not Available",
+            "all_registrations": 3046,
+            "all_population": 0.05,
+            "2018_registrations": 0,
+            "2018_population": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "10859",
-            "Division Codes": "SPH",
-            "% 2018 registrations": "0.454960616725323",
-            "Gender": "Female",
-            "xlsx_row_id": 42
+            "code": "INE",
+            "gender": "Other",
+            "all_registrations": 81,
+            "all_population": 0,
+            "2018_registrations": 0,
+            "2018_population": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "3591",
-            "Division Codes": "SPH",
-            "% 2018 registrations": "0.150452488687783",
-            "Gender": "Male",
-            "xlsx_row_id": 43
+            "code": "INT",
+            "gender": "Female",
+            "all_registrations": 20790,
+            "all_population": 0.39,
+            "2018_registrations": 7267,
+            "2018_population": 0.3
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "9378",
-            "Division Codes": "SPH",
-            "% 2018 registrations": "0.392911010558069",
-            "Gender": "Not Available",
-            "xlsx_row_id": 44
+            "code": "INT",
+            "gender": "Male",
+            "all_registrations": 24286,
+            "all_population": 0.45,
+            "2018_registrations": 9153,
+            "2018_population": 0.38
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "40",
-            "Division Codes": "SPH",
-            "% 2018 registrations": "0.00167588402882521",
-            "Gender": "Other",
-            "xlsx_row_id": 45
+            "code": "INT",
+            "gender": "Not Available",
+            "all_registrations": 8579,
+            "all_population": 0.16,
+            "2018_registrations": 7418,
+            "2018_population": 0.31
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "1253",
-            "Division Codes": "TSP",
-            "% 2018 registrations": "0.243679502139245",
-            "Gender": "Female",
-            "xlsx_row_id": 46
+            "code": "INT",
+            "gender": "Other",
+            "all_registrations": 106,
+            "all_population": 0,
+            "2018_registrations": 36,
+            "2018_population": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "2294",
-            "Division Codes": "TSP",
-            "% 2018 registrations": "0.446129910540646",
-            "Gender": "Male",
-            "xlsx_row_id": 47
+            "code": "KLD",
+            "gender": "Female",
+            "all_registrations": 186409,
+            "all_population": 0.38,
+            "2018_registrations": 34836,
+            "2018_population": 0.3
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "1592",
-            "Division Codes": "TSP",
-            "% 2018 registrations": "0.309607156748347",
-            "Gender": "Not Available",
-            "xlsx_row_id": 48
+            "code": "KLD",
+            "gender": "Male",
+            "all_registrations": 232461,
+            "all_population": 0.48,
+            "2018_registrations": 44396,
+            "2018_population": 0.39
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "3",
-            "Division Codes": "TSP",
-            "% 2018 registrations": "0.00058343057176196",
-            "Gender": "Other",
-            "xlsx_row_id": 49
+            "code": "KLD",
+            "gender": "Not Available",
+            "all_registrations": 65924,
+            "all_population": 0.14,
+            "2018_registrations": 34915,
+            "2018_population": 0.31
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "1651",
-            "Division Codes": "WSA",
-            "% 2018 registrations": "0.331393014853473",
-            "Gender": "Female",
-            "xlsx_row_id": 50
+            "code": "KLD",
+            "gender": null,
+            "all_registrations": 4,
+            "all_population": 0,
+            "2018_registrations": 0,
+            "2018_population": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "1838",
-            "Division Codes": "WSA",
-            "% 2018 registrations": "0.368928141308711",
-            "Gender": "Male",
-            "xlsx_row_id": 51
+            "code": "KLD",
+            "gender": "Other",
+            "all_registrations": 929,
+            "all_population": 0,
+            "2018_registrations": 205,
+            "2018_population": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "1487",
-            "Division Codes": "WSA",
-            "% 2018 registrations": "0.298474508229627",
-            "Gender": "Not Available",
-            "xlsx_row_id": 52
+            "code": "LMK",
+            "gender": "Female",
+            "all_registrations": 10999,
+            "all_population": 0.43,
+            "2018_registrations": 2298,
+            "2018_population": 0.41
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "6",
-            "Division Codes": "WSA",
-            "% 2018 registrations": "0.00120433560818948",
-            "Gender": "Other",
-            "xlsx_row_id": 53
+            "code": "LMK",
+            "gender": "Male",
+            "all_registrations": 11514,
+            "all_population": 0.45,
+            "2018_registrations": 1800,
+            "2018_population": 0.32
+        },
+        {
+            "code": "LMK",
+            "gender": "Not Available",
+            "all_registrations": 3107,
+            "all_population": 0.12,
+            "2018_registrations": 1528,
+            "2018_population": 0.27
+        },
+        {
+            "code": "LMK",
+            "gender": "Other",
+            "all_registrations": 63,
+            "all_population": 0,
+            "2018_registrations": 12,
+            "2018_population": 0
+        },
+        {
+            "code": "MIF",
+            "gender": "Female",
+            "all_registrations": 17033,
+            "all_population": 0.38,
+            "2018_registrations": 0,
+            "2018_population": 0
+        },
+        {
+            "code": "MIF",
+            "gender": "Male",
+            "all_registrations": 25987,
+            "all_population": 0.58,
+            "2018_registrations": 0,
+            "2018_population": 0
+        },
+        {
+            "code": "MIF",
+            "gender": "Not Available",
+            "all_registrations": 1946,
+            "all_population": 0.04,
+            "2018_registrations": 0,
+            "2018_population": 0
+        },
+        {
+            "code": "MIF",
+            "gender": "Other",
+            "all_registrations": 62,
+            "all_population": 0,
+            "2018_registrations": 0,
+            "2018_population": 0
+        },
+        {
+            "code": "PCY",
+            "gender": "Female",
+            "all_registrations": 8068,
+            "all_population": 0.27,
+            "2018_registrations": 3305,
+            "2018_population": 0.26
+        },
+        {
+            "code": "PCY",
+            "gender": "Male",
+            "all_registrations": 15635,
+            "all_population": 0.52,
+            "2018_registrations": 5622,
+            "2018_population": 0.44
+        },
+        {
+            "code": "PCY",
+            "gender": "Not Available",
+            "all_registrations": 6472,
+            "all_population": 0.21,
+            "2018_registrations": 3815,
+            "2018_population": 0.3
+        },
+        {
+            "code": "PCY",
+            "gender": "Other",
+            "all_registrations": 63,
+            "all_population": 0,
+            "2018_registrations": 18,
+            "2018_population": 0
+        },
+        {
+            "code": "RES",
+            "gender": "Female",
+            "all_registrations": 20299,
+            "all_population": 0.39,
+            "2018_registrations": 4849,
+            "2018_population": 0.34
+        },
+        {
+            "code": "RES",
+            "gender": "Male",
+            "all_registrations": 25934,
+            "all_population": 0.49,
+            "2018_registrations": 5364,
+            "2018_population": 0.38
+        },
+        {
+            "code": "RES",
+            "gender": "Not Available",
+            "all_registrations": 6316,
+            "all_population": 0.12,
+            "2018_registrations": 3975,
+            "2018_population": 0.28
+        },
+        {
+            "code": "RES",
+            "gender": "Other",
+            "all_registrations": 123,
+            "all_population": 0,
+            "2018_registrations": 25,
+            "2018_population": 0
+        },
+        {
+            "code": "RND",
+            "gender": "Female",
+            "all_registrations": 12784,
+            "all_population": 0.36,
+            "2018_registrations": 2823,
+            "2018_population": 0.29
+        },
+        {
+            "code": "RND",
+            "gender": "Male",
+            "all_registrations": 18988,
+            "all_population": 0.53,
+            "2018_registrations": 4223,
+            "2018_population": 0.43
+        },
+        {
+            "code": "RND",
+            "gender": "Not Available",
+            "all_registrations": 4092,
+            "all_population": 0.11,
+            "2018_registrations": 2815,
+            "2018_population": 0.29
+        },
+        {
+            "code": "RND",
+            "gender": "Other",
+            "all_registrations": 77,
+            "all_population": 0,
+            "2018_registrations": 14,
+            "2018_population": 0
+        },
+        {
+            "code": "SPH",
+            "gender": "Female",
+            "all_registrations": 56327,
+            "all_population": 0.48,
+            "2018_registrations": 11086,
+            "2018_population": 0.46
+        },
+        {
+            "code": "SPH",
+            "gender": "Male",
+            "all_registrations": 45605,
+            "all_population": 0.39,
+            "2018_registrations": 3709,
+            "2018_population": 0.15
+        },
+        {
+            "code": "SPH",
+            "gender": "Not Available",
+            "all_registrations": 14452,
+            "all_population": 0.12,
+            "2018_registrations": 9521,
+            "2018_population": 0.39
+        },
+        {
+            "code": "SPH",
+            "gender": "Other",
+            "all_registrations": 198,
+            "all_population": 0,
+            "2018_registrations": 40,
+            "2018_population": 0
+        },
+        {
+            "code": "TSP",
+            "gender": "Female",
+            "all_registrations": 3527,
+            "all_population": 0.28,
+            "2018_registrations": 1329,
+            "2018_population": 0.24
+        },
+        {
+            "code": "TSP",
+            "gender": "Male",
+            "all_registrations": 6545,
+            "all_population": 0.53,
+            "2018_registrations": 2430,
+            "2018_population": 0.45
+        },
+        {
+            "code": "TSP",
+            "gender": "Not Available",
+            "all_registrations": 2342,
+            "all_population": 0.19,
+            "2018_registrations": 1691,
+            "2018_population": 0.31
+        },
+        {
+            "code": "TSP",
+            "gender": "Other",
+            "all_registrations": 17,
+            "all_population": 0,
+            "2018_registrations": 4,
+            "2018_population": 0
+        },
+        {
+            "code": "VPC",
+            "gender": "Female",
+            "all_registrations": 21975,
+            "all_population": 0.42,
+            "2018_registrations": 4486,
+            "2018_population": 0.36
+        },
+        {
+            "code": "VPC",
+            "gender": "Male",
+            "all_registrations": 18597,
+            "all_population": 0.36,
+            "2018_registrations": 3907,
+            "2018_population": 0.32
+        },
+        {
+            "code": "VPC",
+            "gender": "Not Available",
+            "all_registrations": 11136,
+            "all_population": 0.21,
+            "2018_registrations": 3886,
+            "2018_population": 0.32
+        },
+        {
+            "code": "VPC",
+            "gender": "Other",
+            "all_registrations": 149,
+            "all_population": 0,
+            "2018_registrations": 30,
+            "2018_population": 0
+        },
+        {
+            "code": "WSA",
+            "gender": "Female",
+            "all_registrations": 14823,
+            "all_population": 0.43,
+            "2018_registrations": 1734,
+            "2018_population": 0.33
+        },
+        {
+            "code": "WSA",
+            "gender": "Male",
+            "all_registrations": 16928,
+            "all_population": 0.49,
+            "2018_registrations": 1938,
+            "2018_population": 0.37
+        },
+        {
+            "code": "WSA",
+            "gender": "Not Available",
+            "all_registrations": 2548,
+            "all_population": 0.07,
+            "2018_registrations": 1581,
+            "2018_population": 0.3
+        },
+        {
+            "code": "WSA",
+            "gender": "Other",
+            "all_registrations": 65,
+            "all_population": 0,
+            "2018_registrations": 7,
+            "2018_population": 0
         }
     ],
-    genderIDB: [{
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "67747",
-            "% 2018 registrations": "0.324388900859489",
-            "Gender": "Female",
-            "xlsx_row_id": 2
+    genderIDB: [
+        {
+            "gender": "Female",
+            "all_registrations": 410599,
+            "all_population": 0.4,
+            "2018_registrations": 75688,
+            "2018_population": 0.32
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "75435",
-            "% 2018 registrations": "0.361200890612655",
-            "Gender": "Male",
-            "xlsx_row_id": 3
+            "gender": "Male",
+            "all_registrations": 485216,
+            "all_population": 0.47,
+            "2018_registrations": 87499,
+            "2018_population": 0.37
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "65304",
-            "% 2018 registrations": "0.312691230338289",
-            "Gender": "Not Available",
-            "xlsx_row_id": 4
+            "gender": "Not Available",
+            "all_registrations": 125933,
+            "all_population": 0.12,
+            "2018_registrations": 74577,
+            "2018_population": 0.31
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "2018 registrations": "359",
-            "% 2018 registrations": "0.00171897818956642",
-            "Gender": "Other",
-            "xlsx_row_id": 5
+            "gender": "Other",
+            "all_registrations": 2010,
+            "all_population": 0,
+            "2018_registrations": 412,
+            "2018_population": 0
         }
     ]
 };

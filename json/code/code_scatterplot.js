@@ -1,142 +1,162 @@
 var codeScatterploArrays = [
     {
-        "departmentCode": "IFD",
-        "pageviews": 3,
-        "Code": "AP-LATAM",
-        "daysPublished": 119,
-        "publishedDate": "07-23-2018"
+      "departmentCode": "IFD",
+      "divisionCode": "FMM",
+      "Code": "AP-LATAM",
+      "daysPublished": 139,
+      "pageviews": 393,
+      "pageviewsperday": 2.81
     },
     {
-        "departmentCode": "IFD",
-        "pageviews": 4.33898305084746,
-        "Code": "Massive change detection",
-        "daysPublished": 117,
-        "publishedDate": "07-25-2018"
+      "departmentCode": "IFD",
+      "divisionCode": "FMM",
+      "Code": "Massive change detection",
+      "daysPublished": 137,
+      "pageviews": 547,
+      "pageviewsperday": 3.96
     },
     {
-        "departmentCode": "IFD",
-        "pageviews": 1.84782608695652,
-        "Code": "SIMPLE-LAT",
-        "daysPublished": 597,
-        "publishedDate": "04-01-2017"
+      "departmentCode": "IFD",
+      "divisionCode": "ICS",
+      "Code": "SIMPLE-LAT",
+      "daysPublished": 617,
+      "pageviews": 1141,
+      "pageviewsperday": 1.85
     },
     {
-        "departmentCode": "INE",
-        "pageviews": 6.17702448210923,
-        "Code": "Evaluación de Reciclaje Inclusivo",
-        "daysPublished": 530,
-        "publishedDate": "06-07-2017"
+      "departmentCode": "INE",
+      "divisionCode": "WSA",
+      "Code": "Evaluación de Reciclaje Inclusivo",
+      "daysPublished": 550,
+      "pageviews": 3388,
+      "pageviewsperday": 6.15
     },
     {
-        "departmentCode": "INE",
-        "pageviews": 7.74496644295302,
-        "Code": "Hydro-BID",
-        "daysPublished": 595,
-        "publishedDate": "04-03-2017"
+      "departmentCode": "INE",
+      "divisionCode": "WSA",
+      "Code": "Hydro-BID",
+      "daysPublished": 615,
+      "pageviews": 4710,
+      "pageviewsperday": 7.65
     },
     {
-        "departmentCode": "KIC",
-        "pageviews": 1.56025369978858,
-        "Code": "AEDES Detector",
-        "daysPublished": 472,
-        "publishedDate": "08-04-2017"
+      "departmentCode": "KIC",
+      "divisionCode": "ISU",
+      "Code": "R Library Numbers for Development",
+      "daysPublished": 613,
+      "pageviews": 912,
+      "pageviewsperday": 1.49
     },
     {
-        "departmentCode": "KIC",
-        "pageviews": 7.78857142857143,
-        "Code": "Consul",
-        "daysPublished": 349,
-        "publishedDate": "12-05-2017"
+      "departmentCode": "KIC",
+      "divisionCode": "KIC",
+      "Code": "IDBx Data Engine",
+      "daysPublished": 612,
+      "pageviews": 860,
+      "pageviewsperday": 1.4
     },
     {
-        "departmentCode": "KIC",
-        "pageviews": 1.82084690553746,
-        "Code": "Gmapsdistance",
-        "daysPublished": 306,
-        "publishedDate": "01-17-2018"
+      "departmentCode": "KIC",
+      "divisionCode": "KLD",
+      "Code": "AEDES Detector",
+      "daysPublished": 492,
+      "pageviews": 758,
+      "pageviewsperday": 1.54
     },
     {
-        "departmentCode": "KIC",
-        "pageviews": 4.3475935828877,
-        "Code": "Gobierto",
-        "daysPublished": 186,
-        "publishedDate": "05-17-2018"
+      "departmentCode": "KIC",
+      "divisionCode": "KLD",
+      "Code": "Consul",
+      "daysPublished": 369,
+      "pageviews": 2762,
+      "pageviewsperday": 7.46
     },
     {
-        "departmentCode": "KIC",
-        "pageviews": 1.41315345699831,
-        "Code": "IDBx Data Engine",
-        "daysPublished": 592,
-        "publishedDate": "04-06-2017"
+      "departmentCode": "KIC",
+      "divisionCode": "KLD",
+      "Code": "Gmapsdistance",
+      "daysPublished": 326,
+      "pageviews": 616,
+      "pageviewsperday": 1.88
     },
     {
-        "departmentCode": "KIC",
-        "pageviews": 10.38,
-        "Code": "MapMap",
-        "daysPublished": 349,
-        "publishedDate": "12-05-2017"
+      "departmentCode": "KIC",
+      "divisionCode": "KLD",
+      "Code": "Gobierto",
+      "daysPublished": 206,
+      "pageviews": 853,
+      "pageviewsperday": 4.12
     },
     {
-        "departmentCode": "KIC",
-        "pageviews": 0.727272727272727,
-        "Code": "Pydatajson",
-        "daysPublished": 472,
-        "publishedDate": "08-04-2017"
+      "departmentCode": "KIC",
+      "divisionCode": "KLD",
+      "Code": "MapMap",
+      "daysPublished": 369,
+      "pageviews": 3772,
+      "pageviewsperday": 10.19
     },
     {
-        "departmentCode": "KIC",
-        "pageviews": 1.47306397306397,
-        "Code": "R Library Numbers for Development",
-        "daysPublished": 593,
-        "publishedDate": "04-05-2017"
+      "departmentCode": "KIC",
+      "divisionCode": "KLD",
+      "Code": "Pydatajson",
+      "daysPublished": 492,
+      "pageviews": 362,
+      "pageviewsperday": 0.73
     },
     {
-        "departmentCode": "KIC",
-        "pageviews": 1.80882352941176,
-        "Code": "Tabula",
-        "daysPublished": 475,
-        "publishedDate": "08-01-2017"
+      "departmentCode": "KIC",
+      "divisionCode": "KLD",
+      "Code": "Tabula",
+      "daysPublished": 495,
+      "pageviews": 895,
+      "pageviewsperday": 1.8
     },
     {
-        "departmentCode": "KIC",
-        "pageviews": 1.25369978858351,
-        "Code": "Textar",
-        "daysPublished": 472,
-        "publishedDate": "08-04-2017"
+      "departmentCode": "KIC",
+      "divisionCode": "KLD",
+      "Code": "Textar",
+      "daysPublished": 492,
+      "pageviews": 631,
+      "pageviewsperday": 1.28
     },
     {
-        "departmentCode": "KIC",
-        "pageviews": 1.97428571428571,
-        "Code": "Vota Inteligente",
-        "daysPublished": 349,
-        "publishedDate": "12-05-2017"
+      "departmentCode": "KIC",
+      "divisionCode": "KLD",
+      "Code": "Vota Inteligente",
+      "daysPublished": 369,
+      "pageviews": 725,
+      "pageviewsperday": 1.96
     },
     {
-        "departmentCode": "MIF",
-        "pageviews": 1.77234401349073,
-        "Code": "Nexso",
-        "daysPublished": 592,
-        "publishedDate": "04-06-2017"
+      "departmentCode": "MIF",
+      "divisionCode": "MIF",
+      "Code": "Nexso",
+      "daysPublished": 612,
+      "pageviews": 1099,
+      "pageviewsperday": 1.79
     },
     {
-        "departmentCode": "MIF",
-        "pageviews": 1.88870151770658,
-        "Code": "SmartMap",
-        "daysPublished": 592,
-        "publishedDate": "04-06-2017"
+      "departmentCode": "MIF",
+      "divisionCode": "MIF",
+      "Code": "SmartMap",
+      "daysPublished": 612,
+      "pageviews": 1148,
+      "pageviewsperday": 1.87
     },
     {
-        "departmentCode": "SCL",
-        "pageviews": 2.45806451612903,
-        "Code": "Clasificador de Datos Atípicos",
-        "daysPublished": 154,
-        "publishedDate": "06-18-2018"
+      "departmentCode": "SCL",
+      "divisionCode": "SPH",
+      "Code": "Clasificador de Datos Atípicos",
+      "daysPublished": 174,
+      "pageviews": 459,
+      "pageviewsperday": 2.62
     },
     {
-        "departmentCode": "SPD",
-        "pageviews": 10.4327956989247,
-        "Code": "Indicator aggregator",
-        "daysPublished": 371,
-        "publishedDate": "11-13-2017"
+      "departmentCode": "SPD",
+      "divisionCode": "SPD",
+      "Code": "Indicator aggregator",
+      "daysPublished": 391,
+      "pageviews": 3938,
+      "pageviewsperday": 10.05
     }
-];
+  ]
