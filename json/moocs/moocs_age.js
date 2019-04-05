@@ -3,43 +3,43 @@ var moocsAgeArrays = {
       {
         "departmentCode": "CCB",
         "name": "<18",
-        "value": 56,
-        "percentage": "0.59%",
+        "value": 63,
+        "percentage": "0.61%",
         "id": 1
       },
       {
         "departmentCode": "CCB",
         "name": "18 - 25",
-        "value": 1252,
-        "percentage": "13.21%",
+        "value": 1377,
+        "percentage": "13.32%",
         "id": 2
       },
       {
         "departmentCode": "CCB",
         "name": "26 - 39",
-        "value": 3834,
-        "percentage": "40.46%",
+        "value": 4168,
+        "percentage": "40.32%",
         "id": 3
       },
       {
         "departmentCode": "CCB",
         "name": "40 - 62",
-        "value": 1898,
-        "percentage": "20.03%",
+        "value": 2016,
+        "percentage": "19.50%",
         "id": 4
       },
       {
         "departmentCode": "CCB",
         "name": ">63",
-        "value": 109,
-        "percentage": "1.15%",
+        "value": 114,
+        "percentage": "1.10%",
         "id": 5
       },
       {
         "departmentCode": "CCB",
         "name": "Not Reported",
-        "value": 2328,
-        "percentage": "24.56%",
+        "value": 2600,
+        "percentage": "25.15%",
         "id": 6
       },
       {
@@ -59,15 +59,15 @@ var moocsAgeArrays = {
       {
         "departmentCode": "CID",
         "name": "26 - 39",
-        "value": 8428,
+        "value": 8429,
         "percentage": "60.48%",
         "id": 9
       },
       {
         "departmentCode": "CID",
         "name": "40 - 62",
-        "value": 3119,
-        "percentage": "22.38%",
+        "value": 3120,
+        "percentage": "22.39%",
         "id": 10
       },
       {
@@ -80,260 +80,260 @@ var moocsAgeArrays = {
       {
         "departmentCode": "CID",
         "name": "Not Reported",
-        "value": 1072,
-        "percentage": "7.69%",
+        "value": 1070,
+        "percentage": "7.68%",
         "id": 12
       },
       {
         "departmentCode": "CSC",
         "name": "<18",
-        "value": 234,
-        "percentage": "0.72%",
+        "value": 246,
+        "percentage": "0.75%",
         "id": 13
       },
       {
         "departmentCode": "CSC",
         "name": "18 - 25",
-        "value": 2817,
-        "percentage": "8.65%",
+        "value": 2879,
+        "percentage": "8.73%",
         "id": 14
       },
       {
         "departmentCode": "CSC",
         "name": "26 - 39",
-        "value": 12624,
-        "percentage": "38.76%",
+        "value": 12740,
+        "percentage": "38.65%",
         "id": 15
       },
       {
         "departmentCode": "CSC",
         "name": "40 - 62",
-        "value": 9421,
-        "percentage": "28.92%",
+        "value": 9484,
+        "percentage": "28.77%",
         "id": 16
       },
       {
         "departmentCode": "CSC",
         "name": ">63",
-        "value": 388,
-        "percentage": "1.19%",
+        "value": 390,
+        "percentage": "1.18%",
         "id": 17
       },
       {
         "departmentCode": "CSC",
         "name": "Not Reported",
-        "value": 7088,
-        "percentage": "21.76%",
+        "value": 7221,
+        "percentage": "21.91%",
         "id": 18
       },
       {
         "departmentCode": "CSD",
         "name": "<18",
-        "value": 304,
+        "value": 313,
         "percentage": "0.20%",
         "id": 19
       },
       {
         "departmentCode": "CSD",
         "name": "18 - 25",
-        "value": 17441,
-        "percentage": "11.22%",
+        "value": 17538,
+        "percentage": "11.25%",
         "id": 20
       },
       {
         "departmentCode": "CSD",
         "name": "26 - 39",
-        "value": 82404,
-        "percentage": "53.03%",
+        "value": 82559,
+        "percentage": "52.97%",
         "id": 21
       },
       {
         "departmentCode": "CSD",
         "name": "40 - 62",
-        "value": 42015,
-        "percentage": "27.04%",
+        "value": 42066,
+        "percentage": "26.99%",
         "id": 22
       },
       {
         "departmentCode": "CSD",
         "name": ">63",
-        "value": 2650,
-        "percentage": "1.71%",
+        "value": 2653,
+        "percentage": "1.70%",
         "id": 23
       },
       {
         "departmentCode": "CSD",
         "name": "Not Reported",
-        "value": 10584,
-        "percentage": "6.81%",
+        "value": 10744,
+        "percentage": "6.89%",
         "id": 24
       },
       {
         "departmentCode": "IFD",
         "name": "<18",
-        "value": 525,
-        "percentage": "0.31%",
+        "value": 620,
+        "percentage": "0.33%",
         "id": 25
       },
       {
         "departmentCode": "IFD",
         "name": "18 - 25",
-        "value": 13031,
-        "percentage": "7.74%",
+        "value": 14617,
+        "percentage": "7.86%",
         "id": 26
       },
       {
         "departmentCode": "IFD",
         "name": "26 - 39",
-        "value": 75628,
-        "percentage": "44.94%",
+        "value": 81420,
+        "percentage": "43.79%",
         "id": 27
       },
       {
         "departmentCode": "IFD",
         "name": "40 - 62",
-        "value": 54137,
-        "percentage": "32.17%",
+        "value": 58029,
+        "percentage": "31.21%",
         "id": 28
       },
       {
         "departmentCode": "IFD",
         "name": ">63",
-        "value": 2820,
-        "percentage": "1.68%",
+        "value": 2987,
+        "percentage": "1.61%",
         "id": 29
       },
       {
         "departmentCode": "IFD",
         "name": "Not Reported",
-        "value": 22154,
-        "percentage": "13.16%",
+        "value": 28256,
+        "percentage": "15.20%",
         "id": 30
       },
       {
         "departmentCode": "INE",
         "name": "<18",
-        "value": 342,
-        "percentage": "0.33%",
+        "value": 390,
+        "percentage": "0.36%",
         "id": 31
       },
       {
         "departmentCode": "INE",
         "name": "18 - 25",
-        "value": 10243,
-        "percentage": "9.83%",
+        "value": 10782,
+        "percentage": "9.84%",
         "id": 32
       },
       {
         "departmentCode": "INE",
         "name": "26 - 39",
-        "value": 49210,
-        "percentage": "47.22%",
+        "value": 50849,
+        "percentage": "46.39%",
         "id": 33
       },
       {
         "departmentCode": "INE",
         "name": "40 - 62",
-        "value": 33037,
-        "percentage": "31.70%",
+        "value": 34152,
+        "percentage": "31.15%",
         "id": 34
       },
       {
         "departmentCode": "INE",
         "name": ">63",
-        "value": 2034,
-        "percentage": "1.95%",
+        "value": 2089,
+        "percentage": "1.91%",
         "id": 35
       },
       {
         "departmentCode": "INE",
         "name": "Not Reported",
-        "value": 9339,
-        "percentage": "8.96%",
+        "value": 11360,
+        "percentage": "10.36%",
         "id": 36
       },
       {
         "departmentCode": "INT",
         "name": "<18",
-        "value": 180,
-        "percentage": "0.33%",
+        "value": 183,
+        "percentage": "0.34%",
         "id": 37
       },
       {
         "departmentCode": "INT",
         "name": "18 - 25",
-        "value": 8788,
-        "percentage": "16.35%",
+        "value": 8840,
+        "percentage": "16.39%",
         "id": 38
       },
       {
         "departmentCode": "INT",
         "name": "26 - 39",
-        "value": 22341,
-        "percentage": "41.56%",
+        "value": 22400,
+        "percentage": "41.54%",
         "id": 39
       },
       {
         "departmentCode": "INT",
         "name": "40 - 62",
-        "value": 12231,
-        "percentage": "22.75%",
+        "value": 12247,
+        "percentage": "22.71%",
         "id": 40
       },
       {
         "departmentCode": "INT",
         "name": ">63",
-        "value": 919,
+        "value": 920,
         "percentage": "1.71%",
         "id": 41
       },
       {
         "departmentCode": "INT",
         "name": "Not Reported",
-        "value": 9302,
-        "percentage": "17.30%",
+        "value": 9336,
+        "percentage": "17.31%",
         "id": 42
       },
       {
         "departmentCode": "KIC",
         "name": "<18",
-        "value": 1355,
-        "percentage": "0.28%",
+        "value": 1462,
+        "percentage": "0.29%",
         "id": 43
       },
       {
         "departmentCode": "KIC",
         "name": "18 - 25",
-        "value": 47035,
-        "percentage": "9.68%",
+        "value": 49051,
+        "percentage": "9.72%",
         "id": 44
       },
       {
         "departmentCode": "KIC",
         "name": "26 - 39",
-        "value": 228555,
-        "percentage": "47.05%",
+        "value": 235230,
+        "percentage": "46.63%",
         "id": 45
       },
       {
         "departmentCode": "KIC",
         "name": "40 - 62",
-        "value": 128120,
-        "percentage": "26.38%",
+        "value": 131674,
+        "percentage": "26.10%",
         "id": 46
       },
       {
         "departmentCode": "KIC",
         "name": ">63",
-        "value": 5831,
-        "percentage": "1.20%",
+        "value": 5971,
+        "percentage": "1.18%",
         "id": 47
       },
       {
         "departmentCode": "KIC",
         "name": "Not Reported",
-        "value": 74831,
-        "percentage": "15.41%",
+        "value": 81097,
+        "percentage": "16.08%",
         "id": 48
       },
       {
@@ -353,14 +353,14 @@ var moocsAgeArrays = {
       {
         "departmentCode": "MIF",
         "name": "26 - 39",
-        "value": 22557,
+        "value": 22560,
         "percentage": "50.10%",
         "id": 51
       },
       {
         "departmentCode": "MIF",
         "name": "40 - 62",
-        "value": 16372,
+        "value": 16374,
         "percentage": "36.36%",
         "id": 52
       },
@@ -374,176 +374,176 @@ var moocsAgeArrays = {
       {
         "departmentCode": "MIF",
         "name": "Not Reported",
-        "value": 2462,
-        "percentage": "5.47%",
+        "value": 2458,
+        "percentage": "5.46%",
         "id": 54
       },
       {
         "departmentCode": "PRE",
         "name": "<18",
-        "value": 244,
-        "percentage": "0.81%",
+        "value": 281,
+        "percentage": "0.83%",
         "id": 55
       },
       {
         "departmentCode": "PRE",
         "name": "18 - 25",
-        "value": 3234,
-        "percentage": "10.70%",
+        "value": 3607,
+        "percentage": "10.62%",
         "id": 56
       },
       {
         "departmentCode": "PRE",
         "name": "26 - 39",
-        "value": 10602,
-        "percentage": "35.06%",
+        "value": 11705,
+        "percentage": "34.47%",
         "id": 57
       },
       {
         "departmentCode": "PRE",
         "name": "40 - 62",
-        "value": 8455,
-        "percentage": "27.96%",
+        "value": 9307,
+        "percentage": "27.40%",
         "id": 58
       },
       {
         "departmentCode": "PRE",
         "name": ">63",
-        "value": 493,
-        "percentage": "1.63%",
+        "value": 537,
+        "percentage": "1.58%",
         "id": 59
       },
       {
         "departmentCode": "PRE",
         "name": "Not Reported",
-        "value": 7210,
-        "percentage": "23.84%",
+        "value": 8524,
+        "percentage": "25.10%",
         "id": 60
       },
       {
         "departmentCode": "RES",
         "name": "<18",
-        "value": 385,
-        "percentage": "0.73%",
+        "value": 433,
+        "percentage": "0.77%",
         "id": 61
       },
       {
         "departmentCode": "RES",
         "name": "18 - 25",
-        "value": 9213,
-        "percentage": "17.49%",
+        "value": 9602,
+        "percentage": "17.18%",
         "id": 62
       },
       {
         "departmentCode": "RES",
         "name": "26 - 39",
-        "value": 23916,
-        "percentage": "45.41%",
+        "value": 24971,
+        "percentage": "44.68%",
         "id": 63
       },
       {
         "departmentCode": "RES",
         "name": "40 - 62",
-        "value": 11371,
-        "percentage": "21.59%",
+        "value": 12129,
+        "percentage": "21.70%",
         "id": 64
       },
       {
         "departmentCode": "RES",
         "name": ">63",
-        "value": 806,
-        "percentage": "1.53%",
+        "value": 862,
+        "percentage": "1.54%",
         "id": 65
       },
       {
         "departmentCode": "RES",
         "name": "Not Reported",
-        "value": 6981,
-        "percentage": "13.25%",
+        "value": 7894,
+        "percentage": "14.12%",
         "id": 66
       },
       {
         "departmentCode": "SCL",
         "name": "<18",
-        "value": 926,
-        "percentage": "0.50%",
+        "value": 1132,
+        "percentage": "0.53%",
         "id": 67
       },
       {
         "departmentCode": "SCL",
         "name": "18 - 25",
-        "value": 17739,
-        "percentage": "9.53%",
+        "value": 20326,
+        "percentage": "9.56%",
         "id": 68
       },
       {
         "departmentCode": "SCL",
         "name": "26 - 39",
-        "value": 80214,
-        "percentage": "43.10%",
+        "value": 88651,
+        "percentage": "41.68%",
         "id": 69
       },
       {
         "departmentCode": "SCL",
         "name": "40 - 62",
-        "value": 53375,
-        "percentage": "28.68%",
+        "value": 59529,
+        "percentage": "27.99%",
         "id": 70
       },
       {
         "departmentCode": "SCL",
         "name": ">63",
-        "value": 2997,
-        "percentage": "1.61%",
+        "value": 3361,
+        "percentage": "1.58%",
         "id": 71
       },
       {
         "departmentCode": "SCL",
         "name": "Not Reported",
-        "value": 30840,
-        "percentage": "16.57%",
+        "value": 39691,
+        "percentage": "18.66%",
         "id": 72
       },
       {
         "departmentCode": "VPC",
         "name": "<18",
-        "value": 159,
+        "value": 162,
         "percentage": "0.31%",
         "id": 73
       },
       {
         "departmentCode": "VPC",
         "name": "18 - 25",
-        "value": 5456,
-        "percentage": "10.52%",
+        "value": 5587,
+        "percentage": "10.60%",
         "id": 74
       },
       {
         "departmentCode": "VPC",
         "name": "26 - 39",
-        "value": 20408,
-        "percentage": "39.35%",
+        "value": 20715,
+        "percentage": "39.29%",
         "id": 75
       },
       {
         "departmentCode": "VPC",
         "name": "40 - 62",
-        "value": 12542,
-        "percentage": "24.19%",
+        "value": 12700,
+        "percentage": "24.09%",
         "id": 76
       },
       {
         "departmentCode": "VPC",
         "name": ">63",
-        "value": 648,
-        "percentage": "1.25%",
+        "value": 653,
+        "percentage": "1.24%",
         "id": 77
       },
       {
         "departmentCode": "VPC",
         "name": "Not Reported",
-        "value": 12644,
-        "percentage": "24.38%",
+        "value": 12911,
+        "percentage": "24.49%",
         "id": 78
       }
     ],
@@ -551,675 +551,675 @@ var moocsAgeArrays = {
       {
         "departmentCode": "CCB",
         "name": "<18",
-        "id": 1,
         "value": 47,
-        "percentage": "1.0%"
+        "percentage": "1.0%",
+        "id": 1
       },
       {
         "departmentCode": "CCB",
         "name": "18 - 25",
-        "id": 2,
-        "value": 680,
-        "percentage": "15.1%"
+        "value": 679,
+        "percentage": "15.1%",
+        "id": 2
       },
       {
         "departmentCode": "CCB",
         "name": "26 - 39",
-        "id": 3,
-        "value": 1743,
-        "percentage": "38.8%"
+        "value": 1744,
+        "percentage": "38.8%",
+        "id": 3
       },
       {
         "departmentCode": "CCB",
         "name": "40 - 62",
-        "id": 4,
         "value": 686,
-        "percentage": "15.3%"
+        "percentage": "15.3%",
+        "id": 4
       },
       {
         "departmentCode": "CCB",
         "name": ">63",
-        "id": 5,
         "value": 28,
-        "percentage": "0.6%"
+        "percentage": "0.6%",
+        "id": 5
       },
       {
         "departmentCode": "CCB",
         "name": "Not Reported",
-        "id": 6,
         "value": 1311,
-        "percentage": "29.2%"
+        "percentage": "29.2%",
+        "id": 6
       },
       {
         "departmentCode": "CID",
         "name": "<18",
-        "id": 7,
         "value": 0,
-        "percentage": "0.0%"
+        "percentage": "0.0%",
+        "id": 7
       },
       {
         "departmentCode": "CID",
         "name": "18 - 25",
-        "id": 8,
         "value": 0,
-        "percentage": "0.0%"
+        "percentage": "0.0%",
+        "id": 8
       },
       {
         "departmentCode": "CID",
         "name": "26 - 39",
-        "id": 9,
         "value": 0,
-        "percentage": "0.0%"
+        "percentage": "0.0%",
+        "id": 9
       },
       {
         "departmentCode": "CID",
         "name": "40 - 62",
-        "id": 10,
         "value": 0,
-        "percentage": "0.0%"
+        "percentage": "0.0%",
+        "id": 10
       },
       {
         "departmentCode": "CID",
         "name": ">63",
-        "id": 11,
         "value": 0,
-        "percentage": "0.0%"
+        "percentage": "0.0%",
+        "id": 11
       },
       {
         "departmentCode": "CID",
         "name": "Not Reported",
-        "id": 12,
         "value": 0,
-        "percentage": "0.0%"
+        "percentage": "0.0%",
+        "id": 12
       },
       {
         "departmentCode": "CSC",
         "name": "<18",
-        "id": 13,
         "value": 142,
-        "percentage": "1.5%"
+        "percentage": "1.5%",
+        "id": 13
       },
       {
         "departmentCode": "CSC",
         "name": "18 - 25",
-        "id": 14,
-        "value": 815,
-        "percentage": "8.4%"
+        "value": 816,
+        "percentage": "8.4%",
+        "id": 14
       },
       {
         "departmentCode": "CSC",
         "name": "26 - 39",
-        "id": 15,
-        "value": 2941,
-        "percentage": "30.2%"
+        "value": 2943,
+        "percentage": "30.2%",
+        "id": 15
       },
       {
         "departmentCode": "CSC",
         "name": "40 - 62",
-        "id": 16,
-        "value": 2182,
-        "percentage": "22.4%"
+        "value": 2183,
+        "percentage": "22.4%",
+        "id": 16
       },
       {
         "departmentCode": "CSC",
         "name": ">63",
-        "id": 17,
         "value": 79,
-        "percentage": "0.8%"
+        "percentage": "0.8%",
+        "id": 17
       },
       {
         "departmentCode": "CSC",
         "name": "Not Reported",
-        "id": 18,
-        "value": 3584,
-        "percentage": "36.8%"
+        "value": 3580,
+        "percentage": "36.7%",
+        "id": 18
       },
       {
         "departmentCode": "CSD",
         "name": "<18",
-        "id": 19,
         "value": 26,
-        "percentage": "0.3%"
+        "percentage": "0.3%",
+        "id": 19
       },
       {
         "departmentCode": "CSD",
         "name": "18 - 25",
-        "id": 20,
-        "value": 998,
-        "percentage": "10.1%"
+        "value": 999,
+        "percentage": "10.1%",
+        "id": 20
       },
       {
         "departmentCode": "CSD",
         "name": "26 - 39",
-        "id": 21,
         "value": 3333,
-        "percentage": "33.8%"
+        "percentage": "33.8%",
+        "id": 21
       },
       {
         "departmentCode": "CSD",
         "name": "40 - 62",
-        "id": 22,
         "value": 2335,
-        "percentage": "23.6%"
+        "percentage": "23.6%",
+        "id": 22
       },
       {
         "departmentCode": "CSD",
         "name": ">63",
-        "id": 23,
         "value": 143,
-        "percentage": "1.4%"
+        "percentage": "1.4%",
+        "id": 23
       },
       {
         "departmentCode": "CSD",
         "name": "Not Reported",
-        "id": 24,
-        "value": 3040,
-        "percentage": "30.8%"
+        "value": 3039,
+        "percentage": "30.8%",
+        "id": 24
       },
       {
         "departmentCode": "IFD",
         "name": "<18",
-        "id": 25,
         "value": 275,
-        "percentage": "0.8%"
+        "percentage": "0.8%",
+        "id": 25
       },
       {
         "departmentCode": "IFD",
         "name": "18 - 25",
-        "id": 26,
-        "value": 3596,
-        "percentage": "10.4%"
+        "value": 3610,
+        "percentage": "10.4%",
+        "id": 26
       },
       {
         "departmentCode": "IFD",
         "name": "26 - 39",
-        "id": 27,
-        "value": 11771,
-        "percentage": "33.9%"
+        "value": 11781,
+        "percentage": "33.9%",
+        "id": 27
       },
       {
         "departmentCode": "IFD",
         "name": "40 - 62",
-        "id": 28,
-        "value": 8497,
-        "percentage": "24.5%"
+        "value": 8508,
+        "percentage": "24.5%",
+        "id": 28
       },
       {
         "departmentCode": "IFD",
         "name": ">63",
-        "id": 29,
         "value": 502,
-        "percentage": "1.4%"
+        "percentage": "1.4%",
+        "id": 29
       },
       {
         "departmentCode": "IFD",
         "name": "Not Reported",
-        "id": 30,
-        "value": 10082,
-        "percentage": "29.0%"
+        "value": 10047,
+        "percentage": "28.9%",
+        "id": 30
       },
       {
         "departmentCode": "INE",
         "name": "<18",
-        "id": 31,
-        "value": 85,
-        "percentage": "0.8%"
+        "value": 86,
+        "percentage": "0.8%",
+        "id": 31
       },
       {
         "departmentCode": "INE",
         "name": "18 - 25",
-        "id": 32,
-        "value": 1579,
-        "percentage": "14.7%"
+        "value": 1582,
+        "percentage": "14.8%",
+        "id": 32
       },
       {
         "departmentCode": "INE",
         "name": "26 - 39",
-        "id": 33,
-        "value": 3543,
-        "percentage": "33.1%"
+        "value": 3546,
+        "percentage": "33.1%",
+        "id": 33
       },
       {
         "departmentCode": "INE",
         "name": "40 - 62",
-        "id": 34,
-        "value": 1931,
-        "percentage": "18.0%"
+        "value": 1935,
+        "percentage": "18.1%",
+        "id": 34
       },
       {
         "departmentCode": "INE",
         "name": ">63",
-        "id": 35,
         "value": 129,
-        "percentage": "1.2%"
+        "percentage": "1.2%",
+        "id": 35
       },
       {
         "departmentCode": "INE",
         "name": "Not Reported",
-        "id": 36,
-        "value": 3447,
-        "percentage": "32.2%"
+        "value": 3436,
+        "percentage": "32.1%",
+        "id": 36
       },
       {
         "departmentCode": "INT",
         "name": "<18",
-        "id": 37,
         "value": 114,
-        "percentage": "0.5%"
+        "percentage": "0.5%",
+        "id": 37
       },
       {
         "departmentCode": "INT",
         "name": "18 - 25",
-        "id": 38,
-        "value": 3656,
-        "percentage": "15.3%"
+        "value": 3669,
+        "percentage": "15.4%",
+        "id": 38
       },
       {
         "departmentCode": "INT",
         "name": "26 - 39",
-        "id": 39,
-        "value": 7548,
-        "percentage": "31.6%"
+        "value": 7554,
+        "percentage": "31.6%",
+        "id": 39
       },
       {
         "departmentCode": "INT",
         "name": "40 - 62",
-        "id": 40,
-        "value": 4384,
-        "percentage": "18.4%"
+        "value": 4386,
+        "percentage": "18.4%",
+        "id": 40
       },
       {
         "departmentCode": "INT",
         "name": ">63",
-        "id": 41,
         "value": 317,
-        "percentage": "1.3%"
+        "percentage": "1.3%",
+        "id": 41
       },
       {
         "departmentCode": "INT",
         "name": "Not Reported",
-        "id": 42,
-        "value": 7855,
-        "percentage": "32.9%"
+        "value": 7834,
+        "percentage": "32.8%",
+        "id": 42
       },
       {
         "departmentCode": "KIC",
         "name": "<18",
-        "id": 43,
-        "value": 746,
-        "percentage": "0.7%"
+        "value": 747,
+        "percentage": "0.7%",
+        "id": 43
       },
       {
         "departmentCode": "KIC",
         "name": "18 - 25",
-        "id": 44,
-        "value": 12665,
-        "percentage": "11.1%"
+        "value": 12689,
+        "percentage": "11.1%",
+        "id": 44
       },
       {
         "departmentCode": "KIC",
         "name": "26 - 39",
-        "id": 45,
-        "value": 41035,
-        "percentage": "35.9%"
+        "value": 41084,
+        "percentage": "35.9%",
+        "id": 45
       },
       {
         "departmentCode": "KIC",
         "name": "40 - 62",
-        "id": 46,
-        "value": 22492,
-        "percentage": "19.7%"
+        "value": 22515,
+        "percentage": "19.7%",
+        "id": 46
       },
       {
         "departmentCode": "KIC",
         "name": ">63",
-        "id": 47,
-        "value": 858,
-        "percentage": "0.8%"
+        "value": 860,
+        "percentage": "0.8%",
+        "id": 47
       },
       {
         "departmentCode": "KIC",
         "name": "Not Reported",
-        "id": 48,
-        "value": 36556,
-        "percentage": "32.0%"
+        "value": 36457,
+        "percentage": "31.9%",
+        "id": 48
       },
       {
         "departmentCode": "MIF",
         "name": "<18",
-        "id": 49,
         "value": 0,
-        "percentage": "0.0%"
+        "percentage": "0.0%",
+        "id": 49
       },
       {
         "departmentCode": "MIF",
         "name": "18 - 25",
-        "id": 50,
         "value": 0,
-        "percentage": "0.0%"
+        "percentage": "0.0%",
+        "id": 50
       },
       {
         "departmentCode": "MIF",
         "name": "26 - 39",
-        "id": 51,
         "value": 0,
-        "percentage": "0.0%"
+        "percentage": "0.0%",
+        "id": 51
       },
       {
         "departmentCode": "MIF",
         "name": "40 - 62",
-        "id": 52,
         "value": 0,
-        "percentage": "0.0%"
+        "percentage": "0.0%",
+        "id": 52
       },
       {
         "departmentCode": "MIF",
         "name": ">63",
-        "id": 53,
         "value": 0,
-        "percentage": "0.0%"
+        "percentage": "0.0%",
+        "id": 53
       },
       {
         "departmentCode": "MIF",
         "name": "Not Reported",
-        "id": 54,
         "value": 0,
-        "percentage": "0.0%"
+        "percentage": "0.0%",
+        "id": 54
       },
       {
         "departmentCode": "PRE",
         "name": "<18",
-        "id": 55,
         "value": 166,
-        "percentage": "1.3%"
+        "percentage": "1.3%",
+        "id": 55
       },
       {
         "departmentCode": "PRE",
         "name": "18 - 25",
-        "id": 56,
-        "value": 1568,
-        "percentage": "12.3%"
+        "value": 1571,
+        "percentage": "12.3%",
+        "id": 56
       },
       {
         "departmentCode": "PRE",
         "name": "26 - 39",
-        "id": 57,
-        "value": 3905,
-        "percentage": "30.6%"
+        "value": 3909,
+        "percentage": "30.6%",
+        "id": 57
       },
       {
         "departmentCode": "PRE",
         "name": "40 - 62",
-        "id": 58,
-        "value": 3000,
-        "percentage": "23.5%"
+        "value": 3008,
+        "percentage": "23.6%",
+        "id": 58
       },
       {
         "departmentCode": "PRE",
         "name": ">63",
-        "id": 59,
         "value": 218,
-        "percentage": "1.7%"
+        "percentage": "1.7%",
+        "id": 59
       },
       {
         "departmentCode": "PRE",
         "name": "Not Reported",
-        "id": 60,
-        "value": 3903,
-        "percentage": "30.6%"
+        "value": 3888,
+        "percentage": "30.5%",
+        "id": 60
       },
       {
         "departmentCode": "RES",
         "name": "<18",
-        "id": 61,
         "value": 248,
-        "percentage": "1.7%"
+        "percentage": "1.7%",
+        "id": 61
       },
       {
         "departmentCode": "RES",
         "name": "18 - 25",
-        "id": 62,
-        "value": 2790,
-        "percentage": "19.6%"
+        "value": 2794,
+        "percentage": "19.7%",
+        "id": 62
       },
       {
         "departmentCode": "RES",
         "name": "26 - 39",
-        "id": 63,
-        "value": 4604,
-        "percentage": "32.4%"
+        "value": 4609,
+        "percentage": "32.4%",
+        "id": 63
       },
       {
         "departmentCode": "RES",
         "name": "40 - 62",
-        "id": 64,
-        "value": 2321,
-        "percentage": "16.3%"
+        "value": 2322,
+        "percentage": "16.3%",
+        "id": 64
       },
       {
         "departmentCode": "RES",
         "name": ">63",
-        "id": 65,
         "value": 151,
-        "percentage": "1.1%"
+        "percentage": "1.1%",
+        "id": 65
       },
       {
         "departmentCode": "RES",
         "name": "Not Reported",
-        "id": 66,
-        "value": 4099,
-        "percentage": "28.8%"
+        "value": 4089,
+        "percentage": "28.8%",
+        "id": 66
       },
       {
         "departmentCode": "SCL",
         "name": "<18",
-        "id": 67,
         "value": 523,
-        "percentage": "1.0%"
+        "percentage": "1.0%",
+        "id": 67
       },
       {
         "departmentCode": "SCL",
         "name": "18 - 25",
-        "id": 68,
-        "value": 5557,
-        "percentage": "10.5%"
+        "value": 5567,
+        "percentage": "10.5%",
+        "id": 68
       },
       {
         "departmentCode": "SCL",
         "name": "26 - 39",
-        "id": 69,
-        "value": 16495,
-        "percentage": "31.1%"
+        "value": 16509,
+        "percentage": "31.2%",
+        "id": 69
       },
       {
         "departmentCode": "SCL",
         "name": "40 - 62",
-        "id": 70,
-        "value": 10291,
-        "percentage": "19.4%"
+        "value": 10298,
+        "percentage": "19.4%",
+        "id": 70
       },
       {
         "departmentCode": "SCL",
         "name": ">63",
-        "id": 71,
         "value": 475,
-        "percentage": "0.9%"
+        "percentage": "0.9%",
+        "id": 71
       },
       {
         "departmentCode": "SCL",
         "name": "Not Reported",
-        "id": 72,
-        "value": 19636,
-        "percentage": "37.1%"
+        "value": 19605,
+        "percentage": "37.0%",
+        "id": 72
       },
       {
         "departmentCode": "VPC",
         "name": "<18",
-        "id": 73,
-        "value": 66,
-        "percentage": "0.5%"
+        "value": 67,
+        "percentage": "0.5%",
+        "id": 73
       },
       {
         "departmentCode": "VPC",
         "name": "18 - 25",
-        "id": 74,
-        "value": 1085,
-        "percentage": "8.8%"
+        "value": 1090,
+        "percentage": "8.9%",
+        "id": 74
       },
       {
         "departmentCode": "VPC",
         "name": "26 - 39",
-        "id": 75,
-        "value": 4051,
-        "percentage": "32.9%"
+        "value": 4055,
+        "percentage": "32.9%",
+        "id": 75
       },
       {
         "departmentCode": "VPC",
         "name": "40 - 62",
-        "id": 76,
-        "value": 2888,
-        "percentage": "23.5%"
+        "value": 2893,
+        "percentage": "23.5%",
+        "id": 76
       },
       {
         "departmentCode": "VPC",
         "name": ">63",
-        "id": 77,
         "value": 100,
-        "percentage": "0.8%"
+        "percentage": "0.8%",
+        "id": 77
       },
       {
         "departmentCode": "VPC",
         "name": "Not Reported",
-        "id": 78,
-        "value": 4119,
-        "percentage": "33.5%"
+        "value": 4104,
+        "percentage": "33.3%",
+        "id": 78
       }
     ],
     ageDivisionAllTheTime: [
       {
         "divisionCode": "CBD",
         "name": "<18",
-        "value": 171,
-        "percentage": "0.85%",
+        "value": 176,
+        "percentage": "0.86%",
         "id": 1
       },
       {
         "divisionCode": "CBD",
         "name": "18 - 25",
-        "value": 1771,
-        "percentage": "8.77%",
+        "value": 1816,
+        "percentage": "8.88%",
         "id": 2
       },
       {
         "divisionCode": "CBD",
         "name": "26 - 39",
-        "value": 7211,
-        "percentage": "35.72%",
+        "value": 7278,
+        "percentage": "35.60%",
         "id": 3
       },
       {
         "divisionCode": "CBD",
         "name": "40 - 62",
-        "value": 5091,
-        "percentage": "25.22%",
+        "value": 5131,
+        "percentage": "25.10%",
         "id": 4
       },
       {
         "divisionCode": "CBD",
         "name": ">63",
-        "value": 171,
+        "value": 173,
         "percentage": "0.85%",
         "id": 5
       },
       {
         "divisionCode": "CBD",
         "name": "Not Reported",
-        "value": 5775,
-        "percentage": "28.60%",
+        "value": 5867,
+        "percentage": "28.70%",
         "id": 6
       },
       {
         "divisionCode": "CBR",
         "name": "<18",
-        "value": 63,
-        "percentage": "0.51%",
+        "value": 70,
+        "percentage": "0.56%",
         "id": 7
       },
       {
         "divisionCode": "CBR",
         "name": "18 - 25",
-        "value": 1046,
-        "percentage": "8.45%",
+        "value": 1063,
+        "percentage": "8.49%",
         "id": 8
       },
       {
         "divisionCode": "CBR",
         "name": "26 - 39",
-        "value": 5413,
-        "percentage": "43.72%",
+        "value": 5462,
+        "percentage": "43.63%",
         "id": 9
       },
       {
         "divisionCode": "CBR",
         "name": "40 - 62",
-        "value": 4330,
-        "percentage": "34.97%",
+        "value": 4353,
+        "percentage": "34.77%",
         "id": 10
       },
       {
         "divisionCode": "CBR",
         "name": ">63",
         "value": 217,
-        "percentage": "1.75%",
+        "percentage": "1.73%",
         "id": 11
       },
       {
         "divisionCode": "CBR",
         "name": "Not Reported",
-        "value": 1313,
-        "percentage": "10.60%",
+        "value": 1354,
+        "percentage": "10.82%",
         "id": 12
       },
       {
         "divisionCode": "CCB",
         "name": "<18",
-        "value": 56,
-        "percentage": "0.59%",
+        "value": 63,
+        "percentage": "0.61%",
         "id": 13
       },
       {
         "divisionCode": "CCB",
         "name": "18 - 25",
-        "value": 1252,
-        "percentage": "13.21%",
+        "value": 1377,
+        "percentage": "13.32%",
         "id": 14
       },
       {
         "divisionCode": "CCB",
         "name": "26 - 39",
-        "value": 3834,
-        "percentage": "40.46%",
+        "value": 4168,
+        "percentage": "40.32%",
         "id": 15
       },
       {
         "divisionCode": "CCB",
         "name": "40 - 62",
-        "value": 1898,
-        "percentage": "20.03%",
+        "value": 2016,
+        "percentage": "19.50%",
         "id": 16
       },
       {
         "divisionCode": "CCB",
         "name": ">63",
-        "value": 109,
-        "percentage": "1.15%",
+        "value": 114,
+        "percentage": "1.10%",
         "id": 17
       },
       {
         "divisionCode": "CCB",
         "name": "Not Reported",
-        "value": 2328,
-        "percentage": "24.56%",
+        "value": 2600,
+        "percentage": "25.15%",
         "id": 18
       },
       {
@@ -1239,15 +1239,15 @@ var moocsAgeArrays = {
       {
         "divisionCode": "CHA",
         "name": "26 - 39",
-        "value": 8428,
+        "value": 8429,
         "percentage": "60.48%",
         "id": 21
       },
       {
         "divisionCode": "CHA",
         "name": "40 - 62",
-        "value": 3119,
-        "percentage": "22.38%",
+        "value": 3120,
+        "percentage": "22.39%",
         "id": 22
       },
       {
@@ -1260,246 +1260,246 @@ var moocsAgeArrays = {
       {
         "divisionCode": "CHA",
         "name": "Not Reported",
-        "value": 1072,
-        "percentage": "7.69%",
+        "value": 1070,
+        "percentage": "7.68%",
         "id": 24
       },
       {
         "divisionCode": "EDU",
         "name": "<18",
-        "value": 438,
-        "percentage": "1.00%",
+        "value": 551,
+        "percentage": "0.86%",
         "id": 25
       },
       {
         "divisionCode": "EDU",
         "name": "18 - 25",
-        "value": 5241,
-        "percentage": "11.96%",
+        "value": 7072,
+        "percentage": "11.06%",
         "id": 26
       },
       {
         "divisionCode": "EDU",
         "name": "26 - 39",
-        "value": 16053,
-        "percentage": "36.63%",
+        "value": 22355,
+        "percentage": "34.96%",
         "id": 27
       },
       {
         "divisionCode": "EDU",
         "name": "40 - 62",
-        "value": 10675,
-        "percentage": "24.36%",
+        "value": 15289,
+        "percentage": "23.91%",
         "id": 28
       },
       {
         "divisionCode": "EDU",
         "name": ">63",
-        "value": 672,
-        "percentage": "1.53%",
+        "value": 924,
+        "percentage": "1.44%",
         "id": 29
       },
       {
         "divisionCode": "EDU",
         "name": "Not Reported",
-        "value": 10747,
-        "percentage": "24.52%",
+        "value": 17754,
+        "percentage": "27.76%",
         "id": 30
       },
       {
         "divisionCode": "FMM",
         "name": "<18",
-        "value": 191,
-        "percentage": "0.27%",
+        "value": 216,
+        "percentage": "0.30%",
         "id": 31
       },
       {
         "divisionCode": "FMM",
         "name": "18 - 25",
-        "value": 5169,
-        "percentage": "7.27%",
+        "value": 5458,
+        "percentage": "7.47%",
         "id": 32
       },
       {
         "divisionCode": "FMM",
         "name": "26 - 39",
-        "value": 32436,
-        "percentage": "45.64%",
+        "value": 33110,
+        "percentage": "45.29%",
         "id": 33
       },
       {
         "divisionCode": "FMM",
         "name": "40 - 62",
-        "value": 24130,
-        "percentage": "33.95%",
+        "value": 24638,
+        "percentage": "33.70%",
         "id": 34
       },
       {
         "divisionCode": "FMM",
         "name": ">63",
-        "value": 1303,
-        "percentage": "1.83%",
+        "value": 1348,
+        "percentage": "1.84%",
         "id": 35
       },
       {
         "divisionCode": "FMM",
         "name": "Not Reported",
-        "value": 7848,
-        "percentage": "11.04%",
+        "value": 8343,
+        "percentage": "11.41%",
         "id": 36
       },
       {
         "divisionCode": "HUD",
         "name": "<18",
-        "value": 218,
-        "percentage": "0.18%",
+        "value": 226,
+        "percentage": "0.19%",
         "id": 37
       },
       {
         "divisionCode": "HUD",
         "name": "18 - 25",
-        "value": 13381,
-        "percentage": "11.20%",
+        "value": 13421,
+        "percentage": "11.21%",
         "id": 38
       },
       {
         "divisionCode": "HUD",
         "name": "26 - 39",
-        "value": 65736,
-        "percentage": "55.03%",
+        "value": 65823,
+        "percentage": "54.99%",
         "id": 39
       },
       {
         "divisionCode": "HUD",
         "name": "40 - 62",
-        "value": 32131,
-        "percentage": "26.90%",
+        "value": 32154,
+        "percentage": "26.86%",
         "id": 40
       },
       {
         "divisionCode": "HUD",
         "name": ">63",
-        "value": 2029,
+        "value": 2030,
         "percentage": "1.70%",
         "id": 41
       },
       {
         "divisionCode": "HUD",
         "name": "Not Reported",
-        "value": 5962,
-        "percentage": "4.99%",
+        "value": 6039,
+        "percentage": "5.05%",
         "id": 42
       },
       {
         "divisionCode": "ICS",
         "name": "<18",
-        "value": 90,
-        "percentage": "0.13%",
+        "value": 123,
+        "percentage": "0.16%",
         "id": 43
       },
       {
         "divisionCode": "ICS",
         "name": "18 - 25",
-        "value": 4628,
-        "percentage": "6.91%",
+        "value": 5552,
+        "percentage": "7.04%",
         "id": 44
       },
       {
         "divisionCode": "ICS",
         "name": "26 - 39",
-        "value": 32590,
-        "percentage": "48.66%",
+        "value": 36605,
+        "percentage": "46.42%",
         "id": 45
       },
       {
         "divisionCode": "ICS",
         "name": "40 - 62",
-        "value": 21552,
-        "percentage": "32.18%",
+        "value": 24084,
+        "percentage": "30.54%",
         "id": 46
       },
       {
         "divisionCode": "ICS",
         "name": ">63",
-        "value": 1024,
-        "percentage": "1.53%",
+        "value": 1102,
+        "percentage": "1.40%",
         "id": 47
       },
       {
         "divisionCode": "ICS",
         "name": "Not Reported",
-        "value": 7096,
-        "percentage": "10.59%",
+        "value": 11389,
+        "percentage": "14.44%",
         "id": 48
       },
       {
         "divisionCode": "IFD",
         "name": "<18",
-        "value": 244,
-        "percentage": "0.81%",
+        "value": 281,
+        "percentage": "0.83%",
         "id": 49
       },
       {
         "divisionCode": "IFD",
         "name": "18 - 25",
-        "value": 3234,
-        "percentage": "10.70%",
+        "value": 3607,
+        "percentage": "10.62%",
         "id": 50
       },
       {
         "divisionCode": "IFD",
         "name": "26 - 39",
-        "value": 10602,
-        "percentage": "35.06%",
+        "value": 11705,
+        "percentage": "34.47%",
         "id": 51
       },
       {
         "divisionCode": "IFD",
         "name": "40 - 62",
-        "value": 8455,
-        "percentage": "27.96%",
+        "value": 9307,
+        "percentage": "27.40%",
         "id": 52
       },
       {
         "divisionCode": "IFD",
         "name": ">63",
-        "value": 493,
-        "percentage": "1.63%",
+        "value": 537,
+        "percentage": "1.58%",
         "id": 53
       },
       {
         "divisionCode": "IFD",
         "name": "Not Reported",
-        "value": 7210,
-        "percentage": "23.84%",
+        "value": 8524,
+        "percentage": "25.10%",
         "id": 54
       },
       {
         "divisionCode": "INE",
         "name": "<18",
-        "value": 93,
-        "percentage": "0.16%",
+        "value": 100,
+        "percentage": "0.17%",
         "id": 55
       },
       {
         "divisionCode": "INE",
         "name": "18 - 25",
-        "value": 3779,
-        "percentage": "6.58%",
+        "value": 3796,
+        "percentage": "6.60%",
         "id": 56
       },
       {
         "divisionCode": "INE",
         "name": "26 - 39",
-        "value": 27970,
-        "percentage": "48.72%",
+        "value": 28022,
+        "percentage": "48.69%",
         "id": 57
       },
       {
         "divisionCode": "INE",
         "name": "40 - 62",
-        "value": 20702,
-        "percentage": "36.06%",
+        "value": 20727,
+        "percentage": "36.02%",
         "id": 58
       },
       {
@@ -1512,134 +1512,134 @@ var moocsAgeArrays = {
       {
         "divisionCode": "INE",
         "name": "Not Reported",
-        "value": 3775,
-        "percentage": "6.58%",
+        "value": 3812,
+        "percentage": "6.62%",
         "id": 60
       },
       {
         "divisionCode": "INT",
         "name": "<18",
-        "value": 180,
-        "percentage": "0.33%",
+        "value": 183,
+        "percentage": "0.34%",
         "id": 61
       },
       {
         "divisionCode": "INT",
         "name": "18 - 25",
-        "value": 8788,
-        "percentage": "16.35%",
+        "value": 8840,
+        "percentage": "16.39%",
         "id": 62
       },
       {
         "divisionCode": "INT",
         "name": "26 - 39",
-        "value": 22341,
-        "percentage": "41.56%",
+        "value": 22400,
+        "percentage": "41.54%",
         "id": 63
       },
       {
         "divisionCode": "INT",
         "name": "40 - 62",
-        "value": 12231,
-        "percentage": "22.75%",
+        "value": 12247,
+        "percentage": "22.71%",
         "id": 64
       },
       {
         "divisionCode": "INT",
         "name": ">63",
-        "value": 919,
+        "value": 920,
         "percentage": "1.71%",
         "id": 65
       },
       {
         "divisionCode": "INT",
         "name": "Not Reported",
-        "value": 9302,
-        "percentage": "17.30%",
+        "value": 9336,
+        "percentage": "17.31%",
         "id": 66
       },
       {
         "divisionCode": "KLD",
         "name": "<18",
-        "value": 1355,
-        "percentage": "0.28%",
+        "value": 1462,
+        "percentage": "0.29%",
         "id": 67
       },
       {
         "divisionCode": "KLD",
         "name": "18 - 25",
-        "value": 47035,
-        "percentage": "9.68%",
+        "value": 49051,
+        "percentage": "9.72%",
         "id": 68
       },
       {
         "divisionCode": "KLD",
         "name": "26 - 39",
-        "value": 228555,
-        "percentage": "47.05%",
+        "value": 235230,
+        "percentage": "46.63%",
         "id": 69
       },
       {
         "divisionCode": "KLD",
         "name": "40 - 62",
-        "value": 128120,
-        "percentage": "26.38%",
+        "value": 131674,
+        "percentage": "26.10%",
         "id": 70
       },
       {
         "divisionCode": "KLD",
         "name": ">63",
-        "value": 5831,
-        "percentage": "1.20%",
+        "value": 5971,
+        "percentage": "1.18%",
         "id": 71
       },
       {
         "divisionCode": "KLD",
         "name": "Not Reported",
-        "value": 74831,
-        "percentage": "15.41%",
+        "value": 81097,
+        "percentage": "16.08%",
         "id": 72
       },
       {
         "divisionCode": "LMK",
         "name": "<18",
-        "value": 165,
-        "percentage": "0.64%",
+        "value": 208,
+        "percentage": "0.72%",
         "id": 73
       },
       {
         "divisionCode": "LMK",
         "name": "18 - 25",
-        "value": 3468,
-        "percentage": "13.50%",
+        "value": 3838,
+        "percentage": "13.30%",
         "id": 74
       },
       {
         "divisionCode": "LMK",
         "name": "26 - 39",
-        "value": 11474,
-        "percentage": "44.68%",
+        "value": 12514,
+        "percentage": "43.37%",
         "id": 75
       },
       {
         "divisionCode": "LMK",
         "name": "40 - 62",
-        "value": 6520,
-        "percentage": "25.39%",
+        "value": 7279,
+        "percentage": "25.23%",
         "id": 76
       },
       {
         "divisionCode": "LMK",
         "name": ">63",
-        "value": 508,
-        "percentage": "1.98%",
+        "value": 564,
+        "percentage": "1.95%",
         "id": 77
       },
       {
         "divisionCode": "LMK",
         "name": "Not Reported",
-        "value": 3548,
-        "percentage": "13.81%",
+        "value": 4449,
+        "percentage": "15.42%",
         "id": 78
       },
       {
@@ -1659,14 +1659,14 @@ var moocsAgeArrays = {
       {
         "divisionCode": "MIF",
         "name": "26 - 39",
-        "value": 22557,
+        "value": 22560,
         "percentage": "50.10%",
         "id": 81
       },
       {
         "divisionCode": "MIF",
         "name": "40 - 62",
-        "value": 16372,
+        "value": 16374,
         "percentage": "36.36%",
         "id": 82
       },
@@ -1680,302 +1680,302 @@ var moocsAgeArrays = {
       {
         "divisionCode": "MIF",
         "name": "Not Reported",
-        "value": 2462,
-        "percentage": "5.47%",
+        "value": 2458,
+        "percentage": "5.46%",
         "id": 84
       },
       {
         "divisionCode": "PCY",
         "name": "<18",
-        "value": 244,
-        "percentage": "0.81%",
+        "value": 281,
+        "percentage": "0.83%",
         "id": 85
       },
       {
         "divisionCode": "PCY",
         "name": "18 - 25",
-        "value": 3234,
-        "percentage": "10.70%",
+        "value": 3607,
+        "percentage": "10.62%",
         "id": 86
       },
       {
         "divisionCode": "PCY",
         "name": "26 - 39",
-        "value": 10602,
-        "percentage": "35.06%",
+        "value": 11705,
+        "percentage": "34.47%",
         "id": 87
       },
       {
         "divisionCode": "PCY",
         "name": "40 - 62",
-        "value": 8455,
-        "percentage": "27.96%",
+        "value": 9307,
+        "percentage": "27.40%",
         "id": 88
       },
       {
         "divisionCode": "PCY",
         "name": ">63",
-        "value": 493,
-        "percentage": "1.63%",
+        "value": 537,
+        "percentage": "1.58%",
         "id": 89
       },
       {
         "divisionCode": "PCY",
         "name": "Not Reported",
-        "value": 7210,
-        "percentage": "23.84%",
+        "value": 8524,
+        "percentage": "25.10%",
         "id": 90
       },
       {
         "divisionCode": "RES",
         "name": "<18",
-        "value": 385,
-        "percentage": "0.73%",
+        "value": 433,
+        "percentage": "0.77%",
         "id": 91
       },
       {
         "divisionCode": "RES",
         "name": "18 - 25",
-        "value": 9213,
-        "percentage": "17.49%",
+        "value": 9602,
+        "percentage": "17.18%",
         "id": 92
       },
       {
         "divisionCode": "RES",
         "name": "26 - 39",
-        "value": 23916,
-        "percentage": "45.41%",
+        "value": 24971,
+        "percentage": "44.68%",
         "id": 93
       },
       {
         "divisionCode": "RES",
         "name": "40 - 62",
-        "value": 11371,
-        "percentage": "21.59%",
+        "value": 12129,
+        "percentage": "21.70%",
         "id": 94
       },
       {
         "divisionCode": "RES",
         "name": ">63",
-        "value": 806,
-        "percentage": "1.53%",
+        "value": 862,
+        "percentage": "1.54%",
         "id": 95
       },
       {
         "divisionCode": "RES",
         "name": "Not Reported",
-        "value": 6981,
-        "percentage": "13.25%",
+        "value": 7894,
+        "percentage": "14.12%",
         "id": 96
       },
       {
         "divisionCode": "RND",
         "name": "<18",
-        "value": 86,
+        "value": 87,
         "percentage": "0.24%",
         "id": 97
       },
       {
         "divisionCode": "RND",
         "name": "18 - 25",
-        "value": 4060,
-        "percentage": "11.30%",
+        "value": 4117,
+        "percentage": "11.38%",
         "id": 98
       },
       {
         "divisionCode": "RND",
         "name": "26 - 39",
-        "value": 16668,
-        "percentage": "46.38%",
+        "value": 16736,
+        "percentage": "46.26%",
         "id": 99
       },
       {
         "divisionCode": "RND",
         "name": "40 - 62",
-        "value": 9884,
-        "percentage": "27.50%",
+        "value": 9912,
+        "percentage": "27.40%",
         "id": 100
       },
       {
         "divisionCode": "RND",
         "name": ">63",
-        "value": 621,
-        "percentage": "1.73%",
+        "value": 623,
+        "percentage": "1.72%",
         "id": 101
       },
       {
         "divisionCode": "RND",
         "name": "Not Reported",
-        "value": 4622,
-        "percentage": "12.86%",
+        "value": 4705,
+        "percentage": "13.00%",
         "id": 102
       },
       {
         "divisionCode": "SPH",
         "name": "<18",
-        "value": 323,
-        "percentage": "0.28%",
+        "value": 373,
+        "percentage": "0.31%",
         "id": 103
       },
       {
         "divisionCode": "SPH",
         "name": "18 - 25",
-        "value": 9030,
-        "percentage": "7.75%",
+        "value": 9416,
+        "percentage": "7.85%",
         "id": 104
       },
       {
         "divisionCode": "SPH",
         "name": "26 - 39",
-        "value": 52687,
-        "percentage": "45.19%",
+        "value": 53782,
+        "percentage": "44.86%",
         "id": 105
       },
       {
         "divisionCode": "SPH",
         "name": "40 - 62",
-        "value": 36180,
-        "percentage": "31.03%",
+        "value": 36961,
+        "percentage": "30.83%",
         "id": 106
       },
       {
         "divisionCode": "SPH",
         "name": ">63",
-        "value": 1817,
+        "value": 1873,
         "percentage": "1.56%",
         "id": 107
       },
       {
         "divisionCode": "SPH",
         "name": "Not Reported",
-        "value": 16545,
-        "percentage": "14.19%",
+        "value": 17488,
+        "percentage": "14.59%",
         "id": 108
       },
       {
         "divisionCode": "TSP",
         "name": "<18",
-        "value": 61,
-        "percentage": "0.49%",
+        "value": 79,
+        "percentage": "0.53%",
         "id": 109
       },
       {
         "divisionCode": "TSP",
         "name": "18 - 25",
-        "value": 1352,
-        "percentage": "10.88%",
+        "value": 1564,
+        "percentage": "10.39%",
         "id": 110
       },
       {
         "divisionCode": "TSP",
         "name": "26 - 39",
-        "value": 4773,
-        "percentage": "38.40%",
+        "value": 5564,
+        "percentage": "36.98%",
         "id": 111
       },
       {
         "divisionCode": "TSP",
         "name": "40 - 62",
-        "value": 3378,
-        "percentage": "27.17%",
+        "value": 3972,
+        "percentage": "26.40%",
         "id": 112
       },
       {
         "divisionCode": "TSP",
         "name": ">63",
-        "value": 179,
-        "percentage": "1.44%",
+        "value": 200,
+        "percentage": "1.33%",
         "id": 113
       },
       {
         "divisionCode": "TSP",
         "name": "Not Reported",
-        "value": 2688,
-        "percentage": "21.62%",
+        "value": 3667,
+        "percentage": "24.37%",
         "id": 114
       },
       {
         "divisionCode": "VPC",
         "name": "<18",
-        "value": 159,
+        "value": 162,
         "percentage": "0.31%",
         "id": 115
       },
       {
         "divisionCode": "VPC",
         "name": "18 - 25",
-        "value": 5456,
-        "percentage": "10.52%",
+        "value": 5587,
+        "percentage": "10.60%",
         "id": 116
       },
       {
         "divisionCode": "VPC",
         "name": "26 - 39",
-        "value": 20408,
-        "percentage": "39.35%",
+        "value": 20715,
+        "percentage": "39.29%",
         "id": 117
       },
       {
         "divisionCode": "VPC",
         "name": "40 - 62",
-        "value": 12542,
-        "percentage": "24.19%",
+        "value": 12700,
+        "percentage": "24.09%",
         "id": 118
       },
       {
         "divisionCode": "VPC",
         "name": ">63",
-        "value": 648,
-        "percentage": "1.25%",
+        "value": 653,
+        "percentage": "1.24%",
         "id": 119
       },
       {
         "divisionCode": "VPC",
         "name": "Not Reported",
-        "value": 12644,
-        "percentage": "24.38%",
+        "value": 12911,
+        "percentage": "24.49%",
         "id": 120
       },
       {
         "divisionCode": "WSA",
         "name": "<18",
-        "value": 188,
-        "percentage": "0.55%",
+        "value": 211,
+        "percentage": "0.57%",
         "id": 121
       },
       {
         "divisionCode": "WSA",
         "name": "18 - 25",
-        "value": 5112,
-        "percentage": "14.88%",
+        "value": 5422,
+        "percentage": "14.64%",
         "id": 122
       },
       {
         "divisionCode": "WSA",
         "name": "26 - 39",
-        "value": 16467,
-        "percentage": "47.92%",
+        "value": 17263,
+        "percentage": "46.62%",
         "id": 123
       },
       {
         "divisionCode": "WSA",
         "name": "40 - 62",
-        "value": 8957,
-        "percentage": "26.07%",
+        "value": 9453,
+        "percentage": "25.53%",
         "id": 124
       },
       {
         "divisionCode": "WSA",
         "name": ">63",
-        "value": 764,
-        "percentage": "2.22%",
+        "value": 798,
+        "percentage": "2.16%",
         "id": 125
       },
       {
         "divisionCode": "WSA",
         "name": "Not Reported",
-        "value": 2876,
-        "percentage": "8.37%",
+        "value": 3881,
+        "percentage": "10.48%",
         "id": 126
       }
     ],
@@ -1990,21 +1990,21 @@ var moocsAgeArrays = {
       {
         "divisionCode": "CBD",
         "name": "18 - 25",
-        "value": 815,
+        "value": 816,
         "percentage": "8.4%",
         "id": 2
       },
       {
         "divisionCode": "CBD",
         "name": "26 - 39",
-        "value": 2941,
+        "value": 2943,
         "percentage": "30.2%",
         "id": 3
       },
       {
         "divisionCode": "CBD",
         "name": "40 - 62",
-        "value": 2182,
+        "value": 2183,
         "percentage": "22.4%",
         "id": 4
       },
@@ -2018,8 +2018,8 @@ var moocsAgeArrays = {
       {
         "divisionCode": "CBD",
         "name": "Not Reported",
-        "value": 3584,
-        "percentage": "36.8%",
+        "value": 3580,
+        "percentage": "36.7%",
         "id": 6
       },
       {
@@ -2074,14 +2074,14 @@ var moocsAgeArrays = {
       {
         "divisionCode": "CCB",
         "name": "18 - 25",
-        "value": 680,
+        "value": 679,
         "percentage": "15.1%",
         "id": 14
       },
       {
         "divisionCode": "CCB",
         "name": "26 - 39",
-        "value": 1743,
+        "value": 1744,
         "percentage": "38.8%",
         "id": 15
       },
@@ -2158,21 +2158,21 @@ var moocsAgeArrays = {
       {
         "divisionCode": "EDU",
         "name": "18 - 25",
-        "value": 2754,
+        "value": 2761,
         "percentage": "12.0%",
         "id": 26
       },
       {
         "divisionCode": "EDU",
         "name": "26 - 39",
-        "value": 7150,
+        "value": 7154,
         "percentage": "31.1%",
         "id": 27
       },
       {
         "divisionCode": "EDU",
         "name": "40 - 62",
-        "value": 4596,
+        "value": 4600,
         "percentage": "20.0%",
         "id": 28
       },
@@ -2186,8 +2186,8 @@ var moocsAgeArrays = {
       {
         "divisionCode": "EDU",
         "name": "Not Reported",
-        "value": 7970,
-        "percentage": "34.7%",
+        "value": 7955,
+        "percentage": "34.6%",
         "id": 30
       },
       {
@@ -2200,21 +2200,21 @@ var moocsAgeArrays = {
       {
         "divisionCode": "FMM",
         "name": "18 - 25",
-        "value": 1293,
+        "value": 1300,
         "percentage": "9.8%",
         "id": 32
       },
       {
         "divisionCode": "FMM",
         "name": "26 - 39",
-        "value": 4291,
+        "value": 4294,
         "percentage": "32.5%",
         "id": 33
       },
       {
         "divisionCode": "FMM",
         "name": "40 - 62",
-        "value": 3365,
+        "value": 3366,
         "percentage": "25.5%",
         "id": 34
       },
@@ -2228,8 +2228,8 @@ var moocsAgeArrays = {
       {
         "divisionCode": "FMM",
         "name": "Not Reported",
-        "value": 3970,
-        "percentage": "30.0%",
+        "value": 3959,
+        "percentage": "29.9%",
         "id": 36
       },
       {
@@ -2284,21 +2284,21 @@ var moocsAgeArrays = {
       {
         "divisionCode": "ICS",
         "name": "18 - 25",
-        "value": 735,
-        "percentage": "8.4%",
+        "value": 739,
+        "percentage": "8.5%",
         "id": 44
       },
       {
         "divisionCode": "ICS",
         "name": "26 - 39",
-        "value": 3575,
+        "value": 3578,
         "percentage": "40.9%",
         "id": 45
       },
       {
         "divisionCode": "ICS",
         "name": "40 - 62",
-        "value": 2132,
+        "value": 2134,
         "percentage": "24.4%",
         "id": 46
       },
@@ -2312,8 +2312,8 @@ var moocsAgeArrays = {
       {
         "divisionCode": "ICS",
         "name": "Not Reported",
-        "value": 2209,
-        "percentage": "25.3%",
+        "value": 2200,
+        "percentage": "25.2%",
         "id": 48
       },
       {
@@ -2326,22 +2326,22 @@ var moocsAgeArrays = {
       {
         "divisionCode": "IFD",
         "name": "18 - 25",
-        "value": 1568,
+        "value": 1571,
         "percentage": "12.3%",
         "id": 50
       },
       {
         "divisionCode": "IFD",
         "name": "26 - 39",
-        "value": 3905,
+        "value": 3909,
         "percentage": "30.6%",
         "id": 51
       },
       {
         "divisionCode": "IFD",
         "name": "40 - 62",
-        "value": 3000,
-        "percentage": "23.5%",
+        "value": 3008,
+        "percentage": "23.6%",
         "id": 52
       },
       {
@@ -2354,8 +2354,8 @@ var moocsAgeArrays = {
       {
         "divisionCode": "IFD",
         "name": "Not Reported",
-        "value": 3903,
-        "percentage": "30.6%",
+        "value": 3888,
+        "percentage": "30.5%",
         "id": 54
       },
       {
@@ -2410,21 +2410,21 @@ var moocsAgeArrays = {
       {
         "divisionCode": "INT",
         "name": "18 - 25",
-        "value": 3656,
-        "percentage": "15.3%",
+        "value": 3669,
+        "percentage": "15.4%",
         "id": 62
       },
       {
         "divisionCode": "INT",
         "name": "26 - 39",
-        "value": 7548,
+        "value": 7554,
         "percentage": "31.6%",
         "id": 63
       },
       {
         "divisionCode": "INT",
         "name": "40 - 62",
-        "value": 4384,
+        "value": 4386,
         "percentage": "18.4%",
         "id": 64
       },
@@ -2438,50 +2438,50 @@ var moocsAgeArrays = {
       {
         "divisionCode": "INT",
         "name": "Not Reported",
-        "value": 7855,
-        "percentage": "32.9%",
+        "value": 7834,
+        "percentage": "32.8%",
         "id": 66
       },
       {
         "divisionCode": "KLD",
         "name": "<18",
-        "value": 746,
+        "value": 747,
         "percentage": "0.7%",
         "id": 67
       },
       {
         "divisionCode": "KLD",
         "name": "18 - 25",
-        "value": 12665,
+        "value": 12689,
         "percentage": "11.1%",
         "id": 68
       },
       {
         "divisionCode": "KLD",
         "name": "26 - 39",
-        "value": 41035,
+        "value": 41084,
         "percentage": "35.9%",
         "id": 69
       },
       {
         "divisionCode": "KLD",
         "name": "40 - 62",
-        "value": 22492,
+        "value": 22515,
         "percentage": "19.7%",
         "id": 70
       },
       {
         "divisionCode": "KLD",
         "name": ">63",
-        "value": 858,
+        "value": 860,
         "percentage": "0.8%",
         "id": 71
       },
       {
         "divisionCode": "KLD",
         "name": "Not Reported",
-        "value": 36556,
-        "percentage": "32.0%",
+        "value": 36457,
+        "percentage": "31.9%",
         "id": 72
       },
       {
@@ -2501,15 +2501,15 @@ var moocsAgeArrays = {
       {
         "divisionCode": "LMK",
         "name": "26 - 39",
-        "value": 1896,
-        "percentage": "33.6%",
+        "value": 1898,
+        "percentage": "33.7%",
         "id": 75
       },
       {
         "divisionCode": "LMK",
         "name": "40 - 62",
-        "value": 1107,
-        "percentage": "19.6%",
+        "value": 1108,
+        "percentage": "19.7%",
         "id": 76
       },
       {
@@ -2522,8 +2522,8 @@ var moocsAgeArrays = {
       {
         "divisionCode": "LMK",
         "name": "Not Reported",
-        "value": 1578,
-        "percentage": "28.0%",
+        "value": 1575,
+        "percentage": "27.9%",
         "id": 78
       },
       {
@@ -2578,22 +2578,22 @@ var moocsAgeArrays = {
       {
         "divisionCode": "PCY",
         "name": "18 - 25",
-        "value": 1568,
+        "value": 1571,
         "percentage": "12.3%",
         "id": 86
       },
       {
         "divisionCode": "PCY",
         "name": "26 - 39",
-        "value": 3905,
+        "value": 3909,
         "percentage": "30.6%",
         "id": 87
       },
       {
         "divisionCode": "PCY",
         "name": "40 - 62",
-        "value": 3000,
-        "percentage": "23.5%",
+        "value": 3008,
+        "percentage": "23.6%",
         "id": 88
       },
       {
@@ -2606,8 +2606,8 @@ var moocsAgeArrays = {
       {
         "divisionCode": "PCY",
         "name": "Not Reported",
-        "value": 3903,
-        "percentage": "30.6%",
+        "value": 3888,
+        "percentage": "30.5%",
         "id": 90
       },
       {
@@ -2620,21 +2620,21 @@ var moocsAgeArrays = {
       {
         "divisionCode": "RES",
         "name": "18 - 25",
-        "value": 2790,
-        "percentage": "19.6%",
+        "value": 2794,
+        "percentage": "19.7%",
         "id": 92
       },
       {
         "divisionCode": "RES",
         "name": "26 - 39",
-        "value": 4604,
+        "value": 4609,
         "percentage": "32.4%",
         "id": 93
       },
       {
         "divisionCode": "RES",
         "name": "40 - 62",
-        "value": 2321,
+        "value": 2322,
         "percentage": "16.3%",
         "id": 94
       },
@@ -2648,7 +2648,7 @@ var moocsAgeArrays = {
       {
         "divisionCode": "RES",
         "name": "Not Reported",
-        "value": 4099,
+        "value": 4089,
         "percentage": "28.8%",
         "id": 96
       },
@@ -2662,7 +2662,7 @@ var moocsAgeArrays = {
       {
         "divisionCode": "RND",
         "name": "18 - 25",
-        "value": 998,
+        "value": 999,
         "percentage": "10.1%",
         "id": 98
       },
@@ -2690,7 +2690,7 @@ var moocsAgeArrays = {
       {
         "divisionCode": "RND",
         "name": "Not Reported",
-        "value": 3040,
+        "value": 3039,
         "percentage": "30.8%",
         "id": 102
       },
@@ -2704,21 +2704,21 @@ var moocsAgeArrays = {
       {
         "divisionCode": "SPH",
         "name": "18 - 25",
-        "value": 1909,
-        "percentage": "7.8%",
+        "value": 1912,
+        "percentage": "7.9%",
         "id": 104
       },
       {
         "divisionCode": "SPH",
         "name": "26 - 39",
-        "value": 7449,
+        "value": 7457,
         "percentage": "30.6%",
         "id": 105
       },
       {
         "divisionCode": "SPH",
         "name": "40 - 62",
-        "value": 4588,
+        "value": 4590,
         "percentage": "18.8%",
         "id": 106
       },
@@ -2732,36 +2732,36 @@ var moocsAgeArrays = {
       {
         "divisionCode": "SPH",
         "name": "Not Reported",
-        "value": 10088,
+        "value": 10075,
         "percentage": "41.4%",
         "id": 108
       },
       {
         "divisionCode": "TSP",
         "name": "<18",
-        "value": 39,
+        "value": 40,
         "percentage": "0.7%",
         "id": 109
       },
       {
         "divisionCode": "TSP",
         "name": "18 - 25",
-        "value": 710,
-        "percentage": "13.0%",
+        "value": 712,
+        "percentage": "13.1%",
         "id": 110
       },
       {
         "divisionCode": "TSP",
         "name": "26 - 39",
-        "value": 1813,
-        "percentage": "33.2%",
+        "value": 1816,
+        "percentage": "33.3%",
         "id": 111
       },
       {
         "divisionCode": "TSP",
         "name": "40 - 62",
-        "value": 1070,
-        "percentage": "19.6%",
+        "value": 1072,
+        "percentage": "19.7%",
         "id": 112
       },
       {
@@ -2774,35 +2774,35 @@ var moocsAgeArrays = {
       {
         "divisionCode": "TSP",
         "name": "Not Reported",
-        "value": 1767,
-        "percentage": "32.4%",
+        "value": 1759,
+        "percentage": "32.3%",
         "id": 114
       },
       {
         "divisionCode": "VPC",
         "name": "<18",
-        "value": 66,
+        "value": 67,
         "percentage": "0.5%",
         "id": 115
       },
       {
         "divisionCode": "VPC",
         "name": "18 - 25",
-        "value": 1085,
-        "percentage": "8.8%",
+        "value": 1090,
+        "percentage": "8.9%",
         "id": 116
       },
       {
         "divisionCode": "VPC",
         "name": "26 - 39",
-        "value": 4051,
+        "value": 4055,
         "percentage": "32.9%",
         "id": 117
       },
       {
         "divisionCode": "VPC",
         "name": "40 - 62",
-        "value": 2888,
+        "value": 2893,
         "percentage": "23.5%",
         "id": 118
       },
@@ -2816,8 +2816,8 @@ var moocsAgeArrays = {
       {
         "divisionCode": "VPC",
         "name": "Not Reported",
-        "value": 4119,
-        "percentage": "33.5%",
+        "value": 4104,
+        "percentage": "33.3%",
         "id": 120
       },
       {
@@ -2830,7 +2830,7 @@ var moocsAgeArrays = {
       {
         "divisionCode": "WSA",
         "name": "18 - 25",
-        "value": 869,
+        "value": 870,
         "percentage": "16.5%",
         "id": 122
       },
@@ -2844,7 +2844,7 @@ var moocsAgeArrays = {
       {
         "divisionCode": "WSA",
         "name": "40 - 62",
-        "value": 861,
+        "value": 863,
         "percentage": "16.4%",
         "id": 124
       },
@@ -2858,7 +2858,7 @@ var moocsAgeArrays = {
       {
         "divisionCode": "WSA",
         "name": "Not Reported",
-        "value": 1680,
+        "value": 1677,
         "percentage": "31.9%",
         "id": 126
       }
@@ -2866,76 +2866,76 @@ var moocsAgeArrays = {
     ageIDBAllTheTime: [
       {
         "name": "<18",
-        "value": 3241,
-        "percentage": "0.32%",
+        "value": 3548,
+        "percentage": "0.33%",
         "id": 1
       },
       {
         "name": "18 - 25",
-        "value": 107166,
-        "percentage": "10.47%",
+        "value": 112271,
+        "percentage": "10.45%",
         "id": 2
       },
       {
         "name": "26 - 39",
-        "value": 479903,
-        "percentage": "46.88%",
+        "value": 496617,
+        "percentage": "46.21%",
         "id": 3
       },
       {
         "name": "40 - 62",
-        "value": 276346,
-        "percentage": "26.99%",
+        "value": 287252,
+        "percentage": "26.73%",
         "id": 4
       },
       {
         "name": ">63",
-        "value": 14822,
-        "percentage": "1.45%",
+        "value": 15349,
+        "percentage": "1.43%",
         "id": 5
       },
       {
         "name": "Not Reported",
-        "value": 142285,
-        "percentage": "13.90%",
+        "value": 159624,
+        "percentage": "14.85%",
         "id": 6
       }
     ],
     ageIDB2018: [
       {
         "name": "<18",
-        "value": 1633,
+        "value": 1635,
         "percentage": "0.69%",
         "id": 1
       },
       {
         "name": "18 - 25",
-        "value": 27265,
-        "percentage": "11.45%",
+        "value": 27334,
+        "percentage": "11.48%",
         "id": 2
       },
       {
         "name": "26 - 39",
-        "value": 80745,
-        "percentage": "33.90%",
+        "value": 80824,
+        "percentage": "33.93%",
         "id": 3
       },
       {
         "name": "40 - 62",
-        "value": 47823,
-        "percentage": "20.08%",
+        "value": 47867,
+        "percentage": "20.10%",
         "id": 4
       },
       {
         "name": ">63",
-        "value": 2307,
+        "value": 2309,
         "percentage": "0.97%",
         "id": 5
       },
       {
         "name": "Not Reported",
-        "value": 78403,
-        "percentage": "32.92%",
+        "value": 78207,
+        "percentage": "32.84%",
         "id": 6
       }
     ]

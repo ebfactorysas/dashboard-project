@@ -3,109 +3,109 @@ var subscribersTopics =[
     "Department": "IFD",
     "division_code": "CMF",
     "name": "Connectivity and Digital Inclusion",
-    "value": 6746
+    "value": 13542
   },
   {
     "Department": "IFD",
     "division_code": "CMF",
     "name": "Financial Markets",
-    "value": 25136
+    "value": 27329
   },
   {
     "Department": "CSD",
     "division_code": "CSD",
     "name": "Env, Climate Change and Safeguards",
-    "value": 51744
+    "value": 58574
   },
   {
     "Department": "IFD",
     "division_code": "CTI",
     "name": "Science, Technology and Innovation",
-    "value": 41942
+    "value": 48661
   },
   {
     "Department": "IFD",
     "division_code": "FMM",
     "name": "Fiscal Policy and Management",
-    "value": 48983
+    "value": 56298
   },
   {
     "Department": "SCL",
     "division_code": "GDI",
     "name": "Gender and Diversity",
-    "value": 29928
+    "value": 32530
   },
   {
     "Department": "CSD",
     "division_code": "HUD",
     "name": "Urban Development and Housing",
-    "value": 74111
+    "value": 77442
   },
   {
     "Department": "IFD",
     "division_code": "ICS",
     "name": "Citizen Security and Justice",
-    "value": 28928
+    "value": 31550
   },
   {
     "Department": "IFD",
     "division_code": "ICS",
     "name": "Public Management",
-    "value": 42526
+    "value": 49821
   },
   {
     "Department": "INT",
     "division_code": "INT",
     "name": "Trade and Regional Integration",
-    "value": 43242
+    "value": 47252
   },
   {
     "Department": "KIC",
     "division_code": "KIC",
     "name": "Creative Industries",
-    "value": 41459
+    "value": 49238
   },
   {
     "Department": "KIC",
     "division_code": "KLD",
     "name": "Management for Results",
-    "value": 56266
+    "value": 56644
   },
   {
     "Department": "KIC",
     "division_code": "KLD",
     "name": "Open Knowledge",
-    "value": 263152
+    "value": 265061
   },
   {
     "Department": "KIC",
     "division_code": "KLD",
     "name": "Project Management",
-    "value": 123063
+    "value": 125087
   },
   {
     "Department": "SCL",
     "division_code": "LMK",
     "name": "Labor and Pensions",
-    "value": 39196
+    "value": 42005
   },
   {
     "Department": "RES",
     "division_code": "RES",
     "name": "Macroeconomics and Finances",
-    "value": 19124
+    "value": 22980
   },
   {
     "Department": "RES",
     "division_code": "RES",
     "name": "Microeconomics and Competitiveness",
-    "value": 3896
+    "value": 6156
   },
   {
     "Department": "CSD",
     "division_code": "RND",
     "name": "Agriculture and Food Security",
-    "value": 38737
+    "value": 44000
   },
   {
     "Department": "SCL",
@@ -117,36 +117,36 @@ var subscribersTopics =[
     "Department": "SPD",
     "division_code": "SPD",
     "name": "Development Effectiveness",
-    "value": 8828
+    "value": 12684
   },
   {
     "Department": "SCL",
     "division_code": "SPH",
     "name": "Early Childhood Development",
-    "value": 46307
+    "value": 47225
   },
   {
     "Department": "SCL",
     "division_code": "SPH",
     "name": "Social Protection and Poverty",
-    "value": 49632
+    "value": 51388
   },
   {
     "Department": "INE",
     "division_code": "TSP",
     "name": "Transportation",
-    "value": 26017
+    "value": 28156
   },
   {
     "Department": "INE",
     "division_code": "TSP",
     "name": "Urban Transport",
-    "value": 8274
+    "value": 10646
   },
   {
     "Department": "INE",
     "division_code": "WSA",
     "name": "Water and Sanitation",
-    "value": 45800
+    "value": 48860
   }
 ]

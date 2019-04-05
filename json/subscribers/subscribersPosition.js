@@ -1,1792 +1,1904 @@
 var subscribersPosition = {
     positionDepartments: [
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "113935",
-            "deparment_code": "CSD ",
-            "Position": "Not Reported"
+          "deparment_code": "CSD",
+          "Position": "Not Reported",
+          "Subscribers": 104147
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "834",
-            "deparment_code": "CSD ",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "CSD",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 1053
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "3943",
-            "deparment_code": "CSD ",
-            "Position": "Consultant"
+          "deparment_code": "CSD",
+          "Position": "Consultant",
+          "Subscribers": 5232
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2954",
-            "deparment_code": "CSD ",
-            "Position": "Director/Vice president"
+          "deparment_code": "CSD",
+          "Position": "Director/Vice president",
+          "Subscribers": 3134
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1352",
-            "deparment_code": "CSD ",
-            "Position": "Job Seeker"
+          "deparment_code": "CSD",
+          "Position": "Job Seeker",
+          "Subscribers": 1539
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "6847",
-            "deparment_code": "CSD ",
-            "Position": "Other"
+          "deparment_code": "CSD",
+          "Position": "Other",
+          "Subscribers": 7163
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "3252",
-            "deparment_code": "CSD ",
-            "Position": "Student"
+          "deparment_code": "CSD",
+          "Position": "Student",
+          "Subscribers": 3340
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "3470",
-            "deparment_code": "CSD ",
-            "Position": "Technical Staff"
+          "deparment_code": "CSD",
+          "Position": "Technical Staff",
+          "Subscribers": 4554
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "87554",
-            "deparment_code": "IFD ",
-            "Position": "Not Reported"
+          "deparment_code": "IFD",
+          "Position": "Not Reported",
+          "Subscribers": 87706
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "975",
-            "deparment_code": "IFD ",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "IFD",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 1237
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "4524",
-            "deparment_code": "IFD ",
-            "Position": "Consultant"
+          "deparment_code": "IFD",
+          "Position": "Consultant",
+          "Subscribers": 5990
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "3308",
-            "deparment_code": "IFD ",
-            "Position": "Director/Vice president"
+          "deparment_code": "IFD",
+          "Position": "Director/Vice president",
+          "Subscribers": 3730
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1787",
-            "deparment_code": "IFD ",
-            "Position": "Job Seeker"
+          "deparment_code": "IFD",
+          "Position": "Job Seeker",
+          "Subscribers": 1958
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "6294",
-            "deparment_code": "IFD ",
-            "Position": "Other"
+          "deparment_code": "IFD",
+          "Position": "Other",
+          "Subscribers": 7529
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "4213",
-            "deparment_code": "IFD ",
-            "Position": "Student"
+          "deparment_code": "IFD",
+          "Position": "Student",
+          "Subscribers": 4174
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "3972",
-            "deparment_code": "IFD ",
-            "Position": "Technical Staff"
+          "deparment_code": "IFD",
+          "Position": "Technical Staff",
+          "Subscribers": 5230
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "5",
-            "deparment_code": "IIC ",
-            "Position": "Not Reported"
+          "deparment_code": "IIC",
+          "Position": "Not Reported",
+          "Subscribers": 4
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "IIC ",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "IIC",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "IIC ",
-            "Position": "Consultant"
+          "deparment_code": "IIC",
+          "Position": "Consultant",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "IIC ",
-            "Position": "Director/Vice president"
+          "deparment_code": "IIC",
+          "Position": "Director/Vice president",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "IIC ",
-            "Position": "Job Seeker"
+          "deparment_code": "IIC",
+          "Position": "Job Seeker",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1",
-            "deparment_code": "IIC ",
-            "Position": "Other"
+          "deparment_code": "IIC",
+          "Position": "Other",
+          "Subscribers": 1
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1",
-            "deparment_code": "IIC ",
-            "Position": "Student"
+          "deparment_code": "IIC",
+          "Position": "Student",
+          "Subscribers": 1
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "IIC ",
-            "Position": "Technical Staff"
+          "deparment_code": "IIC",
+          "Position": "Technical Staff",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "65757",
-            "deparment_code": "INE ",
-            "Position": "Not Reported"
+          "deparment_code": "INE",
+          "Position": "Not Reported",
+          "Subscribers": 59647
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "551",
-            "deparment_code": "INE ",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "INE",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 742
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2892",
-            "deparment_code": "INE ",
-            "Position": "Consultant"
+          "deparment_code": "INE",
+          "Position": "Consultant",
+          "Subscribers": 3960
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1941",
-            "deparment_code": "INE ",
-            "Position": "Director/Vice president"
+          "deparment_code": "INE",
+          "Position": "Director/Vice president",
+          "Subscribers": 2147
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1262",
-            "deparment_code": "INE ",
-            "Position": "Job Seeker"
+          "deparment_code": "INE",
+          "Position": "Job Seeker",
+          "Subscribers": 1292
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "3477",
-            "deparment_code": "INE ",
-            "Position": "Other"
+          "deparment_code": "INE",
+          "Position": "Other",
+          "Subscribers": 4086
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2901",
-            "deparment_code": "INE ",
-            "Position": "Student"
+          "deparment_code": "INE",
+          "Position": "Student",
+          "Subscribers": 2765
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2507",
-            "deparment_code": "INE ",
-            "Position": "Technical Staff"
+          "deparment_code": "INE",
+          "Position": "Technical Staff",
+          "Subscribers": 3425
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "42281",
-            "deparment_code": "INT ",
-            "Position": "Not Reported"
+          "deparment_code": "INT",
+          "Position": "Not Reported",
+          "Subscribers": 35119
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "421",
-            "deparment_code": "INT ",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "INT",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 558
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1724",
-            "deparment_code": "INT ",
-            "Position": "Consultant"
+          "deparment_code": "INT",
+          "Position": "Consultant",
+          "Subscribers": 2308
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1449",
-            "deparment_code": "INT ",
-            "Position": "Director/Vice president"
+          "deparment_code": "INT",
+          "Position": "Director/Vice president",
+          "Subscribers": 1535
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "976",
-            "deparment_code": "INT ",
-            "Position": "Job Seeker"
+          "deparment_code": "INT",
+          "Position": "Job Seeker",
+          "Subscribers": 954
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2411",
-            "deparment_code": "INT ",
-            "Position": "Other"
+          "deparment_code": "INT",
+          "Position": "Other",
+          "Subscribers": 2789
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2475",
-            "deparment_code": "INT ",
-            "Position": "Student"
+          "deparment_code": "INT",
+          "Position": "Student",
+          "Subscribers": 2191
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1375",
-            "deparment_code": "INT ",
-            "Position": "Technical Staff"
+          "deparment_code": "INT",
+          "Position": "Technical Staff",
+          "Subscribers": 1748
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "429142",
-            "deparment_code": "KIC ",
-            "Position": "Not Reported"
+          "deparment_code": "KIC",
+          "Position": "Not Reported",
+          "Subscribers": 406421
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1713",
-            "deparment_code": "KIC ",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "KIC",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 1949
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "6080",
-            "deparment_code": "KIC ",
-            "Position": "Consultant"
+          "deparment_code": "KIC",
+          "Position": "Consultant",
+          "Subscribers": 8018
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "6550",
-            "deparment_code": "KIC ",
-            "Position": "Director/Vice president"
+          "deparment_code": "KIC",
+          "Position": "Director/Vice president",
+          "Subscribers": 6612
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2459",
-            "deparment_code": "KIC ",
-            "Position": "Job Seeker"
+          "deparment_code": "KIC",
+          "Position": "Job Seeker",
+          "Subscribers": 2445
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "24494",
-            "deparment_code": "KIC ",
-            "Position": "Other"
+          "deparment_code": "KIC",
+          "Position": "Other",
+          "Subscribers": 19001
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "6503",
-            "deparment_code": "KIC ",
-            "Position": "Student"
+          "deparment_code": "KIC",
+          "Position": "Student",
+          "Subscribers": 5453
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "5813",
-            "deparment_code": "KIC ",
-            "Position": "Technical Staff"
+          "deparment_code": "KIC",
+          "Position": "Technical Staff",
+          "Subscribers": 7545
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "4",
-            "deparment_code": "MIF ",
-            "Position": "Not Reported"
+          "deparment_code": "MIF",
+          "Position": "Not Reported",
+          "Subscribers": 2
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "MIF ",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "MIF",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "MIF ",
-            "Position": "Consultant"
+          "deparment_code": "MIF",
+          "Position": "Consultant",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "MIF ",
-            "Position": "Director/Vice president"
+          "deparment_code": "MIF",
+          "Position": "Director/Vice president",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "MIF ",
-            "Position": "Job Seeker"
+          "deparment_code": "MIF",
+          "Position": "Job Seeker",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2",
-            "deparment_code": "MIF ",
-            "Position": "Other"
+          "deparment_code": "MIF",
+          "Position": "Other",
+          "Subscribers": 2
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2",
-            "deparment_code": "MIF ",
-            "Position": "Student"
+          "deparment_code": "MIF",
+          "Position": "Student",
+          "Subscribers": 2
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "MIF ",
-            "Position": "Technical Staff"
+          "deparment_code": "MIF",
+          "Position": "Technical Staff",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "33304",
-            "deparment_code": "RES ",
-            "Position": "Not Reported"
+          "deparment_code": "RES",
+          "Position": "Not Reported",
+          "Subscribers": 35165
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "626",
-            "deparment_code": "RES ",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "RES",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 975
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "3583",
-            "deparment_code": "RES ",
-            "Position": "Consultant"
+          "deparment_code": "RES",
+          "Position": "Consultant",
+          "Subscribers": 5251
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1985",
-            "deparment_code": "RES ",
-            "Position": "Director/Vice president"
+          "deparment_code": "RES",
+          "Position": "Director/Vice president",
+          "Subscribers": 2606
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1183",
-            "deparment_code": "RES ",
-            "Position": "Job Seeker"
+          "deparment_code": "RES",
+          "Position": "Job Seeker",
+          "Subscribers": 1451
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "3925",
-            "deparment_code": "RES ",
-            "Position": "Other"
+          "deparment_code": "RES",
+          "Position": "Other",
+          "Subscribers": 5531
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2673",
-            "deparment_code": "RES ",
-            "Position": "Student"
+          "deparment_code": "RES",
+          "Position": "Student",
+          "Subscribers": 3000
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "3172",
-            "deparment_code": "RES ",
-            "Position": "Technical Staff"
+          "deparment_code": "RES",
+          "Position": "Technical Staff",
+          "Subscribers": 4676
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "93222",
-            "deparment_code": "SCL ",
-            "Position": "Not Reported"
+          "deparment_code": "SCL",
+          "Position": "Not Reported",
+          "Subscribers": 91791
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "807",
-            "deparment_code": "SCL ",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "SCL",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 1042
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "3857",
-            "deparment_code": "SCL ",
-            "Position": "Consultant"
+          "deparment_code": "SCL",
+          "Position": "Consultant",
+          "Subscribers": 5149
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "3106",
-            "deparment_code": "SCL ",
-            "Position": "Director/Vice president"
+          "deparment_code": "SCL",
+          "Position": "Director/Vice president",
+          "Subscribers": 3414
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1755",
-            "deparment_code": "SCL ",
-            "Position": "Job Seeker"
+          "deparment_code": "SCL",
+          "Position": "Job Seeker",
+          "Subscribers": 1997
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "5897",
-            "deparment_code": "SCL ",
-            "Position": "Other"
+          "deparment_code": "SCL",
+          "Position": "Other",
+          "Subscribers": 7034
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "4408",
-            "deparment_code": "SCL ",
-            "Position": "Student"
+          "deparment_code": "SCL",
+          "Position": "Student",
+          "Subscribers": 4448
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "3464",
-            "deparment_code": "SCL ",
-            "Position": "Technical Staff"
+          "deparment_code": "SCL",
+          "Position": "Technical Staff",
+          "Subscribers": 4543
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "3367",
-            "deparment_code": "SPD ",
-            "Position": "Not Reported"
+          "deparment_code": "SPD",
+          "Position": "Not Reported",
+          "Subscribers": 3791
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "229",
-            "deparment_code": "SPD ",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "SPD",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 377
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1427",
-            "deparment_code": "SPD ",
-            "Position": "Consultant"
+          "deparment_code": "SPD",
+          "Position": "Consultant",
+          "Subscribers": 2226
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "671",
-            "deparment_code": "SPD ",
-            "Position": "Director/Vice president"
+          "deparment_code": "SPD",
+          "Position": "Director/Vice president",
+          "Subscribers": 920
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "366",
-            "deparment_code": "SPD ",
-            "Position": "Job Seeker"
+          "deparment_code": "SPD",
+          "Position": "Job Seeker",
+          "Subscribers": 539
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1214",
-            "deparment_code": "SPD ",
-            "Position": "Other"
+          "deparment_code": "SPD",
+          "Position": "Other",
+          "Subscribers": 1856
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "876",
-            "deparment_code": "SPD ",
-            "Position": "Student"
+          "deparment_code": "SPD",
+          "Position": "Student",
+          "Subscribers": 1098
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1196",
-            "deparment_code": "SPD ",
-            "Position": "Technical Staff"
+          "deparment_code": "SPD",
+          "Position": "Technical Staff",
+          "Subscribers": 1843
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "13",
-            "deparment_code": "VPC ",
-            "Position": "Not Reported"
+          "deparment_code": "VPC",
+          "Position": "Not Reported",
+          "Subscribers": 33
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "VPC ",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "VPC",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 1
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "VPC ",
-            "Position": "Consultant"
+          "deparment_code": "VPC",
+          "Position": "Consultant",
+          "Subscribers": 2
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "VPC ",
-            "Position": "Director/Vice president"
+          "deparment_code": "VPC",
+          "Position": "Director/Vice president",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "VPC ",
-            "Position": "Job Seeker"
+          "deparment_code": "VPC",
+          "Position": "Job Seeker",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2",
-            "deparment_code": "VPC ",
-            "Position": "Other"
+          "deparment_code": "VPC",
+          "Position": "Other",
+          "Subscribers": 2
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1",
-            "deparment_code": "VPC ",
-            "Position": "Student"
+          "deparment_code": "VPC",
+          "Position": "Student",
+          "Subscribers": 1
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "VPC ",
-            "Position": "Technical Staff"
+          "deparment_code": "VPC",
+          "Position": "Technical Staff",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2",
-            "deparment_code": "VPF ",
-            "Position": "Not Reported"
+          "deparment_code": "VPF",
+          "Position": "Not Reported",
+          "Subscribers": 1
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "VPF ",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "VPF",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "VPF ",
-            "Position": "Consultant"
+          "deparment_code": "VPF",
+          "Position": "Consultant",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "VPF ",
-            "Position": "Director/Vice president"
+          "deparment_code": "VPF",
+          "Position": "Director/Vice president",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "VPF ",
-            "Position": "Job Seeker"
+          "deparment_code": "VPF",
+          "Position": "Job Seeker",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2",
-            "deparment_code": "VPF ",
-            "Position": "Other"
+          "deparment_code": "VPF",
+          "Position": "Other",
+          "Subscribers": 2
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1",
-            "deparment_code": "VPF ",
-            "Position": "Student"
+          "deparment_code": "VPF",
+          "Position": "Student",
+          "Subscribers": 1
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "VPF ",
-            "Position": "Technical Staff"
+          "deparment_code": "VPF",
+          "Position": "Technical Staff",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "4",
-            "deparment_code": "VPS ",
-            "Position": "Not Reported"
+          "deparment_code": "VPS",
+          "Position": "Not Reported",
+          "Subscribers": 3
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "VPS ",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "VPS",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "VPS ",
-            "Position": "Consultant"
+          "deparment_code": "VPS",
+          "Position": "Consultant",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "VPS ",
-            "Position": "Director/Vice president"
+          "deparment_code": "VPS",
+          "Position": "Director/Vice president",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "VPS ",
-            "Position": "Job Seeker"
+          "deparment_code": "VPS",
+          "Position": "Job Seeker",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2",
-            "deparment_code": "VPS ",
-            "Position": "Other"
+          "deparment_code": "VPS",
+          "Position": "Other",
+          "Subscribers": 2
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1",
-            "deparment_code": "VPS ",
-            "Position": "Student"
+          "deparment_code": "VPS",
+          "Position": "Student",
+          "Subscribers": 1
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "VPS ",
-            "Position": "Technical Staff"
+          "deparment_code": "VPS",
+          "Position": "Technical Staff",
+          "Subscribers": 0
         }
-    ],
+      ],
     positionDivisions: [
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "45839",
-            "deparment_code": "CSD/CCS",
-            "Position": "Not Reported"
+          "deparment_code": "CSD/CCS",
+          "department": "CSD",
+          "division": "CCS",
+          "Position": "Not Reported",
+          "Subscribers": 41916
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "465",
-            "deparment_code": "CSD/CCS",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "CSD/CCS",
+          "department": "CSD",
+          "division": "CCS",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 649
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2719",
-            "deparment_code": "CSD/CCS",
-            "Position": "Consultant"
+          "deparment_code": "CSD/CCS",
+          "department": "CSD",
+          "division": "CCS",
+          "Position": "Consultant",
+          "Subscribers": 3807
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1625",
-            "deparment_code": "CSD/CCS",
-            "Position": "Director/Vice president"
+          "deparment_code": "CSD/CCS",
+          "department": "CSD",
+          "division": "CCS",
+          "Position": "Director/Vice president",
+          "Subscribers": 1902
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "873",
-            "deparment_code": "CSD/CCS",
-            "Position": "Job Seeker"
+          "deparment_code": "CSD/CCS",
+          "department": "CSD",
+          "division": "CCS",
+          "Position": "Job Seeker",
+          "Subscribers": 1057
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "3137",
-            "deparment_code": "CSD/CCS",
-            "Position": "Other"
+          "deparment_code": "CSD/CCS",
+          "department": "CSD",
+          "division": "CCS",
+          "Position": "Other",
+          "Subscribers": 3918
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1786",
-            "deparment_code": "CSD/CCS",
-            "Position": "Student"
+          "deparment_code": "CSD/CCS",
+          "department": "CSD",
+          "division": "CCS",
+          "Position": "Student",
+          "Subscribers": 2039
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2267",
-            "deparment_code": "CSD/CCS",
-            "Position": "Technical Staff"
+          "deparment_code": "CSD/CCS",
+          "department": "CSD",
+          "division": "CCS",
+          "Position": "Technical Staff",
+          "Subscribers": 3168
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "67700",
-            "deparment_code": "CSD/HUD",
-            "Position": "Not Reported"
+          "deparment_code": "CSD/HUD",
+          "department": "CSD",
+          "division": "HUD",
+          "Position": "Not Reported",
+          "Subscribers": 61712
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "475",
-            "deparment_code": "CSD/HUD",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "CSD/HUD",
+          "department": "CSD",
+          "division": "HUD",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 621
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2171",
-            "deparment_code": "CSD/HUD",
-            "Position": "Consultant"
+          "deparment_code": "CSD/HUD",
+          "department": "CSD",
+          "division": "HUD",
+          "Position": "Consultant",
+          "Subscribers": 2997
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1733",
-            "deparment_code": "CSD/HUD",
-            "Position": "Director/Vice president"
+          "deparment_code": "CSD/HUD",
+          "department": "CSD",
+          "division": "HUD",
+          "Position": "Director/Vice president",
+          "Subscribers": 1831
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "697",
-            "deparment_code": "CSD/HUD",
-            "Position": "Job Seeker"
+          "deparment_code": "CSD/HUD",
+          "department": "CSD",
+          "division": "HUD",
+          "Position": "Job Seeker",
+          "Subscribers": 812
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "4929",
-            "deparment_code": "CSD/HUD",
-            "Position": "Other"
+          "deparment_code": "CSD/HUD",
+          "department": "CSD",
+          "division": "HUD",
+          "Position": "Other",
+          "Subscribers": 4808
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1976",
-            "deparment_code": "CSD/HUD",
-            "Position": "Student"
+          "deparment_code": "CSD/HUD",
+          "department": "CSD",
+          "division": "HUD",
+          "Position": "Student",
+          "Subscribers": 2005
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1914",
-            "deparment_code": "CSD/HUD",
-            "Position": "Technical Staff"
+          "deparment_code": "CSD/HUD",
+          "department": "CSD",
+          "division": "HUD",
+          "Position": "Technical Staff",
+          "Subscribers": 2593
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "67731",
-            "deparment_code": "CSD/RND",
-            "Position": "Not Reported"
+          "deparment_code": "CSD/RND",
+          "department": "CSD",
+          "division": "RND",
+          "Position": "Not Reported",
+          "Subscribers": 61106
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "616",
-            "deparment_code": "CSD/RND",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "CSD/RND",
+          "department": "CSD",
+          "division": "RND",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 830
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "3261",
-            "deparment_code": "CSD/RND",
-            "Position": "Consultant"
+          "deparment_code": "CSD/RND",
+          "department": "CSD",
+          "division": "RND",
+          "Position": "Consultant",
+          "Subscribers": 4434
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2119",
-            "deparment_code": "CSD/RND",
-            "Position": "Director/Vice president"
+          "deparment_code": "CSD/RND",
+          "department": "CSD",
+          "division": "RND",
+          "Position": "Director/Vice president",
+          "Subscribers": 2381
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1048",
-            "deparment_code": "CSD/RND",
-            "Position": "Job Seeker"
+          "deparment_code": "CSD/RND",
+          "department": "CSD",
+          "division": "RND",
+          "Position": "Job Seeker",
+          "Subscribers": 1256
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "3890",
-            "deparment_code": "CSD/RND",
-            "Position": "Other"
+          "deparment_code": "CSD/RND",
+          "department": "CSD",
+          "division": "RND",
+          "Position": "Other",
+          "Subscribers": 4773
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2153",
-            "deparment_code": "CSD/RND",
-            "Position": "Student"
+          "deparment_code": "CSD/RND",
+          "department": "CSD",
+          "division": "RND",
+          "Position": "Student",
+          "Subscribers": 2416
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2792",
-            "deparment_code": "CSD/RND",
-            "Position": "Technical Staff"
+          "deparment_code": "CSD/RND",
+          "department": "CSD",
+          "division": "RND",
+          "Position": "Technical Staff",
+          "Subscribers": 3769
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "22256",
-            "deparment_code": "IFD/CMF",
-            "Position": "Not Reported"
+          "deparment_code": "IFD/CMF",
+          "department": "IFD",
+          "division": "CMF",
+          "Position": "Not Reported",
+          "Subscribers": 24545
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "390",
-            "deparment_code": "IFD/CMF",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "IFD/CMF",
+          "department": "IFD",
+          "division": "CMF",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 599
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1676",
-            "deparment_code": "IFD/CMF",
-            "Position": "Consultant"
+          "deparment_code": "IFD/CMF",
+          "department": "IFD",
+          "division": "CMF",
+          "Position": "Consultant",
+          "Subscribers": 2650
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1174",
-            "deparment_code": "IFD/CMF",
-            "Position": "Director/Vice president"
+          "deparment_code": "IFD/CMF",
+          "department": "IFD",
+          "division": "CMF",
+          "Position": "Director/Vice president",
+          "Subscribers": 1525
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "705",
-            "deparment_code": "IFD/CMF",
-            "Position": "Job Seeker"
+          "deparment_code": "IFD/CMF",
+          "department": "IFD",
+          "division": "CMF",
+          "Position": "Job Seeker",
+          "Subscribers": 868
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2143",
-            "deparment_code": "IFD/CMF",
-            "Position": "Other"
+          "deparment_code": "IFD/CMF",
+          "department": "IFD",
+          "division": "CMF",
+          "Position": "Other",
+          "Subscribers": 3037
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1417",
-            "deparment_code": "IFD/CMF",
-            "Position": "Student"
+          "deparment_code": "IFD/CMF",
+          "department": "IFD",
+          "division": "CMF",
+          "Position": "Student",
+          "Subscribers": 1714
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1387",
-            "deparment_code": "IFD/CMF",
-            "Position": "Technical Staff"
+          "deparment_code": "IFD/CMF",
+          "department": "IFD",
+          "division": "CMF",
+          "Position": "Technical Staff",
+          "Subscribers": 2039
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "36502",
-            "deparment_code": "IFD/CTI",
-            "Position": "Not Reported"
+          "deparment_code": "IFD/CTI",
+          "department": "IFD",
+          "division": "CTI",
+          "Position": "Not Reported",
+          "Subscribers": 34477
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "534",
-            "deparment_code": "IFD/CTI",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "IFD/CTI",
+          "department": "IFD",
+          "division": "CTI",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 730
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2324",
-            "deparment_code": "IFD/CTI",
-            "Position": "Consultant"
+          "deparment_code": "IFD/CTI",
+          "department": "IFD",
+          "division": "CTI",
+          "Position": "Consultant",
+          "Subscribers": 3316
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1670",
-            "deparment_code": "IFD/CTI",
-            "Position": "Director/Vice president"
+          "deparment_code": "IFD/CTI",
+          "department": "IFD",
+          "division": "CTI",
+          "Position": "Director/Vice president",
+          "Subscribers": 1958
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "900",
-            "deparment_code": "IFD/CTI",
-            "Position": "Job Seeker"
+          "deparment_code": "IFD/CTI",
+          "department": "IFD",
+          "division": "CTI",
+          "Position": "Job Seeker",
+          "Subscribers": 1011
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "3134",
-            "deparment_code": "IFD/CTI",
-            "Position": "Other"
+          "deparment_code": "IFD/CTI",
+          "department": "IFD",
+          "division": "CTI",
+          "Position": "Other",
+          "Subscribers": 3899
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2046",
-            "deparment_code": "IFD/CTI",
-            "Position": "Student"
+          "deparment_code": "IFD/CTI",
+          "department": "IFD",
+          "division": "CTI",
+          "Position": "Student",
+          "Subscribers": 2097
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1905",
-            "deparment_code": "IFD/CTI",
-            "Position": "Technical Staff"
+          "deparment_code": "IFD/CTI",
+          "department": "IFD",
+          "division": "CTI",
+          "Position": "Technical Staff",
+          "Subscribers": 2695
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "41646",
-            "deparment_code": "IFD/FMM",
-            "Position": "Not Reported"
+          "deparment_code": "IFD/FMM",
+          "department": "IFD",
+          "division": "FMM",
+          "Position": "Not Reported",
+          "Subscribers": 43507
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "401",
-            "deparment_code": "IFD/FMM",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "IFD/FMM",
+          "department": "IFD",
+          "division": "FMM",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 472
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1965",
-            "deparment_code": "IFD/FMM",
-            "Position": "Consultant"
+          "deparment_code": "IFD/FMM",
+          "department": "IFD",
+          "division": "FMM",
+          "Position": "Consultant",
+          "Subscribers": 2590
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1530",
-            "deparment_code": "IFD/FMM",
-            "Position": "Director/Vice president"
+          "deparment_code": "IFD/FMM",
+          "department": "IFD",
+          "division": "FMM",
+          "Position": "Director/Vice president",
+          "Subscribers": 1627
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "572",
-            "deparment_code": "IFD/FMM",
-            "Position": "Job Seeker"
+          "deparment_code": "IFD/FMM",
+          "department": "IFD",
+          "division": "FMM",
+          "Position": "Job Seeker",
+          "Subscribers": 690
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2841",
-            "deparment_code": "IFD/FMM",
-            "Position": "Other"
+          "deparment_code": "IFD/FMM",
+          "department": "IFD",
+          "division": "FMM",
+          "Position": "Other",
+          "Subscribers": 3210
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1604",
-            "deparment_code": "IFD/FMM",
-            "Position": "Student"
+          "deparment_code": "IFD/FMM",
+          "department": "IFD",
+          "division": "FMM",
+          "Position": "Student",
+          "Subscribers": 1729
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1695",
-            "deparment_code": "IFD/FMM",
-            "Position": "Technical Staff"
+          "deparment_code": "IFD/FMM",
+          "department": "IFD",
+          "division": "FMM",
+          "Position": "Technical Staff",
+          "Subscribers": 2082
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "42366",
-            "deparment_code": "IFD/ICS",
-            "Position": "Not Reported"
+          "deparment_code": "IFD/ICS",
+          "department": "IFD",
+          "division": "ICS",
+          "Position": "Not Reported",
+          "Subscribers": 39154
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "466",
-            "deparment_code": "IFD/ICS",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "IFD/ICS",
+          "department": "IFD",
+          "division": "ICS",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 647
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2776",
-            "deparment_code": "IFD/ICS",
-            "Position": "Consultant"
+          "deparment_code": "IFD/ICS",
+          "department": "IFD",
+          "division": "ICS",
+          "Position": "Consultant",
+          "Subscribers": 3775
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1841",
-            "deparment_code": "IFD/ICS",
-            "Position": "Director/Vice president"
+          "deparment_code": "IFD/ICS",
+          "department": "IFD",
+          "division": "ICS",
+          "Position": "Director/Vice president",
+          "Subscribers": 2110
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "884",
-            "deparment_code": "IFD/ICS",
-            "Position": "Job Seeker"
+          "deparment_code": "IFD/ICS",
+          "department": "IFD",
+          "division": "ICS",
+          "Position": "Job Seeker",
+          "Subscribers": 1033
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "3442",
-            "deparment_code": "IFD/ICS",
-            "Position": "Other"
+          "deparment_code": "IFD/ICS",
+          "department": "IFD",
+          "division": "ICS",
+          "Position": "Other",
+          "Subscribers": 4278
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2202",
-            "deparment_code": "IFD/ICS",
-            "Position": "Student"
+          "deparment_code": "IFD/ICS",
+          "department": "IFD",
+          "division": "ICS",
+          "Position": "Student",
+          "Subscribers": 2270
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2565",
-            "deparment_code": "IFD/ICS",
-            "Position": "Technical Staff"
+          "deparment_code": "IFD/ICS",
+          "department": "IFD",
+          "division": "ICS",
+          "Position": "Technical Staff",
+          "Subscribers": 3470
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "22967",
-            "deparment_code": "INE/ENE",
-            "Position": "Not Reported"
+          "deparment_code": "INE/ENE",
+          "department": "INE",
+          "division": "ENE",
+          "Position": "Not Reported",
+          "Subscribers": 20487
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "328",
-            "deparment_code": "INE/ENE",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "INE/ENE",
+          "department": "INE",
+          "division": "ENE",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 462
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1500",
-            "deparment_code": "INE/ENE",
-            "Position": "Consultant"
+          "deparment_code": "INE/ENE",
+          "department": "INE",
+          "division": "ENE",
+          "Position": "Consultant",
+          "Subscribers": 2165
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1002",
-            "deparment_code": "INE/ENE",
-            "Position": "Director/Vice president"
+          "deparment_code": "INE/ENE",
+          "department": "INE",
+          "division": "ENE",
+          "Position": "Director/Vice president",
+          "Subscribers": 1171
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "596",
-            "deparment_code": "INE/ENE",
-            "Position": "Job Seeker"
+          "deparment_code": "INE/ENE",
+          "department": "INE",
+          "division": "ENE",
+          "Position": "Job Seeker",
+          "Subscribers": 644
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1744",
-            "deparment_code": "INE/ENE",
-            "Position": "Other"
+          "deparment_code": "INE/ENE",
+          "department": "INE",
+          "division": "ENE",
+          "Position": "Other",
+          "Subscribers": 2133
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1342",
-            "deparment_code": "INE/ENE",
-            "Position": "Student"
+          "deparment_code": "INE/ENE",
+          "department": "INE",
+          "division": "ENE",
+          "Position": "Student",
+          "Subscribers": 1344
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1276",
-            "deparment_code": "INE/ENE",
-            "Position": "Technical Staff"
+          "deparment_code": "INE/ENE",
+          "department": "INE",
+          "division": "ENE",
+          "Position": "Technical Staff",
+          "Subscribers": 1785
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "22702",
-            "deparment_code": "INE/TSP",
-            "Position": "Not Reported"
+          "deparment_code": "INE/TSP",
+          "department": "INE",
+          "division": "TSP",
+          "Position": "Not Reported",
+          "Subscribers": 20554
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "257",
-            "deparment_code": "INE/TSP",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "INE/TSP",
+          "department": "INE",
+          "division": "TSP",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 359
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1235",
-            "deparment_code": "INE/TSP",
-            "Position": "Consultant"
+          "deparment_code": "INE/TSP",
+          "department": "INE",
+          "division": "TSP",
+          "Position": "Consultant",
+          "Subscribers": 1782
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "813",
-            "deparment_code": "INE/TSP",
-            "Position": "Director/Vice president"
+          "deparment_code": "INE/TSP",
+          "department": "INE",
+          "division": "TSP",
+          "Position": "Director/Vice president",
+          "Subscribers": 959
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "571",
-            "deparment_code": "INE/TSP",
-            "Position": "Job Seeker"
+          "deparment_code": "INE/TSP",
+          "department": "INE",
+          "division": "TSP",
+          "Position": "Job Seeker",
+          "Subscribers": 607
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1688",
-            "deparment_code": "INE/TSP",
-            "Position": "Other"
+          "deparment_code": "INE/TSP",
+          "department": "INE",
+          "division": "TSP",
+          "Position": "Other",
+          "Subscribers": 2001
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1375",
-            "deparment_code": "INE/TSP",
-            "Position": "Student"
+          "deparment_code": "INE/TSP",
+          "department": "INE",
+          "division": "TSP",
+          "Position": "Student",
+          "Subscribers": 1368
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1050",
-            "deparment_code": "INE/TSP",
-            "Position": "Technical Staff"
+          "deparment_code": "INE/TSP",
+          "department": "INE",
+          "division": "TSP",
+          "Position": "Technical Staff",
+          "Subscribers": 1500
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "41190",
-            "deparment_code": "INE/WSA",
-            "Position": "Not Reported"
+          "deparment_code": "INE/WSA",
+          "department": "INE",
+          "division": "WSA",
+          "Position": "Not Reported",
+          "Subscribers": 37686
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "306",
-            "deparment_code": "INE/WSA",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "INE/WSA",
+          "department": "INE",
+          "division": "WSA",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 440
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1954",
-            "deparment_code": "INE/WSA",
-            "Position": "Consultant"
+          "deparment_code": "INE/WSA",
+          "department": "INE",
+          "division": "WSA",
+          "Position": "Consultant",
+          "Subscribers": 2713
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1185",
-            "deparment_code": "INE/WSA",
-            "Position": "Director/Vice president"
+          "deparment_code": "INE/WSA",
+          "department": "INE",
+          "division": "WSA",
+          "Position": "Director/Vice president",
+          "Subscribers": 1351
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "626",
-            "deparment_code": "INE/WSA",
-            "Position": "Job Seeker"
+          "deparment_code": "INE/WSA",
+          "department": "INE",
+          "division": "WSA",
+          "Position": "Job Seeker",
+          "Subscribers": 722
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2198",
-            "deparment_code": "INE/WSA",
-            "Position": "Other"
+          "deparment_code": "INE/WSA",
+          "department": "INE",
+          "division": "WSA",
+          "Position": "Other",
+          "Subscribers": 2591
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1286",
-            "deparment_code": "INE/WSA",
-            "Position": "Student"
+          "deparment_code": "INE/WSA",
+          "department": "INE",
+          "division": "WSA",
+          "Position": "Student",
+          "Subscribers": 1391
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1726",
-            "deparment_code": "INE/WSA",
-            "Position": "Technical Staff"
+          "deparment_code": "INE/WSA",
+          "department": "INE",
+          "division": "WSA",
+          "Position": "Technical Staff",
+          "Subscribers": 2335
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "42271",
-            "deparment_code": "INT/TIN",
-            "Position": "Not Reported"
+          "deparment_code": "INT/TIN",
+          "department": "INT",
+          "division": "TIN",
+          "Position": "Not Reported",
+          "Subscribers": 35109
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "420",
-            "deparment_code": "INT/TIN",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "INT/TIN",
+          "department": "INT",
+          "division": "TIN",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 557
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1724",
-            "deparment_code": "INT/TIN",
-            "Position": "Consultant"
+          "deparment_code": "INT/TIN",
+          "department": "INT",
+          "division": "TIN",
+          "Position": "Consultant",
+          "Subscribers": 2308
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1449",
-            "deparment_code": "INT/TIN",
-            "Position": "Director/Vice president"
+          "deparment_code": "INT/TIN",
+          "department": "INT",
+          "division": "TIN",
+          "Position": "Director/Vice president",
+          "Subscribers": 1535
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "976",
-            "deparment_code": "INT/TIN",
-            "Position": "Job Seeker"
+          "deparment_code": "INT/TIN",
+          "department": "INT",
+          "division": "TIN",
+          "Position": "Job Seeker",
+          "Subscribers": 954
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2411",
-            "deparment_code": "INT/TIN",
-            "Position": "Other"
+          "deparment_code": "INT/TIN",
+          "department": "INT",
+          "division": "TIN",
+          "Position": "Other",
+          "Subscribers": 2789
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2474",
-            "deparment_code": "INT/TIN",
-            "Position": "Student"
+          "deparment_code": "INT/TIN",
+          "department": "INT",
+          "division": "TIN",
+          "Position": "Student",
+          "Subscribers": 2190
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1375",
-            "deparment_code": "INT/TIN",
-            "Position": "Technical Staff"
+          "deparment_code": "INT/TIN",
+          "department": "INT",
+          "division": "TIN",
+          "Position": "Technical Staff",
+          "Subscribers": 1748
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "67100",
-            "deparment_code": "KIC/DCC",
-            "Position": "Not Reported"
+          "deparment_code": "KIC/DCC",
+          "department": "KIC",
+          "division": "DCC",
+          "Position": "Not Reported",
+          "Subscribers": 58546
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "669",
-            "deparment_code": "KIC/DCC",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "KIC/DCC",
+          "department": "KIC",
+          "division": "DCC",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 600
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2367",
-            "deparment_code": "KIC/DCC",
-            "Position": "Consultant"
+          "deparment_code": "KIC/DCC",
+          "department": "KIC",
+          "division": "DCC",
+          "Position": "Consultant",
+          "Subscribers": 2204
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2744",
-            "deparment_code": "KIC/DCC",
-            "Position": "Director/Vice president"
+          "deparment_code": "KIC/DCC",
+          "department": "KIC",
+          "division": "DCC",
+          "Position": "Director/Vice president",
+          "Subscribers": 2326
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "388",
-            "deparment_code": "KIC/DCC",
-            "Position": "Job Seeker"
+          "deparment_code": "KIC/DCC",
+          "department": "KIC",
+          "division": "DCC",
+          "Position": "Job Seeker",
+          "Subscribers": 295
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2124",
-            "deparment_code": "KIC/DCC",
-            "Position": "Other"
+          "deparment_code": "KIC/DCC",
+          "department": "KIC",
+          "division": "DCC",
+          "Position": "Other",
+          "Subscribers": 1938
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1157",
-            "deparment_code": "KIC/DCC",
-            "Position": "Student"
+          "deparment_code": "KIC/DCC",
+          "department": "KIC",
+          "division": "DCC",
+          "Position": "Student",
+          "Subscribers": 819
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2296",
-            "deparment_code": "KIC/DCC",
-            "Position": "Technical Staff"
+          "deparment_code": "KIC/DCC",
+          "department": "KIC",
+          "division": "DCC",
+          "Position": "Technical Staff",
+          "Subscribers": 2083
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "19579",
-            "deparment_code": "KIC/ICD",
-            "Position": "Not Reported"
+          "deparment_code": "KIC/ICD",
+          "department": "KIC",
+          "division": "ICD",
+          "Position": "Not Reported",
+          "Subscribers": 23686
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "743",
-            "deparment_code": "KIC/ICD",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "KIC/ICD",
+          "department": "KIC",
+          "division": "ICD",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 912
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1909",
-            "deparment_code": "KIC/ICD",
-            "Position": "Consultant"
+          "deparment_code": "KIC/ICD",
+          "department": "KIC",
+          "division": "ICD",
+          "Position": "Consultant",
+          "Subscribers": 2696
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2490",
-            "deparment_code": "KIC/ICD",
-            "Position": "Director/Vice president"
+          "deparment_code": "KIC/ICD",
+          "department": "KIC",
+          "division": "ICD",
+          "Position": "Director/Vice president",
+          "Subscribers": 2535
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1094",
-            "deparment_code": "KIC/ICD",
-            "Position": "Job Seeker"
+          "deparment_code": "KIC/ICD",
+          "department": "KIC",
+          "division": "ICD",
+          "Position": "Job Seeker",
+          "Subscribers": 1126
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "20806",
-            "deparment_code": "KIC/ICD",
-            "Position": "Other"
+          "deparment_code": "KIC/ICD",
+          "department": "KIC",
+          "division": "ICD",
+          "Position": "Other",
+          "Subscribers": 14170
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "3167",
-            "deparment_code": "KIC/ICD",
-            "Position": "Student"
+          "deparment_code": "KIC/ICD",
+          "department": "KIC",
+          "division": "ICD",
+          "Position": "Student",
+          "Subscribers": 2831
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1880",
-            "deparment_code": "KIC/ICD",
-            "Position": "Technical Staff"
+          "deparment_code": "KIC/ICD",
+          "department": "KIC",
+          "division": "ICD",
+          "Position": "Technical Staff",
+          "Subscribers": 2390
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "348966",
-            "deparment_code": "KIC/KLD",
-            "Position": "Not Reported"
+          "deparment_code": "KIC/KLD",
+          "department": "KIC",
+          "division": "KLD",
+          "Position": "Not Reported",
+          "Subscribers": 342916
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "660",
-            "deparment_code": "KIC/KLD",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "KIC/KLD",
+          "department": "KIC",
+          "division": "KLD",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 1084
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "3357",
-            "deparment_code": "KIC/KLD",
-            "Position": "Consultant"
+          "deparment_code": "KIC/KLD",
+          "department": "KIC",
+          "division": "KLD",
+          "Position": "Consultant",
+          "Subscribers": 5903
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2657",
-            "deparment_code": "KIC/KLD",
-            "Position": "Director/Vice president"
+          "deparment_code": "KIC/KLD",
+          "department": "KIC",
+          "division": "KLD",
+          "Position": "Director/Vice president",
+          "Subscribers": 3522
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1394",
-            "deparment_code": "KIC/KLD",
-            "Position": "Job Seeker"
+          "deparment_code": "KIC/KLD",
+          "department": "KIC",
+          "division": "KLD",
+          "Position": "Job Seeker",
+          "Subscribers": 1886
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "7892",
-            "deparment_code": "KIC/KLD",
-            "Position": "Other"
+          "deparment_code": "KIC/KLD",
+          "department": "KIC",
+          "division": "KLD",
+          "Position": "Other",
+          "Subscribers": 8909
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "3234",
-            "deparment_code": "KIC/KLD",
-            "Position": "Student"
+          "deparment_code": "KIC/KLD",
+          "department": "KIC",
+          "division": "KLD",
+          "Position": "Student",
+          "Subscribers": 3781
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2928",
-            "deparment_code": "KIC/KLD",
-            "Position": "Technical Staff"
+          "deparment_code": "KIC/KLD",
+          "department": "KIC",
+          "division": "KLD",
+          "Position": "Technical Staff",
+          "Subscribers": 5264
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "33303",
-            "deparment_code": "RES/RES",
-            "Position": "Not Reported"
+          "deparment_code": "RES/RES",
+          "department": "RES",
+          "division": "RES",
+          "Position": "Not Reported",
+          "Subscribers": 35164
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "626",
-            "deparment_code": "RES/RES",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "RES/RES",
+          "department": "RES",
+          "division": "RES",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 975
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "3583",
-            "deparment_code": "RES/RES",
-            "Position": "Consultant"
+          "deparment_code": "RES/RES",
+          "department": "RES",
+          "division": "RES",
+          "Position": "Consultant",
+          "Subscribers": 5251
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1985",
-            "deparment_code": "RES/RES",
-            "Position": "Director/Vice president"
+          "deparment_code": "RES/RES",
+          "department": "RES",
+          "division": "RES",
+          "Position": "Director/Vice president",
+          "Subscribers": 2606
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1183",
-            "deparment_code": "RES/RES",
-            "Position": "Job Seeker"
+          "deparment_code": "RES/RES",
+          "department": "RES",
+          "division": "RES",
+          "Position": "Job Seeker",
+          "Subscribers": 1451
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "3925",
-            "deparment_code": "RES/RES",
-            "Position": "Other"
+          "deparment_code": "RES/RES",
+          "department": "RES",
+          "division": "RES",
+          "Position": "Other",
+          "Subscribers": 5531
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2673",
-            "deparment_code": "RES/RES",
-            "Position": "Student"
+          "deparment_code": "RES/RES",
+          "department": "RES",
+          "division": "RES",
+          "Position": "Student",
+          "Subscribers": 3000
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "3172",
-            "deparment_code": "RES/RES",
-            "Position": "Technical Staff"
+          "deparment_code": "RES/RES",
+          "department": "RES",
+          "division": "RES",
+          "Position": "Technical Staff",
+          "Subscribers": 4676
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "49515",
-            "deparment_code": "SCL/EDU",
-            "Position": "Not Reported"
+          "deparment_code": "SCL/EDU",
+          "department": "SCL",
+          "division": "EDU",
+          "Position": "Not Reported",
+          "Subscribers": 48926
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "530",
-            "deparment_code": "SCL/EDU",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "SCL/EDU",
+          "department": "SCL",
+          "division": "EDU",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 696
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2383",
-            "deparment_code": "SCL/EDU",
-            "Position": "Consultant"
+          "deparment_code": "SCL/EDU",
+          "department": "SCL",
+          "division": "EDU",
+          "Position": "Consultant",
+          "Subscribers": 3357
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1898",
-            "deparment_code": "SCL/EDU",
-            "Position": "Director/Vice president"
+          "deparment_code": "SCL/EDU",
+          "department": "SCL",
+          "division": "EDU",
+          "Position": "Director/Vice president",
+          "Subscribers": 2150
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "857",
-            "deparment_code": "SCL/EDU",
-            "Position": "Job Seeker"
+          "deparment_code": "SCL/EDU",
+          "department": "SCL",
+          "division": "EDU",
+          "Position": "Job Seeker",
+          "Subscribers": 1063
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "3627",
-            "deparment_code": "SCL/EDU",
-            "Position": "Other"
+          "deparment_code": "SCL/EDU",
+          "department": "SCL",
+          "division": "EDU",
+          "Position": "Other",
+          "Subscribers": 4586
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1879",
-            "deparment_code": "SCL/EDU",
-            "Position": "Student"
+          "deparment_code": "SCL/EDU",
+          "department": "SCL",
+          "division": "EDU",
+          "Position": "Student",
+          "Subscribers": 2132
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2150",
-            "deparment_code": "SCL/EDU",
-            "Position": "Technical Staff"
+          "deparment_code": "SCL/EDU",
+          "department": "SCL",
+          "division": "EDU",
+          "Position": "Technical Staff",
+          "Subscribers": 2879
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "26452",
-            "deparment_code": "SCL/GDI",
-            "Position": "Not Reported"
+          "deparment_code": "SCL/GDI",
+          "department": "SCL",
+          "division": "GDI",
+          "Position": "Not Reported",
+          "Subscribers": 23447
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "229",
-            "deparment_code": "SCL/GDI",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "SCL/GDI",
+          "department": "SCL",
+          "division": "GDI",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 322
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1416",
-            "deparment_code": "SCL/GDI",
-            "Position": "Consultant"
+          "deparment_code": "SCL/GDI",
+          "department": "SCL",
+          "division": "GDI",
+          "Position": "Consultant",
+          "Subscribers": 1986
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1078",
-            "deparment_code": "SCL/GDI",
-            "Position": "Director/Vice president"
+          "deparment_code": "SCL/GDI",
+          "department": "SCL",
+          "division": "GDI",
+          "Position": "Director/Vice president",
+          "Subscribers": 1192
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "494",
-            "deparment_code": "SCL/GDI",
-            "Position": "Job Seeker"
+          "deparment_code": "SCL/GDI",
+          "department": "SCL",
+          "division": "GDI",
+          "Position": "Job Seeker",
+          "Subscribers": 582
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2214",
-            "deparment_code": "SCL/GDI",
-            "Position": "Other"
+          "deparment_code": "SCL/GDI",
+          "department": "SCL",
+          "division": "GDI",
+          "Position": "Other",
+          "Subscribers": 2606
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1332",
-            "deparment_code": "SCL/GDI",
-            "Position": "Student"
+          "deparment_code": "SCL/GDI",
+          "department": "SCL",
+          "division": "GDI",
+          "Position": "Student",
+          "Subscribers": 1389
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1399",
-            "deparment_code": "SCL/GDI",
-            "Position": "Technical Staff"
+          "deparment_code": "SCL/GDI",
+          "department": "SCL",
+          "division": "GDI",
+          "Position": "Technical Staff",
+          "Subscribers": 1858
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "31396",
-            "deparment_code": "SCL/LMK",
-            "Position": "Not Reported"
+          "deparment_code": "SCL/LMK",
+          "department": "SCL",
+          "division": "LMK",
+          "Position": "Not Reported",
+          "Subscribers": 32268
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "239",
-            "deparment_code": "SCL/LMK",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "SCL/LMK",
+          "department": "SCL",
+          "division": "LMK",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 338
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1291",
-            "deparment_code": "SCL/LMK",
-            "Position": "Consultant"
+          "deparment_code": "SCL/LMK",
+          "department": "SCL",
+          "division": "LMK",
+          "Position": "Consultant",
+          "Subscribers": 1842
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "999",
-            "deparment_code": "SCL/LMK",
-            "Position": "Director/Vice president"
+          "deparment_code": "SCL/LMK",
+          "department": "SCL",
+          "division": "LMK",
+          "Position": "Director/Vice president",
+          "Subscribers": 1145
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "612",
-            "deparment_code": "SCL/LMK",
-            "Position": "Job Seeker"
+          "deparment_code": "SCL/LMK",
+          "department": "SCL",
+          "division": "LMK",
+          "Position": "Job Seeker",
+          "Subscribers": 752
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2097",
-            "deparment_code": "SCL/LMK",
-            "Position": "Other"
+          "deparment_code": "SCL/LMK",
+          "department": "SCL",
+          "division": "LMK",
+          "Position": "Other",
+          "Subscribers": 2515
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1352",
-            "deparment_code": "SCL/LMK",
-            "Position": "Student"
+          "deparment_code": "SCL/LMK",
+          "department": "SCL",
+          "division": "LMK",
+          "Position": "Student",
+          "Subscribers": 1488
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1090",
-            "deparment_code": "SCL/LMK",
-            "Position": "Technical Staff"
+          "deparment_code": "SCL/LMK",
+          "department": "SCL",
+          "division": "LMK",
+          "Position": "Technical Staff",
+          "Subscribers": 1548
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "59336",
-            "deparment_code": "SCL/SPH",
-            "Position": "Not Reported"
+          "deparment_code": "SCL/SPH",
+          "department": "SCL",
+          "division": "SPH",
+          "Position": "Not Reported",
+          "Subscribers": 54306
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "475",
-            "deparment_code": "SCL/SPH",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "SCL/SPH",
+          "department": "SCL",
+          "division": "SPH",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 619
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2397",
-            "deparment_code": "SCL/SPH",
-            "Position": "Consultant"
+          "deparment_code": "SCL/SPH",
+          "department": "SCL",
+          "division": "SPH",
+          "Position": "Consultant",
+          "Subscribers": 3252
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1980",
-            "deparment_code": "SCL/SPH",
-            "Position": "Director/Vice president"
+          "deparment_code": "SCL/SPH",
+          "department": "SCL",
+          "division": "SPH",
+          "Position": "Director/Vice president",
+          "Subscribers": 2136
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "899",
-            "deparment_code": "SCL/SPH",
-            "Position": "Job Seeker"
+          "deparment_code": "SCL/SPH",
+          "department": "SCL",
+          "division": "SPH",
+          "Position": "Job Seeker",
+          "Subscribers": 1061
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "3864",
-            "deparment_code": "SCL/SPH",
-            "Position": "Other"
+          "deparment_code": "SCL/SPH",
+          "department": "SCL",
+          "division": "SPH",
+          "Position": "Other",
+          "Subscribers": 4544
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2535",
-            "deparment_code": "SCL/SPH",
-            "Position": "Student"
+          "deparment_code": "SCL/SPH",
+          "department": "SCL",
+          "division": "SPH",
+          "Position": "Student",
+          "Subscribers": 2583
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2264",
-            "deparment_code": "SCL/SPH",
-            "Position": "Technical Staff"
+          "deparment_code": "SCL/SPH",
+          "department": "SCL",
+          "division": "SPH",
+          "Position": "Technical Staff",
+          "Subscribers": 2967
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "3297",
-            "deparment_code": "SPD/SPD",
-            "Position": "Not Reported"
+          "deparment_code": "SPD/SPD",
+          "department": "SPD",
+          "division": "SPD",
+          "Position": "Not Reported",
+          "Subscribers": 3744
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "216",
-            "deparment_code": "SPD/SPD",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "SPD/SPD",
+          "department": "SPD",
+          "division": "SPD",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 366
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1392",
-            "deparment_code": "SPD/SPD",
-            "Position": "Consultant"
+          "deparment_code": "SPD/SPD",
+          "department": "SPD",
+          "division": "SPD",
+          "Position": "Consultant",
+          "Subscribers": 2202
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "649",
-            "deparment_code": "SPD/SPD",
-            "Position": "Director/Vice president"
+          "deparment_code": "SPD/SPD",
+          "department": "SPD",
+          "division": "SPD",
+          "Position": "Director/Vice president",
+          "Subscribers": 902
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "361",
-            "deparment_code": "SPD/SPD",
-            "Position": "Job Seeker"
+          "deparment_code": "SPD/SPD",
+          "department": "SPD",
+          "division": "SPD",
+          "Position": "Job Seeker",
+          "Subscribers": 534
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1160",
-            "deparment_code": "SPD/SPD",
-            "Position": "Other"
+          "deparment_code": "SPD/SPD",
+          "department": "SPD",
+          "division": "SPD",
+          "Position": "Other",
+          "Subscribers": 1817
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "844",
-            "deparment_code": "SPD/SPD",
-            "Position": "Student"
+          "deparment_code": "SPD/SPD",
+          "department": "SPD",
+          "division": "SPD",
+          "Position": "Student",
+          "Subscribers": 1073
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1161",
-            "deparment_code": "SPD/SPD",
-            "Position": "Technical Staff"
+          "deparment_code": "SPD/SPD",
+          "department": "SPD",
+          "division": "SPD",
+          "Position": "Technical Staff",
+          "Subscribers": 1812
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1",
-            "deparment_code": "VPC/CAR",
-            "Position": "Not Reported"
+          "deparment_code": "VPC/CAR",
+          "department": "VPC",
+          "division": "CAR",
+          "Position": "Not Reported",
+          "Subscribers": 2
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "VPC/CAR",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "VPC/CAR",
+          "department": "VPC",
+          "division": "CAR",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "VPC/CAR",
-            "Position": "Consultant"
+          "deparment_code": "VPC/CAR",
+          "department": "VPC",
+          "division": "CAR",
+          "Position": "Consultant",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "VPC/CAR",
-            "Position": "Director/Vice president"
+          "deparment_code": "VPC/CAR",
+          "department": "VPC",
+          "division": "CAR",
+          "Position": "Director/Vice president",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "VPC/CAR",
-            "Position": "Job Seeker"
+          "deparment_code": "VPC/CAR",
+          "department": "VPC",
+          "division": "CAR",
+          "Position": "Job Seeker",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "VPC/CAR",
-            "Position": "Other"
+          "deparment_code": "VPC/CAR",
+          "department": "VPC",
+          "division": "CAR",
+          "Position": "Other",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "VPC/CAR",
-            "Position": "Student"
+          "deparment_code": "VPC/CAR",
+          "department": "VPC",
+          "division": "CAR",
+          "Position": "Student",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "VPC/CAR",
-            "Position": "Technical Staff"
+          "deparment_code": "VPC/CAR",
+          "department": "VPC",
+          "division": "CAR",
+          "Position": "Technical Staff",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1",
-            "deparment_code": "VPC/CHA",
-            "Position": "Not Reported"
+          "deparment_code": "VPC/CHA",
+          "department": "VPC",
+          "division": "CHA",
+          "Position": "Not Reported",
+          "Subscribers": 2
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "VPC/CHA",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "VPC/CHA",
+          "department": "VPC",
+          "division": "CHA",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "VPC/CHA",
-            "Position": "Consultant"
+          "deparment_code": "VPC/CHA",
+          "department": "VPC",
+          "division": "CHA",
+          "Position": "Consultant",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "VPC/CHA",
-            "Position": "Director/Vice president"
+          "deparment_code": "VPC/CHA",
+          "department": "VPC",
+          "division": "CHA",
+          "Position": "Director/Vice president",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "VPC/CHA",
-            "Position": "Job Seeker"
+          "deparment_code": "VPC/CHA",
+          "department": "VPC",
+          "division": "CHA",
+          "Position": "Job Seeker",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "VPC/CHA",
-            "Position": "Other"
+          "deparment_code": "VPC/CHA",
+          "department": "VPC",
+          "division": "CHA",
+          "Position": "Other",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "VPC/CHA",
-            "Position": "Student"
+          "deparment_code": "VPC/CHA",
+          "department": "VPC",
+          "division": "CHA",
+          "Position": "Student",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "deparment_code": "VPC/CHA",
-            "Position": "Technical Staff"
+          "deparment_code": "VPC/CHA",
+          "department": "VPC",
+          "division": "CHA",
+          "Position": "Technical Staff",
+          "Subscribers": 0
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1621",
-            "deparment_code": "VPC/CUR",
-            "Position": "Not Reported"
+          "deparment_code": "VPC/CUR",
+          "department": "VPC",
+          "division": "CUR",
+          "Position": "Not Reported",
+          "Subscribers": 1687
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "13",
-            "deparment_code": "VPC/CUR",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "VPC/CUR",
+          "department": "VPC",
+          "division": "CUR",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 17
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "49",
-            "deparment_code": "VPC/CUR",
-            "Position": "Consultant"
+          "deparment_code": "VPC/CUR",
+          "department": "VPC",
+          "division": "CUR",
+          "Position": "Consultant",
+          "Subscribers": 56
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "46",
-            "deparment_code": "VPC/CUR",
-            "Position": "Director/Vice president"
+          "deparment_code": "VPC/CUR",
+          "department": "VPC",
+          "division": "CUR",
+          "Position": "Director/Vice president",
+          "Subscribers": 42
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "18",
-            "deparment_code": "VPC/CUR",
-            "Position": "Job Seeker"
+          "deparment_code": "VPC/CUR",
+          "department": "VPC",
+          "division": "CUR",
+          "Position": "Job Seeker",
+          "Subscribers": 19
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "111",
-            "deparment_code": "VPC/CUR",
-            "Position": "Other"
+          "deparment_code": "VPC/CUR",
+          "department": "VPC",
+          "division": "CUR",
+          "Position": "Other",
+          "Subscribers": 113
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "57",
-            "deparment_code": "VPC/CUR",
-            "Position": "Student"
+          "deparment_code": "VPC/CUR",
+          "department": "VPC",
+          "division": "CUR",
+          "Position": "Student",
+          "Subscribers": 51
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "78",
-            "deparment_code": "VPC/CUR",
-            "Position": "Technical Staff"
+          "deparment_code": "VPC/CUR",
+          "department": "VPC",
+          "division": "CUR",
+          "Position": "Technical Staff",
+          "Subscribers": 79
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "45839",
-            "deparment_code": "VPS/ESG",
-            "Position": "Not Reported"
+          "deparment_code": "VPS/ESG",
+          "department": "VPS",
+          "division": "ESG",
+          "Position": "Not Reported",
+          "Subscribers": 41916
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "465",
-            "deparment_code": "VPS/ESG",
-            "Position": "CEO-President/Minister"
+          "deparment_code": "VPS/ESG",
+          "department": "VPS",
+          "division": "ESG",
+          "Position": "CEO-President/Minister",
+          "Subscribers": 649
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2719",
-            "deparment_code": "VPS/ESG",
-            "Position": "Consultant"
+          "deparment_code": "VPS/ESG",
+          "department": "VPS",
+          "division": "ESG",
+          "Position": "Consultant",
+          "Subscribers": 3807
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1625",
-            "deparment_code": "VPS/ESG",
-            "Position": "Director/Vice president"
+          "deparment_code": "VPS/ESG",
+          "department": "VPS",
+          "division": "ESG",
+          "Position": "Director/Vice president",
+          "Subscribers": 1902
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "873",
-            "deparment_code": "VPS/ESG",
-            "Position": "Job Seeker"
+          "deparment_code": "VPS/ESG",
+          "department": "VPS",
+          "division": "ESG",
+          "Position": "Job Seeker",
+          "Subscribers": 1057
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "3137",
-            "deparment_code": "VPS/ESG",
-            "Position": "Other"
+          "deparment_code": "VPS/ESG",
+          "department": "VPS",
+          "division": "ESG",
+          "Position": "Other",
+          "Subscribers": 3918
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "1786",
-            "deparment_code": "VPS/ESG",
-            "Position": "Student"
+          "deparment_code": "VPS/ESG",
+          "department": "VPS",
+          "division": "ESG",
+          "Position": "Student",
+          "Subscribers": 2039
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2267",
-            "deparment_code": "VPS/ESG",
-            "Position": "Technical Staff"
+          "deparment_code": "VPS/ESG",
+          "department": "VPS",
+          "division": "ESG",
+          "Position": "Technical Staff",
+          "Subscribers": 3168
         }
-    ],
-    positionIDB: [{
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "531523",
-            "Position": "Not Reported",
-            "_IDB_": "IDB"
+      ],
+    positionIDB: [
+        {
+          "Position": "Not Reported",
+          "Subscribers": 513790
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "2104",
-            "Position": "CEO-President/Minister",
-            "_IDB_": "IDB"
+          "Position": "CEO-President/Minister",
+          "Subscribers": 2327
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "8053",
-            "Position": "Consultant",
-            "_IDB_": "IDB"
+          "Position": "Consultant",
+          "Subscribers": 9625
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "7743",
-            "Position": "Director/Vice president",
-            "_IDB_": "IDB"
+          "Position": "Director/Vice president",
+          "Subscribers": 7712
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "4329",
-            "Position": "Job Seeker",
-            "_IDB_": "IDB"
+          "Position": "Job Seeker",
+          "Subscribers": 4116
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "26522",
-            "Position": "Other",
-            "_IDB_": "IDB"
+          "Position": "Other",
+          "Subscribers": 20710
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "11484",
-            "Position": "Student",
-            "_IDB_": "IDB"
+          "Position": "Student",
+          "Subscribers": 10009
         },
         {
-            "json_featuretype": "NewFeatureType",
-            "Subscribers": "7579",
-            "Position": "Technical Staff",
-            "_IDB_": "IDB"
+          "Position": "Technical Staff",
+          "Subscribers": 8898
         }
-    ]
+      ]
 };

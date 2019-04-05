@@ -3,61 +3,61 @@ var moocsEducationArrays = {
       {
         "code": "CCB",
         "name": "Associate",
-        "registrations": 262,
+        "registrations": 285,
         "value": "2.76%"
       },
       {
         "code": "CCB",
         "name": "Elementary",
-        "registrations": 7,
-        "value": "0.07%"
+        "registrations": 11,
+        "value": "0.11%"
       },
       {
         "code": "CCB",
         "name": "High School",
-        "registrations": 771,
-        "value": "8.14%"
+        "registrations": 826,
+        "value": "7.99%"
       },
       {
         "code": "CCB",
         "name": "Bachelor",
-        "registrations": 2683,
-        "value": "28.31%"
+        "registrations": 2933,
+        "value": "28.37%"
       },
       {
         "code": "CCB",
         "name": "Master",
-        "registrations": 3148,
-        "value": "33.22%"
+        "registrations": 3393,
+        "value": "32.82%"
       },
       {
         "code": "CCB",
         "name": "Doctorate",
-        "registrations": 370,
-        "value": "3.90%"
+        "registrations": 392,
+        "value": "3.79%"
       },
       {
         "code": "CCB",
         "name": "Other",
-        "registrations": 82,
-        "value": "0.87%"
+        "registrations": 89,
+        "value": "0.86%"
       },
       {
         "code": "CCB",
         "name": "None",
         "registrations": 14,
-        "value": "0.15%"
+        "value": "0.14%"
       },
       {
         "code": "CCB",
         "name": "Not Available",
-        "registrations": 2140,
-        "value": "22.58%"
+        "registrations": 2395,
+        "value": "23.17%"
       },
       {
         "code": "CID",
         "name": "Associate",
-        "registrations": 728,
+        "registrations": 727,
         "value": "5.22%"
       },
       {
@@ -69,26 +69,26 @@ var moocsEducationArrays = {
       {
         "code": "CID",
         "name": "High School",
-        "registrations": 864,
-        "value": "6.20%"
+        "registrations": 865,
+        "value": "6.21%"
       },
       {
         "code": "CID",
         "name": "Bachelor",
-        "registrations": 5856,
-        "value": "42.02%"
+        "registrations": 5854,
+        "value": "42.01%"
       },
       {
         "code": "CID",
         "name": "Master",
-        "registrations": 4714,
-        "value": "33.83%"
+        "registrations": 4718,
+        "value": "33.85%"
       },
       {
         "code": "CID",
         "name": "Doctorate",
-        "registrations": 292,
-        "value": "2.10%"
+        "registrations": 290,
+        "value": "2.08%"
       },
       {
         "code": "CID",
@@ -111,44 +111,44 @@ var moocsEducationArrays = {
       {
         "code": "CSC",
         "name": "Associate",
-        "registrations": 1035,
-        "value": "3.18%"
+        "registrations": 1044,
+        "value": "3.17%"
       },
       {
         "code": "CSC",
         "name": "Elementary",
-        "registrations": 31,
+        "registrations": 32,
         "value": "0.10%"
       },
       {
         "code": "CSC",
         "name": "High School",
-        "registrations": 2443,
-        "value": "7.50%"
+        "registrations": 2488,
+        "value": "7.55%"
       },
       {
         "code": "CSC",
         "name": "Bachelor",
-        "registrations": 12074,
-        "value": "37.07%"
+        "registrations": 12167,
+        "value": "36.91%"
       },
       {
         "code": "CSC",
         "name": "Master",
-        "registrations": 8418,
-        "value": "25.84%"
+        "registrations": 8479,
+        "value": "25.73%"
       },
       {
         "code": "CSC",
         "name": "Doctorate",
-        "registrations": 693,
-        "value": "2.13%"
+        "registrations": 706,
+        "value": "2.14%"
       },
       {
         "code": "CSC",
         "name": "Other",
-        "registrations": 452,
-        "value": "1.39%"
+        "registrations": 456,
+        "value": "1.38%"
       },
       {
         "code": "CSC",
@@ -159,14 +159,14 @@ var moocsEducationArrays = {
       {
         "code": "CSC",
         "name": "Not Available",
-        "registrations": 7388,
-        "value": "22.68%"
+        "registrations": 7550,
+        "value": "22.91%"
       },
       {
         "code": "CSD",
         "name": "Associate",
-        "registrations": 16823,
-        "value": "10.83%"
+        "registrations": 16854,
+        "value": "10.81%"
       },
       {
         "code": "CSD",
@@ -177,31 +177,31 @@ var moocsEducationArrays = {
       {
         "code": "CSD",
         "name": "High School",
-        "registrations": 16014,
-        "value": "10.31%"
+        "registrations": 16058,
+        "value": "10.30%"
       },
       {
         "code": "CSD",
         "name": "Bachelor",
-        "registrations": 53380,
-        "value": "34.35%"
+        "registrations": 53502,
+        "value": "34.32%"
       },
       {
         "code": "CSD",
         "name": "Master",
-        "registrations": 51511,
-        "value": "33.15%"
+        "registrations": 51629,
+        "value": "33.12%"
       },
       {
         "code": "CSD",
         "name": "Doctorate",
-        "registrations": 3416,
+        "registrations": 3422,
         "value": "2.20%"
       },
       {
         "code": "CSD",
         "name": "Other",
-        "registrations": 3548,
+        "registrations": 3550,
         "value": "2.28%"
       },
       {
@@ -213,122 +213,122 @@ var moocsEducationArrays = {
       {
         "code": "CSD",
         "name": "Not Available",
-        "registrations": 10462,
-        "value": "6.73%"
+        "registrations": 10614,
+        "value": "6.81%"
       },
       {
         "code": "IFD",
         "name": "Associate",
-        "registrations": 14206,
-        "value": "8.44%"
+        "registrations": 15672,
+        "value": "8.43%"
       },
       {
         "code": "IFD",
         "name": "Elementary",
-        "registrations": 110,
-        "value": "0.07%"
+        "registrations": 117,
+        "value": "0.06%"
       },
       {
         "code": "IFD",
         "name": "High School",
-        "registrations": 11909,
-        "value": "7.08%"
+        "registrations": 12891,
+        "value": "6.93%"
       },
       {
         "code": "IFD",
         "name": "Bachelor",
-        "registrations": 56844,
-        "value": "33.78%"
+        "registrations": 61612,
+        "value": "33.14%"
       },
       {
         "code": "IFD",
         "name": "Master",
-        "registrations": 56797,
-        "value": "33.75%"
+        "registrations": 60446,
+        "value": "32.51%"
       },
       {
         "code": "IFD",
         "name": "Doctorate",
-        "registrations": 3175,
-        "value": "1.89%"
+        "registrations": 3443,
+        "value": "1.85%"
       },
       {
         "code": "IFD",
         "name": "Other",
-        "registrations": 3312,
-        "value": "1.97%"
+        "registrations": 3502,
+        "value": "1.88%"
       },
       {
         "code": "IFD",
         "name": "None",
-        "registrations": 122,
+        "registrations": 138,
         "value": "0.07%"
       },
       {
         "code": "IFD",
         "name": "Not Available",
-        "registrations": 21820,
-        "value": "12.97%"
+        "registrations": 28108,
+        "value": "15.12%"
       },
       {
         "code": "INE",
         "name": "Associate",
-        "registrations": 10392,
-        "value": "9.97%"
+        "registrations": 11016,
+        "value": "10.05%"
       },
       {
         "code": "INE",
         "name": "Elementary",
-        "registrations": 88,
+        "registrations": 93,
         "value": "0.08%"
       },
       {
         "code": "INE",
         "name": "High School",
-        "registrations": 9089,
-        "value": "8.72%"
+        "registrations": 9441,
+        "value": "8.61%"
       },
       {
         "code": "INE",
         "name": "Bachelor",
-        "registrations": 34229,
-        "value": "32.85%"
+        "registrations": 35619,
+        "value": "32.49%"
       },
       {
         "code": "INE",
         "name": "Master",
-        "registrations": 36869,
-        "value": "35.38%"
+        "registrations": 37720,
+        "value": "34.41%"
       },
       {
         "code": "INE",
         "name": "Doctorate",
-        "registrations": 2021,
-        "value": "1.94%"
+        "registrations": 2096,
+        "value": "1.91%"
       },
       {
         "code": "INE",
         "name": "Other",
-        "registrations": 2155,
-        "value": "2.07%"
+        "registrations": 2224,
+        "value": "2.03%"
       },
       {
         "code": "INE",
         "name": "None",
-        "registrations": 65,
+        "registrations": 68,
         "value": "0.06%"
       },
       {
         "code": "INE",
         "name": "Not Available",
-        "registrations": 9297,
-        "value": "8.92%"
+        "registrations": 11345,
+        "value": "10.35%"
       },
       {
         "code": "INT",
         "name": "Associate",
-        "registrations": 6448,
-        "value": "11.99%"
+        "registrations": 6456,
+        "value": "11.97%"
       },
       {
         "code": "INT",
@@ -339,31 +339,31 @@ var moocsEducationArrays = {
       {
         "code": "INT",
         "name": "High School",
-        "registrations": 4983,
-        "value": "9.27%"
+        "registrations": 5009,
+        "value": "9.29%"
       },
       {
         "code": "INT",
         "name": "Bachelor",
-        "registrations": 17678,
-        "value": "32.88%"
+        "registrations": 17715,
+        "value": "32.85%"
       },
       {
         "code": "INT",
         "name": "Master",
-        "registrations": 13161,
-        "value": "24.48%"
+        "registrations": 13205,
+        "value": "24.49%"
       },
       {
         "code": "INT",
         "name": "Doctorate",
-        "registrations": 1059,
+        "registrations": 1063,
         "value": "1.97%"
       },
       {
         "code": "INT",
         "name": "Other",
-        "registrations": 855,
+        "registrations": 859,
         "value": "1.59%"
       },
       {
@@ -375,67 +375,67 @@ var moocsEducationArrays = {
       {
         "code": "INT",
         "name": "Not Available",
-        "registrations": 9506,
-        "value": "17.68%"
+        "registrations": 9548,
+        "value": "17.71%"
       },
       {
         "code": "KIC",
         "name": "Associate",
-        "registrations": 54313,
-        "value": "11.18%"
+        "registrations": 55842,
+        "value": "11.07%"
       },
       {
         "code": "KIC",
         "name": "Elementary",
-        "registrations": 289,
+        "registrations": 299,
         "value": "0.06%"
       },
       {
         "code": "KIC",
         "name": "High School",
-        "registrations": 35183,
-        "value": "7.24%"
+        "registrations": 36283,
+        "value": "7.19%"
       },
       {
         "code": "KIC",
         "name": "Bachelor",
-        "registrations": 166242,
-        "value": "34.23%"
+        "registrations": 171468,
+        "value": "33.99%"
       },
       {
         "code": "KIC",
         "name": "Master",
-        "registrations": 138183,
-        "value": "28.45%"
+        "registrations": 142127,
+        "value": "28.17%"
       },
       {
         "code": "KIC",
         "name": "Doctorate",
-        "registrations": 8202,
-        "value": "1.69%"
+        "registrations": 8498,
+        "value": "1.68%"
       },
       {
         "code": "KIC",
         "name": "Other",
-        "registrations": 9715,
-        "value": "2.00%"
+        "registrations": 9913,
+        "value": "1.96%"
       },
       {
         "code": "KIC",
         "name": "None",
-        "registrations": 365,
-        "value": "0.08%"
+        "registrations": 378,
+        "value": "0.07%"
       },
       {
         "code": "KIC",
         "name": "Not Available",
-        "registrations": 73235,
-        "value": "15.08%"
+        "registrations": 79677,
+        "value": "15.79%"
       },
       {
         "code": "MIF",
         "name": "Associate",
-        "registrations": 3548,
+        "registrations": 3547,
         "value": "7.88%"
       },
       {
@@ -447,25 +447,25 @@ var moocsEducationArrays = {
       {
         "code": "MIF",
         "name": "High School",
-        "registrations": 2644,
+        "registrations": 2642,
         "value": "5.87%"
       },
       {
         "code": "MIF",
         "name": "Bachelor",
-        "registrations": 15582,
-        "value": "34.61%"
+        "registrations": 15579,
+        "value": "34.60%"
       },
       {
         "code": "MIF",
         "name": "Master",
-        "registrations": 19113,
-        "value": "42.45%"
+        "registrations": 19123,
+        "value": "42.47%"
       },
       {
         "code": "MIF",
         "name": "Doctorate",
-        "registrations": 885,
+        "registrations": 887,
         "value": "1.97%"
       },
       {
@@ -477,182 +477,182 @@ var moocsEducationArrays = {
       {
         "code": "MIF",
         "name": "None",
-        "registrations": 20,
-        "value": "0.04%"
+        "registrations": 21,
+        "value": "0.05%"
       },
       {
         "code": "MIF",
         "name": "Not Available",
-        "registrations": 2331,
-        "value": "5.18%"
+        "registrations": 2325,
+        "value": "5.16%"
       },
       {
         "code": "PRE",
         "name": "Associate",
-        "registrations": 3493,
-        "value": "11.55%"
+        "registrations": 3833,
+        "value": "11.29%"
       },
       {
         "code": "PRE",
         "name": "Elementary",
-        "registrations": 26,
+        "registrations": 29,
         "value": "0.09%"
       },
       {
         "code": "PRE",
         "name": "High School",
-        "registrations": 2472,
-        "value": "8.18%"
+        "registrations": 2716,
+        "value": "8.00%"
       },
       {
         "code": "PRE",
         "name": "Bachelor",
-        "registrations": 8837,
-        "value": "29.22%"
+        "registrations": 9770,
+        "value": "28.77%"
       },
       {
         "code": "PRE",
         "name": "Master",
-        "registrations": 7276,
-        "value": "24.06%"
+        "registrations": 8001,
+        "value": "23.56%"
       },
       {
         "code": "PRE",
         "name": "Doctorate",
-        "registrations": 578,
-        "value": "1.91%"
+        "registrations": 628,
+        "value": "1.85%"
       },
       {
         "code": "PRE",
         "name": "Other",
-        "registrations": 434,
-        "value": "1.44%"
+        "registrations": 475,
+        "value": "1.40%"
       },
       {
         "code": "PRE",
         "name": "None",
-        "registrations": 30,
+        "registrations": 33,
         "value": "0.10%"
       },
       {
         "code": "PRE",
         "name": "Not Available",
-        "registrations": 7092,
-        "value": "23.45%"
+        "registrations": 8476,
+        "value": "24.96%"
       },
       {
         "code": "RES",
         "name": "Associate",
-        "registrations": 5130,
-        "value": "9.74%"
+        "registrations": 5385,
+        "value": "9.63%"
       },
       {
         "code": "RES",
         "name": "Elementary",
-        "registrations": 54,
+        "registrations": 57,
         "value": "0.10%"
       },
       {
         "code": "RES",
         "name": "High School",
-        "registrations": 6431,
-        "value": "12.21%"
+        "registrations": 6658,
+        "value": "11.91%"
       },
       {
         "code": "RES",
         "name": "Bachelor",
-        "registrations": 17330,
-        "value": "32.90%"
+        "registrations": 18275,
+        "value": "32.70%"
       },
       {
         "code": "RES",
         "name": "Master",
-        "registrations": 14368,
-        "value": "27.28%"
+        "registrations": 15120,
+        "value": "27.05%"
       },
       {
         "code": "RES",
         "name": "Doctorate",
-        "registrations": 1131,
-        "value": "2.15%"
+        "registrations": 1205,
+        "value": "2.16%"
       },
       {
         "code": "RES",
         "name": "Other",
-        "registrations": 985,
-        "value": "1.87%"
+        "registrations": 1019,
+        "value": "1.82%"
       },
       {
         "code": "RES",
         "name": "None",
-        "registrations": 49,
+        "registrations": 52,
         "value": "0.09%"
       },
       {
         "code": "RES",
         "name": "Not Available",
-        "registrations": 7194,
-        "value": "13.66%"
+        "registrations": 8120,
+        "value": "14.53%"
       },
       {
         "code": "SCL",
         "name": "Associate",
-        "registrations": 16779,
-        "value": "9.02%"
+        "registrations": 18784,
+        "value": "8.83%"
       },
       {
         "code": "SCL",
         "name": "Elementary",
-        "registrations": 320,
-        "value": "0.17%"
+        "registrations": 342,
+        "value": "0.16%"
       },
       {
         "code": "SCL",
         "name": "High School",
-        "registrations": 14059,
-        "value": "7.55%"
+        "registrations": 15495,
+        "value": "7.29%"
       },
       {
         "code": "SCL",
         "name": "Bachelor",
-        "registrations": 63460,
-        "value": "34.10%"
+        "registrations": 71003,
+        "value": "33.38%"
       },
       {
         "code": "SCL",
         "name": "Master",
-        "registrations": 53310,
-        "value": "28.65%"
+        "registrations": 59178,
+        "value": "27.82%"
       },
       {
         "code": "SCL",
         "name": "Doctorate",
-        "registrations": 4037,
-        "value": "2.17%"
+        "registrations": 4517,
+        "value": "2.12%"
       },
       {
         "code": "SCL",
         "name": "Other",
-        "registrations": 3523,
-        "value": "1.89%"
+        "registrations": 3813,
+        "value": "1.79%"
       },
       {
         "code": "SCL",
         "name": "None",
-        "registrations": 164,
+        "registrations": 184,
         "value": "0.09%"
       },
       {
         "code": "SCL",
         "name": "Not Available",
-        "registrations": 30439,
-        "value": "16.36%"
+        "registrations": 39374,
+        "value": "18.51%"
       },
       {
         "code": "VPC",
         "name": "Associate",
-        "registrations": 6624,
-        "value": "12.77%"
+        "registrations": 6729,
+        "value": "12.76%"
       },
       {
         "code": "VPC",
@@ -663,44 +663,44 @@ var moocsEducationArrays = {
       {
         "code": "VPC",
         "name": "High School",
-        "registrations": 3644,
-        "value": "7.03%"
+        "registrations": 3713,
+        "value": "7.04%"
       },
       {
         "code": "VPC",
         "name": "Bachelor",
-        "registrations": 17201,
-        "value": "33.17%"
+        "registrations": 17455,
+        "value": "33.10%"
       },
       {
         "code": "VPC",
         "name": "Master",
-        "registrations": 10684,
-        "value": "20.60%"
+        "registrations": 10831,
+        "value": "20.54%"
       },
       {
         "code": "VPC",
         "name": "Doctorate",
-        "registrations": 700,
-        "value": "1.35%"
+        "registrations": 715,
+        "value": "1.36%"
       },
       {
         "code": "VPC",
         "name": "Other",
-        "registrations": 792,
-        "value": "1.53%"
+        "registrations": 800,
+        "value": "1.52%"
       },
       {
         "code": "VPC",
         "name": "None",
-        "registrations": 28,
+        "registrations": 29,
         "value": "0.05%"
       },
       {
         "code": "VPC",
         "name": "Not Available",
-        "registrations": 12148,
-        "value": "23.43%"
+        "registrations": 12420,
+        "value": "23.55%"
       }
     ],
     educationLevelDepartments2018: [
@@ -719,26 +719,26 @@ var moocsEducationArrays = {
       {
         "code": "CCB",
         "name": "High School",
-        "registrations": 386,
+        "registrations": 385,
         "value": "8.6%"
       },
       {
         "code": "CCB",
         "name": "Bachelor",
-        "registrations": 1215,
-        "value": "27.0%"
+        "registrations": 1216,
+        "value": "27.1%"
       },
       {
         "code": "CCB",
         "name": "Master",
-        "registrations": 1300,
-        "value": "28.9%"
+        "registrations": 1302,
+        "value": "29.0%"
       },
       {
         "code": "CCB",
         "name": "Doctorate",
-        "registrations": 155,
-        "value": "3.4%"
+        "registrations": 156,
+        "value": "3.5%"
       },
       {
         "code": "CCB",
@@ -755,8 +755,8 @@ var moocsEducationArrays = {
       {
         "code": "CCB",
         "name": "Not Available",
-        "registrations": 1313,
-        "value": "29.2%"
+        "registrations": 1310,
+        "value": "29.1%"
       },
       {
         "code": "CID",
@@ -815,7 +815,7 @@ var moocsEducationArrays = {
       {
         "code": "CSC",
         "name": "Associate",
-        "registrations": 334,
+        "registrations": 333,
         "value": "3.4%"
       },
       {
@@ -827,13 +827,13 @@ var moocsEducationArrays = {
       {
         "code": "CSC",
         "name": "High School",
-        "registrations": 680,
+        "registrations": 681,
         "value": "7.0%"
       },
       {
         "code": "CSC",
         "name": "Bachelor",
-        "registrations": 2847,
+        "registrations": 2848,
         "value": "29.2%"
       },
       {
@@ -863,13 +863,13 @@ var moocsEducationArrays = {
       {
         "code": "CSC",
         "name": "Not Available",
-        "registrations": 3839,
+        "registrations": 3838,
         "value": "39.4%"
       },
       {
         "code": "CSD",
         "name": "Associate",
-        "registrations": 1018,
+        "registrations": 1019,
         "value": "10.3%"
       },
       {
@@ -881,20 +881,20 @@ var moocsEducationArrays = {
       {
         "code": "CSD",
         "name": "High School",
-        "registrations": 558,
-        "value": "5.7%"
+        "registrations": 557,
+        "value": "5.6%"
       },
       {
         "code": "CSD",
         "name": "Bachelor",
-        "registrations": 2845,
+        "registrations": 2842,
         "value": "28.8%"
       },
       {
         "code": "CSD",
         "name": "Master",
-        "registrations": 2108,
-        "value": "21.3%"
+        "registrations": 2112,
+        "value": "21.4%"
       },
       {
         "code": "CSD",
@@ -917,43 +917,43 @@ var moocsEducationArrays = {
       {
         "code": "CSD",
         "name": "Not Available",
-        "registrations": 2982,
+        "registrations": 2981,
         "value": "30.2%"
       },
       {
         "code": "IFD",
         "name": "Associate",
-        "registrations": 3205,
+        "registrations": 3202,
         "value": "9.2%"
       },
       {
         "code": "IFD",
         "name": "Elementary",
-        "registrations": 25,
+        "registrations": 26,
         "value": "0.1%"
       },
       {
         "code": "IFD",
         "name": "High School",
-        "registrations": 2363,
+        "registrations": 2368,
         "value": "6.8%"
       },
       {
         "code": "IFD",
         "name": "Bachelor",
-        "registrations": 10485,
+        "registrations": 10493,
         "value": "30.2%"
       },
       {
         "code": "IFD",
         "name": "Master",
-        "registrations": 7325,
+        "registrations": 7337,
         "value": "21.1%"
       },
       {
         "code": "IFD",
         "name": "Doctorate",
-        "registrations": 535,
+        "registrations": 537,
         "value": "1.5%"
       },
       {
@@ -965,19 +965,19 @@ var moocsEducationArrays = {
       {
         "code": "IFD",
         "name": "None",
-        "registrations": 18,
+        "registrations": 19,
         "value": "0.1%"
       },
       {
         "code": "IFD",
         "name": "Not Available",
-        "registrations": 10301,
-        "value": "29.7%"
+        "registrations": 10275,
+        "value": "29.6%"
       },
       {
         "code": "INE",
         "name": "Associate",
-        "registrations": 1215,
+        "registrations": 1216,
         "value": "11.3%"
       },
       {
@@ -989,20 +989,20 @@ var moocsEducationArrays = {
       {
         "code": "INE",
         "name": "High School",
-        "registrations": 975,
+        "registrations": 972,
         "value": "9.1%"
       },
       {
         "code": "INE",
         "name": "Bachelor",
-        "registrations": 2844,
-        "value": "26.5%"
+        "registrations": 2849,
+        "value": "26.6%"
       },
       {
         "code": "INE",
         "name": "Master",
-        "registrations": 1826,
-        "value": "17.0%"
+        "registrations": 1829,
+        "value": "17.1%"
       },
       {
         "code": "INE",
@@ -1013,7 +1013,7 @@ var moocsEducationArrays = {
       {
         "code": "INE",
         "name": "Other",
-        "registrations": 146,
+        "registrations": 147,
         "value": "1.4%"
       },
       {
@@ -1025,13 +1025,13 @@ var moocsEducationArrays = {
       {
         "code": "INE",
         "name": "Not Available",
-        "registrations": 3569,
-        "value": "33.3%"
+        "registrations": 3562,
+        "value": "33.2%"
       },
       {
         "code": "INT",
         "name": "Associate",
-        "registrations": 2214,
+        "registrations": 2212,
         "value": "9.3%"
       },
       {
@@ -1043,7 +1043,7 @@ var moocsEducationArrays = {
       {
         "code": "INT",
         "name": "High School",
-        "registrations": 1666,
+        "registrations": 1670,
         "value": "7.0%"
       },
       {
@@ -1055,13 +1055,13 @@ var moocsEducationArrays = {
       {
         "code": "INT",
         "name": "Master",
-        "registrations": 4489,
+        "registrations": 4498,
         "value": "18.8%"
       },
       {
         "code": "INT",
         "name": "Doctorate",
-        "registrations": 402,
+        "registrations": 404,
         "value": "1.7%"
       },
       {
@@ -1079,13 +1079,13 @@ var moocsEducationArrays = {
       {
         "code": "INT",
         "name": "Not Available",
-        "registrations": 8034,
-        "value": "33.7%"
+        "registrations": 8021,
+        "value": "33.6%"
       },
       {
         "code": "KIC",
         "name": "Associate",
-        "registrations": 8540,
+        "registrations": 8531,
         "value": "7.5%"
       },
       {
@@ -1097,32 +1097,32 @@ var moocsEducationArrays = {
       {
         "code": "KIC",
         "name": "High School",
-        "registrations": 7474,
+        "registrations": 7475,
         "value": "6.5%"
       },
       {
         "code": "KIC",
         "name": "Bachelor",
-        "registrations": 33778,
-        "value": "29.5%"
+        "registrations": 33813,
+        "value": "29.6%"
       },
       {
         "code": "KIC",
         "name": "Master",
-        "registrations": 23842,
-        "value": "20.8%"
+        "registrations": 23874,
+        "value": "20.9%"
       },
       {
         "code": "KIC",
         "name": "Doctorate",
-        "registrations": 1805,
+        "registrations": 1812,
         "value": "1.6%"
       },
       {
         "code": "KIC",
         "name": "Other",
-        "registrations": 1429,
-        "value": "1.2%"
+        "registrations": 1430,
+        "value": "1.3%"
       },
       {
         "code": "KIC",
@@ -1133,7 +1133,7 @@ var moocsEducationArrays = {
       {
         "code": "KIC",
         "name": "Not Available",
-        "registrations": 37328,
+        "registrations": 37261,
         "value": "32.6%"
       },
       {
@@ -1193,7 +1193,7 @@ var moocsEducationArrays = {
       {
         "code": "PRE",
         "name": "Associate",
-        "registrations": 1150,
+        "registrations": 1149,
         "value": "9.0%"
       },
       {
@@ -1205,25 +1205,25 @@ var moocsEducationArrays = {
       {
         "code": "PRE",
         "name": "High School",
-        "registrations": 1066,
+        "registrations": 1067,
         "value": "8.4%"
       },
       {
         "code": "PRE",
         "name": "Bachelor",
-        "registrations": 3399,
-        "value": "26.6%"
+        "registrations": 3403,
+        "value": "26.7%"
       },
       {
         "code": "PRE",
         "name": "Master",
-        "registrations": 2659,
-        "value": "20.8%"
+        "registrations": 2664,
+        "value": "20.9%"
       },
       {
         "code": "PRE",
         "name": "Doctorate",
-        "registrations": 220,
+        "registrations": 221,
         "value": "1.7%"
       },
       {
@@ -1235,13 +1235,13 @@ var moocsEducationArrays = {
       {
         "code": "PRE",
         "name": "None",
-        "registrations": 7,
+        "registrations": 8,
         "value": "0.1%"
       },
       {
         "code": "PRE",
         "name": "Not Available",
-        "registrations": 4089,
+        "registrations": 4078,
         "value": "32.0%"
       },
       {
@@ -1265,19 +1265,19 @@ var moocsEducationArrays = {
       {
         "code": "RES",
         "name": "Bachelor",
-        "registrations": 3897,
+        "registrations": 3895,
         "value": "27.4%"
       },
       {
         "code": "RES",
         "name": "Master",
-        "registrations": 2648,
-        "value": "18.6%"
+        "registrations": 2655,
+        "value": "18.7%"
       },
       {
         "code": "RES",
         "name": "Doctorate",
-        "registrations": 263,
+        "registrations": 265,
         "value": "1.9%"
       },
       {
@@ -1295,13 +1295,13 @@ var moocsEducationArrays = {
       {
         "code": "RES",
         "name": "Not Available",
-        "registrations": 4340,
+        "registrations": 4333,
         "value": "30.5%"
       },
       {
         "code": "SCL",
         "name": "Associate",
-        "registrations": 4158,
+        "registrations": 4155,
         "value": "7.8%"
       },
       {
@@ -1313,31 +1313,31 @@ var moocsEducationArrays = {
       {
         "code": "SCL",
         "name": "High School",
-        "registrations": 3600,
+        "registrations": 3597,
         "value": "6.8%"
       },
       {
         "code": "SCL",
         "name": "Bachelor",
-        "registrations": 14437,
-        "value": "27.3%"
+        "registrations": 14433,
+        "value": "27.2%"
       },
       {
         "code": "SCL",
         "name": "Master",
-        "registrations": 9161,
+        "registrations": 9182,
         "value": "17.3%"
       },
       {
         "code": "SCL",
         "name": "Doctorate",
-        "registrations": 922,
+        "registrations": 925,
         "value": "1.7%"
       },
       {
         "code": "SCL",
         "name": "Other",
-        "registrations": 729,
+        "registrations": 728,
         "value": "1.4%"
       },
       {
@@ -1349,8 +1349,8 @@ var moocsEducationArrays = {
       {
         "code": "SCL",
         "name": "Not Available",
-        "registrations": 19788,
-        "value": "37.4%"
+        "registrations": 19775,
+        "value": "37.3%"
       },
       {
         "code": "VPC",
@@ -1367,25 +1367,25 @@ var moocsEducationArrays = {
       {
         "code": "VPC",
         "name": "High School",
-        "registrations": 728,
+        "registrations": 730,
         "value": "5.9%"
       },
       {
         "code": "VPC",
         "name": "Bachelor",
-        "registrations": 3780,
+        "registrations": 3784,
         "value": "30.7%"
       },
       {
         "code": "VPC",
         "name": "Master",
-        "registrations": 2344,
-        "value": "19.0%"
+        "registrations": 2346,
+        "value": "19.1%"
       },
       {
         "code": "VPC",
         "name": "Doctorate",
-        "registrations": 165,
+        "registrations": 166,
         "value": "1.3%"
       },
       {
@@ -1403,7 +1403,7 @@ var moocsEducationArrays = {
       {
         "code": "VPC",
         "name": "Not Available",
-        "registrations": 4090,
+        "registrations": 4081,
         "value": "33.2%"
       }
     ],
@@ -1411,44 +1411,44 @@ var moocsEducationArrays = {
       {
         "code": "CBD",
         "name": "Associate",
-        "registrations": 645,
-        "value": "3.19%"
+        "registrations": 651,
+        "value": "3.18%"
       },
       {
         "code": "CBD",
         "name": "Elementary",
-        "registrations": 15,
-        "value": "0.07%"
+        "registrations": 16,
+        "value": "0.08%"
       },
       {
         "code": "CBD",
         "name": "High School",
-        "registrations": 1442,
-        "value": "7.14%"
+        "registrations": 1471,
+        "value": "7.20%"
       },
       {
         "code": "CBD",
         "name": "Bachelor",
-        "registrations": 6980,
-        "value": "34.57%"
+        "registrations": 7039,
+        "value": "34.44%"
       },
       {
         "code": "CBD",
         "name": "Master",
-        "registrations": 4318,
-        "value": "21.39%"
+        "registrations": 4349,
+        "value": "21.28%"
       },
       {
         "code": "CBD",
         "name": "Doctorate",
-        "registrations": 412,
-        "value": "2.04%"
+        "registrations": 420,
+        "value": "2.05%"
       },
       {
         "code": "CBD",
         "name": "Other",
-        "registrations": 289,
-        "value": "1.43%"
+        "registrations": 291,
+        "value": "1.42%"
       },
       {
         "code": "CBD",
@@ -1459,14 +1459,14 @@ var moocsEducationArrays = {
       {
         "code": "CBD",
         "name": "Not Available",
-        "registrations": 6059,
-        "value": "30.01%"
+        "registrations": 6174,
+        "value": "30.20%"
       },
       {
         "code": "CBR",
         "name": "Associate",
-        "registrations": 390,
-        "value": "3.15%"
+        "registrations": 393,
+        "value": "3.14%"
       },
       {
         "code": "CBR",
@@ -1477,31 +1477,31 @@ var moocsEducationArrays = {
       {
         "code": "CBR",
         "name": "High School",
-        "registrations": 1001,
-        "value": "8.08%"
+        "registrations": 1017,
+        "value": "8.12%"
       },
       {
         "code": "CBR",
         "name": "Bachelor",
-        "registrations": 5094,
-        "value": "41.14%"
+        "registrations": 5128,
+        "value": "40.96%"
       },
       {
         "code": "CBR",
         "name": "Master",
-        "registrations": 4100,
-        "value": "33.11%"
+        "registrations": 4130,
+        "value": "32.99%"
       },
       {
         "code": "CBR",
         "name": "Doctorate",
-        "registrations": 281,
-        "value": "2.27%"
+        "registrations": 286,
+        "value": "2.28%"
       },
       {
         "code": "CBR",
         "name": "Other",
-        "registrations": 163,
+        "registrations": 165,
         "value": "1.32%"
       },
       {
@@ -1513,67 +1513,67 @@ var moocsEducationArrays = {
       {
         "code": "CBR",
         "name": "Not Available",
-        "registrations": 1329,
-        "value": "10.73%"
+        "registrations": 1376,
+        "value": "10.99%"
       },
       {
         "code": "CCB",
         "name": "Associate",
-        "registrations": 262,
+        "registrations": 285,
         "value": "2.76%"
       },
       {
         "code": "CCB",
         "name": "Elementary",
-        "registrations": 7,
-        "value": "0.07%"
+        "registrations": 11,
+        "value": "0.11%"
       },
       {
         "code": "CCB",
         "name": "High School",
-        "registrations": 771,
-        "value": "8.14%"
+        "registrations": 826,
+        "value": "7.99%"
       },
       {
         "code": "CCB",
         "name": "Bachelor",
-        "registrations": 2683,
-        "value": "28.31%"
+        "registrations": 2933,
+        "value": "28.37%"
       },
       {
         "code": "CCB",
         "name": "Master",
-        "registrations": 3148,
-        "value": "33.22%"
+        "registrations": 3393,
+        "value": "32.82%"
       },
       {
         "code": "CCB",
         "name": "Doctorate",
-        "registrations": 370,
-        "value": "3.90%"
+        "registrations": 392,
+        "value": "3.79%"
       },
       {
         "code": "CCB",
         "name": "Other",
-        "registrations": 82,
-        "value": "0.87%"
+        "registrations": 89,
+        "value": "0.86%"
       },
       {
         "code": "CCB",
         "name": "None",
         "registrations": 14,
-        "value": "0.15%"
+        "value": "0.14%"
       },
       {
         "code": "CCB",
         "name": "Not Available",
-        "registrations": 2140,
-        "value": "22.58%"
+        "registrations": 2395,
+        "value": "23.17%"
       },
       {
         "code": "CHA",
         "name": "Associate",
-        "registrations": 728,
+        "registrations": 727,
         "value": "5.22%"
       },
       {
@@ -1585,26 +1585,26 @@ var moocsEducationArrays = {
       {
         "code": "CHA",
         "name": "High School",
-        "registrations": 864,
-        "value": "6.20%"
+        "registrations": 865,
+        "value": "6.21%"
       },
       {
         "code": "CHA",
         "name": "Bachelor",
-        "registrations": 5856,
-        "value": "42.02%"
+        "registrations": 5854,
+        "value": "42.01%"
       },
       {
         "code": "CHA",
         "name": "Master",
-        "registrations": 4714,
-        "value": "33.83%"
+        "registrations": 4718,
+        "value": "33.85%"
       },
       {
         "code": "CHA",
         "name": "Doctorate",
-        "registrations": 292,
-        "value": "2.10%"
+        "registrations": 290,
+        "value": "2.08%"
       },
       {
         "code": "CHA",
@@ -1627,116 +1627,116 @@ var moocsEducationArrays = {
       {
         "code": "EDU",
         "name": "Associate",
-        "registrations": 3966,
-        "value": "9.05%"
+        "registrations": 5475,
+        "value": "8.56%"
       },
       {
         "code": "EDU",
         "name": "Elementary",
-        "registrations": 109,
-        "value": "0.25%"
+        "registrations": 125,
+        "value": "0.20%"
       },
       {
         "code": "EDU",
         "name": "High School",
-        "registrations": 3641,
-        "value": "8.31%"
+        "registrations": 4630,
+        "value": "7.24%"
       },
       {
         "code": "EDU",
         "name": "Bachelor",
-        "registrations": 13111,
-        "value": "29.92%"
+        "registrations": 18743,
+        "value": "29.31%"
       },
       {
         "code": "EDU",
         "name": "Master",
-        "registrations": 10359,
-        "value": "23.64%"
+        "registrations": 14705,
+        "value": "23.00%"
       },
       {
         "code": "EDU",
         "name": "Doctorate",
-        "registrations": 1051,
-        "value": "2.40%"
+        "registrations": 1377,
+        "value": "2.15%"
       },
       {
         "code": "EDU",
         "name": "Other",
-        "registrations": 741,
-        "value": "1.69%"
+        "registrations": 966,
+        "value": "1.51%"
       },
       {
         "code": "EDU",
         "name": "None",
-        "registrations": 43,
-        "value": "0.10%"
+        "registrations": 58,
+        "value": "0.09%"
       },
       {
         "code": "EDU",
         "name": "Not Available",
-        "registrations": 10805,
-        "value": "24.65%"
+        "registrations": 17866,
+        "value": "27.94%"
       },
       {
         "code": "FMM",
         "name": "Associate",
-        "registrations": 5207,
-        "value": "7.33%"
+        "registrations": 5371,
+        "value": "7.35%"
       },
       {
         "code": "FMM",
         "name": "Elementary",
-        "registrations": 50,
+        "registrations": 52,
         "value": "0.07%"
       },
       {
         "code": "FMM",
         "name": "High School",
-        "registrations": 4484,
-        "value": "6.31%"
+        "registrations": 4655,
+        "value": "6.37%"
       },
       {
         "code": "FMM",
         "name": "Bachelor",
-        "registrations": 24913,
-        "value": "35.05%"
+        "registrations": 25550,
+        "value": "34.95%"
       },
       {
         "code": "FMM",
         "name": "Master",
-        "registrations": 25995,
-        "value": "36.57%"
+        "registrations": 26464,
+        "value": "36.20%"
       },
       {
         "code": "FMM",
         "name": "Doctorate",
-        "registrations": 1373,
+        "registrations": 1413,
         "value": "1.93%"
       },
       {
         "code": "FMM",
         "name": "Other",
-        "registrations": 1224,
-        "value": "1.72%"
+        "registrations": 1249,
+        "value": "1.71%"
       },
       {
         "code": "FMM",
         "name": "None",
-        "registrations": 37,
+        "registrations": 40,
         "value": "0.05%"
       },
       {
         "code": "FMM",
         "name": "Not Available",
-        "registrations": 7794,
-        "value": "10.97%"
+        "registrations": 8319,
+        "value": "11.38%"
       },
       {
         "code": "HUD",
         "name": "Associate",
-        "registrations": 12163,
-        "value": "10.18%"
+        "registrations": 12174,
+        "value": "10.17%"
       },
       {
         "code": "HUD",
@@ -1747,32 +1747,32 @@ var moocsEducationArrays = {
       {
         "code": "HUD",
         "name": "High School",
-        "registrations": 12965,
+        "registrations": 12984,
         "value": "10.85%"
       },
       {
         "code": "HUD",
         "name": "Bachelor",
-        "registrations": 41760,
-        "value": "34.96%"
+        "registrations": 41828,
+        "value": "34.95%"
       },
       {
         "code": "HUD",
         "name": "Master",
-        "registrations": 41101,
-        "value": "34.41%"
+        "registrations": 41168,
+        "value": "34.39%"
       },
       {
         "code": "HUD",
         "name": "Doctorate",
-        "registrations": 2423,
+        "registrations": 2427,
         "value": "2.03%"
       },
       {
         "code": "HUD",
         "name": "Other",
-        "registrations": 2864,
-        "value": "2.40%"
+        "registrations": 2863,
+        "value": "2.39%"
       },
       {
         "code": "HUD",
@@ -1783,122 +1783,122 @@ var moocsEducationArrays = {
       {
         "code": "HUD",
         "name": "Not Available",
-        "registrations": 5987,
-        "value": "5.01%"
+        "registrations": 6055,
+        "value": "5.06%"
       },
       {
         "code": "ICS",
         "name": "Associate",
-        "registrations": 5506,
-        "value": "8.22%"
+        "registrations": 6468,
+        "value": "8.20%"
       },
       {
         "code": "ICS",
         "name": "Elementary",
-        "registrations": 34,
+        "registrations": 36,
         "value": "0.05%"
       },
       {
         "code": "ICS",
         "name": "High School",
-        "registrations": 4953,
-        "value": "7.39%"
+        "registrations": 5520,
+        "value": "7.00%"
       },
       {
         "code": "ICS",
         "name": "Bachelor",
-        "registrations": 23094,
-        "value": "34.48%"
+        "registrations": 26292,
+        "value": "33.34%"
       },
       {
         "code": "ICS",
         "name": "Master",
-        "registrations": 23526,
-        "value": "35.12%"
+        "registrations": 25981,
+        "value": "32.95%"
       },
       {
         "code": "ICS",
         "name": "Doctorate",
-        "registrations": 1224,
-        "value": "1.83%"
+        "registrations": 1402,
+        "value": "1.78%"
       },
       {
         "code": "ICS",
         "name": "Other",
-        "registrations": 1654,
-        "value": "2.47%"
+        "registrations": 1778,
+        "value": "2.25%"
       },
       {
         "code": "ICS",
         "name": "None",
-        "registrations": 55,
+        "registrations": 65,
         "value": "0.08%"
       },
       {
         "code": "ICS",
         "name": "Not Available",
-        "registrations": 6934,
-        "value": "10.35%"
+        "registrations": 11313,
+        "value": "14.35%"
       },
       {
         "code": "IFD",
         "name": "Associate",
-        "registrations": 3493,
-        "value": "11.55%"
+        "registrations": 3833,
+        "value": "11.29%"
       },
       {
         "code": "IFD",
         "name": "Elementary",
-        "registrations": 26,
+        "registrations": 29,
         "value": "0.09%"
       },
       {
         "code": "IFD",
         "name": "High School",
-        "registrations": 2472,
-        "value": "8.18%"
+        "registrations": 2716,
+        "value": "8.00%"
       },
       {
         "code": "IFD",
         "name": "Bachelor",
-        "registrations": 8837,
-        "value": "29.22%"
+        "registrations": 9770,
+        "value": "28.77%"
       },
       {
         "code": "IFD",
         "name": "Master",
-        "registrations": 7276,
-        "value": "24.06%"
+        "registrations": 8001,
+        "value": "23.56%"
       },
       {
         "code": "IFD",
         "name": "Doctorate",
-        "registrations": 578,
-        "value": "1.91%"
+        "registrations": 628,
+        "value": "1.85%"
       },
       {
         "code": "IFD",
         "name": "Other",
-        "registrations": 434,
-        "value": "1.44%"
+        "registrations": 475,
+        "value": "1.40%"
       },
       {
         "code": "IFD",
         "name": "None",
-        "registrations": 30,
+        "registrations": 33,
         "value": "0.10%"
       },
       {
         "code": "IFD",
         "name": "Not Available",
-        "registrations": 7092,
-        "value": "23.45%"
+        "registrations": 8476,
+        "value": "24.96%"
       },
       {
         "code": "INE",
         "name": "Associate",
-        "registrations": 3938,
-        "value": "6.86%"
+        "registrations": 3940,
+        "value": "6.85%"
       },
       {
         "code": "INE",
@@ -1909,50 +1909,50 @@ var moocsEducationArrays = {
       {
         "code": "INE",
         "name": "High School",
-        "registrations": 3645,
-        "value": "6.35%"
+        "registrations": 3659,
+        "value": "6.36%"
       },
       {
         "code": "INE",
         "name": "Bachelor",
-        "registrations": 20676,
-        "value": "36.01%"
+        "registrations": 20707,
+        "value": "35.98%"
       },
       {
         "code": "INE",
         "name": "Master",
-        "registrations": 23213,
-        "value": "40.43%"
+        "registrations": 23253,
+        "value": "40.41%"
       },
       {
         "code": "INE",
         "name": "Doctorate",
-        "registrations": 1166,
-        "value": "2.03%"
+        "registrations": 1173,
+        "value": "2.04%"
       },
       {
         "code": "INE",
         "name": "Other",
-        "registrations": 1044,
+        "registrations": 1046,
         "value": "1.82%"
       },
       {
         "code": "INE",
         "name": "None",
-        "registrations": 28,
+        "registrations": 29,
         "value": "0.05%"
       },
       {
         "code": "INE",
         "name": "Not Available",
-        "registrations": 3660,
-        "value": "6.38%"
+        "registrations": 3701,
+        "value": "6.43%"
       },
       {
         "code": "INT",
         "name": "Associate",
-        "registrations": 6448,
-        "value": "11.99%"
+        "registrations": 6456,
+        "value": "11.97%"
       },
       {
         "code": "INT",
@@ -1963,31 +1963,31 @@ var moocsEducationArrays = {
       {
         "code": "INT",
         "name": "High School",
-        "registrations": 4983,
-        "value": "9.27%"
+        "registrations": 5009,
+        "value": "9.29%"
       },
       {
         "code": "INT",
         "name": "Bachelor",
-        "registrations": 17678,
-        "value": "32.88%"
+        "registrations": 17715,
+        "value": "32.85%"
       },
       {
         "code": "INT",
         "name": "Master",
-        "registrations": 13161,
-        "value": "24.48%"
+        "registrations": 13205,
+        "value": "24.49%"
       },
       {
         "code": "INT",
         "name": "Doctorate",
-        "registrations": 1059,
+        "registrations": 1063,
         "value": "1.97%"
       },
       {
         "code": "INT",
         "name": "Other",
-        "registrations": 855,
+        "registrations": 859,
         "value": "1.59%"
       },
       {
@@ -1999,121 +1999,121 @@ var moocsEducationArrays = {
       {
         "code": "INT",
         "name": "Not Available",
-        "registrations": 9506,
-        "value": "17.68%"
+        "registrations": 9548,
+        "value": "17.71%"
       },
       {
         "code": "KLD",
         "name": "Associate",
-        "registrations": 54313,
-        "value": "11.18%"
+        "registrations": 55842,
+        "value": "11.07%"
       },
       {
         "code": "KLD",
         "name": "Elementary",
-        "registrations": 289,
+        "registrations": 299,
         "value": "0.06%"
       },
       {
         "code": "KLD",
         "name": "High School",
-        "registrations": 35183,
-        "value": "7.24%"
+        "registrations": 36283,
+        "value": "7.19%"
       },
       {
         "code": "KLD",
         "name": "Bachelor",
-        "registrations": 166242,
-        "value": "34.23%"
+        "registrations": 171468,
+        "value": "33.99%"
       },
       {
         "code": "KLD",
         "name": "Master",
-        "registrations": 138183,
-        "value": "28.45%"
+        "registrations": 142127,
+        "value": "28.17%"
       },
       {
         "code": "KLD",
         "name": "Doctorate",
-        "registrations": 8202,
-        "value": "1.69%"
+        "registrations": 8498,
+        "value": "1.68%"
       },
       {
         "code": "KLD",
         "name": "Other",
-        "registrations": 9715,
-        "value": "2.00%"
+        "registrations": 9913,
+        "value": "1.96%"
       },
       {
         "code": "KLD",
         "name": "None",
-        "registrations": 365,
-        "value": "0.08%"
+        "registrations": 378,
+        "value": "0.07%"
       },
       {
         "code": "KLD",
         "name": "Not Available",
-        "registrations": 73235,
-        "value": "15.08%"
+        "registrations": 79677,
+        "value": "15.79%"
       },
       {
         "code": "LMK",
         "name": "Associate",
-        "registrations": 2347,
-        "value": "9.14%"
+        "registrations": 2592,
+        "value": "8.98%"
       },
       {
         "code": "LMK",
         "name": "Elementary",
-        "registrations": 40,
-        "value": "0.16%"
+        "registrations": 43,
+        "value": "0.15%"
       },
       {
         "code": "LMK",
         "name": "High School",
-        "registrations": 2808,
-        "value": "10.93%"
+        "registrations": 3026,
+        "value": "10.49%"
       },
       {
         "code": "LMK",
         "name": "Bachelor",
-        "registrations": 8504,
-        "value": "33.11%"
+        "registrations": 9443,
+        "value": "32.73%"
       },
       {
         "code": "LMK",
         "name": "Master",
-        "registrations": 7254,
-        "value": "28.24%"
+        "registrations": 7997,
+        "value": "27.72%"
       },
       {
         "code": "LMK",
         "name": "Doctorate",
-        "registrations": 646,
-        "value": "2.52%"
+        "registrations": 719,
+        "value": "2.49%"
       },
       {
         "code": "LMK",
         "name": "Other",
-        "registrations": 514,
-        "value": "2.00%"
+        "registrations": 546,
+        "value": "1.89%"
       },
       {
         "code": "LMK",
         "name": "None",
-        "registrations": 34,
-        "value": "0.13%"
+        "registrations": 36,
+        "value": "0.12%"
       },
       {
         "code": "LMK",
         "name": "Not Available",
-        "registrations": 3536,
-        "value": "13.77%"
+        "registrations": 4450,
+        "value": "15.42%"
       },
       {
         "code": "MIF",
         "name": "Associate",
-        "registrations": 3548,
+        "registrations": 3547,
         "value": "7.88%"
       },
       {
@@ -2125,25 +2125,25 @@ var moocsEducationArrays = {
       {
         "code": "MIF",
         "name": "High School",
-        "registrations": 2644,
+        "registrations": 2642,
         "value": "5.87%"
       },
       {
         "code": "MIF",
         "name": "Bachelor",
-        "registrations": 15582,
-        "value": "34.61%"
+        "registrations": 15579,
+        "value": "34.60%"
       },
       {
         "code": "MIF",
         "name": "Master",
-        "registrations": 19113,
-        "value": "42.45%"
+        "registrations": 19123,
+        "value": "42.47%"
       },
       {
         "code": "MIF",
         "name": "Doctorate",
-        "registrations": 885,
+        "registrations": 887,
         "value": "1.97%"
       },
       {
@@ -2155,128 +2155,128 @@ var moocsEducationArrays = {
       {
         "code": "MIF",
         "name": "None",
-        "registrations": 20,
-        "value": "0.04%"
+        "registrations": 21,
+        "value": "0.05%"
       },
       {
         "code": "MIF",
         "name": "Not Available",
-        "registrations": 2331,
-        "value": "5.18%"
+        "registrations": 2325,
+        "value": "5.16%"
       },
       {
         "code": "PCY",
         "name": "Associate",
-        "registrations": 3493,
-        "value": "11.55%"
+        "registrations": 3833,
+        "value": "11.29%"
       },
       {
         "code": "PCY",
         "name": "Elementary",
-        "registrations": 26,
+        "registrations": 29,
         "value": "0.09%"
       },
       {
         "code": "PCY",
         "name": "High School",
-        "registrations": 2472,
-        "value": "8.18%"
+        "registrations": 2716,
+        "value": "8.00%"
       },
       {
         "code": "PCY",
         "name": "Bachelor",
-        "registrations": 8837,
-        "value": "29.22%"
+        "registrations": 9770,
+        "value": "28.77%"
       },
       {
         "code": "PCY",
         "name": "Master",
-        "registrations": 7276,
-        "value": "24.06%"
+        "registrations": 8001,
+        "value": "23.56%"
       },
       {
         "code": "PCY",
         "name": "Doctorate",
-        "registrations": 578,
-        "value": "1.91%"
+        "registrations": 628,
+        "value": "1.85%"
       },
       {
         "code": "PCY",
         "name": "Other",
-        "registrations": 434,
-        "value": "1.44%"
+        "registrations": 475,
+        "value": "1.40%"
       },
       {
         "code": "PCY",
         "name": "None",
-        "registrations": 30,
+        "registrations": 33,
         "value": "0.10%"
       },
       {
         "code": "PCY",
         "name": "Not Available",
-        "registrations": 7092,
-        "value": "23.45%"
+        "registrations": 8476,
+        "value": "24.96%"
       },
       {
         "code": "RES",
         "name": "Associate",
-        "registrations": 5130,
-        "value": "9.74%"
+        "registrations": 5385,
+        "value": "9.63%"
       },
       {
         "code": "RES",
         "name": "Elementary",
-        "registrations": 54,
+        "registrations": 57,
         "value": "0.10%"
       },
       {
         "code": "RES",
         "name": "High School",
-        "registrations": 6431,
-        "value": "12.21%"
+        "registrations": 6658,
+        "value": "11.91%"
       },
       {
         "code": "RES",
         "name": "Bachelor",
-        "registrations": 17330,
-        "value": "32.90%"
+        "registrations": 18275,
+        "value": "32.70%"
       },
       {
         "code": "RES",
         "name": "Master",
-        "registrations": 14368,
-        "value": "27.28%"
+        "registrations": 15120,
+        "value": "27.05%"
       },
       {
         "code": "RES",
         "name": "Doctorate",
-        "registrations": 1131,
-        "value": "2.15%"
+        "registrations": 1205,
+        "value": "2.16%"
       },
       {
         "code": "RES",
         "name": "Other",
-        "registrations": 985,
-        "value": "1.87%"
+        "registrations": 1019,
+        "value": "1.82%"
       },
       {
         "code": "RES",
         "name": "None",
-        "registrations": 49,
+        "registrations": 52,
         "value": "0.09%"
       },
       {
         "code": "RES",
         "name": "Not Available",
-        "registrations": 7194,
-        "value": "13.66%"
+        "registrations": 8120,
+        "value": "14.53%"
       },
       {
         "code": "RND",
         "name": "Associate",
-        "registrations": 4660,
-        "value": "12.97%"
+        "registrations": 4680,
+        "value": "12.94%"
       },
       {
         "code": "RND",
@@ -2287,31 +2287,31 @@ var moocsEducationArrays = {
       {
         "code": "RND",
         "name": "High School",
-        "registrations": 3049,
-        "value": "8.48%"
+        "registrations": 3074,
+        "value": "8.50%"
       },
       {
         "code": "RND",
         "name": "Bachelor",
-        "registrations": 11620,
-        "value": "32.33%"
+        "registrations": 11674,
+        "value": "32.27%"
       },
       {
         "code": "RND",
         "name": "Master",
-        "registrations": 10410,
-        "value": "28.96%"
+        "registrations": 10461,
+        "value": "28.91%"
       },
       {
         "code": "RND",
         "name": "Doctorate",
-        "registrations": 993,
-        "value": "2.76%"
+        "registrations": 995,
+        "value": "2.75%"
       },
       {
         "code": "RND",
         "name": "Other",
-        "registrations": 684,
+        "registrations": 687,
         "value": "1.90%"
       },
       {
@@ -2323,122 +2323,122 @@ var moocsEducationArrays = {
       {
         "code": "RND",
         "name": "Not Available",
-        "registrations": 4475,
-        "value": "12.45%"
+        "registrations": 4559,
+        "value": "12.60%"
       },
       {
         "code": "SPH",
         "name": "Associate",
-        "registrations": 10466,
-        "value": "8.98%"
+        "registrations": 10717,
+        "value": "8.94%"
       },
       {
         "code": "SPH",
         "name": "Elementary",
-        "registrations": 171,
+        "registrations": 174,
         "value": "0.15%"
       },
       {
         "code": "SPH",
         "name": "High School",
-        "registrations": 7610,
-        "value": "6.53%"
+        "registrations": 7839,
+        "value": "6.54%"
       },
       {
         "code": "SPH",
         "name": "Bachelor",
-        "registrations": 41845,
-        "value": "35.89%"
+        "registrations": 42817,
+        "value": "35.71%"
       },
       {
         "code": "SPH",
         "name": "Master",
-        "registrations": 35697,
-        "value": "30.62%"
+        "registrations": 36476,
+        "value": "30.42%"
       },
       {
         "code": "SPH",
         "name": "Doctorate",
-        "registrations": 2340,
-        "value": "2.01%"
+        "registrations": 2421,
+        "value": "2.02%"
       },
       {
         "code": "SPH",
         "name": "Other",
-        "registrations": 2268,
-        "value": "1.95%"
+        "registrations": 2301,
+        "value": "1.92%"
       },
       {
         "code": "SPH",
         "name": "None",
-        "registrations": 87,
-        "value": "0.07%"
+        "registrations": 90,
+        "value": "0.08%"
       },
       {
         "code": "SPH",
         "name": "Not Available",
-        "registrations": 16098,
-        "value": "13.81%"
+        "registrations": 17058,
+        "value": "14.23%"
       },
       {
         "code": "TSP",
         "name": "Associate",
-        "registrations": 2208,
-        "value": "17.76%"
+        "registrations": 2571,
+        "value": "17.09%"
       },
       {
         "code": "TSP",
         "name": "Elementary",
-        "registrations": 13,
-        "value": "0.10%"
+        "registrations": 16,
+        "value": "0.11%"
       },
       {
         "code": "TSP",
         "name": "High School",
-        "registrations": 1107,
-        "value": "8.91%"
+        "registrations": 1285,
+        "value": "8.54%"
       },
       {
         "code": "TSP",
         "name": "Bachelor",
-        "registrations": 3619,
-        "value": "29.11%"
+        "registrations": 4264,
+        "value": "28.34%"
       },
       {
         "code": "TSP",
         "name": "Master",
-        "registrations": 2429,
-        "value": "19.54%"
+        "registrations": 2796,
+        "value": "18.58%"
       },
       {
         "code": "TSP",
         "name": "Doctorate",
-        "registrations": 153,
-        "value": "1.23%"
+        "registrations": 182,
+        "value": "1.21%"
       },
       {
         "code": "TSP",
         "name": "Other",
-        "registrations": 224,
-        "value": "1.80%"
+        "registrations": 261,
+        "value": "1.73%"
       },
       {
         "code": "TSP",
         "name": "None",
         "registrations": 9,
-        "value": "0.07%"
+        "value": "0.06%"
       },
       {
         "code": "TSP",
         "name": "Not Available",
-        "registrations": 2669,
-        "value": "21.47%"
+        "registrations": 3662,
+        "value": "24.34%"
       },
       {
         "code": "VPC",
         "name": "Associate",
-        "registrations": 6624,
-        "value": "12.77%"
+        "registrations": 6729,
+        "value": "12.76%"
       },
       {
         "code": "VPC",
@@ -2449,105 +2449,105 @@ var moocsEducationArrays = {
       {
         "code": "VPC",
         "name": "High School",
-        "registrations": 3644,
-        "value": "7.03%"
+        "registrations": 3713,
+        "value": "7.04%"
       },
       {
         "code": "VPC",
         "name": "Bachelor",
-        "registrations": 17201,
-        "value": "33.17%"
+        "registrations": 17455,
+        "value": "33.10%"
       },
       {
         "code": "VPC",
         "name": "Master",
-        "registrations": 10684,
-        "value": "20.60%"
+        "registrations": 10831,
+        "value": "20.54%"
       },
       {
         "code": "VPC",
         "name": "Doctorate",
-        "registrations": 700,
-        "value": "1.35%"
+        "registrations": 715,
+        "value": "1.36%"
       },
       {
         "code": "VPC",
         "name": "Other",
-        "registrations": 792,
-        "value": "1.53%"
+        "registrations": 800,
+        "value": "1.52%"
       },
       {
         "code": "VPC",
         "name": "None",
-        "registrations": 28,
+        "registrations": 29,
         "value": "0.05%"
       },
       {
         "code": "VPC",
         "name": "Not Available",
-        "registrations": 12148,
-        "value": "23.43%"
+        "registrations": 12420,
+        "value": "23.55%"
       },
       {
         "code": "WSA",
         "name": "Associate",
-        "registrations": 4246,
-        "value": "12.36%"
+        "registrations": 4505,
+        "value": "12.17%"
       },
       {
         "code": "WSA",
         "name": "Elementary",
-        "registrations": 35,
+        "registrations": 37,
         "value": "0.10%"
       },
       {
         "code": "WSA",
         "name": "High School",
-        "registrations": 4337,
-        "value": "12.62%"
+        "registrations": 4497,
+        "value": "12.14%"
       },
       {
         "code": "WSA",
         "name": "Bachelor",
-        "registrations": 9934,
-        "value": "28.91%"
+        "registrations": 10648,
+        "value": "28.76%"
       },
       {
         "code": "WSA",
         "name": "Master",
-        "registrations": 11227,
-        "value": "32.67%"
+        "registrations": 11671,
+        "value": "31.52%"
       },
       {
         "code": "WSA",
         "name": "Doctorate",
-        "registrations": 702,
-        "value": "2.04%"
+        "registrations": 741,
+        "value": "2.00%"
       },
       {
         "code": "WSA",
         "name": "Other",
-        "registrations": 887,
-        "value": "2.58%"
+        "registrations": 917,
+        "value": "2.48%"
       },
       {
         "code": "WSA",
         "name": "None",
-        "registrations": 28,
+        "registrations": 30,
         "value": "0.08%"
       },
       {
         "code": "WSA",
         "name": "Not Available",
-        "registrations": 2968,
-        "value": "8.64%"
+        "registrations": 3982,
+        "value": "10.75%"
       }
     ],
     educationLevelDivisions2018: [
       {
         "code": "CBD",
         "name": "Associate",
-        "registrations": 334,
+        "registrations": 333,
         "value": "3.4%"
       },
       {
@@ -2559,13 +2559,13 @@ var moocsEducationArrays = {
       {
         "code": "CBD",
         "name": "High School",
-        "registrations": 680,
+        "registrations": 681,
         "value": "7.0%"
       },
       {
         "code": "CBD",
         "name": "Bachelor",
-        "registrations": 2847,
+        "registrations": 2848,
         "value": "29.2%"
       },
       {
@@ -2595,7 +2595,7 @@ var moocsEducationArrays = {
       {
         "code": "CBD",
         "name": "Not Available",
-        "registrations": 3839,
+        "registrations": 3838,
         "value": "39.4%"
       },
       {
@@ -2667,26 +2667,26 @@ var moocsEducationArrays = {
       {
         "code": "CCB",
         "name": "High School",
-        "registrations": 386,
+        "registrations": 385,
         "value": "8.6%"
       },
       {
         "code": "CCB",
         "name": "Bachelor",
-        "registrations": 1215,
-        "value": "27.0%"
+        "registrations": 1216,
+        "value": "27.1%"
       },
       {
         "code": "CCB",
         "name": "Master",
-        "registrations": 1300,
-        "value": "28.9%"
+        "registrations": 1302,
+        "value": "29.0%"
       },
       {
         "code": "CCB",
         "name": "Doctorate",
-        "registrations": 155,
-        "value": "3.4%"
+        "registrations": 156,
+        "value": "3.5%"
       },
       {
         "code": "CCB",
@@ -2703,8 +2703,8 @@ var moocsEducationArrays = {
       {
         "code": "CCB",
         "name": "Not Available",
-        "registrations": 1313,
-        "value": "29.2%"
+        "registrations": 1310,
+        "value": "29.1%"
       },
       {
         "code": "CHA",
@@ -2763,7 +2763,7 @@ var moocsEducationArrays = {
       {
         "code": "EDU",
         "name": "Associate",
-        "registrations": 1750,
+        "registrations": 1747,
         "value": "7.6%"
       },
       {
@@ -2775,25 +2775,25 @@ var moocsEducationArrays = {
       {
         "code": "EDU",
         "name": "High School",
-        "registrations": 1742,
+        "registrations": 1738,
         "value": "7.6%"
       },
       {
         "code": "EDU",
         "name": "Bachelor",
-        "registrations": 6144,
+        "registrations": 6142,
         "value": "26.7%"
       },
       {
         "code": "EDU",
         "name": "Master",
-        "registrations": 4388,
+        "registrations": 4401,
         "value": "19.1%"
       },
       {
         "code": "EDU",
         "name": "Doctorate",
-        "registrations": 435,
+        "registrations": 436,
         "value": "1.9%"
       },
       {
@@ -2811,43 +2811,43 @@ var moocsEducationArrays = {
       {
         "code": "EDU",
         "name": "Not Available",
-        "registrations": 8122,
+        "registrations": 8117,
         "value": "35.3%"
       },
       {
         "code": "FMM",
         "name": "Associate",
-        "registrations": 1219,
+        "registrations": 1221,
         "value": "9.2%"
       },
       {
         "code": "FMM",
         "name": "Elementary",
-        "registrations": 10,
+        "registrations": 11,
         "value": "0.1%"
       },
       {
         "code": "FMM",
         "name": "High School",
-        "registrations": 796,
+        "registrations": 795,
         "value": "6.0%"
       },
       {
         "code": "FMM",
         "name": "Bachelor",
-        "registrations": 4087,
+        "registrations": 4091,
         "value": "30.9%"
       },
       {
         "code": "FMM",
         "name": "Master",
-        "registrations": 2717,
+        "registrations": 2720,
         "value": "20.6%"
       },
       {
         "code": "FMM",
         "name": "Doctorate",
-        "registrations": 200,
+        "registrations": 201,
         "value": "1.5%"
       },
       {
@@ -2865,8 +2865,8 @@ var moocsEducationArrays = {
       {
         "code": "FMM",
         "name": "Not Available",
-        "registrations": 4008,
-        "value": "30.3%"
+        "registrations": 3998,
+        "value": "30.2%"
       },
       {
         "code": "HUD",
@@ -2925,8 +2925,8 @@ var moocsEducationArrays = {
       {
         "code": "ICS",
         "name": "Associate",
-        "registrations": 836,
-        "value": "9.6%"
+        "registrations": 832,
+        "value": "9.5%"
       },
       {
         "code": "ICS",
@@ -2937,8 +2937,8 @@ var moocsEducationArrays = {
       {
         "code": "ICS",
         "name": "High School",
-        "registrations": 501,
-        "value": "5.7%"
+        "registrations": 506,
+        "value": "5.8%"
       },
       {
         "code": "ICS",
@@ -2949,7 +2949,7 @@ var moocsEducationArrays = {
       {
         "code": "ICS",
         "name": "Master",
-        "registrations": 1949,
+        "registrations": 1953,
         "value": "22.3%"
       },
       {
@@ -2973,13 +2973,13 @@ var moocsEducationArrays = {
       {
         "code": "ICS",
         "name": "Not Available",
-        "registrations": 2204,
-        "value": "25.2%"
+        "registrations": 2199,
+        "value": "25.1%"
       },
       {
         "code": "IFD",
         "name": "Associate",
-        "registrations": 1150,
+        "registrations": 1149,
         "value": "9.0%"
       },
       {
@@ -2991,25 +2991,25 @@ var moocsEducationArrays = {
       {
         "code": "IFD",
         "name": "High School",
-        "registrations": 1066,
+        "registrations": 1067,
         "value": "8.4%"
       },
       {
         "code": "IFD",
         "name": "Bachelor",
-        "registrations": 3399,
-        "value": "26.6%"
+        "registrations": 3403,
+        "value": "26.7%"
       },
       {
         "code": "IFD",
         "name": "Master",
-        "registrations": 2659,
-        "value": "20.8%"
+        "registrations": 2664,
+        "value": "20.9%"
       },
       {
         "code": "IFD",
         "name": "Doctorate",
-        "registrations": 220,
+        "registrations": 221,
         "value": "1.7%"
       },
       {
@@ -3021,13 +3021,13 @@ var moocsEducationArrays = {
       {
         "code": "IFD",
         "name": "None",
-        "registrations": 7,
+        "registrations": 8,
         "value": "0.1%"
       },
       {
         "code": "IFD",
         "name": "Not Available",
-        "registrations": 4089,
+        "registrations": 4078,
         "value": "32.0%"
       },
       {
@@ -3087,7 +3087,7 @@ var moocsEducationArrays = {
       {
         "code": "INT",
         "name": "Associate",
-        "registrations": 2214,
+        "registrations": 2212,
         "value": "9.3%"
       },
       {
@@ -3099,7 +3099,7 @@ var moocsEducationArrays = {
       {
         "code": "INT",
         "name": "High School",
-        "registrations": 1666,
+        "registrations": 1670,
         "value": "7.0%"
       },
       {
@@ -3111,13 +3111,13 @@ var moocsEducationArrays = {
       {
         "code": "INT",
         "name": "Master",
-        "registrations": 4489,
+        "registrations": 4498,
         "value": "18.8%"
       },
       {
         "code": "INT",
         "name": "Doctorate",
-        "registrations": 402,
+        "registrations": 404,
         "value": "1.7%"
       },
       {
@@ -3135,13 +3135,13 @@ var moocsEducationArrays = {
       {
         "code": "INT",
         "name": "Not Available",
-        "registrations": 8034,
-        "value": "33.7%"
+        "registrations": 8021,
+        "value": "33.6%"
       },
       {
         "code": "KLD",
         "name": "Associate",
-        "registrations": 8540,
+        "registrations": 8531,
         "value": "7.5%"
       },
       {
@@ -3153,32 +3153,32 @@ var moocsEducationArrays = {
       {
         "code": "KLD",
         "name": "High School",
-        "registrations": 7474,
+        "registrations": 7475,
         "value": "6.5%"
       },
       {
         "code": "KLD",
         "name": "Bachelor",
-        "registrations": 33778,
-        "value": "29.5%"
+        "registrations": 33813,
+        "value": "29.6%"
       },
       {
         "code": "KLD",
         "name": "Master",
-        "registrations": 23842,
-        "value": "20.8%"
+        "registrations": 23874,
+        "value": "20.9%"
       },
       {
         "code": "KLD",
         "name": "Doctorate",
-        "registrations": 1805,
+        "registrations": 1812,
         "value": "1.6%"
       },
       {
         "code": "KLD",
         "name": "Other",
-        "registrations": 1429,
-        "value": "1.2%"
+        "registrations": 1430,
+        "value": "1.3%"
       },
       {
         "code": "KLD",
@@ -3189,7 +3189,7 @@ var moocsEducationArrays = {
       {
         "code": "KLD",
         "name": "Not Available",
-        "registrations": 37328,
+        "registrations": 37261,
         "value": "32.6%"
       },
       {
@@ -3213,19 +3213,19 @@ var moocsEducationArrays = {
       {
         "code": "LMK",
         "name": "Bachelor",
-        "registrations": 1582,
-        "value": "28.1%"
+        "registrations": 1579,
+        "value": "28.0%"
       },
       {
         "code": "LMK",
         "name": "Master",
-        "registrations": 1179,
+        "registrations": 1181,
         "value": "20.9%"
       },
       {
         "code": "LMK",
         "name": "Doctorate",
-        "registrations": 129,
+        "registrations": 130,
         "value": "2.3%"
       },
       {
@@ -3303,7 +3303,7 @@ var moocsEducationArrays = {
       {
         "code": "PCY",
         "name": "Associate",
-        "registrations": 1150,
+        "registrations": 1149,
         "value": "9.0%"
       },
       {
@@ -3315,25 +3315,25 @@ var moocsEducationArrays = {
       {
         "code": "PCY",
         "name": "High School",
-        "registrations": 1066,
+        "registrations": 1067,
         "value": "8.4%"
       },
       {
         "code": "PCY",
         "name": "Bachelor",
-        "registrations": 3399,
-        "value": "26.6%"
+        "registrations": 3403,
+        "value": "26.7%"
       },
       {
         "code": "PCY",
         "name": "Master",
-        "registrations": 2659,
-        "value": "20.8%"
+        "registrations": 2664,
+        "value": "20.9%"
       },
       {
         "code": "PCY",
         "name": "Doctorate",
-        "registrations": 220,
+        "registrations": 221,
         "value": "1.7%"
       },
       {
@@ -3345,13 +3345,13 @@ var moocsEducationArrays = {
       {
         "code": "PCY",
         "name": "None",
-        "registrations": 7,
+        "registrations": 8,
         "value": "0.1%"
       },
       {
         "code": "PCY",
         "name": "Not Available",
-        "registrations": 4089,
+        "registrations": 4078,
         "value": "32.0%"
       },
       {
@@ -3375,19 +3375,19 @@ var moocsEducationArrays = {
       {
         "code": "RES",
         "name": "Bachelor",
-        "registrations": 3897,
+        "registrations": 3895,
         "value": "27.4%"
       },
       {
         "code": "RES",
         "name": "Master",
-        "registrations": 2648,
-        "value": "18.6%"
+        "registrations": 2655,
+        "value": "18.7%"
       },
       {
         "code": "RES",
         "name": "Doctorate",
-        "registrations": 263,
+        "registrations": 265,
         "value": "1.9%"
       },
       {
@@ -3405,13 +3405,13 @@ var moocsEducationArrays = {
       {
         "code": "RES",
         "name": "Not Available",
-        "registrations": 4340,
+        "registrations": 4333,
         "value": "30.5%"
       },
       {
         "code": "RND",
         "name": "Associate",
-        "registrations": 1018,
+        "registrations": 1019,
         "value": "10.3%"
       },
       {
@@ -3423,20 +3423,20 @@ var moocsEducationArrays = {
       {
         "code": "RND",
         "name": "High School",
-        "registrations": 558,
-        "value": "5.7%"
+        "registrations": 557,
+        "value": "5.6%"
       },
       {
         "code": "RND",
         "name": "Bachelor",
-        "registrations": 2845,
+        "registrations": 2842,
         "value": "28.8%"
       },
       {
         "code": "RND",
         "name": "Master",
-        "registrations": 2108,
-        "value": "21.3%"
+        "registrations": 2112,
+        "value": "21.4%"
       },
       {
         "code": "RND",
@@ -3459,7 +3459,7 @@ var moocsEducationArrays = {
       {
         "code": "RND",
         "name": "Not Available",
-        "registrations": 2982,
+        "registrations": 2981,
         "value": "30.2%"
       },
       {
@@ -3477,31 +3477,31 @@ var moocsEducationArrays = {
       {
         "code": "SPH",
         "name": "High School",
-        "registrations": 1304,
+        "registrations": 1305,
         "value": "5.4%"
       },
       {
         "code": "SPH",
         "name": "Bachelor",
-        "registrations": 6711,
+        "registrations": 6712,
         "value": "27.6%"
       },
       {
         "code": "SPH",
         "name": "Master",
-        "registrations": 3594,
+        "registrations": 3600,
         "value": "14.8%"
       },
       {
         "code": "SPH",
         "name": "Doctorate",
-        "registrations": 358,
+        "registrations": 359,
         "value": "1.5%"
       },
       {
         "code": "SPH",
         "name": "Other",
-        "registrations": 331,
+        "registrations": 330,
         "value": "1.4%"
       },
       {
@@ -3513,13 +3513,13 @@ var moocsEducationArrays = {
       {
         "code": "SPH",
         "name": "Not Available",
-        "registrations": 10012,
+        "registrations": 10004,
         "value": "41.1%"
       },
       {
         "code": "TSP",
         "name": "Associate",
-        "registrations": 675,
+        "registrations": 676,
         "value": "12.4%"
       },
       {
@@ -3537,8 +3537,8 @@ var moocsEducationArrays = {
       {
         "code": "TSP",
         "name": "Bachelor",
-        "registrations": 1495,
-        "value": "27.4%"
+        "registrations": 1499,
+        "value": "27.5%"
       },
       {
         "code": "TSP",
@@ -3555,7 +3555,7 @@ var moocsEducationArrays = {
       {
         "code": "TSP",
         "name": "Other",
-        "registrations": 71,
+        "registrations": 72,
         "value": "1.3%"
       },
       {
@@ -3567,8 +3567,8 @@ var moocsEducationArrays = {
       {
         "code": "TSP",
         "name": "Not Available",
-        "registrations": 1835,
-        "value": "33.6%"
+        "registrations": 1829,
+        "value": "33.5%"
       },
       {
         "code": "VPC",
@@ -3585,25 +3585,25 @@ var moocsEducationArrays = {
       {
         "code": "VPC",
         "name": "High School",
-        "registrations": 728,
+        "registrations": 730,
         "value": "5.9%"
       },
       {
         "code": "VPC",
         "name": "Bachelor",
-        "registrations": 3780,
+        "registrations": 3784,
         "value": "30.7%"
       },
       {
         "code": "VPC",
         "name": "Master",
-        "registrations": 2344,
-        "value": "19.0%"
+        "registrations": 2346,
+        "value": "19.1%"
       },
       {
         "code": "VPC",
         "name": "Doctorate",
-        "registrations": 165,
+        "registrations": 166,
         "value": "1.3%"
       },
       {
@@ -3621,7 +3621,7 @@ var moocsEducationArrays = {
       {
         "code": "VPC",
         "name": "Not Available",
-        "registrations": 4090,
+        "registrations": 4081,
         "value": "33.2%"
       },
       {
@@ -3639,20 +3639,20 @@ var moocsEducationArrays = {
       {
         "code": "WSA",
         "name": "High School",
-        "registrations": 512,
+        "registrations": 509,
         "value": "9.7%"
       },
       {
         "code": "WSA",
         "name": "Bachelor",
-        "registrations": 1349,
-        "value": "25.6%"
+        "registrations": 1350,
+        "value": "25.7%"
       },
       {
         "code": "WSA",
         "name": "Master",
-        "registrations": 965,
-        "value": "18.3%"
+        "registrations": 968,
+        "value": "18.4%"
       },
       {
         "code": "WSA",
@@ -3675,102 +3675,102 @@ var moocsEducationArrays = {
       {
         "code": "WSA",
         "name": "Not Available",
-        "registrations": 1734,
-        "value": "33.0%"
+        "registrations": 1733,
+        "value": "32.9%"
       }
     ],
     educationLevelIDBAllTheTime: [
       {
         "name": "Associate",
-        "registrations": 109468,
-        "value": "10.69%"
+        "registrations": 113689,
+        "value": "10.58%"
       },
       {
         "name": "Elementary",
-        "registrations": 836,
+        "registrations": 869,
         "value": "0.08%"
       },
       {
         "name": "High School",
-        "registrations": 84423,
-        "value": "8.25%"
+        "registrations": 87289,
+        "value": "8.12%"
       },
       {
         "name": "Bachelor",
-        "registrations": 346684,
-        "value": "33.86%"
+        "registrations": 360805,
+        "value": "33.57%"
       },
       {
         "name": "Master",
-        "registrations": 301243,
-        "value": "29.43%"
+        "registrations": 311801,
+        "value": "29.01%"
       },
       {
         "name": "Doctorate",
-        "registrations": 19070,
-        "value": "1.86%"
+        "registrations": 19855,
+        "value": "1.85%"
       },
       {
         "name": "Other",
-        "registrations": 20845,
-        "value": "2.04%"
+        "registrations": 21412,
+        "value": "1.99%"
       },
       {
         "name": "None",
-        "registrations": 835,
+        "registrations": 871,
         "value": "0.08%"
       },
       {
         "name": "Not Available",
-        "registrations": 140359,
-        "value": "13.71%"
+        "registrations": 158070,
+        "value": "14.71%"
       }
     ],
     educationLevelIDB2018: [
       {
         "name": "Associate",
-        "registrations": 19800,
+        "registrations": 19785,
         "value": "8.31%"
       },
       {
         "name": "Elementary",
-        "registrations": 248,
+        "registrations": 249,
         "value": "0.10%"
       },
       {
         "name": "High School",
-        "registrations": 16030,
+        "registrations": 16033,
         "value": "6.73%"
       },
       {
         "name": "Bachelor",
-        "registrations": 68743,
-        "value": "28.86%"
+        "registrations": 68794,
+        "value": "28.88%"
       },
       {
         "name": "Master",
-        "registrations": 46683,
-        "value": "19.60%"
+        "registrations": 46763,
+        "value": "19.63%"
       },
       {
         "name": "Doctorate",
-        "registrations": 3769,
-        "value": "1.58%"
+        "registrations": 3781,
+        "value": "1.59%"
       },
       {
         "name": "Other",
-        "registrations": 2998,
+        "registrations": 2999,
         "value": "1.26%"
       },
       {
         "name": "None",
-        "registrations": 179,
+        "registrations": 180,
         "value": "0.08%"
       },
       {
         "name": "Not Available",
-        "registrations": 79726,
-        "value": "33.47%"
+        "registrations": 79592,
+        "value": "33.42%"
       }
     ]
 };
