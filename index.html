@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html lang="en">
 
@@ -6,47 +7,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
     <link rel="stylesheet" href="css/global.css" />
+    <!-- <link rel="stylesheet" media="(max-width: 960px)" href="mobile.css" /> -->
     <link rel="stylesheet" href="local.css" />
 
-    <!-- <link rel="stylesheet" media="(max-width: 960px)" href="mobile.css" /> -->
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script>if (!Object.entries) {
-            Object.entries = function (obj) {
-                var ownProps = Object.keys(obj),
-                    i = ownProps.length,
-                    resArray = new Array(i); // preallocate the Array
-                while (i--)
-                    resArray[i] = [ownProps[i], obj[ownProps[i]]];
-
-                return resArray;
-            };
-        }</script>
-    <script src="formdata.min.js"></script>
-    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.find,Array.prototype.findIndex"></script>
 
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
     <link href="https://refreshless.com/nouislider/distribute/nouislider.css?v=1210" rel="stylesheet">
-
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
 
-    <script>if (!(window.Promise && [].includes && Object.assign && window.Map)) { document.write('<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></scr' + 'ipt>') }</script>
+    <script>if(!(window.Promise&&[].includes&&Object.assign&&window.Map)){document.write('<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></scr'+'ipt>')}</script>
     <script src="https://d3plus.org/js/d3plus.v2.0.0-alpha.17.full.min.js"></script>
-
-    <script src="d3Old.js"></script>
-    <script src="d3PlusOld.js"></script>
-
 
     <!-- <script src="https://d3plus.org/js/d3plus-hierarchy.v0.8.full.min.js"></script> -->
 
@@ -66,8 +47,8 @@
 
 </head>
 
-<div class="body">
-    <div class="container-fluid fixed-top bg-white inner-nav">
+<body>
+    <div class="container-fluid ">
         <div class="row">
             <nav id="nav-title" class="navbar navbar-expand-lg navbar-light ">
 
@@ -80,114 +61,133 @@
                         <a class="nav-item nav-link col" href="#">WHO WE ARE </a>
                         <a class="nav-item nav-link col" href="#">MANAGE KNOWLEDGE AND CAPABILITIES</a>
                         <a class="nav-item nav-link col" href="#">CREATE AND INNOVATE</a>
-                        <a class="nav-item nav-link col" href="#">COMMUNICATE WITH YOUR AUDIENCE</a>
-                        <a class="nav-item nav-link col" href="#">YOUR KIC CONTACTS</a>
+                        <a class="nav-item nav-link col" href="#">COMUNICATE WITH YOUR AUDIENCE</a>
                         <a class="nav-item nav-link col active" href="#">KNOWLEDGE PRODUCTS INSIGHTS <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link col" href="#">YOUR KIC CONTACTS</a>
                     </div>
                 </div>
             </nav>
 
-            <div class="col-12 col-md-7 col-lg-7  pt-4 pb-4 title-text">
+            <div class="col-md-7 pt-4 pb-4 title-text">
                 <h1>
 
-                    WELCOME TO <b><a id="idbLink" href="#" class="activeFilter">IDB Group</a></b>
-
-                    KP INSIGHTS</h1>
-            </div>
-            <div class="col-12 col-md-5 col-lg-5 pt-4 pb-4">
-                <div class="row">
-                    <div class="col-md-8 col-lg-8 text-center dropdown-bg pt-2 left-text-drop">now showing data for <select id="divisionSelect">
-                            <option value="IDB">IDB Group</option>
+                    WELCOME TO <b><a id="idbLink" href="#" class="activeFilter">IDB</a></b>
+                    <!-- <b>
+                        <select id="deparmentSelect" size="1">
+                            <option value=""></option>
                             <option value="AUG">AUG</option>
-                            <option value="BOG">BOG Front Desk</option>
-                            <option value="department">CAN</option>
-                            <option value="CAN">CAN Front Desk</option>
-                            <option value="CBO">CBO</option>
-                            <option value="CCO">CCO</option>
-                            <option value="CPE">CPE</option>
-                            <option value="department">CCB</option>
-                            <option value="CCB">CCB Front Desk</option>
-                            <option value="CBH">CBH</option>
-                            <option value="CGY">CGY</option>
-                            <option value="CJA">CJA</option>
-                            <option value="department">CID</option>
-                            <option value="CID">CID Front Desk</option>
-                            <option value="CBL">CBL</option>
-                            <option value="CCR">CCR</option>
-                            <option value="CDR">CDR</option>
-                            <option value="CHA">CHA</option>
-                            <option value="CHO">CHO</option>
-                            <option value="CME">CME</option>
-                            <option value="CNI">CNI</option>
-                            <option value="department">CSC</option>
-                            <option value="CSC">CSC Front Desk</option>
-                            <option value="CAR">CAR</option>
-                            <option value="CBR">CBR</option>
-                            <option value="CCH">CCH</option>
-                            <option value="CPR">CPR</option>
-                            <option value="CUR">CUR</option>
-                            <option value="department">CSD</option>
-                            <option value="CSD">CSD Front Desk</option>
-                            <option value="CCS">CCS</option>
-                            <option value="HUD">HUD</option>
-                            <option value="RND">RND</option>
+                            <option value="BOG">BOG</option>
+                            <option value="CAN">CAN</option>
+                            <option value="CCB">CCB</option>
+                            <option value="CID">CID</option>
+                            <option value="CSC">CSC</option>
+                            <option value="CSD">CSD</option>
+                            <option value="Discontinued Departments">Discontinu...</option>
                             <option value="ESG">ESG</option>
                             <option value="FMP">FMP</option>
-                            <option value="department">IFD</option>
-                            <option value="IFD">IFD Front Desk</option>
-                            <option value="CMF">CMF</option>
-                            <option value="CTI">CTI</option>
-                            <option value="FMM">FMM</option>
-                            <option value="ICS">ICS</option>
-                            <option value="department">INE</option>
-                            <option value="INE">INE Front Desk</option>
-                            <option value="ENE">ENE</option>
+                            <option value="HRD">HRD</option>
+                            <option value="IFD">IFD</option>
                             <option value="INE">INE</option>
-                            <option value="TSP">TSP</option>
-                            <option value="WSA">WSA</option>
-                            <option value="department">INT</option>
-                            <option value="INT">INT Front Desk </option>
-                            <option value="INL">INL</option>
+                            <option value="INT">INT</option>
                             <option value="ITE">ITE</option>
-                            <option value="department">KIC</option>
-                            <option value="KIC">KIC Front Desk</option>
-                            <option value="DCC">DCC</option>
-                            <option value="ICD">ICD</option>
-                            <option value="ISU">ISU</option>
-                            <option value="KLD">KLD</option>
-                            <option value="UCC">UCC</option>
+                            <option value="KIC">KIC</option>
                             <option value="MICI">MICI</option>
-                            <option value="department">MIF</option>
-                            <option value="MIF">MIF Front Desk</option>
+                            <option value="MIF">MIF</option>
                             <option value="OII">OII</option>
-                            <option value="CCB">CCB</option>
-                            <option value="ORP">ORP Front Desk</option>
-                            <option value="OVE">OVE Front Desk</option>
-                            <option value="department">PRE</option>
-                            <option value="PRE">PRE Front Desk</option>
+                            <option value="ORP">ORP</option>
+                            <option value="OVE">OVE</option>
+                            <option value="PRE">PRE</option>
                             <option value="RES">RES</option>
-                            <option value="PCY">PCY</option>
-                            <option value="RMG">RMG Front Desk</option>
-                            <option value="department">SCL</option>
-                            <option value="SCL">SCL Front Desk</option>
-                            <option value="EDU">EDU</option>
-                            <option value="GDI">GDI</option>
-                            <option value="LMK">LMK</option>
-                            <option value="SPH">SPH</option>
-                            <option value="department">SEC</option>
-                            <option value="SEC">SEC Front Desk</option>
+                            <option value="RMG">RMG</option>
+                            <option value="SCL">SCL</option>
+                            <option value="SEC">SEC</option>
+                            <option value="SPD">SPD</option>
+                            <option value="Strategic Core">Strategic Core</option>
+                            <option value="VPC">VPC</option>
+                            <option value="VPS">VPS</option>
+                        </select></b>  -->
+                    KP INSIGHTS</h1>
+            </div>
+            <div class="col-md-5 pt-4 pb-4">
+                <div class="row">
+                    <div class="col-md-7 text-center dropdown-bg pt-2 left-text-drop">now showing data for <select id="divisionSelect">
+
+                            <option value="IDB">IDB</option>
                             <option value="ATI">ATI</option>
-                            <option value="PRO">PRO</option>
-                            <option value="department">SPD</option>
-                            <option value="SPD">SPD Front Desk</option>
-                            <option value="SDV">SDV</option>
-                            <option value="SMO">SMO</option>
+                            <option value="AUG">AUG</option>
+                            <option value="BOG">BOG</option>
+                            <option value="CAN">CAN</option>
+                            <option value="CAR">CAR</option>
+                            <option value="CBH">CBH</option>
+                            <option value="CBL">CBL</option>
+                            <option value="CBO">CBO</option>
+                            <option value="CBR">CBR</option>
+                            <option value="CCB">CCB</option>
+                            <option value="CCH">CCH</option>
+                            <option value="CCO">CCO</option>
+                            <option value="CCS">CCS</option>
+                            <option value="CDR">CDR</option>
+                            <option value="CGY">CGY</option>
                             <option value="CHO">CHO</option>
+                            <option value="CID">CID</option>
+                            <option value="CJA">CJA</option>
+                            <option value="CME">CME</option>
+                            <option value="CMF">CMF</option>
+                            <option value="CMG">CMG</option>
+                            <option value="CNI">CNI</option>
+                            <option value="CPE">CPE</option>
+                            <option value="CPR">CPR</option>
+                            <option value="CSC">CSC</option>
+                            <option value="CSD">CSD</option>
+                            <option value="CSO">CSO</option>
+                            <option value="CTI">CTI</option>
+                            <option value="CUR">CUR</option>
+                            <option value="Discontinued Divisions">Discont...</option>
+                            <option value="EDU">EDU</option>
+                            <option value="ENE">ENE</option>
+                            <option value="ESG">ESG</option>
                             <option value="EUR">EUR</option>
+                            <option value="FHL">FHL</option>
+                            <option value="FMM">FMM</option>
+                            <option value="FMP">FMP</option>
                             <option value="GCM">GCM</option>
-                            <option value="department">Strategic Core</option>
-                            <option value="VPC">VPC Front Desk</option>
-                            <option value="VPS">VPS Front Desk</option>
+                            <option value="GDI">GDI</option>
+                            <option value="HRD">HRD</option>
+                            <option value="HUD">HUD</option>
+                            <option value="ICD">ICD</option>
+                            <option value="ICS">ICS</option>
+                            <option value="IFD">IFD</option>
+                            <option value="INE">INE</option>
+                            <option value="INL">INL</option>
+                            <option value="INT">INT</option>
+                            <option value="ITE">ITE</option>
+                            <option value="KIC">KIC</option>
+                            <option value="KNM">KNM</option>
+                            <option value="LMK">LMK</option>
+                            <option value="MICI">MICI</option>
+                            <option value="MIF">MIF</option>
+                            <option value="OII">OII</option>
+                            <option value="ORP">ORP</option>
+                            <option value="OVE">OVE</option>
+                            <option value="PCY">PCY</option>
+                            <option value="PRE">PRE</option>
+                            <option value="PRO">PRO</option>
+                            <option value="RES">RES</option>
+                            <option value="RMG">RMG</option>
+                            <option value="RND">RND</option>
+                            <option value="SCL">SCL</option>
+                            <option value="SDI">SDI</option>
+                            <option value="SDV">SDV</option>
+                            <option value="SEC">SEC</option>
+                            <option value="SMO">SMO</option>
+                            <option value="SPD">SPD</option>
+                            <option value="SPH">SPH</option>
+                            <option value="Strategic Core">Strategic Core</option>
+                            <option value="TSP">TSP</option>
+                            <option value="UCC">UCC</option>
+                            <option value="VPC">VPC</option>
+                            <option value="VPS">VPS</option>
+                            <option value="WSA">WSA</option>
                         </select>
                     </div>
                 </div>
@@ -217,59 +217,59 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-12 col-sm col-lg">
+                        <div class="col-sm">
                             <div class="col-12 border-right-dash d-flex justify-content-center align-items-center flex-column">
                                 <h4>PUBLICATIONS</h4>
                                 <h1 class="pt-4 pb-4 valuepublications"><span id="valuepublications">0</span></h1>
                                 <p><span id="publications_porcent">13%</span> OF 2018 PUBLICATIONS <br> <span id="publications_compare_2017"></span>
                                     COMPARED TO 2017</p>
-                                <img class="pt-4 pb-4" src="/sites/VPS/KIC/SiteAssets/mockUpDev/img/arrow-down.png" alt="arrow-down">
+                                <img class="pt-4 pb-4" src="img/arrow-down.png" alt="arrow-down">
                                 <h4>DOWNLOADS</h4>
                                 <h1 class="pt-4 pb-4 publications_downloads"><span id="publications_downloads">0</span></h1>
                                 <p><span id="publications_downloads_porcent">16%</span> OF 2018 DOWNLOADS <br> <span id="publications_downloads_lac">76%</span>
                                     FROM LAC</p>
                             </div>
                         </div>
-                        <div class="col-12 col-sm col-lg">
+                        <div class="col-sm">
                             <div class="col-12 border-right-dash d-flex justify-content-center align-items-center flex-column">
                                 <h4>MOOCS</h4>
                                 <h1 class="pt-4 pb-4 valuemoocs" id="valuemoocs">6</h1>
                                 <p><span id="moocs_porcent">33%</span> OF 2018 MOOCS <br> <span id="moocs_compare_2017">-3</span>
                                     COMPARED TO 2017</p>
-                                <img class="pt-4 pb-4" src="/sites/VPS/KIC/SiteAssets/mockUpDev/img/arrow-down.png" alt="arrow-down">
+                                <img class="pt-4 pb-4" src="img/arrow-down.png" alt="arrow-down">
                                 <h4>REGISTRATIONS</h4>
                                 <h1 class="pt-4 pb-4 moocs_downloads" id="moocs_downloads">52K</h1>
                                 <p><span id="moocs_downloads_porcent">23%</span> OF 2018 REGISTRATIONS <br> <span id="moocs_downloads_lac">88%</span>
                                     FROM LAC</p>
                             </div>
                         </div>
-                        <div class="col-12 col-sm col-lg">
+                        <div class="col-sm">
                             <div class="col-12 border-right-dash d-flex justify-content-center align-items-center flex-column">
                                 <h4>DATASETS</h4>
                                 <h1 class="pt-4 pb-4 valuedatasets" id="valuedatasets">2</h1>
                                 <p><span id="datasets_porcent">100%</span> OF 2018 DATASETS <br> <span id="datasets_compare_2017">-13</span>
                                     COMPARED TO 2017</p>
-                                <img class="pt-4 pb-4" src="/sites/VPS/KIC/SiteAssets/mockUpDev/img/arrow-down.png" alt="arrow-down">
+                                <img class="pt-4 pb-4" src="img/arrow-down.png" alt="arrow-down">
                                 <h4>DOWNLOADS</h4>
                                 <h1 class="pt-4 pb-4 datasets_downloads" id="datasets_downloads">2K</h1>
                                 <p><span id="datasets_downloads_porcent">8%</span> OF 2018 DOWNLOADS <br> <span id="datasets_downloads_lac">56%</span>
                                     FROM LAC</p>
                             </div>
                         </div>
-                        <div class="col-12 col-sm col-lg">
+                        <div class="col-sm">
                             <div class="col-12 border-right-dash d-flex justify-content-center align-items-center flex-column">
                                 <h4>CODE</h4>
                                 <h1 class="pt-4 pb-4" id="valuecode">0</h1>
                                 <p><span id="code_porcent">0%</span> OF 2018 CODE <br> <span id="code_compare_2017">-1</span>
                                     COMPARED TO 2017</p>
-                                <img class="pt-4 pb-4" src="/sites/VPS/KIC/SiteAssets/mockUpDev/img/arrow-down.png" alt="arrow-down">
+                                <img class="pt-4 pb-4" src="img/arrow-down.png" alt="arrow-down">
                                 <h4>PAGEVIEWS</h4>
                                 <h1 class="pt-4 pb-4" id="code_downloads">0</h1>
                                 <p><span id="code_downloads_porcent">0%</span> OF 2018 PAGEVIEWS <br> <span id="code_downloads_lac">0%</span>FROM
                                     LAC</p>
                             </div>
                         </div>
-                        <div class="col-12 col-sm col-lg d-flex align-items-center justify-content-center last-panel">
+                        <div class="col d-flex align-items-center justify-content-center last-panel">
                             <div class="col-12 ">
                                 <div>
                                     <h4>SUBSCRIBERS</h4>
@@ -295,14 +295,14 @@
                 <li class="list-inline-item" data-section="moocs">MOOCS</li>
                 <li class="list-inline-item" data-section="datasets">DATASETS</li>
                 <li class="list-inline-item" data-section="code">CODE</li>
-                <li class="list-inline-item" data-section="suscribers">SUBSCRIBERS</li>
+                <li class="list-inline-item" data-section="suscribers">SUSCRIBERS</li>
                 <li class="list-inline-item" data-section="map">MAP</li>
             </ul>
         </div>
     </section>
 
-    <section class="publications h-100">
-        <div class="left-bar red-background text-center col-12 col-md-2 col-lg-2 col-xl-2">
+    <section class="publications">
+        <div class="left-bar red-background">
             <div class="gauge-1 ">
                 <h4 class="pt-4">PUBLICATIONS</h4>
                 <span><i class="fas fa-circle fa-xs"></i>Total from <label class="label-filter-select">IDB</label></span>
@@ -323,7 +323,7 @@
             </div>
         </div>
 
-        <div class="right-bar grayr-background col">
+        <div class="right-bar grayr-background">
             <div class="row pb-2">
                 <div class="col-12 text-right">
 
@@ -341,19 +341,19 @@
                     </label>
                 </div>
 
-                <div class=" col-12 col-md-7 col-lg-7 col-xl-8 left-zone up-zone p-4">
+                <div class=" left-zone p-4">
                     <h4 class=" text-center">WHERE ARE DOWNLOADS COMING FROM?</h4>
-                    <div id="downloads-publications" class="mx-4"></div>
+                    <div id="downloads-publications"></div>
                 </div>
 
-                <div class="right-zone col-12 col-md-5 col-lg-5 col-xl-4 up-zone pt-4 mx-0">
+                <div class="right-zone p-4">
                     <h4 class=" text-center">DOWNLOADS TIMELINE</h4>
-                    <div class="col-12 mx-0 px-0" id="timeline-publication"></div>
+                    <div id="timeline-publication"></div>
                 </div>
 
-                <div class="left-zone col-12 col-md-7 col-lg-7 col-xl-8 p-4 down-zone">
+                <div class="left-zone p-4 down-zone">
                     <div class="row pt-2">
-                        <div class="col-sm-2 mx-0 px-0 text-center">
+                        <div class="col-sm-2">
                             <h4>30 DAYS TREND</h4>
                         </div>
                         <div class="col">
@@ -364,28 +364,27 @@
                     </div>
 
                     <div class="row">
-
-                        <div class="col-2 " id="lines-publications"></div>
-
-                        <div id="publication-trend" class="col-10 "></div>
+                        <div class="col-2">
+                            <div id="lines-publications"></div>
+                        </div>
+                        <div id="publication-trend" class="col-10"></div>
                     </div>
                 </div>
 
-                <div class=" right-zone col-12 col-md-5 col-lg-5 col-xl-4 down-zone p-4">
+                <div class=" right-zone down-zone p-4">
                     <h4 class="pt-2">PUBLICATIONS THAT NEED YOUR ATTENTION</h4>
-                    <p class="text-different"> <b>red</b> circles below represent the <span><label class="label-filter-select">IDB</label></span>
+                    <p class="text-different"> <b>red</b> circles below represent the <span><label class="label-filter-select">IDB</label></label></span>
                         publications that are published for
                         least 200 days and that reached less than 1000 downloads</p>
                     <div id="publications-plot"></div>
                 </div>
             </div>
 
-            <div id="kic" class="col-12 justify-content-center d-flex align-items-center">
-                <p class="pt-2"><i class="fas fa-caret-right"></i> TO LEARN MORE ABOUT THE PUBLICATIONS PROCESS AND
+            <div id="kic" class="col-12 justify-content-center">
+                <p><i class="fas fa-caret-right"></i> TO LEARN MORE ABOUT THE PUBLICATIONS PROCESS AND
                     DISSEMINATION ACTIVITIES CONTACT YOUR KIC CRL<i class="fas fa-caret-left"></i></p>
             </div>
         </div>
-
     </section>
 
     <section class="menu">
@@ -395,16 +394,16 @@
                 <li class="list-inline-item orange first" data-section="moocs">MOOCS</li>
                 <li class="list-inline-item" data-section="datasets">DATASETS</li>
                 <li class="list-inline-item" data-section="code">CODE</li>
-                <li class="list-inline-item" data-section="suscribers">SUBSCRIBERS</li>
+                <li class="list-inline-item" data-section="suscribers">SUSCRIBERS</li>
                 <li class="list-inline-item" data-section="map">MAP</li>
             </ul>
         </div>
     </section>
 
     <section class="moocs">
-        <div class="orange-background text-center left-bar col-12 col-md-2 col-lg-2 col-xl-2">
+        <div class="orange-background left-bar">
             <div class="gauge-1">
-                <h4  class="pt-4">MOOCS</h4>
+                <h4>MOOCS</h4>
                 <span><i class="fas fa-circle fa-xs"></i>Total from <label class="label-filter-select">IDB</label></span>
                 <span><label class="label-filter-restidb"><i class="fas fa-circle fa-xs"></i>Rest of IDB</label></span>
                 <div class="gauge" id="gauge-moocs"></div>
@@ -423,56 +422,56 @@
             </div>
         </div>
 
-        <div class="right-bar col grayr-background">
+        <div class="right-bar grayr-background">
             <div class="row pb-2">
                 <div class="col-12 text-right">
 
                     <label class="container_radio orange">
                         2018 Data
-                        <input class="form-check-input orange" type="radio" name="moocsTrend" id="moocs2018" value="2018"
-                            checked>
+                        <input class="form-check-input orange" type="radio" name="moocsTrend" id="moocs2018" value="2018">
                         <span class="checkmark"></span>
                     </label>
                     <label class="container_radio orange">
                         All The Time
-                        <input class="form-check-input orange" type="radio" name="moocsTrend" id="allTimeRadio" value="all">
+                        <input class="form-check-input orange" type="radio" name="moocsTrend" id="allTimeRadio" value="all"
+                            checked>
                         <span class="checkmark"></span>
                     </label>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-7 col-xl-7 left-zone up-zone p-4">
+                <div class="left-zone pl-4 pr-4">
                     <h4 class=" text-center orange">REGISTRATIONS TIMELINE</h4>
-                    <div class="col-12 mx-0 px-0" id="timeline-moocs"></div>
+                    <div id="timeline-moocs"></div>
                 </div>
 
-                <div class="right-zone col-12 col-md-6 col-lg-5 col-xl-5 up-zone pt-4 mx-0">
+                <div class="right-zone pl-4 pr-4">
                     <div class="d-flex align-items-center">
                         <div class="vertical-text orange"> GENDER</div>
                         <div class="d-flex flex-column w-100">
                             <h4 class=" text-center orange">DEMOGRAPHICS</h4>
                             <div class="d-flex flex-row waffles">
-                                <div class="col mx-0 px-0">
+                                <div class="col-3">
                                     <h2 id="waffle-registrations" class="text-center orange">21K</h2>
                                     <h3 id="waffle-gender" class="text-center orange waffle-gender">FEMALE 41.72%</h3>
-                                    <div class="col mx-0 px-0" id="waffle">
+                                    <div id="waffle">
                                     </div>
                                 </div>
-                                <div class="col mx-0 px-0">
+                                <div class="col-3">
                                     <h2 id="waffle1-registrations" class="text-center orange">21K</h2>
                                     <h3 id="waffle1-gender" class="text-center orange waffle-gender">FEMALE 41.72%</h3>
-                                    <div class="col mx-0 px-0" id="waffle1">
+                                    <div id="waffle1">
                                     </div>
                                 </div>
-                                <div class="col mx-0 px-0">
+                                <div class="col-3">
                                     <h2 id="waffle2-registrations" class="text-center orange">21K</h2>
                                     <h3 id="waffle2-gender" class="text-center orange waffle-gender">FEMALE 41.72%</h3>
-                                    <div class="col mx-0 px-0" id="waffle2">
+                                    <div id="waffle2">
                                     </div>
                                 </div>
-                                <div class="col mx-0 px-0">
+                                <div class="col-3">
                                     <h2 id="waffle3-registrations" class="text-center orange">21K</h2>
                                     <h3 id="waffle3-gender" class="text-center orange waffle-gender">FEMALE 41.72%</h3>
-                                    <div class="col mx-0 px-0" id="waffle3">
+                                    <div id="waffle3">
                                     </div>
                                 </div>
                             </div>
@@ -480,7 +479,7 @@
                     </div>
                 </div>
 
-                <div class=" left-zone middle-left p-4  col-12 col-md-6 col-lg-7 col-xl-7">
+                <div class=" left-zone middle-left p-4">
                     <div class="row pt-2">
                         <div class="col-sm-6">
                             <h4 class="orange">TOP 5 <label class="label-filter-select">IDB</label> MOOCS BY
@@ -494,12 +493,12 @@
                     <div id="moocs-registrations"></div>
                 </div>
 
-                <div class=" right-zone middle-right p-4 col-12 col-md-6 col-lg-5 col-xl-5  d-flex">
+                <div class=" right-zone middle-right p-4 d-flex">
                     <div class="vertical-text orange"> AGE DISTRIBUTION</div>
                     <div id="age-distribution-moocs"></div>
                 </div>
 
-                <div class=" left-zone col-12 col-md-6 col-lg-7 col-xl-7 p-4">
+                <div class=" left-zone p-4">
                     <h4 class=" text-center orange">STUDENTS FLOW</h4>
                     <div class="row d-flex pl-4 pr-4 ml-2 mr-2 justify-content-between pt-4 text-center">
                         <div class="col-md-2 white orange-background mr-4 pl-1 pr-1 pt-2">
@@ -525,12 +524,12 @@
                     </div>
                 </div>
 
-                <div class=" right-zone down col-12 col-md-6 col-lg-5 col-xl-5 p-4">
+                <div class=" right-zone down p-4">
                     <div class="d-flex ">
-                        <div class="vertical-text orange ">EDUCATION LEVEL</div>
-                        <div class="col text-center" id="distribution-moocs"></div>
+                            <div class="vertical-text orange ">EDUCATION LEVEL</div>
+                            <div class="col text-center" id="distribution-moocs"></div>
                     </div>
-
+                    
                 </div>
             </div>
         </div>
@@ -543,22 +542,22 @@
                 <li class="list-inline-item" data-section="moocs">MOOCS</li>
                 <li class="list-inline-item purple first" data-section="datasets">DATASETS</li>
                 <li class="list-inline-item" data-section="code">CODE</li>
-                <li class="list-inline-item" data-section="suscribers">SUBSCRIBERS</li>
+                <li class="list-inline-item" data-section="suscribers">SUSCRIBERS</li>
                 <li class="list-inline-item" data-section="map">MAP</li>
             </ul>
         </div>
     </section>
 
     <section class="datasets">
-        <div class="purple-background left-bar  text-center col-12 col-md-2 col-lg-2 col-xl-2">
+        <div class="purple-background left-bar">
             <div class="gauge-1">
-                <h4 class="pt-4">DATASETS</h4>
+                <h4>DATASETS</h4>
                 <span><i class="fas fa-circle fa-xs"></i>Total from <label class="label-filter-select">IDB</label></span>
                 <span><label class="label-filter-restidb"><i class="fas fa-circle fa-xs"></i>Rest of IDB</label></span>
                 <div class="gauge" id="gauge-datasets"></div>
             </div>
             <div class="gauge-2">
-                <h4 class="pt-2">DOWNLOADS</h4>
+                <h4>DOWNLOADS</h4>
                 <span><i class="fas fa-circle fa-xs"></i>Total from <label class="label-filter-select">IDB</label></span>
                 <span><label class="label-filter-restidb"><i class="fas fa-circle fa-xs"></i>Rest of IDB</label></span>
                 <div class="gauge-k" id="gauge-download-d"></div>
@@ -571,37 +570,36 @@
             </div>
         </div>
 
-        <div class="right-bar grayr-background col">
-            <div class="row pb-2">
+        <div class="right-bar grayr-background">
+            <div class="row pb-4">
                 <div class="col-12 text-right">
 
                     <label class="container_radio purple">
                         2018 Data
                         <input type="radio" class="2018 form-check-input blue" id="dataSet2018" name="dataSetTrend"
-                            value="2018Data" checked>
+                            value="2018Data">
                         <span class="checkmark"></span>
                     </label>
                     <label class="container_radio purple">
                         All The Time
                         <input type="radio" class="AllTime form-check-input blue" id="dataSetAllTime" name="dataSetTrend"
-                            value="AllTheTime">
+                            value="AllTheTime" checked>
                         <span class="checkmark"></span>
                     </label>
                 </div>
 
-                <div class=" col-12 col-md-7 col-lg-7 col-xl-8 left-zone up-zone p-4">
+                <div class=" left-zone p-4">
                     <h4 class=" text-center">WHERE ARE DOWNLOADS COMING FROM?</h4>
                     <div id="downloads-dataset"></div>
                 </div>
-                <div class=" right-zone col-12 col-md-5 col-lg-5 col-xl-4 up-zone pt-4 mx-0">
+                <div class=" right-zone p-4">
                     <h4 class=" text-center">DOWNLOADS TIMELINE</h4>
-                    <div class="col-12" id="timeline-dataset"></div>
+                    <div id="timeline-dataset"></div>
                 </div>
-                <div class=" down col-12 col-md-7 col-lg-7 col-xl-8 left-zone p-4">
+                <div class=" down left-zone p-4">
                     <div class="row pt-2">
                         <div class="col-sm-2">
                             <h4>30 DAYS TREND</h4>
-
                         </div>
                         <div class="col">
                             <h4>TOP 10 IDB DATASETS - <span class="pr-2 purple-border-right"><label class="label-filter-select">IDB</label>
@@ -609,11 +607,11 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-2" id="lines-dataset"></div>
-                        <div class="col-10" id="data-trend"></div>
+                        <div class="col-sm-2"></div>
+                        <div id="data-trend"></div>
                     </div>
                 </div>
-                <div class=" col-12 col-md-5 col-lg-5 col-xl-4 down right-zone p-4">
+                <div class=" down right-zone p-4">
                     <h4>HOW ARE <span><label class="label-filter-select">IDB</label></span>' DATASETS COMPARED TO <span
                             class="gray">OTHER DEPARTMENT's</span>? </h4>
                     <p class="small-letter gray">purple circles bellow represent <span><label class="label-filter-select">IDB</label></span>
@@ -631,22 +629,22 @@
                 <li class="list-inline-item" data-section="moocs">MOOCS</li>
                 <li class="list-inline-item" data-section="datasets">DATASETS</li>
                 <li class="list-inline-item yellow first" data-section="code">CODE</li>
-                <li class="list-inline-item" data-section="suscribers">SUBSCRIBERS</li>
+                <li class="list-inline-item" data-section="suscribers">SUSCRIBERS</li>
                 <li class="list-inline-item" data-section="map">MAP</li>
             </ul>
         </div>
     </section>
 
     <section class="code">
-        <div class=" yellow-background left-bar text-center col-12 col-md-2 col-lg-2 col-xl-2">
+        <div class=" yellow-background left-bar">
             <div class="gauge-1">
-                <h4 class="pt-4">CODE</h4>
+                <h4>CODE</h4>
                 <span><i class="fas fa-circle fa-xs"></i>Total from <label class="label-filter-select">IDB</label></span>
                 <span><label class="label-filter-restidb"><i class="fas fa-circle fa-xs"></i>Rest of IDB</label></span>
                 <div id="gauge-code" class="gauge"></div>
             </div>
             <div class="gauge-2">
-                <h4 class="pt-2">PAGEVIEWS</h4>
+                <h4>PAGEVIEWS</h4>
                 <span><i class="fas fa-circle fa-xs"></i>Total from <label class="label-filter-select">IDB</label></span>
                 <span><label class="label-filter-restidb"><i class="fas fa-circle fa-xs"></i>Rest of IDB</label></span>
                 <div class="gauge-k" id="gauge-pageview"></div>
@@ -659,33 +657,33 @@
             </div>
         </div>
 
-        <div class="right-bar grayr-background col">
+        <div class="right-bar grayr-background">
             <div class="row pb-2">
                 <div class="col-12 text-right">
 
                     <label class="container_radio yellow">
                         2018 Data
-                        <input type="radio" class="2018" id="code2018" name="codeTrend" value="2018Data" checked>
+                        <input type="radio" class="2018" id="code2018" name="codeTrend" value="2018Data">
                         <span class="checkmark"></span>
                     </label>
                     <label class="container_radio yellow">
                         All The Time
                         <input type="radio" class="AllTime form-check-input yellow" id="codeAllTime" name="codeTrend"
-                            value="AllTheTime">
+                            value="AllTheTime" checked>
                         <span class="checkmark"></span>
                     </label>
                 </div>
 
-                <div class=" col-12 col-md-7 col-lg-7 col-xl-8  left-zone p-4">
+                <div class="col-12 col-md-8 left-zone p-4">
                     <h4 class=" text-center yellow">WHERE ARE PAGEVIEWS COMING FROM?</h4>
                     <div id="downloads-code"> </div>
                 </div>
-                <div class="right-zone col-12 col-md-5 col-lg-5 col-xl-4 p-4">
-                    <h4 class=" text-center yellow">PAGEVIEWS TIMELINE</h4>
+                <div class="col-12 col-md-4 right-zone p-4">
+                    <h4 class=" text-center yellow">DOWNLOADS TIMELINE</h4>
                     <div id="timeline-code"></div>
                 </div>
 
-                <div class=" col-12 col-md-7 col-lg-7 col-xl-8 left-zone p-4 down">
+                <div class="col-12 col-md-8 left-zone p-4">
                     <div class="row pt-2">
                         <div class="col-sm-2">
                             <h4 class="yellow">30 DAYS TREND</h4>
@@ -696,16 +694,16 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-2" id="lines-code"></div>
-                        <div class="col-10" id="code-trend"></div>
+                        <div class="col-sm-2"><svg id="lines-code" width="120" height="400"></svg></div>
+                        <div id="code-trend"></div>
                     </div>
                 </div>
-                <div class=" col-12 col-md-5 col-lg-5 col-xl-4 right-zone down p-4">
-                    <h4 class="yellow">HOW IS <span><label class="label-filter-select">IDB</label>'s</span> CODE
+                <div class="col-12 col-md-4 right-zone p-4">
+                    <h4 class="yellow">HOW IS <span><label class="label-filter-select">IDB</label>'s</span> DATASETS
                         COMPARED TO <span class="gray">OTHER DEPARTMENT's</span>? </h4>
                     <p class="small-letter gray">yellow circles bellow represent <span><label class="label-filter-select">IDB</label></span>
                         code(s)</p>
-                    <div class="col" id="code-plot"></div>
+                    <div id="code-plot"></div>
                 </div>
             </div>
         </div>
@@ -718,74 +716,71 @@
                 <li class="list-inline-item" data-section="moocs">MOOCS</li>
                 <li class="list-inline-item" data-section="datasets">DATASETS</li>
                 <li class="list-inline-item" data-section="code">CODE</li>
-                <li class="list-inline-item green first" data-section="suscribers">SUBSCRIBERS</li>
+                <li class="list-inline-item green first" data-section="suscribers">SUSCRIBERS</li>
                 <li class="list-inline-item" data-section="map">MAP</li>
             </ul>
         </div>
     </section>
 
     <section class="suscribers">
-        <div class="green-background text-center left-bar col-12 col-md-2 col-lg-2 col-xl-2">
+        <div class="green-background left-bar">
             <div class="gauge-1 ">
-                <h4 class="pt-4">SUBSCRIBERS</h4>
+                <h4>SUSCRIBERS</h4>
                 <span><i class="fas fa-circle fa-xs"></i>Total from <label class="label-filter-select">IDB</label></span>
                 <span><label class="label-filter-restidb"><i class="fas fa-circle fa-xs"></i>Rest of IDB</label></span>
                 <div class="gauge" id="gauge-suscribers"></div>
             </div>
             <div class="gauge-2">
-                <h4 class="pt-2">SUBSCRIBERS FROM LAC</h4>
+                <h4>SUSCRIBERS FROM LAC</h4>
                 <span><i class="fas fa-circle fa-xs"></i>Total from <label class="label-filter-select">IDB</label></span>
                 <span><label class="label-filter-restidb"><i class="fas fa-circle fa-xs"></i>Rest of IDB</label></span>
                 <div class="gauge-k" id="gauge-lac-s"></div>
             </div>
             <div class="gauge-3">
-                <h4>2018 NEW SUBSCRIBERS</h4>
+                <h4>2018 NEW SUSCRIBERS</h4>
                 <span><i class="fas fa-circle fa-xs"></i>From LAC</span>
                 <span><i class="fas fa-circle fa-xs"></i>Rest of World</span>
                 <div id="gauge-2018" class="text-center gauge-p"></div>
             </div>
         </div>
 
-        <div class="right-bar col grayr-background">
-            <div class="row pb-2">
+        <div class="right-bar grayr-background">
+            <div class="row pb-4">
                 <div class="col-12 text-right">
                     <label class="container_radio green">
-                        2018 Data
-                        <input type="radio" class="2018" id="suscriber2018" name="suscribersTrend" value="2018Data"
-                            checked>
+                        All The Time
+                        <input type="radio" class="AllTime form-check-input yellow" id="suscribersAllTime" name="all"
+                            value="AllTheTime" checked>
                         <span class="checkmark"></span>
                     </label>
                     <label class="container_radio green">
-                        All The Time
-                        <input type="radio" class="AllTime form-check-input green" id="suscriberAllTime" name="suscribersTrend"
-                            value="AllTheTime">
+                        2018 Data
+                        <input type="radio" class="2018" id="suscribers2018" name="suscribersTrend" value="2018">
                         <span class="checkmark"></span>
                     </label>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-7 col-xl-7  left-zone p-4">
-                    <h4 class=" text-center green">
-                        IN WHICH TOPICS ARE
-                        <label class="label-filter-select">IDB</label> SUBSCRIBERS INTERESTED ON?</h4>
+                <div class="col-12 col-md-8 left-zone p-4">
+                    <h4 class=" text-center green">WHAT ARE <label class="label-filter-select">IDB</label> SUSCRIBERS
+                        INTERESTED ON?</h4>
                     <div id="suscribers-interested"></div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-5 col-xl-5 right-zone p-4">
-                    <div class="top-zone  align-items-center">
-                        <h4 class=" text-center green">DEMOGRAPHICS</h4>
-                        <div class="col-12">
-
+                <div class="col-12 col-md-4 right-zone p-4">
+                    <div class="top-zone d-flex align-items-center">
+                        <div class="vertical-text green"> GENDER</div>
+                        <div class="d-flex flex-column w-100">
+                            <h4 class=" text-center green">DEMOGRAPHICS</h4>
                             <div id="demographics-suscribers"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-7 col-xl-7  left-zone down p-4">
-                    <h4 class="green text-center">IN WHICH SUB-TOPICS ARE IDB SUBSCRIBERS INTERESTED ON?</h4>
-                    <div id="age-suscribers" class="pt-4 col"></div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-5 col-xl-5 right-zone down p-4">
-                    <h4 class="green text-center">FOR WHICH KIND OF INSTITUTION DO THEY WORK FOR?</h4>
+                <div class="col-12 col-md-8 left-zone p-4">
+                    <h4 class="green">FOR WHICH KIND OF INSTITUTION DO THEY WORK FOR?</h4>
                     <div class="col-sm-12 " id="institution-suscribers"></div>
-
+                </div>
+                <div class="col-12 col-md-4 right-zone p-4">
+                    <div class="vertical-text green"> AGE GROUPS</div>
+                    <div id="age-suscribers" class="pt-4"></div>
                 </div>
             </div>
         </div>
@@ -798,7 +793,7 @@
                 <li class="list-inline-item" data-section="moocs">MOOCS</li>
                 <li class="list-inline-item" data-section="datasets">DATASETS</li>
                 <li class="list-inline-item" data-section="code">CODE</li>
-                <li class="list-inline-item" data-section="suscribers">SUBSCRIBERS</li>
+                <li class="list-inline-item" data-section="suscribers">SUSCRIBERS</li>
                 <li class="list-inline-item black first" data-section="map">MAP</li>
             </ul>
         </div>
@@ -816,7 +811,7 @@
                             <option value="Publications">PUBLICATIONS</option>
                         </select>
                     </div>
-                    <div class="temp-hide side-filter">
+                    <div class="side-filter">
                         <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                         <i class="fa fa-search"></i> -->
                         <div class="input-group stylish-input-group">
@@ -847,13 +842,13 @@
                             <option value="all">MATERIAL TYPE: ALL</option>
                         </select>
                     </div>
-                    <div class="temp-hide side-filter row no-pad-marg">
+                    <div class="side-filter row no-pad-marg">
                         <span class="col-12">DOWNLOAD DATE</span>
                         <div class="col-12" id="slider-download-date"></div>
                         <div class="col-6 slider-date" id="event-download-start"></div>
                         <div class="col-6 slider-date" id="event-download-end"></div>
                     </div>
-                    <div class="temp-hide side-filter row no-pad-marg">
+                    <div class="side-filter row no-pad-marg">
                         <span class="col-12">PUBLICATION DATE</span>
                         <div class="col-12" id="slider-creation-date"></div>
                         <div class="col-6 slider-date" id="event-creation-start"></div>
@@ -870,9 +865,6 @@
                 </div>
 
                 <div class="col-8">
-                    <div class="alert alert-map" style="display:none" role="alert">
-                        No data to display!
-                    </div>
                     <div id="graph-container" style="height: 600px;"></div>
                     <!-- <div id="graph-container" style="height: 500px; min-width: 310px; max-width: 800px; margin: 0 auto"></div> -->
                 </div>
@@ -886,9 +878,7 @@
             </div>
         </div>
     </section>
-    <div id="viz"></div>
-</div>
-
+</body>
 <script src="json/bignumberData.js"></script>
 
 <script src="json/subscribers/subscribersPosition.js"></script>
@@ -896,14 +886,12 @@
 <script src="json/subscribers/subscribersInstitution.js"></script>
 <script src="json/subscribers/subscribers.js"></script>
 <script src="json/subscribers/subscribersGender.js"></script>
-<script src="json/subscribers/subscribersSubTopics.js"></script>
 
 <script src="json/datasets/datasets_downloads_timeline.js"></script>
 <script src="json/datasets/datasets_indicators.js"></script>
 <script src="json/datasets/datasets_download_source.js"></script>
 <script src="json/datasets/datasets_scatterplot.js"></script>
 <script src="json/datasets/datasets_top10.js"></script>
-
 
 <script src="json/moocs/moocs_top.js"></script>
 <script src="json/moocs/moocs_education.js"></script>
@@ -918,6 +906,7 @@
 <script src="json/publications/publications_top10.js"></script>
 <script src="json/publications/publications_attention.js"></script>
 <script src="json/publications/publications_indicators.js"></script>
+<script src="json/publications/publications_lines.js"></script>
 
 
 <script src="json/code/code_indicators.js"></script>
@@ -927,15 +916,7 @@
 <script src="json/code/code_pageviews_timeline.js"></script>
 
 <script src="json/map/baseData.js"></script>
-<script src="json/map/test.js"></script>
-<script src="json/map/country_data.js"></script>
 
-<script src="scripts/utilities/drawGauges.js"></script>
-<script src="scripts/utilities/drawTree.js"></script>
-<script src="scripts/utilities/timeLine.js"></script>
-<script src="scripts/utilities/plotChart.js"></script>
-<script src="scripts/utilities/top10rectBar.js"></script>
-<script src="scripts/utilities/trendChart.js"></script>
 <script src="scripts/bignumber.js"></script>
 <script src="scripts/treeMapColor.js"></script>
 <script src="main.js"></script>
@@ -951,5 +932,6 @@
 <script src="worl32.js"></script>
 
 <script async src="scripts/map.js"></script>
+
 
 </html>

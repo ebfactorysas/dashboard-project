@@ -253,7 +253,7 @@ var codeIndicatorsArrays = {
         "2018_pageviews": "4509",
         "2018_porcent_total_pageviews": 1,
         "porcent_total_lac": 0.66,
-        "2017_2018_Code": 3,
+        "2017_2018_Code": +3,
         "xlsx_row_id": 2
     }]
 };

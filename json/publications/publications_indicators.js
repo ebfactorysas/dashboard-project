@@ -1817,7 +1817,7 @@ var publicationsIndicators = {
     "percentageLAC": 61.3
   }],
   indicatorsIDB2018: [{
-    "publications": 629,
+    "publications": 668,
     "percentagePublications": 100,
     "downloads": 1003257,
     "percentageDownloads": 100,

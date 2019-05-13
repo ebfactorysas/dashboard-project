@@ -744,10 +744,8 @@ function validateDepartment(department){
 function getItems() {
   $.ajax({
     async: true, // Async by default is set to “true” load the script asynchronously
-    //url: _spPageContextInfo.webAbsoluteUrl + "/_api/SP.UserProfiles.PeopleManager/GetPropertiesFor(accountName=@v)?@v='i:0%23.f|membership|mcamilab@iadb.org'", // URL to fetch data from sharepoint list
-    url:
-      _spPageContextInfo.webAbsoluteUrl +
-      "/_api/SP.UserProfiles.PeopleManager/GetMyProperties", // URL to fetch data from sharepoint list
+    //url: _spPageContextInfo.webAbsoluteUrl + "/_api/SP.UserProfiles.PeopleManager/GetPropertiesFor(accountName=@v)?@v='i:0%23.f|membership|VICENTEF@iadb.org'", // URL to fetch data from sharepoint list
+    url: _spPageContextInfo.webAbsoluteUrl + "/_api/SP.UserProfiles.PeopleManager/GetMyProperties", // URL to fetch data from sharepoint list
     method: "GET", //Specifies the operation to fetch the list item
 
     headers: {
@@ -797,7 +795,7 @@ function filterPropiety(array, propiety) {
 
 function updateResolution() {
   var isIE = /*@cc_on!@*/ false || !!document.documentMode;
-  $(".body").css("width", screen.width + "px");
+//  $(".body").css("width", screen.width + "px");
   // if (isIE == true || screen.width<980) {
 
   // }
