@@ -446,7 +446,7 @@ function codeIndicatorAlltime(jsondata) {
         codeValue: (jsondata.length > 0) ? jsondata[0].all_the_time_code : '0',
         // porcent_total_publications: (jsondata.length > 0) ? (jsondata[0]['porcent_total_code'] * 100).toFixed(1) + '%' : '',
         porcent_total_publications: (jsondata.length > 0) ? ((jsondata[0]['porcent_total_code'] * 100 >= 100) ? "100%" : (jsondata[0]['porcent_total_code'] * 100).toFixed(1) + '%') : '',
-        compare2017_2018_publications: 'Missing',
+        compare2017_2018_publications:(jsondata.length > 0) ? jsondata[0]['2017_2018_Code'] : '0',
         downloadsValue: (jsondata.length > 0) ? jsondata[0]['all_the_time_pageviews'] : '0',
         // porcent_total_downloads: (jsondata.length > 0) ? (jsondata[0].all_the_time_porcent_total_pageviews * 100).toFixed(1) : '0',
         porcent_total_downloads: (jsondata.length > 0) ? ((jsondata[0]['all_the_time_porcent_total_pageviews'] * 100 >= 100) ? "100%" : (jsondata[0]['all_the_time_porcent_total_pageviews'] * 100).toFixed(1) + '%') : '',
@@ -463,7 +463,7 @@ function codeIndicator2018(jsondata) {
 
         codeValue: (jsondata.length > 0) ? jsondata[0]['2018_code'] : '0',
         porcent_total_publications: (jsondata.length > 0) ? ((jsondata[0]['porcent_total_code'] * 100 >= 100) ? "100%" : (jsondata[0]['porcent_total_code'] * 100).toFixed(1) + '%') : '',
-        compare2017_2018_publications: 'Missing',
+        compare2017_2018_publications: (jsondata.length > 0) ? jsondata[0]['2017_2018_Code'] : '0',
         downloadsValue: (jsondata.length > 0) ? jsondata[0]['2018_pageviews'] : '0',
         porcent_total_downloads: (jsondata.length > 0) ? ((jsondata[0]['2018_porcent_total_pageviews'] * 100 >= 100) ? "100%" : (jsondata[0]['2018_porcent_total_pageviews'] * 100).toFixed(1) + '%') : '', // no se enviaron en los datos para el porcentaje total de downloads filtrado por all time
         porcent_downloads_lac: (jsondata.length > 0) ? (jsondata[0]['porcent_total_lac'] * 100).toFixed(1) + '%' : ''

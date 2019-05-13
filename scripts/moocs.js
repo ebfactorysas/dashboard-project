@@ -644,6 +644,7 @@ function drawStudentRegistrationsChart(dataStudents) {
     typeof dataStudents.registrations == "undefined"
   ) {
     $("#student1-title").html("0");
+    $("#student1-title").css('font-family', 'Gotham-Bold');
     return;
   }
   dataStudents.registrations.value = 0;

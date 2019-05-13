@@ -156,7 +156,7 @@ function createLineChart(elements) {
             small: 50
         })
         .height({
-            value: 80,
+            value: 92,
             small: 30
         })
         .draw()

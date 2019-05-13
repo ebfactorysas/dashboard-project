@@ -99,7 +99,7 @@ function drawTrendChartRectBar(data, id, color, colorClass, indicator) {
     .append("text")
     .attr("class", "label")
     .attr("y", function(value, index) {
-      return yPublicationTrend(index) + 40 / 2 + 2;
+      return yPublicationTrend(index) + 40 / 2 + 8;
     })
     // .attr("y", function (d) {
     //     return yPublicationTrend(d.value) + 40 / 2 + 2;
