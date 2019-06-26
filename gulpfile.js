@@ -1,4 +1,5 @@
 // Include gulp
+var gulp = require('gulp');
 const {
   series,
   src,
@@ -37,7 +38,7 @@ var sass_config = {
 var hashedJS = [];
 
 // Compile Our Sass
-function sass() {
+gulp.task('sass', function () {
   return src('sass/global.scss')
     .pipe(sourcemaps.init())
     // Globbing all imported files with the path /**/*.scss from global.scss
@@ -51,9 +52,8 @@ function sass() {
     })]))
     .pipe(sourcemaps.write('.'))
     .pipe(dest('css'));
-};
-
-function script() {
+});
+gulp.task('script', function () {
   return src('./json/**/*.js')
     .pipe(plumber({
       errorHandler: notify.onError("Error: <%= error.message %>")
@@ -67,9 +67,9 @@ function script() {
       //console.log("hashedJS = " + hashedJS);
     }))
     .pipe(dest('./dist/js'));
-}
+})
 
-function html() {
+gulp.task('html', function () {
   return src('mockup.html')
     .pipe(htmlreplace({
       // 'css': {
@@ -86,12 +86,15 @@ function html() {
   }))
     .pipe(rename('mockup.html'))
     .pipe(dest('./'));
-};
+});
 
 //Delete public folder
-function deletePublic(){
+gulp.task('deletePublic', function () {
   return src('dist', {allowEmpty:true})
   .pipe(clean())
-}
-exports.default = series(deletePublic, script,html);
-exports.script = script;
+})
+
+gulp.task('default', gulp.series('sass','deletePublic', 'script','html', function (done) {
+  // task code here
+  done();
+}));

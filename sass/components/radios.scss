@@ -24,19 +24,45 @@
       }
     }
   }
+  &.red-white {
+    color:$white!important;
+    @include radioStyle($red, $white);
+    @include colorRadioMobile($red);
+  }
+  
   &.red {
     @include radioStyle($red, $white);
   }
   &.orange {
     @include radioStyle($orange, $white);
   }
+  &.orange-white {
+    color:$white!important;
+    @include radioStyle($orange, $white);
+    @include colorRadioMobile($orange);
+  }
   &.purple {
     @include radioStyle($purple, $white);
+  }
+  &.purple-white {
+    color:$white!important;
+    @include radioStyle($purple, $white);
+    @include colorRadioMobile($purple);
   }
   &.yellow {
     @include radioStyle($yellow, $white);
   }
+  &.yellow-white {
+    color:$white!important;
+    @include radioStyle($yellow, $white);
+    @include colorRadioMobile($yellow);
+  }
   &.green {
     @include radioStyle($green, $white);
+  }
+  &.green-white {
+    color:$white!important;
+    @include radioStyle($green, $white);
+    @include colorRadioMobile($green);
   }
 }

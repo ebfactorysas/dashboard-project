@@ -87,6 +87,30 @@
   }
 }
 
+@mixin colorRadioMobile($color){
+  .checkmark {
+    background: $color;
+    border: 1px solid $white;
+    &:after {
+      background: $white;
+    }
+  }
+  &:hover input ~ .checkmark {
+    background: $color;
+  }
+  input {
+    &:checked ~ .checkmark {
+      background: $color;
+    }
+    &:checked:focus ~ .checkmark {
+      background: $color;
+    }
+    &:disabled ~ .checkmark {
+      background: $white;
+    }
+  }
+}
+
 @mixin borderTopGraphs {
   position: relative;
   &:before {

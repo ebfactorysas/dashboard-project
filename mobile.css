@@ -1,19 +1,56 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: #efefef;
+        border: none;
+        border-radius: 3px;
+        padding: 0em 2em 0em 0em;
+        font-size: 1em;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .select-container {position:relative; display: inline;}
+    .select-container:after {content:""; width:0; height:0; position:absolute; pointer-events: none;}
+    .select-container:after {
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        top: .3em;
+        right: .75em;
+        border-top: 8px solid black;
+        opacity: 0.5;
+    }
+    select::-ms-expand {
+        display: none;
+    }
     .title-text h1 {
-        font-size: 2.5rem;
+        font-size: 1.7rem;
     }
     .inner-nav {
-        margin-top: 16rem;
+        margin-top: 15rem;
         z-index: 10;
     }
+    .hidden-on-mobile{
+        display: none;
+    }
+
+    .hidden-on-desktop{
+        display: block;
+    }
+
     #nav-title {
         display: none;
     }
     section.big-numbers {
-        margin-top: 16rem;
+        margin-top: 9rem;
     }
     section.big-numbers .border-right-dash:before {
         display: none;
+    }
+    section.publications .left-bar .gauge-1{
+        padding-top: 0rem;
     }
     section.publications #publication-trend {
         margin-left: 0;
@@ -29,6 +66,9 @@
     }
     section.publications #kic p {
         font-size: 1.2rem;
+    }
+    section.moocs .left-bar .gauge-1{
+        padding-top: 0rem
     }
     section.moocs .up-zone:nth-child(3) {
         height: 51rem;
@@ -52,6 +92,9 @@
     section.datasets .title-30 {
         display: none;
     }
+    section.datasets .left-bar .gauge-1{
+        padding-top: 0rem
+    }
     section.datasets #downloads-dataset{
         height: 20rem;
     }
@@ -63,6 +106,10 @@
     }
     section.datasets #dataset-publications-plot{
         height: 45rem;
+    }
+
+    section.code .left-bar .gauge-1{
+        padding-top: 0rem
     }
     section.code #downloads-code{
         height: 20rem;
@@ -81,6 +128,9 @@
     }
     section.code .title-30 {
         display: none;
+    }
+    section.suscribers .left-bar .gauge-1{
+        padding-top: 0rem
     }
     section.suscribers #demographics-suscribers{
         height: 22rem;

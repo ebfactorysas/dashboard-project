@@ -1,5 +1,6 @@
 //division filter
 $("#divisionSelect").on("change", function(data) {
+  validateSize();
   changeFilterDashboard(this.value);
 });
 
@@ -740,7 +741,13 @@ function validateDepartment(department){
         changeFilterDashboard("IDB");
     }     
 }
-
+function validateSize(){
+  if(screen.width<980){
+    $(".body").width(screen.width);
+  }else{
+    $(".body").width($win.width);
+  } 
+}
 function getItems() {
   $.ajax({
     async: true, // Async by default is set to “true” load the script asynchronously
@@ -753,6 +760,7 @@ function getItems() {
       "content-type": "application/json;odata=verbose" //It defines the content type as JSON
     },
     success: function(data) {
+      validateSize();
       var data = data.d;
       var title = data.Title;
       var departmentDivision = filterPropiety(
@@ -829,19 +837,30 @@ $win.scroll(function() {
     $("#s4-bodyContainer .navbar:nth-child(2)").css("margin-top", "8rem");
     $(".inner-nav").css("margin-top", "16rem");
     if (screen.width <= 480) {
-      $("section.big-numbers").css("margin-top", "16rem");
+      $(".inner-nav").css("margin-top", "15rem");
+      $("section.big-numbers").css("margin-top", "8rem");
+      $( ".menu-mobile-top" ).css("margin-top", "0rem");
+      $( ".menu-mobile-top" ).removeClass( "fixed-top" );      
+      $( ".inner-nav" ).addClass( "fixed-top" );
     }
   } else {
     if (screen.width <= 480) {
       $("section.big-numbers").css("margin-top", "8rem");
+      $(".menu-mobile-top").css("margin-top", "8rem");
+      $( ".inner-nav" ).removeClass( "fixed-top" )
+      $( ".menu-mobile-top" ).addClass( "fixed-top" )
+      $("#s4-bodyContainer nav.navbar").css("position","absolute")
+    }else{
+      $(".inner-nav").css("margin-top", "8rem");
+      $("#s4-bodyContainer .navbar:nth-child(2)").css("margin-top", "0");
+      $("#s4-bodyContainer .navbar:nth-child(2)").css("position", "absolute");
     }
-    $(".inner-nav").css("margin-top", "8rem");
-    $("#s4-bodyContainer .navbar:nth-child(2)").css("margin-top", "0");
-    $("#s4-bodyContainer .navbar:nth-child(2)").css("position", "absolute");
+    
   }
 });
 
 $(window).resize(function() {
+  validateSize();
   updateResolution();
   changeFilterDashboard($("select[id*='divisionSelect']").val());
 });
