@@ -1,6 +1,14 @@
-function drawTrendChartRectBar(data, id, color, colorClass, indicator) {
+function drawTrendChartRectBar(
+  data,
+  id,
+  color,
+  colorClass,
+  indicator,
+  valueName,
+  radius
+) {
   data = data.sort(function(a, b) {
-    return d3.ascending(a.value, b.value);
+    return d3.ascending(a[valueName], b[valueName]);
   });
   var indices = d3.range(0, data.length);
   var marginPublicationTrend = {
@@ -35,16 +43,18 @@ function drawTrendChartRectBar(data, id, color, colorClass, indicator) {
     .domain([
       0,
       d3.max(data, function(d) {
-        return d.value;
+        return d[valueName];
       })
     ]);
 
   var heightOfBar = 0;
-  if (id == "#moocs-registrations") {
-    heightOfBar = heightPublicationTrend / 5;
-  } else {
-    heightOfBar = heightPublicationTrend / 10;
+  if ($(".body").width() < 500) {
+    heightOfBar = heightPublicationTrend / data.length;
+  }else{
+    heightOfBar = 53;
   }
+
+  
 
   var yPublicationTrend = d3
     .scaleBand()
@@ -54,7 +64,7 @@ function drawTrendChartRectBar(data, id, color, colorClass, indicator) {
   var yAxisPublicationTrend = d3
     .axisLeft(yPublicationTrend)
     .tickFormat(function(x) {
-      var value = setSettingsNumber(data[x].value.toFixed(0));
+      var value = setSettingsNumber(data[x][valueName].toFixed(0));
       return value.valueNumber + suffixNumber;
     })
     .tickPadding(40)
@@ -81,24 +91,33 @@ function drawTrendChartRectBar(data, id, color, colorClass, indicator) {
     .attr("y", function(value, index) {
       return yPublicationTrend(index);
     })
-    .attr("rx", 25)
-    .attr("ry", 25)
+    .attr("rx", radius)
+    .attr("ry", radius)
     .attr("fill", color)
     .attr("height", function(d) {
-      if (id == "#moocs-registrations") {
-        return heightOfBar - 4;
-      }
-      return heightOfBar - 10;
+      // if (id == "#moocs-registrations") {
+      //   return heightOfBar - 4;
+      // }
+      return heightOfBar - data.length;
     })
     .attr("x", 16)
     .attr("width", function(d) {
-      return xPublicationTrend(d.value);
+      return xPublicationTrend(d[valueName]);
     });
 
   barsPublicationTrend
     .append("text")
     .attr("class", "label")
     .attr("y", function(value, index) {
+      if (id == "#moocs-registrations") {
+        return yPublicationTrend(index) + 40 / 2 + 4;
+      }
+      if (id == "#institution-suscribers") {
+        return yPublicationTrend(index) +30;
+      }
+      // if(data.length==9){
+      //   return yPublicationTrend(index) + 15 ;
+      // }
       return yPublicationTrend(index) + 40 / 2 + 7;
     })
     // .attr("y", function (d) {
@@ -109,7 +128,7 @@ function drawTrendChartRectBar(data, id, color, colorClass, indicator) {
     })
     .attr("class", "text-inside")
     .attr("font-family", "Gotham-Bold")
-    .attr("font-size", "14px")
+    .attr("font-size", "1.4rem")
     .text(function(d) {
       if (d.name.length > 90) {
         return d.name.slice(0, 90) + "...";
@@ -134,7 +153,7 @@ function drawTrendChartRectBar(data, id, color, colorClass, indicator) {
       textHtml = textHtml.replace("{{title}}", d.name);
       textHtml = textHtml.replace(
         "{{value}}",
-        d.value.toFixed(0).toLocaleString()
+        d[valueName].toFixed(0).toLocaleString()
       );
       if (d.division_codes) {
         var addText =
@@ -160,7 +179,7 @@ function drawTrendChartRectBar(data, id, color, colorClass, indicator) {
           .html(textHtml)
           .style("left", "0px")
           .style("top", d3Old.event.pageY - 28 + 5 + "px")
-          .style("width", screen.width+"px");
+          .style("width", screen.width + "px");
       } else {
         div
           .html(textHtml)
@@ -187,7 +206,7 @@ function drawTrendChartRectBar(data, id, color, colorClass, indicator) {
       textHtml = textHtml.replace("{{title}}", d.name);
       textHtml = textHtml.replace(
         "{{value}}",
-        d.value.toFixed(0).toLocaleString()
+        d[valueName].toFixed(0).toLocaleString()
       );
       if (d.division_codes) {
         var addText =
@@ -214,7 +233,7 @@ function drawTrendChartRectBar(data, id, color, colorClass, indicator) {
           .html(textHtml)
           .style("left", "0px")
           .style("top", d3Old.event.pageY - 28 + 5 + "px")
-          .style("width", screen.width+"px");
+          .style("width", screen.width + "px");
       } else {
         div
           .html(textHtml)

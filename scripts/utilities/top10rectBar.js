@@ -1,15 +1,15 @@
 function drawTrendChart(data, id, colorY, colorClass, inBar, textColor) {
-    var tickPaddingValue =200;
-    if (screen.width <= 480) {
-      tickPaddingValue = 100;
-    }
-    var marginDataTrend = {
+  var tickPaddingValue = 300;
+  if (screen.width <= 500) {
+    tickPaddingValue = 30;
+  }
+  var marginDataTrend = {
     top: 15,
     right: 48,
     bottom: 15,
     left: tickPaddingValue
   };
-  
+
   var indices = d3.range(0, data.length);
   var widthInherith = $(id).width();
   var heightInherith = $(id).height();
@@ -24,7 +24,10 @@ function drawTrendChart(data, id, colorY, colorClass, inBar, textColor) {
     .select(id)
     .append("svg")
     .attr("preserveAspectRatio", "xMinYMin meet")
-    .attr("viewBox", (-1*tickPaddingValue) +" -28 " + widthInherith + " " + heightInherith)
+    .attr(
+      "viewBox",
+      -1 * tickPaddingValue + " -28 " + widthInherith + " " + heightInherith
+    )
     .append("g")
     .classed("svg-content-responsive", true);
 
@@ -49,8 +52,12 @@ function drawTrendChart(data, id, colorY, colorClass, inBar, textColor) {
     .axisLeft(yDataTrend)
     .tickPadding(tickPaddingValue)
     .tickSize(0)
-    .tickFormat(function(x){
-        return data[x].name;
+    .tickFormat(function(x) {
+      if ($(".body").width() < 500) {
+        var value = setSettingsNumber(data[x].value);
+        return value.valueNumber + value.suffixNumber;
+      }
+      return data[x].name;
     });
 
   var gyDataTrend = svgDataTrend
@@ -107,21 +114,26 @@ function drawTrendChart(data, id, colorY, colorClass, inBar, textColor) {
     .attr("fill", textColor)
     .style("opacity", 0.8)
     .attr("font-family", "Gotham-Bold")
-    .attr("font-size", "1.1rem")
+    .attr("font-size", "1.4rem")
     .text(function(d) {
+      if ($(".body").width() < 500) {
+        return d.name;
+      }
       var value = setSettingsNumber(d.value);
       return value.valueNumber + value.suffixNumber;
     });
 
-  svgDataTrend
-    .selectAll(".tick text")
-    .attr("width", tickPaddingValue)
-    .attr("x", tickPaddingValue*-1)
-    .attr("y", -5)
-    .attr("text-anchor", "start")
-    .style("font-family", "Gotham-Medium")
-    .style("font-size", "1.1rem")
-    .call(wrapData);
+  if ($(".body").width() > 500) {
+    svgDataTrend
+      .selectAll(".tick text")
+      .attr("width", tickPaddingValue)
+      .attr("x", tickPaddingValue * -1)
+      .attr("y", -5)
+      .attr("text-anchor", "start")
+      .style("font-family", "Gotham-Medium")
+      .style("font-size", "1.4rem")
+      .call(wrapData);
+  }
 
   var div = d3
     .select("body")
@@ -148,7 +160,7 @@ function drawTrendChart(data, id, colorY, colorClass, inBar, textColor) {
       }
       if (d.Division) {
         var addText =
-          "<div class='row pt-1 border-top'><span class='col pl-0 pr-0 '> {{type}}</span><span  class='col-3 text-right'>{{code}}</span></div>";
+          "<div class='row pt-1 border-top'><span class='col pl-0 pr-0 '> {{type}}</span><span  class='col text-right'>{{code}}</span></div>";
         addText = addText.replace("{{type}}", "Division");
         addText = addText.replace("{{code}}", d.Division);
         textHtml = textHtml + addText;
@@ -159,14 +171,15 @@ function drawTrendChart(data, id, colorY, colorClass, inBar, textColor) {
         .transition()
         .duration(0)
         .style("font-family", "Gotham-Book")
-        .style("display", "inline-block");
+        .style("display", "inline-block")
+        .style("font-size", "1.2rem");
       // div.html(d.value + "<br/>" + d.name)
       if (screen.width <= 480) {
         div
           .html(textHtml)
           .style("left", "0px")
           .style("top", d3Old.event.pageY - 28 + 5 + "px")
-          .style("width", screen.width+"px");
+          .style("width", screen.width + "px");
       } else {
         div
           .html(textHtml)

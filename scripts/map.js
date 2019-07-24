@@ -239,23 +239,27 @@ function setMetricsItems(section) {
 
             $('#drop-downloads').append(appendItemsMetricsHtml(metrics.Publications));
             $('#drop-downloads option[value="2018 Downloads"]').attr("selected", "selected");
-
+            $('#label-map-number').text("DOWNLOADS ON MAP");
             break;
         case "MOOCs":
             $('#drop-downloads').append(appendItemsMetricsHtml(metrics.MOOCs));
             $('#drop-downloads option[value="2018 Registrations"]').attr("selected", "selected");
+            $('#label-map-number').text("REGISTRATIONS ON MAP");
             break;
         case "Datasets":
             $('#drop-downloads').append(appendItemsMetricsHtml(metrics.Datasets));
             $('#drop-downloads option[value="2018 Downloads"]').attr("selected", "selected");
+            $('#label-map-number').text("DOWNLOADS ON MAP");
             break;
         case "Code":
             $('#drop-downloads').append(appendItemsMetricsHtml(metrics.Code));
             $('#drop-downloads option[value="2018 Pageviews"]').attr("selected", "selected");
+            $('#label-map-number').text("PAGEVIEWS ON MAP");
             break;
         case "Subscribers":
             $('#drop-downloads').append(appendItemsMetricsHtml(metrics.Subscribers));
             $('#drop-downloads option[value="All Subscribers"]').attr("selected", "selected");
+            $('#label-map-number').text("SUBSCRIBERS ON MAP");
             break;
         default:
             break;

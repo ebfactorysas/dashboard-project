@@ -3,195 +3,208 @@ function drawInstitutionsChart(dataInstitution) {
   var dataInstitutionSum = d3.sum(dataInstitution, function(d) {
     return d.value;
   });
-
-  var marginInstitution = {
-    top: 50,
-    right: 40,
-    bottom: 50,
-    left: 40
-  };
-
-  var widthInstitution = 700 - marginInstitution.left - marginInstitution.right;
-  var heightInstitution =
-    515 - marginInstitution.top - marginInstitution.bottom;
-  var svgInstitution = d3
-    .select("#institution-suscribers")
-    .append("svg")
-    //responsive SVG needs these 2 attributes and no width and height attr
-    .attr("preserveAspectRatio", "xMinYMin meet")
-    .attr("viewBox", "-25 -73 650 520")
-    .append("g")
-
-    //class to make it responsive
-    .classed("svg-content-responsive", true);
-
-  var xInstitution = d3.scaleBand().range([0, widthInstitution]);
-  var yInstitution = d3.scaleLinear().range([heightInstitution, 0]);
-
-  xInstitution.domain(
-    dataInstitution.map(function(d) {
-      return d.name;
-    })
-  );
-  yInstitution.domain([
-    0,
-    d3.max(dataInstitution, function(d) {
-      return d.value;
-    })
-  ]);
-
-  svgInstitution
-    .selectAll(".bar")
-    .data(dataInstitution)
-    .enter()
-    .append("rect")
-    .attr("class", "bar")
-    .attr("x", function(d) {
-      return xInstitution(d.name);
-    })
-    .attr("width", xInstitution.bandwidth() - 30)
-    .attr("y", function(d) {
-      return yInstitution(d.value + 3);
-    })
-    .attr("x", function(d, i) {
-      return i * xInstitution.bandwidth() + 15; //Bar width of 20 plus 1 for padding
-    })
-    .attr("fill", "#9ebbc2")
-    .attr("stroke-width", 1)
-    .attr("stroke", "#337384")
-    .attr("height", function(d) {
-      return heightInstitution - yInstitution(d.value + 3);
-    });
-
-  svgInstitution
-    .selectAll("text")
-    .data(dataInstitution)
-    .enter()
-    .append("text")
-    .attr("class","labels")
-    .text(null)
-    .attr("y", function(d) {
-      return yInstitution(d.value) - 20;
-    })
-    .attr("x", function(d, i) {
-      return i * xInstitution.bandwidth() + 50; //Bar width of 20 plus 1 for padding
-    })
-    .attr("fill", "#336577")
-    .attr("font-family", "Gotham-Bold")
-    .attr("font-size", "14px")
-    .append("tspan")
-    .attr("x", function(d, i) {
-      return i * xInstitution.bandwidth() + 25; //Bar width of 20 plus 1 for padding
-    })
-    .text(function(d) {
-      var number = setSettingsNumber(d.value);
-      return number.valueNumber + number.suffixNumber;
-    })
-    .append("tspan")
-    .attr("x", function(d, i) {
-      return i * xInstitution.bandwidth() + 25; //Bar width of 20 plus 1 for padding
-    })
-    .attr("dy", "1.2em")
-    .attr("font-family", "Gotham-Book")
-    .attr("font-size", "12px")
-    .text(function(d) {
-      return (
-        parseFloat(
-          Math.round(((d.value * 100) / dataInstitutionSum) * 100) / 100
-        ).toFixed(1) + "%"
-      );
-    });
-
-  svgInstitution
-    .append("g")
-    .attr("transform", "translate(0," + heightInstitution + ")")
-    .attr("class", "institution-chart")
-    .call(d3.axisBottom(xInstitution));
-
-  svgInstitution
-    .selectAll(".tick text")
-    .call(wrap, xInstitution.bandwidth())
-    .attr("font-family", "Gotham-Book")
-    .attr("font-size", "12px")
-    .attr("fill", "#336577");
-
-    var div = d3
-    .select("body")
-    .append("div")
-    .attr("class", "toolTip")
-    .style("font-size", "12px")
-    .style("width", "250px");
-
-  var tooltipBar = d3Old
-    .selectAll("#institution-suscribers" + " .bar")
-    .on("mouseover", function(d) {
-      var textHtml =
-        "<div class='col tooltip-gauges'><h3 class='row green'>{{title}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>Subscribers</span><span class='col text-right' >{{value}}</div>";
-      textHtml = textHtml.replace("{{title}}", d.name);
-      textHtml = textHtml.replace("{{value}}", d.value.toLocaleString());
-
-      textHtml = textHtml + "</div>";
-      div
-        .transition()
-        .duration(0)
-        .style("font-family", "Gotham-Book")
-        .style("display", "inline-block");
-      // div.html(d.value + "<br/>" + d.name)
-      if (screen.width <= 480) {
+  if($('.body').width()< 500){
+    drawTrendChartRectBar(
+      dataInstitution,
+      "#institution-suscribers",
+      "#9ebbc2",
+      "green",
+      "Subscribers",
+      "value",
+      0
+    );    
+  }else{
+    var marginInstitution = {
+      top: 50,
+      right: 40,
+      bottom: 50,
+      left: 40
+    };
+  
+    var widthInstitution = 700 - marginInstitution.left - marginInstitution.right;
+    var heightInstitution =
+      515 - marginInstitution.top - marginInstitution.bottom;
+    var svgInstitution = d3
+      .select("#institution-suscribers")
+      .append("svg")
+      //responsive SVG needs these 2 attributes and no width and height attr
+      .attr("preserveAspectRatio", "xMinYMin meet")
+      .attr("viewBox", "-25 -73 650 520")
+      .append("g")
+  
+      //class to make it responsive
+      .classed("svg-content-responsive", true);
+  
+    var xInstitution = d3.scaleBand().range([0, widthInstitution]);
+    var yInstitution = d3.scaleLinear().range([heightInstitution, 0]);
+  
+    xInstitution.domain(
+      dataInstitution.map(function(d) {
+        return d.name;
+      })
+    );
+    yInstitution.domain([
+      0,
+      d3.max(dataInstitution, function(d) {
+        return d.value;
+      })
+    ]);
+  
+    svgInstitution
+      .selectAll(".bar")
+      .data(dataInstitution)
+      .enter()
+      .append("rect")
+      .attr("class", "bar")
+      .attr("x", function(d) {
+        return xInstitution(d.name);
+      })
+      .attr("width", xInstitution.bandwidth() - 30)
+      .attr("y", function(d) {
+        return yInstitution(d.value + 3);
+      })
+      .attr("x", function(d, i) {
+        return i * xInstitution.bandwidth() + 15; //Bar width of 20 plus 1 for padding
+      })
+      .attr("fill", "#9ebbc2")
+      .attr("stroke-width", 1)
+      .attr("stroke", "#337384")
+      .attr("height", function(d) {
+        return heightInstitution - yInstitution(d.value + 3);
+      });
+  
+    svgInstitution
+      .selectAll("text")
+      .data(dataInstitution)
+      .enter()
+      .append("text")
+      .attr("class","labels")
+      .text(null)
+      .attr("y", function(d) {
+        return yInstitution(d.value) - 20;
+      })
+      .attr("x", function(d, i) {
+        return i * xInstitution.bandwidth() + 50; //Bar width of 20 plus 1 for padding
+      })
+      .attr("fill", "#336577")
+      .attr("font-family", "Gotham-Bold")
+      .attr("font-size", "14px")
+      .append("tspan")
+      .attr("x", function(d, i) {
+        return i * xInstitution.bandwidth() + 25; //Bar width of 20 plus 1 for padding
+      })
+      .text(function(d) {
+        var number = setSettingsNumber(d.value);
+        return number.valueNumber + number.suffixNumber;
+      })
+      .append("tspan")
+      .attr("x", function(d, i) {
+        return i * xInstitution.bandwidth() + 25; //Bar width of 20 plus 1 for padding
+      })
+      .attr("dy", "1.2em")
+      .attr("font-family", "Gotham-Book")
+      .attr("font-size", "12px")
+      .text(function(d) {
+        return (
+          parseFloat(
+            Math.round(((d.value * 100) / dataInstitutionSum) * 100) / 100
+          ).toFixed(1) + "%"
+        );
+      });
+  
+    svgInstitution
+      .append("g")
+      .attr("transform", "translate(0," + heightInstitution + ")")
+      .attr("class", "institution-chart")
+      .call(d3.axisBottom(xInstitution));
+  
+    svgInstitution
+      .selectAll(".tick text")
+      .call(wrap, xInstitution.bandwidth())
+      .attr("font-family", "Gotham-Book")
+      .attr("font-size", "12px")
+      .attr("fill", "#336577");
+  
+      var div = d3
+      .select("body")
+      .append("div")
+      .attr("class", "toolTip")
+      .style("font-size", "12px")
+      .style("width", "250px");
+  
+    var tooltipBar = d3Old
+      .selectAll("#institution-suscribers" + " .bar")
+      .on("mouseover", function(d) {
+        var textHtml =
+          "<div class='col tooltip-gauges'><h3 class='row green'>{{title}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>Subscribers</span><span class='col text-right' >{{value}}</div>";
+        textHtml = textHtml.replace("{{title}}", d.name);
+        textHtml = textHtml.replace("{{value}}", d.value.toLocaleString());
+  
+        textHtml = textHtml + "</div>";
         div
+          .transition()
+          .duration(0)
+          .style("font-family", "Gotham-Book")
+          .style("display", "inline-block");
+        // div.html(d.value + "<br/>" + d.name)
+        if (screen.width <= 480) {
+          div
+            .html(textHtml)
+            .style("left", "0px")
+            .style("top", d3Old.event.pageY - 28 + 5 + "px")
+            .style("width", screen.width+"px");
+        } else {
+          div
           .html(textHtml)
-          .style("left", "0px")
-          .style("top", d3Old.event.pageY - 28 + 5 + "px")
-          .style("width", screen.width+"px");
-      } else {
+          .style("left", d3Old.event.pageX - 200 + 35 + "px")
+          .style("top", d3Old.event.pageY - 28 + 35 + "px");
+        }
+        
+      })
+      .on("mouseout", function(d) {
         div
-        .html(textHtml)
-        .style("left", d3Old.event.pageX - 200 + 35 + "px")
-        .style("top", d3Old.event.pageY - 28 + 35 + "px");
-      }
-      
-    })
-    .on("mouseout", function(d) {
-      div
-        .transition()
-        .duration(0)
-        .style("display", "none");
-    });
-    var tooltipText = d3Old
-    .selectAll("#institution-suscribers" + " .labels")
-    .on("mouseover", function(d) {
-      var textHtml =
-        "<div class='col tooltip-gauges'><h3 class='row green'>{{title}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>Subscribers</span><span class='col text-right' >{{value}}</div>";
-      textHtml = textHtml.replace("{{title}}", d.name);
-      textHtml = textHtml.replace("{{value}}", d.value.toLocaleString());
-
-      textHtml = textHtml + "</div>";
-      div
-        .transition()
-        .duration(0)
-        .style("font-family", "Gotham-Book")
-        .style("display", "inline-block");
-      // div.html(d.value + "<br/>" + d.name)
-      if (screen.width <= 480) {
+          .transition()
+          .duration(0)
+          .style("display", "none");
+      });
+      var tooltipText = d3Old
+      .selectAll("#institution-suscribers" + " .labels")
+      .on("mouseover", function(d) {
+        var textHtml =
+          "<div class='col tooltip-gauges'><h3 class='row green'>{{title}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>Subscribers</span><span class='col text-right' >{{value}}</div>";
+        textHtml = textHtml.replace("{{title}}", d.name);
+        textHtml = textHtml.replace("{{value}}", d.value.toLocaleString());
+  
+        textHtml = textHtml + "</div>";
         div
+          .transition()
+          .duration(0)
+          .style("font-family", "Gotham-Book")
+          .style("display", "inline-block");
+        // div.html(d.value + "<br/>" + d.name)
+        if (screen.width <= 480) {
+          div
+            .html(textHtml)
+            .style("left", "0px")
+            .style("top", d3Old.event.pageY - 28 + 5 + "px")
+            .style("width", screen.width+"px");
+        } else {
+          div
           .html(textHtml)
-          .style("left", "0px")
-          .style("top", d3Old.event.pageY - 28 + 5 + "px")
-          .style("width", screen.width+"px");
-      } else {
+          .style("left", d3Old.event.pageX - 200 + 35 + "px")
+          .style("top", d3Old.event.pageY - 28 + 35 + "px");
+        }
+        
+      })
+      .on("mouseout", function(d) {
         div
-        .html(textHtml)
-        .style("left", d3Old.event.pageX - 200 + 35 + "px")
-        .style("top", d3Old.event.pageY - 28 + 35 + "px");
-      }
-      
-    })
-    .on("mouseout", function(d) {
-      div
-        .transition()
-        .duration(0)
-        .style("display", "none");
-    });
+          .transition()
+          .duration(0)
+          .style("display", "none");
+      });
+  }
+
+  
     
 }
 

@@ -1,37 +1,43 @@
 function createTimelineChart(data, id, colorTitle, id2018, widthDef) {
   var margin = {
-      top: 20,
-      right: 0,
-      bottom: 30,
-      left: 0
-    },
+    top: 20,
+    right: 0,
+    bottom: 30,
+    left: 0
+  },
     widthInherith = $(id).width(),
     heightInherith = $(id).height(),
     width = widthInherith - margin.left - margin.right,
     height = heightInherith - margin.top - margin.bottom;
   var parseTime = d3.timeParse("%d-%b-%y");
+  var formatTime = d3.timeFormat("%m-%y");
   var x = d3.scaleTime().range([0, width]);
   var y = d3.scaleLinear().range([height, 0]);
   var positionText = 0;
   var viewBoxWidth = (widthInherith + 65).toFixed(0);
-
+  var leftMargin;
+  if(screen.width <= 480){
+    leftMargin = "-30";
+  }else{
+    leftMargin = "-50";
+  }
   var area = d3
     .area()
-    .x(function(d) {
+    .x(function (d) {
       return x(d.date);
     })
     .y0(height)
-    .y1(function(d) {
+    .y1(function (d) {
       positionText = y(d.close);
       return y(d.close);
     });
 
   var valueline = d3
     .line()
-    .x(function(d) {
+    .x(function (d) {
       return x(d.date);
     })
-    .y(function(d) {
+    .y(function (d) {
       return y(d.close);
     });
 
@@ -39,11 +45,11 @@ function createTimelineChart(data, id, colorTitle, id2018, widthDef) {
     .select(id)
     .append("svg")
     .attr("preserveAspectRatio", "xMinYMin meet")
-    .attr("viewBox", "-50 -28 " + (viewBoxWidth-10) + " 250")
+    .attr("viewBox", leftMargin + " -28 " + (viewBoxWidth - 10) + " 250")
     .append("g")
     .classed("svg-content-responsive", true);
 
-  data.forEach(function(d) {
+  data.forEach(function (d) {
     d.dateAux = d.date;
     d.date = parseTime(d.date);
   });
@@ -69,20 +75,20 @@ function createTimelineChart(data, id, colorTitle, id2018, widthDef) {
 
   var lineGen = d3
     .line()
-    .x(function(d) {
+    .x(function (d) {
       return x(d.date);
     })
-    .y(function(d) {
+    .y(function (d) {
       return y(d.CumulativeAmount);
     });
   x.domain(
-    d3.extent(data, function(d) {
+    d3.extent(data, function (d) {
       return d.date;
     })
   );
   y.domain([
     0,
-    d3.max(data, function(d) {
+    d3.max(data, function (d) {
       return d.close;
     })
   ]);
@@ -106,27 +112,45 @@ function createTimelineChart(data, id, colorTitle, id2018, widthDef) {
   //     .attr("stroke-dasharray", "4")
   //     .attr('stroke-width', 2)
   //     .attr('fill', 'none');
-
-  svg
-    .append("g")
-    .attr("transform", "translate(0," + height + ")")
-    .attr("class", "x-axis")
-    .style("stroke-width", "3px")
-    .style("font-family", "Gotham-Book")
-    .style("font-size", "13px")
-    .call(
-      d3
-        .axisBottom(x)
-        .ticks(
-          d3.timeDay.filter(function(d) {
-            return $(id2018).prop("checked")
-              ? d3.timeDay.count(0, d) % 60 === 0
-              : d3.timeDay.count(0, d) % 300 === 0;
+  var count = 0;
+  if (id =="#timeline-code" && screen.width <= 480) {
+    svg
+      .append("g")
+      .attr("transform", "translate(0," + height + ")")
+      .attr("class", "x-axis")
+      .style("stroke-width", "3px")
+      .style("font-family", "Gotham-Book")
+      .style("font-size", "13px")
+      .call(
+        d3
+          .axisBottom(x)
+          .ticks(5)
+          .tickFormat(function (x) {
+            count++;
+            if(count % 2 == 0){
+              return formatTime(x)
+            }
+            return "";
+            
           })
-        )
-        .ticks(7)
-        .tickSizeOuter(0)
-    );
+          .tickSizeOuter(0)
+      );
+  } else {
+    svg
+      .append("g")
+      .attr("transform", "translate(0," + height + ")")
+      .attr("class", "x-axis")
+      .style("stroke-width", "3px")
+      .style("font-family", "Gotham-Book")
+      .style("font-size", "13px")
+      .call(
+        d3
+          .axisBottom(x)
+          .ticks(7)
+          .tickSizeOuter(0)
+      );
+  }
+
 
   svg
     .append("g")
@@ -137,7 +161,7 @@ function createTimelineChart(data, id, colorTitle, id2018, widthDef) {
       d3
         .axisLeft(y)
         .ticks(3)
-        .tickFormat(function(x) {
+        .tickFormat(function (x) {
           var value = setSettingsNumber(x);
           return Math.floor(value.valueNumber) + value.suffixNumber;
         })
@@ -203,14 +227,14 @@ function createTimelineChart(data, id, colorTitle, id2018, widthDef) {
     .attr("class", "overlay")
     .attr("width", width)
     .attr("height", height)
-    .on("mouseover", function() {
+    .on("mouseover", function () {
       focus.style("display", null);
     })
-    .on("mouseout", function() {
+    .on("mouseout", function () {
       focus.style("display", "none");
     })
     .on("mousemove", mousemove);
-  var bisectDate = d3.bisector(function(d) {
+  var bisectDate = d3.bisector(function (d) {
     return d.date;
   }).left;
 
@@ -220,28 +244,28 @@ function createTimelineChart(data, id, colorTitle, id2018, widthDef) {
       d0 = data[i - 1],
       d1 = data[i],
       d = x0 - d0.date > d1.date - x0 ? d1 : d0;
-    if(screen.width < 480){
-        if (x(d.date) < screen.width/2) {
-            focus.select("rect").attr("x", -10);
-            focus.selectAll("text").attr("x", -5);
-            focus.selectAll("tspan").attr("x", -5);
-        }else{
-            focus.select("rect").attr("x", -140);
-            focus.selectAll("text").attr("x", -135);
-            focus.selectAll("tspan").attr("x", -135);
-        }
-    }else{
-        if (x(d.date) < 300) {
-            focus.select("rect").attr("x", -10);
-            focus.selectAll("text").attr("x", -5);
-            focus.selectAll("tspan").attr("x", -5);
-          } else {
-            focus.select("rect").attr("x", -140);
-            focus.selectAll("text").attr("x", -135);
-            focus.selectAll("tspan").attr("x", -135);
-          }
+    if (screen.width < 480) {
+      if (x(d.date) < screen.width / 2) {
+        focus.select("rect").attr("x", -10);
+        focus.selectAll("text").attr("x", -5);
+        focus.selectAll("tspan").attr("x", -5);
+      } else {
+        focus.select("rect").attr("x", -140);
+        focus.selectAll("text").attr("x", -135);
+        focus.selectAll("tspan").attr("x", -135);
+      }
+    } else {
+      if (x(d.date) < 300) {
+        focus.select("rect").attr("x", -10);
+        focus.selectAll("text").attr("x", -5);
+        focus.selectAll("tspan").attr("x", -5);
+      } else {
+        focus.select("rect").attr("x", -140);
+        focus.selectAll("text").attr("x", -135);
+        focus.selectAll("tspan").attr("x", -135);
+      }
     }
-    
+
 
     var depl = parseFloat(d.close);
 

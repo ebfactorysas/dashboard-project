@@ -51,207 +51,220 @@ function drawDistributionChart(dataDistribution) {
   d3.select("#distribution-moocs svg").remove();
   var widthInherith = $("#distribution-moocs").width();
   var heightInherith = $("#distribution-moocs").height();
-  var marginDistribution = {
-    top: 50,
-    right: 50,
-    bottom: 50,
-    left: 50
-  };
+  if($('.body').width()< 500){
+    drawTrendChartRectBar(
+      dataDistribution,
+      "#distribution-moocs",
+      "#f1a592",
+      "orange",
+      "Registrations",
+      "registrations",
+      25
+    );    
+  }else{
+    var marginDistribution = {
+      top: 50,
+      right: 50,
+      bottom: 50,
+      left: 50
+    };
+    
   
-
-
-  var widthDistribution =
-    800 - marginDistribution.left - marginDistribution.right;
-  var heightDistribution =
-    400 - marginDistribution.top - marginDistribution.bottom;
-  var svgDistribution = d3
-    .select("#distribution-moocs")
-    .append("svg")
-    //responsive SVG needs these 2 attributes and no width and height attr
-    .attr("preserveAspectRatio", "xMinYMin meet")
-    .attr("viewBox", "0 0 720 500")
-    .append("g")
-    // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
-
-    //class to make it responsive
-    .classed("svg-content-responsive", true);
-
-  var xDistribution = d3.scaleBand().range([0, widthDistribution]);
-  var yDistribution = d3.scaleLinear().range([heightDistribution, 0]);
-
-  xDistribution.domain(
-    dataDistribution.map(function(d) {
-      return d.name;
-    })
-  );
-  yDistribution.domain([
-    0,
-    d3.max(dataDistribution, function(d) {
-      return d.registrations;
-    })
-  ]);
-
-  svgDistribution
-    .selectAll(".bar")
-    .data(dataDistribution)
-    .enter()
-    .append("rect")
-    .attr("class", "bar")
-    .attr("x", function(d) {
-      return xDistribution(d.name);
-    })
-    .attr("width", xDistribution.bandwidth() - 35)
-    .attr("rx", 25)
-    .attr("ry", 25)
-    .attr("y", function(d) {
-      return yDistribution(d.registrations + 3);
-    })
-    .attr("x", function(d, i) {
-      return i * xDistribution.bandwidth() + 15; //Bar width of 20 plus 1 for padding
-    })
-    .attr("fill", "#eea08d")
-    .attr("height", function(d) {
-      return heightDistribution - yDistribution(d.registrations + 3);
-    });
-
-  svgDistribution
-    .selectAll("text")
-    .data(dataDistribution)
-    .enter()
-    .append("text")
-    .text(function(d) {
-      var formatNumber = setSettingsNumber(d.registrations);
-      return formatNumber.valueNumber + formatNumber.suffixNumber;
-    })
-    .attr("y", function(d) {
-      return yDistribution(0.01);
-    })
-    .attr("x", function(d, i) {
-      return i * xDistribution.bandwidth() + 21; //Bar width of 20 plus 1 for padding
-    })
-    .attr("font-family", "Gotham-Bold")
-    .attr("class", "textInsideDist")
-    .attr("padding-bottom", "10px")
-    .attr("font-size", "1.3rem");
-
-  svgDistribution
-    .append("g")
-    .attr("transform", "translate(0," + heightDistribution + ")")
-    .attr("class", "distribution-chart")
-    .call(d3.axisBottom(xDistribution));
-
-  svgDistribution
-    .selectAll(".tick text")
-    .call(wrap, xDistribution.bandwidth())
-    .attr("font-family", "Gotham-Bold")
-    .attr("font-size", "1.3rem");
-
-  var div = d3
-    .select("body")
-    .append("div")
-    .attr("class", "toolTip")
-    .style("font-size", "12px")
-    .style("width", "250px");
-
-  var tooltipBarText = d3Old
-    .selectAll("#distribution-moocs .textInsideDist")
-    .on("mouseover", function(d) {
-      var textHtml =
-        "<div class='col tooltip-gauges'><h3 class='row orange'>{{title}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>Amount</span><span class='col text-right' >{{value}}</div>";
-      textHtml = textHtml.replace("{{title}}", d.name);
-      textHtml = textHtml.replace(
-        "{{value}}",
-        d.registrations.toFixed(0).toLocaleString()
-      );
-      if (d.value) {
-        var addText =
-          "<div class='row pt-1 border-top'><span class='col pl-0 pr-0 '> {{type}}</span><span  class='col-3 text-right'>{{code}}</span></div>";
-        addText = addText.replace("{{type}}", "Percentage");
-        addText = addText.replace("{{code}}", d.value);
-        textHtml = textHtml + addText;
-      } else if (d.department_codes) {
-        var addText =
-          "<div class='row pt-1 border-top'><span class='col-2 pl-0 pr-0 '> {{type}}</span><span  class='col text-right'>{{code}}</span></div>";
-        addText = addText.replace("{{type}}", "Department");
-        addText = addText.replace("{{code}}", d.department_codes);
-        textHtml = textHtml + addText;
-      }
-      textHtml = textHtml + "</div>";
-      div
-        .transition()
-        .duration(0)
-        .style("font-family", "Gotham-Book")
-        .style("display", "inline-block");
-      // div.html(d.value + "<br/>" + d.name)
-      if (screen.width <= 480) {
+  
+    var widthDistribution =
+      800 - marginDistribution.left - marginDistribution.right;
+    var heightDistribution =
+      400 - marginDistribution.top - marginDistribution.bottom;
+    var svgDistribution = d3
+      .select("#distribution-moocs")
+      .append("svg")
+      //responsive SVG needs these 2 attributes and no width and height attr
+      .attr("preserveAspectRatio", "xMinYMin meet")
+      .attr("viewBox", "0 0 720 500")
+      .append("g")
+      // .attr("transform", "translate(" + marginMoocs.left + "," + marginMoocs.top + ")")
+  
+      //class to make it responsive
+      .classed("svg-content-responsive", true);
+  
+    var xDistribution = d3.scaleBand().range([0, widthDistribution]);
+    var yDistribution = d3.scaleLinear().range([heightDistribution, 0]);
+  
+    xDistribution.domain(
+      dataDistribution.map(function(d) {
+        return d.name;
+      })
+    );
+    yDistribution.domain([
+      0,
+      d3.max(dataDistribution, function(d) {
+        return d.registrations;
+      })
+    ]);
+  
+    svgDistribution
+      .selectAll(".bar")
+      .data(dataDistribution)
+      .enter()
+      .append("rect")
+      .attr("class", "bar")
+      .attr("x", function(d) {
+        return xDistribution(d.name);
+      })
+      .attr("width", xDistribution.bandwidth() - 35)
+      .attr("rx", 25)
+      .attr("ry", 25)
+      .attr("y", function(d) {
+        return yDistribution(d.registrations + 3);
+      })
+      .attr("x", function(d, i) {
+        return i * xDistribution.bandwidth() + 15; //Bar width of 20 plus 1 for padding
+      })
+      .attr("fill", "#eea08d")
+      .attr("height", function(d) {
+        return heightDistribution - yDistribution(d.registrations + 3);
+      });
+  
+    svgDistribution
+      .selectAll("text")
+      .data(dataDistribution)
+      .enter()
+      .append("text")
+      .text(function(d) {
+        var formatNumber = setSettingsNumber(d.registrations);
+        return formatNumber.valueNumber + formatNumber.suffixNumber;
+      })
+      .attr("y", function(d) {
+        return yDistribution(0.01);
+      })
+      .attr("x", function(d, i) {
+        return i * xDistribution.bandwidth() + 21; //Bar width of 20 plus 1 for padding
+      })
+      .attr("font-family", "Gotham-Bold")
+      .attr("class", "textInsideDist")
+      .attr("padding-bottom", "10px")
+      .attr("font-size", "1.3rem");
+  
+    svgDistribution
+      .append("g")
+      .attr("transform", "translate(0," + heightDistribution + ")")
+      .attr("class", "distribution-chart")
+      .call(d3.axisBottom(xDistribution));
+  
+    svgDistribution
+      .selectAll(".tick text")
+      .call(wrap, xDistribution.bandwidth())
+      .attr("font-family", "Gotham-Bold")
+      .attr("font-size", "1.3rem");
+  
+    var div = d3
+      .select("body")
+      .append("div")
+      .attr("class", "toolTip")
+      .style("font-size", "12px")
+      .style("width", "250px");
+  
+    var tooltipBarText = d3Old
+      .selectAll("#distribution-moocs .textInsideDist")
+      .on("mouseover", function(d) {
+        var textHtml =
+          "<div class='col tooltip-gauges'><h3 class='row orange'>{{title}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>Amount</span><span class='col text-right' >{{value}}</div>";
+        textHtml = textHtml.replace("{{title}}", d.name);
+        textHtml = textHtml.replace(
+          "{{value}}",
+          d.registrations.toFixed(0).toLocaleString()
+        );
+        if (d.value) {
+          var addText =
+            "<div class='row pt-1 border-top'><span class='col pl-0 pr-0 '> {{type}}</span><span  class='col-3 text-right'>{{code}}</span></div>";
+          addText = addText.replace("{{type}}", "Percentage");
+          addText = addText.replace("{{code}}", d.value);
+          textHtml = textHtml + addText;
+        } else if (d.department_codes) {
+          var addText =
+            "<div class='row pt-1 border-top'><span class='col-2 pl-0 pr-0 '> {{type}}</span><span  class='col text-right'>{{code}}</span></div>";
+          addText = addText.replace("{{type}}", "Department");
+          addText = addText.replace("{{code}}", d.department_codes);
+          textHtml = textHtml + addText;
+        }
+        textHtml = textHtml + "</div>";
         div
+          .transition()
+          .duration(0)
+          .style("font-family", "Gotham-Book")
+          .style("display", "inline-block");
+        // div.html(d.value + "<br/>" + d.name)
+        if (screen.width <= 480) {
+          div
+            .html(textHtml)
+            .style("left", "0px")
+            .style("top", d3Old.event.pageY - 28 + 5 + "px")
+            .style("width", screen.width+"px");
+        } else {
+          div
           .html(textHtml)
-          .style("left", "0px")
-          .style("top", d3Old.event.pageY - 28 + 5 + "px")
-          .style("width", screen.width+"px");
-      } else {
+          .style("left", d3Old.event.pageX - 200 + 35 + "px")
+          .style("top", d3Old.event.pageY - 28 + 35 + "px");
+        }
+      })
+      .on("mouseout", function(d) {
         div
-        .html(textHtml)
-        .style("left", d3Old.event.pageX - 200 + 35 + "px")
-        .style("top", d3Old.event.pageY - 28 + 35 + "px");
-      }
-    })
-    .on("mouseout", function(d) {
-      div
-        .transition()
-        .duration(0)
-        .style("display", "none");
-    });
-
-  var tooltipBar = d3Old
-    .selectAll("#distribution-moocs .bar")
-    .on("mouseover", function(d) {
-      var textHtml =
-        "<div class='col tooltip-gauges'><h3 class='row orange'>{{title}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>Amount</span><span class='col text-right' >{{value}}</div>";
-      textHtml = textHtml.replace("{{title}}", d.name);
-      textHtml = textHtml.replace(
-        "{{value}}",
-        d.registrations.toFixed(0).toLocaleString()
-      );
-      if (d.value) {
-        var addText =
-          "<div class='row pt-1 border-top'><span class='col pl-0 pr-0 '> {{type}}</span><span  class='col-3 text-right'>{{code}}</span></div>";
-        addText = addText.replace("{{type}}", "Percentage");
-        addText = addText.replace("{{code}}", d.value);
-        textHtml = textHtml + addText;
-      } else if (d.department_codes) {
-        var addText =
-          "<div class='row pt-1 border-top'><span class='col-2 pl-0 pr-0 '> {{type}}</span><span  class='col text-right'>{{code}}</span></div>";
-        addText = addText.replace("{{type}}", "Department");
-        addText = addText.replace("{{code}}", d.department_codes);
-        textHtml = textHtml + addText;
-      }
-      textHtml = textHtml + "</div>";
-      div
-        .transition()
-        .duration(0)
-        .style("font-family", "Gotham-Book")
-        .style("display", "inline-block");
-      // div.html(d.value + "<br/>" + d.name)
-      if (screen.width <= 480) {
+          .transition()
+          .duration(0)
+          .style("display", "none");
+      });
+  
+    var tooltipBar = d3Old
+      .selectAll("#distribution-moocs .bar")
+      .on("mouseover", function(d) {
+        var textHtml =
+          "<div class='col tooltip-gauges'><h3 class='row orange'>{{title}} </h3> <div class='row pb-1'><span class='col pl-0 pr-0'>Amount</span><span class='col text-right' >{{value}}</div>";
+        textHtml = textHtml.replace("{{title}}", d.name);
+        textHtml = textHtml.replace(
+          "{{value}}",
+          d.registrations.toFixed(0).toLocaleString()
+        );
+        if (d.value) {
+          var addText =
+            "<div class='row pt-1 border-top'><span class='col pl-0 pr-0 '> {{type}}</span><span  class='col-3 text-right'>{{code}}</span></div>";
+          addText = addText.replace("{{type}}", "Percentage");
+          addText = addText.replace("{{code}}", d.value);
+          textHtml = textHtml + addText;
+        } else if (d.department_codes) {
+          var addText =
+            "<div class='row pt-1 border-top'><span class='col-2 pl-0 pr-0 '> {{type}}</span><span  class='col text-right'>{{code}}</span></div>";
+          addText = addText.replace("{{type}}", "Department");
+          addText = addText.replace("{{code}}", d.department_codes);
+          textHtml = textHtml + addText;
+        }
+        textHtml = textHtml + "</div>";
         div
+          .transition()
+          .duration(0)
+          .style("font-family", "Gotham-Book")
+          .style("display", "inline-block");
+        // div.html(d.value + "<br/>" + d.name)
+        if (screen.width <= 480) {
+          div
+            .html(textHtml)
+            .style("left", "0px")
+            .style("top", d3Old.event.pageY - 28 + 5 + "px")
+            .style("width", screen.width+"px");
+        } else {
+          div
           .html(textHtml)
-          .style("left", "0px")
-          .style("top", d3Old.event.pageY - 28 + 5 + "px")
-          .style("width", screen.width+"px");
-      } else {
+          .style("left", d3Old.event.pageX - 200 + 35 + "px")
+          .style("top", d3Old.event.pageY - 28 + 35 + "px");
+        }
+      })
+      .on("mouseout", function(d) {
         div
-        .html(textHtml)
-        .style("left", d3Old.event.pageX - 200 + 35 + "px")
-        .style("top", d3Old.event.pageY - 28 + 35 + "px");
-      }
-    })
-    .on("mouseout", function(d) {
-      div
-        .transition()
-        .duration(0)
-        .style("display", "none");
-    });
+          .transition()
+          .duration(0)
+          .style("display", "none");
+      });
+  }
+  
 }
 /**
  * End distribution-moocs
@@ -268,7 +281,9 @@ function drawMoocsRegistrationsChart(dataMoocs) {
     "#moocs-registrations",
     "#f1a592",
     "orange",
-    "Registrations"
+    "Registrations",
+    "value",
+    25
   );
 }
 
@@ -394,7 +409,7 @@ function drawMoocsAgeDistributionChart(data) {
     .attr("class", "label")
     //y position of the label is halfway down the bar
     .attr("y", function(d) {
-      return y(d.name) + y.bandwidth() / 2 - 5;
+      return y(d.name) + y.bandwidth() / 2 - 4;
     })
     //x position is 3 pixels to the right of the bar
     .attr("x", function(d) {
@@ -409,6 +424,13 @@ function drawMoocsAgeDistributionChart(data) {
   svg
     .selectAll(".tick text")
     .call(wrap, y.bandwidth(), 10)
+    .attr("y", function(d) {
+      if(data[0].name== d){
+        console.log("im in",d)
+        return  y.bandwidth() / 2 -20;  
+      }
+      return  y.bandwidth() / 2 -15;
+    })
     .attr("font-family", "Gotham-Bold")
     .attr("font-size", "12px");
 

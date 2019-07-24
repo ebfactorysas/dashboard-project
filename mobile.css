@@ -135,6 +135,22 @@
     section.suscribers #demographics-suscribers{
         height: 22rem;
     }
+
+    section.suscribers #institution-suscribers .y-data path{
+        display: none;
+    }
+    section.suscribers #institution-suscribers .tick text{
+        font-size: 1rem;
+        color:rgb(30, 101, 119);
+        font-family: gotham-bold;
+    }
+
+    section.suscribers #institution-suscribers .text-inside{
+        font-size: 1.3rem;
+        fill:rgb(30, 101, 119);
+        font-family: gotham-bold;
+    }
+
     section.suscribers .up.left-zone{
         height: 39rem;
     }    
@@ -148,7 +164,7 @@
     }
 
     section.suscribers .down.right-zone {
-        height: 40rem;
+        height: 67rem;
     }
 
     section.suscribers #age-suscribers .y-suscribers,section.suscribers #age-suscribers .label{
@@ -165,6 +181,7 @@
     }
     section.map{
         padding-bottom: 3rem;
+        height: 170rem;
     }
     .site-title{
         font-size: 12px;

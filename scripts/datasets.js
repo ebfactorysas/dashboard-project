@@ -3,7 +3,11 @@ function drawDataTrendChart(dataDataTrend) {
     dataDataTrend = dataDataTrend.slice(0, 10).sort(function (a, b) {
         return d3.descending(a.Rank, b.Rank);
     })
-    drawTrendChart(dataDataTrend, "#data-trend", "#45509b", "purple", false, "#000000");
+    var inBar= false;
+    if($('.body').width()< 500){
+        inBar = true;
+    }
+    drawTrendChart(dataDataTrend, "#data-trend", "#45509b", "purple", inBar, "#000000");
 }
 
 function drawTreeDataset(dataTree, filtertype, typeload) {

@@ -45,7 +45,7 @@ function drawTreePublication(dataTree, filtertype, typeload) {
 
 function drawTrendPublicationChart(dataPublicationTrend) {
     d3.select("#publication-trend svg").remove();    
-    drawTrendChartRectBar(dataPublicationTrend,"#publication-trend","#dea6b0","red","Downloads");
+    drawTrendChartRectBar(dataPublicationTrend,"#publication-trend","#dea6b0","red","Downloads","value",25);
     
 }
 
@@ -152,7 +152,7 @@ function createLineChart(elements) {
 
         })
         .width({
-            value: 170,
+            value: 183,
             small: 50
         })
         .height({

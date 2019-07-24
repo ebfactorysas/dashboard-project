@@ -3,8 +3,13 @@ function drawChartCodeTrend(codeTrend) {
     codeTrend = codeTrend.slice(0, 10).sort(function (a, b) {
         return d3.descending(a.Rank, b.Rank);
     })
+    if (screen.width <= 480) {
+        drawTrendChart(codeTrend, "#code-trend", "#eeae00", "yellow", true, "#212529");
+      } else {
+        drawTrendChart(codeTrend, "#code-trend", "#eeae00", "yellow", true, "#ffffff");
+      }
 
-    drawTrendChart(codeTrend, "#code-trend", "#eeae00", "yellow", true, "#ffffff");
+   
 }
 
 function drawTreeCode(dataTree, filtertype, typeload) {
