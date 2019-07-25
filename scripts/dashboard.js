@@ -20,6 +20,7 @@ function changeFilterDashboard(sltValue) {
     setDataSuscribersByDepartment(departmentSelected);
   } else {
     if (sltValue == "IDB") {
+      initIndicators("", "");
       setDataIDBPublications();
       setDataSubscribersIdb();
       initCode();
@@ -52,7 +53,7 @@ function setDataIDBPublications() {
   );
   var ObjectpublicationsAttention = $.extend(true, [], publicationsAttention);
   // gaugeIDB();
-  initIndicators("", "");
+
   drawGaugePublicationChart(
     $.extend(true, {}, publicationsIndicators.indicatorsIDB2018[0])
   );
@@ -691,15 +692,6 @@ function setDataSuscribersByDepartment(sltValue) {
  * bignumbers
  */
 
-$(window).on("load", function() {
-  //$('.label-filter-select').text($("#divisionSelect option:selected").text());
-  // initPublications();
-  // initMoocs();
-  // initDataSet();
-  // initCode();
-  // initSuscribers();
-});
-
 function validatePresidentOrKic(title, department) {
   console.log(
     "President or KIC",
@@ -749,6 +741,12 @@ function validateSize(){
   } 
 }
 function getItems() {
+  if ($(".body").width() < 500) {
+    $(".hidden-on-mobile").remove();
+    
+  }else{
+    $(".hidden-on-desktop").remove();
+  }
   $.ajax({
     async: true, // Async by default is set to “true” load the script asynchronously
     //url: _spPageContextInfo.webAbsoluteUrl + "/_api/SP.UserProfiles.PeopleManager/GetPropertiesFor(accountName=@v)?@v='i:0%23.f|membership|VICENTEF@iadb.org'", // URL to fetch data from sharepoint list
@@ -808,7 +806,7 @@ function updateResolution() {
 
   // }
 }
-getItems();
+
 $(document).ready(function() {
   moment.updateLocale("en", {
     relativeTime: {
@@ -864,3 +862,6 @@ $(window).resize(function() {
   updateResolution();
   changeFilterDashboard($("select[id*='divisionSelect']").val());
 });
+
+//start the magic
+getItems();

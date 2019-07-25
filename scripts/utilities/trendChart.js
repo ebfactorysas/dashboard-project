@@ -7,7 +7,7 @@ function drawTrendChartRectBar(
   valueName,
   radius
 ) {
-  data = data.sort(function(a, b) {
+  data = data.sort(function (a, b) {
     return d3.ascending(a[valueName], b[valueName]);
   });
   var indices = d3.range(0, data.length);
@@ -21,13 +21,13 @@ function drawTrendChartRectBar(
   var heightInherith = $(id).height();
 
   var widthPublicationTrend =
-      widthInherith -
-      marginPublicationTrend.left -
-      marginPublicationTrend.right,
+    widthInherith -
+    marginPublicationTrend.left -
+    marginPublicationTrend.right,
     heightPublicationTrend =
-      heightInherith -
-      marginPublicationTrend.top -
-      marginPublicationTrend.bottom;
+    heightInherith -
+    marginPublicationTrend.top -
+    marginPublicationTrend.bottom;
 
   var svgPublicationTrend = d3
     .select(id)
@@ -42,7 +42,7 @@ function drawTrendChartRectBar(
     .range([0, widthPublicationTrend])
     .domain([
       0,
-      d3.max(data, function(d) {
+      d3.max(data, function (d) {
         return d[valueName];
       })
     ]);
@@ -50,11 +50,16 @@ function drawTrendChartRectBar(
   var heightOfBar = 0;
   if ($(".body").width() < 500) {
     heightOfBar = heightPublicationTrend / data.length;
-  }else{
-    heightOfBar = 53;
+  } else {
+    if (id == "#moocs-registrations") {
+      heightOfBar = 43;
+    }else{
+      heightOfBar = 53;
+    }
+    
   }
 
-  
+
 
   var yPublicationTrend = d3
     .scaleBand()
@@ -63,7 +68,7 @@ function drawTrendChartRectBar(
 
   var yAxisPublicationTrend = d3
     .axisLeft(yPublicationTrend)
-    .tickFormat(function(x) {
+    .tickFormat(function (x) {
       var value = setSettingsNumber(data[x][valueName].toFixed(0));
       return value.valueNumber + suffixNumber;
     })
@@ -88,32 +93,29 @@ function drawTrendChartRectBar(
   barsPublicationTrend
     .append("rect")
     .attr("class", "bar")
-    .attr("y", function(value, index) {
+    .attr("y", function (value, index) {
       return yPublicationTrend(index);
     })
     .attr("rx", radius)
     .attr("ry", radius)
     .attr("fill", color)
-    .attr("height", function(d) {
-      // if (id == "#moocs-registrations") {
-      //   return heightOfBar - 4;
-      // }
+    .attr("height", function (d) {
       return heightOfBar - data.length;
     })
     .attr("x", 16)
-    .attr("width", function(d) {
+    .attr("width", function (d) {
       return xPublicationTrend(d[valueName]);
     });
 
   barsPublicationTrend
     .append("text")
     .attr("class", "label")
-    .attr("y", function(value, index) {
+    .attr("y", function (value, index) {
       if (id == "#moocs-registrations") {
         return yPublicationTrend(index) + 40 / 2 + 4;
       }
       if (id == "#institution-suscribers") {
-        return yPublicationTrend(index) +30;
+        return yPublicationTrend(index) + 30;
       }
       // if(data.length==9){
       //   return yPublicationTrend(index) + 15 ;
@@ -123,13 +125,13 @@ function drawTrendChartRectBar(
     // .attr("y", function (d) {
     //     return yPublicationTrend(d.value) + 40 / 2 + 2;
     // })
-    .attr("x", function(d) {
+    .attr("x", function (d) {
       return 25;
     })
     .attr("class", "text-inside")
     .attr("font-family", "Gotham-Bold")
     .attr("font-size", "1.4rem")
-    .text(function(d) {
+    .text(function (d) {
       if (d.name.length > 90) {
         return d.name.slice(0, 90) + "...";
       }
@@ -143,7 +145,7 @@ function drawTrendChartRectBar(
     .style("width", "450px");
   var tooltipText = d3Old
     .selectAll(id + " .text-inside")
-    .on("mouseover", function(d) {
+    .on("mouseover", function (d) {
       var textHtml =
         "<div class='col tooltip-gauges'><h3 class='row " +
         colorClass +
@@ -187,7 +189,7 @@ function drawTrendChartRectBar(
           .style("top", d3Old.event.pageY - 28 + 5 + "px");
       }
     })
-    .on("mouseout", function(d) {
+    .on("mouseout", function (d) {
       div
         .transition()
         .duration(0)
@@ -196,7 +198,7 @@ function drawTrendChartRectBar(
 
   var tooltipBar = d3Old
     .selectAll(id + " .bar")
-    .on("mouseover", function(d) {
+    .on("mouseover", function (d) {
       var textHtml =
         "<div class='col tooltip-gauges'><h3 class='row " +
         colorClass +
@@ -241,7 +243,7 @@ function drawTrendChartRectBar(
           .style("top", d3Old.event.pageY - 28 + 5 + "px");
       }
     })
-    .on("mouseout", function(d) {
+    .on("mouseout", function (d) {
       div
         .transition()
         .duration(0)

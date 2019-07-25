@@ -143,6 +143,7 @@ function initIndicators(filterselect, valueFilter) {
     getDataBignumbers(jsondataPublications, jsondataMoocs, jsondataDatasets, jsondataCode, jsondataSubscriber);
     getDataTotalPercentage(jsondataPublications, jsondataMoocs, jsondataDatasets, jsondataCode, jsondataSubscriber);
 }
+
 $("input[name*='blueTrend']").click(function () {
 
 
@@ -165,7 +166,6 @@ $("input[name*='blueTrend']").click(function () {
     setDataMain(dataResultsPublications, dataResultsMoocs, dataResultsDatasets, dataResultsCode, dataResultsSubscriber);
 });
 
-
 function setDataMain(dataResultsPublications, dataResultsMoocs, dataResultsDatasets, dataResultsCode, dataResultsSubscriber) {
     // mainReset();
     setDataPublications(dataResultsPublications);
@@ -182,7 +182,6 @@ function getDataTotalPercentage(jsondataPublications, jsondataMoocs, jsondataDat
     publicationsTotalGlobal = (jsondataPublications.length > 0) ? jsondataPublications[0].all_the_time_publications : '0';
     publicationsTotalDownloadsGlobal = (jsondataPublications.length > 0) ? jsondataPublications[0].all_the_time_downloads : '0';
 }
-
 
 var optionsAnimation = {
     useEasing: false,
