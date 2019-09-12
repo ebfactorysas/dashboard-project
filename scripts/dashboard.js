@@ -1,5 +1,5 @@
 //division filter
-$("#divisionSelect").on("change", function(data) {
+$("#divisionSelect").on("change", function (data) {
   validateSize();
   changeFilterDashboard(this.value);
 });
@@ -146,7 +146,7 @@ function setDataPublicationsByDivisions(sltValue) {
     [],
     publicationsIndicators.indicatorsDivisions2018
   );
-  dataPublicationGauge2018 = dataPublicationGauge2018.filter(function(dataP) {
+  dataPublicationGauge2018 = dataPublicationGauge2018.filter(function (dataP) {
     return dataP.divisionCode == sltValue;
   });
   drawGaugePublicationChart(dataPublicationGauge2018[0]);
@@ -156,20 +156,20 @@ function setDataPublicationsByDivisions(sltValue) {
   // $("select[id*='deparmentSelect']").val("");
 
   jsonPublicationsBarras = publicationsTopArrays.topDivisions2018.filter(
-    function(dataP) {
+    function (dataP) {
       return dataP.division_codes == sltValue;
     }
   );
   drawTrendPublicationChart(jsonPublicationsBarras, "2018", "");
   drawLinesChartPublication(jsonPublicationsBarras, "2018", "");
   jsonPublicTree = publicationsDownloadSourceArrays.downloadSourceDivisions.filter(
-    function(dataT) {
+    function (dataT) {
       return dataT.division_codes == sltValue;
     }
   );
   drawTreePublication(jsonPublicTree, "2018", "init");
   var auxDownloadTimelineDivisions = publicationsDownloadTimelineArray.downloadTimelineDivisions.filter(
-    function(d) {
+    function (d) {
       return d.division_codes == sltValue;
     }
   );
@@ -195,7 +195,7 @@ function setDataPublicationsByDepartment(sltValue) {
     [],
     publicationsIndicators.indicatorsDepartments2018
   );
-  dataPublicationGauge2018 = dataPublicationGauge2018.filter(function(dataP) {
+  dataPublicationGauge2018 = dataPublicationGauge2018.filter(function (dataP) {
     return dataP.departmentCode == sltValue;
   });
   drawGaugePublicationChart(dataPublicationGauge2018[0]);
@@ -206,7 +206,7 @@ function setDataPublicationsByDepartment(sltValue) {
 
   //data-trend
   var jsonPublicationsBarras = publicationsTopArrays.topDepartments2018.filter(
-    function(dataP) {
+    function (dataP) {
       return dataP.department_code == sltValue;
     }
   );
@@ -215,7 +215,7 @@ function setDataPublicationsByDepartment(sltValue) {
 
   //tree
   jsonPublicTree = publicationsDownloadSourceArrays.downloadSourceDepartments.filter(
-    function(dataT) {
+    function (dataT) {
       return dataT.department_codes == sltValue;
     }
   );
@@ -224,7 +224,7 @@ function setDataPublicationsByDepartment(sltValue) {
 
   //timeline
   var auxDownloadTimelineDepartment = publicationsDownloadTimelineArray.downloadTimelineDepartments.filter(
-    function(d) {
+    function (d) {
       return d.department_code == sltValue;
     }
   );
@@ -250,13 +250,13 @@ function setDataMoocsByDivisions(sltValue) {
     moocsGaugesIndicators.indicatorsDivisions2018
   );
 
-  jsonGaugesMoocs = jsonGaugesMoocs.filter(function(dataP) {
+  jsonGaugesMoocs = jsonGaugesMoocs.filter(function (dataP) {
     return dataP.divisionCode == sltValue;
   });
   drawGaugeMoocsChart(jsonGaugesMoocs[0]);
 
   var auxDownloadTimelineDivisions = moocsRegistrationTimeline.registrationTimelineDivisions.filter(
-    function(d) {
+    function (d) {
       return d.code == sltValue;
     }
   );
@@ -273,7 +273,7 @@ function setDataMoocsByDivisions(sltValue) {
   createChartTimelineMoocs(auxDownloadTimelineDivisions, "");
 
   var jsonAgeMoocs = $.extend(true, [], moocsAgeArrays.ageDivision2018);
-  jsonAgeMoocs = jsonAgeMoocs.filter(function(dataP) {
+  jsonAgeMoocs = jsonAgeMoocs.filter(function (dataP) {
     return dataP.divisionCode == sltValue;
   });
   drawMoocsAgeDistributionChart(jsonAgeMoocs);
@@ -313,13 +313,13 @@ function setDataMoocsByDepartment(sltValue) {
     moocsGaugesIndicators.indicatorsDepartments2018
   );
 
-  jsonGaugesMoocs = jsonGaugesMoocs.filter(function(dataP) {
+  jsonGaugesMoocs = jsonGaugesMoocs.filter(function (dataP) {
     return dataP.departmentCode == sltValue;
   });
   drawGaugeMoocsChart(jsonGaugesMoocs[0]);
 
   var auxDownloadTimelineDepartment = moocsRegistrationTimeline.registrationTimelineDepartments.filter(
-    function(d) {
+    function (d) {
       return d.code == sltValue;
     }
   );
@@ -336,7 +336,7 @@ function setDataMoocsByDepartment(sltValue) {
   createChartTimelineMoocs(auxDownloadTimelineDepartment, "");
 
   var jsonAgeMoocs = $.extend(true, [], moocsAgeArrays.ageDepartments2018);
-  jsonAgeMoocs = jsonAgeMoocs.filter(function(dataP) {
+  jsonAgeMoocs = jsonAgeMoocs.filter(function (dataP) {
     return dataP.departmentCode == sltValue;
   });
   drawMoocsAgeDistributionChart(jsonAgeMoocs);
@@ -379,7 +379,7 @@ function setDataDataSetByDivisions(sltValue) {
   $("#dataSet2018").prop("checked", true);
   //treemap
   jsonDataSetTree = datasetsDownloadSource.downloadSourceDivisions.filter(
-    function(dataT) {
+    function (dataT) {
       return dataT.division_codes == sltValue;
     }
   );
@@ -391,7 +391,7 @@ function setDataDataSetByDivisions(sltValue) {
     [],
     datasetsDownloadsTimelineArrays.downloadsTimelineDivisions
   );
-  jsonTimeLineDataSet = ObjectDataSetTimeLine.filter(function(dataT) {
+  jsonTimeLineDataSet = ObjectDataSetTimeLine.filter(function (dataT) {
     return dataT.division_code == sltValue;
   });
   if (jsonTimeLineDataSet.length > 0) {
@@ -409,18 +409,18 @@ function setDataDataSetByDivisions(sltValue) {
   datasets2018Downloads =
     jsondataDatasets.length > 0 ? jsondataDatasets[0]["2018_downloads"] : "0";
   datasets2018DownloadsLac =
-    jsondataDatasets.length > 0
-      ? (jsondataDatasets[0]["2018_porcent_total_lac_downloads"] * 100).toFixed(
-          0
-        )
-      : "0";
+    jsondataDatasets.length > 0 ?
+    (jsondataDatasets[0]["2018_porcent_total_lac_downloads"] * 100).toFixed(
+      0
+    ) :
+    "0";
 
   var ObjectGaugeDataSet = $.extend(
     true,
     [],
     datasetsGaugesIndicators.indicatorsDivisions2018
   );
-  ObjectGaugeDataSet = ObjectGaugeDataSet.filter(function(dataT) {
+  ObjectGaugeDataSet = ObjectGaugeDataSet.filter(function (dataT) {
     return dataT.divisionCode == sltValue;
   });
   drawGaugeDatasetChart(ObjectGaugeDataSet[0]);
@@ -431,7 +431,7 @@ function setDataDataSetByDepartment(sltValue) {
   $("#dataSet2018").prop("checked", true);
   //treemap
   jsonDataSetTree = datasetsDownloadSource.downloadSourceDepartments.filter(
-    function(dataT) {
+    function (dataT) {
       return dataT.department_codes == sltValue;
     }
   );
@@ -443,7 +443,7 @@ function setDataDataSetByDepartment(sltValue) {
     [],
     datasetsDownloadsTimelineArrays.downloadsTimelineDepartments
   );
-  jsonTimeLineDataSet = ObjectDataSetTimeLine.filter(function(dataT) {
+  jsonTimeLineDataSet = ObjectDataSetTimeLine.filter(function (dataT) {
     return dataT.department_code == sltValue;
   });
   if (jsonTimeLineDataSet.length > 0) {
@@ -462,7 +462,7 @@ function setDataDataSetByDepartment(sltValue) {
     [],
     datasetsGaugesIndicators.indicatorsDepartments2018
   );
-  ObjectGaugeDataSet = ObjectGaugeDataSet.filter(function(dataT) {
+  ObjectGaugeDataSet = ObjectGaugeDataSet.filter(function (dataT) {
     return dataT.departmentCode == sltValue;
   });
   drawGaugeDatasetChart(ObjectGaugeDataSet[0]);
@@ -481,7 +481,7 @@ function setDataCodeByDivisions(sltValue) {
     [],
     codePageviewsTimelineArrays.pageviewTimelineDivisions
   );
-  ObjectPageViewsTimeLine2018 = ObjectPageViewsTimeLine2018.filter(function(
+  ObjectPageViewsTimeLine2018 = ObjectPageViewsTimeLine2018.filter(function (
     data
   ) {
     return data.division_codes == sltValue;
@@ -492,7 +492,7 @@ function setDataCodeByDivisions(sltValue) {
     [],
     codePageviewsSourceArrays.pageviewSourceDivisions
   );
-  ObjectCodePageViewSource = ObjectCodePageViewSource.filter(function(data) {
+  ObjectCodePageViewSource = ObjectCodePageViewSource.filter(function (data) {
     return data.division_codes == sltValue;
   });
 
@@ -501,7 +501,7 @@ function setDataCodeByDivisions(sltValue) {
     [],
     codeGaugesIndicators.indicatorsDivisions2018
   );
-  ObjectGauges = ObjectGauges.filter(function(data) {
+  ObjectGauges = ObjectGauges.filter(function (data) {
     return data.divisionCode == sltValue;
   });
 
@@ -528,7 +528,7 @@ function setDataCodeByDepartment(sltValue) {
     [],
     codePageviewsTimelineArrays.pageviewTimelineDepartments
   );
-  ObjectPageViewsTimeLine2018 = ObjectPageViewsTimeLine2018.filter(function(
+  ObjectPageViewsTimeLine2018 = ObjectPageViewsTimeLine2018.filter(function (
     data
   ) {
     return data.departmentCode == sltValue;
@@ -539,7 +539,7 @@ function setDataCodeByDepartment(sltValue) {
     [],
     codePageviewsSourceArrays.pageviewSourceDepartments
   );
-  ObjectCodePageViewSource = ObjectCodePageViewSource.filter(function(data) {
+  ObjectCodePageViewSource = ObjectCodePageViewSource.filter(function (data) {
     return data.department_codes == sltValue;
   });
 
@@ -548,7 +548,7 @@ function setDataCodeByDepartment(sltValue) {
     [],
     codeGaugesIndicators.indicatorsDepartments2018
   );
-  ObjectGauges = ObjectGauges.filter(function(data) {
+  ObjectGauges = ObjectGauges.filter(function (data) {
     return data.departmentCode == sltValue;
   });
 
@@ -576,21 +576,21 @@ function setDataSuscribersByDivisions(sltValue) {
     [],
     subscribersGender.genderDivisions
   );
-  jsonSuscribersTree = ObjectGenderTreeMap.filter(function(data) {
+  jsonSuscribersTree = ObjectGenderTreeMap.filter(function (data) {
     return data.division_code == sltValue;
   });
   drawTreeSuscriber(jsonSuscribersTree);
 
   //#suscribers-interested
   var ObjectTopicBars = $.extend(true, [], subscribersTopics);
-  arraySuscribersTopics = ObjectTopicBars.filter(function(data) {
+  arraySuscribersTopics = ObjectTopicBars.filter(function (data) {
     return data.division_code == sltValue;
   });
   drawSuscribersChart(arraySuscribersTopics);
 
   //#suscribers-subtopics
   var ObjectSubTopicBars = $.extend(true, [], subscribersSubTopics);
-  var arraySuscribersSubTopics = ObjectSubTopicBars.filter(function(data) {
+  var arraySuscribersSubTopics = ObjectSubTopicBars.filter(function (data) {
     return data.division_code == sltValue;
   });
   drawAgeSuscribersChart(arraySuscribersSubTopics);
@@ -601,12 +601,12 @@ function setDataSuscribersByDivisions(sltValue) {
     [],
     subscribersInstitution.institutionDivisions
   );
-  arraySuscribersInstitution = objectInstitution.filter(function(data) {
+  arraySuscribersInstitution = objectInstitution.filter(function (data) {
     return data.division_code == sltValue;
   });
   drawInstitutionsChart(arraySuscribersInstitution);
 
-  jsondataSubscriber = subscribersArray.subscribersDivisions.filter(function(
+  jsondataSubscriber = subscribersArray.subscribersDivisions.filter(function (
     data
   ) {
     return data.Divisions == sltValue;
@@ -614,15 +614,15 @@ function setDataSuscribersByDivisions(sltValue) {
   subscribersAllTotalGlobal =
     jsondataSubscriber.length > 0 ? jsondataSubscriber[0].subscribers : "0";
   subscribersAllDownloads =
-    jsondataSubscriber.length > 0
-      ? "100%"
-      : "0"; /** missing, se pone 100% por orden de rodrigo */
+    jsondataSubscriber.length > 0 ?
+    "100%" :
+    "0"; /** missing, se pone 100% por orden de rodrigo */
   subscribersAllDownloadsLac =
-    jsondataSubscriber.length > 0
-      ? jsondataSubscriber[0]["porcent_total_from_lac"] * 100 >= 100
-        ? "100%"
-        : (jsondataSubscriber[0]["porcent_total_from_lac"] * 100).toFixed(1)
-      : "";
+    jsondataSubscriber.length > 0 ?
+    jsondataSubscriber[0]["porcent_total_from_lac"] * 100 >= 100 ?
+    "100%" :
+    (jsondataSubscriber[0]["porcent_total_from_lac"] * 100).toFixed(1) :
+    "";
   gaugeSuscribers = setSuscribersGauge();
   drawGaugeSubscribersChart(gaugeSuscribers);
 }
@@ -637,21 +637,21 @@ function setDataSuscribersByDepartment(sltValue) {
     [],
     subscribersGender.genderDeparments
   );
-  jsonSuscribersTree = ObjectGenderTreeMap.filter(function(data) {
+  jsonSuscribersTree = ObjectGenderTreeMap.filter(function (data) {
     return data.department == sltValue;
   });
   drawTreeSuscriber(jsonSuscribersTree);
 
   //#suscribers-interested
   var ObjectTopicBars = $.extend(true, [], subscribersTopics);
-  arraySuscribersTopics = ObjectTopicBars.filter(function(data) {
+  arraySuscribersTopics = ObjectTopicBars.filter(function (data) {
     return data.Department == sltValue;
   });
   drawSuscribersChart(arraySuscribersTopics);
 
   //#suscribers-subtopics
   var ObjectSubTopicBars = $.extend(true, [], subscribersSubTopics);
-  arraySuscribersSubTopics = ObjectSubTopicBars.filter(function(data) {
+  arraySuscribersSubTopics = ObjectSubTopicBars.filter(function (data) {
     return data.Departments == sltValue;
   });
   drawAgeSuscribersChart(arraySuscribersSubTopics);
@@ -660,14 +660,14 @@ function setDataSuscribersByDepartment(sltValue) {
   var objectInstitution = $.extend(
     true,
     [],
-    subscribersInstitution.institutionDivisions
+    subscribersInstitution.institutionDepartments
   );
-  arraySuscribersInstitution = objectInstitution.filter(function(data) {
-    return data.division_code == sltValue;
+  arraySuscribersInstitution = objectInstitution.filter(function (data) {
+    return data.code == sltValue;
   });
   drawInstitutionsChart(arraySuscribersInstitution);
 
-  jsondataSubscriber = subscribersArray.subscribersDepartments.filter(function(
+  jsondataSubscriber = subscribersArray.subscribersDepartments.filter(function (
     data
   ) {
     return data.deparment_code == sltValue;
@@ -675,15 +675,15 @@ function setDataSuscribersByDepartment(sltValue) {
   subscribersAllTotalGlobal =
     jsondataSubscriber.length > 0 ? jsondataSubscriber[0].subscribers : "0";
   subscribersAllDownloads =
-    jsondataSubscriber.length > 0
-      ? "100%"
-      : "0"; /** missing, se pone 100% por orden de rodrigo */
+    jsondataSubscriber.length > 0 ?
+    "100%" :
+    "0"; /** missing, se pone 100% por orden de rodrigo */
   subscribersAllDownloadsLac =
-    jsondataSubscriber.length > 0
-      ? jsondataSubscriber[0]["porcent_total_from_lac"] * 100 >= 100
-        ? "100%"
-        : (jsondataSubscriber[0]["porcent_total_from_lac"] * 100).toFixed(1)
-      : "";
+    jsondataSubscriber.length > 0 ?
+    jsondataSubscriber[0]["porcent_total_from_lac"] * 100 >= 100 ?
+    "100%" :
+    (jsondataSubscriber[0]["porcent_total_from_lac"] * 100).toFixed(1) :
+    "";
   gaugeSuscribers = setSuscribersGauge();
   drawGaugeSubscribersChart(gaugeSuscribers);
 }
@@ -696,7 +696,7 @@ function validatePresidentOrKic(title, department) {
   console.log(
     "President or KIC",
     department.toUpperCase() === "KIC" ||
-      title.toUpperCase().includes("PRESIDENT")
+    title.toUpperCase().includes("PRESIDENT")
   );
 
   return (
@@ -709,7 +709,7 @@ function validateManager(title) {
   console.log(
     "Manager",
     title.toUpperCase().includes("MANAGER") ||
-      title.toUpperCase().includes("MGR")
+    title.toUpperCase().includes("MGR")
   );
   return (
     title.toUpperCase().includes("MANAGER") ||
@@ -717,36 +717,38 @@ function validateManager(title) {
   );
 }
 
-function validateDepartment(department){
-    if (department == "MIF") {
-        department = "IDB LAB";
-      }
-      var departmentSelected = $("#divisionSelect option")
-        .filter(function() {
-          return $(this).html() == department;
-        });
-    if(departmentSelected.length>0){
-        departmentSelected.prop("selected", true);
-        changeFilterDashboard("department");
-    }else{
-        $('#select option[value="IDB"]');
-        changeFilterDashboard("IDB");
-    }     
-}
-function validateSize(){
-  if(screen.width<980){
-    $(".body").width(screen.width);
-  }else{
-    $(".body").width($win.width);
-  } 
-}
-function getItems() {
-  if ($(".body").width() < 500) {
-    $(".hidden-on-mobile").remove();
-    
-  }else{
-    $(".hidden-on-desktop").remove();
+function validateDepartment(department) {
+  if (department == "MIF") {
+    department = "IDB LAB";
   }
+  var departmentSelected = $("#divisionSelect option")
+    .filter(function () {
+      return $(this).html() == department;
+    });
+  if (departmentSelected.length > 0) {
+    departmentSelected.prop("selected", true);
+    changeFilterDashboard("department");
+  } else {
+    $('#select option[value="IDB"]');
+    changeFilterDashboard("IDB");
+  }
+}
+
+function validateSize() {
+  if (screen.width < 980) {
+    $(".body").width(screen.width);
+    if ($(".body").width() < 600) {
+      $(".hidden-on-mobile").remove();
+    }
+  } else {
+    $(".body").width($win.width);
+    $(".hidden-on-desktop").remove();
+  
+  }
+}
+
+function getItems() {
+    
   $.ajax({
     async: true, // Async by default is set to “true” load the script asynchronously
     //url: _spPageContextInfo.webAbsoluteUrl + "/_api/SP.UserProfiles.PeopleManager/GetPropertiesFor(accountName=@v)?@v='i:0%23.f|membership|VICENTEF@iadb.org'", // URL to fetch data from sharepoint list
@@ -757,7 +759,7 @@ function getItems() {
       accept: "application/json;odata=verbose", //It defines the Data format
       "content-type": "application/json;odata=verbose" //It defines the content type as JSON
     },
-    success: function(data) {
+    success: function (data) {
       validateSize();
       var data = data.d;
       var title = data.Title;
@@ -776,38 +778,38 @@ function getItems() {
       } else if (validateManager(title)) {
         validateDepartment(department)
       } else {
-        var elementInSelect = $("#divisionSelect option").filter(function() {
+        var elementInSelect = $("#divisionSelect option").filter(function () {
           return $(this).val() == division;
         });
         if (elementInSelect.length > 0) {
           elementInSelect.prop("selected", true);
           changeFilterDashboard(division);
         } else {
-            validateDepartment(department);
+          validateDepartment(department);
         }
       }
     },
-    error: function(error) {
+    error: function (error) {
       console.log(JSON.stringify(error));
     }
   });
 }
 
 function filterPropiety(array, propiety) {
-  return array.filter(function(data) {
+  return array.filter(function (data) {
     return data.Key == propiety;
   });
 }
 
 function updateResolution() {
   var isIE = /*@cc_on!@*/ false || !!document.documentMode;
-//  $(".body").css("width", screen.width + "px");
+  //  $(".body").css("width", screen.width + "px");
   // if (isIE == true || screen.width<980) {
 
   // }
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
   moment.updateLocale("en", {
     relativeTime: {
       future: "in %s",
@@ -829,7 +831,7 @@ $(document).ready(function() {
 });
 var $win = $("#s4-workspace");
 
-$win.scroll(function() {
+$win.scroll(function () {
   if ($win.scrollTop() == 0) {
     $("#s4-bodyContainer .navbar:nth-child(2)").css("position", "fixed");
     $("#s4-bodyContainer .navbar:nth-child(2)").css("margin-top", "8rem");
@@ -837,27 +839,27 @@ $win.scroll(function() {
     if (screen.width <= 480) {
       $(".inner-nav").css("margin-top", "15rem");
       $("section.big-numbers").css("margin-top", "8rem");
-      $( ".menu-mobile-top" ).css("margin-top", "0rem");
-      $( ".menu-mobile-top" ).removeClass( "fixed-top" );      
-      $( ".inner-nav" ).addClass( "fixed-top" );
+      $(".menu-mobile-top").css("margin-top", "0rem");
+      $(".menu-mobile-top").removeClass("fixed-top");
+      $(".inner-nav").addClass("fixed-top");
     }
   } else {
     if (screen.width <= 480) {
       $("section.big-numbers").css("margin-top", "8rem");
       $(".menu-mobile-top").css("margin-top", "8rem");
-      $( ".inner-nav" ).removeClass( "fixed-top" )
-      $( ".menu-mobile-top" ).addClass( "fixed-top" )
-      $("#s4-bodyContainer nav.navbar").css("position","absolute")
-    }else{
+      $(".inner-nav").removeClass("fixed-top")
+      $(".menu-mobile-top").addClass("fixed-top")
+      $("#s4-bodyContainer nav.navbar").css("position", "absolute")
+    } else {
       $(".inner-nav").css("margin-top", "8rem");
       $("#s4-bodyContainer .navbar:nth-child(2)").css("margin-top", "0");
       $("#s4-bodyContainer .navbar:nth-child(2)").css("position", "absolute");
     }
-    
+
   }
 });
 
-$(window).resize(function() {
+$(window).resize(function () {
   validateSize();
   updateResolution();
   changeFilterDashboard($("select[id*='divisionSelect']").val());

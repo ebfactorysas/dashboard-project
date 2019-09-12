@@ -81,17 +81,17 @@ function drawInstitutionsChart(dataInstitution) {
       .attr("class","labels")
       .text(null)
       .attr("y", function(d) {
-        return yInstitution(d.value) - 20;
+        return yInstitution(d.value)-20;
       })
       .attr("x", function(d, i) {
-        return i * xInstitution.bandwidth() + 50; //Bar width of 20 plus 1 for padding
+        return i * xInstitution.bandwidth() + 30; //Bar width of 20 plus 1 for padding
       })
       .attr("fill", "#336577")
       .attr("font-family", "Gotham-Bold")
       .attr("font-size", "14px")
       .append("tspan")
       .attr("x", function(d, i) {
-        return i * xInstitution.bandwidth() + 25; //Bar width of 20 plus 1 for padding
+        return i * xInstitution.bandwidth() + 15; //Bar width of 20 plus 1 for padding
       })
       .text(function(d) {
         var number = setSettingsNumber(d.value);
@@ -99,7 +99,7 @@ function drawInstitutionsChart(dataInstitution) {
       })
       .append("tspan")
       .attr("x", function(d, i) {
-        return i * xInstitution.bandwidth() + 25; //Bar width of 20 plus 1 for padding
+        return i * xInstitution.bandwidth() + 15; //Bar width of 20 plus 1 for padding
       })
       .attr("dy", "1.2em")
       .attr("font-family", "Gotham-Book")
@@ -122,7 +122,7 @@ function drawInstitutionsChart(dataInstitution) {
       .selectAll(".tick text")
       .call(wrap, xInstitution.bandwidth())
       .attr("font-family", "Gotham-Book")
-      .attr("font-size", "12px")
+      .attr("font-size", "11px")
       .attr("fill", "#336577");
   
       var div = d3

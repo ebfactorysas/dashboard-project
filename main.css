@@ -107,6 +107,12 @@
     font-size: 16px;
 }
 
+.fixed-top{
+    position: relative;
+    margin: 0;
+    z-index: 1;
+}
+
 /** header in SP**/
 
 #vps-navigation {
@@ -115,6 +121,8 @@
 
 #s4-bodyContainer .container-fluid:first-child {
     display: block;
+    position: relative;
+    margin: 0;
 }
 
 #s4-bodyContainer .container-fluid:first-child #vps-navigation .vps-nav {

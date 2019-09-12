@@ -1135,7 +1135,7 @@ function drawStudentCertifiedsChart(dataStudents) {
  *  */
 function createChartTimelineMoocs(data, typeload) {
   d3.select("#timeline-moocs svg").remove();
-  createTimelineChart(data, "#timeline-moocs", "#f1a592", "#moocs2018", 800);
+  createTimelineChart(data, "#timeline-moocs", "#f1a592","Registrations", "#moocs2018", 800);
 }
 
 /**

@@ -1045,23 +1045,22 @@ var moocsGaugesIndicators = {
   ],
   indicatorsIDBAllTheTime: [
     {
-      "courses": 106,
-      "percentageCourses": 100,
-      "registrations": 1074661,
-      "percentageRegistrations": 100,
-      "LAC": 914547,
-      "percentageLAC": 85.1
+      "courses": 110,
+      "percentageCourses": 1,
+      "registrations": 1119016,
+      "percentageRegistrations": 1,
+      "LAC": 954240,
+      "percentageLAC": 0.85
     }
   ],
   indicatorsIDB2018: [
     {
-    "courses": 26,
-    "percentageCourses": 1,
-    "registrations": -5,
-    "percentageRegistrations": 238166,
-    "LAC": 1,
-    "percentageLAC": 200940,
-    "porcent_total_LAC": 0.84
-  }
+      "courses": 26,
+      "percentageCourses": 1,
+      "registrations": 238166,
+      "percentageRegistrations": 1,
+      "LAC": 200940,
+      "percentageLAC": 0.84
+    }
   ],
 }

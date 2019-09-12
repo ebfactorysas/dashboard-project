@@ -40,7 +40,7 @@ function drawTreeCode(dataTree, filtertype, typeload) {
 
 function createChartTimeline(data) {
     d3.select("#timeline-code svg").remove();
-    createTimelineChart(data, "#timeline-code", "#EEAE00", "#code018",600)
+    createTimelineChart(data, "#timeline-code", "#EEAE00","Pageviews", "#code018",600)
 }
 
 function drawPlotChart(data) {

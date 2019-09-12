@@ -1,1354 +1,666 @@
 var datasetsTopArrays = {
-    topIDBAllTime: [{
-            "name": "The Database of Political Institutions 2015 (DPI2015)",
-            "Rank":1,
-            "Department": "RES",
-            "Division": "RES",
-            "publishedDate": "1/29/2016",
-            "value": 9163,
-            "trend": [{
-                    "date": "12/1/2018",
-                    "value": 13
-                },
-                {
-                    "date": "12/2/2018",
-                    "value": 6
-                },
-                {
-                    "date": "12/3/2018",
-                    "value": 4
-                },
-                {
-                    "date": "12/4/2018",
-                    "value": 22
-                },
-                {
-                    "date": "12/5/2018",
-                    "value": 11
-                },
-                {
-                    "date": "12/6/2018",
-                    "value": 17
-                },
-                {
-                    "date": "12/7/2018",
-                    "value": 31
-                },
-                {
-                    "date": "12/8/2018",
-                    "value": 12
-                },
-                {
-                    "date": "12/9/2018",
-                    "value": 12
-                },
-                {
-                    "date": "12/10/2018",
-                    "value": 8
-                },
-                {
-                    "date": "12/11/2018",
-                    "value": 11
-                },
-                {
-                    "date": "12/12/2018",
-                    "value": 22
-                },
-                {
-                    "date": "12/13/2018",
-                    "value": 12
-                },
-                {
-                    "date": "12/14/2018",
-                    "value": 103
-                }
-            ]
-        },
+    topIDBAllTime: [
         {
-            "name": "The Database of Political Institutions 2017 (DPI2017)",
-            "Rank":2,
-            "Department": "RES",
-            "Division": "RES",
-            "publishedDate": "2/1/2018",
-            "value": 5311,
-            "trend": [{
-                    "date": "12/1/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/2/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/3/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/4/2018",
-                    "value": 3
-                },
-                {
-                    "date": "12/5/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/6/2018",
-                    "value": 2
-                },
-                {
-                    "date": "12/7/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/8/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/9/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/10/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/11/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/12/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/13/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/14/2018",
-                    "value": 3
-                }
-            ]
-        },
+          "Rank": 1,
+          "name": "The Database of Political Institutions 2015 (DPI2015)",
+          "Department": "RES",
+          "Division": "RES",
+          "publishedDate": "1/29/2016",
+          "value": 9699,
+          "trend": [
+          {"date":"7/1/2019","value": 4},
+          {"date":"7/2/2019","value": 1},
+          {"date":"7/3/2019","value": 7},
+          {"date":"7/4/2019","value": 2},
+          {"date":"7/5/2019","value": 1},
+          {"date":"7/6/2019","value": 2},
+          {"date":"7/7/2019","value": 2},
+          {"date":"7/8/2019","value": 5},
+          {"date":"7/9/2019","value": 9},
+          {"date":"7/10/2019","value": 3},
+          {"date":"7/11/2019","value": 2},
+          {"date":"7/12/2019","value": 0},
+          {"date":"7/13/2019","value": 0},
+          {"date":"7/14/2019","value": 3},
+          {"date":"7/15/2019","value": 2},
+          {"date":"7/16/2019","value": 0},
+          {"date":"7/17/2019","value": 0},
+          {"date":"7/18/2019","value": 0},
+          {"date":"7/19/2019","value": 2},
+          {"date":"7/20/2019","value": 1},
+          {"date":"7/21/2019","value": 0},
+          {"date":"7/22/2019","value": 0},
+          {"date":"7/23/2019","value": 14},
+          {"date":"7/24/2019","value": 0}
+        ]},
         {
-            "name": "Freight Transport and Logistics Statistics Yearbook",
-            "Rank":3,
-            "Department": "INE",
-            "Division": "TSP",
-            "publishedDate": "4/10/2015",
-            "value": 4572,
-            "trend": [{
-                    "date": "12/1/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/2/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/3/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/4/2018",
-                    "value": 3
-                },
-                {
-                    "date": "12/5/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/6/2018",
-                    "value": 2
-                },
-                {
-                    "date": "12/7/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/8/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/9/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/10/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/11/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/12/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/13/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/14/2018",
-                    "value": 3
-                }
-            ]
-        },
+          "Rank": 2,
+          "name": "The Database of Political Institutions 2017 (DPI2017)",
+          "Department": "RES",
+          "Division": "RES",
+          "publishedDate": "2/1/2018",
+          "value": 8107,
+          "trend": [
+          {"date":"7/1/2019","value": 6},
+          {"date":"7/2/2019","value": 12},
+          {"date":"7/3/2019","value": 10},
+          {"date":"7/4/2019","value": 4},
+          {"date":"7/5/2019","value": 9},
+          {"date":"7/6/2019","value": 11},
+          {"date":"7/7/2019","value": 11},
+          {"date":"7/8/2019","value": 13},
+          {"date":"7/9/2019","value": 14},
+          {"date":"7/10/2019","value": 6},
+          {"date":"7/11/2019","value": 17},
+          {"date":"7/12/2019","value": 6},
+          {"date":"7/13/2019","value": 3},
+          {"date":"7/14/2019","value": 6},
+          {"date":"7/15/2019","value": 17},
+          {"date":"7/16/2019","value": 21},
+          {"date":"7/17/2019","value": 6},
+          {"date":"7/18/2019","value": 5},
+          {"date":"7/19/2019","value": 5},
+          {"date":"7/20/2019","value": 4},
+          {"date":"7/21/2019","value": 4},
+          {"date":"7/22/2019","value": 15},
+          {"date":"7/23/2019","value": 12},
+          {"date":"7/24/2019","value": 0}
+        ]},
         {
-            "name": "2017 Índice de Mejores Trabajos Base de Datos",
-            "Rank":4,
-            "Department": "SCL",
-            "Division": "LMK",
-            "publishedDate": "10/1/2017",
-            "value": 2012,
-            "trend": [{
-                    "date": "12/1/2018",
-                    "value": 2
-                },
-                {
-                    "date": "12/2/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/3/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/4/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/5/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/6/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/7/2018",
-                    "value": 2
-                },
-                {
-                    "date": "12/8/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/9/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/10/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/11/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/12/2018",
-                    "value": 2
-                },
-                {
-                    "date": "12/13/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/14/2018",
-                    "value": 2
-                }
-            ]
-        },
+          "Rank": 3,
+          "name": "Freight Transport and Logistics Statistics Yearbook",
+          "Department": "INE",
+          "Division": "TSP",
+          "publishedDate": "4/10/2015",
+          "value": 5393,
+          "trend": [
+          {"date":"7/1/2019","value": 17},
+          {"date":"7/2/2019","value": 0},
+          {"date":"7/3/2019","value": 1},
+          {"date":"7/4/2019","value": 4},
+          {"date":"7/5/2019","value": 2},
+          {"date":"7/6/2019","value": 4},
+          {"date":"7/7/2019","value": 1},
+          {"date":"7/8/2019","value": 2},
+          {"date":"7/9/2019","value": 1},
+          {"date":"7/10/2019","value": 1},
+          {"date":"7/11/2019","value": 2},
+          {"date":"7/12/2019","value": 2},
+          {"date":"7/13/2019","value": 3},
+          {"date":"7/14/2019","value": 5},
+          {"date":"7/15/2019","value": 0},
+          {"date":"7/16/2019","value": 7},
+          {"date":"7/17/2019","value": 0},
+          {"date":"7/18/2019","value": 2},
+          {"date":"7/19/2019","value": 3},
+          {"date":"7/20/2019","value": 0},
+          {"date":"7/21/2019","value": 1},
+          {"date":"7/22/2019","value": 4},
+          {"date":"7/23/2019","value": 2},
+          {"date":"7/24/2019","value": 0}
+        ]},
         {
-            "name": "2010 InfraScope Index for Latin America and the Caribbean",
-            "Rank":5,
-            "Department": "MIF",
-            "Division": "MIF",
-            "publishedDate": "11/8/2010",
-            "value": 1902,
-            "trend": [{
-                    "date": "12/1/2018",
-                    "value": 2
-                },
-                {
-                    "date": "12/2/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/3/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/4/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/5/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/6/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/7/2018",
-                    "value": 2
-                },
-                {
-                    "date": "12/8/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/9/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/10/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/11/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/12/2018",
-                    "value": 2
-                },
-                {
-                    "date": "12/13/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/14/2018",
-                    "value": 2
-                }
-            ]
-        },
+          "Rank": 4,
+          "name": "Panorama de las Administraciones Públicas: ALC2017 indicadores",
+          "Department": "IFD",
+          "Division": "ICS",
+          "publishedDate": "12/6/2016",
+          "value": 4862,
+          "trend": [
+          {"date":"7/1/2019","value": 6},
+          {"date":"7/2/2019","value": 8},
+          {"date":"7/3/2019","value": 2},
+          {"date":"7/4/2019","value": 0},
+          {"date":"7/5/2019","value": 2},
+          {"date":"7/6/2019","value": 4},
+          {"date":"7/7/2019","value": 2},
+          {"date":"7/8/2019","value": 0},
+          {"date":"7/9/2019","value": 4},
+          {"date":"7/10/2019","value": 8},
+          {"date":"7/11/2019","value": 2},
+          {"date":"7/12/2019","value": 4},
+          {"date":"7/13/2019","value": 10},
+          {"date":"7/14/2019","value": 4},
+          {"date":"7/15/2019","value": 4},
+          {"date":"7/16/2019","value": 2},
+          {"date":"7/17/2019","value": 0},
+          {"date":"7/18/2019","value": 8},
+          {"date":"7/19/2019","value": 2},
+          {"date":"7/20/2019","value": 0},
+          {"date":"7/21/2019","value": 4},
+          {"date":"7/22/2019","value": 0},
+          {"date":"7/23/2019","value": 2},
+          {"date":"7/24/2019","value": 0}
+        ]},
         {
-            "name": "Panorama de las Administraciones Públicas: ALC2017 indicadores",
-            "Rank":6,
-            "Department": "IFD",
-            "Division": "FMM",
-            "publishedDate": "12/6/2016",
-            "value": 1779,
-            "trend": [{
-                    "date": "12/1/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/2/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/3/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/4/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/5/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/6/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/7/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/8/2018",
-                    "value": 2
-                },
-                {
-                    "date": "12/9/2018",
-                    "value": 2
-                },
-                {
-                    "date": "12/10/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/11/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/12/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/13/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/14/2018",
-                    "value": 2
-                }
-            ]
-        },
+          "Rank": 5,
+          "name": "2017 Índice de Mejores Trabajos Base de Datos",
+          "Department": "SCL",
+          "Division": "LMK",
+          "publishedDate": "10/1/2017",
+          "value": 2289,
+          "trend": [
+          {"date":"7/1/2019","value": 2},
+          {"date":"7/2/2019","value": 1},
+          {"date":"7/3/2019","value": 6},
+          {"date":"7/4/2019","value": 0},
+          {"date":"7/5/2019","value": 3},
+          {"date":"7/6/2019","value": 0},
+          {"date":"7/7/2019","value": 0},
+          {"date":"7/8/2019","value": 1},
+          {"date":"7/9/2019","value": 1},
+          {"date":"7/10/2019","value": 0},
+          {"date":"7/11/2019","value": 0},
+          {"date":"7/12/2019","value": 1},
+          {"date":"7/13/2019","value": 0},
+          {"date":"7/14/2019","value": 0},
+          {"date":"7/15/2019","value": 0},
+          {"date":"7/16/2019","value": 1},
+          {"date":"7/17/2019","value": 1},
+          {"date":"7/18/2019","value": 2},
+          {"date":"7/19/2019","value": 0},
+          {"date":"7/20/2019","value": 0},
+          {"date":"7/21/2019","value": 1},
+          {"date":"7/22/2019","value": 2},
+          {"date":"7/23/2019","value": 1},
+          {"date":"7/24/2019","value": 0}
+        ]},
         {
-            "name": "Standardized Public Debt Database",
-            "Rank":7,
-            "Department": "IFD",
-            "Division": "CMF",
-            "publishedDate": "7/12/2018",
-            "value": 1339,
-            "trend": [{
-                    "date": "12/1/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/2/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/3/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/4/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/5/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/6/2018",
-                    "value": 3
-                },
-                {
-                    "date": "12/7/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/8/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/9/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/10/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/11/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/12/2018",
-                    "value": 2
-                },
-                {
-                    "date": "12/13/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/14/2018",
-                    "value": 0
-                }
-            ]
-        },
+          "Rank": 6,
+          "name": "2010 InfraScope Index for Latin America and the Caribbean",
+          "Department": "MIF",
+          "Division": "MIF",
+          "publishedDate": "11/8/2010",
+          "value": 2165,
+          "trend": [
+          {"date":"7/1/2019","value": 2},
+          {"date":"7/2/2019","value": 3},
+          {"date":"7/3/2019","value": 0},
+          {"date":"7/4/2019","value": 1},
+          {"date":"7/5/2019","value": 1},
+          {"date":"7/6/2019","value": 1},
+          {"date":"7/7/2019","value": 0},
+          {"date":"7/8/2019","value": 2},
+          {"date":"7/9/2019","value": 1},
+          {"date":"7/10/2019","value": 0},
+          {"date":"7/11/2019","value": 0},
+          {"date":"7/12/2019","value": 0},
+          {"date":"7/13/2019","value": 1},
+          {"date":"7/14/2019","value": 1},
+          {"date":"7/15/2019","value": 0},
+          {"date":"7/16/2019","value": 0},
+          {"date":"7/17/2019","value": 0},
+          {"date":"7/18/2019","value": 0},
+          {"date":"7/19/2019","value": 2},
+          {"date":"7/20/2019","value": 2},
+          {"date":"7/21/2019","value": 1},
+          {"date":"7/22/2019","value": 1},
+          {"date":"7/23/2019","value": 1},
+          {"date":"7/24/2019","value": 0}
+        ]},
         {
-            "name": "Latin America and the Caribbean Fiscal Burden Database",
-            "Rank":8,
-            "Department": "IFD",
-            "Division": "FMM",
-            "publishedDate": "11/1/2017",
-            "value": 1312,
-            "trend": [{
-                    "date": "12/1/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/2/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/3/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/4/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/5/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/6/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/7/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/8/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/9/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/10/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/11/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/12/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/13/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/14/2018",
-                    "value": 0
-                }
-            ]
-        },
+          "Rank": 7,
+          "name": "Database of Political Institutions 2015",
+          "Department": "RES",
+          "Division": "RES",
+          "publishedDate": "2/3/2016",
+          "value": 1887,
+          "trend": [
+          {"date":"7/1/2019","value": 2},
+          {"date":"7/2/2019","value": 2},
+          {"date":"7/3/2019","value": 1},
+          {"date":"7/4/2019","value": 1},
+          {"date":"7/5/2019","value": 4},
+          {"date":"7/6/2019","value": 0},
+          {"date":"7/7/2019","value": 4},
+          {"date":"7/8/2019","value": 6},
+          {"date":"7/9/2019","value": 0},
+          {"date":"7/10/2019","value": 0},
+          {"date":"7/11/2019","value": 0},
+          {"date":"7/12/2019","value": 0},
+          {"date":"7/13/2019","value": 0},
+          {"date":"7/14/2019","value": 0},
+          {"date":"7/15/2019","value": 0},
+          {"date":"7/16/2019","value": 4},
+          {"date":"7/17/2019","value": 0},
+          {"date":"7/18/2019","value": 0},
+          {"date":"7/19/2019","value": 6},
+          {"date":"7/20/2019","value": 18},
+          {"date":"7/21/2019","value": 0},
+          {"date":"7/22/2019","value": 0},
+          {"date":"7/23/2019","value": 4},
+          {"date":"7/24/2019","value": 0}
+        ]},
         {
-            "name": "Social Pulse in Latin America and the Caribbean 2016 - Statistical Annex",
-            "Rank":9,
-            "Department": "SCL",
-            "Division": "SCL",
-            "publishedDate": "10/5/2016",
-            "value": 1047,
-            "trend": [{
-                    "date": "12/1/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/2/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/3/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/4/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/5/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/6/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/7/2018",
-                    "value": 3
-                },
-                {
-                    "date": "12/8/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/9/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/10/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/11/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/12/2018",
-                    "value": 2
-                },
-                {
-                    "date": "12/13/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/14/2018",
-                    "value": 1
-                }
-            ]
-        },
+          "Rank": 8,
+          "name": "Standardized Public Debt Database",
+          "Department": "IFD",
+          "Division": "CTI",
+          "publishedDate": "7/12/2018",
+          "value": 1615,
+          "trend": [
+          {"date":"7/1/2019","value": 2},
+          {"date":"7/2/2019","value": 1},
+          {"date":"7/3/2019","value": 0},
+          {"date":"7/4/2019","value": 0},
+          {"date":"7/5/2019","value": 0},
+          {"date":"7/6/2019","value": 0},
+          {"date":"7/7/2019","value": 1},
+          {"date":"7/8/2019","value": 1},
+          {"date":"7/9/2019","value": 1},
+          {"date":"7/10/2019","value": 2},
+          {"date":"7/11/2019","value": 3},
+          {"date":"7/12/2019","value": 1},
+          {"date":"7/13/2019","value": 0},
+          {"date":"7/14/2019","value": 2},
+          {"date":"7/15/2019","value": 1},
+          {"date":"7/16/2019","value": 3},
+          {"date":"7/17/2019","value": 1},
+          {"date":"7/18/2019","value": 0},
+          {"date":"7/19/2019","value": 2},
+          {"date":"7/20/2019","value": 2},
+          {"date":"7/21/2019","value": 3},
+          {"date":"7/22/2019","value": 0},
+          {"date":"7/23/2019","value": 0},
+          {"date":"7/24/2019","value": 0}
+        ]},
         {
-            "name": "Pulso Social: Anexo Estadístico 2017",
-            "Rank":10,
-            "Department": "SCL",
-            "Division": "SCL",
-            "publishedDate": "11/16/2017",
-            "value": 945,
-            "trend": [{
-                    "date": "12/1/2018",
-                    "value": 5
-                },
-                {
-                    "date": "12/2/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/3/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/4/2018",
-                    "value": 6
-                },
-                {
-                    "date": "12/5/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/6/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/7/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/8/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/9/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/10/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/11/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/12/2018",
-                    "value": 4
-                },
-                {
-                    "date": "12/13/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/14/2018",
-                    "value": 0
-                }
-            ]
-        }
-    ],
-    topIDB2018: [{
-            "Rank": 1,
-            "Dataset ID": 8805,
-            "name": "The Database of Political Institutions 2017 (DPI2017)",
-            "Department": "RES",
-            "Division": "RES",
-            "publishedDate": "2/1/2018",
-            "value": 5311,
-            "trend": [{
-                    "date": "11/28/2018",
-                    "value": 18
-                },
-                {
-                    "date": "11/29/2018",
-                    "value": 39
-                },
-                {
-                    "date": "11/30/2018",
-                    "value": 13
-                },
-                {
-                    "date": "12/1/2018",
-                    "value": 6
-                },
-                {
-                    "date": "12/2/2018",
-                    "value": 4
-                },
-                {
-                    "date": "12/3/2018",
-                    "value": 22
-                },
-                {
-                    "date": "12/4/2018",
-                    "value": 11
-                },
-                {
-                    "date": "12/5/2018",
-                    "value": 17
-                },
-                {
-                    "date": "12/6/2018",
-                    "value": 31
-                },
-                {
-                    "date": "12/7/2018",
-                    "value": 12
-                },
-                {
-                    "date": "12/8/2018",
-                    "value": 8
-                },
-                {
-                    "date": "12/9/2018",
-                    "value": 11
-                },
-                {
-                    "date": "12/10/2018",
-                    "value": 22
-                },
-                {
-                    "date": "12/11/2018",
-                    "value": 12
-                },
-                {
-                    "date": "12/12/2018",
-                    "value": 103
-                }
-            ]
-        },
+          "Rank": 9,
+          "name": "IDBA: Índice de Desarrollo de Banda Ancha",
+          "Department": "IFD",
+          "Division": "ICS",
+          "publishedDate": "7/17/2014",
+          "value": 1490,
+          "trend": [
+          {"date":"7/1/2019","value": 0},
+          {"date":"7/2/2019","value": 2},
+          {"date":"7/3/2019","value": 2},
+          {"date":"7/4/2019","value": 2},
+          {"date":"7/5/2019","value": 0},
+          {"date":"7/6/2019","value": 0},
+          {"date":"7/7/2019","value": 0},
+          {"date":"7/8/2019","value": 0},
+          {"date":"7/9/2019","value": 4},
+          {"date":"7/10/2019","value": 0},
+          {"date":"7/11/2019","value": 2},
+          {"date":"7/12/2019","value": 0},
+          {"date":"7/13/2019","value": 0},
+          {"date":"7/14/2019","value": 2},
+          {"date":"7/15/2019","value": 2},
+          {"date":"7/16/2019","value": 0},
+          {"date":"7/17/2019","value": 4},
+          {"date":"7/18/2019","value": 0},
+          {"date":"7/19/2019","value": 2},
+          {"date":"7/20/2019","value": 0},
+          {"date":"7/21/2019","value": 0},
+          {"date":"7/22/2019","value": 4},
+          {"date":"7/23/2019","value": 0},
+          {"date":"7/24/2019","value": 0}
+        ]},
         {
-            "Rank": 2,
-            "Dataset ID": 9069,
-            "name": "FINLAC Data: Datos de desempeño e inclusión financiera de América Latina y el Caribe.",
-            "Department": "Discontinued Departments",
-            "Division": "Discontinued Divisions",
-            "publishedDate": "8/16/2018",
-            "value": 824,
-            "trend": [{
-                    "date": "11/28/2018",
-                    "value": 2
-                },
-                {
-                    "date": "11/29/2018",
-                    "value": 2
-                },
-                {
-                    "date": "11/30/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/1/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/2/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/3/2018",
-                    "value": 3
-                },
-                {
-                    "date": "12/4/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/5/2018",
-                    "value": 2
-                },
-                {
-                    "date": "12/6/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/7/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/8/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/9/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/10/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/11/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/12/2018",
-                    "value": 3
-                }
-            ]
-        },
+          "Rank": 10,
+          "name": "Latin America and the Caribbean Fiscal Burden Database",
+          "Department": "IFD",
+          "Division": "FMM",
+          "publishedDate": "11/1/2017",
+          "value": 1479,
+          "trend": [
+          {"date":"7/1/2019","value": 1},
+          {"date":"7/2/2019","value": 0},
+          {"date":"7/3/2019","value": 0},
+          {"date":"7/4/2019","value": 0},
+          {"date":"7/5/2019","value": 1},
+          {"date":"7/6/2019","value": 2},
+          {"date":"7/7/2019","value": 1},
+          {"date":"7/8/2019","value": 0},
+          {"date":"7/9/2019","value": 1},
+          {"date":"7/10/2019","value": 0},
+          {"date":"7/11/2019","value": 1},
+          {"date":"7/12/2019","value": 0},
+          {"date":"7/13/2019","value": 0},
+          {"date":"7/14/2019","value": 0},
+          {"date":"7/15/2019","value": 0},
+          {"date":"7/16/2019","value": 0},
+          {"date":"7/17/2019","value": 0},
+          {"date":"7/18/2019","value": 1},
+          {"date":"7/19/2019","value": 0},
+          {"date":"7/20/2019","value": 0},
+          {"date":"7/21/2019","value": 0},
+          {"date":"7/22/2019","value": 1},
+          {"date":"7/23/2019","value": 0},
+          {"date":"7/24/2019","value": 0}
+          ]}
+      ],
+    topIDB2018: [
         {
-            "Rank": 3,
-            "Dataset ID": 9069,
-            "name": "FINLAC Data: Datos de desempeño e inclusión financiera de América Latina y el Caribe",
-            "Department": "MIF",
-            "Division": "MIF",
-            "publishedDate": "8/16/2018",
-            "value": 824,
-            "trend": [{
-                    "date": "11/28/2018",
-                    "value": 2
-                },
-                {
-                    "date": "11/29/2018",
-                    "value": 2
-                },
-                {
-                    "date": "11/30/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/1/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/2/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/3/2018",
-                    "value": 3
-                },
-                {
-                    "date": "12/4/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/5/2018",
-                    "value": 2
-                },
-                {
-                    "date": "12/6/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/7/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/8/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/9/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/10/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/11/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/12/2018",
-                    "value": 3
-                }
-            ]
-        },
+          "Rank": 1,
+          "name": "Latin Macro Watch Dataset",
+          "Department": "RES",
+          "Division": "RES",
+          "publishedDate": "4/26/2019",
+          "value": 117,
+          "trend":[
+          {"date":"7/1/2019","value": 3},
+          {"date":"7/2/2019","value": 1},
+          {"date":"7/3/2019","value": 1},
+          {"date":"7/4/2019","value": 0},
+          {"date":"7/5/2019","value": 0},
+          {"date":"7/6/2019","value": 3},
+          {"date":"7/7/2019","value": 0},
+          {"date":"7/8/2019","value": 1},
+          {"date":"7/9/2019","value": 0},
+          {"date":"7/10/2019","value": 2},
+          {"date":"7/11/2019","value": 0},
+          {"date":"7/12/2019","value": 3},
+          {"date":"7/13/2019","value": 0},
+          {"date":"7/14/2019","value": 1},
+          {"date":"7/15/2019","value": 0},
+          {"date":"7/16/2019","value": 2},
+          {"date":"7/17/2019","value": 0},
+          {"date":"7/18/2019","value": 1},
+          {"date":"7/19/2019","value": 1},
+          {"date":"7/20/2019","value": 0},
+          {"date":"7/21/2019","value": 0},
+          {"date":"7/22/2019","value": 2},
+          {"date":"7/23/2019","value": 0},
+          {"date":"7/24/2019","value": 0}
+        ]},
         {
-            "Rank": 4,
-            "Dataset ID": 8787,
-            "name": "National Women's Health Survey for Trinidad and Tobago.",
-            "Department": "CCB",
-            "Division": "CCB",
-            "publishedDate": "3/5/2018",
-            "value": 614,
-            "trend": [{
-                    "date": "11/28/2018",
-                    "value": 1
-                },
-                {
-                    "date": "11/29/2018",
-                    "value": 0
-                },
-                {
-                    "date": "11/30/2018",
-                    "value": 2
-                },
-                {
-                    "date": "12/1/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/2/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/3/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/4/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/5/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/6/2018",
-                    "value": 2
-                },
-                {
-                    "date": "12/7/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/8/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/9/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/10/2018",
-                    "value": 2
-                },
-                {
-                    "date": "12/11/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/12/2018",
-                    "value": 2
-                }
-            ]
-        },
+          "Rank": 2,
+          "name": "Child care quality in Ecuador: Centros Infantiles del Buen Vivir (CIBV)",
+          "Department": "SCL",
+          "Division": "SPH",
+          "publishedDate": "1/15/2019",
+          "value": 17,
+          "trend":[
+          {"date":"7/1/2019","value": 0},
+          {"date":"7/2/2019","value": 0},
+          {"date":"7/3/2019","value": 0},
+          {"date":"7/4/2019","value": 0},
+          {"date":"7/5/2019","value": 0},
+          {"date":"7/6/2019","value": 0},
+          {"date":"7/7/2019","value": 0},
+          {"date":"7/8/2019","value": 0},
+          {"date":"7/9/2019","value": 0},
+          {"date":"7/10/2019","value": 0},
+          {"date":"7/11/2019","value": 0},
+          {"date":"7/12/2019","value": 0},
+          {"date":"7/13/2019","value": 0},
+          {"date":"7/14/2019","value": 0},
+          {"date":"7/15/2019","value": 0},
+          {"date":"7/16/2019","value": 0},
+          {"date":"7/17/2019","value": 0},
+          {"date":"7/18/2019","value": 0},
+          {"date":"7/19/2019","value": 0},
+          {"date":"7/20/2019","value": 0},
+          {"date":"7/21/2019","value": 0},
+          {"date":"7/22/2019","value": 0},
+          {"date":"7/23/2019","value": 7},
+          {"date":"7/24/2019","value": 0}
+        ]},
         {
-            "Rank": 5,
-            "Dataset ID": 8787,
-            "name": "National Women's Health Survey for Trinidad and Tobago",
-            "Department": "IFD",
-            "Division": "ICS",
-            "publishedDate": "3/5/2018",
-            "value": 614,
-            "trend": [{
-                    "date": "11/28/2018",
-                    "value": 1
-                },
-                {
-                    "date": "11/29/2018",
-                    "value": 0
-                },
-                {
-                    "date": "11/30/2018",
-                    "value": 2
-                },
-                {
-                    "date": "12/1/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/2/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/3/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/4/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/5/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/6/2018",
-                    "value": 2
-                },
-                {
-                    "date": "12/7/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/8/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/9/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/10/2018",
-                    "value": 2
-                },
-                {
-                    "date": "12/11/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/12/2018",
-                    "value": 2
-                }
-            ]
-        },
+          "Rank": 3,
+          "name": "IDB Climate Finance 2018",
+          "Department": "CSD",
+          "Division": "CCS",
+          "publishedDate": "6/15/2019",
+          "value": 13,
+          "trend":[
+          {"date":"7/1/2019","value": 0},
+          {"date":"7/2/2019","value": 2},
+          {"date":"7/3/2019","value": 2},
+          {"date":"7/4/2019","value": 0},
+          {"date":"7/5/2019","value": 0},
+          {"date":"7/6/2019","value": 0},
+          {"date":"7/7/2019","value": 0},
+          {"date":"7/8/2019","value": 0},
+          {"date":"7/9/2019","value": 4},
+          {"date":"7/10/2019","value": 0},
+          {"date":"7/11/2019","value": 0},
+          {"date":"7/12/2019","value": 0},
+          {"date":"7/13/2019","value": 0},
+          {"date":"7/14/2019","value": 0},
+          {"date":"7/15/2019","value": 0},
+          {"date":"7/16/2019","value": 0},
+          {"date":"7/17/2019","value": 0},
+          {"date":"7/18/2019","value": 0},
+          {"date":"7/19/2019","value": 0},
+          {"date":"7/20/2019","value": 1},
+          {"date":"7/21/2019","value": 0},
+          {"date":"7/22/2019","value": 0},
+          {"date":"7/23/2019","value": 1},
+          {"date":"7/24/2019","value": 2}
+        ]},
         {
-            "Rank": 6,
-            "Dataset ID": 8870,
-            "name": "Datos asociados al \"Panorama de envejecimiento y dependencia en América Latina y el Caribe",
-            "Department": "SCL",
-            "Division": "SPH",
-            "publishedDate": "4/24/2018",
-            "value": 261,
-            "trend": [{
-                    "date": "11/28/2018",
-                    "value": 1
-                },
-                {
-                    "date": "11/29/2018",
-                    "value": 1
-                },
-                {
-                    "date": "11/30/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/1/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/2/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/3/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/4/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/5/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/6/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/7/2018",
-                    "value": 2
-                },
-                {
-                    "date": "12/8/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/9/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/10/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/11/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/12/2018",
-                    "value": 2
-                }
-            ]
-        },
+          "Rank": 4,
+          "name": "Measuring Quality and Characterizing Cuna Mas Home Visits",
+          "Department": "SCL",
+          "Division": "SPH",
+          "publishedDate": "1/31/2019",
+          "value": 6,
+          "trend":[
+          {"date":"7/1/2019","value": 1},
+          {"date":"7/2/2019","value": 0},
+          {"date":"7/3/2019","value": 0},
+          {"date":"7/4/2019","value": 0},
+          {"date":"7/5/2019","value": 0},
+          {"date":"7/6/2019","value": 0},
+          {"date":"7/7/2019","value": 0},
+          {"date":"7/8/2019","value": 0},
+          {"date":"7/9/2019","value": 0},
+          {"date":"7/10/2019","value": 0},
+          {"date":"7/11/2019","value": 0},
+          {"date":"7/12/2019","value": 1},
+          {"date":"7/13/2019","value": 0},
+          {"date":"7/14/2019","value": 0},
+          {"date":"7/15/2019","value": 0},
+          {"date":"7/16/2019","value": 0},
+          {"date":"7/17/2019","value": 0},
+          {"date":"7/18/2019","value": 0},
+          {"date":"7/19/2019","value": 0},
+          {"date":"7/20/2019","value": 0},
+          {"date":"7/21/2019","value": 0},
+          {"date":"7/22/2019","value": 0},
+          {"date":"7/23/2019","value": 0},
+          {"date":"7/24/2019","value": 0}
+        ]},
         {
-            "Rank": 7,
-            "Dataset ID": 8379,
-            "name": "Standardized Public Debt Database",
-            "Department": "IFD",
-            "Division": "CMF",
-            "publishedDate": "7/12/2018",
-            "value": 202,
-            "trend": [{
-                    "date": "11/28/2018",
-                    "value": 4
-                },
-                {
-                    "date": "11/29/2018",
-                    "value": 0
-                },
-                {
-                    "date": "11/30/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/1/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/2/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/3/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/4/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/5/2018",
-                    "value": 3
-                },
-                {
-                    "date": "12/6/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/7/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/8/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/9/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/10/2018",
-                    "value": 2
-                },
-                {
-                    "date": "12/11/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/12/2018",
-                    "value": 0
-                }
-            ]
-        },
+          "Rank": 5,
+          "name": "IDB Climate Finance 2016",
+          "Department": "CSD",
+          "Division": "CCS",
+          "publishedDate": "6/15/2019",
+          "value": 3,
+          "trend":[
+          {"date":"7/1/2019","value": 0},
+          {"date":"7/2/2019","value": 0},
+          {"date":"7/3/2019","value": 0},
+          {"date":"7/4/2019","value": 0},
+          {"date":"7/5/2019","value": 0},
+          {"date":"7/6/2019","value": 0},
+          {"date":"7/7/2019","value": 0},
+          {"date":"7/8/2019","value": 0},
+          {"date":"7/9/2019","value": 0},
+          {"date":"7/10/2019","value": 0},
+          {"date":"7/11/2019","value": 1},
+          {"date":"7/12/2019","value": 0},
+          {"date":"7/13/2019","value": 1},
+          {"date":"7/14/2019","value": 0},
+          {"date":"7/15/2019","value": 0},
+          {"date":"7/16/2019","value": 0},
+          {"date":"7/17/2019","value": 0},
+          {"date":"7/18/2019","value": 0},
+          {"date":"7/19/2019","value": 0},
+          {"date":"7/20/2019","value": 0},
+          {"date":"7/21/2019","value": 0},
+          {"date":"7/22/2019","value": 1},
+          {"date":"7/23/2019","value": 0},
+          {"date":"7/24/2019","value": 0}
+        ]},
         {
-            "Rank": 8,
-            "Dataset ID": 8988,
-            "name": "Suriname Survey of Living Conditions: 2016-2017",
-            "Department": "CCB",
-            "Division": "CCB",
-            "publishedDate": "7/9/2018",
-            "value": 179,
-            "trend": [{
-                    "date": "11/28/2018",
-                    "value": 3
-                },
-                {
-                    "date": "11/29/2018",
-                    "value": 0
-                },
-                {
-                    "date": "11/30/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/1/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/2/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/3/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/4/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/5/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/6/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/7/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/8/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/9/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/10/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/11/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/12/2018",
-                    "value": 0
-                }
-            ]
-        },
+          "Rank": 6,
+          "name": "Baseline Salud Mesoamerica Belize - LQAS Survey",
+          "Department": "SCL",
+          "Division": "SPH",
+          "publishedDate": "2/1/2015",
+          "value": 0,
+          "trend":[
+          {"date":"7/1/2019","value": 0},
+          {"date":"7/2/2019","value": 0},
+          {"date":"7/3/2019","value": 0},
+          {"date":"7/4/2019","value": 0},
+          {"date":"7/5/2019","value": 0},
+          {"date":"7/6/2019","value": 1},
+          {"date":"7/7/2019","value": 0},
+          {"date":"7/8/2019","value": 0},
+          {"date":"7/9/2019","value": 0},
+          {"date":"7/10/2019","value": 0},
+          {"date":"7/11/2019","value": 0},
+          {"date":"7/12/2019","value": 0},
+          {"date":"7/13/2019","value": 0},
+          {"date":"7/14/2019","value": 0},
+          {"date":"7/15/2019","value": 0},
+          {"date":"7/16/2019","value": 0},
+          {"date":"7/17/2019","value": 0},
+          {"date":"7/18/2019","value": 0},
+          {"date":"7/19/2019","value": 0},
+          {"date":"7/20/2019","value": 0},
+          {"date":"7/21/2019","value": 0},
+          {"date":"7/22/2019","value": 0},
+          {"date":"7/23/2019","value": 0},
+          {"date":"7/24/2019","value": 0}
+        ]},
         {
-            "Rank": 9,
-            "Dataset ID": 9095,
-            "name": "Primary Healthcare Access, Experience, and Coordination in Latin America and the Caribbean 2013 (PRIMLAC)",
-            "Department": "SCL",
-            "Division": "SPH",
-            "publishedDate": "8/30/2018",
-            "value": 121,
-            "trend": [{
-                    "date": "11/28/2018",
-                    "value": 1
-                },
-                {
-                    "date": "11/29/2018",
-                    "value": 0
-                },
-                {
-                    "date": "11/30/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/1/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/2/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/3/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/4/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/5/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/6/2018",
-                    "value": 3
-                },
-                {
-                    "date": "12/7/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/8/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/9/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/10/2018",
-                    "value": 2
-                },
-                {
-                    "date": "12/11/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/12/2018",
-                    "value": 1
-                }
-            ]
-        },
+          "Rank": 7,
+          "name": "IDB Agrimonitor - PSE Agricultural Policy Monitoring System (data)",
+          "Department": "CSD",
+          "Division": "RND",
+          "publishedDate": "3/20/2016",
+          "value": 0,
+          "trend":[
+          {"date":"7/1/2019","value": 0},
+          {"date":"7/2/2019","value": 0},
+          {"date":"7/3/2019","value": 0},
+          {"date":"7/4/2019","value": 0},
+          {"date":"7/5/2019","value": 0},
+          {"date":"7/6/2019","value": 0},
+          {"date":"7/7/2019","value": 0},
+          {"date":"7/8/2019","value": 0},
+          {"date":"7/9/2019","value": 0},
+          {"date":"7/10/2019","value": 1},
+          {"date":"7/11/2019","value": 0},
+          {"date":"7/12/2019","value": 1},
+          {"date":"7/13/2019","value": 0},
+          {"date":"7/14/2019","value": 0},
+          {"date":"7/15/2019","value": 0},
+          {"date":"7/16/2019","value": 1},
+          {"date":"7/17/2019","value": 0},
+          {"date":"7/18/2019","value": 1},
+          {"date":"7/19/2019","value": 0},
+          {"date":"7/20/2019","value": 0},
+          {"date":"7/21/2019","value": 0},
+          {"date":"7/22/2019","value": 0},
+          {"date":"7/23/2019","value": 0},
+          {"date":"7/24/2019","value": 0}
+        ]},
         {
-            "Rank": 10,
-            "Dataset ID": 8992,
-            "name": "Barbados Survey of Living Conditions: 2016",
-            "Department": "CCB",
-            "Division": "CCB",
-            "publishedDate": "7/9/2018",
-            "value": 109,
-            "trend": [{
-                    "date": "11/28/2018",
-                    "value": 2
-                },
-                {
-                    "date": "11/29/2018",
-                    "value": 0
-                },
-                {
-                    "date": "11/30/2018",
-                    "value": 5
-                },
-                {
-                    "date": "12/1/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/2/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/3/2018",
-                    "value": 6
-                },
-                {
-                    "date": "12/4/2018",
-                    "value": 1
-                },
-                {
-                    "date": "12/5/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/6/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/7/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/8/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/9/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/10/2018",
-                    "value": 4
-                },
-                {
-                    "date": "12/11/2018",
-                    "value": 0
-                },
-                {
-                    "date": "12/12/2018",
-                    "value": 0
-                }
-            ]
-        }
-    ]
+          "Rank": 8,
+          "name": "Dataset for Servicio de Cuidado Diurno Programa Nacional Cuna Más",
+          "Department": "SCL",
+          "Division": "SPH",
+          "publishedDate": "11/14/2018",
+          "value": 0,
+          "trend":[
+          {"date":"7/1/2019","value": 0},
+          {"date":"7/2/2019","value": 0},
+          {"date":"7/3/2019","value": 0},
+          {"date":"7/4/2019","value": 0},
+          {"date":"7/5/2019","value": 0},
+          {"date":"7/6/2019","value": 0},
+          {"date":"7/7/2019","value": 0},
+          {"date":"7/8/2019","value": 0},
+          {"date":"7/9/2019","value": 0},
+          {"date":"7/10/2019","value": 0},
+          {"date":"7/11/2019","value": 0},
+          {"date":"7/12/2019","value": 0},
+          {"date":"7/13/2019","value": 1},
+          {"date":"7/14/2019","value": 0},
+          {"date":"7/15/2019","value": 0},
+          {"date":"7/16/2019","value": 1},
+          {"date":"7/17/2019","value": 0},
+          {"date":"7/18/2019","value": 1},
+          {"date":"7/19/2019","value": 0},
+          {"date":"7/20/2019","value": 0},
+          {"date":"7/21/2019","value": 0},
+          {"date":"7/22/2019","value": 3},
+          {"date":"7/23/2019","value": 0},
+          {"date":"7/24/2019","value": 0}
+        ]},
+        {
+          "Rank": 9,
+          "name": "Standardized Public Debt Database",
+          "Department": "IFD",
+          "Division": "CMF",
+          "publishedDate": "1/19/2016",
+          "value": 0,
+          "trend":[
+          {"date":"7/1/2019","value": 0},
+          {"date":"7/2/2019","value": 0},
+          {"date":"7/3/2019","value": 0},
+          {"date":"7/4/2019","value": 0},
+          {"date":"7/5/2019","value": 0},
+          {"date":"7/6/2019","value": 0},
+          {"date":"7/7/2019","value": 0},
+          {"date":"7/8/2019","value": 0},
+          {"date":"7/9/2019","value": 0},
+          {"date":"7/10/2019","value": 0},
+          {"date":"7/11/2019","value": 2},
+          {"date":"7/12/2019","value": 0},
+          {"date":"7/13/2019","value": 0},
+          {"date":"7/14/2019","value": 1},
+          {"date":"7/15/2019","value": 0},
+          {"date":"7/16/2019","value": 0},
+          {"date":"7/17/2019","value": 1},
+          {"date":"7/18/2019","value": 1},
+          {"date":"7/19/2019","value": 0},
+          {"date":"7/20/2019","value": 0},
+          {"date":"7/21/2019","value": 0},
+          {"date":"7/22/2019","value": 0},
+          {"date":"7/23/2019","value": 1},
+          {"date":"7/24/2019","value": 0}
+        ]},
+        {
+          "Rank": 10,
+          "name": "Structural Fiscal Balances Database for Latin America and the Caribbean",
+          "Department": "IFD",
+          "Division": "FMM",
+          "publishedDate": "6/30/2015",
+          "value": 0,
+          "trend":[
+          {"date":"7/1/2019","value": 0},
+          {"date":"7/2/2019","value": 0},
+          {"date":"7/3/2019","value": 1},
+          {"date":"7/4/2019","value": 0},
+          {"date":"7/5/2019","value": 0},
+          {"date":"7/6/2019","value": 0},
+          {"date":"7/7/2019","value": 0},
+          {"date":"7/8/2019","value": 0},
+          {"date":"7/9/2019","value": 0},
+          {"date":"7/10/2019","value": 0},
+          {"date":"7/11/2019","value": 0},
+          {"date":"7/12/2019","value": 0},
+          {"date":"7/13/2019","value": 0},
+          {"date":"7/14/2019","value": 0},
+          {"date":"7/15/2019","value": 0},
+          {"date":"7/16/2019","value": 0},
+          {"date":"7/17/2019","value": 0},
+          {"date":"7/18/2019","value": 1},
+          {"date":"7/19/2019","value": 5},
+          {"date":"7/20/2019","value": 4},
+          {"date":"7/21/2019","value": 1},
+          {"date":"7/22/2019","value": 0},
+          {"date":"7/23/2019","value": 0},
+          {"date":"7/24/2019","value": 0}
+          ]}
+      ]
 };

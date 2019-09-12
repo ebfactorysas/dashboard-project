@@ -75,7 +75,7 @@ function drawPlotChartDataset(data) {
 
 function createChartTimeLineDataSet(data) {
     d3.select("#timeline-dataset svg").remove();
-    createTimelineChart(data, "#timeline-dataset", "#424488", "#dataset2018",600)
+    createTimelineChart(data, "#timeline-dataset", "#424488","Downloads", "#dataset2018",600)
 }
 
 function createLineChartDataset(elements, color) {

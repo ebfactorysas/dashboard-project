@@ -1,4 +1,4 @@
-function createTimelineChart(data, id, colorTitle, id2018, widthDef) {
+function createTimelineChart(data, id, colorTitle,nameOnTooltip, id2018, widthDef) {
   var margin = {
     top: 20,
     right: 0,
@@ -272,6 +272,6 @@ function createTimelineChart(data, id, colorTitle, id2018, widthDef) {
     focus.attr("transform", "translate(" + x(d.date) + "," + y(d.close) + ")");
 
     focus.select(".value").text(moment(d.date).format("MMM-YY"));
-    focus.select(".date").text(d.close.toLocaleString() + " downloads");
+    focus.select(".date").text(d.close.toLocaleString() + " "+ nameOnTooltip);
   }
 }

@@ -5,7 +5,7 @@ function sortByDateAscending(a, b) {
 
 function createChartTimelinePublication(data, typeload) {
     d3.select("#timeline-publication svg").remove();
-    createTimelineChart(data, "#timeline-publication", "#d1415a", "#publication2018",600)
+    createTimelineChart(data, "#timeline-publication", "#d1415a","Downloads", "#publication2018",600)
 
 }
 
