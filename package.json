@@ -48,6 +48,6 @@
   "dependencies": {
     "gulp-cli": "^2.0.1",
     "gulp-install": "^1.1.0",
-    "node-sass": "^4.9.4"
+    "node-sass": "^7.0.0"
   }
 }
